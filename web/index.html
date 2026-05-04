@@ -3,23 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AlgoLens</title>
+    <title>algolens</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main>
       <header class="page-header">
-        <h1>AlgoLens</h1>
-        <a href="/debug.html" class="debug-link">debug &rarr;</a>
+        <h1>
+          algolens
+          <span class="signature" title="dedeepya avancha">[da]</span>
+        </h1>
+        <a href="/debug.html" class="debug-link">debug</a>
       </header>
-      <p class="tagline">Search DSA problems by keyword. Ranked with TF-IDF.</p>
+      <p class="tagline">search dsa problems by keyword. ranked with tf-idf.</p>
       <form id="search-form" autocomplete="off">
-        <input id="search-input" type="search" placeholder="e.g. graph cycle, monotonic, knapsack" />
-        <button type="submit">Search</button>
+        <input id="search-input" type="search" placeholder="graph cycle / monotonic / knapsack" />
+        <button type="submit">search</button>
       </form>
-      <p id="status" class="status">Type a query to search.</p>
+      <p id="status" class="status">type a query to search<span class="cursor">_</span></p>
       <ul id="results"></ul>
     </main>
+    <footer>algolens v0.1 · built by dedeepya · ranker: tf-idf · corpus: 12</footer>
     <script src="/app.js"></script>
   </body>
 </html>
