@@ -1,0 +1,17 @@
+{
+  "id": "binary-tree-level-order",
+  "title": "Binary Tree Level Order Traversal",
+  "slug": "binary-tree-level-order-traversal",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+  "tags": [
+    "tree",
+    "bfs",
+    "queue"
+  ],
+  "statement": "Given the root of a binary tree, return the level order traversal of its nodes' values, ie. from left to right, level by level.",
+  "patterns": [
+    "bfs with queue",
+    "level by level processing"
+  ]
+}

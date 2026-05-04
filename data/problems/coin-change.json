@@ -1,0 +1,16 @@
+{
+  "id": "coin-change",
+  "title": "Coin Change",
+  "slug": "coin-change",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/coin-change/",
+  "tags": [
+    "dp",
+    "array"
+  ],
+  "statement": "You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money. Return the fewest number of coins needed to make up that amount. If it is not possible, return -1.",
+  "patterns": [
+    "unbounded knapsack",
+    "bottom-up dp on amount"
+  ]
+}

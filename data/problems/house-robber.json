@@ -1,0 +1,16 @@
+{
+  "id": "house-robber",
+  "title": "House Robber",
+  "slug": "house-robber",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/house-robber/",
+  "tags": [
+    "dp",
+    "array"
+  ],
+  "statement": "You are a robber planning to rob houses along a street. Each house has a certain amount of money. Adjacent houses have security systems connected and will alert if two adjacent houses are robbed on the same night. Return the maximum amount you can rob without alerting the police.",
+  "patterns": [
+    "linear dp",
+    "take-or-skip recurrence"
+  ]
+}

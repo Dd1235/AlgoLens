@@ -1,0 +1,18 @@
+{
+  "id": "kth-largest-element",
+  "title": "Kth Largest Element in an Array",
+  "slug": "kth-largest-element-in-an-array",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+  "tags": [
+    "array",
+    "heap",
+    "quickselect",
+    "sorting"
+  ],
+  "statement": "Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in sorted order, not the kth distinct element.",
+  "patterns": [
+    "min-heap of size k",
+    "quickselect partition"
+  ]
+}

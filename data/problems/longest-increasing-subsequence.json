@@ -1,0 +1,17 @@
+{
+  "id": "longest-increasing-subsequence",
+  "title": "Longest Increasing Subsequence",
+  "slug": "longest-increasing-subsequence",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+  "tags": [
+    "dp",
+    "binary-search",
+    "array"
+  ],
+  "statement": "Given an integer array nums, return the length of the longest strictly increasing subsequence. A subsequence is derived from the array by deleting some or no elements without changing the order of the remaining elements.",
+  "patterns": [
+    "bottom-up dp",
+    "patience sorting with binary search"
+  ]
+}

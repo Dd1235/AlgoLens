@@ -1,0 +1,18 @@
+{
+  "id": "course-schedule",
+  "title": "Course Schedule",
+  "slug": "course-schedule",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/course-schedule/",
+  "tags": [
+    "graph",
+    "topological-sort",
+    "dfs",
+    "bfs"
+  ],
+  "statement": "There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses have prerequisites. Return true if you can finish all courses, otherwise false. This is equivalent to detecting a cycle in a directed graph.",
+  "patterns": [
+    "topological sort",
+    "cycle detection in directed graph"
+  ]
+}

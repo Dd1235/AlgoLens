@@ -1,0 +1,16 @@
+{
+  "id": "two-sum",
+  "title": "Two Sum",
+  "slug": "two-sum",
+  "difficulty": "easy",
+  "source_url": "https://leetcode.com/problems/two-sum/",
+  "tags": [
+    "array",
+    "hash-map"
+  ],
+  "statement": "Given an array of integers and a target, return indices of the two numbers such that they add up to the target. You may assume each input has exactly one solution and you may not use the same element twice.",
+  "patterns": [
+    "hash-map lookup",
+    "complement search"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "merge-intervals",
+  "title": "Merge Intervals",
+  "slug": "merge-intervals",
+  "difficulty": "medium",
+  "source_url": "https://leetcode.com/problems/merge-intervals/",
+  "tags": [
+    "array",
+    "sorting",
+    "intervals"
+  ],
+  "statement": "Given an array of intervals where intervals[i] = [start_i, end_i], merge all overlapping intervals and return an array of the non-overlapping intervals that cover all the intervals in the input.",
+  "patterns": [
+    "sort by start",
+    "sweep with running end"
+  ]
+}

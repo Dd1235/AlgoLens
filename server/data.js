@@ -1,11 +1,18 @@
 const fs = require("fs");
 const path = require("path");
 
-const PROBLEMS_PATH = path.join(__dirname, "..", "data", "problems.json");
+const PROBLEMS_DIR = path.join(__dirname, "..", "data", "problems");
 
 function loadProblems() {
-  const raw = fs.readFileSync(PROBLEMS_PATH, "utf8");
-  return JSON.parse(raw);
+  const files = fs
+    .readdirSync(PROBLEMS_DIR)
+    .filter((f) => f.endsWith(".json"))
+    .sort();
+
+  return files.map((file) => {
+    const raw = fs.readFileSync(path.join(PROBLEMS_DIR, file), "utf8");
+    return JSON.parse(raw);
+  });
 }
 
-module.exports = { loadProblems };
+module.exports = { loadProblems, PROBLEMS_DIR };

@@ -1,0 +1,16 @@
+{
+  "id": "edit-distance",
+  "title": "Edit Distance",
+  "slug": "edit-distance",
+  "difficulty": "hard",
+  "source_url": "https://leetcode.com/problems/edit-distance/",
+  "tags": [
+    "dp",
+    "string"
+  ],
+  "statement": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2. You have three operations permitted on a word: insert a character, delete a character, replace a character.",
+  "patterns": [
+    "2d dp on string indices",
+    "levenshtein recurrence"
+  ]
+}
