@@ -13,7 +13,7 @@ function tokenize(text) {
   if (!text) return [];
   return text
     .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, " ")
+    .replace(/[^a-z0-9\s]/g, " ")
     .split(/\s+/)
     .filter((tok) => tok.length > 0 && !STOPWORDS.has(tok));
 }

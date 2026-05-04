@@ -1,12 +1,9 @@
 const express = require("express");
 const { tokenize } = require("../search/tokenize");
-
-function problemText(p) {
-  return [p.title, p.statement, ...(p.tags || [])].join(" ");
-}
+const { buildInvertedIndex } = require("../search/inverted");
 
 function createSearchRouter(problems) {
-  const docTokens = problems.map((p) => new Set(tokenize(problemText(p))));
+  const { lookup } = buildInvertedIndex(problems);
 
   const router = express.Router();
 
@@ -18,14 +15,24 @@ function createSearchRouter(problems) {
       return res.json({ query: q, hits: [] });
     }
 
-    const hits = [];
-    problems.forEach((problem, i) => {
-      const tokens = docTokens[i];
-      const matched = queryTokens.filter((t) => tokens.has(t));
-      if (matched.length > 0) {
-        hits.push({ problem, matchedTerms: matched });
+    const matchedByDoc = new Map();
+    for (const term of queryTokens) {
+      const docs = lookup(term);
+      if (!docs) continue;
+      for (const docId of docs) {
+        let arr = matchedByDoc.get(docId);
+        if (!arr) {
+          arr = [];
+          matchedByDoc.set(docId, arr);
+        }
+        arr.push(term);
       }
-    });
+    }
+
+    const hits = [];
+    for (const [docId, matchedTerms] of matchedByDoc) {
+      hits.push({ problem: problems[docId], matchedTerms });
+    }
 
     res.json({ query: q, hits });
   });
