@@ -9,11 +9,12 @@
   <body>
     <main>
       <h1>AlgoLens</h1>
-      <p>Search DSA problems.</p>
-      <form id="search-form">
-        <input id="search-input" type="search" placeholder="e.g. two sum" autocomplete="off" />
+      <p class="tagline">Search DSA problems by keyword. Ranked with TF-IDF.</p>
+      <form id="search-form" autocomplete="off">
+        <input id="search-input" type="search" placeholder="e.g. graph cycle, monotonic, knapsack" />
         <button type="submit">Search</button>
       </form>
+      <p id="status" class="status">Type a query to search.</p>
       <ul id="results"></ul>
     </main>
     <script src="/app.js"></script>
