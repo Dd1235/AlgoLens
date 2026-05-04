@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AlgoLens · debug</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/debug.css" />
+  </head>
+  <body>
+    <main class="debug">
+      <header class="debug-header">
+        <h1>AlgoLens · debug</h1>
+        <a href="/">&larr; back to search</a>
+      </header>
+
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-pane="problems" type="button">Problems</button>
+        <button class="tab" data-pane="index" type="button">Inverted Index</button>
+        <button class="tab" data-pane="explain" type="button">Explain</button>
+      </nav>
+
+      <section id="pane-problems" class="pane active">
+        <p class="hint">Every problem in the corpus, as the server loaded it.</p>
+        <div id="problems-out"></div>
+      </section>
+
+      <section id="pane-index" class="pane">
+        <p class="hint">
+          Inverted index dump. Each row: term &rarr; document frequency (df),
+          inverse document frequency (idf), and the postings (docs containing
+          the term, with per-doc count). Sorted by df desc.
+        </p>
+        <input id="index-filter" type="search" placeholder="filter terms..." />
+        <div id="index-out"></div>
+      </section>
+
+      <section id="pane-explain" class="pane">
+        <p class="hint">
+          Enter a query to see the per-term TF/IDF/contribution math behind
+          every matching document.
+        </p>
+        <form id="explain-form">
+          <input id="explain-input" type="search" placeholder="e.g. graph cycle, dp string" />
+          <button type="submit">Explain</button>
+        </form>
+        <div id="explain-out"></div>
+      </section>
+    </main>
+    <script src="/debug.js"></script>
+  </body>
+</html>

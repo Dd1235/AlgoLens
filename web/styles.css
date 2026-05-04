@@ -19,6 +19,21 @@ h1 {
   letter-spacing: -0.01em;
 }
 
+.page-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.debug-link {
+  font-size: 0.8rem;
+  color: #4a6cf7;
+  text-decoration: none;
+}
+
+.debug-link:hover { text-decoration: underline; }
+
 .tagline {
   margin: 0 0 1.25rem;
   color: #6b6b70;
