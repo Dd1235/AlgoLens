@@ -78,6 +78,61 @@ class TfIdfIndex {
     hits.sort((a, b) => b.score - a.score);
     return hits.slice(0, k);
   }
+
+  dumpInverted() {
+    const terms = [];
+    for (const [term, docIds] of this.postings) {
+      const docs = [...docIds].map((docId) => ({
+        id: this.problems[docId].id,
+        title: this.problems[docId].title,
+        count: this.docTermCounts[docId].get(term) || 0,
+      }));
+      terms.push({
+        term,
+        df: this.df.get(term) || 0,
+        idf: this.idf.get(term) ?? 0,
+        docs,
+      });
+    }
+    terms.sort((a, b) => b.df - a.df || a.term.localeCompare(b.term));
+    return { totalTerms: terms.length, totalDocs: this.N, terms };
+  }
+
+  explain(query) {
+    const queryTokens = tokenize(query);
+    const perTerm = queryTokens.map((term) => {
+      const idf = this.idf.get(term);
+      const df = this.df.get(term) || 0;
+      const docs = this.postings.get(term);
+      const skipped =
+        idf === undefined ? "unknown-term" : idf === 0 ? "idf-zero" : null;
+      return { term, df, idf: idf ?? null, docCount: docs ? docs.size : 0, skipped };
+    });
+
+    const breakdown = new Map();
+    for (const term of queryTokens) {
+      const idf = this.idf.get(term);
+      if (idf === undefined || idf === 0) continue;
+      const docs = this.postings.get(term);
+      if (!docs) continue;
+      for (const docId of docs) {
+        const count = this.docTermCounts[docId].get(term) || 0;
+        const len = this.docLengths[docId] || 1;
+        const tf = count / len;
+        const contribution = tf * idf;
+        let row = breakdown.get(docId);
+        if (!row) {
+          row = { docId, problem: this.problems[docId], total: 0, terms: [] };
+          breakdown.set(docId, row);
+        }
+        row.terms.push({ term, count, docLength: len, tf, idf, contribution });
+        row.total += contribution;
+      }
+    }
+
+    const docs = [...breakdown.values()].sort((a, b) => b.total - a.total);
+    return { query, queryTokens, perTerm, docs };
+  }
 }
 
 module.exports = { TfIdfIndex };

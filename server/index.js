@@ -3,6 +3,7 @@ const path = require("path");
 const { loadProblems } = require("./data");
 const { TfIdfIndex } = require("./search/tfidf");
 const { createSearchRouter } = require("./routes/search");
+const { createDebugRouter } = require("./routes/debug");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -14,6 +15,7 @@ console.log(`Loaded ${problems.length} problems; tf-idf index ready`);
 const webDir = path.join(__dirname, "..", "web");
 app.use(express.static(webDir));
 app.use("/api", createSearchRouter(index));
+app.use("/api", createDebugRouter({ problems, index }));
 
 app.listen(PORT, () => {
   console.log(`AlgoLens listening on http://localhost:${PORT}`);
