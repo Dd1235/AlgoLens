@@ -1,0 +1,20 @@
+{
+  "id": "cf-474b-worms",
+  "title": "Worms",
+  "slug": "codeforces-474b-worms",
+  "platform": "codeforces",
+  "difficulty": "easy",
+  "source_url": "https://codeforces.com/problemset/problem/474/B",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "statement": "Given pile sizes and many worm labels from the concatenated numbering of all piles, answer which pile contains each queried label.",
+  "patterns": [
+    "prefix sums",
+    "lower bound",
+    "binary search over cumulative counts",
+    "range ownership query"
+  ]
+}

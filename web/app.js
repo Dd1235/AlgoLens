@@ -132,7 +132,7 @@ function render(hits) {
       <p>${escapeHtml(hit.problem.statement || "")}</p>
       <p class="tags"><strong>tags:</strong> ${(hit.problem.tags || []).map(escapeHtml).join(", ")}</p>
       <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || []).map(escapeHtml).join(", ")}</p>
-      ${hit.problem.source_url ? `<p><a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open on leetcode &rarr;</a></p>` : ""}
+      ${hit.problem.source_url ? `<p><a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open original problem &rarr;</a></p>` : ""}
     `;
 
     header.addEventListener("click", () => {

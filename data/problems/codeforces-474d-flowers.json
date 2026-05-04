@@ -1,0 +1,21 @@
+{
+  "id": "cf-474d-flowers",
+  "title": "Flowers",
+  "slug": "codeforces-474d-flowers",
+  "platform": "codeforces",
+  "difficulty": "medium",
+  "source_url": "https://codeforces.com/problemset/problem/474/D",
+  "tags": [
+    "dp",
+    "prefix-sum",
+    "combinatorics"
+  ],
+  "statement": "Count how many valid flower sequences have total length in each query range when one color can appear singly and the other color must appear in blocks of size k.",
+  "patterns": [
+    "bottom-up dp on length",
+    "unbounded knapsack",
+    "linear recurrence",
+    "prefix sums for range queries",
+    "count ways modulo"
+  ]
+}

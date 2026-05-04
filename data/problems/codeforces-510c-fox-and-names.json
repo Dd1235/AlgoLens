@@ -1,0 +1,23 @@
+{
+  "id": "cf-510c-fox-and-names",
+  "title": "Fox And Names",
+  "slug": "codeforces-510c-fox-and-names",
+  "platform": "codeforces",
+  "difficulty": "medium",
+  "source_url": "https://codeforces.com/problemset/problem/510/C",
+  "tags": [
+    "graph",
+    "topological-sort",
+    "dfs",
+    "cycle-detection",
+    "string"
+  ],
+  "statement": "Given a list of names that should be sorted under some unknown alphabet order, infer a valid ordering of letters or report that no such ordering exists.",
+  "patterns": [
+    "topological sort",
+    "derive graph edges from adjacent strings",
+    "cycle detection in directed graph",
+    "invalid prefix ordering",
+    "alien dictionary"
+  ]
+}

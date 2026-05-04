@@ -1,0 +1,23 @@
+{
+  "id": "rectangle-area-ii",
+  "title": "Rectangle Area II",
+  "slug": "rectangle-area-ii",
+  "platform": "leetcode",
+  "difficulty": "hard",
+  "source_url": "https://leetcode.com/problems/rectangle-area-ii/",
+  "tags": [
+    "geometry",
+    "line-sweep",
+    "segment-tree",
+    "coordinate-compression",
+    "ordered-set"
+  ],
+  "statement": "Given axis-aligned rectangles, compute the total union area covered by them, counting overlapping regions once and returning the area modulo 1e9+7.",
+  "patterns": [
+    "sweep line",
+    "rectangle union area",
+    "interval union on active y ranges",
+    "coordinate compression",
+    "segment tree with coverage count"
+  ]
+}

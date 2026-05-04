@@ -1,0 +1,23 @@
+{
+  "id": "cf-1365d-solve-the-maze",
+  "title": "Solve The Maze",
+  "slug": "codeforces-1365d-solve-the-maze",
+  "platform": "codeforces",
+  "difficulty": "hard",
+  "source_url": "https://codeforces.com/problemset/problem/1365/D",
+  "tags": [
+    "grid",
+    "graph",
+    "dfs",
+    "bfs",
+    "greedy"
+  ],
+  "statement": "Given a maze grid with empty cells, walls, good people, and bad people, decide whether some empty cells can be blocked so every good person can reach the exit while no bad person can.",
+  "patterns": [
+    "grid reachability",
+    "reverse bfs from exit",
+    "block neighbors of forbidden cells",
+    "flood fill after mutation",
+    "connected components on grid"
+  ]
+}

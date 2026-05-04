@@ -1,0 +1,22 @@
+{
+  "id": "cf-489b-bersu-ball",
+  "title": "BerSU Ball",
+  "slug": "codeforces-489b-bersu-ball",
+  "platform": "codeforces",
+  "difficulty": "easy",
+  "source_url": "https://codeforces.com/problemset/problem/489/B",
+  "tags": [
+    "array",
+    "sorting",
+    "two-pointers",
+    "greedy",
+    "matching"
+  ],
+  "statement": "Given two groups with skill values, form the maximum number of pairs where the two matched skills differ by at most one.",
+  "patterns": [
+    "sort both arrays",
+    "two pointers greedy matching",
+    "maximum matching with local threshold",
+    "pair smallest feasible values"
+  ]
+}

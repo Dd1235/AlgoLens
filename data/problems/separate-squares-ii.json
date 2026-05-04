@@ -1,0 +1,24 @@
+{
+  "id": "separate-squares-ii",
+  "title": "Separate Squares II",
+  "slug": "separate-squares-ii",
+  "platform": "leetcode",
+  "difficulty": "hard",
+  "source_url": "https://leetcode.com/problems/separate-squares-ii/",
+  "tags": [
+    "geometry",
+    "binary-search",
+    "line-sweep",
+    "segment-tree",
+    "coordinate-compression"
+  ],
+  "statement": "Given possibly overlapping axis-aligned squares, find the minimum horizontal line y-coordinate that splits the union area into equal area above and below.",
+  "patterns": [
+    "binary search answer",
+    "horizontal cut by area",
+    "sweep line union area",
+    "interval union on x ranges",
+    "overlap counted once",
+    "rectangle union area"
+  ]
+}

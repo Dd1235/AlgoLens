@@ -1,0 +1,22 @@
+{
+  "id": "cf-279b-books",
+  "title": "Books",
+  "slug": "codeforces-279b-books",
+  "platform": "codeforces",
+  "difficulty": "medium",
+  "source_url": "https://codeforces.com/problemset/problem/279/B",
+  "tags": [
+    "array",
+    "two-pointers",
+    "sliding-window",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "statement": "Given reading times for books in order and a total time budget, find the longest contiguous segment of books that can be fully read without exceeding the budget.",
+  "patterns": [
+    "sliding window with running sum",
+    "two pointers on contiguous subarray",
+    "prefix sum with binary search",
+    "longest subarray under sum limit"
+  ]
+}

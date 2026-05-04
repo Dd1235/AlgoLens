@@ -1,0 +1,22 @@
+{
+  "id": "cf-545c-woodcutters",
+  "title": "Woodcutters",
+  "slug": "codeforces-545c-woodcutters",
+  "platform": "codeforces",
+  "difficulty": "medium",
+  "source_url": "https://codeforces.com/problemset/problem/545/C",
+  "tags": [
+    "greedy",
+    "dp",
+    "intervals",
+    "sorting"
+  ],
+  "statement": "Given sorted tree positions and heights, choose as many trees as possible to cut left or right without overlapping already occupied points or fallen tree segments.",
+  "patterns": [
+    "greedy interval placement",
+    "sort by coordinate",
+    "keep last occupied endpoint",
+    "left or right choice",
+    "non-overlapping intervals"
+  ]
+}
