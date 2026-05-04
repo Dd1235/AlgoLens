@@ -5,7 +5,11 @@ function createSearchRouter(problems) {
 
   router.get("/search", (req, res) => {
     const q = (req.query.q || "").toString();
-    const hits = problems.map((problem) => ({ problem }));
+    const needle = q.trim().toLowerCase();
+    const matches = needle
+      ? problems.filter((p) => p.title.toLowerCase().includes(needle))
+      : problems;
+    const hits = matches.map((problem) => ({ problem }));
     res.json({ query: q, hits });
   });
 
