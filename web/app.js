@@ -52,9 +52,16 @@ async function runSearch(rawQuery) {
 
 function render(hits) {
   resultsEl.innerHTML = "";
-  for (const hit of hits) {
+
+  const topScore = hits.reduce(
+    (m, h) => (typeof h.score === "number" ? Math.max(m, h.score) : m),
+    0
+  );
+
+  hits.forEach((hit, i) => {
     const li = document.createElement("li");
     li.className = "result";
+    li.style.animationDelay = `${Math.min(i, 8) * 30}ms`;
 
     const header = document.createElement("div");
     header.className = "result-header";
@@ -66,16 +73,27 @@ function render(hits) {
     const meta = document.createElement("span");
     meta.className = "result-meta";
     const score = typeof hit.score === "number" ? hit.score.toFixed(4) : "—";
-    meta.textContent = `${hit.problem.difficulty} · score ${score}`;
+    meta.textContent = `${hit.problem.difficulty} · ${score}`;
 
     header.appendChild(title);
     header.appendChild(meta);
 
+    const bar = document.createElement("div");
+    bar.className = "score-bar";
+    const fill = document.createElement("div");
+    fill.className = "score-bar-fill";
+    bar.appendChild(fill);
+
     const matched = document.createElement("div");
     matched.className = "result-matched";
-    matched.textContent = (hit.matchedTerms || []).length
-      ? `matched: ${hit.matchedTerms.join(", ")}`
-      : "";
+    if ((hit.matchedTerms || []).length) {
+      for (const t of hit.matchedTerms) {
+        const chip = document.createElement("span");
+        chip.className = "matched-chip";
+        chip.textContent = t;
+        matched.appendChild(chip);
+      }
+    }
 
     const detail = document.createElement("div");
     detail.className = "result-detail hidden";
@@ -83,6 +101,7 @@ function render(hits) {
       <p>${escapeHtml(hit.problem.statement || "")}</p>
       <p class="tags"><strong>tags:</strong> ${(hit.problem.tags || []).map(escapeHtml).join(", ")}</p>
       <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || []).map(escapeHtml).join(", ")}</p>
+      ${hit.problem.source_url ? `<p><a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open on leetcode &rarr;</a></p>` : ""}
     `;
 
     header.addEventListener("click", () => {
@@ -90,10 +109,18 @@ function render(hits) {
     });
 
     li.appendChild(header);
-    if (matched.textContent) li.appendChild(matched);
+    li.appendChild(bar);
+    if (matched.childNodes.length > 0) li.appendChild(matched);
     li.appendChild(detail);
     resultsEl.appendChild(li);
-  }
+
+    if (topScore > 0 && typeof hit.score === "number") {
+      const pct = Math.max(2, Math.round((hit.score / topScore) * 100));
+      requestAnimationFrame(() => {
+        fill.style.width = `${pct}%`;
+      });
+    }
+  });
 }
 
 function escapeHtml(s) {
