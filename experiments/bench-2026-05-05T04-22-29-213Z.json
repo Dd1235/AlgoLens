@@ -1,0 +1,824 @@
+{
+  "timestamp": "2026-05-05T04:22:29.219Z",
+  "corpus": {
+    "docs": 1185,
+    "loadMs": 229,
+    "build": {
+      "tfidf": 18,
+      "bm25": 17
+    }
+  },
+  "queriesFile": "bench/queries.json",
+  "queryCount": 10,
+  "latencyRepeats": 50,
+  "results": [
+    {
+      "ranker": "tfidf",
+      "queryCount": 10,
+      "aggregate": {
+        "P@1": 0.6,
+        "P@5": 0.28,
+        "MRR": 0.727,
+        "nDCG@10": 0.586
+      },
+      "latency": {
+        "median_ms": 0.077,
+        "p95_ms": 0.249,
+        "mean_ms": 0.095
+      },
+      "perQuery": [
+        {
+          "query": "two sum",
+          "relevant": [
+            "leetcode-two-sum",
+            "cses-1640",
+            "leetcode-3sum"
+          ],
+          "top5": [
+            {
+              "id": "cses-1640",
+              "score": 0.3133
+            },
+            {
+              "id": "cses-1641",
+              "score": 0.3061
+            },
+            {
+              "id": "cses-3150",
+              "score": 0.2874
+            },
+            {
+              "id": "cses-1660",
+              "score": 0.2781
+            },
+            {
+              "id": "leetcode-number-of-submatrices-that-sum-to-target",
+              "score": 0.2588
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.2,
+          "RR": 1,
+          "nDCG@10": 0.469,
+          "latency": {
+            "median_ms": 0.24,
+            "p95_ms": 0.398,
+            "mean_ms": 0.254
+          }
+        },
+        {
+          "query": "monotonic stack next greater element",
+          "relevant": [
+            "leetcode-next-greater-element-ii",
+            "leetcode-largest-rectangle-in-histogram",
+            "leetcode-trapping-rain-water"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-next-greater-element-iv",
+              "score": 1.4717
+            },
+            {
+              "id": "leetcode-next-greater-element-ii",
+              "score": 1.4356
+            },
+            {
+              "id": "leetcode-daily-temperatures",
+              "score": 0.8917
+            },
+            {
+              "id": "leetcode-find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+              "score": 0.639
+            },
+            {
+              "id": "leetcode-maximum-frequency-stack",
+              "score": 0.6285
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0.2,
+          "RR": 0.5,
+          "nDCG@10": 0.444,
+          "latency": {
+            "median_ms": 0.04,
+            "p95_ms": 0.05,
+            "mean_ms": 0.042
+          }
+        },
+        {
+          "query": "shortest path graph",
+          "relevant": [
+            "leetcode-design-graph-with-shortest-path-calculator",
+            "leetcode-find-edges-in-shortest-paths",
+            "cses-1667",
+            "cses-1671",
+            "cses-1672"
+          ],
+          "top5": [
+            {
+              "id": "cses-1667",
+              "score": 0.7553
+            },
+            {
+              "id": "leetcode-design-graph-with-shortest-path-calculator",
+              "score": 0.7529
+            },
+            {
+              "id": "leetcode-find-edges-in-shortest-paths",
+              "score": 0.6969
+            },
+            {
+              "id": "leetcode-shortest-cycle-in-a-graph",
+              "score": 0.6569
+            },
+            {
+              "id": "cses-1672",
+              "score": 0.6173
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.8,
+          "RR": 1,
+          "nDCG@10": 0.961,
+          "latency": {
+            "median_ms": 0.068,
+            "p95_ms": 0.099,
+            "mean_ms": 0.076
+          }
+        },
+        {
+          "query": "binary tree level order traversal",
+          "relevant": [
+            "leetcode-binary-tree-level-order-traversal",
+            "leetcode-vertical-order-traversal-of-a-binary-tree"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-binary-tree-level-order-traversal",
+              "score": 1.8571
+            },
+            {
+              "id": "cses-1702",
+              "score": 0.7579
+            },
+            {
+              "id": "leetcode-recover-a-tree-from-preorder-traversal",
+              "score": 0.7239
+            },
+            {
+              "id": "leetcode-vertical-order-traversal-of-a-binary-tree",
+              "score": 0.7089
+            },
+            {
+              "id": "leetcode-maximum-sum-bst-in-binary-tree",
+              "score": 0.5299
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.4,
+          "RR": 1,
+          "nDCG@10": 0.877,
+          "latency": {
+            "median_ms": 0.126,
+            "p95_ms": 0.15,
+            "mean_ms": 0.131
+          }
+        },
+        {
+          "query": "longest increasing subsequence",
+          "relevant": [
+            "leetcode-longest-increasing-subsequence",
+            "leetcode-longest-increasing-subsequence-ii",
+            "leetcode-russian-doll-envelopes"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-longest-increasing-subsequence",
+              "score": 1.2654
+            },
+            {
+              "id": "cses-1145",
+              "score": 1.1882
+            },
+            {
+              "id": "cses-3404",
+              "score": 0.8102
+            },
+            {
+              "id": "leetcode-length-of-the-longest-increasing-path",
+              "score": 0.6302
+            },
+            {
+              "id": "leetcode-longest-subsequence-repeated-k-times",
+              "score": 0.588
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.2,
+          "RR": 1,
+          "nDCG@10": 0.626,
+          "latency": {
+            "median_ms": 0.031,
+            "p95_ms": 0.043,
+            "mean_ms": 0.033
+          }
+        },
+        {
+          "query": "topological sort course schedule",
+          "relevant": [
+            "leetcode-course-schedule",
+            "leetcode-course-schedule-ii",
+            "leetcode-course-schedule-iii"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-course-schedule",
+              "score": 0.9614
+            },
+            {
+              "id": "cses-1679",
+              "score": 0.8584
+            },
+            {
+              "id": "cses-1757",
+              "score": 0.8012
+            },
+            {
+              "id": "leetcode-course-schedule-ii",
+              "score": 0.6891
+            },
+            {
+              "id": "cses-1756",
+              "score": 0.5921
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.4,
+          "RR": 1,
+          "nDCG@10": 0.807,
+          "latency": {
+            "median_ms": 0.011,
+            "p95_ms": 0.02,
+            "mean_ms": 0.013
+          }
+        },
+        {
+          "query": "trie prefix word search",
+          "relevant": [
+            "leetcode-word-search-ii"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-word-ladder-ii",
+              "score": 0.6902
+            },
+            {
+              "id": "leetcode-word-ladder",
+              "score": 0.69
+            },
+            {
+              "id": "leetcode-prefix-and-suffix-search",
+              "score": 0.6729
+            },
+            {
+              "id": "leetcode-stream-of-characters",
+              "score": 0.5733
+            },
+            {
+              "id": "leetcode-word-break-ii",
+              "score": 0.5458
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0,
+          "RR": 0.125,
+          "nDCG@10": 0.315,
+          "latency": {
+            "median_ms": 0.122,
+            "p95_ms": 0.152,
+            "mean_ms": 0.128
+          }
+        },
+        {
+          "query": "union find connected components",
+          "relevant": [
+            "leetcode-count-connected-components-in-lcm-graph",
+            "leetcode-number-of-islands"
+          ],
+          "top5": [
+            {
+              "id": "cses-1676",
+              "score": 0.5762
+            },
+            {
+              "id": "leetcode-making-a-large-island",
+              "score": 0.5716
+            },
+            {
+              "id": "leetcode-minimize-malware-spread",
+              "score": 0.5716
+            },
+            {
+              "id": "cses-1677",
+              "score": 0.5674
+            },
+            {
+              "id": "leetcode-gcd-sort-of-an-array",
+              "score": 0.5668
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0,
+          "RR": 0.143,
+          "nDCG@10": 0.204,
+          "latency": {
+            "median_ms": 0.126,
+            "p95_ms": 0.159,
+            "mean_ms": 0.131
+          }
+        },
+        {
+          "query": "sliding window maximum",
+          "relevant": [
+            "leetcode-sliding-window-maximum",
+            "leetcode-sliding-window-median",
+            "leetcode-longest-substring-without-repeating-characters"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-sliding-window-maximum",
+              "score": 0.8656
+            },
+            {
+              "id": "leetcode-sliding-window-median",
+              "score": 0.8571
+            },
+            {
+              "id": "cses-3227",
+              "score": 0.82
+            },
+            {
+              "id": "cses-3224",
+              "score": 0.7381
+            },
+            {
+              "id": "cses-3219",
+              "score": 0.7127
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.4,
+          "RR": 1,
+          "nDCG@10": 0.765,
+          "latency": {
+            "median_ms": 0.051,
+            "p95_ms": 0.069,
+            "mean_ms": 0.055
+          }
+        },
+        {
+          "query": "knapsack coin change dp",
+          "relevant": [
+            "leetcode-coin-change",
+            "leetcode-partition-equal-subset-sum"
+          ],
+          "top5": [
+            {
+              "id": "cses-1634",
+              "score": 0.809
+            },
+            {
+              "id": "leetcode-coin-change",
+              "score": 0.7513
+            },
+            {
+              "id": "cses-1159",
+              "score": 0.5268
+            },
+            {
+              "id": "cses-1635",
+              "score": 0.4369
+            },
+            {
+              "id": "cses-1158",
+              "score": 0.3902
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0.2,
+          "RR": 0.5,
+          "nDCG@10": 0.387,
+          "latency": {
+            "median_ms": 0.079,
+            "p95_ms": 0.102,
+            "mean_ms": 0.086
+          }
+        }
+      ]
+    },
+    {
+      "ranker": "bm25",
+      "queryCount": 10,
+      "aggregate": {
+        "P@1": 0.7,
+        "P@5": 0.36,
+        "MRR": 0.825,
+        "nDCG@10": 0.642
+      },
+      "latency": {
+        "median_ms": 0.081,
+        "p95_ms": 0.237,
+        "mean_ms": 0.088
+      },
+      "perQuery": [
+        {
+          "query": "two sum",
+          "relevant": [
+            "leetcode-two-sum",
+            "cses-1640",
+            "leetcode-3sum"
+          ],
+          "top5": [
+            {
+              "id": "cses-1640",
+              "score": 4.5155
+            },
+            {
+              "id": "cses-1641",
+              "score": 4.5004
+            },
+            {
+              "id": "cses-3150",
+              "score": 4.4331
+            },
+            {
+              "id": "leetcode-count-subarrays-with-score-less-than-k",
+              "score": 4.0816
+            },
+            {
+              "id": "cses-1660",
+              "score": 4.0296
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.2,
+          "RR": 1,
+          "nDCG@10": 0.469,
+          "latency": {
+            "median_ms": 0.237,
+            "p95_ms": 0.338,
+            "mean_ms": 0.221
+          }
+        },
+        {
+          "query": "monotonic stack next greater element",
+          "relevant": [
+            "leetcode-next-greater-element-ii",
+            "leetcode-largest-rectangle-in-histogram",
+            "leetcode-trapping-rain-water"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-next-greater-element-iv",
+              "score": 27.1663
+            },
+            {
+              "id": "leetcode-next-greater-element-ii",
+              "score": 26.879
+            },
+            {
+              "id": "leetcode-daily-temperatures",
+              "score": 21.14
+            },
+            {
+              "id": "leetcode-number-of-visible-people-in-a-queue",
+              "score": 15.5645
+            },
+            {
+              "id": "leetcode-find-the-number-of-subarrays-where-boundary-elements-are-maximum",
+              "score": 12.8557
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0.2,
+          "RR": 0.5,
+          "nDCG@10": 0.453,
+          "latency": {
+            "median_ms": 0.036,
+            "p95_ms": 0.046,
+            "mean_ms": 0.038
+          }
+        },
+        {
+          "query": "shortest path graph",
+          "relevant": [
+            "leetcode-design-graph-with-shortest-path-calculator",
+            "leetcode-find-edges-in-shortest-paths",
+            "cses-1667",
+            "cses-1671",
+            "cses-1672"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-design-graph-with-shortest-path-calculator",
+              "score": 11.7609
+            },
+            {
+              "id": "cses-1667",
+              "score": 11.6183
+            },
+            {
+              "id": "leetcode-find-edges-in-shortest-paths",
+              "score": 11.4163
+            },
+            {
+              "id": "cses-1672",
+              "score": 11.0779
+            },
+            {
+              "id": "leetcode-modify-graph-edge-weights",
+              "score": 10.7621
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.8,
+          "RR": 1,
+          "nDCG@10": 0.869,
+          "latency": {
+            "median_ms": 0.072,
+            "p95_ms": 0.092,
+            "mean_ms": 0.079
+          }
+        },
+        {
+          "query": "binary tree level order traversal",
+          "relevant": [
+            "leetcode-binary-tree-level-order-traversal",
+            "leetcode-vertical-order-traversal-of-a-binary-tree"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-binary-tree-level-order-traversal",
+              "score": 26.8867
+            },
+            {
+              "id": "leetcode-vertical-order-traversal-of-a-binary-tree",
+              "score": 14.946
+            },
+            {
+              "id": "leetcode-recover-a-tree-from-preorder-traversal",
+              "score": 12.4082
+            },
+            {
+              "id": "cses-1702",
+              "score": 10.8701
+            },
+            {
+              "id": "leetcode-k-th-smallest-in-lexicographical-order",
+              "score": 10.6111
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.4,
+          "RR": 1,
+          "nDCG@10": 1,
+          "latency": {
+            "median_ms": 0.106,
+            "p95_ms": 0.129,
+            "mean_ms": 0.111
+          }
+        },
+        {
+          "query": "longest increasing subsequence",
+          "relevant": [
+            "leetcode-longest-increasing-subsequence",
+            "leetcode-longest-increasing-subsequence-ii",
+            "leetcode-russian-doll-envelopes"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-longest-increasing-subsequence",
+              "score": 16.7397
+            },
+            {
+              "id": "cses-1145",
+              "score": 16.2567
+            },
+            {
+              "id": "leetcode-length-of-the-longest-increasing-path",
+              "score": 13.0612
+            },
+            {
+              "id": "leetcode-longest-increasing-subsequence-ii",
+              "score": 12.3646
+            },
+            {
+              "id": "cses-2215",
+              "score": 12.2803
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.4,
+          "RR": 1,
+          "nDCG@10": 0.671,
+          "latency": {
+            "median_ms": 0.03,
+            "p95_ms": 0.04,
+            "mean_ms": 0.032
+          }
+        },
+        {
+          "query": "topological sort course schedule",
+          "relevant": [
+            "leetcode-course-schedule",
+            "leetcode-course-schedule-ii",
+            "leetcode-course-schedule-iii"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-course-schedule",
+              "score": 21.8373
+            },
+            {
+              "id": "cses-1679",
+              "score": 21.0014
+            },
+            {
+              "id": "cses-1757",
+              "score": 20.4798
+            },
+            {
+              "id": "leetcode-course-schedule-ii",
+              "score": 18.9376
+            },
+            {
+              "id": "leetcode-course-schedule-iii",
+              "score": 11.4038
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.6,
+          "RR": 1,
+          "nDCG@10": 0.853,
+          "latency": {
+            "median_ms": 0.01,
+            "p95_ms": 0.014,
+            "mean_ms": 0.011
+          }
+        },
+        {
+          "query": "trie prefix word search",
+          "relevant": [
+            "leetcode-word-search-ii"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-prefix-and-suffix-search",
+              "score": 14.387
+            },
+            {
+              "id": "leetcode-word-break-ii",
+              "score": 11.6051
+            },
+            {
+              "id": "leetcode-word-break",
+              "score": 11.472
+            },
+            {
+              "id": "leetcode-word-search-ii",
+              "score": 11.3281
+            },
+            {
+              "id": "cses-1731",
+              "score": 11.3139
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0.2,
+          "RR": 0.25,
+          "nDCG@10": 0.431,
+          "latency": {
+            "median_ms": 0.109,
+            "p95_ms": 0.124,
+            "mean_ms": 0.112
+          }
+        },
+        {
+          "query": "union find connected components",
+          "relevant": [
+            "leetcode-count-connected-components-in-lcm-graph",
+            "leetcode-number-of-islands"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-count-connected-components-in-lcm-graph",
+              "score": 14.0382
+            },
+            {
+              "id": "leetcode-making-a-large-island",
+              "score": 13.8008
+            },
+            {
+              "id": "leetcode-minimize-malware-spread",
+              "score": 13.8008
+            },
+            {
+              "id": "leetcode-gcd-sort-of-an-array",
+              "score": 13.347
+            },
+            {
+              "id": "cses-1666",
+              "score": 13.347
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.2,
+          "RR": 1,
+          "nDCG@10": 0.613,
+          "latency": {
+            "median_ms": 0.118,
+            "p95_ms": 0.136,
+            "mean_ms": 0.123
+          }
+        },
+        {
+          "query": "sliding window maximum",
+          "relevant": [
+            "leetcode-sliding-window-maximum",
+            "leetcode-sliding-window-median",
+            "leetcode-longest-substring-without-repeating-characters"
+          ],
+          "top5": [
+            {
+              "id": "leetcode-sliding-window-maximum",
+              "score": 13.2193
+            },
+            {
+              "id": "cses-3227",
+              "score": 12.4555
+            },
+            {
+              "id": "cses-1644",
+              "score": 11.1902
+            },
+            {
+              "id": "leetcode-sliding-window-median",
+              "score": 11.0842
+            },
+            {
+              "id": "cses-3224",
+              "score": 10.7664
+            }
+          ],
+          "P@1": 1,
+          "P@5": 0.4,
+          "RR": 1,
+          "nDCG@10": 0.671,
+          "latency": {
+            "median_ms": 0.057,
+            "p95_ms": 0.064,
+            "mean_ms": 0.058
+          }
+        },
+        {
+          "query": "knapsack coin change dp",
+          "relevant": [
+            "leetcode-coin-change",
+            "leetcode-partition-equal-subset-sum"
+          ],
+          "top5": [
+            {
+              "id": "cses-1634",
+              "score": 18.7951
+            },
+            {
+              "id": "leetcode-coin-change",
+              "score": 15.1149
+            },
+            {
+              "id": "cses-1635",
+              "score": 11.8051
+            },
+            {
+              "id": "cses-1159",
+              "score": 9.3769
+            },
+            {
+              "id": "cses-1158",
+              "score": 8.4247
+            }
+          ],
+          "P@1": 0,
+          "P@5": 0.2,
+          "RR": 0.5,
+          "nDCG@10": 0.387,
+          "latency": {
+            "median_ms": 0.087,
+            "p95_ms": 0.108,
+            "mean_ms": 0.091
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "notes": "Seed query set for sanity-checking the bench harness. Each entry has a query string and a list of ground-truth relevant problem ids. Labels are author-judgment, not crowd-sourced — treat as a small smoke set, not a publishable benchmark. Expand to ~30 queries before drawing real conclusions.",
+  "queries": [
+    {
+      "query": "two sum",
+      "relevant": ["leetcode-two-sum", "cses-1640", "leetcode-3sum"],
+      "intent": "exact problem title + close variants"
+    },
+    {
+      "query": "monotonic stack next greater element",
+      "relevant": ["leetcode-next-greater-element-ii", "leetcode-largest-rectangle-in-histogram", "leetcode-trapping-rain-water"],
+      "intent": "pattern-driven: monotonic stack family"
+    },
+    {
+      "query": "shortest path graph",
+      "relevant": ["leetcode-design-graph-with-shortest-path-calculator", "leetcode-find-edges-in-shortest-paths", "cses-1667", "cses-1671", "cses-1672"],
+      "intent": "graph + shortest path family (CSES Dijkstra/Floyd)"
+    },
+    {
+      "query": "binary tree level order traversal",
+      "relevant": ["leetcode-binary-tree-level-order-traversal", "leetcode-vertical-order-traversal-of-a-binary-tree"],
+      "intent": "exact title + close variant"
+    },
+    {
+      "query": "longest increasing subsequence",
+      "relevant": ["leetcode-longest-increasing-subsequence", "leetcode-longest-increasing-subsequence-ii", "leetcode-russian-doll-envelopes"],
+      "intent": "exact + LIS-equivalent reductions"
+    },
+    {
+      "query": "topological sort course schedule",
+      "relevant": ["leetcode-course-schedule", "leetcode-course-schedule-ii", "leetcode-course-schedule-iii"],
+      "intent": "topo sort applications"
+    },
+    {
+      "query": "trie prefix word search",
+      "relevant": ["leetcode-word-search-ii"],
+      "intent": "trie-based string search (corpus is thin here — only one strong match)"
+    },
+    {
+      "query": "union find connected components",
+      "relevant": ["leetcode-count-connected-components-in-lcm-graph", "leetcode-number-of-islands"],
+      "intent": "DSU / connectivity"
+    },
+    {
+      "query": "sliding window maximum",
+      "relevant": ["leetcode-sliding-window-maximum", "leetcode-sliding-window-median", "leetcode-longest-substring-without-repeating-characters"],
+      "intent": "sliding-window family"
+    },
+    {
+      "query": "knapsack coin change dp",
+      "relevant": ["leetcode-coin-change", "leetcode-partition-equal-subset-sum"],
+      "intent": "0/1 and unbounded knapsack DP"
+    }
+  ]
+}
