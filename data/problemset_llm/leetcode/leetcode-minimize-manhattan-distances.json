@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimize-manhattan-distances",
+  "title": "Minimize Manhattan Distances",
+  "slug": "minimize-manhattan-distances",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-manhattan-distances/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry",
+    "sorting",
+    "ordered-set"
+  ],
+  "statement": "Given a set of points on a 2D plane, remove exactly one point to minimize the maximum Manhattan distance between any two remaining points.",
+  "tags": [
+    "array",
+    "geometry",
+    "sorting"
+  ],
+  "patterns": [
+    "coordinate-compression",
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923491,
+    "pattern_confidence": {
+      "coordinate-compression": 0.85,
+      "sorting": 0.9,
+      "greedy": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-number-of-balanced-permutations",
+  "title": "Count Number of Balanced Permutations",
+  "slug": "count-number-of-balanced-permutations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-balanced-permutations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Given a string of digits, count the number of distinct permutations where the sum of digits at even indices equals the sum at odd indices, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922634,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

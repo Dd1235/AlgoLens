@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-total-distance-traveled",
+  "title": "Minimum Total Distance Traveled",
+  "slug": "minimum-total-distance-traveled",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-total-distance-traveled/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given positions of robots and factories on a line, assign each robot to a factory with capacity limits to minimize the total travel distance of all robots.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923713,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "dynamic-programming": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

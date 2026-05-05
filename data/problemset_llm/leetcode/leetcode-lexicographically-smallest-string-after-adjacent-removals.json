@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-lexicographically-smallest-string-after-adjacent-removals",
+  "title": "Lexicographically Smallest String After Adjacent Removals",
+  "slug": "lexicographically-smallest-string-after-adjacent-removals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a lowercase string, repeatedly remove any adjacent pair of characters that are consecutive letters in the alphabet (considering 'a' and 'z' consecutive) to obtain the lexicographically smallest possible resulting string.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923141,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.7,
+      "stack": 0.6
+    }
+  }
+}

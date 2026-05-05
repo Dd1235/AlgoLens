@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-operations-to-equalize-binary-string",
+  "title": "Minimum Operations to Equalize Binary String",
+  "slug": "minimum-operations-to-equalize-binary-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "breadth-first-search",
+    "union-find",
+    "ordered-set"
+  ],
+  "statement": "Given a binary string and an integer k, determine the minimum number of operations needed to flip exactly k distinct bits per operation to make all characters '1', or return -1 if impossible.",
+  "tags": [
+    "string",
+    "bitmask",
+    "math"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923640,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "greedy": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

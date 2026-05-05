@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-digit-one",
+  "title": "Number of Digit One",
+  "slug": "number-of-digit-one",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-digit-one/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "recursion"
+  ],
+  "statement": "Count the total occurrences of the digit '1' in all non-negative integers up to a given integer n.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "recursion"
+  ],
+  "patterns": [
+    "digit-dp",
+    "prefix-sum",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923766,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "prefix-sum": 0.7,
+      "divide-and-conquer": 0.6
+    }
+  }
+}

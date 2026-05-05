@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-xor-after-range-multiplication-queries-ii",
+  "title": "XOR After Range Multiplication Queries II",
+  "slug": "xor-after-range-multiplication-queries-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "divide-and-conquer"
+  ],
+  "statement": "Given an integer array and multiple queries each specifying a range and step, multiply elements at indices starting from the range's left bound to right bound with a given step by a value modulo 10^9+7, then return the XOR of all elements after all queries.",
+  "tags": [
+    "array",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "modular-multiplication",
+    "range-update",
+    "step-interval-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924297,
+    "pattern_confidence": {
+      "modular-multiplication": 0.95,
+      "range-update": 0.9,
+      "step-interval-processing": 0.85
+    }
+  }
+}

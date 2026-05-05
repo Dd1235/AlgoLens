@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-escape-a-large-maze",
+  "title": "Escape a Large Maze",
+  "slug": "escape-a-large-maze",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/escape-a-large-maze/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "depth-first-search",
+    "breadth-first-search"
+  ],
+  "statement": "Given a large grid with some blocked cells, determine if there exists a path from a source cell to a target cell moving only up, down, left, or right without crossing blocked or out-of-bound cells.",
+  "tags": [
+    "graph",
+    "bfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "hash-map-lookup",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922850,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "hash-map-lookup": 0.9,
+      "grid-traversal": 0.85
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "cses-2072",
+  "title": "Cut and Paste",
+  "slug": "cut-and-paste",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2072",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a string and a sequence of operations where each operation cuts a substring and appends it to the end, determine the final string after all operations.",
+  "tags": [
+    "string",
+    "data-structure"
+  ],
+  "patterns": [
+    "implicit-treap",
+    "rope",
+    "balanced-binary-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951841,
+    "pattern_confidence": {
+      "implicit-treap": 0.95,
+      "rope": 0.9,
+      "balanced-binary-tree": 0.85
+    }
+  }
+}

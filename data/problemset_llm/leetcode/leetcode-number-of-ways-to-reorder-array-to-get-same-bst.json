@@ -1,0 +1,46 @@
+{
+  "id": "leetcode-number-of-ways-to-reorder-array-to-get-same-bst",
+  "title": "Number of Ways to Reorder Array to Get Same BST",
+  "slug": "number-of-ways-to-reorder-array-to-get-same-bst",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "tree",
+    "union-find",
+    "binary-search-tree",
+    "memoization",
+    "combinatorics",
+    "binary-tree"
+  ],
+  "statement": "Given a permutation of integers, count the number of reorderings that produce the same binary search tree structure when inserted in order. Return the count modulo 10^9+7.",
+  "tags": [
+    "array",
+    "tree",
+    "dp",
+    "combinatorics",
+    "binary-search-tree"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "memoization",
+    "dynamic-programming",
+    "combinatorial-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923841,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.95,
+      "memoization": 0.9,
+      "dynamic-programming": 0.9,
+      "combinatorial-counting": 0.85
+    }
+  }
+}

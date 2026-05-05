@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-the-number-of-subsequences-with-equal-gcd",
+  "title": "Find the Number of Subsequences With Equal GCD",
+  "slug": "find-the-number-of-subsequences-with-equal-gcd",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, count the number of pairs of disjoint non-empty subsequences whose elements have the same greatest common divisor (GCD), returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "number-theory"
+  ],
+  "patterns": [
+    "dp-on-divisors",
+    "inclusion-exclusion",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922983,
+    "pattern_confidence": {
+      "dp-on-divisors": 0.95,
+      "inclusion-exclusion": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

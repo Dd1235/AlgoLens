@@ -1,0 +1,30 @@
+{
+  "id": "cses-2101",
+  "title": "New Roads Queries",
+  "slug": "new-roads-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2101",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a sequence of roads added daily between cities, answer queries about the earliest day two cities become connected.",
+  "tags": [
+    "graph",
+    "union-find",
+    "offline-queries"
+  ],
+  "patterns": [
+    "union-find",
+    "offline-queries",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951873,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "offline-queries": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

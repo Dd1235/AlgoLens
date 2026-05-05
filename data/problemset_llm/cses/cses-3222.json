@@ -1,0 +1,27 @@
+{
+  "id": "cses-3222",
+  "title": "Sliding Window Distinct Values",
+  "slug": "sliding-window-distinct-values",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3222",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given an array and a window size k, compute the number of distinct elements in every contiguous subarray of length k.",
+  "tags": [
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951895,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "hash-map-lookup": 0.95
+    }
+  }
+}

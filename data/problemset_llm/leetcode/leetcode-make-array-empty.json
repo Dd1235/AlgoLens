@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-make-array-empty",
+  "title": "Make Array Empty",
+  "slug": "make-array-empty",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/make-array-empty/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "binary-indexed-tree",
+    "segment-tree",
+    "sorting",
+    "ordered-set"
+  ],
+  "statement": "Given a distinct integer array, repeatedly remove the first element if it is the smallest; otherwise, move it to the end. Return the total number of operations to empty the array.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "queue"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923196,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.7,
+      "prefix-sum": 0.6
+    }
+  }
+}

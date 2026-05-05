@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-number-of-balanced-integers-in-a-range",
+  "title": "Number of Balanced Integers in a Range",
+  "slug": "number-of-balanced-integers-in-a-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-balanced-integers-in-a-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the integers within a given range whose digits at even positions sum to the same value as digits at odd positions, considering the leftmost digit as position one.",
+  "tags": [
+    "math",
+    "dp",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "prefix-sum",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923758,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "prefix-sum": 0.85,
+      "state-compression": 0.75
+    }
+  }
+}

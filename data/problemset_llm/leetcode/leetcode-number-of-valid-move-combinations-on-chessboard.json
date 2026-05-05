@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-valid-move-combinations-on-chessboard",
+  "title": "Number of Valid Move Combinations On Chessboard",
+  "slug": "number-of-valid-move-combinations-on-chessboard",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "backtracking",
+    "simulation"
+  ],
+  "statement": "Given up to four chess pieces (rooks, queens, bishops) on an 8x8 board with distinct starting positions, count the number of ways to simultaneously move each piece to a reachable destination square so that no two pieces occupy the same square at the same time during their moves.",
+  "tags": [
+    "backtracking",
+    "simulation",
+    "geometry",
+    "array"
+  ],
+  "patterns": [
+    "backtracking",
+    "state-enumeration",
+    "collision-detection",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923813,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "state-enumeration": 0.9,
+      "collision-detection": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

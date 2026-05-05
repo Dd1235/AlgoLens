@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-number-of-visible-points",
+  "title": "Maximum Number of Visible Points",
+  "slug": "maximum-number-of-visible-points",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-visible-points/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry",
+    "sliding-window",
+    "sorting"
+  ],
+  "statement": "Given a set of points on a plane, a viewing angle, and a fixed observer location, determine the maximum number of points visible within any rotation of the observer's field of view.",
+  "tags": [
+    "geometry",
+    "array",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "angle-sorting",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923361,
+    "pattern_confidence": {
+      "angle-sorting": 0.95,
+      "two-pointers": 0.9,
+      "sliding-window": 0.88
+    }
+  }
+}

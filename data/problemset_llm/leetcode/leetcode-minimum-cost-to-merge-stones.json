@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-to-merge-stones",
+  "title": "Minimum Cost to Merge Stones",
+  "slug": "minimum-cost-to-merge-stones",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-merge-stones/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given piles of stones in a row, merge exactly k consecutive piles repeatedly until one pile remains, minimizing the total merge cost or returning -1 if impossible.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "interval-dp",
+    "prefix-sum",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923535,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "prefix-sum": 0.9,
+      "dp-optimization": 0.85
+    }
+  }
+}

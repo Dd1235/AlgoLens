@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-valid-paths-in-a-tree",
+  "title": "Count Valid Paths in a Tree",
+  "slug": "count-valid-paths-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-valid-paths-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "number-theory"
+  ],
+  "statement": "Given a tree with nodes labeled by integers, count the number of distinct paths where exactly one node label on the path is prime.",
+  "tags": [
+    "tree",
+    "graph",
+    "number-theory",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "prime-checking",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922736,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "prime-checking": 0.9,
+      "contribution-technique": 0.85
+    }
+  }
+}

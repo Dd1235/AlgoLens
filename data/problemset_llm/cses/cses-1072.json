@@ -1,0 +1,27 @@
+{
+  "id": "cses-1072",
+  "title": "Two Knights",
+  "slug": "two-knights",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1072",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "For each board size from 1 to n, count the number of ways to place two knights on a k×k chessboard so that they do not attack each other.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "formula-based-counting",
+    "combinatorial-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951260,
+    "pattern_confidence": {
+      "formula-based-counting": 0.95,
+      "combinatorial-enumeration": 0.9
+    }
+  }
+}

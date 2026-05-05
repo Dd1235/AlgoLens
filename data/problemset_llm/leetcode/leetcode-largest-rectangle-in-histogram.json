@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-largest-rectangle-in-histogram",
+  "title": "Largest Rectangle in Histogram",
+  "slug": "largest-rectangle-in-histogram",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+  "source_topic": "LeetCode / Stack and Monotonic Structures",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array representing histogram bar heights, find the area of the largest rectangle that can be formed within the histogram.",
+  "tags": [
+    "array",
+    "stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "contribution-technique",
+    "nearest-smaller-element"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922360,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "contribution-technique": 0.95,
+      "nearest-smaller-element": 0.9
+    }
+  }
+}

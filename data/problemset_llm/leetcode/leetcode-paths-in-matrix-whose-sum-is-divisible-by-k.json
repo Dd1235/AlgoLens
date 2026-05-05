@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-paths-in-matrix-whose-sum-is-divisible-by-k",
+  "title": "Paths in Matrix Whose Sum Is Divisible by K",
+  "slug": "paths-in-matrix-whose-sum-is-divisible-by-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/paths-in-matrix-whose-sum-is-divisible-by-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Count the number of paths from the top-left to the bottom-right of a matrix moving only down or right, where the sum of elements along the path is divisible by a given integer k, modulo 10^9+7.",
+  "tags": [
+    "matrix",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dp-on-grid",
+    "modular-dp",
+    "path-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923908,
+    "pattern_confidence": {
+      "dp-on-grid": 0.98,
+      "modular-dp": 0.95,
+      "path-counting": 0.9
+    }
+  }
+}

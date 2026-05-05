@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-maximize-sum-of-weights-after-edge-removals",
+  "title": "Maximize Sum of Weights after Edge Removals",
+  "slug": "maximize-sum-of-weights-after-edge-removals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "sorting"
+  ],
+  "statement": "Given a weighted undirected tree and an integer k, remove edges so that no node is connected to more than k other nodes, maximizing the sum of the remaining edge weights.",
+  "tags": [
+    "tree",
+    "graph",
+    "greedy",
+    "dp",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "dfs",
+    "sorting",
+    "degree-limiting",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923266,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "dfs": 0.9,
+      "sorting": 0.85,
+      "degree-limiting": 0.8,
+      "tree-dp": 0.75
+    }
+  }
+}

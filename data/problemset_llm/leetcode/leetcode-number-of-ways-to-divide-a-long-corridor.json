@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-ways-to-divide-a-long-corridor",
+  "title": "Number of Ways to Divide a Long Corridor",
+  "slug": "number-of-ways-to-divide-a-long-corridor",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string representing seats and plants along a corridor, count the number of ways to place dividers so that each section contains exactly two seats, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "math",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "combinatorics",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923826,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "combinatorics": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-count-k-subsequences-of-a-string-with-maximum-beauty",
+  "title": "Count K-Subsequences of a String With Maximum Beauty",
+  "slug": "count-k-subsequences-of-a-string-with-maximum-beauty",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "greedy",
+    "sorting",
+    "combinatorics"
+  ],
+  "statement": "Given a string and an integer k, count the number of k-length subsequences with unique characters that maximize the sum of character frequencies in the original string, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "hash-map",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "frequency-count",
+    "sorting",
+    "greedy",
+    "modular-arithmetic",
+    "combinatorial-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922623,
+    "pattern_confidence": {
+      "frequency-count": 0.98,
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "modular-arithmetic": 0.88,
+      "combinatorial-counting": 0.9
+    }
+  }
+}

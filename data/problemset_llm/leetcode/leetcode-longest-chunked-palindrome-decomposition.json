@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-longest-chunked-palindrome-decomposition",
+  "title": "Longest Chunked Palindrome Decomposition",
+  "slug": "longest-chunked-palindrome-decomposition",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Given a string, split it into the maximum number of palindromic chunks such that the ith chunk equals the (k-i+1)th chunk, and their concatenation forms the original string.",
+  "tags": [
+    "string",
+    "dp",
+    "two-pointers",
+    "hashing"
+  ],
+  "patterns": [
+    "two-pointers",
+    "dynamic-programming",
+    "rolling-hash",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923153,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "dynamic-programming": 0.9,
+      "rolling-hash": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

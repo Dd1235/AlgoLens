@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-all-good-strings",
+  "title": "Find All Good Strings",
+  "slug": "find-all-good-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-all-good-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "string-matching"
+  ],
+  "statement": "Count the number of length-n strings lexicographically between s1 and s2 that do not contain a forbidden substring evil, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "string-matching"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "kmp",
+    "string-automaton"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922869,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "kmp": 0.9,
+      "string-automaton": 0.88
+    }
+  }
+}

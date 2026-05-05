@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-longest-duplicate-substring",
+  "title": "Longest Duplicate Substring",
+  "slug": "longest-duplicate-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-duplicate-substring/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "binary-search",
+    "sliding-window",
+    "rolling-hash",
+    "suffix-array",
+    "hash-function"
+  ],
+  "statement": "Find the longest substring that appears at least twice in the given string, allowing overlapping occurrences. Return any such substring or an empty string if none exists.",
+  "tags": [
+    "string",
+    "binary-search",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923167,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "rolling-hash": 0.9,
+      "suffix-array": 0.88
+    }
+  }
+}

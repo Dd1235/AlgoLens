@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-smallest-divisible-digit-product-ii",
+  "title": "Smallest Divisible Digit Product II",
+  "slug": "smallest-divisible-digit-product-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "backtracking",
+    "greedy",
+    "number-theory"
+  ],
+  "statement": "Given a string representing a positive integer and an integer t, find the smallest zero-free number greater than or equal to the given number whose digits' product is divisible by t, or return -1 if none exists.",
+  "tags": [
+    "string",
+    "math",
+    "number-theory",
+    "backtracking",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "digit-dp",
+    "backtracking",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924068,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "digit-dp": 0.85,
+      "backtracking": 0.8,
+      "greedy": 0.7
+    }
+  }
+}

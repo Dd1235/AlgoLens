@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-coin-change",
+  "title": "Coin Change",
+  "slug": "coin-change",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/coin-change/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "breadth-first-search"
+  ],
+  "statement": "Given an unlimited supply of coins of various denominations, find the minimum number of coins needed to make a given amount, or return -1 if it is not possible.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "breadth-first-search"
+  ],
+  "patterns": [
+    "dp",
+    "bfs",
+    "coin-change"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922381,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "bfs": 0.85,
+      "coin-change": 0.95
+    }
+  }
+}

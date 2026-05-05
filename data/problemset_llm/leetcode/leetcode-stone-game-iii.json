@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-stone-game-iii",
+  "title": "Stone Game III",
+  "slug": "stone-game-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stone-game-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "game-theory"
+  ],
+  "statement": "Two players alternately take 1 to 3 stones from a row, each stone having an integer value, and the goal is to maximize the player's total score. Determine the winner or if the game ends in a tie assuming both play optimally.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "game-theory"
+  ],
+  "patterns": [
+    "dp",
+    "game-dp",
+    "optimal-strategy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924116,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "game-dp": 0.95,
+      "optimal-strategy": 0.9
+    }
+  }
+}

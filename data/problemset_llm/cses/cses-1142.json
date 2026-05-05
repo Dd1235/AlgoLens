@@ -1,0 +1,29 @@
+{
+  "id": "cses-1142",
+  "title": "Advertisement",
+  "slug": "advertisement",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1142",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a fence represented by an array of board heights, find the largest rectangular area that can be formed by contiguous boards.",
+  "tags": [
+    "array",
+    "stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "largest-rectangle-in-histogram",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952116,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "largest-rectangle-in-histogram": 0.97,
+      "contribution-technique": 0.9
+    }
+  }
+}

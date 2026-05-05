@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-lexicographically-smallest-beautiful-string",
+  "title": "Lexicographically Smallest Beautiful String",
+  "slug": "lexicographically-smallest-beautiful-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-beautiful-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "greedy"
+  ],
+  "statement": "Given a beautiful string and an integer k, find the lexicographically smallest beautiful string larger than the given one, where beautiful strings use the first k letters and contain no palindromic substrings of length two or more.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "lexicographic-construction",
+    "palindrome-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923135,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "lexicographic-construction": 0.9,
+      "palindrome-check": 0.85
+    }
+  }
+}

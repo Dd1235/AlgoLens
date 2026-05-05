@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-count-ways-to-build-rooms-in-an-ant-colony",
+  "title": "Count Ways to Build Rooms in an Ant Colony",
+  "slug": "count-ways-to-build-rooms-in-an-ant-colony",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-ways-to-build-rooms-in-an-ant-colony/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "graph",
+    "topological-sort",
+    "combinatorics"
+  ],
+  "statement": "Given a tree defined by parent pointers where each node must be built after its parent, count the number of valid build orders of all nodes modulo 10^9+7.",
+  "tags": [
+    "tree",
+    "graph",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "topological-sort",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922742,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "topological-sort": 0.85,
+      "combinatorics": 0.9
+    }
+  }
+}

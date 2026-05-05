@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-create-components-with-same-value",
+  "title": "Create Components With Same Value",
+  "slug": "create-components-with-same-value",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/create-components-with-same-value/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "tree",
+    "depth-first-search",
+    "enumeration"
+  ],
+  "statement": "Given a tree with node values, delete edges to split it into components all having the same sum value, maximizing the number of deleted edges.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "math"
+  ],
+  "patterns": [
+    "dfs",
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922757,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

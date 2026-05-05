@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-kth-smallest-number-in-multiplication-table",
+  "title": "Kth Smallest Number in Multiplication Table",
+  "slug": "kth-smallest-number-in-multiplication-table",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Given dimensions m and n of a multiplication table and an integer k, find the k-th smallest number in the m x n multiplication table where each entry is the product of its 1-based row and column indices.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923104,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "counting": 0.85
+    }
+  }
+}

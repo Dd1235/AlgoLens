@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+  "title": "Number of Ways to Rearrange Sticks With K Sticks Visible",
+  "slug": "number-of-ways-to-rearrange-sticks-with-k-sticks-visible",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Count the number of permutations of n uniquely-sized sticks arranged so that exactly k sticks are visible from the left, where a stick is visible if no longer stick precedes it. Return the count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "combinatorial-counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923835,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "combinatorial-counting": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

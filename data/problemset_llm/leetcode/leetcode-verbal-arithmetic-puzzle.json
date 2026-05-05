@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-verbal-arithmetic-puzzle",
+  "title": "Verbal Arithmetic Puzzle",
+  "slug": "verbal-arithmetic-puzzle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/verbal-arithmetic-puzzle/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "string",
+    "backtracking"
+  ],
+  "statement": "Given a list of words and a result word representing an arithmetic sum, determine if there exists a digit assignment to letters so that the sum of the words equals the result without leading zeros and with unique digit assignments.",
+  "tags": [
+    "string",
+    "backtracking",
+    "math"
+  ],
+  "patterns": [
+    "backtracking",
+    "constraint-satisfaction",
+    "digit-assignment"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924281,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "constraint-satisfaction": 0.95,
+      "digit-assignment": 0.9
+    }
+  }
+}

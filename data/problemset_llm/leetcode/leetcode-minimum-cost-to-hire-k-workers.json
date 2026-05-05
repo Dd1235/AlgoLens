@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-cost-to-hire-k-workers",
+  "title": "Minimum Cost to Hire K Workers",
+  "slug": "minimum-cost-to-hire-k-workers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given arrays of workers' quality and minimum wage expectations, select exactly k workers to minimize total payment while maintaining proportional pay according to quality and meeting each worker's minimum wage.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923526,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "heap-priority-queue": 0.9
+    }
+  }
+}

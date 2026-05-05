@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-maximum-strictly-increasing-cells-in-a-matrix",
+  "title": "Maximum Strictly Increasing Cells in a Matrix",
+  "slug": "maximum-strictly-increasing-cells-in-a-matrix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "dynamic-programming",
+    "memoization",
+    "sorting",
+    "matrix",
+    "ordered-set"
+  ],
+  "statement": "Given an m by n integer matrix, find the longest path of strictly increasing values where moves are allowed only within the same row or column to a cell with a greater value. Return the maximum number of cells visited starting from any cell.",
+  "tags": [
+    "matrix",
+    "dp",
+    "graph",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "topological-sort",
+    "dp-on-dag",
+    "coordinate-compression",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923416,
+    "pattern_confidence": {
+      "topological-sort": 0.9,
+      "dp-on-dag": 0.92,
+      "coordinate-compression": 0.85,
+      "binary-search-answer": 0.88
+    }
+  }
+}

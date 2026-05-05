@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-arithmetic-slices-ii-subsequence",
+  "title": "Arithmetic Slices II - Subsequence",
+  "slug": "arithmetic-slices-ii-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/arithmetic-slices-ii-subsequence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, count the number of arithmetic subsequences of length at least three. An arithmetic subsequence has a constant difference between consecutive elements and can be formed by deleting zero or more elements from the original array.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp-with-hashmap",
+    "subsequence-counting",
+    "difference-based-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922456,
+    "pattern_confidence": {
+      "dp-with-hashmap": 0.98,
+      "subsequence-counting": 0.95,
+      "difference-based-dp": 0.9
+    }
+  }
+}

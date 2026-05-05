@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-find-students-with-study-spiral-pattern",
+  "title": "Find Students with Study Spiral Pattern",
+  "slug": "find-students-with-study-spiral-pattern",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-students-with-study-spiral-pattern/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Identify students who study at least three different subjects in a repeating cycle over consecutive study sessions with no gaps longer than two days, and compute their cycle length and total study hours.",
+  "tags": [
+    "array",
+    "string",
+    "pattern-matching",
+    "date-processing"
+  ],
+  "patterns": [
+    "sliding-window",
+    "pattern-detection",
+    "consecutive-interval-check",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922926,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "pattern-detection": 0.85,
+      "consecutive-interval-check": 0.8,
+      "cycle-detection": 0.75
+    }
+  }
+}

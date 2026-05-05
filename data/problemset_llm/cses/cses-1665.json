@@ -1,0 +1,30 @@
+{
+  "id": "cses-1665",
+  "title": "Coding Company",
+  "slug": "coding-company",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1665",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given n coders with skill levels, count the number of ways to partition them into teams so that the sum of the differences between the highest and lowest skill in each team does not exceed x, modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "array",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "partition-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952233,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.85,
+      "partition-dp": 0.9
+    }
+  }
+}

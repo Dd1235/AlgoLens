@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-power-of-heroes",
+  "title": "Power of Heroes",
+  "slug": "power-of-heroes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/power-of-heroes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of hero strengths, compute the sum of the power of all non-empty groups, where the power of a group is defined as the square of the maximum strength times the minimum strength, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "monotonic-stack",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923926,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "monotonic-stack": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

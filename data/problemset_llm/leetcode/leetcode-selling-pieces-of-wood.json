@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-selling-pieces-of-wood",
+  "title": "Selling Pieces of Wood",
+  "slug": "selling-pieces-of-wood",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/selling-pieces-of-wood/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given a rectangular piece of wood and a list of prices for specific sub-rectangle sizes, determine the maximum revenue obtainable by cutting the wood into smaller pieces without rotation and selling them according to the given prices.",
+  "tags": [
+    "dynamic-programming",
+    "array"
+  ],
+  "patterns": [
+    "top-down-dp",
+    "memoization",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924008,
+    "pattern_confidence": {
+      "top-down-dp": 0.95,
+      "memoization": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

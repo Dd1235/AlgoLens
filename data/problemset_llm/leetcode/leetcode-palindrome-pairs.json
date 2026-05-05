@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-palindrome-pairs",
+  "title": "Palindrome Pairs",
+  "slug": "palindrome-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/palindrome-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "trie",
+    "hash-function"
+  ],
+  "statement": "Given a list of unique strings, find all pairs of indices where the concatenation of the two strings forms a palindrome. The solution must run in linear time relative to the total length of all words.",
+  "tags": [
+    "array",
+    "string",
+    "trie",
+    "hash-map"
+  ],
+  "patterns": [
+    "trie",
+    "hash-map-lookup",
+    "palindrome-check",
+    "string-reversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923877,
+    "pattern_confidence": {
+      "trie": 0.95,
+      "hash-map-lookup": 0.9,
+      "palindrome-check": 0.9,
+      "string-reversal": 0.85
+    }
+  }
+}

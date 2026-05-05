@@ -1,0 +1,30 @@
+{
+  "id": "cses-3425",
+  "title": "Same Sum Subsets",
+  "slug": "same-sum-subsets",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3425",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a set of positive integers, find two disjoint subsets with the same sum or determine that no such subsets exist.",
+  "tags": [
+    "array",
+    "bitmask",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "bitmask-enumeration",
+    "subset-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952221,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "bitmask-enumeration": 0.9,
+      "subset-sum": 0.88
+    }
+  }
+}

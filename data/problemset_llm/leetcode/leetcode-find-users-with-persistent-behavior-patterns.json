@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-users-with-persistent-behavior-patterns",
+  "title": "Find Users with Persistent Behavior Patterns",
+  "slug": "find-users-with-persistent-behavior-patterns",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-users-with-persistent-behavior-patterns/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Identify users who have at least one sequence of 5 or more consecutive days performing exactly one identical action per day, and return their longest such streaks ordered by streak length and user ID.",
+  "tags": [
+    "array",
+    "string",
+    "sorting"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "grouping",
+    "consecutive-sequence-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923002,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "two-pointers": 0.85,
+      "grouping": 0.8,
+      "consecutive-sequence-detection": 0.88
+    }
+  }
+}

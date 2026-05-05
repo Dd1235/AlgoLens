@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-cost-to-cut-a-stick",
+  "title": "Minimum Cost to Cut a Stick",
+  "slug": "minimum-cost-to-cut-a-stick",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a stick of length n and a set of cut positions, determine the minimum total cost to perform all cuts in any order, where each cut costs the length of the current stick segment being cut.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "interval-dp",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923519,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "sorting": 0.85
+    }
+  }
+}

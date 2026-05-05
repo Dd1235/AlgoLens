@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimize-or-of-remaining-elements-using-operations",
+  "title": "Minimize OR of Remaining Elements Using Operations",
+  "slug": "minimize-or-of-remaining-elements-using-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given an integer array and a limit k on operations, each operation merges two adjacent elements by bitwise AND, and the goal is to minimize the bitwise OR of the resulting array after at most k such merges.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "bitwise-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923494,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "bitwise-operations": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-swaps-to-make-sequences-increasing",
+  "title": "Minimum Swaps To Make Sequences Increasing",
+  "slug": "minimum-swaps-to-make-sequences-increasing",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two integer arrays of equal length, determine the minimum number of index-wise swaps needed to make both arrays strictly increasing sequences. Each swap exchanges elements at the same index between the two arrays.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923690,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.7
+    }
+  }
+}

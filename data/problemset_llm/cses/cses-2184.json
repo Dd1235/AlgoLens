@@ -1,0 +1,28 @@
+{
+  "id": "cses-2184",
+  "title": "Missing Coin Sum Queries",
+  "slug": "missing-coin-sum-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2184",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an array of coin values, answer queries asking for the smallest sum that cannot be formed using coins in a specified subrange.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951609,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

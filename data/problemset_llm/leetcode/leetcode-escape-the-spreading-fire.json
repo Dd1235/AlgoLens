@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-escape-the-spreading-fire",
+  "title": "Escape the Spreading Fire",
+  "slug": "escape-the-spreading-fire",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/escape-the-spreading-fire/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Given a grid with grass, fire, and walls, determine the maximum time you can wait at the start before moving to safely reach the bottom-right cell while fire spreads each minute.",
+  "tags": [
+    "graph",
+    "matrix",
+    "breadth-first-search",
+    "binary-search"
+  ],
+  "patterns": [
+    "multi-source-bfs",
+    "binary-search-answer",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922852,
+    "pattern_confidence": {
+      "multi-source-bfs": 0.95,
+      "binary-search-answer": 0.9,
+      "shortest-path": 0.85
+    }
+  }
+}

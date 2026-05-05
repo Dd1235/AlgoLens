@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-beautiful-indices-in-the-given-array-ii",
+  "title": "Find Beautiful Indices in the Given Array II",
+  "slug": "find-beautiful-indices-in-the-given-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "binary-search",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Given a string s and two patterns a and b, find all indices i where substring a occurs and there exists an occurrence of b within distance k from i. Return these indices sorted.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "two-pointers",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922879,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "two-pointers": 0.9,
+      "binary-search": 0.85
+    }
+  }
+}

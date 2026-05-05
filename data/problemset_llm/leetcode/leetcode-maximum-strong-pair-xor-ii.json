@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-strong-pair-xor-ii",
+  "title": "Maximum Strong Pair XOR II",
+  "slug": "maximum-strong-pair-xor-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-strong-pair-xor-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "bit-manipulation",
+    "trie",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array, find two elements forming a strong pair (where the absolute difference is at most the minimum of the two) that maximize their bitwise XOR value. The pair can include the same element twice.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "trie",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "bitwise-trie",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923418,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "bitwise-trie": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

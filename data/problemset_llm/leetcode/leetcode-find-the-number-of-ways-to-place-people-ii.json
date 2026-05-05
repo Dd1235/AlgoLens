@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-the-number-of-ways-to-place-people-ii",
+  "title": "Find the Number of Ways to Place People II",
+  "slug": "find-the-number-of-ways-to-place-people-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-number-of-ways-to-place-people-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given n distinct points on a 2D plane, count the number of pairs (Alice, Bob) where Alice is at the upper left corner and Bob at the lower right corner of a rectangle that contains no other points inside or on its boundary.",
+  "tags": [
+    "geometry",
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "coordinate-compression",
+    "line-sweep",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922986,
+    "pattern_confidence": {
+      "coordinate-compression": 0.85,
+      "line-sweep": 0.9,
+      "two-pointers": 0.8
+    }
+  }
+}

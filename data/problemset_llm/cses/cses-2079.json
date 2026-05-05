@@ -1,0 +1,30 @@
+{
+  "id": "cses-2079",
+  "title": "Finding a Centroid",
+  "slug": "finding-a-centroid",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2079",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree with n nodes, find a centroid node such that when chosen as the root, every subtree has at most half of the total nodes.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "subtree-size-calculation",
+    "centroid-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951644,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "subtree-size-calculation": 0.95,
+      "centroid-decomposition": 0.9
+    }
+  }
+}

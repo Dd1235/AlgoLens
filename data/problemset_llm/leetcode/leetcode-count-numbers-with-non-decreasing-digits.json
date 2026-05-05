@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-numbers-with-non-decreasing-digits",
+  "title": "Count Numbers with Non-Decreasing Digits ",
+  "slug": "count-numbers-with-non-decreasing-digits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Count integers within a given range whose digits in a specified base are non-decreasing, returning the count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "string",
+    "dp",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic",
+    "base-conversion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922644,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.9,
+      "base-conversion": 0.85
+    }
+  }
+}

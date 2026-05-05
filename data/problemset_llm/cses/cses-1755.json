@@ -1,0 +1,28 @@
+{
+  "id": "cses-1755",
+  "title": "Palindrome Reorder",
+  "slug": "palindrome-reorder",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1755",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given a string of uppercase letters, rearrange its characters to form a palindrome if possible, otherwise output \"NO SOLUTION\".",
+  "tags": [
+    "string",
+    "greedy",
+    "counting"
+  ],
+  "patterns": [
+    "frequency-count",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951274,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

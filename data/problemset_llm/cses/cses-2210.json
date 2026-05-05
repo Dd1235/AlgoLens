@@ -1,0 +1,30 @@
+{
+  "id": "cses-2210",
+  "title": "Counting Grids",
+  "slug": "counting-grids",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2210",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Count the number of distinct n by n black-and-white grids up to rotation symmetry, outputting the result modulo 10^9+7.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "burnside-lemma",
+    "group-theory",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951698,
+    "pattern_confidence": {
+      "burnside-lemma": 0.98,
+      "group-theory": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

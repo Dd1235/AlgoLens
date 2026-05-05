@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-cycle-length-queries-in-a-tree",
+  "title": "Cycle Length Queries in a Tree",
+  "slug": "cycle-length-queries-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cycle-length-queries-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "tree",
+    "binary-tree"
+  ],
+  "statement": "Given a complete binary tree and queries adding an edge between two nodes, determine the length of the cycle formed by adding that edge and then remove it, repeating for all queries.",
+  "tags": [
+    "tree",
+    "graph",
+    "binary-tree"
+  ],
+  "patterns": [
+    "lowest-common-ancestor",
+    "binary-lifting",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922768,
+    "pattern_confidence": {
+      "lowest-common-ancestor": 0.95,
+      "binary-lifting": 0.9,
+      "cycle-detection": 0.85
+    }
+  }
+}

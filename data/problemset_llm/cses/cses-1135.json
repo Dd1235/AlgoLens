@@ -1,0 +1,30 @@
+{
+  "id": "cses-1135",
+  "title": "Distance Queries",
+  "slug": "distance-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1135",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree with n nodes, answer q queries asking for the distance between two given nodes efficiently.",
+  "tags": [
+    "tree",
+    "graph",
+    "lca"
+  ],
+  "patterns": [
+    "binary-lifting",
+    "lowest-common-ancestor",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951629,
+    "pattern_confidence": {
+      "binary-lifting": 0.95,
+      "lowest-common-ancestor": 0.94,
+      "dfs": 0.9
+    }
+  }
+}

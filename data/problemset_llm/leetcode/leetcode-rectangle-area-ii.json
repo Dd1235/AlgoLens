@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-rectangle-area-ii",
+  "title": "Rectangle Area II",
+  "slug": "rectangle-area-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/rectangle-area-ii/",
+  "source_topic": "LeetCode / Intervals and Geometry",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "segment-tree",
+    "line-sweep",
+    "ordered-set"
+  ],
+  "statement": "Given a list of axis-aligned rectangles, compute the total area covered by their union, counting overlapping regions only once, and return the result modulo 10^9+7.",
+  "tags": [
+    "geometry",
+    "array",
+    "line-sweep",
+    "segment-tree"
+  ],
+  "patterns": [
+    "line-sweep",
+    "segment-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922418,
+    "pattern_confidence": {
+      "line-sweep": 0.98,
+      "segment-tree": 0.95,
+      "coordinate-compression": 0.9
+    }
+  }
+}

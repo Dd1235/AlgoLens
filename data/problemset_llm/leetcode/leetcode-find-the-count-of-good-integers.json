@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-the-count-of-good-integers",
+  "title": "Find the Count of Good Integers",
+  "slug": "find-the-count-of-good-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-count-of-good-integers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "combinatorics",
+    "enumeration"
+  ],
+  "statement": "Count the number of n-digit integers whose digits can be rearranged to form a palindrome divisible by k, with no leading zeros allowed before or after rearrangement.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "palindrome"
+  ],
+  "patterns": [
+    "digit-dp",
+    "combinatorial-enumeration",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922939,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "combinatorial-enumeration": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

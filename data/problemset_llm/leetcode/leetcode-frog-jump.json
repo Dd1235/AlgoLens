@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-frog-jump",
+  "title": "Frog Jump",
+  "slug": "frog-jump",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/frog-jump/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a sorted list of stone positions, determine if a frog can reach the last stone by making jumps of length k-1, k, or k+1 units starting with a jump of 1 unit from the first stone.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923039,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

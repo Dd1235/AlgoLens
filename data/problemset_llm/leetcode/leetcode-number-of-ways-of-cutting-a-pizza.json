@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-ways-of-cutting-a-pizza",
+  "title": "Number of Ways of Cutting a Pizza",
+  "slug": "number-of-ways-of-cutting-a-pizza",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "memoization",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Given a pizza represented as a grid with apples and empty cells, count the number of ways to cut it into k pieces so that each piece contains at least one apple, using horizontal or vertical cuts.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "memoization",
+    "dp-on-grid"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923820,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "memoization": 0.9,
+      "dp-on-grid": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-2064",
+  "title": "Bracket Sequences I",
+  "slug": "bracket-sequences-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2064",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Calculate the number of valid bracket sequences of length n modulo 10^9+7. Valid sequences are those with properly matched opening and closing brackets.",
+  "tags": [
+    "math",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "catalan-number",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951689,
+    "pattern_confidence": {
+      "catalan-number": 0.98,
+      "modular-arithmetic": 0.95,
+      "dynamic-programming": 0.9
+    }
+  }
+}

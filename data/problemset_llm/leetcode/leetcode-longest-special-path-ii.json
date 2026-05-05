@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-longest-special-path-ii",
+  "title": "Longest Special Path II",
+  "slug": "longest-special-path-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-special-path-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "tree",
+    "depth-first-search",
+    "prefix-sum"
+  ],
+  "statement": "Given a weighted tree with values on nodes, find the longest downward path from ancestor to descendant where all node values are distinct except for at most one value that appears twice, and report the path length and minimum node count among such longest paths.",
+  "tags": [
+    "tree",
+    "dfs",
+    "hash-map",
+    "two-pointers"
+  ],
+  "patterns": [
+    "dfs",
+    "two-pointers",
+    "sliding-window",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923183,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "two-pointers": 0.85,
+      "sliding-window": 0.8,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

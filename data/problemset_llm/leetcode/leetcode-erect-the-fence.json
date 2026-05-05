@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-erect-the-fence",
+  "title": "Erect the Fence",
+  "slug": "erect-the-fence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/erect-the-fence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given coordinates of trees in a plane, find the set of trees that lie exactly on the perimeter of the minimum-length fence enclosing all trees.",
+  "tags": [
+    "geometry",
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "convex-hull",
+    "gift-wrapping",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922848,
+    "pattern_confidence": {
+      "convex-hull": 0.98,
+      "gift-wrapping": 0.85,
+      "line-sweep": 0.7
+    }
+  }
+}

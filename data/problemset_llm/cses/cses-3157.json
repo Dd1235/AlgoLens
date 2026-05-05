@@ -1,0 +1,30 @@
+{
+  "id": "cses-3157",
+  "title": "Collecting Numbers Distribution",
+  "slug": "collecting-numbers-distribution",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3157",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given n, count how many permutations of numbers 1 to n require exactly k rounds to collect all numbers in increasing order by repeatedly traversing from left to right and collecting consecutive uncollected numbers starting from the smallest uncollected number. Output the counts modulo 10^9+7 for each k from 1 to n.",
+  "tags": [
+    "combinatorics",
+    "dp",
+    "permutation"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952084,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

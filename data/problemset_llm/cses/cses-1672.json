@@ -1,0 +1,30 @@
+{
+  "id": "cses-1672",
+  "title": "Shortest Routes II",
+  "slug": "shortest-routes-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1672",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given an undirected weighted graph with up to 500 cities and roads, answer multiple queries asking for the shortest distance between two specified cities, or report -1 if no path exists.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "all-pairs-shortest-path"
+  ],
+  "patterns": [
+    "floyd-warshall",
+    "dijkstra",
+    "adjacency-matrix"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951474,
+    "pattern_confidence": {
+      "floyd-warshall": 0.95,
+      "dijkstra": 0.85,
+      "adjacency-matrix": 0.8
+    }
+  }
+}

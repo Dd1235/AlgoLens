@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-create-maximum-number",
+  "title": "Create Maximum Number",
+  "slug": "create-maximum-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/create-maximum-number/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "stack",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "statement": "Given two arrays representing digits of two numbers and an integer k, construct the maximum number of length k by selecting digits from both arrays while preserving the relative order within each array.",
+  "tags": [
+    "array",
+    "greedy",
+    "stack",
+    "two-pointers"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "greedy",
+    "two-pointers",
+    "merge-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922759,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "greedy": 0.9,
+      "two-pointers": 0.85,
+      "merge-technique": 0.8
+    }
+  }
+}

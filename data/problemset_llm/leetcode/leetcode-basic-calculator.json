@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-basic-calculator",
+  "title": "Basic Calculator",
+  "slug": "basic-calculator",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/basic-calculator/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "stack",
+    "recursion"
+  ],
+  "statement": "Evaluate a valid arithmetic expression string containing digits, plus and minus operators, parentheses, and spaces, supporting unary minus but not unary plus, without using built-in evaluation functions.",
+  "tags": [
+    "string",
+    "stack",
+    "math",
+    "recursion"
+  ],
+  "patterns": [
+    "stack",
+    "recursive-parsing",
+    "expression-evaluation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922462,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "recursive-parsing": 0.9,
+      "expression-evaluation": 0.9
+    }
+  }
+}

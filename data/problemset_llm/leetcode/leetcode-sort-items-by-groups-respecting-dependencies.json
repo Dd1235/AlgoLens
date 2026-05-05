@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sort-items-by-groups-respecting-dependencies",
+  "title": "Sort Items by Groups Respecting Dependencies",
+  "slug": "sort-items-by-groups-respecting-dependencies",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given items each optionally assigned to groups and dependency constraints between items, produce a sorted list where items of the same group are contiguous and all dependencies are respected, or return empty if impossible.",
+  "tags": [
+    "graph",
+    "topological-sort",
+    "dfs"
+  ],
+  "patterns": [
+    "topological-sort",
+    "cycle-detection",
+    "dependency-resolution"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924094,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "cycle-detection": 0.95,
+      "dependency-resolution": 0.9
+    }
+  }
+}

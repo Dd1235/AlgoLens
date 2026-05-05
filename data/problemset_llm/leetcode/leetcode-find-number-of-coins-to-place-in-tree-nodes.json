@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-find-number-of-coins-to-place-in-tree-nodes",
+  "title": "Find Number of Coins to Place in Tree Nodes",
+  "slug": "find-number-of-coins-to-place-in-tree-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-number-of-coins-to-place-in-tree-nodes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a tree with costs on nodes, compute for each node the number of coins to place based on the maximum product of costs of any three distinct nodes in its subtree, or 1 if the subtree size is less than 3, and 0 if the maximum product is negative.",
+  "tags": [
+    "tree",
+    "dp",
+    "dfs",
+    "heap"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "heap-priority-queue",
+    "max-product-subtree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922914,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "tree-dp": 0.95,
+      "heap-priority-queue": 0.85,
+      "max-product-subtree": 0.9
+    }
+  }
+}

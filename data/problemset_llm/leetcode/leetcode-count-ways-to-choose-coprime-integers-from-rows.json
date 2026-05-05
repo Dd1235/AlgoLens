@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-count-ways-to-choose-coprime-integers-from-rows",
+  "title": "Count Ways to Choose Coprime Integers from Rows",
+  "slug": "count-ways-to-choose-coprime-integers-from-rows",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-ways-to-choose-coprime-integers-from-rows/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "matrix",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Given an m x n matrix of positive integers, count the number of ways to select exactly one integer from each row such that the greatest common divisor of all chosen integers is 1, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "gcd",
+    "modular-arithmetic",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922744,
+    "pattern_confidence": {
+      "dp-on-dag": 0.9,
+      "gcd": 0.95,
+      "modular-arithmetic": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

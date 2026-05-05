@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-number-of-ways-to-paint-n-3-grid",
+  "title": "Number of Ways to Paint N × 3 Grid",
+  "slug": "number-of-ways-to-paint-n-3-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of ways to color an n×3 grid using three colors so that no two adjacent cells share the same color, with adjacency defined vertically and horizontally. Return the count modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "state-compression",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923832,
+    "pattern_confidence": {
+      "state-compression": 0.95,
+      "dp-on-dag": 0.85
+    }
+  }
+}

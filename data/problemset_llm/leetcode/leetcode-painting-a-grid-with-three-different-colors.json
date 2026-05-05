@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-painting-a-grid-with-three-different-colors",
+  "title": "Painting a Grid With Three Different Colors",
+  "slug": "painting-a-grid-with-three-different-colors",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/painting-a-grid-with-three-different-colors/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of ways to color an m by n grid using three colors so that no two adjacent cells share the same color, with the result modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "state-compression",
+    "matrix-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923873,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "state-compression": 0.9,
+      "matrix-exponentiation": 0.85
+    }
+  }
+}

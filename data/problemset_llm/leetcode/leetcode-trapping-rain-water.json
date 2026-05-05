@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-trapping-rain-water",
+  "title": "Trapping Rain Water",
+  "slug": "trapping-rain-water",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/trapping-rain-water/",
+  "source_topic": "LeetCode / Two Pointers and Sliding Window",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "dynamic-programming",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array representing an elevation map, calculate the total amount of water trapped after raining between the bars.",
+  "tags": [
+    "array",
+    "stack",
+    "two-pointers"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "two-pointers",
+    "prefix-max-precomputation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922344,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "two-pointers": 0.95,
+      "prefix-max-precomputation": 0.9
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-insert-interval",
+  "title": "Insert Interval",
+  "slug": "insert-interval",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/insert-interval/",
+  "source_topic": "LeetCode / Intervals and Geometry",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array"
+  ],
+  "statement": "Insert a new interval into a sorted list of non-overlapping intervals and merge any overlapping intervals to maintain a sorted, non-overlapping list.",
+  "tags": [
+    "array",
+    "intervals"
+  ],
+  "patterns": [
+    "sorting",
+    "merge-intervals",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922413,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "merge-intervals": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

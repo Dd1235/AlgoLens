@@ -1,0 +1,27 @@
+{
+  "id": "cses-1750",
+  "title": "Planets Queries I",
+  "slug": "planets-queries-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1750",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given n planets each with a teleporter to another planet, answer queries asking which planet is reached after traveling k teleporters starting from planet x.",
+  "tags": [
+    "graph",
+    "binary-lifting"
+  ],
+  "patterns": [
+    "binary-lifting",
+    "jump-pointer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951504,
+    "pattern_confidence": {
+      "binary-lifting": 0.98,
+      "jump-pointer": 0.9
+    }
+  }
+}

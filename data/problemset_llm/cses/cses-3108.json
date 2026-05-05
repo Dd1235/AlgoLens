@@ -1,0 +1,30 @@
+{
+  "id": "cses-3108",
+  "title": "K Subset Sums I",
+  "slug": "k-subset-sums-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3108",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an array of integers, find the k smallest sums among all possible subset sums of the array.",
+  "tags": [
+    "array",
+    "sorting",
+    "priority-queue"
+  ],
+  "patterns": [
+    "merge-k-sorted-lists",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952171,
+    "pattern_confidence": {
+      "merge-k-sorted-lists": 0.9,
+      "binary-search-answer": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

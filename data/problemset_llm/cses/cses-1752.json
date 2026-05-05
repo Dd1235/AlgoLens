@@ -1,0 +1,30 @@
+{
+  "id": "cses-1752",
+  "title": "Creating Offices",
+  "slug": "creating-offices",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1752",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a tree with n cities and roads, select the maximum number of cities to place offices so that the distance between any two offices is at least d.",
+  "tags": [
+    "tree",
+    "graph",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dfs",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952033,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "dfs": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

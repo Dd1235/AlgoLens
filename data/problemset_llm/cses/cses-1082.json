@@ -1,0 +1,27 @@
+{
+  "id": "cses-1082",
+  "title": "Sum of Divisors",
+  "slug": "sum-of-divisors",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1082",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Compute the sum of the sum-of-divisors function σ(i) for all integers i from 1 to n, modulo 10^9+7, where n can be as large as 10^{12}.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951663,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

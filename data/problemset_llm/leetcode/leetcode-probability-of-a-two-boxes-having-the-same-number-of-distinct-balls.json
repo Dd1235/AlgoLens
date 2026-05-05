@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-probability-of-a-two-boxes-having-the-same-number-of-distinct-balls",
+  "title": "Probability of a Two Boxes Having The Same Number of Distinct Balls",
+  "slug": "probability-of-a-two-boxes-having-the-same-number-of-distinct-balls",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "backtracking",
+    "combinatorics",
+    "probability-and-statistics"
+  ],
+  "statement": "Given an array representing counts of balls of different colors, compute the probability that when the balls are randomly split evenly into two distinct boxes, both boxes contain the same number of distinct colors.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "combinatorics",
+    "probability"
+  ],
+  "patterns": [
+    "backtracking",
+    "dp-on-dag",
+    "state-compression",
+    "combinatorial-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923933,
+    "pattern_confidence": {
+      "backtracking": 0.9,
+      "dp-on-dag": 0.85,
+      "state-compression": 0.8,
+      "combinatorial-counting": 0.9
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cses-2419",
+  "title": "Xor Pyramid Peak",
+  "slug": "xor-pyramid-peak",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2419",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given the bottom row of a pyramid where each upper element is the xor of the two elements below it, find the topmost element of the pyramid.",
+  "tags": [
+    "array",
+    "bitwise-operations"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "xor-properties"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951939,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "xor-properties": 0.9
+    }
+  }
+}

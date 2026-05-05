@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-lexicographically-smallest-palindromic-permutation-greater-than-target",
+  "title": "Lexicographically Smallest Palindromic Permutation Greater Than Target",
+  "slug": "lexicographically-smallest-palindromic-permutation-greater-than-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "enumeration"
+  ],
+  "statement": "Given two strings s and target of equal length, find the lexicographically smallest palindromic permutation of s that is strictly greater than target, or return an empty string if none exists.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "permutation"
+  ],
+  "patterns": [
+    "lexicographic-order",
+    "palindromic-permutation",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923139,
+    "pattern_confidence": {
+      "lexicographic-order": 0.9,
+      "palindromic-permutation": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-the-largest-palindrome-divisible-by-k",
+  "title": "Find the Largest Palindrome Divisible by K",
+  "slug": "find-the-largest-palindrome-divisible-by-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "number-theory"
+  ],
+  "statement": "Find the largest n-digit palindrome divisible by k without leading zeros.",
+  "tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "number-theory"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "palindrome-construction",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922953,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "palindrome-construction": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

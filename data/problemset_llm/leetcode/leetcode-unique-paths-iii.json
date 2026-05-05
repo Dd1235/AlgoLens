@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-unique-paths-iii",
+  "title": "Unique Paths III",
+  "slug": "unique-paths-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/unique-paths-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "statement": "Count the number of unique 4-directional paths from a single start cell to a single end cell in a grid, visiting every non-obstacle cell exactly once.",
+  "tags": [
+    "array",
+    "graph",
+    "backtracking"
+  ],
+  "patterns": [
+    "dfs",
+    "backtracking",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924270,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "backtracking": 0.97,
+      "state-compression": 0.7
+    }
+  }
+}

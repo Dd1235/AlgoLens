@@ -1,0 +1,30 @@
+{
+  "id": "cses-3420",
+  "title": "Distinct Values Subarrays",
+  "slug": "distinct-values-subarrays",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3420",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given an array, count the number of subarrays that contain all distinct elements.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "hash-map"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sliding-window",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951342,
+    "pattern_confidence": {
+      "two-pointers": 0.98,
+      "sliding-window": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

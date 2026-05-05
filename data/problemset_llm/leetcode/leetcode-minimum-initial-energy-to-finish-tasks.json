@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-initial-energy-to-finish-tasks",
+  "title": "Minimum Initial Energy to Finish Tasks",
+  "slug": "minimum-initial-energy-to-finish-tasks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given tasks each with actual energy cost and minimum required starting energy, determine the minimum initial energy needed to complete all tasks in some order.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923575,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "binary-search-answer": 0.7
+    }
+  }
+}

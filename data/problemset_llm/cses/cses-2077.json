@@ -1,0 +1,28 @@
+{
+  "id": "cses-2077",
+  "title": "Necessary Cities",
+  "slug": "necessary-cities",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2077",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given an undirected connected graph, identify all vertices whose removal disconnects the graph, i.e., find all articulation points.",
+  "tags": [
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "articulation-points",
+    "bridge-finding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951850,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "articulation-points": 0.98,
+      "bridge-finding": 0.85
+    }
+  }
+}

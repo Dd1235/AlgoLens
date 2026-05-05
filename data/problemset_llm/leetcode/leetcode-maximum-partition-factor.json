@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-partition-factor",
+  "title": "Maximum Partition Factor",
+  "slug": "maximum-partition-factor",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-partition-factor/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given a set of points on a plane, partition them into two non-empty groups to maximize the minimum Manhattan distance among all pairs within the same group. Return this maximum possible partition factor.",
+  "tags": [
+    "geometry",
+    "graph",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923366,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "connected-components": 0.85
+    }
+  }
+}

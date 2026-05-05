@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-sorted-gcd-pair-queries",
+  "title": "Sorted GCD Pair Queries",
+  "slug": "sorted-gcd-pair-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sorted-gcd-pair-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "binary-search",
+    "combinatorics",
+    "counting",
+    "number-theory",
+    "prefix-sum"
+  ],
+  "statement": "Given an array, compute the sorted list of gcd values for all pairs and answer queries asking for the gcd value at specific indices in this sorted list.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924096,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "counting": 0.8
+    }
+  }
+}

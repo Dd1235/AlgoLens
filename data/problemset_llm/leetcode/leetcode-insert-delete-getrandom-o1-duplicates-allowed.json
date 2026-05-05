@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-insert-delete-getrandom-o1-duplicates-allowed",
+  "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+  "slug": "insert-delete-getrandom-o1-duplicates-allowed",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "design",
+    "randomized"
+  ],
+  "statement": "Implement a data structure that supports inserting and removing elements (including duplicates) and retrieving a random element with probability proportional to its frequency, all in average O(1) time.",
+  "tags": [
+    "array",
+    "hash-map",
+    "design",
+    "randomized"
+  ],
+  "patterns": [
+    "hash-map-lookup",
+    "randomized-sampling",
+    "amortized-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923077,
+    "pattern_confidence": {
+      "hash-map-lookup": 0.98,
+      "randomized-sampling": 0.95,
+      "amortized-analysis": 0.9
+    }
+  }
+}

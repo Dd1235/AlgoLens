@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-cost-to-split-an-array",
+  "title": "Minimum Cost to Split an Array",
+  "slug": "minimum-cost-to-split-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-split-an-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming",
+    "counting"
+  ],
+  "statement": "Given an integer array and a cost parameter k, split the array into contiguous subarrays to minimize the sum of k plus the count of elements appearing more than once in each subarray.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-frequency-count",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923542,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-frequency-count": 0.85,
+      "sliding-window": 0.7
+    }
+  }
+}

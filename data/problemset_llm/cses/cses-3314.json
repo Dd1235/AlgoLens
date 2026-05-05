@@ -1,0 +1,30 @@
+{
+  "id": "cses-3314",
+  "title": "Mountain Range",
+  "slug": "mountain-range",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3314",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a sequence of mountain heights, find the longest route starting from any mountain where you can glide only to a strictly lower mountain with no taller mountain in between. The goal is to maximize the number of mountains visited in such a descending path.",
+  "tags": [
+    "array",
+    "dp",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "longest-decreasing-subsequence",
+    "monotonic-stack",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951428,
+    "pattern_confidence": {
+      "longest-decreasing-subsequence": 0.95,
+      "monotonic-stack": 0.85,
+      "dynamic-programming": 0.9
+    }
+  }
+}

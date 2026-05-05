@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix",
+  "title": "Minimum Number of Flips to Convert Binary Matrix to Zero Matrix",
+  "slug": "minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "bit-manipulation",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Given a small binary matrix, find the minimum number of flips where flipping a cell toggles it and its neighbors, to convert the matrix to all zeros, or determine if impossible.",
+  "tags": [
+    "matrix",
+    "bit-manipulation",
+    "graph",
+    "breadth-first-search"
+  ],
+  "patterns": [
+    "bitmask-representation",
+    "bfs",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923605,
+    "pattern_confidence": {
+      "bitmask-representation": 0.95,
+      "bfs": 0.9,
+      "state-space-search": 0.88
+    }
+  }
+}

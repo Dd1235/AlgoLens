@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-odd-even-jump",
+  "title": "Odd Even Jump",
+  "slug": "odd-even-jump",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/odd-even-jump/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "stack",
+    "sorting",
+    "monotonic-stack",
+    "ordered-set"
+  ],
+  "statement": "Given an integer array, determine how many starting indices can reach the end by making alternating odd and even jumps defined by specific value and index constraints.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "ordered-set"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "binary-search",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923860,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "binary-search": 0.85,
+      "dp": 0.95
+    }
+  }
+}

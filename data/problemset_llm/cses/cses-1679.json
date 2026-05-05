@@ -1,0 +1,30 @@
+{
+  "id": "cses-1679",
+  "title": "Course Schedule",
+  "slug": "course-schedule",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1679",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a set of courses and prerequisite pairs, determine a valid order to complete all courses respecting the prerequisites, or report impossibility if no such order exists.",
+  "tags": [
+    "graph",
+    "topological-sort",
+    "dfs"
+  ],
+  "patterns": [
+    "topological-sort",
+    "cycle-detection",
+    "directed-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951491,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "cycle-detection": 0.95,
+      "directed-graph": 0.9
+    }
+  }
+}

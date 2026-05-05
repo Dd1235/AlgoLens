@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-house-robber",
+  "title": "House Robber",
+  "slug": "house-robber",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/house-robber/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array representing money in houses along a street, find the maximum amount that can be robbed without robbing two adjacent houses.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922379,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

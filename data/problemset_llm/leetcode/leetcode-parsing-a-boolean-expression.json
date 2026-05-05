@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-parsing-a-boolean-expression",
+  "title": "Parsing A Boolean Expression",
+  "slug": "parsing-a-boolean-expression",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/parsing-a-boolean-expression/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "stack",
+    "recursion"
+  ],
+  "statement": "Evaluate a given boolean expression string containing literals and operators NOT, AND, and OR, returning its boolean result.",
+  "tags": [
+    "string",
+    "stack",
+    "recursion"
+  ],
+  "patterns": [
+    "expression-parsing",
+    "stack-based-evaluation",
+    "recursive-evaluation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923897,
+    "pattern_confidence": {
+      "expression-parsing": 0.95,
+      "stack-based-evaluation": 0.9,
+      "recursive-evaluation": 0.85
+    }
+  }
+}

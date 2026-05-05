@@ -1,0 +1,27 @@
+{
+  "id": "cses-1645",
+  "title": "Nearest Smaller Values",
+  "slug": "nearest-smaller-values",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1645",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given an array of integers, find for each position the nearest position to the left with a smaller value, or 0 if none exists.",
+  "tags": [
+    "array",
+    "stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "nearest-smaller-element"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951369,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "nearest-smaller-element": 0.95
+    }
+  }
+}

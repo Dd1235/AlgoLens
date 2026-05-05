@@ -1,0 +1,28 @@
+{
+  "id": "cses-1671",
+  "title": "Shortest Routes I",
+  "slug": "shortest-routes-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1671",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed weighted graph with n cities and m flights, find the shortest distance from city 1 to every other city.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dijkstra"
+  ],
+  "patterns": [
+    "dijkstra",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951472,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "priority-queue": 0.9
+    }
+  }
+}

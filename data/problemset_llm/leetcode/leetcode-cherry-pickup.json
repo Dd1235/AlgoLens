@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-cherry-pickup",
+  "title": "Cherry Pickup",
+  "slug": "cherry-pickup",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cherry-pickup/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given an n x n grid with cherries, empty cells, and thorns, find the maximum cherries collectible by traveling from the top-left to bottom-right corner and back, moving only through valid cells and picking cherries only once per cell.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "state-compression",
+    "grid-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922537,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "state-compression": 0.9,
+      "grid-dp": 0.92
+    }
+  }
+}

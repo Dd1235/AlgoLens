@@ -1,0 +1,30 @@
+{
+  "id": "cses-2193",
+  "title": "Polygon Lattice Points",
+  "slug": "polygon-lattice-points",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2193",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given a simple polygon defined by integer-coordinate vertices, compute the number of lattice points strictly inside the polygon and on its boundary.",
+  "tags": [
+    "geometry",
+    "number-theory",
+    "math"
+  ],
+  "patterns": [
+    "pick-s-theorem",
+    "gcd-for-boundary-points",
+    "polygon-area"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951799,
+    "pattern_confidence": {
+      "pick-s-theorem": 0.98,
+      "gcd-for-boundary-points": 0.9,
+      "polygon-area": 0.85
+    }
+  }
+}

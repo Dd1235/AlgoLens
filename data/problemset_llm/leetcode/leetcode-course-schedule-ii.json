@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-course-schedule-ii",
+  "title": "Course Schedule II",
+  "slug": "course-schedule-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/course-schedule-ii/",
+  "source_topic": "LeetCode / Graphs",
+  "difficulty": "Medium",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given a number of courses and prerequisite pairs, determine a valid order to complete all courses or return an empty array if impossible.",
+  "tags": [
+    "graph",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "topological-sort",
+    "cycle-detection",
+    "directed-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922403,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "cycle-detection": 0.95,
+      "directed-graph": 0.9
+    }
+  }
+}

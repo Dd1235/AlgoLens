@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-number-of-flowers-in-full-bloom",
+  "title": "Number of Flowers in Full Bloom",
+  "slug": "number-of-flowers-in-full-bloom",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-flowers-in-full-bloom/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "sorting",
+    "prefix-sum",
+    "ordered-set"
+  ],
+  "statement": "Given intervals representing flower bloom periods and arrival times of people, determine how many flowers are in full bloom at each person's arrival time.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "prefix-sum",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923775,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "prefix-sum": 0.85,
+      "sorting": 0.9
+    }
+  }
+}

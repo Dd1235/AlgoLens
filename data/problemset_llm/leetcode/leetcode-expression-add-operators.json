@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-expression-add-operators",
+  "title": "Expression Add Operators",
+  "slug": "expression-add-operators",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/expression-add-operators/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "backtracking"
+  ],
+  "statement": "Given a digit string and a target integer, find all ways to insert '+', '-', and '*' operators between digits to form expressions that evaluate to the target, without operands having leading zeros.",
+  "tags": [
+    "string",
+    "math",
+    "backtracking"
+  ],
+  "patterns": [
+    "backtracking",
+    "expression-evaluation",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922856,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "expression-evaluation": 0.9,
+      "pruning": 0.85
+    }
+  }
+}

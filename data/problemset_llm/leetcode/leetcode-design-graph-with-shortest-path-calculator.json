@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-design-graph-with-shortest-path-calculator",
+  "title": "Design Graph With Shortest Path Calculator",
+  "slug": "design-graph-with-shortest-path-calculator",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "graph",
+    "design",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Implement a directed weighted graph supporting edge additions and queries for the shortest path cost between two nodes.",
+  "tags": [
+    "graph",
+    "design",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "priority-queue",
+    "dynamic-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922794,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "priority-queue": 0.95,
+      "dynamic-graph": 0.85
+    }
+  }
+}

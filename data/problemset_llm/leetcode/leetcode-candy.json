@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-candy",
+  "title": "Candy",
+  "slug": "candy",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/candy/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an array of ratings for children standing in a line, assign candies so that each child has at least one candy and children with higher ratings than their neighbors get more candies, minimizing the total candies distributed.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pass"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922497,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "two-pass": 0.9
+    }
+  }
+}

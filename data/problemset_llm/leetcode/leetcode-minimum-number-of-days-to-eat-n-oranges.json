@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-number-of-days-to-eat-n-oranges",
+  "title": "Minimum Number of Days to Eat N Oranges",
+  "slug": "minimum-number-of-days-to-eat-n-oranges",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given n oranges, determine the minimum number of days to eat all oranges by either eating one orange per day or eating a fraction of the oranges when divisible by 2 or 3, choosing one action per day.",
+  "tags": [
+    "dynamic-programming",
+    "memoization"
+  ],
+  "patterns": [
+    "top-down-dp",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923603,
+    "pattern_confidence": {
+      "top-down-dp": 0.98,
+      "memoization": 0.95
+    }
+  }
+}

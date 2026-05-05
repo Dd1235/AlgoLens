@@ -1,0 +1,28 @@
+{
+  "id": "cses-3413",
+  "title": "Filled Subgrid Count I",
+  "slug": "filled-subgrid-count-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3413",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given an n×n grid of letters from the first k uppercase letters, count for each letter the number of square subgrids consisting entirely of that letter.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952037,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.7
+    }
+  }
+}

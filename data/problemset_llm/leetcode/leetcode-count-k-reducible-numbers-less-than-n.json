@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-k-reducible-numbers-less-than-n",
+  "title": "Count K-Reducible Numbers Less Than N",
+  "slug": "count-k-reducible-numbers-less-than-n",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Given a binary string representing a number n and an integer k, count how many positive integers less than n become 1 after applying at most k times the operation of replacing a number by the count of set bits in its binary representation. Return the count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "digit-dp",
+    "bit-counting",
+    "modular-arithmetic",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922620,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "bit-counting": 0.9,
+      "modular-arithmetic": 0.85,
+      "state-compression": 0.8
+    }
+  }
+}

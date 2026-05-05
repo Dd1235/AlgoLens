@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-swim-in-rising-water",
+  "title": "Swim in Rising Water",
+  "slug": "swim-in-rising-water",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/swim-in-rising-water/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given an n x n grid of unique elevations, determine the minimum time t such that one can swim from the top-left to the bottom-right cell by moving only through cells with elevation at most t.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "matrix"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924204,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "bfs": 0.85
+    }
+  }
+}

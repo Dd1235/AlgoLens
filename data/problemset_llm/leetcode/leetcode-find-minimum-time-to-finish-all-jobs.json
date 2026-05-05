@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-minimum-time-to-finish-all-jobs",
+  "title": "Find Minimum Time to Finish All Jobs",
+  "slug": "find-minimum-time-to-finish-all-jobs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given a list of job durations and k workers, assign jobs to minimize the maximum total working time among all workers.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bitmask"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "bitmask-dp",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922907,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "bitmask-dp": 0.9,
+      "backtracking": 0.85
+    }
+  }
+}

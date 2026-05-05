@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximize-the-minimum-game-score",
+  "title": "Maximize the Minimum Game Score",
+  "slug": "maximize-the-minimum-game-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-minimum-game-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy"
+  ],
+  "statement": "Given an array of points and a maximum number of moves, determine the maximum possible minimum score achievable in a gameScore array after performing at most m moves that increment or decrement the current index while adding points to gameScore.",
+  "tags": [
+    "array",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923272,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

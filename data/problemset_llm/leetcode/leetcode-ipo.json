@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-ipo",
+  "title": "IPO",
+  "slug": "ipo",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/ipo/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given initial capital and a list of projects each with a required capital and profit, select up to k projects to maximize the final capital after completing them sequentially.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923081,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.9,
+      "heap-priority-queue": 0.95
+    }
+  }
+}

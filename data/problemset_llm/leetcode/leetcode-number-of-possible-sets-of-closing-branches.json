@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-number-of-possible-sets-of-closing-branches",
+  "title": "Number of Possible Sets of Closing Branches",
+  "slug": "number-of-possible-sets-of-closing-branches",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "bit-manipulation",
+    "graph",
+    "heap-priority-queue",
+    "enumeration",
+    "shortest-path"
+  ],
+  "statement": "Given a connected undirected weighted graph, count the number of subsets of nodes to close so that the remaining nodes have pairwise shortest-path distances at most maxDistance.",
+  "tags": [
+    "graph",
+    "bitmask",
+    "shortest-path",
+    "dp"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "floyd-warshall",
+    "shortest-path",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923797,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "floyd-warshall": 0.9,
+      "shortest-path": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

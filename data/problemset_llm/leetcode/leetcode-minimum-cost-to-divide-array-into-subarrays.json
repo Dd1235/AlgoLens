@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-to-divide-array-into-subarrays",
+  "title": "Minimum Cost to Divide Array Into Subarrays",
+  "slug": "minimum-cost-to-divide-array-into-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-divide-array-into-subarrays/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given two integer arrays and a parameter k, partition the first array into subarrays to minimize the sum of costs defined by a formula involving prefix sums of both arrays and the subarray index.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923522,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dp": 0.9,
+      "interval-dp": 0.85
+    }
+  }
+}

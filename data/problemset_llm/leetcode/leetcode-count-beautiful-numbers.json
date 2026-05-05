@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-beautiful-numbers",
+  "title": "Count Beautiful Numbers",
+  "slug": "count-beautiful-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-beautiful-numbers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the numbers within a given range whose digit product is divisible by their digit sum.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922581,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.85,
+      "state-compression": 0.7
+    }
+  }
+}

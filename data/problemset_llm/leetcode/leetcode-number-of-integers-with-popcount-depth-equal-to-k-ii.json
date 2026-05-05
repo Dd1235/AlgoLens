@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-integers-with-popcount-depth-equal-to-k-ii",
+  "title": "Number of Integers With Popcount-Depth Equal to K II",
+  "slug": "number-of-integers-with-popcount-depth-equal-to-k-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Given an array, support queries to count elements in a range with a specific popcount-depth and updates to element values, where popcount-depth is the number of iterations applying popcount until reaching 1.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "fenwick-tree",
+    "segment-tree",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923788,
+    "pattern_confidence": {
+      "fenwick-tree": 0.9,
+      "segment-tree": 0.9,
+      "offline-queries": 0.7
+    }
+  }
+}

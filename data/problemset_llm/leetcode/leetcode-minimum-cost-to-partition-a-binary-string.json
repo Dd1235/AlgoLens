@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-to-partition-a-binary-string",
+  "title": "Minimum Cost to Partition a Binary String",
+  "slug": "minimum-cost-to-partition-a-binary-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "divide-and-conquer",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary string, partition it into segments to minimize total cost where cost depends on segment length and number of sensitive elements, with splits allowed only on even-length segments into equal halves.",
+  "tags": [
+    "string",
+    "dp",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "divide-and-conquer-dp",
+    "prefix-sum",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923537,
+    "pattern_confidence": {
+      "divide-and-conquer-dp": 0.95,
+      "prefix-sum": 0.9,
+      "interval-dp": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1676",
+  "title": "Road Construction",
+  "slug": "road-construction",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1676",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given n cities initially disconnected, and m roads added one by one, after each addition report the number of connected components and the size of the largest component.",
+  "tags": [
+    "graph",
+    "union-find",
+    "dsu"
+  ],
+  "patterns": [
+    "union-find",
+    "disjoint-set-union",
+    "incremental-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951514,
+    "pattern_confidence": {
+      "union-find": 0.99,
+      "disjoint-set-union": 0.98,
+      "incremental-connectivity": 0.95
+    }
+  }
+}

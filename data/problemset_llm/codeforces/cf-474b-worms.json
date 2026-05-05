@@ -1,0 +1,31 @@
+{
+  "id": "cf-474b-worms",
+  "title": "Worms",
+  "slug": "codeforces-474b-worms",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/474/B",
+  "source_topic": "Codeforces / Binary Search, Greedy, and Two Pointers",
+  "source_tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "statement": "Given sizes of piles of worms concatenated into a sequence, determine for each queried worm label which pile it belongs to.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777953628,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.92
+    }
+  }
+}

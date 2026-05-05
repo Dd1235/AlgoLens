@@ -1,0 +1,27 @@
+{
+  "id": "cses-3304",
+  "title": "Visible Buildings Queries",
+  "slug": "visible-buildings-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3304",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given heights of buildings in a row, answer queries asking how many buildings are visible when considering only a specified subrange, where a building is visible if it is taller than all buildings to its left in that subrange.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951580,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search": 0.7
+    }
+  }
+}

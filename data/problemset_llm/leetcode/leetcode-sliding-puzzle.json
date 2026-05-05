@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-sliding-puzzle",
+  "title": "Sliding Puzzle",
+  "slug": "sliding-puzzle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sliding-puzzle/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "breadth-first-search",
+    "memoization",
+    "matrix"
+  ],
+  "statement": "Given a 2x3 board representing a sliding puzzle with tiles 1 to 5 and an empty space, find the minimum number of moves to reach the solved state or determine if it is impossible.",
+  "tags": [
+    "array",
+    "graph",
+    "breadth-first-search",
+    "backtracking",
+    "memoization"
+  ],
+  "patterns": [
+    "bfs",
+    "state-space-search",
+    "shortest-path",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924064,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "state-space-search": 0.95,
+      "shortest-path": 0.9,
+      "memoization": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-number-of-non-overlapping-palindrome-substrings",
+  "title": "Maximum Number of Non-overlapping Palindrome Substrings",
+  "slug": "maximum-number-of-non-overlapping-palindrome-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given a string and an integer k, find the maximum number of non-overlapping palindromic substrings each of length at least k.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "palindrome-check",
+    "interval-dp",
+    "greedy-selection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923348,
+    "pattern_confidence": {
+      "palindrome-check": 0.95,
+      "interval-dp": 0.9,
+      "greedy-selection": 0.85
+    }
+  }
+}

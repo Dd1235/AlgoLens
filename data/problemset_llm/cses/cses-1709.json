@@ -1,0 +1,29 @@
+{
+  "id": "cses-1709",
+  "title": "Coin Grid",
+  "slug": "coin-grid",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1709",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an n×n grid with coins placed on some squares, find the minimum number of moves to remove all coins by repeatedly removing all coins from a single chosen row or column each move.",
+  "tags": [
+    "graph",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "minimum-vertex-cover",
+    "konig-theorem",
+    "maximum-bipartite-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952188,
+    "pattern_confidence": {
+      "minimum-vertex-cover": 0.95,
+      "konig-theorem": 0.9,
+      "maximum-bipartite-matching": 0.9
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-delete-columns-to-make-sorted-iii",
+  "title": "Delete Columns to Make Sorted III",
+  "slug": "delete-columns-to-make-sorted-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/delete-columns-to-make-sorted-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array of equal-length strings, find the minimum number of column deletions so that each remaining string is individually sorted lexicographically.",
+  "tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922777,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.95,
+      "dp": 0.9
+    }
+  }
+}

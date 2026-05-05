@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-best-time-to-buy-and-sell-stock-iv",
+  "title": "Best Time to Buy and Sell Stock IV",
+  "slug": "best-time-to-buy-and-sell-stock-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given daily stock prices and a limit k on the number of transactions, find the maximum profit achievable by performing at most k buy-sell transactions without overlapping.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "state-compression",
+    "knapsack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922469,
+    "pattern_confidence": {
+      "dp-on-dag": 0.9,
+      "state-compression": 0.85,
+      "knapsack": 0.8
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-minimum-time-to-transport-all-individuals",
+  "title": "Minimum Time to Transport All Individuals",
+  "slug": "minimum-time-to-transport-all-individuals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-transport-all-individuals/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path",
+    "bitmask"
+  ],
+  "statement": "Given n individuals with crossing times and a boat capacity k, transport all individuals across a river through m cyclic environmental stages affecting crossing speed, minimizing total time including return trips.",
+  "tags": [
+    "bitmask",
+    "dp",
+    "graph",
+    "binary-search"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "binary-search-answer",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923707,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "binary-search-answer": 0.85,
+      "shortest-path": 0.8
+    }
+  }
+}

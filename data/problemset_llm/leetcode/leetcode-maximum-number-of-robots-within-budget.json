@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-maximum-number-of-robots-within-budget",
+  "title": "Maximum Number of Robots Within Budget",
+  "slug": "maximum-number-of-robots-within-budget",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-robots-within-budget/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "queue",
+    "sliding-window",
+    "heap-priority-queue",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Given two arrays representing charge times and running costs of robots, find the maximum length of a consecutive subarray of robots such that the total cost, defined as the maximum charge time plus the length times the sum of running costs, does not exceed a given budget.",
+  "tags": [
+    "array",
+    "sliding-window",
+    "heap",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "sliding-window",
+    "monotonic-queue",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923356,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "sliding-window": 0.9,
+      "monotonic-queue": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

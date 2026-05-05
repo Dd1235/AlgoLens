@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-count-ways-to-make-array-with-product",
+  "title": "Count Ways to Make Array With Product",
+  "slug": "count-ways-to-make-array-with-product",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-ways-to-make-array-with-product/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Given multiple queries each with an array size and a target product, compute the number of ways to fill the array with positive integers so that their product equals the target, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "combinatorial-counting",
+    "modular-arithmetic",
+    "dp-on-factors"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922748,
+    "pattern_confidence": {
+      "prime-factorization": 0.98,
+      "combinatorial-counting": 0.95,
+      "modular-arithmetic": 0.9,
+      "dp-on-factors": 0.85
+    }
+  }
+}

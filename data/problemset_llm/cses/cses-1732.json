@@ -1,0 +1,27 @@
+{
+  "id": "cses-1732",
+  "title": "Finding Borders",
+  "slug": "finding-borders",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1732",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, find all lengths of its borders, where a border is a prefix that is also a suffix but not equal to the entire string. Output these border lengths in increasing order.",
+  "tags": [
+    "string",
+    "prefix-function"
+  ],
+  "patterns": [
+    "prefix-function",
+    "kmp-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951747,
+    "pattern_confidence": {
+      "prefix-function": 0.98,
+      "kmp-algorithm": 0.95
+    }
+  }
+}

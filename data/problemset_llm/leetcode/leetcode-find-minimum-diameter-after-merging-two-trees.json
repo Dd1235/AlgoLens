@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-minimum-diameter-after-merging-two-trees",
+  "title": "Find Minimum Diameter After Merging Two Trees",
+  "slug": "find-minimum-diameter-after-merging-two-trees",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-minimum-diameter-after-merging-two-trees/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph"
+  ],
+  "statement": "Given two undirected trees, connect one node from each tree with an edge to form a single tree and find the minimum possible diameter of the resulting tree.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "tree-diameter",
+    "longest-path",
+    "depth-first-search",
+    "breadth-first-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922902,
+    "pattern_confidence": {
+      "tree-diameter": 0.98,
+      "longest-path": 0.95,
+      "depth-first-search": 0.9,
+      "breadth-first-search": 0.9
+    }
+  }
+}

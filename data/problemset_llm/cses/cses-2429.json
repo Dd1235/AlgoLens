@@ -1,0 +1,31 @@
+{
+  "id": "cses-2429",
+  "title": "Grid Completion",
+  "slug": "grid-completion",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2429",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given an n×n grid with some cells containing A or B and the rest empty, count the number of ways to fill the grid so that each row and column contains exactly one A and one B, modulo 10^9+7.",
+  "tags": [
+    "matrix",
+    "combinatorics",
+    "graph",
+    "dp"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952075,
+    "pattern_confidence": {
+      "bipartite-matching": 0.95,
+      "dp": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

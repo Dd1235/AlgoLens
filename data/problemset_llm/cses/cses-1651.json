@@ -1,0 +1,34 @@
+{
+  "id": "cses-1651",
+  "title": "Range Update Queries",
+  "slug": "range-update-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1651",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an array, perform two types of queries: add a value to all elements in a given range, and retrieve the value at a specific position after updates.",
+  "tags": [
+    "array",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "range-update",
+    "point-query",
+    "fenwick-tree",
+    "segment-tree",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951562,
+    "pattern_confidence": {
+      "range-update": 0.98,
+      "point-query": 0.95,
+      "fenwick-tree": 0.9,
+      "segment-tree": 0.9,
+      "difference-array": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-kth-smallest-amount-with-single-denomination-combination",
+  "title": "Kth Smallest Amount With Single Denomination Combination",
+  "slug": "kth-smallest-amount-with-single-denomination-combination",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "bit-manipulation",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Given distinct coin denominations and an integer k, find the k-th smallest amount that can be formed using multiples of a single denomination without mixing different coins.",
+  "tags": [
+    "array",
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "multiples-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923099,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "multiples-enumeration": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1653",
+  "title": "Elevator Rides",
+  "slug": "elevator-rides",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1653",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given weights of n people and an elevator weight limit, find the minimum number of elevator rides needed to carry all people without exceeding the weight limit per ride.",
+  "tags": [
+    "dp",
+    "bitmask",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "subset-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951438,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "subset-enumeration": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-jump-game-v",
+  "title": "Jump Game V",
+  "slug": "jump-game-v",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/jump-game-v/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given an array and a maximum jump distance, find the longest sequence of indices reachable by jumping only to strictly smaller elements without any larger elements in between.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "memoization",
+    "topological-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923085,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "memoization": 0.9,
+      "topological-sort": 0.7
+    }
+  }
+}

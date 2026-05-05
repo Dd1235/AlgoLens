@@ -1,0 +1,31 @@
+{
+  "id": "cses-1090",
+  "title": "Ferris Wheel",
+  "slug": "ferris-wheel",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1090",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given weights of children and a maximum allowed weight per gondola, find the minimum number of gondolas needed if each gondola can hold one or two children without exceeding the weight limit.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951312,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "two-pointers": 0.95,
+      "greedy": 0.93
+    }
+  }
+}

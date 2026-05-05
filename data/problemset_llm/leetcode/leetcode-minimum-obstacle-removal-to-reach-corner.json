@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-obstacle-removal-to-reach-corner",
+  "title": "Minimum Obstacle Removal to Reach Corner",
+  "slug": "minimum-obstacle-removal-to-reach-corner",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "shortest-path"
+  ],
+  "statement": "Given a grid with empty cells and obstacles, find the minimum number of obstacles to remove to create a path from the top-left to the bottom-right corner moving only up, down, left, or right through empty cells.",
+  "tags": [
+    "graph",
+    "grid",
+    "shortest-path",
+    "bfs",
+    "heap"
+  ],
+  "patterns": [
+    "0-1-bfs",
+    "dijkstra",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923633,
+    "pattern_confidence": {
+      "0-1-bfs": 0.98,
+      "dijkstra": 0.9,
+      "priority-queue": 0.85
+    }
+  }
+}

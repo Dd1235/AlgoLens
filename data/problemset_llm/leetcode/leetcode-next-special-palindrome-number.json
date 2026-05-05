@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-next-special-palindrome-number",
+  "title": "Next Special Palindrome Number",
+  "slug": "next-special-palindrome-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/next-special-palindrome-number/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "backtracking",
+    "bit-manipulation"
+  ],
+  "statement": "Find the smallest palindrome number greater than a given integer n such that each digit k in the number appears exactly k times.",
+  "tags": [
+    "string",
+    "backtracking",
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "backtracking",
+    "digit-dp",
+    "palindrome-dp",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923747,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "digit-dp": 0.85,
+      "palindrome-dp": 0.8,
+      "bitmask": 0.75
+    }
+  }
+}

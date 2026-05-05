@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-n-queens",
+  "title": "N-Queens",
+  "slug": "n-queens",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/n-queens/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "backtracking"
+  ],
+  "statement": "Place n queens on an n×n chessboard so that no two queens attack each other, and return all distinct valid board configurations.",
+  "tags": [
+    "array",
+    "backtracking",
+    "combinatorics"
+  ],
+  "patterns": [
+    "backtracking",
+    "constraint-propagation",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923738,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "constraint-propagation": 0.85,
+      "pruning": 0.8
+    }
+  }
+}

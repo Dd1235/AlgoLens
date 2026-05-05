@@ -1,0 +1,30 @@
+{
+  "id": "cses-1662",
+  "title": "Subarray Divisibility",
+  "slug": "subarray-divisibility",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1662",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given an array of integers, count the number of subarrays whose sum is divisible by the array length n.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "modular-arithmetic",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951376,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "modular-arithmetic": 0.95,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

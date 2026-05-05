@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-segment-sum-after-removals",
+  "title": "Maximum Segment Sum After Removals",
+  "slug": "maximum-segment-sum-after-removals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-segment-sum-after-removals/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "union-find",
+    "prefix-sum",
+    "ordered-set"
+  ],
+  "statement": "Given an array and a sequence of removal queries, after each removal, compute the maximum sum of any contiguous segment of positive integers remaining in the array.",
+  "tags": [
+    "array",
+    "union-find",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "union-find",
+    "prefix-sum",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923407,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "prefix-sum": 0.9,
+      "offline-queries": 0.85
+    }
+  }
+}

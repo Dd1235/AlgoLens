@@ -1,0 +1,30 @@
+{
+  "id": "cses-1706",
+  "title": "School Excursion",
+  "slug": "school-excursion",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1706",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given n children and pairs of children who want to visit the same attraction, determine all possible counts of children visiting one attraction (Korkeasaari) that satisfy these constraints.",
+  "tags": [
+    "graph",
+    "dp",
+    "bitset"
+  ],
+  "patterns": [
+    "connected-components",
+    "bitset-dp",
+    "subset-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952186,
+    "pattern_confidence": {
+      "connected-components": 0.98,
+      "bitset-dp": 0.95,
+      "subset-sum": 0.9
+    }
+  }
+}

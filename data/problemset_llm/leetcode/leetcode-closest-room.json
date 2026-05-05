@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-closest-room",
+  "title": "Closest Room",
+  "slug": "closest-room",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/closest-room/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sorting",
+    "ordered-set"
+  ],
+  "statement": "Given a list of rooms with unique IDs and sizes, and queries specifying a preferred room ID and minimum size, find for each query the room ID with size at least the minimum and closest to the preferred ID, breaking ties by smaller ID, or -1 if none exist.",
+  "tags": [
+    "array",
+    "binary-search",
+    "ordered-set",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "offline-queries",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922541,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "offline-queries": 0.9,
+      "ordered-set": 0.9
+    }
+  }
+}

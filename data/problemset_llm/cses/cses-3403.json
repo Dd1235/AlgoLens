@@ -1,0 +1,27 @@
+{
+  "id": "cses-3403",
+  "title": "Longest Common Subsequence",
+  "slug": "longest-common-subsequence",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3403",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given two integer arrays, find the length and an example of their longest common subsequence, which is a sequence appearing in both arrays in order but not necessarily contiguously.",
+  "tags": [
+    "array",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sequence-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951413,
+    "pattern_confidence": {
+      "dynamic-programming": 0.99,
+      "sequence-reconstruction": 0.85
+    }
+  }
+}

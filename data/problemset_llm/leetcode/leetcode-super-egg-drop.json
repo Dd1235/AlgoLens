@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-super-egg-drop",
+  "title": "Super Egg Drop",
+  "slug": "super-egg-drop",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/super-egg-drop/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "statement": "Given k eggs and a building with n floors, find the minimum number of moves required to determine the highest floor from which an egg can be dropped without breaking.",
+  "tags": [
+    "math",
+    "dp",
+    "binary-search"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "binary-search-answer",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924197,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "binary-search-answer": 0.85,
+      "state-compression": 0.7
+    }
+  }
+}

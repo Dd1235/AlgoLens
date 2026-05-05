@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-stepping-numbers-in-range",
+  "title": "Count Stepping Numbers in Range",
+  "slug": "count-stepping-numbers-in-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-stepping-numbers-in-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of stepping numbers within a given numeric range, where a stepping number has adjacent digits differing by exactly one, and return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922680,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

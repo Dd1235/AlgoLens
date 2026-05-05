@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-smallest-good-base",
+  "title": "Smallest Good Base",
+  "slug": "smallest-good-base",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-good-base/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Given a large integer n as a string, find the smallest base k ≥ 2 such that n in base k is represented as all ones.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924071,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "exponentiation": 0.85
+    }
+  }
+}

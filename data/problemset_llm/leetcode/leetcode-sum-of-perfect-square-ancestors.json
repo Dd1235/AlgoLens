@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-sum-of-perfect-square-ancestors",
+  "title": "Sum of Perfect Square Ancestors",
+  "slug": "sum-of-perfect-square-ancestors",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-perfect-square-ancestors/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "tree",
+    "depth-first-search",
+    "counting",
+    "number-theory"
+  ],
+  "statement": "Given a rooted tree with values on nodes, count for each node the number of ancestors whose product with the node's value is a perfect square, and return the sum of these counts for all non-root nodes.",
+  "tags": [
+    "tree",
+    "number-theory",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "dfs",
+    "prime-factorization",
+    "hash-map-lookup",
+    "prefix-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924183,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "prime-factorization": 0.9,
+      "hash-map-lookup": 0.85,
+      "prefix-product": 0.8
+    }
+  }
+}

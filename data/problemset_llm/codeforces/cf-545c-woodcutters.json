@@ -1,0 +1,36 @@
+{
+  "id": "cf-545c-woodcutters",
+  "title": "Woodcutters",
+  "slug": "codeforces-545c-woodcutters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/545/C",
+  "source_topic": "Codeforces / Binary Search, Greedy, and Two Pointers",
+  "source_tags": [
+    "greedy",
+    "dp",
+    "intervals",
+    "sorting"
+  ],
+  "statement": "Given positions and heights of trees sorted by position, determine the maximum number of trees that can be cut down to the left or right without overlapping fallen segments or occupied points.",
+  "tags": [
+    "greedy",
+    "dp",
+    "intervals",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "interval-scheduling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777953633,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "dynamic-programming": 0.85,
+      "interval-scheduling": 0.8
+    }
+  }
+}

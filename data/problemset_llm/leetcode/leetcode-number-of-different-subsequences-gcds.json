@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-different-subsequences-gcds",
+  "title": "Number of Different Subsequences GCDs",
+  "slug": "number-of-different-subsequences-gcds",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-different-subsequences-gcds/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "counting",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers, determine how many distinct greatest common divisors (GCDs) can be formed from all non-empty subsequences of the array.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "counting"
+  ],
+  "patterns": [
+    "gcd",
+    "enumeration",
+    "divisor-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923764,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "enumeration": 0.9,
+      "divisor-enumeration": 0.85
+    }
+  }
+}

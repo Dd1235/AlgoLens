@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-submatrices-that-sum-to-target",
+  "title": "Number of Submatrices That Sum to Target",
+  "slug": "number-of-submatrices-that-sum-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Given a matrix and a target sum, count the number of non-empty submatrices whose elements sum exactly to the target value.",
+  "tags": [
+    "array",
+    "matrix",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map-lookup",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923808,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "hash-map-lookup": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

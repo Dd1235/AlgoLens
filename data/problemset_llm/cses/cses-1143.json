@@ -1,0 +1,30 @@
+{
+  "id": "cses-1143",
+  "title": "Hotel Queries",
+  "slug": "hotel-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1143",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given a list of hotels with available rooms, assign each arriving group to the first hotel that can accommodate them, updating the hotel's availability after each assignment. Output the assigned hotel index or 0 if no suitable hotel exists.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "segment-tree",
+    "range-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951567,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "segment-tree": 0.9,
+      "range-update": 0.85
+    }
+  }
+}

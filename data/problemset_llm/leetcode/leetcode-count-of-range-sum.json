@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-count-of-range-sum",
+  "title": "Count of Range Sum",
+  "slug": "count-of-range-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-of-range-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "merge-sort",
+    "ordered-set"
+  ],
+  "statement": "Given an integer array and a range [lower, upper], count the number of subarray sums that fall within this inclusive range.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search",
+    "divide-and-conquer",
+    "merge-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922648,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search": 0.85,
+      "divide-and-conquer": 0.9,
+      "merge-sort": 0.88
+    }
+  }
+}

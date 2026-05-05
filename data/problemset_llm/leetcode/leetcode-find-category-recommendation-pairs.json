@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-category-recommendation-pairs",
+  "title": "Find Category Recommendation Pairs",
+  "slug": "find-category-recommendation-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-category-recommendation-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given user purchase records and product categories, find all pairs of categories with at least three users who bought products from both categories, and return these pairs sorted by the number of such users and lexicographically by category names.",
+  "tags": [
+    "database",
+    "hash-map",
+    "set"
+  ],
+  "patterns": [
+    "group-by",
+    "join",
+    "aggregation",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922884,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "join": 0.9,
+      "aggregation": 0.9,
+      "filtering": 0.85
+    }
+  }
+}

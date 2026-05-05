@@ -1,0 +1,30 @@
+{
+  "id": "cses-2215",
+  "title": "Monotone Subsequences",
+  "slug": "monotone-subsequences",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2215",
+  "source_topic": "CSES / Construction Problems",
+  "source_tags": [],
+  "statement": "Construct a permutation of numbers from 1 to n such that the longest monotone (increasing or decreasing) subsequence has length exactly k, or determine that no such permutation exists.",
+  "tags": [
+    "array",
+    "permutation",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "longest-monotone-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951954,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "longest-monotone-subsequence": 0.88
+    }
+  }
+}

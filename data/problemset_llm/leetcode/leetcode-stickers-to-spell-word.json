@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-stickers-to-spell-word",
+  "title": "Stickers to Spell Word",
+  "slug": "stickers-to-spell-word",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stickers-to-spell-word/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "memoization",
+    "bitmask"
+  ],
+  "statement": "Given a collection of stickers each containing lowercase letters, determine the minimum number of stickers needed to form a target string by cutting and rearranging letters, or return -1 if impossible.",
+  "tags": [
+    "string",
+    "array",
+    "dynamic-programming",
+    "memoization",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "memoization",
+    "backtracking",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924111,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "memoization": 0.9,
+      "backtracking": 0.85,
+      "state-compression": 0.8
+    }
+  }
+}

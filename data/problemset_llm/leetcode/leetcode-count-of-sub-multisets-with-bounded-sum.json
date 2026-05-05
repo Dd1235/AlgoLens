@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-of-sub-multisets-with-bounded-sum",
+  "title": "Count of Sub-Multisets With Bounded Sum",
+  "slug": "count-of-sub-multisets-with-bounded-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming",
+    "sliding-window"
+  ],
+  "statement": "Count the number of sub-multisets of an array whose sums lie within a given inclusive range [l, r], considering element multiplicities and returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp-on-subsets",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922655,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dp-on-subsets": 0.95,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cses-1083",
+  "title": "Missing Number",
+  "slug": "missing-number",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1083",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given an integer n and a list of n-1 distinct numbers from 1 to n, find the single missing number in the sequence.",
+  "tags": [
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "arithmetic-sum",
+    "xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951243,
+    "pattern_confidence": {
+      "arithmetic-sum": 0.95,
+      "xor": 0.9
+    }
+  }
+}

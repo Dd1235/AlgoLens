@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-group-anagrams",
+  "title": "Group Anagrams",
+  "slug": "group-anagrams",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/group-anagrams/",
+  "source_topic": "LeetCode / Array and Hashing",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sorting"
+  ],
+  "statement": "Given an array of strings, group all strings that are anagrams of each other into separate lists.",
+  "tags": [
+    "array",
+    "string",
+    "hash-map",
+    "sorting"
+  ],
+  "patterns": [
+    "hash-map-lookup",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777921728,
+    "pattern_confidence": {
+      "hash-map-lookup": 0.98,
+      "sorting": 0.95
+    }
+  }
+}

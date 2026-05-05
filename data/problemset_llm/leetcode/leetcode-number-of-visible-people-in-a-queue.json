@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-visible-people-in-a-queue",
+  "title": "Number of Visible People in a Queue",
+  "slug": "number-of-visible-people-in-a-queue",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-visible-people-in-a-queue/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array of distinct heights representing people in a queue, determine for each person how many people to their right they can see, where visibility requires all intermediate people to be shorter than both.",
+  "tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "contribution-technique",
+    "nearest-greater-element"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923818,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "contribution-technique": 0.95,
+      "nearest-greater-element": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-get-the-maximum-score",
+  "title": "Get the Maximum Score",
+  "slug": "get-the-maximum-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/get-the-maximum-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given two sorted arrays with distinct integers, find the maximum sum of a valid path starting from either array, where you can switch arrays only at common elements, summing unique values along the path.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923048,
+    "pattern_confidence": {
+      "two-pointers": 0.98,
+      "prefix-sum": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

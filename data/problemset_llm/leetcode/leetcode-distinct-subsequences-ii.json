@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-distinct-subsequences-ii",
+  "title": "Distinct Subsequences II",
+  "slug": "distinct-subsequences-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distinct-subsequences-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, count the number of distinct non-empty subsequences modulo 10^9+7. Subsequences are formed by deleting zero or more characters without changing the order of the remaining characters.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "counting-subsequences",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922814,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "counting-subsequences": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

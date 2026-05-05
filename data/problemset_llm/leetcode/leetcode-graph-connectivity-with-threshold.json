@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-graph-connectivity-with-threshold",
+  "title": "Graph Connectivity With Threshold",
+  "slug": "graph-connectivity-with-threshold",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/graph-connectivity-with-threshold/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "union-find",
+    "number-theory"
+  ],
+  "statement": "Given n cities labeled 1 to n, connect pairs sharing a common divisor greater than a threshold. For multiple queries, determine if two cities are connected directly or indirectly.",
+  "tags": [
+    "math",
+    "graph",
+    "union-find",
+    "number-theory"
+  ],
+  "patterns": [
+    "union-find",
+    "number-theory",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923053,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "number-theory": 0.95,
+      "connected-components": 0.9
+    }
+  }
+}

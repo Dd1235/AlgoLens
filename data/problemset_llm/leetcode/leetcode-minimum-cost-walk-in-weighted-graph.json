@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-cost-walk-in-weighted-graph",
+  "title": "Minimum Cost Walk in Weighted Graph",
+  "slug": "minimum-cost-walk-in-weighted-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given an undirected weighted graph, for each query find the minimum bitwise AND cost of any walk between two vertices, or -1 if no such walk exists.",
+  "tags": [
+    "graph",
+    "bit-manipulation",
+    "union-find"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "bitmasking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923545,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "bitmasking": 0.85
+    }
+  }
+}

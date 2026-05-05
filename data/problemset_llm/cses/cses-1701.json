@@ -1,0 +1,33 @@
+{
+  "id": "cses-1701",
+  "title": "Tree Isomorphism II",
+  "slug": "tree-isomorphism-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1701",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given multiple pairs of unrooted trees, determine for each pair whether the two trees are isomorphic, meaning they can be drawn to look identical.",
+  "tags": [
+    "graph",
+    "tree",
+    "dfs",
+    "hashing"
+  ],
+  "patterns": [
+    "tree-isomorphism",
+    "tree-centroid",
+    "tree-hashing",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952010,
+    "pattern_confidence": {
+      "tree-isomorphism": 0.98,
+      "tree-centroid": 0.9,
+      "tree-hashing": 0.9,
+      "dfs": 0.85
+    }
+  }
+}

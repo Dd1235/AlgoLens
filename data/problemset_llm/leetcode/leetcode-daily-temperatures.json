@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-daily-temperatures",
+  "title": "Daily Temperatures",
+  "slug": "daily-temperatures",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/daily-temperatures/",
+  "source_topic": "LeetCode / Stack and Monotonic Structures",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array of daily temperatures, determine for each day how many days must pass until a warmer temperature occurs, or 0 if none exists.",
+  "tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "next-greater-element",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922358,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "next-greater-element": 0.95,
+      "contribution-technique": 0.9
+    }
+  }
+}

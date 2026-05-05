@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-substring-with-largest-variance",
+  "title": "Substring With Largest Variance",
+  "slug": "substring-with-largest-variance",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/substring-with-largest-variance/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "enumeration"
+  ],
+  "statement": "Given a lowercase string, find the maximum variance among all substrings, where variance is defined as the largest difference in counts between any two characters in the substring.",
+  "tags": [
+    "string",
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "enumeration",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924160,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "two-pointers": 0.85,
+      "enumeration": 0.8,
+      "greedy": 0.75
+    }
+  }
+}

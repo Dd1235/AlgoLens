@@ -1,0 +1,27 @@
+{
+  "id": "cses-1655",
+  "title": "Maximum Xor Subarray",
+  "slug": "maximum-xor-subarray",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1655",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given an array of integers, find the maximum xor value obtainable from any contiguous subarray.",
+  "tags": [
+    "array",
+    "bitwise"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951929,
+    "pattern_confidence": {
+      "prefix-xor": 0.98,
+      "trie": 0.9
+    }
+  }
+}

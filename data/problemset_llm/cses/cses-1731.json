@@ -1,0 +1,30 @@
+{
+  "id": "cses-1731",
+  "title": "Word Combinations",
+  "slug": "word-combinations",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1731",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a target string and a dictionary of unique words, count the number of ways to form the target string by concatenating dictionary words. Output the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "trie"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-matching",
+    "trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951742,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-matching": 0.9,
+      "trie": 0.85
+    }
+  }
+}

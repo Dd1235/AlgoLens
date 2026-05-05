@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-count-the-number-of-winning-sequences",
+  "title": "Count The Number of Winning Sequences",
+  "slug": "count-the-number-of-winning-sequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-winning-sequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a sequence of Alice's creature summons, count the number of Bob's sequences that beat Alice in points under the constraint that Bob never summons the same creature consecutively. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922729,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.9
+    }
+  }
+}

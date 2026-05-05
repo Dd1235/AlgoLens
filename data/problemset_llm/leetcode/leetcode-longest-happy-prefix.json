@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-happy-prefix",
+  "title": "Longest Happy Prefix",
+  "slug": "longest-happy-prefix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-happy-prefix/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Find the longest non-empty prefix of a string that is also a suffix, excluding the entire string itself.",
+  "tags": [
+    "string",
+    "string-matching",
+    "hash-function"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "kmp",
+    "prefix-function"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923169,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "kmp": 0.9,
+      "prefix-function": 0.9
+    }
+  }
+}

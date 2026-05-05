@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-the-number-of-infection-sequences",
+  "title": "Count the Number of Infection Sequences",
+  "slug": "count-the-number-of-infection-sequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-infection-sequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "combinatorics"
+  ],
+  "statement": "Given a line of n people with some initially infected, count the number of valid sequences in which the infection spreads step-by-step to adjacent uninfected individuals until everyone is infected, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "combinatorial-counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922721,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "combinatorial-counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cses-3404",
+  "title": "Permutation Subsequence",
+  "slug": "permutation-subsequence",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3404",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given two permutation arrays, find the length and an example of their longest common subsequence (LCS).",
+  "tags": [
+    "array",
+    "dp"
+  ],
+  "patterns": [
+    "longest-common-subsequence",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952146,
+    "pattern_confidence": {
+      "longest-common-subsequence": 0.98,
+      "dynamic-programming": 0.95
+    }
+  }
+}

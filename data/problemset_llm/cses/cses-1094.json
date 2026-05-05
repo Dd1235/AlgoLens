@@ -1,0 +1,25 @@
+{
+  "id": "cses-1094",
+  "title": "Increasing Array",
+  "slug": "increasing-array",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1094",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given an array, find the minimum total increments needed to make the array non-decreasing by only increasing elements.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951250,
+    "pattern_confidence": {
+      "greedy": 0.98
+    }
+  }
+}

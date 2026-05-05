@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-profit-in-job-scheduling",
+  "title": "Maximum Profit in Job Scheduling",
+  "slug": "maximum-profit-in-job-scheduling",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given jobs with start times, end times, and profits, find the maximum total profit from a subset of non-overlapping jobs.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "dp-on-dag",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923385,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "dp-on-dag": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

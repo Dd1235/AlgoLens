@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-adjacent-swaps-for-k-consecutive-ones",
+  "title": "Minimum Adjacent Swaps for K Consecutive Ones",
+  "slug": "minimum-adjacent-swaps-for-k-consecutive-ones",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary array and an integer k, find the minimum number of adjacent swaps needed to have k consecutive ones in the array.",
+  "tags": [
+    "array",
+    "greedy",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923499,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

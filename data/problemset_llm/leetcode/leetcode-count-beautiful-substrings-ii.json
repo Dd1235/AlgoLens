@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-beautiful-substrings-ii",
+  "title": "Count Beautiful Substrings II",
+  "slug": "count-beautiful-substrings-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-beautiful-substrings-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "number-theory",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of non-empty substrings where the number of vowels equals the number of consonants and their product is divisible by a given integer k.",
+  "tags": [
+    "string",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "modular-arithmetic",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922583,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "modular-arithmetic": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

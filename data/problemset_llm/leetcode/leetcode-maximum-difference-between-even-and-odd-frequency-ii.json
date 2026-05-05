@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-difference-between-even-and-odd-frequency-ii",
+  "title": "Maximum Difference Between Even and Odd Frequency II",
+  "slug": "maximum-difference-between-even-and-odd-frequency-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "sliding-window",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given a string and an integer k, find the maximum difference between the frequency of two characters in any substring of length at least k, where one character has an odd frequency and the other has a non-zero even frequency.",
+  "tags": [
+    "string",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-sum",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923303,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "prefix-sum": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

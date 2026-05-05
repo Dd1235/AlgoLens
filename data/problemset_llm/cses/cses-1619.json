@@ -1,0 +1,27 @@
+{
+  "id": "cses-1619",
+  "title": "Restaurant Customers",
+  "slug": "restaurant-customers",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1619",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given arrival and leaving times of customers in a restaurant, determine the maximum number of customers present simultaneously.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "line-sweep",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951316,
+    "pattern_confidence": {
+      "line-sweep": 0.98,
+      "sorting": 0.9
+    }
+  }
+}

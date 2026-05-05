@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-number-of-refueling-stops",
+  "title": "Minimum Number of Refueling Stops",
+  "slug": "minimum-number-of-refueling-stops",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-refueling-stops/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a target distance, initial fuel, and gas stations along the route, determine the minimum number of refueling stops needed to reach the destination or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "priority-queue",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923621,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "priority-queue": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

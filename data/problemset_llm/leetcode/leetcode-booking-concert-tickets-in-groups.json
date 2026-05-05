@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-booking-concert-tickets-in-groups",
+  "title": "Booking Concert Tickets in Groups",
+  "slug": "booking-concert-tickets-in-groups",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/booking-concert-tickets-in-groups/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "binary-search",
+    "design",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Design a ticketing system for a concert hall with n rows and m seats per row to allocate seats for groups either consecutively in one row or scattered across multiple rows up to a given maxRow, supporting queries to gather or scatter seats efficiently.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "binary-indexed-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "binary-indexed-tree",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922481,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "binary-indexed-tree": 0.9,
+      "binary-search": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

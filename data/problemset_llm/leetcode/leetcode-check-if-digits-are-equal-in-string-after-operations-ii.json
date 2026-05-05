@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-check-if-digits-are-equal-in-string-after-operations-ii",
+  "title": "Check If Digits Are Equal in String After Operations II",
+  "slug": "check-if-digits-are-equal-in-string-after-operations-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Given a string of digits, repeatedly replace it by the sequence of sums modulo 10 of each consecutive digit pair until only two digits remain, then determine if these final two digits are equal.",
+  "tags": [
+    "string",
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922515,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

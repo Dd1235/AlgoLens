@@ -1,0 +1,28 @@
+{
+  "id": "cses-3154",
+  "title": "System of Linear Equations",
+  "slug": "system-of-linear-equations",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3154",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a system of linear equations modulo 10^9+7, find any solution vector for the variables or determine that no solution exists.",
+  "tags": [
+    "math",
+    "linear-algebra",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "gaussian-elimination",
+    "modular-inverse"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951710,
+    "pattern_confidence": {
+      "gaussian-elimination": 0.98,
+      "modular-inverse": 0.95
+    }
+  }
+}

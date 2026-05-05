@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-longest-increasing-path-in-a-matrix",
+  "title": "Longest Increasing Path in a Matrix",
+  "slug": "longest-increasing-path-in-a-matrix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort",
+    "memoization",
+    "matrix"
+  ],
+  "statement": "Given an m x n integer matrix, find the length of the longest strictly increasing path moving only up, down, left, or right within the matrix boundaries.",
+  "tags": [
+    "matrix",
+    "graph",
+    "dynamic-programming",
+    "dfs",
+    "memoization"
+  ],
+  "patterns": [
+    "dfs",
+    "memoization",
+    "topological-sort",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923171,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "memoization": 0.93,
+      "topological-sort": 0.85,
+      "dp-on-dag": 0.88
+    }
+  }
+}

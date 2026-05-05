@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-genetic-difference-query",
+  "title": "Maximum Genetic Difference Query",
+  "slug": "maximum-genetic-difference-query",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-genetic-difference-query/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "bit-manipulation",
+    "depth-first-search",
+    "trie"
+  ],
+  "statement": "Given a rooted tree where each node's value equals its index, answer queries asking for the maximum XOR of a given value with any node value on the path from a specified node to the root.",
+  "tags": [
+    "tree",
+    "bit-manipulation",
+    "dfs",
+    "trie"
+  ],
+  "patterns": [
+    "dfs",
+    "binary-trie",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923322,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "binary-trie": 0.97,
+      "offline-queries": 0.85
+    }
+  }
+}

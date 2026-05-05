@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-palindromic-path-queries-in-a-tree",
+  "title": "Palindromic Path Queries in a Tree",
+  "slug": "palindromic-path-queries-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/palindromic-path-queries-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "divide-and-conquer",
+    "tree",
+    "segment-tree"
+  ],
+  "statement": "Given a tree with characters on nodes, support updates to node characters and queries to check if the characters on the path between two nodes can form a palindrome.",
+  "tags": [
+    "tree",
+    "string",
+    "data-structure"
+  ],
+  "patterns": [
+    "lca",
+    "bitmask",
+    "segment-tree",
+    "tree-flattening"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923888,
+    "pattern_confidence": {
+      "lca": 0.95,
+      "bitmask": 0.9,
+      "segment-tree": 0.88,
+      "tree-flattening": 0.85
+    }
+  }
+}

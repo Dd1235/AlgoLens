@@ -1,0 +1,23 @@
+{
+  "id": "codeforces-20-c",
+  "title": "Dijkstra?",
+  "slug": "20-c-dijkstra",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/20/C",
+  "source_topic": "Codeforces / Graphs and Grid Search",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Dijkstra? from Codeforces / Graphs and Grid Search.",
+  "tags": [],
+  "patterns": [],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": null,
+    "generated_at_unix": 1777921703,
+    "pattern_confidence": {}
+  }
+}

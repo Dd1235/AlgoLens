@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-visited-nodes-in-a-directed-graph",
+  "title": "Count Visited Nodes in a Directed Graph",
+  "slug": "count-visited-nodes-in-a-directed-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "depth-first-search",
+    "graph",
+    "topological-sort",
+    "memoization"
+  ],
+  "statement": "Given a directed graph with exactly one outgoing edge per node, determine for each node how many distinct nodes are visited when repeatedly following edges until a node is revisited.",
+  "tags": [
+    "graph",
+    "dp",
+    "dfs"
+  ],
+  "patterns": [
+    "topological-sort",
+    "cycle-detection",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922738,
+    "pattern_confidence": {
+      "topological-sort": 0.95,
+      "cycle-detection": 0.9,
+      "memoization": 0.9
+    }
+  }
+}

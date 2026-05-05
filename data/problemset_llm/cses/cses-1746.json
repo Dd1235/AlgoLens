@@ -1,0 +1,27 @@
+{
+  "id": "cses-1746",
+  "title": "Array Description",
+  "slug": "array-description",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1746",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Count the number of arrays of length n with values between 1 and m that match a given partial description, where adjacent elements differ by at most 1, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951406,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

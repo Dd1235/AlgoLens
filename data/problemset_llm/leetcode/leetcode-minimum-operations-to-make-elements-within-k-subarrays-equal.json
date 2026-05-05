@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-operations-to-make-elements-within-k-subarrays-equal",
+  "title": "Minimum Operations to Make Elements Within K Subarrays Equal",
+  "slug": "minimum-operations-to-make-elements-within-k-subarrays-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "dynamic-programming",
+    "sliding-window",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an integer array, find the minimum number of increment/decrement operations to form at least k non-overlapping subarrays of length x where all elements in each subarray are equal.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "dp-on-subarrays"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923657,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "dp-on-subarrays": 0.88
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-merge-k-sorted-lists",
+  "title": "Merge k Sorted Lists",
+  "slug": "merge-k-sorted-lists",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "linked-list",
+    "divide-and-conquer",
+    "heap-priority-queue",
+    "merge-sort"
+  ],
+  "statement": "Given k sorted linked lists, merge them into one sorted linked list.",
+  "tags": [
+    "linked-list",
+    "heap",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "heap-priority-queue",
+    "divide-and-conquer",
+    "merge-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923481,
+    "pattern_confidence": {
+      "heap-priority-queue": 0.98,
+      "divide-and-conquer": 0.9,
+      "merge-sort": 0.88
+    }
+  }
+}

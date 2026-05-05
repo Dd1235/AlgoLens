@@ -1,0 +1,30 @@
+{
+  "id": "cses-1132",
+  "title": "Tree Distances I",
+  "slug": "tree-distances-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1132",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree with n nodes, compute for each node the maximum distance to any other node in the tree.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-diameter",
+    "two-pass-dfs",
+    "distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951618,
+    "pattern_confidence": {
+      "tree-diameter": 0.98,
+      "two-pass-dfs": 0.95,
+      "distance-calculation": 0.9
+    }
+  }
+}

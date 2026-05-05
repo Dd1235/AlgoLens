@@ -1,0 +1,30 @@
+{
+  "id": "cses-1704",
+  "title": "Network Renovation",
+  "slug": "network-renovation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1704",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a tree of n computers connected by n-1 edges, add the minimum number of edges so that the network remains connected even if any single connection fails.",
+  "tags": [
+    "graph",
+    "tree",
+    "connectivity"
+  ],
+  "patterns": [
+    "bridge-finding",
+    "dfs",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952028,
+    "pattern_confidence": {
+      "bridge-finding": 0.95,
+      "dfs": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

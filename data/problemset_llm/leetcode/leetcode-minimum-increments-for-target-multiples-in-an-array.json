@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimum-increments-for-target-multiples-in-an-array",
+  "title": "Minimum Increments for Target Multiples in an Array",
+  "slug": "minimum-increments-for-target-multiples-in-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "number-theory",
+    "bitmask"
+  ],
+  "statement": "Given two arrays nums and target, find the minimum increments needed on elements of nums so that each target element has at least one multiple in nums after increments.",
+  "tags": [
+    "array",
+    "math",
+    "bitmask",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923574,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "binary-search-answer": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

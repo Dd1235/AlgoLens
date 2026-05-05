@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-sliding-window-maximum",
+  "title": "Sliding Window Maximum",
+  "slug": "sliding-window-maximum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sliding-window-maximum/",
+  "source_topic": "LeetCode / Two Pointers and Sliding Window",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "queue",
+    "sliding-window",
+    "heap-priority-queue",
+    "monotonic-queue"
+  ],
+  "statement": "Given an integer array and a window size k, find the maximum value in each sliding window of size k as it moves from left to right across the array.",
+  "tags": [
+    "array",
+    "queue",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "sliding-window",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922353,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "monotonic-queue": 0.95
+    }
+  }
+}

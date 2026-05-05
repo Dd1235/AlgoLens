@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-select-cells-in-grid-with-maximum-score",
+  "title": "Select Cells in Grid With Maximum Score",
+  "slug": "select-cells-in-grid-with-maximum-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/select-cells-in-grid-with-maximum-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "matrix",
+    "bitmask"
+  ],
+  "statement": "Given a matrix of positive integers, select one cell from each row such that all selected values are unique and the sum of these values is maximized.",
+  "tags": [
+    "array",
+    "matrix",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924004,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "backtracking": 0.7
+    }
+  }
+}

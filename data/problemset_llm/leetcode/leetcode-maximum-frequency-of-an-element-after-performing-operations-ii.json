@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-frequency-of-an-element-after-performing-operations-ii",
+  "title": "Maximum Frequency of an Element After Performing Operations II",
+  "slug": "maximum-frequency-of-an-element-after-performing-operations-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sliding-window",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and parameters k and numOperations, perform up to numOperations increments or decrements within [-k, k] on distinct elements to maximize the frequency of any element in the array.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923314,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "two-pointers": 0.88,
+      "prefix-sum": 0.85
+    }
+  }
+}

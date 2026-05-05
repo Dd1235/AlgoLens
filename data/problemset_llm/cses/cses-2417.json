@@ -1,0 +1,30 @@
+{
+  "id": "cses-2417",
+  "title": "Counting Coprime Pairs",
+  "slug": "counting-coprime-pairs",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2417",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a list of positive integers, count the number of pairs whose greatest common divisor is one (coprime pairs).",
+  "tags": [
+    "array",
+    "number-theory",
+    "math"
+  ],
+  "patterns": [
+    "gcd",
+    "inclusion-exclusion",
+    "prime-sieve"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951671,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "inclusion-exclusion": 0.9,
+      "prime-sieve": 0.85
+    }
+  }
+}

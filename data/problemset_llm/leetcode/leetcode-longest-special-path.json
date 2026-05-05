@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-longest-special-path",
+  "title": "Longest Special Path",
+  "slug": "longest-special-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-special-path/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "tree",
+    "depth-first-search",
+    "prefix-sum"
+  ],
+  "statement": "Given a weighted undirected tree with values on nodes, find the longest downward path with all unique node values and report its length and the minimum number of nodes among such longest paths.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "dfs",
+    "hash-map-lookup",
+    "unique-values-tracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923185,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "hash-map-lookup": 0.9,
+      "unique-values-tracking": 0.85
+    }
+  }
+}

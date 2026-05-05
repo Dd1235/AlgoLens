@@ -1,0 +1,30 @@
+{
+  "id": "cses-1757",
+  "title": "Course Schedule II",
+  "slug": "course-schedule-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1757",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a set of courses with prerequisite constraints, determine a valid order to complete all courses such that courses with smaller indices are completed as early as possible.",
+  "tags": [
+    "graph",
+    "topological-sort",
+    "priority-queue"
+  ],
+  "patterns": [
+    "topological-sort",
+    "lexicographically-minimal-order",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951977,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "lexicographically-minimal-order": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

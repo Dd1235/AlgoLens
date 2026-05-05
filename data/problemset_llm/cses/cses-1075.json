@@ -1,0 +1,27 @@
+{
+  "id": "cses-1075",
+  "title": "Counting Permutations",
+  "slug": "counting-permutations",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1075",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Count the number of permutations of integers from 1 to n where no two adjacent elements differ by exactly 1, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "combinatorial-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952072,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "combinatorial-counting": 0.9
+    }
+  }
+}

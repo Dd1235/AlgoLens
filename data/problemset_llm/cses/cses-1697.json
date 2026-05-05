@@ -1,0 +1,28 @@
+{
+  "id": "cses-1697",
+  "title": "Chess Tournament",
+  "slug": "chess-tournament",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1697",
+  "source_topic": "CSES / Construction Problems",
+  "source_tags": [],
+  "statement": "Given n players each specifying how many games they want to play, determine a set of pairwise games so that each player's desired number of games is met, or report impossibility.",
+  "tags": [
+    "graph",
+    "greedy",
+    "construction"
+  ],
+  "patterns": [
+    "degree-sequence-realization",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951962,
+    "pattern_confidence": {
+      "degree-sequence-realization": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

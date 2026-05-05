@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-x-value-of-array-ii",
+  "title": "Find X Value of Array II",
+  "slug": "find-x-value-of-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-x-value-of-array-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "segment-tree"
+  ],
+  "statement": "Given an array and a modulus k, support updates to elements and queries that remove a prefix and count suffix removals resulting in a product with a specific remainder modulo k.",
+  "tags": [
+    "array",
+    "math",
+    "segment-tree"
+  ],
+  "patterns": [
+    "prefix-product",
+    "modular-arithmetic",
+    "segment-tree",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923013,
+    "pattern_confidence": {
+      "prefix-product": 0.95,
+      "modular-arithmetic": 0.9,
+      "segment-tree": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

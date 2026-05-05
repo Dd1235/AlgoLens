@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-count-good-triplets-in-an-array",
+  "title": "Count Good Triplets in an Array",
+  "slug": "count-good-triplets-in-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-good-triplets-in-an-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "merge-sort",
+    "ordered-set"
+  ],
+  "statement": "Given two permutations of integers from 0 to n-1, count the number of triplets (x, y, z) that appear in increasing order by position in both permutations.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "patterns": [
+    "coordinate-compression",
+    "fenwick-tree",
+    "merge-sort-tree",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922612,
+    "pattern_confidence": {
+      "coordinate-compression": 0.9,
+      "fenwick-tree": 0.85,
+      "merge-sort-tree": 0.8,
+      "divide-and-conquer": 0.75
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-car-fleet-ii",
+  "title": "Car Fleet II",
+  "slug": "car-fleet-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/car-fleet-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "stack",
+    "heap-priority-queue",
+    "monotonic-stack"
+  ],
+  "statement": "Given positions and speeds of cars on a one-lane road, determine the time each car will collide with the next car ahead, or -1 if no collision occurs. Colliding cars form fleets moving at the slowest speed among them.",
+  "tags": [
+    "array",
+    "math",
+    "stack",
+    "heap"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "priority-queue",
+    "collision-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922499,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "priority-queue": 0.85,
+      "collision-simulation": 0.9
+    }
+  }
+}

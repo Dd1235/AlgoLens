@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-climbing-stairs",
+  "title": "Climbing Stairs",
+  "slug": "climbing-stairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/climbing-stairs/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Easy",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Count the number of distinct ways to climb to the top of a staircase with n steps, where each move can be either 1 or 2 steps.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "bottom-up-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922377,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.7,
+      "bottom-up-dp": 0.85
+    }
+  }
+}

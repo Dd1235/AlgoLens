@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-height-by-stacking-cuboids",
+  "title": "Maximum Height by Stacking Cuboids ",
+  "slug": "maximum-height-by-stacking-cuboids",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-height-by-stacking-cuboids/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a list of cuboids with dimensions that can be rotated, find the maximum height achievable by stacking a subset of them such that each cuboid placed on top has dimensions less than or equal to the one below.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "dynamic-programming",
+    "longest-increasing-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923329,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "dynamic-programming": 0.98,
+      "longest-increasing-subsequence": 0.9
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-design-movie-rental-system",
+  "title": "Design Movie Rental System",
+  "slug": "design-movie-rental-system",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-movie-rental-system/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "design",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "statement": "Implement a movie rental system supporting search for cheapest unrented copies of a movie, renting, dropping, and reporting the cheapest rented movies with efficient updates and queries.",
+  "tags": [
+    "design",
+    "heap",
+    "ordered-set",
+    "hash-map"
+  ],
+  "patterns": [
+    "balanced-binary-search-tree",
+    "heap",
+    "hash-map-lookup",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922797,
+    "pattern_confidence": {
+      "balanced-binary-search-tree": 0.9,
+      "heap": 0.95,
+      "hash-map-lookup": 0.9,
+      "ordered-set": 0.85
+    }
+  }
+}

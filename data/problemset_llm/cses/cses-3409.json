@@ -1,0 +1,32 @@
+{
+  "id": "cses-3409",
+  "title": "MST Edge Cost",
+  "slug": "mst-edge-cost",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3409",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a connected undirected weighted graph, compute for each edge the minimum spanning tree cost when that edge is forced to be included.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "dsu"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "binary-lifting",
+    "lca"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951996,
+    "pattern_confidence": {
+      "kruskal": 0.98,
+      "union-find": 0.95,
+      "binary-lifting": 0.85,
+      "lca": 0.8
+    }
+  }
+}

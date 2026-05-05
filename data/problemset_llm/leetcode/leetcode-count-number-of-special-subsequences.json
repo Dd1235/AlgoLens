@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-number-of-special-subsequences",
+  "title": "Count Number of Special Subsequences",
+  "slug": "count-number-of-special-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-special-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array of integers containing only 0s, 1s, and 2s, count the number of subsequences that consist of a positive number of 0s followed by a positive number of 1s followed by a positive number of 2s, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "modular-arithmetic",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922639,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "modular-arithmetic": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

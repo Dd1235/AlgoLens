@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-redundant-connection-ii",
+  "title": "Redundant Connection II",
+  "slug": "redundant-connection-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/redundant-connection-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given a directed graph formed by adding one extra edge to a rooted tree, identify the redundant edge whose removal restores the graph to a rooted tree structure.",
+  "tags": [
+    "graph",
+    "union-find",
+    "dfs"
+  ],
+  "patterns": [
+    "union-find",
+    "cycle-detection",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923972,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "cycle-detection": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cses-1637",
+  "title": "Removing Digits",
+  "slug": "removing-digits",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1637",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given an integer n, find the minimum number of steps to reduce it to zero by repeatedly subtracting one of its digits at each step.",
+  "tags": [
+    "dp",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "digit-extraction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951398,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "digit-extraction": 0.9
+    }
+  }
+}

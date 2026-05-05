@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-shortest-subarray-with-sum-at-least-k",
+  "title": "Shortest Subarray with Sum at Least K",
+  "slug": "shortest-subarray-with-sum-at-least-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "queue",
+    "sliding-window",
+    "heap-priority-queue",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Find the length of the shortest contiguous subarray with sum at least k in an integer array, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "queue"
+  ],
+  "patterns": [
+    "monotonic-queue",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924058,
+    "pattern_confidence": {
+      "monotonic-queue": 0.95,
+      "prefix-sum": 0.9,
+      "sliding-window": 0.85
+    }
+  }
+}

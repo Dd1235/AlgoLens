@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-tiling-a-rectangle-with-the-fewest-squares",
+  "title": "Tiling a Rectangle with the Fewest Squares",
+  "slug": "tiling-a-rectangle-with-the-fewest-squares",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "backtracking"
+  ],
+  "statement": "Given an n by m rectangle, find the minimum number of integer-sided squares needed to tile the entire rectangle without overlap.",
+  "tags": [
+    "backtracking",
+    "dp",
+    "geometry"
+  ],
+  "patterns": [
+    "backtracking",
+    "state-compression",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924233,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "state-compression": 0.85,
+      "memoization": 0.9
+    }
+  }
+}

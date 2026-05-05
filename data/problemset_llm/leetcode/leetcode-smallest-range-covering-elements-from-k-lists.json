@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-smallest-range-covering-elements-from-k-lists",
+  "title": "Smallest Range Covering Elements from K Lists",
+  "slug": "smallest-range-covering-elements-from-k-lists",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "sliding-window",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given k sorted lists of integers, find the smallest range that includes at least one number from each list.",
+  "tags": [
+    "array",
+    "heap",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "heap-priority-queue",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924082,
+    "pattern_confidence": {
+      "heap-priority-queue": 0.98,
+      "two-pointers": 0.9,
+      "sliding-window": 0.88
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-kth-ancestor-of-a-tree-node",
+  "title": "Kth Ancestor of a Tree Node",
+  "slug": "kth-ancestor-of-a-tree-node",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "binary-search",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "design"
+  ],
+  "statement": "Given a rooted tree represented by a parent array, efficiently find the k-th ancestor of any node or return -1 if it does not exist.",
+  "tags": [
+    "tree",
+    "binary-lifting",
+    "dp"
+  ],
+  "patterns": [
+    "binary-lifting",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923097,
+    "pattern_confidence": {
+      "binary-lifting": 0.98,
+      "dynamic-programming": 0.9,
+      "binary-search": 0.7
+    }
+  }
+}

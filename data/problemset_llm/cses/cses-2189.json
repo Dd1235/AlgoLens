@@ -1,0 +1,27 @@
+{
+  "id": "cses-2189",
+  "title": "Point Location Test",
+  "slug": "point-location-test",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2189",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given multiple queries each with two points defining a directed line and a third point, determine whether the third point lies to the left, right, or exactly on the line when viewed from the first point to the second.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "orientation-test",
+    "cross-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951791,
+    "pattern_confidence": {
+      "orientation-test": 0.98,
+      "cross-product": 0.95
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-apply-operations-to-maximize-frequency-score",
+  "title": "Apply Operations to Maximize Frequency Score",
+  "slug": "apply-operations-to-maximize-frequency-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sliding-window",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and a limit on increment/decrement operations, find the maximum frequency of any element achievable by performing at most k total increments or decrements.",
+  "tags": [
+    "array",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922452,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

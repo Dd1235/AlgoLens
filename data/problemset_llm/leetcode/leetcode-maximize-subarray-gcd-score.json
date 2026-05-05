@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximize-subarray-gcd-score",
+  "title": "Maximize Subarray GCD Score",
+  "slug": "maximize-subarray-gcd-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-subarray-gcd-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "enumeration",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers and a limit on doubling operations, maximize the score of a contiguous subarray defined as the product of its length and the GCD of its elements after at most k elements are doubled once.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "gcd-computation",
+    "enumeration",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923257,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "gcd-computation": 0.95,
+      "enumeration": 0.85,
+      "state-compression": 0.8
+    }
+  }
+}

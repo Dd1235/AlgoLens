@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-create-sorted-array-through-instructions",
+  "title": "Create Sorted Array through Instructions",
+  "slug": "create-sorted-array-through-instructions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/create-sorted-array-through-instructions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "merge-sort",
+    "ordered-set"
+  ],
+  "statement": "Given a sequence of integers, insert them one by one into a sorted array and compute the total cost where each insertion cost is the minimum count of elements less than or greater than the inserted element in the current array.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "patterns": [
+    "binary-indexed-tree",
+    "segment-tree",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922761,
+    "pattern_confidence": {
+      "binary-indexed-tree": 0.98,
+      "segment-tree": 0.9,
+      "order-statistics": 0.95
+    }
+  }
+}

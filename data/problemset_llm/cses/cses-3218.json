@@ -1,0 +1,30 @@
+{
+  "id": "cses-3218",
+  "title": "Knight Moves Queries",
+  "slug": "knight-moves-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3218",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given multiple queries with knight positions on an infinite chessboard, determine the minimum number of moves required for the knight to reach the top-left corner (1,1).",
+  "tags": [
+    "math",
+    "geometry",
+    "graph"
+  ],
+  "patterns": [
+    "bfs",
+    "shortest-path",
+    "infinite-grid"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952169,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "shortest-path": 0.9,
+      "infinite-grid": 0.85
+    }
+  }
+}

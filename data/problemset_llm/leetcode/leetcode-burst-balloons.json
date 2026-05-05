@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-burst-balloons",
+  "title": "Burst Balloons",
+  "slug": "burst-balloons",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/burst-balloons/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array representing balloons with numbers, burst all balloons in an order that maximizes the total coins collected, where bursting a balloon yields coins equal to the product of its value and the values of its adjacent balloons (treating out-of-bound neighbors as 1).",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "interval-dp",
+    "dp-on-intervals"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922393,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "dp-on-intervals": 0.95
+    }
+  }
+}

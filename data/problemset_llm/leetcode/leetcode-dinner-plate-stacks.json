@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-dinner-plate-stacks",
+  "title": "Dinner Plate Stacks",
+  "slug": "dinner-plate-stacks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/dinner-plate-stacks/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "stack",
+    "design",
+    "heap-priority-queue"
+  ],
+  "statement": "Implement a data structure managing multiple stacks with fixed capacity, supporting push to the leftmost non-full stack, pop from the rightmost non-empty stack, and pop from a specific stack by index.",
+  "tags": [
+    "array",
+    "stack",
+    "heap",
+    "design"
+  ],
+  "patterns": [
+    "priority-queue",
+    "stack",
+    "design"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922809,
+    "pattern_confidence": {
+      "priority-queue": 0.95,
+      "stack": 0.9,
+      "design": 0.9
+    }
+  }
+}

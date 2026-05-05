@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-ways-to-wear-different-hats-to-each-other",
+  "title": "Number of Ways to Wear Different Hats to Each Other",
+  "slug": "number-of-ways-to-wear-different-hats-to-each-other",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-wear-different-hats-to-each-other/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given n people each with a list of preferred hats from 40 types, count the number of ways to assign distinct hats so that each person wears one preferred hat. Return the count modulo 10^9+7.",
+  "tags": [
+    "array",
+    "bitmask",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dp-on-subsets"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923848,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "dp-on-subsets": 0.9
+    }
+  }
+}

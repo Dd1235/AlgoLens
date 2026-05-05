@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-weighted-subgraph-with-the-required-paths",
+  "title": "Minimum Weighted Subgraph With the Required Paths",
+  "slug": "minimum-weighted-subgraph-with-the-required-paths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given a weighted directed graph and three distinct nodes src1, src2, and dest, find the minimum total edge weight of a subgraph that allows paths from both src1 and src2 to dest, or return -1 if no such subgraph exists.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "reverse-graph",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923720,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "reverse-graph": 0.85,
+      "shortest-path": 0.95
+    }
+  }
+}

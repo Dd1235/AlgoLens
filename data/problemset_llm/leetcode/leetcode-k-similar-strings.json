@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-k-similar-strings",
+  "title": "K-Similar Strings",
+  "slug": "k-similar-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-similar-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "breadth-first-search"
+  ],
+  "statement": "Given two anagram strings s1 and s2, find the minimum number of swaps of two letters in s1 required to transform it into s2.",
+  "tags": [
+    "string",
+    "graph",
+    "bfs"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "state-compression",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923090,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "state-compression": 0.9,
+      "shortest-path": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-least-operators-to-express-number",
+  "title": "Least Operators to Express Number",
+  "slug": "least-operators-to-express-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/least-operators-to-express-number/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given a positive integer x and a target value, find the minimum number of arithmetic operators (+, -, *, /) needed to express the target using repeated x's without parentheses and following standard operator precedence.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "patterns": [
+    "dp",
+    "memoization",
+    "expression-simplification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923126,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "memoization": 0.9,
+      "expression-simplification": 0.85
+    }
+  }
+}

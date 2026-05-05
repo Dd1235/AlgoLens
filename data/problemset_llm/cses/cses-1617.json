@@ -1,0 +1,27 @@
+{
+  "id": "cses-1617",
+  "title": "Bit Strings",
+  "slug": "bit-strings",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1617",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Calculate the number of bit strings of length n modulo 10^9+7.",
+  "tags": [
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "fast-exponentiation",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951266,
+    "pattern_confidence": {
+      "fast-exponentiation": 0.95,
+      "modular-exponentiation": 0.9
+    }
+  }
+}

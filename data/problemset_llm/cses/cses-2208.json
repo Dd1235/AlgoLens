@@ -1,0 +1,30 @@
+{
+  "id": "cses-2208",
+  "title": "Another Game",
+  "slug": "another-game",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2208",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Two players alternately remove one coin from any nonempty subset of heaps. Determine the winner assuming optimal play for multiple test cases.",
+  "tags": [
+    "game-theory",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "nim",
+    "xor",
+    "combinatorial-game"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951739,
+    "pattern_confidence": {
+      "nim": 0.99,
+      "xor": 0.95,
+      "combinatorial-game": 0.9
+    }
+  }
+}

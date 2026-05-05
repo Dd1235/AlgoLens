@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-stability-factor-of-array",
+  "title": "Minimum Stability Factor of Array",
+  "slug": "minimum-stability-factor-of-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-stability-factor-of-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "greedy",
+    "segment-tree",
+    "number-theory"
+  ],
+  "statement": "Given an integer array and a limit on modifications, find the minimum possible length of the longest subarray whose elements have a highest common factor of at least 2 after up to maxC element changes.",
+  "tags": [
+    "array",
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923681,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.85,
+      "number-theory": 0.9
+    }
+  }
+}

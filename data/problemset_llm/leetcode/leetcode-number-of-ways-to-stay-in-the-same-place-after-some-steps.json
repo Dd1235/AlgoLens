@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-number-of-ways-to-stay-in-the-same-place-after-some-steps",
+  "title": "Number of Ways to Stay in the Same Place After Some Steps",
+  "slug": "number-of-ways-to-stay-in-the-same-place-after-some-steps",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of ways to remain at index 0 in an array after a given number of steps, moving left, right, or staying in place without leaving the array bounds.",
+  "tags": [
+    "dynamic-programming",
+    "array"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923845,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

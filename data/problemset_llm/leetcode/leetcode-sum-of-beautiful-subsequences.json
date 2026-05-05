@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-sum-of-beautiful-subsequences",
+  "title": "Sum of Beautiful Subsequences",
+  "slug": "sum-of-beautiful-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-beautiful-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-indexed-tree",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, compute the sum over all positive integers g of g multiplied by the count of strictly increasing subsequences whose gcd is exactly g, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dp",
+    "number-theory"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "gcd-computation",
+    "inclusion-exclusion",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924167,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "gcd-computation": 0.9,
+      "inclusion-exclusion": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

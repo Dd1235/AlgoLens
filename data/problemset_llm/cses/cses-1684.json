@@ -1,0 +1,30 @@
+{
+  "id": "cses-1684",
+  "title": "Giant Pizza",
+  "slug": "giant-pizza",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1684",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given n family members each with two wishes about pizza toppings being included or excluded, determine a topping selection that satisfies at least one wish per member or report impossibility.",
+  "tags": [
+    "graph",
+    "2-sat",
+    "boolean-satisfiability"
+  ],
+  "patterns": [
+    "two-sat",
+    "implication-graph",
+    "strongly-connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951522,
+    "pattern_confidence": {
+      "two-sat": 0.98,
+      "implication-graph": 0.95,
+      "strongly-connected-components": 0.9
+    }
+  }
+}

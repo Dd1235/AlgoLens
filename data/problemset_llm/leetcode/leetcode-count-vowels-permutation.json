@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-vowels-permutation",
+  "title": "Count Vowels Permutation",
+  "slug": "count-vowels-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-vowels-permutation/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of length-n strings composed of vowels where each vowel can only be followed by specific vowels, returning the count modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "string",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922740,
+    "pattern_confidence": {
+      "dynamic-programming": 0.99,
+      "state-compression": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

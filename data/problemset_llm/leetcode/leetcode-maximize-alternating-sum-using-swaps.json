@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximize-alternating-sum-using-swaps",
+  "title": "Maximize Alternating Sum Using Swaps",
+  "slug": "maximize-alternating-sum-using-swaps",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-alternating-sum-using-swaps/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "union-find",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a list of allowed swaps between indices, determine the maximum alternating sum achievable by performing any sequence of these swaps.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "greedy"
+  ],
+  "patterns": [
+    "connected-components",
+    "union-find",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923228,
+    "pattern_confidence": {
+      "connected-components": 0.95,
+      "union-find": 0.98,
+      "greedy": 0.9
+    }
+  }
+}

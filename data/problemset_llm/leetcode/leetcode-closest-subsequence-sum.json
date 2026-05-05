@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-closest-subsequence-sum",
+  "title": "Closest Subsequence Sum",
+  "slug": "closest-subsequence-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/closest-subsequence-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "dynamic-programming",
+    "bit-manipulation",
+    "sorting",
+    "bitmask"
+  ],
+  "statement": "Given an integer array and a target goal, find the minimum absolute difference between the sum of any subsequence and the goal.",
+  "tags": [
+    "array",
+    "bitmask",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "bitmask-dp",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922543,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "bitmask-dp": 0.9,
+      "binary-search": 0.85
+    }
+  }
+}

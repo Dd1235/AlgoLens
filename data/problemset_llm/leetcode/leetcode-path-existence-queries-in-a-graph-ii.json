@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-path-existence-queries-in-a-graph-ii",
+  "title": "Path Existence Queries in a Graph II",
+  "slug": "path-existence-queries-in-a-graph-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "dynamic-programming",
+    "greedy",
+    "bit-manipulation",
+    "graph",
+    "sorting"
+  ],
+  "statement": "Given a graph where edges exist between nodes whose values differ by at most maxDiff, answer queries about the shortest distance between pairs of nodes or report -1 if no path exists.",
+  "tags": [
+    "graph",
+    "array",
+    "shortest-path"
+  ],
+  "patterns": [
+    "bfs",
+    "binary-search",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923906,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "binary-search": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

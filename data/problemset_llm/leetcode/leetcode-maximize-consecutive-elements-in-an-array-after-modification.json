@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximize-consecutive-elements-in-an-array-after-modification",
+  "title": "Maximize Consecutive Elements in an Array After Modification",
+  "slug": "maximize-consecutive-elements-in-an-array-after-modification",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-consecutive-elements-in-an-array-after-modification/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given an array of positive integers, you may increase each element by at most one. Find the maximum size of a subset of elements that can form a consecutive sequence when sorted.",
+  "tags": [
+    "array",
+    "sorting",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923233,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "two-pointers": 0.8
+    }
+  }
+}

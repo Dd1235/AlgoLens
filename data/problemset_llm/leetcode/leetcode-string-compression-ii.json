@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-string-compression-ii",
+  "title": "String Compression II",
+  "slug": "string-compression-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/string-compression-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string and an integer k, delete at most k characters to minimize the length of its run-length encoded form, where runs of length 1 are not followed by a count.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "string-compression",
+    "run-length-encoding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924132,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "string-compression": 0.9,
+      "run-length-encoding": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-substrings-that-can-be-rearranged-to-contain-a-string-ii",
+  "title": "Count Substrings That Can Be Rearranged to Contain a String II",
+  "slug": "count-substrings-that-can-be-rearranged-to-contain-a-string-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given two strings word1 and word2, count the number of substrings of word1 that can be rearranged to have word2 as a prefix. The solution must run in linear time due to memory constraints.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "frequency-count",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922696,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "frequency-count": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-nth-smallest-integer-with-k-one-bits",
+  "title": "Find Nth Smallest Integer With K One Bits",
+  "slug": "find-nth-smallest-integer-with-k-one-bits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "bit-manipulation",
+    "combinatorics"
+  ],
+  "statement": "Find the nth smallest positive integer with exactly k set bits in its binary representation, where the answer is less than 2^50.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "combinatorial-enumeration",
+    "binary-search-answer",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922911,
+    "pattern_confidence": {
+      "combinatorial-enumeration": 0.95,
+      "binary-search-answer": 0.85,
+      "bitmask": 0.9
+    }
+  }
+}

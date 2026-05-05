@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-in-mountain-array",
+  "title": "Find in Mountain Array",
+  "slug": "find-in-mountain-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-in-mountain-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "interactive"
+  ],
+  "statement": "Given a mountain array accessible only via a limited interface, find the minimum index where a target value appears, or return -1 if it does not exist.",
+  "tags": [
+    "array",
+    "binary-search",
+    "interactive"
+  ],
+  "patterns": [
+    "binary-search",
+    "binary-search-answer",
+    "peak-finding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922892,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "binary-search-answer": 0.95,
+      "peak-finding": 0.85
+    }
+  }
+}

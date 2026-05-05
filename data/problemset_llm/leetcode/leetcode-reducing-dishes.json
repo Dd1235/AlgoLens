@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-reducing-dishes",
+  "title": "Reducing Dishes",
+  "slug": "reducing-dishes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reducing-dishes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an array of dish satisfaction levels, select and order a subset of dishes to maximize the sum of like-time coefficients, where each dish's coefficient is its satisfaction multiplied by its cooking order time. The chef can discard dishes and reorder them arbitrarily.",
+  "tags": [
+    "array",
+    "sorting",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "prefix-sum",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923970,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "greedy": 0.95,
+      "prefix-sum": 0.9,
+      "dp": 0.88
+    }
+  }
+}

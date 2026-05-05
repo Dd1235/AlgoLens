@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-deletions-on-a-string",
+  "title": "Maximum Deletions on a String",
+  "slug": "maximum-deletions-on-a-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-deletions-on-a-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Given a string, repeatedly delete either the entire string or a prefix that matches the following substring of the same length, and find the maximum number of such deletion operations to remove the entire string.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "hashing"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "dp",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923301,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "dp": 0.9,
+      "string-matching": 0.85
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-consecutive-numbers-sum",
+  "title": "Consecutive Numbers Sum",
+  "slug": "consecutive-numbers-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/consecutive-numbers-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "enumeration"
+  ],
+  "statement": "Given an integer n, determine the number of ways to express n as a sum of consecutive positive integers.",
+  "tags": [
+    "math",
+    "enumeration",
+    "number-theory"
+  ],
+  "patterns": [
+    "mathematical-formula",
+    "divisor-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922552,
+    "pattern_confidence": {
+      "mathematical-formula": 0.95,
+      "divisor-enumeration": 0.9
+    }
+  }
+}

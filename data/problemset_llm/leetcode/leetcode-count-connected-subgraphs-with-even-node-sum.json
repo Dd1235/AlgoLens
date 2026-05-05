@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-count-connected-subgraphs-with-even-node-sum",
+  "title": "Count Connected Subgraphs with Even Node Sum",
+  "slug": "count-connected-subgraphs-with-even-node-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an undirected graph with nodes labeled 0 to n-1 each having a binary value, count the number of non-empty connected induced subgraphs whose node values sum to an even number.",
+  "tags": [
+    "graph",
+    "bitmask",
+    "dp"
+  ],
+  "patterns": [
+    "bitmask-enumeration",
+    "connected-subgraph-check",
+    "parity-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922593,
+    "pattern_confidence": {
+      "bitmask-enumeration": 0.95,
+      "connected-subgraph-check": 0.9,
+      "parity-dp": 0.85
+    }
+  }
+}

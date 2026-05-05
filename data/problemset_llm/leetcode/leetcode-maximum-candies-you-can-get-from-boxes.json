@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-candies-you-can-get-from-boxes",
+  "title": "Maximum Candies You Can Get from Boxes",
+  "slug": "maximum-candies-you-can-get-from-boxes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "graph"
+  ],
+  "statement": "Given boxes with statuses (open or closed), candies, keys to other boxes, and contained boxes, determine the maximum candies collectible starting from an initial set of boxes by opening boxes when possible and using found keys and boxes.",
+  "tags": [
+    "graph",
+    "array",
+    "breadth-first-search"
+  ],
+  "patterns": [
+    "bfs",
+    "state-exploration",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923298,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "state-exploration": 0.9,
+      "graph-traversal": 0.88
+    }
+  }
+}

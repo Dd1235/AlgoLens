@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-threshold-majority-queries",
+  "title": "Threshold Majority Queries",
+  "slug": "threshold-majority-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/threshold-majority-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "divide-and-conquer",
+    "counting",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and multiple queries specifying subarray ranges and frequency thresholds, determine the element in each subarray that appears at least the threshold number of times, choosing the most frequent or smallest element if tied, or -1 if none exists.",
+  "tags": [
+    "array",
+    "binary-search",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "hash-map-lookup",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924231,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "hash-map-lookup": 0.88,
+      "offline-queries": 0.8
+    }
+  }
+}

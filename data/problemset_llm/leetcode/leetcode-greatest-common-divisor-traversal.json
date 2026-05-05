@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-greatest-common-divisor-traversal",
+  "title": "Greatest Common Divisor Traversal",
+  "slug": "greatest-common-divisor-traversal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/greatest-common-divisor-traversal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "union-find",
+    "number-theory"
+  ],
+  "statement": "Given an array of integers, determine if all indices are connected via paths where edges exist between indices whose values have a gcd greater than 1.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "number-theory"
+  ],
+  "patterns": [
+    "union-find",
+    "gcd",
+    "connectivity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923055,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "gcd": 0.95,
+      "connectivity-check": 0.9
+    }
+  }
+}

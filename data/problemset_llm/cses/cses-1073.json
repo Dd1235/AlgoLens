@@ -1,0 +1,30 @@
+{
+  "id": "cses-1073",
+  "title": "Towers",
+  "slug": "towers",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1073",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given a sequence of cubes, build towers by placing each cube on top of an existing tower only if it is smaller than the cube below, or start a new tower. Determine the minimum number of towers needed after processing all cubes in order.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "patience-sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951336,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "binary-search": 0.95,
+      "patience-sorting": 0.9
+    }
+  }
+}

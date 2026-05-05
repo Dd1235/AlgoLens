@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-cracking-the-safe",
+  "title": "Cracking the Safe",
+  "slug": "cracking-the-safe",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cracking-the-safe/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "depth-first-search",
+    "graph",
+    "eulerian-circuit"
+  ],
+  "statement": "Find a shortest string over an alphabet of size k that contains every possible length-n sequence as a substring, enabling the safe to unlock by entering this string.",
+  "tags": [
+    "string",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "eulerian-path",
+    "debruijn-sequence",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922754,
+    "pattern_confidence": {
+      "eulerian-path": 0.98,
+      "debruijn-sequence": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

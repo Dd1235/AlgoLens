@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-apply-operations-on-array-to-maximize-sum-of-squares",
+  "title": "Apply Operations on Array to Maximize Sum of Squares",
+  "slug": "apply-operations-on-array-to-maximize-sum-of-squares",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given an integer array and an operation that updates pairs of elements using bitwise AND and OR, determine the maximum sum of squares of any k elements from the final array after applying any number of such operations.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy"
+  ],
+  "patterns": [
+    "bitwise-operations",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922450,
+    "pattern_confidence": {
+      "bitwise-operations": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

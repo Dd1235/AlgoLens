@@ -1,0 +1,30 @@
+{
+  "id": "cses-3152",
+  "title": "Bubble Sort Rounds II",
+  "slug": "bubble-sort-rounds-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3152",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given an array and a number k, simulate k rounds of bubble sort and output the resulting array after these rounds.",
+  "tags": [
+    "array",
+    "simulation",
+    "sorting"
+  ],
+  "patterns": [
+    "simulation",
+    "partial-sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952108,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "partial-sorting": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

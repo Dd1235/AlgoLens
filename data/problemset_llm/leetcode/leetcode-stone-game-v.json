@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-stone-game-v",
+  "title": "Stone Game V",
+  "slug": "stone-game-v",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stone-game-v/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "game-theory"
+  ],
+  "statement": "Given an array of stone values, repeatedly split the array into two non-empty parts. The opponent discards the part with the larger sum, and the player's score increases by the sum of the remaining part. If sums are equal, the player chooses which part to discard. The process continues until one stone remains. Return the maximum score achievable.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum",
+    "game-theory"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "interval-dp",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924120,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "interval-dp": 0.9,
+      "game-dp": 0.88
+    }
+  }
+}

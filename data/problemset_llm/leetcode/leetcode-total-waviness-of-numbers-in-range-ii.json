@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-total-waviness-of-numbers-in-range-ii",
+  "title": "Total Waviness of Numbers in Range II",
+  "slug": "total-waviness-of-numbers-in-range-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Calculate the total number of peaks and valleys (waviness) for all numbers within a given inclusive range, where peaks and valleys are defined by digits strictly greater or less than their neighbors, excluding the first and last digits.",
+  "tags": [
+    "math",
+    "dp",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924252,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "prefix-sum": 0.85
+    }
+  }
+}

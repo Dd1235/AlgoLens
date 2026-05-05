@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-first-missing-positive",
+  "title": "First Missing Positive",
+  "slug": "first-missing-positive",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/first-missing-positive/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table"
+  ],
+  "statement": "Given an unsorted integer array, find the smallest positive integer missing from the array in O(n) time and O(1) extra space.",
+  "tags": [
+    "array"
+  ],
+  "patterns": [
+    "index-mapping",
+    "in-place-modification",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923029,
+    "pattern_confidence": {
+      "index-mapping": 0.95,
+      "in-place-modification": 0.9,
+      "linear-scan": 0.85
+    }
+  }
+}

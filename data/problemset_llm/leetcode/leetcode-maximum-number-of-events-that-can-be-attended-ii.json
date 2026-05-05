@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-number-of-events-that-can-be-attended-ii",
+  "title": "Maximum Number of Events That Can Be Attended II",
+  "slug": "maximum-number-of-events-that-can-be-attended-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a list of events with start and end days and values, and a limit k on the number of events to attend, find the maximum total value achievable by attending up to k non-overlapping events.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "dp",
+    "sorting",
+    "interval-scheduling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923336,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "dp": 0.98,
+      "sorting": 0.9,
+      "interval-scheduling": 0.9
+    }
+  }
+}

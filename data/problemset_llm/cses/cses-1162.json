@@ -1,0 +1,28 @@
+{
+  "id": "cses-1162",
+  "title": "Sorting Methods",
+  "slug": "sorting-methods",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1162",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a permutation of integers from 1 to n, compute the minimum number of steps required to sort the array using four different operations: swapping adjacent elements, swapping any two elements, moving any element to another position, and moving any element to the front.",
+  "tags": [
+    "array",
+    "permutation",
+    "inversions"
+  ],
+  "patterns": [
+    "counting-inversions",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952157,
+    "pattern_confidence": {
+      "counting-inversions": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

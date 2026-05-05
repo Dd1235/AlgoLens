@@ -1,0 +1,27 @@
+{
+  "id": "cses-2216",
+  "title": "Collecting Numbers",
+  "slug": "collecting-numbers",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2216",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given a permutation of numbers from 1 to n, determine how many rounds are needed to collect the numbers in increasing order by scanning the array left to right each round and collecting as many numbers as possible in order.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951330,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "linear-scan": 0.9
+    }
+  }
+}

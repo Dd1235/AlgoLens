@@ -1,0 +1,30 @@
+{
+  "id": "cses-3109",
+  "title": "K Subset Sums II",
+  "slug": "k-subset-sums-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3109",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an array and integers n, m, and k, find the k smallest sums of all subsets of size m from the array.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952174,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.7,
+      "prefix-sum": 0.75
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-good-integers-on-a-grid-path",
+  "title": "Count Good Integers on a Grid Path",
+  "slug": "count-good-integers-on-a-grid-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-good-integers-on-a-grid-path/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count integers in a given range whose digits, when placed in a 4x4 grid and traversed along a fixed path of three 'D' and three 'R' moves, form a non-decreasing sequence.",
+  "tags": [
+    "dynamic-programming",
+    "digit-dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "digit-dp",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922607,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "binary-search-answer": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

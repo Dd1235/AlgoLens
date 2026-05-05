@@ -1,0 +1,30 @@
+{
+  "id": "cses-2228",
+  "title": "Counting Sequences",
+  "slug": "counting-sequences",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2228",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Count the number of length-n sequences over integers 1 to k where every integer from 1 to k appears at least once, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "dp",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "dp",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952068,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.95,
+      "dp": 0.9,
+      "modular-exponentiation": 0.85
+    }
+  }
+}

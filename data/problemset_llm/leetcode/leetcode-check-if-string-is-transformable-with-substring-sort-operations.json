@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-check-if-string-is-transformable-with-substring-sort-operations",
+  "title": "Check If String Is Transformable With Substring Sort Operations",
+  "slug": "check-if-string-is-transformable-with-substring-sort-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Determine if string s can be transformed into string t by repeatedly sorting any chosen substring in ascending order.",
+  "tags": [
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922523,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "monotonic-queue": 0.7
+    }
+  }
+}

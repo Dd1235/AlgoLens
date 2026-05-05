@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-product-of-the-length-of-two-palindromic-substrings",
+  "title": "Maximum Product of the Length of Two Palindromic Substrings",
+  "slug": "maximum-product-of-the-length-of-two-palindromic-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Given a string, find two non-overlapping palindromic substrings of odd length that maximize the product of their lengths.",
+  "tags": [
+    "string",
+    "dp",
+    "two-pointers"
+  ],
+  "patterns": [
+    "manacher",
+    "prefix-max",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923379,
+    "pattern_confidence": {
+      "manacher": 0.98,
+      "prefix-max": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

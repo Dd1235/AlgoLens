@@ -1,0 +1,30 @@
+{
+  "id": "cses-2207",
+  "title": "Grundy's Game",
+  "slug": "grundy-s-game",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2207",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Two players alternately split a heap of coins into two unequal nonempty heaps. Determine which player wins if both play optimally for multiple initial heap sizes.",
+  "tags": [
+    "game-theory",
+    "dp",
+    "math"
+  ],
+  "patterns": [
+    "grundy-numbers",
+    "sprague-grundy-theorem",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951736,
+    "pattern_confidence": {
+      "grundy-numbers": 0.98,
+      "sprague-grundy-theorem": 0.95,
+      "game-dp": 0.9
+    }
+  }
+}

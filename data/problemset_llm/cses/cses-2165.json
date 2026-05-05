@@ -1,0 +1,30 @@
+{
+  "id": "cses-2165",
+  "title": "Tower of Hanoi",
+  "slug": "tower-of-hanoi",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2165",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given n disks initially stacked in increasing size on the left peg, move all disks to the right peg using the middle peg, following the rules that only one disk can be moved at a time and a larger disk cannot be placed on a smaller disk, minimizing the number of moves.",
+  "tags": [
+    "recursion",
+    "backtracking",
+    "math"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "recursive-solution",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951280,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.98,
+      "recursive-solution": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

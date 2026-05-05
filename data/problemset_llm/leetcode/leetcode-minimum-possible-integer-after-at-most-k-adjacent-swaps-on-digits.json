@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+  "title": "Minimum Possible Integer After at Most K Adjacent Swaps On Digits",
+  "slug": "minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "greedy",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Given a numeric string and a maximum number of adjacent swaps k, find the lexicographically smallest integer obtainable by performing at most k adjacent swaps.",
+  "tags": [
+    "string",
+    "greedy",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-indexed-tree",
+    "segment-tree",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923667,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "binary-indexed-tree": 0.95,
+      "segment-tree": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

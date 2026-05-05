@@ -1,0 +1,28 @@
+{
+  "id": "cses-2133",
+  "title": "Dynamic Connectivity",
+  "slug": "dynamic-connectivity",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2133",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Maintain the number of connected components in an undirected graph under a sequence of edge insertions and deletions, reporting the count after each event.",
+  "tags": [
+    "graph",
+    "dsu",
+    "dynamic-connectivity"
+  ],
+  "patterns": [
+    "dsu-rollback",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951876,
+    "pattern_confidence": {
+      "dsu-rollback": 0.95,
+      "offline-queries": 0.9
+    }
+  }
+}

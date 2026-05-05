@@ -1,0 +1,30 @@
+{
+  "id": "cses-1724",
+  "title": "Graph Paths II",
+  "slug": "graph-paths-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1724",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a directed weighted graph, find the minimum path length from node 1 to node n using exactly k edges, or report -1 if no such path exists.",
+  "tags": [
+    "graph",
+    "dp",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "matrix-exponentiation",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951708,
+    "pattern_confidence": {
+      "dp-on-dag": 0.9,
+      "matrix-exponentiation": 0.95,
+      "shortest-path": 0.9
+    }
+  }
+}

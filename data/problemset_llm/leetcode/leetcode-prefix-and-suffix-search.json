@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-prefix-and-suffix-search",
+  "title": "Prefix and Suffix Search",
+  "slug": "prefix-and-suffix-search",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/prefix-and-suffix-search/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "design",
+    "trie"
+  ],
+  "statement": "Design a data structure that supports efficient queries to find the word with a given prefix and suffix from a list of words, returning the largest index if multiple matches exist.",
+  "tags": [
+    "string",
+    "trie",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-trie",
+    "suffix-trie",
+    "combined-key-hashing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923928,
+    "pattern_confidence": {
+      "prefix-trie": 0.95,
+      "suffix-trie": 0.95,
+      "combined-key-hashing": 0.9
+    }
+  }
+}

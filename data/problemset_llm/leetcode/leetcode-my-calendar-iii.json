@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-my-calendar-iii",
+  "title": "My Calendar III",
+  "slug": "my-calendar-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/my-calendar-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "binary-search",
+    "design",
+    "segment-tree",
+    "prefix-sum",
+    "ordered-set"
+  ],
+  "statement": "Design a data structure to track event bookings and after each booking, return the maximum number of overlapping events at any time.",
+  "tags": [
+    "data-structure",
+    "segment-tree",
+    "ordered-set",
+    "intervals"
+  ],
+  "patterns": [
+    "line-sweep",
+    "segment-tree",
+    "ordered-set",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923733,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "segment-tree": 0.9,
+      "ordered-set": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

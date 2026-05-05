@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-perfect-rectangle",
+  "title": "Perfect Rectangle",
+  "slug": "perfect-rectangle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/perfect-rectangle/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "geometry",
+    "line-sweep"
+  ],
+  "statement": "Given a list of axis-aligned rectangles, determine if they exactly cover a rectangular region without gaps or overlaps.",
+  "tags": [
+    "geometry",
+    "array",
+    "hash-map",
+    "line-sweep"
+  ],
+  "patterns": [
+    "line-sweep",
+    "hash-map-lookup",
+    "area-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923913,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "hash-map-lookup": 0.9,
+      "area-check": 0.85
+    }
+  }
+}

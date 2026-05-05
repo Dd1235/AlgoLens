@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-time-to-cross-a-bridge",
+  "title": "Time to Cross a Bridge",
+  "slug": "time-to-cross-a-bridge",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/time-to-cross-a-bridge/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "heap-priority-queue",
+    "simulation"
+  ],
+  "statement": "Simulate the process of k workers moving n boxes across a bridge with given crossing and handling times, prioritizing workers by efficiency and bridge availability, and determine the time when the last box arrives on the left side.",
+  "tags": [
+    "simulation",
+    "priority-queue",
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "event-simulation",
+    "priority-queue",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924240,
+    "pattern_confidence": {
+      "event-simulation": 0.98,
+      "priority-queue": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-number-of-ways-to-earn-points",
+  "title": "Number of Ways to Earn Points",
+  "slug": "number-of-ways-to-earn-points",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-earn-points/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given multiple types of questions each with a limited count and fixed points, count the number of ways to achieve exactly a target score by selecting any number of questions from each type. Answers should be computed modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bounded-knapsack",
+    "dp-on-dag",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923828,
+    "pattern_confidence": {
+      "bounded-knapsack": 0.98,
+      "dp-on-dag": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

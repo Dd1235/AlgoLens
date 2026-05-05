@@ -1,0 +1,30 @@
+{
+  "id": "cses-2109",
+  "title": "Substring Order II",
+  "slug": "substring-order-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2109",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string and an integer k, find the k-th smallest substring in lexicographical order among all substrings (including duplicates).",
+  "tags": [
+    "string",
+    "suffix-array",
+    "sorting"
+  ],
+  "patterns": [
+    "suffix-array",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951786,
+    "pattern_confidence": {
+      "suffix-array": 0.98,
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

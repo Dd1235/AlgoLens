@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-product-of-array-except-self",
+  "title": "Product of Array Except Self",
+  "slug": "product-of-array-except-self",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/product-of-array-except-self/",
+  "source_topic": "LeetCode / Array and Hashing",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, return an output array where each element is the product of all other elements except itself, without using division and in linear time.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-product",
+    "prefix-suffix-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777921732,
+    "pattern_confidence": {
+      "prefix-product": 0.95,
+      "prefix-suffix-traversal": 0.9
+    }
+  }
+}

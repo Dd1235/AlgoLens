@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-maximum-subarray-xor-with-bounded-range",
+  "title": "Maximum Subarray XOR with Bounded Range",
+  "slug": "maximum-subarray-xor-with-bounded-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-subarray-xor-with-bounded-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "trie",
+    "queue",
+    "sliding-window",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Given an array and an integer k, find a subarray whose maximum and minimum differ by at most k and whose XOR of all elements is maximized.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "data-structure"
+  ],
+  "patterns": [
+    "sliding-window",
+    "monotonic-queue",
+    "prefix-xor",
+    "trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923422,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "monotonic-queue": 0.9,
+      "prefix-xor": 0.9,
+      "trie": 0.85
+    }
+  }
+}

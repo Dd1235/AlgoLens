@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-basic-calculator-iv",
+  "title": "Basic Calculator IV",
+  "slug": "basic-calculator-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/basic-calculator-iv/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "stack",
+    "recursion"
+  ],
+  "statement": "Given an algebraic expression with variables and integers, simplify it by evaluating known variables and applying arithmetic operations with correct precedence, returning the simplified terms sorted by degree and lexicographic order.",
+  "tags": [
+    "string",
+    "math",
+    "stack",
+    "hash-map"
+  ],
+  "patterns": [
+    "expression-parsing",
+    "stack",
+    "hash-map-lookup",
+    "recursion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922460,
+    "pattern_confidence": {
+      "expression-parsing": 0.98,
+      "stack": 0.9,
+      "hash-map-lookup": 0.85,
+      "recursion": 0.8
+    }
+  }
+}

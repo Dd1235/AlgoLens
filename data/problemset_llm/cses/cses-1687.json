@@ -1,0 +1,27 @@
+{
+  "id": "cses-1687",
+  "title": "Company Queries I",
+  "slug": "company-queries-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1687",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree representing a company hierarchy, answer queries asking for the k-th ancestor (boss) of a given employee.",
+  "tags": [
+    "tree",
+    "binary-lifting"
+  ],
+  "patterns": [
+    "binary-lifting",
+    "ancestor-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951623,
+    "pattern_confidence": {
+      "binary-lifting": 0.98,
+      "ancestor-query": 0.95
+    }
+  }
+}

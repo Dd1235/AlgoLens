@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-money-required-before-transactions",
+  "title": "Minimum Money Required Before Transactions",
+  "slug": "minimum-money-required-before-transactions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-money-required-before-transactions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a list of transactions each with a cost and cashback, determine the minimum initial amount of money required to complete all transactions in any order without running out of money at any step.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923587,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

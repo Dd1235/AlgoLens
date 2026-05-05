@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-height-of-binary-tree-after-subtree-removal-queries",
+  "title": "Height of Binary Tree After Subtree Removal Queries",
+  "slug": "height-of-binary-tree-after-subtree-removal-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "binary-tree"
+  ],
+  "statement": "Given a binary tree and multiple queries to remove subtrees rooted at specified nodes (excluding the root), return the height of the tree after each removal, with queries being independent.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "dfs",
+    "array"
+  ],
+  "patterns": [
+    "dfs",
+    "preprocessing",
+    "independent-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923069,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "preprocessing": 0.85,
+      "independent-queries": 0.8
+    }
+  }
+}

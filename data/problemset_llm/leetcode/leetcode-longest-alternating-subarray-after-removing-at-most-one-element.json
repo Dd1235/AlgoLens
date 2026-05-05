@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-longest-alternating-subarray-after-removing-at-most-one-element",
+  "title": "Longest Alternating Subarray After Removing At Most One Element",
+  "slug": "longest-alternating-subarray-after-removing-at-most-one-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-alternating-subarray-after-removing-at-most-one-element/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, find the length of the longest alternating subarray after removing at most one element. An alternating subarray has adjacent elements that strictly alternate between greater and smaller.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "two-pointers",
+    "dynamic-programming",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923148,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "dynamic-programming": 0.95,
+      "enumeration": 0.8
+    }
+  }
+}

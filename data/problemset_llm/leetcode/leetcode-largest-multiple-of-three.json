@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-largest-multiple-of-three",
+  "title": "Largest Multiple of Three",
+  "slug": "largest-multiple-of-three",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-multiple-of-three/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an array of digits, form the largest multiple of three by concatenating some digits in any order, or return an empty string if impossible. The result should not have leading zeros.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "modular-arithmetic",
+    "digit-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923116,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "modular-arithmetic": 0.9,
+      "digit-dp": 0.7
+    }
+  }
+}

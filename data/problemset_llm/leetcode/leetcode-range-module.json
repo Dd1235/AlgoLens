@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-range-module",
+  "title": "Range Module",
+  "slug": "range-module",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/range-module/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "design",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "statement": "Design a data structure to track and manage half-open intervals with operations to add, remove, and query coverage of ranges efficiently.",
+  "tags": [
+    "data-structure",
+    "interval",
+    "ordered-set",
+    "segment-tree"
+  ],
+  "patterns": [
+    "interval-union",
+    "ordered-set",
+    "segment-tree",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923952,
+    "pattern_confidence": {
+      "interval-union": 0.95,
+      "ordered-set": 0.9,
+      "segment-tree": 0.85,
+      "binary-search": 0.8
+    }
+  }
+}

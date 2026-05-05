@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-the-number-of-good-subsets",
+  "title": "The Number of Good Subsets",
+  "slug": "the-number-of-good-subsets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-number-of-good-subsets/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "counting",
+    "number-theory",
+    "bitmask"
+  ],
+  "statement": "Count the number of subsets of an integer array whose product is a product of distinct prime numbers, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "prime-factorization",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924221,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "prime-factorization": 0.9,
+      "counting": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

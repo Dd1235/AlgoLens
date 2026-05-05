@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-connected-components-in-lcm-graph",
+  "title": "Count Connected Components in LCM Graph",
+  "slug": "count-connected-components-in-lcm-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-connected-components-in-lcm-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "union-find",
+    "number-theory"
+  ],
+  "statement": "Given an array of unique integers and a threshold, construct a graph where edges connect nodes whose least common multiple is at most the threshold, and determine the number of connected components in this graph.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "number-theory"
+  ],
+  "patterns": [
+    "union-find",
+    "lcm-based-graph-construction",
+    "prime-factorization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922590,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "lcm-based-graph-construction": 0.9,
+      "prime-factorization": 0.85
+    }
+  }
+}

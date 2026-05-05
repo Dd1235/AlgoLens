@@ -1,0 +1,30 @@
+{
+  "id": "cses-2166",
+  "title": "Prefix Sum Queries",
+  "slug": "prefix-sum-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2166",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an array, support updates to individual elements and queries asking for the maximum prefix sum within a specified subrange, allowing empty prefixes with sum zero.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "range-query"
+  ],
+  "patterns": [
+    "segment-tree",
+    "prefix-sum",
+    "range-maximum-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951575,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "prefix-sum": 0.95,
+      "range-maximum-query": 0.9
+    }
+  }
+}

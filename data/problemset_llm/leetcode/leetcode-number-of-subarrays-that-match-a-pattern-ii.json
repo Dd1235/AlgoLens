@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-subarrays-that-match-a-pattern-ii",
+  "title": "Number of Subarrays That Match a Pattern II",
+  "slug": "number-of-subarrays-that-match-a-pattern-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Count the number of subarrays in an integer array whose consecutive element comparisons match a given pattern of increasing, equal, or decreasing relations.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "string-matching"
+  ],
+  "patterns": [
+    "sliding-window",
+    "pattern-matching",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923804,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "pattern-matching": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

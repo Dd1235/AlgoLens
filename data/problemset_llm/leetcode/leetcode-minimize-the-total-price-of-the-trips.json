@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimize-the-total-price-of-the-trips",
+  "title": "Minimize the Total Price of the Trips",
+  "slug": "minimize-the-total-price-of-the-trips",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-the-total-price-of-the-trips/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "graph"
+  ],
+  "statement": "Given a tree with node prices and multiple trips defined by start and end nodes, select a set of non-adjacent nodes to halve their prices so that the total sum of prices over all trip paths is minimized.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "independent-set",
+    "path-frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923498,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "independent-set": 0.85,
+      "path-frequency-count": 0.8
+    }
+  }
+}

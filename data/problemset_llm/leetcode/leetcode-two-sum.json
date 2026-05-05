@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-two-sum",
+  "title": "Two Sum",
+  "slug": "two-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/two-sum/",
+  "source_topic": "LeetCode / Array and Hashing",
+  "difficulty": "Easy",
+  "source_tags": [
+    "array",
+    "hash-table"
+  ],
+  "statement": "Given an array of integers and a target value, find two distinct indices whose elements sum up to the target. Exactly one valid solution exists, and the same element cannot be used twice.",
+  "tags": [
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "hash-map-lookup",
+    "complement-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777921725,
+    "pattern_confidence": {
+      "hash-map-lookup": 0.98,
+      "complement-search": 0.95
+    }
+  }
+}

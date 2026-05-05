@@ -1,0 +1,32 @@
+{
+  "id": "cses-2074",
+  "title": "Reversals and Sums",
+  "slug": "reversals-and-sums",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2074",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given an array, support two operations: reversing a subarray and querying the sum of a subarray efficiently.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "lazy-propagation"
+  ],
+  "patterns": [
+    "segment-tree",
+    "lazy-propagation",
+    "range-reverse",
+    "range-sum-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951846,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "lazy-propagation": 0.95,
+      "range-reverse": 0.9,
+      "range-sum-query": 0.9
+    }
+  }
+}

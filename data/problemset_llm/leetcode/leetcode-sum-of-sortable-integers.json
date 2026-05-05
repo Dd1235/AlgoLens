@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-sum-of-sortable-integers",
+  "title": "Sum of Sortable Integers",
+  "slug": "sum-of-sortable-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-sortable-integers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, find all divisors k of its length such that partitioning the array into consecutive subarrays of length k and cyclically rotating each subarray can produce a fully sorted array. Return the sum of all such sortable divisors.",
+  "tags": [
+    "array",
+    "math",
+    "sorting",
+    "enumeration"
+  ],
+  "patterns": [
+    "divisor-enumeration",
+    "cyclic-rotation",
+    "subarray-partitioning",
+    "sorting-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924190,
+    "pattern_confidence": {
+      "divisor-enumeration": 0.95,
+      "cyclic-rotation": 0.9,
+      "subarray-partitioning": 0.85,
+      "sorting-check": 0.8
+    }
+  }
+}

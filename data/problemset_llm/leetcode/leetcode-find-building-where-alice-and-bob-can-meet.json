@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-building-where-alice-and-bob-can-meet",
+  "title": "Find Building Where Alice and Bob Can Meet",
+  "slug": "find-building-where-alice-and-bob-can-meet",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "stack",
+    "binary-indexed-tree",
+    "segment-tree",
+    "heap-priority-queue",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array of building heights and queries with two starting positions, determine the leftmost building where both can meet by moving only to buildings with strictly greater height and higher index. Return -1 if no such meeting building exists.",
+  "tags": [
+    "array",
+    "graph"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "monotonic-stack",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922882,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "monotonic-stack": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

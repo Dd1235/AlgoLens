@@ -1,0 +1,30 @@
+{
+  "id": "cses-3111",
+  "title": "Transfer Speeds Sum",
+  "slug": "transfer-speeds-sum",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3111",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a tree with weighted edges representing transfer speeds, compute the sum over all pairs of nodes of the minimum edge weight on the path connecting them.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "contribution-technique",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951990,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "contribution-technique": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

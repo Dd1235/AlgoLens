@@ -1,0 +1,28 @@
+{
+  "id": "cses-1631",
+  "title": "Reading Books",
+  "slug": "reading-books",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1631",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given n books with individual reading times, two readers must read all books sequentially without overlap. Determine the minimum total time needed to finish all books.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951363,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-make-array-strictly-increasing",
+  "title": "Make Array Strictly Increasing",
+  "slug": "make-array-strictly-increasing",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/make-array-strictly-increasing/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given two integer arrays, determine the minimum number of replacements from the second array needed to make the first array strictly increasing, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-search",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923199,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "dp": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

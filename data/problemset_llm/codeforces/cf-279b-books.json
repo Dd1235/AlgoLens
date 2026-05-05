@@ -1,0 +1,36 @@
+{
+  "id": "cf-279b-books",
+  "title": "Books",
+  "slug": "codeforces-279b-books",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/279/B",
+  "source_topic": "Codeforces / Binary Search, Greedy, and Two Pointers",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "sliding-window",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "statement": "Given an ordered list of book reading times and a total time limit, determine the longest contiguous sequence of books that can be read without exceeding the time budget.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777953626,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.93,
+      "prefix-sum": 0.85
+    }
+  }
+}

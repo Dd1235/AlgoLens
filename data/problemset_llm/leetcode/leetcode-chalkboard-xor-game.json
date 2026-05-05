@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-chalkboard-xor-game",
+  "title": "Chalkboard XOR Game",
+  "slug": "chalkboard-xor-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/chalkboard-xor-game/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation",
+    "brainteaser",
+    "game-theory"
+  ],
+  "statement": "Two players alternately erase numbers from an array, and a player loses if the XOR of remaining numbers becomes zero after their move. Determine if the first player can force a win assuming optimal play.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "game-theory"
+  ],
+  "patterns": [
+    "xor-game",
+    "game-theory",
+    "bitwise-xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922508,
+    "pattern_confidence": {
+      "xor-game": 0.95,
+      "game-theory": 0.9,
+      "bitwise-xor": 0.9
+    }
+  }
+}

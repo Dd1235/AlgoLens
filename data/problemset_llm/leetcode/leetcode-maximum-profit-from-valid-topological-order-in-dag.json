@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-profit-from-valid-topological-order-in-dag",
+  "title": "Maximum Profit from Valid Topological Order in DAG",
+  "slug": "maximum-profit-from-valid-topological-order-in-dag",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-profit-from-valid-topological-order-in-dag/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "graph",
+    "topological-sort",
+    "bitmask"
+  ],
+  "statement": "Given a DAG with node scores, find a topological order that maximizes the sum of each node's score multiplied by its position in the order.",
+  "tags": [
+    "graph",
+    "dp",
+    "bitmask"
+  ],
+  "patterns": [
+    "topological-sort",
+    "bitmask-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923384,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

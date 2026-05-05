@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-minimum-area-to-cover-all-ones-ii",
+  "title": "Find the Minimum Area to Cover All Ones II",
+  "slug": "find-the-minimum-area-to-cover-all-ones-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "matrix",
+    "enumeration"
+  ],
+  "statement": "Given a binary 2D grid, find three non-overlapping rectangles with horizontal and vertical sides that cover all the 1s and minimize the sum of their areas.",
+  "tags": [
+    "array",
+    "matrix",
+    "enumeration"
+  ],
+  "patterns": [
+    "brute-force-enumeration",
+    "prefix-sum",
+    "rectangle-area-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922969,
+    "pattern_confidence": {
+      "brute-force-enumeration": 0.9,
+      "prefix-sum": 0.85,
+      "rectangle-area-calculation": 0.8
+    }
+  }
+}

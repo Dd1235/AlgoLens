@@ -1,0 +1,30 @@
+{
+  "id": "cses-2179",
+  "title": "Even Outdegree Edges",
+  "slug": "even-outdegree-edges",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2179",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given an undirected graph, assign directions to each edge so that every node has an even outdegree, or determine that no such assignment exists.",
+  "tags": [
+    "graph",
+    "dfs",
+    "eulerian-path"
+  ],
+  "patterns": [
+    "dfs",
+    "eulerian-path",
+    "graph-parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951984,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "eulerian-path": 0.9,
+      "graph-parity-check": 0.85
+    }
+  }
+}

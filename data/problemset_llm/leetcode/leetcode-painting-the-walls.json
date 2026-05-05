@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-painting-the-walls",
+  "title": "Painting the Walls",
+  "slug": "painting-the-walls",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/painting-the-walls/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given arrays of costs and times for painting walls by a paid painter and a free painter who can only paint when the paid painter is busy, find the minimum total cost to paint all walls.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923875,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dp": 0.95
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-profitable-schemes",
+  "title": "Profitable Schemes",
+  "slug": "profitable-schemes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/profitable-schemes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a number of members and a list of crimes each requiring a certain number of members and yielding profit, count the number of subsets of crimes that achieve at least a minimum profit without exceeding the member limit.",
+  "tags": [
+    "dp",
+    "combinatorics",
+    "array"
+  ],
+  "patterns": [
+    "knapsack",
+    "subset-dp",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923941,
+    "pattern_confidence": {
+      "knapsack": 0.98,
+      "subset-dp": 0.95,
+      "counting": 0.9
+    }
+  }
+}

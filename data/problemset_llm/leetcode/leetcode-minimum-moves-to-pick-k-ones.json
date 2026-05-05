@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-moves-to-pick-k-ones",
+  "title": "Minimum Moves to Pick K Ones",
+  "slug": "minimum-moves-to-pick-k-ones",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-pick-k-ones/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary array, a target number k, and a limit on zero-to-one flips, find the minimum moves needed to pick exactly k ones by starting at any index and performing swaps or flips under constraints.",
+  "tags": [
+    "array",
+    "greedy",
+    "sliding-window"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923592,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

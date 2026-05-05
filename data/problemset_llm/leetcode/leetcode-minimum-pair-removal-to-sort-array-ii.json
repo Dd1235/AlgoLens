@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-pair-removal-to-sort-array-ii",
+  "title": "Minimum Pair Removal to Sort Array II",
+  "slug": "minimum-pair-removal-to-sort-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "linked-list",
+    "heap-priority-queue",
+    "simulation",
+    "doubly-linked-list",
+    "ordered-set"
+  ],
+  "statement": "Given an array, repeatedly merge the adjacent pair with the minimum sum until the array becomes non-decreasing, and return the minimum number of such merge operations required.",
+  "tags": [
+    "array",
+    "heap",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "priority-queue",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923662,
+    "pattern_confidence": {
+      "priority-queue": 0.95,
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

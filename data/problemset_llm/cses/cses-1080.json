@@ -1,0 +1,27 @@
+{
+  "id": "cses-1080",
+  "title": "Empty String",
+  "slug": "empty-string",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1080",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given a string, count the number of ways to remove all characters by repeatedly deleting any two adjacent equal characters, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "stack-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952057,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "stack-simulation": 0.7
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "cses-3419",
+  "title": "Mex Grid Construction",
+  "slug": "mex-grid-construction",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3419",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Construct an n by n grid where each cell contains the smallest nonnegative integer not present to the left in the same row or above in the same column.",
+  "tags": [
+    "array",
+    "matrix",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951293,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

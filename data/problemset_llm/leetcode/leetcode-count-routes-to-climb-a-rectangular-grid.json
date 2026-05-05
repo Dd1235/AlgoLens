@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-routes-to-climb-a-rectangular-grid",
+  "title": "Count Routes to Climb a Rectangular Grid",
+  "slug": "count-routes-to-climb-a-rectangular-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of routes from any cell in the bottom row to the top row of a grid, moving only to available cells with moves constrained by Euclidean distance and alternating row moves.",
+  "tags": [
+    "grid",
+    "dynamic-programming",
+    "geometry"
+  ],
+  "patterns": [
+    "dp",
+    "geometry",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922669,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "geometry": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

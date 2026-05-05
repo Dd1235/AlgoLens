@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-valid-words-for-each-puzzle",
+  "title": "Number of Valid Words for Each Puzzle",
+  "slug": "number-of-valid-words-for-each-puzzle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "bit-manipulation",
+    "trie"
+  ],
+  "statement": "Given a list of words and puzzles, count how many words are valid for each puzzle where a valid word contains the puzzle's first letter and only letters from the puzzle.",
+  "tags": [
+    "array",
+    "string",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-enumeration",
+    "hash-map-lookup",
+    "subset-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923816,
+    "pattern_confidence": {
+      "bitmask-enumeration": 0.98,
+      "hash-map-lookup": 0.95,
+      "subset-enumeration": 0.9
+    }
+  }
+}

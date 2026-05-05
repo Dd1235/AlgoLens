@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-the-minimum-cost-array-permutation",
+  "title": "Find the Minimum Cost Array Permutation",
+  "slug": "find-the-minimum-cost-array-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-minimum-cost-array-permutation/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given a permutation nums, find another permutation perm minimizing a cyclic sum of absolute differences defined by perm and nums, returning the lexicographically smallest if multiple solutions exist.",
+  "tags": [
+    "array",
+    "dp",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "lexicographic-ordering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922973,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "lexicographic-ordering": 0.85
+    }
+  }
+}

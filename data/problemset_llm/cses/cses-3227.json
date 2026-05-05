@@ -1,0 +1,30 @@
+{
+  "id": "cses-3227",
+  "title": "Sliding Window Advertisement",
+  "slug": "sliding-window-advertisement",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3227",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given a fence represented by an array of board heights, for each contiguous subarray (window) of size k, find the maximum rectangular area that can fit within that window.",
+  "tags": [
+    "array",
+    "stack",
+    "sliding-window"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "sliding-window",
+    "largest-rectangle-in-histogram"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951910,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "sliding-window": 0.9,
+      "largest-rectangle-in-histogram": 0.93
+    }
+  }
+}

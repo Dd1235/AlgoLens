@@ -1,0 +1,27 @@
+{
+  "id": "cses-3151",
+  "title": "Bubble Sort Rounds I",
+  "slug": "bubble-sort-rounds-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3151",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given an array, determine the number of bubble sort rounds required to fully sort it, where each round swaps adjacent out-of-order elements from left to right.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "inversion-count",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952105,
+    "pattern_confidence": {
+      "inversion-count": 0.9,
+      "binary-search-answer": 0.7
+    }
+  }
+}

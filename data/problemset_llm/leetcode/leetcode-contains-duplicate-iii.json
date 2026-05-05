@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-contains-duplicate-iii",
+  "title": "Contains Duplicate III",
+  "slug": "contains-duplicate-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/contains-duplicate-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "sliding-window",
+    "sorting",
+    "bucket-sort",
+    "ordered-set"
+  ],
+  "statement": "Given an integer array and two parameters indexDiff and valueDiff, determine if there exist two distinct indices i and j such that the absolute difference of their indices is at most indexDiff and the absolute difference of their values is at most valueDiff.",
+  "tags": [
+    "array",
+    "ordered-set",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "balanced-tree",
+    "bucket-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922566,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "balanced-tree": 0.9,
+      "bucket-sort": 0.85
+    }
+  }
+}

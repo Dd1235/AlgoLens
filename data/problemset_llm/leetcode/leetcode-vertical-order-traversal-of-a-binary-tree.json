@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-vertical-order-traversal-of-a-binary-tree",
+  "title": "Vertical Order Traversal of a Binary Tree",
+  "slug": "vertical-order-traversal-of-a-binary-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "sorting",
+    "binary-tree"
+  ],
+  "statement": "Given a binary tree, return its vertical order traversal as a list of columns from left to right, where nodes in the same row and column are sorted by their values.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "sorting",
+    "hash-map"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "depth-first-search",
+    "coordinate-compression",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924284,
+    "pattern_confidence": {
+      "breadth-first-search": 0.95,
+      "depth-first-search": 0.85,
+      "coordinate-compression": 0.7,
+      "sorting": 0.9
+    }
+  }
+}

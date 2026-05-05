@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-maximum-score-of-spliced-array",
+  "title": "Maximum Score Of Spliced Array",
+  "slug": "maximum-score-of-spliced-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-of-spliced-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two integer arrays of equal length, you may swap exactly one contiguous subarray between them to maximize the maximum sum of either array after the swap. Return this maximum possible sum.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sliding-window",
+    "maximum-subarray"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923400,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "sliding-window": 0.85,
+      "maximum-subarray": 0.9
+    }
+  }
+}

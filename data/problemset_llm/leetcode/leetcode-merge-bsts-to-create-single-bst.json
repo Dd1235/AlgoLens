@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-merge-bsts-to-create-single-bst",
+  "title": "Merge BSTs to Create Single BST",
+  "slug": "merge-bsts-to-create-single-bst",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/merge-bsts-to-create-single-bst/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "tree",
+    "depth-first-search",
+    "binary-search-tree",
+    "binary-tree"
+  ],
+  "statement": "Given multiple small BSTs, merge them by replacing leaf nodes with roots of other BSTs to form a single valid BST if possible.",
+  "tags": [
+    "tree",
+    "binary-search-tree",
+    "graph",
+    "depth-first-search"
+  ],
+  "patterns": [
+    "dfs",
+    "graph-construction",
+    "validation-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923478,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "graph-construction": 0.9,
+      "validation-check": 0.85
+    }
+  }
+}

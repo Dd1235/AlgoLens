@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-jump-game-iv",
+  "title": "Jump Game IV",
+  "slug": "jump-game-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/jump-game-iv/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "breadth-first-search"
+  ],
+  "statement": "Given an array, find the minimum number of jumps to reach the last index starting from the first, where jumps can be to adjacent indices or any other index with the same value.",
+  "tags": [
+    "array",
+    "graph",
+    "breadth-first-search",
+    "hash-map"
+  ],
+  "patterns": [
+    "bfs",
+    "hash-map-lookup",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923083,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "hash-map-lookup": 0.95,
+      "graph-traversal": 0.9
+    }
+  }
+}

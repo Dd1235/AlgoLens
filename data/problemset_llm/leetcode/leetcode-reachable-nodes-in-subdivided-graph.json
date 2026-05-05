@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-reachable-nodes-in-subdivided-graph",
+  "title": "Reachable Nodes In Subdivided Graph",
+  "slug": "reachable-nodes-in-subdivided-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given an undirected graph where each edge is subdivided into a chain of nodes, determine how many nodes are reachable from node 0 within a maximum allowed number of moves.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "priority-queue",
+    "graph-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923956,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "priority-queue": 0.95,
+      "graph-transformation": 0.85
+    }
+  }
+}

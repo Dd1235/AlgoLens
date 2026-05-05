@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-length-of-the-longest-valid-substring",
+  "title": "Length of the Longest Valid Substring",
+  "slug": "length-of-the-longest-valid-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/length-of-the-longest-valid-substring/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a string and a list of forbidden substrings, find the length of the longest substring of the string that does not contain any forbidden substring as a contiguous sequence.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map-lookup",
+    "substring-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923133,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "hash-map-lookup": 0.9,
+      "substring-search": 0.88
+    }
+  }
+}

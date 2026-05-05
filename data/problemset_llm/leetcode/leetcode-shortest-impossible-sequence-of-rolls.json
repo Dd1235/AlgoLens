@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-shortest-impossible-sequence-of-rolls",
+  "title": "Shortest Impossible Sequence of Rolls",
+  "slug": "shortest-impossible-sequence-of-rolls",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-impossible-sequence-of-rolls/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy"
+  ],
+  "statement": "Given a sequence of dice rolls with faces numbered 1 to k, find the length of the shortest sequence of rolls that does not appear as a subsequence in the given rolls.",
+  "tags": [
+    "array",
+    "greedy",
+    "hash-map"
+  ],
+  "patterns": [
+    "greedy",
+    "hash-map-lookup",
+    "subsequence-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924033,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "hash-map-lookup": 0.9,
+      "subsequence-search": 0.85
+    }
+  }
+}

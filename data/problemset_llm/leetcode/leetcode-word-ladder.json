@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-word-ladder",
+  "title": "Word Ladder",
+  "slug": "word-ladder",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-ladder/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "breadth-first-search"
+  ],
+  "statement": "Given a start word, an end word, and a dictionary, find the length of the shortest sequence transforming the start word to the end word by changing one letter at a time, with each intermediate word in the dictionary. Return 0 if no such transformation exists.",
+  "tags": [
+    "string",
+    "graph",
+    "breadth-first-search",
+    "hash-map"
+  ],
+  "patterns": [
+    "bfs",
+    "graph-construction",
+    "neighbor-generation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924293,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "graph-construction": 0.9,
+      "neighbor-generation": 0.85
+    }
+  }
+}

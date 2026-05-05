@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-preimage-size-of-factorial-zeroes-function",
+  "title": "Preimage Size of Factorial Zeroes Function",
+  "slug": "preimage-size-of-factorial-zeroes-function",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Given an integer k, determine how many non-negative integers x satisfy that the factorial of x ends with exactly k trailing zeroes.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "factorial-trailing-zeroes"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923930,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "factorial-trailing-zeroes": 0.9
+    }
+  }
+}

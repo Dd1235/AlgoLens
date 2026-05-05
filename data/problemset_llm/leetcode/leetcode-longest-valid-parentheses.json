@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-valid-parentheses",
+  "title": "Longest Valid Parentheses",
+  "slug": "longest-valid-parentheses",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-valid-parentheses/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "stack"
+  ],
+  "statement": "Given a string of parentheses, find the length of the longest substring that forms a valid (well-formed) parentheses sequence.",
+  "tags": [
+    "string",
+    "stack",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "stack",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923193,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "dynamic-programming": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

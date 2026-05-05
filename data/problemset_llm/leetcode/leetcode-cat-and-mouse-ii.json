@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-cat-and-mouse-ii",
+  "title": "Cat and Mouse II",
+  "slug": "cat-and-mouse-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cat-and-mouse-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "graph",
+    "topological-sort",
+    "memoization",
+    "matrix",
+    "game-theory"
+  ],
+  "statement": "Given a grid with walls, a cat, a mouse, and food, determine if the mouse can win a turn-based jumping game where both players move optimally and have limited jump distances.",
+  "tags": [
+    "graph",
+    "dp",
+    "game-theory",
+    "memoization"
+  ],
+  "patterns": [
+    "topological-sort",
+    "memoization",
+    "game-dp",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922502,
+    "pattern_confidence": {
+      "topological-sort": 0.85,
+      "memoization": 0.95,
+      "game-dp": 0.9,
+      "state-space-search": 0.9
+    }
+  }
+}

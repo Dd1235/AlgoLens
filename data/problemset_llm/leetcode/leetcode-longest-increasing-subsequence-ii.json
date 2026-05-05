@@ -1,0 +1,45 @@
+{
+  "id": "leetcode-longest-increasing-subsequence-ii",
+  "title": "Longest Increasing Subsequence II",
+  "slug": "longest-increasing-subsequence-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-increasing-subsequence-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "binary-indexed-tree",
+    "segment-tree",
+    "queue",
+    "monotonic-queue"
+  ],
+  "statement": "Find the length of the longest strictly increasing subsequence in an integer array where the difference between consecutive elements is at most k.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "segment-tree",
+    "binary-indexed-tree",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "segment-tree",
+    "fenwick-tree",
+    "monotonic-queue",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923174,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "segment-tree": 0.9,
+      "fenwick-tree": 0.85,
+      "monotonic-queue": 0.7,
+      "binary-search": 0.75
+    }
+  }
+}

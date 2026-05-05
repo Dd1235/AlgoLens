@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximize-subarrays-after-removing-one-conflicting-pair",
+  "title": "Maximize Subarrays After Removing One Conflicting Pair",
+  "slug": "maximize-subarrays-after-removing-one-conflicting-pair",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "segment-tree",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of integers from 1 to n and a list of conflicting pairs, remove exactly one conflicting pair to maximize the count of subarrays that do not contain both elements of any remaining conflicting pair.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "enumeration"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "enumeration",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923263,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "enumeration": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-3114",
+  "title": "Tree Coin Collecting I",
+  "slug": "tree-coin-collecting-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3114",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a tree with some nodes containing coins, answer queries asking for the shortest path length between two nodes that passes through at least one coin-containing node.",
+  "tags": [
+    "tree",
+    "graph",
+    "shortest-path"
+  ],
+  "patterns": [
+    "lowest-common-ancestor",
+    "bfs",
+    "distance-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952002,
+    "pattern_confidence": {
+      "lowest-common-ancestor": 0.95,
+      "bfs": 0.9,
+      "distance-query": 0.85
+    }
+  }
+}

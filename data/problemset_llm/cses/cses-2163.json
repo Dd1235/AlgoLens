@@ -1,0 +1,30 @@
+{
+  "id": "cses-2163",
+  "title": "Josephus Problem II",
+  "slug": "josephus-problem-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2163",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given n children arranged in a circle, repeatedly skip k children and remove the next one, outputting the order of removal.",
+  "tags": [
+    "data-structure",
+    "simulation",
+    "queue"
+  ],
+  "patterns": [
+    "simulation",
+    "circular-list",
+    "queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951349,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "circular-list": 0.9,
+      "queue": 0.85
+    }
+  }
+}

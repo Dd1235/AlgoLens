@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-distribute-elements-into-two-arrays-ii",
+  "title": "Distribute Elements Into Two Arrays II",
+  "slug": "distribute-elements-into-two-arrays-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distribute-elements-into-two-arrays-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-indexed-tree",
+    "segment-tree",
+    "simulation"
+  ],
+  "statement": "Distribute elements from an input array into two arrays based on the count of elements greater than the current element in each array, following specific tie-breaking rules, and return the concatenation of the two arrays.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "segment-tree",
+    "simulation"
+  ],
+  "patterns": [
+    "binary-indexed-tree",
+    "segment-tree",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922818,
+    "pattern_confidence": {
+      "binary-indexed-tree": 0.9,
+      "segment-tree": 0.85,
+      "simulation": 0.95
+    }
+  }
+}

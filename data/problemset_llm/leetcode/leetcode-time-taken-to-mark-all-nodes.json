@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-time-taken-to-mark-all-nodes",
+  "title": "Time Taken to Mark All Nodes",
+  "slug": "time-taken-to-mark-all-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/time-taken-to-mark-all-nodes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "graph"
+  ],
+  "statement": "Given a tree, for each node marked at time 0, compute the time when all nodes become marked under rules where odd nodes mark at time x if adjacent to a node marked at x-1, and even nodes mark at time x if adjacent to a node marked at x-2.",
+  "tags": [
+    "tree",
+    "graph",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "dfs",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924237,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "dfs": 0.9,
+      "tree-dp": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-distinct-echo-substrings",
+  "title": "Distinct Echo Substrings",
+  "slug": "distinct-echo-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distinct-echo-substrings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "trie",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Count the number of distinct non-empty substrings of a given string that can be represented as the concatenation of a string with itself.",
+  "tags": [
+    "string",
+    "hashing",
+    "trie"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "substring-hashing",
+    "string-hashing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922812,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "substring-hashing": 0.9,
+      "string-hashing": 0.85
+    }
+  }
+}

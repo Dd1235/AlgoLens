@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-shortest-path-visiting-all-nodes",
+  "title": "Shortest Path Visiting All Nodes",
+  "slug": "shortest-path-visiting-all-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "bit-manipulation",
+    "breadth-first-search",
+    "graph",
+    "bitmask"
+  ],
+  "statement": "Given an undirected connected graph, find the shortest path length that visits every node at least once, allowing revisits and starting/stopping at any node.",
+  "tags": [
+    "graph",
+    "dp",
+    "bitmask",
+    "bfs"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "breadth-first-search",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924051,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "breadth-first-search": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

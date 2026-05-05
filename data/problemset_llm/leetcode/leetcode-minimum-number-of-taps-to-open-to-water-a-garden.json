@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-number-of-taps-to-open-to-water-a-garden",
+  "title": "Minimum Number of Taps to Open to Water a Garden",
+  "slug": "minimum-number-of-taps-to-open-to-water-a-garden",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given a garden represented as a line segment and taps with watering ranges, find the minimum number of taps to open to cover the entire garden or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "intervals"
+  ],
+  "patterns": [
+    "interval-covering",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923626,
+    "pattern_confidence": {
+      "interval-covering": 0.98,
+      "greedy": 0.95
+    }
+  }
+}

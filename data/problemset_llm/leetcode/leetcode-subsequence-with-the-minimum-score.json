@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-subsequence-with-the-minimum-score",
+  "title": "Subsequence With the Minimum Score",
+  "slug": "subsequence-with-the-minimum-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/subsequence-with-the-minimum-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "binary-search"
+  ],
+  "statement": "Given two strings s and t, remove a contiguous substring from t to minimize the length of the removed substring such that the remaining string is a subsequence of s.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924149,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "two-pointers": 0.9,
+      "prefix-array": 0.85
+    }
+  }
+}

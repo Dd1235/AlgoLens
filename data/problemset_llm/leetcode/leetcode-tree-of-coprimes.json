@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-tree-of-coprimes",
+  "title": "Tree of Coprimes",
+  "slug": "tree-of-coprimes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/tree-of-coprimes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "tree",
+    "depth-first-search",
+    "number-theory"
+  ],
+  "statement": "Given a tree with values on nodes, find for each node the closest ancestor whose value is coprime with the node's value, or -1 if none exists.",
+  "tags": [
+    "tree",
+    "graph",
+    "number-theory",
+    "dfs"
+  ],
+  "patterns": [
+    "depth-first-search",
+    "gcd",
+    "ancestor-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924260,
+    "pattern_confidence": {
+      "depth-first-search": 0.98,
+      "gcd": 0.95,
+      "ancestor-query": 0.9
+    }
+  }
+}

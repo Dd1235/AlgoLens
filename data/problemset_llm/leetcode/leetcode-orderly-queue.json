@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-orderly-queue",
+  "title": "Orderly Queue",
+  "slug": "orderly-queue",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/orderly-queue/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "sorting"
+  ],
+  "statement": "Given a string and an integer k, repeatedly move one of the first k characters to the end to obtain the lexicographically smallest possible string.",
+  "tags": [
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "string-rotation",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923866,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "string-rotation": 0.9,
+      "lexicographic-order": 0.85
+    }
+  }
+}

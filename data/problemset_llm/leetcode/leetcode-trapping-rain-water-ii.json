@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-trapping-rain-water-ii",
+  "title": "Trapping Rain Water II",
+  "slug": "trapping-rain-water-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/trapping-rain-water-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given a 2D elevation map represented by a matrix of heights, compute the total volume of water that can be trapped after raining, considering the boundaries and elevations of the cells.",
+  "tags": [
+    "array",
+    "matrix",
+    "graph",
+    "heap",
+    "bfs"
+  ],
+  "patterns": [
+    "priority-queue",
+    "breadth-first-search",
+    "flood-fill",
+    "multi-source-bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924257,
+    "pattern_confidence": {
+      "priority-queue": 0.95,
+      "breadth-first-search": 0.93,
+      "flood-fill": 0.9,
+      "multi-source-bfs": 0.88
+    }
+  }
+}

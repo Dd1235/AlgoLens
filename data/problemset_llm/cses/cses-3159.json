@@ -1,0 +1,30 @@
+{
+  "id": "cses-3159",
+  "title": "Replace with Difference",
+  "slug": "replace-with-difference",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3159",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an array, repeatedly replace two chosen numbers with their absolute difference until one number remains. Determine a sequence of operations that results in the final number being zero, or report impossibility.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952199,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "number-theory": 0.7
+    }
+  }
+}

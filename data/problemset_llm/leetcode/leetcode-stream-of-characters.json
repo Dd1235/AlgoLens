@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-stream-of-characters",
+  "title": "Stream of Characters",
+  "slug": "stream-of-characters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stream-of-characters/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "design",
+    "trie",
+    "data-stream"
+  ],
+  "statement": "Design a data structure that processes a stream of characters and checks if any suffix of the stream matches a word from a given list.",
+  "tags": [
+    "string",
+    "trie",
+    "data-structure",
+    "stream"
+  ],
+  "patterns": [
+    "trie",
+    "reversed-trie",
+    "online-query",
+    "stream-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924130,
+    "pattern_confidence": {
+      "trie": 0.98,
+      "reversed-trie": 0.95,
+      "online-query": 0.9,
+      "stream-processing": 0.88
+    }
+  }
+}

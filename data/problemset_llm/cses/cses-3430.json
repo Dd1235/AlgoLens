@@ -1,0 +1,30 @@
+{
+  "id": "cses-3430",
+  "title": "Lines and Queries II",
+  "slug": "lines-and-queries-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3430",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Process queries to add linear functions active over intervals and to find the maximum value among all active lines at given points efficiently.",
+  "tags": [
+    "geometry",
+    "segment-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "dynamic-line-container",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951821,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "dynamic-line-container": 0.9,
+      "offline-queries": 0.7
+    }
+  }
+}

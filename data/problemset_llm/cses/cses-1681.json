@@ -1,0 +1,30 @@
+{
+  "id": "cses-1681",
+  "title": "Game Routes",
+  "slug": "game-routes",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1681",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed acyclic graph representing game levels and teleporters, count the number of distinct paths from level 1 to level n modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "dp",
+    "topological-sort"
+  ],
+  "patterns": [
+    "topological-sort",
+    "dp-on-dag",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951500,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "dp-on-dag": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

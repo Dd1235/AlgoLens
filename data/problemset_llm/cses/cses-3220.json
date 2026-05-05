@@ -1,0 +1,27 @@
+{
+  "id": "cses-3220",
+  "title": "Sliding Window Sum",
+  "slug": "sliding-window-sum",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3220",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given a large generated array, compute the sum of every contiguous subarray (window) of size k and output the xor of all these sums.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951886,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "sliding-window": 0.95
+    }
+  }
+}

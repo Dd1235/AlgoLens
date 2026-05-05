@@ -1,0 +1,27 @@
+{
+  "id": "cses-1633",
+  "title": "Dice Combinations",
+  "slug": "dice-combinations",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1633",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Count the number of sequences of dice throws (values 1 to 6) that sum to a given integer n, modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951389,
+    "pattern_confidence": {
+      "dynamic-programming": 0.99,
+      "prefix-sum-optimization": 0.85
+    }
+  }
+}

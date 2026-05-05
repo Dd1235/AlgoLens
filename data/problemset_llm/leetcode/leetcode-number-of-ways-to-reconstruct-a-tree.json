@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-ways-to-reconstruct-a-tree",
+  "title": "Number Of Ways To Reconstruct A Tree",
+  "slug": "number-of-ways-to-reconstruct-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "tree",
+    "graph",
+    "simulation"
+  ],
+  "statement": "Given pairs representing ancestor-descendant relationships, determine whether there are zero, one, or multiple rooted trees consistent with these ancestor constraints.",
+  "tags": [
+    "graph",
+    "tree",
+    "hash-map"
+  ],
+  "patterns": [
+    "graph-construction",
+    "ancestor-check",
+    "tree-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923838,
+    "pattern_confidence": {
+      "graph-construction": 0.95,
+      "ancestor-check": 0.9,
+      "tree-validation": 0.85
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-distinct-subsequences",
+  "title": "Distinct Subsequences",
+  "slug": "distinct-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distinct-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings s and t, count the number of distinct subsequences of s that equal t.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "subsequence-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922816,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "subsequence-counting": 0.95
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-equal-rational-numbers",
+  "title": "Equal Rational Numbers",
+  "slug": "equal-rational-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/equal-rational-numbers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string"
+  ],
+  "statement": "Given two strings representing non-negative rational numbers possibly containing repeating decimal parts denoted by parentheses, determine if they represent the same numerical value.",
+  "tags": [
+    "math",
+    "string",
+    "parsing"
+  ],
+  "patterns": [
+    "string-parsing",
+    "rational-number-comparison",
+    "decimal-expansion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922842,
+    "pattern_confidence": {
+      "string-parsing": 0.95,
+      "rational-number-comparison": 0.9,
+      "decimal-expansion": 0.85
+    }
+  }
+}

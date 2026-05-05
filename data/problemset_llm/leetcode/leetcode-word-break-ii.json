@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-word-break-ii",
+  "title": "Word Break II",
+  "slug": "word-break-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-break-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "backtracking",
+    "trie",
+    "memoization"
+  ],
+  "statement": "Given a string and a dictionary of words, find all possible sentences by inserting spaces so that every word is in the dictionary, allowing reuse of words.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "backtracking",
+    "trie",
+    "memoization"
+  ],
+  "patterns": [
+    "backtracking",
+    "memoization",
+    "trie",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924289,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "memoization": 0.9,
+      "trie": 0.85,
+      "dynamic-programming": 0.9
+    }
+  }
+}

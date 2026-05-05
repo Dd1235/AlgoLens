@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-array-pairs-divisible-by-k",
+  "title": "Count Array Pairs Divisible by K",
+  "slug": "count-array-pairs-divisible-by-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-array-pairs-divisible-by-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "counting",
+    "number-theory"
+  ],
+  "statement": "Given an integer array and an integer k, count the number of pairs of indices whose product is divisible by k.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "counting",
+    "hash-map"
+  ],
+  "patterns": [
+    "gcd",
+    "hash-map-lookup",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922578,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "hash-map-lookup": 0.9,
+      "counting": 0.85
+    }
+  }
+}

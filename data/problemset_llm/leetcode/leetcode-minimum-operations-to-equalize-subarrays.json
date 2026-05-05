@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-operations-to-equalize-subarrays",
+  "title": "Minimum Operations to Equalize Subarrays",
+  "slug": "minimum-operations-to-equalize-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-equalize-subarrays/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "segment-tree"
+  ],
+  "statement": "Given an integer array and a value k, for each query on a subarray, determine the minimum number of operations to make all elements equal by adding or subtracting k any number of times, or report -1 if impossible.",
+  "tags": [
+    "array",
+    "math",
+    "segment-tree"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923642,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

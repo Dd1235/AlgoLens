@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-edge-toggles-on-a-tree",
+  "title": "Minimum Edge Toggles on a Tree",
+  "slug": "minimum-edge-toggles-on-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "graph",
+    "topological-sort",
+    "sorting"
+  ],
+  "statement": "Given a tree with nodes colored 0 or 1 initially and a target coloring, find a minimum set of edges to toggle so that toggling an edge flips the colors of its endpoints and transforms the start coloring into the target coloring. Return the indices of these edges in ascending order or [-1] if impossible.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "greedy",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923565,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "greedy": 0.85,
+      "parity-check": 0.8
+    }
+  }
+}

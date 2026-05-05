@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-minimum-number-of-visited-cells-in-a-grid",
+  "title": "Minimum Number of Visited Cells in a Grid",
+  "slug": "minimum-number-of-visited-cells-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "stack",
+    "breadth-first-search",
+    "union-find",
+    "heap-priority-queue",
+    "matrix",
+    "monotonic-stack"
+  ],
+  "statement": "Given a grid where each cell indicates the maximum rightward or downward jump length, find the minimum number of cells visited to reach the bottom-right cell from the top-left, or return -1 if unreachable.",
+  "tags": [
+    "array",
+    "graph",
+    "breadth-first-search",
+    "queue"
+  ],
+  "patterns": [
+    "bfs",
+    "shortest-path",
+    "grid-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923630,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "shortest-path": 0.95,
+      "grid-graph": 0.9
+    }
+  }
+}

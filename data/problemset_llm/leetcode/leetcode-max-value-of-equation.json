@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-max-value-of-equation",
+  "title": "Max Value of Equation",
+  "slug": "max-value-of-equation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/max-value-of-equation/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "queue",
+    "sliding-window",
+    "heap-priority-queue",
+    "monotonic-queue"
+  ],
+  "statement": "Given a list of points sorted by x-coordinate and an integer k, find the maximum value of y_i + y_j + |x_i - x_j| for pairs of points where the x-coordinate difference is at most k.",
+  "tags": [
+    "array",
+    "queue",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "monotonic-queue",
+    "sliding-window",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923220,
+    "pattern_confidence": {
+      "monotonic-queue": 0.98,
+      "sliding-window": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

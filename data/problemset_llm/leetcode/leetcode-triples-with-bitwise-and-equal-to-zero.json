@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-triples-with-bitwise-and-equal-to-zero",
+  "title": "Triples with Bitwise AND Equal To Zero",
+  "slug": "triples-with-bitwise-and-equal-to-zero",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "bit-manipulation"
+  ],
+  "statement": "Given an integer array, count the number of index triples (i, j, k) such that the bitwise AND of nums[i], nums[j], and nums[k] equals zero.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "hash-map"
+  ],
+  "patterns": [
+    "bitmask-enumeration",
+    "hash-map-lookup",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924264,
+    "pattern_confidence": {
+      "bitmask-enumeration": 0.95,
+      "hash-map-lookup": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

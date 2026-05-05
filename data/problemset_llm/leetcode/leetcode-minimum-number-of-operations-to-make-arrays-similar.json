@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-number-of-operations-to-make-arrays-similar",
+  "title": "Minimum Number of Operations to Make Arrays Similar",
+  "slug": "minimum-number-of-operations-to-make-arrays-similar",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-arrays-similar/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given two integer arrays of equal length, determine the minimum number of operations to make their element frequencies identical, where each operation increments one element by 2 and decrements another by 2.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923616,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

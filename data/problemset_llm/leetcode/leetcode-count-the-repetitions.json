@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-the-repetitions",
+  "title": "Count The Repetitions",
+  "slug": "count-the-repetitions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-repetitions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings s1 and s2 and integers n1 and n2, determine the maximum integer m such that the string formed by repeating s2 n2*m times can be obtained as a subsequence from the string formed by repeating s1 n1 times.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "two-pointers",
+    "dp",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922731,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "dp": 0.9,
+      "binary-search-answer": 0.8
+    }
+  }
+}

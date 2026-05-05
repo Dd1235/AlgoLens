@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-operations-to-make-character-frequencies-equal",
+  "title": "Minimum Operations to Make Character Frequencies Equal",
+  "slug": "minimum-operations-to-make-character-frequencies-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "counting",
+    "enumeration"
+  ],
+  "statement": "Given a string, find the minimum number of operations (deletion, insertion, or incrementing characters) to make all character frequencies equal.",
+  "tags": [
+    "string",
+    "hash-table",
+    "dp",
+    "counting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "frequency-enumeration",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923654,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "frequency-enumeration": 0.85,
+      "dynamic-programming": 0.8
+    }
+  }
+}

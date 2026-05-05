@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-gcd-sort-of-an-array",
+  "title": "GCD Sort of an Array",
+  "slug": "gcd-sort-of-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/gcd-sort-of-an-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "union-find",
+    "sorting",
+    "number-theory"
+  ],
+  "statement": "Determine if an array can be sorted by swapping elements only when their greatest common divisor is greater than one.",
+  "tags": [
+    "array",
+    "union-find",
+    "number-theory",
+    "graph"
+  ],
+  "patterns": [
+    "union-find",
+    "gcd",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923044,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "gcd": 0.95,
+      "connected-components": 0.9
+    }
+  }
+}

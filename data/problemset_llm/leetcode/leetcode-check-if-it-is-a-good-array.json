@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-check-if-it-is-a-good-array",
+  "title": "Check If It Is a Good Array",
+  "slug": "check-if-it-is-a-good-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-it-is-a-good-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers, determine if there exists an integer linear combination of a subset of these numbers that equals 1. Return true if such a combination exists, otherwise false.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "linear-combination",
+    "extended-euclidean-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922517,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "linear-combination": 0.95,
+      "extended-euclidean-algorithm": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1649",
+  "title": "Dynamic Range Minimum Queries",
+  "slug": "dynamic-range-minimum-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1649",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an array, support two types of queries: updating the value at a position and finding the minimum value in a specified range.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "range-query"
+  ],
+  "patterns": [
+    "segment-tree",
+    "fenwick-tree",
+    "dynamic-range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951556,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "fenwick-tree": 0.7,
+      "dynamic-range-query": 0.95
+    }
+  }
+}

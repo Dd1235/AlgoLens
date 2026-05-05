@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-operations-to-make-a-subsequence",
+  "title": "Minimum Operations to Make a Subsequence",
+  "slug": "minimum-operations-to-make-a-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "greedy"
+  ],
+  "statement": "Given a distinct integer array target and another array arr, find the minimum insertions needed to make target a subsequence of arr by inserting integers anywhere in arr.",
+  "tags": [
+    "array",
+    "hash-map",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "binary-search",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923646,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "binary-search": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

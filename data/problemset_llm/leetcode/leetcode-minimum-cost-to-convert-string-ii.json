@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-cost-to-convert-string-ii",
+  "title": "Minimum Cost to Convert String II",
+  "slug": "minimum-cost-to-convert-string-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-convert-string-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "graph",
+    "trie",
+    "shortest-path"
+  ],
+  "statement": "Given two strings source and target of equal length, and a list of substring transformations with associated costs, find the minimum cost to convert source into target by applying any number of non-overlapping or identical substring transformations. Return -1 if conversion is impossible.",
+  "tags": [
+    "string",
+    "dp",
+    "graph"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "shortest-path",
+    "string-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923517,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "shortest-path": 0.85,
+      "string-transformation": 0.9
+    }
+  }
+}

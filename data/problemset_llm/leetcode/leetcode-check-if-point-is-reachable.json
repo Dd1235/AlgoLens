@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-check-if-point-is-reachable",
+  "title": "Check if Point Is Reachable",
+  "slug": "check-if-point-is-reachable",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-point-is-reachable/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "number-theory"
+  ],
+  "statement": "Determine if it is possible to reach a target coordinate (targetX, targetY) from (1, 1) on an infinite grid using a sequence of allowed moves that include doubling coordinates or subtracting one coordinate from the other.",
+  "tags": [
+    "math",
+    "number-theory",
+    "graph"
+  ],
+  "patterns": [
+    "reverse-search",
+    "state-space-search",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922519,
+    "pattern_confidence": {
+      "reverse-search": 0.95,
+      "state-space-search": 0.9,
+      "bfs": 0.7
+    }
+  }
+}

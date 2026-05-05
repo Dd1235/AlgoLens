@@ -1,0 +1,30 @@
+{
+  "id": "cses-1130",
+  "title": "Tree Matching",
+  "slug": "tree-matching",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1130",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree, find the size of the maximum matching, i.e., the largest set of edges with no shared endpoints.",
+  "tags": [
+    "tree",
+    "graph",
+    "dp"
+  ],
+  "patterns": [
+    "tree-dp",
+    "maximum-matching",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951613,
+    "pattern_confidence": {
+      "tree-dp": 0.98,
+      "maximum-matching": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

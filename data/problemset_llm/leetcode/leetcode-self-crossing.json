@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-self-crossing",
+  "title": "Self Crossing",
+  "slug": "self-crossing",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/self-crossing/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given a sequence of distances representing moves in alternating counter-clockwise directions on a plane, determine if the path crosses itself at any point.",
+  "tags": [
+    "array",
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924006,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.95
+    }
+  }
+}

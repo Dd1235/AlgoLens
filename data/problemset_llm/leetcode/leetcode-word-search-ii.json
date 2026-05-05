@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-word-search-ii",
+  "title": "Word Search II",
+  "slug": "word-search-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-search-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "backtracking",
+    "trie",
+    "matrix"
+  ],
+  "statement": "Given a 2D board of characters and a list of words, find all words that can be formed by sequentially adjacent letters on the board without reusing any cell.",
+  "tags": [
+    "array",
+    "string",
+    "backtracking",
+    "trie",
+    "matrix"
+  ],
+  "patterns": [
+    "backtracking",
+    "trie",
+    "dfs",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924295,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "trie": 0.95,
+      "dfs": 0.9,
+      "pruning": 0.85
+    }
+  }
+}

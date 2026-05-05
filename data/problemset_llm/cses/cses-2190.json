@@ -1,0 +1,26 @@
+{
+  "id": "cses-2190",
+  "title": "Line Segment Intersection",
+  "slug": "line-segment-intersection",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2190",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given multiple queries each describing two line segments by their endpoints, determine whether the two segments intersect at any point.",
+  "tags": [
+    "geometry"
+  ],
+  "patterns": [
+    "orientation-test",
+    "line-segment-intersection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951793,
+    "pattern_confidence": {
+      "orientation-test": 0.98,
+      "line-segment-intersection": 0.97
+    }
+  }
+}

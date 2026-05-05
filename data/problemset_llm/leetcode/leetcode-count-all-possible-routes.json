@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-all-possible-routes",
+  "title": "Count All Possible Routes",
+  "slug": "count-all-possible-routes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-all-possible-routes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given distinct city locations, a start city, a finish city, and an initial fuel amount, count the number of possible routes from start to finish without running out of fuel, allowing revisits to cities. Return the count modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dp",
+    "memoization"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "memoization",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922569,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "memoization": 0.95,
+      "state-space-search": 0.85
+    }
+  }
+}

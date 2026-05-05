@@ -1,0 +1,31 @@
+{
+  "id": "cses-3312",
+  "title": "Grid Coloring II",
+  "slug": "grid-coloring-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3312",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an n by m grid with characters A, B, or C, change each cell's character to a different one so that no two adjacent cells share the same character. Output any valid configuration or IMPOSSIBLE if none exists.",
+  "tags": [
+    "grid",
+    "graph",
+    "bipartite-graph",
+    "coloring"
+  ],
+  "patterns": [
+    "bipartite-check",
+    "graph-coloring",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952191,
+    "pattern_confidence": {
+      "bipartite-check": 0.95,
+      "graph-coloring": 0.9,
+      "dfs": 0.85
+    }
+  }
+}

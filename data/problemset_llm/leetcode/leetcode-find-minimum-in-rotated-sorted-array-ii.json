@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-minimum-in-rotated-sorted-array-ii",
+  "title": "Find Minimum in Rotated Sorted Array II",
+  "slug": "find-minimum-in-rotated-sorted-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a sorted array that has been rotated an unknown number of times and may contain duplicates, find the minimum element efficiently.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922905,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "binary-search-answer": 0.9
+    }
+  }
+}

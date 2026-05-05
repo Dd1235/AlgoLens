@@ -1,0 +1,27 @@
+{
+  "id": "cses-2113",
+  "title": "Signal Processing",
+  "slug": "signal-processing",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2113",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given two integer sequences representing a signal and a mask, compute the convolution by sliding the mask over the signal and summing the products of overlapping elements at each position.",
+  "tags": [
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "convolution",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951870,
+    "pattern_confidence": {
+      "convolution": 0.98,
+      "prefix-sum": 0.7
+    }
+  }
+}

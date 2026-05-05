@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-permutations-iv",
+  "title": "Permutations IV",
+  "slug": "permutations-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/permutations-iv/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "combinatorics",
+    "enumeration"
+  ],
+  "statement": "Find the k-th lexicographically smallest permutation of the first n positive integers where no two adjacent elements are both odd or both even, or return an empty list if fewer than k such permutations exist.",
+  "tags": [
+    "array",
+    "math",
+    "combinatorics",
+    "dp"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "lexicographical-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923918,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "state-compression": 0.9,
+      "lexicographical-enumeration": 0.85
+    }
+  }
+}

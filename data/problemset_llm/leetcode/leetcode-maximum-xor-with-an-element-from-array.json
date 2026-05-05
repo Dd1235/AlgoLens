@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-xor-with-an-element-from-array",
+  "title": "Maximum XOR With an Element From Array",
+  "slug": "maximum-xor-with-an-element-from-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-xor-with-an-element-from-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "trie"
+  ],
+  "statement": "Given an array of non-negative integers and queries with constraints, find for each query the maximum XOR of a given number with any array element not exceeding a specified limit, or -1 if none qualify.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "trie"
+  ],
+  "patterns": [
+    "offline-queries",
+    "trie",
+    "bitwise-xor",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923469,
+    "pattern_confidence": {
+      "offline-queries": 0.95,
+      "trie": 0.98,
+      "bitwise-xor": 0.97,
+      "sorting": 0.9
+    }
+  }
+}

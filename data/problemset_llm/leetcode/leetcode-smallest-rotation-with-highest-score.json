@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-smallest-rotation-with-highest-score",
+  "title": "Smallest Rotation with Highest Score",
+  "slug": "smallest-rotation-with-highest-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-rotation-with-highest-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given an array, find the rotation index that maximizes the count of elements less than or equal to their indices after rotation, returning the smallest such index if multiple exist.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "difference-array",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924085,
+    "pattern_confidence": {
+      "difference-array": 0.95,
+      "prefix-sum": 0.9
+    }
+  }
+}

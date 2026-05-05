@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-first-letter-capitalization-ii",
+  "title": "First Letter Capitalization II",
+  "slug": "first-letter-capitalization-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/first-letter-capitalization-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Transform each word in a text column by capitalizing the first letter and lowercasing the rest, with special capitalization for hyphenated words where each part is capitalized.",
+  "tags": [
+    "string",
+    "parsing",
+    "text-processing"
+  ],
+  "patterns": [
+    "string-manipulation",
+    "tokenization",
+    "case-conversion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923026,
+    "pattern_confidence": {
+      "string-manipulation": 0.95,
+      "tokenization": 0.9,
+      "case-conversion": 0.9
+    }
+  }
+}

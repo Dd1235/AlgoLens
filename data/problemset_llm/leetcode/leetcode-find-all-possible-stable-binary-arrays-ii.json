@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-find-all-possible-stable-binary-arrays-ii",
+  "title": "Find All Possible Stable Binary Arrays II",
+  "slug": "find-all-possible-stable-binary-arrays-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of binary arrays with exact counts of zeros and ones such that every subarray longer than a given limit contains both 0 and 1, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922874,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "prefix-sum": 0.7,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

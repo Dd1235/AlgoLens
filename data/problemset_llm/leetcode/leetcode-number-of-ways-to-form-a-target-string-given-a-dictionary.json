@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-number-of-ways-to-form-a-target-string-given-a-dictionary",
+  "title": "Number of Ways to Form a Target String Given a Dictionary",
+  "slug": "number-of-ways-to-form-a-target-string-given-a-dictionary",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a list of equal-length words and a target string, count the number of ways to form the target from characters in the words moving left to right, with the constraint that once a character at position k is used, all characters at indices ≤ k in all words become unusable.",
+  "tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923830,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dp": 0.95
+    }
+  }
+}

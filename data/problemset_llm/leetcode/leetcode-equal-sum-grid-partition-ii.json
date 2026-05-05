@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-equal-sum-grid-partition-ii",
+  "title": "Equal Sum Grid Partition II",
+  "slug": "equal-sum-grid-partition-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/equal-sum-grid-partition-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "matrix",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given a matrix of positive integers, determine if there exists a single horizontal or vertical cut dividing the grid into two connected non-empty parts with equal sums, or sums equal after discounting at most one cell while maintaining connectivity.",
+  "tags": [
+    "array",
+    "matrix",
+    "graph",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "connectivity-check",
+    "grid-partition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922845,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "connectivity-check": 0.9,
+      "grid-partition": 0.85
+    }
+  }
+}

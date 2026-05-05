@@ -1,0 +1,27 @@
+{
+  "id": "cses-2413",
+  "title": "Counting Towers",
+  "slug": "counting-towers",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2413",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Count the number of distinct towers of width 2 and height n that can be built using integer-dimensioned blocks, with mirrored and rotated towers considered different. Output the count modulo 10^9+7 for multiple test cases.",
+  "tags": [
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951409,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

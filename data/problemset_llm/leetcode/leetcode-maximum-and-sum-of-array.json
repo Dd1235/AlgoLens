@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-and-sum-of-array",
+  "title": "Maximum AND Sum of Array",
+  "slug": "maximum-and-sum-of-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-and-sum-of-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given an array of integers and a number of slots where each slot can hold up to two numbers, assign all numbers to slots to maximize the sum of bitwise AND between each number and its slot number.",
+  "tags": [
+    "array",
+    "bitmask",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dp-on-subsets"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923286,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "dp-on-subsets": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-difference-between-maximum-and-minimum-price-sum",
+  "title": "Difference Between Maximum and Minimum Price Sum",
+  "slug": "difference-between-maximum-and-minimum-price-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/difference-between-maximum-and-minimum-price-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree with node prices, choose a root to maximize the difference between the maximum and minimum price sums of all root-to-node paths.",
+  "tags": [
+    "tree",
+    "dp",
+    "graph"
+  ],
+  "patterns": [
+    "tree-dp",
+    "rerooting-dp",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922806,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "rerooting-dp": 0.9,
+      "dfs": 0.85
+    }
+  }
+}

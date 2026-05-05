@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximal-rectangle",
+  "title": "Maximal Rectangle",
+  "slug": "maximal-rectangle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximal-rectangle/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "stack",
+    "matrix",
+    "monotonic-stack"
+  ],
+  "statement": "Given a binary matrix, find the area of the largest rectangle containing only 1s.",
+  "tags": [
+    "array",
+    "matrix",
+    "stack",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "histogram-based-dp",
+    "row-wise-accumulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923222,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "histogram-based-dp": 0.95,
+      "row-wise-accumulation": 0.9
+    }
+  }
+}

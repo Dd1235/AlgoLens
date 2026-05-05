@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-best-time-to-buy-and-sell-stock-iii",
+  "title": "Best Time to Buy and Sell Stock III",
+  "slug": "best-time-to-buy-and-sell-stock-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array of stock prices, find the maximum profit achievable with at most two buy-sell transactions, ensuring no overlapping transactions.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922467,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

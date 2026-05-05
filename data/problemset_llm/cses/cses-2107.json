@@ -1,0 +1,32 @@
+{
+  "id": "cses-2107",
+  "title": "String Functions",
+  "slug": "string-functions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2107",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, compute the Z-function array where each element represents the length of the longest substring starting at that position matching the prefix, and the prefix-function (pi) array where each element represents the length of the longest prefix ending at that position.",
+  "tags": [
+    "string",
+    "prefix-function",
+    "z-function"
+  ],
+  "patterns": [
+    "z-algorithm",
+    "kmp",
+    "prefix-function",
+    "string-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951777,
+    "pattern_confidence": {
+      "z-algorithm": 0.98,
+      "kmp": 0.97,
+      "prefix-function": 0.95,
+      "string-processing": 0.9
+    }
+  }
+}

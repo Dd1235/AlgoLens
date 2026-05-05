@@ -1,0 +1,29 @@
+{
+  "id": "cses-1699",
+  "title": "Flight Route Requests",
+  "slug": "flight-route-requests",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1699",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a set of cities and requests specifying required travel routes, determine the minimum number of one-way flight connections needed to satisfy all route requests.",
+  "tags": [
+    "graph",
+    "strongly-connected-components"
+  ],
+  "patterns": [
+    "strongly-connected-components",
+    "condensation-graph",
+    "minimum-edge-addition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952013,
+    "pattern_confidence": {
+      "strongly-connected-components": 0.95,
+      "condensation-graph": 0.9,
+      "minimum-edge-addition": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-subgraph-score-in-a-tree",
+  "title": "Maximum Subgraph Score in a Tree",
+  "slug": "maximum-subgraph-score-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree with nodes labeled as good or bad, compute for each node the maximum score of any connected subgraph containing that node, where score is the count of good nodes minus bad nodes in the subgraph.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "tree-dp",
+    "rerooting-dp",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923425,
+    "pattern_confidence": {
+      "tree-dp": 0.98,
+      "rerooting-dp": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

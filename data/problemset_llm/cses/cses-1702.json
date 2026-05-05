@@ -1,0 +1,30 @@
+{
+  "id": "cses-1702",
+  "title": "Tree Traversals",
+  "slug": "tree-traversals",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1702",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given the preorder and inorder traversals of a binary tree with distinct nodes, reconstruct and output its postorder traversal.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-reconstruction",
+    "divide-and-conquer",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951975,
+    "pattern_confidence": {
+      "tree-reconstruction": 0.98,
+      "divide-and-conquer": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

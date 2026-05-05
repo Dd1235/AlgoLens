@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-text-justification",
+  "title": "Text Justification",
+  "slug": "text-justification",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/text-justification/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "simulation"
+  ],
+  "statement": "Given a list of words and a maximum line width, arrange the words into lines that are fully justified with spaces distributed evenly, using a greedy approach to pack as many words as possible per line. The last line and lines with a single word are left-justified.",
+  "tags": [
+    "array",
+    "string",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "string-formatting",
+    "space-distribution"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924216,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "string-formatting": 0.95,
+      "space-distribution": 0.9
+    }
+  }
+}

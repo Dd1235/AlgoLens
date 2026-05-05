@@ -1,0 +1,27 @@
+{
+  "id": "cses-1092",
+  "title": "Two Sets",
+  "slug": "two-sets",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1092",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Determine if the numbers from 1 to n can be partitioned into two sets with equal sums, and if possible, provide one such partition.",
+  "tags": [
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951263,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

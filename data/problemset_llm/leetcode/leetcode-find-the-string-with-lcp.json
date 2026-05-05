@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-the-string-with-lcp",
+  "title": "Find the String with LCP",
+  "slug": "find-the-string-with-lcp",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-string-with-lcp/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "union-find",
+    "matrix"
+  ],
+  "statement": "Given an n x n matrix representing longest common prefix lengths between suffixes of a string, reconstruct the lexicographically smallest string that matches this matrix or return empty if impossible.",
+  "tags": [
+    "string",
+    "array",
+    "union-find"
+  ],
+  "patterns": [
+    "greedy",
+    "union-find",
+    "validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922994,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "union-find": 0.85,
+      "validation": 0.8
+    }
+  }
+}

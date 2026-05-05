@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-good-paths",
+  "title": "Number of Good Paths",
+  "slug": "number-of-good-paths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-good-paths/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "tree",
+    "union-find",
+    "graph",
+    "sorting"
+  ],
+  "statement": "Given a tree with values on nodes, count the number of distinct simple paths where the start and end nodes have the same value and all intermediate nodes have values less than or equal to that value.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find",
+    "sorting"
+  ],
+  "patterns": [
+    "union-find",
+    "sorting",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923778,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "sorting": 0.9,
+      "contribution-technique": 0.85
+    }
+  }
+}

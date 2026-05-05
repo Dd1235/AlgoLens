@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-patching-array",
+  "title": "Patching Array",
+  "slug": "patching-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/patching-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given a sorted array and a target range, determine the minimum number of elements to add so that all numbers in the range can be formed as sums of elements from the array.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923904,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "prefix-sum": 0.85
+    }
+  }
+}

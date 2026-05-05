@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-shortest-matching-substring",
+  "title": "Shortest Matching Substring",
+  "slug": "shortest-matching-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-matching-substring/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "binary-search",
+    "string-matching"
+  ],
+  "statement": "Given a string and a pattern containing exactly two wildcard '*' characters that match any sequence of characters, find the length of the shortest substring of the string that matches the pattern, or return -1 if none exists.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "two-pointers",
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924036,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "binary-search-answer": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

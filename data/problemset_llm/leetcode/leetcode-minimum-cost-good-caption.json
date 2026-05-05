@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-cost-good-caption",
+  "title": "Minimum Cost Good Caption",
+  "slug": "minimum-cost-good-caption",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-good-caption/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, transform it into a 'good caption' where each character appears in groups of at least three consecutive identical letters by changing characters to adjacent alphabet letters with minimal operations. Return the lexicographically smallest such string or an empty string if impossible.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "lexicographic-order",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923508,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "lexicographic-order": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

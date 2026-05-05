@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximize-the-number-of-partitions-after-operations",
+  "title": "Maximize the Number of Partitions After Operations",
+  "slug": "maximize-the-number-of-partitions-after-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given a string and an integer k, you may change at most one character in the string to maximize the number of partitions formed by repeatedly removing the longest prefix containing at most k distinct characters.",
+  "tags": [
+    "string",
+    "greedy",
+    "two-pointers",
+    "bitmask"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "bitmask",
+    "prefix-frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923277,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9,
+      "bitmask": 0.85,
+      "prefix-frequency-count": 0.8
+    }
+  }
+}

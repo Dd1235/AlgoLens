@@ -1,0 +1,30 @@
+{
+  "id": "cses-1694",
+  "title": "Download Speed",
+  "slug": "download-speed",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1694",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed network of computers with connection speeds, find the maximum data transfer speed from the server (node 1) to Kotivalo's computer (node n).",
+  "tags": [
+    "graph",
+    "max-flow",
+    "shortest-path"
+  ],
+  "patterns": [
+    "max-flow",
+    "dinic",
+    "edmonds-karp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951539,
+    "pattern_confidence": {
+      "max-flow": 0.98,
+      "dinic": 0.9,
+      "edmonds-karp": 0.85
+    }
+  }
+}

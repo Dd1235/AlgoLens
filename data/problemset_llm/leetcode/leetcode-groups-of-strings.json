@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-groups-of-strings",
+  "title": "Groups of Strings",
+  "slug": "groups-of-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/groups-of-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "bit-manipulation",
+    "union-find"
+  ],
+  "statement": "Group strings based on connectivity defined by single-letter add, delete, or replace operations, and return the number of groups and the size of the largest group.",
+  "tags": [
+    "string",
+    "graph",
+    "bit-manipulation",
+    "union-find"
+  ],
+  "patterns": [
+    "bitmask-representation",
+    "union-find",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923061,
+    "pattern_confidence": {
+      "bitmask-representation": 0.95,
+      "union-find": 0.98,
+      "graph-construction": 0.9
+    }
+  }
+}

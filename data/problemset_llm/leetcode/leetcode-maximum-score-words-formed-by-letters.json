@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-maximum-score-words-formed-by-letters",
+  "title": "Maximum Score Words Formed by Letters",
+  "slug": "maximum-score-words-formed-by-letters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-words-formed-by-letters/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "counting",
+    "bitmask"
+  ],
+  "statement": "Given a list of words, a multiset of letters, and a score for each letter, find the maximum total score of any subset of words that can be formed using the letters without reuse.",
+  "tags": [
+    "array",
+    "string",
+    "bitmask",
+    "backtracking",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "backtracking",
+    "subset-enumeration",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923405,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "backtracking": 0.9,
+      "subset-enumeration": 0.85,
+      "counting": 0.8
+    }
+  }
+}

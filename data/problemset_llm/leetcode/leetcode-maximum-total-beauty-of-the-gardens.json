@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-maximum-total-beauty-of-the-gardens",
+  "title": "Maximum Total Beauty of the Gardens",
+  "slug": "maximum-total-beauty-of-the-gardens",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "greedy",
+    "sorting",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given an array representing flowers planted in gardens and a limit on additional flowers to plant, maximize total beauty defined by complete gardens and minimum flowers in incomplete gardens after planting.",
+  "tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "prefix-sum",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-sum",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923444,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9,
+      "prefix-sum": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

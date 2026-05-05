@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-shortest-path-in-a-grid-with-obstacles-elimination",
+  "title": "Shortest Path in a Grid with Obstacles Elimination",
+  "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Find the shortest path from the top-left to the bottom-right of a grid with obstacles, where you can eliminate up to k obstacles along the way.",
+  "tags": [
+    "array",
+    "graph",
+    "matrix"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "state-space-search",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924040,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "state-space-search": 0.95,
+      "shortest-path": 0.9
+    }
+  }
+}

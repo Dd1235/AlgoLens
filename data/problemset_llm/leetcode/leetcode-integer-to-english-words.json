@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-integer-to-english-words",
+  "title": "Integer to English Words",
+  "slug": "integer-to-english-words",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/integer-to-english-words/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "recursion"
+  ],
+  "statement": "Convert a non-negative integer into its English words representation, handling units such as thousand, million, and billion.",
+  "tags": [
+    "math",
+    "string",
+    "recursion"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "string-construction",
+    "recursive-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923079,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "string-construction": 0.85,
+      "recursive-decomposition": 0.88
+    }
+  }
+}

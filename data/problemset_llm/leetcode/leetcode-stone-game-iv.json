@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-stone-game-iv",
+  "title": "Stone Game IV",
+  "slug": "stone-game-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stone-game-iv/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "game-theory"
+  ],
+  "statement": "Two players alternately remove a non-zero perfect square number of stones from a pile of n stones. Determine if the first player can force a win assuming optimal play.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "game-theory"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924118,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85,
+      "game-dp": 0.9
+    }
+  }
+}

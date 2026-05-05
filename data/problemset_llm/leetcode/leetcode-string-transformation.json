@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-string-transformation",
+  "title": "String Transformation",
+  "slug": "string-transformation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/string-transformation/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "string-matching"
+  ],
+  "statement": "Given two equal-length strings s and t, count the number of ways to transform s into t in exactly k operations, where each operation moves a suffix of s to the front. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "math"
+  ],
+  "patterns": [
+    "string-rotation",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924134,
+    "pattern_confidence": {
+      "string-rotation": 0.98,
+      "modular-arithmetic": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

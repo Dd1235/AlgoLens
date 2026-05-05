@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-number-of-ways-to-reach-the-k-th-stair",
+  "title": "Find Number of Ways to Reach the K-th Stair",
+  "slug": "find-number-of-ways-to-reach-the-k-th-stair",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "memoization",
+    "combinatorics"
+  ],
+  "statement": "Count the number of ways to reach stair k starting from stair 1 with operations that either move down one stair (with restrictions) or move up by an increasing jump length. The problem involves counting sequences of moves with state-dependent transitions.",
+  "tags": [
+    "dynamic-programming",
+    "math",
+    "memoization"
+  ],
+  "patterns": [
+    "state-compression",
+    "dp",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922916,
+    "pattern_confidence": {
+      "state-compression": 0.9,
+      "dp": 0.95,
+      "memoization": 0.9
+    }
+  }
+}

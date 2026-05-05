@@ -1,0 +1,30 @@
+{
+  "id": "cses-1677",
+  "title": "Network Breakdown",
+  "slug": "network-breakdown",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1677",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a network of computers connected by edges, report the number of connected components after each specified connection is removed.",
+  "tags": [
+    "graph",
+    "dsu",
+    "offline-queries"
+  ],
+  "patterns": [
+    "dsu-rollback",
+    "offline-queries",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951999,
+    "pattern_confidence": {
+      "dsu-rollback": 0.95,
+      "offline-queries": 0.9,
+      "union-find": 0.9
+    }
+  }
+}

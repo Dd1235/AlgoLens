@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-operations-to-achieve-at-least-k-peaks",
+  "title": "Minimum Operations to Achieve At Least K Peaks",
+  "slug": "minimum-operations-to-achieve-at-least-k-peaks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a circular integer array, determine the minimum increments needed to ensure at least k indices are peaks, where a peak is strictly greater than its neighbors. Return -1 if it's impossible.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923637,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dp": 0.85
+    }
+  }
+}

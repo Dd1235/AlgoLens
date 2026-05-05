@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-sum-of-good-subsequences",
+  "title": "Sum of Good Subsequences",
+  "slug": "sum-of-good-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-good-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, find the sum of all subsequences where the absolute difference between every pair of consecutive elements is exactly one, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "patterns": [
+    "dp-on-array",
+    "modular-arithmetic",
+    "frequency-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924173,
+    "pattern_confidence": {
+      "dp-on-array": 0.95,
+      "modular-arithmetic": 0.9,
+      "frequency-counting": 0.85
+    }
+  }
+}

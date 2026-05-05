@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-profit-from-trading-stocks-with-discounts",
+  "title": "Maximum Profit from Trading Stocks with Discounts",
+  "slug": "maximum-profit-from-trading-stocks-with-discounts",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-profit-from-trading-stocks-with-discounts/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a company hierarchy tree with stock prices for employees, determine the maximum profit achievable by buying stocks within a budget, considering discounts if a direct boss buys their stock.",
+  "tags": [
+    "tree",
+    "dp",
+    "knapsack",
+    "graph"
+  ],
+  "patterns": [
+    "tree-dp",
+    "knapsack",
+    "dfs",
+    "budgeted-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923382,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "knapsack": 0.9,
+      "dfs": 0.85,
+      "budgeted-optimization": 0.8
+    }
+  }
+}

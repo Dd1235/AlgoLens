@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-integers-with-popcount-depth-equal-to-k-i",
+  "title": "Number of Integers With Popcount-Depth Equal to K I",
+  "slug": "number-of-integers-with-popcount-depth-equal-to-k-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-i/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "combinatorics"
+  ],
+  "statement": "Given an integer n and a depth k, count how many integers from 1 to n have a popcount-depth exactly equal to k, where popcount-depth is the number of iterations needed to reduce a number to 1 by repeatedly replacing it with its number of set bits.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923785,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "dynamic-programming": 0.85,
+      "combinatorics": 0.8
+    }
+  }
+}

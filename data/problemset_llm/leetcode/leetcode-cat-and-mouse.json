@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-cat-and-mouse",
+  "title": "Cat and Mouse",
+  "slug": "cat-and-mouse",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cat-and-mouse/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "graph",
+    "topological-sort",
+    "memoization",
+    "game-theory"
+  ],
+  "statement": "Two players, Mouse and Cat, move alternately on an undirected graph with the Mouse starting at node 1 and the Cat at node 2. The Mouse aims to reach node 0 (the hole) to win, while the Cat tries to catch the Mouse or force a draw by repeating positions. Determine the game's outcome assuming optimal play.",
+  "tags": [
+    "graph",
+    "game-theory",
+    "dp",
+    "memoization"
+  ],
+  "patterns": [
+    "topological-sort",
+    "state-compression",
+    "game-dp",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922505,
+    "pattern_confidence": {
+      "topological-sort": 0.9,
+      "state-compression": 0.85,
+      "game-dp": 0.95,
+      "memoization": 0.9
+    }
+  }
+}

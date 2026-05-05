@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-value-of-concatenated-binary-segments",
+  "title": "Maximum Value of Concatenated Binary Segments",
+  "slug": "maximum-value-of-concatenated-binary-segments",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given pairs representing counts of '1's and '0's in segments, reorder and concatenate these binary segments to form the maximum possible binary number modulo 10^9+7.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "sorting",
+    "modular-arithmetic",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923451,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "modular-arithmetic": 0.9,
+      "greedy": 0.9
+    }
+  }
+}

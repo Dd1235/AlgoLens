@@ -1,0 +1,26 @@
+{
+  "id": "cses-2143",
+  "title": "Reachability Queries",
+  "slug": "reachability-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2143",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a directed graph with n nodes and m edges, answer q queries asking whether node b is reachable from node a.",
+  "tags": [
+    "graph"
+  ],
+  "patterns": [
+    "strongly-connected-components",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951839,
+    "pattern_confidence": {
+      "strongly-connected-components": 0.9,
+      "offline-queries": 0.7
+    }
+  }
+}

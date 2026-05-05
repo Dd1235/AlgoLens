@@ -1,0 +1,30 @@
+{
+  "id": "cses-3357",
+  "title": "Fixed Length Walk Queries",
+  "slug": "fixed-length-walk-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3357",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given an undirected connected graph, determine for multiple queries whether there exists a walk of exactly x edges between two specified nodes.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "parity"
+  ],
+  "patterns": [
+    "bfs",
+    "parity-check",
+    "distance-matrix"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951988,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "parity-check": 0.9,
+      "distance-matrix": 0.85
+    }
+  }
+}

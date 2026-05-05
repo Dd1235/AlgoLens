@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-replace-non-coprime-numbers-in-array",
+  "title": "Replace Non-Coprime Numbers in Array",
+  "slug": "replace-non-coprime-numbers-in-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/replace-non-coprime-numbers-in-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "stack",
+    "number-theory"
+  ],
+  "statement": "Given an array, repeatedly replace any two adjacent non-coprime numbers with their least common multiple until no such pairs remain, and return the resulting array.",
+  "tags": [
+    "array",
+    "math",
+    "stack",
+    "number-theory"
+  ],
+  "patterns": [
+    "stack",
+    "gcd",
+    "lcm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923983,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "gcd": 0.98,
+      "lcm": 0.97,
+      "greedy": 0.85
+    }
+  }
+}

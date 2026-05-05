@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-inversion-count-in-subarrays-of-fixed-length",
+  "title": "Minimum Inversion Count in Subarrays of Fixed Length",
+  "slug": "minimum-inversion-count-in-subarrays-of-fixed-length",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-inversion-count-in-subarrays-of-fixed-length/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "segment-tree",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array and a fixed subarray length k, find the minimum number of inversions among all subarrays of length k. An inversion is a pair of indices where the earlier element is greater than the later one within the subarray.",
+  "tags": [
+    "array",
+    "sliding-window",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "sliding-window",
+    "fenwick-tree",
+    "segment-tree",
+    "inversion-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923584,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "fenwick-tree": 0.9,
+      "segment-tree": 0.85,
+      "inversion-count": 0.9
+    }
+  }
+}

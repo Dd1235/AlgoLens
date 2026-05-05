@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-longest-balanced-subarray-ii",
+  "title": "Longest Balanced Subarray II",
+  "slug": "longest-balanced-subarray-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-balanced-subarray-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "divide-and-conquer",
+    "segment-tree",
+    "prefix-sum"
+  ],
+  "statement": "Find the length of the longest contiguous subarray where the count of distinct even numbers equals the count of distinct odd numbers.",
+  "tags": [
+    "array",
+    "hash-map",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923151,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "two-pointers": 0.85,
+      "hash-map-lookup": 0.88
+    }
+  }
+}

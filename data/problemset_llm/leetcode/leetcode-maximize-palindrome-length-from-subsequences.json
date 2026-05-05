@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximize-palindrome-length-from-subsequences",
+  "title": "Maximize Palindrome Length From Subsequences",
+  "slug": "maximize-palindrome-length-from-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings, find the length of the longest palindrome formed by concatenating a non-empty subsequence from the first string and a non-empty subsequence from the second string. Return 0 if no palindrome can be formed.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-common-subsequence",
+    "dp-on-strings",
+    "palindrome-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923249,
+    "pattern_confidence": {
+      "longest-common-subsequence": 0.95,
+      "dp-on-strings": 0.9,
+      "palindrome-dp": 0.9
+    }
+  }
+}

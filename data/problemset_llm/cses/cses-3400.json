@@ -1,0 +1,29 @@
+{
+  "id": "cses-3400",
+  "title": "Raab Game II",
+  "slug": "raab-game-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3400",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given two players each with cards numbered 1 to n, count the number of ways the game can end with given final scores a and b, where each turn both play one card and the higher card wins a point. The result should be computed modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952055,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "counting": 0.9
+    }
+  }
+}

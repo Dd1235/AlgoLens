@@ -1,0 +1,33 @@
+{
+  "id": "cses-3161",
+  "title": "GCD Subsets",
+  "slug": "gcd-subsets",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3161",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an array of integers, compute for each k from 1 to n the number of non-empty subsets whose greatest common divisor equals k, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "mobius-inversion",
+    "modular-arithmetic",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952215,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.95,
+      "mobius-inversion": 0.9,
+      "modular-arithmetic": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

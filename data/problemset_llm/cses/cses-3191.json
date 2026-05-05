@@ -1,0 +1,27 @@
+{
+  "id": "cses-3191",
+  "title": "Maximum Xor Subset",
+  "slug": "maximum-xor-subset",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3191",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given an array of integers, find the maximum xor value obtainable by xoring any subset of the array elements.",
+  "tags": [
+    "array",
+    "bitwise"
+  ],
+  "patterns": [
+    "linear-basis",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951931,
+    "pattern_confidence": {
+      "linear-basis": 0.98,
+      "bit-manipulation": 0.95
+    }
+  }
+}

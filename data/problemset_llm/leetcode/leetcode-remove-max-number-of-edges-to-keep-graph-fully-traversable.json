@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-remove-max-number-of-edges-to-keep-graph-fully-traversable",
+  "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+  "slug": "remove-max-number-of-edges-to-keep-graph-fully-traversable",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given a graph with edges usable by Alice, Bob, or both, find the maximum number of edges that can be removed while keeping the graph fully traversable by both.",
+  "tags": [
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923981,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "greedy": 0.9
+    }
+  }
+}

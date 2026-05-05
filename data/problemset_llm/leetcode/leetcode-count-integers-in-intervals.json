@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-integers-in-intervals",
+  "title": "Count Integers in Intervals",
+  "slug": "count-integers-in-intervals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-integers-in-intervals/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "design",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "statement": "Design a data structure to add intervals and efficiently count the total number of distinct integers covered by these intervals.",
+  "tags": [
+    "data-structure",
+    "interval",
+    "ordered-set",
+    "segment-tree"
+  ],
+  "patterns": [
+    "interval-union",
+    "ordered-set",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922617,
+    "pattern_confidence": {
+      "interval-union": 0.95,
+      "ordered-set": 0.9,
+      "segment-tree": 0.85
+    }
+  }
+}

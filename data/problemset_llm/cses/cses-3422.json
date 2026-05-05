@@ -1,0 +1,27 @@
+{
+  "id": "cses-3422",
+  "title": "Third Permutation",
+  "slug": "third-permutation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3422",
+  "source_topic": "CSES / Construction Problems",
+  "source_tags": [],
+  "statement": "Given two permutations a and b of size n where a_i ≠ b_i for all i, construct a third permutation c such that c_i differs from both a_i and b_i at every position, or determine that no such permutation exists.",
+  "tags": [
+    "permutation",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951957,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

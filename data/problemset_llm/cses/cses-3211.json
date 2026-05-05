@@ -1,0 +1,27 @@
+{
+  "id": "cses-3211",
+  "title": "Number of Subset Xors",
+  "slug": "number-of-subset-xors",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3211",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given an array of integers, determine how many distinct values can be obtained by taking the XOR of any subset of the array.",
+  "tags": [
+    "array",
+    "bitwise"
+  ],
+  "patterns": [
+    "linear-basis",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951933,
+    "pattern_confidence": {
+      "linear-basis": 0.98,
+      "bitmask": 0.85
+    }
+  }
+}

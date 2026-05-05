@@ -1,0 +1,27 @@
+{
+  "id": "cses-2084",
+  "title": "Monster Game I",
+  "slug": "monster-game-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2084",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a sequence of monsters with strengths and skill factors that decrease after killing each monster, determine the minimum total time to defeat the final monster by choosing which monsters to kill or skip, with the constraint that the last monster must be killed.",
+  "tags": [
+    "array",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951855,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

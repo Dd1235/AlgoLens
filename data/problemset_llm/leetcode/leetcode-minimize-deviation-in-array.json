@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimize-deviation-in-array",
+  "title": "Minimize Deviation in Array",
+  "slug": "minimize-deviation-in-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-deviation-in-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "statement": "Given an array of positive integers, perform operations to minimize the maximum difference between any two elements by either halving even elements or doubling odd elements any number of times.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap",
+    "ordered-set"
+  ],
+  "patterns": [
+    "greedy",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923485,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "heap-priority-queue": 0.95,
+      "ordered-set": 0.85
+    }
+  }
+}

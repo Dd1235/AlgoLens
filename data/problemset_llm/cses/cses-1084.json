@@ -1,0 +1,31 @@
+{
+  "id": "cses-1084",
+  "title": "Apartments",
+  "slug": "apartments",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1084",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given applicants with desired apartment sizes and available apartments, assign apartments to maximize the number of applicants who receive an apartment within an acceptable size difference.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951310,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

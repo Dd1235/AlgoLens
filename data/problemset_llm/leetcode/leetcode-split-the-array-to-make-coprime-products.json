@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-split-the-array-to-make-coprime-products",
+  "title": "Split the Array to Make Coprime Products",
+  "slug": "split-the-array-to-make-coprime-products",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-the-array-to-make-coprime-products/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, find the smallest index to split it so that the products of the two resulting subarrays are coprime, or return -1 if no such split exists.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-gcd",
+    "prefix-suffix-processing",
+    "gcd-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924105,
+    "pattern_confidence": {
+      "prefix-gcd": 0.95,
+      "prefix-suffix-processing": 0.9,
+      "gcd-computation": 0.9
+    }
+  }
+}

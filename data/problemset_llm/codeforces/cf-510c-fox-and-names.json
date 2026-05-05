@@ -1,0 +1,37 @@
+{
+  "id": "cf-510c-fox-and-names",
+  "title": "Fox And Names",
+  "slug": "codeforces-510c-fox-and-names",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/510/C",
+  "source_topic": "Codeforces / Graphs and Grid Search",
+  "source_tags": [
+    "graph",
+    "topological-sort",
+    "dfs",
+    "cycle-detection",
+    "string"
+  ],
+  "statement": "Given a list of words sorted lexicographically by an unknown alphabet, determine a valid letter order consistent with the list or report impossibility if no such order exists.",
+  "tags": [
+    "graph",
+    "string",
+    "topological-sort",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "topological-sort",
+    "dfs",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777953620,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "dfs": 0.95,
+      "cycle-detection": 0.93
+    }
+  }
+}

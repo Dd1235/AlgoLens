@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-length-of-longest-v-shaped-diagonal-segment",
+  "title": "Length of Longest V-Shaped Diagonal Segment",
+  "slug": "length-of-longest-v-shaped-diagonal-segment",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "memoization",
+    "matrix"
+  ],
+  "statement": "Given a 2D grid with values 0, 1, and 2, find the longest diagonal segment starting with 1 and following a repeating sequence of 2 and 0, allowing at most one 90-degree clockwise turn along diagonal directions.",
+  "tags": [
+    "array",
+    "matrix",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "directional-dp",
+    "state-machine"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923129,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "directional-dp": 0.9,
+      "state-machine": 0.85
+    }
+  }
+}

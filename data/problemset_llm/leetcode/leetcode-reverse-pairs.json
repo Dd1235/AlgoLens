@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-reverse-pairs",
+  "title": "Reverse Pairs",
+  "slug": "reverse-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reverse-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "merge-sort",
+    "ordered-set"
+  ],
+  "statement": "Count the number of reverse pairs (i, j) in an array where i < j and nums[i] > 2 * nums[j].",
+  "tags": [
+    "array",
+    "divide-and-conquer",
+    "merge-sort"
+  ],
+  "patterns": [
+    "merge-sort",
+    "divide-and-conquer",
+    "binary-indexed-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923990,
+    "pattern_confidence": {
+      "merge-sort": 0.98,
+      "divide-and-conquer": 0.95,
+      "binary-indexed-tree": 0.7
+    }
+  }
+}

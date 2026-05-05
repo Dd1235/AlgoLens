@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-the-score-of-students-solving-math-expression",
+  "title": "The Score of Students Solving Math Expression",
+  "slug": "the-score-of-students-solving-math-expression",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-score-of-students-solving-math-expression/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "string",
+    "dynamic-programming",
+    "stack",
+    "memoization"
+  ],
+  "statement": "Given a math expression with digits, '+' and '*', grade students' answers based on correct evaluation order and an alternative incorrect order, summing their scores accordingly.",
+  "tags": [
+    "string",
+    "math",
+    "dynamic-programming",
+    "memoization",
+    "stack",
+    "array"
+  ],
+  "patterns": [
+    "expression-evaluation",
+    "dp-on-dag",
+    "memoization",
+    "stack-based-parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924225,
+    "pattern_confidence": {
+      "expression-evaluation": 0.98,
+      "dp-on-dag": 0.85,
+      "memoization": 0.9,
+      "stack-based-parsing": 0.88
+    }
+  }
+}

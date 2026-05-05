@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-course-schedule-iii",
+  "title": "Course Schedule III",
+  "slug": "course-schedule-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/course-schedule-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a list of courses with durations and deadlines, determine the maximum number of courses that can be taken sequentially without overlapping and finishing each before its deadline.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922751,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "greedy": 0.97,
+      "priority-queue": 0.95
+    }
+  }
+}

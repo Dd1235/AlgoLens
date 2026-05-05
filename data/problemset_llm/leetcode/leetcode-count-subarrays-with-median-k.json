@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-subarrays-with-median-k",
+  "title": "Count Subarrays With Median K",
+  "slug": "count-subarrays-with-median-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-subarrays-with-median-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of distinct integers and a value k, count the number of contiguous subarrays whose median is exactly k, where the median is defined as the middle element or the left middle for even-length subarrays.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922689,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-best-position-for-a-service-centre",
+  "title": "Best Position for a Service Centre",
+  "slug": "best-position-for-a-service-centre",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/best-position-for-a-service-centre/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry",
+    "randomized"
+  ],
+  "statement": "Given coordinates of customers on a 2D plane, find a point minimizing the sum of Euclidean distances to all customers.",
+  "tags": [
+    "geometry",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "gradient-descent",
+    "ternary-search",
+    "continuous-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922465,
+    "pattern_confidence": {
+      "gradient-descent": 0.95,
+      "ternary-search": 0.85,
+      "continuous-optimization": 0.9
+    }
+  }
+}

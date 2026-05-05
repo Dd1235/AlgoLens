@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-restore-the-array",
+  "title": "Restore The Array",
+  "slug": "restore-the-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/restore-the-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a digit string s and an integer k, count the number of ways to split s into a sequence of integers each between 1 and k without leading zeros. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923986,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.7
+    }
+  }
+}

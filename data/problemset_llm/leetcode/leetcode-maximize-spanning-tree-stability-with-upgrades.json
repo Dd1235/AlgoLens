@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximize-spanning-tree-stability-with-upgrades",
+  "title": "Maximize Spanning Tree Stability with Upgrades",
+  "slug": "maximize-spanning-tree-stability-with-upgrades",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-spanning-tree-stability-with-upgrades/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "binary-search",
+    "greedy",
+    "union-find",
+    "graph",
+    "minimum-spanning-tree"
+  ],
+  "statement": "Given a graph with mandatory and optional edges, each with a strength value, and a limit on upgrades that double optional edges' strengths, find the maximum minimum edge strength achievable in any spanning tree including all mandatory edges.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "union-find",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923254,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "greedy": 0.9
+    }
+  }
+}

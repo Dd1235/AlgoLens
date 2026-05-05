@@ -1,0 +1,30 @@
+{
+  "id": "cses-3190",
+  "title": "Distinct Values Splits",
+  "slug": "distinct-values-splits",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3190",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Count the number of ways to split an array into contiguous segments where each segment contains only distinct values, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dp",
+    "hashing"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-frequency",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952095,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-frequency": 0.85,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

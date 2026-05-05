@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-sum-of-subsequence-with-non-adjacent-elements",
+  "title": "Maximum Sum of Subsequence With Non-adjacent Elements",
+  "slug": "maximum-sum-of-subsequence-with-non-adjacent-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "segment-tree"
+  ],
+  "statement": "Given an integer array, support queries that update an element and then find the maximum sum of a subsequence with no two adjacent elements selected. Return the sum of all query results modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "segment-tree"
+  ],
+  "patterns": [
+    "dp-on-sequences",
+    "segment-tree",
+    "range-update-and-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923438,
+    "pattern_confidence": {
+      "dp-on-sequences": 0.95,
+      "segment-tree": 0.9,
+      "range-update-and-query": 0.85
+    }
+  }
+}

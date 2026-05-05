@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-finding-mk-average",
+  "title": "Finding MK Average",
+  "slug": "finding-mk-average",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/finding-mk-average/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "design",
+    "queue",
+    "heap-priority-queue",
+    "data-stream",
+    "ordered-set"
+  ],
+  "statement": "Implement a data structure that maintains a stream of integers and supports calculating the MKAverage of the last m elements by removing the smallest k and largest k elements and averaging the rest.",
+  "tags": [
+    "data-structure",
+    "queue",
+    "ordered-set",
+    "heap"
+  ],
+  "patterns": [
+    "sliding-window",
+    "balanced-binary-search-tree",
+    "two-heaps",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923023,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "balanced-binary-search-tree": 0.9,
+      "two-heaps": 0.88,
+      "prefix-sum": 0.7
+    }
+  }
+}

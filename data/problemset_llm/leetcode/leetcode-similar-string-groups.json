@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-similar-string-groups",
+  "title": "Similar String Groups",
+  "slug": "similar-string-groups",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/similar-string-groups/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find"
+  ],
+  "statement": "Given a list of anagram strings, group them by similarity where two strings are similar if they are identical or differ by at most one swap of two letters. Determine the number of such similarity groups.",
+  "tags": [
+    "string",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924061,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "dfs": 0.9,
+      "bfs": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
+  "title": "Find the Kth Smallest Sum of a Matrix With Sorted Rows",
+  "slug": "find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given a matrix with sorted rows, find the k-th smallest sum formed by choosing exactly one element from each row.",
+  "tags": [
+    "array",
+    "matrix",
+    "heap",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "heap-priority-queue",
+    "merge-k-sorted-lists"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922951,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "heap-priority-queue": 0.9,
+      "merge-k-sorted-lists": 0.85
+    }
+  }
+}

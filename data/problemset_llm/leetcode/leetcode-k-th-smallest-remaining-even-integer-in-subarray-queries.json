@@ -1,0 +1,28 @@
+{
+  "id": "leetcode-k-th-smallest-remaining-even-integer-in-subarray-queries",
+  "title": "K-th Smallest Remaining Even Integer in Subarray Queries",
+  "slug": "k-th-smallest-remaining-even-integer-in-subarray-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-th-smallest-remaining-even-integer-in-subarray-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given a strictly increasing integer array and queries specifying subarray ranges and k values, for each query find the k-th smallest positive even integer not present in the specified subarray.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923094,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

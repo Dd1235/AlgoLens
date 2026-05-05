@@ -1,0 +1,30 @@
+{
+  "id": "cses-1726",
+  "title": "Moving Robots",
+  "slug": "moving-robots",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1726",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Calculate the expected number of empty squares on an 8x8 chessboard after each robot, initially occupying every square, moves k steps randomly in one of the available directions without leaving the board.",
+  "tags": [
+    "probability",
+    "dp",
+    "grid"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "markov-chain",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951720,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "markov-chain": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

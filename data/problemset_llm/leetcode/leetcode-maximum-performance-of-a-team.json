@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-performance-of-a-team",
+  "title": "Maximum Performance of a Team",
+  "slug": "maximum-performance-of-a-team",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-performance-of-a-team/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given n engineers each with speed and efficiency, select at most k engineers to maximize the team's performance defined as the sum of speeds multiplied by the minimum efficiency among selected engineers. Return the maximum performance modulo 10^9+7.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923370,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "heap-priority-queue": 0.9
+    }
+  }
+}

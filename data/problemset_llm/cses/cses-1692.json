@@ -1,0 +1,30 @@
+{
+  "id": "cses-1692",
+  "title": "De Bruijn Sequence",
+  "slug": "de-bruijn-sequence",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1692",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Construct a shortest binary string containing every possible substring of length n exactly once.",
+  "tags": [
+    "graph",
+    "string",
+    "eulerian-path"
+  ],
+  "patterns": [
+    "eulerian-path",
+    "de-bruijn-sequence",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951529,
+    "pattern_confidence": {
+      "eulerian-path": 0.98,
+      "de-bruijn-sequence": 0.95,
+      "graph-construction": 0.9
+    }
+  }
+}

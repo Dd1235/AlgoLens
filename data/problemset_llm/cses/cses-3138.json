@@ -1,0 +1,27 @@
+{
+  "id": "cses-3138",
+  "title": "All Palindromes",
+  "slug": "all-palindromes",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3138",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, compute for each position the length of the longest palindrome substring that ends at that position.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "palindrome-dp",
+    "manacher"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951756,
+    "pattern_confidence": {
+      "palindrome-dp": 0.95,
+      "manacher": 0.9
+    }
+  }
+}

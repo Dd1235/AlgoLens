@@ -1,0 +1,30 @@
+{
+  "id": "cses-1686",
+  "title": "Coin Collector",
+  "slug": "coin-collector",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1686",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed graph with coins assigned to each node, find the maximum sum of coins collectible by traveling along tunnels starting and ending at any rooms.",
+  "tags": [
+    "graph",
+    "dp",
+    "strongly-connected-components"
+  ],
+  "patterns": [
+    "strongly-connected-components",
+    "dag-dp",
+    "topological-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951525,
+    "pattern_confidence": {
+      "strongly-connected-components": 0.98,
+      "dag-dp": 0.95,
+      "topological-sort": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-2130",
+  "title": "Distinct Routes II",
+  "slug": "distinct-routes-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2130",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a directed graph with teleporters, find the minimum total cost to travel from room 1 to room n exactly k times using each teleporter at most once, and output the corresponding routes or -1 if impossible.",
+  "tags": [
+    "graph",
+    "dp",
+    "shortest-path"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp-on-dag",
+    "topological-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951884,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dp-on-dag": 0.85,
+      "topological-sort": 0.8
+    }
+  }
+}

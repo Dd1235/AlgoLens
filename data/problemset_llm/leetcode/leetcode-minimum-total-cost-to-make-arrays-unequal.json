@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-total-cost-to-make-arrays-unequal",
+  "title": "Minimum Total Cost to Make Arrays Unequal",
+  "slug": "minimum-total-cost-to-make-arrays-unequal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-total-cost-to-make-arrays-unequal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "counting"
+  ],
+  "statement": "Given two equal-length arrays, find the minimum total cost of swapping elements within the first array so that no element matches the corresponding element in the second array, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "graph",
+    "counting"
+  ],
+  "patterns": [
+    "greedy",
+    "graph-matching",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923711,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "graph-matching": 0.85,
+      "counting": 0.8
+    }
+  }
+}

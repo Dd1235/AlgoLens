@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-word-ladder-ii",
+  "title": "Word Ladder II",
+  "slug": "word-ladder-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-ladder-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "backtracking",
+    "breadth-first-search"
+  ],
+  "statement": "Find all shortest transformation sequences from a start word to an end word by changing one letter at a time, with each intermediate word existing in a given dictionary.",
+  "tags": [
+    "graph",
+    "string",
+    "backtracking",
+    "bfs"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "backtracking",
+    "shortest-path",
+    "word-ladder"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924291,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "backtracking": 0.95,
+      "shortest-path": 0.9,
+      "word-ladder": 0.85
+    }
+  }
+}

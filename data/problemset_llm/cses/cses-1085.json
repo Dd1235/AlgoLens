@@ -1,0 +1,27 @@
+{
+  "id": "cses-1085",
+  "title": "Array Division",
+  "slug": "array-division",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1085",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given an array of positive integers and a number k, partition the array into k contiguous subarrays to minimize the maximum subarray sum among them.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951381,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

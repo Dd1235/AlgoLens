@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-delete-duplicate-folders-in-system",
+  "title": "Delete Duplicate Folders in System",
+  "slug": "delete-duplicate-folders-in-system",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/delete-duplicate-folders-in-system/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "trie",
+    "hash-function"
+  ],
+  "statement": "Given a list of folder paths representing a file system, identify and delete all folders that have identical subfolder structures, including their subfolders, in a single deletion pass. Return the remaining folder paths after deletion.",
+  "tags": [
+    "tree",
+    "trie",
+    "hashing",
+    "string"
+  ],
+  "patterns": [
+    "tree-dfs",
+    "hash-map-lookup",
+    "subtree-hashing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922779,
+    "pattern_confidence": {
+      "tree-dfs": 0.95,
+      "hash-map-lookup": 0.9,
+      "subtree-hashing": 0.92
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-wildcard-matching",
+  "title": "Wildcard Matching",
+  "slug": "wildcard-matching",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/wildcard-matching/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "recursion"
+  ],
+  "statement": "Given a string and a pattern containing '?' and '*', determine if the pattern matches the entire string where '?' matches any single character and '*' matches any sequence of characters.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "two-pointers",
+    "dp-on-string",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924286,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "dp-on-string": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

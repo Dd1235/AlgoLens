@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-the-shortest-superstring",
+  "title": "Find the Shortest Superstring",
+  "slug": "find-the-shortest-superstring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-shortest-superstring/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given a list of unique strings, find the shortest string that contains each of them as a substring. The solution involves combining strings optimally to minimize total length.",
+  "tags": [
+    "string",
+    "dp",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "dp-on-dag",
+    "string-overlap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922992,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "dp-on-dag": 0.9,
+      "string-overlap": 0.85
+    }
+  }
+}

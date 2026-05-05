@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-block-placement-queries",
+  "title": "Block Placement Queries",
+  "slug": "block-placement-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/block-placement-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Maintain a set of obstacles placed on a number line and answer queries whether a block of given size can fit entirely within a specified range without overlapping any obstacles. Obstacles can touch the block but not intersect it.",
+  "tags": [
+    "array",
+    "binary-search",
+    "segment-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "segment-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922477,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "segment-tree": 0.85,
+      "coordinate-compression": 0.8
+    }
+  }
+}

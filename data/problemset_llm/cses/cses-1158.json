@@ -1,0 +1,28 @@
+{
+  "id": "cses-1158",
+  "title": "Book Shop",
+  "slug": "book-shop",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1158",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a list of books with prices and page counts, determine the maximum total pages achievable without exceeding a given total price, buying each book at most once.",
+  "tags": [
+    "dp",
+    "knapsack",
+    "array"
+  ],
+  "patterns": [
+    "0-1-knapsack",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951404,
+    "pattern_confidence": {
+      "0-1-knapsack": 0.98,
+      "dynamic-programming": 0.95
+    }
+  }
+}

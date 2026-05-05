@@ -1,0 +1,30 @@
+{
+  "id": "cses-2220",
+  "title": "Counting Numbers",
+  "slug": "counting-numbers",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2220",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Count how many integers between two given bounds have no two adjacent digits equal. The input range can be very large, up to 10^{18}.",
+  "tags": [
+    "dp",
+    "digit-dp",
+    "math"
+  ],
+  "patterns": [
+    "digit-dp",
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951444,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "dynamic-programming": 0.95,
+      "state-compression": 0.85
+    }
+  }
+}

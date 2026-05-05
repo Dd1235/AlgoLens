@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
+  "title": "Maximum Product of Subsequences With an Alternating Sum Equal to K",
+  "slug": "maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-product-of-subsequences-with-an-alternating-sum-equal-to-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, find a non-empty subsequence whose alternating sum equals a target k and whose product is maximized without exceeding a given limit. Return the maximum product or -1 if no such subsequence exists.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dp-with-product-constraints"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923377,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "dp-with-product-constraints": 0.85
+    }
+  }
+}

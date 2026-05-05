@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-score-from-grid-operations",
+  "title": "Maximum Score From Grid Operations",
+  "slug": "maximum-score-from-grid-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-from-grid-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Given an n x n grid with integer values, perform operations that paint columns black up to certain rows to maximize the sum of white cells adjacent horizontally to black cells.",
+  "tags": [
+    "array",
+    "matrix",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923389,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

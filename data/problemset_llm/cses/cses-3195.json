@@ -1,0 +1,28 @@
+{
+  "id": "cses-3195",
+  "title": "Xor Pyramid Row",
+  "slug": "xor-pyramid-row",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3195",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given the bottom row of a pyramid where each upper element is the xor of the two elements below it, find the elements on the k-th row from the top.",
+  "tags": [
+    "array",
+    "bitwise",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "binary-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951944,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "binary-exponentiation": 0.7
+    }
+  }
+}

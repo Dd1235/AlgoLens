@@ -1,0 +1,30 @@
+{
+  "id": "cses-1733",
+  "title": "Finding Periods",
+  "slug": "finding-periods",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1733",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, find all lengths of prefixes that can generate the entire string by repeated concatenation (periods).",
+  "tags": [
+    "string",
+    "prefix-function",
+    "pattern-matching"
+  ],
+  "patterns": [
+    "prefix-function",
+    "knuth-morris-pratt",
+    "string-period"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951749,
+    "pattern_confidence": {
+      "prefix-function": 0.98,
+      "knuth-morris-pratt": 0.95,
+      "string-period": 0.9
+    }
+  }
+}

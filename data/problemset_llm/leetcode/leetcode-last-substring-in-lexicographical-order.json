@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-last-substring-in-lexicographical-order",
+  "title": "Last Substring in Lexicographical Order",
+  "slug": "last-substring-in-lexicographical-order",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/last-substring-in-lexicographical-order/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string"
+  ],
+  "statement": "Given a string, find the lexicographically last substring of the string.",
+  "tags": [
+    "string",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "lexicographical-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923124,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "lexicographical-comparison": 0.9
+    }
+  }
+}

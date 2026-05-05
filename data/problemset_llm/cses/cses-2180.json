@@ -1,0 +1,30 @@
+{
+  "id": "cses-2180",
+  "title": "Coin Arrangement",
+  "slug": "coin-arrangement",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2180",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a 2 by n grid with a total of 2n coins distributed arbitrarily, find the minimum number of moves to rearrange so each cell contains exactly one coin, moving coins one step at a time in four directions.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952197,
+    "pattern_confidence": {
+      "prefix-sum": 0.85,
+      "greedy": 0.9,
+      "binary-search-answer": 0.8
+    }
+  }
+}

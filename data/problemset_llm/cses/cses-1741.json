@@ -1,0 +1,30 @@
+{
+  "id": "cses-1741",
+  "title": "Area of Rectangles",
+  "slug": "area-of-rectangles",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1741",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given n axis-aligned rectangles, compute the total area covered by their union without counting overlaps multiple times.",
+  "tags": [
+    "geometry",
+    "line-sweep",
+    "segment-tree"
+  ],
+  "patterns": [
+    "line-sweep",
+    "segment-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951823,
+    "pattern_confidence": {
+      "line-sweep": 0.98,
+      "segment-tree": 0.95,
+      "coordinate-compression": 0.9
+    }
+  }
+}

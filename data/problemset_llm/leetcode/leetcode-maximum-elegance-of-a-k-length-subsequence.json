@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-maximum-elegance-of-a-k-length-subsequence",
+  "title": "Maximum Elegance of a K-Length Subsequence",
+  "slug": "maximum-elegance-of-a-k-length-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-elegance-of-a-k-length-subsequence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "stack",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a list of items each with a profit and category, select exactly k items to maximize the sum of profits plus the square of the number of distinct categories in the chosen subsequence.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "heap-priority-queue",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923305,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "heap-priority-queue": 0.88,
+      "two-pointers": 0.7
+    }
+  }
+}

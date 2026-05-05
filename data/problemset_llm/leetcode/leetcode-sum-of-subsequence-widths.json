@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-sum-of-subsequence-widths",
+  "title": "Sum of Subsequence Widths",
+  "slug": "sum-of-subsequence-widths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-subsequence-widths/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "sorting"
+  ],
+  "statement": "Given an array of integers, compute the sum of the widths (max - min) of all non-empty subsequences modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "prefix-sum",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924192,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "prefix-sum": 0.9,
+      "contribution-technique": 0.95
+    }
+  }
+}

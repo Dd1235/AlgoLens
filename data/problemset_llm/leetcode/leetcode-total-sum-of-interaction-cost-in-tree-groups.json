@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-total-sum-of-interaction-cost-in-tree-groups",
+  "title": "Total Sum of Interaction Cost in Tree Groups",
+  "slug": "total-sum-of-interaction-cost-in-tree-groups",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree with nodes assigned to groups, compute the sum of distances between all pairs of nodes within the same group.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "dfs",
+    "grouping",
+    "distance-sum",
+    "subtree-contribution"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924250,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "grouping": 0.9,
+      "distance-sum": 0.85,
+      "subtree-contribution": 0.8
+    }
+  }
+}

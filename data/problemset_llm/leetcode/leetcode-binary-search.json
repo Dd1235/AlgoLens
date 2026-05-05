@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-binary-search",
+  "title": "Binary Search",
+  "slug": "binary-search",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/binary-search/",
+  "source_topic": "LeetCode / Binary Search",
+  "difficulty": "Easy",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a sorted array of unique integers and a target value, find the index of the target in the array or return -1 if it does not exist, using an algorithm with logarithmic time complexity.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922366,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "binary-search-answer": 0.95
+    }
+  }
+}

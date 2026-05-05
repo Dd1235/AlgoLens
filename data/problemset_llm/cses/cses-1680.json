@@ -1,0 +1,30 @@
+{
+  "id": "cses-1680",
+  "title": "Longest Flight Route",
+  "slug": "longest-flight-route",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1680",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Find the longest path from city 1 to city n in a directed acyclic graph representing flights between cities, and output the path or report if none exists.",
+  "tags": [
+    "graph",
+    "dp",
+    "topological-sort"
+  ],
+  "patterns": [
+    "longest-path-in-dag",
+    "topological-sort",
+    "path-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951496,
+    "pattern_confidence": {
+      "longest-path-in-dag": 0.98,
+      "topological-sort": 0.95,
+      "path-reconstruction": 0.9
+    }
+  }
+}

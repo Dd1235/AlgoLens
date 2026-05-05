@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-smallest-substring-with-identical-characters-ii",
+  "title": "Smallest Substring With Identical Characters II",
+  "slug": "smallest-substring-with-identical-characters-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-substring-with-identical-characters-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "binary-search"
+  ],
+  "statement": "Given a binary string and a limit on the number of bit flips allowed, minimize the length of the longest substring consisting of identical characters after performing at most the allowed flips.",
+  "tags": [
+    "string",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924090,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "sliding-window": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

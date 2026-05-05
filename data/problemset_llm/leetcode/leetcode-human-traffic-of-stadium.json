@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-human-traffic-of-stadium",
+  "title": "Human Traffic of Stadium",
+  "slug": "human-traffic-of-stadium",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/human-traffic-of-stadium/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given a table of stadium visits with unique increasing ids and people counts, find all rows that belong to any sequence of at least three consecutive ids where each row has people count >= 100. Return these rows ordered by visit_date.",
+  "tags": [
+    "array",
+    "database",
+    "sorting"
+  ],
+  "patterns": [
+    "consecutive-subsequence",
+    "filtering",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923072,
+    "pattern_confidence": {
+      "consecutive-subsequence": 0.95,
+      "filtering": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

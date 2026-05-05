@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-parse-lisp-expression",
+  "title": "Parse Lisp Expression",
+  "slug": "parse-lisp-expression",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/parse-lisp-expression/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "stack",
+    "recursion"
+  ],
+  "statement": "Evaluate a Lisp-like expression with nested let, add, and mult operations, respecting variable scoping rules and returning the final integer result.",
+  "tags": [
+    "string",
+    "stack",
+    "hash-map",
+    "recursion"
+  ],
+  "patterns": [
+    "recursive-parsing",
+    "scope-management",
+    "stack-based-evaluation",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923895,
+    "pattern_confidence": {
+      "recursive-parsing": 0.98,
+      "scope-management": 0.95,
+      "stack-based-evaluation": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

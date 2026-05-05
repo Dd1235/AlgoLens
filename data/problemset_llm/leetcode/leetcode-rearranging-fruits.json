@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-rearranging-fruits",
+  "title": "Rearranging Fruits",
+  "slug": "rearranging-fruits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/rearranging-fruits/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "sort"
+  ],
+  "statement": "Given two arrays representing fruit costs in two baskets, determine the minimum cost to make the baskets identical by swapping fruits between them, where each swap costs the minimum of the two swapped fruit costs. Return -1 if it is impossible to make the baskets equal.",
+  "tags": [
+    "array",
+    "hash-map",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923962,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

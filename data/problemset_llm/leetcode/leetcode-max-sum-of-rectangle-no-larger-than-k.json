@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-max-sum-of-rectangle-no-larger-than-k",
+  "title": "Max Sum of Rectangle No Larger Than K",
+  "slug": "max-sum-of-rectangle-no-larger-than-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "matrix",
+    "prefix-sum",
+    "ordered-set"
+  ],
+  "statement": "Given a matrix and an integer k, find the maximum sum of any rectangular submatrix such that the sum does not exceed k.",
+  "tags": [
+    "array",
+    "matrix",
+    "prefix-sum",
+    "ordered-set"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923217,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "ordered-set": 0.8
+    }
+  }
+}

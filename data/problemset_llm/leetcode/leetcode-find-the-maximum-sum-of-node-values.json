@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-the-maximum-sum-of-node-values",
+  "title": "Find the Maximum Sum of Node Values",
+  "slug": "find-the-maximum-sum-of-node-values",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-maximum-sum-of-node-values/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "bit-manipulation",
+    "tree",
+    "sorting"
+  ],
+  "statement": "Given a tree with node values and an integer k, repeatedly apply XOR operations on pairs of connected nodes to maximize the sum of all node values.",
+  "tags": [
+    "tree",
+    "graph",
+    "bit-manipulation",
+    "dp"
+  ],
+  "patterns": [
+    "xor-manipulation",
+    "tree-dp",
+    "bitmask-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922965,
+    "pattern_confidence": {
+      "xor-manipulation": 0.95,
+      "tree-dp": 0.85,
+      "bitmask-dp": 0.75
+    }
+  }
+}

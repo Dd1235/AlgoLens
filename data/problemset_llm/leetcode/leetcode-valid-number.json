@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-valid-number",
+  "title": "Valid Number",
+  "slug": "valid-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/valid-number/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string"
+  ],
+  "statement": "Determine whether a given string represents a valid number according to specific rules for integers, decimals, optional signs, and optional exponent notation.",
+  "tags": [
+    "string",
+    "parsing",
+    "finite-automaton"
+  ],
+  "patterns": [
+    "state-machine",
+    "regex-simulation",
+    "string-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924275,
+    "pattern_confidence": {
+      "state-machine": 0.95,
+      "regex-simulation": 0.9,
+      "string-validation": 0.9
+    }
+  }
+}

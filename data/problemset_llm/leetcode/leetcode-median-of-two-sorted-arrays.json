@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-median-of-two-sorted-arrays",
+  "title": "Median of Two Sorted Arrays",
+  "slug": "median-of-two-sorted-arrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer"
+  ],
+  "statement": "Given two sorted arrays, find the median of their combined elements in O(log(m+n)) time complexity.",
+  "tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923472,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "divide-and-conquer": 0.9
+    }
+  }
+}

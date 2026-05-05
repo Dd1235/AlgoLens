@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-strength-of-k-disjoint-subarrays",
+  "title": "Maximum Strength of K Disjoint Subarrays",
+  "slug": "maximum-strength-of-k-disjoint-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-strength-of-k-disjoint-subarrays/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and an odd integer k, select exactly k disjoint subarrays to maximize a weighted alternating sum of their sums, where weights decrease from k to 1 with alternating signs.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923413,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dp": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

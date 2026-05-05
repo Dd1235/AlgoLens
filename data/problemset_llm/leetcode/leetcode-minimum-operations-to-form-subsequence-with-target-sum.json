@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-operations-to-form-subsequence-with-target-sum",
+  "title": "Minimum Operations to Form Subsequence With Target Sum",
+  "slug": "minimum-operations-to-form-subsequence-with-target-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-form-subsequence-with-target-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of non-negative powers of two and a target sum, find the minimum number of operations to split elements so that a subsequence sums to the target, or determine if it's impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "greedy",
+    "bitmask",
+    "binary-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923644,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "bitmask": 0.85,
+      "binary-representation": 0.9
+    }
+  }
+}

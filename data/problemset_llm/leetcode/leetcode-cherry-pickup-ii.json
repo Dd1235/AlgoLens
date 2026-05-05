@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-cherry-pickup-ii",
+  "title": "Cherry Pickup II",
+  "slug": "cherry-pickup-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cherry-pickup-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a grid of cherries and two robots starting at the top-left and top-right corners, find the maximum cherries both robots can collect moving downwards with allowed moves, ensuring cherries are only counted once per cell.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dp-with-multiple-states",
+    "state-compression",
+    "grid-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922535,
+    "pattern_confidence": {
+      "dp-with-multiple-states": 0.98,
+      "state-compression": 0.9,
+      "grid-dp": 0.95
+    }
+  }
+}

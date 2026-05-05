@@ -1,0 +1,27 @@
+{
+  "id": "cses-1707",
+  "title": "Graph Girth",
+  "slug": "graph-girth",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1707",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given an undirected graph, find the length of its shortest cycle (girth), or report -1 if no cycle exists.",
+  "tags": [
+    "graph",
+    "bfs"
+  ],
+  "patterns": [
+    "shortest-cycle-detection",
+    "breadth-first-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951986,
+    "pattern_confidence": {
+      "shortest-cycle-detection": 0.95,
+      "breadth-first-search": 0.9
+    }
+  }
+}

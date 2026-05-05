@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+  "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+  "slug": "find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "union-find",
+    "graph",
+    "sorting",
+    "minimum-spanning-tree",
+    "strongly-connected-component"
+  ],
+  "statement": "Given a weighted undirected graph, identify edges that are critical (appear in every minimum spanning tree) and pseudo-critical (appear in some but not all MSTs).",
+  "tags": [
+    "graph",
+    "union-find",
+    "minimum-spanning-tree",
+    "sorting"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "mst-verification",
+    "edge-classification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922887,
+    "pattern_confidence": {
+      "kruskal": 0.98,
+      "union-find": 0.97,
+      "mst-verification": 0.9,
+      "edge-classification": 0.88
+    }
+  }
+}

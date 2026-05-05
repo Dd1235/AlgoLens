@@ -1,0 +1,30 @@
+{
+  "id": "cses-3406",
+  "title": "Triangle Number Sums",
+  "slug": "triangle-number-sums",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3406",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a positive integer n, determine the minimum number of triangular numbers whose sum equals n. Multiple test cases are provided.",
+  "tags": [
+    "math",
+    "dp",
+    "number-theory"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951715,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

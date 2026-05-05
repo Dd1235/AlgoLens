@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-shortest-path-in-a-weighted-tree",
+  "title": "Shortest Path in a Weighted Tree",
+  "slug": "shortest-path-in-a-weighted-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-path-in-a-weighted-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "tree",
+    "depth-first-search",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Given a weighted tree rooted at node 1, support edge weight updates and queries for shortest path distances from the root to any node efficiently.",
+  "tags": [
+    "tree",
+    "graph",
+    "data-structure"
+  ],
+  "patterns": [
+    "euler-tour",
+    "tree-flattening",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924042,
+    "pattern_confidence": {
+      "euler-tour": 0.9,
+      "tree-flattening": 0.9,
+      "fenwick-tree": 0.85,
+      "segment-tree": 0.85
+    }
+  }
+}

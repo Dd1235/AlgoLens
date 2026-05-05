@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-network-delay-time",
+  "title": "Network Delay Time",
+  "slug": "network-delay-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/network-delay-time/",
+  "source_topic": "LeetCode / Graphs",
+  "difficulty": "Medium",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given a directed weighted graph and a starting node, find the minimum time required for a signal to reach all nodes or return -1 if impossible.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "priority-queue",
+    "single-source-shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922407,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "priority-queue": 0.95,
+      "single-source-shortest-path": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-2421",
+  "title": "Counting Reorders",
+  "slug": "counting-reorders",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2421",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given a string, count the number of ways to reorder its characters so that no two identical characters are adjacent, outputting the result modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952078,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "counting": 0.9
+    }
+  }
+}

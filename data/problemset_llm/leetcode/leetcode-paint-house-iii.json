@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-paint-house-iii",
+  "title": "Paint House III",
+  "slug": "paint-house-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/paint-house-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a row of houses where some are pre-painted and others need painting with one of several colors, find the minimum cost to paint all unpainted houses so that the total number of color neighborhoods equals a target value.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923871,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85,
+      "interval-dp": 0.7
+    }
+  }
+}

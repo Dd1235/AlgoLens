@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-number-of-k-consecutive-bit-flips",
+  "title": "Minimum Number of K Consecutive Bit Flips",
+  "slug": "minimum-number-of-k-consecutive-bit-flips",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-k-consecutive-bit-flips/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "queue",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary array and an integer k, find the minimum number of flips of k-length subarrays needed to make all elements 1, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "queue"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-xor",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923609,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "prefix-xor": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

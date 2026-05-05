@@ -1,0 +1,28 @@
+{
+  "id": "cses-2402",
+  "title": "Two Stacks Sorting",
+  "slug": "two-stacks-sorting",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2402",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a permutation of integers from 1 to n, determine a sequence of moves using two stacks to produce a sorted output list, or report impossibility if no such sequence exists.",
+  "tags": [
+    "array",
+    "stack",
+    "greedy"
+  ],
+  "patterns": [
+    "two-stacks-simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952236,
+    "pattern_confidence": {
+      "two-stacks-simulation": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

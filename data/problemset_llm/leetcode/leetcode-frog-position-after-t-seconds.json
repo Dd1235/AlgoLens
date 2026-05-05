@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-frog-position-after-t-seconds",
+  "title": "Frog Position After T Seconds",
+  "slug": "frog-position-after-t-seconds",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/frog-position-after-t-seconds/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph"
+  ],
+  "statement": "Given an undirected tree and a starting vertex, compute the probability that a frog performing random jumps to unvisited adjacent vertices is on a specified target vertex after t seconds.",
+  "tags": [
+    "graph",
+    "tree",
+    "probability",
+    "dfs"
+  ],
+  "patterns": [
+    "depth-first-search",
+    "probability-distribution",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923042,
+    "pattern_confidence": {
+      "depth-first-search": 0.95,
+      "probability-distribution": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

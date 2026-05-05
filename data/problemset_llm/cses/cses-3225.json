@@ -1,0 +1,30 @@
+{
+  "id": "cses-3225",
+  "title": "Inverse Suffix Array",
+  "slug": "inverse-suffix-array",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3225",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given the suffix array of a string, reconstruct any valid string of lowercase letters that corresponds to it, or determine that no such string exists.",
+  "tags": [
+    "string",
+    "suffix-array",
+    "array"
+  ],
+  "patterns": [
+    "suffix-array",
+    "string-reconstruction",
+    "lexicographical-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951779,
+    "pattern_confidence": {
+      "suffix-array": 0.98,
+      "string-reconstruction": 0.9,
+      "lexicographical-order": 0.85
+    }
+  }
+}

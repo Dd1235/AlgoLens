@@ -1,0 +1,29 @@
+{
+  "id": "cses-1753",
+  "title": "String Matching",
+  "slug": "string-matching",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1753",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a text string and a pattern string, count how many times the pattern occurs as a substring in the text.",
+  "tags": [
+    "string",
+    "pattern-matching"
+  ],
+  "patterns": [
+    "string-matching",
+    "prefix-function",
+    "kmp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951744,
+    "pattern_confidence": {
+      "string-matching": 0.98,
+      "prefix-function": 0.9,
+      "kmp": 0.88
+    }
+  }
+}

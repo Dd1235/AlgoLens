@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-number-of-effective-subsequences",
+  "title": "Number of Effective Subsequences",
+  "slug": "number-of-effective-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-effective-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "combinatorics"
+  ],
+  "statement": "Given an integer array, count the number of subsequences whose removal strictly decreases the bitwise OR of the remaining elements, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "inclusion-exclusion",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923771,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "inclusion-exclusion": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-network-recovery-pathways",
+  "title": "Network Recovery Pathways",
+  "slug": "network-recovery-pathways",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/network-recovery-pathways/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "graph",
+    "topological-sort",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given a directed acyclic graph with some nodes offline, find a path from node 0 to node n-1 with total cost at most k that maximizes the minimum edge cost along the path.",
+  "tags": [
+    "graph",
+    "dp",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "topological-sort",
+    "shortest-path",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923743,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "topological-sort": 0.9,
+      "shortest-path": 0.85,
+      "dp-on-dag": 0.88
+    }
+  }
+}

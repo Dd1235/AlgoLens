@@ -1,0 +1,28 @@
+{
+  "id": "cses-2088",
+  "title": "Knuth Division",
+  "slug": "knuth-division",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2088",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given an array, repeatedly split subarrays into two parts at a cost equal to the sum of the subarray being split, and find the minimum total cost to split the entire array into single-element subarrays.",
+  "tags": [
+    "array",
+    "dp",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "interval-dp",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951864,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "prefix-sum": 0.9
+    }
+  }
+}

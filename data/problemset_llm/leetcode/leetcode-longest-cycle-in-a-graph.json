@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-cycle-in-a-graph",
+  "title": "Longest Cycle in a Graph",
+  "slug": "longest-cycle-in-a-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-cycle-in-a-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given a directed graph where each node has at most one outgoing edge, find the length of the longest cycle or return -1 if no cycle exists.",
+  "tags": [
+    "graph",
+    "dfs",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "depth-first-search",
+    "cycle-detection",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923165,
+    "pattern_confidence": {
+      "depth-first-search": 0.98,
+      "cycle-detection": 0.97,
+      "graph-traversal": 0.9
+    }
+  }
+}

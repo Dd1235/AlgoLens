@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-count-increasing-quadruplets",
+  "title": "Count Increasing Quadruplets",
+  "slug": "count-increasing-quadruplets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-increasing-quadruplets/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "binary-indexed-tree",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given a permutation array, count the number of quadruplets (i, j, k, l) with indices in increasing order where the values satisfy nums[i] < nums[k] < nums[j] < nums[l].",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-indexed-tree",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "binary-indexed-tree",
+    "prefix-sum",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922615,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "binary-indexed-tree": 0.9,
+      "prefix-sum": 0.85,
+      "enumeration": 0.8
+    }
+  }
+}

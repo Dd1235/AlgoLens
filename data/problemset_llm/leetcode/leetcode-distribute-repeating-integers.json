@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-distribute-repeating-integers",
+  "title": "Distribute Repeating Integers",
+  "slug": "distribute-repeating-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distribute-repeating-integers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "counting",
+    "bitmask"
+  ],
+  "statement": "Given an array with at most 50 unique integers and a list of customer order quantities, determine if it is possible to distribute the integers so that each customer receives exactly their requested quantity of identical integers.",
+  "tags": [
+    "array",
+    "backtracking",
+    "bitmask",
+    "counting",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "backtracking",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922821,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "backtracking": 0.9,
+      "counting": 0.85
+    }
+  }
+}

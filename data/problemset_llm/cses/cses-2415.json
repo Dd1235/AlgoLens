@@ -1,0 +1,30 @@
+{
+  "id": "cses-2415",
+  "title": "Functional Graph Distribution",
+  "slug": "functional-graph-distribution",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2415",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given n nodes, compute for each k from 1 to n the number of functional graphs with n nodes and exactly k connected components, modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "combinatorial-counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952088,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "combinatorial-counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

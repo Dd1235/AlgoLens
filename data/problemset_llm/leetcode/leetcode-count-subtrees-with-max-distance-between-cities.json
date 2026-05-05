@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-subtrees-with-max-distance-between-cities",
+  "title": "Count Subtrees With Max Distance Between Cities",
+  "slug": "count-subtrees-with-max-distance-between-cities",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "enumeration",
+    "bitmask"
+  ],
+  "statement": "Given a tree with n cities, count for each distance d the number of connected subtrees whose maximum distance between any two cities is exactly d.",
+  "tags": [
+    "tree",
+    "bitmask",
+    "dp",
+    "graph"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "enumeration",
+    "distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922706,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "enumeration": 0.9,
+      "distance-calculation": 0.85
+    }
+  }
+}

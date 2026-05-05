@@ -1,0 +1,30 @@
+{
+  "id": "cses-3139",
+  "title": "Hidden Permutation",
+  "slug": "hidden-permutation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3139",
+  "source_topic": "CSES / Interactive Problems",
+  "source_tags": [],
+  "statement": "Given a hidden permutation of integers from 1 to n, determine the permutation by asking queries that compare two elements to check which is smaller, with a limited number of queries allowed.",
+  "tags": [
+    "interactive",
+    "permutation",
+    "sorting"
+  ],
+  "patterns": [
+    "comparison-based-search",
+    "interactive-problem",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951914,
+    "pattern_confidence": {
+      "comparison-based-search": 0.95,
+      "interactive-problem": 0.9,
+      "binary-search-answer": 0.7
+    }
+  }
+}

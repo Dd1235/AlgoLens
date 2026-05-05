@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-maximum-total-reward-using-operations-ii",
+  "title": "Maximum Total Reward Using Operations II",
+  "slug": "maximum-total-reward-using-operations-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-total-reward-using-operations-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of reward values, repeatedly select unmarked indices where the reward is greater than the current total reward, adding the reward to the total and marking the index, to maximize the total collected reward.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923446,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

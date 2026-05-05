@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-k-th-smallest-pair-distance",
+  "title": "Find K-th Smallest Pair Distance",
+  "slug": "find-k-th-smallest-pair-distance",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-k-th-smallest-pair-distance/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given an integer array, find the k-th smallest absolute difference between any two elements in the array.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922895,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "sorting": 0.9
+    }
+  }
+}

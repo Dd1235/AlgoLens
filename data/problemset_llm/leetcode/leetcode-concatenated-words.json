@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-concatenated-words",
+  "title": "Concatenated Words",
+  "slug": "concatenated-words",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/concatenated-words/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "depth-first-search",
+    "trie",
+    "sorting"
+  ],
+  "statement": "Given a list of unique words, find all words that can be formed by concatenating at least two shorter words from the list. Each concatenated word must be composed entirely of other words in the array.",
+  "tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "trie"
+  ],
+  "patterns": [
+    "trie",
+    "dfs",
+    "memoization",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922550,
+    "pattern_confidence": {
+      "trie": 0.95,
+      "dfs": 0.9,
+      "memoization": 0.9,
+      "dynamic-programming": 0.92
+    }
+  }
+}

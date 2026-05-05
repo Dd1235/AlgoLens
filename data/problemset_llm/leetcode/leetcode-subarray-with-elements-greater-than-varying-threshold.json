@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-subarray-with-elements-greater-than-varying-threshold",
+  "title": "Subarray With Elements Greater Than Varying Threshold",
+  "slug": "subarray-with-elements-greater-than-varying-threshold",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "stack",
+    "union-find",
+    "monotonic-stack"
+  ],
+  "statement": "Given an integer array and a threshold, find the length of any contiguous subarray where every element is greater than the threshold divided by the subarray length, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924143,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

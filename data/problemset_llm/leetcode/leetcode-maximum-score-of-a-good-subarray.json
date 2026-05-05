@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-score-of-a-good-subarray",
+  "title": "Maximum Score of a Good Subarray",
+  "slug": "maximum-score-of-a-good-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-of-a-good-subarray/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array and an index k, find the maximum score of any subarray containing k, where the score is the minimum element in the subarray multiplied by its length.",
+  "tags": [
+    "array",
+    "stack",
+    "two-pointers"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "two-pointers",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923394,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "two-pointers": 0.9,
+      "contribution-technique": 0.85
+    }
+  }
+}

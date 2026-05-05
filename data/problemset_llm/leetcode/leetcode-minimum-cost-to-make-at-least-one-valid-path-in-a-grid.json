@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
+  "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+  "slug": "minimum-cost-to-make-at-least-one-valid-path-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "shortest-path"
+  ],
+  "statement": "Given a grid where each cell points to a direction, find the minimum number of sign changes needed to create at least one valid path from the top-left to the bottom-right cell following the directions.",
+  "tags": [
+    "array",
+    "graph",
+    "shortest-path"
+  ],
+  "patterns": [
+    "0-1-bfs",
+    "graph-traversal",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923531,
+    "pattern_confidence": {
+      "0-1-bfs": 0.95,
+      "graph-traversal": 0.9,
+      "shortest-path": 0.9
+    }
+  }
+}

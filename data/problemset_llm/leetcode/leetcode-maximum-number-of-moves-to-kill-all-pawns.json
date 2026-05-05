@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-maximum-number-of-moves-to-kill-all-pawns",
+  "title": "Maximum Number of Moves to Kill All Pawns",
+  "slug": "maximum-number-of-moves-to-kill-all-pawns",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation",
+    "breadth-first-search",
+    "game-theory",
+    "bitmask"
+  ],
+  "statement": "Given a knight's starting position and multiple pawns on a 50x50 chessboard, two players alternately capture pawns by moving the knight optimally. Alice aims to maximize the total moves taken, while Bob aims to minimize them. Determine the maximum total moves possible assuming both play optimally.",
+  "tags": [
+    "graph",
+    "dp",
+    "game-theory",
+    "bitmask"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "bitmask-dp",
+    "minimax",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923346,
+    "pattern_confidence": {
+      "breadth-first-search": 0.95,
+      "bitmask-dp": 0.9,
+      "minimax": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

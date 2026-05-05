@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-time-to-make-array-sum-at-most-x",
+  "title": "Minimum Time to Make Array Sum At Most x",
+  "slug": "minimum-time-to-make-array-sum-at-most-x",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given two arrays nums1 and nums2, where nums1 increments by nums2 each second, find the minimum time to perform zeroing operations on indices so that the sum of nums1 is at most x, or determine if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923699,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

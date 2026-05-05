@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximize-grid-happiness",
+  "title": "Maximize Grid Happiness",
+  "slug": "maximize-grid-happiness",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-grid-happiness/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "bit-manipulation",
+    "memoization",
+    "bitmask"
+  ],
+  "statement": "Given an m by n grid and counts of introverts and extroverts, place people to maximize total happiness, where happiness depends on neighbors and person type.",
+  "tags": [
+    "dp",
+    "bitmask",
+    "grid"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "memoization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923243,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "memoization": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

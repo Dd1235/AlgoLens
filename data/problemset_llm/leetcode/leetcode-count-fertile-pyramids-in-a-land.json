@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-fertile-pyramids-in-a-land",
+  "title": "Count Fertile Pyramids in a Land",
+  "slug": "count-fertile-pyramids-in-a-land",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-fertile-pyramids-in-a-land/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a binary matrix representing fertile and barren land cells, count all pyramidal and inverse pyramidal plots consisting entirely of fertile cells, where pyramids are defined by contiguous layers expanding symmetrically from an apex cell.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dp-on-grid",
+    "prefix-sum",
+    "symmetry-based-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922604,
+    "pattern_confidence": {
+      "dp-on-grid": 0.98,
+      "prefix-sum": 0.85,
+      "symmetry-based-dp": 0.9
+    }
+  }
+}

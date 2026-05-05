@@ -1,0 +1,28 @@
+{
+  "id": "cses-3399",
+  "title": "Raab Game I",
+  "slug": "raab-game-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3399",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given the number of cards and final scores of two players in a card game where higher card wins each round, determine if a sequence of plays can produce the given scores and provide one valid sequence if possible.",
+  "tags": [
+    "game-theory",
+    "constructive-algorithm",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951290,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

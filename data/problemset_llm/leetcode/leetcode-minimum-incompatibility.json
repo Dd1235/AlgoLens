@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-incompatibility",
+  "title": "Minimum Incompatibility",
+  "slug": "minimum-incompatibility",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-incompatibility/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Partition an integer array into k equal-sized subsets with no duplicates within each subset, minimizing the sum of the differences between the maximum and minimum elements in each subset, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "bitmask",
+    "dynamic-programming",
+    "backtracking"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "backtracking",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923572,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "backtracking": 0.9,
+      "pruning": 0.85
+    }
+  }
+}

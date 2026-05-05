@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-of-integers",
+  "title": "Count of Integers",
+  "slug": "count-of-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-of-integers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of integers between two given numeric strings whose digit sums lie within a specified range, returning the result modulo 10^9+7.",
+  "tags": [
+    "math",
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922646,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

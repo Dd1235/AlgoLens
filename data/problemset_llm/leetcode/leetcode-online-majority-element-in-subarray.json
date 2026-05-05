@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-online-majority-element-in-subarray",
+  "title": "Online Majority Element In Subarray",
+  "slug": "online-majority-element-in-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/online-majority-element-in-subarray/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "design",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Design a data structure to efficiently find the majority element in any subarray, where the majority element appears at least a given threshold number of times.",
+  "tags": [
+    "array",
+    "data-structure",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "offline-queries",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923863,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "offline-queries": 0.75,
+      "prefix-sum": 0.7
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-longest-palindrome-after-substring-concatenation-ii",
+  "title": "Longest Palindrome After Substring Concatenation II",
+  "slug": "longest-palindrome-after-substring-concatenation-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings, find the length of the longest palindrome that can be formed by concatenating a substring from the first string and a substring from the second string.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923176,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

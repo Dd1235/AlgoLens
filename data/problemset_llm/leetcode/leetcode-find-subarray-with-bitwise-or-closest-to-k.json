@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-subarray-with-bitwise-or-closest-to-k",
+  "title": "Find Subarray With Bitwise OR Closest to K",
+  "slug": "find-subarray-with-bitwise-or-closest-to-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-subarray-with-bitwise-or-closest-to-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "segment-tree"
+  ],
+  "statement": "Given an array and an integer k, find a contiguous subarray whose bitwise OR is closest to k in terms of absolute difference, and return that minimum difference.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-or"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922928,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.85,
+      "prefix-or": 0.8
+    }
+  }
+}

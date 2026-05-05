@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-three-equal-parts",
+  "title": "Three Equal Parts",
+  "slug": "three-equal-parts",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/three-equal-parts/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math"
+  ],
+  "statement": "Divide a binary array into three non-empty parts such that each part represents the same binary value, allowing leading zeros, and return the indices that separate these parts or [-1, -1] if impossible.",
+  "tags": [
+    "array",
+    "math",
+    "binary"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924229,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "two-pointers": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

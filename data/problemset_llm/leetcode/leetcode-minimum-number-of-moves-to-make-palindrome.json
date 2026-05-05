@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimum-number-of-moves-to-make-palindrome",
+  "title": "Minimum Number of Moves to Make Palindrome",
+  "slug": "minimum-number-of-moves-to-make-palindrome",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "greedy",
+    "binary-indexed-tree"
+  ],
+  "statement": "Given a string that can be rearranged into a palindrome, find the minimum number of adjacent swaps required to transform it into any palindrome.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "greedy",
+    "binary-indexed-tree"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "binary-indexed-tree",
+    "inversion-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923612,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.9,
+      "binary-indexed-tree": 0.85,
+      "inversion-count": 0.8
+    }
+  }
+}

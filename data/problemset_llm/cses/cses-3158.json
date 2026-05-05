@@ -1,0 +1,30 @@
+{
+  "id": "cses-3158",
+  "title": "Bus Companies",
+  "slug": "bus-companies",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3158",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given multiple bus companies each operating in certain cities with a fixed ticket cost, find the minimum cost to travel from city 1 to every other city, where traveling within a company's cities costs that company's ticket price.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "bipartite-graph"
+  ],
+  "patterns": [
+    "dijkstra",
+    "bipartite-graph-modeling",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952024,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "bipartite-graph-modeling": 0.9,
+      "graph-construction": 0.85
+    }
+  }
+}

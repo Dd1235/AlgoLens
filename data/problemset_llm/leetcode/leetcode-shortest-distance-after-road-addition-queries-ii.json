@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-shortest-distance-after-road-addition-queries-ii",
+  "title": "Shortest Distance After Road Addition Queries II",
+  "slug": "shortest-distance-after-road-addition-queries-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-distance-after-road-addition-queries-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "graph",
+    "ordered-set"
+  ],
+  "statement": "Given a linear chain of cities with initially direct roads from city i to i+1, process queries adding new roads and after each addition, find the shortest path length from city 0 to city n-1.",
+  "tags": [
+    "graph",
+    "array",
+    "shortest-path"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-minimum",
+    "online-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924027,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "prefix-minimum": 0.85,
+      "online-queries": 0.8
+    }
+  }
+}

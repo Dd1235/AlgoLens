@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-a-good-subset-of-the-matrix",
+  "title": "Find a Good Subset of the Matrix",
+  "slug": "find-a-good-subset-of-the-matrix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-a-good-subset-of-the-matrix/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "statement": "Given a binary matrix, find a non-empty subset of rows such that for each column, the sum of the chosen rows' values does not exceed half the subset size. Return any such subset or an empty array if none exists.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-enumeration",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922864,
+    "pattern_confidence": {
+      "bitmask-enumeration": 0.95,
+      "prefix-sum": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

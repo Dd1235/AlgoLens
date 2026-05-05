@@ -1,0 +1,30 @@
+{
+  "id": "cses-3141",
+  "title": "And Subset Count",
+  "slug": "and-subset-count",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3141",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given an array of integers, compute for each integer k from 0 to n the number of non-empty subsets whose bitwise AND equals k, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "bitwise-operations",
+    "dp"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "fast-zeta-transform",
+    "inclusion-exclusion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951949,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "fast-zeta-transform": 0.9,
+      "inclusion-exclusion": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-2103",
+  "title": "Counting Patterns",
+  "slug": "counting-patterns",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2103",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a text string and multiple pattern strings, count how many times each pattern occurs as a substring in the text.",
+  "tags": [
+    "string",
+    "trie",
+    "aho-corasick"
+  ],
+  "patterns": [
+    "aho-corasick",
+    "trie",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951765,
+    "pattern_confidence": {
+      "aho-corasick": 0.98,
+      "trie": 0.9,
+      "string-matching": 0.85
+    }
+  }
+}

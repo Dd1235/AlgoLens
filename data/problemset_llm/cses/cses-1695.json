@@ -1,0 +1,30 @@
+{
+  "id": "cses-1695",
+  "title": "Police Chase",
+  "slug": "police-chase",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1695",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given an undirected graph with a start and end node, find the minimum number of edges to remove to disconnect the start from the end, and output one such set of edges.",
+  "tags": [
+    "graph",
+    "minimum-cut",
+    "flow"
+  ],
+  "patterns": [
+    "max-flow",
+    "min-cut",
+    "graph-cut"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951542,
+    "pattern_confidence": {
+      "max-flow": 0.98,
+      "min-cut": 0.97,
+      "graph-cut": 0.95
+    }
+  }
+}

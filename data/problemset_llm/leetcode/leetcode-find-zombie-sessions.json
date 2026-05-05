@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-zombie-sessions",
+  "title": "Find Zombie Sessions",
+  "slug": "find-zombie-sessions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-zombie-sessions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Identify user sessions with duration over 30 minutes, at least 5 scroll events, a click-to-scroll ratio below 0.20, and no purchases, then return these 'zombie' sessions ordered by scroll count descending and session ID ascending.",
+  "tags": [
+    "array",
+    "aggregation",
+    "filtering"
+  ],
+  "patterns": [
+    "group-by-aggregation",
+    "conditional-filtering",
+    "ratio-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923021,
+    "pattern_confidence": {
+      "group-by-aggregation": 0.95,
+      "conditional-filtering": 0.9,
+      "ratio-calculation": 0.85
+    }
+  }
+}

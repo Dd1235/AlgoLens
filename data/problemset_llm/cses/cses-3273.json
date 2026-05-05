@@ -1,0 +1,28 @@
+{
+  "id": "cses-3273",
+  "title": "Colored Chairs",
+  "slug": "colored-chairs",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3273",
+  "source_topic": "CSES / Interactive Problems",
+  "source_tags": [],
+  "statement": "Given an odd number of chairs arranged in a circle, each colored red or blue, find two adjacent chairs with the same color by querying the color of chairs at most 20 times interactively.",
+  "tags": [
+    "interactive",
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interactive-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951921,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "interactive-query": 0.95
+    }
+  }
+}

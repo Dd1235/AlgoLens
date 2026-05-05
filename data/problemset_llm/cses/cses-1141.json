@@ -1,0 +1,30 @@
+{
+  "id": "cses-1141",
+  "title": "Playlist",
+  "slug": "playlist",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1141",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given a sequence of song IDs, find the length of the longest contiguous subsequence containing only unique songs.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951334,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "two-pointers": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

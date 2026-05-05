@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-largest-color-value-in-a-directed-graph",
+  "title": "Largest Color Value in a Directed Graph",
+  "slug": "largest-color-value-in-a-directed-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-color-value-in-a-directed-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "graph",
+    "topological-sort",
+    "memoization",
+    "counting"
+  ],
+  "statement": "Given a directed graph with colored nodes, find the maximum count of the most frequent color along any valid path, or return -1 if the graph contains a cycle.",
+  "tags": [
+    "graph",
+    "dp",
+    "topological-sort",
+    "string"
+  ],
+  "patterns": [
+    "topological-sort",
+    "dynamic-programming",
+    "cycle-detection",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923112,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "dynamic-programming": 0.95,
+      "cycle-detection": 0.93,
+      "memoization": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cses-1647",
+  "title": "Static Range Minimum Queries",
+  "slug": "static-range-minimum-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1647",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an array of integers, answer multiple queries asking for the minimum value within a specified subrange [a,b].",
+  "tags": [
+    "array",
+    "range-query",
+    "segment-tree",
+    "sparse-table"
+  ],
+  "patterns": [
+    "static-range-minimum-query",
+    "sparse-table",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951552,
+    "pattern_confidence": {
+      "static-range-minimum-query": 0.98,
+      "sparse-table": 0.95,
+      "segment-tree": 0.9
+    }
+  }
+}

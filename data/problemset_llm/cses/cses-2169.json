@@ -1,0 +1,32 @@
+{
+  "id": "cses-2169",
+  "title": "Nested Ranges Count",
+  "slug": "nested-ranges-count",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2169",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given n distinct integer ranges, for each range determine how many other ranges it contains and how many other ranges contain it, based on the containment relation defined by interval inclusion.",
+  "tags": [
+    "array",
+    "sorting",
+    "data-structure"
+  ],
+  "patterns": [
+    "sorting",
+    "coordinate-compression",
+    "fenwick-tree",
+    "binary-indexed-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951354,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "coordinate-compression": 0.9,
+      "fenwick-tree": 0.85,
+      "binary-indexed-tree": 0.85
+    }
+  }
+}

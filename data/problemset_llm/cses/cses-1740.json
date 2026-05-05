@@ -1,0 +1,31 @@
+{
+  "id": "cses-1740",
+  "title": "Intersection Points",
+  "slug": "intersection-points",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1740",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given n horizontal and vertical line segments, count the number of intersection points between them, excluding intersections at endpoints and assuming no parallel segments intersect.",
+  "tags": [
+    "geometry",
+    "line-segments",
+    "line-sweep",
+    "coordinate-compression"
+  ],
+  "patterns": [
+    "line-sweep",
+    "coordinate-compression",
+    "event-sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951811,
+    "pattern_confidence": {
+      "line-sweep": 0.98,
+      "coordinate-compression": 0.9,
+      "event-sorting": 0.85
+    }
+  }
+}

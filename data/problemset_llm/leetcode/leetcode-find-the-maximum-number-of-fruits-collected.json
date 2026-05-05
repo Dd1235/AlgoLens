@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-maximum-number-of-fruits-collected",
+  "title": "Find the Maximum Number of Fruits Collected",
+  "slug": "find-the-maximum-number-of-fruits-collected",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-maximum-number-of-fruits-collected/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Three children start from three corners of an n x n grid and move to the bottom-right corner in exactly n-1 moves, collecting fruits in rooms they visit. Each child has specific allowed moves, and if multiple children visit the same room, fruits are only counted once. The goal is to maximize the total fruits collected.",
+  "tags": [
+    "array",
+    "dp",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "multi-agent-pathfinding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922960,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "multi-agent-pathfinding": 0.8
+    }
+  }
+}

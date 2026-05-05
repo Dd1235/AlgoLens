@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-consecutive-sequence",
+  "title": "Longest Consecutive Sequence",
+  "slug": "longest-consecutive-sequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+  "source_topic": "LeetCode / Array and Hashing",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "union-find"
+  ],
+  "statement": "Given an unsorted array of integers, find the length of the longest sequence of consecutive integers that appear in the array. The solution must run in linear time.",
+  "tags": [
+    "array",
+    "hash-table",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "hash-set-lookup",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777921734,
+    "pattern_confidence": {
+      "union-find": 0.9,
+      "hash-set-lookup": 0.95,
+      "linear-scan": 0.85
+    }
+  }
+}

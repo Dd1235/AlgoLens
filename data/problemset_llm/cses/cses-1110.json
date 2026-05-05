@@ -1,0 +1,29 @@
+{
+  "id": "cses-1110",
+  "title": "Minimal Rotation",
+  "slug": "minimal-rotation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1110",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, find its lexicographically smallest rotation among all possible rotations.",
+  "tags": [
+    "string",
+    "string-algorithms"
+  ],
+  "patterns": [
+    "booth-algorithm",
+    "string-rotation",
+    "lexicographic-minimum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951752,
+    "pattern_confidence": {
+      "booth-algorithm": 0.98,
+      "string-rotation": 0.95,
+      "lexicographic-minimum": 0.9
+    }
+  }
+}

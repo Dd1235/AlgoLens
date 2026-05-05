@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-sum-of-k-mirror-numbers",
+  "title": "Sum of k-Mirror Numbers",
+  "slug": "sum-of-k-mirror-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-k-mirror-numbers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "enumeration"
+  ],
+  "statement": "Find the sum of the n smallest positive integers that are palindromic in both base-10 and base-k representations.",
+  "tags": [
+    "math",
+    "enumeration",
+    "palindrome"
+  ],
+  "patterns": [
+    "palindrome-check",
+    "base-conversion",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924181,
+    "pattern_confidence": {
+      "palindrome-check": 0.95,
+      "base-conversion": 0.9,
+      "enumeration": 0.85
+    }
+  }
+}

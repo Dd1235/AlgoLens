@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimum-number-of-operations-to-make-array-continuous",
+  "title": "Minimum Number of Operations to Make Array Continuous",
+  "slug": "minimum-number-of-operations-to-make-array-continuous",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array, determine the minimum number of element replacements needed to make the array continuous, where continuous means all elements are unique and the range equals the array length minus one.",
+  "tags": [
+    "array",
+    "binary-search",
+    "hash-set",
+    "sliding-window"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "hash-set-lookup",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923614,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "hash-set-lookup": 0.85,
+      "sliding-window": 0.88
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-k-sum-of-an-array",
+  "title": "Find the K-Sum of an Array",
+  "slug": "find-the-k-sum-of-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-k-sum-of-an-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an integer array, find the k-th largest sum among all possible subsequence sums, including the empty subsequence with sum zero.",
+  "tags": [
+    "array",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922946,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "priority-queue": 0.88
+    }
+  }
+}

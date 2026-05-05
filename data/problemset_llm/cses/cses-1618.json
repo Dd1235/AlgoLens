@@ -1,0 +1,27 @@
+{
+  "id": "cses-1618",
+  "title": "Trailing Zeros",
+  "slug": "trailing-zeros",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1618",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Calculate the number of trailing zeros in the factorial of a given integer n by counting the factors of 5 in n!.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "factor-counting",
+    "division-based-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951269,
+    "pattern_confidence": {
+      "factor-counting": 0.95,
+      "division-based-counting": 0.9
+    }
+  }
+}

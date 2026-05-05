@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-longest-palindromic-path-in-graph",
+  "title": "Longest Palindromic Path in Graph",
+  "slug": "longest-palindromic-path-in-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-palindromic-path-in-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "bit-manipulation",
+    "graph",
+    "bitmask"
+  ],
+  "statement": "Given an undirected graph with labeled nodes, find the longest simple path whose node labels form a palindrome.",
+  "tags": [
+    "graph",
+    "dp",
+    "bitmask",
+    "string"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dfs",
+    "palindrome-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923178,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "dfs": 0.85,
+      "palindrome-check": 0.8
+    }
+  }
+}

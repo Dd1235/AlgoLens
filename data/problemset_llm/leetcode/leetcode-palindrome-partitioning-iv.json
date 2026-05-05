@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-palindrome-partitioning-iv",
+  "title": "Palindrome Partitioning IV",
+  "slug": "palindrome-partitioning-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/palindrome-partitioning-iv/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Determine if a given string can be partitioned into three non-empty substrings, each of which is a palindrome.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "palindrome-check",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923883,
+    "pattern_confidence": {
+      "palindrome-check": 0.95,
+      "dynamic-programming": 0.9
+    }
+  }
+}

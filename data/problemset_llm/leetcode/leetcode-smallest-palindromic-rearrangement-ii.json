@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-smallest-palindromic-rearrangement-ii",
+  "title": "Smallest Palindromic Rearrangement II",
+  "slug": "smallest-palindromic-rearrangement-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "combinatorics",
+    "counting"
+  ],
+  "statement": "Given a palindromic string and an integer k, find the k-th lexicographically smallest distinct palindromic permutation of the string, or return empty if fewer than k exist.",
+  "tags": [
+    "string",
+    "combinatorics",
+    "math",
+    "counting"
+  ],
+  "patterns": [
+    "lexicographic-enumeration",
+    "combinatorial-ranking",
+    "prefix-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924079,
+    "pattern_confidence": {
+      "lexicographic-enumeration": 0.95,
+      "combinatorial-ranking": 0.9,
+      "prefix-counting": 0.85
+    }
+  }
+}

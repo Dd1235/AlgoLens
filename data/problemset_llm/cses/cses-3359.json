@@ -1,0 +1,30 @@
+{
+  "id": "cses-3359",
+  "title": "Minimal Grid Path",
+  "slug": "minimal-grid-path",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3359",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given an n×n grid of letters, find the lexicographically smallest string formed by moving from the top-left to the bottom-right cell, moving only right or down.",
+  "tags": [
+    "dp",
+    "string",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "lexicographic-order",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951417,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "lexicographic-order": 0.9,
+      "grid-traversal": 0.85
+    }
+  }
+}

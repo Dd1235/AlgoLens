@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-minimum-time-to-visit-a-cell-in-a-grid",
+  "title": "Minimum Time to Visit a Cell In a Grid",
+  "slug": "minimum-time-to-visit-a-cell-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "shortest-path"
+  ],
+  "statement": "Given a grid where each cell has a minimum time constraint to be visited, find the earliest time to reach the bottom-right cell from the top-left by moving up, down, left, or right in one-second steps, or return -1 if unreachable.",
+  "tags": [
+    "array",
+    "graph",
+    "shortest-path",
+    "matrix"
+  ],
+  "patterns": [
+    "dijkstra",
+    "priority-queue",
+    "bfs",
+    "grid-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923708,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "priority-queue": 0.95,
+      "bfs": 0.9,
+      "grid-graph": 0.85
+    }
+  }
+}

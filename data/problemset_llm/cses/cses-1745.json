@@ -1,0 +1,30 @@
+{
+  "id": "cses-1745",
+  "title": "Money Sums",
+  "slug": "money-sums",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1745",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a list of coin values, determine all distinct sums that can be formed by selecting any subset of these coins.",
+  "tags": [
+    "array",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "subset-sum",
+    "dynamic-programming",
+    "bitset-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951420,
+    "pattern_confidence": {
+      "subset-sum": 0.98,
+      "dynamic-programming": 0.95,
+      "bitset-dp": 0.7
+    }
+  }
+}

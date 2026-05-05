@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-weighted-median-node-in-tree",
+  "title": "Find Weighted Median Node in Tree",
+  "slug": "find-weighted-median-node-in-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-weighted-median-node-in-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a weighted tree and multiple queries, find the weighted median node on the path between two nodes, defined as the first node where the cumulative edge weight reaches at least half the total path weight.",
+  "tags": [
+    "tree",
+    "graph",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "lowest-common-ancestor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923005,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.9,
+      "lowest-common-ancestor": 0.85
+    }
+  }
+}

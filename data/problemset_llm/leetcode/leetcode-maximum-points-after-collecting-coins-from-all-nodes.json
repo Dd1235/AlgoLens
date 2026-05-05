@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-points-after-collecting-coins-from-all-nodes",
+  "title": "Maximum Points After Collecting Coins From All Nodes",
+  "slug": "maximum-points-after-collecting-coins-from-all-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-points-after-collecting-coins-from-all-nodes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search",
+    "memoization"
+  ],
+  "statement": "Given a tree with coins on nodes and a parameter k, collect coins from all nodes starting at the root with constraints on collection order and two collection methods that affect points and subtree coin values, to maximize total points.",
+  "tags": [
+    "tree",
+    "dp",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "memoization",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923375,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "memoization": 0.9,
+      "tree-dp": 0.92
+    }
+  }
+}

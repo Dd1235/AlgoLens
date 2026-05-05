@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-substring-with-given-hash-value",
+  "title": "Find Substring With Given Hash Value",
+  "slug": "find-substring-with-given-hash-value",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-substring-with-given-hash-value/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "sliding-window",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Given a string and parameters for a polynomial rolling hash, find the first substring of a given length whose hash matches a target value.",
+  "tags": [
+    "string",
+    "hashing",
+    "array"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "sliding-window",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922930,
+    "pattern_confidence": {
+      "rolling-hash": 0.98,
+      "sliding-window": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

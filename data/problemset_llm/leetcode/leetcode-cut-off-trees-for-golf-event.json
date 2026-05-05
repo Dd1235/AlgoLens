@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-cut-off-trees-for-golf-event",
+  "title": "Cut Off Trees for Golf Event",
+  "slug": "cut-off-trees-for-golf-event",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cut-off-trees-for-golf-event/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given a grid representing a forest with obstacles and trees of distinct heights, find the minimum steps to cut all trees in ascending order of height starting from the top-left cell, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "graph",
+    "bfs",
+    "priority-queue"
+  ],
+  "patterns": [
+    "bfs",
+    "sorting",
+    "greedy",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922766,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "priority-queue": 0.88
+    }
+  }
+}

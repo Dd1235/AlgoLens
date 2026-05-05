@@ -1,0 +1,47 @@
+{
+  "id": "leetcode-apply-operations-to-maximize-score",
+  "title": "Apply Operations to Maximize Score",
+  "slug": "apply-operations-to-maximize-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/apply-operations-to-maximize-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "stack",
+    "greedy",
+    "sorting",
+    "monotonic-stack",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers and an integer k, maximize the product score by selecting at most k distinct subarrays and multiplying the score by the element with the highest number of distinct prime factors in each chosen subarray. Return the maximum score modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "stack",
+    "greedy",
+    "sorting",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "greedy",
+    "sorting",
+    "prime-factorization",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922455,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "prime-factorization": 0.95,
+      "contribution-technique": 0.85
+    }
+  }
+}

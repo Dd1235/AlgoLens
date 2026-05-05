@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-products-of-elements-of-big-array",
+  "title": "Find Products of Elements of Big Array",
+  "slug": "find-products-of-elements-of-big-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-products-of-elements-of-big-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation"
+  ],
+  "statement": "Given queries asking for the product modulo a value of a subarray of a large concatenated array formed by the unique sorted powers-of-two decomposition of all positive integers, compute each product modulo the given modulus.",
+  "tags": [
+    "array",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "prefix-product",
+    "modular-exponentiation",
+    "binary-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922919,
+    "pattern_confidence": {
+      "prefix-product": 0.95,
+      "modular-exponentiation": 0.9,
+      "binary-representation": 0.85
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "cses-1087",
+  "title": "Shortest Subsequence",
+  "slug": "shortest-subsequence",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1087",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a DNA sequence, find the shortest possible DNA string that does not appear as a subsequence in the given sequence.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "subsequence-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952091,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "subsequence-check": 0.8
+    }
+  }
+}

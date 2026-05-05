@@ -1,0 +1,28 @@
+{
+  "id": "cses-3411",
+  "title": "All Manhattan Distances",
+  "slug": "all-manhattan-distances",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3411",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given n distinct points on a plane, compute the sum of Manhattan distances between every pair of points.",
+  "tags": [
+    "geometry",
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951809,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

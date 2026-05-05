@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-construct-string-with-minimum-cost",
+  "title": "Construct String with Minimum Cost",
+  "slug": "construct-string-with-minimum-cost",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/construct-string-with-minimum-cost/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "suffix-array"
+  ],
+  "statement": "Given a target string and arrays of words with associated costs, find the minimum total cost to construct the target by concatenating words in sequence. Return -1 if construction is impossible.",
+  "tags": [
+    "string",
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "string-matching",
+    "prefix-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922559,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "string-matching": 0.85,
+      "prefix-check": 0.8
+    }
+  }
+}

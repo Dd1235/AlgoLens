@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-sum-of-subsequence-powers",
+  "title": "Find the Sum of Subsequence Powers",
+  "slug": "find-the-sum-of-subsequence-powers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-sum-of-subsequence-powers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given an integer array and an integer k, compute the sum of the minimum absolute differences between any two elements for all subsequences of length k, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp-on-subsequences",
+    "sorting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922996,
+    "pattern_confidence": {
+      "dp-on-subsequences": 0.95,
+      "sorting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-allocate-mailboxes",
+  "title": "Allocate Mailboxes",
+  "slug": "allocate-mailboxes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/allocate-mailboxes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given positions of houses along a street and a number k, place k mailboxes to minimize the total distance from each house to its nearest mailbox.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "prefix-sum",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922442,
+    "pattern_confidence": {
+      "dp-on-dag": 0.9,
+      "prefix-sum": 0.85,
+      "sorting": 0.95
+    }
+  }
+}

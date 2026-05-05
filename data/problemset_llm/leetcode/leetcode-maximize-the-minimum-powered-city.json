@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximize-the-minimum-powered-city",
+  "title": "Maximize the Minimum Powered City",
+  "slug": "maximize-the-minimum-powered-city",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-minimum-powered-city/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "queue",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given an array representing power stations in cities and a range of power coverage, determine the maximum minimum power any city can have after optimally adding a limited number of new power stations.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923274,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.9
+    }
+  }
+}

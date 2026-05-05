@@ -1,0 +1,30 @@
+{
+  "id": "cses-2073",
+  "title": "Substring Reversals",
+  "slug": "substring-reversals",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2073",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a string and a sequence of operations that reverse substrings defined by given indices, determine the final string after applying all reversals.",
+  "tags": [
+    "string",
+    "data-structure",
+    "balanced-tree"
+  ],
+  "patterns": [
+    "implicit-treap",
+    "lazy-propagation",
+    "range-reverse"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951844,
+    "pattern_confidence": {
+      "implicit-treap": 0.95,
+      "lazy-propagation": 0.9,
+      "range-reverse": 0.9
+    }
+  }
+}

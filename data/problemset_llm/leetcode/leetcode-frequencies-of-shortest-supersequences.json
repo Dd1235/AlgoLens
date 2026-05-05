@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-frequencies-of-shortest-supersequences",
+  "title": "Frequencies of Shortest Supersequences",
+  "slug": "frequencies-of-shortest-supersequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/frequencies-of-shortest-supersequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "bit-manipulation",
+    "graph",
+    "topological-sort",
+    "enumeration"
+  ],
+  "statement": "Given a list of unique two-letter words, find all shortest common supersequences (SCS) that are not permutations of each other and return their letter frequency arrays. The SCS is a minimal-length string containing each word as a subsequence. The problem involves enumerating distinct minimal supersequences and counting letter frequencies.",
+  "tags": [
+    "string",
+    "dp",
+    "graph",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "topological-sort",
+    "state-compression",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923037,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "topological-sort": 0.85,
+      "state-compression": 0.9,
+      "enumeration": 0.9
+    }
+  }
+}

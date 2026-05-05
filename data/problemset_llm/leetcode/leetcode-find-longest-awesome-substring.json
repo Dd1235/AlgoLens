@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-longest-awesome-substring",
+  "title": "Find Longest Awesome Substring",
+  "slug": "find-longest-awesome-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-longest-awesome-substring/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "bit-manipulation"
+  ],
+  "statement": "Given a digit string, find the length of the longest substring that can be rearranged into a palindrome by swapping characters.",
+  "tags": [
+    "string",
+    "bit-manipulation",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "bitmask",
+    "palindrome-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922897,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "bitmask": 0.9,
+      "palindrome-check": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-earliest-possible-day-of-full-bloom",
+  "title": "Earliest Possible Day of Full Bloom",
+  "slug": "earliest-possible-day-of-full-bloom",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/earliest-possible-day-of-full-bloom/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given arrays representing the planting and growing times of seeds, determine the earliest day by which all seeds can bloom if planting order is optimized.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "scheduling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922833,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "scheduling": 0.9
+    }
+  }
+}

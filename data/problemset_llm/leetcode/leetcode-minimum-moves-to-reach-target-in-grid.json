@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-moves-to-reach-target-in-grid",
+  "title": "Minimum Moves to Reach Target in Grid",
+  "slug": "minimum-moves-to-reach-target-in-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-reach-target-in-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a start point and a target point on a 2D grid, where moves increment either coordinate by the maximum of the current coordinates, find the minimum number of moves to reach the target or determine if it's impossible.",
+  "tags": [
+    "math",
+    "geometry"
+  ],
+  "patterns": [
+    "greedy",
+    "reverse-simulation",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923595,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "reverse-simulation": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

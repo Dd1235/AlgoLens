@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-24-game",
+  "title": "24 Game",
+  "slug": "24-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/24-game/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "backtracking"
+  ],
+  "statement": "Given four cards each with a number from 1 to 9, determine if it is possible to form an expression using addition, subtraction, multiplication, division, and parentheses that evaluates exactly to 24.",
+  "tags": [
+    "array",
+    "math",
+    "backtracking"
+  ],
+  "patterns": [
+    "backtracking",
+    "expression-evaluation",
+    "search-space-pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922433,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "expression-evaluation": 0.9,
+      "search-space-pruning": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-subarrays-with-fixed-bounds",
+  "title": "Count Subarrays With Fixed Bounds",
+  "slug": "count-subarrays-with-fixed-bounds",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-subarrays-with-fixed-bounds/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "queue",
+    "sliding-window",
+    "monotonic-queue"
+  ],
+  "statement": "Count the number of contiguous subarrays where the minimum element equals minK and the maximum element equals maxK.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922682,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9,
+      "monotonic-queue": 0.85
+    }
+  }
+}

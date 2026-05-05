@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-meeting-rooms-iii",
+  "title": "Meeting Rooms III",
+  "slug": "meeting-rooms-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/meeting-rooms-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sorting",
+    "heap-priority-queue",
+    "simulation"
+  ],
+  "statement": "Given n rooms and a list of meetings with unique start times, assign meetings to the lowest-numbered available room or delay them until a room frees up, then return the room that hosted the most meetings.",
+  "tags": [
+    "array",
+    "heap",
+    "simulation",
+    "priority-queue"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923474,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9,
+      "priority-queue": 0.9
+    }
+  }
+}

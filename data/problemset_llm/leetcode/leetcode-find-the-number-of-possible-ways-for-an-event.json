@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-number-of-possible-ways-for-an-event",
+  "title": "Find the Number of Possible Ways for an Event",
+  "slug": "find-the-number-of-possible-ways-for-an-event",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Count the number of ways to assign n performers to x stages and assign each non-empty stage a score from 1 to y, considering different assignments or scores as distinct events, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "dp-on-dag",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922975,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "dp-on-dag": 0.7,
+      "state-compression": 0.65
+    }
+  }
+}

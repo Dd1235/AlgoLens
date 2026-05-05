@@ -1,0 +1,30 @@
+{
+  "id": "cses-1144",
+  "title": "Salary Queries",
+  "slug": "salary-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1144",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Maintain a list of employee salaries with support for updates to individual salaries and queries counting how many salaries fall within a given range.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "fenwick-tree"
+  ],
+  "patterns": [
+    "binary-indexed-tree",
+    "fenwick-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951573,
+    "pattern_confidence": {
+      "binary-indexed-tree": 0.95,
+      "fenwick-tree": 0.95,
+      "coordinate-compression": 0.9
+    }
+  }
+}

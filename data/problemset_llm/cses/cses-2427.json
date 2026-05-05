@@ -1,0 +1,30 @@
+{
+  "id": "cses-2427",
+  "title": "Letter Pair Move Game",
+  "slug": "letter-pair-move-game",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2427",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given 2n boxes with letters 'A' and 'B' and two adjacent empty boxes, rearrange the letters so all 'A's come before any 'B's by moving pairs of adjacent letters into the empty boxes while preserving order, or determine if no solution exists.",
+  "tags": [
+    "array",
+    "simulation",
+    "greedy"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952153,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "greedy": 0.9,
+      "simulation": 0.95
+    }
+  }
+}

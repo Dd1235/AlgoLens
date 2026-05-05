@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-the-number-of-houses-at-a-certain-distance-ii",
+  "title": "Count the Number of Houses at a Certain Distance II",
+  "slug": "count-the-number-of-houses-at-a-certain-distance-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "graph",
+    "prefix-sum"
+  ],
+  "statement": "Given n houses connected linearly and an extra street between two houses x and y, count for each distance k the number of pairs of houses whose shortest path length is exactly k.",
+  "tags": [
+    "graph",
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "shortest-path",
+    "prefix-sum",
+    "distance-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922713,
+    "pattern_confidence": {
+      "shortest-path": 0.95,
+      "prefix-sum": 0.85,
+      "distance-counting": 0.9
+    }
+  }
+}

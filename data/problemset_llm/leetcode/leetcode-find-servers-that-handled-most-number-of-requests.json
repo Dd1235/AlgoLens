@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-servers-that-handled-most-number-of-requests",
+  "title": "Find Servers That Handled Most Number of Requests",
+  "slug": "find-servers-that-handled-most-number-of-requests",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "heap-priority-queue",
+    "simulation",
+    "ordered-set"
+  ],
+  "statement": "Assign incoming requests to servers based on availability and a cyclic priority rule, then identify the server(s) that handled the most requests.",
+  "tags": [
+    "array",
+    "heap",
+    "simulation",
+    "ordered-set"
+  ],
+  "patterns": [
+    "priority-queue",
+    "simulation",
+    "binary-search",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922922,
+    "pattern_confidence": {
+      "priority-queue": 0.95,
+      "simulation": 0.9,
+      "binary-search": 0.7,
+      "ordered-set": 0.85
+    }
+  }
+}

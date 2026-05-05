@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-score-using-exactly-k-pairs",
+  "title": "Maximum Score Using Exactly K Pairs",
+  "slug": "maximum-score-using-exactly-k-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-using-exactly-k-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two integer arrays and an integer k, select exactly k pairs of indices with strictly increasing order in both arrays to maximize the sum of products of the paired elements.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923402,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "state-compression": 0.9,
+      "binary-search-answer": 0.7
+    }
+  }
+}

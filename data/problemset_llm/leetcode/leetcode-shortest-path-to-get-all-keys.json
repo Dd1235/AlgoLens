@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-shortest-path-to-get-all-keys",
+  "title": "Shortest Path to Get All Keys",
+  "slug": "shortest-path-to-get-all-keys",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-path-to-get-all-keys/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Given a grid with walls, keys, locks, and a start position, find the minimum moves to collect all keys while only passing through locks if their keys are obtained.",
+  "tags": [
+    "graph",
+    "bitmask",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "bfs",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924045,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "bfs": 0.97,
+      "state-compression": 0.95
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-guess-the-word",
+  "title": "Guess the Word",
+  "slug": "guess-the-word",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/guess-the-word/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "string",
+    "interactive",
+    "game-theory"
+  ],
+  "statement": "Given a list of unique six-letter words including a secret word, guess the secret word by querying a master function that returns the count of exact character matches. The goal is to identify the secret word within a limited number of guesses using an efficient strategy.",
+  "tags": [
+    "array",
+    "string",
+    "game-theory",
+    "interactive"
+  ],
+  "patterns": [
+    "minimax",
+    "pruning",
+    "guessing-strategy",
+    "feedback-based-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923063,
+    "pattern_confidence": {
+      "minimax": 0.9,
+      "pruning": 0.85,
+      "guessing-strategy": 0.95,
+      "feedback-based-search": 0.9
+    }
+  }
+}

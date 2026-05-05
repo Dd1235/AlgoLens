@@ -1,0 +1,30 @@
+{
+  "id": "cses-1202",
+  "title": "Investigation",
+  "slug": "investigation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1202",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed weighted graph with flights from city 1 to city n, find the minimum cost to travel, the count of such minimum-cost routes modulo 10^9+7, and the minimum and maximum number of flights among these routes.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dp"
+  ],
+  "patterns": [
+    "dijkstra",
+    "counting-paths",
+    "path-length-tracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951502,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "counting-paths": 0.9,
+      "path-length-tracking": 0.85
+    }
+  }
+}

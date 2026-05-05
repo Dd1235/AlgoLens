@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sum-of-total-strength-of-wizards",
+  "title": "Sum of Total Strength of Wizards",
+  "slug": "sum-of-total-strength-of-wizards",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-total-strength-of-wizards/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of wizard strengths, compute the sum of total strengths for all contiguous subarrays, where total strength is the product of the minimum strength and the sum of strengths in the subarray, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "prefix-sum",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924195,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "prefix-sum": 0.95,
+      "contribution-technique": 0.9
+    }
+  }
+}

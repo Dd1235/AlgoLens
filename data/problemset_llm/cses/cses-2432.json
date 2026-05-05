@@ -1,0 +1,30 @@
+{
+  "id": "cses-2432",
+  "title": "Grid Puzzle I",
+  "slug": "grid-puzzle-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2432",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an n×n grid, select squares so that each row i contains exactly a_i chosen squares and each column j contains exactly b_j chosen squares, or determine that no such selection exists.",
+  "tags": [
+    "matrix",
+    "flow",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "max-flow",
+    "bipartite-matching",
+    "network-flow"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952202,
+    "pattern_confidence": {
+      "max-flow": 0.95,
+      "bipartite-matching": 0.9,
+      "network-flow": 0.85
+    }
+  }
+}

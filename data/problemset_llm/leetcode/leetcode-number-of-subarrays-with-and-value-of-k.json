@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-subarrays-with-and-value-of-k",
+  "title": "Number of Subarrays With AND Value of K",
+  "slug": "number-of-subarrays-with-and-value-of-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-subarrays-with-and-value-of-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "segment-tree"
+  ],
+  "statement": "Given an integer array and a target integer k, count the number of subarrays whose bitwise AND equals k.",
+  "tags": [
+    "array",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "two-pointers",
+    "bitmask",
+    "prefix-and"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923806,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "bitmask": 0.85,
+      "prefix-and": 0.8
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-maximum-sum-of-alternating-subsequence-with-distance-at-least-k",
+  "title": "Maximum Sum of Alternating Subsequence With Distance at Least K",
+  "slug": "maximum-sum-of-alternating-subsequence-with-distance-at-least-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-alternating-subsequence-with-distance-at-least-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an integer array and a minimum index gap k, find the maximum sum of a subsequence whose elements strictly alternate in value and whose indices differ by at least k.",
+  "tags": [
+    "array",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "strictly-alternating-subsequence",
+    "index-gap-constraint"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923433,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "strictly-alternating-subsequence": 0.95,
+      "index-gap-constraint": 0.9
+    }
+  }
+}

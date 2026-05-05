@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-alternating-groups-iii",
+  "title": "Alternating Groups III",
+  "slug": "alternating-groups-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/alternating-groups-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-indexed-tree",
+    "ordered-set"
+  ],
+  "statement": "Given a circular array of tiles colored red or blue, support updates to tile colors and queries counting contiguous alternating color groups of a given size.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "ordered-set"
+  ],
+  "patterns": [
+    "binary-indexed-tree",
+    "ordered-set",
+    "dynamic-interval-updates"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922445,
+    "pattern_confidence": {
+      "binary-indexed-tree": 0.95,
+      "ordered-set": 0.9,
+      "dynamic-interval-updates": 0.85
+    }
+  }
+}

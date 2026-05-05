@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-building-height",
+  "title": "Maximum Building Height",
+  "slug": "maximum-building-height",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-building-height/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "sorting"
+  ],
+  "statement": "Given n buildings in a line with height constraints on some buildings and a maximum height difference of 1 between adjacent buildings, find the maximum possible height of the tallest building.",
+  "tags": [
+    "array",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pass-scan",
+    "constraint-propagation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923295,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "two-pass-scan": 0.85,
+      "constraint-propagation": 0.8
+    }
+  }
+}

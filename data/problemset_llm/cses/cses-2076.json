@@ -1,0 +1,28 @@
+{
+  "id": "cses-2076",
+  "title": "Necessary Roads",
+  "slug": "necessary-roads",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2076",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given an undirected connected graph, identify all edges whose removal disconnects the graph (i.e., all bridges).",
+  "tags": [
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "bridge-finding",
+    "tarjan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951848,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bridge-finding": 0.98,
+      "tarjan": 0.9
+    }
+  }
+}

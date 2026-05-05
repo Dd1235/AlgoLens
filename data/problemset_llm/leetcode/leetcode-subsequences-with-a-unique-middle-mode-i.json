@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-subsequences-with-a-unique-middle-mode-i",
+  "title": "Subsequences with a Unique Middle Mode I",
+  "slug": "subsequences-with-a-unique-middle-mode-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "combinatorics"
+  ],
+  "statement": "Count the number of size-5 subsequences in an integer array where the middle element is the unique mode of the subsequence, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "combinatorics",
+    "math",
+    "hash-map"
+  ],
+  "patterns": [
+    "frequency-counting",
+    "combinatorial-enumeration",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924152,
+    "pattern_confidence": {
+      "frequency-counting": 0.95,
+      "combinatorial-enumeration": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

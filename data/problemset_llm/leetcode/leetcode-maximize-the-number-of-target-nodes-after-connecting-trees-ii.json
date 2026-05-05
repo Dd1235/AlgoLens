@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximize-the-number-of-target-nodes-after-connecting-trees-ii",
+  "title": "Maximize the Number of Target Nodes After Connecting Trees II",
+  "slug": "maximize-the-number-of-target-nodes-after-connecting-trees-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search"
+  ],
+  "statement": "Given two undirected trees, for each node in the first tree, find the maximum number of nodes reachable with an even-length path after connecting it to one node in the second tree. Each query is independent, and the added edge is removed before the next query.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "tree-dp",
+    "parity-based-dfs",
+    "independent-query-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923279,
+    "pattern_confidence": {
+      "tree-dp": 0.9,
+      "parity-based-dfs": 0.85,
+      "independent-query-processing": 0.8
+    }
+  }
+}

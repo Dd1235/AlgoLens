@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-value-of-k-coins-from-piles",
+  "title": "Maximum Value of K Coins From Piles",
+  "slug": "maximum-value-of-k-coins-from-piles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given several piles of coins with values, select exactly k coins from the tops of these piles to maximize the total value collected.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "knapsack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923453,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dp": 0.98,
+      "knapsack": 0.9
+    }
+  }
+}

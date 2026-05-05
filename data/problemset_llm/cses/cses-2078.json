@@ -1,0 +1,30 @@
+{
+  "id": "cses-2078",
+  "title": "Eulerian Subgraphs",
+  "slug": "eulerian-subgraphs",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2078",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given an undirected graph, count the number of spanning subgraphs containing all nodes where every node has even degree, modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "combinatorics",
+    "dfs"
+  ],
+  "patterns": [
+    "connected-components",
+    "parity-check",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951852,
+    "pattern_confidence": {
+      "connected-components": 0.95,
+      "parity-check": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

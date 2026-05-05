@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-find-sum-of-array-product-of-magical-sequences",
+  "title": "Find Sum of Array Product of Magical Sequences",
+  "slug": "find-sum-of-array-product-of-magical-sequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-sum-of-array-product-of-magical-sequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "combinatorics",
+    "bitmask"
+  ],
+  "statement": "Given integers m, k, and an array nums, find the sum of products of all sequences of length m where the sum of 2 raised to the sequence elements has exactly k set bits in binary, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bitmask",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922934,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-3217",
+  "title": "Knight Moves Grid",
+  "slug": "knight-moves-grid",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3217",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given an n by n chessboard, compute for each square the minimum number of knight moves required to reach the top-left corner.",
+  "tags": [
+    "graph",
+    "grid",
+    "bfs"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "shortest-path",
+    "grid-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951295,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "shortest-path": 0.95,
+      "grid-graph": 0.9
+    }
+  }
+}

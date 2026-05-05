@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-non-decreasing-subarrays-after-k-operations",
+  "title": "Count Non-Decreasing Subarrays After K Operations",
+  "slug": "count-non-decreasing-subarrays-after-k-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "stack",
+    "segment-tree",
+    "queue",
+    "sliding-window",
+    "monotonic-stack",
+    "monotonic-queue"
+  ],
+  "statement": "Given an integer array and a limit k, count the number of subarrays that can be transformed into non-decreasing sequences by incrementing elements at most k times per subarray independently.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922631,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "two-pointers": 0.8
+    }
+  }
+}

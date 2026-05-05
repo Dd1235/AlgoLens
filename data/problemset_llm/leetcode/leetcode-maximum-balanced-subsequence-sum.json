@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-maximum-balanced-subsequence-sum",
+  "title": "Maximum Balanced Subsequence Sum",
+  "slug": "maximum-balanced-subsequence-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-balanced-subsequence-sum/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Find the maximum sum of a subsequence where consecutive elements satisfy a difference constraint involving their values and indices.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923291,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dp": 0.95,
+      "fenwick-tree": 0.7,
+      "segment-tree": 0.7
+    }
+  }
+}

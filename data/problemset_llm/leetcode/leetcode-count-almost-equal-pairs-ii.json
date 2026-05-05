@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-almost-equal-pairs-ii",
+  "title": "Count Almost Equal Pairs II",
+  "slug": "count-almost-equal-pairs-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-almost-equal-pairs-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sorting",
+    "counting",
+    "enumeration"
+  ],
+  "statement": "Given an array of positive integers, count the number of pairs (i, j) with i < j such that one number can be transformed into the other by performing at most two digit swaps within either number.",
+  "tags": [
+    "array",
+    "string",
+    "counting",
+    "enumeration"
+  ],
+  "patterns": [
+    "digit-manipulation",
+    "pair-enumeration",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922573,
+    "pattern_confidence": {
+      "digit-manipulation": 0.95,
+      "pair-enumeration": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

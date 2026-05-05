@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-maximum-equal-frequency",
+  "title": "Maximum Equal Frequency",
+  "slug": "maximum-equal-frequency",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-equal-frequency/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table"
+  ],
+  "statement": "Given an array of positive integers, find the longest prefix length such that removing exactly one element from this prefix results in all remaining numbers having the same frequency of occurrences.",
+  "tags": [
+    "array",
+    "hash-map",
+    "frequency-count"
+  ],
+  "patterns": [
+    "frequency-counting",
+    "hash-map-lookup",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923312,
+    "pattern_confidence": {
+      "frequency-counting": 0.98,
+      "hash-map-lookup": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

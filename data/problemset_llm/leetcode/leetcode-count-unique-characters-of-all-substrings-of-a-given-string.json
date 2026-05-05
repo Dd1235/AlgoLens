@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-unique-characters-of-all-substrings-of-a-given-string",
+  "title": "Count Unique Characters of All Substrings of a Given String",
+  "slug": "count-unique-characters-of-all-substrings-of-a-given-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, compute the sum of counts of unique characters for every substring of the string.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "prefix-sum",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922733,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "prefix-sum": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

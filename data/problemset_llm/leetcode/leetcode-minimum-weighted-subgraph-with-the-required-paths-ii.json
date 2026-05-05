@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-weighted-subgraph-with-the-required-paths-ii",
+  "title": "Minimum Weighted Subgraph With the Required Paths II",
+  "slug": "minimum-weighted-subgraph-with-the-required-paths-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a weighted undirected tree and queries each specifying two source nodes and a destination node, find the minimum total weight of a subtree connecting both sources to the destination.",
+  "tags": [
+    "tree",
+    "graph",
+    "dp"
+  ],
+  "patterns": [
+    "lowest-common-ancestor",
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923717,
+    "pattern_confidence": {
+      "lowest-common-ancestor": 0.95,
+      "prefix-sum": 0.85,
+      "binary-search-answer": 0.8
+    }
+  }
+}

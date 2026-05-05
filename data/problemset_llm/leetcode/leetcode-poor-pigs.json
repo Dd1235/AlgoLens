@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-poor-pigs",
+  "title": "Poor Pigs",
+  "slug": "poor-pigs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/poor-pigs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Determine the minimum number of pigs needed to identify a single poisonous bucket among many within a limited testing time, given constraints on how many times pigs can be tested and how long it takes for them to die after ingestion.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "state-compression",
+    "combinatorial-encoding",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923923,
+    "pattern_confidence": {
+      "state-compression": 0.9,
+      "combinatorial-encoding": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

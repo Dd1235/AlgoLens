@@ -1,0 +1,29 @@
+{
+  "id": "cses-1093",
+  "title": "Two Sets II",
+  "slug": "two-sets-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1093",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Count the number of ways to partition the set {1, 2, ..., n} into two subsets with equal sum, modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "subset-sum",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951425,
+    "pattern_confidence": {
+      "subset-sum": 0.98,
+      "modular-arithmetic": 0.9,
+      "dynamic-programming": 0.95
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-zuma-game",
+  "title": "Zuma Game",
+  "slug": "zuma-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/zuma-game/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "stack",
+    "breadth-first-search",
+    "memoization"
+  ],
+  "statement": "Given a row of colored balls on a board and a set of balls in hand, determine the minimum number of insertions needed to clear all balls by repeatedly removing groups of three or more consecutive balls of the same color. If it is impossible to clear the board, return -1.",
+  "tags": [
+    "string",
+    "dfs",
+    "memoization",
+    "backtracking"
+  ],
+  "patterns": [
+    "depth-first-search",
+    "memoization",
+    "backtracking",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924300,
+    "pattern_confidence": {
+      "depth-first-search": 0.95,
+      "memoization": 0.9,
+      "backtracking": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

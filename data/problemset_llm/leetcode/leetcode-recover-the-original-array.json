@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-recover-the-original-array",
+  "title": "Recover the Original Array",
+  "slug": "recover-the-original-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/recover-the-original-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given an array containing elements from two arrays formed by subtracting and adding a positive integer k to an original array, recover the original array.",
+  "tags": [
+    "array",
+    "sorting",
+    "hash-map"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923968,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

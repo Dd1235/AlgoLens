@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-employees-to-be-invited-to-a-meeting",
+  "title": "Maximum Employees to Be Invited to a Meeting",
+  "slug": "maximum-employees-to-be-invited-to-a-meeting",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "depth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given a list where each employee has a favorite person, determine the maximum number of employees that can be seated around a circular table so that every employee sits next to their favorite person.",
+  "tags": [
+    "graph",
+    "dfs",
+    "dp"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "topological-sort",
+    "depth-first-search",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923310,
+    "pattern_confidence": {
+      "cycle-detection": 0.95,
+      "topological-sort": 0.9,
+      "depth-first-search": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

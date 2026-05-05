@@ -1,0 +1,27 @@
+{
+  "id": "cses-3194",
+  "title": "Xor Pyramid Diagonal",
+  "slug": "xor-pyramid-diagonal",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3194",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given the bottom row of a xor pyramid where each upper element is the xor of the two elements below it, find the leftmost element of each row from bottom to top.",
+  "tags": [
+    "array",
+    "bitwise"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951941,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "dp": 0.85
+    }
+  }
+}

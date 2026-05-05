@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-subarrays-with-majority-element-ii",
+  "title": "Count Subarrays With Majority Element II",
+  "slug": "count-subarrays-with-majority-element-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "divide-and-conquer",
+    "segment-tree",
+    "merge-sort",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and a target value, count the number of subarrays where the target is the majority element, meaning it appears more than half the times in that subarray.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922687,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "divide-and-conquer": 0.7
+    }
+  }
+}

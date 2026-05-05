@@ -1,0 +1,30 @@
+{
+  "id": "cses-1136",
+  "title": "Counting Paths",
+  "slug": "counting-paths",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1136",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree and multiple paths defined by pairs of nodes, compute for each node how many of these paths include it.",
+  "tags": [
+    "tree",
+    "graph",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "lowest-common-ancestor",
+    "difference-array",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951631,
+    "pattern_confidence": {
+      "lowest-common-ancestor": 0.95,
+      "difference-array": 0.9,
+      "prefix-sum": 0.88
+    }
+  }
+}

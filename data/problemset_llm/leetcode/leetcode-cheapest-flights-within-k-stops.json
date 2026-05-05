@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-cheapest-flights-within-k-stops",
+  "title": "Cheapest Flights Within K Stops",
+  "slug": "cheapest-flights-within-k-stops",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
+  "source_topic": "LeetCode / Graphs",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given a weighted directed graph representing flights between cities, find the cheapest price from a source city to a destination city using at most k stops.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dp",
+    "heap"
+  ],
+  "patterns": [
+    "modified-dijkstra",
+    "dp-on-graphs",
+    "priority-queue",
+    "bounded-shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922409,
+    "pattern_confidence": {
+      "modified-dijkstra": 0.95,
+      "dp-on-graphs": 0.9,
+      "priority-queue": 0.9,
+      "bounded-shortest-path": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "cses-1632",
+  "title": "Movie Festival II",
+  "slug": "movie-festival-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1632",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given n movies with start and end times and k club members, determine the maximum total number of movies that can be watched entirely by the members without overlapping schedules.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "intervals",
+    "data-structure"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "balanced-binary-search-tree",
+    "interval-scheduling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951384,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "balanced-binary-search-tree": 0.85,
+      "interval-scheduling": 0.9
+    }
+  }
+}

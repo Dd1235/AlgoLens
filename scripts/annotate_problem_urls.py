@@ -33,6 +33,9 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_URLS = ROOT / "Problems" / "urls.txt"
 DEFAULT_OUT = ROOT / "data" / "problemset_llm"
+CURATED_PROBLEMS = ROOT / "data" / "problems"
+CACHE_DIR = ROOT / "data" / "cache"
+CODEFORCES_CACHE = CACHE_DIR / "codeforces_problemset.problems.json"
 OPENAI_CHAT_COMPLETIONS_URL = "https://api.openai.com/v1/chat/completions"
 CODEFORCES_PROBLEMS_URL = "https://codeforces.com/api/problemset.problems"
 LEETCODE_GRAPHQL_URL = "https://leetcode.com/graphql"
@@ -41,60 +44,153 @@ ANNOTATION_VERSION = "problem-patterns-v1"
 SSL_CONTEXT = None
 
 CANONICAL_PATTERNS = [
+    # Core array/search patterns
     "two-pointers",
     "sliding-window",
     "prefix-sum",
+    "prefix-xor",
     "difference-array",
+    "sweep-line-difference",
     "binary-search",
     "binary-search-answer",
+    "ternary-search",
     "sorting",
     "greedy",
     "heap",
     "stack",
     "monotonic-stack",
+    "monotonic-queue",
     "queue",
     "hash-map lookup",
+    "coordinate-compression",
+    "offline-queries",
+    "contribution-technique",
+    "inclusion-exclusion",
+    "mex",
+    "order-statistics",
+    "sqrt-decomposition",
+    "mo-algorithm",
+
+    # Graph patterns
     "dfs",
     "bfs",
+    "multi-source-bfs",
     "flood-fill",
     "union-find",
+    "dsu-rollback",
+    "small-to-large-merging",
     "topological-sort",
     "cycle-detection",
     "shortest-path",
     "dijkstra",
     "bellman-ford",
     "floyd-warshall",
+    "zero-one-bfs",
+    "dag-dp",
+    "functional-graph",
     "minimum-spanning-tree",
+    "kruskal",
+    "prim",
     "strongly-connected-components",
+    "tarjan",
+    "bridges",
+    "articulation-points",
+    "eulerian-path",
+    "hamiltonian-dp",
     "max-flow",
+    "min-cut",
+    "dinic",
+    "min-cost-flow",
     "bipartite-matching",
+    "two-sat",
+
+    # Tree patterns
     "tree-dp",
     "rerooting-dp",
-    "digit-dp",
-    "bitmask-dp",
-    "interval-dp",
-    "knapsack",
-    "longest-increasing-subsequence",
-    "segment-tree",
-    "fenwick-tree",
-    "lazy-propagation",
-    "sparse-table",
+    "subtree-dp",
+    "tree-diameter",
+    "centroid-decomposition",
+    "heavy-light-decomposition",
     "binary-lifting",
     "lca",
     "euler-tour",
+    "tin-tout-ancestor-check",
+    "tree-flattening",
+
+    # DP patterns
+    "digit-dp",
+    "bitmask-dp",
+    "subset-dp",
+    "profile-dp",
+    "dp-on-dag",
+    "dp-optimization",
+    "divide-and-conquer-dp",
+    "knuth-optimization",
+    "convex-hull-trick",
+    "li-chao-tree",
+    "interval-dp",
+    "knapsack",
+    "unbounded-knapsack",
+    "bounded-knapsack",
+    "partition-dp",
+    "state-compression",
+    "longest-increasing-subsequence",
+    "edit-distance",
+    "game-dp",
+    "probability-dp",
+    "expected-value-dp",
+
+    # Range query/data structure patterns
+    "segment-tree",
+    "fenwick-tree",
+    "lazy-propagation",
+    "persistent-segment-tree",
+    "merge-sort-tree",
+    "implicit-treap",
+    "ordered-set",
+    "multiset",
+    "deque",
+    "sparse-table",
+
+    # String patterns
     "trie",
     "kmp",
     "z-function",
     "rolling-hash",
+    "rabin-karp",
     "suffix-array",
+    "suffix-automaton",
+    "palindrome-dp",
+    "manacher",
+    "aho-corasick",
+
+    # Geometry and math patterns
     "line-sweep",
-    "coordinate-compression",
     "geometry",
+    "rectangle-union-area",
+    "interval-union",
+    "convex-hull",
+    "orientation-test",
+    "rotating-calipers",
     "combinatorics",
+    "stars-and-bars",
+    "permutation-counting",
     "number-theory",
+    "gcd",
+    "sieve",
+    "prime-factorization",
+    "modular-inverse",
     "modular-arithmetic",
+    "matrix-exponentiation",
+    "linear-recurrence",
+    "fast-exponentiation",
+    "chinese-remainder-theorem",
+    "grundy-numbers",
     "game-theory",
     "meet-in-the-middle",
+    "backtracking",
+    "branch-and-bound",
+    "constructive-algorithm",
 ]
 
 PROMPT_EXAMPLES = [
@@ -151,6 +247,61 @@ PROMPT_EXAMPLES = [
                 "longest subarray under sum limit": 0.9
             }
         }
+    },
+    {
+        "input": {
+            "title": "Subtree Queries",
+            "platform": "cses",
+            "source_topic": "CSES / Tree Algorithms",
+            "source_text": "Given a rooted tree with values on nodes, support updates to a node value and queries asking for the sum of values in a node's subtree.",
+        },
+        "output": {
+            "statement": "Maintain node values on a rooted tree under point updates and answer subtree sum queries.",
+            "tags": ["tree", "range-query", "data-structure"],
+            "patterns": ["euler-tour", "tree-flattening", "fenwick-tree", "subtree-query"],
+            "pattern_confidence": {
+                "euler-tour": 0.97,
+                "tree-flattening": 0.96,
+                "fenwick-tree": 0.88,
+                "subtree-query": 0.93
+            }
+        }
+    },
+    {
+        "input": {
+            "title": "Hamiltonian Flights",
+            "platform": "cses",
+            "source_topic": "CSES / Graph Algorithms",
+            "source_text": "Count routes from city 1 to city n that visit every city exactly once in a directed graph.",
+        },
+        "output": {
+            "statement": "Count directed paths from the first city to the last city that visit every city exactly once.",
+            "tags": ["graph", "dp", "bitmask"],
+            "patterns": ["bitmask-dp", "hamiltonian-dp", "state-compression"],
+            "pattern_confidence": {
+                "bitmask-dp": 0.98,
+                "hamiltonian-dp": 0.96,
+                "state-compression": 0.9
+            }
+        }
+    },
+    {
+        "input": {
+            "title": "Sum of Subarray Minimums",
+            "platform": "leetcode",
+            "source_tags": ["array", "stack", "monotonic-stack"],
+            "source_text": "Given an array, return the sum of the minimum value of every contiguous subarray.",
+        },
+        "output": {
+            "statement": "For every contiguous subarray, add its minimum value and return the total.",
+            "tags": ["array", "stack"],
+            "patterns": ["monotonic-stack", "contribution-technique", "nearest-smaller-element"],
+            "pattern_confidence": {
+                "monotonic-stack": 0.97,
+                "contribution-technique": 0.95,
+                "nearest-smaller-element": 0.92
+            }
+        }
     }
 ]
 
@@ -188,7 +339,12 @@ class TextExtractor(HTMLParser):
         return re.sub(r"\s+", " ", raw).strip()
 
 
-def request_json(url: str, payload: dict[str, Any] | None = None, headers: dict[str, str] | None = None) -> Any:
+def request_json(
+    url: str,
+    payload: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
+    timeout: int = 60,
+) -> Any:
     body = json.dumps(payload).encode("utf8") if payload is not None else None
     req = Request(
         url,
@@ -199,7 +355,7 @@ def request_json(url: str, payload: dict[str, Any] | None = None, headers: dict[
             **(headers or {}),
         },
     )
-    with urlopen(req, timeout=30, context=SSL_CONTEXT) as res:
+    with urlopen(req, timeout=timeout, context=SSL_CONTEXT) as res:
         return json.loads(res.read().decode("utf8"))
 
 
@@ -257,7 +413,26 @@ def platform_from_url(url: str) -> str:
 
 
 def base_from_url(item: UrlItem, cf_cache: dict[tuple[int, str], dict[str, Any]]) -> dict[str, Any]:
-    platform = platform_from_url(item.url)
+    platform_from_source = platform_from_url(item.url)
+    curated = curated_problem_by_url(item.url)
+    if curated and platform_from_source == "codeforces":
+        platform = curated.get("platform") or platform_from_url(item.url)
+        rating = curated.get("rating")
+        difficulty = curated.get("difficulty") if platform != "codeforces" or rating is not None else None
+        return {
+            "id": curated.get("id") or slugify(f"{platform_from_url(item.url)}-{curated.get('title', item.url)}"),
+            "title": curated.get("title") or item.url,
+            "slug": curated.get("slug") or slugify(curated.get("title", item.url)),
+            "platform": platform,
+            "source_url": item.url,
+            "source_topic": item.source_topic,
+            "difficulty": difficulty,
+            "rating": rating,
+            "source_tags": curated.get("source_tags") or curated.get("tags", []),
+            "source_text": curated.get("statement", ""),
+        }
+
+    platform = platform_from_source
     if platform == "leetcode":
         return leetcode_metadata(item)
     if platform == "codeforces":
@@ -277,6 +452,19 @@ def base_from_url(item: UrlItem, cf_cache: dict[tuple[int, str], dict[str, Any]]
         "source_tags": [],
         "source_text": "",
     }
+
+
+def curated_problem_by_url(url: str) -> dict[str, Any] | None:
+    if not CURATED_PROBLEMS.exists():
+        return None
+    for path in CURATED_PROBLEMS.glob("*.json"):
+        try:
+            data = json.loads(path.read_text())
+        except json.JSONDecodeError:
+            continue
+        if data.get("source_url") == url:
+            return data
+    return None
 
 
 def leetcode_metadata(item: UrlItem) -> dict[str, Any]:
@@ -330,7 +518,12 @@ def codeforces_problem_key(url: str) -> tuple[int, str] | None:
 
 
 def load_codeforces_cache() -> dict[tuple[int, str], dict[str, Any]]:
-    data = request_json(CODEFORCES_PROBLEMS_URL)
+    if CODEFORCES_CACHE.exists():
+        data = json.loads(CODEFORCES_CACHE.read_text())
+    else:
+        data = request_json(CODEFORCES_PROBLEMS_URL, timeout=120)
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        CODEFORCES_CACHE.write_text(json.dumps(data, ensure_ascii=False) + "\n")
     problems = (data.get("result") or {}).get("problems") or []
     cache: dict[tuple[int, str], dict[str, Any]] = {}
     for p in problems:
@@ -408,6 +601,20 @@ def trim_problem_page_text(markup: str) -> str:
     return text[:6000]
 
 
+def has_usable_source_text(base: dict[str, Any]) -> bool:
+    text = (base.get("source_text") or "").strip()
+    if len(text) < 40:
+        return False
+    blocked_markers = [
+        "just a moment",
+        "enable javascript and cookies",
+        "cloudflare",
+        "attention required",
+    ]
+    lowered = text.lower()
+    return not any(marker in lowered for marker in blocked_markers)
+
+
 def annotation_prompt(base: dict[str, Any]) -> list[dict[str, str]]:
     system = (
         "You annotate competitive programming problems for pattern-based search. "
@@ -425,6 +632,9 @@ def annotation_prompt(base: dict[str, Any]) -> list[dict[str, str]]:
             "Output JSON with exactly: statement, tags, patterns, pattern_confidence.",
             "tags must be lowercase strings such as array, graph, dp, string, geometry, tree, math.",
             "patterns must be lowercase algorithmic techniques or concise searchable phrases.",
+            "Use advanced patterns when applicable: contribution-technique, euler-tour, tree-flattening, bitmask-dp, hld, dsu-rollback, convex-hull-trick, line-sweep, max-flow, two-sat, suffix-automaton, etc.",
+            "Prefer the most discriminative technique over generic labels. For example, use contribution-technique with monotonic-stack instead of only array/stack.",
+            "Do not force advanced patterns when the statement does not justify them.",
             "pattern_confidence must map every pattern string to a number from 0 to 1.",
             "Do not output source_url, platform, difficulty, rating, or similar_to.",
             "Do not include full copied problem text.",
@@ -454,9 +664,9 @@ def annotation_prompt(base: dict[str, Any]) -> list[dict[str, str]]:
 
 
 def call_openai(base: dict[str, Any], model: str) -> dict[str, Any]:
-    key = os.environ.get("OPENAI_API_KEY")
+    key = os.environ.get("OPENAI_API_KEY") or os.environ.get("OPEN_AI_API")
     if not key:
-        raise RuntimeError("OPENAI_API_KEY is required unless --no-llm is used")
+        raise RuntimeError("OPENAI_API_KEY or OPEN_AI_API is required unless --no-llm is used")
     payload = {
         "model": model,
         "messages": annotation_prompt(base),
@@ -547,6 +757,14 @@ def output_path(out_dir: Path, record: dict[str, Any]) -> Path:
     return out_dir / record["platform"] / f"{record['id']}.json"
 
 
+def display_path(path: Path) -> str:
+    resolved = path.resolve()
+    try:
+        return str(resolved.relative_to(ROOT))
+    except ValueError:
+        return str(path)
+
+
 def main() -> int:
     load_env_file(ROOT / ".env")
 
@@ -558,6 +776,17 @@ def main() -> int:
     ap.add_argument("--offset", type=int, default=0)
     ap.add_argument("--no-llm", action="store_true", help="Write metadata-only records without OpenAI calls")
     ap.add_argument("--overwrite", action="store_true")
+    ap.add_argument(
+        "--platform",
+        action="append",
+        choices=["leetcode", "codeforces", "cses"],
+        help="Filter URLs by platform. Can be repeated.",
+    )
+    ap.add_argument(
+        "--allow-metadata-only",
+        action="store_true",
+        help="Allow LLM annotation when no usable problem statement was fetched",
+    )
     ap.add_argument("--sample-one-per-platform", action="store_true", help="Select first leetcode, codeforces, and cses URL")
     ap.add_argument(
         "--insecure-ssl",
@@ -569,8 +798,13 @@ def main() -> int:
     global SSL_CONTEXT
     if args.insecure_ssl:
         SSL_CONTEXT = ssl._create_unverified_context()
+    if not args.out.is_absolute():
+        args.out = ROOT / args.out
 
     items = read_url_items(args.urls)
+    if args.platform:
+        platforms = set(args.platform)
+        items = [item for item in items if platform_from_url(item.url) in platforms]
     if args.sample_one_per_platform:
         selected: list[UrlItem] = []
         seen_platforms: set[str] = set()
@@ -588,7 +822,11 @@ def main() -> int:
         items = items[: args.limit]
 
     cf_cache: dict[tuple[int, str], dict[str, Any]] = {}
-    if any(platform_from_url(i.url) == "codeforces" for i in items):
+    needs_cf_api = any(
+        platform_from_url(i.url) == "codeforces" and curated_problem_by_url(i.url) is None
+        for i in items
+    )
+    if needs_cf_api:
         try:
             cf_cache = load_codeforces_cache()
         except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as exc:
@@ -601,6 +839,8 @@ def main() -> int:
             base = base_from_url(item, cf_cache)
             annotation = {"statement": "", "tags": [], "patterns": []}
             if not args.no_llm:
+                if not args.allow_metadata_only and not has_usable_source_text(base):
+                    raise RuntimeError("missing usable source_text; skipping to avoid metadata-only annotation")
                 annotation = call_openai(base, args.model)
             record = build_record(base, annotation, None if args.no_llm else args.model)
             path = output_path(args.out, record)
@@ -610,7 +850,7 @@ def main() -> int:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
             written += 1
-            print(f"[{i}/{len(items)}] wrote {path.relative_to(ROOT)}")
+            print(f"[{i}/{len(items)}] wrote {display_path(path)}")
         except Exception as exc:  # keep long batch runs moving
             print(f"[{i}/{len(items)}] failed {item.url}: {exc}", file=sys.stderr)
     print(f"done: wrote {written} records")

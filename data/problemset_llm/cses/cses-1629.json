@@ -1,0 +1,28 @@
+{
+  "id": "cses-1629",
+  "title": "Movie Festival",
+  "slug": "movie-festival",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1629",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given a list of movies with start and end times, determine the maximum number of movies that can be watched entirely without overlapping.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "intervals"
+  ],
+  "patterns": [
+    "interval-scheduling",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951318,
+    "pattern_confidence": {
+      "interval-scheduling": 0.98,
+      "sorting": 0.95
+    }
+  }
+}

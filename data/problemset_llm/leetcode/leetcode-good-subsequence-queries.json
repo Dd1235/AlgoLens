@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-good-subsequence-queries",
+  "title": "Good Subsequence Queries",
+  "slug": "good-subsequence-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/good-subsequence-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an integer array and a value p, after each update to the array, determine if there exists a non-empty subsequence with length less than the array length whose GCD equals p. Return the count of queries for which such a subsequence exists.",
+  "tags": [
+    "array",
+    "math",
+    "gcd",
+    "data-structure"
+  ],
+  "patterns": [
+    "prefix-gcd",
+    "segment-tree",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923050,
+    "pattern_confidence": {
+      "prefix-gcd": 0.9,
+      "segment-tree": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-falling-squares",
+  "title": "Falling Squares",
+  "slug": "falling-squares",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/falling-squares/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "statement": "Simulate dropping squares onto the X-axis where each square falls until it lands on the X-axis or on top of another square, then report the height of the tallest stack after each drop.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "patterns": [
+    "segment-tree",
+    "coordinate-compression",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922858,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "coordinate-compression": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-the-number-of-good-partitions",
+  "title": "Count the Number of Good Partitions",
+  "slug": "count-the-number-of-good-partitions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-good-partitions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "combinatorics"
+  ],
+  "statement": "Count the number of ways to partition an array into contiguous subarrays such that no two subarrays contain the same element, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dp",
+    "hash-map",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922710,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

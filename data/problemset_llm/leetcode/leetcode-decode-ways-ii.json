@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-decode-ways-ii",
+  "title": "Decode Ways II",
+  "slug": "decode-ways-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/decode-ways-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string containing digits and '*' characters representing digits 1-9, count the total number of ways to decode it into letters A-Z using a mapping from numbers to letters, considering all valid groupings and modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922776,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

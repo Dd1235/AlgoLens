@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-skips-to-arrive-at-meeting-on-time",
+  "title": "Minimum Skips to Arrive at Meeting On Time",
+  "slug": "minimum-skips-to-arrive-at-meeting-on-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given distances of roads, a travel speed, and a time limit, find the minimum number of rest skips needed to arrive on time, where resting rounds travel time up to the next integer hour except when skipped.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923677,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "binary-search-answer": 0.85
+    }
+  }
+}

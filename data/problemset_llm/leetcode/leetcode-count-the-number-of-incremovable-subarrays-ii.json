@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-the-number-of-incremovable-subarrays-ii",
+  "title": "Count the Number of Incremovable Subarrays II",
+  "slug": "count-the-number-of-incremovable-subarrays-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search"
+  ],
+  "statement": "Given an array of positive integers, count the number of contiguous subarrays whose removal makes the remaining array strictly increasing. The empty array is considered strictly increasing.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "two-pointers",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922719,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "binary-search-answer": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

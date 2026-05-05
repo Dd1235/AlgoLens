@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximize-fixed-points-after-deletions",
+  "title": "Maximize Fixed Points After Deletions",
+  "slug": "maximize-fixed-points-after-deletions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-fixed-points-after-deletions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an integer array, delete any elements to maximize the count of positions where the element equals its index after reindexing.",
+  "tags": [
+    "array",
+    "greedy",
+    "dp"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923240,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-valid-parentheses",
+  "title": "Valid Parentheses",
+  "slug": "valid-parentheses",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/valid-parentheses/",
+  "source_topic": "LeetCode / Stack and Monotonic Structures",
+  "difficulty": "Easy",
+  "source_tags": [
+    "string",
+    "stack"
+  ],
+  "statement": "Determine if a string containing only parentheses characters is valid by checking that every opening bracket is closed by the same type in the correct order.",
+  "tags": [
+    "string",
+    "stack"
+  ],
+  "patterns": [
+    "stack",
+    "matching-parentheses"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922355,
+    "pattern_confidence": {
+      "stack": 0.98,
+      "matching-parentheses": 0.95
+    }
+  }
+}

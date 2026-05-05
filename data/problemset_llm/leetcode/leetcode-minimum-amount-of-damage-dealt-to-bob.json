@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-amount-of-damage-dealt-to-bob",
+  "title": "Minimum Amount of Damage Dealt to Bob",
+  "slug": "minimum-amount-of-damage-dealt-to-bob",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-amount-of-damage-dealt-to-bob/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given n enemies each dealing damage per second and having health, determine the minimum total damage Bob receives before killing all enemies by attacking one enemy per second with fixed power.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923501,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "binary-search-answer": 0.7
+    }
+  }
+}

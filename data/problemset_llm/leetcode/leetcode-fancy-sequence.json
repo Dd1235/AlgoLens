@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-fancy-sequence",
+  "title": "Fancy Sequence",
+  "slug": "fancy-sequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/fancy-sequence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "design",
+    "segment-tree",
+    "number-theory"
+  ],
+  "statement": "Implement a data structure supporting append, add to all elements, multiply all elements, and retrieve element by index operations efficiently under modulo arithmetic.",
+  "tags": [
+    "data-structure",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "lazy-propagation",
+    "prefix-multiplication",
+    "prefix-addition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922859,
+    "pattern_confidence": {
+      "lazy-propagation": 0.9,
+      "prefix-multiplication": 0.85,
+      "prefix-addition": 0.85
+    }
+  }
+}

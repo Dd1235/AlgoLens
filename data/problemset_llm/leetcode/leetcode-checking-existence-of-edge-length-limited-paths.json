@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-checking-existence-of-edge-length-limited-paths",
+  "title": "Checking Existence of Edge Length Limited Paths",
+  "slug": "checking-existence-of-edge-length-limited-paths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "union-find",
+    "graph",
+    "sorting"
+  ],
+  "statement": "Given an undirected weighted graph and queries asking if a path exists between two nodes with all edges strictly less than a given limit, determine the existence of such paths for each query.",
+  "tags": [
+    "graph",
+    "union-find",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "offline-queries",
+    "union-find",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922532,
+    "pattern_confidence": {
+      "offline-queries": 0.95,
+      "union-find": 0.98,
+      "sorting": 0.9
+    }
+  }
+}

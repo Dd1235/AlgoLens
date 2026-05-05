@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-sequentially-ordinal-rank-tracker",
+  "title": "Sequentially Ordinal Rank Tracker",
+  "slug": "sequentially-ordinal-rank-tracker",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sequentially-ordinal-rank-tracker/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "design",
+    "heap-priority-queue",
+    "data-stream",
+    "ordered-set"
+  ],
+  "statement": "Design a system to add scenic locations with unique names and scores, and on each query return the i-th best location according to score and lexicographical order, where i is the number of queries made so far.",
+  "tags": [
+    "design",
+    "heap",
+    "ordered-set",
+    "data-structure"
+  ],
+  "patterns": [
+    "two-heaps",
+    "balanced-binary-search-tree",
+    "online-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924011,
+    "pattern_confidence": {
+      "two-heaps": 0.95,
+      "balanced-binary-search-tree": 0.9,
+      "online-query": 0.85
+    }
+  }
+}

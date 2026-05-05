@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-cost-to-change-the-final-value-of-expression",
+  "title": "Minimum Cost to Change the Final Value of Expression",
+  "slug": "minimum-cost-to-change-the-final-value-of-expression",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "dynamic-programming",
+    "stack"
+  ],
+  "statement": "Given a valid boolean expression with '1', '0', '&', '|', and parentheses, find the minimum number of operations needed to flip the final evaluated value by changing bits or operators. Operations include flipping bits and swapping '&' with '|'.",
+  "tags": [
+    "string",
+    "dp",
+    "stack",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "expression-parsing",
+    "stack-based-evaluation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923513,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "expression-parsing": 0.9,
+      "stack-based-evaluation": 0.85
+    }
+  }
+}

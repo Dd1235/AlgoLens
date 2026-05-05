@@ -1,0 +1,28 @@
+{
+  "id": "cses-1070",
+  "title": "Permutations",
+  "slug": "permutations",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1070",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Construct a permutation of integers from 1 to n such that no two adjacent elements differ by 1, or determine that no such permutation exists.",
+  "tags": [
+    "math",
+    "permutation",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951255,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

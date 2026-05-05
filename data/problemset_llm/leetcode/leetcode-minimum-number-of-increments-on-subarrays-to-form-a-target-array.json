@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+  "title": "Minimum Number of Increments on Subarrays to Form a Target Array",
+  "slug": "minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "stack",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "statement": "Given a target array, find the minimum number of increment operations on subarrays starting from an all-zero array to form the target array.",
+  "tags": [
+    "array",
+    "greedy",
+    "stack",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "greedy",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923607,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "greedy": 0.9,
+      "contribution-technique": 0.85
+    }
+  }
+}

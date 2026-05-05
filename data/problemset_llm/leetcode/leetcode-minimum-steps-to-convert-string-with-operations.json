@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-steps-to-convert-string-with-operations",
+  "title": "Minimum Steps to Convert String with Operations",
+  "slug": "minimum-steps-to-convert-string-with-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two equal-length strings, transform the first into the second by partitioning into substrings and applying a minimal sequence of replace, swap, and reverse substring operations on each substring.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "interval-dp",
+    "string-transformation",
+    "substring-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923684,
+    "pattern_confidence": {
+      "interval-dp": 0.95,
+      "string-transformation": 0.9,
+      "substring-partitioning": 0.85
+    }
+  }
+}

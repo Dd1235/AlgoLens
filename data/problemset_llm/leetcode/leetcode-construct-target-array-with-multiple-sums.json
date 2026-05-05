@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-construct-target-array-with-multiple-sums",
+  "title": "Construct Target Array With Multiple Sums",
+  "slug": "construct-target-array-with-multiple-sums",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/construct-target-array-with-multiple-sums/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "heap-priority-queue"
+  ],
+  "statement": "Starting from an array of all ones, determine if it is possible to reach a given target array by repeatedly replacing an element with the sum of the current array.",
+  "tags": [
+    "array",
+    "heap",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "max-heap",
+    "reverse-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922561,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "max-heap": 0.9,
+      "reverse-simulation": 0.85
+    }
+  }
+}

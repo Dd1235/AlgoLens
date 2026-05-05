@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-stone-game-viii",
+  "title": "Stone Game VIII",
+  "slug": "stone-game-viii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stone-game-viii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "prefix-sum",
+    "game-theory"
+  ],
+  "statement": "Two players alternately remove a prefix of stones from a row, add the sum to their score, and replace the removed stones with a single stone of that sum. The game ends when one stone remains, and the goal is to find the optimal score difference between the players.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "game-theory",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924123,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dp": 0.9,
+      "game-dp": 0.9
+    }
+  }
+}

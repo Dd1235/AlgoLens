@@ -1,0 +1,31 @@
+{
+  "id": "cses-1192",
+  "title": "Counting Rooms",
+  "slug": "counting-rooms",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1192",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a grid representing a building map with floor and wall cells, count the number of connected floor regions (rooms) reachable via up, down, left, and right moves.",
+  "tags": [
+    "graph",
+    "grid",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "flood-fill",
+    "connected-components",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951450,
+    "pattern_confidence": {
+      "flood-fill": 0.98,
+      "connected-components": 0.95,
+      "grid-traversal": 0.9
+    }
+  }
+}

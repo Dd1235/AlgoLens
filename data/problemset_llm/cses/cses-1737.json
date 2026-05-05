@@ -1,0 +1,30 @@
+{
+  "id": "cses-1737",
+  "title": "Range Queries and Copies",
+  "slug": "range-queries-and-copies",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1737",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Maintain multiple versions of an array supporting point updates, range sum queries, and array copying operations that create new versions.",
+  "tags": [
+    "array",
+    "persistent-data-structure",
+    "segment-tree"
+  ],
+  "patterns": [
+    "persistent-segment-tree",
+    "range-sum-query",
+    "point-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951607,
+    "pattern_confidence": {
+      "persistent-segment-tree": 0.98,
+      "range-sum-query": 0.95,
+      "point-update": 0.9
+    }
+  }
+}

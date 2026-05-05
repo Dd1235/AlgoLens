@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-number-of-days-to-disconnect-island",
+  "title": "Minimum Number of Days to Disconnect Island",
+  "slug": "minimum-number-of-days-to-disconnect-island",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "matrix",
+    "strongly-connected-component"
+  ],
+  "statement": "Given a binary grid representing land and water, determine the minimum number of single-cell changes from land to water required to make the grid disconnected (having zero or multiple islands).",
+  "tags": [
+    "array",
+    "graph",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "connected-components",
+    "grid-dfs",
+    "grid-bfs",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923600,
+    "pattern_confidence": {
+      "connected-components": 0.95,
+      "grid-dfs": 0.9,
+      "grid-bfs": 0.9,
+      "binary-search-answer": 0.8
+    }
+  }
+}

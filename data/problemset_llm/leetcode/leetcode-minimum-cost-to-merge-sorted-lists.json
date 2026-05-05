@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-cost-to-merge-sorted-lists",
+  "title": "Minimum Cost to Merge Sorted Lists",
+  "slug": "minimum-cost-to-merge-sorted-lists",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "statement": "Given multiple sorted lists, repeatedly merge any two lists into one sorted list with a cost defined by their lengths and median difference, and find the minimum total cost to merge all lists into one.",
+  "tags": [
+    "array",
+    "dp",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923533,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "dynamic-programming": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-2426",
+  "title": "Programmers and Artists",
+  "slug": "programmers-and-artists",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2426",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given n applicants each with programming and artistic skill values, select exactly a programmers and b artists to maximize the total sum of their skills.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy-selection",
+    "two-pointer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952193,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy-selection": 0.9,
+      "two-pointer": 0.7
+    }
+  }
+}

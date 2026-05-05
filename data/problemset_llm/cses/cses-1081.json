@@ -1,0 +1,30 @@
+{
+  "id": "cses-1081",
+  "title": "Common Divisors",
+  "slug": "common-divisors",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1081",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given an array of positive integers, find the maximum greatest common divisor (GCD) that can be obtained from any pair of elements in the array.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "counting-divisors",
+    "frequency-array",
+    "gcd"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951660,
+    "pattern_confidence": {
+      "counting-divisors": 0.95,
+      "frequency-array": 0.9,
+      "gcd": 0.98
+    }
+  }
+}

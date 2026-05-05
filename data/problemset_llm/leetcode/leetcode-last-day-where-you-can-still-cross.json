@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-last-day-where-you-can-still-cross",
+  "title": "Last Day Where You Can Still Cross",
+  "slug": "last-day-where-you-can-still-cross",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/last-day-where-you-can-still-cross/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "matrix"
+  ],
+  "statement": "Given a grid where cells become flooded day by day, find the last day when it is still possible to traverse from the top row to the bottom row using only unflooded land cells, moving in four directions.",
+  "tags": [
+    "graph",
+    "union-find",
+    "binary-search",
+    "matrix"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923120,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "grid-traversal": 0.85
+    }
+  }
+}

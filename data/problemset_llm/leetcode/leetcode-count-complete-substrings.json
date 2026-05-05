@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-complete-substrings",
+  "title": "Count Complete Substrings",
+  "slug": "count-complete-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-complete-substrings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a string and an integer k, count the number of substrings where each character appears exactly k times and the absolute difference between adjacent characters' alphabet positions is at most 2.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922587,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

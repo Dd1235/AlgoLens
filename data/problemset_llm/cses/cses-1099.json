@@ -1,0 +1,30 @@
+{
+  "id": "cses-1099",
+  "title": "Stair Game",
+  "slug": "stair-game",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1099",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Two players alternately move balls from stair k (k > 1) to stair k-1 on a staircase with initial ball counts. Determine which player wins if both play optimally.",
+  "tags": [
+    "game-theory",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "grundy-numbers",
+    "nim-game",
+    "combinatorial-game"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951734,
+    "pattern_confidence": {
+      "grundy-numbers": 0.98,
+      "nim-game": 0.95,
+      "combinatorial-game": 0.9
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-k-inverse-pairs-array",
+  "title": "K Inverse Pairs Array",
+  "slug": "k-inverse-pairs-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-inverse-pairs-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of permutations of 1 to n with exactly k inverse pairs, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923088,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.9,
+      "counting": 0.85
+    }
+  }
+}

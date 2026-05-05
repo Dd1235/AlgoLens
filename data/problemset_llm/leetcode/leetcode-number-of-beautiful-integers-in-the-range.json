@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-number-of-beautiful-integers-in-the-range",
+  "title": "Number of Beautiful Integers in the Range",
+  "slug": "number-of-beautiful-integers-in-the-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Count integers within a given range whose number of even digits equals the number of odd digits and that are divisible by a given integer k.",
+  "tags": [
+    "math",
+    "dp",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923760,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.9,
+      "counting": 0.85
+    }
+  }
+}

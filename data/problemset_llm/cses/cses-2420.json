@@ -1,0 +1,30 @@
+{
+  "id": "cses-2420",
+  "title": "Palindrome Queries",
+  "slug": "palindrome-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2420",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, support character updates and queries to check if a substring is a palindrome.",
+  "tags": [
+    "string",
+    "segment-tree",
+    "hashing"
+  ],
+  "patterns": [
+    "segment-tree",
+    "string-hashing",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951761,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "string-hashing": 0.9,
+      "rolling-hash": 0.88
+    }
+  }
+}

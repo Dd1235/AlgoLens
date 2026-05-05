@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-most-common-course-pairs",
+  "title": "Most Common Course Pairs",
+  "slug": "most-common-course-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/most-common-course-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Identify frequent consecutive course pairs completed by top-performing students who have completed at least five courses with an average rating of 4 or higher, based on chronological course completion sequences.",
+  "tags": [
+    "array",
+    "sorting",
+    "hash-map"
+  ],
+  "patterns": [
+    "filtering",
+    "sorting",
+    "frequency-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923730,
+    "pattern_confidence": {
+      "filtering": 0.95,
+      "sorting": 0.9,
+      "frequency-counting": 0.9
+    }
+  }
+}

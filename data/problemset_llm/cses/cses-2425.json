@@ -1,0 +1,27 @@
+{
+  "id": "cses-2425",
+  "title": "Stack Weights",
+  "slug": "stack-weights",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2425",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "You have two initially empty stacks and n coins with strictly increasing weights by their indices. After each move placing a coin onto a stack, determine if one stack is definitely heavier, or if the comparison is uncertain due to unknown exact weights.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "inequality-reasoning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952135,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "inequality-reasoning": 0.85
+    }
+  }
+}

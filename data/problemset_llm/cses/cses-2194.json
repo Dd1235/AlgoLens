@@ -1,0 +1,30 @@
+{
+  "id": "cses-2194",
+  "title": "Minimum Euclidean Distance",
+  "slug": "minimum-euclidean-distance",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2194",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given n distinct points in the plane, find the minimum squared Euclidean distance between any two points.",
+  "tags": [
+    "geometry",
+    "divide-and-conquer",
+    "sorting"
+  ],
+  "patterns": [
+    "closest-pair-of-points",
+    "divide-and-conquer",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951803,
+    "pattern_confidence": {
+      "closest-pair-of-points": 0.98,
+      "divide-and-conquer": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

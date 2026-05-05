@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-sum-of-prefix-scores-of-strings",
+  "title": "Sum of Prefix Scores of Strings",
+  "slug": "sum-of-prefix-scores-of-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-prefix-scores-of-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "trie",
+    "counting"
+  ],
+  "statement": "Given an array of strings, compute for each string the sum of counts of all its non-empty prefixes appearing as prefixes in the array.",
+  "tags": [
+    "array",
+    "string",
+    "trie",
+    "counting"
+  ],
+  "patterns": [
+    "trie",
+    "prefix-counting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924185,
+    "pattern_confidence": {
+      "trie": 0.98,
+      "prefix-counting": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

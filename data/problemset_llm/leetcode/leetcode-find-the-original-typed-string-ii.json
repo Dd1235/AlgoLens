@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-original-typed-string-ii",
+  "title": "Find the Original Typed String II",
+  "slug": "find-the-original-typed-string-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-original-typed-string-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given a string representing the final typed output with possible repeated characters due to long key presses, and an integer k, count the number of possible original strings of length at least k that could produce the given output. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922990,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dp": 0.95,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

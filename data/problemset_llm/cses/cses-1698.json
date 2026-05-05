@@ -1,0 +1,30 @@
+{
+  "id": "cses-1698",
+  "title": "Swap Round Sorting",
+  "slug": "swap-round-sorting",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1698",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a permutation, find the minimum number of rounds to sort it by swapping any number of disjoint pairs per round, and output a valid sequence of swaps for each round.",
+  "tags": [
+    "array",
+    "graph",
+    "permutation"
+  ],
+  "patterns": [
+    "cycle-decomposition",
+    "greedy",
+    "round-based-swapping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952182,
+    "pattern_confidence": {
+      "cycle-decomposition": 0.95,
+      "greedy": 0.9,
+      "round-based-swapping": 0.85
+    }
+  }
+}

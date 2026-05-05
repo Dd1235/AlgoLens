@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-bitwise-and-after-increment-operations",
+  "title": "Maximum Bitwise AND After Increment Operations",
+  "slug": "maximum-bitwise-and-after-increment-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "bit-manipulation",
+    "sorting"
+  ],
+  "statement": "Given an integer array and parameters k and m, perform up to k increments on elements to maximize the bitwise AND of any subset of size m.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "bitmask",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923293,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9,
+      "bitmask": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

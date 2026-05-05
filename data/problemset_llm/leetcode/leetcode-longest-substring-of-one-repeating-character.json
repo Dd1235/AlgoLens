@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-substring-of-one-repeating-character",
+  "title": "Longest Substring of One Repeating Character",
+  "slug": "longest-substring-of-one-repeating-character",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-substring-of-one-repeating-character/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "statement": "Given a string and a sequence of character update queries, after each update, return the length of the longest substring consisting of a single repeating character.",
+  "tags": [
+    "string",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "patterns": [
+    "segment-tree",
+    "range-query",
+    "dynamic-updates"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923189,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "range-query": 0.9,
+      "dynamic-updates": 0.85
+    }
+  }
+}

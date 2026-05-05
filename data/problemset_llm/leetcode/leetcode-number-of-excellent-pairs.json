@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-excellent-pairs",
+  "title": "Number of Excellent Pairs",
+  "slug": "number-of-excellent-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-excellent-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of positive integers and a threshold k, count the number of distinct pairs (num1, num2) from the array such that the sum of set bits in (num1 AND num2) and (num1 OR num2) is at least k.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "hash-map"
+  ],
+  "patterns": [
+    "bit-counting",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923773,
+    "pattern_confidence": {
+      "bit-counting": 0.98,
+      "two-pointers": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

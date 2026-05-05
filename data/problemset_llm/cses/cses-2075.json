@@ -1,0 +1,27 @@
+{
+  "id": "cses-2075",
+  "title": "Reversal Sorting",
+  "slug": "reversal-sorting",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2075",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a permutation of integers from 1 to n, sort the array into increasing order by performing at most n subarray reversals, and output the sequence of reversals used.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952210,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.7
+    }
+  }
+}

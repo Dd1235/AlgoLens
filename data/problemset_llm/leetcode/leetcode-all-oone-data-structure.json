@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-all-oone-data-structure",
+  "title": "All O`one Data Structure",
+  "slug": "all-oone-data-structure",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/all-oone-data-structure/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "linked-list",
+    "design",
+    "doubly-linked-list"
+  ],
+  "statement": "Design a data structure that supports incrementing and decrementing string counts, and retrieving a key with the maximum or minimum count, all in average O(1) time.",
+  "tags": [
+    "hash-table",
+    "linked-list",
+    "design",
+    "doubly-linked-list"
+  ],
+  "patterns": [
+    "hash-map-lookup",
+    "doubly-linked-list",
+    "constant-time-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922440,
+    "pattern_confidence": {
+      "hash-map-lookup": 0.95,
+      "doubly-linked-list": 0.9,
+      "constant-time-operations": 0.9
+    }
+  }
+}

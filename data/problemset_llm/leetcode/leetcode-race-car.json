@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-race-car",
+  "title": "Race Car",
+  "slug": "race-car",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/race-car/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Given a target position on an infinite number line, find the minimum length of a sequence of accelerate and reverse instructions to reach that position starting from zero with initial speed +1.",
+  "tags": [
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "state-compression",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923947,
+    "pattern_confidence": {
+      "breadth-first-search": 0.9,
+      "state-compression": 0.85,
+      "dp": 0.8
+    }
+  }
+}

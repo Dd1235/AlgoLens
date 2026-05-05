@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-super-palindromes",
+  "title": "Super Palindromes",
+  "slug": "super-palindromes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/super-palindromes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string",
+    "enumeration"
+  ],
+  "statement": "Count the number of integers within a given range that are palindromes and whose square roots are also palindromes.",
+  "tags": [
+    "math",
+    "string",
+    "enumeration"
+  ],
+  "patterns": [
+    "palindrome-check",
+    "enumeration",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924199,
+    "pattern_confidence": {
+      "palindrome-check": 0.98,
+      "enumeration": 0.9,
+      "binary-search-answer": 0.7
+    }
+  }
+}

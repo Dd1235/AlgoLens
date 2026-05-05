@@ -1,0 +1,32 @@
+{
+  "id": "cses-1188",
+  "title": "Bit Inversions",
+  "slug": "bit-inversions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1188",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a bit string, process a sequence of bit-flip operations and after each flip, report the length of the longest contiguous substring of identical bits.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "binary-indexed-tree",
+    "range-query",
+    "point-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952148,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "binary-indexed-tree": 0.85,
+      "range-query": 0.9,
+      "point-update": 0.9
+    }
+  }
+}

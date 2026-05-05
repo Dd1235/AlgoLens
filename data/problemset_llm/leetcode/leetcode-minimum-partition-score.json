@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-partition-score",
+  "title": "Minimum Partition Score",
+  "slug": "minimum-partition-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-partition-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "queue",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Partition an integer array into exactly k subarrays to minimize the sum of each subarray's value, where the value is defined as sumArr * (sumArr + 1) / 2 for the subarray sum.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "prefix-sum",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923664,
+    "pattern_confidence": {
+      "dp-on-dag": 0.9,
+      "prefix-sum": 0.95,
+      "interval-dp": 0.85
+    }
+  }
+}

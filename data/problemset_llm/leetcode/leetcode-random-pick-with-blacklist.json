@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-random-pick-with-blacklist",
+  "title": "Random Pick with Blacklist",
+  "slug": "random-pick-with-blacklist",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/random-pick-with-blacklist/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "binary-search",
+    "sorting",
+    "randomized"
+  ],
+  "statement": "Design a data structure to efficiently pick a random integer from [0, n-1] excluding a given blacklist, ensuring uniform probability among allowed numbers and minimizing calls to the random function.",
+  "tags": [
+    "array",
+    "hash-map",
+    "randomization"
+  ],
+  "patterns": [
+    "mapping-technique",
+    "random-sampling",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923949,
+    "pattern_confidence": {
+      "mapping-technique": 0.95,
+      "random-sampling": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

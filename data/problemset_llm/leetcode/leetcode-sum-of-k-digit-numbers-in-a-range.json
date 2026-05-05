@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sum-of-k-digit-numbers-in-a-range",
+  "title": "Sum of K-Digit Numbers in a Range",
+  "slug": "sum-of-k-digit-numbers-in-a-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-k-digit-numbers-in-a-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "divide-and-conquer",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Calculate the sum of all k-digit numbers formed by digits chosen independently from the range [l, r], including leading zeros if 0 is in the range, and return the result modulo 10^9+7.",
+  "tags": [
+    "math",
+    "modular-arithmetic",
+    "combinatorics"
+  ],
+  "patterns": [
+    "modular-exponentiation",
+    "fast-exponentiation",
+    "combinatorial-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924178,
+    "pattern_confidence": {
+      "modular-exponentiation": 0.95,
+      "fast-exponentiation": 0.9,
+      "combinatorial-sum": 0.85
+    }
+  }
+}

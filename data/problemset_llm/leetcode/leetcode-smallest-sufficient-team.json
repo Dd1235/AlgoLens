@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-smallest-sufficient-team",
+  "title": "Smallest Sufficient Team",
+  "slug": "smallest-sufficient-team",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-sufficient-team/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given a list of required skills and a list of people with their skills, find the smallest team of people covering all required skills.",
+  "tags": [
+    "array",
+    "bitmask",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "subset-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924091,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "subset-dp": 0.9
+    }
+  }
+}

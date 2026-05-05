@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-prefix-and-suffix-pairs-ii",
+  "title": "Count Prefix and Suffix Pairs II",
+  "slug": "count-prefix-and-suffix-pairs-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-prefix-and-suffix-pairs-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "trie",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Given an array of strings, count the number of pairs (i, j) with i < j such that the string at index i is both a prefix and a suffix of the string at index j.",
+  "tags": [
+    "array",
+    "string",
+    "trie",
+    "hashing"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "string-matching",
+    "prefix-suffix-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922666,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "string-matching": 0.9,
+      "prefix-suffix-check": 0.85
+    }
+  }
+}

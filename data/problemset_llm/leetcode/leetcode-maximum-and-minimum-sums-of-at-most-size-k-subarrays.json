@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-and-minimum-sums-of-at-most-size-k-subarrays",
+  "title": "Maximum and Minimum Sums of at Most Size K Subarrays",
+  "slug": "maximum-and-minimum-sums-of-at-most-size-k-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-and-minimum-sums-of-at-most-size-k-subarrays/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an integer array and a positive integer k, compute the sum of the maximum and minimum elements of all subarrays with length at most k.",
+  "tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "sliding-window",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923284,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "sliding-window": 0.9,
+      "contribution-technique": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-good-people-based-on-statements",
+  "title": "Maximum Good People Based on Statements",
+  "slug": "maximum-good-people-based-on-statements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-good-people-based-on-statements/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "enumeration"
+  ],
+  "statement": "Given statements made by n people about each other being good or bad, determine the maximum number of people who can be good without contradictions. Each person either always tells the truth (good) or may lie (bad).",
+  "tags": [
+    "array",
+    "bitmask",
+    "backtracking"
+  ],
+  "patterns": [
+    "bitmask-enumeration",
+    "backtracking",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923324,
+    "pattern_confidence": {
+      "bitmask-enumeration": 0.95,
+      "backtracking": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

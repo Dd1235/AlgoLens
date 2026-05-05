@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-handling-sum-queries-after-update",
+  "title": "Handling Sum Queries After Update",
+  "slug": "handling-sum-queries-after-update",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/handling-sum-queries-after-update/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "segment-tree"
+  ],
+  "statement": "Given two arrays and a sequence of queries that flip bits in the first array over a range, add scaled values of the first array to the second, and request sums of the second array, efficiently process all queries and return the results of sum queries.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "lazy-propagation"
+  ],
+  "patterns": [
+    "segment-tree",
+    "lazy-propagation",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923066,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "lazy-propagation": 0.95,
+      "range-update": 0.9,
+      "range-query": 0.9
+    }
+  }
+}

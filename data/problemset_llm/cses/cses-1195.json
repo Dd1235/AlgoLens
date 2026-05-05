@@ -1,0 +1,28 @@
+{
+  "id": "cses-1195",
+  "title": "Flight Discount",
+  "slug": "flight-discount",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1195",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Find the minimum cost path from city 1 to city n in a directed graph where one flight's cost can be halved using a single discount coupon.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dijkstra"
+  ],
+  "patterns": [
+    "modified-dijkstra",
+    "state-augmentation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951479,
+    "pattern_confidence": {
+      "modified-dijkstra": 0.95,
+      "state-augmentation": 0.9
+    }
+  }
+}

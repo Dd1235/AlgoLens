@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-subarrays-with-score-less-than-k",
+  "title": "Count Subarrays With Score Less Than K",
+  "slug": "count-subarrays-with-score-less-than-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-subarrays-with-score-less-than-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of positive integers and a threshold k, count the number of contiguous subarrays whose sum multiplied by their length is strictly less than k.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922692,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "prefix-sum": 0.9,
+      "two-pointers": 0.9
+    }
+  }
+}

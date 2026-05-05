@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-reverse-operations",
+  "title": "Minimum Reverse Operations",
+  "slug": "minimum-reverse-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-reverse-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "breadth-first-search",
+    "union-find",
+    "ordered-set"
+  ],
+  "statement": "Given an array with a single 1 at position p and banned positions, find the minimum number of fixed-size subarray reverse operations needed to move the 1 to each position, or -1 if impossible.",
+  "tags": [
+    "array",
+    "graph",
+    "breadth-first-search",
+    "ordered-set"
+  ],
+  "patterns": [
+    "bfs",
+    "graph-representation",
+    "state-space-search",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923672,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "graph-representation": 0.9,
+      "state-space-search": 0.88,
+      "ordered-set": 0.75
+    }
+  }
+}

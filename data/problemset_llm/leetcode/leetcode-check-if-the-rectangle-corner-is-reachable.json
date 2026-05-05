@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-check-if-the-rectangle-corner-is-reachable",
+  "title": "Check if the Rectangle Corner Is Reachable",
+  "slug": "check-if-the-rectangle-corner-is-reachable",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "geometry"
+  ],
+  "statement": "Determine if there exists a path from the bottom-left to the top-right corner of a rectangle that stays inside the rectangle, avoids all given circles, and only touches the rectangle at the corners.",
+  "tags": [
+    "geometry",
+    "graph",
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "union-find",
+    "connected-components",
+    "graph-traversal",
+    "obstacle-avoidance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922526,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "connected-components": 0.9,
+      "graph-traversal": 0.9,
+      "obstacle-avoidance": 0.85
+    }
+  }
+}

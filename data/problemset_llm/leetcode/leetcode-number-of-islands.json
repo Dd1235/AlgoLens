@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-islands",
+  "title": "Number of Islands",
+  "slug": "number-of-islands",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-islands/",
+  "source_topic": "LeetCode / Graphs",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "matrix"
+  ],
+  "statement": "Given a 2D grid of '1's (land) and '0's (water), count the number of connected islands formed by adjacent horizontal or vertical lands.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "dfs",
+    "bfs",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922394,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "bfs": 0.97,
+      "union-find": 0.95
+    }
+  }
+}

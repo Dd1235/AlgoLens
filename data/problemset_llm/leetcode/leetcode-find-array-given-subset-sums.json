@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-array-given-subset-sums",
+  "title": "Find Array Given Subset Sums",
+  "slug": "find-array-given-subset-sums",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-array-given-subset-sums/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sorting",
+    "counting"
+  ],
+  "statement": "Given all 2^n subset sums of an unknown integer array of length n, reconstruct any valid original array that produces these subset sums.",
+  "tags": [
+    "array",
+    "sorting",
+    "backtracking",
+    "hash-map"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "sorting",
+    "hash-map-lookup",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922877,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "sorting": 0.95,
+      "hash-map-lookup": 0.85,
+      "backtracking": 0.8
+    }
+  }
+}

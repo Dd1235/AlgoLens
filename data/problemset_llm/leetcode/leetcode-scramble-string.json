@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-scramble-string",
+  "title": "Scramble String",
+  "slug": "scramble-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/scramble-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings of equal length, determine if one can be transformed into the other by recursively splitting and optionally swapping substrings.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "recursion"
+  ],
+  "patterns": [
+    "top-down-dp",
+    "memoization",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924000,
+    "pattern_confidence": {
+      "top-down-dp": 0.95,
+      "memoization": 0.9,
+      "divide-and-conquer": 0.85
+    }
+  }
+}

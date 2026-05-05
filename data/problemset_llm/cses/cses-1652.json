@@ -1,0 +1,30 @@
+{
+  "id": "cses-1652",
+  "title": "Forest Queries",
+  "slug": "forest-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1652",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an n by n grid representing a forest with trees and empty squares, answer multiple queries asking for the number of trees inside specified rectangular subregions.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "2d-array"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "2d-prefix-sum",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951564,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "2d-prefix-sum": 0.97,
+      "range-query": 0.9
+    }
+  }
+}

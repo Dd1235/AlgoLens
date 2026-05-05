@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-smallest-missing-genetic-value-in-each-subtree",
+  "title": "Smallest Missing Genetic Value in Each Subtree",
+  "slug": "smallest-missing-genetic-value-in-each-subtree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "union-find"
+  ],
+  "statement": "Given a rooted tree with distinct genetic values assigned to each node, find for every node the smallest positive integer missing from its subtree.",
+  "tags": [
+    "tree",
+    "array",
+    "dfs",
+    "union-find"
+  ],
+  "patterns": [
+    "dfs",
+    "union-find",
+    "smallest-missing-element",
+    "subtree-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924076,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "union-find": 0.85,
+      "smallest-missing-element": 0.9,
+      "subtree-query": 0.88
+    }
+  }
+}

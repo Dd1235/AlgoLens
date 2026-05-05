@@ -1,0 +1,30 @@
+{
+  "id": "cses-3423",
+  "title": "Permutation Prime Sums",
+  "slug": "permutation-prime-sums",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3423",
+  "source_topic": "CSES / Construction Problems",
+  "source_tags": [],
+  "statement": "Given an integer n, construct two permutations of size n such that the sum of corresponding elements is always a prime number, or determine that no such permutations exist.",
+  "tags": [
+    "permutation",
+    "number-theory",
+    "construction"
+  ],
+  "patterns": [
+    "prime-checking",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951959,
+    "pattern_confidence": {
+      "prime-checking": 0.95,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

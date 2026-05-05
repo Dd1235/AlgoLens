@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-points-activated-with-one-addition",
+  "title": "Maximum Points Activated with One Addition",
+  "slug": "maximum-points-activated-with-one-addition",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-points-activated-with-one-addition/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "union-find"
+  ],
+  "statement": "Given distinct points on a 2D plane, you can add one new point to activate it and all points sharing its x or y coordinate, continuing activation transitively. Determine the maximum number of points that can be activated including the added point.",
+  "tags": [
+    "graph",
+    "union-find",
+    "array"
+  ],
+  "patterns": [
+    "union-find",
+    "connected-components",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923372,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "connected-components": 0.95,
+      "graph-construction": 0.9
+    }
+  }
+}

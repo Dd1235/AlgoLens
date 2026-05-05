@@ -1,0 +1,30 @@
+{
+  "id": "cses-2115",
+  "title": "Bit Substrings",
+  "slug": "bit-substrings",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2115",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a binary string, count the number of non-empty substrings containing exactly k ones for all k from 0 to n, where n is the string length.",
+  "tags": [
+    "string",
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952208,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.85,
+      "combinatorics": 0.8
+    }
+  }
+}

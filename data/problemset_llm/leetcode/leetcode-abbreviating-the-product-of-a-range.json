@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-abbreviating-the-product-of-a-range",
+  "title": "Abbreviating the Product of a Range",
+  "slug": "abbreviating-the-product-of-a-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/abbreviating-the-product-of-a-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "number-theory"
+  ],
+  "statement": "Compute the product of all integers in a given inclusive range, remove trailing zeros, and return an abbreviated string representation showing leading and trailing digits along with the count of removed zeros.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "logarithmic-computation",
+    "digit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922435,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.9,
+      "logarithmic-computation": 0.85,
+      "digit-manipulation": 0.8
+    }
+  }
+}

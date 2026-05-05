@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-number-of-possible-root-nodes",
+  "title": "Count Number of Possible Root Nodes",
+  "slug": "count-number-of-possible-root-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-possible-root-nodes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree and a list of guesses about parent-child relationships, determine how many nodes can be chosen as the root so that at least k guesses are correct.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "dfs",
+    "rerooting-dp",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922636,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "rerooting-dp": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1194",
+  "title": "Monsters",
+  "slug": "monsters",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1194",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a grid with walls, monsters, and a start position, determine if there exists a path from the start to any boundary cell without ever occupying the same cell as a monster, assuming monsters move simultaneously and optimally. If such a path exists, output one valid route.",
+  "tags": [
+    "graph",
+    "bfs",
+    "grid"
+  ],
+  "patterns": [
+    "multi-source-bfs",
+    "shortest-path",
+    "path-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951469,
+    "pattern_confidence": {
+      "multi-source-bfs": 0.98,
+      "shortest-path": 0.95,
+      "path-reconstruction": 0.9
+    }
+  }
+}

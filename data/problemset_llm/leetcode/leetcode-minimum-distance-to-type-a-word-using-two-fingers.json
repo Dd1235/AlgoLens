@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-distance-to-type-a-word-using-two-fingers",
+  "title": "Minimum Distance to Type a Word Using Two Fingers",
+  "slug": "minimum-distance-to-type-a-word-using-two-fingers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string and a keyboard layout with coordinates for each letter, find the minimum total Manhattan distance to type the word using two fingers starting from any positions.",
+  "tags": [
+    "string",
+    "dp",
+    "geometry"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "manhattan-distance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923560,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.9,
+      "manhattan-distance": 0.85
+    }
+  }
+}

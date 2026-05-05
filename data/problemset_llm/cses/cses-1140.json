@@ -1,0 +1,30 @@
+{
+  "id": "cses-1140",
+  "title": "Projects",
+  "slug": "projects",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1140",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a list of projects each with a start day, end day, and reward, find the maximum total reward achievable by attending non-overlapping projects.",
+  "tags": [
+    "dp",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interval-scheduling",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951434,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "interval-scheduling": 0.9,
+      "dynamic-programming": 0.9
+    }
+  }
+}

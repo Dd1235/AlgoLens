@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-the-skyline-problem",
+  "title": "The Skyline Problem",
+  "slug": "the-skyline-problem",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-skyline-problem/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "line-sweep",
+    "sorting",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "statement": "Given a list of buildings represented by their left and right x-coordinates and heights, compute the skyline formed by these buildings as a list of key points representing the outer contour.",
+  "tags": [
+    "array",
+    "geometry",
+    "heap",
+    "sorting"
+  ],
+  "patterns": [
+    "line-sweep",
+    "heap-priority-queue",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924227,
+    "pattern_confidence": {
+      "line-sweep": 0.98,
+      "heap-priority-queue": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

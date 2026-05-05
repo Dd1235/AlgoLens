@@ -1,0 +1,29 @@
+{
+  "id": "cses-2087",
+  "title": "Houses and Schools",
+  "slug": "houses-and-schools",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2087",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a street with houses each having a number of children, place k schools in houses to minimize the total walking distance children travel to their nearest school.",
+  "tags": [
+    "array",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "knuth-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951862,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.9,
+      "knuth-optimization": 0.85
+    }
+  }
+}

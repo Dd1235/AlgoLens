@@ -1,0 +1,30 @@
+{
+  "id": "cses-3216",
+  "title": "Bouncing Ball Cycle",
+  "slug": "bouncing-ball-cycle",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3216",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "A ball moves diagonally on an n by m grid, bouncing off edges by reversing direction. Determine after how many steps it returns to the start and how many distinct cells it visits.",
+  "tags": [
+    "math",
+    "geometry",
+    "simulation"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "simulation",
+    "gcd"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952167,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "simulation": 0.9,
+      "gcd": 0.85
+    }
+  }
+}

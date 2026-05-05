@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-largest-component-size-by-common-factor",
+  "title": "Largest Component Size by Common Factor",
+  "slug": "largest-component-size-by-common-factor",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-component-size-by-common-factor/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "union-find",
+    "number-theory"
+  ],
+  "statement": "Given an array of unique positive integers, build a graph where edges connect numbers sharing a common factor greater than 1, and find the size of the largest connected component in this graph.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "number-theory"
+  ],
+  "patterns": [
+    "union-find",
+    "prime-factorization",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923114,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "prime-factorization": 0.95,
+      "graph-construction": 0.9
+    }
+  }
+}

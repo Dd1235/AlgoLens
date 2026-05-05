@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-trionic-array-ii",
+  "title": "Trionic Array II",
+  "slug": "trionic-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/trionic-array-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Find the maximum sum of a contiguous subarray that can be partitioned into three parts: strictly increasing, then strictly decreasing, then strictly increasing segments.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924262,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dp": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

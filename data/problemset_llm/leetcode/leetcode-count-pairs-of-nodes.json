@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-count-pairs-of-nodes",
+  "title": "Count Pairs Of Nodes",
+  "slug": "count-pairs-of-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-pairs-of-nodes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "binary-search",
+    "graph",
+    "sorting",
+    "counting"
+  ],
+  "statement": "Given an undirected graph and queries, count the number of node pairs whose combined incident edge count exceeds each query value.",
+  "tags": [
+    "graph",
+    "array",
+    "counting",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922657,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "two-pointers": 0.88
+    }
+  }
+}

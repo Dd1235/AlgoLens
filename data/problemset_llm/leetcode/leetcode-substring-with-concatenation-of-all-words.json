@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-substring-with-concatenation-of-all-words",
+  "title": "Substring with Concatenation of All Words",
+  "slug": "substring-with-concatenation-of-all-words",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a string and a list of equal-length words, find all starting indices of substrings in the string that are concatenations of all words in any order without intervening characters.",
+  "tags": [
+    "string",
+    "hash-map",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map-lookup",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924157,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "hash-map-lookup": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

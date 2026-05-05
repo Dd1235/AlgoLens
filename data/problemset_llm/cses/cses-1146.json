@@ -1,0 +1,30 @@
+{
+  "id": "cses-1146",
+  "title": "Counting Bits",
+  "slug": "counting-bits",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1146",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Count the total number of set bits (ones) in the binary representations of all integers from 1 up to a given number n.",
+  "tags": [
+    "bitwise",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "bit-counting",
+    "divide-and-conquer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951927,
+    "pattern_confidence": {
+      "bit-counting": 0.98,
+      "divide-and-conquer": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

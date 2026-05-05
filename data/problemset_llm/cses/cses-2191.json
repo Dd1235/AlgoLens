@@ -1,0 +1,28 @@
+{
+  "id": "cses-2191",
+  "title": "Polygon Area",
+  "slug": "polygon-area",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2191",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Calculate twice the area of a simple polygon given its vertices in order using their coordinates.",
+  "tags": [
+    "geometry",
+    "math",
+    "polygon"
+  ],
+  "patterns": [
+    "shoelace-formula",
+    "coordinate-geometry"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951795,
+    "pattern_confidence": {
+      "shoelace-formula": 0.98,
+      "coordinate-geometry": 0.9
+    }
+  }
+}

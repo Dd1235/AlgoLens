@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-atoms",
+  "title": "Number of Atoms",
+  "slug": "number-of-atoms",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-atoms/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "stack",
+    "sorting"
+  ],
+  "statement": "Given a chemical formula string with nested parentheses and element counts, compute the total count of each atom and return them sorted by element name with counts.",
+  "tags": [
+    "string",
+    "stack",
+    "hash-map",
+    "parsing"
+  ],
+  "patterns": [
+    "stack",
+    "parsing",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923756,
+    "pattern_confidence": {
+      "stack": 0.98,
+      "parsing": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

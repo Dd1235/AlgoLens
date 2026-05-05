@@ -1,0 +1,30 @@
+{
+  "id": "cses-1625",
+  "title": "Grid Path Description",
+  "slug": "grid-path-description",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1625",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Count the number of valid paths on a 7x7 grid from the top-left to the bottom-left corner that match a given 48-character path description containing directions and wildcards.",
+  "tags": [
+    "grid",
+    "backtracking",
+    "dfs"
+  ],
+  "patterns": [
+    "backtracking",
+    "dfs",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951306,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "dfs": 0.95,
+      "pruning": 0.85
+    }
+  }
+}

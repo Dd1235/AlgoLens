@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-construct-2d-grid-matching-graph-layout",
+  "title": "Construct 2D Grid Matching Graph Layout",
+  "slug": "construct-2d-grid-matching-graph-layout",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/construct-2d-grid-matching-graph-layout/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "graph",
+    "matrix"
+  ],
+  "statement": "Given an undirected graph that forms a valid 2D grid layout, reconstruct a 2D grid placing all nodes so that adjacent nodes in the grid correspond exactly to edges in the graph.",
+  "tags": [
+    "graph",
+    "array",
+    "matrix"
+  ],
+  "patterns": [
+    "graph-construction",
+    "bfs",
+    "grid-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922557,
+    "pattern_confidence": {
+      "graph-construction": 0.95,
+      "bfs": 0.85,
+      "grid-reconstruction": 0.9
+    }
+  }
+}

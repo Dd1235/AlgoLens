@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-smallest-k-length-subsequence-with-occurrences-of-a-letter",
+  "title": "Smallest K-Length Subsequence With Occurrences of a Letter",
+  "slug": "smallest-k-length-subsequence-with-occurrences-of-a-letter",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "stack",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "statement": "Find the lexicographically smallest subsequence of length k from a given string that contains at least a specified number of occurrences of a given letter.",
+  "tags": [
+    "string",
+    "greedy",
+    "stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924073,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

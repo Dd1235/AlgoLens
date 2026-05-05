@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-common-suffix-queries",
+  "title": "Longest Common Suffix Queries",
+  "slug": "longest-common-suffix-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-common-suffix-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "trie"
+  ],
+  "statement": "Given two lists of strings, for each query string find the index of the string in the container that shares the longest common suffix, preferring shorter strings and earlier occurrences in ties.",
+  "tags": [
+    "string",
+    "trie",
+    "array"
+  ],
+  "patterns": [
+    "trie",
+    "string-reversal",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923162,
+    "pattern_confidence": {
+      "trie": 0.95,
+      "string-reversal": 0.9,
+      "lexicographic-order": 0.7
+    }
+  }
+}

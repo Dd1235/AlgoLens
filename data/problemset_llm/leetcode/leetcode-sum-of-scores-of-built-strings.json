@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-sum-of-scores-of-built-strings",
+  "title": "Sum of Scores of Built Strings",
+  "slug": "sum-of-scores-of-built-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-scores-of-built-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "binary-search",
+    "rolling-hash",
+    "suffix-array",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Given a string, for each prefix formed by prepending characters, compute the length of the longest common prefix with the entire string and return the sum of these lengths.",
+  "tags": [
+    "string",
+    "prefix",
+    "hashing"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "longest-common-prefix",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924188,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "longest-common-prefix": 0.9,
+      "string-matching": 0.85
+    }
+  }
+}

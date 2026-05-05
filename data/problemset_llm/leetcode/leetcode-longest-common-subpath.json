@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-longest-common-subpath",
+  "title": "Longest Common Subpath",
+  "slug": "longest-common-subpath",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-common-subpath/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "rolling-hash",
+    "suffix-array",
+    "hash-function"
+  ],
+  "statement": "Given multiple paths represented as sequences of city visits, find the length of the longest contiguous subpath common to all paths.",
+  "tags": [
+    "array",
+    "string",
+    "hashing",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "rolling-hash",
+    "hash-function",
+    "substring-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923158,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "rolling-hash": 0.93,
+      "hash-function": 0.9,
+      "substring-search": 0.88
+    }
+  }
+}

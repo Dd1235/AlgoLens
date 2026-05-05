@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-number-of-increasing-paths-in-a-grid",
+  "title": "Number of Increasing Paths in a Grid",
+  "slug": "number-of-increasing-paths-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort",
+    "memoization",
+    "matrix"
+  ],
+  "statement": "Given a matrix, count the number of strictly increasing paths starting and ending at any cell, moving only to adjacent cells in four directions, with results modulo 10^9+7.",
+  "tags": [
+    "array",
+    "graph",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "patterns": [
+    "dfs",
+    "topological-sort",
+    "dp-on-dag",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923782,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "topological-sort": 0.9,
+      "dp-on-dag": 0.92,
+      "memoization": 0.9
+    }
+  }
+}

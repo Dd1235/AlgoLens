@@ -1,0 +1,27 @@
+{
+  "id": "cses-2168",
+  "title": "Nested Ranges Check",
+  "slug": "nested-ranges-check",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2168",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given n distinct ranges, determine for each range whether it contains another range and whether it is contained by another range.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951351,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "two-pointers": 0.85
+    }
+  }
+}

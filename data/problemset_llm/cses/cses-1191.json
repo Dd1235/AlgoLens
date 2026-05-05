@@ -1,0 +1,27 @@
+{
+  "id": "cses-1191",
+  "title": "Cyclic Array",
+  "slug": "cyclic-array",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1191",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a cyclic array and a limit k, partition the array into the minimum number of contiguous subarrays such that each subarray's sum does not exceed k.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952159,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "cses-1654",
+  "title": "SOS Bit Problem",
+  "slug": "sos-bit-problem",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1654",
+  "source_topic": "CSES / Bitwise Operations",
+  "source_tags": [],
+  "statement": "Given a list of integers, compute for each element the count of elements y satisfying three bitwise conditions: x divides y, x bitwise-and y equals x, and x bitwise-and y is nonzero.",
+  "tags": [
+    "array",
+    "bitwise"
+  ],
+  "patterns": [
+    "bitmask",
+    "prefix-sum",
+    "fast-zeta-transform"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951947,
+    "pattern_confidence": {
+      "bitmask": 0.95,
+      "prefix-sum": 0.85,
+      "fast-zeta-transform": 0.9
+    }
+  }
+}

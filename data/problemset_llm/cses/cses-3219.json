@@ -1,0 +1,30 @@
+{
+  "id": "cses-3219",
+  "title": "Sliding Window Mex",
+  "slug": "sliding-window-mex",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3219",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given an array and a window size k, compute the minimum excluded value (mex) for every contiguous subarray of length k.",
+  "tags": [
+    "array",
+    "sliding-window",
+    "data-structure"
+  ],
+  "patterns": [
+    "sliding-window",
+    "ordered-set",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951900,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "ordered-set": 0.85,
+      "hash-map-lookup": 0.8
+    }
+  }
+}

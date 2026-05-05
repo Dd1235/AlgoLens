@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-anagrams",
+  "title": "Count Anagrams",
+  "slug": "count-anagrams",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-anagrams/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "combinatorics",
+    "counting"
+  ],
+  "statement": "Given a string of words separated by spaces, count the number of distinct anagrams where each word is independently permuted. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "math",
+    "combinatorics",
+    "hash-map"
+  ],
+  "patterns": [
+    "factorial-precomputation",
+    "modular-arithmetic",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922576,
+    "pattern_confidence": {
+      "factorial-precomputation": 0.95,
+      "modular-arithmetic": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

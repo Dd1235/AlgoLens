@@ -1,0 +1,28 @@
+{
+  "id": "cses-1636",
+  "title": "Coin Combinations II",
+  "slug": "coin-combinations-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1636",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a set of distinct coin denominations and a target sum, count the number of ordered sequences of coins that sum up to the target value, modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "combinatorics",
+    "array"
+  ],
+  "patterns": [
+    "dp-on-sequences",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951396,
+    "pattern_confidence": {
+      "dp-on-sequences": 0.98,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

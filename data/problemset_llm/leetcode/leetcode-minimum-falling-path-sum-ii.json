@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-falling-path-sum-ii",
+  "title": "Minimum Falling Path Sum II",
+  "slug": "minimum-falling-path-sum-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-falling-path-sum-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given an n x n integer matrix, find the minimum sum of a falling path selecting one element from each row such that no two chosen elements in adjacent rows share the same column.",
+  "tags": [
+    "array",
+    "matrix",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923570,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

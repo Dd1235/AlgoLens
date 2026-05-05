@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-maximum-xor-score-subarray-queries",
+  "title": "Maximum XOR Score Subarray Queries",
+  "slug": "maximum-xor-score-subarray-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-xor-score-subarray-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array and multiple queries specifying subarray ranges, find the maximum XOR score of any subarray within each specified range, where the XOR score is defined by repeatedly XORing adjacent elements until one remains.",
+  "tags": [
+    "array",
+    "prefix-xor",
+    "query"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "offline-queries",
+    "binary-trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923467,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "offline-queries": 0.85,
+      "binary-trie": 0.8
+    }
+  }
+}

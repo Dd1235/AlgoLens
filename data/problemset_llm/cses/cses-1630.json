@@ -1,0 +1,28 @@
+{
+  "id": "cses-1630",
+  "title": "Tasks and Deadlines",
+  "slug": "tasks-and-deadlines",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1630",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given tasks with durations and deadlines processed sequentially from time zero, find the order that maximizes the sum of deadline minus finishing time rewards.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951361,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95
+    }
+  }
+}

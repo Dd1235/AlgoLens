@@ -1,0 +1,30 @@
+{
+  "id": "cses-2182",
+  "title": "Divisor Analysis",
+  "slug": "divisor-analysis",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2182",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given the prime factorization of a number, compute the count, sum, and product of all its divisors modulo 10^9+7.",
+  "tags": [
+    "math",
+    "number-theory",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "modular-exponentiation",
+    "prime-factorization",
+    "fast-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951667,
+    "pattern_confidence": {
+      "modular-exponentiation": 0.98,
+      "prime-factorization": 0.95,
+      "fast-exponentiation": 0.9
+    }
+  }
+}

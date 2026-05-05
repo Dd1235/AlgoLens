@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-number-of-stable-subsequences",
+  "title": "Number of Stable Subsequences",
+  "slug": "number-of-stable-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-stable-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of subsequences in an integer array that do not contain three consecutive elements with the same parity, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923802,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

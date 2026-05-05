@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-reconstruct-itinerary",
+  "title": "Reconstruct Itinerary",
+  "slug": "reconstruct-itinerary",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reconstruct-itinerary/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "depth-first-search",
+    "graph",
+    "sorting",
+    "heap-priority-queue",
+    "eulerian-circuit"
+  ],
+  "statement": "Given a list of flight tickets represented as departure and arrival airport pairs, reconstruct the itinerary starting from \"JFK\" that uses all tickets exactly once and is lexicographically smallest among all valid itineraries.",
+  "tags": [
+    "graph",
+    "string",
+    "heap",
+    "dfs"
+  ],
+  "patterns": [
+    "eulerian-path",
+    "hierholzer-algorithm",
+    "lexicographical-order",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923964,
+    "pattern_confidence": {
+      "eulerian-path": 0.98,
+      "hierholzer-algorithm": 0.95,
+      "lexicographical-order": 0.9,
+      "priority-queue": 0.85
+    }
+  }
+}

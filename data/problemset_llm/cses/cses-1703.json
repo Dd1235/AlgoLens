@@ -1,0 +1,30 @@
+{
+  "id": "cses-1703",
+  "title": "Critical Cities",
+  "slug": "critical-cities",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1703",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a directed graph with flights from city 1 to city n, identify all cities that lie on every possible route from city 1 to city n (critical cities).",
+  "tags": [
+    "graph",
+    "strongly-connected-components",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "strongly-connected-components",
+    "dominator-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952017,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "strongly-connected-components": 0.9,
+      "dominator-tree": 0.85
+    }
+  }
+}

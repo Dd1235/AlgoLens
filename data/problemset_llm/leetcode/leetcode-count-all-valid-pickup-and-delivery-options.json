@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-all-valid-pickup-and-delivery-options",
+  "title": "Count All Valid Pickup and Delivery Options",
+  "slug": "count-all-valid-pickup-and-delivery-options",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Count the number of valid sequences of pickup and delivery pairs for n orders such that each delivery occurs after its corresponding pickup, returning the result modulo 10^9 + 7.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922570,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "counting": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

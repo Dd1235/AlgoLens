@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimize-the-maximum-adjacent-element-difference",
+  "title": "Minimize the Maximum Adjacent Element Difference",
+  "slug": "minimize-the-maximum-adjacent-element-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy"
+  ],
+  "statement": "Given an array with some elements missing (marked as -1), replace all missing elements with one of two chosen positive integers to minimize the maximum absolute difference between adjacent elements after replacement.",
+  "tags": [
+    "array",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923495,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

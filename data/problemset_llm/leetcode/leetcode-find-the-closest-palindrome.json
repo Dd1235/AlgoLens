@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-find-the-closest-palindrome",
+  "title": "Find the Closest Palindrome",
+  "slug": "find-the-closest-palindrome",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-closest-palindrome/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "string"
+  ],
+  "statement": "Given a numeric string representing an integer, find the closest palindrome integer different from the input, minimizing the absolute difference. If there is a tie, return the smaller palindrome.",
+  "tags": [
+    "string",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "binary-search-answer",
+    "palindrome-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922936,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "binary-search-answer": 0.7,
+      "palindrome-dp": 0.6
+    }
+  }
+}

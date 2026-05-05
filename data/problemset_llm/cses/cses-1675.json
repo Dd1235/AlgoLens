@@ -1,0 +1,27 @@
+{
+  "id": "cses-1675",
+  "title": "Road Reparation",
+  "slug": "road-reparation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1675",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a weighted undirected graph representing cities and roads with repair costs, find the minimum total cost to repair roads so that all cities are connected, or determine that it is impossible.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951512,
+    "pattern_confidence": {
+      "kruskal": 0.98,
+      "union-find": 0.95
+    }
+  }
+}

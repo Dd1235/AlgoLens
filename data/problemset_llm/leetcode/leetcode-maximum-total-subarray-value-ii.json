@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-total-subarray-value-ii",
+  "title": "Maximum Total Subarray Value II",
+  "slug": "maximum-total-subarray-value-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-total-subarray-value-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "segment-tree",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an integer array and an integer k, select exactly k distinct non-empty subarrays to maximize the sum of (max - min) values of these subarrays. Subarrays may overlap but cannot be chosen more than once.",
+  "tags": [
+    "array",
+    "greedy",
+    "segment-tree",
+    "heap"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "segment-tree",
+    "greedy",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923448,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "segment-tree": 0.85,
+      "greedy": 0.8,
+      "priority-queue": 0.75
+    }
+  }
+}

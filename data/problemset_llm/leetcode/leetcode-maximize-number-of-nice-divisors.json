@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximize-number-of-nice-divisors",
+  "title": "Maximize Number of Nice Divisors",
+  "slug": "maximize-number-of-nice-divisors",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-number-of-nice-divisors/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "recursion",
+    "number-theory"
+  ],
+  "statement": "Given a limit on the total number of prime factors, construct a positive integer whose number of nice divisors (divisible by all prime factors) is maximized, and return this count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "number-theory",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-exponentiation",
+    "prime-factorization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923247,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "modular-exponentiation": 0.85,
+      "prime-factorization": 0.8
+    }
+  }
+}

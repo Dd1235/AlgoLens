@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-robot-collisions",
+  "title": "Robot Collisions",
+  "slug": "robot-collisions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/robot-collisions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "stack",
+    "sorting",
+    "simulation"
+  ],
+  "statement": "Simulate collisions between robots moving on a line with given positions, healths, and directions, removing robots or decreasing health based on collision outcomes, and return the healths of surviving robots in original order.",
+  "tags": [
+    "array",
+    "simulation",
+    "stack",
+    "sorting"
+  ],
+  "patterns": [
+    "simulation",
+    "monotonic-stack",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923995,
+    "pattern_confidence": {
+      "simulation": 0.98,
+      "monotonic-stack": 0.85,
+      "sorting": 0.9
+    }
+  }
+}

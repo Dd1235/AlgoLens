@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-maximum-number-of-points-from-grid-queries",
+  "title": "Maximum Number of Points From Grid Queries",
+  "slug": "maximum-number-of-points-from-grid-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "breadth-first-search",
+    "union-find",
+    "sorting",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given a grid and multiple queries, for each query find the maximum number of distinct cells reachable from the top-left cell with values strictly less than the query value, moving in four directions.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "matrix"
+  ],
+  "patterns": [
+    "sorting",
+    "union-find",
+    "offline-queries",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923353,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "union-find": 0.9,
+      "offline-queries": 0.88,
+      "bfs": 0.85
+    }
+  }
+}

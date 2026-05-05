@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-find-maximum-non-decreasing-array-length",
+  "title": "Find Maximum Non-decreasing Array Length",
+  "slug": "find-maximum-non-decreasing-array-length",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-maximum-non-decreasing-array-length/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "stack",
+    "queue",
+    "monotonic-stack",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Given an integer array, repeatedly replace subarrays with their sums to form the longest possible non-decreasing array. Return the maximum length achievable after any number of such operations.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922900,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search-answer": 0.9,
+      "dp": 0.88
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-3398",
+  "title": "Permutation Rounds",
+  "slug": "permutation-rounds",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3398",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a permutation of n elements, determine the number of rounds needed for the array to return to its original sorted order when elements are repeatedly moved according to the permutation.",
+  "tags": [
+    "math",
+    "permutation",
+    "number-theory"
+  ],
+  "patterns": [
+    "cycle-decomposition",
+    "lcm",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951687,
+    "pattern_confidence": {
+      "cycle-decomposition": 0.98,
+      "lcm": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

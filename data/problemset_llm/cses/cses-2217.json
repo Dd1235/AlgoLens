@@ -1,0 +1,27 @@
+{
+  "id": "cses-2217",
+  "title": "Collecting Numbers II",
+  "slug": "collecting-numbers-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2217",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given a permutation of numbers from 1 to n, you repeatedly collect numbers in increasing order by scanning left to right in rounds. After each of m swap operations on the array, report the updated number of rounds needed to collect all numbers.",
+  "tags": [
+    "array",
+    "data-structure"
+  ],
+  "patterns": [
+    "incremental-update",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951332,
+    "pattern_confidence": {
+      "incremental-update": 0.9,
+      "difference-array": 0.7
+    }
+  }
+}

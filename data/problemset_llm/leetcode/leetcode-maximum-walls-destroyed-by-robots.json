@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-walls-destroyed-by-robots",
+  "title": "Maximum Walls Destroyed by Robots",
+  "slug": "maximum-walls-destroyed-by-robots",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-walls-destroyed-by-robots/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given positions of robots and walls on a line, each robot can shoot a bullet left or right up to a maximum distance, stopping if it hits another robot. Determine the maximum number of unique walls that can be destroyed by optimally choosing shooting directions for all robots.",
+  "tags": [
+    "array",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923461,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "two-pointers": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

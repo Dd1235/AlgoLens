@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-sequences-to-k",
+  "title": "Count Sequences to K",
+  "slug": "count-sequences-to-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-sequences-to-k/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "memoization",
+    "number-theory"
+  ],
+  "statement": "Given an array of integers and a target integer k, count the number of sequences of operations (multiply, divide, or leave unchanged) applied to an initial value of 1 that result in exactly k after processing all elements.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "memoization",
+    "number-theory"
+  ],
+  "patterns": [
+    "dp",
+    "memoization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922671,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "memoization": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

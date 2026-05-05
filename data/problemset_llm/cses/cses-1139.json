@@ -1,0 +1,30 @@
+{
+  "id": "cses-1139",
+  "title": "Distinct Colors",
+  "slug": "distinct-colors",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1139",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a rooted tree with colored nodes, compute for each node the number of distinct colors present in its subtree.",
+  "tags": [
+    "tree",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "dfs",
+    "small-to-large-merging",
+    "subtree-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951641,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "small-to-large-merging": 0.95,
+      "subtree-query": 0.9
+    }
+  }
+}

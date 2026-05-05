@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-increasing-subsequence",
+  "title": "Longest Increasing Subsequence",
+  "slug": "longest-increasing-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, find the length of the longest strictly increasing subsequence.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "dp",
+    "longest-increasing-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922384,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "dp": 0.9,
+      "longest-increasing-subsequence": 0.98
+    }
+  }
+}

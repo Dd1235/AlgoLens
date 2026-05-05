@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximize-active-section-with-trade-ii",
+  "title": "Maximize Active Section with Trade II",
+  "slug": "maximize-active-section-with-trade-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-active-section-with-trade-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "binary-search",
+    "segment-tree"
+  ],
+  "statement": "Given a binary string and multiple queries on substrings, determine for each query the maximum number of active sections after performing at most one trade that flips a contiguous block of ones surrounded by zeros to zeros and a contiguous block of zeros surrounded by ones to ones within the substring augmented by ones at both ends.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923225,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

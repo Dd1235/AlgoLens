@@ -1,0 +1,30 @@
+{
+  "id": "cses-1624",
+  "title": "Chessboard and Queens",
+  "slug": "chessboard-and-queens",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1624",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Count the number of ways to place eight queens on an 8x8 chessboard with some squares blocked, so that no two queens attack each other and queens are only placed on free squares.",
+  "tags": [
+    "backtracking",
+    "bitmask",
+    "combinatorics"
+  ],
+  "patterns": [
+    "backtracking",
+    "bitmasking",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951288,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "bitmasking": 0.9,
+      "pruning": 0.85
+    }
+  }
+}

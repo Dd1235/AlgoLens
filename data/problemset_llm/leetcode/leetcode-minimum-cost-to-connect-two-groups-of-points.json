@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-cost-to-connect-two-groups-of-points",
+  "title": "Minimum Cost to Connect Two Groups of Points",
+  "slug": "minimum-cost-to-connect-two-groups-of-points",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "matrix",
+    "bitmask"
+  ],
+  "statement": "Given two groups of points and a cost matrix for connecting points between groups, find the minimum total cost to connect all points such that every point in both groups is connected to at least one point in the other group.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dp-on-subsets"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923515,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "dp-on-subsets": 0.9
+    }
+  }
+}

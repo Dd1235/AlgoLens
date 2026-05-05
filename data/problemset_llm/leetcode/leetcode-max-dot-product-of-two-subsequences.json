@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-max-dot-product-of-two-subsequences",
+  "title": "Max Dot Product of Two Subsequences",
+  "slug": "max-dot-product-of-two-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/max-dot-product-of-two-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two integer arrays, find the maximum dot product of non-empty subsequences of the same length from both arrays.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "subsequence-dp",
+    "maximum-dot-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923213,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "subsequence-dp": 0.95,
+      "maximum-dot-product": 0.9
+    }
+  }
+}

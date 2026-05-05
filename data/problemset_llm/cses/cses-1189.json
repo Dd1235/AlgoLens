@@ -1,0 +1,30 @@
+{
+  "id": "cses-1189",
+  "title": "Food Division",
+  "slug": "food-division",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1189",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given n children seated in a circle with initial and desired food amounts, find the minimum steps to redistribute food by passing one unit at a time between neighbors to achieve the desired distribution.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "circular-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952178,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "greedy": 0.9,
+      "circular-array": 0.85
+    }
+  }
+}

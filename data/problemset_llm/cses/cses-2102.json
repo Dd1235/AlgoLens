@@ -1,0 +1,30 @@
+{
+  "id": "cses-2102",
+  "title": "Finding Patterns",
+  "slug": "finding-patterns",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2102",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a text string and multiple pattern strings, determine for each pattern whether it occurs as a substring in the text.",
+  "tags": [
+    "string",
+    "pattern-matching",
+    "trie"
+  ],
+  "patterns": [
+    "aho-corasick",
+    "trie",
+    "string-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951763,
+    "pattern_confidence": {
+      "aho-corasick": 0.98,
+      "trie": 0.95,
+      "string-search": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-xor-sum-of-all-pairs-bitwise-and",
+  "title": "Find XOR Sum of All Pairs Bitwise AND",
+  "slug": "find-xor-sum-of-all-pairs-bitwise-and",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation"
+  ],
+  "statement": "Given two arrays of non-negative integers, compute the XOR of all pairwise bitwise AND results between elements from the first and second array.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "bitwise-operations",
+    "xor-properties",
+    "pairwise-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923017,
+    "pattern_confidence": {
+      "bitwise-operations": 0.98,
+      "xor-properties": 0.95,
+      "pairwise-computation": 0.9
+    }
+  }
+}

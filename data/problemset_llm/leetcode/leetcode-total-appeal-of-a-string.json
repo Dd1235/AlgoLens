@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-total-appeal-of-a-string",
+  "title": "Total Appeal of A String",
+  "slug": "total-appeal-of-a-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-appeal-of-a-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, compute the sum of the number of distinct characters (appeal) over all its substrings.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924243,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "prefix-sum": 0.9,
+      "sliding-window": 0.7
+    }
+  }
+}

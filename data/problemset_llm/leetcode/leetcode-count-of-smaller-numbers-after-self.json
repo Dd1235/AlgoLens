@@ -1,0 +1,45 @@
+{
+  "id": "leetcode-count-of-smaller-numbers-after-self",
+  "title": "Count of Smaller Numbers After Self",
+  "slug": "count-of-smaller-numbers-after-self",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "merge-sort",
+    "ordered-set"
+  ],
+  "statement": "Given an integer array, return an array where each element is the count of smaller numbers appearing to the right of that element.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "segment-tree",
+    "divide-and-conquer",
+    "ordered-set"
+  ],
+  "patterns": [
+    "merge-sort-based-inversion-count",
+    "binary-indexed-tree",
+    "segment-tree",
+    "ordered-set",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922651,
+    "pattern_confidence": {
+      "merge-sort-based-inversion-count": 0.95,
+      "binary-indexed-tree": 0.9,
+      "segment-tree": 0.88,
+      "ordered-set": 0.85,
+      "divide-and-conquer": 0.8
+    }
+  }
+}

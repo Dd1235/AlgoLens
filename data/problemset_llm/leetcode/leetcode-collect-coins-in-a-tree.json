@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-collect-coins-in-a-tree",
+  "title": "Collect Coins in a Tree",
+  "slug": "collect-coins-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/collect-coins-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "tree",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given a tree with coins on some nodes, find the minimum number of edges to traverse starting and ending at the same node to collect all coins within distance 2 from the current position.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-pruning",
+    "dfs",
+    "distance-limited-collection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922545,
+    "pattern_confidence": {
+      "tree-pruning": 0.95,
+      "dfs": 0.9,
+      "distance-limited-collection": 0.85
+    }
+  }
+}

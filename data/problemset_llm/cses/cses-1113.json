@@ -1,0 +1,30 @@
+{
+  "id": "cses-1113",
+  "title": "String Transform",
+  "slug": "string-transform",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1113",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string transformed by the Burrows-Wheeler transform, reconstruct the original string before transformation.",
+  "tags": [
+    "string",
+    "suffix-array",
+    "array"
+  ],
+  "patterns": [
+    "burrows-wheeler-transform",
+    "inverse-transform",
+    "counting-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951782,
+    "pattern_confidence": {
+      "burrows-wheeler-transform": 1.0,
+      "inverse-transform": 0.95,
+      "counting-sort": 0.85
+    }
+  }
+}

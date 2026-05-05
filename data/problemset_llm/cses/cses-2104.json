@@ -1,0 +1,30 @@
+{
+  "id": "cses-2104",
+  "title": "Pattern Positions",
+  "slug": "pattern-positions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2104",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a text string and multiple pattern strings, determine the first occurrence position of each pattern within the text or report -1 if it does not appear.",
+  "tags": [
+    "string",
+    "string-matching",
+    "trie"
+  ],
+  "patterns": [
+    "aho-corasick",
+    "trie",
+    "multiple-pattern-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951767,
+    "pattern_confidence": {
+      "aho-corasick": 0.98,
+      "trie": 0.95,
+      "multiple-pattern-matching": 0.9
+    }
+  }
+}

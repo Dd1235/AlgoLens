@@ -1,0 +1,24 @@
+{
+  "id": "cf-510c-fox-and-names",
+  "title": "Fox And Names",
+  "slug": "codeforces-510c-fox-and-names",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/510/C",
+  "source_topic": "Codeforces / Graphs and Grid Search",
+  "source_tags": [
+    "graph",
+    "topological-sort",
+    "dfs",
+    "cycle-detection",
+    "string"
+  ],
+  "statement": "Given a list of names that should be sorted under some unknown alphabet order, infer a valid ordering of letters or report that no such ordering exists.",
+  "tags": [],
+  "patterns": [],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": null,
+    "generated_at_unix": 1777921703,
+    "pattern_confidence": {}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-music-playlists",
+  "title": "Number of Music Playlists",
+  "slug": "number-of-music-playlists",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-music-playlists/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Count the number of playlists of length goal using n unique songs where each song is played at least once and a song can only be replayed after k other songs have been played.",
+  "tags": [
+    "math",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923791,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "counting": 0.9
+    }
+  }
+}

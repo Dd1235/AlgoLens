@@ -1,0 +1,29 @@
+{
+  "id": "cses-2195",
+  "title": "Convex Hull",
+  "slug": "convex-hull",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2195",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given a set of distinct points in the plane, compute the convex hull enclosing all points, outputting the hull vertices in any order.",
+  "tags": [
+    "geometry",
+    "convex-hull"
+  ],
+  "patterns": [
+    "convex-hull",
+    "orientation-test",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951805,
+    "pattern_confidence": {
+      "convex-hull": 0.98,
+      "orientation-test": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

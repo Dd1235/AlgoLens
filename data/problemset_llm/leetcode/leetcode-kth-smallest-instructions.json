@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-kth-smallest-instructions",
+  "title": "Kth Smallest Instructions",
+  "slug": "kth-smallest-instructions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/kth-smallest-instructions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Given a grid destination defined by row and column counts, find the k-th lexicographically smallest path from the top-left to the bottom-right corner moving only right or down.",
+  "tags": [
+    "math",
+    "dp",
+    "combinatorics",
+    "string"
+  ],
+  "patterns": [
+    "combinatorial-counting",
+    "dynamic-programming",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923101,
+    "pattern_confidence": {
+      "combinatorial-counting": 0.95,
+      "dynamic-programming": 0.9,
+      "lexicographic-order": 0.85
+    }
+  }
+}

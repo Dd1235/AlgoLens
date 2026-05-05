@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-binary-tree-cameras",
+  "title": "Binary Tree Cameras",
+  "slug": "binary-tree-cameras",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/binary-tree-cameras/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ],
+  "statement": "Given a binary tree, determine the minimum number of cameras needed to monitor all nodes, where each camera covers its parent, itself, and its immediate children.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "binary-tree"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922471,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-dp": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

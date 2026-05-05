@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-pairs-satisfying-inequality",
+  "title": "Number of Pairs Satisfying Inequality",
+  "slug": "number-of-pairs-satisfying-inequality",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-pairs-satisfying-inequality/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "segment-tree",
+    "merge-sort",
+    "ordered-set"
+  ],
+  "statement": "Given two integer arrays and a difference value, count the number of index pairs (i, j) with i < j that satisfy a specific inequality involving differences of elements from both arrays and the given diff.",
+  "tags": [
+    "array",
+    "binary-indexed-tree",
+    "merge-sort"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "binary-indexed-tree",
+    "merge-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923793,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.95,
+      "binary-indexed-tree": 0.9,
+      "merge-sort": 0.9
+    }
+  }
+}

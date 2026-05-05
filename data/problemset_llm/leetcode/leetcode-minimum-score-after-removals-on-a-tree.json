@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-score-after-removals-on-a-tree",
+  "title": "Minimum Score After Removals on a Tree",
+  "slug": "minimum-score-after-removals-on-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-score-after-removals-on-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree with node values, remove two edges to split it into three components and minimize the difference between the maximum and minimum XOR of node values in these components.",
+  "tags": [
+    "tree",
+    "graph",
+    "xor",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "prefix-xor",
+    "tree-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923675,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "prefix-xor": 0.95,
+      "tree-partitioning": 0.9
+    }
+  }
+}

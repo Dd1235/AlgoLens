@@ -1,0 +1,30 @@
+{
+  "id": "cses-1098",
+  "title": "Nim Game II",
+  "slug": "nim-game-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1098",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given multiple heaps of sticks where players alternate removing 1 to 3 sticks from a chosen heap, determine which player wins assuming optimal play.",
+  "tags": [
+    "game-theory",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "nim-game",
+    "grundy-numbers",
+    "xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951732,
+    "pattern_confidence": {
+      "nim-game": 0.98,
+      "grundy-numbers": 0.95,
+      "xor": 0.9
+    }
+  }
+}

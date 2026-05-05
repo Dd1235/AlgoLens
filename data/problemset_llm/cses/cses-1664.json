@@ -1,0 +1,30 @@
+{
+  "id": "cses-1664",
+  "title": "Movie Festival Queries",
+  "slug": "movie-festival-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1664",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given a list of movies with start and end times, answer queries asking for the maximum number of non-overlapping movies that can be watched within a given time interval. Movies can be watched consecutively if one ends at or before the next starts.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951597,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "greedy": 0.9
+    }
+  }
+}

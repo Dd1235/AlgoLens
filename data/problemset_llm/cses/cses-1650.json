@@ -1,0 +1,27 @@
+{
+  "id": "cses-1650",
+  "title": "Range Xor Queries",
+  "slug": "range-xor-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1650",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given an array of integers, answer multiple queries asking for the xor of elements within a specified range [a,b].",
+  "tags": [
+    "array",
+    "prefix-xor"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951559,
+    "pattern_confidence": {
+      "prefix-xor": 0.98,
+      "range-query": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-3228",
+  "title": "Permuted Binary Strings",
+  "slug": "permuted-binary-strings",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3228",
+  "source_topic": "CSES / Interactive Problems",
+  "source_tags": [],
+  "statement": "Given an unknown permutation of integers from 1 to n, determine the permutation by querying the permutation's effect on chosen binary strings, with a limited number of queries allowed.",
+  "tags": [
+    "interactive",
+    "permutation",
+    "string"
+  ],
+  "patterns": [
+    "interactive-problem",
+    "bitmask",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951919,
+    "pattern_confidence": {
+      "interactive-problem": 0.98,
+      "bitmask": 0.7,
+      "binary-search-answer": 0.6
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1112",
+  "title": "Required Substring",
+  "slug": "required-substring",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1112",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Count the number of length-n strings over the alphabet A–Z that contain a given pattern of length m as a substring, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "automaton"
+  ],
+  "patterns": [
+    "prefix-function",
+    "dp-on-automaton",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951759,
+    "pattern_confidence": {
+      "prefix-function": 0.95,
+      "dp-on-automaton": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

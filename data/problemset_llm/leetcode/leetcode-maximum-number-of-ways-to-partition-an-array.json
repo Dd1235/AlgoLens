@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-number-of-ways-to-partition-an-array",
+  "title": "Maximum Number of Ways to Partition an Array",
+  "slug": "maximum-number-of-ways-to-partition-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-ways-to-partition-an-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and a value k, determine the maximum number of pivot indices where the array can be partitioned into two parts with equal sums after optionally changing one element to k.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "counting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "enumeration",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923364,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "enumeration": 0.9,
+      "contribution-technique": 0.85
+    }
+  }
+}

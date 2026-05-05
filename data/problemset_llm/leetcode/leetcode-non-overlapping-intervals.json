@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-non-overlapping-intervals",
+  "title": "Non-overlapping Intervals",
+  "slug": "non-overlapping-intervals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/non-overlapping-intervals/",
+  "source_topic": "LeetCode / Intervals and Geometry",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a list of intervals, determine the minimum number of intervals to remove so that the remaining intervals do not overlap, considering intervals that only touch at endpoints as non-overlapping.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922415,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95
+    }
+  }
+}

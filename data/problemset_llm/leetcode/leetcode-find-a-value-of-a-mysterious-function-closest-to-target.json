@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-a-value-of-a-mysterious-function-closest-to-target",
+  "title": "Find a Value of a Mysterious Function Closest to Target",
+  "slug": "find-a-value-of-a-mysterious-function-closest-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-a-value-of-a-mysterious-function-closest-to-target/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "segment-tree"
+  ],
+  "statement": "Given an integer array and a target value, find the minimum absolute difference between the target and the value of a mysterious function applied to any subarray defined by indices l and r.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "segment-tree",
+    "bitwise-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922867,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "segment-tree": 0.85,
+      "bitwise-operations": 0.8
+    }
+  }
+}

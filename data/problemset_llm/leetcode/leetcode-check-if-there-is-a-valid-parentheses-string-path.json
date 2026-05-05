@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-check-if-there-is-a-valid-parentheses-string-path",
+  "title": " Check if There Is a Valid Parentheses String Path",
+  "slug": "check-if-there-is-a-valid-parentheses-string-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given an m by n grid of parentheses, determine if there exists a path from the top-left to bottom-right moving only right or down that forms a valid parentheses string.",
+  "tags": [
+    "array",
+    "matrix",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "state-compression",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922528,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "state-compression": 0.85,
+      "grid-traversal": 0.9
+    }
+  }
+}

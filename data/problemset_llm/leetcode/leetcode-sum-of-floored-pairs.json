@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-sum-of-floored-pairs",
+  "title": "Sum of Floored Pairs",
+  "slug": "sum-of-floored-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-floored-pairs/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "counting",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, compute the sum of floor divisions floor(nums[i] / nums[j]) over all pairs (i, j), returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum",
+    "counting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search",
+    "counting",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924172,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search": 0.85,
+      "counting": 0.9,
+      "enumeration": 0.88
+    }
+  }
+}

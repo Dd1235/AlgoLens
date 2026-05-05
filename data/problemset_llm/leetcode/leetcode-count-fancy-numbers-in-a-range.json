@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-fancy-numbers-in-a-range",
+  "title": "Count Fancy Numbers in a Range",
+  "slug": "count-fancy-numbers-in-a-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-fancy-numbers-in-a-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Count integers within a given range whose digits form a strictly increasing or decreasing sequence, or whose digit sum forms such a sequence. Single-digit numbers are always considered valid.",
+  "tags": [
+    "math",
+    "dp",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "monotonic-sequence-check",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922602,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "monotonic-sequence-check": 0.85,
+      "state-compression": 0.7
+    }
+  }
+}

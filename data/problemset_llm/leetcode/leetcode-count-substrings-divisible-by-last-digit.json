@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-substrings-divisible-by-last-digit",
+  "title": "Count Substrings Divisible By Last Digit",
+  "slug": "count-substrings-divisible-by-last-digit",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-substrings-divisible-by-last-digit/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a digit string, count the number of substrings divisible by their non-zero last digit. Substrings may have leading zeros and divisibility is checked against the last digit of each substring.",
+  "tags": [
+    "string",
+    "dp",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922694,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

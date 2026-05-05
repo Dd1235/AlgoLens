@@ -1,0 +1,28 @@
+{
+  "id": "cses-3361",
+  "title": "Two Array Average",
+  "slug": "two-array-average",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3361",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given two arrays of equal length, select nonempty prefixes from each to maximize the average of all chosen elements combined.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952141,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.9
+    }
+  }
+}

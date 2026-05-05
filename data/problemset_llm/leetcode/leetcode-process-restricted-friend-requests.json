@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-process-restricted-friend-requests",
+  "title": "Process Restricted Friend Requests",
+  "slug": "process-restricted-friend-requests",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/process-restricted-friend-requests/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given n people and restrictions on pairs that cannot be friends directly or indirectly, process a sequence of friend requests and determine which can be accepted without violating the restrictions.",
+  "tags": [
+    "graph",
+    "union-find",
+    "disjoint-set"
+  ],
+  "patterns": [
+    "union-find",
+    "disjoint-set",
+    "incremental-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923936,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "disjoint-set": 0.95,
+      "incremental-connectivity": 0.9
+    }
+  }
+}

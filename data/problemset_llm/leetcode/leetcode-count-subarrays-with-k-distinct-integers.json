@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-subarrays-with-k-distinct-integers",
+  "title": "Count Subarrays With K Distinct Integers",
+  "slug": "count-subarrays-with-k-distinct-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window",
+    "counting"
+  ],
+  "statement": "Given an integer array and parameters k and m, count the number of subarrays containing exactly k distinct integers where each distinct integer appears at least m times.",
+  "tags": [
+    "array",
+    "hash-map",
+    "two-pointers",
+    "counting"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922684,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9,
+      "frequency-count": 0.88
+    }
+  }
+}

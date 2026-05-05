@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-cost-for-cutting-cake-ii",
+  "title": "Minimum Cost for Cutting Cake II",
+  "slug": "minimum-cost-for-cutting-cake-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given costs for horizontal and vertical cuts on an m x n cake, determine the minimum total cost to cut the cake into 1x1 pieces by choosing the order of cuts optimally.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923506,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.9
+    }
+  }
+}

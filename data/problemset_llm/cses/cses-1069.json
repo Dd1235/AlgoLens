@@ -1,0 +1,27 @@
+{
+  "id": "cses-1069",
+  "title": "Repetitions",
+  "slug": "repetitions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1069",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given a DNA sequence string, find the length of the longest substring consisting of the same character repeated consecutively.",
+  "tags": [
+    "string",
+    "array"
+  ],
+  "patterns": [
+    "linear-scan",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951247,
+    "pattern_confidence": {
+      "linear-scan": 0.98,
+      "two-pointers": 0.85
+    }
+  }
+}

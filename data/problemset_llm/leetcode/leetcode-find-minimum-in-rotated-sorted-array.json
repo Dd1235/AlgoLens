@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-minimum-in-rotated-sorted-array",
+  "title": "Find Minimum in Rotated Sorted Array",
+  "slug": "find-minimum-in-rotated-sorted-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+  "source_topic": "LeetCode / Binary Search",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a sorted array rotated an unknown number of times, find the minimum element in O(log n) time.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922370,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "binary-search-answer": 0.95
+    }
+  }
+}

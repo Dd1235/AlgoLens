@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-time-to-complete-all-tasks",
+  "title": "Minimum Time to Complete All Tasks",
+  "slug": "minimum-time-to-complete-all-tasks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-complete-all-tasks/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "stack",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given tasks with start and end times and required durations, find the minimum total time the computer must be on to complete all tasks within their allowed intervals.",
+  "tags": [
+    "array",
+    "greedy",
+    "intervals",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "interval-scheduling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923693,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "interval-scheduling": 0.85
+    }
+  }
+}

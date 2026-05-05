@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-split-array-with-same-average",
+  "title": "Split Array With Same Average",
+  "slug": "split-array-with-same-average",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-array-with-same-average/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given an integer array, determine if it can be split into two non-empty subsets with the same average value.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "subset-sum",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924100,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "subset-sum": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-remove-boxes",
+  "title": "Remove Boxes",
+  "slug": "remove-boxes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/remove-boxes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given an array of colored boxes, repeatedly remove contiguous groups of the same color to maximize the total points, where removing k boxes yields k*k points.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "patterns": [
+    "interval-dp",
+    "top-down-dp",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923976,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "top-down-dp": 0.95,
+      "memoization": 0.93
+    }
+  }
+}

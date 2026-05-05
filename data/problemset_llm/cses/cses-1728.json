@@ -1,0 +1,30 @@
+{
+  "id": "cses-1728",
+  "title": "Inversion Probability",
+  "slug": "inversion-probability",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1728",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given an array where each element is independently and uniformly chosen from a specified range, compute the expected number of inversions (pairs of indices with the earlier element greater than the later one).",
+  "tags": [
+    "array",
+    "probability",
+    "math"
+  ],
+  "patterns": [
+    "expected-value",
+    "pairwise-comparison",
+    "probabilistic-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951724,
+    "pattern_confidence": {
+      "expected-value": 0.98,
+      "pairwise-comparison": 0.9,
+      "probabilistic-analysis": 0.85
+    }
+  }
+}

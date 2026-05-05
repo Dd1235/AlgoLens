@@ -1,0 +1,30 @@
+{
+  "id": "cses-3221",
+  "title": "Sliding Window Minimum",
+  "slug": "sliding-window-minimum",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3221",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given a large generated array, compute the minimum value in every contiguous subarray (window) of size k and output the xor of all these minimums.",
+  "tags": [
+    "array",
+    "sliding-window",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "sliding-window",
+    "monotonic-queue",
+    "online-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951889,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "monotonic-queue": 0.95,
+      "online-processing": 0.85
+    }
+  }
+}

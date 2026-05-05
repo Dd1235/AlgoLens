@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-strange-printer",
+  "title": "Strange Printer",
+  "slug": "strange-printer",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/strange-printer/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, determine the minimum number of turns a special printer needs to print it, where each turn prints a contiguous sequence of the same character and can overwrite existing characters.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "interval-dp",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924127,
+    "pattern_confidence": {
+      "interval-dp": 0.95,
+      "dynamic-programming": 0.9
+    }
+  }
+}

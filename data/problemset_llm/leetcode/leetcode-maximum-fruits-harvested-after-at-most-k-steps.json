@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-fruits-harvested-after-at-most-k-steps",
+  "title": "Maximum Fruits Harvested After at Most K Steps",
+  "slug": "maximum-fruits-harvested-after-at-most-k-steps",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given positions with fruit amounts on a number line and a start position, find the maximum fruits collectible by moving at most k steps left or right.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923318,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

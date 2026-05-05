@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-changes-to-make-k-semi-palindromes",
+  "title": "Minimum Changes to Make K Semi-palindromes",
+  "slug": "minimum-changes-to-make-k-semi-palindromes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Partition a string into k substrings minimizing letter changes to make each substring a semi-palindrome, where a semi-palindrome is defined by a repeating pattern divisor with palindrome groups formed by characters at fixed intervals.",
+  "tags": [
+    "string",
+    "dp",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "divisor-enumeration",
+    "palindrome-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923504,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "divisor-enumeration": 0.9,
+      "palindrome-checking": 0.85
+    }
+  }
+}

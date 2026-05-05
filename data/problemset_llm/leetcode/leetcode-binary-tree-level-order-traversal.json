@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-binary-tree-level-order-traversal",
+  "title": "Binary Tree Level Order Traversal",
+  "slug": "binary-tree-level-order-traversal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+  "source_topic": "LeetCode / Trees and Heaps",
+  "difficulty": "Medium",
+  "source_tags": [
+    "tree",
+    "breadth-first-search",
+    "binary-tree"
+  ],
+  "statement": "Given the root of a binary tree, return a list of its node values level by level from left to right.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "breadth-first-search"
+  ],
+  "patterns": [
+    "bfs",
+    "level-order-traversal",
+    "queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922422,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "level-order-traversal": 0.97,
+      "queue": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-common-prefix-of-k-strings-after-removal",
+  "title": "Longest Common Prefix of K Strings After Removal",
+  "slug": "longest-common-prefix-of-k-strings-after-removal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-common-prefix-of-k-strings-after-removal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "trie"
+  ],
+  "statement": "Given an array of strings and an integer k, for each index, find the longest common prefix length among any k strings after removing the string at that index. Return 0 if fewer than k strings remain.",
+  "tags": [
+    "array",
+    "string",
+    "trie"
+  ],
+  "patterns": [
+    "trie",
+    "prefix-query",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923156,
+    "pattern_confidence": {
+      "trie": 0.95,
+      "prefix-query": 0.9,
+      "offline-queries": 0.7
+    }
+  }
+}

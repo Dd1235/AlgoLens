@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-max-points-on-a-line",
+  "title": "Max Points on a Line",
+  "slug": "max-points-on-a-line",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/max-points-on-a-line/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given a list of unique points on a 2D plane, find the maximum number of points that lie on the same straight line.",
+  "tags": [
+    "array",
+    "geometry",
+    "hash-map"
+  ],
+  "patterns": [
+    "hash-map-lookup",
+    "slope-calculation",
+    "line-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923215,
+    "pattern_confidence": {
+      "hash-map-lookup": 0.95,
+      "slope-calculation": 0.9,
+      "line-representation": 0.88
+    }
+  }
+}

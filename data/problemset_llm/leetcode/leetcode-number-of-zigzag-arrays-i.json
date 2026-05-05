@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-number-of-zigzag-arrays-i",
+  "title": "Number of ZigZag Arrays I",
+  "slug": "number-of-zigzag-arrays-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-zigzag-arrays-i/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of length-n arrays with elements in [l, r] where no two adjacent elements are equal and no three consecutive elements form a strictly increasing or decreasing sequence, modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "combinatorics",
+    "array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923851,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

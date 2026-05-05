@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-special-integers",
+  "title": "Count Special Integers",
+  "slug": "count-special-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-special-integers/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Count how many positive integers up to n have all distinct digits. The problem requires enumerating numbers with unique digits within a given range.",
+  "tags": [
+    "math",
+    "dp",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "state-compression",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922673,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "state-compression": 0.85,
+      "backtracking": 0.7
+    }
+  }
+}

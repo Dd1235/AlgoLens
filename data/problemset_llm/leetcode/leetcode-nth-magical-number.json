@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-nth-magical-number",
+  "title": "Nth Magical Number",
+  "slug": "nth-magical-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/nth-magical-number/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Find the n-th positive integer divisible by either a or b, returning the result modulo 10^9+7.",
+  "tags": [
+    "math",
+    "binary-search",
+    "number-theory"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "gcd",
+    "lcm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923754,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "gcd": 0.9,
+      "lcm": 0.9
+    }
+  }
+}

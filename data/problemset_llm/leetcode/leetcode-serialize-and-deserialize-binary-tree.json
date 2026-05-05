@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-serialize-and-deserialize-binary-tree",
+  "title": "Serialize and Deserialize Binary Tree",
+  "slug": "serialize-and-deserialize-binary-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+  "source_topic": "LeetCode / Trees and Heaps",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "design",
+    "binary-tree"
+  ],
+  "statement": "Design algorithms to convert a binary tree into a string representation and reconstruct the original tree from that string, supporting arbitrary serialization formats.",
+  "tags": [
+    "tree",
+    "string",
+    "dfs",
+    "bfs",
+    "design"
+  ],
+  "patterns": [
+    "dfs",
+    "bfs",
+    "serialization",
+    "deserialization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922427,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bfs": 0.9,
+      "serialization": 0.98,
+      "deserialization": 0.98
+    }
+  }
+}

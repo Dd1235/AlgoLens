@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-distinct-subarrays-divisible-by-k-in-sorted-array",
+  "title": "Count Distinct Subarrays Divisible by K in Sorted Array",
+  "slug": "count-distinct-subarrays-divisible-by-k-in-sorted-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-distinct-subarrays-divisible-by-k-in-sorted-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Given a sorted integer array and a positive integer k, count the number of distinct subarrays whose sums are divisible by k.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map-lookup",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922599,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "hash-map-lookup": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

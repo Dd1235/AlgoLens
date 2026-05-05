@@ -1,0 +1,30 @@
+{
+  "id": "cses-3407",
+  "title": "MST Edge Check",
+  "slug": "mst-edge-check",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3407",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a connected undirected weighted graph, determine for each edge whether it can be part of some minimum spanning tree of the graph.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "union-find"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951992,
+    "pattern_confidence": {
+      "kruskal": 0.98,
+      "union-find": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

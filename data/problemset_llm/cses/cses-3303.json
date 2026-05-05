@@ -1,0 +1,28 @@
+{
+  "id": "cses-3303",
+  "title": "Nearest Shops",
+  "slug": "nearest-shops",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3303",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given an undirected graph with some cities containing anime shops, find for each city the shortest distance to a different city that has an anime shop, or -1 if none exists.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "bfs"
+  ],
+  "patterns": [
+    "multi-source-bfs",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951971,
+    "pattern_confidence": {
+      "multi-source-bfs": 0.98,
+      "shortest-path": 0.95
+    }
+  }
+}

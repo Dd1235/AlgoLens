@@ -1,0 +1,30 @@
+{
+  "id": "cses-2209",
+  "title": "Counting Necklaces",
+  "slug": "counting-necklaces",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2209",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Count the number of distinct necklaces with n pearls and m colors, considering two necklaces identical if one can be rotated to form the other. Output the count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "burnside-lemma",
+    "modular-arithmetic",
+    "group-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951695,
+    "pattern_confidence": {
+      "burnside-lemma": 0.98,
+      "modular-arithmetic": 0.95,
+      "group-theory": 0.9
+    }
+  }
+}

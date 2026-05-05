@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-freedom-trail",
+  "title": "Freedom Trail",
+  "slug": "freedom-trail",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/freedom-trail/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "depth-first-search",
+    "breadth-first-search"
+  ],
+  "statement": "Given a circular ring string and a key string, find the minimum steps to spell the key by rotating the ring clockwise or anticlockwise and pressing a button for each character.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "memoization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923033,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "memoization": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

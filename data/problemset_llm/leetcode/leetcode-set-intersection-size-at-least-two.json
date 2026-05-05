@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-set-intersection-size-at-least-two",
+  "title": "Set Intersection Size At Least Two",
+  "slug": "set-intersection-size-at-least-two",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/set-intersection-size-at-least-two/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given intervals, find the minimum size of a set of integers such that each interval contains at least two integers from this set.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "interval-covering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924013,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "interval-covering": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-remove-invalid-parentheses",
+  "title": "Remove Invalid Parentheses",
+  "slug": "remove-invalid-parentheses",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/remove-invalid-parentheses/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "backtracking",
+    "breadth-first-search"
+  ],
+  "statement": "Given a string containing letters and parentheses, remove the minimum number of invalid parentheses to produce all possible valid strings with the least removals.",
+  "tags": [
+    "string",
+    "backtracking",
+    "breadth-first-search"
+  ],
+  "patterns": [
+    "bfs",
+    "backtracking",
+    "validity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923979,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "backtracking": 0.9,
+      "validity-check": 0.85
+    }
+  }
+}

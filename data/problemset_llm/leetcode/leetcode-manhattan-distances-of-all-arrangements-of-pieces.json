@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-manhattan-distances-of-all-arrangements-of-pieces",
+  "title": "Manhattan Distances of All Arrangements of Pieces",
+  "slug": "manhattan-distances-of-all-arrangements-of-pieces",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "combinatorics"
+  ],
+  "statement": "Given a grid of size m by n and k identical pieces placed with at most one piece per cell, compute the sum of Manhattan distances between every pair of pieces over all valid arrangements, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "combinatorial-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923206,
+    "pattern_confidence": {
+      "combinatorial-sum": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

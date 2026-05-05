@@ -1,0 +1,30 @@
+{
+  "id": "cses-3169",
+  "title": "Counting LCM Arrays",
+  "slug": "counting-lcm-arrays",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3169",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Count the number of length-n arrays of positive integers where the LCM of every pair of consecutive elements equals a given integer k, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "number-theory",
+    "dp"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952122,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "modular-arithmetic": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

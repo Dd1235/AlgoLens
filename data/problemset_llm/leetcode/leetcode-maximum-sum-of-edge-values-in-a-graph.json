@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-sum-of-edge-values-in-a-graph",
+  "title": "Maximum Sum of Edge Values in a Graph",
+  "slug": "maximum-sum-of-edge-values-in-a-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "greedy",
+    "graph"
+  ],
+  "statement": "Given a connected undirected graph where each node has degree at most 2, assign unique values from 1 to n to nodes to maximize the sum of products of values on each edge.",
+  "tags": [
+    "graph",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "degree-constrained-graph",
+    "value-assignment"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923436,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "degree-constrained-graph": 0.85,
+      "value-assignment": 0.8
+    }
+  }
+}

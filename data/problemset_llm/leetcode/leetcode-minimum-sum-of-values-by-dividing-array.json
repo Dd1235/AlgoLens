@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-sum-of-values-by-dividing-array",
+  "title": "Minimum Sum of Values by Dividing Array",
+  "slug": "minimum-sum-of-values-by-dividing-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "bit-manipulation",
+    "segment-tree",
+    "queue"
+  ],
+  "statement": "Given an array nums and a target array andValues, partition nums into contiguous subarrays so that the bitwise AND of each subarray equals the corresponding andValues element, minimizing the sum of the last elements of these subarrays. Return -1 if no valid partition exists.",
+  "tags": [
+    "array",
+    "bitwise",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "bitmask",
+    "prefix-and",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923686,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "bitmask": 0.85,
+      "prefix-and": 0.8,
+      "binary-search-answer": 0.7
+    }
+  }
+}

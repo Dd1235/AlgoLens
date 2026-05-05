@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-x-sum-of-all-k-long-subarrays-ii",
+  "title": "Find X-Sum of All K-Long Subarrays II",
+  "slug": "find-x-sum-of-all-k-long-subarrays-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an integer array and parameters k and x, compute for each contiguous subarray of length k the sum of the top x most frequent elements, breaking ties by element value. Return an array of these sums for all such subarrays.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sliding-window",
+    "heap"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map-lookup",
+    "heap",
+    "frequency-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923011,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "hash-map-lookup": 0.9,
+      "heap": 0.85,
+      "frequency-counting": 0.9
+    }
+  }
+}

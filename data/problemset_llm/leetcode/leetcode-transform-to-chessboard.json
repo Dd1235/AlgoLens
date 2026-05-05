@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-transform-to-chessboard",
+  "title": "Transform to Chessboard",
+  "slug": "transform-to-chessboard",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/transform-to-chessboard/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "statement": "Given an n x n binary grid, determine the minimum number of row and column swaps needed to transform it into a chessboard pattern where no two adjacent cells share the same value, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "matrix",
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "bitmask",
+    "greedy",
+    "pattern-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924254,
+    "pattern_confidence": {
+      "bitmask": 0.85,
+      "greedy": 0.8,
+      "pattern-validation": 0.9
+    }
+  }
+}

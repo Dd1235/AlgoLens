@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-numbers-at-most-n-given-digit-set",
+  "title": "Numbers At Most N Given Digit Set",
+  "slug": "numbers-at-most-n-given-digit-set",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/numbers-at-most-n-given-digit-set/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "string",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "statement": "Given a sorted set of digits, count how many positive integers less than or equal to a given number n can be formed using these digits any number of times.",
+  "tags": [
+    "array",
+    "math",
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "digit-dp",
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923856,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "prefix-sum": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

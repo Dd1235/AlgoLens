@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-frequency-stack",
+  "title": "Maximum Frequency Stack",
+  "slug": "maximum-frequency-stack",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-frequency-stack/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "stack",
+    "design",
+    "ordered-set"
+  ],
+  "statement": "Design a stack data structure that supports pushing elements and popping the most frequent element. If multiple elements share the highest frequency, pop the one closest to the top of the stack.",
+  "tags": [
+    "stack",
+    "hash-map",
+    "design"
+  ],
+  "patterns": [
+    "frequency-stack",
+    "hash-map-lookup",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923316,
+    "pattern_confidence": {
+      "frequency-stack": 0.98,
+      "hash-map-lookup": 0.95,
+      "stack": 0.9
+    }
+  }
+}

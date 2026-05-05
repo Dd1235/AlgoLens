@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximize-the-distance-between-points-on-a-square",
+  "title": "Maximize the Distance Between Points on a Square",
+  "slug": "maximize-the-distance-between-points-on-a-square",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-distance-between-points-on-a-square/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "geometry",
+    "sorting"
+  ],
+  "statement": "Given points on the boundary of a square, select k points to maximize the minimum Manhattan distance between any two chosen points.",
+  "tags": [
+    "geometry",
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923270,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

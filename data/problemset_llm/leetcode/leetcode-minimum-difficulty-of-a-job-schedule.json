@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-difficulty-of-a-job-schedule",
+  "title": "Minimum Difficulty of a Job Schedule",
+  "slug": "minimum-difficulty-of-a-job-schedule",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a list of job difficulties and a number of days, schedule all jobs in order over the days to minimize the sum of the maximum job difficulty per day, or return -1 if scheduling is impossible.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "interval-dp",
+    "prefix-max"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923558,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "interval-dp": 0.95,
+      "prefix-max": 0.85
+    }
+  }
+}

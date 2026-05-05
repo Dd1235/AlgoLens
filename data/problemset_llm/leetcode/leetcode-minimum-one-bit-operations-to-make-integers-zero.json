@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimum-one-bit-operations-to-make-integers-zero",
+  "title": "Minimum One Bit Operations to Make Integers Zero",
+  "slug": "minimum-one-bit-operations-to-make-integers-zero",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "recursion",
+    "memoization"
+  ],
+  "statement": "Given an integer n, find the minimum number of specific bit-flip operations required to transform n into zero, where operations depend on the state of adjacent bits in n's binary representation.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "dynamic-programming",
+    "recursion",
+    "memoization"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "memoization",
+    "recursion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923635,
+    "pattern_confidence": {
+      "bitmask-dp": 0.85,
+      "memoization": 0.95,
+      "recursion": 0.9
+    }
+  }
+}

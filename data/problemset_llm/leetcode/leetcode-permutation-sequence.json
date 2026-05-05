@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-permutation-sequence",
+  "title": "Permutation Sequence",
+  "slug": "permutation-sequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/permutation-sequence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "recursion"
+  ],
+  "statement": "Given n and k, return the k-th permutation sequence of the numbers from 1 to n in lexicographic order.",
+  "tags": [
+    "math",
+    "recursion",
+    "combinatorics"
+  ],
+  "patterns": [
+    "factorial-number-system",
+    "backtracking",
+    "combinatorial-indexing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923916,
+    "pattern_confidence": {
+      "factorial-number-system": 0.95,
+      "backtracking": 0.85,
+      "combinatorial-indexing": 0.9
+    }
+  }
+}

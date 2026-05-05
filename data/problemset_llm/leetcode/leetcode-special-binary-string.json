@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-special-binary-string",
+  "title": "Special Binary String",
+  "slug": "special-binary-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/special-binary-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "divide-and-conquer",
+    "sorting"
+  ],
+  "statement": "Given a special binary string where the number of 1's equals the number of 0's and every prefix has at least as many 1's as 0's, repeatedly swap consecutive special substrings to produce the lexicographically largest string possible.",
+  "tags": [
+    "string",
+    "divide-and-conquer",
+    "sorting"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "sorting",
+    "string-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924098,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.95,
+      "sorting": 0.9,
+      "string-manipulation": 0.85
+    }
+  }
+}

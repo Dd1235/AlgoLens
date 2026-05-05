@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-number-of-groups-getting-fresh-donuts",
+  "title": "Maximum Number of Groups Getting Fresh Donuts",
+  "slug": "maximum-number-of-groups-getting-fresh-donuts",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-groups-getting-fresh-donuts/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "memoization",
+    "bitmask"
+  ],
+  "statement": "Given a batch size and groups of customers each requiring one donut, rearrange the groups to maximize the number of groups that receive fresh donuts without leftovers from previous batches.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "memoization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923338,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "memoization": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-russian-doll-envelopes",
+  "title": "Russian Doll Envelopes",
+  "slug": "russian-doll-envelopes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/russian-doll-envelopes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a list of envelopes with width and height, find the maximum number of envelopes that can be nested one inside another without rotation, where each envelope must be strictly smaller in both dimensions than the next.",
+  "tags": [
+    "array",
+    "sorting",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "binary-search",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923997,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "binary-search": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-3421",
+  "title": "Distinct Values Subsequences",
+  "slug": "distinct-values-subsequences",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3421",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given an array, count the number of subsequences in which all elements are distinct, with the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dp",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951344,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85,
+      "modular-exponentiation": 0.7
+    }
+  }
+}

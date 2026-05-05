@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-kth-smallest-product-of-two-sorted-arrays",
+  "title": "Kth Smallest Product of Two Sorted Arrays",
+  "slug": "kth-smallest-product-of-two-sorted-arrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given two sorted integer arrays, find the k-th smallest product formed by multiplying an element from the first array with an element from the second array.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923109,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.7
+    }
+  }
+}

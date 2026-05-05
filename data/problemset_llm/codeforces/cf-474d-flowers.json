@@ -1,0 +1,34 @@
+{
+  "id": "cf-474d-flowers",
+  "title": "Flowers",
+  "slug": "codeforces-474d-flowers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/474/D",
+  "source_topic": "Codeforces / DP and Counting",
+  "source_tags": [
+    "dp",
+    "prefix-sum",
+    "combinatorics"
+  ],
+  "statement": "Count the number of valid flower sequences whose total length falls within given query ranges, where one flower color can appear singly and the other must appear in contiguous blocks of fixed size k.",
+  "tags": [
+    "dp",
+    "combinatorics",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777953624,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dp": 0.95,
+      "binary-search-answer": 0.7
+    }
+  }
+}

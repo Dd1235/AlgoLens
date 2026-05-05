@@ -1,0 +1,32 @@
+{
+  "id": "cses-1138",
+  "title": "Path Queries",
+  "slug": "path-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1138",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a rooted tree with values on nodes, support updates to node values and queries asking for the sum of values on the path from the root to a given node.",
+  "tags": [
+    "tree",
+    "segment-tree",
+    "fenwick-tree"
+  ],
+  "patterns": [
+    "tree-flattening",
+    "euler-tour",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951635,
+    "pattern_confidence": {
+      "tree-flattening": 0.95,
+      "euler-tour": 0.94,
+      "fenwick-tree": 0.9,
+      "segment-tree": 0.88
+    }
+  }
+}

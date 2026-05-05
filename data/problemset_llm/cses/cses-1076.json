@@ -1,0 +1,31 @@
+{
+  "id": "cses-1076",
+  "title": "Sliding Window Median",
+  "slug": "sliding-window-median",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1076",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given an array and a window size k, compute the median of each contiguous subarray of length k, where the median is defined as the smaller middle element if k is even.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "heap",
+    "balanced-tree"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-heaps",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951902,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "two-heaps": 0.95,
+      "order-statistics": 0.9
+    }
+  }
+}

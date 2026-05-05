@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-paths-with-max-score",
+  "title": "Number of Paths with Max Score",
+  "slug": "number-of-paths-with-max-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-paths-with-max-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a square board with start and end points, numeric cells, and obstacles, find the maximum sum collectible moving only up, left, or diagonally up-left, and count the number of such maximum-sum paths modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dp",
+    "grid-dp",
+    "path-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923795,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "grid-dp": 0.95,
+      "path-counting": 0.9
+    }
+  }
+}

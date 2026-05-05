@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-non-decreasing-arrays-with-given-digit-sums",
+  "title": "Count Non Decreasing Arrays With Given Digit Sums",
+  "slug": "count-non-decreasing-arrays-with-given-digit-sums",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of non-decreasing arrays of length n where each element is between 0 and 5000 and has a digit sum equal to the given digitSum array, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "digit-sum-precomputation",
+    "dp-on-sequences",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922628,
+    "pattern_confidence": {
+      "digit-sum-precomputation": 0.95,
+      "dp-on-sequences": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

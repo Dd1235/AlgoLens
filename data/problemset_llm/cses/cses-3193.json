@@ -1,0 +1,33 @@
+{
+  "id": "cses-3193",
+  "title": "Square Subsets",
+  "slug": "square-subsets",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3193",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given an array of integers, count the number of subsets whose product is a perfect square, including the empty subset, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "dp",
+    "number-theory"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "prime-factorization",
+    "modular-arithmetic",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952124,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "prime-factorization": 0.95,
+      "modular-arithmetic": 0.85,
+      "state-compression": 0.8
+    }
+  }
+}

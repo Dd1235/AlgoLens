@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-analyze-organization-hierarchy",
+  "title": "Analyze Organization Hierarchy",
+  "slug": "analyze-organization-hierarchy",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/analyze-organization-hierarchy/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given an employee table with manager relationships, compute each employee's organizational level, the size of their reporting team, and the total salary budget they control including themselves and all direct and indirect reports. Return results ordered by level, budget, and name.",
+  "tags": [
+    "tree",
+    "graph",
+    "dp",
+    "database"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "topological-sort",
+    "aggregation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922448,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "topological-sort": 0.85,
+      "aggregation": 0.8
+    }
+  }
+}

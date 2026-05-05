@@ -1,0 +1,32 @@
+{
+  "id": "cses-1735",
+  "title": "Range Updates and Sums",
+  "slug": "range-updates-and-sums",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1735",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Maintain an array under range increment and range assignment updates, and answer sum queries on given intervals efficiently.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "lazy-propagation"
+  ],
+  "patterns": [
+    "segment-tree",
+    "lazy-propagation",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951602,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "lazy-propagation": 0.97,
+      "range-update": 0.95,
+      "range-query": 0.95
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1145",
+  "title": "Increasing Subsequence",
+  "slug": "increasing-subsequence",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1145",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given an array of integers, find the length of the longest strictly increasing subsequence.",
+  "tags": [
+    "array",
+    "dp",
+    "binary-search"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951431,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "binary-search": 0.9,
+      "dynamic-programming": 0.95
+    }
+  }
+}

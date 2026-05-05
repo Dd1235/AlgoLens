@@ -1,0 +1,30 @@
+{
+  "id": "cses-3418",
+  "title": "Border Subgrid Count II",
+  "slug": "border-subgrid-count-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3418",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given an n by n grid of letters from the first k uppercase letters, count for each letter the number of rectangular subgrids whose border is entirely that letter.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "counting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "2d-range-query",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952052,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "2d-range-query": 0.9,
+      "counting": 0.85
+    }
+  }
+}

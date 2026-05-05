@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-moves-to-move-a-box-to-their-target-location",
+  "title": "Minimum Moves to Move a Box to Their Target Location",
+  "slug": "minimum-moves-to-move-a-box-to-their-target-location",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given a grid representing walls, floors, a player, a box, and a target, find the minimum number of pushes required to move the box to the target position, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "graph",
+    "matrix"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "state-space-search",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923589,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "state-space-search": 0.95,
+      "shortest-path": 0.9
+    }
+  }
+}

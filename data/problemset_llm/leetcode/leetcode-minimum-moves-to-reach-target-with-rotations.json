@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-moves-to-reach-target-with-rotations",
+  "title": "Minimum Moves to Reach Target with Rotations",
+  "slug": "minimum-moves-to-reach-target-with-rotations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-reach-target-with-rotations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Find the minimum moves for a 2-cell snake to reach the bottom-right corner of an n×n grid by moving right, down, or rotating, avoiding blocked cells.",
+  "tags": [
+    "array",
+    "graph",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "patterns": [
+    "bfs",
+    "state-space-search",
+    "grid-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923597,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "state-space-search": 0.95,
+      "grid-graph": 0.9
+    }
+  }
+}

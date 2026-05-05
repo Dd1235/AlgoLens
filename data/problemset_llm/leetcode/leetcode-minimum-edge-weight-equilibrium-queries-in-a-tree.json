@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-minimum-edge-weight-equilibrium-queries-in-a-tree",
+  "title": "Minimum Edge Weight Equilibrium Queries in a Tree",
+  "slug": "minimum-edge-weight-equilibrium-queries-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-edge-weight-equilibrium-queries-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a weighted tree and multiple queries, determine the minimum number of edge weight changes needed so that all edges on the path between two nodes have the same weight.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "lowest-common-ancestor",
+    "path-query",
+    "frequency-count",
+    "dfs",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923567,
+    "pattern_confidence": {
+      "lowest-common-ancestor": 0.95,
+      "path-query": 0.9,
+      "frequency-count": 0.85,
+      "dfs": 0.9,
+      "hash-map-lookup": 0.8
+    }
+  }
+}

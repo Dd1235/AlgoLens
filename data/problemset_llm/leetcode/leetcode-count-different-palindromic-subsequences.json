@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-different-palindromic-subsequences",
+  "title": "Count Different Palindromic Subsequences",
+  "slug": "count-different-palindromic-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-different-palindromic-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string consisting of characters 'a' to 'd', count the number of distinct non-empty palindromic subsequences modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp-on-intervals",
+    "counting-distinct-subsequences",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922595,
+    "pattern_confidence": {
+      "dp-on-intervals": 0.98,
+      "counting-distinct-subsequences": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

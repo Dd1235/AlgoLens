@@ -1,0 +1,27 @@
+{
+  "id": "cses-1147",
+  "title": "Maximum Building I",
+  "slug": "maximum-building-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1147",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a grid representing a forest with empty squares and trees, find the largest rectangular area without any trees to place a building.",
+  "tags": [
+    "array",
+    "geometry"
+  ],
+  "patterns": [
+    "largest-rectangle-in-histogram",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952155,
+    "pattern_confidence": {
+      "largest-rectangle-in-histogram": 0.95,
+      "dynamic-programming": 0.85
+    }
+  }
+}

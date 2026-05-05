@@ -1,0 +1,28 @@
+{
+  "id": "cses-3112",
+  "title": "Hidden Integer",
+  "slug": "hidden-integer",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3112",
+  "source_topic": "CSES / Interactive Problems",
+  "source_tags": [],
+  "statement": "Find a hidden integer x within a known range by asking queries that compare a chosen integer y to x, receiving yes/no answers indicating if y is less than x. Determine x using at most 30 such queries.",
+  "tags": [
+    "interactive",
+    "binary-search",
+    "number-theory"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interactive-problem"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951912,
+    "pattern_confidence": {
+      "binary-search-answer": 0.98,
+      "interactive-problem": 0.95
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-course-schedule",
+  "title": "Course Schedule",
+  "slug": "course-schedule",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/course-schedule/",
+  "source_topic": "LeetCode / Graphs",
+  "difficulty": "Medium",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given a number of courses and prerequisite pairs, determine if it is possible to complete all courses without cyclic dependencies.",
+  "tags": [
+    "graph",
+    "dfs",
+    "topological-sort",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "topological-sort",
+    "cycle-detection",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922399,
+    "pattern_confidence": {
+      "topological-sort": 0.98,
+      "cycle-detection": 0.97,
+      "dfs": 0.95
+    }
+  }
+}

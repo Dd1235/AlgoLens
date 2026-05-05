@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-search-in-rotated-sorted-array",
+  "title": "Search in Rotated Sorted Array",
+  "slug": "search-in-rotated-sorted-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+  "source_topic": "LeetCode / Binary Search",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a sorted array that may be rotated at an unknown pivot, find the index of a target value using an algorithm with logarithmic time complexity. Return -1 if the target is not present.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "rotated-array-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922368,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "rotated-array-search": 0.95
+    }
+  }
+}

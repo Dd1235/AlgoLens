@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-number-of-darts-inside-of-a-circular-dartboard",
+  "title": "Maximum Number of Darts Inside of a Circular Dartboard",
+  "slug": "maximum-number-of-darts-inside-of-a-circular-dartboard",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-darts-inside-of-a-circular-dartboard/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given coordinates of darts on a plane and a fixed radius, determine the maximum number of darts that can fit inside a circle of that radius placed anywhere on the plane.",
+  "tags": [
+    "geometry",
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "geometry",
+    "two-pointers",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923334,
+    "pattern_confidence": {
+      "geometry": 0.98,
+      "two-pointers": 0.6,
+      "brute-force": 0.85
+    }
+  }
+}

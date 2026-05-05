@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-the-number-of-arrays-with-k-matching-adjacent-elements",
+  "title": "Count the Number of Arrays with K Matching Adjacent Elements",
+  "slug": "count-the-number-of-arrays-with-k-matching-adjacent-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "combinatorics"
+  ],
+  "statement": "Count the number of arrays of length n with elements from 1 to m that have exactly k pairs of adjacent equal elements, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "combinatorial-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922708,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "combinatorial-counting": 0.9
+    }
+  }
+}

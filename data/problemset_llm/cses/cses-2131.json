@@ -1,0 +1,33 @@
+{
+  "id": "cses-2131",
+  "title": "Grid Puzzle II",
+  "slug": "grid-puzzle-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2131",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an n×n grid with coin values, select exactly specified numbers of squares from each row and column to maximize the total coins collected, or determine if no valid selection exists.",
+  "tags": [
+    "matrix",
+    "maximum-weight-matching",
+    "flow",
+    "bipartite-graph"
+  ],
+  "patterns": [
+    "maximum-bipartite-matching",
+    "min-cost-max-flow",
+    "network-flow",
+    "bipartite-flow"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952204,
+    "pattern_confidence": {
+      "maximum-bipartite-matching": 0.95,
+      "min-cost-max-flow": 0.9,
+      "network-flow": 0.9,
+      "bipartite-flow": 0.9
+    }
+  }
+}

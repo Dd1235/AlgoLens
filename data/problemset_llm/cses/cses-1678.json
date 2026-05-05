@@ -1,0 +1,30 @@
+{
+  "id": "cses-1678",
+  "title": "Round Trip II",
+  "slug": "round-trip-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1678",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed graph representing one-way flights between cities, find any cycle (round trip) that visits at least one city more than once, or report that none exists.",
+  "tags": [
+    "graph",
+    "dfs",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "dfs",
+    "cycle-detection",
+    "directed-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951489,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "cycle-detection": 0.97,
+      "directed-graph": 0.9
+    }
+  }
+}

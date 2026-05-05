@@ -1,0 +1,30 @@
+{
+  "id": "cses-2187",
+  "title": "Bracket Sequences II",
+  "slug": "bracket-sequences-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2187",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a length n and a prefix of a bracket sequence, count the number of valid bracket sequences of length n that start with the given prefix, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-processing",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951692,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-processing": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

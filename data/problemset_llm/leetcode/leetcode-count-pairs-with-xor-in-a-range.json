@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-pairs-with-xor-in-a-range",
+  "title": "Count Pairs With XOR in a Range",
+  "slug": "count-pairs-with-xor-in-a-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-pairs-with-xor-in-a-range/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "trie"
+  ],
+  "statement": "Given an integer array and a range [low, high], count the number of pairs whose XOR value lies within the given range.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "trie"
+  ],
+  "patterns": [
+    "trie",
+    "bitwise-xor",
+    "prefix-trie",
+    "counting-pairs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922659,
+    "pattern_confidence": {
+      "trie": 0.95,
+      "bitwise-xor": 0.9,
+      "prefix-trie": 0.88,
+      "counting-pairs": 0.85
+    }
+  }
+}

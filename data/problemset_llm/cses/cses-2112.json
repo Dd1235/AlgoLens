@@ -1,0 +1,28 @@
+{
+  "id": "cses-2112",
+  "title": "One Bit Positions",
+  "slug": "one-bit-positions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2112",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a binary string, for each distance k from 1 to n-1, count the number of pairs of positions (i, j) with j - i = k where both positions contain '1'.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951868,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "difference-array": 0.85
+    }
+  }
+}

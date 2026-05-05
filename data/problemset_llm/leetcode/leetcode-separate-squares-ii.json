@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-separate-squares-ii",
+  "title": "Separate Squares II",
+  "slug": "separate-squares-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/separate-squares-ii/",
+  "source_topic": "LeetCode / Intervals and Geometry",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "segment-tree",
+    "line-sweep"
+  ],
+  "statement": "Given a list of axis-aligned squares on a 2D plane, find the lowest horizontal line such that the total area covered by the squares above the line equals the total area covered below it, counting overlapping areas only once.",
+  "tags": [
+    "geometry",
+    "array",
+    "line-sweep",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "line-sweep",
+    "segment-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922420,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "line-sweep": 0.9,
+      "segment-tree": 0.88,
+      "coordinate-compression": 0.85
+    }
+  }
+}

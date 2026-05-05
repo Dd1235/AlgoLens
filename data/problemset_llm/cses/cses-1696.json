@@ -1,0 +1,30 @@
+{
+  "id": "cses-1696",
+  "title": "School Dance",
+  "slug": "school-dance",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1696",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a bipartite graph with boys and girls as vertices and potential dance pairs as edges, find the maximum matching and output one valid maximum matching.",
+  "tags": [
+    "graph",
+    "bipartite-graph",
+    "matching"
+  ],
+  "patterns": [
+    "maximum-bipartite-matching",
+    "augmenting-path",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951545,
+    "pattern_confidence": {
+      "maximum-bipartite-matching": 0.98,
+      "augmenting-path": 0.95,
+      "dfs": 0.85
+    }
+  }
+}

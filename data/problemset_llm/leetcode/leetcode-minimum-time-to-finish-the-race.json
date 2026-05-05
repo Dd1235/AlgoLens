@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-time-to-finish-the-race",
+  "title": "Minimum Time to Finish the Race",
+  "slug": "minimum-time-to-finish-the-race",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-finish-the-race/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given multiple tire types with lap times increasing geometrically and a fixed tire change time, find the minimum total time to complete a given number of laps by optimally choosing when to change tires.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-minimum",
+    "precomputation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923696,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-minimum": 0.85,
+      "precomputation": 0.8
+    }
+  }
+}

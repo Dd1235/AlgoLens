@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-maximize-score-after-n-operations",
+  "title": "Maximize Score After N Operations",
+  "slug": "maximize-score-after-n-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-score-after-n-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "number-theory",
+    "bitmask"
+  ],
+  "statement": "Given an array of 2*n positive integers, perform n operations where each operation removes two elements and adds to the score the operation index multiplied by the gcd of the chosen elements. Find the maximum total score achievable after all operations.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "gcd",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923252,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "gcd": 0.9,
+      "backtracking": 0.85
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-ways-to-assign-edge-weights-ii",
+  "title": "Number of Ways to Assign Edge Weights II",
+  "slug": "number-of-ways-to-assign-edge-weights-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree with edges initially weighted zero, assign each edge a weight of 1 or 2. For queries on paths between two nodes, count the number of edge weight assignments that make the total path cost odd, modulo 10^9+7.",
+  "tags": [
+    "tree",
+    "graph",
+    "math",
+    "dp"
+  ],
+  "patterns": [
+    "dfs",
+    "prefix-xor",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923823,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "prefix-xor": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

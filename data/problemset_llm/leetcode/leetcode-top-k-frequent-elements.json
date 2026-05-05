@@ -1,0 +1,46 @@
+{
+  "id": "leetcode-top-k-frequent-elements",
+  "title": "Top K Frequent Elements",
+  "slug": "top-k-frequent-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/top-k-frequent-elements/",
+  "source_topic": "LeetCode / Array and Hashing",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "divide-and-conquer",
+    "sorting",
+    "heap-priority-queue",
+    "bucket-sort",
+    "counting",
+    "quickselect"
+  ],
+  "statement": "Given an integer array and an integer k, return the k most frequent elements in any order, with a requirement for better than O(n log n) time complexity.",
+  "tags": [
+    "array",
+    "hash-map",
+    "heap",
+    "sorting",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "counting",
+    "bucket-sort",
+    "heap-priority-queue",
+    "quickselect",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777921730,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "bucket-sort": 0.9,
+      "heap-priority-queue": 0.9,
+      "quickselect": 0.85,
+      "hash-map-lookup": 0.98
+    }
+  }
+}

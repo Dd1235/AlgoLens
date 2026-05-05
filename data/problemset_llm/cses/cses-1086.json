@@ -1,0 +1,28 @@
+{
+  "id": "cses-1086",
+  "title": "Writing Numbers",
+  "slug": "writing-numbers",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1086",
+  "source_topic": "CSES / Additional Problems I",
+  "source_tags": [],
+  "statement": "Given a limit on how many times each digit key (0–9) can be pressed, determine the largest consecutive positive integer starting from 1 that can be written without exceeding the digit press limits.",
+  "tags": [
+    "math",
+    "binary-search",
+    "digit-counting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "digit-frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952150,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "digit-frequency-count": 0.9
+    }
+  }
+}

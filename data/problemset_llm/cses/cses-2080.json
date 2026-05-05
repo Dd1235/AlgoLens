@@ -1,0 +1,30 @@
+{
+  "id": "cses-2080",
+  "title": "Fixed-Length Paths I",
+  "slug": "fixed-length-paths-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2080",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a tree with n nodes, count the number of distinct paths that have exactly k edges.",
+  "tags": [
+    "tree",
+    "graph",
+    "counting"
+  ],
+  "patterns": [
+    "dfs",
+    "subtree-dp",
+    "path-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951646,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "subtree-dp": 0.9,
+      "path-counting": 0.85
+    }
+  }
+}

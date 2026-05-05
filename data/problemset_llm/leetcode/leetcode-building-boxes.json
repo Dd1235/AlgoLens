@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-building-boxes",
+  "title": "Building Boxes",
+  "slug": "building-boxes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/building-boxes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "binary-search",
+    "greedy"
+  ],
+  "statement": "Given n unit cubes to place in a cubic storeroom corner under adjacency constraints, find the minimum number of boxes that must touch the floor.",
+  "tags": [
+    "math",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922493,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

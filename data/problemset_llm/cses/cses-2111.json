@@ -1,0 +1,29 @@
+{
+  "id": "cses-2111",
+  "title": "Apples and Bananas",
+  "slug": "apples-and-bananas",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2111",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given two lists of integer weights for apples and bananas, count for each possible sum w between 2 and 2k how many pairs of one apple and one banana have combined weight w.",
+  "tags": [
+    "array",
+    "frequency-count"
+  ],
+  "patterns": [
+    "frequency-array",
+    "convolution",
+    "fast-fourier-transform"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951866,
+    "pattern_confidence": {
+      "frequency-array": 0.95,
+      "convolution": 0.9,
+      "fast-fourier-transform": 0.85
+    }
+  }
+}

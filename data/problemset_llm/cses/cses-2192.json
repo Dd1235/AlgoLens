@@ -1,0 +1,29 @@
+{
+  "id": "cses-2192",
+  "title": "Point in Polygon",
+  "slug": "point-in-polygon",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2192",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given a simple polygon and multiple query points, determine for each point whether it lies inside, outside, or on the boundary of the polygon.",
+  "tags": [
+    "geometry",
+    "polygon"
+  ],
+  "patterns": [
+    "point-in-polygon-test",
+    "ray-casting",
+    "line-segment-intersection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951798,
+    "pattern_confidence": {
+      "point-in-polygon-test": 0.98,
+      "ray-casting": 0.9,
+      "line-segment-intersection": 0.85
+    }
+  }
+}

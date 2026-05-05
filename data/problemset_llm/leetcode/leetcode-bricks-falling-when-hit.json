@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-bricks-falling-when-hit",
+  "title": "Bricks Falling When Hit",
+  "slug": "bricks-falling-when-hit",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/bricks-falling-when-hit/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "union-find",
+    "matrix"
+  ],
+  "statement": "Given a binary grid representing bricks and a sequence of hits removing bricks, determine after each hit how many bricks fall due to losing stability. A brick is stable if connected to the top row or to another stable brick adjacent vertically or horizontally.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "offline-queries",
+    "reverse-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922485,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "offline-queries": 0.9,
+      "reverse-processing": 0.85
+    }
+  }
+}

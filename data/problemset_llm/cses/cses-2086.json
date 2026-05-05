@@ -1,0 +1,30 @@
+{
+  "id": "cses-2086",
+  "title": "Subarray Squares",
+  "slug": "subarray-squares",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2086",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Partition an array into k contiguous subarrays to minimize the sum of the squares of each subarray's sum.",
+  "tags": [
+    "array",
+    "dp",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "interval-dp",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951859,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "interval-dp": 0.9,
+      "dp-optimization": 0.85
+    }
+  }
+}

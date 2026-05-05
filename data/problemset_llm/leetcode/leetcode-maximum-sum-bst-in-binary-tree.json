@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-sum-bst-in-binary-tree",
+  "title": "Maximum Sum BST in Binary Tree",
+  "slug": "maximum-sum-bst-in-binary-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "binary-search-tree",
+    "binary-tree"
+  ],
+  "statement": "Given a binary tree, find the maximum sum of keys in any subtree that forms a valid binary search tree (BST).",
+  "tags": [
+    "tree",
+    "binary-search-tree",
+    "dynamic-programming",
+    "depth-first-search"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "bst-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923427,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "bst-validation": 0.9
+    }
+  }
+}

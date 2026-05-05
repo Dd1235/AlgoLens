@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-find-median-from-data-stream",
+  "title": "Find Median from Data Stream",
+  "slug": "find-median-from-data-stream",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-median-from-data-stream/",
+  "source_topic": "LeetCode / Trees and Heaps",
+  "difficulty": "Hard",
+  "source_tags": [
+    "two-pointers",
+    "design",
+    "sorting",
+    "heap-priority-queue",
+    "data-stream"
+  ],
+  "statement": "Design a data structure that supports adding numbers from a data stream and efficiently finding the median of all added elements at any time.",
+  "tags": [
+    "data-structure",
+    "heap",
+    "design",
+    "array"
+  ],
+  "patterns": [
+    "two-heaps",
+    "balanced-heap",
+    "online-median",
+    "priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922431,
+    "pattern_confidence": {
+      "two-heaps": 0.98,
+      "balanced-heap": 0.95,
+      "online-median": 0.9,
+      "priority-queue": 0.88
+    }
+  }
+}

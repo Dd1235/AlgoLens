@@ -1,0 +1,30 @@
+{
+  "id": "cses-1149",
+  "title": "Distinct Subsequences",
+  "slug": "distinct-subsequences",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1149",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, count the number of distinct subsequences that can be formed by deleting zero or more characters without changing the order of the remaining characters, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951772,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "modular-arithmetic": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

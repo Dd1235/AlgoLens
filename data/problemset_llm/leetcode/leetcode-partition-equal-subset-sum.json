@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-partition-equal-subset-sum",
+  "title": "Partition Equal Subset Sum",
+  "slug": "partition-equal-subset-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-equal-subset-sum/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Determine if an integer array can be partitioned into two subsets with equal sums.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "subset-sum",
+    "dp-on-subsets",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922390,
+    "pattern_confidence": {
+      "subset-sum": 0.98,
+      "dp-on-subsets": 0.95,
+      "state-compression": 0.85
+    }
+  }
+}

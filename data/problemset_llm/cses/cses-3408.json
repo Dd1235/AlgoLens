@@ -1,0 +1,30 @@
+{
+  "id": "cses-3408",
+  "title": "MST Edge Set Check",
+  "slug": "mst-edge-set-check",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3408",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a connected weighted undirected graph and multiple edge sets, determine for each set whether all edges can simultaneously appear in some minimum spanning tree of the graph.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "union-find"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951994,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "union-find": 0.93,
+      "offline-queries": 0.85
+    }
+  }
+}

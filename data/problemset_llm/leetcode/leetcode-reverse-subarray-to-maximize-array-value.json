@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-reverse-subarray-to-maximize-array-value",
+  "title": "Reverse Subarray To Maximize Array Value",
+  "slug": "reverse-subarray-to-maximize-array-value",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reverse-subarray-to-maximize-array-value/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "statement": "Given an integer array, you may reverse exactly one subarray to maximize the sum of absolute differences between consecutive elements. Determine the maximum possible value after such a reversal.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923992,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.7,
+      "difference-array": 0.65
+    }
+  }
+}

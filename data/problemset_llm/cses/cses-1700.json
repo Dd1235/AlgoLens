@@ -1,0 +1,31 @@
+{
+  "id": "cses-1700",
+  "title": "Tree Isomorphism I",
+  "slug": "tree-isomorphism-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1700",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given multiple pairs of rooted trees, determine for each pair whether the two trees are isomorphic, meaning they can be drawn to look identical.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "hashing"
+  ],
+  "patterns": [
+    "tree-isomorphism",
+    "tree-hashing",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952007,
+    "pattern_confidence": {
+      "tree-isomorphism": 0.98,
+      "tree-hashing": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

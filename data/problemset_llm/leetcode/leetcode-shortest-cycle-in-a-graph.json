@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-shortest-cycle-in-a-graph",
+  "title": "Shortest Cycle in a Graph",
+  "slug": "shortest-cycle-in-a-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-cycle-in-a-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "breadth-first-search",
+    "graph"
+  ],
+  "statement": "Given an undirected graph, find the length of the shortest cycle or return -1 if no cycle exists.",
+  "tags": [
+    "graph",
+    "bfs"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "shortest-cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924024,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "shortest-cycle-detection": 0.95
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-regular-expression-matching",
+  "title": "Regular Expression Matching",
+  "slug": "regular-expression-matching",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/regular-expression-matching/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "recursion"
+  ],
+  "statement": "Implement regular expression matching for a string against a pattern containing '.' and '*' where '.' matches any single character and '*' matches zero or more of the preceding element. Return whether the entire string matches the pattern.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "recursion"
+  ],
+  "patterns": [
+    "dp",
+    "memoization",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923974,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "memoization": 0.95,
+      "backtracking": 0.9
+    }
+  }
+}

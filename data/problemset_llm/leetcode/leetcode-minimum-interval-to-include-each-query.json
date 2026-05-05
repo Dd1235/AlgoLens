@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-interval-to-include-each-query",
+  "title": "Minimum Interval to Include Each Query",
+  "slug": "minimum-interval-to-include-each-query",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "line-sweep",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a list of intervals and queries, find for each query the size of the smallest interval that contains it, or -1 if none exists.",
+  "tags": [
+    "array",
+    "sorting",
+    "heap",
+    "binary-search"
+  ],
+  "patterns": [
+    "line-sweep",
+    "binary-search-answer",
+    "heap-priority-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923580,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "binary-search-answer": 0.9,
+      "heap-priority-queue": 0.88
+    }
+  }
+}

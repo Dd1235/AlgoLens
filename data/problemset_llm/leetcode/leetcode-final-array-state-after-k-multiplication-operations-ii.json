@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-final-array-state-after-k-multiplication-operations-ii",
+  "title": "Final Array State After K Multiplication Operations II",
+  "slug": "final-array-state-after-k-multiplication-operations-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/final-array-state-after-k-multiplication-operations-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "heap-priority-queue",
+    "simulation"
+  ],
+  "statement": "Given an integer array, perform k operations where in each operation the first occurrence of the minimum element is multiplied by a given multiplier. After all operations, return the array values modulo 10^9+7.",
+  "tags": [
+    "array",
+    "heap",
+    "simulation"
+  ],
+  "patterns": [
+    "priority-queue",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922862,
+    "pattern_confidence": {
+      "priority-queue": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

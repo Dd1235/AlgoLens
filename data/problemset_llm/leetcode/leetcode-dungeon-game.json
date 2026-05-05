@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-dungeon-game",
+  "title": "Dungeon Game",
+  "slug": "dungeon-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/dungeon-game/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a 2D grid representing a dungeon with health-affecting rooms, determine the minimum initial health required for a knight to move from the top-left to the bottom-right corner moving only right or down without dying.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dp",
+    "grid-dp",
+    "bottom-up-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922829,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "grid-dp": 0.95,
+      "bottom-up-dp": 0.9
+    }
+  }
+}

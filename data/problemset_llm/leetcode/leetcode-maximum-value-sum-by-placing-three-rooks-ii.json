@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-value-sum-by-placing-three-rooks-ii",
+  "title": "Maximum Value Sum by Placing Three Rooks II",
+  "slug": "maximum-value-sum-by-placing-three-rooks-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-value-sum-by-placing-three-rooks-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix",
+    "enumeration"
+  ],
+  "statement": "Place three rooks on a chessboard so that no two share the same row or column, maximizing the sum of their cell values.",
+  "tags": [
+    "array",
+    "dp",
+    "matrix",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "enumeration",
+    "maximum-weight-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923459,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "enumeration": 0.9,
+      "maximum-weight-matching": 0.85
+    }
+  }
+}

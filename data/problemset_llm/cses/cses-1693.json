@@ -1,0 +1,30 @@
+{
+  "id": "cses-1693",
+  "title": "Teleporters Path",
+  "slug": "teleporters-path",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1693",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given a directed graph with n levels and m teleporters, determine if there exists a path starting at level 1 and ending at level n that uses every teleporter exactly once, and output such a path if it exists.",
+  "tags": [
+    "graph",
+    "eulerian-path",
+    "dfs"
+  ],
+  "patterns": [
+    "eulerian-path",
+    "dfs",
+    "hierholzer-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951532,
+    "pattern_confidence": {
+      "eulerian-path": 0.98,
+      "dfs": 0.9,
+      "hierholzer-algorithm": 0.85
+    }
+  }
+}

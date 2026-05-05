@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-replacements-to-sort-the-array",
+  "title": "Minimum Replacements to Sort the Array",
+  "slug": "minimum-replacements-to-sort-the-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-replacements-to-sort-the-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "statement": "Given an integer array, find the minimum number of operations to transform it into a non-decreasing array by repeatedly replacing any element with two elements that sum to it.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "reverse-iteration",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923669,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "reverse-iteration": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

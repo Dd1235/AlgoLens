@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-the-earliest-and-latest-rounds-where-players-compete",
+  "title": "The Earliest and Latest Rounds Where Players Compete",
+  "slug": "the-earliest-and-latest-rounds-where-players-compete",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given a tournament with n players arranged in a row, determine the earliest and latest rounds in which two specified top players can face each other, assuming outcomes of other matches can be chosen arbitrarily.",
+  "tags": [
+    "dp",
+    "memoization",
+    "game-theory"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "memoization",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924218,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "memoization": 0.95,
+      "state-space-search": 0.85
+    }
+  }
+}

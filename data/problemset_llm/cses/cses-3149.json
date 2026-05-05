@@ -1,0 +1,31 @@
+{
+  "id": "cses-3149",
+  "title": "Tree Coin Collecting II",
+  "slug": "tree-coin-collecting-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3149",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a tree with some nodes containing coins, answer queries asking for the shortest path length between two nodes that visits all coin-containing nodes.",
+  "tags": [
+    "tree",
+    "graph",
+    "lca",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "lowest-common-ancestor",
+    "prefix-sum",
+    "distance-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952004,
+    "pattern_confidence": {
+      "lowest-common-ancestor": 0.95,
+      "prefix-sum": 0.9,
+      "distance-queries": 0.88
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-pizza-with-3n-slices",
+  "title": "Pizza With 3n Slices",
+  "slug": "pizza-with-3n-slices",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/pizza-with-3n-slices/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a circular array of 3n pizza slices, select n slices such that no two chosen slices are adjacent, maximizing the sum of the selected slices.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp-on-circular-array",
+    "interval-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923920,
+    "pattern_confidence": {
+      "dp-on-circular-array": 0.95,
+      "interval-dp": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

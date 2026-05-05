@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-longest-subsequence-repeated-k-times",
+  "title": "Longest Subsequence Repeated k Times",
+  "slug": "longest-subsequence-repeated-k-times",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-subsequence-repeated-k-times/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "two-pointers",
+    "string",
+    "backtracking",
+    "counting",
+    "enumeration"
+  ],
+  "statement": "Given a string and an integer k, find the longest subsequence that appears repeated k times as a subsequence in the string. If multiple longest subsequences exist, return the lexicographically largest one. Return an empty string if no such subsequence exists.",
+  "tags": [
+    "string",
+    "binary-search",
+    "dp",
+    "backtracking"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp-on-subsequences",
+    "lexicographic-ordering",
+    "subsequence-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923187,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "dp-on-subsequences": 0.9,
+      "lexicographic-ordering": 0.85,
+      "subsequence-check": 0.9
+    }
+  }
+}

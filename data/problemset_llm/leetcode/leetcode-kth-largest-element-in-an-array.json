@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-kth-largest-element-in-an-array",
+  "title": "Kth Largest Element in an Array",
+  "slug": "kth-largest-element-in-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+  "source_topic": "LeetCode / Trees and Heaps",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "sorting",
+    "heap-priority-queue",
+    "quickselect"
+  ],
+  "statement": "Given an integer array and an integer k, find the k-th largest element in the array without fully sorting it.",
+  "tags": [
+    "array",
+    "divide-and-conquer",
+    "heap"
+  ],
+  "patterns": [
+    "quickselect",
+    "heap-priority-queue",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922429,
+    "pattern_confidence": {
+      "quickselect": 0.98,
+      "heap-priority-queue": 0.9,
+      "divide-and-conquer": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-bus-routes",
+  "title": "Bus Routes",
+  "slug": "bus-routes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/bus-routes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "breadth-first-search"
+  ],
+  "statement": "Given bus routes where each route cycles through stops indefinitely, find the minimum number of buses needed to travel from a source stop to a target stop, or return -1 if impossible.",
+  "tags": [
+    "graph",
+    "breadth-first-search",
+    "hash-map"
+  ],
+  "patterns": [
+    "bfs",
+    "graph-construction",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922495,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "graph-construction": 0.95,
+      "hash-map-lookup": 0.9
+    }
+  }
+}

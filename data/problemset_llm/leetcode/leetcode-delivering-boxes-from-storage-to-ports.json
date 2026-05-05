@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-delivering-boxes-from-storage-to-ports",
+  "title": "Delivering Boxes from Storage to Ports",
+  "slug": "delivering-boxes-from-storage-to-ports",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/delivering-boxes-from-storage-to-ports/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "segment-tree",
+    "queue",
+    "heap-priority-queue",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Given a sequence of boxes each with a destination port and weight, and constraints on the maximum number of boxes and total weight per shipment, determine the minimum number of trips a single ship must make to deliver all boxes in order, returning to storage after each shipment.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "queue",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sliding-window",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922782,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "sliding-window": 0.85,
+      "prefix-sum": 0.9,
+      "monotonic-queue": 0.75
+    }
+  }
+}

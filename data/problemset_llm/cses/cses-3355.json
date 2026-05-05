@@ -1,0 +1,30 @@
+{
+  "id": "cses-3355",
+  "title": "Sum of Four Squares",
+  "slug": "sum-of-four-squares",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3355",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given multiple queries with non-negative integers, find four non-negative integers whose squares sum up to each given integer, based on the theorem that every non-negative integer can be represented as the sum of four squares.",
+  "tags": [
+    "math",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "brute-force-search",
+    "precomputation",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951713,
+    "pattern_confidence": {
+      "brute-force-search": 0.85,
+      "precomputation": 0.8,
+      "number-theory": 0.95
+    }
+  }
+}

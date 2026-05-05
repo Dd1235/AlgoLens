@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-edges-in-shortest-paths",
+  "title": "Find Edges in Shortest Paths",
+  "slug": "find-edges-in-shortest-paths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-edges-in-shortest-paths/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given an undirected weighted graph, determine for each edge whether it lies on at least one shortest path from node 0 to node n-1.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dijkstra"
+  ],
+  "patterns": [
+    "dijkstra",
+    "reverse-dijkstra",
+    "shortest-path-edge-identification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922889,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "reverse-dijkstra": 0.9,
+      "shortest-path-edge-identification": 0.95
+    }
+  }
+}

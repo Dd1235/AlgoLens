@@ -1,0 +1,28 @@
+{
+  "id": "cses-1148",
+  "title": "Maximum Building II",
+  "slug": "maximum-building-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1148",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given a grid representing a forest with empty squares and trees, count for every possible rectangular building size how many placements fit without overlapping any trees.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "geometry"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952225,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search-answer": 0.85
+    }
+  }
+}

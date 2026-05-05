@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-maximum-number-of-k-divisible-components",
+  "title": "Maximum Number of K-Divisible Components",
+  "slug": "maximum-number-of-k-divisible-components",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-k-divisible-components/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a tree with values on nodes and an integer k, find the maximum number of connected components after removing edges so that each component's sum of node values is divisible by k.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923344,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "tree-dp": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

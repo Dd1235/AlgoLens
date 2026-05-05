@@ -1,0 +1,30 @@
+{
+  "id": "cses-2121",
+  "title": "Parcel Delivery",
+  "slug": "parcel-delivery",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2121",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a directed graph with capacity and cost per parcel on each route, find the minimum total cost to send a fixed number of parcels from the first to the last city or determine if it's impossible.",
+  "tags": [
+    "graph",
+    "flow",
+    "minimum-cost-flow"
+  ],
+  "patterns": [
+    "min-cost-flow",
+    "capacity-scaling",
+    "shortest-path-augmentation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951879,
+    "pattern_confidence": {
+      "min-cost-flow": 0.98,
+      "capacity-scaling": 0.85,
+      "shortest-path-augmentation": 0.8
+    }
+  }
+}

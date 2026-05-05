@@ -1,0 +1,29 @@
+{
+  "id": "cses-1685",
+  "title": "New Flight Routes",
+  "slug": "new-flight-routes",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1685",
+  "source_topic": "CSES / Advanced Graph Problems",
+  "source_tags": [],
+  "statement": "Given a directed graph representing flights between cities, determine the minimum number of new flights to add so that every city is reachable from every other city, and output one valid set of such flights.",
+  "tags": [
+    "graph",
+    "strongly-connected-components"
+  ],
+  "patterns": [
+    "strongly-connected-components",
+    "condensation-graph",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952035,
+    "pattern_confidence": {
+      "strongly-connected-components": 0.98,
+      "condensation-graph": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

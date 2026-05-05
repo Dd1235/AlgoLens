@@ -1,0 +1,30 @@
+{
+  "id": "cses-2138",
+  "title": "Reachable Nodes",
+  "slug": "reachable-nodes",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2138",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given a directed acyclic graph, compute for each node the total number of nodes reachable from it, including itself.",
+  "tags": [
+    "graph",
+    "dp",
+    "dag"
+  ],
+  "patterns": [
+    "topological-sort",
+    "dp-on-dag",
+    "reachability"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951837,
+    "pattern_confidence": {
+      "topological-sort": 0.95,
+      "dp-on-dag": 0.9,
+      "reachability": 0.85
+    }
+  }
+}

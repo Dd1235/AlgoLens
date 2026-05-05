@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-recover-a-tree-from-preorder-traversal",
+  "title": "Recover a Tree From Preorder Traversal",
+  "slug": "recover-a-tree-from-preorder-traversal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ],
+  "statement": "Given a preorder traversal string of a binary tree where node depth is indicated by dashes, reconstruct the original binary tree. The traversal guarantees that if a node has only one child, it is the left child.",
+  "tags": [
+    "string",
+    "tree",
+    "binary-tree",
+    "dfs"
+  ],
+  "patterns": [
+    "depth-first-search",
+    "stack",
+    "parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923966,
+    "pattern_confidence": {
+      "depth-first-search": 0.95,
+      "stack": 0.85,
+      "parsing": 0.9
+    }
+  }
+}

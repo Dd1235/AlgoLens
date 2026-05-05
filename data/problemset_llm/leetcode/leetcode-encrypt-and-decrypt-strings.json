@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-encrypt-and-decrypt-strings",
+  "title": "Encrypt and Decrypt Strings",
+  "slug": "encrypt-and-decrypt-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/encrypt-and-decrypt-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "design",
+    "trie"
+  ],
+  "statement": "Implement an Encrypter class that encrypts strings by mapping characters to two-letter codes and decrypts encoded strings by counting how many dictionary words can produce the encrypted string considering multiple possible decryptions.",
+  "tags": [
+    "string",
+    "hash-map",
+    "trie",
+    "backtracking"
+  ],
+  "patterns": [
+    "hash-map-lookup",
+    "trie",
+    "backtracking",
+    "prefix-tree-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922840,
+    "pattern_confidence": {
+      "hash-map-lookup": 0.95,
+      "trie": 0.9,
+      "backtracking": 0.85,
+      "prefix-tree-search": 0.8
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-form-largest-integer-with-digits-that-add-up-to-target",
+  "title": "Form Largest Integer With Digits That Add up to Target",
+  "slug": "form-largest-integer-with-digits-that-add-up-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/form-largest-integer-with-digits-that-add-up-to-target/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given costs for digits 1 to 9 and a target total cost, find the largest integer (as a string) whose digits sum to the target cost. Return \"0\" if no such integer exists.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "digit-dp",
+    "string-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923031,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "digit-dp": 0.95,
+      "string-construction": 0.9
+    }
+  }
+}

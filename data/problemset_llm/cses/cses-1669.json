@@ -1,0 +1,30 @@
+{
+  "id": "cses-1669",
+  "title": "Round Trip",
+  "slug": "round-trip",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1669",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given an undirected graph, find a cycle (round trip) that starts and ends at the same city, visiting at least three distinct cities, or report that none exists.",
+  "tags": [
+    "graph",
+    "dfs",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "dfs",
+    "cycle-detection",
+    "undirected-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951465,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "cycle-detection": 0.98,
+      "undirected-graph": 0.9
+    }
+  }
+}

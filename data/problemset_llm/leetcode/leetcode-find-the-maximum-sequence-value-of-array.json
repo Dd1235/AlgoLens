@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-maximum-sequence-value-of-array",
+  "title": "Find the Maximum Sequence Value of Array",
+  "slug": "find-the-maximum-sequence-value-of-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "statement": "Given an integer array and an integer k, find a subsequence of size 2*k that maximizes the XOR of the OR of the first k elements and the OR of the last k elements in the subsequence.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922962,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "dp": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1729",
+  "title": "Stick Game",
+  "slug": "stick-game",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1729",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a heap of sticks and a set of allowed moves, determine for each heap size from 1 to n whether the first player has a winning or losing position in a turn-based game where players remove sticks according to the allowed moves.",
+  "tags": [
+    "dp",
+    "game-theory",
+    "array"
+  ],
+  "patterns": [
+    "grundy-numbers",
+    "game-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951726,
+    "pattern_confidence": {
+      "grundy-numbers": 0.95,
+      "game-dp": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

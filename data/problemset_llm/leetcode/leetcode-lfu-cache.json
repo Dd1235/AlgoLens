@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-lfu-cache",
+  "title": "LFU Cache",
+  "slug": "lfu-cache",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lfu-cache/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "linked-list",
+    "design",
+    "doubly-linked-list"
+  ],
+  "statement": "Design a data structure that supports get and put operations for a Least Frequently Used (LFU) cache with O(1) average time complexity, evicting the least frequently used and least recently used keys when capacity is exceeded.",
+  "tags": [
+    "hash-table",
+    "linked-list",
+    "design",
+    "doubly-linked-list"
+  ],
+  "patterns": [
+    "frequency-list",
+    "ordered-dictionary",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923147,
+    "pattern_confidence": {
+      "frequency-list": 0.95,
+      "ordered-dictionary": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-insertion-steps-to-make-a-string-palindrome",
+  "title": "Minimum Insertion Steps to Make a String Palindrome",
+  "slug": "minimum-insertion-steps-to-make-a-string-palindrome",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, find the minimum number of insertions needed to transform it into a palindrome.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-palindromic-subsequence",
+    "dp-on-strings"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923577,
+    "pattern_confidence": {
+      "longest-palindromic-subsequence": 0.98,
+      "dp-on-strings": 0.95
+    }
+  }
+}

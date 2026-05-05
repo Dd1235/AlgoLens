@@ -1,0 +1,27 @@
+{
+  "id": "cses-1071",
+  "title": "Number Spiral",
+  "slug": "number-spiral",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1071",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given coordinates (y, x) in an infinite number spiral grid starting with 1 at the top-left, determine the number located at that position for multiple queries.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "formula-derivation",
+    "constant-time-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951257,
+    "pattern_confidence": {
+      "formula-derivation": 0.95,
+      "constant-time-computation": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-path-quality-of-a-graph",
+  "title": "Maximum Path Quality of a Graph",
+  "slug": "maximum-path-quality-of-a-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-path-quality-of-a-graph/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "backtracking",
+    "graph"
+  ],
+  "statement": "Given an undirected graph with node values and travel times on edges, find a path starting and ending at node 0 within a time limit that maximizes the sum of unique node values visited.",
+  "tags": [
+    "graph",
+    "backtracking",
+    "dfs"
+  ],
+  "patterns": [
+    "backtracking",
+    "dfs",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923368,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "dfs": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

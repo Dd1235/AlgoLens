@@ -1,0 +1,31 @@
+{
+  "id": "cses-3223",
+  "title": "Sliding Window Inversions",
+  "slug": "sliding-window-inversions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3223",
+  "source_topic": "CSES / Sliding Window Problems",
+  "source_tags": [],
+  "statement": "Given an array and a window size k, compute the number of inversions (pairs where a left element is greater than a right element) within each sliding window of size k.",
+  "tags": [
+    "array",
+    "data-structure"
+  ],
+  "patterns": [
+    "sliding-window",
+    "fenwick-tree",
+    "binary-indexed-tree",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951907,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "fenwick-tree": 0.9,
+      "binary-indexed-tree": 0.9,
+      "order-statistics": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-1079",
+  "title": "Binomial Coefficients",
+  "slug": "binomial-coefficients",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1079",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given multiple queries each with integers a and b, compute the binomial coefficient C(a, b) modulo 10^9+7 efficiently.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "modular-inverse",
+    "fast-exponentiation",
+    "precomputation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951676,
+    "pattern_confidence": {
+      "modular-inverse": 0.98,
+      "fast-exponentiation": 0.95,
+      "precomputation": 0.9
+    }
+  }
+}

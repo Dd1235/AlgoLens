@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-department-top-three-salaries",
+  "title": "Department Top Three Salaries",
+  "slug": "department-top-three-salaries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/department-top-three-salaries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given employee salary data grouped by department, identify all employees whose salaries rank among the top three distinct salaries within their department.",
+  "tags": [
+    "database",
+    "sorting",
+    "grouping"
+  ],
+  "patterns": [
+    "group-by",
+    "top-k-query",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922783,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "top-k-query": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

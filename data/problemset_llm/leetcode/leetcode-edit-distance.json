@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-edit-distance",
+  "title": "Edit Distance",
+  "slug": "edit-distance",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/edit-distance/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings, find the minimum number of insertions, deletions, and replacements needed to convert one string into the other.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "edit-distance",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922386,
+    "pattern_confidence": {
+      "edit-distance": 1.0,
+      "dp": 0.95
+    }
+  }
+}

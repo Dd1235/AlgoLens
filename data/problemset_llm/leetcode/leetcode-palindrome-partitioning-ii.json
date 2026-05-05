@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-palindrome-partitioning-ii",
+  "title": "Palindrome Partitioning II",
+  "slug": "palindrome-partitioning-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/palindrome-partitioning-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, partition it into substrings so that each substring is a palindrome, and find the minimum number of cuts needed to achieve this partitioning.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "palindrome-dp",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923879,
+    "pattern_confidence": {
+      "palindrome-dp": 0.98,
+      "interval-dp": 0.9
+    }
+  }
+}

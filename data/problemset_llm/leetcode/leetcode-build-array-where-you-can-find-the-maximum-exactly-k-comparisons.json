@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+  "title": "Build Array Where You Can Find The Maximum Exactly K Comparisons",
+  "slug": "build-array-where-you-can-find-the-maximum-exactly-k-comparisons",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of arrays of length n with elements between 1 and m such that a given search algorithm finds the maximum element with exactly k comparisons, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dp",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922490,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "prefix-sum": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

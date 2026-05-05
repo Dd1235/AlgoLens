@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-concatenated-divisibility",
+  "title": "Concatenated Divisibility",
+  "slug": "concatenated-divisibility",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/concatenated-divisibility/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given an array of positive integers and an integer k, find the lexicographically smallest permutation of the array such that the concatenation of its elements is divisible by k, or return an empty list if none exists.",
+  "tags": [
+    "array",
+    "dp",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922548,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "lexicographic-order": 0.9
+    }
+  }
+}

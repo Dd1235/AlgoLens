@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-couples-holding-hands",
+  "title": "Couples Holding Hands",
+  "slug": "couples-holding-hands",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/couples-holding-hands/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "greedy",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given 2n seats with n couples seated randomly, find the minimum number of swaps needed so that each couple sits together.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922750,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "greedy": 0.9,
+      "cycle-detection": 0.85
+    }
+  }
+}

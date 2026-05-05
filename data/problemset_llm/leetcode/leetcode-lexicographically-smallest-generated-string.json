@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-lexicographically-smallest-generated-string",
+  "title": "Lexicographically Smallest Generated String",
+  "slug": "lexicographically-smallest-generated-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-generated-string/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "greedy",
+    "string-matching"
+  ],
+  "statement": "Given two strings str1 and str2, construct the lexicographically smallest string that satisfies substring equality constraints defined by str1's characters 'T' and 'F' relative to str2, or return empty if impossible.",
+  "tags": [
+    "string",
+    "greedy",
+    "string-matching"
+  ],
+  "patterns": [
+    "greedy",
+    "string-construction",
+    "substring-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923137,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "string-construction": 0.9,
+      "substring-checking": 0.88
+    }
+  }
+}

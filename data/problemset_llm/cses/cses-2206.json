@@ -1,0 +1,28 @@
+{
+  "id": "cses-2206",
+  "title": "Pizzeria Queries",
+  "slug": "pizzeria-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2206",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Given n buildings each with a pizza price, support updates to the price at a building and queries to find the minimum cost to order a pizza from any building to a given building, where cost is price plus distance. Efficiently process these queries under large constraints.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "range-query"
+  ],
+  "patterns": [
+    "segment-tree",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951577,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "binary-search-answer": 0.7
+    }
+  }
+}

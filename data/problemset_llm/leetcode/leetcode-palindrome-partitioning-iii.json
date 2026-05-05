@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-palindrome-partitioning-iii",
+  "title": "Palindrome Partitioning III",
+  "slug": "palindrome-partitioning-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/palindrome-partitioning-iii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a lowercase string and an integer k, partition the string into k palindromic substrings by changing the minimum number of characters possible. Return this minimal number of changes required.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "interval-dp",
+    "palindrome-dp",
+    "preprocessing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923882,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "palindrome-dp": 0.95,
+      "preprocessing": 0.7
+    }
+  }
+}

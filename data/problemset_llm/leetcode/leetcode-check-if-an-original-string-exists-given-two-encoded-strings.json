@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-check-if-an-original-string-exists-given-two-encoded-strings",
+  "title": "Check if an Original String Exists Given Two Encoded Strings",
+  "slug": "check-if-an-original-string-exists-given-two-encoded-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two encoded strings representing the same original string with substrings replaced by their lengths, determine if there exists an original string that can produce both encodings.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "backtracking",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922510,
+    "pattern_confidence": {
+      "dp": 0.95,
+      "backtracking": 0.85,
+      "memoization": 0.9
+    }
+  }
+}

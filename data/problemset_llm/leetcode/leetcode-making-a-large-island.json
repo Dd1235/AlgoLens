@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-making-a-large-island",
+  "title": "Making A Large Island",
+  "slug": "making-a-large-island",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/making-a-large-island/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "matrix"
+  ],
+  "statement": "Given an n x n binary matrix, flip at most one 0 to 1 to maximize the size of the largest 4-directionally connected island of 1s.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "connected-components",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923204,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "connected-components": 0.95,
+      "grid-traversal": 0.9
+    }
+  }
+}

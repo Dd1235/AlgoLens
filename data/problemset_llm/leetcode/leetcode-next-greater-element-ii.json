@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-next-greater-element-ii",
+  "title": "Next Greater Element II",
+  "slug": "next-greater-element-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/next-greater-element-ii/",
+  "source_topic": "LeetCode / Stack and Monotonic Structures",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given a circular array, find for each element the next greater element in traversal order, searching circularly if needed, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "circular-array-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922363,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "circular-array-traversal": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "cses-1164",
+  "title": "Room Allocation",
+  "slug": "room-allocation",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1164",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given arrival and departure days of customers, determine the minimum number of rooms needed so that no two customers overlap in the same room, and assign rooms accordingly.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "heap",
+    "intervals"
+  ],
+  "patterns": [
+    "line-sweep",
+    "priority-queue",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951356,
+    "pattern_confidence": {
+      "line-sweep": 0.98,
+      "priority-queue": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "cses-1736",
+  "title": "Polynomial Queries",
+  "slug": "polynomial-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1736",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Maintain an array under queries that either add an increasing arithmetic progression to a subrange or ask for the sum of values in a subrange.",
+  "tags": [
+    "array",
+    "range-query",
+    "data-structure"
+  ],
+  "patterns": [
+    "difference-array",
+    "prefix-sum",
+    "range-update",
+    "range-sum-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951605,
+    "pattern_confidence": {
+      "difference-array": 0.95,
+      "prefix-sum": 0.9,
+      "range-update": 0.9,
+      "range-sum-query": 0.9
+    }
+  }
+}

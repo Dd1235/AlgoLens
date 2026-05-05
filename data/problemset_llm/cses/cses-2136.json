@@ -1,0 +1,30 @@
+{
+  "id": "cses-2136",
+  "title": "Hamming Distance",
+  "slug": "hamming-distance",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2136",
+  "source_topic": "CSES / Advanced Techniques",
+  "source_tags": [],
+  "statement": "Given n bit strings of length k, find the minimum Hamming distance between any two distinct strings, where Hamming distance is the count of differing bit positions.",
+  "tags": [
+    "bitmask",
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "bitmask-enumeration",
+    "binary-search-answer",
+    "xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951830,
+    "pattern_confidence": {
+      "bitmask-enumeration": 0.9,
+      "binary-search-answer": 0.85,
+      "xor": 0.8
+    }
+  }
+}

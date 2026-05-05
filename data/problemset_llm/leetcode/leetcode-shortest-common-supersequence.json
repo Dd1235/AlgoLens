@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-shortest-common-supersequence",
+  "title": "Shortest Common Supersequence ",
+  "slug": "shortest-common-supersequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-common-supersequence/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two strings, find the shortest string that contains both as subsequences. Return any such shortest common supersequence.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "string-subsequence",
+    "shortest-common-supersequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924018,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "string-subsequence": 0.95,
+      "shortest-common-supersequence": 0.97
+    }
+  }
+}

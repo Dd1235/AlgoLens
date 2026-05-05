@@ -1,0 +1,30 @@
+{
+  "id": "cses-2423",
+  "title": "Filling Trominos",
+  "slug": "filling-trominos",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2423",
+  "source_topic": "CSES / Construction Problems",
+  "source_tags": [],
+  "statement": "Determine if an n by m grid can be completely covered by L-shaped trominoes, and if so, provide one valid tiling with labeled trominoes.",
+  "tags": [
+    "geometry",
+    "grid",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "tiling",
+    "backtracking",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951966,
+    "pattern_confidence": {
+      "tiling": 0.95,
+      "backtracking": 0.7,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

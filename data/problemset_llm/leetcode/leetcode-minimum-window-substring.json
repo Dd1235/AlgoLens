@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-window-substring",
+  "title": "Minimum Window Substring",
+  "slug": "minimum-window-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-window-substring/",
+  "source_topic": "LeetCode / Two Pointers and Sliding Window",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Find the smallest substring of s that contains all characters of t including duplicates, or return empty if none exists.",
+  "tags": [
+    "string",
+    "hash-map",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "hash-map-lookup",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922351,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "two-pointers": 0.95,
+      "hash-map-lookup": 0.9,
+      "frequency-count": 0.88
+    }
+  }
+}

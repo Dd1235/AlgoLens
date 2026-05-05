@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-partition-array-into-two-arrays-to-minimize-sum-difference",
+  "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+  "slug": "partition-array-into-two-arrays-to-minimize-sum-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "dynamic-programming",
+    "bit-manipulation",
+    "sorting",
+    "ordered-set",
+    "bitmask"
+  ],
+  "statement": "Given an array of 2*n integers, partition it into two arrays of length n each to minimize the absolute difference of their sums.",
+  "tags": [
+    "array",
+    "bitmask",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "meet-in-the-middle",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923901,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "meet-in-the-middle": 0.95,
+      "sorting": 0.85
+    }
+  }
+}

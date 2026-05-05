@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-n-queens-ii",
+  "title": "N-Queens II",
+  "slug": "n-queens-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/n-queens-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "backtracking"
+  ],
+  "statement": "Count the number of distinct ways to place n queens on an n x n chessboard so that no two queens threaten each other.",
+  "tags": [
+    "backtracking",
+    "dfs",
+    "combinatorics"
+  ],
+  "patterns": [
+    "backtracking",
+    "pruning",
+    "constraint-satisfaction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923736,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "pruning": 0.9,
+      "constraint-satisfaction": 0.85
+    }
+  }
+}

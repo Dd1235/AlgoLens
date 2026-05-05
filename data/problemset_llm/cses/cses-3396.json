@@ -1,0 +1,30 @@
+{
+  "id": "cses-3396",
+  "title": "Next Prime",
+  "slug": "next-prime",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3396",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given multiple queries each with a positive integer n, find the smallest prime number strictly greater than n. The input size can be large, up to 10^{12}, requiring efficient primality testing and prime searching methods.",
+  "tags": [
+    "math",
+    "number-theory",
+    "prime-testing"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "miller-rabin-primality-test",
+    "fast-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951673,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "miller-rabin-primality-test": 0.95,
+      "fast-exponentiation": 0.9
+    }
+  }
+}

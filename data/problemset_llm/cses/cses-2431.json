@@ -1,0 +1,28 @@
+{
+  "id": "cses-2431",
+  "title": "Digit Queries",
+  "slug": "digit-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2431",
+  "source_topic": "CSES / Introductory Problems",
+  "source_tags": [],
+  "statement": "Given a large position k, determine the digit at that position in the infinite concatenation of all positive integers written in order.",
+  "tags": [
+    "math",
+    "binary-search",
+    "string"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951300,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-difference-in-sums-after-removal-of-elements",
+  "title": "Minimum Difference in Sums After Removal of Elements",
+  "slug": "minimum-difference-in-sums-after-removal-of-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an array of length 3n, remove exactly n elements so that the remaining 2n elements split into two equal parts have the minimum possible difference between their sums.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "heap"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "two-heaps",
+    "dp-on-prefix-suffix"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923555,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "greedy": 0.85,
+      "two-heaps": 0.88,
+      "dp-on-prefix-suffix": 0.8
+    }
+  }
+}

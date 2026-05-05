@@ -1,0 +1,27 @@
+{
+  "id": "cses-2132",
+  "title": "Increasing Array II",
+  "slug": "increasing-array-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2132",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Given an array, find the minimum total increments or decrements needed to make the array non-decreasing.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952176,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

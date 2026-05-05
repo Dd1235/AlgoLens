@@ -1,0 +1,30 @@
+{
+  "id": "cses-1674",
+  "title": "Subordinates",
+  "slug": "subordinates",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1674",
+  "source_topic": "CSES / Tree Algorithms",
+  "source_tags": [],
+  "statement": "Given a company hierarchy with each employee's direct boss, compute the number of subordinates for every employee in the organization.",
+  "tags": [
+    "tree",
+    "dfs",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "subtree-size"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951611,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "tree-dp": 0.95,
+      "subtree-size": 0.9
+    }
+  }
+}

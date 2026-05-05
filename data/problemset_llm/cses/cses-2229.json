@@ -1,0 +1,29 @@
+{
+  "id": "cses-2229",
+  "title": "Permutation Inversions",
+  "slug": "permutation-inversions",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2229",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Count the number of permutations of size n that have exactly k inversions, where an inversion is a pair of elements out of order. Output the count modulo 10^9+7.",
+  "tags": [
+    "dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "prefix-sum",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952059,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "prefix-sum": 0.85,
+      "counting": 0.9
+    }
+  }
+}

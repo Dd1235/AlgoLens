@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-split-array-largest-sum",
+  "title": "Split Array Largest Sum",
+  "slug": "split-array-largest-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-array-largest-sum/",
+  "source_topic": "LeetCode / Binary Search",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and a number k, split the array into k contiguous subarrays to minimize the maximum sum among these subarrays.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922376,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

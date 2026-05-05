@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-white-tiles-after-covering-with-carpets",
+  "title": "Minimum White Tiles After Covering With Carpets",
+  "slug": "minimum-white-tiles-after-covering-with-carpets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary string representing white and black tiles, and a number of carpets each covering a fixed length, determine the minimum number of white tiles visible after optimally placing the carpets, which may overlap.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "dp",
+    "prefix-sum",
+    "interval-coverage"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923722,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "prefix-sum": 0.9,
+      "interval-coverage": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-divide-nodes-into-the-maximum-number-of-groups",
+  "title": "Divide Nodes Into the Maximum Number of Groups",
+  "slug": "divide-nodes-into-the-maximum-number-of-groups",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given an undirected graph, partition its nodes into the maximum number of groups so that every edge connects nodes in groups with indices differing by exactly one, or return -1 if impossible.",
+  "tags": [
+    "graph",
+    "bfs",
+    "union-find"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "bipartite-check",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922826,
+    "pattern_confidence": {
+      "breadth-first-search": 0.95,
+      "bipartite-check": 0.9,
+      "connected-components": 0.85
+    }
+  }
+}

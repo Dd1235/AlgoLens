@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-number-of-non-overlapping-substrings",
+  "title": "Maximum Number of Non-Overlapping Substrings",
+  "slug": "maximum-number-of-non-overlapping-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a string, find the maximum number of non-overlapping substrings such that each substring contains all occurrences of every character it includes, and among solutions with the same count, choose one with minimum total length.",
+  "tags": [
+    "string",
+    "greedy",
+    "intervals",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "interval-scheduling",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923350,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "interval-scheduling": 0.95,
+      "two-pointers": 0.85,
+      "sorting": 0.9
+    }
+  }
+}

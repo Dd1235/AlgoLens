@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-xor-of-subsequences",
+  "title": "Maximum XOR of Subsequences",
+  "slug": "maximum-xor-of-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-xor-of-subsequences/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of non-negative integers, select two subsequences (possibly overlapping and possibly empty) to maximize the XOR of their XOR values.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "linear-basis",
+    "bitmask",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923464,
+    "pattern_confidence": {
+      "linear-basis": 0.98,
+      "bitmask": 0.85,
+      "greedy": 0.9
+    }
+  }
+}

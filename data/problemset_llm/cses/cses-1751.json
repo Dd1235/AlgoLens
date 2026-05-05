@@ -1,0 +1,30 @@
+{
+  "id": "cses-1751",
+  "title": "Planets Cycles",
+  "slug": "planets-cycles",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1751",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given n planets each with a teleporter to another planet, determine for each planet how many teleportations occur before reaching a previously visited planet when starting from that planet.",
+  "tags": [
+    "graph",
+    "dfs",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "dfs",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951509,
+    "pattern_confidence": {
+      "cycle-detection": 0.98,
+      "dfs": 0.95,
+      "graph-traversal": 0.9
+    }
+  }
+}

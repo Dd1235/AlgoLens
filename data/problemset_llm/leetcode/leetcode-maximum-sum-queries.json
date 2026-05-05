@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-maximum-sum-queries",
+  "title": "Maximum Sum Queries",
+  "slug": "maximum-sum-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "stack",
+    "binary-indexed-tree",
+    "segment-tree",
+    "sorting",
+    "monotonic-stack"
+  ],
+  "statement": "Given two integer arrays and queries with constraints, find the maximum sum of elements at indices satisfying the constraints or -1 if none exist.",
+  "tags": [
+    "array",
+    "sorting",
+    "segment-tree",
+    "binary-indexed-tree"
+  ],
+  "patterns": [
+    "offline-queries",
+    "coordinate-compression",
+    "segment-tree",
+    "binary-search-answer",
+    "monotonic-stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923442,
+    "pattern_confidence": {
+      "offline-queries": 0.95,
+      "coordinate-compression": 0.9,
+      "segment-tree": 0.9,
+      "binary-search-answer": 0.85,
+      "monotonic-stack": 0.7
+    }
+  }
+}

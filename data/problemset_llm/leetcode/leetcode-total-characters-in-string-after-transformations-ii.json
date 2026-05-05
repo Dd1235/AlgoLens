@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-total-characters-in-string-after-transformations-ii",
+  "title": "Total Characters in String After Transformations II",
+  "slug": "total-characters-in-string-after-transformations-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "dynamic-programming",
+    "counting"
+  ],
+  "statement": "Given a string and a transformation rule that replaces each character with a sequence of consecutive characters based on a given array, compute the length of the string after applying the transformation t times, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "math",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "matrix-exponentiation",
+    "modular-arithmetic",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924246,
+    "pattern_confidence": {
+      "matrix-exponentiation": 0.95,
+      "modular-arithmetic": 0.9,
+      "dp-on-dag": 0.7
+    }
+  }
+}

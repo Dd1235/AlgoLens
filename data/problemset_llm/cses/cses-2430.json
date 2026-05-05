@@ -1,0 +1,30 @@
+{
+  "id": "cses-2430",
+  "title": "Binary Subsequences",
+  "slug": "binary-subsequences",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/2430",
+  "source_topic": "CSES / Additional Problems II",
+  "source_tags": [],
+  "statement": "Find the shortest binary string that contains exactly n distinct subsequences.",
+  "tags": [
+    "string",
+    "dp",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "counting-subsequences"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952184,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "counting-subsequences": 0.8
+    }
+  }
+}

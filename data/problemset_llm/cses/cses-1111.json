@@ -1,0 +1,29 @@
+{
+  "id": "cses-1111",
+  "title": "Longest Palindrome",
+  "slug": "longest-palindrome",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1111",
+  "source_topic": "CSES / String Algorithms",
+  "source_tags": [],
+  "statement": "Given a string, find and output its longest palindromic substring. If multiple longest palindromes exist, any one of them can be printed.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "manacher",
+    "dp",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951755,
+    "pattern_confidence": {
+      "manacher": 0.95,
+      "dp": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

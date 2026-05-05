@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-stamping-the-grid",
+  "title": "Stamping the Grid",
+  "slug": "stamping-the-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stamping-the-grid/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary grid and stamp dimensions, determine if stamps can be placed to cover all empty cells without overlapping occupied cells, allowing overlapping stamps but no rotation or out-of-bound placement.",
+  "tags": [
+    "array",
+    "matrix",
+    "greedy",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924107,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "greedy": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

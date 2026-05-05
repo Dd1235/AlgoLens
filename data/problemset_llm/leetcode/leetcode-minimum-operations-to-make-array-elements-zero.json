@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-operations-to-make-array-elements-zero",
+  "title": "Minimum Operations to Make Array Elements Zero",
+  "slug": "minimum-operations-to-make-array-elements-zero",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation"
+  ],
+  "statement": "Given multiple queries each defining a range of integers, determine the minimum number of operations needed to reduce all elements in the range to zero by repeatedly replacing pairs with their floor division by 4, and return the sum of these minimum operations over all queries.",
+  "tags": [
+    "array",
+    "math",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923649,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "binary-search-answer": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

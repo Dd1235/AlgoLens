@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-edge-reversals-so-every-node-is-reachable",
+  "title": "Minimum Edge Reversals So Every Node Is Reachable",
+  "slug": "minimum-edge-reversals-so-every-node-is-reachable",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph"
+  ],
+  "statement": "Given a directed tree with edges, compute for each node the minimum number of edge reversals needed so that starting from that node, all other nodes are reachable via directed paths.",
+  "tags": [
+    "graph",
+    "tree",
+    "dp",
+    "breadth-first-search"
+  ],
+  "patterns": [
+    "rerooting-dp",
+    "bfs",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923562,
+    "pattern_confidence": {
+      "rerooting-dp": 0.95,
+      "bfs": 0.9,
+      "tree-dp": 0.88
+    }
+  }
+}

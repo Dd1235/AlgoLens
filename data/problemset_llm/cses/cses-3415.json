@@ -1,0 +1,28 @@
+{
+  "id": "cses-3415",
+  "title": "All Letter Subgrid Count I",
+  "slug": "all-letter-subgrid-count-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3415",
+  "source_topic": "CSES / Counting Problems",
+  "source_tags": [],
+  "statement": "Given an n×n grid of letters from the first k uppercase letters, count the number of square subgrids that contain all k letters at least once.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777952044,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

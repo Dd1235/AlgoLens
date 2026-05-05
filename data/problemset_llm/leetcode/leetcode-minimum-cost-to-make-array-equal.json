@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-cost-to-make-array-equal",
+  "title": "Minimum Cost to Make Array Equal",
+  "slug": "minimum-cost-to-make-array-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equal/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given two arrays nums and cost, find the minimum total cost to make all elements in nums equal by incrementing or decrementing elements, where each operation on element i costs cost[i].",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923528,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

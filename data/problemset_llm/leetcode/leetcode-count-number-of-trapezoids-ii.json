@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-number-of-trapezoids-ii",
+  "title": "Count Number of Trapezoids II",
+  "slug": "count-number-of-trapezoids-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-trapezoids-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given a set of distinct points on a plane, count the number of unique convex trapezoids formed by any four points, where a trapezoid has at least one pair of parallel sides defined by equal slopes.",
+  "tags": [
+    "geometry",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "slope-calculation",
+    "combinatorics",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922642,
+    "pattern_confidence": {
+      "slope-calculation": 0.95,
+      "combinatorics": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

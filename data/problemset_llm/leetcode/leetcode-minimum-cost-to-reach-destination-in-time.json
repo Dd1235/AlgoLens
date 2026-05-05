@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-to-reach-destination-in-time",
+  "title": "Minimum Cost to Reach Destination in Time",
+  "slug": "minimum-cost-to-reach-destination-in-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "graph"
+  ],
+  "statement": "Given a weighted undirected graph with passing fees on nodes and a maximum allowed travel time, find the minimum total passing fee to reach from city 0 to city n-1 within the time limit, or return -1 if impossible.",
+  "tags": [
+    "graph",
+    "dp",
+    "shortest-path"
+  ],
+  "patterns": [
+    "dijkstra",
+    "dp-on-graph",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923540,
+    "pattern_confidence": {
+      "dijkstra": 0.95,
+      "dp-on-graph": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

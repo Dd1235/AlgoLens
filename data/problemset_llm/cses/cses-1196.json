@@ -1,0 +1,30 @@
+{
+  "id": "cses-1196",
+  "title": "Flight Routes",
+  "slug": "flight-routes",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1196",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Find the k shortest paths from city 1 to city n in a directed graph with weighted edges, allowing repeated visits to cities.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "priority-queue"
+  ],
+  "patterns": [
+    "k-shortest-paths",
+    "dijkstra",
+    "best-first-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951486,
+    "pattern_confidence": {
+      "k-shortest-paths": 0.98,
+      "dijkstra": 0.95,
+      "best-first-search": 0.9
+    }
+  }
+}

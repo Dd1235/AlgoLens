@@ -1,0 +1,27 @@
+{
+  "id": "cses-1744",
+  "title": "Rectangle Cutting",
+  "slug": "rectangle-cutting",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1744",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a rectangle of dimensions a by b, find the minimum number of cuts needed to partition it into squares by repeatedly cutting rectangles into two smaller rectangles with integer side lengths.",
+  "tags": [
+    "dp",
+    "geometry"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "rectangle-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951415,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "rectangle-partitioning": 0.9
+    }
+  }
+}

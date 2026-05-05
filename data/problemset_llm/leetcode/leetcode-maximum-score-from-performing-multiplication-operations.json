@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-score-from-performing-multiplication-operations",
+  "title": "Maximum Score from Performing Multiplication Operations",
+  "slug": "maximum-score-from-performing-multiplication-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-from-performing-multiplication-operations/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two arrays nums and multipliers, perform exactly m operations by choosing elements from either end of nums and multiplying by the corresponding multiplier to maximize the total score.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "two-pointers",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923391,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "two-pointers": 0.85,
+      "state-compression": 0.75
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-subarrays-distinct-element-sum-of-squares-ii",
+  "title": "Subarrays Distinct Element Sum of Squares II",
+  "slug": "subarrays-distinct-element-sum-of-squares-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Given an integer array, compute the sum of squares of the counts of distinct elements for every contiguous subarray, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hashing"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924145,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "prefix-sum": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

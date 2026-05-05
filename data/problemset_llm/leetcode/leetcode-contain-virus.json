@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-contain-virus",
+  "title": "Contain Virus",
+  "slug": "contain-virus",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/contain-virus/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "matrix",
+    "simulation"
+  ],
+  "statement": "Given a grid representing infected and uninfected cells, repeatedly quarantine the most threatening infected region by building walls to prevent virus spread, and return the total number of walls built until containment or full infection.",
+  "tags": [
+    "array",
+    "graph",
+    "simulation"
+  ],
+  "patterns": [
+    "dfs",
+    "bfs",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922564,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bfs": 0.95,
+      "greedy": 0.9,
+      "simulation": 0.9
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "cses-3428",
+  "title": "Line Segments Trace II",
+  "slug": "line-segments-trace-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3428",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given n line segments with integer slopes and endpoints within [0, m], find for each integer x in [0, m] the maximum y-coordinate among all segments covering x, or -1 if none.",
+  "tags": [
+    "geometry",
+    "line-segments",
+    "array"
+  ],
+  "patterns": [
+    "line-sweep",
+    "binary-search-answer",
+    "segment-evaluation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951816,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "binary-search-answer": 0.7,
+      "segment-evaluation": 0.85
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-maximum-good-subtree-score",
+  "title": "Maximum Good Subtree Score",
+  "slug": "maximum-good-subtree-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-good-subtree-score/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search",
+    "bitmask"
+  ],
+  "statement": "Given a rooted tree with integer values on nodes, compute for each node the maximum sum of a subset of nodes in its subtree such that no digit appears more than once in the decimal representation of the subset's values, then return the sum of these maximum sums modulo 10^9+7.",
+  "tags": [
+    "tree",
+    "dp",
+    "bitmask",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "dfs",
+    "bitmask-dp",
+    "tree-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923326,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bitmask-dp": 0.9,
+      "tree-dp": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

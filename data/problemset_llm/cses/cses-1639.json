@@ -1,0 +1,27 @@
+{
+  "id": "cses-1639",
+  "title": "Edit Distance",
+  "slug": "edit-distance",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1639",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Compute the minimum number of insertions, deletions, and substitutions required to transform one string into another, known as the edit distance.",
+  "tags": [
+    "string",
+    "dp"
+  ],
+  "patterns": [
+    "edit-distance",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951411,
+    "pattern_confidence": {
+      "edit-distance": 1.0,
+      "dynamic-programming": 0.95
+    }
+  }
+}

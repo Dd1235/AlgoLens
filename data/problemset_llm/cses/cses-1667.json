@@ -1,0 +1,28 @@
+{
+  "id": "cses-1667",
+  "title": "Message Route",
+  "slug": "message-route",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1667",
+  "source_topic": "CSES / Graph Algorithms",
+  "source_tags": [],
+  "statement": "Given an undirected graph with n computers and m connections, find the shortest path from computer 1 to computer n, or determine that no such path exists.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "bfs"
+  ],
+  "patterns": [
+    "breadth-first-search",
+    "shortest-path-unweighted"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951460,
+    "pattern_confidence": {
+      "breadth-first-search": 0.98,
+      "shortest-path-unweighted": 0.95
+    }
+  }
+}

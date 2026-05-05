@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-number-of-removals-to-make-mountain-array",
+  "title": "Minimum Number of Removals to Make Mountain Array",
+  "slug": "minimum-number-of-removals-to-make-mountain-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given an integer array, find the minimum number of elements to remove so that the remaining array forms a mountain array, which strictly increases then strictly decreases.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "longest-decreasing-subsequence",
+    "dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923624,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "longest-decreasing-subsequence": 0.97,
+      "dp": 0.95
+    }
+  }
+}

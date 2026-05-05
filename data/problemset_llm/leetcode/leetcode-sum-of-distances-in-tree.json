@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sum-of-distances-in-tree",
+  "title": "Sum of Distances in Tree",
+  "slug": "sum-of-distances-in-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-distances-in-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search",
+    "graph"
+  ],
+  "statement": "Given a tree with n nodes and edges, compute for each node the sum of distances to all other nodes in the tree.",
+  "tags": [
+    "tree",
+    "graph",
+    "dp"
+  ],
+  "patterns": [
+    "tree-dp",
+    "rerooting-dp",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924169,
+    "pattern_confidence": {
+      "tree-dp": 0.98,
+      "rerooting-dp": 0.95,
+      "dfs": 0.9
+    }
+  }
+}

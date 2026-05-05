@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-trips-and-users",
+  "title": "Trips and Users",
+  "slug": "trips-and-users",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/trips-and-users/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Calculate the daily cancellation rate of taxi trips between 2013-10-01 and 2013-10-03, considering only trips where both client and driver are not banned users. The cancellation rate is the ratio of canceled trips to total trips per day, rounded to two decimals.",
+  "tags": [
+    "database",
+    "aggregation",
+    "filtering",
+    "date-time"
+  ],
+  "patterns": [
+    "group-by",
+    "conditional-aggregation",
+    "join",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924268,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "conditional-aggregation": 0.93,
+      "join": 0.9,
+      "filtering": 0.9
+    }
+  }
+}

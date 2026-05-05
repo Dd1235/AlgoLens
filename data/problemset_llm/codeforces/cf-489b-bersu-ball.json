@@ -1,0 +1,38 @@
+{
+  "id": "cf-489b-bersu-ball",
+  "title": "BerSU Ball",
+  "slug": "codeforces-489b-bersu-ball",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/489/B",
+  "source_topic": "Codeforces / Binary Search, Greedy, and Two Pointers",
+  "source_tags": [
+    "array",
+    "sorting",
+    "two-pointers",
+    "greedy",
+    "matching"
+  ],
+  "statement": "Given two groups of participants with skill values, find the maximum number of pairs formed such that the skill difference in each pair is at most one.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "two-pointers",
+    "matching"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777953631,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

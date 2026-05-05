@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-word-break",
+  "title": "Word Break",
+  "slug": "word-break",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-break/",
+  "source_topic": "LeetCode / Dynamic Programming",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "trie",
+    "memoization"
+  ],
+  "statement": "Given a string and a dictionary of words, determine if the string can be segmented into a sequence of one or more dictionary words, allowing reuse of words.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "trie",
+    "hash-map"
+  ],
+  "patterns": [
+    "memoization",
+    "top-down-dp",
+    "trie-based-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922388,
+    "pattern_confidence": {
+      "memoization": 0.95,
+      "top-down-dp": 0.9,
+      "trie-based-search": 0.85
+    }
+  }
+}

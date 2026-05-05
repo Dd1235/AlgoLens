@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-spending-after-buying-items",
+  "title": "Maximum Spending After Buying Items",
+  "slug": "maximum-spending-after-buying-items",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-spending-after-buying-items/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given multiple shops each with items sorted by non-increasing value, buy one item per day from the rightmost available item in any shop, maximizing the total spending where the cost is item value times the day number.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "priority-queue",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923411,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "priority-queue": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

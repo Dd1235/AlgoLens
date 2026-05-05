@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-modify-graph-edge-weights",
+  "title": "Modify Graph Edge Weights",
+  "slug": "modify-graph-edge-weights",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/modify-graph-edge-weights/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given an undirected weighted graph with some edges having unknown weights (-1), assign positive weights to these edges so that the shortest path distance from a source node to a destination node equals a given target value, or determine that it is impossible.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dijkstra"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "shortest-path",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923728,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "shortest-path": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

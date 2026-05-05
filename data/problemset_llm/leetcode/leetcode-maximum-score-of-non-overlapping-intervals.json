@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-score-of-non-overlapping-intervals",
+  "title": "Maximum Score of Non-overlapping Intervals",
+  "slug": "maximum-score-of-non-overlapping-intervals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a list of weighted intervals, select up to four non-overlapping intervals to maximize the total weight and return the lexicographically smallest set of their indices.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "dp-on-dag",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923398,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "dp-on-dag": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-longest-path-with-different-adjacent-characters",
+  "title": "Longest Path With Different Adjacent Characters",
+  "slug": "longest-path-with-different-adjacent-characters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-path-with-different-adjacent-characters/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "string",
+    "tree",
+    "depth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given a rooted tree and a character assigned to each node, find the length of the longest path where adjacent nodes have different characters.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "string"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "longest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923181,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "tree-dp": 0.95,
+      "longest-path": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-operations-to-make-array-equal-to-target",
+  "title": "Minimum Operations to Make Array Equal to Target",
+  "slug": "minimum-operations-to-make-array-equal-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "stack",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "statement": "Given two integer arrays of equal length, determine the minimum number of operations to transform one array into the other by incrementing or decrementing any chosen subarray by 1 per operation.",
+  "tags": [
+    "array",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "greedy",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923651,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "greedy": 0.85,
+      "difference-array": 0.8
+    }
+  }
+}

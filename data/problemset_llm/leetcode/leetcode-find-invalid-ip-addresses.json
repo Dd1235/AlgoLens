@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-invalid-ip-addresses",
+  "title": "Find Invalid IP Addresses",
+  "slug": "find-invalid-ip-addresses",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-invalid-ip-addresses/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given server access logs with IP addresses, identify and count invalid IPv4 addresses based on criteria including octet count, leading zeros, and octet value limits. Return the invalid IPs ordered by their invalid occurrence count and IP value descending.",
+  "tags": [
+    "string",
+    "hash-map",
+    "parsing"
+  ],
+  "patterns": [
+    "string-parsing",
+    "hash-map-lookup",
+    "group-by-aggregation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922894,
+    "pattern_confidence": {
+      "string-parsing": 0.95,
+      "hash-map-lookup": 0.9,
+      "group-by-aggregation": 0.85
+    }
+  }
+}

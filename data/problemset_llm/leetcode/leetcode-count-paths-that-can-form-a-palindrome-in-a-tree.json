@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-paths-that-can-form-a-palindrome-in-a-tree",
+  "title": "Count Paths That Can Form a Palindrome in a Tree",
+  "slug": "count-paths-that-can-form-a-palindrome-in-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "hash-table",
+    "bit-manipulation",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a rooted tree with characters assigned to edges, count pairs of nodes where the path's edge characters can be rearranged into a palindrome.",
+  "tags": [
+    "tree",
+    "bit-manipulation",
+    "dfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "dfs",
+    "bitmask",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922664,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "dfs": 0.9,
+      "bitmask": 0.9,
+      "hash-map-lookup": 0.85
+    }
+  }
+}

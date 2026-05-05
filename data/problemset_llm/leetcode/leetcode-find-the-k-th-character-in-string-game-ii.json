@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-k-th-character-in-string-game-ii",
+  "title": "Find the K-th Character in String Game II",
+  "slug": "find-the-k-th-character-in-string-game-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "math",
+    "bit-manipulation",
+    "recursion"
+  ],
+  "statement": "Starting from the string \"a\", perform a sequence of operations that either duplicate the string or append an alphabetically incremented copy, then find the k-th character in the resulting string without explicitly constructing it.",
+  "tags": [
+    "string",
+    "math",
+    "recursion"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "binary-search-answer",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922948,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "binary-search-answer": 0.85,
+      "modular-arithmetic": 0.7
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cses-3427",
+  "title": "Line Segments Trace I",
+  "slug": "line-segments-trace-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3427",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Given n line segments defined by their endpoints at x=0 and x=m with integer slopes, find the maximum y-coordinate among all segments for each integer x from 0 to m.",
+  "tags": [
+    "geometry",
+    "array"
+  ],
+  "patterns": [
+    "line-sweep",
+    "prefix-max"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951814,
+    "pattern_confidence": {
+      "line-sweep": 0.9,
+      "prefix-max": 0.7
+    }
+  }
+}

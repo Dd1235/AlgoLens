@@ -1,0 +1,32 @@
+{
+  "id": "cses-1190",
+  "title": "Subarray Sum Queries",
+  "slug": "subarray-sum-queries",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1190",
+  "source_topic": "CSES / Range Queries",
+  "source_tags": [],
+  "statement": "Maintain an array under point updates and after each update, report the maximum subarray sum (allowing empty subarrays).",
+  "tags": [
+    "array",
+    "segment-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "range-query",
+    "point-update",
+    "maximum-subarray-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951585,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "range-query": 0.95,
+      "point-update": 0.9,
+      "maximum-subarray-sum": 0.97
+    }
+  }
+}

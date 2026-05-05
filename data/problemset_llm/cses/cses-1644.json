@@ -1,0 +1,30 @@
+{
+  "id": "cses-1644",
+  "title": "Maximum Subarray Sum II",
+  "slug": "maximum-subarray-sum-ii",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1644",
+  "source_topic": "CSES / Sorting and Searching",
+  "source_tags": [],
+  "statement": "Given an array and two integers a and b, find the maximum sum of any contiguous subarray whose length is between a and b inclusive.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sliding-window",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951387,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "sliding-window": 0.9,
+      "monotonic-queue": 0.85
+    }
+  }
+}

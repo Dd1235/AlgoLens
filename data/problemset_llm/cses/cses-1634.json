@@ -1,0 +1,28 @@
+{
+  "id": "cses-1634",
+  "title": "Minimizing Coins",
+  "slug": "minimizing-coins",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1634",
+  "source_topic": "CSES / Dynamic Programming",
+  "source_tags": [],
+  "statement": "Given a set of coin denominations and a target sum, find the minimum number of coins needed to form that sum or determine it is impossible.",
+  "tags": [
+    "dp",
+    "coin-change",
+    "array"
+  ],
+  "patterns": [
+    "unbounded-knapsack",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951391,
+    "pattern_confidence": {
+      "unbounded-knapsack": 0.98,
+      "dynamic-programming": 0.95
+    }
+  }
+}

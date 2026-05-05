@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-second-minimum-time-to-reach-destination",
+  "title": "Second Minimum Time to Reach Destination",
+  "slug": "second-minimum-time-to-reach-destination",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/second-minimum-time-to-reach-destination/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "breadth-first-search",
+    "graph",
+    "shortest-path"
+  ],
+  "statement": "Given a bidirectional graph with traffic signals that alternate between green and red, find the second shortest time to travel from node 1 to node n considering waiting times at red signals.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "bfs"
+  ],
+  "patterns": [
+    "modified-bfs",
+    "state-space-search",
+    "shortest-path-with-waiting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777924002,
+    "pattern_confidence": {
+      "modified-bfs": 0.95,
+      "state-space-search": 0.9,
+      "shortest-path-with-waiting": 0.88
+    }
+  }
+}

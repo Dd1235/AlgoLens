@@ -1,0 +1,30 @@
+{
+  "id": "cses-1723",
+  "title": "Graph Paths I",
+  "slug": "graph-paths-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/1723",
+  "source_topic": "CSES / Mathematics",
+  "source_tags": [],
+  "statement": "Given a directed graph with n nodes and m edges, count the number of distinct paths from node 1 to node n that use exactly k edges, modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "dp",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "matrix-exponentiation",
+    "dp-on-dag",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951706,
+    "pattern_confidence": {
+      "matrix-exponentiation": 0.98,
+      "dp-on-dag": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

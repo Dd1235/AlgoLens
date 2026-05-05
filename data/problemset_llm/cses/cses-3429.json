@@ -1,0 +1,30 @@
+{
+  "id": "cses-3429",
+  "title": "Lines and Queries I",
+  "slug": "lines-and-queries-i",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3429",
+  "source_topic": "CSES / Geometry",
+  "source_tags": [],
+  "statement": "Process queries to add linear functions and find the maximum value among all added lines at given points efficiently.",
+  "tags": [
+    "data-structure",
+    "geometry",
+    "line"
+  ],
+  "patterns": [
+    "convex-hull-trick",
+    "dynamic-line-addition",
+    "query-max-at-point"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951819,
+    "pattern_confidence": {
+      "convex-hull-trick": 0.98,
+      "dynamic-line-addition": 0.9,
+      "query-max-at-point": 0.85
+    }
+  }
+}

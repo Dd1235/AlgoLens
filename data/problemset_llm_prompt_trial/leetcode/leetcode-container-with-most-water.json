@@ -1,0 +1,18 @@
+{
+  "id": "leetcode-container-with-most-water",
+  "title": "Container With Most Water",
+  "slug": "container-with-most-water",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/container-with-most-water/",
+  "source_topic": "LeetCode / Two Pointers and Sliding Window",
+  "source_tags": [],
+  "statement": "Container With Most Water from LeetCode / Two Pointers and Sliding Window.",
+  "tags": [],
+  "patterns": [],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": null,
+    "generated_at_unix": 1777921865,
+    "pattern_confidence": {}
+  }
+}

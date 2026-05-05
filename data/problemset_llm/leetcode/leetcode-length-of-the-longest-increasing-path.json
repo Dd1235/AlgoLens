@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-length-of-the-longest-increasing-path",
+  "title": "Length of the Longest Increasing Path",
+  "slug": "length-of-the-longest-increasing-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/length-of-the-longest-increasing-path/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given a set of distinct 2D points and an index k, find the length of the longest strictly increasing path in both x and y coordinates that includes the point at index k.",
+  "tags": [
+    "array",
+    "dp",
+    "graph"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "coordinate-compression",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923131,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.95,
+      "coordinate-compression": 0.85,
+      "dp-on-dag": 0.9
+    }
+  }
+}

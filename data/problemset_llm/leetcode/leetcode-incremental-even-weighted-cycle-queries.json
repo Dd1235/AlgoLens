@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-incremental-even-weighted-cycle-queries",
+  "title": "Incremental Even-Weighted Cycle Queries",
+  "slug": "incremental-even-weighted-cycle-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/incremental-even-weighted-cycle-queries/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given a graph with n nodes and edges with weights 0 or 1 added incrementally, add each edge only if every cycle formed has an even sum of edge weights, and return the count of edges successfully added.",
+  "tags": [
+    "graph",
+    "union-find",
+    "parity"
+  ],
+  "patterns": [
+    "union-find",
+    "parity-check",
+    "incremental-graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923075,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "parity-check": 0.95,
+      "incremental-graph-construction": 0.9
+    }
+  }
+}

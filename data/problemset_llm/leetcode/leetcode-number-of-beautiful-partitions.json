@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-number-of-beautiful-partitions",
+  "title": "Number of Beautiful Partitions",
+  "slug": "number-of-beautiful-partitions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-beautiful-partitions/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given a digit string and parameters k and minLength, count the number of ways to partition the string into k substrings each at least minLength long, where each substring starts with a prime digit and ends with a non-prime digit. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777923762,
+    "pattern_confidence": {
+      "dp": 0.98,
+      "prefix-sum": 0.85
+    }
+  }
+}

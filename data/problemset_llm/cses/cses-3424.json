@@ -1,0 +1,28 @@
+{
+  "id": "cses-3424",
+  "title": "Distinct Sums Grid",
+  "slug": "distinct-sums-grid",
+  "platform": "cses",
+  "source_url": "https://cses.fi/problemset/task/3424",
+  "source_topic": "CSES / Construction Problems",
+  "source_tags": [],
+  "statement": "Construct an n by n grid where each integer from 1 to n appears exactly n times, and the set of all row and column sums contains exactly 2n distinct values.",
+  "tags": [
+    "array",
+    "construction",
+    "math"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777951964,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "combinatorics": 0.85
+    }
+  }
+}

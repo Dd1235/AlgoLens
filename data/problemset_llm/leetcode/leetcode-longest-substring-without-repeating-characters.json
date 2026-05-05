@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-substring-without-repeating-characters",
+  "title": "Longest Substring Without Repeating Characters",
+  "slug": "longest-substring-without-repeating-characters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+  "source_topic": "LeetCode / Two Pointers and Sliding Window",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a string, find the length of the longest substring that contains no repeated characters.",
+  "tags": [
+    "string",
+    "hash-map",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "hash-map-lookup"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922347,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "two-pointers": 0.95,
+      "hash-map-lookup": 0.93
+    }
+  }
+}

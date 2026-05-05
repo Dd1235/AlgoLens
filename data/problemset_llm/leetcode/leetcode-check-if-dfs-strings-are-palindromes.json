@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-check-if-dfs-strings-are-palindromes",
+  "title": "Check if DFS Strings Are Palindromes",
+  "slug": "check-if-dfs-strings-are-palindromes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/",
+  "source_topic": "LeetCode / Hard (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "tree",
+    "depth-first-search",
+    "hash-function"
+  ],
+  "statement": "Given a rooted tree and a character assigned to each node, for each node compute whether the string formed by a post-order DFS starting at that node is a palindrome.",
+  "tags": [
+    "tree",
+    "string",
+    "dfs",
+    "hashing"
+  ],
+  "patterns": [
+    "depth-first-search",
+    "tree-dp",
+    "string-hashing",
+    "palindrome-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1777922513,
+    "pattern_confidence": {
+      "depth-first-search": 0.98,
+      "tree-dp": 0.85,
+      "string-hashing": 0.9,
+      "palindrome-check": 0.9
+    }
+  }
+}

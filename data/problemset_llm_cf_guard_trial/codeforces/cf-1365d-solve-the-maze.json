@@ -1,0 +1,24 @@
+{
+  "id": "cf-1365d-solve-the-maze",
+  "title": "Solve The Maze",
+  "slug": "codeforces-1365d-solve-the-maze",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1365/D",
+  "source_topic": "Codeforces / Graphs and Grid Search",
+  "source_tags": [
+    "grid",
+    "graph",
+    "dfs",
+    "bfs",
+    "greedy"
+  ],
+  "statement": "Given a maze grid with empty cells, walls, good people, and bad people, decide whether some empty cells can be blocked so every good person can reach the exit while no bad person can.",
+  "tags": [],
+  "patterns": [],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": null,
+    "generated_at_unix": 1777921703,
+    "pattern_confidence": {}
+  }
+}
