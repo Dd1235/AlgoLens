@@ -1,10 +1,12 @@
 const input = document.getElementById("search-input");
 const form = document.getElementById("search-form");
 const resultsEl = document.getElementById("results");
-const compareEl = document.getElementById("compare-results");
-const compareToggle = document.getElementById("compare-toggle");
-const latencySummaryEl = document.getElementById("latency-summary");
 const statusEl = document.getElementById("status");
+
+// COMPARE_MODE_DISABLED: see web/index.html for the full re-enable note.
+// const compareEl = document.getElementById("compare-results");
+// const compareToggle = document.getElementById("compare-toggle");
+// const latencySummaryEl = document.getElementById("latency-summary");
 
 const DEBOUNCE_MS = 200;
 const TOP_K = 20;
@@ -26,39 +28,35 @@ input.addEventListener("input", () => {
 
 input.addEventListener("focus", () => setStatus("ready"));
 
-compareToggle.addEventListener("change", () => {
-  applyMode();
-  if (input.value.trim()) runSearch(input.value);
-});
-applyMode();
-
-function applyMode() {
-  if (compareToggle.checked) {
-    resultsEl.classList.add("hidden");
-    compareEl.classList.remove("hidden");
-  } else {
-    resultsEl.classList.remove("hidden");
-    compareEl.classList.add("hidden");
-    latencySummaryEl.textContent = "";
-  }
-}
+// COMPARE_MODE_DISABLED:
+// compareToggle.addEventListener("change", () => {
+//   applyMode();
+//   if (input.value.trim()) runSearch(input.value);
+// });
+// applyMode();
+//
+// function applyMode() {
+//   if (compareToggle.checked) {
+//     resultsEl.classList.add("hidden");
+//     compareEl.classList.remove("hidden");
+//   } else {
+//     resultsEl.classList.remove("hidden");
+//     compareEl.classList.add("hidden");
+//     latencySummaryEl.textContent = "";
+//   }
+// }
 
 async function runSearch(rawQuery) {
   const q = rawQuery.trim();
   if (!q) {
     setStatus("type a query to search");
     resultsEl.innerHTML = "";
-    compareEl.innerHTML = "";
-    latencySummaryEl.textContent = "";
     return;
   }
 
   const issuedAt = ++lastQueryAt;
   setStatus(`searching: "${q}"`);
-  const compare = compareToggle.checked;
-  const url = compare
-    ? `/api/compare?q=${encodeURIComponent(q)}&k=${TOP_K}`
-    : `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}`;
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}`;
 
   let data;
   try {
@@ -72,11 +70,7 @@ async function runSearch(rawQuery) {
 
   if (issuedAt !== lastQueryAt) return;
 
-  if (compare) {
-    renderCompare(data, q);
-  } else {
-    renderSingle(data, q);
-  }
+  renderSingle(data, q);
 }
 
 function renderSingle(data, q) {
@@ -91,63 +85,41 @@ function renderSingle(data, q) {
   renderHitsList(resultsEl, data.hits);
 }
 
-function renderCompare(data, q) {
-  const results = data.results || [];
-  if (results.length === 0) {
-    setStatus(`no rankers configured`);
-    compareEl.innerHTML = "";
-    return;
-  }
-
-  // Build rank-by-id maps so each column can show "rank in the other ranker"
-  const rankMaps = results.map((r) => {
-    const m = new Map();
-    r.hits.forEach((h, i) => m.set(h.problem.id, i + 1));
-    return m;
-  });
-
-  const totalHits = results.reduce((s, r) => s + r.hits.length, 0);
-  if (totalHits === 0) {
-    setStatus(`0 hits for "${q}"`);
-    compareEl.innerHTML = "";
-    latencySummaryEl.textContent = "";
-    return;
-  }
-
-  setStatus(`compare: "${q}"`);
-  latencySummaryEl.textContent = results
-    .map((r) => `${r.ranker} ${r.latencyMs.toFixed(3)}ms`)
-    .join("  ·  ");
-
-  compareEl.innerHTML = "";
-  results.forEach((r, idx) => {
-    const col = document.createElement("section");
-    col.className = "compare-col";
-
-    const head = document.createElement("div");
-    head.className = "compare-col-head";
-    head.innerHTML = `<span class="ranker-name">${escapeHtml(r.ranker)}</span><span class="ranker-latency">${r.latencyMs.toFixed(3)}ms</span>`;
-    col.appendChild(head);
-
-    const list = document.createElement("ul");
-    list.className = "compare-list";
-    col.appendChild(list);
-
-    if (r.hits.length === 0) {
-      const empty = document.createElement("li");
-      empty.className = "compare-empty";
-      empty.textContent = "no hits";
-      list.appendChild(empty);
-    } else {
-      const otherIdx = idx === 0 ? 1 : 0;
-      const otherMap = rankMaps[otherIdx];
-      const otherName = results[otherIdx]?.ranker || "other";
-      renderHitsList(list, r.hits, { otherRankMap: otherMap, otherName });
-    }
-
-    compareEl.appendChild(col);
-  });
-}
+// COMPARE_MODE_DISABLED:
+// function renderCompare(data, q) {
+//   const results = data.results || [];
+//   if (results.length === 0) { setStatus("no rankers configured"); compareEl.innerHTML = ""; return; }
+//   const rankMaps = results.map((r) => {
+//     const m = new Map();
+//     r.hits.forEach((h, i) => m.set(h.problem.id, i + 1));
+//     return m;
+//   });
+//   const totalHits = results.reduce((s, r) => s + r.hits.length, 0);
+//   if (totalHits === 0) { setStatus(`0 hits for "${q}"`); compareEl.innerHTML = ""; latencySummaryEl.textContent = ""; return; }
+//   setStatus(`compare: "${q}"`);
+//   latencySummaryEl.textContent = results.map((r) => `${r.ranker} ${r.latencyMs.toFixed(3)}ms`).join("  ·  ");
+//   compareEl.innerHTML = "";
+//   results.forEach((r, idx) => {
+//     const col = document.createElement("section");
+//     col.className = "compare-col";
+//     const head = document.createElement("div");
+//     head.className = "compare-col-head";
+//     head.innerHTML = `<span class="ranker-name">${escapeHtml(r.ranker)}</span><span class="ranker-latency">${r.latencyMs.toFixed(3)}ms</span>`;
+//     col.appendChild(head);
+//     const list = document.createElement("ul");
+//     list.className = "compare-list";
+//     col.appendChild(list);
+//     if (r.hits.length === 0) {
+//       const empty = document.createElement("li"); empty.className = "compare-empty"; empty.textContent = "no hits"; list.appendChild(empty);
+//     } else {
+//       const otherIdx = idx === 0 ? 1 : 0;
+//       const otherMap = rankMaps[otherIdx];
+//       const otherName = results[otherIdx]?.ranker || "other";
+//       renderHitsList(list, r.hits, { otherRankMap: otherMap, otherName });
+//     }
+//     compareEl.appendChild(col);
+//   });
+// }
 
 function setStatus(text) {
   clearTimeout(typeTimer);
@@ -170,18 +142,13 @@ function diffClass(d) {
   return d === "easy" || d === "medium" || d === "hard" ? d : "";
 }
 
-function rankDeltaBadge(thisRank, otherRank, otherName) {
-  if (otherRank == null) {
-    return `<span class="rank-delta absent" title="not in ${escapeHtml(otherName)} top ${TOP_K}">– ${escapeHtml(otherName)}</span>`;
-  }
-  if (otherRank === thisRank) {
-    return `<span class="rank-delta same" title="same rank in ${escapeHtml(otherName)}">= ${escapeHtml(otherName)}</span>`;
-  }
-  if (otherRank > thisRank) {
-    return `<span class="rank-delta up" title="${escapeHtml(otherName)} ranks this #${otherRank}">↑${otherRank - thisRank} ${escapeHtml(otherName)}</span>`;
-  }
-  return `<span class="rank-delta down" title="${escapeHtml(otherName)} ranks this #${otherRank}">↓${thisRank - otherRank} ${escapeHtml(otherName)}</span>`;
-}
+// COMPARE_MODE_DISABLED:
+// function rankDeltaBadge(thisRank, otherRank, otherName) {
+//   if (otherRank == null) return `<span class="rank-delta absent" title="not in ${escapeHtml(otherName)} top ${TOP_K}">– ${escapeHtml(otherName)}</span>`;
+//   if (otherRank === thisRank) return `<span class="rank-delta same" title="same rank in ${escapeHtml(otherName)}">= ${escapeHtml(otherName)}</span>`;
+//   if (otherRank > thisRank) return `<span class="rank-delta up" title="${escapeHtml(otherName)} ranks this #${otherRank}">↑${otherRank - thisRank} ${escapeHtml(otherName)}</span>`;
+//   return `<span class="rank-delta down" title="${escapeHtml(otherName)} ranks this #${otherRank}">↓${thisRank - otherRank} ${escapeHtml(otherName)}</span>`;
+// }
 
 function renderHitsList(container, hits, opts = {}) {
   container.innerHTML = "";
@@ -209,10 +176,11 @@ function renderHitsList(container, hits, opts = {}) {
     const diff = hit.problem.difficulty || "";
     const score = typeof hit.score === "number" ? hit.score.toFixed(4) : "—";
     let metaHtml = `<span class="difficulty ${diffClass(diff)}">${escapeHtml(diff)}</span>${score}`;
-    if (opts.otherRankMap) {
-      const other = opts.otherRankMap.get(hit.problem.id);
-      metaHtml = rankDeltaBadge(i + 1, other, opts.otherName) + metaHtml;
-    }
+    // COMPARE_MODE_DISABLED:
+    // if (opts.otherRankMap) {
+    //   const other = opts.otherRankMap.get(hit.problem.id);
+    //   metaHtml = rankDeltaBadge(i + 1, other, opts.otherName) + metaHtml;
+    // }
     meta.innerHTML = metaHtml;
 
     header.appendChild(title);

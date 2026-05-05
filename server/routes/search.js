@@ -29,22 +29,24 @@ function createSearchRouter({ indexes, defaultRanker }) {
     }
   });
 
-  router.get("/compare", async (req, res) => {
-    const q = (req.query.q || "").toString();
-    const k = Number.parseInt(req.query.k, 10) || 10;
-    const entries = Object.entries(indexes);
-    const settled = await Promise.all(
-      entries.map(async ([name, index]) => {
-        try {
-          const { hits, latencyMs } = await timedSearch(index, q, k);
-          return { ranker: name, latencyMs, hits };
-        } catch (err) {
-          return { ranker: name, latencyMs: null, error: err.message || "failed", hits: [] };
-        }
-      })
-    );
-    res.json({ query: q, k, results: settled });
-  });
+  // COMPARE_MODE_DISABLED: re-enable together with the UI in web/index.html
+  // and web/app.js.
+  // router.get("/compare", async (req, res) => {
+  //   const q = (req.query.q || "").toString();
+  //   const k = Number.parseInt(req.query.k, 10) || 10;
+  //   const entries = Object.entries(indexes);
+  //   const settled = await Promise.all(
+  //     entries.map(async ([name, index]) => {
+  //       try {
+  //         const { hits, latencyMs } = await timedSearch(index, q, k);
+  //         return { ranker: name, latencyMs, hits };
+  //       } catch (err) {
+  //         return { ranker: name, latencyMs: null, error: err.message || "failed", hits: [] };
+  //       }
+  //     })
+  //   );
+  //   res.json({ query: q, k, results: settled });
+  // });
 
   return router;
 }

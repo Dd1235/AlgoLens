@@ -15,11 +15,13 @@
           <span class="signature" title="dedeepya avancha">[da]</span>
         </h1>
         <nav class="header-actions" aria-label="Page actions">
-          <button type="button" class="theme-toggle" data-theme-toggle>light mode</button>
+          <button type="button" class="theme-toggle" data-theme-toggle>
+            light mode
+          </button>
           <a href="/debug.html" class="debug-link">debug</a>
         </nav>
       </header>
-      <p class="tagline">search dsa problems by keyword. tf-idf and bm25 side by side.</p>
+      <p class="tagline">search dsa problems by keyword. ranked with bm25.</p>
       <form id="search-form" autocomplete="off">
         <input
           id="search-input"
@@ -28,6 +30,12 @@
         />
         <button type="submit">search</button>
       </form>
+      <!-- COMPARE_MODE_DISABLED start: re-enable by uncommenting this block,
+           the renderCompare branch in app.js, and the /api/compare route in
+           server/routes/search.js. Note: rank-delta labels showed the OTHER
+           ranker's name inside each card, which read as "this card is bm25"
+           even when in the tf-idf column. Fix that wording before turning
+           compare mode back on.
       <div class="mode-row">
         <label class="mode-toggle">
           <input id="compare-toggle" type="checkbox" checked />
@@ -35,14 +43,16 @@
         </label>
         <span id="latency-summary" class="latency-summary"></span>
       </div>
+      -->
       <p id="status" class="status">
         type a query to search<span class="cursor">_</span>
       </p>
       <ul id="results" class="single-mode"></ul>
-      <div id="compare-results" class="compare-grid hidden"></div>
+      <!-- COMPARE_MODE_DISABLED: <div id="compare-results" class="compare-grid hidden"></div> -->
     </main>
     <footer>
-      algolens v0.2 · built by deepya · rankers: tf-idf + bm25 · corpus: 1185 problems (leetcode + cses)
+      algolens v0.2 · built by deepya · rankers: tf-idf + bm25 · corpus: 1185
+      problems (leetcode + cses)
     </footer>
     <script src="/app.js"></script>
   </body>

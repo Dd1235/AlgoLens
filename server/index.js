@@ -28,11 +28,11 @@ async function main() {
     }
   }
 
-  const defaultRanker = (process.env.RANKER || "tfidf").toLowerCase();
+  const defaultRanker = (process.env.RANKER || "bm25").toLowerCase();
   if (!indexes[defaultRanker]) {
-    console.warn(`unknown RANKER='${defaultRanker}', falling back to tfidf`);
+    console.warn(`unknown RANKER='${defaultRanker}', falling back to bm25`);
   }
-  const activeDefault = indexes[defaultRanker] ? defaultRanker : "tfidf";
+  const activeDefault = indexes[defaultRanker] ? defaultRanker : "bm25";
   console.log(`Loaded ${problems.length} problems; rankers: ${Object.keys(indexes).join(", ")}; default: ${activeDefault}`);
 
   const webDir = path.join(__dirname, "..", "web");
