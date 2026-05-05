@@ -1,3 +1,7 @@
+// Stopwords for a DSA problem corpus. We deliberately keep words that look
+// generic in English but carry meaning here: "two" (two-sum, two-pointers),
+// "one" (one-edit-away), "all" (find-all-…), "any", "more", "most", "same",
+// "only", "other" all appear in real problem titles or pattern names.
 const STOPWORDS = new Set([
   "a", "an", "the", "and", "or", "but", "if", "then", "of", "for", "to", "in",
   "on", "at", "by", "with", "from", "as", "is", "are", "was", "were", "be",
@@ -5,8 +9,7 @@ const STOPWORDS = new Set([
   "we", "our", "they", "them", "their", "i", "me", "my", "have", "has", "had",
   "do", "does", "did", "so", "not", "no", "yes", "than", "into", "out", "up",
   "down", "over", "under", "may", "can", "will", "would", "should", "could",
-  "given", "return", "such", "each", "any", "all", "some", "more", "most",
-  "other", "same", "only", "one", "two",
+  "given", "return", "such", "each", "some",
 ]);
 
 function tokenize(text) {
