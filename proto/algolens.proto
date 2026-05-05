@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package algolens;
 
+option go_package = "algolens/proto;algolenspb";
+
 // Mirrors the Node SearchIndex contract: same query, same hit shape.
 // Implementations on either side of this RPC can be benchmarked head-to-head.
 

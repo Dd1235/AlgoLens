@@ -21,10 +21,10 @@ async function main() {
   if (grpcAddr) {
     const reachable = await probe(grpcAddr);
     if (reachable) {
-      indexes["bm25-cpp"] = new GrpcSearchIndex({ address: grpcAddr, name: "bm25-cpp" });
-      console.log(`gRPC bm25-cpp ranker reachable at ${grpcAddr} — registered`);
+      indexes["bm25-grpc"] = new GrpcSearchIndex({ address: grpcAddr, name: "bm25-grpc" });
+      console.log(`gRPC bm25-grpc ranker reachable at ${grpcAddr} — registered`);
     } else {
-      console.warn(`gRPC bm25-cpp at ${grpcAddr} unreachable on boot — skipping registration. Start the C++ service and restart Node, or omit GRPC_BM25_ADDR to silence this.`);
+      console.warn(`gRPC bm25-grpc at ${grpcAddr} unreachable on boot — skipping registration. Start the Go service (go/algolens_server) and restart Node, or omit GRPC_BM25_ADDR to silence this.`);
     }
   }
 
