@@ -3,6 +3,7 @@ const path = require("path");
 const { loadProblems } = require("../server/data");
 const { TfIdfIndex } = require("../server/search/tfidf");
 const { Bm25Index } = require("../server/search/bm25");
+const { GrpcSearchIndex, probe } = require("../server/search/grpc_index");
 
 const QUERIES_PATH = path.join(__dirname, "queries.json");
 const RESULTS_DIR = path.join(__dirname, "..", "experiments");
@@ -55,21 +56,28 @@ function summarize(latencies) {
   };
 }
 
-function evalRanker(name, index, queries) {
+async function evalRanker(name, index, queries) {
   const perQuery = [];
   const allLatencies = [];
+  const allScoring = [];
   let sumP1 = 0, sumP5 = 0, sumMRR = 0, sumNDCG = 0;
 
   for (const { query, relevant } of queries) {
     // first run for correctness; then re-run for latency
-    const hits = index.search(query, Math.max(K_FOR_NDCG, K_FOR_PRECISION));
+    const hits = await Promise.resolve(index.search(query, Math.max(K_FOR_NDCG, K_FOR_PRECISION)));
     const latencies = [];
+    const scoring = [];
     for (let i = 0; i < LATENCY_REPEATS; i++) {
       const t = process.hrtime.bigint();
-      index.search(query, K_FOR_NDCG);
+      await Promise.resolve(index.search(query, K_FOR_NDCG));
       latencies.push(Number(process.hrtime.bigint() - t) / 1e6);
+      // gRPC client exposes lastScoringLatencyMs from the server's perspective
+      if (typeof index.lastScoringLatencyMs === "number") {
+        scoring.push(index.lastScoringLatencyMs);
+      }
     }
     allLatencies.push(...latencies);
+    allScoring.push(...scoring);
 
     const p1 = precisionAtK(hits, relevant, 1);
     const p5 = precisionAtK(hits, relevant, K_FOR_PRECISION);
@@ -86,6 +94,7 @@ function evalRanker(name, index, queries) {
       RR: +rr.toFixed(3),
       "nDCG@10": +ndcg.toFixed(3),
       latency: summarize(latencies),
+      ...(scoring.length > 0 ? { serverScoringLatency: summarize(scoring) } : {}),
     });
   }
 
@@ -100,6 +109,7 @@ function evalRanker(name, index, queries) {
       "nDCG@10": +(sumNDCG / n).toFixed(3),
     },
     latency: summarize(allLatencies),
+    ...(allScoring.length > 0 ? { serverScoringLatency: summarize(allScoring) } : {}),
     perQuery,
   };
 }
@@ -108,22 +118,24 @@ function pad(s, n) { return String(s).padEnd(n); }
 
 function printTable(results) {
   console.log();
-  console.log(pad("ranker", 10), pad("P@1", 8), pad("P@5", 8), pad("MRR", 8), pad("nDCG@10", 10), pad("p50_ms", 10), pad("p95_ms", 10));
-  console.log("-".repeat(64));
+  console.log(pad("ranker", 12), pad("P@1", 8), pad("P@5", 8), pad("MRR", 8), pad("nDCG@10", 10), pad("p50_ms", 10), pad("p95_ms", 10), pad("p50_score", 11));
+  console.log("-".repeat(80));
   for (const r of results) {
+    const scoringP50 = r.serverScoringLatency ? r.serverScoringLatency.median_ms.toFixed(3) : "—";
     console.log(
-      pad(r.ranker, 10),
+      pad(r.ranker, 12),
       pad(r.aggregate["P@1"].toFixed(3), 8),
       pad(r.aggregate["P@5"].toFixed(3), 8),
       pad(r.aggregate.MRR.toFixed(3), 8),
       pad(r.aggregate["nDCG@10"].toFixed(3), 10),
       pad(r.latency.median_ms.toFixed(3), 10),
       pad(r.latency.p95_ms.toFixed(3), 10),
+      pad(scoringP50, 11),
     );
   }
 }
 
-function main() {
+async function main() {
   const queriesData = JSON.parse(fs.readFileSync(QUERIES_PATH, "utf8"));
   const queries = queriesData.queries;
 
@@ -141,14 +153,35 @@ function main() {
 
   console.log(`corpus: ${problems.length} docs, load ${loadMs}ms`);
   console.log(`build:  tfidf ${tBuildTfMs}ms, bm25 ${tBuildBmMs}ms`);
-  console.log(`queries: ${queries.length} (each repeated ${LATENCY_REPEATS}x for latency)`);
 
-  const results = [
-    evalRanker("tfidf", tfidf, queries),
-    evalRanker("bm25", bm25, queries),
+  const rankers = [
+    { name: "tfidf", index: tfidf },
+    { name: "bm25", index: bm25 },
   ];
 
+  let grpcIdx = null;
+  const grpcAddr = process.env.GRPC_BM25_ADDR;
+  if (grpcAddr) {
+    const reachable = await probe(grpcAddr);
+    if (reachable) {
+      grpcIdx = new GrpcSearchIndex({ address: grpcAddr, name: "bm25-grpc" });
+      rankers.push({ name: "bm25-grpc", index: grpcIdx });
+      console.log(`grpc:   bm25-grpc reachable at ${grpcAddr} — included`);
+    } else {
+      console.warn(`grpc:   ${grpcAddr} unreachable; skipping bm25-grpc`);
+    }
+  }
+
+  console.log(`queries: ${queries.length} (each repeated ${LATENCY_REPEATS}x for latency)`);
+
+  const results = [];
+  for (const { name, index } of rankers) {
+    results.push(await evalRanker(name, index, queries));
+  }
+
   printTable(results);
+
+  if (grpcIdx) grpcIdx.close();
 
   if (!fs.existsSync(RESULTS_DIR)) fs.mkdirSync(RESULTS_DIR, { recursive: true });
   const stamp = new Date().toISOString().replace(/[:.]/g, "-");
@@ -159,6 +192,7 @@ function main() {
     queriesFile: path.relative(path.join(__dirname, ".."), QUERIES_PATH),
     queryCount: queries.length,
     latencyRepeats: LATENCY_REPEATS,
+    grpcAddr: grpcIdx ? grpcAddr : null,
     results,
   }, null, 2));
   const latestPath = path.join(RESULTS_DIR, "bench-latest.json");
@@ -168,6 +202,6 @@ function main() {
   console.log(`wrote ${path.relative(process.cwd(), latestPath)}`);
 }
 
-if (require.main === module) main();
+if (require.main === module) main().catch((e) => { console.error(e); process.exit(1); });
 
 module.exports = { evalRanker, precisionAtK, reciprocalRank, ndcgAtK, summarize };
