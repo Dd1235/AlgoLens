@@ -598,6 +598,27 @@ html[data-theme="light"] .result-detail a {
 
 .hidden { display: none; }
 
+.load-more {
+  display: block;
+  width: 100%;
+  margin: 0.85rem 0 0.2rem;
+  padding: 0.6rem 0.95rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  border: 1px dashed var(--border-strong);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.load-more:hover {
+  border-style: solid;
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
 footer {
   position: relative;
   z-index: 1;

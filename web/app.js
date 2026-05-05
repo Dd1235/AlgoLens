@@ -2,6 +2,7 @@ const input = document.getElementById("search-input");
 const form = document.getElementById("search-form");
 const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
+const loadMoreEl = document.getElementById("load-more");
 
 // COMPARE_MODE_DISABLED: see web/index.html for the full re-enable note.
 // const compareEl = document.getElementById("compare-results");
@@ -13,20 +14,30 @@ const TOP_K = 20;
 let debounceTimer = null;
 let lastQueryAt = 0;
 let typeTimer = null;
+let currentQuery = "";
+let currentOffset = 0;
+let currentTotal = 0;
+let currentTopScore = 0;
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  runSearch(input.value);
+  runSearch(input.value, { append: false });
 });
 
 input.addEventListener("input", () => {
   clearTimeout(debounceTimer);
-  debounceTimer = setTimeout(() => runSearch(input.value), DEBOUNCE_MS);
+  debounceTimer = setTimeout(() => runSearch(input.value, { append: false }), DEBOUNCE_MS);
 });
 
 input.addEventListener("focus", () => setStatus("ready"));
+
+loadMoreEl.addEventListener("click", () => {
+  if (!currentQuery) return;
+  currentOffset += TOP_K;
+  runSearch(currentQuery, { append: true });
+});
 
 // COMPARE_MODE_DISABLED:
 // compareToggle.addEventListener("change", () => {
@@ -46,17 +57,27 @@ input.addEventListener("focus", () => setStatus("ready"));
 //   }
 // }
 
-async function runSearch(rawQuery) {
+async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
     setStatus("type a query to search");
     resultsEl.innerHTML = "";
+    currentQuery = "";
+    currentOffset = 0;
+    currentTotal = 0;
+    hideLoadMore();
     return;
+  }
+
+  if (!append) {
+    currentQuery = q;
+    currentOffset = 0;
+    currentTopScore = 0;
   }
 
   const issuedAt = ++lastQueryAt;
   setStatus(`searching: "${q}"`);
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}`;
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}`;
 
   let data;
   try {
@@ -70,19 +91,39 @@ async function runSearch(rawQuery) {
 
   if (issuedAt !== lastQueryAt) return;
 
-  renderSingle(data, q);
+  currentTotal = data.total || 0;
+  renderSingle(data, q, append);
+  updateLoadMore();
 }
 
-function renderSingle(data, q) {
+function renderSingle(data, q, append) {
   if (!data.hits || data.hits.length === 0) {
-    setStatus(`0 hits for "${q}"`);
-    resultsEl.innerHTML = "";
+    if (!append) {
+      setStatus(`0 hits for "${q}"`);
+      resultsEl.innerHTML = "";
+    }
     return;
   }
-  const n = data.hits.length;
   const lat = typeof data.latencyMs === "number" ? ` · ${data.latencyMs.toFixed(3)}ms` : "";
-  setStatus(`${n} ${n === 1 ? "hit" : "hits"} for "${q}" via ${data.ranker}${lat}`);
-  renderHitsList(resultsEl, data.hits);
+  const shown = currentOffset + data.hits.length;
+  const total = currentTotal;
+  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${data.ranker}${lat}`);
+  renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
+}
+
+function updateLoadMore() {
+  const shown = currentOffset + TOP_K;
+  if (currentTotal > 0 && shown < currentTotal) {
+    loadMoreEl.classList.remove("hidden");
+    const remaining = currentTotal - shown;
+    loadMoreEl.textContent = `load more (${remaining} remaining)`;
+  } else {
+    hideLoadMore();
+  }
+}
+
+function hideLoadMore() {
+  loadMoreEl.classList.add("hidden");
 }
 
 // COMPARE_MODE_DISABLED:
@@ -151,16 +192,18 @@ function diffClass(d) {
 // }
 
 function renderHitsList(container, hits, opts = {}) {
-  container.innerHTML = "";
-  const topScore = hits.reduce(
+  if (!opts.append) container.innerHTML = "";
+  const startIndex = opts.startIndex || 0;
+  currentTopScore = hits.reduce(
     (m, h) => (typeof h.score === "number" ? Math.max(m, h.score) : m),
-    0
+    currentTopScore
   );
+  const topScore = currentTopScore;
 
   hits.forEach((hit, i) => {
     const li = document.createElement("li");
     li.className = "result";
-    const rank = String(i + 1).padStart(2, "0");
+    const rank = String(startIndex + i + 1).padStart(2, "0");
     li.setAttribute("data-rank", `[${rank}]`);
     li.style.animationDelay = `${Math.min(i, 8) * 35}ms`;
 
