@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package algolens;
+
+// Mirrors the Node SearchIndex contract: same query, same hit shape.
+// Implementations on either side of this RPC can be benchmarked head-to-head.
+
+service Search {
+  rpc SearchTopK(SearchRequest) returns (SearchResponse);
+}
+
+message SearchRequest {
+  string query = 1;
+  int32  k     = 2;
+}
+
+message Hit {
+  string id            = 1;
+  string title         = 2;
+  string slug          = 3;
+  string difficulty    = 4;
+  repeated string tags = 5;
+  string statement     = 6;
+  repeated string patterns = 7;
+  string source_url    = 8;
+
+  double score                  = 9;
+  repeated string matched_terms = 10;
+}
+
+message SearchResponse {
+  repeated Hit hits        = 1;
+  // server-measured, excludes RPC overhead
+  double scoring_latency_ms = 2;
+  string ranker             = 3;
+  int32  corpus_size        = 4;
+}

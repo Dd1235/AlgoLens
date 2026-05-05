@@ -6,31 +6,44 @@ function pickRanker(indexes, defaultRanker, req) {
   return defaultRanker;
 }
 
+async function timedSearch(index, q, k) {
+  const t = process.hrtime.bigint();
+  const hits = await Promise.resolve(index.search(q, k));
+  const latencyMs = Number(process.hrtime.bigint() - t) / 1e6;
+  return { hits, latencyMs: +latencyMs.toFixed(3) };
+}
+
 function createSearchRouter({ indexes, defaultRanker }) {
   const router = express.Router();
 
-  router.get("/search", (req, res) => {
+  router.get("/search", async (req, res) => {
     const q = (req.query.q || "").toString();
     const k = Number.parseInt(req.query.k, 10) || 10;
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
-    const t = process.hrtime.bigint();
-    const hits = index.search(q, k);
-    const latencyMs = Number(process.hrtime.bigint() - t) / 1e6;
-    res.json({ query: q, ranker, latencyMs: +latencyMs.toFixed(3), hits });
+    try {
+      const { hits, latencyMs } = await timedSearch(index, q, k);
+      res.json({ query: q, ranker, latencyMs, hits });
+    } catch (err) {
+      res.status(502).json({ query: q, ranker, error: err.message || "search failed" });
+    }
   });
 
-  router.get("/compare", (req, res) => {
+  router.get("/compare", async (req, res) => {
     const q = (req.query.q || "").toString();
     const k = Number.parseInt(req.query.k, 10) || 10;
-    const results = [];
-    for (const [name, index] of Object.entries(indexes)) {
-      const t = process.hrtime.bigint();
-      const hits = index.search(q, k);
-      const latencyMs = Number(process.hrtime.bigint() - t) / 1e6;
-      results.push({ ranker: name, latencyMs: +latencyMs.toFixed(3), hits });
-    }
-    res.json({ query: q, k, results });
+    const entries = Object.entries(indexes);
+    const settled = await Promise.all(
+      entries.map(async ([name, index]) => {
+        try {
+          const { hits, latencyMs } = await timedSearch(index, q, k);
+          return { ranker: name, latencyMs, hits };
+        } catch (err) {
+          return { ranker: name, latencyMs: null, error: err.message || "failed", hits: [] };
+        }
+      })
+    );
+    res.json({ query: q, k, results: settled });
   });
 
   return router;
