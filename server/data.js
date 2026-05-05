@@ -1,18 +1,27 @@
 const fs = require("fs");
 const path = require("path");
 
-const PROBLEMS_DIR = path.join(__dirname, "..", "data", "problems");
+const CORPUS_ROOT = path.join(__dirname, "..", "data", "problemset_llm");
+const DEFAULT_PLATFORMS = ["leetcode", "cses"];
 
-function loadProblems() {
-  const files = fs
-    .readdirSync(PROBLEMS_DIR)
-    .filter((f) => f.endsWith(".json"))
-    .sort();
-
-  return files.map((file) => {
-    const raw = fs.readFileSync(path.join(PROBLEMS_DIR, file), "utf8");
-    return JSON.parse(raw);
-  });
+function loadProblems({ platforms = DEFAULT_PLATFORMS, root = CORPUS_ROOT } = {}) {
+  const problems = [];
+  for (const platform of platforms) {
+    const dir = path.join(root, platform);
+    if (!fs.existsSync(dir)) {
+      console.warn(`corpus dir missing, skipping: ${dir}`);
+      continue;
+    }
+    const files = fs
+      .readdirSync(dir)
+      .filter((f) => f.endsWith(".json"))
+      .sort();
+    for (const file of files) {
+      const raw = fs.readFileSync(path.join(dir, file), "utf8");
+      problems.push(JSON.parse(raw));
+    }
+  }
+  return problems;
 }
 
-module.exports = { loadProblems, PROBLEMS_DIR };
+module.exports = { loadProblems, CORPUS_ROOT, DEFAULT_PLATFORMS };
