@@ -19,7 +19,7 @@
           <a href="/debug.html" class="debug-link">debug</a>
         </nav>
       </header>
-      <p class="tagline">search dsa problems by keyword. ranked with tf-idf.</p>
+      <p class="tagline">search dsa problems by keyword. tf-idf and bm25 side by side.</p>
       <form id="search-form" autocomplete="off">
         <input
           id="search-input"
@@ -28,13 +28,21 @@
         />
         <button type="submit">search</button>
       </form>
+      <div class="mode-row">
+        <label class="mode-toggle">
+          <input id="compare-toggle" type="checkbox" checked />
+          <span>compare rankers (a/b)</span>
+        </label>
+        <span id="latency-summary" class="latency-summary"></span>
+      </div>
       <p id="status" class="status">
         type a query to search<span class="cursor">_</span>
       </p>
-      <ul id="results"></ul>
+      <ul id="results" class="single-mode"></ul>
+      <div id="compare-results" class="compare-grid hidden"></div>
     </main>
     <footer>
-      algolens v0.1 · built by deepya · ranker: tf-idf · corpus: local json
+      algolens v0.2 · built by deepya · rankers: tf-idf + bm25 · corpus: 1185 problems (leetcode + cses)
     </footer>
     <script src="/app.js"></script>
   </body>
