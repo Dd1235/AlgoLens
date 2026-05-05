@@ -11,7 +11,7 @@ npm run dev
 
 Open `http://localhost:3000/`. Search box on the main page; [/debug.html](../web/debug.html) exposes the inverted index and per-query scoring math.
 
-Switch ranker per request with `?ranker=tfidf` or `?ranker=bm25`. Set the default for the whole process with `RANKER=bm25 npm run dev`.
+Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc`. Set the default for the whole process with `RANKER=bm25 npm run dev`. The `bm25-grpc` ranker is registered only if `GRPC_BM25_ADDR` is set and the address responds within 600 ms on boot — see [go/README.md](../go/README.md) for how to start the backing service.
 
 ## API
 
@@ -74,9 +74,10 @@ Writes timestamped JSON + `experiments/bench-latest.json`. See [experiments/READ
 
 ## Roadmap (high-level)
 
-- C++/gRPC BM25 scoring microservice + side-by-side latency benchmark
+- Go/gRPC BM25 microservice — **shipped** ([go/](../go/), [experiments/03](../experiments/03-go-vs-node-bm25.md))
+- Pagination (`offset` + `total` through route, rankers, proto, UI)
 - Expand bench to ~30 labeled queries
 - Dense vector rerank (offline-embed problems, cosine over top-50 BM25)
 - Hybrid retrieval + "find similar to this problem" route
-- Per-user solved-state + recommendation
+- Per-user solved-state + recommendation (schema in [the plan](../../../.claude/plans/go-over-system-design-squishy-scott.md))
 - Real scraper for a standard sheet (Striver / NeetCode)
