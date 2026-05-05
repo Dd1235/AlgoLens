@@ -30,15 +30,15 @@ class GrpcSearchIndex {
   }
 
   // Returns hits in the same shape as the in-memory rankers:
-  //   [{ problem: {...}, score, matchedTerms }]
+  //   { hits: [{ problem: {...}, score, matchedTerms }], total }
   // The synchronous SearchIndex API is preserved by deasync-style? No — the
   // routes already accept a sync return. We change the search() to async-aware
   // by returning a Promise; routes/search.js awaits when needed (see below).
-  async search(query, k = 10) {
+  async search(query, k = 10, offset = 0) {
     const t = process.hrtime.bigint();
     const resp = await new Promise((resolve, reject) => {
       const deadline = new Date(Date.now() + this.deadlineMs);
-      this.client.searchTopK({ query, k }, { deadline }, (err, res) => {
+      this.client.searchTopK({ query, k, offset }, { deadline }, (err, res) => {
         if (err) reject(err);
         else resolve(res);
       });
@@ -46,20 +46,23 @@ class GrpcSearchIndex {
     this.lastLatencyMs = Number(process.hrtime.bigint() - t) / 1e6;
     this.lastScoringLatencyMs = resp.scoringLatencyMs;
 
-    return (resp.hits || []).map((h) => ({
-      problem: {
-        id: h.id,
-        title: h.title,
-        slug: h.slug,
-        difficulty: h.difficulty,
-        tags: h.tags || [],
-        statement: h.statement,
-        patterns: h.patterns || [],
-        source_url: h.sourceUrl,
-      },
-      score: h.score,
-      matchedTerms: h.matchedTerms || [],
-    }));
+    return {
+      hits: (resp.hits || []).map((h) => ({
+        problem: {
+          id: h.id,
+          title: h.title,
+          slug: h.slug,
+          difficulty: h.difficulty,
+          tags: h.tags || [],
+          statement: h.statement,
+          patterns: h.patterns || [],
+          source_url: h.sourceUrl,
+        },
+        score: h.score,
+        matchedTerms: h.matchedTerms || [],
+      })),
+      total: resp.total || 0,
+    };
   }
 
   close() {

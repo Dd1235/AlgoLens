@@ -98,13 +98,18 @@ func NewBm25Index(problems []Problem) *Bm25Index {
 
 func (idx *Bm25Index) Avgdl() float64 { return idx.avgdl }
 
-func (idx *Bm25Index) Search(query string, k int) []ScoredDoc {
+// Search returns (results, total) where results is the slice [offset:offset+k] of all matching docs,
+// and total is the count of all matching docs (before slicing).
+func (idx *Bm25Index) Search(query string, k int, offset int) ([]ScoredDoc, int) {
 	if k <= 0 {
-		return nil
+		k = 10
+	}
+	if offset < 0 {
+		offset = 0
 	}
 	qtokens := tokenize(query)
 	if len(qtokens) == 0 {
-		return nil
+		return nil, 0
 	}
 
 	scoreByDoc := map[int]float64{}
@@ -147,8 +152,14 @@ func (idx *Bm25Index) Search(query string, k int) []ScoredDoc {
 		})
 	}
 	sort.Slice(hits, func(i, j int) bool { return hits[i].Score > hits[j].Score })
-	if len(hits) > k {
-		hits = hits[:k]
+
+	total := len(hits)
+	end := offset + k
+	if end > len(hits) {
+		end = len(hits)
 	}
-	return hits
+	if offset >= len(hits) {
+		return nil, total
+	}
+	return hits[offset:end], total
 }

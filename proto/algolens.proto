@@ -14,6 +14,7 @@ service Search {
 message SearchRequest {
   string query = 1;
   int32  k     = 2;
+  int32  offset = 3;
 }
 
 message Hit {
@@ -36,4 +37,5 @@ message SearchResponse {
   double scoring_latency_ms = 2;
   string ranker             = 3;
   int32  corpus_size        = 4;
+  int32  total              = 5;
 }

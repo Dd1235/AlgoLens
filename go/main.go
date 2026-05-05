@@ -24,15 +24,20 @@ func (s *searchServer) SearchTopK(_ context.Context, req *pb.SearchRequest) (*pb
 	if k <= 0 {
 		k = 10
 	}
+	offset := int(req.GetOffset())
+	if offset < 0 {
+		offset = 0
+	}
 
 	t0 := time.Now()
-	hits := s.idx.Search(req.GetQuery(), k)
+	hits, total := s.idx.Search(req.GetQuery(), k, offset)
 	scoringMs := float64(time.Since(t0)) / float64(time.Millisecond)
 
 	resp := &pb.SearchResponse{
 		ScoringLatencyMs: scoringMs,
 		Ranker:           "bm25-go",
 		CorpusSize:       int32(len(s.idx.Problems)),
+		Total:            int32(total),
 	}
 	for _, h := range hits {
 		p := s.idx.Problems[h.DocIndex]

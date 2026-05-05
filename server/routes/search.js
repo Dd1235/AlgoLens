@@ -6,11 +6,15 @@ function pickRanker(indexes, defaultRanker, req) {
   return defaultRanker;
 }
 
-async function timedSearch(index, q, k) {
+async function timedSearch(index, q, k, offset = 0) {
   const t = process.hrtime.bigint();
-  const hits = await Promise.resolve(index.search(q, k));
+  const result = await Promise.resolve(index.search(q, k, offset));
   const latencyMs = Number(process.hrtime.bigint() - t) / 1e6;
-  return { hits, latencyMs: +latencyMs.toFixed(3) };
+  // Handle both old (array) and new ({ hits, total }) return shapes for backwards compat
+  if (Array.isArray(result)) {
+    return { hits: result, total: result.length, latencyMs: +latencyMs.toFixed(3) };
+  }
+  return { hits: result.hits, total: result.total, latencyMs: +latencyMs.toFixed(3) };
 }
 
 function createSearchRouter({ indexes, defaultRanker }) {
@@ -19,11 +23,12 @@ function createSearchRouter({ indexes, defaultRanker }) {
   router.get("/search", async (req, res) => {
     const q = (req.query.q || "").toString();
     const k = Number.parseInt(req.query.k, 10) || 10;
+    const offset = Math.max(0, Number.parseInt(req.query.offset, 10) || 0);
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
     try {
-      const { hits, latencyMs } = await timedSearch(index, q, k);
-      res.json({ query: q, ranker, latencyMs, hits });
+      const { hits, total, latencyMs } = await timedSearch(index, q, k, offset);
+      res.json({ query: q, ranker, latencyMs, offset, k, total, hits });
     } catch (err) {
       res.status(502).json({ query: q, ranker, error: err.message || "search failed" });
     }

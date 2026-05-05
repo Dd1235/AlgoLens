@@ -57,9 +57,9 @@ class Bm25Index {
     return idf * (num / den);
   }
 
-  search(query, k = 10) {
+  search(query, k = 10, offset = 0) {
     const queryTokens = tokenize(query);
-    if (queryTokens.length === 0) return [];
+    if (queryTokens.length === 0) return { hits: [], total: 0 };
 
     const scoreByDoc = new Map();
     const matchedByDoc = new Map();
@@ -89,7 +89,8 @@ class Bm25Index {
       });
     }
     hits.sort((a, b) => b.score - a.score);
-    return hits.slice(0, k);
+    const total = hits.length;
+    return { hits: hits.slice(offset, offset + k), total };
   }
 
   dumpInverted() {

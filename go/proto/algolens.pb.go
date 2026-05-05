@@ -25,6 +25,7 @@ type SearchRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Query         string                 `protobuf:"bytes,1,opt,name=query,proto3" json:"query,omitempty"`
 	K             int32                  `protobuf:"varint,2,opt,name=k,proto3" json:"k,omitempty"`
+	Offset        int32                  `protobuf:"varint,3,opt,name=offset,proto3" json:"offset,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -69,6 +70,13 @@ func (x *SearchRequest) GetQuery() string {
 func (x *SearchRequest) GetK() int32 {
 	if x != nil {
 		return x.K
+	}
+	return 0
+}
+
+func (x *SearchRequest) GetOffset() int32 {
+	if x != nil {
+		return x.Offset
 	}
 	return 0
 }
@@ -196,6 +204,7 @@ type SearchResponse struct {
 	ScoringLatencyMs float64 `protobuf:"fixed64,2,opt,name=scoring_latency_ms,json=scoringLatencyMs,proto3" json:"scoring_latency_ms,omitempty"`
 	Ranker           string  `protobuf:"bytes,3,opt,name=ranker,proto3" json:"ranker,omitempty"`
 	CorpusSize       int32   `protobuf:"varint,4,opt,name=corpus_size,json=corpusSize,proto3" json:"corpus_size,omitempty"`
+	Total            int32   `protobuf:"varint,5,opt,name=total,proto3" json:"total,omitempty"`
 	unknownFields    protoimpl.UnknownFields
 	sizeCache        protoimpl.SizeCache
 }
@@ -258,14 +267,22 @@ func (x *SearchResponse) GetCorpusSize() int32 {
 	return 0
 }
 
+func (x *SearchResponse) GetTotal() int32 {
+	if x != nil {
+		return x.Total
+	}
+	return 0
+}
+
 var File_algolens_proto protoreflect.FileDescriptor
 
 const file_algolens_proto_rawDesc = "" +
 	"\n" +
-	"\x0ealgolens.proto\x12\balgolens\"3\n" +
+	"\x0ealgolens.proto\x12\balgolens\"K\n" +
 	"\rSearchRequest\x12\x14\n" +
 	"\x05query\x18\x01 \x01(\tR\x05query\x12\f\n" +
-	"\x01k\x18\x02 \x01(\x05R\x01k\"\x87\x02\n" +
+	"\x01k\x18\x02 \x01(\x05R\x01k\x12\x16\n" +
+	"\x06offset\x18\x03 \x01(\x05R\x06offset\"\x87\x02\n" +
 	"\x03Hit\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\tR\x02id\x12\x14\n" +
 	"\x05title\x18\x02 \x01(\tR\x05title\x12\x12\n" +
@@ -280,13 +297,14 @@ const file_algolens_proto_rawDesc = "" +
 	"source_url\x18\b \x01(\tR\tsourceUrl\x12\x14\n" +
 	"\x05score\x18\t \x01(\x01R\x05score\x12#\n" +
 	"\rmatched_terms\x18\n" +
-	" \x03(\tR\fmatchedTerms\"\x9a\x01\n" +
+	" \x03(\tR\fmatchedTerms\"\xb0\x01\n" +
 	"\x0eSearchResponse\x12!\n" +
 	"\x04hits\x18\x01 \x03(\v2\r.algolens.HitR\x04hits\x12,\n" +
 	"\x12scoring_latency_ms\x18\x02 \x01(\x01R\x10scoringLatencyMs\x12\x16\n" +
 	"\x06ranker\x18\x03 \x01(\tR\x06ranker\x12\x1f\n" +
 	"\vcorpus_size\x18\x04 \x01(\x05R\n" +
-	"corpusSize2I\n" +
+	"corpusSize\x12\x14\n" +
+	"\x05total\x18\x05 \x01(\x05R\x05total2I\n" +
 	"\x06Search\x12?\n" +
 	"\n" +
 	"SearchTopK\x12\x17.algolens.SearchRequest\x1a\x18.algolens.SearchResponseB\x1bZ\x19algolens/proto;algolenspbb\x06proto3"
