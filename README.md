@@ -1,63 +1,74 @@
 # AlgoLens
 
-A DSA problem search engine. Phase 1: Node.js + plain HTML, in-memory TF-IDF over a small hand-curated corpus.
+A search and retrieval system for DSA problems, built to evolve from a classical IR baseline into a multi-stage hybrid retriever with a polyglot service architecture.
 
-## Run it
+> **Why it exists.** Existing platforms search by tags or problem text, both of which miss the thing that actually matters when practicing — *the underlying solution pattern*. AlgoLens starts as a serious keyword search engine over 1,185 problems and is being extended toward pattern-similarity retrieval and a Node ↔ C++/gRPC scoring split.
+
+---
+
+## Headline numbers
+
+Measured on a 1,185-problem corpus (785 LeetCode + 400 CSES) against a hand-labeled query set. Full methodology and per-query results in [experiments/](experiments/).
+
+| Ranker | P@1 | P@5 | MRR | nDCG@10 | p50 latency | p95 latency |
+|---|---|---|---|---|---|---|
+| TF-IDF | 0.600 | 0.280 | 0.727 | 0.586 | 0.077 ms | 0.249 ms |
+| **BM25** | **0.700** | **0.360** | **0.825** | **0.642** | 0.081 ms | 0.237 ms |
+
+→ BM25 lifts MRR by **+13.5 %** and nDCG@10 by **+9.6 %** over TF-IDF, with no measurable latency cost on this corpus size.
+
+Build time (one-shot, in-memory): TF-IDF index in **18 ms**, BM25 index in **17 ms**, full corpus loaded from disk in **~340 ms**.
+
+> Numbers above come from a 10-query seed set — directional, not yet publication-grade. Expanding to 30+ labeled queries is the next benchmarking task.
+
+---
+
+## Resume bullets (claims this codebase backs up *today*)
+
+- Built a search engine over **1,185 DSA problems** (LeetCode + CSES); from-scratch implementations of **TF-IDF** and **BM25** (Robertson–Spärck-Jones IDF, term saturation `k1=1.5`, length normalization `b=0.75`) sharing a single inverted-index data layer.
+- Designed a **`SearchIndex` interface boundary** so ranking implementations are interchangeable; HTTP routes are unaware of which ranker they hold.
+- Authored a **benchmark harness** measuring P@1, P@5, MRR, nDCG@10 (binary relevance) plus p50/p95 query latency over 50 repeats, with timestamped result archival.
+- Quantified the TF-IDF → BM25 upgrade: **MRR 0.73 → 0.83**, **nDCG@10 0.59 → 0.64**, latency unchanged.
+- Diagnosed and fixed a stopword regression in DSA queries (e.g. *"two sum"*, *"same tree"*) by removing semantically loaded words from the stopword list.
+
+Bullets get added here as features ship and produce numbers — no claims for unfinished work.
+
+---
+
+## Architecture (current)
+
+```
+Browser ──► Express ──► SearchIndex (interface)
+                          ├─ TfIdfIndex   (in-memory)
+                          └─ Bm25Index    (in-memory)
+                                ▲
+                                └─ shared tokenizer + inverted-index layer
+```
+
+Single Node.js process serves both the static frontend and the JSON API. Indexes are built once at boot from per-problem JSON in `data/problemset_llm/{leetcode,cses}/`. Ranker is selectable per request via `?ranker=tfidf|bm25`.
+
+Architecture under construction (next phase): a **C++ BM25 scoring microservice over gRPC** drops in behind the same `SearchIndex` interface, enabling head-to-head Node-vs-C++ latency comparison on identical queries and corpus.
+
+---
+
+## Try it
 
 ```sh
 npm install
 npm run dev
+# open http://localhost:3000/
 ```
 
-Open `http://localhost:3000/` and search for things like `graph cycle`, `monotonic`, or `knapsack`. The `/debug.html` page exposes the inverted index and per-query scoring math — useful when reasoning about why something ranked where it did.
+See [docs/internals.md](docs/internals.md) for the API, ranker math, debug endpoints, and how the inverted index relates to ranking.
 
-## What's in here right now
+---
 
-- 12 hand-picked DSA problems, one file per problem in [data/problems/](data/problems/), each with `id`, `title`, `slug`, `difficulty`, `source_url` (LeetCode), `tags`, `statement`, and `patterns[]` (editorial truth — what idea the problem actually tests).
-- Express server in [server/](server/) that loads the corpus once at boot, builds a TF-IDF index, and serves both the static frontend and the API.
-- Plain HTML/CSS/JS frontend in [web/](web/): debounced input, score and matched-terms shown per result, click to expand the statement.
+## What's coming next
 
-## API
+- **C++/gRPC BM25 microservice** — same interface, different runtime; benchmark Node vs. C++ on identical workload.
+- **Hybrid retrieval** — BM25 candidate generation + dense embedding rerank over top-50.
+- **Bench expansion** — query set to ~30, multi-grade relevance labels.
+- **Pattern-similarity retrieval** — the original motivation: "given problem X, return problems whose solution *idea* is the same."
+- **Per-user solved-history-aware recommendations.**
 
-| Method · path | Purpose |
-|---|---|
-| `GET /api/search?q=&k=` | Top-`k` hits, ranked by TF-IDF. Each hit has `score` and `matchedTerms`. |
-| `GET /api/problems` | Whole corpus as loaded. |
-| `GET /api/index` | Inverted-index dump: every term with `df`, `idf`, and postings. |
-| `GET /api/explain?q=` | Per-term TF/IDF/contribution breakdown for every doc that matched. |
-
-The last three power [/debug.html](web/debug.html) and exist for learning, not for production.
-
-## How search works
-
-`title + statement + tags + patterns` is tokenized (lowercase, strip non-alphanumeric, split on whitespace, drop a small stopword list — see [server/search/tokenize.js](server/search/tokenize.js)). The [TfIdfIndex](server/search/tfidf.js) computes `TF(t,d) = count/doclen` and `IDF(t) = log(N/df)` once at boot. Each query is tokenized and scored as the sum of `TF*IDF` per matching term, then top-`k` returned.
-
-The route ([server/routes/search.js](server/routes/search.js)) only knows about the `{ search(q, k) -> hits }` shape — that's the seam BM25, dense vector, and gRPC implementations will all sit behind in later phases.
-
-Sanity tests for the math: `node server/search/tfidf.test.js`.
-
-## Where TF-IDF struggles (queries to track for BM25 comparison)
-
-Honest weak spots in the current ranker. Once `Bm25Index` lands, these are the queries to re-run for the comparison column.
-
-| Query | TF-IDF top result | Issue | Why BM25 should help |
-|---|---|---|---|
-| `dp string` | Valid Parentheses (only matches "string") | Short single-match doc beats Edit Distance, which matches **both** terms. TF-by-length normalization is too aggressive. | Term saturation (`k1`) damps repeated-term boost; length normalization (`b`) is gentler. |
-| `binary search` | Longest Increasing Subsequence (correct) | But Binary Tree Level Order and Two Sum show up high too, just because they incidentally contain "binary" or "search" once each. | BM25 favors docs matching **both** query terms more strongly via per-term saturation + IDF interaction. |
-| `two pointers` | Trapping Rain Water (correct, only hit) | "two" is a stopword, so only "pointers" matches. | Same in BM25. Real fix is keeping numeric/positional words out of stopwords, or using bigrams. |
-| `reverse linked list` | (no results) | The corpus doesn't have a linked-list problem yet. | Same in BM25 — this is a corpus gap, not a ranker problem. Adds the test case for the scraper phase. |
-
-When the BM25 commit lands, this table grows a "BM25 top result" column and a verdict column. The benchmark harness (Phase 2) will turn this into actual P@1 and nDCG numbers, not vibes.
-
-You can poke at the math behind any of these queries via `/debug.html` → Explain.
-
-## What's coming (and where it slots in)
-
-- **BM25** — drop-in `Bm25Index` next to `TfIdfIndex`; CLI flag to switch. Targets the weak queries above.
-- **Benchmark harness** — fixed query set with expected top-1, measure P@1 + median latency per ranker. Turns the table above into a tracked regression suite.
-- **Persistence + scraper** — SQLite for the corpus, then a real scraper that follows `source_url` for a standard sheet (NeetCode 150 / Striver).
-- **Dense vector search** — offline-embed each problem's statement+patterns, brute-force cosine, then HNSW.
-- **Hybrid + recommendations** — BM25 recall → dense re-rank, "find similar to this problem" route, solved-history-aware ordering.
-- **C++ scoring microservice** — port the scoring loop, expose over gRPC, benchmark Node vs. C++ on the same corpus.
-
-See [system_design/idea-v0.md](system_design/idea-v0.md) for the original problem framing and the learning notes in [docs/learning/search/](docs/learning/search/).
+Original problem framing: [system_design/idea-v0.md](system_design/idea-v0.md). Learning notes used along the way: [docs/learning/](docs/learning/).
