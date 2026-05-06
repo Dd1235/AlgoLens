@@ -23,7 +23,9 @@
             </span>
             <span class="auth-user" data-signed hidden>
               <span class="auth-email" id="auth-email"></span>
-              <button type="button" id="logout-btn" class="auth-logout">log out</button>
+              <button type="button" id="logout-btn" class="auth-logout">
+                log out
+              </button>
             </span>
           </span>
           <button type="button" class="theme-toggle" data-theme-toggle>
@@ -40,21 +42,37 @@
           placeholder="graph cycle / monotonic / knapsack"
         />
         <span id="filter-wrap" class="filter-wrap" hidden>
-          <select id="filter-select" class="filter-select" aria-label="filter results by done state">
+          <select
+            id="filter-select"
+            class="filter-select"
+            aria-label="filter results by done state"
+          >
             <option value="all">all</option>
             <option value="notdone">not done</option>
-            <option value="done">done only</option>
+            <option value="done">done</option>
           </select>
         </span>
         <button type="submit">search</button>
       </form>
       <div id="lib-bar" class="lib-bar" hidden>
-        <span class="lib-prompt"><span class="lib-host">algolens</span><span class="lib-path" id="lib-path">~</span><span class="lib-cursor">$</span></span>
+        <span class="lib-prompt"
+          ><span class="lib-host">algolens</span
+          ><span class="lib-path" id="lib-path">~</span
+          ><span class="lib-cursor">$</span></span
+        >
         <span class="lib-chips">
-          <button type="button" class="lib-chip" data-cmd=":bookmarks">★ <span id="lib-count-bookmarks">0</span> bookmarks</button>
-          <button type="button" class="lib-chip" data-cmd=":done">✓ <span id="lib-count-done">0</span> done</button>
-          <button type="button" class="lib-chip" data-cmd=":all">: ls all</button>
-          <button type="button" class="lib-chip lib-chip-back" data-cmd="">↺ search</button>
+          <button type="button" class="lib-chip" data-cmd=":bookmarks">
+            ★ <span id="lib-count-bookmarks">0</span> bookmarks
+          </button>
+          <button type="button" class="lib-chip" data-cmd=":done">
+            ✓ <span id="lib-count-done">0</span> done
+          </button>
+          <button type="button" class="lib-chip" data-cmd=":all">
+            : ls all
+          </button>
+          <button type="button" class="lib-chip lib-chip-back" data-cmd="">
+            ↺ search
+          </button>
         </span>
       </div>
       <!-- COMPARE_MODE_DISABLED start: re-enable by uncommenting this block,
@@ -75,7 +93,9 @@
         type a query to search<span class="cursor">_</span>
       </p>
       <ul id="results" class="single-mode"></ul>
-      <button id="load-more" class="load-more hidden" type="button">load more</button>
+      <button id="load-more" class="load-more hidden" type="button">
+        load more
+      </button>
       <!-- COMPARE_MODE_DISABLED: <div id="compare-results" class="compare-grid hidden"></div> -->
     </main>
     <footer>
