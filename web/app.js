@@ -66,6 +66,14 @@ filterSelect.addEventListener("change", () => {
   if (currentQuery) runSearch(currentQuery, { append: false });
 });
 
+hintRow.addEventListener("click", (e) => {
+  const code = e.target.closest("code");
+  if (!code) return;
+  input.value = code.textContent;
+  input.focus();
+  runSearch(code.textContent, { append: false });
+});
+
 logoutBtn.addEventListener("click", async () => {
   try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
   currentUser = null;
@@ -188,6 +196,49 @@ function renderSingle(data, q, append) {
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
+async function runLibrary(type, q) {
+  const issuedAt = ++lastQueryAt;
+  setStatus(`loading library: ${type === "all" ? "everything" : type}…`);
+  hideLoadMore();
+
+  let data;
+  try {
+    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}`);
+    data = await res.json();
+  } catch (err) {
+    if (issuedAt !== lastQueryAt) return;
+    setStatus(`error: ${err.message || "library failed"}`);
+    return;
+  }
+  if (issuedAt !== lastQueryAt) return;
+
+  // Adapt library items to the renderHitsList hit shape.
+  const hits = (data.items || []).map((it) => ({
+    problem: it.problem,
+    done: it.done,
+    bookmarked: it.bookmarked,
+    matchedTerms: [],
+    markedAt: it.markedAt,
+  }));
+
+  currentTotal = hits.length;
+
+  if (hits.length === 0) {
+    const empty =
+      type === "bookmarked"
+        ? "no bookmarks yet — star a problem to save it here"
+        : type === "done"
+        ? "nothing marked done yet — mark a problem ✓ to track it"
+        : "library is empty — bookmark or mark problems done from the search results";
+    setStatus(empty);
+    resultsEl.innerHTML = "";
+    return;
+  }
+
+  setStatus(`${hits.length} ${type === "all" ? "saved" : type} · ${q}`);
+  renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
+}
+
 function updateLoadMore() {
   const shown = currentOffset + TOP_K;
   if (currentTotal > 0 && shown < currentTotal) {
@@ -271,6 +322,7 @@ function diffClass(d) {
 function renderHitsList(container, hits, opts = {}) {
   if (!opts.append) container.innerHTML = "";
   const startIndex = opts.startIndex || 0;
+  const libraryMode = !!opts.libraryMode;
   currentTopScore = hits.reduce(
     (m, h) => (typeof h.score === "number" ? Math.max(m, h.score) : m),
     currentTopScore
@@ -294,8 +346,10 @@ function renderHitsList(container, hits, opts = {}) {
     const meta = document.createElement("span");
     meta.className = "result-meta";
     const diff = hit.problem.difficulty || "";
-    const score = typeof hit.score === "number" ? hit.score.toFixed(4) : "—";
-    let metaHtml = `<span class="difficulty ${diffClass(diff)}">${escapeHtml(diff)}</span>${score}`;
+    const trailing = libraryMode
+      ? formatRelative(hit.markedAt)
+      : (typeof hit.score === "number" ? hit.score.toFixed(4) : "—");
+    let metaHtml = `<span class="difficulty ${diffClass(diff)}">${escapeHtml(diff)}</span>${escapeHtml(trailing)}`;
     // COMPARE_MODE_DISABLED:
     // if (opts.otherRankMap) {
     //   const other = opts.otherRankMap.get(hit.problem.id);
@@ -341,12 +395,12 @@ function renderHitsList(container, hits, opts = {}) {
     });
 
     li.appendChild(header);
-    li.appendChild(bar);
+    if (!libraryMode) li.appendChild(bar);
     if (matched.childNodes.length > 0) li.appendChild(matched);
     li.appendChild(detail);
     container.appendChild(li);
 
-    if (topScore > 0 && typeof hit.score === "number") {
+    if (!libraryMode && topScore > 0 && typeof hit.score === "number") {
       const pct = Math.max(2, Math.round((hit.score / topScore) * 100));
       requestAnimationFrame(() => {
         fill.style.width = `${pct}%`;
@@ -412,16 +466,33 @@ async function toggleFlag(hit, flag, btn) {
   }
   btn.setAttribute("aria-pressed", String(next));
 
-  // If the active filter excludes this row now, re-run the search so the list
-  // and the total stay honest.
+  // If the active filter or library view would no longer include this row,
+  // re-run so the listing and the total stay honest.
   if (currentFilter === "done" && flag === "done" && !next) reissueSearch();
   if (currentFilter === "notdone" && flag === "done" && next) reissueSearch();
+  if (currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) reissueSearch();
 }
 
 function reissueSearch() {
   if (!currentQuery) return;
   currentOffset = 0;
   runSearch(currentQuery, { append: false });
+}
+
+function formatRelative(iso) {
+  if (!iso) return "—";
+  const ms = Date.now() - new Date(iso).getTime();
+  if (!Number.isFinite(ms) || ms < 0) return "just now";
+  const m = Math.floor(ms / 60000);
+  if (m < 1) return "just now";
+  if (m < 60) return `${m}m ago`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ago`;
+  const d = Math.floor(h / 24);
+  if (d < 30) return `${d}d ago`;
+  const mo = Math.floor(d / 30);
+  if (mo < 12) return `${mo}mo ago`;
+  return `${Math.floor(mo / 12)}y ago`;
 }
 
 function escapeHtml(s) {

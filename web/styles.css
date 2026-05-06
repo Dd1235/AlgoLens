@@ -828,24 +828,13 @@ html[data-theme="light"] footer::after { content: ""; }
   background: var(--surface);
 }
 
-.auth-tabs {
-  display: flex;
-  gap: 0.4rem;
-  margin-bottom: 0.85rem;
-}
-
-.auth-tab {
-  flex: 1;
-  margin: 0;
-  background: transparent;
-  border-color: var(--border);
-  color: var(--text-muted);
-}
-
-.auth-tab.active {
-  border-color: var(--accent);
-  color: var(--accent);
-  background: var(--accent-soft);
+.auth-heading {
+  margin: 0 0 0.85rem;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.04em;
 }
 
 .auth-form {

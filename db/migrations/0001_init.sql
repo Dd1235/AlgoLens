@@ -12,14 +12,14 @@
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;  -- gen_random_uuid()
 
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
   id            UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
   email         TEXT        UNIQUE NOT NULL CHECK (email = lower(email)),
   password_hash TEXT        NOT NULL,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE user_problem_state (
+CREATE TABLE IF NOT EXISTS user_problem_state (
   user_id       UUID        NOT NULL REFERENCES users(id) ON DELETE CASCADE,
   problem_id    TEXT        NOT NULL,
   done          BOOLEAN     NOT NULL DEFAULT FALSE,
@@ -31,5 +31,5 @@ CREATE TABLE user_problem_state (
   CHECK (done OR bookmarked)
 );
 
-CREATE INDEX idx_ups_user_done       ON user_problem_state(user_id) WHERE done;
-CREATE INDEX idx_ups_user_bookmarked ON user_problem_state(user_id) WHERE bookmarked;
+CREATE INDEX IF NOT EXISTS idx_ups_user_done       ON user_problem_state(user_id) WHERE done;
+CREATE INDEX IF NOT EXISTS idx_ups_user_bookmarked ON user_problem_state(user_id) WHERE bookmarked;
