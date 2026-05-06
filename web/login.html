@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>algolens · sign in</title>
+    <script src="/theme.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="auth-main">
+      <header class="page-header">
+        <h1>
+          <a href="/">algolens</a>
+          <span class="signature" title="dedeepya avancha">[da]</span>
+        </h1>
+        <nav class="header-actions" aria-label="Page actions">
+          <button type="button" class="theme-toggle" data-theme-toggle>light mode</button>
+        </nav>
+      </header>
+
+      <section class="auth-card">
+        <div class="auth-tabs">
+          <button type="button" class="auth-tab active" data-tab="login">log in</button>
+          <button type="button" class="auth-tab" data-tab="signup">sign up</button>
+        </div>
+
+        <form id="login-form" class="auth-form" autocomplete="on">
+          <input type="email" name="email" placeholder="email" required autocomplete="email" />
+          <input type="password" name="password" placeholder="password" required autocomplete="current-password" minlength="8" />
+          <button type="submit">log in</button>
+          <p class="auth-error" id="login-error" hidden></p>
+        </form>
+
+        <form id="signup-form" class="auth-form" autocomplete="on" hidden>
+          <input type="email" name="email" placeholder="email" required autocomplete="email" />
+          <input type="password" name="password" placeholder="password (min 8 chars)" required autocomplete="new-password" minlength="8" />
+          <button type="submit">sign up</button>
+          <p class="auth-error" id="signup-error" hidden></p>
+        </form>
+
+        <p class="auth-foot">
+          accounts unlock <strong>bookmark</strong> and <strong>mark as done</strong>. browsing without an account works fine — head <a href="/">back to search</a>.
+        </p>
+      </section>
+    </main>
+    <script src="/login.js"></script>
+  </body>
+</html>

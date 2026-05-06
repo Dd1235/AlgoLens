@@ -3,6 +3,10 @@ const form = document.getElementById("search-form");
 const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
 const loadMoreEl = document.getElementById("load-more");
+const filterSelect = document.getElementById("filter-select");
+const authWidget = document.getElementById("auth-widget");
+const authEmailEl = document.getElementById("auth-email");
+const logoutBtn = document.getElementById("logout-btn");
 
 // COMPARE_MODE_DISABLED: see web/index.html for the full re-enable note.
 // const compareEl = document.getElementById("compare-results");
@@ -18,6 +22,8 @@ let currentQuery = "";
 let currentOffset = 0;
 let currentTotal = 0;
 let currentTopScore = 0;
+let currentUser = null;
+let currentFilter = "all";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -38,6 +44,48 @@ loadMoreEl.addEventListener("click", () => {
   currentOffset += TOP_K;
   runSearch(currentQuery, { append: true });
 });
+
+filterSelect.addEventListener("change", () => {
+  currentFilter = filterSelect.value;
+  if (currentQuery) runSearch(currentQuery, { append: false });
+});
+
+logoutBtn.addEventListener("click", async () => {
+  try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
+  currentUser = null;
+  applyAuthState();
+  if (currentQuery) runSearch(currentQuery, { append: false });
+});
+
+async function bootstrapAuth() {
+  try {
+    const res = await fetch("/api/auth/me");
+    if (res.ok) {
+      const data = await res.json();
+      currentUser = data.user || null;
+    }
+  } catch (_e) {}
+  applyAuthState();
+}
+
+function applyAuthState() {
+  const anon = authWidget.querySelector("[data-anon]");
+  const signed = authWidget.querySelector("[data-signed]");
+  if (currentUser) {
+    anon.hidden = true;
+    signed.hidden = false;
+    authEmailEl.textContent = currentUser.email;
+    filterSelect.hidden = false;
+  } else {
+    anon.hidden = false;
+    signed.hidden = true;
+    filterSelect.hidden = true;
+    filterSelect.value = "all";
+    currentFilter = "all";
+  }
+}
+
+bootstrapAuth();
 
 // COMPARE_MODE_DISABLED:
 // compareToggle.addEventListener("change", () => {
@@ -77,7 +125,8 @@ async function runSearch(rawQuery, { append = false } = {}) {
 
   const issuedAt = ++lastQueryAt;
   setStatus(`searching: "${q}"`);
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}`;
+  const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}`;
 
   let data;
   try {
@@ -229,6 +278,10 @@ function renderHitsList(container, hits, opts = {}) {
     header.appendChild(title);
     header.appendChild(meta);
 
+    if (currentUser) {
+      header.appendChild(buildActions(hit));
+    }
+
     const bar = document.createElement("div");
     bar.className = "score-bar";
     const fill = document.createElement("div");
@@ -272,6 +325,75 @@ function renderHitsList(container, hits, opts = {}) {
       });
     }
   });
+}
+
+function buildActions(hit) {
+  const actions = document.createElement("span");
+  actions.className = "result-actions";
+
+  const bookmark = document.createElement("button");
+  bookmark.type = "button";
+  bookmark.className = "result-action bookmark";
+  bookmark.title = hit.bookmarked ? "remove bookmark" : "bookmark this problem";
+  bookmark.setAttribute("aria-pressed", String(!!hit.bookmarked));
+  bookmark.textContent = hit.bookmarked ? "★" : "☆";
+  bookmark.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleFlag(hit, "bookmarked", bookmark);
+  });
+
+  const done = document.createElement("button");
+  done.type = "button";
+  done.className = "result-action done";
+  done.title = hit.done ? "unmark as done" : "mark as done";
+  done.setAttribute("aria-pressed", String(!!hit.done));
+  done.textContent = hit.done ? "✓" : "○";
+  done.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleFlag(hit, "done", done);
+  });
+
+  actions.appendChild(bookmark);
+  actions.appendChild(done);
+  return actions;
+}
+
+async function toggleFlag(hit, flag, btn) {
+  const next = !hit[flag];
+  const path = flag === "done" ? "done" : "bookmark";
+  btn.disabled = true;
+  let res;
+  try {
+    res = await fetch(`/api/${path}/${encodeURIComponent(hit.problem.id)}`, {
+      method: next ? "POST" : "DELETE",
+    });
+  } catch (_e) {
+    btn.disabled = false;
+    return;
+  }
+  btn.disabled = false;
+  if (!res.ok) return;
+
+  hit[flag] = next;
+  if (flag === "bookmarked") {
+    btn.textContent = next ? "★" : "☆";
+    btn.title = next ? "remove bookmark" : "bookmark this problem";
+  } else {
+    btn.textContent = next ? "✓" : "○";
+    btn.title = next ? "unmark as done" : "mark as done";
+  }
+  btn.setAttribute("aria-pressed", String(next));
+
+  // If the active filter excludes this row now, re-run the search so the list
+  // and the total stay honest.
+  if (currentFilter === "done" && flag === "done" && !next) reissueSearch();
+  if (currentFilter === "notdone" && flag === "done" && next) reissueSearch();
+}
+
+function reissueSearch() {
+  if (!currentQuery) return;
+  currentOffset = 0;
+  runSearch(currentQuery, { append: false });
 }
 
 function escapeHtml(s) {

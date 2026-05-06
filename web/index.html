@@ -15,6 +15,13 @@
           <span class="signature" title="dedeepya avancha">[da]</span>
         </h1>
         <nav class="header-actions" aria-label="Page actions">
+          <span id="auth-widget" class="auth-widget">
+            <a href="/login.html" class="auth-link" data-anon>log in / sign up</a>
+            <span class="auth-user" data-signed hidden>
+              <span class="auth-email" id="auth-email"></span>
+              <button type="button" id="logout-btn" class="auth-logout">log out</button>
+            </span>
+          </span>
           <button type="button" class="theme-toggle" data-theme-toggle>
             light mode
           </button>
@@ -28,6 +35,11 @@
           type="search"
           placeholder="graph cycle / monotonic / knapsack"
         />
+        <select id="filter-select" class="filter-select" hidden>
+          <option value="all">all</option>
+          <option value="notdone">not done</option>
+          <option value="done">done only</option>
+        </select>
         <button type="submit">search</button>
       </form>
       <!-- COMPARE_MODE_DISABLED start: re-enable by uncommenting this block,
