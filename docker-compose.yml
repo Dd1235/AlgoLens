@@ -1,0 +1,26 @@
+# Local Postgres for AlgoLens dev.
+#   docker compose up -d
+#   DATABASE_URL=postgres://algolens:dev@localhost:5432/algolens npm run db:migrate
+#
+# Production uses Render Managed Postgres (see render.yaml). The DATABASE_URL
+# shape is the same so the app code is host-agnostic.
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: algolens-postgres
+    environment:
+      POSTGRES_USER: algolens
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: algolens
+    ports:
+      - "5432:5432"
+    volumes:
+      - algolens_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U algolens -d algolens"]
+      interval: 3s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  algolens_pgdata:

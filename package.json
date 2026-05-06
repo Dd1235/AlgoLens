@@ -6,7 +6,8 @@
   "main": "server/index.js",
   "scripts": {
     "dev": "nodemon server/index.js",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "db:migrate": "bash db/run-migrations.sh"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",

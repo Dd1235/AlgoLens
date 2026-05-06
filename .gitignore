@@ -1,5 +1,7 @@
 node_modules
 .*
 !.gitignore
+!.env.example
+!.dockerignore
 docs/implementation
 __pycache__/
