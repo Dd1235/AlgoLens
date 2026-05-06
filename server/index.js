@@ -1,4 +1,6 @@
+require("dotenv").config({ quiet: true });
 const express = require("express");
+const cookieParser = require("cookie-parser");
 const path = require("path");
 const { loadProblems } = require("./data");
 const { TfIdfIndex } = require("./search/tfidf");
@@ -6,6 +8,8 @@ const { Bm25Index } = require("./search/bm25");
 const { GrpcSearchIndex, probe } = require("./search/grpc_index");
 const { createSearchRouter } = require("./routes/search");
 const { createDebugRouter } = require("./routes/debug");
+const { createAuthRouter } = require("./routes/auth");
+const { attachUser } = require("./auth/middleware");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -36,7 +40,11 @@ async function main() {
   console.log(`Loaded ${problems.length} problems; rankers: ${Object.keys(indexes).join(", ")}; default: ${activeDefault}`);
 
   const webDir = path.join(__dirname, "..", "web");
+  app.use(express.json({ limit: "32kb" }));
+  app.use(cookieParser());
+  app.use(attachUser);
   app.use(express.static(webDir));
+  app.use("/api", createAuthRouter());
   app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault }));
   app.use("/api", createDebugRouter({ problems, indexes, defaultRanker: activeDefault }));
 
