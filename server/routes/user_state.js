@@ -52,9 +52,8 @@ function validProblemId(id) {
 
 function createUserStateRouter() {
   const router = express.Router();
-  router.use(requireUser);
 
-  router.post("/done/:problemId", async (req, res) => {
+  router.post("/done/:problemId", requireUser, async (req, res) => {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "done", true);
@@ -64,7 +63,7 @@ function createUserStateRouter() {
     }
   });
 
-  router.delete("/done/:problemId", async (req, res) => {
+  router.delete("/done/:problemId", requireUser, async (req, res) => {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "done", false);
@@ -74,7 +73,7 @@ function createUserStateRouter() {
     }
   });
 
-  router.post("/bookmark/:problemId", async (req, res) => {
+  router.post("/bookmark/:problemId", requireUser, async (req, res) => {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "bookmarked", true);
@@ -84,7 +83,7 @@ function createUserStateRouter() {
     }
   });
 
-  router.delete("/bookmark/:problemId", async (req, res) => {
+  router.delete("/bookmark/:problemId", requireUser, async (req, res) => {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "bookmarked", false);
@@ -96,7 +95,7 @@ function createUserStateRouter() {
 
   // GET /api/user-state — returns {done: [...ids], bookmarked: [...ids]} so
   // the client can decorate UI on first paint without per-problem queries.
-  router.get("/user-state", async (req, res) => {
+  router.get("/user-state", requireUser, async (req, res) => {
     try {
       const result = await db.query(
         `SELECT problem_id, done, bookmarked
