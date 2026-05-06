@@ -1,0 +1,17 @@
+.git
+.gitignore
+.env
+.claude
+.planning
+node_modules
+docs
+experiments
+bench
+go
+scripts
+system_design
+Problems
+README.md
+docker-compose.yml
+render.yaml
+*.md

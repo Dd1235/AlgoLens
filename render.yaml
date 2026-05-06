@@ -1,0 +1,38 @@
+# Render blueprint for AlgoLens.
+#   one web service (Node + bm25 index + static UI)
+#   one managed Postgres (linked into the web service via DATABASE_URL)
+#
+# After first deploy, run migrations once via the Render shell:
+#   bash db/run-migrations.sh
+#
+# To enable the Go gRPC ranker in prod, add a private service that builds
+# from ./go and set GRPC_BM25_ADDR on the web service to its internal hostname.
+
+databases:
+  - name: algolens-db
+    plan: free                # bump to starter ($7/mo) for persistence guarantees
+    databaseName: algolens
+    user: algolens
+
+services:
+  - type: web
+    name: algolens-web
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: DATABASE_URL
+        fromDatabase:
+          name: algolens-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      # Set RANKER=bm25 (default) explicitly; gRPC ranker stays off in v1.
+      - key: RANKER
+        value: bm25
