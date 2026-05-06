@@ -10,7 +10,9 @@
     "db:migrate": "bash db/run-migrations.sh",
     "services:start": "docker compose up -d",
     "services:stop": "docker compose down",
-    "services:status": "docker compose ps"
+    "services:status": "docker compose ps",
+    "app:start": "bash scripts/start.sh",
+    "app:stop": "bash scripts/stop.sh"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",

@@ -13,6 +13,7 @@ fi
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 for f in "$DIR/migrations"/*.sql; do
   echo "applying $(basename "$f")"
-  psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f "$f"
+  PGOPTIONS='-c client_min_messages=warning' \
+    psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -q -f "$f"
 done
 echo "migrations done"
