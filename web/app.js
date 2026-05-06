@@ -8,7 +8,11 @@ const filterWrap = document.getElementById("filter-wrap");
 const authWidget = document.getElementById("auth-widget");
 const authEmailEl = document.getElementById("auth-email");
 const logoutBtn = document.getElementById("logout-btn");
-const hintRow = document.getElementById("hint-row");
+const libBar = document.getElementById("lib-bar");
+const libPathEl = document.getElementById("lib-path");
+const libCountBookmarks = document.getElementById("lib-count-bookmarks");
+const libCountDone = document.getElementById("lib-count-done");
+const libChips = libBar.querySelectorAll(".lib-chip");
 
 // Shell-style library commands: typing one of these in the search box bypasses
 // BM25 and lists the user's saved problems.
@@ -66,19 +70,42 @@ filterSelect.addEventListener("change", () => {
   if (currentQuery) runSearch(currentQuery, { append: false });
 });
 
-hintRow.addEventListener("click", (e) => {
-  const code = e.target.closest("code");
-  if (!code) return;
-  input.value = code.textContent;
-  input.focus();
-  runSearch(code.textContent, { append: false });
+// Clicking a library chip is the same as typing its command. Empty cmd means
+// "leave library mode" — clears the input, returns to bm25 search.
+libChips.forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const cmd = chip.dataset.cmd || "";
+    input.value = cmd;
+    input.focus();
+    if (cmd) runSearch(cmd, { append: false });
+    else runSearch("", { append: false });
+  });
+});
+
+// Tab inside the search input cycles through library commands when the user is
+// signed in — picks up where they are in the LIBRARY_COMMANDS list.
+const TAB_CYCLE = [":bookmarks", ":done", ":all"];
+input.addEventListener("keydown", (e) => {
+  if (e.key !== "Tab" || !currentUser) return;
+  e.preventDefault();
+  const cur = input.value.trim().toLowerCase();
+  const idx = TAB_CYCLE.indexOf(cur);
+  const next = TAB_CYCLE[(idx + 1) % TAB_CYCLE.length];
+  input.value = next;
+  runSearch(next, { append: false });
 });
 
 logoutBtn.addEventListener("click", async () => {
   try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
   currentUser = null;
   applyAuthState();
-  if (currentQuery) runSearch(currentQuery, { append: false });
+  // Clear results and the input — old results were rendered with bookmark
+  // buttons that no longer apply, and we want anon UX from this point.
+  input.value = "";
+  currentQuery = "";
+  resultsEl.innerHTML = "";
+  hideLoadMore();
+  setStatus("logged out · type a query to search");
 });
 
 async function bootstrapAuth() {
@@ -100,15 +127,39 @@ function applyAuthState() {
     signed.hidden = false;
     authEmailEl.textContent = currentUser.email;
     filterWrap.hidden = false;
-    hintRow.hidden = false;
+    libBar.hidden = false;
+    refreshLibraryCounts();
+    setLibPath("~");
   } else {
     anon.hidden = false;
     signed.hidden = true;
     filterWrap.hidden = true;
     filterSelect.value = "all";
     currentFilter = "all";
-    hintRow.hidden = true;
+    libBar.hidden = true;
   }
+}
+
+async function refreshLibraryCounts() {
+  try {
+    const res = await fetch("/api/user-state");
+    if (!res.ok) return;
+    const data = await res.json();
+    libCountBookmarks.textContent = (data.bookmarked || []).length;
+    libCountDone.textContent = (data.done || []).length;
+  } catch (_e) {}
+}
+
+function setLibPath(path) {
+  libPathEl.textContent = path;
+  // Highlight the matching chip so the bar reads like a state indicator.
+  libChips.forEach((c) => {
+    const active =
+      (path === "~/bookmarked" && c.dataset.cmd === ":bookmarks") ||
+      (path === "~/done" && c.dataset.cmd === ":done") ||
+      (path === "~/all" && c.dataset.cmd === ":all");
+    c.classList.toggle("is-active", active);
+  });
 }
 
 bootstrapAuth();
@@ -140,6 +191,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
     currentOffset = 0;
     currentTotal = 0;
     hideLoadMore();
+    if (currentUser) setLibPath("~");
     return;
   }
 
@@ -152,6 +204,10 @@ async function runSearch(rawQuery, { append = false } = {}) {
     }
     return runLibrary(libraryType, q);
   }
+
+  // Search mode: path drops the leading tilde and shows the query so the bar
+  // reads like a real shell prompt: ~/search "graph cycle".
+  if (currentUser) setLibPath(`~/search "${q.length > 24 ? q.slice(0, 24) + "…" : q}"`);
 
   if (!append) {
     currentQuery = q;
@@ -198,7 +254,8 @@ function renderSingle(data, q, append) {
 
 async function runLibrary(type, q) {
   const issuedAt = ++lastQueryAt;
-  setStatus(`loading library: ${type === "all" ? "everything" : type}…`);
+  setLibPath(`~/${type}`);
+  setStatus(`ls ~/${type}`);
   hideLoadMore();
 
   let data;
@@ -226,16 +283,16 @@ async function runLibrary(type, q) {
   if (hits.length === 0) {
     const empty =
       type === "bookmarked"
-        ? "no bookmarks yet — star a problem to save it here"
+        ? "ls: ~/bookmarked is empty — star ☆ a problem to save it here"
         : type === "done"
-        ? "nothing marked done yet — mark a problem ✓ to track it"
-        : "library is empty — bookmark or mark problems done from the search results";
+        ? "ls: ~/done is empty — mark ○ a problem to track it"
+        : "ls: ~ is empty — bookmark or mark problems done from search";
     setStatus(empty);
     resultsEl.innerHTML = "";
     return;
   }
 
-  setStatus(`${hits.length} ${type === "all" ? "saved" : type} · ${q}`);
+  setStatus(`${hits.length} ${type === "all" ? "saved" : type}`);
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
 }
 
@@ -465,6 +522,8 @@ async function toggleFlag(hit, flag, btn) {
     btn.title = next ? "unmark as done" : "mark as done";
   }
   btn.setAttribute("aria-pressed", String(next));
+
+  if (currentUser) refreshLibraryCounts();
 
   // If the active filter or library view would no longer include this row,
   // re-run so the listing and the total stay honest.

@@ -1,3 +1,7 @@
+/* Beat any later author rule (e.g. .auth-user { display: inline-flex }) so the
+   hidden HTML attribute reliably hides anything we toggle from JS. */
+[hidden] { display: none !important; }
+
 :root {
   color-scheme: dark;
   --bg: #0d1117;
@@ -490,6 +494,7 @@ html[data-theme="light"] .result:hover {
    difficulty + score badge sits just left of the bookmark/done buttons. */
 .result-meta {
   margin-left: auto;
+  flex: 0 0 auto;
 }
 
 html[data-theme="light"] .result-title {
@@ -734,11 +739,6 @@ html[data-theme="light"] footer::after { content: ""; }
   color: var(--text-muted);
 }
 
-.filter-label {
-  letter-spacing: 0.04em;
-  text-transform: lowercase;
-}
-
 .filter-select {
   appearance: none;
   -webkit-appearance: none;
@@ -760,32 +760,80 @@ html[data-theme="light"] footer::after { content: ""; }
 .filter-select:focus { color: var(--accent); }
 .filter-select option { background: var(--surface-code); color: var(--text); }
 
-.hint-row {
-  margin: 0.4rem 0 0;
+/* Shell-prompt library bar that appears for signed-in users. Looks like a
+   terminal prompt followed by clickable shortcut "chips". The path segment
+   updates as the user navigates: ~/all, ~/bookmarked, ~/done, ~. */
+.lib-bar {
+  margin: 0.55rem 0 0;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: var(--mono);
-  font-size: 0.74rem;
-  color: var(--text-dim);
+  font-size: 0.78rem;
+  flex-wrap: wrap;
 }
 
-.hint-row .hint-key {
-  display: inline-block;
-  padding: 0.05rem 0.4rem;
-  margin-right: 0.5rem;
-  border: 1px dashed var(--border-strong);
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.66rem;
+.lib-prompt {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
   color: var(--text-muted);
 }
 
-.hint-row code {
+.lib-host {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.lib-host::before { content: "["; color: var(--text-dim); }
+.lib-host::after  { content: "]";  color: var(--text-dim); }
+
+.lib-path {
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.lib-cursor {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 0.2rem;
+}
+
+.lib-chips {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.lib-chip {
+  margin: 0;
+  padding: 0.2rem 0.55rem;
   font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.02em;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px dashed var(--border-strong);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lib-chip:hover {
+  border-style: solid;
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.lib-chip.is-active {
+  border-style: solid;
+  border-color: var(--accent);
   color: var(--accent);
   background: var(--accent-soft);
-  padding: 0.05rem 0.35rem;
-  border-radius: 3px;
 }
+
+.lib-chip-back { color: var(--text-dim); }
 
 .auth-sep { color: var(--text-dim); margin: 0 0.25rem; }
 
@@ -794,6 +842,7 @@ html[data-theme="light"] footer::after { content: ""; }
   align-items: center;
   gap: 0.25rem;
   margin-left: 0.6rem;
+  flex: 0 0 auto;
 }
 
 .result-action {

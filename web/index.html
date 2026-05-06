@@ -40,8 +40,7 @@
           placeholder="graph cycle / monotonic / knapsack"
         />
         <span id="filter-wrap" class="filter-wrap" hidden>
-          <span class="filter-label">filter</span>
-          <select id="filter-select" class="filter-select">
+          <select id="filter-select" class="filter-select" aria-label="filter results by done state">
             <option value="all">all</option>
             <option value="notdone">not done</option>
             <option value="done">done only</option>
@@ -49,10 +48,15 @@
         </span>
         <button type="submit">search</button>
       </form>
-      <p id="hint-row" class="hint-row" hidden>
-        <span class="hint-key">tip</span>
-        type <code>:bookmarks</code> or <code>:done</code> to list your library
-      </p>
+      <div id="lib-bar" class="lib-bar" hidden>
+        <span class="lib-prompt"><span class="lib-host">algolens</span><span class="lib-path" id="lib-path">~</span><span class="lib-cursor">$</span></span>
+        <span class="lib-chips">
+          <button type="button" class="lib-chip" data-cmd=":bookmarks">★ <span id="lib-count-bookmarks">0</span> bookmarks</button>
+          <button type="button" class="lib-chip" data-cmd=":done">✓ <span id="lib-count-done">0</span> done</button>
+          <button type="button" class="lib-chip" data-cmd=":all">: ls all</button>
+          <button type="button" class="lib-chip lib-chip-back" data-cmd="">↺ search</button>
+        </span>
+      </div>
       <!-- COMPARE_MODE_DISABLED start: re-enable by uncommenting this block,
            the renderCompare branch in app.js, and the /api/compare route in
            server/routes/search.js. Note: rank-delta labels showed the OTHER
