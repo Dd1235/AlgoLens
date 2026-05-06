@@ -9,6 +9,7 @@ const { GrpcSearchIndex, probe } = require("./search/grpc_index");
 const { createSearchRouter } = require("./routes/search");
 const { createDebugRouter } = require("./routes/debug");
 const { createAuthRouter } = require("./routes/auth");
+const { createUserStateRouter } = require("./routes/user_state");
 const { attachUser } = require("./auth/middleware");
 
 const app = express();
@@ -45,6 +46,7 @@ async function main() {
   app.use(attachUser);
   app.use(express.static(webDir));
   app.use("/api", createAuthRouter());
+  app.use("/api", createUserStateRouter());
   app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault }));
   app.use("/api", createDebugRouter({ problems, indexes, defaultRanker: activeDefault }));
 
