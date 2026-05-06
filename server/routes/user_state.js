@@ -50,8 +50,9 @@ function validProblemId(id) {
   return typeof id === "string" && PROBLEM_ID_RE.test(id);
 }
 
-function createUserStateRouter() {
+function createUserStateRouter({ problems } = {}) {
   const router = express.Router();
+  const problemsById = new Map((problems || []).map((p) => [p.id, p]));
 
   router.post("/done/:problemId", requireUser, async (req, res) => {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
@@ -88,6 +89,43 @@ function createUserStateRouter() {
     try {
       await setFlag(req.user.id, req.params.problemId, "bookmarked", false);
       res.json({ ok: true });
+    } catch (_e) {
+      res.status(500).json({ error: "db_error" });
+    }
+  });
+
+  // GET /api/library?type=bookmarked|done|all — returns the user's saved
+  // problems with their full metadata, hydrated from the in-memory corpus.
+  // Sorted by most-recent-mark first so the listing reads chronologically.
+  router.get("/library", requireUser, async (req, res) => {
+    const type = (req.query.type || "all").toString().toLowerCase();
+    if (type !== "bookmarked" && type !== "done" && type !== "all") {
+      return res.status(400).json({ error: "bad_type" });
+    }
+    let where = "user_id = $1";
+    if (type === "done") where += " AND done";
+    if (type === "bookmarked") where += " AND bookmarked";
+    const orderBy = type === "bookmarked" ? "bookmarked_at" : "done_at";
+    try {
+      const result = await db.query(
+        `SELECT problem_id, done, bookmarked, done_at, bookmarked_at, updated_at
+           FROM user_problem_state
+          WHERE ${where}
+       ORDER BY COALESCE(${orderBy}, updated_at) DESC NULLS LAST`,
+        [req.user.id]
+      );
+      const items = [];
+      for (const row of result.rows) {
+        const problem = problemsById.get(row.problem_id);
+        if (!problem) continue; // dangling row from a removed corpus entry
+        items.push({
+          problem,
+          done: row.done,
+          bookmarked: row.bookmarked,
+          markedAt: (row.bookmarked_at || row.done_at || row.updated_at || new Date()).toISOString(),
+        });
+      }
+      res.json({ type, total: items.length, items });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });
     }

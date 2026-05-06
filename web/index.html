@@ -16,7 +16,11 @@
         </h1>
         <nav class="header-actions" aria-label="Page actions">
           <span id="auth-widget" class="auth-widget">
-            <a href="/login.html" class="auth-link" data-anon>log in / sign up</a>
+            <span data-anon>
+              <a href="/login.html" class="auth-link">log in</a>
+              <span class="auth-sep">·</span>
+              <a href="/signup.html" class="auth-link">sign up</a>
+            </span>
             <span class="auth-user" data-signed hidden>
               <span class="auth-email" id="auth-email"></span>
               <button type="button" id="logout-btn" class="auth-logout">log out</button>
@@ -35,13 +39,20 @@
           type="search"
           placeholder="graph cycle / monotonic / knapsack"
         />
-        <select id="filter-select" class="filter-select" hidden>
-          <option value="all">all</option>
-          <option value="notdone">not done</option>
-          <option value="done">done only</option>
-        </select>
+        <span id="filter-wrap" class="filter-wrap" hidden>
+          <span class="filter-label">filter</span>
+          <select id="filter-select" class="filter-select">
+            <option value="all">all</option>
+            <option value="notdone">not done</option>
+            <option value="done">done only</option>
+          </select>
+        </span>
         <button type="submit">search</button>
       </form>
+      <p id="hint-row" class="hint-row" hidden>
+        <span class="hint-key">tip</span>
+        type <code>:bookmarks</code> or <code>:done</code> to list your library
+      </p>
       <!-- COMPARE_MODE_DISABLED start: re-enable by uncommenting this block,
            the renderCompare branch in app.js, and the /api/compare route in
            server/routes/search.js. Note: rank-delta labels showed the OTHER

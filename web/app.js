@@ -4,9 +4,25 @@ const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
 const loadMoreEl = document.getElementById("load-more");
 const filterSelect = document.getElementById("filter-select");
+const filterWrap = document.getElementById("filter-wrap");
 const authWidget = document.getElementById("auth-widget");
 const authEmailEl = document.getElementById("auth-email");
 const logoutBtn = document.getElementById("logout-btn");
+const hintRow = document.getElementById("hint-row");
+
+// Shell-style library commands: typing one of these in the search box bypasses
+// BM25 and lists the user's saved problems.
+const LIBRARY_COMMANDS = {
+  ":bookmarks": "bookmarked",
+  ":b": "bookmarked",
+  ":done": "done",
+  ":d": "done",
+  ":all": "all",
+  ":library": "all",
+  ":lib": "all",
+  "ls bookmarks": "bookmarked",
+  "ls done": "done",
+};
 
 // COMPARE_MODE_DISABLED: see web/index.html for the full re-enable note.
 // const compareEl = document.getElementById("compare-results");
@@ -75,13 +91,15 @@ function applyAuthState() {
     anon.hidden = true;
     signed.hidden = false;
     authEmailEl.textContent = currentUser.email;
-    filterSelect.hidden = false;
+    filterWrap.hidden = false;
+    hintRow.hidden = false;
   } else {
     anon.hidden = false;
     signed.hidden = true;
-    filterSelect.hidden = true;
+    filterWrap.hidden = true;
     filterSelect.value = "all";
     currentFilter = "all";
+    hintRow.hidden = true;
   }
 }
 
@@ -115,6 +133,16 @@ async function runSearch(rawQuery, { append = false } = {}) {
     currentTotal = 0;
     hideLoadMore();
     return;
+  }
+
+  // Shell-style library commands.
+  const libraryType = currentUser ? LIBRARY_COMMANDS[q.toLowerCase()] : null;
+  if (libraryType) {
+    if (!append) {
+      currentQuery = q;
+      currentOffset = 0;
+    }
+    return runLibrary(libraryType, q);
   }
 
   if (!append) {

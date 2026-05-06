@@ -7,7 +7,10 @@
   "scripts": {
     "dev": "nodemon server/index.js",
     "start": "node server/index.js",
-    "db:migrate": "bash db/run-migrations.sh"
+    "db:migrate": "bash db/run-migrations.sh",
+    "services:start": "docker compose up -d",
+    "services:stop": "docker compose down",
+    "services:status": "docker compose ps"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",

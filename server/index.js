@@ -46,7 +46,7 @@ async function main() {
   app.use(attachUser);
   app.use(express.static(webDir));
   app.use("/api", createAuthRouter());
-  app.use("/api", createUserStateRouter());
+  app.use("/api", createUserStateRouter({ problems }));
   app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault }));
   app.use("/api", createDebugRouter({ problems, indexes, defaultRanker: activeDefault }));
 

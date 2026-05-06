@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>algolens · log in</title>
+    <title>algolens · sign up</title>
     <script src="/theme.js"></script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
@@ -20,15 +20,15 @@
       </header>
 
       <section class="auth-card">
-        <h2 class="auth-heading">log in</h2>
-        <form id="auth-form" class="auth-form" autocomplete="on" data-mode="login" data-endpoint="/api/auth/login">
+        <h2 class="auth-heading">sign up</h2>
+        <form id="auth-form" class="auth-form" autocomplete="on" data-mode="signup" data-endpoint="/api/auth/signup">
           <input type="email" name="email" placeholder="email" required autocomplete="email" />
-          <input type="password" name="password" placeholder="password" required autocomplete="current-password" minlength="8" />
-          <button type="submit">log in</button>
+          <input type="password" name="password" placeholder="password (min 8 chars)" required autocomplete="new-password" minlength="8" />
+          <button type="submit">create account</button>
           <p class="auth-error" id="auth-error" hidden></p>
         </form>
         <p class="auth-foot">
-          no account? <a href="/signup.html">sign up</a> · or <a href="/">browse without one</a>
+          accounts unlock <strong>bookmark</strong> and <strong>mark as done</strong>. already have one? <a href="/login.html">log in</a> · <a href="/">back to search</a>
         </p>
       </section>
     </main>
