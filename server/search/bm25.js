@@ -127,18 +127,22 @@ class Bm25Index {
       const docs = this.postings.get(term);
       if (!docs) continue;
       for (const docId of docs) {
-        const tf = this.docTermCounts[docId].get(term) || 0;
-        if (tf === 0) continue;
+        const count = this.docTermCounts[docId].get(term) || 0;
+        if (count === 0) continue;
         const idf = this.idf.get(term);
         const dl = this.docLengths[docId] || 0;
         const norm = 1 - this.b + this.b * (dl / (this.avgdl || 1));
+        // BM25 "saturated" tf: the per-term factor that multiplies idf to give
+        // the contribution. Different from the raw count for BM25 — it's the
+        // length-normalized, k1-saturated term frequency. tf × idf = contribution.
+        const tf = (count * (this.k1 + 1)) / (count + this.k1 * norm);
         const contribution = this._termContribution(term, docId);
         let row = breakdown.get(docId);
         if (!row) {
           row = { docId, problem: this.problems[docId], total: 0, terms: [] };
           breakdown.set(docId, row);
         }
-        row.terms.push({ term, count: tf, docLength: dl, norm, idf, contribution });
+        row.terms.push({ term, count, docLength: dl, norm, tf, idf, contribution });
         row.total += contribution;
       }
     }
