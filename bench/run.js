@@ -64,7 +64,8 @@ async function evalRanker(name, index, queries) {
 
   for (const { query, relevant } of queries) {
     // first run for correctness; then re-run for latency
-    const hits = await Promise.resolve(index.search(query, Math.max(K_FOR_NDCG, K_FOR_PRECISION)));
+    const result = await Promise.resolve(index.search(query, Math.max(K_FOR_NDCG, K_FOR_PRECISION)));
+    const hits = Array.isArray(result) ? result : result.hits;
     const latencies = [];
     const scoring = [];
     for (let i = 0; i < LATENCY_REPEATS; i++) {

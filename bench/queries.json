@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "notes": "Seed query set for sanity-checking the bench harness. Each entry has a query string and a list of ground-truth relevant problem ids. Labels are author-judgment, not crowd-sourced — treat as a small smoke set, not a publishable benchmark. Expand to ~30 queries before drawing real conclusions.",
+  "version": 2,
+  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics.",
   "queries": [
     {
       "query": "two sum",
@@ -51,6 +51,106 @@
       "query": "knapsack coin change dp",
       "relevant": ["leetcode-coin-change", "leetcode-partition-equal-subset-sum"],
       "intent": "0/1 and unbounded knapsack DP"
+    },
+    {
+      "query": "merge intervals overlap",
+      "relevant": ["leetcode-merge-intervals", "leetcode-insert-interval", "leetcode-non-overlapping-intervals"],
+      "intent": "interval merge + overlap family"
+    },
+    {
+      "query": "binary search on answer capacity threshold",
+      "relevant": ["leetcode-find-k-th-smallest-pair-distance", "leetcode-escape-the-spreading-fire", "leetcode-binary-search"],
+      "intent": "binary search on answer (not on index)"
+    },
+    {
+      "query": "two pointers container water trapping rain",
+      "relevant": ["leetcode-3sum", "leetcode-container-with-most-water", "leetcode-trapping-rain-water"],
+      "intent": "two-pointer classic family"
+    },
+    {
+      "query": "segment tree range query",
+      "relevant": ["leetcode-count-of-smaller-numbers-after-self", "leetcode-create-sorted-array-through-instructions", "leetcode-falling-squares", "leetcode-range-module"],
+      "intent": "segment tree applications"
+    },
+    {
+      "query": "backtracking word ladder permutation",
+      "relevant": ["leetcode-word-ladder", "leetcode-word-ladder-ii", "leetcode-permutation-sequence", "leetcode-24-game"],
+      "intent": "backtracking search"
+    },
+    {
+      "query": "heap k closest median stream",
+      "relevant": ["leetcode-car-fleet-ii", "leetcode-course-schedule-iii", "cses-1134"],
+      "intent": "priority queue / heap family"
+    },
+    {
+      "query": "matrix dfs island connected",
+      "relevant": ["leetcode-number-of-islands", "leetcode-making-a-large-island", "leetcode-minimum-number-of-days-to-disconnect-island"],
+      "intent": "grid DFS / flood-fill"
+    },
+    {
+      "query": "palindrome string pairs",
+      "relevant": ["leetcode-palindrome-pairs", "leetcode-count-palindromic-subsequences", "leetcode-find-the-closest-palindrome"],
+      "intent": "palindrome problems"
+    },
+    {
+      "query": "tree serialize deserialize binary",
+      "relevant": ["leetcode-serialize-and-deserialize-binary-tree"],
+      "intent": "tree serialization"
+    },
+    {
+      "query": "interval scheduling greedy non-overlapping",
+      "relevant": ["leetcode-non-overlapping-intervals", "leetcode-meeting-rooms-iii", "leetcode-course-schedule-iii"],
+      "intent": "interval scheduling greedy"
+    },
+    {
+      "query": "directed graph cycle detection topological",
+      "relevant": ["leetcode-course-schedule", "leetcode-course-schedule-ii", "leetcode-build-a-matrix-with-conditions"],
+      "intent": "DAG cycle detection"
+    },
+    {
+      "query": "merge sort inversion count smaller after self",
+      "relevant": ["leetcode-count-of-smaller-numbers-after-self", "leetcode-reverse-pairs", "leetcode-count-good-triplets-in-an-array"],
+      "intent": "merge-sort based counting"
+    },
+    {
+      "query": "edit distance levenshtein two strings",
+      "relevant": ["leetcode-edit-distance"],
+      "intent": "sequence alignment DP"
+    },
+    {
+      "query": "interval dp balloon burst minimum cost",
+      "relevant": ["leetcode-burst-balloons", "leetcode-minimum-cost-to-cut-a-stick", "leetcode-strange-printer"],
+      "intent": "interval DP"
+    },
+    {
+      "query": "fenwick tree binary indexed inversion",
+      "relevant": ["leetcode-count-of-smaller-numbers-after-self", "leetcode-create-sorted-array-through-instructions", "leetcode-longest-increasing-subsequence-ii"],
+      "intent": "Fenwick tree applications"
+    },
+    {
+      "query": "climbing stairs ways house robber dp",
+      "relevant": ["leetcode-climbing-stairs", "leetcode-house-robber"],
+      "intent": "1D DP recurrence family"
+    },
+    {
+      "query": "stock buy sell multiple transactions profit",
+      "relevant": ["leetcode-best-time-to-buy-and-sell-stock-iii", "leetcode-best-time-to-buy-and-sell-stock-iv"],
+      "intent": "multi-transaction stock DP"
+    },
+    {
+      "query": "tree ancestor kth parent",
+      "relevant": ["leetcode-kth-ancestor-of-a-tree-node"],
+      "intent": "LCA / ancestor on binary tree"
+    },
+    {
+      "query": "bfs jump game reachable shortest",
+      "relevant": ["leetcode-jump-game-iv", "leetcode-bus-routes", "leetcode-shortest-path-to-get-all-keys"],
+      "intent": "BFS shortest path"
+    },
+    {
+      "query": "constrained subsequence maximum sum subarray",
+      "relevant": ["leetcode-constrained-subsequence-sum", "leetcode-count-subarrays-with-fixed-bounds"],
+      "intent": "max subarray variants with constraints"
     }
   ]
 }
