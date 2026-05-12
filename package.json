@@ -11,6 +11,7 @@
     "services:start": "docker compose up -d",
     "services:stop": "docker compose down",
     "services:status": "docker compose ps",
+    "services:reset": "docker compose down -v",
     "app:start": "bash scripts/start.sh",
     "app:stop": "bash scripts/stop.sh"
   },

@@ -1,10 +1,13 @@
-# Local Postgres for AlgoLens dev.
-#   docker compose up -d
+# Optional local Postgres for AlgoLens dev. The default dev path is Neon
+# (hosted), so most of the time you don't need this. Use it when you want to
+# work offline or don't want to depend on Neon's free tier.
+#
+#   npm run services:start        # boot pg in docker
 #   DATABASE_URL=postgres://algolens:dev@localhost:5433/algolens npm run db:migrate
+#   # then point .env at the same URL and run `npm run dev`
 #
 # Exposed on 5433 to avoid colliding with a system-installed Postgres on 5432.
-# Production uses Render Managed Postgres (see render.yaml). The DATABASE_URL
-# shape is the same so the app code is host-agnostic.
+# Data persists in the `algolens_pgdata` named volume across container restarts.
 services:
   postgres:
     image: postgres:16-alpine

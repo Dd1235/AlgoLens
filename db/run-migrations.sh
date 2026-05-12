@@ -11,9 +11,10 @@ if [[ -z "${DATABASE_URL:-}" ]]; then
 fi
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Neon's pooler rejects PGOPTIONS startup parameters, so we don't silence
+# NOTICE output via client_min_messages — expect a little chatter on re-runs.
 for f in "$DIR/migrations"/*.sql; do
   echo "applying $(basename "$f")"
-  PGOPTIONS='-c client_min_messages=warning' \
-    psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -q -f "$f"
+  psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -q -f "$f"
 done
 echo "migrations done"

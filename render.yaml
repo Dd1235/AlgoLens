@@ -1,18 +1,14 @@
 # Render blueprint for AlgoLens.
 #   one web service (Node + bm25 index + static UI)
-#   one managed Postgres (linked into the web service via DATABASE_URL)
+#   Postgres is Neon (hosted, free tier). DATABASE_URL is set in the Render
+#   dashboard as a secret env var — not declared here, so the blueprint stays
+#   safe to commit.
 #
 # After first deploy, run migrations once via the Render shell:
 #   bash db/run-migrations.sh
 #
 # To enable the Go gRPC ranker in prod, add a private service that builds
 # from ./go and set GRPC_BM25_ADDR on the web service to its internal hostname.
-
-databases:
-  - name: algolens-db
-    plan: free                # bump to starter ($7/mo) for persistence guarantees
-    databaseName: algolens
-    user: algolens
 
 services:
   - type: web
@@ -27,10 +23,10 @@ services:
         value: production
       - key: PORT
         value: 3000
+      # Set in the Render dashboard: paste the pooled Neon connection string.
+      # Must include `sslmode=require` (the app keys SSL off that).
       - key: DATABASE_URL
-        fromDatabase:
-          name: algolens-db
-          property: connectionString
+        sync: false
       - key: JWT_SECRET
         generateValue: true
       # Set RANKER=bm25 (default) explicitly; gRPC ranker stays off in v1.

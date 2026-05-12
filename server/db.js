@@ -14,9 +14,10 @@ function getPool() {
   }
   pool = new Pool({
     connectionString,
-    // Render Managed Postgres requires SSL; locally docker-compose doesn't.
-    // Toggle on the URL containing render.com to keep local dev free of certs.
-    ssl: /render\.com|amazonaws\.com/.test(connectionString) ? { rejectUnauthorized: false } : false,
+    // Managed Postgres (Render, Neon, etc.) requires SSL; local docker-compose
+    // doesn't. node-postgres ignores `sslmode` in the URL, so flip ssl on
+    // explicitly whenever the URL asks for it — keeps local dev cert-free.
+    ssl: /sslmode=require/.test(connectionString) ? { rejectUnauthorized: false } : false,
   });
   return pool;
 }

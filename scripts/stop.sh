@@ -1,18 +1,14 @@
 #!/usr/bin/env bash
-# Stop the local AlgoLens stack. Default keeps postgres running so its volume
-# stays warm between restarts; pass --with-db to stop the container too.
-# DB data always persists (named volume) until you `docker compose down -v`.
+# Stop the local AlgoLens stack (node server + optional gRPC ranker). Postgres
+# lives in Neon so there's nothing local to stop. If you're on the docker
+# fallback, run `npm run services:stop` separately.
 #
 # Usage:
-#   bash scripts/stop.sh             # node + grpc, leave postgres up
-#   bash scripts/stop.sh --with-db   # node + grpc + postgres
+#   bash scripts/stop.sh
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
-
-WITH_DB=0
-[[ "${1:-}" == "--with-db" ]] && WITH_DB=1
 
 stop_pid_file() {
   local pidfile="$1" label="$2"
@@ -38,11 +34,3 @@ stop_pid_file() {
 
 stop_pid_file .algolens.pid       "node server"
 stop_pid_file .algolens-grpc.pid  "go grpc ranker"
-
-if [[ "$WITH_DB" == "1" ]]; then
-  echo "→ postgres"
-  docker compose down >/dev/null
-  echo "  stopped (data preserved in 'algolens_pgdata' volume)"
-else
-  echo "→ postgres left running (use --with-db to stop)"
-fi
