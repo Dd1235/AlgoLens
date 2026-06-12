@@ -1,156 +1,394 @@
 {
-  "version": 2,
-  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics.",
+  "version": 3,
+  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical.",
   "queries": [
     {
       "query": "two sum",
-      "relevant": ["leetcode-two-sum", "cses-1640", "leetcode-3sum"],
-      "intent": "exact problem title + close variants"
+      "relevant": [
+        "leetcode-two-sum",
+        "cses-1640",
+        "leetcode-3sum"
+      ],
+      "intent": "exact problem title + close variants",
+      "slice": "keyword"
     },
     {
       "query": "monotonic stack next greater element",
-      "relevant": ["leetcode-next-greater-element-ii", "leetcode-largest-rectangle-in-histogram", "leetcode-trapping-rain-water"],
-      "intent": "pattern-driven: monotonic stack family"
+      "relevant": [
+        "leetcode-next-greater-element-ii",
+        "leetcode-largest-rectangle-in-histogram",
+        "leetcode-trapping-rain-water"
+      ],
+      "intent": "pattern-driven: monotonic stack family",
+      "slice": "keyword"
     },
     {
       "query": "shortest path graph",
-      "relevant": ["leetcode-design-graph-with-shortest-path-calculator", "leetcode-find-edges-in-shortest-paths", "cses-1667", "cses-1671", "cses-1672"],
-      "intent": "graph + shortest path family (CSES Dijkstra/Floyd)"
+      "relevant": [
+        "leetcode-design-graph-with-shortest-path-calculator",
+        "leetcode-find-edges-in-shortest-paths",
+        "cses-1667",
+        "cses-1671",
+        "cses-1672"
+      ],
+      "intent": "graph + shortest path family (CSES Dijkstra/Floyd)",
+      "slice": "keyword"
     },
     {
       "query": "binary tree level order traversal",
-      "relevant": ["leetcode-binary-tree-level-order-traversal", "leetcode-vertical-order-traversal-of-a-binary-tree"],
-      "intent": "exact title + close variant"
+      "relevant": [
+        "leetcode-binary-tree-level-order-traversal",
+        "leetcode-vertical-order-traversal-of-a-binary-tree"
+      ],
+      "intent": "exact title + close variant",
+      "slice": "keyword"
     },
     {
       "query": "longest increasing subsequence",
-      "relevant": ["leetcode-longest-increasing-subsequence", "leetcode-longest-increasing-subsequence-ii", "leetcode-russian-doll-envelopes"],
-      "intent": "exact + LIS-equivalent reductions"
+      "relevant": [
+        "leetcode-longest-increasing-subsequence",
+        "leetcode-longest-increasing-subsequence-ii",
+        "leetcode-russian-doll-envelopes"
+      ],
+      "intent": "exact + LIS-equivalent reductions",
+      "slice": "keyword"
     },
     {
       "query": "topological sort course schedule",
-      "relevant": ["leetcode-course-schedule", "leetcode-course-schedule-ii", "leetcode-course-schedule-iii"],
-      "intent": "topo sort applications"
+      "relevant": [
+        "leetcode-course-schedule",
+        "leetcode-course-schedule-ii",
+        "leetcode-course-schedule-iii"
+      ],
+      "intent": "topo sort applications",
+      "slice": "keyword"
     },
     {
       "query": "trie prefix word search",
-      "relevant": ["leetcode-word-search-ii"],
-      "intent": "trie-based string search (corpus is thin here — only one strong match)"
+      "relevant": [
+        "leetcode-word-search-ii"
+      ],
+      "intent": "trie-based string search (corpus is thin here — only one strong match)",
+      "slice": "keyword"
     },
     {
       "query": "union find connected components",
-      "relevant": ["leetcode-count-connected-components-in-lcm-graph", "leetcode-number-of-islands"],
-      "intent": "DSU / connectivity"
+      "relevant": [
+        "leetcode-count-connected-components-in-lcm-graph",
+        "leetcode-number-of-islands"
+      ],
+      "intent": "DSU / connectivity",
+      "slice": "keyword"
     },
     {
       "query": "sliding window maximum",
-      "relevant": ["leetcode-sliding-window-maximum", "leetcode-sliding-window-median", "leetcode-longest-substring-without-repeating-characters"],
-      "intent": "sliding-window family"
+      "relevant": [
+        "leetcode-sliding-window-maximum",
+        "leetcode-sliding-window-median",
+        "leetcode-longest-substring-without-repeating-characters"
+      ],
+      "intent": "sliding-window family",
+      "slice": "keyword"
     },
     {
       "query": "knapsack coin change dp",
-      "relevant": ["leetcode-coin-change", "leetcode-partition-equal-subset-sum"],
-      "intent": "0/1 and unbounded knapsack DP"
+      "relevant": [
+        "leetcode-coin-change",
+        "leetcode-partition-equal-subset-sum"
+      ],
+      "intent": "0/1 and unbounded knapsack DP",
+      "slice": "keyword"
     },
     {
       "query": "merge intervals overlap",
-      "relevant": ["leetcode-merge-intervals", "leetcode-insert-interval", "leetcode-non-overlapping-intervals"],
-      "intent": "interval merge + overlap family"
+      "relevant": [
+        "leetcode-merge-intervals",
+        "leetcode-insert-interval",
+        "leetcode-non-overlapping-intervals"
+      ],
+      "intent": "interval merge + overlap family",
+      "slice": "keyword"
     },
     {
       "query": "binary search on answer capacity threshold",
-      "relevant": ["leetcode-find-k-th-smallest-pair-distance", "leetcode-escape-the-spreading-fire", "leetcode-binary-search"],
-      "intent": "binary search on answer (not on index)"
+      "relevant": [
+        "leetcode-find-k-th-smallest-pair-distance",
+        "leetcode-escape-the-spreading-fire",
+        "leetcode-binary-search"
+      ],
+      "intent": "binary search on answer (not on index)",
+      "slice": "keyword"
     },
     {
       "query": "two pointers container water trapping rain",
-      "relevant": ["leetcode-3sum", "leetcode-container-with-most-water", "leetcode-trapping-rain-water"],
-      "intent": "two-pointer classic family"
+      "relevant": [
+        "leetcode-3sum",
+        "leetcode-container-with-most-water",
+        "leetcode-trapping-rain-water"
+      ],
+      "intent": "two-pointer classic family",
+      "slice": "keyword"
     },
     {
       "query": "segment tree range query",
-      "relevant": ["leetcode-count-of-smaller-numbers-after-self", "leetcode-create-sorted-array-through-instructions", "leetcode-falling-squares", "leetcode-range-module"],
-      "intent": "segment tree applications"
+      "relevant": [
+        "leetcode-count-of-smaller-numbers-after-self",
+        "leetcode-create-sorted-array-through-instructions",
+        "leetcode-falling-squares",
+        "leetcode-range-module"
+      ],
+      "intent": "segment tree applications",
+      "slice": "keyword"
     },
     {
       "query": "backtracking word ladder permutation",
-      "relevant": ["leetcode-word-ladder", "leetcode-word-ladder-ii", "leetcode-permutation-sequence", "leetcode-24-game"],
-      "intent": "backtracking search"
+      "relevant": [
+        "leetcode-word-ladder",
+        "leetcode-word-ladder-ii",
+        "leetcode-permutation-sequence",
+        "leetcode-24-game"
+      ],
+      "intent": "backtracking search",
+      "slice": "keyword"
     },
     {
       "query": "heap k closest median stream",
-      "relevant": ["leetcode-car-fleet-ii", "leetcode-course-schedule-iii", "cses-1134"],
-      "intent": "priority queue / heap family"
+      "relevant": [
+        "leetcode-car-fleet-ii",
+        "leetcode-course-schedule-iii",
+        "cses-1134"
+      ],
+      "intent": "priority queue / heap family",
+      "slice": "keyword"
     },
     {
       "query": "matrix dfs island connected",
-      "relevant": ["leetcode-number-of-islands", "leetcode-making-a-large-island", "leetcode-minimum-number-of-days-to-disconnect-island"],
-      "intent": "grid DFS / flood-fill"
+      "relevant": [
+        "leetcode-number-of-islands",
+        "leetcode-making-a-large-island",
+        "leetcode-minimum-number-of-days-to-disconnect-island"
+      ],
+      "intent": "grid DFS / flood-fill",
+      "slice": "keyword"
     },
     {
       "query": "palindrome string pairs",
-      "relevant": ["leetcode-palindrome-pairs", "leetcode-count-palindromic-subsequences", "leetcode-find-the-closest-palindrome"],
-      "intent": "palindrome problems"
+      "relevant": [
+        "leetcode-palindrome-pairs",
+        "leetcode-count-palindromic-subsequences",
+        "leetcode-find-the-closest-palindrome"
+      ],
+      "intent": "palindrome problems",
+      "slice": "keyword"
     },
     {
       "query": "tree serialize deserialize binary",
-      "relevant": ["leetcode-serialize-and-deserialize-binary-tree"],
-      "intent": "tree serialization"
+      "relevant": [
+        "leetcode-serialize-and-deserialize-binary-tree"
+      ],
+      "intent": "tree serialization",
+      "slice": "keyword"
     },
     {
       "query": "interval scheduling greedy non-overlapping",
-      "relevant": ["leetcode-non-overlapping-intervals", "leetcode-meeting-rooms-iii", "leetcode-course-schedule-iii"],
-      "intent": "interval scheduling greedy"
+      "relevant": [
+        "leetcode-non-overlapping-intervals",
+        "leetcode-meeting-rooms-iii",
+        "leetcode-course-schedule-iii"
+      ],
+      "intent": "interval scheduling greedy",
+      "slice": "keyword"
     },
     {
       "query": "directed graph cycle detection topological",
-      "relevant": ["leetcode-course-schedule", "leetcode-course-schedule-ii", "leetcode-build-a-matrix-with-conditions"],
-      "intent": "DAG cycle detection"
+      "relevant": [
+        "leetcode-course-schedule",
+        "leetcode-course-schedule-ii",
+        "leetcode-build-a-matrix-with-conditions"
+      ],
+      "intent": "DAG cycle detection",
+      "slice": "keyword"
     },
     {
       "query": "merge sort inversion count smaller after self",
-      "relevant": ["leetcode-count-of-smaller-numbers-after-self", "leetcode-reverse-pairs", "leetcode-count-good-triplets-in-an-array"],
-      "intent": "merge-sort based counting"
+      "relevant": [
+        "leetcode-count-of-smaller-numbers-after-self",
+        "leetcode-reverse-pairs",
+        "leetcode-count-good-triplets-in-an-array"
+      ],
+      "intent": "merge-sort based counting",
+      "slice": "keyword"
     },
     {
       "query": "edit distance levenshtein two strings",
-      "relevant": ["leetcode-edit-distance"],
-      "intent": "sequence alignment DP"
+      "relevant": [
+        "leetcode-edit-distance"
+      ],
+      "intent": "sequence alignment DP",
+      "slice": "keyword"
     },
     {
       "query": "interval dp balloon burst minimum cost",
-      "relevant": ["leetcode-burst-balloons", "leetcode-minimum-cost-to-cut-a-stick", "leetcode-strange-printer"],
-      "intent": "interval DP"
+      "relevant": [
+        "leetcode-burst-balloons",
+        "leetcode-minimum-cost-to-cut-a-stick",
+        "leetcode-strange-printer"
+      ],
+      "intent": "interval DP",
+      "slice": "keyword"
     },
     {
       "query": "fenwick tree binary indexed inversion",
-      "relevant": ["leetcode-count-of-smaller-numbers-after-self", "leetcode-create-sorted-array-through-instructions", "leetcode-longest-increasing-subsequence-ii"],
-      "intent": "Fenwick tree applications"
+      "relevant": [
+        "leetcode-count-of-smaller-numbers-after-self",
+        "leetcode-create-sorted-array-through-instructions",
+        "leetcode-longest-increasing-subsequence-ii"
+      ],
+      "intent": "Fenwick tree applications",
+      "slice": "keyword"
     },
     {
       "query": "climbing stairs ways house robber dp",
-      "relevant": ["leetcode-climbing-stairs", "leetcode-house-robber"],
-      "intent": "1D DP recurrence family"
+      "relevant": [
+        "leetcode-climbing-stairs",
+        "leetcode-house-robber"
+      ],
+      "intent": "1D DP recurrence family",
+      "slice": "keyword"
     },
     {
       "query": "stock buy sell multiple transactions profit",
-      "relevant": ["leetcode-best-time-to-buy-and-sell-stock-iii", "leetcode-best-time-to-buy-and-sell-stock-iv"],
-      "intent": "multi-transaction stock DP"
+      "relevant": [
+        "leetcode-best-time-to-buy-and-sell-stock-iii",
+        "leetcode-best-time-to-buy-and-sell-stock-iv"
+      ],
+      "intent": "multi-transaction stock DP",
+      "slice": "keyword"
     },
     {
       "query": "tree ancestor kth parent",
-      "relevant": ["leetcode-kth-ancestor-of-a-tree-node"],
-      "intent": "LCA / ancestor on binary tree"
+      "relevant": [
+        "leetcode-kth-ancestor-of-a-tree-node"
+      ],
+      "intent": "LCA / ancestor on binary tree",
+      "slice": "keyword"
     },
     {
       "query": "bfs jump game reachable shortest",
-      "relevant": ["leetcode-jump-game-iv", "leetcode-bus-routes", "leetcode-shortest-path-to-get-all-keys"],
-      "intent": "BFS shortest path"
+      "relevant": [
+        "leetcode-jump-game-iv",
+        "leetcode-bus-routes",
+        "leetcode-shortest-path-to-get-all-keys"
+      ],
+      "intent": "BFS shortest path",
+      "slice": "keyword"
     },
     {
       "query": "constrained subsequence maximum sum subarray",
-      "relevant": ["leetcode-constrained-subsequence-sum", "leetcode-count-subarrays-with-fixed-bounds"],
-      "intent": "max subarray variants with constraints"
+      "relevant": [
+        "leetcode-constrained-subsequence-sum",
+        "leetcode-count-subarrays-with-fixed-bounds"
+      ],
+      "intent": "max subarray variants with constraints",
+      "slice": "keyword"
+    },
+    {
+      "query": "find two numbers that add up to a target value",
+      "relevant": [
+        "leetcode-two-sum",
+        "cses-1640"
+      ],
+      "intent": "paraphrase of two-sum, near-zero title overlap",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "cheapest way to make an amount from coin denominations",
+      "relevant": [
+        "leetcode-coin-change"
+      ],
+      "intent": "paraphrase of coin change",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "can you finish all your classes given prerequisite pairs",
+      "relevant": [
+        "leetcode-course-schedule",
+        "leetcode-course-schedule-ii"
+      ],
+      "intent": "paraphrase of course schedule",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "minimum number of changes to turn one word into another",
+      "relevant": [
+        "leetcode-edit-distance"
+      ],
+      "intent": "paraphrase of edit distance",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "how much rainwater collects between the bars",
+      "relevant": [
+        "leetcode-trapping-rain-water"
+      ],
+      "intent": "paraphrase of trapping rain water",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "count the ways to reach the top taking one or two steps",
+      "relevant": [
+        "leetcode-climbing-stairs"
+      ],
+      "intent": "paraphrase of climbing stairs",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "maximize stolen money without robbing adjacent homes",
+      "relevant": [
+        "leetcode-house-robber"
+      ],
+      "intent": "paraphrase of house robber",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "check if brackets open and close in the right order",
+      "relevant": [
+        "leetcode-valid-parentheses"
+      ],
+      "intent": "paraphrase of valid parentheses",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "longest stretch of characters with no repeats",
+      "relevant": [
+        "leetcode-longest-substring-without-repeating-characters"
+      ],
+      "intent": "paraphrase of longest substring without repeating characters",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "count separate land regions in a grid of land and water",
+      "relevant": [
+        "leetcode-number-of-islands"
+      ],
+      "intent": "paraphrase of number of islands",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "pick the most frequent values from a list",
+      "relevant": [
+        "leetcode-top-k-frequent-elements"
+      ],
+      "intent": "paraphrase of top k frequent elements",
+      "slice": "paraphrase"
+    },
+    {
+      "query": "group words made of the same letters",
+      "relevant": [
+        "leetcode-group-anagrams"
+      ],
+      "intent": "paraphrase of group anagrams",
+      "slice": "paraphrase"
     }
   ]
 }

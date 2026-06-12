@@ -4,12 +4,19 @@ const { loadProblems } = require("../server/data");
 const { TfIdfIndex } = require("../server/search/tfidf");
 const { Bm25Index } = require("../server/search/bm25");
 const { GrpcSearchIndex, probe } = require("../server/search/grpc_index");
+const { tryCreateDenseIndex } = require("../server/search/dense");
+const { HybridIndex } = require("../server/search/hybrid");
 
 const QUERIES_PATH = path.join(__dirname, "queries.json");
 const RESULTS_DIR = path.join(__dirname, "..", "experiments");
 const K_FOR_PRECISION = 5;
 const K_FOR_NDCG = 10;
-const LATENCY_REPEATS = 50; // re-run each query to get a stable distribution
+// Recall at the hybrid ranker's fusion window: ≈1.0 here is the empirical
+// justification for fusing only each leg's top-100.
+const K_FOR_RECALL = 100;
+// re-run each query to get a stable distribution; env-tunable because dense
+// embeds the query on every repeat (LATENCY_REPEATS=5 for quick iterations)
+const LATENCY_REPEATS = Number(process.env.LATENCY_REPEATS || 50);
 
 function precisionAtK(hits, relevant, k) {
   const top = hits.slice(0, k).map((h) => h.problem.id);
@@ -41,6 +48,12 @@ function ndcgAtK(hits, relevant, k) {
   return idcg === 0 ? 0 : dcg / idcg;
 }
 
+function recallAtK(hits, relevant, k) {
+  const top = new Set(hits.slice(0, k).map((h) => h.problem.id));
+  const found = relevant.filter((id) => top.has(id)).length;
+  return relevant.length === 0 ? 0 : found / relevant.length;
+}
+
 function percentile(sorted, p) {
   if (sorted.length === 0) return 0;
   const idx = Math.min(sorted.length - 1, Math.ceil((p / 100) * sorted.length) - 1);
@@ -60,11 +73,15 @@ async function evalRanker(name, index, queries) {
   const perQuery = [];
   const allLatencies = [];
   const allScoring = [];
-  let sumP1 = 0, sumP5 = 0, sumMRR = 0, sumNDCG = 0;
+  // overall sums plus per-slice sums (slice = "keyword" | "paraphrase")
+  const newSums = () => ({ n: 0, p1: 0, p5: 0, mrr: 0, ndcg: 0, recall: 0 });
+  const overall = newSums();
+  const bySlice = new Map();
 
-  for (const { query, relevant } of queries) {
-    // first run for correctness; then re-run for latency
-    const result = await Promise.resolve(index.search(query, Math.max(K_FOR_NDCG, K_FOR_PRECISION)));
+  for (const { query, relevant, slice = "keyword" } of queries) {
+    // first run for correctness (k=100 so Recall@100 is measurable);
+    // then re-run at serving size for latency
+    const result = await Promise.resolve(index.search(query, K_FOR_RECALL));
     const hits = Array.isArray(result) ? result : result.hits;
     const latencies = [];
     const scoring = [];
@@ -84,31 +101,42 @@ async function evalRanker(name, index, queries) {
     const p5 = precisionAtK(hits, relevant, K_FOR_PRECISION);
     const rr = reciprocalRank(hits, relevant);
     const ndcg = ndcgAtK(hits, relevant, K_FOR_NDCG);
+    const recall = recallAtK(hits, relevant, K_FOR_RECALL);
 
-    sumP1 += p1; sumP5 += p5; sumMRR += rr; sumNDCG += ndcg;
+    if (!bySlice.has(slice)) bySlice.set(slice, newSums());
+    for (const sums of [overall, bySlice.get(slice)]) {
+      sums.n += 1;
+      sums.p1 += p1; sums.p5 += p5; sums.mrr += rr; sums.ndcg += ndcg; sums.recall += recall;
+    }
+
     perQuery.push({
       query,
+      slice,
       relevant,
       top5: hits.slice(0, 5).map((h) => ({ id: h.problem.id, score: +h.score.toFixed(4) })),
       "P@1": +p1.toFixed(3),
       "P@5": +p5.toFixed(3),
       RR: +rr.toFixed(3),
       "nDCG@10": +ndcg.toFixed(3),
+      "Recall@100": +recall.toFixed(3),
       latency: summarize(latencies),
       ...(scoring.length > 0 ? { serverScoringLatency: summarize(scoring) } : {}),
     });
   }
 
-  const n = queries.length;
+  const agg = (s) => ({
+    queryCount: s.n,
+    "P@1": +(s.p1 / s.n).toFixed(3),
+    "P@5": +(s.p5 / s.n).toFixed(3),
+    MRR: +(s.mrr / s.n).toFixed(3),
+    "nDCG@10": +(s.ndcg / s.n).toFixed(3),
+    "Recall@100": +(s.recall / s.n).toFixed(3),
+  });
   return {
     ranker: name,
-    queryCount: n,
-    aggregate: {
-      "P@1": +(sumP1 / n).toFixed(3),
-      "P@5": +(sumP5 / n).toFixed(3),
-      MRR: +(sumMRR / n).toFixed(3),
-      "nDCG@10": +(sumNDCG / n).toFixed(3),
-    },
+    queryCount: queries.length,
+    aggregate: agg(overall),
+    bySlice: Object.fromEntries([...bySlice].map(([s, sums]) => [s, agg(sums)])),
     latency: summarize(allLatencies),
     ...(allScoring.length > 0 ? { serverScoringLatency: summarize(allScoring) } : {}),
     perQuery,
@@ -119,8 +147,8 @@ function pad(s, n) { return String(s).padEnd(n); }
 
 function printTable(results) {
   console.log();
-  console.log(pad("ranker", 12), pad("P@1", 8), pad("P@5", 8), pad("MRR", 8), pad("nDCG@10", 10), pad("p50_ms", 10), pad("p95_ms", 10), pad("p50_score", 11));
-  console.log("-".repeat(80));
+  console.log(pad("ranker", 12), pad("P@1", 8), pad("P@5", 8), pad("MRR", 8), pad("nDCG@10", 10), pad("R@100", 8), pad("p50_ms", 10), pad("p95_ms", 10), pad("p50_score", 11));
+  console.log("-".repeat(90));
   for (const r of results) {
     const scoringP50 = r.serverScoringLatency ? r.serverScoringLatency.median_ms.toFixed(3) : "—";
     console.log(
@@ -129,10 +157,36 @@ function printTable(results) {
       pad(r.aggregate["P@5"].toFixed(3), 8),
       pad(r.aggregate.MRR.toFixed(3), 8),
       pad(r.aggregate["nDCG@10"].toFixed(3), 10),
+      pad(r.aggregate["Recall@100"].toFixed(3), 8),
       pad(r.latency.median_ms.toFixed(3), 10),
       pad(r.latency.p95_ms.toFixed(3), 10),
       pad(scoringP50, 11),
     );
+  }
+}
+
+// ranker × slice breakdown — the headline for dense vs lexical is usually in
+// the paraphrase rows.
+function printSliceTable(results) {
+  const slices = [...new Set(results.flatMap((r) => Object.keys(r.bySlice)))];
+  console.log();
+  console.log(pad("ranker", 12), pad("slice", 12), pad("n", 4), pad("P@1", 8), pad("P@5", 8), pad("MRR", 8), pad("nDCG@10", 10), pad("R@100", 8));
+  console.log("-".repeat(78));
+  for (const r of results) {
+    for (const s of slices) {
+      const a = r.bySlice[s];
+      if (!a) continue;
+      console.log(
+        pad(r.ranker, 12),
+        pad(s, 12),
+        pad(a.queryCount, 4),
+        pad(a["P@1"].toFixed(3), 8),
+        pad(a["P@5"].toFixed(3), 8),
+        pad(a.MRR.toFixed(3), 8),
+        pad(a["nDCG@10"].toFixed(3), 10),
+        pad(a["Recall@100"].toFixed(3), 8),
+      );
+    }
   }
 }
 
@@ -160,6 +214,17 @@ async function main() {
     { name: "bm25", index: bm25 },
   ];
 
+  // dense + hybrid join the bench only when the embeddings artifact is present
+  // and fresh — same skip semantics as the server boot.
+  const tBuildDense = Date.now();
+  const dense = await tryCreateDenseIndex(problems);
+  const denseInitMs = dense ? Date.now() - tBuildDense : null;
+  if (dense) {
+    rankers.push({ name: "dense", index: dense });
+    rankers.push({ name: "hybrid", index: new HybridIndex({ lexical: bm25, dense }) });
+    console.log(`dense:  model+artifact ready in ${denseInitMs}ms — included dense + hybrid`);
+  }
+
   let grpcIdx = null;
   const grpcAddr = process.env.GRPC_BM25_ADDR;
   if (grpcAddr) {
@@ -181,6 +246,7 @@ async function main() {
   }
 
   printTable(results);
+  printSliceTable(results);
 
   if (grpcIdx) grpcIdx.close();
 
@@ -189,8 +255,9 @@ async function main() {
   const outPath = path.join(RESULTS_DIR, `bench-${stamp}.json`);
   fs.writeFileSync(outPath, JSON.stringify({
     timestamp: new Date().toISOString(),
-    corpus: { docs: problems.length, loadMs, build: { tfidf: tBuildTfMs, bm25: tBuildBmMs } },
+    corpus: { docs: problems.length, loadMs, build: { tfidf: tBuildTfMs, bm25: tBuildBmMs, dense: denseInitMs } },
     queriesFile: path.relative(path.join(__dirname, ".."), QUERIES_PATH),
+    queriesVersion: queriesData.version,
     queryCount: queries.length,
     latencyRepeats: LATENCY_REPEATS,
     grpcAddr: grpcIdx ? grpcAddr : null,
