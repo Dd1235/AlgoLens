@@ -23,7 +23,9 @@ Writes one timestamped JSON + overwrites `bench-latest.json`. No other side effe
   - **P@5** — fraction of top-5 that are relevant
   - **MRR** — mean reciprocal rank of the first relevant hit
   - **nDCG@10** — discounted cumulative gain over top-10, normalized by ideal ordering
-- **Latency** (each query repeated 50× per run, all samples pooled per ranker):
+  - **Recall@100** — fraction of relevant docs in the top-100 (justifies the hybrid ranker's top-100 fusion window)
+- **Per-slice breakdowns** — every query carries a `slice` tag (`keyword` | `paraphrase`); aggregates are reported overall and per slice, which is where the dense-vs-lexical story lives (see [05](./05-dense-hybrid-rrf.md))
+- **Latency** (each query repeated 50× per run — `LATENCY_REPEATS=5` env for quick iterations — all samples pooled per ranker):
   - p50_ms, p95_ms, mean_ms
 
 ## What's NOT measured (yet)
@@ -37,4 +39,4 @@ These are deliberately deferred until the corpus + query set scale up.
 
 ## Caveats for any current numbers
 
-The seed query set has **10 queries**. That's enough to sanity-check the harness and spot ranker-level differences, but every aggregate metric has a wide confidence interval at this size. Treat published numbers as directional until the query set reaches ~30+.
+The query set is **42 queries** (30 keyword + 12 paraphrase), all one author's judgment. Aggregate metrics are solid enough for ranker-level comparisons; per-slice numbers (especially the 12-query paraphrase slice) are directional. Treat sub-0.05 metric differences as noise.
