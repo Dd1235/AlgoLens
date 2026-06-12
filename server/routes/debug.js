@@ -26,14 +26,21 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
     res.json({ ranker, ...index.dumpInverted() });
   });
 
-  router.get("/explain", (req, res) => {
+  router.get("/explain", async (req, res) => {
     const q = (req.query.q || "").toString();
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
     if (typeof index.explain !== "function") {
       return res.status(501).json({ error: `${ranker} has no explain` });
     }
-    res.json({ ranker, ...index.explain(q) });
+    try {
+      // dense/hybrid explain is async (query embedding); lexical stays sync.
+      // Spreading a bare Promise here would silently produce { ranker } only.
+      const payload = await Promise.resolve(index.explain(q));
+      res.json({ ranker, ...payload });
+    } catch (err) {
+      res.status(502).json({ ranker, error: err.message || "explain failed" });
+    }
   });
 
   return router;

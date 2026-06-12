@@ -88,6 +88,37 @@ function createSearchRouter({ indexes, defaultRanker }) {
     }
   });
 
+  // "Find similar problems": doc-to-doc cosine over the precomputed vectors.
+  // Pure stored-vector math — the embedding model is not involved, so this is
+  // sync and fast (~1 ms full-corpus scan).
+  router.get("/similar/:problemId", async (req, res) => {
+    const dense = indexes.dense;
+    if (!dense) {
+      return res.status(503).json({ error: "dense ranker unavailable — run `npm run embed` and restart" });
+    }
+    const k = Math.min(50, Number.parseInt(req.query.k, 10) || 10);
+
+    try {
+      const t = process.hrtime.bigint();
+      const result = dense.similar(req.params.problemId, k);
+      const latencyMs = +(Number(process.hrtime.bigint() - t) / 1e6).toFixed(3);
+      if (!result) return res.status(404).json({ error: "unknown problem id" });
+
+      let { hits } = result;
+      const userState = req.user ? await loadUserState(req.user.id) : null;
+      if (userState) {
+        hits = hits.map((h) => ({
+          ...h,
+          done: userState.done.has(h.problem.id),
+          bookmarked: userState.bookmarked.has(h.problem.id),
+        }));
+      }
+      res.json({ problemId: req.params.problemId, source: result.source, ranker: "dense", latencyMs, k, total: result.total, hits });
+    } catch (err) {
+      res.status(502).json({ error: err.message || "similar failed" });
+    }
+  });
+
   // COMPARE_MODE_DISABLED: re-enable together with the UI in web/index.html
   // and web/app.js.
   // router.get("/compare", async (req, res) => {

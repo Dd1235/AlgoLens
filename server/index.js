@@ -6,6 +6,8 @@ const { loadProblems } = require("./data");
 const { TfIdfIndex } = require("./search/tfidf");
 const { Bm25Index } = require("./search/bm25");
 const { GrpcSearchIndex, probe } = require("./search/grpc_index");
+const { tryCreateDenseIndex } = require("./search/dense");
+const { HybridIndex } = require("./search/hybrid");
 const { createSearchRouter } = require("./routes/search");
 const { createDebugRouter } = require("./routes/debug");
 const { createAuthRouter } = require("./routes/auth");
@@ -30,6 +32,20 @@ async function main() {
       console.log(`gRPC bm25-grpc ranker reachable at ${grpcAddr} — registered`);
     } else {
       console.warn(`gRPC bm25-grpc at ${grpcAddr} unreachable on boot — skipping registration. Start the Go service (go/algolens_server) and restart Node, or omit GRPC_BM25_ADDR to silence this.`);
+    }
+  }
+
+  // Dense + hybrid register only when the committed embeddings artifact is
+  // present and fresh and the ONNX model loads — same graceful-degradation
+  // pattern as the gRPC ranker. (RANKER=dense|hybrid without the artifact
+  // falls back to bm25 via the unknown-RANKER warning below.)
+  if (process.env.DENSE_DISABLED !== "1") {
+    const dense = await tryCreateDenseIndex(problems);
+    if (dense) {
+      indexes.dense = dense;
+      indexes.hybrid = new HybridIndex({ lexical: indexes.bm25, dense });
+      const s = dense.stats();
+      console.log(`dense ranker ready (${s.model}, ${s.dims}d, ${s.dtype}, ${s.count} vectors) — registered dense + hybrid`);
     }
   }
 
