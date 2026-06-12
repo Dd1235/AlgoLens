@@ -1,8 +1,11 @@
 # Render blueprint for AlgoLens.
-#   one web service (Node + bm25 index + static UI)
+#   one web service (Node + bm25/dense/hybrid rankers + static UI)
 #   Postgres is Neon (hosted, free tier). DATABASE_URL is set in the Render
 #   dashboard as a secret env var — not declared here, so the blueprint stays
 #   safe to commit.
+#   The dense ranker's model is baked into the Docker image at build time and
+#   the corpus embeddings are committed (data/embeddings/), so boot needs no
+#   network beyond Postgres.
 #
 # After first deploy, run migrations once via the Render shell:
 #   bash db/run-migrations.sh
@@ -29,6 +32,8 @@ services:
         sync: false
       - key: JWT_SECRET
         generateValue: true
-      # Set RANKER=bm25 (default) explicitly; gRPC ranker stays off in v1.
+      # Default ranker stays bm25 (best MRR on the bench); dense + hybrid are
+      # registered and reachable per-request via ?ranker=. Flip to hybrid here
+      # if/when the bench says so. gRPC ranker stays off in v1.
       - key: RANKER
         value: bm25

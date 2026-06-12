@@ -2,6 +2,7 @@
 .gitignore
 .env
 .claude
+.model-cache
 .planning
 node_modules
 docs
