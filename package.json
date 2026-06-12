@@ -7,6 +7,8 @@
   "scripts": {
     "dev": "nodemon server/index.js",
     "start": "node server/index.js",
+    "embed": "node scripts/embed_corpus.js",
+    "test:search": "node server/search/tfidf.test.js && node server/search/bm25.test.js && node server/search/dense.test.js && node server/search/hybrid.test.js",
     "db:migrate": "bash db/run-migrations.sh",
     "services:start": "docker compose up -d",
     "services:stop": "docker compose down",
@@ -18,6 +20,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",
     "@grpc/proto-loader": "^0.7.13",
+    "@huggingface/transformers": "4.2.0",
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
     "dotenv": "^17.4.2",
