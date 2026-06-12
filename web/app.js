@@ -296,6 +296,43 @@ async function runLibrary(type, q) {
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
 }
 
+// "Find similar" view: doc-to-doc cosine over the precomputed embeddings.
+// Not a query search — the source problem's stored vector is the query, so
+// there's no text in the input and no load-more.
+async function runSimilar(problem) {
+  const issuedAt = ++lastQueryAt;
+  const shortTitle = problem.title.length > 24 ? problem.title.slice(0, 24) + "…" : problem.title;
+  if (currentUser) setLibPath(`~/similar/${problem.id}`);
+  setStatus(`similar to "${shortTitle}" · dense cosine`);
+  hideLoadMore();
+
+  let res, data;
+  try {
+    res = await fetch(`/api/similar/${encodeURIComponent(problem.id)}?k=10`);
+    data = await res.json();
+  } catch (err) {
+    if (issuedAt !== lastQueryAt) return;
+    setStatus(`error: ${err.message || "similar failed"}`);
+    return;
+  }
+  if (issuedAt !== lastQueryAt) return;
+  if (!res.ok) {
+    setStatus(data.error || "similar unavailable");
+    return;
+  }
+
+  // Leave query state so load-more / reissue logic doesn't fight this view;
+  // typing or clicking a chip exits back to search.
+  currentQuery = "";
+  currentOffset = 0;
+  currentTotal = 0;
+  currentTopScore = 0;
+
+  const lat = typeof data.latencyMs === "number" ? ` · ${data.latencyMs.toFixed(3)}ms` : "";
+  setStatus(`${data.hits.length} similar to "${shortTitle}" · cosine over stored vectors${lat}`);
+  renderHitsList(resultsEl, data.hits, { append: false, startIndex: 0 });
+}
+
 function updateLoadMore() {
   const shown = currentOffset + TOP_K;
   if (currentTotal > 0 && shown < currentTotal) {
@@ -444,8 +481,17 @@ function renderHitsList(container, hits, opts = {}) {
       <p>${escapeHtml(hit.problem.statement || "")}</p>
       <p class="tags"><strong>tags:</strong> ${(hit.problem.tags || []).map(escapeHtml).join(", ")}</p>
       <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || []).map(escapeHtml).join(", ")}</p>
-      ${hit.problem.source_url ? `<p><a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open original problem &rarr;</a></p>` : ""}
+      <p><a href="#" class="similar-link">find similar problems &rarr;</a>${
+        hit.problem.source_url
+          ? ` · <a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open original problem &rarr;</a>`
+          : ""
+      }</p>
     `;
+    detail.querySelector(".similar-link").addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      runSimilar(hit.problem);
+    });
 
     header.addEventListener("click", () => {
       detail.classList.toggle("hidden");

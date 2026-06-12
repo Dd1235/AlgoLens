@@ -41,11 +41,13 @@
 
       <section id="pane-explain" class="pane">
         <p class="hint">
-          Enter a query to see the per-term TF/IDF/contribution math behind
-          every matching document.
+          Enter a query to see the scoring math behind every matching document:
+          per-term tf &middot; idf for the lexical rankers, query&middot;doc
+          cosine for dense, and per-leg 1/(k+rank) contributions for hybrid RRF.
         </p>
         <form id="explain-form">
           <input id="explain-input" type="search" placeholder="e.g. graph cycle, dp string" />
+          <select id="explain-ranker" aria-label="ranker"></select>
           <button type="submit">Explain</button>
         </form>
         <div id="explain-out"></div>

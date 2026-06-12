@@ -97,6 +97,21 @@ document.getElementById("index-filter").addEventListener("input", () => {
   if (indexData) renderIndex(document.getElementById("index-filter").value.trim().toLowerCase());
 });
 
+// Ranker selector for explain — dense and hybrid produce different payloads
+// than the lexical rankers, dispatched on shape below.
+const rankerSelect = document.getElementById("explain-ranker");
+(async () => {
+  try {
+    const res = await fetch("/api/rankers");
+    const data = await res.json();
+    rankerSelect.innerHTML = (data.available || [])
+      .map((r) => `<option value="${escapeHtml(r)}"${r === data.default ? " selected" : ""}>${escapeHtml(r)}</option>`)
+      .join("");
+  } catch (_e) {
+    rankerSelect.innerHTML = "<option value=''>default</option>";
+  }
+})();
+
 document.getElementById("explain-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const q = document.getElementById("explain-input").value.trim();
@@ -106,8 +121,22 @@ document.getElementById("explain-form").addEventListener("submit", async (e) => 
     return;
   }
   out.innerHTML = '<p class="note">explaining...</p>';
-  const res = await fetch(`/api/explain?q=${encodeURIComponent(q)}`);
+  const rankerParam = rankerSelect.value ? `&ranker=${encodeURIComponent(rankerSelect.value)}` : "";
+  const res = await fetch(`/api/explain?q=${encodeURIComponent(q)}${rankerParam}`);
   const data = await res.json();
+
+  if (data.error) {
+    out.innerHTML = `<p class="note">error: ${escapeHtml(data.error)}</p>`;
+    return;
+  }
+  if (data.params && data.params.kRrf !== undefined) {
+    renderHybridExplain(out, data);
+    return;
+  }
+  if (data.model && !data.perTerm) {
+    renderDenseExplain(out, data);
+    return;
+  }
 
   const perTerm = data.perTerm
     .map(
@@ -167,5 +196,73 @@ document.getElementById("explain-form").addEventListener("submit", async (e) => 
     ${docs}
   `;
 });
+
+// Dense explain: no terms, no postings — every doc gets a query·doc cosine.
+function renderDenseExplain(out, data) {
+  const rows = data.docs
+    .map(
+      (d, i) => `
+        <tr>
+          <td class="numeric">${i + 1}</td>
+          <td class="term">${escapeHtml(d.problem.title)}</td>
+          <td class="numeric">${fmt(d.score, 4)}</td>
+          <td class="numeric">${fmt(d.angleDeg, 1)}&deg;</td>
+        </tr>
+      `
+    )
+    .join("");
+  out.innerHTML = `
+    <p class="note">${escapeHtml(data.model)} · ${data.dims}d · dtype=${escapeHtml(data.dtype)} ·
+      query embed ${fmt(data.embedMs, 2)}ms · full-corpus scan (${data.count} docs) ${fmt(data.scanMs, 2)}ms</p>
+    <p class="note">${escapeHtml(data.note)}</p>
+    <div class="explain-doc">
+      <table class="explain-table">
+        <thead><tr><th>#</th><th>problem</th><th>cosine</th><th>angle</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  `;
+}
+
+// Hybrid explain: each leg's top-10, then the fused ranking with per-leg
+// 1/(k + rank) contributions.
+function renderHybridExplain(out, data) {
+  const legChips = (leg) =>
+    leg
+      .map((l) => `<span class="posting" title="score ${fmt(l.score, 4)}">#${l.rank} ${escapeHtml(l.id)}</span>`)
+      .join("");
+  const rows = data.docs
+    .map(
+      (d, i) => `
+        <tr>
+          <td class="numeric">${i + 1}</td>
+          <td class="term">${escapeHtml(d.problem.title)}</td>
+          <td class="numeric">${d.lexRank === null ? "—" : "#" + d.lexRank}</td>
+          <td class="numeric">${d.denseRank === null ? "—" : "#" + d.denseRank}</td>
+          <td class="numeric">${d.lexRank === null ? "—" : fmt(d.lexContribution, 5)}</td>
+          <td class="numeric">${d.denseRank === null ? "—" : fmt(d.denseContribution, 5)}</td>
+          <td class="numeric">${fmt(d.total, 5)}</td>
+        </tr>
+      `
+    )
+    .join("");
+  out.innerHTML = `
+    <p class="note">${escapeHtml(data.note)}</p>
+    <p class="note">${escapeHtml(data.params.lexical)} top-10: ${legChips(data.legs.lexical)}</p>
+    <p class="note">${escapeHtml(data.params.dense)} top-10: ${legChips(data.legs.dense)}</p>
+    <div class="explain-doc">
+      <table class="explain-table">
+        <thead>
+          <tr>
+            <th>#</th><th>problem</th>
+            <th>${escapeHtml(data.params.lexical)} rank</th><th>dense rank</th>
+            <th>1/(k+r) lex</th><th>1/(k+r) dense</th><th>total</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  `;
+}
 
 loadProblems();

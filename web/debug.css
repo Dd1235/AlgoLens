@@ -105,6 +105,19 @@ html[data-theme="light"] #explain-form {
   opacity: 1;
 }
 
+#explain-ranker {
+  align-self: center;
+  margin-right: 0.4rem;
+  padding: 0.3rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  outline: 0;
+}
+
 .problem-card {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 58%),
