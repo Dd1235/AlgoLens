@@ -225,7 +225,8 @@ async function runSearch(rawQuery, { append = false } = {}) {
   setStatus(`searching: "${q}"`);
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}`;
+  const rankerParam = urlRanker ? `&ranker=${encodeURIComponent(urlRanker)}` : "";
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}`;
 
   let data;
   try {
@@ -679,4 +680,17 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-setStatus("type a query to search");
+// Deep links: /?pattern=wqs-binary-search, /?q=slope+trick, /?ranker=dense.
+// Read-only — state is not written back to the URL while browsing.
+const bootParams = new URLSearchParams(location.search);
+const urlRanker = (bootParams.get("ranker") || "").trim().toLowerCase();
+const bootQ = (bootParams.get("q") || "").trim();
+const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+if (bootQ) input.value = bootQ;
+if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
+  applyPatternFilter(bootPattern);
+} else if (bootQ) {
+  runSearch(bootQ, { append: false });
+} else {
+  setStatus("type a query to search");
+}
