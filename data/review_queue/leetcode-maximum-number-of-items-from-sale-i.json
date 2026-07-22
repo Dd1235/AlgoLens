@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-maximum-number-of-items-from-sale-i",
+  "title": "Maximum Number of Items From Sale I",
+  "current_patterns": [
+    "knapsack",
+    "divisor-graph",
+    "dp-on-subsets"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:44:13Z"
+}

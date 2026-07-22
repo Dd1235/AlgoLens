@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-longest-happy-prefix",
+  "title": "Longest Happy Prefix",
+  "current_patterns": [
+    "rolling-hash",
+    "kmp",
+    "prefix-function"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:44:08Z"
+}

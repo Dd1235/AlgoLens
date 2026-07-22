@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-minimum-operations-to-make-array-modulo-alternating-i",
+  "title": "Minimum Operations to Make Array Modulo Alternating I",
+  "current_patterns": [
+    "frequency-counting",
+    "greedy",
+    "modular-arithmetic"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:44:37Z"
+}

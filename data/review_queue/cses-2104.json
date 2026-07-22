@@ -1,0 +1,12 @@
+{
+  "id": "cses-2104",
+  "title": "Pattern Positions",
+  "current_patterns": [
+    "aho-corasick",
+    "trie",
+    "multiple-pattern-matching"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:51:19Z"
+}

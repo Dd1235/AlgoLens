@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-maximum-total-value-of-covered-indices",
+  "title": "Maximum Total Value of Covered Indices",
+  "current_patterns": [
+    "greedy",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:44:24Z"
+}

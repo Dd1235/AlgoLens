@@ -1,0 +1,19 @@
+{
+  "id": "cses-2108",
+  "title": "Substring Order I",
+  "current_patterns": [
+    "suffix-array",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "candidates": [
+    {
+      "pattern": "suffix-automaton",
+      "confidence": 0.95,
+      "reasoning": "Suffix automaton is a well-known data structure for efficiently enumerating and ordering distinct substrings, often used to find the k-th lexicographically smallest substring, and is missing from the current labels.",
+      "in_taxonomy": true
+    }
+  ],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:51:23Z"
+}

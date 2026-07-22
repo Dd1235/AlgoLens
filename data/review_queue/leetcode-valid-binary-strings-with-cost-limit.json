@@ -1,0 +1,19 @@
+{
+  "id": "leetcode-valid-binary-strings-with-cost-limit",
+  "title": "Valid Binary Strings With Cost Limit",
+  "current_patterns": [
+    "backtracking",
+    "bitmask-enumeration",
+    "pruning"
+  ],
+  "candidates": [
+    {
+      "pattern": "digit-dp",
+      "confidence": 0.95,
+      "reasoning": "The problem involves generating binary strings with constraints on consecutive ones and sum of indices, which fits the classic use case of digit dynamic programming to count or generate sequences under positional constraints.",
+      "in_taxonomy": true
+    }
+  ],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:51:12Z"
+}

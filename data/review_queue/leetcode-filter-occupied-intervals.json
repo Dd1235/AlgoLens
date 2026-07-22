@@ -1,0 +1,11 @@
+{
+  "id": "leetcode-filter-occupied-intervals",
+  "title": "Filter Occupied Intervals",
+  "current_patterns": [
+    "interval-merging",
+    "line-sweep"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:43:50Z"
+}

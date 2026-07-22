@@ -1,0 +1,19 @@
+{
+  "id": "leetcode-sum-of-scores-of-built-strings",
+  "title": "Sum of Scores of Built Strings",
+  "current_patterns": [
+    "rolling-hash",
+    "longest-common-prefix",
+    "string-matching"
+  ],
+  "candidates": [
+    {
+      "pattern": "z-function",
+      "confidence": 1.0,
+      "reasoning": "The problem is a classic application of the z-function algorithm, which efficiently computes the longest common prefix between the string and its suffixes, directly solving the problem.",
+      "in_taxonomy": true
+    }
+  ],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:51:09Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-maximum-product-of-the-length-of-two-palindromic-substrings",
+  "title": "Maximum Product of the Length of Two Palindromic Substrings",
+  "current_patterns": [
+    "manacher",
+    "prefix-max",
+    "two-pointers"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:44:16Z"
+}

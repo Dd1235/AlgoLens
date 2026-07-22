@@ -1,0 +1,11 @@
+{
+  "id": "leetcode-maximum-subarray-sum-after-multiplier",
+  "title": "Maximum Subarray Sum After Multiplier",
+  "current_patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1-mini",
+  "created_at": "2026-07-22T14:44:20Z"
+}
