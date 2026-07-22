@@ -109,6 +109,8 @@
     "sparse-table": { "category": "data-structure" },
     "trie": { "category": "string" },
     "kmp": { "category": "string" },
+    "booth-algorithm": { "category": "string" },
+    "lyndon-factorization": { "category": "string" },
     "z-function": { "category": "string" },
     "rolling-hash": { "category": "string" },
     "rabin-karp": { "category": "string" },
@@ -163,6 +165,10 @@
     "monotonic-deque": "monotonic-queue",
     "aliens-trick": "wqs-binary-search",
     "lagrangian-relaxation": "wqs-binary-search",
-    "sum-over-subsets": "sos-dp"
+    "sum-over-subsets": "sos-dp",
+    "booths-algorithm": "booth-algorithm",
+    "minimal-rotation": "booth-algorithm",
+    "duval-algorithm": "lyndon-factorization",
+    "duvals-algorithm": "lyndon-factorization"
   }
 }
