@@ -624,6 +624,26 @@ def output_path(out_dir: Path, record: dict[str, Any]) -> Path:
     return out_dir / record["platform"] / f"{record['id']}.json"
 
 
+def predicted_output_path(out_dir: Path, item: UrlItem) -> Path | None:
+    # Predicts output_path() from the URL alone (no fetch, no LLM) so existing
+    # records can be skipped before any network spend. Mirrors the id
+    # construction in leetcode_metadata / cses_metadata / codeforces_metadata;
+    # curated overrides can diverge, so the post-build exists check stays as a
+    # safety net.
+    platform = platform_from_url(item.url)
+    if platform == "leetcode":
+        m = re.search(r"/problems/([^/]+)/?", item.url)
+        return out_dir / platform / f"leetcode-{m.group(1)}.json" if m else None
+    if platform == "cses":
+        m = re.search(r"/task/(\d+)", item.url)
+        return out_dir / platform / f"cses-{m.group(1)}.json" if m else None
+    if platform == "codeforces":
+        key = codeforces_problem_key(item.url)
+        if key:
+            return out_dir / platform / f"codeforces-{key[0]}-{str(key[1]).lower()}.json"
+    return None
+
+
 def display_path(path: Path) -> str:
     resolved = path.resolve()
     try:
@@ -701,8 +721,15 @@ def main() -> int:
 
     args.out.mkdir(parents=True, exist_ok=True)
     written = 0
+    skipped = 0
     for i, item in enumerate(items, start=1):
         try:
+            # Skip before any network call — a full urls.txt run must be cheap.
+            if not args.overwrite:
+                predicted = predicted_output_path(args.out, item)
+                if predicted is not None and predicted.exists():
+                    skipped += 1
+                    continue
             base = base_from_url(item, cf_cache)
             annotation = {"statement": "", "tags": [], "patterns": []}
             if not args.no_llm:
@@ -720,7 +747,7 @@ def main() -> int:
             print(f"[{i}/{len(items)}] wrote {display_path(path)}")
         except Exception as exc:  # keep long batch runs moving
             print(f"[{i}/{len(items)}] failed {item.url}: {exc}", file=sys.stderr)
-    print(f"done: wrote {written} records")
+    print(f"done: wrote {written} records, skipped {skipped} existing")
     return 0
 
 
