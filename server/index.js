@@ -63,7 +63,7 @@ async function main() {
   app.use(express.static(webDir));
   app.use("/api", createAuthRouter());
   app.use("/api", createUserStateRouter({ problems }));
-  app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault }));
+  app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault, problems }));
   app.use("/api", createDebugRouter({ problems, indexes, defaultRanker: activeDefault }));
 
   app.listen(PORT, () => {

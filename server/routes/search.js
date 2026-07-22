@@ -1,4 +1,6 @@
 const express = require("express");
+const fs = require("fs");
+const path = require("path");
 const db = require("../db");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
@@ -40,8 +42,43 @@ async function loadUserState(userId) {
   return { done, bookmarked };
 }
 
-function createSearchRouter({ indexes, defaultRanker }) {
+// Canonical taxonomy labels with per-label problem counts, grouped by
+// category. Computed once — the corpus is immutable per process. Drift labels
+// don't appear here by design; the validate --gaps report is their surface.
+function buildPatternsPayload(problems) {
+  const taxonomy = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "..", "..", "data", "pattern_taxonomy.json"), "utf8")
+  );
+  const aliases = taxonomy.aliases || {};
+  const counts = new Map(Object.keys(taxonomy.canonical).map((p) => [p, 0]));
+  for (const problem of problems || []) {
+    for (const label of problem.patterns || []) {
+      const canonical = aliases[label] || label;
+      if (counts.has(canonical)) counts.set(canonical, counts.get(canonical) + 1);
+    }
+  }
+  const byCategory = new Map();
+  for (const [pattern, meta] of Object.entries(taxonomy.canonical)) {
+    const category = meta.category || "general";
+    if (!byCategory.has(category)) byCategory.set(category, []);
+    byCategory.get(category).push({ pattern, count: counts.get(pattern) });
+  }
+  const categories = [...byCategory.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([category, patterns]) => ({
+      category,
+      patterns: patterns.sort((a, b) => b.count - a.count || a.pattern.localeCompare(b.pattern)),
+    }));
+  return { version: 1, totalProblems: (problems || []).length, categories };
+}
+
+function createSearchRouter({ indexes, defaultRanker, problems }) {
   const router = express.Router();
+  const patternsPayload = buildPatternsPayload(problems);
+
+  router.get("/patterns", (_req, res) => {
+    res.json(patternsPayload);
+  });
 
   router.get("/search", async (req, res) => {
     const q = (req.query.q || "").toString();
