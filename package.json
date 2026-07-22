@@ -8,6 +8,7 @@
     "dev": "nodemon server/index.js",
     "start": "node server/index.js",
     "embed": "node scripts/embed_corpus.js",
+    "validate": "node scripts/validate_corpus.js",
     "test:search": "node server/search/tfidf.test.js && node server/search/bm25.test.js && node server/search/dense.test.js && node server/search/hybrid.test.js",
     "db:migrate": "bash db/run-migrations.sh",
     "services:start": "docker compose up -d",
