@@ -17,12 +17,14 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 
 | Method · path | Purpose |
 |---|---|
-| `GET /api/search?q=&k=&offset=&ranker=&filter=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. |
+| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug. |
 | `GET /api/problems` | Whole corpus as loaded. |
 | `GET /api/rankers` | `{ available: [...], default: "..." }`. |
 | `GET /api/index?ranker=` | Inverted-index dump: every term with `df`, `idf`, postings. |
 | `GET /api/explain?q=&ranker=` | Scoring breakdown: per-term tf·idf for lexical rankers, per-doc cosine + angle for `dense`, per-leg RRF contributions for `hybrid`. (Async-aware: dense/hybrid explain embeds the query.) |
 | `GET /api/similar/:problemId?k=` | "Find similar": doc-to-doc cosine over the stored embeddings, self excluded. 503 if dense isn't registered, 404 for unknown ids. |
+| `GET /api/compare?q=&k=&rankers=` | The same query across several rankers in parallel (default all registered; `rankers=bm25,dense` narrows). Powers the side-by-side compare UI. |
+| `GET /api/patterns` | Canonical taxonomy grouped by category with per-label problem counts (zero counts included). Powers `/patterns.html`. |
 | `POST /api/auth/signup` | Create user, bcrypt password, set httpOnly JWT cookie. |
 | `POST /api/auth/login` | Verify password, set httpOnly JWT cookie. |
 | `POST /api/auth/logout` | Clear session cookie. |
@@ -69,6 +71,24 @@ node bench/run.js
 
 Writes timestamped JSON + `experiments/bench-latest.json`. See [experiments/README.md](../experiments/README.md) for what's measured and [experiments/01-tfidf-vs-bm25-seed.md](../experiments/01-tfidf-vs-bm25-seed.md) for the current write-up.
 
+## Corpus workflows
+
+**Refresh (new problems):** `npm run corpus:refresh` — regenerates the URL blocks (the `LeetCode Recent` block is the newest N problems by frontend id, a practical proxy for recent contest problems), annotates anything new (existing records skip before any network call), re-embeds, validates, smoke-runs the bench, then stops with a dirty tree for review. The script never commits; the reviewable diff is urls + new corpus files + embeddings, committed together.
+
+**Labels (niche algorithms):** the vocabulary lives in [data/pattern_taxonomy.json](../data/pattern_taxonomy.json) (canonical slugs + aliases; single source of truth for the annotator, validator, and normalizer). Three tools keep it honest:
+
+- `npm run validate -- --gaps` ranks non-canonical labels by usage × the LLM's own confidence — recurring high-confidence drift is a promotion candidate.
+- `python3 scripts/audit_patterns.py --ids …` asks the LLM specifically whether a problem admits a well-known *named* algorithm (Booth, Duval/Lyndon, WQS, …) that its labels miss, writing candidates to `data/review_queue/`.
+- `node scripts/apply_review.js --write` merges only what a human left in the queue (deleting a candidate = rejecting it), then `npm run embed && npm run validate`.
+
+Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-asserted niche claims never land unreviewed.
+
+**Codeforces is deferred on purpose:** CF statement pages sit behind Cloudflare, so annotation would be metadata-only (title + tags, no statement) — weak lexical matching and weak embeddings. The 7 dormant files under `data/problemset_llm/codeforces/` also predate the current id scheme (`cf-279b-books` vs `codeforces-279-b`). Enabling CF is a data-quality problem, not a flag flip.
+
+## Data organization
+
+Deliberately file-first: the problem corpus is JSON in git, and git is the database. That buys reviewable label diffs in PRs, bit-identical corpora across environments, and the `corpusHash` contract that binds the committed embeddings to the exact served text. Postgres stores only mutable per-user state (`users`, `user_problem_state`; `problem_id` is a free-form string, no FK). The review queue is files for the same reason the corpus is. A `problems` table would earn its keep only with multi-writer/online label edits, a corpus too big to boot-load and brute-force scan (~50k+ docs), or query-time joins into ranking — none of which apply at this scale.
+
 ## Layout
 
 ```
@@ -82,7 +102,11 @@ Writes timestamped JSON + `experiments/bench-latest.json`. See [experiments/READ
 /data
   /problemset_llm/{leetcode,cses,codeforces}/   LLM-annotated problem records
   /embeddings    committed corpus vectors (corpus.f32 + manifest.json); rebuild with `npm run embed`
-/scripts         embed_corpus.js + app start/stop helpers
+  /review_queue  audit candidates awaiting human review (apply_review.js consumes)
+  pattern_taxonomy.json   canonical pattern vocabulary + aliases (single source of truth)
+/scripts         corpus tooling: update_problem_urls / annotate_problem_urls / refresh_corpus /
+                 embed_corpus / validate_corpus / normalize_patterns / audit_patterns / apply_review
+                 + app start/stop helpers
 /bench           benchmark harness (queries.json + run.js)
 /experiments     numerical results + per-experiment write-ups
 /docs            this file + learning notes
@@ -97,6 +121,9 @@ Writes timestamped JSON + `experiments/bench-latest.json`. See [experiments/READ
 - Expand bench to ~30 labeled queries — **shipped** (v3 is 42: 30 keyword + 12 paraphrase, sliced; [experiments/04](../experiments/04-bench-30q.md), [05](../experiments/05-dense-hybrid-rrf.md))
 - Dense retrieval (offline-embedded corpus, in-process MiniLM, brute-force cosine) — **shipped** ([experiments/05](../experiments/05-dense-hybrid-rrf.md))
 - Hybrid RRF retrieval + "find similar to this problem" route — **shipped** ([experiments/05](../experiments/05-dense-hybrid-rrf.md))
-- Cross-encoder rerank over hybrid's top-50 (candidate recall floor: 0.984 Recall@100)
+- Pattern taxonomy + validation gate + niche labels + technique bench slice — **shipped** ([experiments/06](../experiments/06-technique-slice-and-corpus-growth.md))
+- Pattern filter + clickable chips, ranker compare mode, patterns directory page — **shipped**
+- Corpus refresh pipeline (LeetCode Recent block) + niche-label audit/review queue — **shipped** (see Corpus workflows above)
+- Cross-encoder rerank over hybrid's top-50 (candidate floor measured in exp 06)
 - Recommendation layer over solved/bookmarked state
 - Real scraper for a standard sheet (Striver / NeetCode)
