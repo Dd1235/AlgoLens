@@ -21,7 +21,8 @@
   "patterns": [
     "rolling-hash",
     "substring-hashing",
-    "string-hashing"
+    "string-hashing",
+    "z-function"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "rolling-hash": 0.95,
       "substring-hashing": 0.9,
-      "string-hashing": 0.85
+      "string-hashing": 0.85,
+      "z-function": 0.95
     }
   }
 }

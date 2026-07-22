@@ -19,7 +19,8 @@
   "patterns": [
     "binary-search-answer",
     "bfs",
-    "shortest-path"
+    "shortest-path",
+    "zero-one-bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "bfs": 0.9,
-      "shortest-path": 0.85
+      "shortest-path": 0.85,
+      "zero-one-bfs": 0.85
     }
   }
 }

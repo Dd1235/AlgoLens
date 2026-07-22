@@ -16,7 +16,8 @@
   "patterns": [
     "palindromic-subarray",
     "prefix-sum",
-    "dynamic-programming"
+    "dynamic-programming",
+    "manacher"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "palindromic-subarray": 0.95,
       "prefix-sum": 0.9,
-      "dynamic-programming": 0.85
+      "dynamic-programming": 0.85,
+      "manacher": 0.95
     }
   }
 }

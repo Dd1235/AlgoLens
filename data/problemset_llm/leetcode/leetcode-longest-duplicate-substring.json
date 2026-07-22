@@ -24,7 +24,8 @@
   "patterns": [
     "binary-search-answer",
     "rolling-hash",
-    "suffix-array"
+    "suffix-array",
+    "suffix-automaton"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "rolling-hash": 0.9,
-      "suffix-array": 0.88
+      "suffix-array": 0.88,
+      "suffix-automaton": 0.95
     }
   }
 }
