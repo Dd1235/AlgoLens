@@ -108,7 +108,11 @@ function checkProblem({ rel, platform, basename, problem }, taxonomy, driftCount
       } else if (taxonomy.aliases[label]) {
         driftCounts.alias.set(label, (driftCounts.alias.get(label) || 0) + 1);
       } else if (field === "patterns" && !taxonomy.canonical.has(label)) {
-        driftCounts.unknown.set(label, (driftCounts.unknown.get(label) || 0) + 1);
+        const entry = driftCounts.unknown.get(label) || { count: 0, confSum: 0, samples: [] };
+        entry.count += 1;
+        entry.confSum += ((problem.annotation || {}).pattern_confidence || {})[label] || 0;
+        if (entry.samples.length < 3) entry.samples.push(problem.id);
+        driftCounts.unknown.set(label, entry);
       }
     }
   }
@@ -197,13 +201,32 @@ function reportDrift(driftCounts) {
     );
   }
   if (driftCounts.unknown.size) {
-    const all = fmt(driftCounts.unknown);
+    const all = [...driftCounts.unknown.entries()]
+      .sort((a, b) => b[1].count - a[1].count)
+      .map(([k, e]) => `${k} (${e.count})`);
     const head = all.slice(0, 15).join(", ");
     warn(
       `${driftCounts.unknown.size} non-canonical pattern label(s) (open vocabulary, canonical preferred): ` +
         head + (all.length > 15 ? `, … +${all.length - 15} more` : "")
     );
   }
+}
+
+// --gaps: the promotion path for the open vocabulary — non-canonical labels
+// ranked by usage and the LLM's own confidence, so recurring high-confidence
+// drift surfaces as a canonical-taxonomy candidate instead of noise.
+function printGaps(driftCounts) {
+  const rows = [...driftCounts.unknown.entries()]
+    .map(([pattern, e]) => ({ pattern, count: e.count, meanConf: e.confSum / e.count, samples: e.samples }))
+    .sort((a, b) => b.count - a.count || b.meanConf - a.meanConf);
+  console.log(`\n${rows.length} non-canonical pattern label(s) — taxonomy candidates first:`);
+  console.log("pattern".padEnd(38) + "docs".padStart(5) + "  conf" + "  samples");
+  for (const r of rows.slice(0, 40)) {
+    console.log(
+      r.pattern.padEnd(38) + String(r.count).padStart(5) + "  " + r.meanConf.toFixed(2) + "  " + r.samples.join(", ")
+    );
+  }
+  if (rows.length > 40) console.log(`… +${rows.length - 40} more`);
 }
 
 function main() {
@@ -217,6 +240,7 @@ function main() {
   const queryCount = checkBenchQueries(new Set(byId.keys()));
   checkArtifact(entries.map((e) => e.problem));
   reportDrift(driftCounts);
+  if (process.argv.includes("--gaps")) printGaps(driftCounts);
 
   const cfDir = path.join(CORPUS_ROOT, "codeforces");
   if (fs.existsSync(cfDir)) {
