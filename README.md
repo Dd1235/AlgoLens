@@ -1,6 +1,14 @@
 # AlgoLens
 
-Wanted real keyword search over DSA problems. Sites filter by tags or matches problem text literally, and neither surfaces problems by the underlying solution pattern. 1,198 problems from LeetCode and CSES, indexed locally, and the search box is the whole product. Will add cf too.
+Wanted real keyword search over DSA problems. Sites filter by tags or matches problem text literally, and neither surfaces problems by the underlying solution pattern. 1,198 problems from LeetCode and CSES, indexed locally, and the search box is the whole product. (Codeforces is deferred on purpose — Cloudflare blocks statement fetches, and metadata-only records search badly; see [docs/internals.md](docs/internals.md).)
+
+Who it's for:
+
+- **Upsolving after a contest** — open the problem that beat you, hit "find similar", get its neighbors by stored-vector cosine.
+- **Searching by the idea, not the words** — "check if brackets open and close in the right order" finds `valid-parentheses` even though the corpus says "parentheses" (that's the dense ranker; the paraphrase slice in [experiments/05](experiments/05-dense-hybrid-rrf.md) is the receipt).
+- **Drilling a niche technique** — the [patterns page](web/patterns.html) lists the curated taxonomy (wqs-binary-search, slope-trick, booth-algorithm, …) with per-label counts; one click filters search to it. Fresh contest problems come in via `npm run corpus:refresh`.
+
+Live demo: _coming — deploy runbook in docs/internals.md_
 
 ![search](demo/01-search.png)
 
