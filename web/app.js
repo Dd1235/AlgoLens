@@ -44,6 +44,7 @@ let currentTotal = 0;
 let currentTopScore = 0;
 let currentUser = null;
 let currentFilter = "all";
+let activePattern = "";
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -99,6 +100,7 @@ logoutBtn.addEventListener("click", async () => {
   try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
   currentUser = null;
   applyAuthState();
+  clearPatternFilter({ reissue: false });
   // Clear results and the input — old results were rendered with bookmark
   // buttons that no longer apply, and we want anon UX from this point.
   input.value = "";
@@ -218,7 +220,8 @@ async function runSearch(rawQuery, { append = false } = {}) {
   const issuedAt = ++lastQueryAt;
   setStatus(`searching: "${q}"`);
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}`;
+  const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}`;
 
   let data;
   try {
@@ -254,6 +257,7 @@ function renderSingle(data, q, append) {
 
 async function runLibrary(type, q) {
   const issuedAt = ++lastQueryAt;
+  clearPatternFilter({ reissue: false }); // library views ignore the pattern filter
   setLibPath(`~/${type}`);
   setStatus(`ls ~/${type}`);
   hideLoadMore();
@@ -301,6 +305,7 @@ async function runLibrary(type, q) {
 // there's no text in the input and no load-more.
 async function runSimilar(problem) {
   const issuedAt = ++lastQueryAt;
+  clearPatternFilter({ reissue: false }); // similar view is vector-driven, not filtered
   const shortTitle = problem.title.length > 24 ? problem.title.slice(0, 24) + "…" : problem.title;
   if (currentUser) setLibPath(`~/similar/${problem.id}`);
   setStatus(`similar to "${shortTitle}" · dense cosine`);
@@ -331,6 +336,40 @@ async function runSimilar(problem) {
   const lat = typeof data.latencyMs === "number" ? ` · ${data.latencyMs.toFixed(3)}ms` : "";
   setStatus(`${data.hits.length} similar to "${shortTitle}" · cosine over stored vectors${lat}`);
   renderHitsList(resultsEl, data.hits, { append: false, startIndex: 0 });
+}
+
+const patternPill = document.getElementById("pattern-pill");
+patternPill.addEventListener("click", () => clearPatternFilter());
+
+// Pattern chips narrow search results to problems carrying that label (the
+// server filters post-rank). The pill under the status line shows the active
+// filter; clicking it clears the filter.
+function applyPatternFilter(pattern) {
+  activePattern = pattern;
+  updatePatternPill();
+  // Filtering needs a query to rank against; fall back to the label's words.
+  if (!input.value.trim()) input.value = pattern.replace(/-/g, " ");
+  currentOffset = 0;
+  runSearch(input.value, { append: false });
+}
+
+function clearPatternFilter({ reissue = true } = {}) {
+  if (!activePattern) return;
+  activePattern = "";
+  updatePatternPill();
+  if (reissue && currentQuery) {
+    currentOffset = 0;
+    runSearch(currentQuery, { append: false });
+  }
+}
+
+function updatePatternPill() {
+  if (activePattern) {
+    patternPill.textContent = `pattern: ${activePattern} ✕`;
+    patternPill.classList.remove("hidden");
+  } else {
+    patternPill.classList.add("hidden");
+  }
 }
 
 function updateLoadMore() {
@@ -480,7 +519,9 @@ function renderHitsList(container, hits, opts = {}) {
     detail.innerHTML = `
       <p>${escapeHtml(hit.problem.statement || "")}</p>
       <p class="tags"><strong>tags:</strong> ${(hit.problem.tags || []).map(escapeHtml).join(", ")}</p>
-      <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || []).map(escapeHtml).join(", ")}</p>
+      <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || [])
+        .map((p) => `<button type="button" class="pattern-chip" data-pattern="${escapeHtml(p)}">${escapeHtml(p)}</button>`)
+        .join(" ")}</p>
       <p><a href="#" class="similar-link">find similar problems &rarr;</a>${
         hit.problem.source_url
           ? ` · <a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open original problem &rarr;</a>`
@@ -491,6 +532,12 @@ function renderHitsList(container, hits, opts = {}) {
       e.preventDefault();
       e.stopPropagation();
       runSimilar(hit.problem);
+    });
+    detail.querySelectorAll(".pattern-chip").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        applyPatternFilter(btn.dataset.pattern);
+      });
     });
 
     header.addEventListener("click", () => {

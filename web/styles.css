@@ -573,6 +573,49 @@ html[data-theme="light"] .matched-chip {
 
 .matched-chip::before { content: "+ "; opacity: 0.7; }
 
+/* Clickable pattern labels inside the result detail — same look as matched
+   chips, plus affordance, because clicking one filters the results. */
+.pattern-chip {
+  background: rgba(138, 164, 191, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(138, 164, 191, 0.18);
+  padding: 0.05rem 0.5rem;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.pattern-chip:hover {
+  color: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+html[data-theme="light"] .pattern-chip {
+  background: var(--accent-soft);
+}
+
+.pattern-pill {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.6rem;
+  background: var(--accent-dim, rgba(138, 164, 191, 0.12));
+  color: var(--accent);
+  border: 1px solid var(--accent-soft, rgba(138, 164, 191, 0.3));
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.pattern-pill:hover {
+  color: var(--warn);
+  border-color: var(--warn);
+}
+
 .result-detail {
   margin-top: 0.75rem;
   font-size: 0.86rem;
