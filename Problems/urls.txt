@@ -3497,3 +3497,19 @@ https://codeforces.com/problemset/problem/982/D
 https://codeforces.com/problemset/problem/993/B
 https://codeforces.com/problemset/problem/999/D
 # END GENERATED: Codeforces Rated 1600-1900
+
+# LeetCode / DP Optimization
+https://leetcode.com/problems/jump-game-vi/
+https://leetcode.com/problems/minimum-number-of-coins-for-fruits/
+https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/
+https://leetcode.com/problems/maximize-the-profit-as-the-salesman/
+https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/
+https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/
+https://leetcode.com/problems/largest-sum-of-averages/
+https://leetcode.com/problems/partition-array-for-maximum-sum/
+https://leetcode.com/problems/filling-bookcase-shelves/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/
+https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/
+https://leetcode.com/problems/partition-array-to-minimize-xor/
+https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/
+https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/
