@@ -7,8 +7,14 @@
 #   the corpus embeddings are committed (data/embeddings/), so boot needs no
 #   network beyond Postgres.
 #
-# After first deploy, run migrations once via the Render shell:
-#   bash db/run-migrations.sh
+# NOTE: applying a Blueprint requires a payment method on file at Render even
+# for free plans. The card-free path is creating the web service manually in
+# the dashboard with the same settings — see "Deploy" in docs/internals.md.
+# This file then serves as the reference for what to configure.
+#
+# Run migrations once from your own machine against Neon (the Render Shell
+# tab is also paid-only):
+#   DATABASE_URL='...' bash db/run-migrations.sh
 #
 # To enable the Go gRPC ranker in prod, add a private service that builds
 # from ./go and set GRPC_BM25_ADDR on the web service to its internal hostname.
@@ -17,7 +23,7 @@ services:
   - type: web
     name: algolens-web
     runtime: docker
-    plan: starter
+    plan: free
     dockerfilePath: ./Dockerfile
     healthCheckPath: /
     autoDeploy: true

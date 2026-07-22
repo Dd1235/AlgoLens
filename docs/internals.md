@@ -89,6 +89,18 @@ Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-
 
 Deliberately file-first: the problem corpus is JSON in git, and git is the database. That buys reviewable label diffs in PRs, bit-identical corpora across environments, and the `corpusHash` contract that binds the committed embeddings to the exact served text. Postgres stores only mutable per-user state (`users`, `user_problem_state`; `problem_id` is a free-form string, no FK). The review queue is files for the same reason the corpus is. A `problems` table would earn its keep only with multi-writer/online label edits, a corpus too big to boot-load and brute-force scan (~50k+ docs), or query-time joins into ranking — none of which apply at this scale.
 
+## Deploy (card-free)
+
+The app is one Docker image: the MiniLM model is baked at build time and the corpus vectors are committed, so a container boots with zero network beyond Postgres (verified with `docker run --network none`). Two free-tier accounts, neither needs a card:
+
+1. **Neon (Postgres):** create a project, copy the **pooled** connection string, append `sslmode=require`. Run migrations once from your machine: `DATABASE_URL='…' bash db/run-migrations.sh`.
+2. **Render (app):** *skip Blueprints — applying one requires a payment method on file.* Instead: Dashboard → New → **Web Service** → pick this GitHub repo (the Dockerfile is auto-detected) → Instance type **Free** → env vars `DATABASE_URL` (from Neon) and `JWT_SECRET` (any long random string, e.g. `openssl rand -hex 32`). Optional: health check path `/`. Render injects `PORT` and the app binds it. [render.yaml](../render.yaml) is the reference for these settings.
+3. **Verify live:** `/api/rankers` lists `dense` + `hybrid`, `/patterns.html` renders, and a signup → bookmark round-trip works.
+
+Free-tier realities: the instance spins down after ~15 min idle, so the first request after a quiet spell waits ~30–60 s on the platform cold start (the app itself boots in ~1 s — baked model, committed vectors). Memory is fine: ~101 MiB RSS against the 512 MB cap; `DENSE_DISABLED=1` is the escape hatch if that ever changes.
+
+Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfiles card-free — create a Docker Space, push this repo to it, set `app_port: 3000` in the Space README front matter, and add `DATABASE_URL` + `JWT_SECRET` as Space secrets.
+
 ## Layout
 
 ```
