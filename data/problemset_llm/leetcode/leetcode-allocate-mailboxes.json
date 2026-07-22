@@ -20,7 +20,8 @@
     "sorting"
   ],
   "patterns": [
-    "dp-on-dag",
+    "partition-dp",
+    "divide-and-conquer-dp",
     "prefix-sum",
     "sorting"
   ],
@@ -29,7 +30,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922442,
     "pattern_confidence": {
-      "dp-on-dag": 0.9,
+      "partition-dp": 0.95,
+      "divide-and-conquer-dp": 0.85,
       "prefix-sum": 0.85,
       "sorting": 0.95
     }

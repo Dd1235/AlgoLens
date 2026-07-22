@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-count-partitions-with-max-min-difference-at-most-k",
+  "title": "Count Partitions With Max-Min Difference at Most K",
+  "slug": "count-partitions-with-max-min-difference-at-most-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "queue",
+    "sliding-window",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Given an integer array and a value k, count the number of ways to partition the array into contiguous segments where the difference between the maximum and minimum in each segment is at most k, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "partition-dp",
+    "monotonic-queue-optimization",
+    "monotonic-queue",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715361,
+    "pattern_confidence": {
+      "partition-dp": 0.9,
+      "monotonic-queue-optimization": 0.95,
+      "monotonic-queue": 0.9,
+      "sliding-window": 0.95
+    }
+  }
+}

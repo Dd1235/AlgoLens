@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-filling-bookcase-shelves",
+  "title": "Filling Bookcase Shelves",
+  "slug": "filling-bookcase-shelves",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/filling-bookcase-shelves/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a sequence of books with thickness and height, arrange them in order on shelves with a fixed maximum width to minimize the total height of the bookshelf, where each shelf's height is the maximum height of the books on it.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715355,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.7
+    }
+  }
+}

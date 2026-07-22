@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-largest-sum-of-averages",
+  "title": "Largest Sum of Averages",
+  "slug": "largest-sum-of-averages",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-sum-of-averages/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Partition an integer array into at most k contiguous subarrays to maximize the sum of their averages.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "partition-dp",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715350,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "partition-dp": 0.95,
+      "prefix-sum": 0.95
+    }
+  }
+}

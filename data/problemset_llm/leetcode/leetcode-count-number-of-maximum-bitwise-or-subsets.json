@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-number-of-maximum-bitwise-or-subsets",
+  "title": "Count Number of Maximum Bitwise-OR Subsets",
+  "slug": "count-number-of-maximum-bitwise-or-subsets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "backtracking",
+    "bit-manipulation",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, find the maximum bitwise OR value achievable by any non-empty subset and count how many such subsets yield this maximum OR.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "backtracking",
+    "enumeration"
+  ],
+  "patterns": [
+    "submask-enumeration",
+    "bitmask-enumeration",
+    "backtracking",
+    "bitwise-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715346,
+    "pattern_confidence": {
+      "submask-enumeration": 0.9,
+      "bitmask-enumeration": 0.95,
+      "backtracking": 0.9,
+      "bitwise-operations": 0.9
+    }
+  }
+}

@@ -21,8 +21,10 @@
     "monotonic-stack"
   ],
   "patterns": [
-    "monotonic-stack",
+    "difference-array",
     "greedy",
+    "slope-trick",
+    "monotonic-stack",
     "contribution-technique"
   ],
   "annotation": {
@@ -30,8 +32,10 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923607,
     "pattern_confidence": {
-      "monotonic-stack": 0.95,
+      "difference-array": 0.9,
       "greedy": 0.9,
+      "slope-trick": 0.7,
+      "monotonic-stack": 0.95,
       "contribution-technique": 0.85
     }
   }

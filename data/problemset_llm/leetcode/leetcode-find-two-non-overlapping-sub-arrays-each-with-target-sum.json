@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-two-non-overlapping-sub-arrays-each-with-target-sum",
+  "title": "Find Two Non-overlapping Sub-arrays Each With Target Sum",
+  "slug": "find-two-non-overlapping-sub-arrays-each-with-target-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "dynamic-programming",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array and a target sum, find two non-overlapping subarrays each summing to the target such that the sum of their lengths is minimized, or return -1 if no such pair exists.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sliding-window",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715344,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "sliding-window": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

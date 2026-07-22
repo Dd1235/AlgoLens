@@ -20,18 +20,20 @@
     "monotonic-stack"
   ],
   "patterns": [
-    "monotonic-stack",
+    "difference-array",
     "greedy",
-    "difference-array"
+    "slope-trick",
+    "monotonic-stack"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923651,
     "pattern_confidence": {
-      "monotonic-stack": 0.9,
+      "difference-array": 0.8,
       "greedy": 0.85,
-      "difference-array": 0.8
+      "slope-trick": 0.7,
+      "monotonic-stack": 0.9
     }
   }
 }

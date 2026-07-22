@@ -18,6 +18,8 @@
     "hash-map"
   ],
   "patterns": [
+    "sos-dp",
+    "submask-enumeration",
     "bitmask-enumeration",
     "hash-map",
     "frequency-count"
@@ -27,6 +29,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924264,
     "pattern_confidence": {
+      "sos-dp": 0.9,
+      "submask-enumeration": 0.85,
       "bitmask-enumeration": 0.95,
       "hash-map": 0.9,
       "frequency-count": 0.85

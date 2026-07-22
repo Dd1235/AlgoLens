@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximize-the-profit-as-the-salesman",
+  "title": "Maximize the Profit as the Salesman",
+  "slug": "maximize-the-profit-as-the-salesman",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-profit-as-the-salesman/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a number line of houses and multiple offers to buy continuous segments for gold, select non-overlapping offers to maximize total gold earned.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "interval-scheduling",
+    "dp-on-intervals",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715340,
+    "pattern_confidence": {
+      "interval-scheduling": 0.95,
+      "dp-on-intervals": 0.93,
+      "binary-search": 0.85
+    }
+  }
+}

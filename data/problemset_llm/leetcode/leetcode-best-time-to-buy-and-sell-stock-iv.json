@@ -16,18 +16,18 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp-on-dag",
-    "state-compression",
-    "knapsack"
+    "dynamic-programming",
+    "state-machine-dp",
+    "wqs-binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922469,
     "pattern_confidence": {
-      "dp-on-dag": 0.9,
-      "state-compression": 0.85,
-      "knapsack": 0.8
+      "dynamic-programming": 0.95,
+      "state-machine-dp": 0.9,
+      "wqs-binary-search": 0.9
     }
   }
 }

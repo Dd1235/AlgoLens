@@ -18,8 +18,9 @@
     "sorting"
   ],
   "patterns": [
-    "sorting",
     "dynamic-programming",
+    "divide-and-conquer-dp",
+    "sorting",
     "two-pointers"
   ],
   "annotation": {
@@ -27,8 +28,9 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923713,
     "pattern_confidence": {
-      "sorting": 0.98,
       "dynamic-programming": 0.95,
+      "divide-and-conquer-dp": 0.8,
+      "sorting": 0.98,
       "two-pointers": 0.85
     }
   }

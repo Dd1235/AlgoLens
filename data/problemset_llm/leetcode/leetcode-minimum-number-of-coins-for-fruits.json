@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-number-of-coins-for-fruits",
+  "title": "Minimum Number of Coins for Fruits",
+  "slug": "minimum-number-of-coins-for-fruits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-coins-for-fruits/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "queue",
+    "heap-priority-queue",
+    "monotonic-queue"
+  ],
+  "statement": "Given an array of fruit prices where buying the i-th fruit allows taking the next i fruits for free, find the minimum total coins needed to acquire all fruits by optimally choosing which fruits to buy or take for free.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "queue",
+    "monotonic-queue"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "monotonic-queue-optimization",
+    "monotonic-queue",
+    "sliding-window-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715332,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "monotonic-queue-optimization": 0.95,
+      "monotonic-queue": 0.85,
+      "sliding-window-optimization": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
+  "title": "Minimum Total Space Wasted With K Resizing Operations",
+  "slug": "minimum-total-space-wasted-with-k-resizing-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given an array representing the number of elements at each time and a limit on resizing operations, determine the minimum total wasted space when resizing the array at most k times.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "partition-dp",
+    "prefix-sum",
+    "wqs-binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715336,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "partition-dp": 0.95,
+      "prefix-sum": 0.85,
+      "wqs-binary-search": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-sum-of-k-subarrays-with-length-at-least-m",
+  "title": "Sum of K Subarrays With Length at Least M",
+  "slug": "sum-of-k-subarrays-with-length-at-least-m",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, select k non-overlapping subarrays each with length at least m to maximize the total sum of their elements.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "partition-dp",
+    "prefix-sum",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715365,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "partition-dp": 0.92,
+      "prefix-sum": 0.9,
+      "dp-optimization": 0.85
+    }
+  }
+}

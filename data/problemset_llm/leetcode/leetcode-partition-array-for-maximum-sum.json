@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-partition-array-for-maximum-sum",
+  "title": "Partition Array for Maximum Sum",
+  "slug": "partition-array-for-maximum-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-array-for-maximum-sum/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array and a maximum subarray length k, partition the array into contiguous subarrays of length at most k. Replace each subarray's elements with the maximum value in that subarray and return the maximum possible sum after partitioning.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sliding-window-maximum",
+    "prefix-max"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715352,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "sliding-window-maximum": 0.85,
+      "prefix-max": 0.7
+    }
+  }
+}

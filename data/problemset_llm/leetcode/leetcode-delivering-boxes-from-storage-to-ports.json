@@ -24,6 +24,7 @@
   ],
   "patterns": [
     "dynamic-programming",
+    "monotonic-queue-optimization",
     "sliding-window",
     "prefix-sum",
     "monotonic-queue"
@@ -34,6 +35,7 @@
     "generated_at_unix": 1777922782,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
+      "monotonic-queue-optimization": 0.9,
       "sliding-window": 0.85,
       "prefix-sum": 0.9,
       "monotonic-queue": 0.75

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-best-time-to-buy-and-sell-stock-v",
+  "title": "Best Time to Buy and Sell Stock V",
+  "slug": "best-time-to-buy-and-sell-stock-v",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/",
+  "source_topic": "LeetCode / DP Optimization",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given daily stock prices and a limit k on the number of transactions, find the maximum profit achievable by performing at most k transactions, where each transaction can be a normal buy-then-sell or a short sell-then-buy-back, with no overlapping transactions allowed.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-machine-dp",
+    "wqs-binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784715358,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-machine-dp": 0.9,
+      "wqs-binary-search": 0.8
+    }
+  }
+}
