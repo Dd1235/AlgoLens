@@ -14,7 +14,8 @@
   "patterns": [
     "booth-algorithm",
     "string-rotation",
-    "lexicographic-minimum"
+    "lexicographic-minimum",
+    "lyndon-factorization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,7 +24,8 @@
     "pattern_confidence": {
       "booth-algorithm": 0.98,
       "string-rotation": 0.95,
-      "lexicographic-minimum": 0.9
+      "lexicographic-minimum": 0.9,
+      "lyndon-factorization": 0.85
     }
   }
 }
