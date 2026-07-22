@@ -42,156 +42,17 @@ LEETCODE_GRAPHQL_URL = "https://leetcode.com/graphql"
 
 ANNOTATION_VERSION = "problem-patterns-v1"
 SSL_CONTEXT = None
+PATTERN_TAXONOMY = ROOT / "data" / "pattern_taxonomy.json"
 
-CANONICAL_PATTERNS = [
-    # Core array/search patterns
-    "two-pointers",
-    "sliding-window",
-    "prefix-sum",
-    "prefix-xor",
-    "difference-array",
-    "sweep-line-difference",
-    "binary-search",
-    "binary-search-answer",
-    "ternary-search",
-    "sorting",
-    "greedy",
-    "heap",
-    "stack",
-    "monotonic-stack",
-    "monotonic-queue",
-    "queue",
-    "hash-map lookup",
-    "coordinate-compression",
-    "offline-queries",
-    "contribution-technique",
-    "inclusion-exclusion",
-    "mex",
-    "order-statistics",
-    "sqrt-decomposition",
-    "mo-algorithm",
 
-    # Graph patterns
-    "dfs",
-    "bfs",
-    "multi-source-bfs",
-    "flood-fill",
-    "union-find",
-    "dsu-rollback",
-    "small-to-large-merging",
-    "topological-sort",
-    "cycle-detection",
-    "shortest-path",
-    "dijkstra",
-    "bellman-ford",
-    "floyd-warshall",
-    "zero-one-bfs",
-    "dag-dp",
-    "functional-graph",
-    "minimum-spanning-tree",
-    "kruskal",
-    "prim",
-    "strongly-connected-components",
-    "tarjan",
-    "bridges",
-    "articulation-points",
-    "eulerian-path",
-    "hamiltonian-dp",
-    "max-flow",
-    "min-cut",
-    "dinic",
-    "min-cost-flow",
-    "bipartite-matching",
-    "two-sat",
+def _load_taxonomy() -> tuple[list[str], dict[str, str]]:
+    data = json.loads(PATTERN_TAXONOMY.read_text())
+    return list(data["canonical"].keys()), dict(data.get("aliases", {}))
 
-    # Tree patterns
-    "tree-dp",
-    "rerooting-dp",
-    "subtree-dp",
-    "tree-diameter",
-    "centroid-decomposition",
-    "heavy-light-decomposition",
-    "binary-lifting",
-    "lca",
-    "euler-tour",
-    "tin-tout-ancestor-check",
-    "tree-flattening",
 
-    # DP patterns
-    "digit-dp",
-    "bitmask-dp",
-    "subset-dp",
-    "profile-dp",
-    "dp-on-dag",
-    "dp-optimization",
-    "divide-and-conquer-dp",
-    "knuth-optimization",
-    "convex-hull-trick",
-    "li-chao-tree",
-    "interval-dp",
-    "knapsack",
-    "unbounded-knapsack",
-    "bounded-knapsack",
-    "partition-dp",
-    "state-compression",
-    "longest-increasing-subsequence",
-    "edit-distance",
-    "game-dp",
-    "probability-dp",
-    "expected-value-dp",
-
-    # Range query/data structure patterns
-    "segment-tree",
-    "fenwick-tree",
-    "lazy-propagation",
-    "persistent-segment-tree",
-    "merge-sort-tree",
-    "implicit-treap",
-    "ordered-set",
-    "multiset",
-    "deque",
-    "sparse-table",
-
-    # String patterns
-    "trie",
-    "kmp",
-    "z-function",
-    "rolling-hash",
-    "rabin-karp",
-    "suffix-array",
-    "suffix-automaton",
-    "palindrome-dp",
-    "manacher",
-    "aho-corasick",
-
-    # Geometry and math patterns
-    "line-sweep",
-    "geometry",
-    "rectangle-union-area",
-    "interval-union",
-    "convex-hull",
-    "orientation-test",
-    "rotating-calipers",
-    "combinatorics",
-    "stars-and-bars",
-    "permutation-counting",
-    "number-theory",
-    "gcd",
-    "sieve",
-    "prime-factorization",
-    "modular-inverse",
-    "modular-arithmetic",
-    "matrix-exponentiation",
-    "linear-recurrence",
-    "fast-exponentiation",
-    "chinese-remainder-theorem",
-    "grundy-numbers",
-    "game-theory",
-    "meet-in-the-middle",
-    "backtracking",
-    "branch-and-bound",
-    "constructive-algorithm",
-]
+# Canonical pattern vocabulary + alias map shared with the Node validator and
+# normalizer (data/pattern_taxonomy.json is the single source of truth).
+CANONICAL_PATTERNS, PATTERN_ALIASES = _load_taxonomy()
 
 PROMPT_EXAMPLES = [
     {
@@ -204,9 +65,9 @@ PROMPT_EXAMPLES = [
         "output": {
             "statement": "Given an array and a target value, find two distinct positions whose values sum to the target.",
             "tags": ["array", "hash-map"],
-            "patterns": ["hash-map lookup", "complement search"],
+            "patterns": ["hash-map", "complement search"],
             "pattern_confidence": {
-                "hash-map lookup": 0.98,
+                "hash-map": 0.98,
                 "complement search": 0.96
             }
         }
@@ -276,7 +137,7 @@ PROMPT_EXAMPLES = [
         },
         "output": {
             "statement": "Count directed paths from the first city to the last city that visit every city exactly once.",
-            "tags": ["graph", "dp", "bitmask"],
+            "tags": ["graph", "dynamic-programming", "bitmask"],
             "patterns": ["bitmask-dp", "hamiltonian-dp", "state-compression"],
             "pattern_confidence": {
                 "bitmask-dp": 0.98,
@@ -630,9 +491,9 @@ def annotation_prompt(base: dict[str, Any]) -> list[dict[str, str]]:
         "task": "Generate normalized tags and patterns for this problem.",
         "rules": [
             "Output JSON with exactly: statement, tags, patterns, pattern_confidence.",
-            "tags must be lowercase strings such as array, graph, dp, string, geometry, tree, math.",
+            "tags must be lowercase strings such as array, graph, dynamic-programming, string, geometry, tree, math.",
             "patterns must be lowercase algorithmic techniques or concise searchable phrases.",
-            "Use advanced patterns when applicable: contribution-technique, euler-tour, tree-flattening, bitmask-dp, hld, dsu-rollback, convex-hull-trick, line-sweep, max-flow, two-sat, suffix-automaton, etc.",
+            "Use advanced patterns when applicable: contribution-technique, euler-tour, tree-flattening, bitmask-dp, heavy-light-decomposition, dsu-rollback, convex-hull-trick, wqs-binary-search, slope-trick, line-sweep, max-flow, two-sat, suffix-automaton, etc.",
             "Prefer the most discriminative technique over generic labels. For example, use contribution-technique with monotonic-stack instead of only array/stack.",
             "Do not force advanced patterns when the statement does not justify them.",
             "pattern_confidence must map every pattern string to a number from 0 to 1.",
@@ -690,13 +551,18 @@ def call_openai(base: dict[str, Any], model: str) -> dict[str, Any]:
     }
 
 
+def canonical_label(raw: str) -> str:
+    slug = slugify(raw)
+    return PATTERN_ALIASES.get(slug, slug)
+
+
 def clean_list(value: Any, limit: int) -> list[str]:
     if not isinstance(value, list):
         return []
     out: list[str] = []
     seen: set[str] = set()
     for item in value:
-        text = slugify(str(item))
+        text = canonical_label(str(item))
         if text and text not in seen:
             seen.add(text)
             out.append(text)
@@ -710,14 +576,15 @@ def clean_confidence(value: Any) -> dict[str, float]:
         return {}
     out: dict[str, float] = {}
     for key, raw_score in value.items():
-        pattern = slugify(str(key))
+        pattern = canonical_label(str(key))
         if not pattern:
             continue
         try:
             score = float(raw_score)
         except (TypeError, ValueError):
             continue
-        out[pattern] = max(0.0, min(1.0, score))
+        # Aliases can collapse two keys onto one canonical label; keep the max.
+        out[pattern] = max(out.get(pattern, 0.0), max(0.0, min(1.0, score)))
     return out
 
 
