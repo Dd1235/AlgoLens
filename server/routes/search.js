@@ -2,6 +2,8 @@ const express = require("express");
 const db = require("../db");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
+// Pattern labels are slugs (see data/pattern_taxonomy.json); anything else is ignored.
+const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 // Sentinel for "give me everything you have" — bigger than the corpus.
 const FULL_PAGE_SIZE = 100000;
 
@@ -47,6 +49,8 @@ function createSearchRouter({ indexes, defaultRanker }) {
     const offset = Math.max(0, Number.parseInt(req.query.offset, 10) || 0);
     const filterRaw = (req.query.filter || "all").toString().toLowerCase();
     const filter = VALID_FILTERS.has(filterRaw) ? filterRaw : "all";
+    const patternRaw = (req.query.pattern || "").toString().toLowerCase();
+    const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
 
@@ -57,15 +61,19 @@ function createSearchRouter({ indexes, defaultRanker }) {
       const effectiveFilter = userState ? filter : "all";
 
       let hits, total, latencyMs;
-      if (effectiveFilter === "all") {
+      if (effectiveFilter === "all" && !pattern) {
         ({ hits, total, latencyMs } = await timedSearch(index, q, k, offset));
       } else {
-        // Need the full ranked list so the filter + slice produces a stable
+        // Need the full ranked list so filters + slice produce a stable
         // total and disjoint pages. The ranker materializes everything before
-        // slicing internally, so this costs no extra scoring work.
+        // slicing internally, so this costs no extra scoring work. The pattern
+        // filter composes with done/notdone in the same pass and works for
+        // anonymous users too.
         const full = await timedSearch(index, q, FULL_PAGE_SIZE, 0);
         latencyMs = full.latencyMs;
         const filtered = full.hits.filter((h) => {
+          if (pattern && !(h.problem.patterns || []).includes(pattern)) return false;
+          if (effectiveFilter === "all") return true;
           const isDone = userState.done.has(h.problem.id);
           return effectiveFilter === "done" ? isDone : !isDone;
         });
@@ -82,7 +90,7 @@ function createSearchRouter({ indexes, defaultRanker }) {
         }));
       }
 
-      res.json({ query: q, ranker, latencyMs, offset, k, total, filter: effectiveFilter, hits });
+      res.json({ query: q, ranker, latencyMs, offset, k, total, filter: effectiveFilter, pattern: pattern || undefined, hits });
     } catch (err) {
       res.status(502).json({ query: q, ranker, error: err.message || "search failed" });
     }
