@@ -9,7 +9,7 @@
   "statement": "Count the number of paths from the top-left to the bottom-right corner of an n×n grid moving only right or down, avoiding cells with traps. Output the count modulo 10^9+7.",
   "tags": [
     "combinatorics",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "combinatorial-dp",

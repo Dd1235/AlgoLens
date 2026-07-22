@@ -17,7 +17,7 @@
   "statement": "Given n individuals with crossing times and a boat capacity k, transport all individuals across a river through m cyclic environmental stages affecting crossing speed, minimizing total time including return trips.",
   "tags": [
     "bitmask",
-    "dp",
+    "dynamic-programming",
     "graph",
     "binary-search"
   ],

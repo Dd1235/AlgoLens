@@ -23,7 +23,7 @@
   ],
   "patterns": [
     "gcd",
-    "hash-map-lookup",
+    "hash-map",
     "counting"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "generated_at_unix": 1777922578,
     "pattern_confidence": {
       "gcd": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "counting": 0.85
     }
   }

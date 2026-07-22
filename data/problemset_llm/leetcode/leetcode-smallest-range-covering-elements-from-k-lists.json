@@ -22,7 +22,7 @@
     "sorting"
   ],
   "patterns": [
-    "heap-priority-queue",
+    "heap",
     "two-pointers",
     "sliding-window"
   ],
@@ -31,7 +31,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924082,
     "pattern_confidence": {
-      "heap-priority-queue": 0.98,
+      "heap": 0.98,
       "two-pointers": 0.9,
       "sliding-window": 0.88
     }

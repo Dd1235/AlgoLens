@@ -17,7 +17,7 @@
   "statement": "Given two strings source and target of equal length, and a list of substring transformations with associated costs, find the minimum cost to convert source into target by applying any number of non-overlapping or identical substring transformations. Return -1 if conversion is impossible.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

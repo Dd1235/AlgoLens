@@ -17,12 +17,12 @@
   "tags": [
     "graph",
     "dfs",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "cycle-detection",
     "topological-sort",
-    "depth-first-search",
+    "dfs",
     "dynamic-programming"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "cycle-detection": 0.95,
       "topological-sort": 0.9,
-      "depth-first-search": 0.9,
+      "dfs": 0.9,
       "dynamic-programming": 0.85
     }
   }

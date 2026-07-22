@@ -14,7 +14,7 @@
   "statement": "Given distinct city locations, a start city, a finish city, and an initial fuel amount, count the number of possible routes from start to finish without running out of fuel, allowing revisits to cities. Return the count modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "memoization"
   ],
   "patterns": [

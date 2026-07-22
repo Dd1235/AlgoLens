@@ -15,7 +15,7 @@
   "statement": "Given a set of courses with prerequisite dependencies and individual completion times, determine the minimum total time to finish all courses when multiple courses can be taken simultaneously once their prerequisites are met.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "topological-sort"
   ],
   "patterns": [

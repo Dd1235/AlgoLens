@@ -10,7 +10,7 @@
   "tags": [
     "math",
     "number-theory",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "prime-factorization",

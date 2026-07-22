@@ -9,7 +9,7 @@
   "statement": "Given two integer arrays, find the length and an example of their longest common subsequence, which is a sequence appearing in both arrays in order but not necessarily contiguously.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

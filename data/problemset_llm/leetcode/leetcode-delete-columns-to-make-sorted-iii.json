@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "longest-increasing-subsequence",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +27,7 @@
     "generated_at_unix": 1777922777,
     "pattern_confidence": {
       "longest-increasing-subsequence": 0.95,
-      "dp": 0.9
+      "dynamic-programming": 0.9
     }
   }
 }

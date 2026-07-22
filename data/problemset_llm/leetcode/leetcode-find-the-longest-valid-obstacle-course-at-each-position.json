@@ -14,8 +14,8 @@
   "statement": "Given an array of obstacle heights, for each position find the length of the longest non-decreasing subsequence ending at that position including the obstacle itself.",
   "tags": [
     "array",
-    "binary-indexed-tree",
-    "dp"
+    "fenwick-tree",
+    "dynamic-programming"
   ],
   "patterns": [
     "binary-search",

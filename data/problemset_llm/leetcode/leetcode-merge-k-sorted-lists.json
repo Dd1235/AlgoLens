@@ -19,7 +19,7 @@
     "divide-and-conquer"
   ],
   "patterns": [
-    "heap-priority-queue",
+    "heap",
     "divide-and-conquer",
     "merge-sort"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923481,
     "pattern_confidence": {
-      "heap-priority-queue": 0.98,
+      "heap": 0.98,
       "divide-and-conquer": 0.9,
       "merge-sort": 0.88
     }

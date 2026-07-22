@@ -14,7 +14,7 @@
   "statement": "Given k eggs and a building with n floors, find the minimum number of moves required to determine the highest floor from which an egg can be dropped without breaking.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "binary-search"
   ],
   "patterns": [

@@ -13,7 +13,7 @@
   "statement": "Determine if a given string can be partitioned into three non-empty substrings, each of which is a palindrome.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "palindrome-check",

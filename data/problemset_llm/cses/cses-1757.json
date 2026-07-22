@@ -10,7 +10,7 @@
   "tags": [
     "graph",
     "topological-sort",
-    "priority-queue"
+    "heap"
   ],
   "patterns": [
     "topological-sort",

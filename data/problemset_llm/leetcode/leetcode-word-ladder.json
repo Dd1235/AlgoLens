@@ -15,7 +15,7 @@
   "tags": [
     "string",
     "graph",
-    "breadth-first-search",
+    "bfs",
     "hash-map"
   ],
   "patterns": [

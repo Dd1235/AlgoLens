@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "binary-search",
-    "dp",
+    "dynamic-programming",
     "greedy"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923199,
     "pattern_confidence": {
       "binary-search": 0.9,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "greedy": 0.7
     }
   }

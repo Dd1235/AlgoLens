@@ -21,7 +21,7 @@
     "parity-check",
     "graph-degree-analysis",
     "edge-addition",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +31,7 @@
       "parity-check": 0.95,
       "graph-degree-analysis": 0.9,
       "edge-addition": 0.85,
-      "hash-map-lookup": 0.8
+      "hash-map": 0.8
     }
   }
 }

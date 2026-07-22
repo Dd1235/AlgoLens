@@ -16,12 +16,12 @@
   "tags": [
     "string",
     "greedy",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree"
   ],
   "patterns": [
     "greedy",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree",
     "two-pointers"
   ],
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777923667,
     "pattern_confidence": {
       "greedy": 0.98,
-      "binary-indexed-tree": 0.95,
+      "fenwick-tree": 0.95,
       "segment-tree": 0.9,
       "two-pointers": 0.7
     }

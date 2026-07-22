@@ -19,7 +19,7 @@
   "statement": "Given a grid with walls, a cat, a mouse, and food, determine if the mouse can win a turn-based jumping game where both players move optimally and have limited jump distances.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "game-theory",
     "memoization"
   ],

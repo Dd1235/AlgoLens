@@ -12,7 +12,7 @@
   ],
   "statement": "Count the number of length-n arrays with elements in [l, r] where no two adjacent elements are equal and no three consecutive elements form a strictly increasing or decreasing sequence, modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "array"
   ],

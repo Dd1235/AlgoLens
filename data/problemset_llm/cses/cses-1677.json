@@ -9,7 +9,7 @@
   "statement": "Given a network of computers connected by edges, report the number of connected components after each specified connection is removed.",
   "tags": [
     "graph",
-    "dsu",
+    "union-find",
     "offline-queries"
   ],
   "patterns": [

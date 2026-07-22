@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "greedy",
-    "priority-queue",
+    "heap",
     "character-frequency"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777951303,
     "pattern_confidence": {
       "greedy": 0.95,
-      "priority-queue": 0.9,
+      "heap": 0.9,
       "character-frequency": 0.85
     }
   }

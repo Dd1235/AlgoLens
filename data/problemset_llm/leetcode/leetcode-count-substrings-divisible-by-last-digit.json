@@ -13,7 +13,7 @@
   "statement": "Given a digit string, count the number of substrings divisible by their non-zero last digit. Substrings may have leading zeros and divisibility is checked against the last digit of each substring.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "math"
   ],
   "patterns": [

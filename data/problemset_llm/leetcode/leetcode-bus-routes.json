@@ -14,13 +14,13 @@
   "statement": "Given bus routes where each route cycles through stops indefinitely, find the minimum number of buses needed to travel from a source stop to a target stop, or return -1 if impossible.",
   "tags": [
     "graph",
-    "breadth-first-search",
+    "bfs",
     "hash-map"
   ],
   "patterns": [
     "bfs",
     "graph-construction",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "bfs": 0.98,
       "graph-construction": 0.95,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

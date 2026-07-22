@@ -13,7 +13,7 @@
   "statement": "Calculate the total number of peaks and valleys (waviness) for all numbers within a given inclusive range, where peaks and valleys are defined by digits strictly greater or less than their neighbors, excluding the first and last digits.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "digit-dp"
   ],
   "patterns": [

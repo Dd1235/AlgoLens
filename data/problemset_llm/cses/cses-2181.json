@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Count the number of ways to tile an n by m grid using 1x2 and 2x1 tiles, with the result given modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

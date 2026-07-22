@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "sliding-window",
-    "hash-map-lookup",
+    "hash-map",
     "heap",
     "frequency-counting"
   ],
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777923011,
     "pattern_confidence": {
       "sliding-window": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "heap": 0.85,
       "frequency-counting": 0.9
     }

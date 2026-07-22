@@ -16,7 +16,7 @@
   "statement": "Given an undirected graph with labeled nodes, find the longest simple path whose node labels form a palindrome.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "bitmask",
     "string"
   ],

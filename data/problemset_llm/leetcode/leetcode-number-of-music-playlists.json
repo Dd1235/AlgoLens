@@ -14,7 +14,7 @@
   "statement": "Count the number of playlists of length goal using n unique songs where each song is played at least once and a song can only be replayed after k other songs have been played.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

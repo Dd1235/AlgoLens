@@ -13,7 +13,7 @@
   "statement": "Given a string, partition it into substrings so that each substring is a palindrome, and find the minimum number of cuts needed to achieve this partitioning.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "palindrome-dp",

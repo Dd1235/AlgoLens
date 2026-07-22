@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Count the number of ways to partition the set {1, 2, ..., n} into two subsets with equal sum, modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

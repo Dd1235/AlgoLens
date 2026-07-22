@@ -9,7 +9,7 @@
   "statement": "Calculate the number of ways to obtain a sum n by throwing standard six-sided dice any number of times, with the result given modulo 10^9+7.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "modular-arithmetic"
   ],
   "patterns": [

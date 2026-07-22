@@ -12,7 +12,7 @@
   ],
   "statement": "Given a tournament with n players arranged in a row, determine the earliest and latest rounds in which two specified top players can face each other, assuming outcomes of other matches can be chosen arbitrarily.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "memoization",
     "game-theory"
   ],

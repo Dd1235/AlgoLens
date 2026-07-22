@@ -9,7 +9,7 @@
   "statement": "Maintain the number of connected components in an undirected graph under a sequence of edge insertions and deletions, reporting the count after each event.",
   "tags": [
     "graph",
-    "dsu",
+    "union-find",
     "dynamic-connectivity"
   ],
   "patterns": [

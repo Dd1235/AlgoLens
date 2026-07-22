@@ -9,7 +9,7 @@
   "statement": "Given an array, count the number of subsequences in which all elements are distinct, with the result modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "modular-arithmetic"
   ],
   "patterns": [

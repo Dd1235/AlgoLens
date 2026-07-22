@@ -12,7 +12,7 @@
     "graph"
   ],
   "patterns": [
-    "lowest-common-ancestor",
+    "lca",
     "binary-lifting"
   ],
   "annotation": {
@@ -20,7 +20,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951626,
     "pattern_confidence": {
-      "lowest-common-ancestor": 0.98,
+      "lca": 0.98,
       "binary-lifting": 0.95
     }
   }

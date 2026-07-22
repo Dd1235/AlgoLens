@@ -14,7 +14,7 @@
     "state-space-search"
   ],
   "patterns": [
-    "breadth-first-search",
+    "bfs",
     "shortest-path",
     "state-graph-search"
   ],
@@ -23,7 +23,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777952099,
     "pattern_confidence": {
-      "breadth-first-search": 0.98,
+      "bfs": 0.98,
       "shortest-path": 0.95,
       "state-graph-search": 0.9
     }

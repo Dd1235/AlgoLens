@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "dp",
+    "dynamic-programming",
     "game-dp"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777924123,
     "pattern_confidence": {
       "prefix-sum": 0.95,
-      "dp": 0.9,
+      "dynamic-programming": 0.9,
       "game-dp": 0.9
     }
   }

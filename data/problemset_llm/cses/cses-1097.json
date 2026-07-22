@@ -9,7 +9,7 @@
   "statement": "Two players alternately remove numbers from either end of a list, each aiming to maximize their own score. Determine the maximum score the first player can achieve assuming both play optimally.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "game-theory"
   ],
   "patterns": [

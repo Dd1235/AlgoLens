@@ -13,7 +13,7 @@
   ],
   "patterns": [
     "prefix-xor",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +21,7 @@
     "generated_at_unix": 1777951941,
     "pattern_confidence": {
       "prefix-xor": 0.95,
-      "dp": 0.85
+      "dynamic-programming": 0.85
     }
   }
 }

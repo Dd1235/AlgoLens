@@ -18,7 +18,7 @@
   "statement": "Given a directed graph with colored nodes, find the maximum count of the most frequent color along any valid path, or return -1 if the graph contains a cycle.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "topological-sort",
     "string"
   ],

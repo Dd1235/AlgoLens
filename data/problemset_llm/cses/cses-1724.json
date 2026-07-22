@@ -9,7 +9,7 @@
   "statement": "Given a directed weighted graph, find the minimum path length from node 1 to node n using exactly k edges, or report -1 if no such path exists.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "matrix-exponentiation"
   ],
   "patterns": [

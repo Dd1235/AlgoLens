@@ -9,7 +9,7 @@
   "statement": "Two players alternately split a heap of coins into two unequal nonempty heaps. Determine which player wins if both play optimally for multiple initial heap sizes.",
   "tags": [
     "game-theory",
-    "dp",
+    "dynamic-programming",
     "math"
   ],
   "patterns": [

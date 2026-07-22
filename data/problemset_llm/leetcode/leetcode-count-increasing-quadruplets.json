@@ -17,12 +17,12 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "prefix-sum"
   ],
   "patterns": [
     "contribution-technique",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "prefix-sum",
     "enumeration"
   ],
@@ -32,7 +32,7 @@
     "generated_at_unix": 1777922615,
     "pattern_confidence": {
       "contribution-technique": 0.95,
-      "binary-indexed-tree": 0.9,
+      "fenwick-tree": 0.9,
       "prefix-sum": 0.85,
       "enumeration": 0.8
     }

@@ -15,7 +15,7 @@
   "patterns": [
     "two-pointers",
     "sliding-window",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +24,7 @@
     "pattern_confidence": {
       "two-pointers": 0.98,
       "sliding-window": 0.95,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

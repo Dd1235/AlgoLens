@@ -18,13 +18,13 @@
   "tags": [
     "graph",
     "shortest-path",
-    "dp",
+    "dynamic-programming",
     "heap"
   ],
   "patterns": [
     "modified-dijkstra",
     "dp-on-graphs",
-    "priority-queue",
+    "heap",
     "bounded-shortest-path"
   ],
   "annotation": {
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "modified-dijkstra": 0.95,
       "dp-on-graphs": 0.9,
-      "priority-queue": 0.9,
+      "heap": 0.9,
       "bounded-shortest-path": 0.85
     }
   }

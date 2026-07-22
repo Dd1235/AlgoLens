@@ -23,7 +23,7 @@
   "patterns": [
     "dfs",
     "rerooting-dp",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "dfs": 0.98,
       "rerooting-dp": 0.95,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

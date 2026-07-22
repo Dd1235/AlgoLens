@@ -14,7 +14,7 @@
   "statement": "Partition a string into k substrings minimizing letter changes to make each substring a semi-palindrome, where a semi-palindrome is defined by a repeating pattern divisor with palindrome groups formed by characters at fixed intervals.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "math"
   ],
   "patterns": [

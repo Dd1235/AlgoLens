@@ -9,7 +9,7 @@
   "statement": "Given a sequence of monsters with strengths and skill factors, determine the minimum total time to defeat the final monster by selectively killing or escaping earlier monsters, where killing a monster updates the skill factor used for subsequent kills.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

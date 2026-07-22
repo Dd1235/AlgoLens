@@ -9,13 +9,13 @@
   "statement": "Count the number of ways to split an array into contiguous segments where each segment contains only distinct values, modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "hashing"
   ],
   "patterns": [
     "dynamic-programming",
     "prefix-frequency",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +24,7 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "prefix-frequency": 0.85,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

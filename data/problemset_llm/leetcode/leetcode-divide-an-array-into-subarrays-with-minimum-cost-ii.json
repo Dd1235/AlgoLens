@@ -15,7 +15,7 @@
   "statement": "Divide an array into k contiguous subarrays with a constraint on the distance between the start indices of the second and last subarrays, minimizing the sum of the first elements of each subarray.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "sliding-window"
   ],
   "patterns": [

@@ -17,12 +17,12 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree"
   ],
   "patterns": [
     "binary-search-answer",
-    "dp",
+    "dynamic-programming",
     "fenwick-tree",
     "segment-tree"
   ],
@@ -32,7 +32,7 @@
     "generated_at_unix": 1777923291,
     "pattern_confidence": {
       "binary-search-answer": 0.9,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "fenwick-tree": 0.7,
       "segment-tree": 0.7
     }

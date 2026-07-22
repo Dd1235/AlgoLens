@@ -16,8 +16,8 @@
   "tags": [
     "graph",
     "tree",
-    "dp",
-    "breadth-first-search"
+    "dynamic-programming",
+    "bfs"
   ],
   "patterns": [
     "rerooting-dp",

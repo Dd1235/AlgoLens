@@ -10,7 +10,7 @@
   "tags": [
     "graph",
     "shortest-path",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dijkstra",

@@ -24,7 +24,7 @@
   "patterns": [
     "merge-sort",
     "divide-and-conquer",
-    "binary-indexed-tree"
+    "fenwick-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
     "pattern_confidence": {
       "merge-sort": 0.98,
       "divide-and-conquer": 0.95,
-      "binary-indexed-tree": 0.7
+      "fenwick-tree": 0.7
     }
   }
 }

@@ -9,7 +9,7 @@
   "statement": "Given a sequence of monsters with strengths and skill factors that decrease after killing each monster, determine the minimum total time to defeat the final monster by choosing which monsters to kill or skip, with the constraint that the last monster must be killed.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

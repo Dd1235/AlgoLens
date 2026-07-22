@@ -12,7 +12,7 @@
   "statement": "Count the integers within a given range whose digits at even positions sum to the same value as digits at odd positions, considering the leftmost digit as position one.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "digit-dp"
   ],
   "patterns": [

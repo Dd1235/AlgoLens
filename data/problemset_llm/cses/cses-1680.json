@@ -9,7 +9,7 @@
   "statement": "Find the longest path from city 1 to city n in a directed acyclic graph representing flights between cities, and output the path or report if none exists.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "topological-sort"
   ],
   "patterns": [

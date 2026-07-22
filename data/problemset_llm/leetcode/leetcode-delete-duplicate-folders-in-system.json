@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "tree-dfs",
-    "hash-map-lookup",
+    "hash-map",
     "subtree-hashing"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777922779,
     "pattern_confidence": {
       "tree-dfs": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "subtree-hashing": 0.92
     }
   }

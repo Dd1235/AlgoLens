@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "trie",
-    "hash-map-lookup",
+    "hash-map",
     "palindrome-check",
     "string-reversal"
   ],
@@ -32,7 +32,7 @@
     "generated_at_unix": 1777923877,
     "pattern_confidence": {
       "trie": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "palindrome-check": 0.9,
       "string-reversal": 0.85
     }

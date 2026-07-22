@@ -9,7 +9,7 @@
   "statement": "Calculate the expected number of empty squares on an 8x8 chessboard after each robot, initially occupying every square, moves k steps randomly in one of the available directions without leaving the board.",
   "tags": [
     "probability",
-    "dp",
+    "dynamic-programming",
     "grid"
   ],
   "patterns": [

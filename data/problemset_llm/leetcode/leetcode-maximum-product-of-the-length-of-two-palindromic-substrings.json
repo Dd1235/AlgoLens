@@ -15,7 +15,7 @@
   "statement": "Given a string, find two non-overlapping palindromic substrings of odd length that maximize the product of their lengths.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "two-pointers"
   ],
   "patterns": [

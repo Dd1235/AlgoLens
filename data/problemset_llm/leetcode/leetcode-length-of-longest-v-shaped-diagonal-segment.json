@@ -19,7 +19,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "directional-dp",
     "state-machine"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923129,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "directional-dp": 0.9,
       "state-machine": 0.85
     }

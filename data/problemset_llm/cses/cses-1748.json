@@ -9,8 +9,8 @@
   "statement": "Given an array of integers, count the total number of strictly increasing subsequences, considering subsequences with the same values but different positions as distinct, and output the result modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
-    "binary-indexed-tree"
+    "dynamic-programming",
+    "fenwick-tree"
   ],
   "patterns": [
     "dynamic-programming",

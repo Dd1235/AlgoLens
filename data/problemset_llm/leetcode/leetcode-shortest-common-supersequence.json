@@ -16,7 +16,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "string-subsequence",
     "shortest-common-supersequence"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924018,
     "pattern_confidence": {
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "string-subsequence": 0.95,
       "shortest-common-supersequence": 0.97
     }

@@ -16,7 +16,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "backtracking",
     "memoization"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922510,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "backtracking": 0.85,
       "memoization": 0.9
     }

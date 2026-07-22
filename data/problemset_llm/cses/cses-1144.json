@@ -9,11 +9,9 @@
   "statement": "Maintain a list of employee salaries with support for updates to individual salaries and queries counting how many salaries fall within a given range.",
   "tags": [
     "array",
-    "binary-indexed-tree",
     "fenwick-tree"
   ],
   "patterns": [
-    "binary-indexed-tree",
     "fenwick-tree",
     "coordinate-compression"
   ],
@@ -22,7 +20,6 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951573,
     "pattern_confidence": {
-      "binary-indexed-tree": 0.95,
       "fenwick-tree": 0.95,
       "coordinate-compression": 0.9
     }

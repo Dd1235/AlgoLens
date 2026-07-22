@@ -13,7 +13,7 @@
   "statement": "Given a sequence of Alice's creature summons, count the number of Bob's sequences that beat Alice in points under the constraint that Bob never summons the same creature consecutively. Return the count modulo 10^9+7.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

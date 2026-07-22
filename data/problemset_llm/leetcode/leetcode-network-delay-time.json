@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "dijkstra",
-    "priority-queue",
+    "heap",
     "single-source-shortest-path"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777922407,
     "pattern_confidence": {
       "dijkstra": 0.98,
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "single-source-shortest-path": 0.9
     }
   }

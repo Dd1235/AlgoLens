@@ -18,7 +18,7 @@
   "statement": "Given two permutations of integers from 0 to n-1, count the number of triplets (x, y, z) that appear in increasing order by position in both permutations.",
   "tags": [
     "array",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree",
     "ordered-set"
   ],

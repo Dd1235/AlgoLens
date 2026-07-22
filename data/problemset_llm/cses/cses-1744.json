@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a rectangle of dimensions a by b, find the minimum number of cuts needed to partition it into squares by repeatedly cutting rectangles into two smaller rectangles with integer side lengths.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "geometry"
   ],
   "patterns": [

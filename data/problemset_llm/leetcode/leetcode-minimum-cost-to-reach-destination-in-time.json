@@ -14,7 +14,7 @@
   "statement": "Given a weighted undirected graph with passing fees on nodes and a maximum allowed travel time, find the minimum total passing fee to reach from city 0 to city n-1 within the time limit, or return -1 if impossible.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "shortest-path"
   ],
   "patterns": [

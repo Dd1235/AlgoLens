@@ -17,7 +17,7 @@
   ],
   "patterns": [
     "binary-search-answer",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +25,7 @@
     "generated_at_unix": 1777923637,
     "pattern_confidence": {
       "binary-search-answer": 0.9,
-      "dp": 0.85
+      "dynamic-programming": 0.85
     }
   }
 }

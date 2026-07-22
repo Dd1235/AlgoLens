@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "binary-lifting",
-    "lowest-common-ancestor",
+    "lca",
     "dfs"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777951629,
     "pattern_confidence": {
       "binary-lifting": 0.95,
-      "lowest-common-ancestor": 0.94,
+      "lca": 0.94,
       "dfs": 0.9
     }
   }

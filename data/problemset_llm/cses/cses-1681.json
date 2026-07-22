@@ -9,7 +9,7 @@
   "statement": "Given a directed acyclic graph representing game levels and teleporters, count the number of distinct paths from level 1 to level n modulo 10^9+7.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "topological-sort"
   ],
   "patterns": [

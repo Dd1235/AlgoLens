@@ -9,7 +9,7 @@
   "statement": "Count the number of directed paths from city 1 to city n that visit every city exactly once in a directed graph with n cities and m flights.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

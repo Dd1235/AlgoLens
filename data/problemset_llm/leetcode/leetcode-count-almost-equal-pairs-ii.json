@@ -23,7 +23,7 @@
   "patterns": [
     "digit-manipulation",
     "pair-enumeration",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "digit-manipulation": 0.95,
       "pair-enumeration": 0.9,
-      "hash-map-lookup": 0.85
+      "hash-map": 0.85
     }
   }
 }

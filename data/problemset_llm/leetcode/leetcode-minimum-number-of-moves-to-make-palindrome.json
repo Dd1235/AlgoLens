@@ -17,12 +17,12 @@
     "string",
     "two-pointers",
     "greedy",
-    "binary-indexed-tree"
+    "fenwick-tree"
   ],
   "patterns": [
     "greedy",
     "two-pointers",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "inversion-count"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "two-pointers": 0.9,
-      "binary-indexed-tree": 0.85,
+      "fenwick-tree": 0.85,
       "inversion-count": 0.8
     }
   }

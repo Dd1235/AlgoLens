@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "bitmask-enumeration",
-    "hash-map-lookup",
+    "hash-map",
     "subset-enumeration"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923816,
     "pattern_confidence": {
       "bitmask-enumeration": 0.98,
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "subset-enumeration": 0.9
     }
   }

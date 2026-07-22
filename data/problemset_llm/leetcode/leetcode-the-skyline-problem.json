@@ -25,7 +25,7 @@
   ],
   "patterns": [
     "line-sweep",
-    "heap-priority-queue",
+    "heap",
     "sorting"
   ],
   "annotation": {
@@ -34,7 +34,7 @@
     "generated_at_unix": 1777924227,
     "pattern_confidence": {
       "line-sweep": 0.98,
-      "heap-priority-queue": 0.95,
+      "heap": 0.95,
       "sorting": 0.9
     }
   }

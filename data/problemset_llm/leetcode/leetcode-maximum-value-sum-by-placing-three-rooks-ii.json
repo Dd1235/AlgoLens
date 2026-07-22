@@ -15,7 +15,7 @@
   "statement": "Place three rooks on a chessboard so that no two share the same row or column, maximizing the sum of their cell values.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "matrix",
     "combinatorics"
   ],

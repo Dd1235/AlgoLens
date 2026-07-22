@@ -18,12 +18,12 @@
   "statement": "Given a sequence of integers, insert them one by one into a sorted array and compute the total cost where each insertion cost is the minimum count of elements less than or greater than the inserted element in the current array.",
   "tags": [
     "array",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree",
     "ordered-set"
   ],
   "patterns": [
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree",
     "order-statistics"
   ],
@@ -32,7 +32,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922761,
     "pattern_confidence": {
-      "binary-indexed-tree": 0.98,
+      "fenwick-tree": 0.98,
       "segment-tree": 0.9,
       "order-statistics": 0.95
     }

@@ -15,7 +15,7 @@
   "statement": "Given an array of positive integers and an integer k, find the lexicographically smallest permutation of the array such that the concatenation of its elements is divisible by k, or return an empty list if none exists.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

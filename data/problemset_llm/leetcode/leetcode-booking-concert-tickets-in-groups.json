@@ -16,12 +16,12 @@
   "tags": [
     "array",
     "segment-tree",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "data-structure"
   ],
   "patterns": [
     "segment-tree",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "binary-search",
     "prefix-sum"
   ],
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777922481,
     "pattern_confidence": {
       "segment-tree": 0.95,
-      "binary-indexed-tree": 0.9,
+      "fenwick-tree": 0.9,
       "binary-search": 0.85,
       "prefix-sum": 0.8
     }

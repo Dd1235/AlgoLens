@@ -16,7 +16,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "counting-subsequences",
     "modular-arithmetic"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922814,
     "pattern_confidence": {
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "counting-subsequences": 0.95,
       "modular-arithmetic": 0.9
     }

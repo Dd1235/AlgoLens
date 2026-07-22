@@ -9,7 +9,7 @@
   "statement": "Partition an array into k contiguous subarrays to minimize the sum of the squares of each subarray's sum.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "prefix-sum"
   ],
   "patterns": [

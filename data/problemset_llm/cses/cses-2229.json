@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Count the number of permutations of size n that have exactly k inversions, where an inversion is a pair of elements out of order. Output the count modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

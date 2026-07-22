@@ -19,7 +19,7 @@
     "tree",
     "graph",
     "math",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dfs",

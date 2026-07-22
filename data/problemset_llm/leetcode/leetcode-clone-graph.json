@@ -23,7 +23,7 @@
     "graph-cloning",
     "dfs",
     "bfs",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
       "graph-cloning": 0.98,
       "dfs": 0.95,
       "bfs": 0.93,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

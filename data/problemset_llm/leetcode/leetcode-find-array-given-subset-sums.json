@@ -22,7 +22,7 @@
   "patterns": [
     "divide-and-conquer",
     "sorting",
-    "hash-map-lookup",
+    "hash-map",
     "backtracking"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "divide-and-conquer": 0.9,
       "sorting": 0.95,
-      "hash-map-lookup": 0.85,
+      "hash-map": 0.85,
       "backtracking": 0.8
     }
   }

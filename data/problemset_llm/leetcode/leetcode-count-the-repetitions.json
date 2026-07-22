@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "two-pointers",
-    "dp",
+    "dynamic-programming",
     "binary-search-answer"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777922731,
     "pattern_confidence": {
       "two-pointers": 0.95,
-      "dp": 0.9,
+      "dynamic-programming": 0.9,
       "binary-search-answer": 0.8
     }
   }

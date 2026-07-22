@@ -16,7 +16,7 @@
     "bfs"
   ],
   "patterns": [
-    "breadth-first-search",
+    "bfs",
     "shortest-cycle-detection"
   ],
   "annotation": {
@@ -24,7 +24,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924024,
     "pattern_confidence": {
-      "breadth-first-search": 0.98,
+      "bfs": 0.98,
       "shortest-cycle-detection": 0.95
     }
   }

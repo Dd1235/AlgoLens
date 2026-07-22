@@ -17,7 +17,7 @@
     "array",
     "math",
     "number-theory",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

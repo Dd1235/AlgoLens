@@ -9,7 +9,7 @@
   "statement": "Compute the n-th Fibonacci number modulo 10^9+7 for a given non-negative integer n, where n can be as large as 10^{18}.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "matrix-exponentiation"
   ],
   "patterns": [

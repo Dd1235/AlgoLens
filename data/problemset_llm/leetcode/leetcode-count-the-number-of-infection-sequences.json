@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "combinatorial-counting",
+    "combinatorics",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777922721,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "combinatorial-counting": 0.9,
+      "combinatorics": 0.9,
       "modular-arithmetic": 0.85
     }
   }

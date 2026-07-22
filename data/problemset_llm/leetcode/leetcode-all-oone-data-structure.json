@@ -20,7 +20,7 @@
     "doubly-linked-list"
   ],
   "patterns": [
-    "hash-map-lookup",
+    "hash-map",
     "doubly-linked-list",
     "constant-time-operations"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922440,
     "pattern_confidence": {
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "doubly-linked-list": 0.9,
       "constant-time-operations": 0.9
     }

@@ -21,7 +21,7 @@
     "randomized"
   ],
   "patterns": [
-    "hash-map-lookup",
+    "hash-map",
     "randomized-sampling",
     "amortized-analysis"
   ],
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923077,
     "pattern_confidence": {
-      "hash-map-lookup": 0.98,
+      "hash-map": 0.98,
       "randomized-sampling": 0.95,
       "amortized-analysis": 0.9
     }

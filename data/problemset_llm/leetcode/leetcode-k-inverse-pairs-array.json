@@ -12,7 +12,7 @@
   "statement": "Count the number of permutations of 1 to n with exactly k inverse pairs, modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

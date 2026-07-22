@@ -9,7 +9,7 @@
   "statement": "Given a directed graph with teleporters, find the minimum total cost to travel from room 1 to room n exactly k times using each teleporter at most once, and output the corresponding routes or -1 if impossible.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "shortest-path"
   ],
   "patterns": [

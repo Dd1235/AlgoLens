@@ -9,7 +9,7 @@
   "statement": "Given a string, compute for each position the length of the longest palindrome substring that ends at that position.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "palindrome-dp",

@@ -9,7 +9,7 @@
   "statement": "Given a cost matrix for assigning n tasks to n employees, find the assignment minimizing total cost and output one optimal assignment.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "assignment-problem"
   ],
   "patterns": [

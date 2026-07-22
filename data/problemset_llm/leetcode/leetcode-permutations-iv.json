@@ -17,10 +17,10 @@
     "array",
     "math",
     "combinatorics",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "state-compression",
     "lexicographical-enumeration"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923918,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "state-compression": 0.9,
       "lexicographical-enumeration": 0.85
     }

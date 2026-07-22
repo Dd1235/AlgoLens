@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given an n×n grid with traps, count the number of paths from the top-left to the bottom-right corner moving only right or down, avoiding trap cells. Return the count modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "grid"
   ],
   "patterns": [

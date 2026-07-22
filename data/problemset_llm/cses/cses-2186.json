@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "hash-map-lookup",
+    "hash-map",
     "sliding-window"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777952119,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "hash-map-lookup": 0.85,
+      "hash-map": 0.85,
       "sliding-window": 0.7
     }
   }

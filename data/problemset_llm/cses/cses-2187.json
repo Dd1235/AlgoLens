@@ -9,7 +9,7 @@
   "statement": "Given a length n and a prefix of a bracket sequence, count the number of valid bracket sequences of length n that start with the given prefix, modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "bitmask-enumeration",
-    "hash-map-lookup",
+    "hash-map",
     "frequency-count"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777924264,
     "pattern_confidence": {
       "bitmask-enumeration": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "frequency-count": 0.85
     }
   }

@@ -15,18 +15,18 @@
     "math"
   ],
   "patterns": [
-    "breadth-first-search",
+    "bfs",
     "state-compression",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923947,
     "pattern_confidence": {
-      "breadth-first-search": 0.9,
+      "bfs": 0.9,
       "state-compression": 0.85,
-      "dp": 0.8
+      "dynamic-programming": 0.8
     }
   }
 }

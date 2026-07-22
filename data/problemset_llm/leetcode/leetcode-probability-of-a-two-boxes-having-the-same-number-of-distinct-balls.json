@@ -26,7 +26,7 @@
     "backtracking",
     "dp-on-dag",
     "state-compression",
-    "combinatorial-counting"
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +36,7 @@
       "backtracking": 0.9,
       "dp-on-dag": 0.85,
       "state-compression": 0.8,
-      "combinatorial-counting": 0.9
+      "combinatorics": 0.9
     }
   }
 }

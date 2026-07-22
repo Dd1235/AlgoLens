@@ -14,7 +14,7 @@
   "statement": "Three children start from three corners of an n x n grid and move to the bottom-right corner in exactly n-1 moves, collecting fruits in rooms they visit. Each child has specific allowed moves, and if multiple children visit the same room, fruits are only counted once. The goal is to maximize the total fruits collected.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "grid"
   ],
   "patterns": [

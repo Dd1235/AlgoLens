@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "dp-on-dag",
-    "combinatorial-counting",
+    "combinatorics",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777922716,
     "pattern_confidence": {
       "dp-on-dag": 0.95,
-      "combinatorial-counting": 0.9,
+      "combinatorics": 0.9,
       "modular-arithmetic": 0.85
     }
   }

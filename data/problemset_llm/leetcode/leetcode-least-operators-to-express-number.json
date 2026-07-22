@@ -18,7 +18,7 @@
     "memoization"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "memoization",
     "expression-simplification"
   ],
@@ -27,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923126,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "memoization": 0.9,
       "expression-simplification": 0.85
     }

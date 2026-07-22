@@ -19,7 +19,7 @@
     "union-find"
   ],
   "patterns": [
-    "breadth-first-search",
+    "bfs",
     "bipartite-check",
     "connected-components"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922826,
     "pattern_confidence": {
-      "breadth-first-search": 0.95,
+      "bfs": 0.95,
       "bipartite-check": 0.9,
       "connected-components": 0.85
     }

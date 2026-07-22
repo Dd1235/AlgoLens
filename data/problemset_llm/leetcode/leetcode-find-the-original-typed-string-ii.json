@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "dp",
+    "dynamic-programming",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777922990,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "modular-arithmetic": 0.85
     }
   }

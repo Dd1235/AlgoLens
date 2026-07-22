@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +27,7 @@
     "generated_at_unix": 1777923830,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "dp": 0.95
+      "dynamic-programming": 0.95
     }
   }
 }

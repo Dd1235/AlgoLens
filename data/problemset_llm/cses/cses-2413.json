@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Count the number of distinct towers of width 2 and height n that can be built using integer-dimensioned blocks, with mirrored and rotated towers considered different. Output the count modulo 10^9+7 for multiple test cases.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

@@ -16,14 +16,14 @@
   "statement": "Given an array of positive integers, count the number of pairs of arrays (arr1, arr2) of the same length where arr1 is non-decreasing, arr2 is non-increasing, and their element-wise sums equal the given array. Return the count modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "prefix-sum"
   ],
   "patterns": [
     "dynamic-programming",
     "prefix-sum",
-    "combinatorial-counting"
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "prefix-sum": 0.85,
-      "combinatorial-counting": 0.9
+      "combinatorics": 0.9
     }
   }
 }

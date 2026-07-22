@@ -9,7 +9,7 @@
   "statement": "Given a list of coin values, determine all distinct sums that can be formed by selecting any subset of these coins.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

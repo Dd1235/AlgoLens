@@ -16,7 +16,7 @@
   "tags": [
     "graph",
     "bitmask",
-    "breadth-first-search",
+    "bfs",
     "matrix"
   ],
   "patterns": [

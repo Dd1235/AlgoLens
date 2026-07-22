@@ -16,7 +16,7 @@
   "statement": "Given a directed graph with exactly one outgoing edge per node, determine for each node how many distinct nodes are visited when repeatedly following edges until a node is revisited.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "dfs"
   ],
   "patterns": [

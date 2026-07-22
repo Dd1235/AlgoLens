@@ -23,7 +23,7 @@
   ],
   "patterns": [
     "dijkstra",
-    "priority-queue",
+    "heap",
     "bfs",
     "grid-graph"
   ],
@@ -33,7 +33,7 @@
     "generated_at_unix": 1777923708,
     "pattern_confidence": {
       "dijkstra": 0.98,
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "bfs": 0.9,
       "grid-graph": 0.85
     }

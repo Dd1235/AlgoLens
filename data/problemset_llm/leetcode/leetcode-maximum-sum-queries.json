@@ -20,7 +20,7 @@
     "array",
     "sorting",
     "segment-tree",
-    "binary-indexed-tree"
+    "fenwick-tree"
   ],
   "patterns": [
     "offline-queries",

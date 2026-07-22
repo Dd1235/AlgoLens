@@ -23,7 +23,7 @@
     "binary-search-answer",
     "segment-tree",
     "greedy",
-    "priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
       "binary-search-answer": 0.9,
       "segment-tree": 0.85,
       "greedy": 0.8,
-      "priority-queue": 0.75
+      "heap": 0.75
     }
   }
 }

@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "binary-search",
-    "dp",
+    "dynamic-programming",
     "sorting",
     "interval-scheduling"
   ],
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777923336,
     "pattern_confidence": {
       "binary-search": 0.95,
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "sorting": 0.9,
       "interval-scheduling": 0.9
     }

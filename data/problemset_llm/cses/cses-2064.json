@@ -9,7 +9,7 @@
   "statement": "Calculate the number of valid bracket sequences of length n modulo 10^9+7. Valid sequences are those with properly matched opening and closing brackets.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

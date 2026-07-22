@@ -10,7 +10,7 @@
   "statement": "Given an integer array and a minimum index gap k, find the maximum sum of a subsequence whose elements strictly alternate in value and whose indices differ by at least k.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

@@ -15,7 +15,7 @@
   "statement": "Given a tree with values on nodes, select a subset of nodes to invert their subtree values (multiply by -1) such that inverted nodes are at least distance k apart on ancestor paths, maximizing the sum of all node values after inversions.",
   "tags": [
     "tree",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

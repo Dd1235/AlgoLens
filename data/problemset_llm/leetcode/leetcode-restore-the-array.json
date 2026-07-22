@@ -13,7 +13,7 @@
   "statement": "Given a digit string s and an integer k, count the number of ways to split s into a sequence of integers each between 1 and k without leading zeros. Return the count modulo 10^9+7.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

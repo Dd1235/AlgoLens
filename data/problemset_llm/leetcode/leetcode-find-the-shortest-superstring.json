@@ -16,7 +16,7 @@
   "statement": "Given a list of unique strings, find the shortest string that contains each of them as a substring. The solution involves combining strings optimally to minimize total length.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

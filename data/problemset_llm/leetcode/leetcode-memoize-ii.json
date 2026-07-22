@@ -15,7 +15,7 @@
   ],
   "patterns": [
     "cache",
-    "hash-map-lookup",
+    "hash-map",
     "memoization"
   ],
   "annotation": {
@@ -24,7 +24,7 @@
     "generated_at_unix": 1777923476,
     "pattern_confidence": {
       "cache": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "memoization": 0.98
     }
   }

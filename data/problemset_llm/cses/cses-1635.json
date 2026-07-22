@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a set of distinct coin denominations and a target sum, compute the number of distinct ordered ways to form the sum using any number of coins, modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "number-theory"
   ],

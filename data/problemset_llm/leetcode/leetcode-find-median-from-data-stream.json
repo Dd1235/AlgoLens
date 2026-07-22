@@ -24,7 +24,7 @@
     "two-heaps",
     "balanced-heap",
     "online-median",
-    "priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +34,7 @@
       "two-heaps": 0.98,
       "balanced-heap": 0.95,
       "online-median": 0.9,
-      "priority-queue": 0.88
+      "heap": 0.88
     }
   }
 }

@@ -9,7 +9,7 @@
   "statement": "Given an array of integers, find the maximum sum of any contiguous nonempty subarray.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "kadane-s-algorithm",

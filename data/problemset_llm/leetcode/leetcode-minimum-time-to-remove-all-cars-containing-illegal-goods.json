@@ -18,7 +18,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "dp",
+    "dynamic-programming",
     "two-pointers"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1777923702,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "two-pointers": 0.85
     }
   }

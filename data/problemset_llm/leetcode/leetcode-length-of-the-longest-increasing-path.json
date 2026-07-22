@@ -14,7 +14,7 @@
   "statement": "Given a set of distinct 2D points and an index k, find the length of the longest strictly increasing path in both x and y coordinates that includes the point at index k.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

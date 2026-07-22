@@ -9,7 +9,7 @@
   "statement": "Count the number of arrays of length n with values between 1 and m that match a given partial description, where adjacent elements differ by at most 1, modulo 10^9+7.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

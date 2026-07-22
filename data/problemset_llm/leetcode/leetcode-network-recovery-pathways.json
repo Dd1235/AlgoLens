@@ -18,7 +18,7 @@
   "statement": "Given a directed acyclic graph with some nodes offline, find a path from node 0 to node n-1 with total cost at most k that maximizes the minimum edge cost along the path.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "binary-search"
   ],
   "patterns": [

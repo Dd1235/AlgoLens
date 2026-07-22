@@ -17,7 +17,7 @@
   "statement": "Given a DAG with node scores, find a topological order that maximizes the sum of each node's score multiplied by its position in the order.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

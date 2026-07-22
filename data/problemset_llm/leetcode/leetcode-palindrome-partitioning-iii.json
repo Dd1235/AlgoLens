@@ -13,7 +13,7 @@
   "statement": "Given a lowercase string and an integer k, partition the string into k palindromic substrings by changing the minimum number of characters possible. Return this minimal number of changes required.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "interval-dp",

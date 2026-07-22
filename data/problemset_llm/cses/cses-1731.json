@@ -9,7 +9,7 @@
   "statement": "Given a target string and a dictionary of unique words, count the number of ways to form the target string by concatenating dictionary words. Output the count modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "trie"
   ],
   "patterns": [

@@ -13,7 +13,6 @@
   ],
   "patterns": [
     "fenwick-tree",
-    "binary-indexed-tree",
     "order-statistics"
   ],
   "annotation": {
@@ -22,7 +21,6 @@
     "generated_at_unix": 1777951569,
     "pattern_confidence": {
       "fenwick-tree": 0.95,
-      "binary-indexed-tree": 0.95,
       "order-statistics": 0.9
     }
   }

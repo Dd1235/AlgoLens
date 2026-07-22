@@ -15,7 +15,7 @@
   "statement": "Given a tree with node prices, choose a root to maximize the difference between the maximum and minimum price sums of all root-to-node paths.",
   "tags": [
     "tree",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

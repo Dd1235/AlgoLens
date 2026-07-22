@@ -19,7 +19,7 @@
     "geometry"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "geometry",
     "state-compression"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922669,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "geometry": 0.9,
       "state-compression": 0.7
     }

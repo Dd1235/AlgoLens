@@ -9,7 +9,7 @@
   "statement": "Count the number of length-n strings over the alphabet A–Z that contain a given pattern of length m as a substring, modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "automaton"
   ],
   "patterns": [

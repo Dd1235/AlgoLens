@@ -9,7 +9,7 @@
   "statement": "Given a large integer n, find the minimum number of steps to reduce it to zero by repeatedly subtracting any one-digit digit present in the current number.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "greedy"
   ],
   "patterns": [

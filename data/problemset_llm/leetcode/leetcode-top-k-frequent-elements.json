@@ -27,9 +27,9 @@
   "patterns": [
     "counting",
     "bucket-sort",
-    "heap-priority-queue",
+    "heap",
     "quickselect",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -38,9 +38,9 @@
     "pattern_confidence": {
       "counting": 0.95,
       "bucket-sort": 0.9,
-      "heap-priority-queue": 0.9,
+      "heap": 0.9,
       "quickselect": 0.85,
-      "hash-map-lookup": 0.98
+      "hash-map": 0.98
     }
   }
 }

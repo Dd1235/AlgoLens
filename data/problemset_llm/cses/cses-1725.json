@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Calculate the probability that the sum of outcomes from rolling a six-sided die n times falls within a given range [a, b].",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "probability",
     "math"
   ],

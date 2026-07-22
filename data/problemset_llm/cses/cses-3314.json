@@ -9,7 +9,7 @@
   "statement": "Given a sequence of mountain heights, find the longest route starting from any mountain where you can glide only to a strictly lower mountain with no taller mountain in between. The goal is to maximize the number of mountains visited in such a descending path.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "monotonic-stack"
   ],
   "patterns": [

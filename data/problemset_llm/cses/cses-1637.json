@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given an integer n, find the minimum number of steps to reduce it to zero by repeatedly subtracting one of its digits at each step.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "math",
     "number-theory"
   ],

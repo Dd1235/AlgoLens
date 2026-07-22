@@ -18,7 +18,7 @@
     "recursion"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "memoization",
     "backtracking"
   ],
@@ -27,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923974,
     "pattern_confidence": {
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "memoization": 0.95,
       "backtracking": 0.9
     }

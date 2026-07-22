@@ -14,13 +14,13 @@
   "statement": "Simulate the process of k workers moving n boxes across a bridge with given crossing and handling times, prioritizing workers by efficiency and bridge availability, and determine the time when the last box arrives on the left side.",
   "tags": [
     "simulation",
-    "priority-queue",
+    "heap",
     "greedy",
     "array"
   ],
   "patterns": [
     "event-simulation",
-    "priority-queue",
+    "heap",
     "greedy"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1777924240,
     "pattern_confidence": {
       "event-simulation": 0.98,
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "greedy": 0.9
     }
   }

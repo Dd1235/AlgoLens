@@ -19,7 +19,7 @@
     "game-theory"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "game-dp",
     "optimal-strategy"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924116,
     "pattern_confidence": {
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "game-dp": 0.95,
       "optimal-strategy": 0.9
     }

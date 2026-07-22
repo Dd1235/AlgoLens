@@ -20,7 +20,7 @@
     "bfs"
   ],
   "patterns": [
-    "breadth-first-search",
+    "bfs",
     "backtracking",
     "shortest-path",
     "word-ladder"
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924291,
     "pattern_confidence": {
-      "breadth-first-search": 0.98,
+      "bfs": 0.98,
       "backtracking": 0.95,
       "shortest-path": 0.9,
       "word-ladder": 0.85

@@ -22,8 +22,8 @@
   "patterns": [
     "tree-diameter",
     "longest-path",
-    "depth-first-search",
-    "breadth-first-search"
+    "dfs",
+    "bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,8 +32,8 @@
     "pattern_confidence": {
       "tree-diameter": 0.98,
       "longest-path": 0.95,
-      "depth-first-search": 0.9,
-      "breadth-first-search": 0.9
+      "dfs": 0.9,
+      "bfs": 0.9
     }
   }
 }

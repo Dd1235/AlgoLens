@@ -21,7 +21,7 @@
   "patterns": [
     "binary-search-answer",
     "two-pointers",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.92,
       "two-pointers": 0.85,
-      "hash-map-lookup": 0.88
+      "hash-map": 0.88
     }
   }
 }

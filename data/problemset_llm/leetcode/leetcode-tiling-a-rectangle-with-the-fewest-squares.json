@@ -12,7 +12,7 @@
   "statement": "Given an n by m rectangle, find the minimum number of integer-sided squares needed to tile the entire rectangle without overlap.",
   "tags": [
     "backtracking",
-    "dp",
+    "dynamic-programming",
     "geometry"
   ],
   "patterns": [

@@ -14,12 +14,12 @@
   "tags": [
     "math",
     "combinatorics",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",
     "modular-arithmetic",
-    "combinatorial-counting"
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +28,7 @@
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "modular-arithmetic": 0.9,
-      "combinatorial-counting": 0.9
+      "combinatorics": 0.9
     }
   }
 }

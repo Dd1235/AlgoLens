@@ -22,8 +22,8 @@
     "hash-map"
   ],
   "patterns": [
-    "breadth-first-search",
-    "depth-first-search",
+    "bfs",
+    "dfs",
     "coordinate-compression",
     "sorting"
   ],
@@ -32,8 +32,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924284,
     "pattern_confidence": {
-      "breadth-first-search": 0.95,
-      "depth-first-search": 0.85,
+      "bfs": 0.95,
+      "dfs": 0.85,
       "coordinate-compression": 0.7,
       "sorting": 0.9
     }

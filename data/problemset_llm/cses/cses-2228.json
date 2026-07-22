@@ -9,12 +9,12 @@
   "statement": "Count the number of length-n sequences over integers 1 to k where every integer from 1 to k appears at least once, modulo 10^9+7.",
   "tags": [
     "combinatorics",
-    "dp",
+    "dynamic-programming",
     "modular-arithmetic"
   ],
   "patterns": [
     "inclusion-exclusion",
-    "dp",
+    "dynamic-programming",
     "modular-exponentiation"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777952068,
     "pattern_confidence": {
       "inclusion-exclusion": 0.95,
-      "dp": 0.9,
+      "dynamic-programming": 0.9,
       "modular-exponentiation": 0.85
     }
   }

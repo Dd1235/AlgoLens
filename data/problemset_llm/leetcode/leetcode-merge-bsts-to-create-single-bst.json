@@ -19,7 +19,7 @@
     "tree",
     "binary-search-tree",
     "graph",
-    "depth-first-search"
+    "dfs"
   ],
   "patterns": [
     "dfs",

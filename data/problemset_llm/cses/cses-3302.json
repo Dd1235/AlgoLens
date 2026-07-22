@@ -9,7 +9,7 @@
   "statement": "Given an array and a target average, count the number of non-empty subsets whose average equals the target, modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

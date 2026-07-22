@@ -15,7 +15,7 @@
   "statement": "Given a valid boolean expression with '1', '0', '&', '|', and parentheses, find the minimum number of operations needed to flip the final evaluated value by changing bits or operators. Operations include flipping bits and swapping '&' with '|'.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "stack",
     "math"
   ],

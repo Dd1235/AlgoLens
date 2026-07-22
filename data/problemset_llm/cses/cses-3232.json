@@ -9,7 +9,7 @@
   "statement": "Given n nodes, count the number of tournament graphs with exactly k strongly connected components for each k from 1 to n, modulo 10^9+7.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

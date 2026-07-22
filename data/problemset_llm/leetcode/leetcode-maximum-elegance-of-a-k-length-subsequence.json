@@ -24,7 +24,7 @@
   "patterns": [
     "greedy",
     "sorting",
-    "heap-priority-queue",
+    "heap",
     "two-pointers"
   ],
   "annotation": {
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,
-      "heap-priority-queue": 0.88,
+      "heap": 0.88,
       "two-pointers": 0.7
     }
   }

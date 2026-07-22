@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "rolling-hash",
-    "dp",
+    "dynamic-programming",
     "string-matching"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923301,
     "pattern_confidence": {
       "rolling-hash": 0.95,
-      "dp": 0.9,
+      "dynamic-programming": 0.9,
       "string-matching": 0.85
     }
   }

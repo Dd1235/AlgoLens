@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "binary-search",
-    "dp",
+    "dynamic-programming",
     "longest-increasing-subsequence"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777922384,
     "pattern_confidence": {
       "binary-search": 0.95,
-      "dp": 0.9,
+      "dynamic-programming": 0.9,
       "longest-increasing-subsequence": 0.98
     }
   }

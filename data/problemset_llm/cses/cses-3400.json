@@ -9,7 +9,7 @@
   "statement": "Given two players each with cards numbered 1 to n, count the number of ways the game can end with given final scores a and b, where each turn both play one card and the higher card wins a point. The result should be computed modulo 10^9+7.",
   "tags": [
     "combinatorics",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

@@ -11,7 +11,7 @@
   "tags": [
     "array",
     "greedy",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "greedy",

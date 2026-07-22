@@ -24,7 +24,7 @@
   "patterns": [
     "binary-search-answer",
     "prefix-sum",
-    "hash-map-lookup",
+    "hash-map",
     "offline-queries"
   ],
   "annotation": {
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.93,
       "prefix-sum": 0.85,
-      "hash-map-lookup": 0.88,
+      "hash-map": 0.88,
       "offline-queries": 0.8
     }
   }

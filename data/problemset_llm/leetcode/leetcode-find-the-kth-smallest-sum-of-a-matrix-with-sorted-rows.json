@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "binary-search-answer",
-    "heap-priority-queue",
+    "heap",
     "merge-k-sorted-lists"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777922951,
     "pattern_confidence": {
       "binary-search-answer": 0.95,
-      "heap-priority-queue": 0.9,
+      "heap": 0.9,
       "merge-k-sorted-lists": 0.85
     }
   }

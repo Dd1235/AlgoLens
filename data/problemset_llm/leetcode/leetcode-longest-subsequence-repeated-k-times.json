@@ -18,7 +18,7 @@
   "tags": [
     "string",
     "binary-search",
-    "dp",
+    "dynamic-programming",
     "backtracking"
   ],
   "patterns": [

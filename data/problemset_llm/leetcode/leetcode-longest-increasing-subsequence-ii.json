@@ -20,7 +20,7 @@
     "array",
     "dynamic-programming",
     "segment-tree",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "monotonic-queue"
   ],
   "patterns": [

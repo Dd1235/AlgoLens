@@ -15,7 +15,7 @@
   "statement": "Given a permutation nums, find another permutation perm minimizing a cyclic sum of absolute differences defined by perm and nums, returning the lexicographically smallest if multiple solutions exist.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

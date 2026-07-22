@@ -19,7 +19,7 @@
   "statement": "Given an m by n integer matrix, find the longest path of strictly increasing values where moves are allowed only within the same row or column to a cell with a greater value. Return the maximum number of cells visited starting from any cell.",
   "tags": [
     "matrix",
-    "dp",
+    "dynamic-programming",
     "graph",
     "sorting",
     "binary-search"

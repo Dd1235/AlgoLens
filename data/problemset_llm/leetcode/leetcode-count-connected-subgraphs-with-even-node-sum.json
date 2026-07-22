@@ -11,7 +11,7 @@
   "tags": [
     "graph",
     "bitmask",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "bitmask-enumeration",

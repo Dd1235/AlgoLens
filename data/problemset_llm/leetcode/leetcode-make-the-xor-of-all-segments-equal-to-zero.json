@@ -20,7 +20,7 @@
     "bit-manipulation"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "bitmask-dp",
     "prefix-xor"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923202,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "bitmask-dp": 0.9,
       "prefix-xor": 0.9
     }

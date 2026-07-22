@@ -9,7 +9,7 @@
   "statement": "Given a DNA sequence, find the shortest possible DNA string that does not appear as a subsequence in the given sequence.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "binary-search-answer",

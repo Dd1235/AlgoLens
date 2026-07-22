@@ -22,7 +22,7 @@
   "patterns": [
     "greedy",
     "sorting",
-    "heap-priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +31,7 @@
     "pattern_confidence": {
       "greedy": 0.98,
       "sorting": 0.95,
-      "heap-priority-queue": 0.9
+      "heap": 0.9
     }
   }
 }

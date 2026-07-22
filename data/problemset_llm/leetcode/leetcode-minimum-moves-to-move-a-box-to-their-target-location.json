@@ -19,7 +19,7 @@
     "matrix"
   ],
   "patterns": [
-    "breadth-first-search",
+    "bfs",
     "state-space-search",
     "shortest-path"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923589,
     "pattern_confidence": {
-      "breadth-first-search": 0.98,
+      "bfs": 0.98,
       "state-space-search": 0.95,
       "shortest-path": 0.9
     }

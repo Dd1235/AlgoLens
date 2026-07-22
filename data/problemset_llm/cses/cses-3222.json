@@ -13,7 +13,7 @@
   ],
   "patterns": [
     "sliding-window",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +21,7 @@
     "generated_at_unix": 1777951895,
     "pattern_confidence": {
       "sliding-window": 0.98,
-      "hash-map-lookup": 0.95
+      "hash-map": 0.95
     }
   }
 }

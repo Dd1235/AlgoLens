@@ -22,7 +22,7 @@
     "hashing"
   ],
   "patterns": [
-    "depth-first-search",
+    "dfs",
     "tree-dp",
     "string-hashing",
     "palindrome-check"
@@ -32,7 +32,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922513,
     "pattern_confidence": {
-      "depth-first-search": 0.98,
+      "dfs": 0.98,
       "tree-dp": 0.85,
       "string-hashing": 0.9,
       "palindrome-check": 0.9

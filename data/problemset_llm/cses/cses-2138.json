@@ -9,7 +9,7 @@
   "statement": "Given a directed acyclic graph, compute for each node the total number of nodes reachable from it, including itself.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "dag"
   ],
   "patterns": [

@@ -17,7 +17,7 @@
   "statement": "Given a string, split it into the maximum number of palindromic chunks such that the ith chunk equals the (k-i+1)th chunk, and their concatenation forms the original string.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "two-pointers",
     "hashing"
   ],

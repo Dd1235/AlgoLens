@@ -18,7 +18,7 @@
   "tags": [
     "graph",
     "game-theory",
-    "dp",
+    "dynamic-programming",
     "memoization"
   ],
   "patterns": [

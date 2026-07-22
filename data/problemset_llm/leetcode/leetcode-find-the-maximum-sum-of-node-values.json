@@ -19,7 +19,7 @@
     "tree",
     "graph",
     "bit-manipulation",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "xor-manipulation",

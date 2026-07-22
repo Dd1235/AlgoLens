@@ -17,7 +17,7 @@
   ],
   "patterns": [
     "string-parsing",
-    "hash-map-lookup",
+    "hash-map",
     "group-by-aggregation"
   ],
   "annotation": {
@@ -26,7 +26,7 @@
     "generated_at_unix": 1777922894,
     "pattern_confidence": {
       "string-parsing": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "group-by-aggregation": 0.85
     }
   }

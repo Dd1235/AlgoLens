@@ -23,7 +23,7 @@
     "sorting",
     "greedy",
     "prefix-sum",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
       "sorting": 0.98,
       "greedy": 0.95,
       "prefix-sum": 0.9,
-      "dp": 0.88
+      "dynamic-programming": 0.88
     }
   }
 }

@@ -16,7 +16,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "lexicographic-order",
     "state-compression"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923508,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "lexicographic-order": 0.9,
       "state-compression": 0.7
     }

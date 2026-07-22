@@ -10,7 +10,7 @@
   "tags": [
     "array",
     "sorting",
-    "priority-queue"
+    "heap"
   ],
   "patterns": [
     "merge-k-sorted-lists",

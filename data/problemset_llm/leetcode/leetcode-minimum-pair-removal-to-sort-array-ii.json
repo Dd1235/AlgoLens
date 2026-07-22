@@ -23,7 +23,7 @@
     "simulation"
   ],
   "patterns": [
-    "priority-queue",
+    "heap",
     "greedy",
     "simulation"
   ],
@@ -32,7 +32,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923662,
     "pattern_confidence": {
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "greedy": 0.9,
       "simulation": 0.85
     }

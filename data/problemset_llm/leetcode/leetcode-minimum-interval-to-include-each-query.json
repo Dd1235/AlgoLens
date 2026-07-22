@@ -23,7 +23,7 @@
   "patterns": [
     "line-sweep",
     "binary-search-answer",
-    "heap-priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "line-sweep": 0.95,
       "binary-search-answer": 0.9,
-      "heap-priority-queue": 0.88
+      "heap": 0.88
     }
   }
 }

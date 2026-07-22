@@ -9,7 +9,7 @@
   "statement": "Given a directed graph with n nodes and m edges, count the number of distinct paths from node 1 to node n that use exactly k edges, modulo 10^9+7.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "matrix-exponentiation"
   ],
   "patterns": [

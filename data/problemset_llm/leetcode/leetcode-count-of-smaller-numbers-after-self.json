@@ -18,14 +18,14 @@
   "statement": "Given an integer array, return an array where each element is the count of smaller numbers appearing to the right of that element.",
   "tags": [
     "array",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree",
     "divide-and-conquer",
     "ordered-set"
   ],
   "patterns": [
     "merge-sort-based-inversion-count",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree",
     "ordered-set",
     "divide-and-conquer"
@@ -36,7 +36,7 @@
     "generated_at_unix": 1777922651,
     "pattern_confidence": {
       "merge-sort-based-inversion-count": 0.95,
-      "binary-indexed-tree": 0.9,
+      "fenwick-tree": 0.9,
       "segment-tree": 0.88,
       "ordered-set": 0.85,
       "divide-and-conquer": 0.8

@@ -14,12 +14,12 @@
   "statement": "Count the number of permutations of n uniquely-sized sticks arranged so that exactly k sticks are visible from the left, where a stick is visible if no longer stick precedes it. Return the count modulo 10^9+7.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [
     "dynamic-programming",
-    "combinatorial-counting",
+    "combinatorics",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777923835,
     "pattern_confidence": {
       "dynamic-programming": 0.98,
-      "combinatorial-counting": 0.95,
+      "combinatorics": 0.95,
       "modular-arithmetic": 0.9
     }
   }

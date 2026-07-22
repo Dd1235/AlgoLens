@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "greedy",
-    "priority-queue",
+    "heap",
     "simulation"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1777923621,
     "pattern_confidence": {
       "greedy": 0.98,
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "simulation": 0.9
     }
   }

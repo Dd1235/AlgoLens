@@ -17,7 +17,7 @@
     "simulation"
   ],
   "patterns": [
-    "hash-map-lookup",
+    "hash-map",
     "grid-simulation",
     "coordinate-hashing"
   ],
@@ -26,7 +26,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923059,
     "pattern_confidence": {
-      "hash-map-lookup": 0.98,
+      "hash-map": 0.98,
       "grid-simulation": 0.9,
       "coordinate-hashing": 0.85
     }

@@ -9,11 +9,11 @@
   "statement": "Given a string, find and output its longest palindromic substring. If multiple longest palindromes exist, any one of them can be printed.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "manacher",
-    "dp",
+    "dynamic-programming",
     "two-pointers"
   ],
   "annotation": {
@@ -22,7 +22,7 @@
     "generated_at_unix": 1777951755,
     "pattern_confidence": {
       "manacher": 0.95,
-      "dp": 0.85,
+      "dynamic-programming": 0.85,
       "two-pointers": 0.7
     }
   }

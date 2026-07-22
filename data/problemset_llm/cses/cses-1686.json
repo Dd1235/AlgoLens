@@ -9,7 +9,7 @@
   "statement": "Given a directed graph with coins assigned to each node, find the maximum sum of coins collectible by traveling along tunnels starting and ending at any rooms.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "strongly-connected-components"
   ],
   "patterns": [

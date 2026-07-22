@@ -22,7 +22,7 @@
   "tags": [
     "array",
     "tree",
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "binary-search-tree"
   ],
@@ -30,7 +30,7 @@
     "divide-and-conquer",
     "memoization",
     "dynamic-programming",
-    "combinatorial-counting"
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -40,7 +40,7 @@
       "divide-and-conquer": 0.95,
       "memoization": 0.9,
       "dynamic-programming": 0.9,
-      "combinatorial-counting": 0.85
+      "combinatorics": 0.85
     }
   }
 }

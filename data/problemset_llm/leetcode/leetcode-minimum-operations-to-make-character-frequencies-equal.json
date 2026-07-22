@@ -17,7 +17,7 @@
   "tags": [
     "string",
     "hash-table",
-    "dp",
+    "dynamic-programming",
     "counting"
   ],
   "patterns": [

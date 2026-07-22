@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "line-sweep",
-    "hash-map-lookup",
+    "hash-map",
     "area-check"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777923913,
     "pattern_confidence": {
       "line-sweep": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "area-check": 0.85
     }
   }

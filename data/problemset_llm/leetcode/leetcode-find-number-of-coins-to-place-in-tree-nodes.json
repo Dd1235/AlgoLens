@@ -16,14 +16,14 @@
   "statement": "Given a tree with costs on nodes, compute for each node the number of coins to place based on the maximum product of costs of any three distinct nodes in its subtree, or 1 if the subtree size is less than 3, and 0 if the maximum product is negative.",
   "tags": [
     "tree",
-    "dp",
+    "dynamic-programming",
     "dfs",
     "heap"
   ],
   "patterns": [
     "dfs",
     "tree-dp",
-    "heap-priority-queue",
+    "heap",
     "max-product-subtree"
   ],
   "annotation": {
@@ -33,7 +33,7 @@
     "pattern_confidence": {
       "dfs": 0.98,
       "tree-dp": 0.95,
-      "heap-priority-queue": 0.85,
+      "heap": 0.85,
       "max-product-subtree": 0.9
     }
   }

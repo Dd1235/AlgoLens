@@ -13,7 +13,7 @@
   "statement": "Count the number of permutations of [0..n-1] such that specified prefixes have exact given inversion counts, modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

@@ -14,7 +14,7 @@
   "statement": "Find the minimum cost to reach the bottom-right cell from the top-left in a grid, moving right or down with cost equal to the destination cell's value, and using up to k zero-cost teleportations to cells with values not greater than the current cell.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

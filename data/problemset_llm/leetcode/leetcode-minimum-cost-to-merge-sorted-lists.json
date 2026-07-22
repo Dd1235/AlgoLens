@@ -16,7 +16,7 @@
   "statement": "Given multiple sorted lists, repeatedly merge any two lists into one sorted list with a cost defined by their lengths and median difference, and find the minimum total cost to merge all lists into one.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

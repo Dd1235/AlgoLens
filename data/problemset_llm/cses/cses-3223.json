@@ -14,7 +14,6 @@
   "patterns": [
     "sliding-window",
     "fenwick-tree",
-    "binary-indexed-tree",
     "order-statistics"
   ],
   "annotation": {
@@ -24,7 +23,6 @@
     "pattern_confidence": {
       "sliding-window": 0.98,
       "fenwick-tree": 0.9,
-      "binary-indexed-tree": 0.9,
       "order-statistics": 0.85
     }
   }

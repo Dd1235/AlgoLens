@@ -14,7 +14,7 @@
   "tags": [
     "math",
     "bit-manipulation",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "digit-dp",

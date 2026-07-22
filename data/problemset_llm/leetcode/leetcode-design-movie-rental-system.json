@@ -23,7 +23,7 @@
   "patterns": [
     "balanced-binary-search-tree",
     "heap",
-    "hash-map-lookup",
+    "hash-map",
     "ordered-set"
   ],
   "annotation": {
@@ -33,7 +33,7 @@
     "pattern_confidence": {
       "balanced-binary-search-tree": 0.9,
       "heap": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "ordered-set": 0.85
     }
   }

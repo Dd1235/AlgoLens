@@ -9,7 +9,7 @@
   "statement": "Given an array, repeatedly split subarrays into two parts at a cost equal to the sum of the subarray being split, and find the minimum total cost to split the entire array into single-element subarrays.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "prefix-sum"
   ],
   "patterns": [

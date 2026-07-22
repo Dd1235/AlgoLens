@@ -15,14 +15,14 @@
   "statement": "Count the number of ways to partition an array into contiguous subarrays such that no two subarrays contain the same element, returning the result modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "hash-map",
     "combinatorics"
   ],
   "patterns": [
     "dynamic-programming",
     "prefix-sum",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +31,7 @@
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "prefix-sum": 0.85,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

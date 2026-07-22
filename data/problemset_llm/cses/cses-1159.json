@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given multiple books each with a price, page count, and limited copies, determine the maximum total pages purchasable without exceeding a total price limit.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "knapsack",
     "bounded-knapsack"
   ],

@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given weights of n people and an elevator weight limit, find the minimum number of elevator rides needed to carry all people without exceeding the weight limit per ride.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "bitmask",
     "combinatorics"
   ],

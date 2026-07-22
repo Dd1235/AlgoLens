@@ -13,7 +13,7 @@
   "statement": "Count integers within a given range whose number of even digits equals the number of odd digits and that are divisible by a given integer k.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "digit-dp"
   ],
   "patterns": [

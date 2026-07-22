@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "state-compression",
-    "dp",
+    "dynamic-programming",
     "memoization"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777922916,
     "pattern_confidence": {
       "state-compression": 0.9,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "memoization": 0.9
     }
   }

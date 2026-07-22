@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "greedy",
-    "hash-map-lookup",
+    "hash-map",
     "subsequence-search"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777924033,
     "pattern_confidence": {
       "greedy": 0.95,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "subsequence-search": 0.85
     }
   }

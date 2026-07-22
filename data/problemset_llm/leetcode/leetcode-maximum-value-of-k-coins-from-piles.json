@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "dp",
+    "dynamic-programming",
     "knapsack"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777923453,
     "pattern_confidence": {
       "prefix-sum": 0.95,
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "knapsack": 0.9
     }
   }

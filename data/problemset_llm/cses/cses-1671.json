@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "dijkstra",
-    "priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +22,7 @@
     "generated_at_unix": 1777951472,
     "pattern_confidence": {
       "dijkstra": 0.98,
-      "priority-queue": 0.9
+      "heap": 0.9
     }
   }
 }

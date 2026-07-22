@@ -20,7 +20,7 @@
     "array",
     "prefix-sum",
     "divide-and-conquer",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree"
   ],
   "patterns": [

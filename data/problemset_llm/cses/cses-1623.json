@@ -9,7 +9,7 @@
   "statement": "Given a set of apples with known weights, partition them into two groups to minimize the difference between the sums of their weights.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

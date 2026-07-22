@@ -18,7 +18,7 @@
   ],
   "patterns": [
     "frequency-counting",
-    "hash-map-lookup",
+    "hash-map",
     "greedy"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1777923312,
     "pattern_confidence": {
       "frequency-counting": 0.98,
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "greedy": 0.85
     }
   }

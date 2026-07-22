@@ -13,7 +13,7 @@
   "statement": "Given a lowercase string, repeatedly remove any adjacent pair of characters that are consecutive letters in the alphabet (considering 'a' and 'z' consecutive) to obtain the lexicographically smallest possible resulting string.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

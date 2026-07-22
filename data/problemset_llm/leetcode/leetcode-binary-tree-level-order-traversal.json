@@ -15,7 +15,7 @@
   "tags": [
     "tree",
     "binary-tree",
-    "breadth-first-search"
+    "bfs"
   ],
   "patterns": [
     "bfs",

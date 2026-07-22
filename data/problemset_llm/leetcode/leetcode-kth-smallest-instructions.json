@@ -15,12 +15,12 @@
   "statement": "Given a grid destination defined by row and column counts, find the k-th lexicographically smallest path from the top-left to the bottom-right corner moving only right or down.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "string"
   ],
   "patterns": [
-    "combinatorial-counting",
+    "combinatorics",
     "dynamic-programming",
     "lexicographic-order"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923101,
     "pattern_confidence": {
-      "combinatorial-counting": 0.95,
+      "combinatorics": 0.95,
       "dynamic-programming": 0.9,
       "lexicographic-order": 0.85
     }

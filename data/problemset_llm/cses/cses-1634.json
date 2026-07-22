@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a set of coin denominations and a target sum, find the minimum number of coins needed to form that sum or determine it is impossible.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "coin-change",
     "array"
   ],

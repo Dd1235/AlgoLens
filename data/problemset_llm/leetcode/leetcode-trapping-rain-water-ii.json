@@ -21,8 +21,8 @@
     "bfs"
   ],
   "patterns": [
-    "priority-queue",
-    "breadth-first-search",
+    "heap",
+    "bfs",
     "flood-fill",
     "multi-source-bfs"
   ],
@@ -31,8 +31,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924257,
     "pattern_confidence": {
-      "priority-queue": 0.95,
-      "breadth-first-search": 0.93,
+      "heap": 0.95,
+      "bfs": 0.93,
       "flood-fill": 0.9,
       "multi-source-bfs": 0.88
     }

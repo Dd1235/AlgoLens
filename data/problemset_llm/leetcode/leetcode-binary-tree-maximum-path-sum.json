@@ -16,7 +16,7 @@
   "tags": [
     "tree",
     "dynamic-programming",
-    "depth-first-search",
+    "dfs",
     "binary-tree"
   ],
   "patterns": [

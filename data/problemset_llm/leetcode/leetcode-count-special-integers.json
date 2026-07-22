@@ -13,7 +13,7 @@
   "statement": "Count how many positive integers up to n have all distinct digits. The problem requires enumerating numbers with unique digits within a given range.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "digit-dp"
   ],
   "patterns": [

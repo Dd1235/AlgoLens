@@ -26,7 +26,7 @@
     "sorting",
     "greedy",
     "modular-arithmetic",
-    "combinatorial-counting"
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -37,7 +37,7 @@
       "sorting": 0.95,
       "greedy": 0.9,
       "modular-arithmetic": 0.88,
-      "combinatorial-counting": 0.9
+      "combinatorics": 0.9
     }
   }
 }

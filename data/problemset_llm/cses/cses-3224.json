@@ -17,7 +17,7 @@
     "sliding-window",
     "frequency-count",
     "balanced-heap",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +27,7 @@
       "sliding-window": 0.98,
       "frequency-count": 0.95,
       "balanced-heap": 0.85,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

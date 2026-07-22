@@ -18,7 +18,7 @@
     "binary-tree"
   ],
   "patterns": [
-    "lowest-common-ancestor",
+    "lca",
     "binary-lifting",
     "cycle-detection"
   ],
@@ -27,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922768,
     "pattern_confidence": {
-      "lowest-common-ancestor": 0.95,
+      "lca": 0.95,
       "binary-lifting": 0.9,
       "cycle-detection": 0.85
     }

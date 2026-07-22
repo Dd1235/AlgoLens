@@ -12,7 +12,7 @@
   ],
   "statement": "Given a number of members and a list of crimes each requiring a certain number of members and yielding profit, count the number of subsets of crimes that achieve at least a minimum profit without exceeding the member limit.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "array"
   ],

@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "dijkstra",
-    "priority-queue",
+    "heap",
     "graph-transformation"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777923956,
     "pattern_confidence": {
       "dijkstra": 0.98,
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "graph-transformation": 0.85
     }
   }

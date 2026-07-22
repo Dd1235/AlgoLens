@@ -9,7 +9,7 @@
   "statement": "Given a string, count the number of ways to reorder its characters so that no two identical characters are adjacent, outputting the result modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

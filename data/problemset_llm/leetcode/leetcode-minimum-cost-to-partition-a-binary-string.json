@@ -14,7 +14,7 @@
   "statement": "Given a binary string, partition it into segments to minimize total cost where cost depends on segment length and number of sensitive elements, with splits allowed only on even-length segments into equal halves.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "prefix-sum"
   ],
   "patterns": [

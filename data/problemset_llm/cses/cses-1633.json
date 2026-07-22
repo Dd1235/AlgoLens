@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Count the number of sequences of dice throws (values 1 to 6) that sum to a given integer n, modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

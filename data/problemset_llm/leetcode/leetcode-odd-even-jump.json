@@ -23,7 +23,7 @@
   "patterns": [
     "monotonic-stack",
     "binary-search",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "monotonic-stack": 0.9,
       "binary-search": 0.85,
-      "dp": 0.95
+      "dynamic-programming": 0.95
     }
   }
 }

@@ -9,12 +9,10 @@
   "statement": "Given n cities initially disconnected, and m roads added one by one, after each addition report the number of connected components and the size of the largest component.",
   "tags": [
     "graph",
-    "union-find",
-    "dsu"
+    "union-find"
   ],
   "patterns": [
     "union-find",
-    "disjoint-set-union",
     "incremental-connectivity"
   ],
   "annotation": {
@@ -23,7 +21,6 @@
     "generated_at_unix": 1777951514,
     "pattern_confidence": {
       "union-find": 0.99,
-      "disjoint-set-union": 0.98,
       "incremental-connectivity": 0.95
     }
   }

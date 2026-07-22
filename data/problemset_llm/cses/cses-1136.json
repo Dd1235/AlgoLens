@@ -13,7 +13,7 @@
     "prefix-sum"
   ],
   "patterns": [
-    "lowest-common-ancestor",
+    "lca",
     "difference-array",
     "prefix-sum"
   ],
@@ -22,7 +22,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951631,
     "pattern_confidence": {
-      "lowest-common-ancestor": 0.95,
+      "lca": 0.95,
       "difference-array": 0.9,
       "prefix-sum": 0.88
     }

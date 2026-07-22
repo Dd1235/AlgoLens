@@ -9,12 +9,11 @@
   "statement": "Given a stick of length x and a target division into n sticks with specified lengths summing to x, find the minimum total cost to divide the stick into these parts, where each division costs the length of the stick being cut.",
   "tags": [
     "greedy",
-    "heap",
-    "priority-queue"
+    "heap"
   ],
   "patterns": [
     "greedy",
-    "priority-queue",
+    "heap",
     "optimal-merge-pattern"
   ],
   "annotation": {
@@ -23,7 +22,7 @@
     "generated_at_unix": 1777952228,
     "pattern_confidence": {
       "greedy": 0.98,
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "optimal-merge-pattern": 0.9
     }
   }

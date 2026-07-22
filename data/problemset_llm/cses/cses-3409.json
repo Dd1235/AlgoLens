@@ -10,7 +10,7 @@
   "tags": [
     "graph",
     "minimum-spanning-tree",
-    "dsu"
+    "union-find"
   ],
   "patterns": [
     "kruskal",

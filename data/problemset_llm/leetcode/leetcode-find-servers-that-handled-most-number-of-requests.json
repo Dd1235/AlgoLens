@@ -20,7 +20,7 @@
     "ordered-set"
   ],
   "patterns": [
-    "priority-queue",
+    "heap",
     "simulation",
     "binary-search",
     "ordered-set"
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922922,
     "pattern_confidence": {
-      "priority-queue": 0.95,
+      "heap": 0.95,
       "simulation": 0.9,
       "binary-search": 0.7,
       "ordered-set": 0.85

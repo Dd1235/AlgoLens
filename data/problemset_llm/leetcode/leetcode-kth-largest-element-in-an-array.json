@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "quickselect",
-    "heap-priority-queue",
+    "heap",
     "divide-and-conquer"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777922429,
     "pattern_confidence": {
       "quickselect": 0.98,
-      "heap-priority-queue": 0.9,
+      "heap": 0.9,
       "divide-and-conquer": 0.85
     }
   }

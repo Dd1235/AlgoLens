@@ -17,15 +17,15 @@
   ],
   "patterns": [
     "edit-distance",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922386,
     "pattern_confidence": {
-      "edit-distance": 1.0,
-      "dp": 0.95
+      "edit-distance": 1,
+      "dynamic-programming": 0.95
     }
   }
 }

@@ -17,7 +17,7 @@
   "tags": [
     "tree",
     "bitmask",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

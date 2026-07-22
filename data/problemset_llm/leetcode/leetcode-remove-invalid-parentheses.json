@@ -15,7 +15,7 @@
   "tags": [
     "string",
     "backtracking",
-    "breadth-first-search"
+    "bfs"
   ],
   "patterns": [
     "bfs",

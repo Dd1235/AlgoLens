@@ -9,12 +9,12 @@
   "statement": "Count the number of ways to place k bishops on an n×n chessboard so that no two bishops attack each other, i.e., no two share the same diagonal. Output the count modulo 10^9+7.",
   "tags": [
     "combinatorics",
-    "dp",
+    "dynamic-programming",
     "math"
   ],
   "patterns": [
     "dynamic-programming",
-    "combinatorial-counting",
+    "combinatorics",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777952062,
     "pattern_confidence": {
       "dynamic-programming": 0.9,
-      "combinatorial-counting": 0.95,
+      "combinatorics": 0.95,
       "modular-arithmetic": 0.85
     }
   }

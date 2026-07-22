@@ -15,7 +15,7 @@
   "tags": [
     "graph",
     "array",
-    "breadth-first-search"
+    "bfs"
   ],
   "patterns": [
     "bfs",

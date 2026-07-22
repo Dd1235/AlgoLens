@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a set of distinct coin denominations and a target sum, count the number of ordered sequences of coins that sum up to the target value, modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "array"
   ],

@@ -19,7 +19,7 @@
     "cycle-detection"
   ],
   "patterns": [
-    "depth-first-search",
+    "dfs",
     "cycle-detection",
     "graph-traversal"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923165,
     "pattern_confidence": {
-      "depth-first-search": 0.98,
+      "dfs": 0.98,
       "cycle-detection": 0.97,
       "graph-traversal": 0.9
     }

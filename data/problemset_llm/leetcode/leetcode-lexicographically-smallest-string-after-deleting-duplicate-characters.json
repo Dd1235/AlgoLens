@@ -23,7 +23,7 @@
   "patterns": [
     "monotonic-stack",
     "greedy",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "monotonic-stack": 0.95,
       "greedy": 0.9,
-      "hash-map-lookup": 0.85
+      "hash-map": 0.85
     }
   }
 }

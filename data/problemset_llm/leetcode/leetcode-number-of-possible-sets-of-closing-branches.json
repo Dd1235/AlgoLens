@@ -18,7 +18,7 @@
     "graph",
     "bitmask",
     "shortest-path",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "bitmask-dp",

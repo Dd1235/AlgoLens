@@ -10,7 +10,7 @@
   "tags": [
     "array",
     "bitwise-operations",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "bitmask-dp",

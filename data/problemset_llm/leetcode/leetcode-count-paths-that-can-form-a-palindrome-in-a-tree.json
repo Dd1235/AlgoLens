@@ -23,7 +23,7 @@
     "prefix-xor",
     "dfs",
     "bitmask",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
       "prefix-xor": 0.95,
       "dfs": 0.9,
       "bitmask": 0.9,
-      "hash-map-lookup": 0.85
+      "hash-map": 0.85
     }
   }
 }

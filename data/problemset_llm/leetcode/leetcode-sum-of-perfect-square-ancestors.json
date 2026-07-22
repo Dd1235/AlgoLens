@@ -25,7 +25,7 @@
   "patterns": [
     "dfs",
     "prime-factorization",
-    "hash-map-lookup",
+    "hash-map",
     "prefix-product"
   ],
   "annotation": {
@@ -35,7 +35,7 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "prime-factorization": 0.9,
-      "hash-map-lookup": 0.85,
+      "hash-map": 0.85,
       "prefix-product": 0.8
     }
   }

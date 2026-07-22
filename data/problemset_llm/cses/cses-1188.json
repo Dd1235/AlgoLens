@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "segment-tree",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "range-query",
     "point-update"
   ],
@@ -24,7 +24,7 @@
     "generated_at_unix": 1777952148,
     "pattern_confidence": {
       "segment-tree": 0.95,
-      "binary-indexed-tree": 0.85,
+      "fenwick-tree": 0.85,
       "range-query": 0.9,
       "point-update": 0.9
     }

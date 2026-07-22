@@ -17,7 +17,7 @@
     "combinatorics"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "prefix-sum",
     "modular-arithmetic"
   ],
@@ -26,7 +26,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922874,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "prefix-sum": 0.7,
       "modular-arithmetic": 0.85
     }

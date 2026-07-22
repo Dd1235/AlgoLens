@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given an n×n grid of letters, find the lexicographically smallest string formed by moving from the top-left to the bottom-right cell, moving only right or down.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "string",
     "grid"
   ],

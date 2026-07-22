@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given n coders with skill levels, count the number of ways to partition them into teams so that the sum of the differences between the highest and lowest skill in each team does not exceed x, modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "array",
     "combinatorics"
   ],

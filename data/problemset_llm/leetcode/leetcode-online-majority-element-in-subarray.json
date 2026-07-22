@@ -17,7 +17,7 @@
   "tags": [
     "array",
     "data-structure",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree"
   ],
   "patterns": [

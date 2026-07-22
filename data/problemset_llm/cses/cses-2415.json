@@ -9,12 +9,12 @@
   "statement": "Given n nodes, compute for each k from 1 to n the number of functional graphs with n nodes and exactly k connected components, modulo 10^9+7.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [
     "dynamic-programming",
-    "combinatorial-counting",
+    "combinatorics",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777952088,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "combinatorial-counting": 0.9,
+      "combinatorics": 0.9,
       "modular-arithmetic": 0.85
     }
   }

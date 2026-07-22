@@ -23,7 +23,7 @@
   "patterns": [
     "expression-parsing",
     "stack",
-    "hash-map-lookup",
+    "hash-map",
     "recursion"
   ],
   "annotation": {
@@ -33,7 +33,7 @@
     "pattern_confidence": {
       "expression-parsing": 0.98,
       "stack": 0.9,
-      "hash-map-lookup": 0.85,
+      "hash-map": 0.85,
       "recursion": 0.8
     }
   }

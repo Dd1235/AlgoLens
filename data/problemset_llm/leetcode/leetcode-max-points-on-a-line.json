@@ -19,7 +19,7 @@
     "hash-map"
   ],
   "patterns": [
-    "hash-map-lookup",
+    "hash-map",
     "slope-calculation",
     "line-representation"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923215,
     "pattern_confidence": {
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "slope-calculation": 0.9,
       "line-representation": 0.88
     }

@@ -17,13 +17,12 @@
   "tags": [
     "array",
     "heap",
-    "simulation",
-    "priority-queue"
+    "simulation"
   ],
   "patterns": [
     "greedy",
     "simulation",
-    "priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +31,7 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "simulation": 0.9,
-      "priority-queue": 0.9
+      "heap": 0.9
     }
   }
 }

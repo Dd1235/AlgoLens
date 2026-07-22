@@ -17,7 +17,7 @@
   "statement": "Given a tree with coins on nodes and a parameter k, collect coins from all nodes starting at the root with constraints on collection order and two collection methods that affect points and subtree coin values, to maximize total points.",
   "tags": [
     "tree",
-    "dp",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [

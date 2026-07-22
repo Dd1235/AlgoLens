@@ -16,7 +16,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "binary-search-answer"
   ],
   "annotation": {
@@ -24,7 +24,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923677,
     "pattern_confidence": {
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "binary-search-answer": 0.85
     }
   }

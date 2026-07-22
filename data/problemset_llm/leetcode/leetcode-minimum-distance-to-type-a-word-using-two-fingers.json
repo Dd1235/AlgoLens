@@ -13,7 +13,7 @@
   "statement": "Given a string and a keyboard layout with coordinates for each letter, find the minimum total Manhattan distance to type the word using two fingers starting from any positions.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "geometry"
   ],
   "patterns": [

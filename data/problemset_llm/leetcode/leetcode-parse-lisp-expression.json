@@ -23,7 +23,7 @@
     "recursive-parsing",
     "scope-management",
     "stack-based-evaluation",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
       "recursive-parsing": 0.98,
       "scope-management": 0.95,
       "stack-based-evaluation": 0.9,
-      "hash-map-lookup": 0.85
+      "hash-map": 0.85
     }
   }
 }

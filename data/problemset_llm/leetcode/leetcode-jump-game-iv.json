@@ -15,12 +15,12 @@
   "tags": [
     "array",
     "graph",
-    "breadth-first-search",
+    "bfs",
     "hash-map"
   ],
   "patterns": [
     "bfs",
-    "hash-map-lookup",
+    "hash-map",
     "graph-traversal"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1777923083,
     "pattern_confidence": {
       "bfs": 0.98,
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "graph-traversal": 0.9
     }
   }

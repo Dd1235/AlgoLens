@@ -16,13 +16,13 @@
   "statement": "Given an undirected connected graph, find the shortest path length that visits every node at least once, allowing revisits and starting/stopping at any node.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "bitmask",
     "bfs"
   ],
   "patterns": [
     "bitmask-dp",
-    "breadth-first-search",
+    "bfs",
     "state-compression"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777924051,
     "pattern_confidence": {
       "bitmask-dp": 0.98,
-      "breadth-first-search": 0.95,
+      "bfs": 0.95,
       "state-compression": 0.9
     }
   }

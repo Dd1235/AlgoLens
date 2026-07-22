@@ -18,12 +18,12 @@
   "statement": "Given two integer arrays and a difference value, count the number of index pairs (i, j) with i < j that satisfy a specific inequality involving differences of elements from both arrays and the given diff.",
   "tags": [
     "array",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "merge-sort"
   ],
   "patterns": [
     "divide-and-conquer",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "merge-sort"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "generated_at_unix": 1777923793,
     "pattern_confidence": {
       "divide-and-conquer": 0.95,
-      "binary-indexed-tree": 0.9,
+      "fenwick-tree": 0.9,
       "merge-sort": 0.9
     }
   }

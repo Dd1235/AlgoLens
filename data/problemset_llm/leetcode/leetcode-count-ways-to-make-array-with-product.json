@@ -23,7 +23,7 @@
   ],
   "patterns": [
     "prime-factorization",
-    "combinatorial-counting",
+    "combinatorics",
     "modular-arithmetic",
     "dp-on-factors"
   ],
@@ -33,7 +33,7 @@
     "generated_at_unix": 1777922748,
     "pattern_confidence": {
       "prime-factorization": 0.98,
-      "combinatorial-counting": 0.95,
+      "combinatorics": 0.95,
       "modular-arithmetic": 0.9,
       "dp-on-factors": 0.85
     }

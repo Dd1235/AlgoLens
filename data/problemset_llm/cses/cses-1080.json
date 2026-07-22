@@ -9,7 +9,7 @@
   "statement": "Given a string, count the number of ways to remove all characters by repeatedly deleting any two adjacent equal characters, modulo 10^9+7.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

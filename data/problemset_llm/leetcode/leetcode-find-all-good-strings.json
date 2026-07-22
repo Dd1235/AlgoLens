@@ -14,7 +14,7 @@
   "statement": "Count the number of length-n strings lexicographically between s1 and s2 that do not contain a forbidden substring evil, modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "string-matching"
   ],
   "patterns": [

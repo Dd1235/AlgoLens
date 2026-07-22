@@ -26,7 +26,7 @@
     "eulerian-path",
     "hierholzer-algorithm",
     "lexicographical-order",
-    "priority-queue"
+    "heap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +36,7 @@
       "eulerian-path": 0.98,
       "hierholzer-algorithm": 0.95,
       "lexicographical-order": 0.9,
-      "priority-queue": 0.85
+      "heap": 0.85
     }
   }
 }

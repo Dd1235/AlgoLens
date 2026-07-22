@@ -11,7 +11,7 @@
   ],
   "statement": "Count the number of length-n strings composed of vowels where each vowel can only be followed by specific vowels, returning the count modulo 10^9+7.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "string",
     "combinatorics"
   ],

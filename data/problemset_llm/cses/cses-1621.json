@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "sorting",
-    "hash-map-lookup",
+    "hash-map",
     "set"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777951308,
     "pattern_confidence": {
       "sorting": 0.9,
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "set": 0.9
     }
   }

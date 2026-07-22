@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "dp",
+    "dynamic-programming",
     "sliding-window"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1777923430,
     "pattern_confidence": {
       "prefix-sum": 0.98,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "sliding-window": 0.9
     }
   }

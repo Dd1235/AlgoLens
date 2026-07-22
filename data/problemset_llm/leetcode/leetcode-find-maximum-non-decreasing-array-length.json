@@ -25,7 +25,7 @@
   "patterns": [
     "prefix-sum",
     "binary-search-answer",
-    "dp"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "binary-search-answer": 0.9,
-      "dp": 0.88
+      "dynamic-programming": 0.88
     }
   }
 }

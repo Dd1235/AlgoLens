@@ -18,7 +18,7 @@
     "prefix-sum"
   ],
   "patterns": [
-    "dp",
+    "dynamic-programming",
     "prefix-sum",
     "interval-coverage"
   ],
@@ -27,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923722,
     "pattern_confidence": {
-      "dp": 0.98,
+      "dynamic-programming": 0.98,
       "prefix-sum": 0.9,
       "interval-coverage": 0.85
     }

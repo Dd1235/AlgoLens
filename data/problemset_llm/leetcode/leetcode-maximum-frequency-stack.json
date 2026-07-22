@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "frequency-stack",
-    "hash-map-lookup",
+    "hash-map",
     "stack"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1777923316,
     "pattern_confidence": {
       "frequency-stack": 0.98,
-      "hash-map-lookup": 0.95,
+      "hash-map": 0.95,
       "stack": 0.9
     }
   }

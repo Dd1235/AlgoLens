@@ -21,7 +21,7 @@
     "dfs"
   ],
   "patterns": [
-    "depth-first-search",
+    "dfs",
     "gcd",
     "ancestor-query"
   ],
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924260,
     "pattern_confidence": {
-      "depth-first-search": 0.98,
+      "dfs": 0.98,
       "gcd": 0.95,
       "ancestor-query": 0.9
     }

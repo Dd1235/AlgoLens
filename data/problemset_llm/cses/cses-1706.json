@@ -9,7 +9,7 @@
   "statement": "Given n children and pairs of children who want to visit the same attraction, determine all possible counts of children visiting one attraction (Korkeasaari) that satisfy these constraints.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "bitset"
   ],
   "patterns": [

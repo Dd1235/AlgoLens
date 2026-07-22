@@ -13,7 +13,7 @@
   "statement": "Given an integer array and a target sum k, compute the sum of counts of subsequences within all subsequences whose sums equal k, modulo 10^9+7.",
   "tags": [
     "array",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

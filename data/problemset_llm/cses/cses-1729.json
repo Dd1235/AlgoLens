@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a heap of sticks and a set of allowed moves, determine for each heap size from 1 to n whether the first player has a winning or losing position in a turn-based game where players remove sticks according to the allowed moves.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "game-theory",
     "array"
   ],

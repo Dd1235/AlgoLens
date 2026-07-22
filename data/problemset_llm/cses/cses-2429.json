@@ -11,11 +11,11 @@
     "matrix",
     "combinatorics",
     "graph",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "bipartite-matching",
-    "dp",
+    "dynamic-programming",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -24,7 +24,7 @@
     "generated_at_unix": 1777952075,
     "pattern_confidence": {
       "bipartite-matching": 0.95,
-      "dp": 0.9,
+      "dynamic-programming": 0.9,
       "modular-arithmetic": 0.85
     }
   }

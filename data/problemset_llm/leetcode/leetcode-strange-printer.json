@@ -13,7 +13,7 @@
   "statement": "Given a string, determine the minimum number of turns a special printer needs to print it, where each turn prints a contiguous sequence of the same character and can overwrite existing characters.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "interval-dp",

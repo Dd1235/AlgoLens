@@ -19,8 +19,8 @@
     "hash-map"
   ],
   "patterns": [
-    "breadth-first-search",
-    "hash-map-lookup",
+    "bfs",
+    "hash-map",
     "grid-traversal"
   ],
   "annotation": {
@@ -28,8 +28,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922850,
     "pattern_confidence": {
-      "breadth-first-search": 0.98,
-      "hash-map-lookup": 0.9,
+      "bfs": 0.98,
+      "hash-map": 0.9,
       "grid-traversal": 0.85
     }
   }

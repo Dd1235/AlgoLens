@@ -10,7 +10,7 @@
   "tags": [
     "graph",
     "shortest-path",
-    "priority-queue"
+    "heap"
   ],
   "patterns": [
     "k-shortest-paths",

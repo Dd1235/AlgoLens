@@ -21,7 +21,7 @@
   "patterns": [
     "string-matching",
     "backtracking",
-    "hash-map-lookup"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,7 @@
     "pattern_confidence": {
       "string-matching": 0.95,
       "backtracking": 0.85,
-      "hash-map-lookup": 0.9
+      "hash-map": 0.9
     }
   }
 }

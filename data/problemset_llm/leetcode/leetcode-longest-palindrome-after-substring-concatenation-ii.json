@@ -14,7 +14,7 @@
   "statement": "Given two strings, find the length of the longest palindrome that can be formed by concatenating a substring from the first string and a substring from the second string.",
   "tags": [
     "string",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

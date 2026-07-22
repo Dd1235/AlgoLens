@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a list of projects each with a start day, end day, and reward, find the maximum total reward achievable by attending non-overlapping projects.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "sorting",
     "binary-search"
   ],

@@ -23,7 +23,7 @@
   "patterns": [
     "binary-search-answer",
     "prefix-sum",
-    "lowest-common-ancestor"
+    "lca"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "prefix-sum": 0.9,
-      "lowest-common-ancestor": 0.85
+      "lca": 0.85
     }
   }
 }

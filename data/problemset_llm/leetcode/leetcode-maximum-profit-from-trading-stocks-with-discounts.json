@@ -15,7 +15,7 @@
   "statement": "Given a company hierarchy tree with stock prices for employees, determine the maximum profit achievable by buying stocks within a budget, considering discounts if a direct boss buys their stock.",
   "tags": [
     "tree",
-    "dp",
+    "dynamic-programming",
     "knapsack",
     "graph"
   ],

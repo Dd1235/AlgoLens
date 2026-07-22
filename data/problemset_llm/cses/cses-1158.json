@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given a list of books with prices and page counts, determine the maximum total pages achievable without exceeding a given total price, buying each book at most once.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "knapsack",
     "array"
   ],

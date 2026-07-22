@@ -9,7 +9,7 @@
   "statement": "Given a string, count the number of distinct subsequences that can be formed by deleting zero or more characters without changing the order of the remaining characters, modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [

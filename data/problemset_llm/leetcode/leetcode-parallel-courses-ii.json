@@ -15,7 +15,7 @@
   "statement": "Given n courses with prerequisite relations and a limit k on how many courses can be taken per semester, find the minimum number of semesters required to complete all courses respecting the prerequisites.",
   "tags": [
     "graph",
-    "dp",
+    "dynamic-programming",
     "bitmask"
   ],
   "patterns": [

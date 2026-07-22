@@ -15,7 +15,7 @@
   "statement": "Given a string of digits, count the number of distinct permutations where the sum of digits at even indices equals the sum at odd indices, modulo 10^9+7.",
   "tags": [
     "string",
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "math"
   ],

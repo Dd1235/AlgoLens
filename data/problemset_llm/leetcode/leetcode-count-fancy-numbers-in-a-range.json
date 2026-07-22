@@ -13,7 +13,7 @@
   "statement": "Count integers within a given range whose digits form a strictly increasing or decreasing sequence, or whose digit sum forms such a sequence. Single-digit numbers are always considered valid.",
   "tags": [
     "math",
-    "dp",
+    "dynamic-programming",
     "digit-dp"
   ],
   "patterns": [

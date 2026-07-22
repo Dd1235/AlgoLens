@@ -9,7 +9,7 @@
   "statement": "Given a street with houses each having a number of children, place k schools in houses to minimize the total walking distance children travel to their nearest school.",
   "tags": [
     "array",
-    "dp"
+    "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",

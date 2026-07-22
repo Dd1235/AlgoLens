@@ -15,7 +15,7 @@
   "statement": "Given an array, support queries to count elements in a range with a specific popcount-depth and updates to element values, where popcount-depth is the number of iterations applying popcount until reaching 1.",
   "tags": [
     "array",
-    "binary-indexed-tree",
+    "fenwick-tree",
     "segment-tree"
   ],
   "patterns": [

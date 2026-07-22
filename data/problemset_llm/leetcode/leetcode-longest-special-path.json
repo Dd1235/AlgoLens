@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "dfs",
-    "hash-map-lookup",
+    "hash-map",
     "unique-values-tracking"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777923185,
     "pattern_confidence": {
       "dfs": 0.98,
-      "hash-map-lookup": 0.9,
+      "hash-map": 0.9,
       "unique-values-tracking": 0.85
     }
   }
