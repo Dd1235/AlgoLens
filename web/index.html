@@ -75,20 +75,13 @@
           </button>
         </span>
       </div>
-      <!-- COMPARE_MODE_DISABLED start: re-enable by uncommenting this block,
-           the renderCompare branch in app.js, and the /api/compare route in
-           server/routes/search.js. Note: rank-delta labels showed the OTHER
-           ranker's name inside each card, which read as "this card is bm25"
-           even when in the tf-idf column. Fix that wording before turning
-           compare mode back on.
       <div class="mode-row">
         <label class="mode-toggle">
-          <input id="compare-toggle" type="checkbox" checked />
-          <span>compare rankers (a/b)</span>
+          <input id="compare-toggle" type="checkbox" />
+          <span>compare rankers (bm25 / dense)</span>
         </label>
         <span id="latency-summary" class="latency-summary"></span>
       </div>
-      -->
       <p id="status" class="status">
         type a query to search<span class="cursor">_</span>
       </p>
@@ -102,7 +95,7 @@
       <button id="load-more" class="load-more hidden" type="button">
         load more
       </button>
-      <!-- COMPARE_MODE_DISABLED: <div id="compare-results" class="compare-grid hidden"></div> -->
+      <div id="compare-results" class="compare-grid hidden"></div>
     </main>
     <footer>
       algolens v0.3 · built by deepya · rankers: tf-idf + bm25 + dense (minilm)

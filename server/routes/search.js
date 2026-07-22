@@ -127,24 +127,31 @@ function createSearchRouter({ indexes, defaultRanker }) {
     }
   });
 
-  // COMPARE_MODE_DISABLED: re-enable together with the UI in web/index.html
-  // and web/app.js.
-  // router.get("/compare", async (req, res) => {
-  //   const q = (req.query.q || "").toString();
-  //   const k = Number.parseInt(req.query.k, 10) || 10;
-  //   const entries = Object.entries(indexes);
-  //   const settled = await Promise.all(
-  //     entries.map(async ([name, index]) => {
-  //       try {
-  //         const { hits, latencyMs } = await timedSearch(index, q, k);
-  //         return { ranker: name, latencyMs, hits };
-  //       } catch (err) {
-  //         return { ranker: name, latencyMs: null, error: err.message || "failed", hits: [] };
-  //       }
-  //     })
-  //   );
-  //   res.json({ query: q, k, results: settled });
-  // });
+  // Compare mode: the same query across several rankers, side by side.
+  // ?rankers=bm25,dense narrows the set (default: all registered). Ignores the
+  // done/pattern filters on purpose — it's a ranker-quality lens, not a browse view.
+  router.get("/compare", async (req, res) => {
+    const q = (req.query.q || "").toString();
+    const k = Number.parseInt(req.query.k, 10) || 10;
+    const requested = (req.query.rankers || "")
+      .toString()
+      .toLowerCase()
+      .split(",")
+      .map((s) => s.trim())
+      .filter(Boolean);
+    const names = requested.length ? requested.filter((n) => indexes[n]) : Object.keys(indexes);
+    const settled = await Promise.all(
+      names.map(async (name) => {
+        try {
+          const { hits, latencyMs } = await timedSearch(indexes[name], q, k);
+          return { ranker: name, latencyMs, hits };
+        } catch (err) {
+          return { ranker: name, latencyMs: null, error: err.message || "failed", hits: [] };
+        }
+      })
+    );
+    res.json({ query: q, k, results: settled });
+  });
 
   return router;
 }
