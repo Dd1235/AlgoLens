@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical.",
+  "version": 4,
+  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical. v4 adds 10 technique queries (slice: technique) over the dp-optimization batch: half name the niche technique outright (do curated pattern labels function as retrieval vocabulary?), half describe it without naming it (does dense bridge to technique phrasing?). Corpus at v4: 1198 problems.",
   "queries": [
     {
       "query": "two sum",
@@ -389,6 +389,102 @@
       ],
       "intent": "paraphrase of group anagrams",
       "slice": "paraphrase"
+    },
+    {
+      "query": "wqs binary search exactly k segments",
+      "relevant": [
+        "leetcode-best-time-to-buy-and-sell-stock-iv",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
+        "leetcode-best-time-to-buy-and-sell-stock-v"
+      ],
+      "intent": "niche technique by name: wqs / aliens trick family",
+      "slice": "technique"
+    },
+    {
+      "query": "penalty per segment instead of enforcing the segment count",
+      "relevant": [
+        "leetcode-best-time-to-buy-and-sell-stock-iv",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
+        "leetcode-best-time-to-buy-and-sell-stock-v"
+      ],
+      "intent": "wqs described, not named (lagrangian relaxation idea)",
+      "slice": "technique"
+    },
+    {
+      "query": "slope trick make array non decreasing minimum increments",
+      "relevant": [
+        "leetcode-minimum-number-of-increments-on-subarrays-to-form-a-target-array",
+        "leetcode-minimum-operations-to-make-array-equal-to-target"
+      ],
+      "intent": "niche technique by name: slope trick",
+      "slice": "technique"
+    },
+    {
+      "query": "divide and conquer dp optimization monotonic split points",
+      "relevant": [
+        "leetcode-allocate-mailboxes",
+        "leetcode-minimum-total-distance-traveled",
+        "leetcode-minimum-cost-to-partition-a-binary-string"
+      ],
+      "intent": "niche technique by name: d&c dp optimization",
+      "slice": "technique"
+    },
+    {
+      "query": "monotonic queue optimization dp sliding window maximum of dp values",
+      "relevant": [
+        "leetcode-jump-game-vi",
+        "leetcode-constrained-subsequence-sum",
+        "leetcode-minimum-number-of-coins-for-fruits",
+        "leetcode-delivering-boxes-from-storage-to-ports"
+      ],
+      "intent": "niche technique by name: monotonic-queue-optimized dp",
+      "slice": "technique"
+    },
+    {
+      "query": "max score path jumping at most k indexes forward",
+      "relevant": [
+        "leetcode-jump-game-vi",
+        "leetcode-constrained-subsequence-sum"
+      ],
+      "intent": "mq-optimization problems described, technique not named",
+      "slice": "technique"
+    },
+    {
+      "query": "sum over subsets dp bitmask",
+      "relevant": [
+        "leetcode-triples-with-bitwise-and-equal-to-zero",
+        "leetcode-count-number-of-maximum-bitwise-or-subsets"
+      ],
+      "intent": "niche technique by name: sos dp",
+      "slice": "technique"
+    },
+    {
+      "query": "count subsets achieving the maximum possible bitwise or",
+      "relevant": [
+        "leetcode-count-number-of-maximum-bitwise-or-subsets"
+      ],
+      "intent": "submask problem described, technique not named",
+      "slice": "technique"
+    },
+    {
+      "query": "buy one fruit get the next several free minimum total cost",
+      "relevant": [
+        "leetcode-minimum-number-of-coins-for-fruits"
+      ],
+      "intent": "mq-dp problem described, technique not named",
+      "slice": "technique"
+    },
+    {
+      "query": "partition array into k groups dp optimization",
+      "relevant": [
+        "leetcode-largest-sum-of-averages",
+        "leetcode-sum-of-k-subarrays-with-length-at-least-m",
+        "leetcode-partition-array-to-minimize-xor",
+        "leetcode-count-partitions-with-max-min-difference-at-most-k",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations"
+      ],
+      "intent": "partition-dp family by technique phrasing",
+      "slice": "technique"
     }
   ]
 }
