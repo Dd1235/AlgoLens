@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>algolens · patterns</title>
+    <script src="/theme.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>
+          <a href="/" class="home-link">algolens</a>
+          <span class="signature" title="dedeepya avancha">[da]</span>
+        </h1>
+        <nav class="header-actions" aria-label="Page actions">
+          <button type="button" class="theme-toggle" data-theme-toggle>
+            light mode
+          </button>
+          <a href="/" class="debug-link">search</a>
+          <a href="/debug.html" class="debug-link">debug</a>
+        </nav>
+      </header>
+      <p class="tagline">
+        browse the pattern taxonomy — counts over the served corpus. click a
+        pattern to see its problems.
+      </p>
+      <p id="patterns-status" class="status">
+        loading taxonomy<span class="cursor">_</span>
+      </p>
+      <div id="pattern-groups"></div>
+    </main>
+    <footer>
+      algolens · patterns are curated labels — dimmed entries have no problems
+      yet (honest gaps, not broken links)
+    </footer>
+    <script src="/patterns.js"></script>
+  </body>
+</html>

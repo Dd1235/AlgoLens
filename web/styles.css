@@ -616,6 +616,44 @@ html[data-theme="light"] .pattern-chip {
   border-color: var(--warn);
 }
 
+/* Patterns directory page (patterns.html) */
+.home-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pattern-cat h2 {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  margin: 1.4rem 0 0.5rem;
+}
+
+.pattern-cat h2::before { content: "## "; opacity: 0.6; }
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+a.pattern-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+}
+
+.pattern-chip.empty {
+  opacity: 0.35;
+}
+
+.chip-count {
+  color: var(--text-dim);
+  font-size: 0.66rem;
+}
+
 .result-detail {
   margin-top: 0.75rem;
   font-size: 0.86rem;
