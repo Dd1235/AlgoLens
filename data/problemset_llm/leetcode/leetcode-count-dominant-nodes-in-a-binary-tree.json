@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-count-dominant-nodes-in-a-binary-tree",
+  "title": "Count Dominant Nodes in a Binary Tree",
+  "slug": "count-dominant-nodes-in-a-binary-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-dominant-nodes-in-a-binary-tree/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given a complete binary tree, count the number of nodes whose value is the maximum within their respective subtrees.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "post-order-traversal",
+    "subtree-aggregation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730946,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "post-order-traversal": 0.95,
+      "subtree-aggregation": 0.93
+    }
+  }
+}

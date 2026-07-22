@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-pairs-after-increment",
+  "title": "Number of Pairs After Increment",
+  "slug": "number-of-pairs-after-increment",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-pairs-after-increment/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "divide-and-conquer",
+    "counting"
+  ],
+  "statement": "Given two integer arrays and queries that either increment a range in the second array or ask for the count of pairs summing to a target, efficiently process these queries and return the counts for sum queries.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "range-update",
+    "frequency-count",
+    "offline-queries",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731082,
+    "pattern_confidence": {
+      "range-update": 0.95,
+      "frequency-count": 0.9,
+      "offline-queries": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

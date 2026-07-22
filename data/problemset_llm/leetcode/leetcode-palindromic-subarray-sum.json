@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-palindromic-subarray-sum",
+  "title": "Palindromic Subarray Sum",
+  "slug": "palindromic-subarray-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/palindromic-subarray-sum/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an integer array, find the maximum sum of any contiguous subarray that forms a palindrome.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "palindromic-subarray",
+    "prefix-sum",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730974,
+    "pattern_confidence": {
+      "palindromic-subarray": 0.95,
+      "prefix-sum": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

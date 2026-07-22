@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-number-of-items-from-sale-i",
+  "title": "Maximum Number of Items From Sale I",
+  "slug": "maximum-number-of-items-from-sale-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-i/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given items with factors and prices and a budget, buy copies to maximize total items obtained including free copies granted by divisibility rules, without exceeding the budget.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "number-theory"
+  ],
+  "patterns": [
+    "knapsack",
+    "divisor-graph",
+    "dp-on-subsets"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731077,
+    "pattern_confidence": {
+      "knapsack": 0.95,
+      "divisor-graph": 0.85,
+      "dp-on-subsets": 0.8
+    }
+  }
+}

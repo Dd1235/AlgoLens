@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-check-adjacent-digit-differences",
+  "title": "Check Adjacent Digit Differences",
+  "slug": "check-adjacent-digit-differences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-adjacent-digit-differences/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Easy",
+  "source_tags": [
+    "string"
+  ],
+  "statement": "Given a string of digits, determine if the absolute difference between every pair of adjacent digits is at most 2.",
+  "tags": [
+    "string",
+    "array"
+  ],
+  "patterns": [
+    "linear-scan",
+    "adjacent-element-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731108,
+    "pattern_confidence": {
+      "linear-scan": 0.95,
+      "adjacent-element-comparison": 0.9
+    }
+  }
+}

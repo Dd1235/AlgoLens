@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-lexicographically-maximum-mex-array",
+  "title": "Lexicographically Maximum MEX Array",
+  "slug": "lexicographically-maximum-mex-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-maximum-mex-array/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "queue"
+  ],
+  "statement": "Given an integer array, repeatedly remove a prefix and append the MEX of that prefix to a result array, aiming to produce the lexicographically maximum result.",
+  "tags": [
+    "array",
+    "greedy",
+    "hash-map",
+    "queue"
+  ],
+  "patterns": [
+    "greedy",
+    "mex",
+    "prefix-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731071,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "mex": 0.9,
+      "prefix-processing": 0.85
+    }
+  }
+}

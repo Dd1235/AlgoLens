@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-non-adjacent-subsets-in-a-rooted-tree",
+  "title": "Count Non Adjacent Subsets in a Rooted Tree",
+  "slug": "count-non-adjacent-subsets-in-a-rooted-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-non-adjacent-subsets-in-a-rooted-tree/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a rooted tree with node values, count the number of non-empty subsets of nodes whose sum is divisible by k and that contain no two adjacent nodes (no node and its parent both included).",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "tree-dp",
+    "modular-dp",
+    "subset-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731092,
+    "pattern_confidence": {
+      "tree-dp": 0.98,
+      "modular-dp": 0.9,
+      "subset-dp": 0.85
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-subarray-sum-after-multiplier",
+  "title": "Maximum Subarray Sum After Multiplier",
+  "slug": "maximum-subarray-sum-after-multiplier",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array and a positive integer k, choose exactly one subarray to multiply or divide by k (with floor/ceiling rounding), then find the maximum subarray sum in the resulting array, where the subarray for the operation and the sum can differ.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731001,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

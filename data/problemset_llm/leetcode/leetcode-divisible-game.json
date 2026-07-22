@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-divisible-game",
+  "title": "Divisible Game",
+  "slug": "divisible-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/divisible-game/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given an integer array, choose an integer k > 1 and a subarray to maximize the difference between the sum of elements divisible by k and those not divisible by k, then return the product of this maximum difference and the chosen k modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "enumeration",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730978,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "enumeration": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

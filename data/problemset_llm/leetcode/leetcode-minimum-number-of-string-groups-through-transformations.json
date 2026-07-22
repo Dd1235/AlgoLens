@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-number-of-string-groups-through-transformations",
+  "title": "Minimum Number of String Groups Through Transformations",
+  "slug": "minimum-number-of-string-groups-through-transformations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an array of strings, group them by equivalence where two strings are equivalent if their even and odd indexed characters can be independently cyclically shifted to form each other. Return the minimum number of such groups.",
+  "tags": [
+    "string",
+    "hash-map",
+    "disjoint-set"
+  ],
+  "patterns": [
+    "string-hashing",
+    "union-find",
+    "equivalence-class"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730940,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "union-find": 0.9,
+      "equivalence-class": 0.85
+    }
+  }
+}

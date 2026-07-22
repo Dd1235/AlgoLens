@@ -1,0 +1,29 @@
+{
+  "id": "leetcode-check-good-integer",
+  "title": "Check Good Integer",
+  "slug": "check-good-integer",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-good-integer/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Easy",
+  "source_tags": [],
+  "statement": "Given a positive integer, determine if the difference between the sum of the squares of its digits and the sum of its digits is at least 50.",
+  "tags": [
+    "math",
+    "implementation",
+    "digit-manipulation"
+  ],
+  "patterns": [
+    "digit-sum",
+    "arithmetic-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731041,
+    "pattern_confidence": {
+      "digit-sum": 0.95,
+      "arithmetic-computation": 0.9
+    }
+  }
+}

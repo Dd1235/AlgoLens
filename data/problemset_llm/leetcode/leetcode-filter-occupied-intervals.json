@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-filter-occupied-intervals",
+  "title": "Filter Occupied Intervals",
+  "slug": "filter-occupied-intervals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/filter-occupied-intervals/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting"
+  ],
+  "statement": "Given a list of occupied time intervals, merge all overlapping or touching intervals, then remove the portion overlapping with a given free time interval, and return the remaining occupied intervals in sorted, non-overlapping form.",
+  "tags": [
+    "array",
+    "intervals",
+    "sorting"
+  ],
+  "patterns": [
+    "interval-merging",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731003,
+    "pattern_confidence": {
+      "interval-merging": 0.98,
+      "line-sweep": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-path-intersection-sum-in-a-grid",
+  "title": "Maximum Path Intersection Sum in a Grid",
+  "slug": "maximum-path-intersection-sum-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-path-intersection-sum-in-a-grid/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Two players traverse a grid from opposite corners with restricted moves, and the goal is to maximize the sum of values in cells shared by both paths.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "grid-dp",
+    "path-intersection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731094,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "grid-dp": 0.95,
+      "path-intersection": 0.85
+    }
+  }
+}

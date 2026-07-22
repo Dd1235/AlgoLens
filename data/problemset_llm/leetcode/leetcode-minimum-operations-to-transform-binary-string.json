@@ -1,0 +1,28 @@
+{
+  "id": "leetcode-minimum-operations-to-transform-binary-string",
+  "title": "Minimum Operations to Transform Binary String",
+  "slug": "minimum-operations-to-transform-binary-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-transform-binary-string/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given two binary strings of equal length, transform the first into the second using operations that flip '0' to '1' or simultaneously flip adjacent '11' to '00'. Determine the minimum number of operations or return -1 if impossible.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730986,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.7
+    }
+  }
+}

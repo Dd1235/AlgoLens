@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-digit-frequency-score",
+  "title": "Digit Frequency Score",
+  "slug": "digit-frequency-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/digit-frequency-score/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Easy",
+  "source_tags": [
+    "hash-table",
+    "math"
+  ],
+  "statement": "Calculate the score of an integer by summing the product of each distinct digit and its frequency in the number.",
+  "tags": [
+    "math",
+    "hash-map"
+  ],
+  "patterns": [
+    "frequency-count",
+    "digit-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731079,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "digit-processing": 0.9
+    }
+  }
+}

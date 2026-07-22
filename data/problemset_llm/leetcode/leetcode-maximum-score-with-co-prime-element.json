@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-maximum-score-with-co-prime-element",
+  "title": "Maximum Score with Co-Prime Element",
+  "slug": "maximum-score-with-co-prime-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-with-co-prime-element/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "combinatorics",
+    "enumeration",
+    "number-theory"
+  ],
+  "statement": "Given an array and a maximum allowed value, modify elements at a cost to ensure there exists an element co-prime with all others, maximizing the chosen element's value minus modification cost.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "gcd",
+    "coprime-check",
+    "frequency-counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731061,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "coprime-check": 0.95,
+      "frequency-counting": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

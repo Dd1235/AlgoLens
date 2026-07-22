@@ -528,10 +528,93 @@ https://cses.fi/problemset/task/3401
 https://cses.fi/problemset/task/1665
 https://cses.fi/problemset/task/2402
 
+# LeetCode / DP Optimization
+https://leetcode.com/problems/jump-game-vi/
+https://leetcode.com/problems/minimum-number-of-coins-for-fruits/
+https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/
+https://leetcode.com/problems/maximize-the-profit-as-the-salesman/
+https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/
+https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/
+https://leetcode.com/problems/largest-sum-of-averages/
+https://leetcode.com/problems/partition-array-for-maximum-sum/
+https://leetcode.com/problems/filling-bookcase-shelves/
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/
+https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/
+https://leetcode.com/problems/partition-array-to-minimize-xor/
+https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/
+https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/
+
+# BEGIN GENERATED: LeetCode Recent
+# LeetCode / Recent (generated)
+# Newest problems by frontend id - proxy for recent contest problems
+# Total recent URLs discovered: 60
+# URLs already present elsewhere: 0
+https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/
+https://leetcode.com/problems/transform-binary-string-using-subsequence-sort/
+https://leetcode.com/problems/count-dominant-nodes-in-a-binary-tree/
+https://leetcode.com/problems/even-number-of-knight-moves/
+https://leetcode.com/problems/minimum-cost-to-convert-string-iii/
+https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/
+https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/
+https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/
+https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/
+https://leetcode.com/problems/create-grid-with-exactly-k-paths-i/
+https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/
+https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/
+https://leetcode.com/problems/palindromic-subarray-sum/
+https://leetcode.com/problems/divisible-game/
+https://leetcode.com/problems/subsequence-after-one-replacement/
+https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/
+https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/
+https://leetcode.com/problems/minimum-operations-to-transform-binary-string/
+https://leetcode.com/problems/maximum-valid-pair-sum/
+https://leetcode.com/problems/unique-middle-element/
+https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/
+https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/
+https://leetcode.com/problems/filter-occupied-intervals/
+https://leetcode.com/problems/maximum-total-sum-of-k-selected-elements/
+https://leetcode.com/problems/maximum-total-value/
+https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/
+https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/
+https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/
+https://leetcode.com/problems/count-good-integers-in-a-range/
+https://leetcode.com/problems/finish-time-of-tasks-i/
+https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/
+https://leetcode.com/problems/create-grid-with-exactly-one-path/
+https://leetcode.com/problems/maximum-subarray-sum-after-at-most-k-swaps/
+https://leetcode.com/problems/maximize-sum-of-device-ratings/
+https://leetcode.com/problems/frequency-balance-subarray/
+https://leetcode.com/problems/check-good-integer/
+https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-ii/
+https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/
+https://leetcode.com/problems/valid-binary-strings-with-cost-limit/
+https://leetcode.com/problems/sum-of-compatible-numbers-in-range-i/
+https://leetcode.com/problems/maximum-score-with-co-prime-element/
+https://leetcode.com/problems/maximum-total-value-of-covered-indices/
+https://leetcode.com/problems/minimum-energy-to-maintain-brightness/
+https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair/
+https://leetcode.com/problems/lexicographically-maximum-mex-array/
+https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/
+https://leetcode.com/problems/maximum-number-of-items-from-sale-i/
+https://leetcode.com/problems/digit-frequency-score/
+https://leetcode.com/problems/number-of-pairs-after-increment/
+https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/
+https://leetcode.com/problems/password-strength/
+https://leetcode.com/problems/limit-occurrences-in-sorted-array/
+https://leetcode.com/problems/count-non-adjacent-subsets-in-a-rooted-tree/
+https://leetcode.com/problems/maximum-path-intersection-sum-in-a-grid/
+https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-i/
+https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/
+https://leetcode.com/problems/smallest-unique-subarray/
+https://leetcode.com/problems/largest-local-values-in-a-matrix-ii/
+https://leetcode.com/problems/count-k-th-roots-in-a-range/
+https://leetcode.com/problems/check-adjacent-digit-differences/
+# END GENERATED: LeetCode Recent
+
 # BEGIN GENERATED: LeetCode Hard
 # LeetCode / Hard (generated)
-# Total hard URLs discovered: 929
-# URLs already present elsewhere: 10
+# Total hard URLs discovered: 955
+# URLs already present elsewhere: 27
 https://leetcode.com/problems/24-game/
 https://leetcode.com/problems/abbreviating-the-product-of-a-range/
 https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/
@@ -687,6 +770,7 @@ https://leetcode.com/problems/couples-holding-hands/
 https://leetcode.com/problems/course-schedule-iii/
 https://leetcode.com/problems/cracking-the-safe/
 https://leetcode.com/problems/create-components-with-same-value/
+https://leetcode.com/problems/create-grid-with-exactly-k-paths-ii/
 https://leetcode.com/problems/create-maximum-number/
 https://leetcode.com/problems/create-sorted-array-through-instructions/
 https://leetcode.com/problems/critical-connections-in-a-network/
@@ -716,6 +800,7 @@ https://leetcode.com/problems/digit-count-in-range/
 https://leetcode.com/problems/dinner-plate-stacks/
 https://leetcode.com/problems/distance-to-a-cycle-in-undirected-graph/
 https://leetcode.com/problems/distinct-echo-substrings/
+https://leetcode.com/problems/distinct-gate-paths-to-lca/
 https://leetcode.com/problems/distinct-subsequences-ii/
 https://leetcode.com/problems/distinct-subsequences/
 https://leetcode.com/problems/distribute-candies-among-children-iii/
@@ -824,6 +909,7 @@ https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/
 https://leetcode.com/problems/find-zombie-sessions/
 https://leetcode.com/problems/finding-mk-average/
 https://leetcode.com/problems/finding-the-topic-of-each-post/
+https://leetcode.com/problems/finish-time-of-tasks-ii/
 https://leetcode.com/problems/first-and-last-call-on-the-same-day/
 https://leetcode.com/problems/first-letter-capitalization-ii/
 https://leetcode.com/problems/first-letter-capitalization/
@@ -912,7 +998,6 @@ https://leetcode.com/problems/longest-team-pass-streak/
 https://leetcode.com/problems/longest-valid-parentheses/
 https://leetcode.com/problems/longest-winning-streak/
 https://leetcode.com/problems/make-array-empty/
-https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/
 https://leetcode.com/problems/make-array-strictly-increasing/
 https://leetcode.com/problems/make-string-anti-palindrome/
 https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/
@@ -1064,6 +1149,7 @@ https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/
 https://leetcode.com/problems/minimum-cost-for-cutting-cake-ii/
 https://leetcode.com/problems/minimum-cost-good-caption/
 https://leetcode.com/problems/minimum-cost-path-with-teleportations/
+https://leetcode.com/problems/minimum-cost-to-buy-apples-ii/
 https://leetcode.com/problems/minimum-cost-to-change-the-final-value-of-expression/
 https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/
 https://leetcode.com/problems/minimum-cost-to-convert-string-ii/
@@ -1128,12 +1214,14 @@ https://leetcode.com/problems/minimum-operations-to-make-a-subsequence/
 https://leetcode.com/problems/minimum-operations-to-make-all-grid-elements-equal/
 https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/
 https://leetcode.com/problems/minimum-operations-to-make-array-equal-to-target/
+https://leetcode.com/problems/minimum-operations-to-make-array-modulo-alternating-ii/
 https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/
 https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/
 https://leetcode.com/problems/minimum-operations-to-make-numbers-non-positive/
 https://leetcode.com/problems/minimum-operations-to-make-the-array-k-increasing/
 https://leetcode.com/problems/minimum-operations-to-remove-adjacent-ones-in-matrix/
 https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/
+https://leetcode.com/problems/minimum-partition-score-ii/
 https://leetcode.com/problems/minimum-partition-score/
 https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/
 https://leetcode.com/problems/minimum-relative-loss-after-buying-chocolates/
@@ -1148,6 +1236,7 @@ https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/
 https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/
 https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/
 https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/
+https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/
 https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/
 https://leetcode.com/problems/minimum-time-takes-to-reach-destination-without-drowning/
 https://leetcode.com/problems/minimum-time-to-break-locks-ii/
@@ -1269,6 +1358,7 @@ https://leetcode.com/problems/pizza-with-3n-slices/
 https://leetcode.com/problems/poor-pigs/
 https://leetcode.com/problems/popularity-percentage/
 https://leetcode.com/problems/power-of-heroes/
+https://leetcode.com/problems/power-update-after-k-th-largest-insertion-ii/
 https://leetcode.com/problems/prefix-and-suffix-search/
 https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/
 https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/
@@ -1376,6 +1466,7 @@ https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-i/
 https://leetcode.com/problems/subsequences-with-a-unique-middle-mode-ii/
 https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 https://leetcode.com/problems/substring-with-largest-variance/
+https://leetcode.com/problems/subtree-inversion-sum-ii/
 https://leetcode.com/problems/subtree-inversion-sum/
 https://leetcode.com/problems/subtree-removal-game-with-fibonacci-tree/
 https://leetcode.com/problems/sudoku-solver/
@@ -1438,6 +1529,7 @@ https://leetcode.com/problems/valid-arrangement-of-pairs/
 https://leetcode.com/problems/valid-number/
 https://leetcode.com/problems/valid-palindrome-iii/
 https://leetcode.com/problems/valid-permutations-for-di-sequence/
+https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-ii/
 https://leetcode.com/problems/verbal-arithmetic-puzzle/
 https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
 https://leetcode.com/problems/viewers-turned-streamers/
@@ -1455,7 +1547,7 @@ https://leetcode.com/problems/zuma-game/
 
 # BEGIN GENERATED: Codeforces Rated 1600-1900
 # Codeforces / Rated 1600-1900 (generated)
-# Total rated URLs discovered: 2043
+# Total rated URLs discovered: 2060
 
 # Codeforces / Rated 1600
 https://codeforces.com/problemset/problem/1/B
@@ -1756,6 +1848,10 @@ https://codeforces.com/problemset/problem/2196/B
 https://codeforces.com/problemset/problem/2199/C
 https://codeforces.com/problemset/problem/2207/B
 https://codeforces.com/problemset/problem/2207/C
+https://codeforces.com/problemset/problem/2223/B
+https://codeforces.com/problemset/problem/2228/C2
+https://codeforces.com/problemset/problem/2241/E
+https://codeforces.com/problemset/problem/2242/D
 https://codeforces.com/problemset/problem/225/B
 https://codeforces.com/problemset/problem/23/B
 https://codeforces.com/problemset/problem/231/C
@@ -2306,7 +2402,13 @@ https://codeforces.com/problemset/problem/2203/D
 https://codeforces.com/problemset/problem/2205/D
 https://codeforces.com/problemset/problem/2206/J
 https://codeforces.com/problemset/problem/2215/A
+https://codeforces.com/problemset/problem/2227/F
+https://codeforces.com/problemset/problem/2229/D
 https://codeforces.com/problemset/problem/223/A
+https://codeforces.com/problemset/problem/2230/D
+https://codeforces.com/problemset/problem/2236/E
+https://codeforces.com/problemset/problem/2236/F1
+https://codeforces.com/problemset/problem/2241/F
 https://codeforces.com/problemset/problem/225/C
 https://codeforces.com/problemset/problem/229/B
 https://codeforces.com/problemset/problem/245/C
@@ -2791,6 +2893,7 @@ https://codeforces.com/problemset/problem/2209/D
 https://codeforces.com/problemset/problem/2211/C2
 https://codeforces.com/problemset/problem/2218/G
 https://codeforces.com/problemset/problem/222/C
+https://codeforces.com/problemset/problem/2222/D
 https://codeforces.com/problemset/problem/234/F
 https://codeforces.com/problemset/problem/238/B
 https://codeforces.com/problemset/problem/24/C
@@ -3311,10 +3414,16 @@ https://codeforces.com/problemset/problem/22/D
 https://codeforces.com/problemset/problem/2200/F
 https://codeforces.com/problemset/problem/2211/D
 https://codeforces.com/problemset/problem/2217/D
+https://codeforces.com/problemset/problem/2219/B1
 https://codeforces.com/problemset/problem/222/D
 https://codeforces.com/problemset/problem/222/E
+https://codeforces.com/problemset/problem/2226/D
+https://codeforces.com/problemset/problem/2228/D
 https://codeforces.com/problemset/problem/223/B
 https://codeforces.com/problemset/problem/223/C
+https://codeforces.com/problemset/problem/2231/D
+https://codeforces.com/problemset/problem/2233/D
+https://codeforces.com/problemset/problem/2234/F
 https://codeforces.com/problemset/problem/226/B
 https://codeforces.com/problemset/problem/228/E
 https://codeforces.com/problemset/problem/229/C
@@ -3497,19 +3606,3 @@ https://codeforces.com/problemset/problem/982/D
 https://codeforces.com/problemset/problem/993/B
 https://codeforces.com/problemset/problem/999/D
 # END GENERATED: Codeforces Rated 1600-1900
-
-# LeetCode / DP Optimization
-https://leetcode.com/problems/jump-game-vi/
-https://leetcode.com/problems/minimum-number-of-coins-for-fruits/
-https://leetcode.com/problems/minimum-total-space-wasted-with-k-resizing-operations/
-https://leetcode.com/problems/maximize-the-profit-as-the-salesman/
-https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/
-https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/
-https://leetcode.com/problems/largest-sum-of-averages/
-https://leetcode.com/problems/partition-array-for-maximum-sum/
-https://leetcode.com/problems/filling-bookcase-shelves/
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-v/
-https://leetcode.com/problems/count-partitions-with-max-min-difference-at-most-k/
-https://leetcode.com/problems/partition-array-to-minimize-xor/
-https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/
-https://leetcode.com/problems/make-array-non-decreasing-or-non-increasing/

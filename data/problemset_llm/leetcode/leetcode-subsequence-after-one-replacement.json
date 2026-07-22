@@ -1,0 +1,28 @@
+{
+  "id": "leetcode-subsequence-after-one-replacement",
+  "title": "Subsequence After One Replacement",
+  "slug": "subsequence-after-one-replacement",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/subsequence-after-one-replacement/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given two lowercase strings s and t, determine if by replacing at most one character in s with any lowercase letter, s can become a subsequence of t.",
+  "tags": [
+    "string",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730980,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

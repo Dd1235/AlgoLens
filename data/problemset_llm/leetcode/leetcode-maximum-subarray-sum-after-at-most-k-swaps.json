@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-maximum-subarray-sum-after-at-most-k-swaps",
+  "title": "Maximum Subarray Sum After at Most K Swaps",
+  "slug": "maximum-subarray-sum-after-at-most-k-swaps",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-subarray-sum-after-at-most-k-swaps/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given an integer array and a limit k on the number of swaps between any two elements, find the maximum subarray sum achievable after performing at most k swaps.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "swap-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731033,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "prefix-sum": 0.85,
+      "swap-optimization": 0.7
+    }
+  }
+}

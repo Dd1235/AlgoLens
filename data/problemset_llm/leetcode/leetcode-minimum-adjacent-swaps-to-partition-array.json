@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-adjacent-swaps-to-partition-array",
+  "title": "Minimum Adjacent Swaps to Partition Array",
+  "slug": "minimum-adjacent-swaps-to-partition-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-adjacent-swaps-to-partition-array/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given an integer array and two integers a and b, find the minimum number of adjacent swaps needed to partition the array into three contiguous parts where elements are less than a, between a and b inclusive, and greater than b respectively.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "greedy"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "counting-inversions"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730955,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "greedy": 0.85,
+      "counting-inversions": 0.8
+    }
+  }
+}

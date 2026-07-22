@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-swaps-to-move-zeros-to-end",
+  "title": "Minimum Swaps to Move Zeros to End",
+  "slug": "minimum-swaps-to-move-zeros-to-end",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-swaps-to-move-zeros-to-end/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Easy",
+  "source_tags": [
+    "array",
+    "two-pointers"
+  ],
+  "statement": "Given an integer array, find the minimum number of swaps needed to move all zeros to the end of the array.",
+  "tags": [
+    "array",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731099,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

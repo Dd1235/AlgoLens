@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-total-cost-to-process-all-elements",
+  "title": "Minimum Total Cost to Process All Elements",
+  "slug": "minimum-total-cost-to-process-all-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given an array of resource requirements and an initial resource amount k, process elements sequentially, performing incremental-cost operations to increase resources when needed, and find the minimum total cost modulo 10^9+7.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730970,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.7,
+      "modular-arithmetic": 0.6
+    }
+  }
+}

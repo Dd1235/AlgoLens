@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-manhattan-distance-after-all-moves",
+  "title": "Maximum Manhattan Distance After All Moves",
+  "slug": "maximum-manhattan-distance-after-all-moves",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "counting"
+  ],
+  "statement": "Given a string representing moves on a 2D plane including uncertain moves that can be chosen freely, determine the maximum possible Manhattan distance from the origin after performing all moves.",
+  "tags": [
+    "string",
+    "math",
+    "counting"
+  ],
+  "patterns": [
+    "greedy",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731017,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "counting": 0.9
+    }
+  }
+}

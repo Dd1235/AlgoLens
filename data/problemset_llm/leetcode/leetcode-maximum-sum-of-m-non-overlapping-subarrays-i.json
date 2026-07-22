@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-maximum-sum-of-m-non-overlapping-subarrays-i",
+  "title": "Maximum Sum of M Non-Overlapping Subarrays I",
+  "slug": "maximum-sum-of-m-non-overlapping-subarrays-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-m-non-overlapping-subarrays-i/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "queue",
+    "sliding-window",
+    "prefix-sum",
+    "monotonic-queue"
+  ],
+  "statement": "Given an integer array and parameters m, l, and r, select up to m non-overlapping subarrays each with length between l and r to maximize the total sum of these subarrays.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum",
+    "queue"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "sliding-window",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731047,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.95,
+      "sliding-window": 0.85,
+      "monotonic-queue": 0.75
+    }
+  }
+}

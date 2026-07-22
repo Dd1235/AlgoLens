@@ -1,0 +1,28 @@
+{
+  "id": "leetcode-sum-of-integers-with-maximum-digit-range",
+  "title": "Sum of Integers with Maximum Digit Range",
+  "slug": "sum-of-integers-with-maximum-digit-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-integers-with-maximum-digit-range/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Easy",
+  "source_tags": [],
+  "statement": "Given an array of integers, find the sum of all numbers whose digit range (difference between largest and smallest digit) equals the maximum digit range found in the array.",
+  "tags": [
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "digit-extraction",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730982,
+    "pattern_confidence": {
+      "digit-extraction": 0.95,
+      "linear-scan": 0.9
+    }
+  }
+}

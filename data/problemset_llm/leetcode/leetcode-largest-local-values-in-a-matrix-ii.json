@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-largest-local-values-in-a-matrix-ii",
+  "title": "Largest Local Values in a Matrix II",
+  "slug": "largest-local-values-in-a-matrix-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-local-values-in-a-matrix-ii/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Given a matrix of non-negative integers, identify the count of non-zero cells that are local maxima within a variable neighborhood defined by their own value, excluding cells at maximum row and column distance.",
+  "tags": [
+    "array",
+    "matrix",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "grid-traversal",
+    "boundary-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731104,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "grid-traversal": 0.9,
+      "boundary-checking": 0.85
+    }
+  }
+}

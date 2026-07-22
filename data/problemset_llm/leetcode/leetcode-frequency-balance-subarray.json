@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-frequency-balance-subarray",
+  "title": "Frequency Balance Subarray",
+  "slug": "frequency-balance-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/frequency-balance-subarray/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Find the length of the longest subarray where all distinct values appear either once or in a frequency pattern of f and 2*f for some positive integer f.",
+  "tags": [
+    "array",
+    "hash-map",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sliding-window",
+    "frequency-count",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731038,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "frequency-count": 0.9,
+      "two-pointers": 0.9
+    }
+  }
+}

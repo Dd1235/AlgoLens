@@ -1,0 +1,28 @@
+{
+  "id": "leetcode-unique-middle-element",
+  "title": "Unique Middle Element",
+  "slug": "unique-middle-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/unique-middle-element/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Easy",
+  "source_tags": [],
+  "statement": "Given an odd-length integer array, determine whether the middle element appears exactly once in the array.",
+  "tags": [
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "frequency-count",
+    "direct-index-access"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730992,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "direct-index-access": 0.7
+    }
+  }
+}

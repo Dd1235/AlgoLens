@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-energy-to-maintain-brightness",
+  "title": "Minimum Energy to Maintain Brightness",
+  "slug": "minimum-energy-to-maintain-brightness",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-energy-to-maintain-brightness/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting"
+  ],
+  "statement": "Given n bulbs in a line and intervals with brightness requirements, determine the minimum total energy to keep bulbs on so that at each time in the intervals, the illuminated positions meet or exceed the brightness.",
+  "tags": [
+    "array",
+    "intervals",
+    "greedy"
+  ],
+  "patterns": [
+    "interval-union",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731067,
+    "pattern_confidence": {
+      "interval-union": 0.9,
+      "greedy": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

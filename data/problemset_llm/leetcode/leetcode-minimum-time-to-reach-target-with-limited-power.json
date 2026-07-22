@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-time-to-reach-target-with-limited-power",
+  "title": "Minimum Time to Reach Target With Limited Power",
+  "slug": "minimum-time-to-reach-target-with-limited-power",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Find the shortest time to send a signal from a source to a target in a directed weighted graph with limited power that decreases by node costs when forwarding along edges, and report the maximum remaining power among shortest-time paths.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "state-augmentation",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730998,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "state-augmentation": 0.9,
+      "heap": 0.85
+    }
+  }
+}

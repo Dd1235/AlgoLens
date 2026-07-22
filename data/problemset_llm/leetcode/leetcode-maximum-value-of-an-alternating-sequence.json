@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-value-of-an-alternating-sequence",
+  "title": "Maximum Value of an Alternating Sequence",
+  "slug": "maximum-value-of-an-alternating-sequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given the length, starting value, and maximum allowed difference, find the maximum element possible in an alternating sequence where adjacent differences do not exceed the given limit.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "sequence"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730957,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

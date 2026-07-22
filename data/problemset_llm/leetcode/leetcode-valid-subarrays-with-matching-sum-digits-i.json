@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-valid-subarrays-with-matching-sum-digits-i",
+  "title": "Valid Subarrays With Matching Sum Digits I",
+  "slug": "valid-subarrays-with-matching-sum-digits-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of subarrays whose sum's first and last digit both equal a given digit x.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "enumeration"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "brute-force-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731014,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "brute-force-enumeration": 0.85
+    }
+  }
+}

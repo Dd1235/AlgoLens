@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-number-of-items-from-sale-ii",
+  "title": "Maximum Number of Items From Sale II",
+  "slug": "maximum-number-of-items-from-sale-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given items with factors and prices, and a budget, buy copies to maximize total items obtained including free copies granted when a purchased item's factor divides another item's factor, with constraints on free copy distribution.",
+  "tags": [
+    "array",
+    "greedy",
+    "graph",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "divisor-graph",
+    "budgeted-knapsack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731074,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "divisor-graph": 0.85,
+      "budgeted-knapsack": 0.8
+    }
+  }
+}

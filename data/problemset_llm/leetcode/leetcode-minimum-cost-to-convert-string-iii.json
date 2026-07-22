@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-minimum-cost-to-convert-string-iii",
+  "title": "Minimum Cost to Convert String III",
+  "slug": "minimum-cost-to-convert-string-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-convert-string-iii/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Given two strings of equal length and a set of pattern-replacement rules with associated costs, find the minimum total cost to transform the source string into the target string by applying non-overlapping rules that match patterns with wildcards. Return -1 if the transformation is impossible.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "interval-dp",
+    "pattern-matching",
+    "dp-on-substrings"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730952,
+    "pattern_confidence": {
+      "interval-dp": 0.9,
+      "pattern-matching": 0.85,
+      "dp-on-substrings": 0.88
+    }
+  }
+}

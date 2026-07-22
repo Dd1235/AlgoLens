@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-count-distinct-ways-to-form-target-from-two-strings",
+  "title": "Count Distinct Ways to Form Target from Two Strings",
+  "slug": "count-distinct-ways-to-form-target-from-two-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [],
+  "statement": "Count the number of ways to form a target string by selecting characters in order from two given strings, ensuring at least one character is chosen from each string and indices are strictly increasing within each string. Return the count modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "two-dimensional-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730984,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "two-dimensional-dp": 0.9
+    }
+  }
+}

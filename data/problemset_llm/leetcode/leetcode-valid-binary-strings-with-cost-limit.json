@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-valid-binary-strings-with-cost-limit",
+  "title": "Valid Binary Strings With Cost Limit",
+  "slug": "valid-binary-strings-with-cost-limit",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/valid-binary-strings-with-cost-limit/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "backtracking",
+    "bit-manipulation",
+    "enumeration"
+  ],
+  "statement": "Generate all binary strings of length n without consecutive '1's such that the sum of indices of '1's is at most k.",
+  "tags": [
+    "string",
+    "backtracking",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "backtracking",
+    "bitmask-enumeration",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731051,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "bitmask-enumeration": 0.9,
+      "pruning": 0.85
+    }
+  }
+}

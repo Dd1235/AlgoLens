@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-count-k-th-roots-in-a-range",
+  "title": "Count K-th Roots in a Range",
+  "slug": "count-k-th-roots-in-a-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-k-th-roots-in-a-range/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Count how many integers within a given range are perfect k-th powers, where a perfect k-th power is an integer that can be expressed as x raised to the power k for some integer x.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731106,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "exponentiation": 0.85
+    }
+  }
+}

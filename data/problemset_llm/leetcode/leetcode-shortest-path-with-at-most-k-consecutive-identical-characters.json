@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-shortest-path-with-at-most-k-consecutive-identical-characters",
+  "title": "Shortest Path With At Most K Consecutive Identical Characters",
+  "slug": "shortest-path-with-at-most-k-consecutive-identical-characters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Find the minimum weighted path from node 0 to node n-1 in a directed graph such that the path's node labels contain at most k consecutive identical characters.",
+  "tags": [
+    "graph",
+    "string",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "state-augmentation",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731012,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "state-augmentation": 0.95,
+      "heap": 0.9
+    }
+  }
+}

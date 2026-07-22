@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-operations-to-sort-a-permutation",
+  "title": "Minimum Operations to Sort a Permutation",
+  "slug": "minimum-operations-to-sort-a-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-sort-a-permutation/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array"
+  ],
+  "statement": "Given a permutation of integers from 0 to n-1, determine the minimum number of operations (full reversal or single left rotation) required to sort the array in ascending order, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "graph",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "state-space-search",
+    "permutation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731084,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "state-space-search": 0.9,
+      "permutation": 0.85
+    }
+  }
+}

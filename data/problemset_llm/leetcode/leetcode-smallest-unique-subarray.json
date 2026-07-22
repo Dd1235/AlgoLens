@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-smallest-unique-subarray",
+  "title": "Smallest Unique Subarray",
+  "slug": "smallest-unique-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-unique-subarray/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Hard",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "rolling-hash",
+    "suffix-array",
+    "hash-function"
+  ],
+  "statement": "Given an integer array, find the minimum length of a subarray that appears uniquely in the array, i.e., no other subarray of the same length has identical elements in the same order.",
+  "tags": [
+    "array",
+    "string",
+    "hash-map"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "rolling-hash",
+    "hashing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731101,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "rolling-hash": 0.9,
+      "hashing": 0.88
+    }
+  }
+}

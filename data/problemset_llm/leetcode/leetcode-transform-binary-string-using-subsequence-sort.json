@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-transform-binary-string-using-subsequence-sort",
+  "title": "Transform Binary String Using Subsequence Sort",
+  "slug": "transform-binary-string-using-subsequence-sort",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/transform-binary-string-using-subsequence-sort/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given a binary string s and multiple pattern strings with '?' wildcards, determine for each pattern if it can be formed by replacing '?' with '0' or '1' and transforming s via sorting any chosen subsequence any number of times.",
+  "tags": [
+    "string",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "subsequence-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784730943,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.9,
+      "subsequence-transformation": 0.85
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximize-sum-of-device-ratings",
+  "title": "Maximize Sum of Device Ratings",
+  "slug": "maximize-sum-of-device-ratings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-sum-of-device-ratings/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Given multiple devices each with units of capacity, you can transfer one unit from each device at most once to another device to maximize the sum of the minimum capacities (ratings) of all devices after transfers.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784731036,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "simulation": 0.7
+    }
+  }
+}
