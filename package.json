@@ -9,6 +9,7 @@
     "start": "node server/index.js",
     "embed": "node scripts/embed_corpus.js",
     "validate": "node scripts/validate_corpus.js",
+    "corpus:refresh": "bash scripts/refresh_corpus.sh",
     "bench": "node bench/run.js",
     "bench:fast": "LATENCY_REPEATS=5 node bench/run.js",
     "bench:diff": "node bench/diff.js",
