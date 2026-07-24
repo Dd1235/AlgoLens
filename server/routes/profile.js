@@ -2,7 +2,16 @@ const express = require("express");
 const db = require("../db");
 const { requireUser } = require("../auth/middleware");
 
-const PLATFORMS = ["leetcode", "codeforces", "codechef"];
+const PLATFORMS = ["leetcode", "codeforces", "codechef", "github"];
+// Each activity source belongs to a category; the client composes the
+// dsa / dev / overall heatmap views from these. "algolens" = done-marks here.
+const CATEGORIES = {
+  leetcode: "dsa",
+  codeforces: "dsa",
+  codechef: "dsa",
+  algolens: "dsa",
+  github: "dev",
+};
 const HANDLE_RE = /^[A-Za-z0-9_.-]{1,64}$/;
 // External stats are cached in user_platform_stats; a row older than the TTL
 // is refetched. ?refresh=1 shrinks the TTL to a floor so the button works but
@@ -114,22 +123,21 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
         })
       );
 
-      // Combined heatmap: platform submission calendars + AlgoLens done marks,
-      // trimmed to the last 53 weeks.
+      // The client composes the dsa / dev / overall heatmap views from the
+      // per-platform calendars (already in platforms.*.calendar) plus this
+      // AlgoLens done-marks calendar — no server-side pre-merge, so tab
+      // switches cost zero network and the payload carries each day once.
       const cutoff = Math.floor(Date.now() / 1000 / DAY_SECONDS - HEATMAP_WINDOW_DAYS) * DAY_SECONDS;
-      const heatmap = {};
-      const add = (daySec, count) => {
-        if (daySec >= cutoff && count > 0) heatmap[String(daySec)] = (heatmap[String(daySec)] || 0) + count;
-      };
-      for (const stats of Object.values(platforms)) {
-        for (const [sec, count] of Object.entries(stats.calendar || {})) add(Number(sec), Number(count));
-      }
       const doneRows = await db.query(
         `SELECT done_at FROM user_problem_state WHERE user_id = $1 AND done AND done_at IS NOT NULL`,
         [req.user.id]
       );
+      const algolensCalendar = {};
       for (const row of doneRows.rows) {
-        add(Math.floor(new Date(row.done_at).getTime() / 1000 / DAY_SECONDS) * DAY_SECONDS, 1);
+        const daySec = Math.floor(new Date(row.done_at).getTime() / 1000 / DAY_SECONDS) * DAY_SECONDS;
+        if (daySec >= cutoff) {
+          algolensCalendar[String(daySec)] = (algolensCalendar[String(daySec)] || 0) + 1;
+        }
       }
 
       const totalSolved = Object.values(platforms).reduce(
@@ -139,7 +147,12 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
       res.json({
         handles,
         platforms,
-        combined: { totalSolved, algolensDone: doneRows.rows.length, heatmap },
+        combined: {
+          totalSolved,
+          algolensDone: doneRows.rows.length,
+          categories: CATEGORIES,
+          calendars: { algolens: algolensCalendar },
+        },
       });
     } catch (_err) {
       res.status(500).json({ error: "db_error" });
