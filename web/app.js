@@ -254,9 +254,12 @@ function renderSingle(data, q, append) {
     return;
   }
   const lat = typeof data.latencyMs === "number" ? ` · ${data.latencyMs.toFixed(3)}ms` : "";
+  // Alias expansion is server-side; show what was added so the vocabulary is
+  // learnable ("aliens trick" → +wqs binary search).
+  const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
   const shown = currentOffset + data.hits.length;
   const total = currentTotal;
-  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${data.ranker}${lat}`);
+  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${data.ranker}${lat}${expanded}`);
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
@@ -423,7 +426,8 @@ function renderCompare(data, q) {
   });
   const totalHits = results.reduce((s, r) => s + r.hits.length, 0);
   if (totalHits === 0) { setStatus(`0 hits for "${q}"`); compareEl.innerHTML = ""; latencySummaryEl.textContent = ""; return; }
-  setStatus(`compare: "${q}"`);
+  const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
+  setStatus(`compare: "${q}"${expanded}`);
   latencySummaryEl.textContent = results.map((r) => `${r.ranker} ${r.latencyMs.toFixed(3)}ms`).join("  ·  ");
   compareEl.innerHTML = "";
   results.forEach((r, idx) => {
