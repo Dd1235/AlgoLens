@@ -691,6 +691,12 @@ html[data-theme="light"] .pattern-chip {
 /* Profile heatmap: 53-week column-major grid, GitHub-style */
 .heatmap-section { margin: 0.5rem 0 1.5rem; }
 
+.heatmap-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
+
 .heatmap-total {
   font-family: var(--mono);
   font-size: 0.78rem;

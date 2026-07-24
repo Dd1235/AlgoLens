@@ -42,6 +42,10 @@
           <span>codechef</span>
           <input id="handle-codechef" type="text" spellcheck="false" placeholder="username" />
         </label>
+        <label class="handle-field">
+          <span>github</span>
+          <input id="handle-github" type="text" spellcheck="false" placeholder="username" />
+        </label>
         <button type="submit">save handles</button>
         <span id="handles-msg" class="handles-msg"></span>
       </form>
@@ -49,6 +53,11 @@
       <div id="platform-cards" class="platform-cards"></div>
 
       <section id="heatmap-section" class="heatmap-section hidden">
+        <div id="heatmap-tabs" class="heatmap-tabs">
+          <button type="button" class="lib-chip is-active" data-tab="overall" title="everything: dsa + dev">overall</button>
+          <button type="button" class="lib-chip" data-tab="dsa" title="leetcode + codeforces + algolens done marks">dsa</button>
+          <button type="button" class="lib-chip" data-tab="dev" title="github contributions">dev</button>
+        </div>
         <p id="heatmap-total" class="heatmap-total"></p>
         <div id="heatmap-months" class="heatmap-months"></div>
         <div id="heatmap" class="heatmap"></div>
@@ -60,7 +69,8 @@
     </main>
     <footer>
       algolens · stats cached ~12h server-side · codechef is best-effort (no
-      official api) · heatmap = lc + cf submissions + algolens done marks
+      official api) · dsa = lc + cf + done marks here · dev = github
+      contributions
     </footer>
     <script src="/profile.js"></script>
   </body>
