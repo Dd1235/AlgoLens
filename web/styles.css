@@ -616,6 +616,19 @@ html[data-theme="light"] .pattern-chip {
   border-color: var(--warn);
 }
 
+/* :help man page */
+.help-block { cursor: default; }
+
+.help-man {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--text);
+  overflow-x: auto;
+  white-space: pre;
+}
+
 /* Patterns directory page (patterns.html) */
 .home-link {
   color: inherit;
