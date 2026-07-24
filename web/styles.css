@@ -616,6 +616,69 @@ html[data-theme="light"] .pattern-chip {
   border-color: var(--warn);
 }
 
+/* Profile page: handles form + platform stat cards */
+.handles-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.handle-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.handle-field input {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 11rem;
+}
+
+.handles-msg {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.platform-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.platform-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.7rem 0.85rem;
+  font-family: var(--mono);
+  background: var(--surface);
+}
+
+.platform-card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+
+.platform-card h2::before { content: "## "; opacity: 0.6; }
+.platform-card p { margin: 0.15rem 0; font-size: 0.78rem; }
+.platform-card .card-big { font-size: 1.5rem; color: var(--accent); }
+.platform-card .card-dim { color: var(--text-muted); }
+.platform-card .card-meta { color: var(--text-dim); font-size: 0.68rem; }
+
 /* :help man page */
 .help-block { cursor: default; }
 

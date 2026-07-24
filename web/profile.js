@@ -1,0 +1,219 @@
+const statusEl = document.getElementById("profile-status");
+const form = document.getElementById("handles-form");
+const msgEl = document.getElementById("handles-msg");
+const cardsEl = document.getElementById("platform-cards");
+const heatmapSection = document.getElementById("heatmap-section");
+const heatmapEl = document.getElementById("heatmap");
+const heatmapMonthsEl = document.getElementById("heatmap-months");
+const heatmapTotalEl = document.getElementById("heatmap-total");
+const refreshLink = document.getElementById("refresh-link");
+
+const PLATFORMS = ["leetcode", "codeforces", "codechef"];
+const inputs = Object.fromEntries(PLATFORMS.map((p) => [p, document.getElementById(`handle-${p}`)]));
+
+function setStatus(text) {
+  statusEl.innerHTML = "";
+  statusEl.append(text);
+  const cursor = document.createElement("span");
+  cursor.className = "cursor";
+  cursor.textContent = "_";
+  statusEl.appendChild(cursor);
+}
+
+function formatRelative(iso) {
+  if (!iso) return "—";
+  const ms = Date.now() - new Date(iso).getTime();
+  if (!Number.isFinite(ms) || ms < 60000) return "just now";
+  const m = Math.floor(ms / 60000);
+  if (m < 60) return `${m}m ago`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `${h}h ago`;
+  return `${Math.floor(h / 24)}d ago`;
+}
+
+function statCard(platform, stats) {
+  const card = document.createElement("section");
+  card.className = "platform-card";
+  const name = document.createElement("h2");
+  name.textContent = platform;
+  card.appendChild(name);
+
+  if (!stats) {
+    const p = document.createElement("p");
+    p.className = "card-dim";
+    p.textContent = "no handle saved";
+    card.appendChild(p);
+    return card;
+  }
+  if (stats.unavailable) {
+    const p = document.createElement("p");
+    p.className = "card-dim";
+    p.textContent = `unavailable (${stats.error || "fetch failed"}) — check the handle or refresh`;
+    card.appendChild(p);
+    return card;
+  }
+
+  const solved = document.createElement("p");
+  solved.className = "card-big";
+  solved.textContent = stats.solved != null ? String(stats.solved) : "—";
+  card.appendChild(solved);
+  const solvedLabel = document.createElement("p");
+  solvedLabel.className = "card-dim";
+  solvedLabel.textContent = "solved";
+  card.appendChild(solvedLabel);
+
+  if (typeof stats.rating === "number") {
+    const rating = document.createElement("p");
+    rating.textContent = `rating ${stats.rating}`;
+    card.appendChild(rating);
+  }
+  if (stats.byDifficulty && Object.keys(stats.byDifficulty).length) {
+    const d = stats.byDifficulty;
+    const split = document.createElement("p");
+    split.className = "card-dim";
+    split.textContent = `E ${d.easy ?? 0} · M ${d.medium ?? 0} · H ${d.hard ?? 0}`;
+    card.appendChild(split);
+  }
+  const meta = document.createElement("p");
+  meta.className = "card-meta";
+  meta.textContent = `as of ${formatRelative(stats.fetchedAt)}${stats.stale ? " · cached" : ""}`;
+  card.appendChild(meta);
+  return card;
+}
+
+function renderCards(data) {
+  cardsEl.innerHTML = "";
+  for (const platform of PLATFORMS) {
+    cardsEl.appendChild(statCard(platform, data.handles[platform] ? data.platforms[platform] : null));
+  }
+  const algolens = document.createElement("section");
+  algolens.className = "platform-card";
+  const name = document.createElement("h2");
+  name.textContent = "algolens";
+  algolens.appendChild(name);
+  const big = document.createElement("p");
+  big.className = "card-big";
+  big.textContent = String(data.combined.algolensDone);
+  algolens.appendChild(big);
+  const label = document.createElement("p");
+  label.className = "card-dim";
+  label.textContent = "marked done here";
+  algolens.appendChild(label);
+  cardsEl.appendChild(algolens);
+}
+
+const DAY = 86400;
+
+// GitHub-style 53-week grid, column-major (grid-auto-flow: column with 7 rows
+// = one column per week), starting on the Sunday 52 weeks back.
+function renderHeatmap(heatmap) {
+  heatmapEl.innerHTML = "";
+  heatmapMonthsEl.innerHTML = "";
+  const today = Math.floor(Date.now() / 1000 / DAY) * DAY;
+  const todayDow = new Date(today * 1000).getUTCDay();
+  const start = today - (52 * 7 + todayDow) * DAY;
+
+  const counts = [];
+  for (let d = start; d <= today; d += DAY) counts.push(heatmap[String(d)] || 0);
+  const nonzero = counts.filter((c) => c > 0).sort((a, b) => a - b);
+  const q = (p) => nonzero[Math.min(nonzero.length - 1, Math.floor(p * nonzero.length))] || 0;
+  const thresholds = nonzero.length >= 4 ? [q(0.25), q(0.5), q(0.75)] : [1, 2, 4];
+  const level = (c) => (c === 0 ? 0 : 1 + thresholds.filter((t) => c > t).length);
+
+  let total = 0;
+  let lastMonth = -1;
+  let column = 0;
+  for (let d = start; d <= today; d += DAY) {
+    const c = heatmap[String(d)] || 0;
+    total += c;
+    const cell = document.createElement("span");
+    cell.className = `hm hm-l${level(c)}`;
+    const date = new Date(d * 1000);
+    cell.title = `${c} on ${date.toISOString().slice(0, 10)}`;
+    heatmapEl.appendChild(cell);
+
+    if (date.getUTCDay() === 0) {
+      const label = document.createElement("span");
+      const month = date.getUTCMonth();
+      if (month !== lastMonth && column !== 0) {
+        label.textContent = date.toLocaleString("en", { month: "short", timeZone: "UTC" }).toLowerCase();
+        lastMonth = month;
+      }
+      heatmapMonthsEl.appendChild(label);
+      column += 1;
+    }
+  }
+  heatmapTotalEl.textContent = `${total} activity marks in the last 53 weeks`;
+  heatmapSection.classList.remove("hidden");
+}
+
+async function load(refresh) {
+  setStatus(refresh ? "refreshing stats" : "loading profile");
+  let res, data;
+  try {
+    res = await fetch(`/api/profile${refresh ? "?refresh=1" : ""}`);
+    data = await res.json();
+  } catch (_e) {
+    setStatus("error: profile failed to load");
+    return;
+  }
+  if (!res.ok) {
+    setStatus("error: profile failed to load");
+    return;
+  }
+
+  for (const p of PLATFORMS) inputs[p].value = data.handles[p] || "";
+  renderCards(data);
+  renderHeatmap(data.combined.heatmap || {});
+  const savedCount = Object.keys(data.handles).length;
+  setStatus(
+    savedCount
+      ? `~/profile · ${data.combined.totalSolved} solved across judges · ${data.combined.algolensDone} done here`
+      : "~/profile · add your handles to pull combined stats"
+  );
+}
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  msgEl.textContent = "saving…";
+  const body = Object.fromEntries(PLATFORMS.map((p) => [p, inputs[p].value.trim()]));
+  let res;
+  try {
+    res = await fetch("/api/handles", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+  } catch (_e) {
+    msgEl.textContent = "network error";
+    return;
+  }
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    msgEl.textContent = data.error === "bad_handle" ? "invalid handle" : "save failed";
+    return;
+  }
+  msgEl.textContent = "saved";
+  load(true);
+});
+
+refreshLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  load(true);
+});
+
+// Gate: profile is meaningless anonymous — redirect to login (new convention
+// for authed pages; index.html itself still degrades gracefully instead).
+(async () => {
+  try {
+    const res = await fetch("/api/auth/me");
+    if (!res.ok) {
+      window.location.href = "/login.html";
+      return;
+    }
+  } catch (_e) {
+    window.location.href = "/login.html";
+    return;
+  }
+  load(false);
+})();
