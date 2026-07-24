@@ -2,7 +2,7 @@
 
 Search 1,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
-Live demo: _coming — run it locally in two commands, below_
+**Live demo: [algolens-pp2m.onrender.com](https://algolens-pp2m.onrender.com/)** · [live stats](https://algolens-pp2m.onrender.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
 ## Why this exists
 
