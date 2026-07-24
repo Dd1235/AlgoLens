@@ -1,4 +1,4 @@
-# AlgoLens
+# Cosine
 
 Search 1,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
@@ -10,7 +10,7 @@ Note: The Screenshots are not upto date, please explore the live website!
 
 Google "cses euler path" and you get the CSES homepage, a blog post, and Wikipedia — not the actual Euler-path problems. "knapsack leetcode" is no better at surfacing the good knapsack DPs. Site tags help but stop at their site's border and at coarse labels: LeetCode has `dynamic-programming`, but nothing for `digit-dp`, `wqs-binary-search`, or `slope-trick`. And nothing anywhere answers _"I remember the story — a thief robbing houses — what was that problem?"_
 
-AlgoLens is one search box over LeetCode + CSES that handles all three.
+Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all three.
 
 ![search](demo/01-search.png)
 
