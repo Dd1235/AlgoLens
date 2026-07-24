@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-add-two-numbers",
+  "title": "Add Two Numbers",
+  "slug": "add-two-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/add-two-numbers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "linked-list",
+    "math",
+    "recursion"
+  ],
+  "statement": "Given two non-empty linked lists representing non-negative integers in reverse digit order, compute their sum and return it as a linked list in the same reversed format.",
+  "tags": [
+    "linked-list",
+    "math"
+  ],
+  "patterns": [
+    "simulation",
+    "digit-by-digit-addition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910107,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "digit-by-digit-addition": 0.9
+    }
+  }
+}

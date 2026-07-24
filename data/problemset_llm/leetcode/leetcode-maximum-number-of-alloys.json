@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-number-of-alloys",
+  "title": "Maximum Number of Alloys",
+  "slug": "maximum-number-of-alloys",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-alloys/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given multiple machines each requiring specific metal compositions, and initial metal stocks with costs, determine the maximum number of alloys that can be produced by a single machine within a given budget.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "cost-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909420,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.7,
+      "cost-calculation": 0.6
+    }
+  }
+}

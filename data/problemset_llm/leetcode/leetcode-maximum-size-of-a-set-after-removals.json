@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-size-of-a-set-after-removals",
+  "title": "Maximum Size of a Set After Removals",
+  "slug": "maximum-size-of-a-set-after-removals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-size-of-a-set-after-removals/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy"
+  ],
+  "statement": "Given two integer arrays of even length, remove half the elements from each so that the union of the remaining elements has maximum size.",
+  "tags": [
+    "array",
+    "greedy",
+    "hash-map"
+  ],
+  "patterns": [
+    "greedy",
+    "frequency-count",
+    "set-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909911,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "frequency-count": 0.9,
+      "set-operations": 0.85
+    }
+  }
+}

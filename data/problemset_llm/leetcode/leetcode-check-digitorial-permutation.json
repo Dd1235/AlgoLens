@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-check-digitorial-permutation",
+  "title": "Check Digitorial Permutation",
+  "slug": "check-digitorial-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-digitorial-permutation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "counting"
+  ],
+  "statement": "Given an integer n, determine if any permutation of its digits (not starting with zero) forms a digitorial number, where the sum of the factorials of the digits equals the number itself.",
+  "tags": [
+    "math",
+    "permutation",
+    "factorial",
+    "counting"
+  ],
+  "patterns": [
+    "permutation-enumeration",
+    "factorial-precomputation",
+    "digit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909914,
+    "pattern_confidence": {
+      "permutation-enumeration": 0.9,
+      "factorial-precomputation": 0.85,
+      "digit-manipulation": 0.8
+    }
+  }
+}

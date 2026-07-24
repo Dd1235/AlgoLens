@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-operations-to-sort-a-string",
+  "title": "Minimum Operations to Sort a String",
+  "slug": "minimum-operations-to-sort-a-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-sort-a-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string"
+  ],
+  "statement": "Given a lowercase string, determine the minimum number of substring sorting operations (excluding the entire string) needed to transform it into a non-descending alphabetical order, or return -1 if impossible.",
+  "tags": [
+    "string",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908439,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

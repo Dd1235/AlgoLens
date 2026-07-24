@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-statistics-from-a-large-sample",
+  "title": "Statistics from a Large Sample",
+  "slug": "statistics-from-a-large-sample",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/statistics-from-a-large-sample/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "probability-and-statistics"
+  ],
+  "statement": "Given a frequency array representing a large sample of integers in [0,255], compute the minimum, maximum, mean, median, and mode of the sample efficiently.",
+  "tags": [
+    "array",
+    "math",
+    "statistics"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "counting",
+    "frequency-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909560,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "counting": 0.9,
+      "frequency-analysis": 0.85
+    }
+  }
+}

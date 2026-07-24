@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-random-point-in-non-overlapping-rectangles",
+  "title": "Random Point in Non-overlapping Rectangles",
+  "slug": "random-point-in-non-overlapping-rectangles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "reservoir-sampling",
+    "prefix-sum",
+    "ordered-set",
+    "randomized"
+  ],
+  "statement": "Given a list of non-overlapping axis-aligned rectangles, design a data structure to randomly pick an integer point uniformly from the combined area covered by these rectangles.",
+  "tags": [
+    "array",
+    "math",
+    "randomized"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search",
+    "random-sampling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909333,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search": 0.9,
+      "random-sampling": 0.9
+    }
+  }
+}

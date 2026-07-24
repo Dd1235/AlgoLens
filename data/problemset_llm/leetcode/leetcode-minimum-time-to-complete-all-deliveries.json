@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-time-to-complete-all-deliveries",
+  "title": "Minimum Time to Complete All Deliveries",
+  "slug": "minimum-time-to-complete-all-deliveries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Given two drones each with a required number of deliveries and recharge intervals, find the minimum total time needed to complete all deliveries when only one drone can deliver per hour and drones must pause for recharging at specified intervals.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908926,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "modular-arithmetic": 0.7
+    }
+  }
+}

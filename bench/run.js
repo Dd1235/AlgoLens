@@ -6,6 +6,12 @@ const { Bm25Index } = require("../server/search/bm25");
 const { GrpcSearchIndex, probe } = require("../server/search/grpc_index");
 const { tryCreateDenseIndex } = require("../server/search/dense");
 const { HybridIndex } = require("../server/search/hybrid");
+const { expandQuery } = require("../server/search/query_expand");
+
+// The serving path expands alias queries at the route ("aliens trick" →
+// +wqs binary search), so the bench does too by default — it measures the
+// pipeline users hit. BENCH_EXPAND=0 gives the raw-ranker measurement for A/Bs.
+const BENCH_EXPAND = process.env.BENCH_EXPAND !== "0";
 
 const QUERIES_PATH = path.join(__dirname, "queries.json");
 const RESULTS_DIR = path.join(__dirname, "..", "experiments");
@@ -79,15 +85,16 @@ async function evalRanker(name, index, queries) {
   const bySlice = new Map();
 
   for (const { query, relevant, slice = "keyword" } of queries) {
+    const searchQuery = BENCH_EXPAND ? expandQuery(query).query : query;
     // first run for correctness (k=100 so Recall@100 is measurable);
     // then re-run at serving size for latency
-    const result = await Promise.resolve(index.search(query, K_FOR_RECALL));
+    const result = await Promise.resolve(index.search(searchQuery, K_FOR_RECALL));
     const hits = Array.isArray(result) ? result : result.hits;
     const latencies = [];
     const scoring = [];
     for (let i = 0; i < LATENCY_REPEATS; i++) {
       const t = process.hrtime.bigint();
-      await Promise.resolve(index.search(query, K_FOR_NDCG));
+      await Promise.resolve(index.search(searchQuery, K_FOR_NDCG));
       latencies.push(Number(process.hrtime.bigint() - t) / 1e6);
       // gRPC client exposes lastScoringLatencyMs from the server's perspective
       if (typeof index.lastScoringLatencyMs === "number") {
@@ -258,6 +265,7 @@ async function main() {
     corpus: { docs: problems.length, loadMs, build: { tfidf: tBuildTfMs, bm25: tBuildBmMs, dense: denseInitMs } },
     queriesFile: path.relative(path.join(__dirname, ".."), QUERIES_PATH),
     queriesVersion: queriesData.version,
+    expansion: BENCH_EXPAND ? "on" : "off",
     queryCount: queries.length,
     latencyRepeats: LATENCY_REPEATS,
     grpcAddr: grpcIdx ? grpcAddr : null,

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-subarrays-with-lcm-equal-to-k",
+  "title": "Number of Subarrays With LCM Equal to K",
+  "slug": "number-of-subarrays-with-lcm-equal-to-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-subarrays-with-lcm-equal-to-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer array and a target integer k, count the number of contiguous subarrays whose least common multiple (LCM) equals k.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "two-pointers",
+    "lcm-computation",
+    "prefix-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909826,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "lcm-computation": 0.95,
+      "prefix-product": 0.7
+    }
+  }
+}

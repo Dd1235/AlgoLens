@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-rotate-array",
+  "title": "Rotate Array",
+  "slug": "rotate-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/rotate-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "two-pointers"
+  ],
+  "statement": "Rotate an integer array to the right by k steps, modifying it in-place with minimal extra space.",
+  "tags": [
+    "array",
+    "math",
+    "two-pointers"
+  ],
+  "patterns": [
+    "array-reversal",
+    "in-place-modification",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909750,
+    "pattern_confidence": {
+      "array-reversal": 0.95,
+      "in-place-modification": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

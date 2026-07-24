@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-two-letter-card-game",
+  "title": "Two-Letter Card Game",
+  "slug": "two-letter-card-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/two-letter-card-game/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "counting",
+    "enumeration"
+  ],
+  "statement": "Given a list of two-letter cards and a letter x, find the maximum number of pairs of cards containing x that differ in exactly one position, removing pairs to maximize points.",
+  "tags": [
+    "string",
+    "graph",
+    "matching",
+    "counting"
+  ],
+  "patterns": [
+    "graph-construction",
+    "maximum-matching",
+    "string-difference",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908419,
+    "pattern_confidence": {
+      "graph-construction": 0.95,
+      "maximum-matching": 0.9,
+      "string-difference": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

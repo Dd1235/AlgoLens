@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-number-of-removable-characters",
+  "title": "Maximum Number of Removable Characters",
+  "slug": "maximum-number-of-removable-characters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-removable-characters/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "string",
+    "binary-search"
+  ],
+  "statement": "Given strings s and p where p is a subsequence of s, and an array of removable indices, find the maximum number of characters that can be removed from s in order without breaking p as a subsequence.",
+  "tags": [
+    "string",
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "subsequence-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909965,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "subsequence-check": 0.85
+    }
+  }
+}

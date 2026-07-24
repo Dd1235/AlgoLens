@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimize-maximum-of-array",
+  "title": "Minimize Maximum of Array",
+  "slug": "minimize-maximum-of-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-maximum-of-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of non-negative integers, perform operations that move one unit from an element to its left neighbor to minimize the maximum value in the array after any number of such operations.",
+  "tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909893,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

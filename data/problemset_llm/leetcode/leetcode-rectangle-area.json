@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-rectangle-area",
+  "title": "Rectangle Area",
+  "slug": "rectangle-area",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/rectangle-area/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "geometry"
+  ],
+  "statement": "Calculate the total area covered by two axis-aligned rectangles given their bottom-left and top-right coordinates in a 2D plane, accounting for any overlap.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "geometry",
+    "rectangle-overlap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910218,
+    "pattern_confidence": {
+      "geometry": 0.98,
+      "rectangle-overlap": 0.9
+    }
+  }
+}

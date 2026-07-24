@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-longest-well-performing-interval",
+  "title": "Longest Well-Performing Interval",
+  "slug": "longest-well-performing-interval",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-well-performing-interval/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "stack",
+    "monotonic-stack",
+    "prefix-sum"
+  ],
+  "statement": "Given an array representing daily work hours, find the length of the longest contiguous interval where the count of days with hours greater than 8 exceeds the count of days with hours 8 or less.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "stack",
+    "monotonic-stack",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "monotonic-stack",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909098,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "monotonic-stack": 0.9,
+      "hash-map": 0.85
+    }
+  }
+}

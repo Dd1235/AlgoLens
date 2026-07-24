@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-ways-to-arrive-at-destination",
+  "title": "Number of Ways to Arrive at Destination",
+  "slug": "number-of-ways-to-arrive-at-destination",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming",
+    "graph",
+    "topological-sort",
+    "shortest-path"
+  ],
+  "statement": "Given a weighted undirected graph with n intersections and roads, find the number of distinct shortest paths from node 0 to node n-1 modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dijkstra",
+    "counting-paths",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909044,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "counting-paths": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

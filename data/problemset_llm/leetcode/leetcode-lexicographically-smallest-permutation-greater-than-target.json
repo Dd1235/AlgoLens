@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-lexicographically-smallest-permutation-greater-than-target",
+  "title": "Lexicographically Smallest Permutation Greater Than Target",
+  "slug": "lexicographically-smallest-permutation-greater-than-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "greedy",
+    "counting",
+    "enumeration"
+  ],
+  "statement": "Given two strings s and target of equal length, find the lexicographically smallest permutation of s that is strictly greater than target, or return an empty string if none exists.",
+  "tags": [
+    "string",
+    "greedy",
+    "sorting",
+    "counting"
+  ],
+  "patterns": [
+    "lexicographic-order",
+    "permutation-generation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908568,
+    "pattern_confidence": {
+      "lexicographic-order": 0.95,
+      "permutation-generation": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

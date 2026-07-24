@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-design-bitset",
+  "title": "Design Bitset",
+  "slug": "design-bitset",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-bitset/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "design"
+  ],
+  "statement": "Implement a Bitset data structure supporting bit updates, flips, and queries for all bits set, any bit set, count of set bits, and string representation.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "design"
+  ],
+  "patterns": [
+    "lazy-flip",
+    "bit-counting",
+    "state-maintenance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908782,
+    "pattern_confidence": {
+      "lazy-flip": 0.95,
+      "bit-counting": 0.9,
+      "state-maintenance": 0.85
+    }
+  }
+}

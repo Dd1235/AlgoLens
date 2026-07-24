@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimize-maximum-component-cost",
+  "title": "Minimize Maximum Component Cost",
+  "slug": "minimize-maximum-component-cost",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-maximum-component-cost/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "binary-search",
+    "union-find",
+    "graph",
+    "sorting"
+  ],
+  "statement": "Given a connected undirected graph with weighted edges, remove edges to form at most k connected components minimizing the maximum edge weight within any component.",
+  "tags": [
+    "graph",
+    "union-find",
+    "binary-search",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909599,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.93,
+      "greedy": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

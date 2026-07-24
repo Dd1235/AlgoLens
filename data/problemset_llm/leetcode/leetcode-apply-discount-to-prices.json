@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-apply-discount-to-prices",
+  "title": "Apply Discount to Prices",
+  "slug": "apply-discount-to-prices",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/apply-discount-to-prices/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string"
+  ],
+  "statement": "Given a sentence with words that may represent prices prefixed by '$', apply a given percentage discount to each price and return the updated sentence with prices formatted to two decimal places.",
+  "tags": [
+    "string",
+    "parsing",
+    "math"
+  ],
+  "patterns": [
+    "string-parsing",
+    "formatting",
+    "arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908857,
+    "pattern_confidence": {
+      "string-parsing": 0.95,
+      "formatting": 0.9,
+      "arithmetic": 0.85
+    }
+  }
+}

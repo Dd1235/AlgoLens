@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-nice-pairs-in-an-array",
+  "title": "Count Nice Pairs in an Array",
+  "slug": "count-nice-pairs-in-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-nice-pairs-in-an-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "counting"
+  ],
+  "statement": "Given an array of non-negative integers, count the number of index pairs (i, j) where i < j and nums[i] + rev(nums[j]) equals nums[j] + rev(nums[i]), with rev(x) being the integer x reversed. Return the count modulo 10^9 + 7.",
+  "tags": [
+    "array",
+    "hash-map",
+    "math",
+    "counting"
+  ],
+  "patterns": [
+    "hash-map",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910058,
+    "pattern_confidence": {
+      "hash-map": 0.98,
+      "counting": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

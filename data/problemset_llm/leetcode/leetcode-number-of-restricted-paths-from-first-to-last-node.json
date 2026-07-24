@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-number-of-restricted-paths-from-first-to-last-node",
+  "title": "Number of Restricted Paths From First to Last Node",
+  "slug": "number-of-restricted-paths-from-first-to-last-node",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming",
+    "graph",
+    "topological-sort",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given a weighted undirected connected graph, count the number of paths from node 1 to node n where the shortest distance to node n strictly decreases at each step, modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "topological-sort",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909440,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "topological-sort": 0.9,
+      "dp-on-dag": 0.88
+    }
+  }
+}

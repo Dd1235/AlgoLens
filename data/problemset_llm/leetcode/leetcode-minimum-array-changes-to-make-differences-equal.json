@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-array-changes-to-make-differences-equal",
+  "title": "Minimum Array Changes to Make Differences Equal",
+  "slug": "minimum-array-changes-to-make-differences-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-array-changes-to-make-differences-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Given an even-length array and an integer k, find the minimum number of element replacements (each within 0 to k) needed so that all pairs of elements symmetric about the center have the same absolute difference.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908528,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

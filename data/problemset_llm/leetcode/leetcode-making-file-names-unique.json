@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-making-file-names-unique",
+  "title": "Making File Names Unique",
+  "slug": "making-file-names-unique",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/making-file-names-unique/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string"
+  ],
+  "statement": "Given a list of folder names, assign unique folder names by appending the smallest possible suffix (k) when duplicates occur, ensuring all names are unique.",
+  "tags": [
+    "array",
+    "hash-map",
+    "string"
+  ],
+  "patterns": [
+    "hash-map",
+    "simulation",
+    "string-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909170,
+    "pattern_confidence": {
+      "hash-map": 0.98,
+      "simulation": 0.9,
+      "string-processing": 0.85
+    }
+  }
+}

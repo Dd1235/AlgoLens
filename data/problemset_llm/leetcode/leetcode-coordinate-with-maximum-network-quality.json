@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-coordinate-with-maximum-network-quality",
+  "title": "Coordinate With Maximum Network Quality",
+  "slug": "coordinate-with-maximum-network-quality",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/coordinate-with-maximum-network-quality/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "enumeration"
+  ],
+  "statement": "Given a set of network towers with coordinates and quality factors, find the integral coordinate within the bounding area that maximizes the sum of signal qualities from all reachable towers within a given radius, breaking ties by lexicographical order.",
+  "tags": [
+    "geometry",
+    "array",
+    "enumeration"
+  ],
+  "patterns": [
+    "brute-force-enumeration",
+    "distance-calculation",
+    "floor-function"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909306,
+    "pattern_confidence": {
+      "brute-force-enumeration": 0.95,
+      "distance-calculation": 0.9,
+      "floor-function": 0.7
+    }
+  }
+}

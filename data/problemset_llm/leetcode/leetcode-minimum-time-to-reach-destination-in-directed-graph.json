@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-time-to-reach-destination-in-directed-graph",
+  "title": "Minimum Time to Reach Destination in Directed Graph",
+  "slug": "minimum-time-to-reach-destination-in-directed-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-reach-destination-in-directed-graph/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given a directed graph with edges available only during specific time intervals, find the minimum time to reach the last node from the first node, allowing waiting at nodes.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "time-dependent-graph",
+    "waiting-strategy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909806,
+    "pattern_confidence": {
+      "dijkstra": 0.95,
+      "time-dependent-graph": 0.9,
+      "waiting-strategy": 0.85
+    }
+  }
+}

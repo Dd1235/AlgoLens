@@ -616,6 +616,143 @@ html[data-theme="light"] .pattern-chip {
   border-color: var(--warn);
 }
 
+/* Profile page: handles form + platform stat cards */
+.handles-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.handle-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.handle-field input {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  width: 11rem;
+}
+
+.handles-msg {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.platform-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.platform-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.7rem 0.85rem;
+  font-family: var(--mono);
+  background: var(--surface);
+}
+
+.platform-card h2 {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}
+
+.platform-card h2::before { content: "## "; opacity: 0.6; }
+.platform-card p { margin: 0.15rem 0; font-size: 0.78rem; }
+.platform-card .card-big { font-size: 1.5rem; color: var(--accent); }
+.platform-card .card-dim { color: var(--text-muted); }
+.platform-card .card-meta { color: var(--text-dim); font-size: 0.68rem; }
+
+/* Profile heatmap: 53-week column-major grid, GitHub-style */
+.heatmap-section { margin: 0.5rem 0 1.5rem; }
+
+.heatmap-total {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0 0 0.4rem;
+}
+
+.heatmap-months {
+  display: grid;
+  grid-template-columns: repeat(53, 10px);
+  gap: 3px;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  margin-bottom: 3px;
+}
+
+.heatmap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 10px);
+  grid-auto-columns: 10px;
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 0.3rem;
+}
+
+.hm {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.hm-l0 { background: var(--surface-strong, rgba(138, 164, 191, 0.08)); }
+.hm-l1 { background: color-mix(in srgb, var(--accent) 30%, transparent); }
+.hm-l2 { background: color-mix(in srgb, var(--accent) 55%, transparent); }
+.hm-l3 { background: color-mix(in srgb, var(--accent) 78%, transparent); }
+.hm-l4 { background: var(--accent); }
+
+.heatmap-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  margin: 0.4rem 0 0;
+}
+
+.heatmap-foot a { color: var(--accent-2); text-decoration: none; }
+
+.heatmap-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--text-dim);
+}
+
+/* :help man page */
+.help-block { cursor: default; }
+
+.help-man {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--text);
+  overflow-x: auto;
+  white-space: pre;
+}
+
 /* Patterns directory page (patterns.html) */
 .home-link {
   color: inherit;

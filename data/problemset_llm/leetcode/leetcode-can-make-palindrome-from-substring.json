@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-can-make-palindrome-from-substring",
+  "title": "Can Make Palindrome from Substring",
+  "slug": "can-make-palindrome-from-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/can-make-palindrome-from-substring/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "bit-manipulation",
+    "prefix-sum"
+  ],
+  "statement": "Given a string and queries specifying substrings and allowed character replacements, determine if each substring can be rearranged and modified within the replacement limit to form a palindrome.",
+  "tags": [
+    "string",
+    "array",
+    "bit-manipulation",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "bitmask",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909465,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "bitmask": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-removing-minimum-number-of-magic-beans",
+  "title": "Removing Minimum Number of Magic Beans",
+  "slug": "removing-minimum-number-of-magic-beans",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/removing-minimum-number-of-magic-beans/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "statement": "Given an array representing counts of magic beans in bags, remove beans so that all non-empty bags have the same number of beans, minimizing the total removed.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "sorting",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909711,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "prefix-sum": 0.9,
+      "greedy": 0.9
+    }
+  }
+}

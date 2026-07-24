@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-mountain-in-array",
+  "title": "Longest Mountain in Array",
+  "slug": "longest-mountain-in-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-mountain-in-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "dynamic-programming",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, find the length of the longest contiguous subarray that forms a mountain shape, where elements strictly increase then strictly decrease. Return 0 if no such subarray exists.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "two-pointers",
+    "dynamic-programming",
+    "one-pass"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909496,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "dynamic-programming": 0.85,
+      "one-pass": 0.9
+    }
+  }
+}

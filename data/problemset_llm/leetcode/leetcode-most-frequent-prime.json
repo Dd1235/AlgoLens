@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-most-frequent-prime",
+  "title": "Most Frequent Prime",
+  "slug": "most-frequent-prime",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/most-frequent-prime/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "matrix",
+    "counting",
+    "enumeration",
+    "number-theory"
+  ],
+  "statement": "Given a 2D matrix of digits, generate all numbers by concatenating digits along any of the 8 directions from each cell without changing direction, then find the most frequent prime number greater than 10 among these numbers, returning the largest if there is a tie or -1 if none exist.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "enumeration"
+  ],
+  "patterns": [
+    "directional-enumeration",
+    "prime-checking",
+    "frequency-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909824,
+    "pattern_confidence": {
+      "directional-enumeration": 0.95,
+      "prime-checking": 0.9,
+      "frequency-counting": 0.85
+    }
+  }
+}

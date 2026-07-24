@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-number-of-flips-to-make-binary-grid-palindromic-ii",
+  "title": "Minimum Number of Flips to Make Binary Grid Palindromic II",
+  "slug": "minimum-number-of-flips-to-make-binary-grid-palindromic-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "matrix"
+  ],
+  "statement": "Given a binary matrix, find the minimum number of cell flips required so that every row and column is palindromic and the total count of 1s is divisible by 4.",
+  "tags": [
+    "array",
+    "matrix",
+    "greedy",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask",
+    "greedy",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908547,
+    "pattern_confidence": {
+      "bitmask": 0.9,
+      "greedy": 0.85,
+      "parity-check": 0.8
+    }
+  }
+}

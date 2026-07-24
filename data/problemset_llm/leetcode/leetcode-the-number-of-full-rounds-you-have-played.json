@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-the-number-of-full-rounds-you-have-played",
+  "title": "The Number of Full Rounds You Have Played",
+  "slug": "the-number-of-full-rounds-you-have-played",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-number-of-full-rounds-you-have-played/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string"
+  ],
+  "statement": "Given login and logout times in hh:mm format, count the number of full 15-minute chess rounds played, considering rounds start every 15 minutes from 00:00 to 23:45 and accounting for sessions crossing midnight.",
+  "tags": [
+    "math",
+    "string",
+    "time"
+  ],
+  "patterns": [
+    "time-interval-calculation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909574,
+    "pattern_confidence": {
+      "time-interval-calculation": 0.95,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-valid-square",
+  "title": "Valid Square",
+  "slug": "valid-square",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/valid-square/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "geometry"
+  ],
+  "statement": "Given four points in 2D space, determine whether they form a valid square with equal sides and right angles, regardless of input order.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "distance-computation",
+    "sorting",
+    "vector-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909753,
+    "pattern_confidence": {
+      "distance-computation": 0.95,
+      "sorting": 0.8,
+      "vector-operations": 0.85
+    }
+  }
+}

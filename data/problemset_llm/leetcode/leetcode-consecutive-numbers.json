@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-consecutive-numbers",
+  "title": "Consecutive Numbers",
+  "slug": "consecutive-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/consecutive-numbers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given a table of numbers with an auto-incrementing id, identify all numbers that appear at least three times consecutively in order of id.",
+  "tags": [
+    "array",
+    "database",
+    "string"
+  ],
+  "patterns": [
+    "sliding-window",
+    "consecutive-elements",
+    "grouping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910089,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "consecutive-elements": 0.95,
+      "grouping": 0.85
+    }
+  }
+}

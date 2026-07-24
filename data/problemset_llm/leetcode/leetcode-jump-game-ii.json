@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-jump-game-ii",
+  "title": "Jump Game II",
+  "slug": "jump-game-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/jump-game-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given an array where each element represents the maximum jump length from that position, find the minimum number of jumps needed to reach the last index starting from the first index.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909552,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "dynamic-programming": 0.9
+    }
+  }
+}

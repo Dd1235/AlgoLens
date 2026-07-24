@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-design-add-and-search-words-data-structure",
+  "title": "Design Add and Search Words Data Structure",
+  "slug": "design-add-and-search-words-data-structure",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "depth-first-search",
+    "design",
+    "trie"
+  ],
+  "statement": "Implement a data structure that supports adding words and searching for words with '.' as a wildcard matching any letter.",
+  "tags": [
+    "string",
+    "trie",
+    "dfs",
+    "design"
+  ],
+  "patterns": [
+    "trie",
+    "dfs",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910084,
+    "pattern_confidence": {
+      "trie": 0.98,
+      "dfs": 0.9,
+      "backtracking": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-the-latest-time-to-catch-a-bus",
+  "title": "The Latest Time to Catch a Bus",
+  "slug": "the-latest-time-to-catch-a-bus",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given bus departure times, passenger arrival times, and bus capacity, determine the latest time you can arrive at the station to catch a bus without arriving at the same time as another passenger.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908660,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-candies-allocated-to-k-children",
+  "title": "Maximum Candies Allocated to K Children",
+  "slug": "maximum-candies-allocated-to-k-children",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-candies-allocated-to-k-children/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given piles of candies and a number of children k, determine the maximum equal number of candies each child can receive by dividing piles without merging, allocating each child candies from only one pile.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910214,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

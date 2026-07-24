@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-make-sum-divisible-by-p",
+  "title": "Make Sum Divisible by P",
+  "slug": "make-sum-divisible-by-p",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/make-sum-divisible-by-p/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Given an array of positive integers and an integer p, find the length of the smallest contiguous subarray to remove so that the sum of the remaining elements is divisible by p, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909515,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "hash-map": 0.9,
+      "sliding-window": 0.7
+    }
+  }
+}

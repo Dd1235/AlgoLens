@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-design-exam-scores-tracker",
+  "title": "Design Exam Scores Tracker",
+  "slug": "design-exam-scores-tracker",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-exam-scores-tracker/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "design",
+    "prefix-sum"
+  ],
+  "statement": "Implement a data structure to record exam scores at strictly increasing times and efficiently query the total score within any given time interval.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909674,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search": 0.9
+    }
+  }
+}

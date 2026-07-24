@@ -17,7 +17,7 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 
 | Method · path | Purpose |
 |---|---|
-| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug. |
+| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug. Alias queries are expanded server-side (`expandedQuery` echoed when it differs). |
 | `GET /api/problems` | Whole corpus as loaded. |
 | `GET /api/rankers` | `{ available: [...], default: "..." }`. |
 | `GET /api/index?ranker=` | Inverted-index dump: every term with `df`, `idf`, postings. |
@@ -25,6 +25,8 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 | `GET /api/similar/:problemId?k=` | "Find similar": doc-to-doc cosine over the stored embeddings, self excluded. 503 if dense isn't registered, 404 for unknown ids. |
 | `GET /api/compare?q=&k=&rankers=` | The same query across several rankers in parallel (default all registered; `rankers=bm25,dense` narrows). Powers the side-by-side compare UI. |
 | `GET /api/patterns` | Canonical taxonomy grouped by category with per-label problem counts (zero counts included). Powers `/patterns.html`. |
+| `GET /api/handles` · `PUT /api/handles` | Signed-in user's LeetCode/Codeforces/CodeChef handles. PUT body `{leetcode?, codeforces?, codechef?}`; empty string deletes; any change drops the cached stats row. |
+| `GET /api/profile?refresh=1` | Combined external stats: per-platform payloads (12h server-side cache; `refresh=1` floors it at 10min; stale-if-error) plus `combined.heatmap` merging LC+CF submission calendars with AlgoLens done marks. Powers `/profile.html`. |
 | `POST /api/auth/signup` | Create user, bcrypt password, set httpOnly JWT cookie. |
 | `POST /api/auth/login` | Verify password, set httpOnly JWT cookie. |
 | `POST /api/auth/logout` | Clear session cookie. |
@@ -41,19 +43,19 @@ The last three power [/debug.html](../web/debug.html) and exist for learning, no
 ## How search works
 
 1. **Tokenize.** `title + statement + tags + patterns` for each problem; lowercase, strip non-alphanumeric, split on whitespace, drop a small stopword list ([server/search/tokenize.js](../server/search/tokenize.js)). Stopword list deliberately keeps DSA-relevant words like `two`, `one`, `all`, `same`.
-2. **Build index at boot.** Inverted postings (`Map<term, Set<docId>>`) plus per-doc term counts and lengths. ~15–20 ms for the 1260-doc corpus.
+2. **Build index at boot.** Inverted postings (`Map<term, Set<docId>>`) plus per-doc term counts and lengths. ~15–20 ms for the 1808-doc corpus.
 3. **Score.** Both rankers walk the same posting lists.
    - **TF-IDF** ([server/search/tfidf.js](../server/search/tfidf.js)): `score = Σ TF(t,d) · IDF(t)` where `TF = count/doclen`, `IDF = log(N/df)`.
    - **BM25** ([server/search/bm25.js](../server/search/bm25.js)): Robertson–Spärck-Jones IDF + TF saturation (`k1=1.5`) + length normalization (`b=0.75`).
 4. **Rank.** Sort by score, return top-k.
 
-The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed 1.74 MB artifact; at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
+The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (2.65 MB at 1,808 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
 
 The HTTP layer ([server/routes/search.js](../server/routes/search.js)) only knows the `{ search(q, k, offset) -> { hits, total } }` interface. That's the seam every implementation sits behind: TF-IDF, BM25, the Go/gRPC client, dense, and hybrid — five registrations, zero route changes. One semantic note: for `dense`, `total` is always the corpus size (every doc has a similarity to every query); for `hybrid` it's the size of the fused candidate union (≤ 200).
 
 ### Where the inverted index ends and ranking begins
 
-The inverted index answers *"which docs contain term X?"* and nothing else. It produces the **candidate set**. Ranking is everything that comes after — TF-IDF and BM25 are first-stage rankers that sit on top of the inverted index. Dense retrieval replaces the candidate set entirely (every doc is a candidate); hybrid RRF is *fusion* of two first-stage rankers, not a reranker. A "reranker" specifically means a *second pass* over the top-k candidates with a more expensive model (e.g. a cross-encoder) — too costly to apply to all 1260 docs, cheap on a top-50 cut. We still don't have one, but hybrid's 0.984 Recall@100 makes its fused list the natural candidate feed when we do.
+The inverted index answers *"which docs contain term X?"* and nothing else. It produces the **candidate set**. Ranking is everything that comes after — TF-IDF and BM25 are first-stage rankers that sit on top of the inverted index. Dense retrieval replaces the candidate set entirely (every doc is a candidate); hybrid RRF is *fusion* of two first-stage rankers, not a reranker. A "reranker" specifically means a *second pass* over the top-k candidates with a more expensive model (e.g. a cross-encoder) — too costly to apply to all 1808 docs, cheap on a top-50 cut. We still don't have one, but hybrid's 0.984 Recall@100 makes its fused list the natural candidate feed when we do.
 
 ## Tests
 
@@ -66,10 +68,12 @@ Bare `node:assert` — no framework. Lexical tests use synthetic 3-doc corpora; 
 ## Benchmarks
 
 ```sh
-node bench/run.js
+npm run bench          # full run (50 latency repeats per query)
+npm run bench:fast     # LATENCY_REPEATS=5
+BENCH_EXPAND=0 npm run bench   # raw rankers, no alias expansion (A/B baseline)
 ```
 
-Writes timestamped JSON + `experiments/bench-latest.json`. See [experiments/README.md](../experiments/README.md) for what's measured and [experiments/01-tfidf-vs-bm25-seed.md](../experiments/01-tfidf-vs-bm25-seed.md) for the current write-up.
+Queries run through the same alias expansion as the serving path by default. Writes timestamped JSON + `experiments/bench-latest.json`. See [experiments/README.md](../experiments/README.md) for what's measured and [experiments/01-tfidf-vs-bm25-seed.md](../experiments/01-tfidf-vs-bm25-seed.md) for the current write-up.
 
 ## Corpus workflows
 
@@ -88,6 +92,14 @@ Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-
 ## Data organization
 
 Deliberately file-first: the problem corpus is JSON in git, and git is the database. That buys reviewable label diffs in PRs, bit-identical corpora across environments, and the `corpusHash` contract that binds the committed embeddings to the exact served text. Postgres stores only mutable per-user state (`users`, `user_problem_state`; `problem_id` is a free-form string, no FK). The review queue is files for the same reason the corpus is. A `problems` table would earn its keep only with multi-writer/online label edits, a corpus too big to boot-load and brute-force scan (~50k+ docs), or query-time joins into ranking — none of which apply at this scale.
+
+## Profile feature
+
+`/profile.html` (gated: redirects anonymous visitors to `/login.html` — the one page that does; the search page still degrades gracefully instead). Handles live in `user_platform_handles`; external stats are cached in `user_platform_stats` (JSONB) with a 12h TTL, 10min floor on manual refresh, and stale-if-error fallback. Fetchers ([server/profile/](../server/profile/)) never throw past the orchestrator — each platform degrades to `{unavailable, error}` independently. Sources: LeetCode public GraphQL (solved by difficulty + submission calendar), Codeforces official API (rating + submissions; the two calls are sequential per CF rate guidance; >5000 submissions truncated), CodeChef best-effort page scrape (rating/solved only — no official API, no heatmap). The combined heatmap merges LC+CF calendars with AlgoLens `done_at` marks, bucketed by UTC day, rendered as a hand-rolled 53-week grid (no chart lib).
+
+## Versioning and releases
+
+`main` is production (Render autoDeploy). Feature milestones happen on a branch (`v2`, …) and merge with `--no-ff` so one revert rolls the release back. Release order is fixed: (1) green gate (`npm run validate && npm run test:search && npm run test:profile && npm run bench:fast`), (2) **migrate Neon first** (`DATABASE_URL='…' bash db/run-migrations.sh` — migrations are additive-only, so running code ignores new tables and the migration is zero-downtime), (3) merge + push = deploy, (4) live checks. Rollback: Render → redeploy the previous deploy, or `git revert -m 1 <merge>`; additive migrations are left in place. Tags mark releases (`v1.0.0`, …).
 
 ## Deploy (card-free)
 
@@ -136,6 +148,8 @@ Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfi
 - Pattern taxonomy + validation gate + niche labels + technique bench slice — **shipped** ([experiments/06](../experiments/06-technique-slice-and-corpus-growth.md))
 - Pattern filter + clickable chips, ranker compare mode, patterns directory page — **shipped**
 - Corpus refresh pipeline (LeetCode Recent block) + niche-label audit/review queue — **shipped** (see Corpus workflows above)
+- Query-side alias expansion + `:help` + hard-focus corpus (easies purged, +561 lowest-acRate mediums) + profile/heatmap — **shipped** ([experiments/07](../experiments/07-medium-hardest-growth.md))
+- Scoped expansion (lexical legs only; dense embeds the raw query) — measured need in exp 07
 - Cross-encoder rerank over hybrid's top-50 (candidate floor measured in exp 06)
 - Recommendation layer over solved/bookmarked state
 - Real scraper for a standard sheet (Striver / NeetCode)

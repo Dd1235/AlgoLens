@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-string-to-integer-atoi",
+  "title": "String to Integer (atoi)",
+  "slug": "string-to-integer-atoi",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/string-to-integer-atoi/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string"
+  ],
+  "statement": "Convert a string to a 32-bit signed integer by parsing optional whitespace, sign, digits, and handling overflow according to specified rules.",
+  "tags": [
+    "string",
+    "parsing",
+    "implementation"
+  ],
+  "patterns": [
+    "string-parsing",
+    "boundary-checking",
+    "overflow-handling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908463,
+    "pattern_confidence": {
+      "string-parsing": 0.98,
+      "boundary-checking": 0.9,
+      "overflow-handling": 0.88
+    }
+  }
+}

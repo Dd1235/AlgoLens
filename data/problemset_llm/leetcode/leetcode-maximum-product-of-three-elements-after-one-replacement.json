@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-product-of-three-elements-after-one-replacement",
+  "title": "Maximum Product of Three Elements After One Replacement",
+  "slug": "maximum-product-of-three-elements-after-one-replacement",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-product-of-three-elements-after-one-replacement/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an integer array, replace exactly one element with any integer in a specified range to maximize the product of any three distinct elements in the modified array.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909999,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "case-analysis": 0.85
+    }
+  }
+}

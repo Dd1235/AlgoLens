@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-sum-of-three-numbers-divisible-by-three",
+  "title": "Maximum Sum of Three Numbers Divisible by Three",
+  "slug": "maximum-sum-of-three-numbers-divisible-by-three",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an integer array, select exactly three elements whose sum is divisible by three and maximize this sum. Return 0 if no such triplet exists.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909975,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

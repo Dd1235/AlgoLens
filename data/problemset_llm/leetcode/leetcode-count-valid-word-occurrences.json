@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-valid-word-occurrences",
+  "title": "Count Valid Word Occurrences",
+  "slug": "count-valid-word-occurrences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-valid-word-occurrences/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "counting"
+  ],
+  "statement": "Concatenate given string chunks into one string and count how many times each query word appears, where words are defined by lowercase letters and joiner hyphens only.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "string-parsing",
+    "hash-map",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908312,
+    "pattern_confidence": {
+      "string-parsing": 0.95,
+      "hash-map": 0.9,
+      "frequency-count": 0.88
+    }
+  }
+}

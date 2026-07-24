@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-twisted-mirror-path-count",
+  "title": "Twisted Mirror Path Count",
+  "slug": "twisted-mirror-path-count",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/twisted-mirror-path-count/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Count the number of unique valid paths from the top-left to the bottom-right of a binary grid where moving into mirror cells causes direction reflections, with moves restricted to right or down and reflections possibly chaining until a non-mirror cell or boundary is reached.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-machine",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909961,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-machine": 0.85,
+      "grid-traversal": 0.9
+    }
+  }
+}

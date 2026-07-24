@@ -1,0 +1,29 @@
+{
+  "id": "leetcode-maximum-value-after-insertion",
+  "title": "Maximum Value after Insertion",
+  "slug": "maximum-value-after-insertion",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-value-after-insertion/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy"
+  ],
+  "statement": "Given a possibly negative integer represented as a string and a digit x, insert x into the number to maximize its numerical value without placing x before a negative sign.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909291,
+    "pattern_confidence": {
+      "greedy": 0.98
+    }
+  }
+}

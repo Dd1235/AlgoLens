@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-assign-elements-to-groups-with-constraints",
+  "title": "Assign Elements to Groups with Constraints",
+  "slug": "assign-elements-to-groups-with-constraints",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/assign-elements-to-groups-with-constraints/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table"
+  ],
+  "statement": "Assign each group an element whose value divides the group's size, choosing the element with the smallest index if multiple qualify, or -1 if none do.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "divisibility-check",
+    "greedy-assignment"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908580,
+    "pattern_confidence": {
+      "divisibility-check": 0.95,
+      "greedy-assignment": 0.9
+    }
+  }
+}

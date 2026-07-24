@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-absolute-sum-difference",
+  "title": "Minimum Absolute Sum Difference",
+  "slug": "minimum-absolute-sum-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-absolute-sum-difference/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sorting",
+    "ordered-set"
+  ],
+  "statement": "Given two integer arrays of equal length, minimize the sum of absolute differences by optionally replacing one element in the first array with another element from it.",
+  "tags": [
+    "array",
+    "binary-search",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908772,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "greedy": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

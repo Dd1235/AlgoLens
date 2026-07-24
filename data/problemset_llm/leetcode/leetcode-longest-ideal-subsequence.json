@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-ideal-subsequence",
+  "title": "Longest Ideal Subsequence",
+  "slug": "longest-ideal-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-ideal-subsequence/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a lowercase string and an integer k, find the length of the longest subsequence where the absolute difference between adjacent characters' alphabet positions is at most k.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sliding-window",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909896,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "sliding-window": 0.7,
+      "range-query": 0.6
+    }
+  }
+}

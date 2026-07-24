@@ -10,10 +10,12 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 RECENT_COUNT=60
+MEDIUM_COUNT=600
 SKIP_BENCH=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --recent-count) RECENT_COUNT="$2"; shift 2 ;;
+    --medium-count) MEDIUM_COUNT="$2"; shift 2 ;;
     --skip-bench)   SKIP_BENCH=1; shift ;;
     *) echo "unknown flag: $1" >&2; exit 2 ;;
   esac
@@ -32,9 +34,9 @@ if [[ -z "${OPENAI_API_KEY:-}" && -z "${OPEN_AI_API:-}" ]] \
   exit 1
 fi
 
-# ── 1. Regenerate URL blocks (Recent + Hard + Codeforces) ─────────────────────
-echo "→ update url blocks (recent-count $RECENT_COUNT)"
-python3 scripts/update_problem_urls.py --recent-count "$RECENT_COUNT"
+# ── 1. Regenerate URL blocks (Recent + Hard + Medium Hardest + Codeforces) ────
+echo "→ update url blocks (recent-count $RECENT_COUNT, medium-count $MEDIUM_COUNT)"
+python3 scripts/update_problem_urls.py --recent-count "$RECENT_COUNT" --medium-count "$MEDIUM_COUNT"
 
 # ── 2. Annotate anything new (existing records skip before any network) ───────
 # Codeforces is deferred (Cloudflare blocks statement fetches), so annotation

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-lines-to-represent-a-line-chart",
+  "title": "Minimum Lines to Represent a Line Chart",
+  "slug": "minimum-lines-to-represent-a-line-chart",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-lines-to-represent-a-line-chart/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry",
+    "sorting",
+    "number-theory"
+  ],
+  "statement": "Given a list of distinct day-price pairs, determine the minimum number of straight line segments needed to represent the line chart formed by connecting the points in order of days.",
+  "tags": [
+    "array",
+    "geometry",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "line-slope-comparison",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908583,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "line-slope-comparison": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

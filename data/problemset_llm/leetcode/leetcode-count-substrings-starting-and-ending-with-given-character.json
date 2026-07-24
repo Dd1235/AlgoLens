@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-count-substrings-starting-and-ending-with-given-character",
+  "title": "Count Substrings Starting and Ending with Given Character",
+  "slug": "count-substrings-starting-and-ending-with-given-character",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "counting"
+  ],
+  "statement": "Given a string and a character, count the total number of substrings that start and end with the given character.",
+  "tags": [
+    "string",
+    "counting",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910287,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "combinatorics": 0.85
+    }
+  }
+}

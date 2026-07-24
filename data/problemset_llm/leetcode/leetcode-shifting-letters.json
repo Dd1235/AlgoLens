@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-shifting-letters",
+  "title": "Shifting Letters",
+  "slug": "shifting-letters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shifting-letters/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "statement": "Given a lowercase string and an array of shift values, apply cumulative shifts to prefixes of the string and return the resulting string after all shifts.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909842,
+    "pattern_confidence": {
+      "prefix-sum": 0.95
+    }
+  }
+}

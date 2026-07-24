@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-the-smallest-balanced-index",
+  "title": "Find the Smallest Balanced Index",
+  "slug": "find-the-smallest-balanced-index",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-smallest-balanced-index/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, find the smallest index where the sum of elements to the left equals the product of elements to the right, with empty sides treated as sum 0 or product 1.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "prefix-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908445,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "prefix-product": 0.9
+    }
+  }
+}

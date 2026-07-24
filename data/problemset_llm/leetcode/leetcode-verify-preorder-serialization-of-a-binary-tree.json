@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-verify-preorder-serialization-of-a-binary-tree",
+  "title": "Verify Preorder Serialization of a Binary Tree",
+  "slug": "verify-preorder-serialization-of-a-binary-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "stack",
+    "tree",
+    "binary-tree"
+  ],
+  "statement": "Given a comma-separated preorder serialization string of a binary tree with integers and '#' for null nodes, determine if it represents a valid preorder traversal serialization without reconstructing the tree.",
+  "tags": [
+    "string",
+    "stack",
+    "tree",
+    "binary-tree"
+  ],
+  "patterns": [
+    "stack",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909972,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "greedy": 0.85,
+      "simulation": 0.9
+    }
+  }
+}

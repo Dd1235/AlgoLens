@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-ways-to-group-overlapping-ranges",
+  "title": "Count Ways to Group Overlapping Ranges",
+  "slug": "count-ways-to-group-overlapping-ranges",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting"
+  ],
+  "statement": "Given a list of integer ranges, split them into two groups so that any overlapping ranges are in the same group, and return the number of valid splits modulo 10^9+7.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "sorting",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909277,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "sorting": 0.9,
+      "connected-components": 0.95
+    }
+  }
+}

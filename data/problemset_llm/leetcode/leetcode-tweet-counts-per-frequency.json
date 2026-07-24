@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-tweet-counts-per-frequency",
+  "title": "Tweet Counts Per Frequency",
+  "slug": "tweet-counts-per-frequency",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/tweet-counts-per-frequency/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "binary-search",
+    "design",
+    "sorting",
+    "ordered-set"
+  ],
+  "statement": "Design a system to record tweet times and query the count of tweets per specified frequency intervals within a given time range.",
+  "tags": [
+    "hash-map",
+    "array",
+    "binary-search",
+    "design"
+  ],
+  "patterns": [
+    "binary-search",
+    "prefix-sum",
+    "time-bucketing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909865,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "prefix-sum": 0.85,
+      "time-bucketing": 0.9
+    }
+  }
+}

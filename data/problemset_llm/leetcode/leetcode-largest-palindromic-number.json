@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-largest-palindromic-number",
+  "title": "Largest Palindromic Number",
+  "slug": "largest-palindromic-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-palindromic-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "greedy",
+    "counting"
+  ],
+  "statement": "Given a string of digits, construct the largest palindromic number possible by reordering and selecting digits without leading zeros. At least one digit must be used.",
+  "tags": [
+    "string",
+    "greedy",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "greedy",
+    "counting",
+    "frequency-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909023,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "counting": 0.9,
+      "frequency-analysis": 0.88
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-frequency-of-the-most-frequent-element",
+  "title": "Frequency of the Most Frequent Element",
+  "slug": "frequency-of-the-most-frequent-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sliding-window",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given an array and a limit k, find the maximum frequency of any element achievable by incrementing elements at most k times in total.",
+  "tags": [
+    "array",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909722,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "sliding-window": 0.9,
+      "prefix-sum": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-game-play-analysis-iv",
+  "title": "Game Play Analysis IV",
+  "slug": "game-play-analysis-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/game-play-analysis-iv/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given player login records with dates, compute the fraction of players who logged in on the day immediately after their first login day.",
+  "tags": [
+    "database",
+    "aggregation",
+    "date"
+  ],
+  "patterns": [
+    "group-by",
+    "date-difference",
+    "aggregation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909454,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "date-difference": 0.9,
+      "aggregation": 0.9
+    }
+  }
+}

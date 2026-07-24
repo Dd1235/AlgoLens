@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-h-index",
+  "title": "H-Index",
+  "slug": "h-index",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/h-index/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting",
+    "counting-sort"
+  ],
+  "statement": "Given an array of citation counts for a researcher's papers, determine the maximum h-index, defined as the largest number h such that the researcher has at least h papers with at least h citations each.",
+  "tags": [
+    "array",
+    "sorting",
+    "counting"
+  ],
+  "patterns": [
+    "sorting",
+    "counting-sort",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909449,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "counting-sort": 0.85,
+      "binary-search-answer": 0.9
+    }
+  }
+}

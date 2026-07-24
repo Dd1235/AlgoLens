@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-maximum-number-of-non-intersecting-substrings",
+  "title": "Find Maximum Number of Non Intersecting Substrings",
+  "slug": "find-maximum-number-of-non-intersecting-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given a string, find the maximum number of non-overlapping substrings each at least four characters long that start and end with the same letter.",
+  "tags": [
+    "string",
+    "greedy",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "patterns": [
+    "interval-scheduling",
+    "greedy",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908697,
+    "pattern_confidence": {
+      "interval-scheduling": 0.95,
+      "greedy": 0.9,
+      "two-pointers": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

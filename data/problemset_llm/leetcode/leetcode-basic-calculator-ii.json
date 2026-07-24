@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-basic-calculator-ii",
+  "title": "Basic Calculator II",
+  "slug": "basic-calculator-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/basic-calculator-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "stack"
+  ],
+  "statement": "Evaluate a valid arithmetic expression string containing non-negative integers and operators (+, -, *, /) with integer division truncating toward zero, without using built-in evaluation functions.",
+  "tags": [
+    "string",
+    "stack",
+    "math"
+  ],
+  "patterns": [
+    "stack",
+    "expression-evaluation",
+    "operator-precedence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909922,
+    "pattern_confidence": {
+      "stack": 0.98,
+      "expression-evaluation": 0.95,
+      "operator-precedence": 0.9
+    }
+  }
+}

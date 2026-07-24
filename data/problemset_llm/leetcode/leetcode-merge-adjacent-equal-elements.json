@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-merge-adjacent-equal-elements",
+  "title": "Merge Adjacent Equal Elements",
+  "slug": "merge-adjacent-equal-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/merge-adjacent-equal-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "simulation"
+  ],
+  "statement": "Given an integer array, repeatedly merge the leftmost pair of adjacent equal elements by replacing them with their sum until no such pairs remain, and return the resulting array.",
+  "tags": [
+    "array",
+    "stack",
+    "simulation"
+  ],
+  "patterns": [
+    "stack",
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909505,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "simulation": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

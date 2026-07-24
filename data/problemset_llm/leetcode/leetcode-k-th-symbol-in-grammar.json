@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-k-th-symbol-in-grammar",
+  "title": "K-th Symbol in Grammar",
+  "slug": "k-th-symbol-in-grammar",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-th-symbol-in-grammar/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "bit-manipulation",
+    "recursion"
+  ],
+  "statement": "Given a grammar defined by iterative row expansions where 0 becomes 01 and 1 becomes 10, determine the k-th symbol in the n-th row of the generated sequence.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "recursion"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "bitwise-operations",
+    "recursion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910066,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.95,
+      "bitwise-operations": 0.9,
+      "recursion": 0.9
+    }
+  }
+}

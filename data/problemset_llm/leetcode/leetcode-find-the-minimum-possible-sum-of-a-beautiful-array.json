@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-find-the-minimum-possible-sum-of-a-beautiful-array",
+  "title": "Find the Minimum Possible Sum of a Beautiful Array",
+  "slug": "find-the-minimum-possible-sum-of-a-beautiful-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy"
+  ],
+  "statement": "Construct an array of length n with distinct positive integers such that no two distinct elements sum to a given target, and minimize the sum of the array modulo 10^9+7.",
+  "tags": [
+    "math",
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908876,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

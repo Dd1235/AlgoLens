@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-binary-string-after-change",
+  "title": "Maximum Binary String After Change",
+  "slug": "maximum-binary-string-after-change",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-binary-string-after-change/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy"
+  ],
+  "statement": "Given a binary string, repeatedly apply two substring replacement operations to maximize the binary string's decimal value. The operations allow transforming \"00\" to \"10\" and \"10\" to \"01\" any number of times.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "string-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909989,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "string-transformation": 0.9
+    }
+  }
+}

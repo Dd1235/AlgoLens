@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-product-sales-analysis-iii",
+  "title": "Product Sales Analysis III",
+  "slug": "product-sales-analysis-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/product-sales-analysis-iii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given a sales table with product sales records over multiple years, identify the earliest year each product was sold and return all sales entries for that product in that year, including product_id, first_year, quantity, and price.",
+  "tags": [
+    "database",
+    "aggregation",
+    "group-by"
+  ],
+  "patterns": [
+    "grouping",
+    "aggregation",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909832,
+    "pattern_confidence": {
+      "grouping": 0.95,
+      "aggregation": 0.9,
+      "filtering": 0.85
+    }
+  }
+}

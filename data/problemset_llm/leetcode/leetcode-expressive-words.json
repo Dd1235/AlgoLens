@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-expressive-words",
+  "title": "Expressive Words",
+  "slug": "expressive-words",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/expressive-words/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "string"
+  ],
+  "statement": "Given a target string and a list of query words, count how many query words can be stretched to match the target by extending groups of characters to length three or more.",
+  "tags": [
+    "string",
+    "array",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "grouping",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909916,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "grouping": 0.9,
+      "string-matching": 0.85
+    }
+  }
+}

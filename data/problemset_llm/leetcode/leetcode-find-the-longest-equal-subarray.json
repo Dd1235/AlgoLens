@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-the-longest-equal-subarray",
+  "title": "Find the Longest Equal Subarray",
+  "slug": "find-the-longest-equal-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-longest-equal-subarray/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array and an integer k, find the length of the longest contiguous subarray consisting of equal elements after deleting at most k elements from the array.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909148,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.93,
+      "frequency-count": 0.88
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-coins-from-k-consecutive-bags",
+  "title": "Maximum Coins From K Consecutive Bags",
+  "slug": "maximum-coins-from-k-consecutive-bags",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sliding-window",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given non-overlapping segments each with a fixed coin value per bag, find the maximum total coins obtainable from any k consecutive bags on the number line.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908556,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search-answer": 0.9,
+      "sliding-window": 0.85
+    }
+  }
+}

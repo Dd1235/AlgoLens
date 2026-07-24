@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-palindromic-substring",
+  "title": "Longest Palindromic Substring",
+  "slug": "longest-palindromic-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-palindromic-substring/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, find the longest substring that reads the same forwards and backwards.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "patterns": [
+    "expand-around-center",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909141,
+    "pattern_confidence": {
+      "expand-around-center": 0.95,
+      "dynamic-programming": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

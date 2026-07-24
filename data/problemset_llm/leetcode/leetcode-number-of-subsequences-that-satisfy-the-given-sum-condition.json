@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-number-of-subsequences-that-satisfy-the-given-sum-condition",
+  "title": "Number of Subsequences That Satisfy the Given Sum Condition",
+  "slug": "number-of-subsequences-that-satisfy-the-given-sum-condition",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Count the number of non-empty subsequences in an integer array where the sum of the minimum and maximum elements is at most a given target, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sorting",
+    "modular-arithmetic",
+    "prefix-powers-of-two"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910122,
+    "pattern_confidence": {
+      "two-pointers": 0.98,
+      "sorting": 0.97,
+      "modular-arithmetic": 0.9,
+      "prefix-powers-of-two": 0.85
+    }
+  }
+}

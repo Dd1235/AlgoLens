@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-time-based-key-value-store",
+  "title": "Time Based Key-Value Store",
+  "slug": "time-based-key-value-store",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/time-based-key-value-store/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "binary-search",
+    "design"
+  ],
+  "statement": "Implement a time-based key-value store that supports setting values with timestamps and retrieving the value for a key at the largest timestamp not exceeding a given query timestamp.",
+  "tags": [
+    "hash-map",
+    "string",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "ordered-map",
+    "time-based-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910236,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "ordered-map": 0.9,
+      "time-based-query": 0.85
+    }
+  }
+}

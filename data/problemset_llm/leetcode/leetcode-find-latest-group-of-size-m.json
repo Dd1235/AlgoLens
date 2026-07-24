@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-latest-group-of-size-m",
+  "title": "Find Latest Group of Size M",
+  "slug": "find-latest-group-of-size-m",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-latest-group-of-size-m/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "simulation"
+  ],
+  "statement": "Given a permutation array and an initially zeroed binary string, bits are set to one in the order specified by the array. Determine the latest step at which there exists a contiguous group of ones of exactly length m.",
+  "tags": [
+    "array",
+    "union-find",
+    "simulation"
+  ],
+  "patterns": [
+    "union-find",
+    "simulation",
+    "interval-tracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909618,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "simulation": 0.9,
+      "interval-tracking": 0.85
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-distant-barcodes",
+  "title": "Distant Barcodes",
+  "slug": "distant-barcodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distant-barcodes/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "sorting",
+    "heap-priority-queue",
+    "counting"
+  ],
+  "statement": "Given an array of barcodes, rearrange them so that no two adjacent barcodes are the same. It is guaranteed that such a rearrangement exists.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap",
+    "hash-map",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "heap",
+    "counting",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910139,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "heap": 0.95,
+      "counting": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

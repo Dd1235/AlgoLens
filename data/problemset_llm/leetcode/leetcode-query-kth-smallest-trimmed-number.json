@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-query-kth-smallest-trimmed-number",
+  "title": "Query Kth Smallest Trimmed Number",
+  "slug": "query-kth-smallest-trimmed-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/query-kth-smallest-trimmed-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "divide-and-conquer",
+    "sorting",
+    "heap-priority-queue",
+    "radix-sort",
+    "quickselect"
+  ],
+  "statement": "Given an array of equal-length digit strings and queries specifying a trim length and a rank k, find the index of the k-th smallest number after trimming each string to its rightmost digits.",
+  "tags": [
+    "array",
+    "string",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "sorting",
+    "radix-sort",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910008,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "radix-sort": 0.85,
+      "heap": 0.75
+    }
+  }
+}

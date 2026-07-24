@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sum-of-numbers-with-units-digit-k",
+  "title": "Sum of Numbers With Units Digit K",
+  "slug": "sum-of-numbers-with-units-digit-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "greedy",
+    "enumeration"
+  ],
+  "statement": "Given integers num and k, find the minimum size of a multiset of positive integers each ending with digit k that sums to num, or return -1 if impossible.",
+  "tags": [
+    "math",
+    "greedy",
+    "enumeration"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908619,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "modular-arithmetic": 0.85,
+      "enumeration": 0.8
+    }
+  }
+}

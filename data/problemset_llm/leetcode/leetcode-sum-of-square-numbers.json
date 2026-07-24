@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-sum-of-square-numbers",
+  "title": "Sum of Square Numbers",
+  "slug": "sum-of-square-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-square-numbers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "two-pointers",
+    "binary-search"
+  ],
+  "statement": "Determine if a non-negative integer can be expressed as the sum of squares of two integers.",
+  "tags": [
+    "math",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "two-pointers",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909007,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "binary-search": 0.9
+    }
+  }
+}

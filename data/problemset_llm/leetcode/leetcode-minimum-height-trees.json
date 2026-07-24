@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-height-trees",
+  "title": "Minimum Height Trees",
+  "slug": "minimum-height-trees",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-height-trees/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "topological-sort"
+  ],
+  "statement": "Given an undirected tree, find all nodes that can serve as roots to produce minimum height trees.",
+  "tags": [
+    "graph",
+    "tree",
+    "bfs"
+  ],
+  "patterns": [
+    "topological-sort",
+    "bfs",
+    "tree-centroid"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909518,
+    "pattern_confidence": {
+      "topological-sort": 0.95,
+      "bfs": 0.9,
+      "tree-centroid": 0.85
+    }
+  }
+}

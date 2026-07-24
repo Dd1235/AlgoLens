@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-absolute-difference-between-elements-with-constraint",
+  "title": "Minimum Absolute Difference Between Elements With Constraint",
+  "slug": "minimum-absolute-difference-between-elements-with-constraint",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "ordered-set"
+  ],
+  "statement": "Given an integer array and a distance constraint x, find the minimum absolute difference between any two elements whose indices differ by at least x.",
+  "tags": [
+    "array",
+    "ordered-set",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "ordered-set",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909086,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "ordered-set": 0.85,
+      "sliding-window": 0.8
+    }
+  }
+}

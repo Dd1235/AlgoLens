@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-the-maximum-number-of-marked-indices",
+  "title": "Find the Maximum Number of Marked Indices",
+  "slug": "find-the-maximum-number-of-marked-indices",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an integer array, repeatedly pair and mark two distinct unmarked indices i and j where twice the value at i is at most the value at j. Return the maximum number of indices that can be marked this way.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909428,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.9
+    }
+  }
+}

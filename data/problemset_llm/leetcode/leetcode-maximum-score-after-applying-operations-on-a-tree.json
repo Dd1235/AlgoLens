@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-score-after-applying-operations-on-a-tree",
+  "title": "Maximum Score After Applying Operations on a Tree",
+  "slug": "maximum-score-after-applying-operations-on-a-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-after-applying-operations-on-a-tree/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a rooted tree with values on nodes, select nodes to maximize the sum of chosen values while ensuring every root-to-leaf path has a nonzero sum of remaining values.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909969,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

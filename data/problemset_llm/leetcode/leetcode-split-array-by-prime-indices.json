@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-split-array-by-prime-indices",
+  "title": "Split Array by Prime Indices",
+  "slug": "split-array-by-prime-indices",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-array-by-prime-indices/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, split it into two arrays based on whether the indices are prime or not, then return the absolute difference of their sums.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-sieve",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910187,
+    "pattern_confidence": {
+      "prime-sieve": 0.95,
+      "prefix-sum": 0.9
+    }
+  }
+}

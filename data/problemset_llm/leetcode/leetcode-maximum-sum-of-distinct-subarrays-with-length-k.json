@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-sum-of-distinct-subarrays-with-length-k",
+  "title": "Maximum Sum of Distinct Subarrays With Length K",
+  "slug": "maximum-sum-of-distinct-subarrays-with-length-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array and a subarray length k, find the maximum sum of any contiguous subarray of length k that contains all distinct elements. Return 0 if no such subarray exists.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909569,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "hash-map": 0.95,
+      "two-pointers": 0.9
+    }
+  }
+}

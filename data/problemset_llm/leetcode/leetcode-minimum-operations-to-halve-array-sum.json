@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-operations-to-halve-array-sum",
+  "title": "Minimum Operations to Halve Array Sum",
+  "slug": "minimum-operations-to-halve-array-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-halve-array-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an array of positive integers, find the minimum number of operations needed to reduce the sum of the array by at least half, where each operation halves a chosen number.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910281,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "heap": 0.95
+    }
+  }
+}

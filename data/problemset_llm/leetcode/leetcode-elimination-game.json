@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-elimination-game",
+  "title": "Elimination Game",
+  "slug": "elimination-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/elimination-game/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "recursion"
+  ],
+  "statement": "Given an integer n representing a list of numbers from 1 to n, repeatedly remove elements alternately from left to right and right to left every other element until only one number remains. Return the last remaining number.",
+  "tags": [
+    "math",
+    "recursion",
+    "array"
+  ],
+  "patterns": [
+    "recursion",
+    "mathematical-formula",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909870,
+    "pattern_confidence": {
+      "recursion": 0.95,
+      "mathematical-formula": 0.9,
+      "divide-and-conquer": 0.85
+    }
+  }
+}

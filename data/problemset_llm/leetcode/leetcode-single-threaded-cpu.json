@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-single-threaded-cpu",
+  "title": "Single-Threaded CPU",
+  "slug": "single-threaded-cpu",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/single-threaded-cpu/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a list of tasks with enqueue and processing times, simulate a single-threaded CPU that always picks the available task with the shortest processing time (breaking ties by index) and return the order in which tasks are processed.",
+  "tags": [
+    "array",
+    "simulation",
+    "heap",
+    "sorting"
+  ],
+  "patterns": [
+    "heap",
+    "event-simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910012,
+    "pattern_confidence": {
+      "heap": 0.98,
+      "event-simulation": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

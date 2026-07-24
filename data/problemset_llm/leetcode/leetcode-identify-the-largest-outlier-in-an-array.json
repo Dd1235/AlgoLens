@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-identify-the-largest-outlier-in-an-array",
+  "title": "Identify the Largest Outlier in an Array",
+  "slug": "identify-the-largest-outlier-in-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/identify-the-largest-outlier-in-an-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting",
+    "enumeration"
+  ],
+  "statement": "Given an integer array where all but two elements are special numbers, one element is the sum of these special numbers, and the other is an outlier, find the largest possible outlier value.",
+  "tags": [
+    "array",
+    "counting",
+    "enumeration"
+  ],
+  "patterns": [
+    "sum-decomposition",
+    "search",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908990,
+    "pattern_confidence": {
+      "sum-decomposition": 0.9,
+      "search": 0.7,
+      "counting": 0.8
+    }
+  }
+}

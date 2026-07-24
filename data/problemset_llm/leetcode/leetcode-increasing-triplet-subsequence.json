@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-increasing-triplet-subsequence",
+  "title": "Increasing Triplet Subsequence",
+  "slug": "increasing-triplet-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/increasing-triplet-subsequence/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Determine if an integer array contains an increasing subsequence of length three with strictly increasing values.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909287,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "two-pointers": 0.85
+    }
+  }
+}

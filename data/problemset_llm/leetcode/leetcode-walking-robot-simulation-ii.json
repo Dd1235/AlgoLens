@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-walking-robot-simulation-ii",
+  "title": "Walking Robot Simulation II",
+  "slug": "walking-robot-simulation-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/walking-robot-simulation-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "design",
+    "simulation"
+  ],
+  "statement": "Simulate a robot moving on a bounded grid starting at (0,0) facing East, turning 90 degrees counterclockwise when hitting boundaries, and track its position and direction after a sequence of step commands.",
+  "tags": [
+    "simulation",
+    "geometry"
+  ],
+  "patterns": [
+    "simulation",
+    "directional-movement",
+    "boundary-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909547,
+    "pattern_confidence": {
+      "simulation": 0.98,
+      "directional-movement": 0.9,
+      "boundary-check": 0.85
+    }
+  }
+}

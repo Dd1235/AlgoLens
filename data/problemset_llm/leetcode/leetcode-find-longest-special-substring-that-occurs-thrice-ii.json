@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-longest-special-substring-that-occurs-thrice-ii",
+  "title": "Find Longest Special Substring That Occurs Thrice II",
+  "slug": "find-longest-special-substring-that-occurs-thrice-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "binary-search",
+    "sliding-window",
+    "counting"
+  ],
+  "statement": "Given a string, find the length of the longest substring consisting of a single repeated character that appears at least three times in the string, or return -1 if none exists.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909274,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "counting": 0.8
+    }
+  }
+}

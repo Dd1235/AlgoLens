@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-make-number-of-distinct-characters-equal",
+  "title": "Make Number of Distinct Characters Equal",
+  "slug": "make-number-of-distinct-characters-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/make-number-of-distinct-characters-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "counting"
+  ],
+  "statement": "Given two strings, determine if swapping exactly one character from each can make the number of distinct characters in both strings equal.",
+  "tags": [
+    "string",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "frequency-count",
+    "character-swapping",
+    "set-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908597,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "character-swapping": 0.9,
+      "set-comparison": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-the-integer-added-to-array-ii",
+  "title": "Find the Integer Added to Array II",
+  "slug": "find-the-integer-added-to-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-integer-added-to-array-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given two integer arrays where one is formed by removing two elements from the other and adding an unknown integer x to all remaining elements, find the minimum x that makes the arrays equal in multiset terms.",
+  "tags": [
+    "array",
+    "sorting",
+    "two-pointers",
+    "enumeration"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908803,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.9,
+      "enumeration": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-weighted-k-edge-path",
+  "title": "Maximum Weighted K-Edge Path",
+  "slug": "maximum-weighted-k-edge-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-weighted-k-edge-path/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "dynamic-programming",
+    "graph"
+  ],
+  "statement": "Given a weighted directed acyclic graph, find the maximum sum of weights of any path with exactly k edges such that the sum is strictly less than a given threshold t.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "dag"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "path-length-restriction",
+    "max-sum-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908456,
+    "pattern_confidence": {
+      "dp-on-dag": 0.98,
+      "path-length-restriction": 0.9,
+      "max-sum-path": 0.88
+    }
+  }
+}

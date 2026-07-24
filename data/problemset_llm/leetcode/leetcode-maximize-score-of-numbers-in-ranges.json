@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximize-score-of-numbers-in-ranges",
+  "title": "Maximize Score of Numbers in Ranges",
+  "slug": "maximize-score-of-numbers-in-ranges",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-score-of-numbers-in-ranges/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given n intervals defined by start points and a fixed length d, select one integer from each interval to maximize the minimum absolute difference between any two chosen integers.",
+  "tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908942,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

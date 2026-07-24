@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-prison-cells-after-n-days",
+  "title": "Prison Cells After N Days",
+  "slug": "prison-cells-after-n-days",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/prison-cells-after-n-days/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "bit-manipulation"
+  ],
+  "statement": "Given an initial state of 8 prison cells (occupied or vacant), simulate their state changes over n days based on neighbors' occupancy rules and return the final state.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "simulation"
+  ],
+  "patterns": [
+    "state-simulation",
+    "cycle-detection",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909265,
+    "pattern_confidence": {
+      "state-simulation": 0.98,
+      "cycle-detection": 0.85,
+      "bitmask": 0.8
+    }
+  }
+}

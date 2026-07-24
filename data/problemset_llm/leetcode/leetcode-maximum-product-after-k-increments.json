@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-product-after-k-increments",
+  "title": "Maximum Product After K Increments",
+  "slug": "maximum-product-after-k-increments",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-product-after-k-increments/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an array of non-negative integers and a number k, increment elements up to k times to maximize the product of the array elements modulo 10^9+7.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909651,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "heap": 0.9
+    }
+  }
+}

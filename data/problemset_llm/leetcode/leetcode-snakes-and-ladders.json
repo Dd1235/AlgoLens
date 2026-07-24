@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-snakes-and-ladders",
+  "title": "Snakes and Ladders",
+  "slug": "snakes-and-ladders",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/snakes-and-ladders/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Given an n x n board representing snakes and ladders with cells labeled in a boustrophedon pattern, find the minimum number of dice rolls to reach the last square starting from square 1, moving according to dice rolls and mandatory snake or ladder jumps.",
+  "tags": [
+    "array",
+    "graph",
+    "bfs",
+    "matrix"
+  ],
+  "patterns": [
+    "bfs",
+    "shortest-path",
+    "grid-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910038,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "shortest-path": 0.95,
+      "grid-graph": 0.9
+    }
+  }
+}

@@ -1,4 +1,5 @@
 const express = require("express");
+const { expandQuery } = require("../search/query_expand");
 
 function pickRanker(indexes, defaultRanker, req) {
   const requested = (req.query.ranker || "").toString().toLowerCase();
@@ -28,6 +29,8 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
 
   router.get("/explain", async (req, res) => {
     const q = (req.query.q || "").toString();
+    // Explain is the debug lens for what search actually ran, so it expands too.
+    const exp = expandQuery(q);
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
     if (typeof index.explain !== "function") {
@@ -36,8 +39,8 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
     try {
       // dense/hybrid explain is async (query embedding); lexical stays sync.
       // Spreading a bare Promise here would silently produce { ranker } only.
-      const payload = await Promise.resolve(index.explain(q));
-      res.json({ ranker, ...payload });
+      const payload = await Promise.resolve(index.explain(exp.query));
+      res.json({ ranker, expandedQuery: exp.expanded ? exp.query : undefined, ...payload });
     } catch (err) {
       res.status(502).json({ ranker, error: err.message || "explain failed" });
     }

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-word-frequency",
+  "title": "Word Frequency",
+  "slug": "word-frequency",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-frequency/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "shell"
+  ],
+  "statement": "Given a text file containing lowercase words separated by whitespace, compute and output the frequency of each unique word sorted by descending frequency. The input guarantees unique frequency counts for each word.",
+  "tags": [
+    "string",
+    "hash-map",
+    "sorting"
+  ],
+  "patterns": [
+    "frequency-count",
+    "sorting",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908639,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "sorting": 0.9,
+      "hash-map": 0.9
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-lexicographically-smallest-negated-permutation-that-sums-to-target",
+  "title": "Lexicographically Smallest Negated Permutation that Sums to Target",
+  "slug": "lexicographically-smallest-negated-permutation-that-sums-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "two-pointers",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Find the lexicographically smallest array of size n whose elements sum to a given target and whose absolute values form a permutation of 1 to n, or return empty if impossible.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908714,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

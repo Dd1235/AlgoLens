@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-surrounded-regions",
+  "title": "Surrounded Regions",
+  "slug": "surrounded-regions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/surrounded-regions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "matrix"
+  ],
+  "statement": "Given a 2D board of 'X' and 'O', capture all regions of 'O's that are completely surrounded by 'X's by flipping them to 'X'. Regions connected to the board edge remain unchanged.",
+  "tags": [
+    "array",
+    "matrix",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "bfs",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909795,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bfs": 0.95,
+      "union-find": 0.9
+    }
+  }
+}

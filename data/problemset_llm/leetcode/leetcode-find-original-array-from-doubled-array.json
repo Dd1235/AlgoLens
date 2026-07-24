@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-find-original-array-from-doubled-array",
+  "title": "Find Original Array From Doubled Array",
+  "slug": "find-original-array-from-doubled-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-original-array-from-doubled-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an array formed by appending twice the value of every element in an original array and then shuffled, determine the original array or return empty if no such array exists.",
+  "tags": [
+    "array",
+    "hash-map",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909374,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "hash-map": 0.9
+    }
+  }
+}

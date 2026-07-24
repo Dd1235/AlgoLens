@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-moves-to-spread-stones-over-grid",
+  "title": "Minimum Moves to Spread Stones Over Grid",
+  "slug": "minimum-moves-to-spread-stones-over-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "matrix",
+    "bitmask"
+  ],
+  "statement": "Given a 3x3 grid with exactly 9 stones distributed arbitrarily, find the minimum number of moves to rearrange stones so that each cell contains exactly one stone, where a move consists of moving a stone to an adjacent cell sharing a side.",
+  "tags": [
+    "array",
+    "matrix",
+    "graph",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "shortest-path",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909800,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "shortest-path": 0.85,
+      "state-compression": 0.8
+    }
+  }
+}

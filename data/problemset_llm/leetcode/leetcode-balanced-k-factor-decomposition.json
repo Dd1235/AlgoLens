@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-balanced-k-factor-decomposition",
+  "title": "Balanced K-Factor Decomposition",
+  "slug": "balanced-k-factor-decomposition",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/balanced-k-factor-decomposition/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "backtracking",
+    "number-theory"
+  ],
+  "statement": "Given integers n and k, decompose n into exactly k positive integers whose product is n, minimizing the maximum difference between any two integers in the decomposition.",
+  "tags": [
+    "math",
+    "backtracking",
+    "number-theory"
+  ],
+  "patterns": [
+    "backtracking",
+    "factorization",
+    "search-space-pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909353,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "factorization": 0.9,
+      "search-space-pruning": 0.85
+    }
+  }
+}

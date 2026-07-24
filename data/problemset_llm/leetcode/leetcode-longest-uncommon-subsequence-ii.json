@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-longest-uncommon-subsequence-ii",
+  "title": "Longest Uncommon Subsequence II",
+  "slug": "longest-uncommon-subsequence-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-uncommon-subsequence-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "string",
+    "sorting"
+  ],
+  "statement": "Given an array of strings, find the length of the longest subsequence that appears in exactly one string but not as a subsequence in any other string, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "string",
+    "hash-map"
+  ],
+  "patterns": [
+    "subsequence-check",
+    "sorting",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909737,
+    "pattern_confidence": {
+      "subsequence-check": 0.95,
+      "sorting": 0.85,
+      "hash-map": 0.8
+    }
+  }
+}

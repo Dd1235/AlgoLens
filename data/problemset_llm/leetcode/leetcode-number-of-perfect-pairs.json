@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-perfect-pairs",
+  "title": "Number of Perfect Pairs",
+  "slug": "number-of-perfect-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-perfect-pairs/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "two-pointers",
+    "sorting"
+  ],
+  "statement": "Given an integer array, count the number of index pairs (i, j) with i < j that satisfy specific inequalities involving the minimum and maximum of absolute differences and sums of the pair elements.",
+  "tags": [
+    "array",
+    "math",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "inequality-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908865,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "two-pointers": 0.85,
+      "inequality-check": 0.7
+    }
+  }
+}

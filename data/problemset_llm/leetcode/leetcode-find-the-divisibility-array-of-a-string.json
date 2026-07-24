@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-the-divisibility-array-of-a-string",
+  "title": "Find the Divisibility Array of a String",
+  "slug": "find-the-divisibility-array-of-a-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-divisibility-array-of-a-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "string"
+  ],
+  "statement": "Given a numeric string and an integer m, determine for each prefix whether its numeric value is divisible by m, returning an array of 0s and 1s accordingly.",
+  "tags": [
+    "string",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "prefix-modulo",
+    "prefix-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908998,
+    "pattern_confidence": {
+      "prefix-modulo": 0.95,
+      "prefix-computation": 0.9
+    }
+  }
+}

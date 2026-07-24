@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-watering-plants-ii",
+  "title": "Watering Plants II",
+  "slug": "watering-plants-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/watering-plants-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "simulation"
+  ],
+  "statement": "Two people water plants from opposite ends of a row, refilling their cans as needed. Determine how many times they must refill to water all plants given their watering capacities and plant requirements.",
+  "tags": [
+    "array",
+    "simulation",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910101,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

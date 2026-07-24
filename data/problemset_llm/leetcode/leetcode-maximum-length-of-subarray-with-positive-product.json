@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-length-of-subarray-with-positive-product",
+  "title": "Maximum Length of Subarray With Positive Product",
+  "slug": "maximum-length-of-subarray-with-positive-product",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Find the length of the longest contiguous subarray whose product of all elements is positive, excluding any subarray containing zero.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909697,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

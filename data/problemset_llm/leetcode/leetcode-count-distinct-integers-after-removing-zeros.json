@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-count-distinct-integers-after-removing-zeros",
+  "title": "Count Distinct Integers After Removing Zeros",
+  "slug": "count-distinct-integers-after-removing-zeros",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-distinct-integers-after-removing-zeros/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Count how many distinct integers result from removing all zeros from every integer between 1 and n inclusive.",
+  "tags": [
+    "math",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "digit-dp",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908504,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "counting": 0.9
+    }
+  }
+}

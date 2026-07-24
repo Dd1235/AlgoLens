@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-splitting-a-string-into-descending-consecutive-values",
+  "title": "Splitting a String Into Descending Consecutive Values",
+  "slug": "splitting-a-string-into-descending-consecutive-values",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "backtracking",
+    "enumeration"
+  ],
+  "statement": "Given a digit string, determine if it can be split into two or more contiguous substrings whose numeric values form a strictly descending sequence with each adjacent pair differing by exactly one.",
+  "tags": [
+    "string",
+    "backtracking",
+    "enumeration"
+  ],
+  "patterns": [
+    "backtracking",
+    "dfs",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909046,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "dfs": 0.9,
+      "enumeration": 0.85
+    }
+  }
+}

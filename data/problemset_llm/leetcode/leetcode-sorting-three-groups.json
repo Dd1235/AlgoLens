@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-sorting-three-groups",
+  "title": "Sorting Three Groups",
+  "slug": "sorting-three-groups",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sorting-three-groups/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array containing only 1s, 2s, and 3s, find the minimum number of removals needed to make the array non-decreasing.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909555,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimize-the-maximum-edge-weight-of-graph",
+  "title": "Minimize the Maximum Edge Weight of Graph",
+  "slug": "minimize-the-maximum-edge-weight-of-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "binary-search",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "shortest-path"
+  ],
+  "statement": "Given a directed weighted graph, remove edges to ensure all nodes can reach node 0, each node has at most a given number of outgoing edges, and the maximum edge weight is minimized. Return the minimal possible maximum edge weight or -1 if impossible.",
+  "tags": [
+    "graph",
+    "binary-search",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "reachability-check",
+    "degree-constraint",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909740,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "reachability-check": 0.9,
+      "degree-constraint": 0.85,
+      "pruning": 0.7
+    }
+  }
+}

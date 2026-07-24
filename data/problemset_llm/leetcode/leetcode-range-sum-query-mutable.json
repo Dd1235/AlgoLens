@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-range-sum-query-mutable",
+  "title": "Range Sum Query - Mutable",
+  "slug": "range-sum-query-mutable",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/range-sum-query-mutable/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "design",
+    "binary-indexed-tree",
+    "segment-tree"
+  ],
+  "statement": "Design a data structure to efficiently update elements in an integer array and query the sum of elements within a given range.",
+  "tags": [
+    "array",
+    "data-structure",
+    "segment-tree",
+    "fenwick-tree"
+  ],
+  "patterns": [
+    "segment-tree",
+    "fenwick-tree",
+    "range-query",
+    "point-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909579,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "fenwick-tree": 0.93,
+      "range-query": 0.9,
+      "point-update": 0.88
+    }
+  }
+}

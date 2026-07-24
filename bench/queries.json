@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical. v4 adds 10 technique queries (slice: technique) over the dp-optimization batch: half name the niche technique outright (do curated pattern labels function as retrieval vocabulary?), half describe it without naming it (does dense bridge to technique phrasing?). Corpus at v4: 1198 problems.",
+  "version": 5,
+  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical. v4 adds 10 technique queries (slice: technique) over the dp-optimization batch: half name the niche technique outright (do curated pattern labels function as retrieval vocabulary?), half describe it without naming it (does dense bridge to technique phrasing?). Corpus at v4: 1198 problems. v5 adds 3 technique queries phrased through taxonomy ALIASES (aliens trick / sum over subsets / scanline) to measure query-side alias expansion end to end. Corpus at v5: 1808 problems (hard-focus: 13 junk easies purged, +561 lowest-acceptance mediums).",
   "queries": [
     {
       "query": "two sum",
@@ -484,6 +484,35 @@
         "leetcode-minimum-total-space-wasted-with-k-resizing-operations"
       ],
       "intent": "partition-dp family by technique phrasing",
+      "slice": "technique"
+    },
+    {
+      "query": "aliens trick minimize cost with exactly k groups",
+      "relevant": [
+        "leetcode-best-time-to-buy-and-sell-stock-iv",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
+        "leetcode-best-time-to-buy-and-sell-stock-v"
+      ],
+      "intent": "alias phrasing: aliens trick -> wqs-binary-search via expansion",
+      "slice": "technique"
+    },
+    {
+      "query": "sum over subsets bitmask dp transform",
+      "relevant": [
+        "leetcode-triples-with-bitwise-and-equal-to-zero",
+        "leetcode-count-number-of-maximum-bitwise-or-subsets"
+      ],
+      "intent": "alias phrasing: sum-over-subsets -> sos-dp via expansion (the exp-06 regression case)",
+      "slice": "technique"
+    },
+    {
+      "query": "scanline count overlapping intervals",
+      "relevant": [
+        "cses-1619",
+        "leetcode-my-calendar-iii",
+        "cses-1164"
+      ],
+      "intent": "alias phrasing: scanline -> line-sweep via expansion",
       "slice": "technique"
     }
   ]

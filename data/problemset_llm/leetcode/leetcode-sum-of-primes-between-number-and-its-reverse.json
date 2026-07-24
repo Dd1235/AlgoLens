@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-sum-of-primes-between-number-and-its-reverse",
+  "title": "Sum of Primes Between Number and Its Reverse",
+  "slug": "sum-of-primes-between-number-and-its-reverse",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer n, compute the sum of all prime numbers between n and the integer formed by reversing its digits, inclusive.",
+  "tags": [
+    "math",
+    "number-theory",
+    "prime"
+  ],
+  "patterns": [
+    "prime-sieve",
+    "digit-reversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908324,
+    "pattern_confidence": {
+      "prime-sieve": 0.95,
+      "digit-reversal": 0.9
+    }
+  }
+}

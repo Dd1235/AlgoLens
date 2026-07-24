@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-shortest-and-lexicographically-smallest-beautiful-string",
+  "title": "Shortest and Lexicographically Smallest Beautiful String",
+  "slug": "shortest-and-lexicographically-smallest-beautiful-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a binary string and an integer k, find the shortest substring containing exactly k ones and return the lexicographically smallest such substring. If no such substring exists, return an empty string.",
+  "tags": [
+    "string",
+    "array"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-sum",
+    "lexicographic-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909414,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "prefix-sum": 0.9,
+      "lexicographic-comparison": 0.85
+    }
+  }
+}

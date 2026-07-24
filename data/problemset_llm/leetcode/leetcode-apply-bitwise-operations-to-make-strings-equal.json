@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-apply-bitwise-operations-to-make-strings-equal",
+  "title": "Apply Bitwise Operations to Make Strings Equal",
+  "slug": "apply-bitwise-operations-to-make-strings-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "bit-manipulation"
+  ],
+  "statement": "Given two binary strings of equal length, determine if one can be transformed into the other using a series of operations that simultaneously update two positions with bitwise OR and XOR.",
+  "tags": [
+    "string",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitwise-operations",
+    "in-place-transformation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909530,
+    "pattern_confidence": {
+      "bitwise-operations": 0.95,
+      "in-place-transformation": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

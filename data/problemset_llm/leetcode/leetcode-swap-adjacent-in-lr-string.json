@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-swap-adjacent-in-lr-string",
+  "title": "Swap Adjacent in LR String",
+  "slug": "swap-adjacent-in-lr-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/swap-adjacent-in-lr-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "two-pointers",
+    "string"
+  ],
+  "statement": "Given two strings composed of 'L', 'R', and 'X', determine if one can be transformed into the other by repeatedly swapping adjacent characters according to specific rules: \"XL\" can be swapped to \"LX\" and \"RX\" can be swapped to \"XR\".",
+  "tags": [
+    "string",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909138,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-matchsticks-to-square",
+  "title": "Matchsticks to Square",
+  "slug": "matchsticks-to-square",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/matchsticks-to-square/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given an array of matchstick lengths, determine if all matchsticks can be used exactly once to form a square without breaking any stick.",
+  "tags": [
+    "array",
+    "backtracking",
+    "bitmask-dp"
+  ],
+  "patterns": [
+    "backtracking",
+    "bitmask-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909479,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-4sum",
+  "title": "4Sum",
+  "slug": "4sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/4sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a target value, find all unique quadruplets of distinct indices whose elements sum to the target.",
+  "tags": [
+    "array",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sorting",
+    "duplicate-skipping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909408,
+    "pattern_confidence": {
+      "two-pointers": 0.98,
+      "sorting": 0.95,
+      "duplicate-skipping": 0.9
+    }
+  }
+}

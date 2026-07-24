@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sum-of-mutated-array-closest-to-target",
+  "title": "Sum of Mutated Array Closest to Target",
+  "slug": "sum-of-mutated-array-closest-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a target sum, find an integer value to replace all larger elements so that the array's sum is closest to the target, returning the smallest such value in case of ties.",
+  "tags": [
+    "array",
+    "binary-search",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909881,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-partition-array-into-k-distinct-groups",
+  "title": "Partition Array Into K-Distinct Groups",
+  "slug": "partition-array-into-k-distinct-groups",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-array-into-k-distinct-groups/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting"
+  ],
+  "statement": "Determine if an integer array can be partitioned into groups of size k where each group contains distinct elements and all elements are used exactly once.",
+  "tags": [
+    "array",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "frequency-count",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909941,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

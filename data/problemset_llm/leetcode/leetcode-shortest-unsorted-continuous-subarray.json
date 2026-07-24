@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-shortest-unsorted-continuous-subarray",
+  "title": "Shortest Unsorted Continuous Subarray",
+  "slug": "shortest-unsorted-continuous-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-unsorted-continuous-subarray/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "stack",
+    "greedy",
+    "sorting",
+    "monotonic-stack"
+  ],
+  "statement": "Find the length of the shortest continuous subarray which, when sorted, makes the entire array sorted in non-decreasing order.",
+  "tags": [
+    "array",
+    "stack",
+    "two-pointers",
+    "sorting"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "two-pointers",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909146,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "two-pointers": 0.9,
+      "greedy": 0.85,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-multiply-strings",
+  "title": "Multiply Strings",
+  "slug": "multiply-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/multiply-strings/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "simulation"
+  ],
+  "statement": "Given two non-negative integers represented as strings, compute their product as a string without using built-in large integer libraries or direct integer conversion.",
+  "tags": [
+    "string",
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation",
+    "grade-school-multiplication"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909676,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "grade-school-multiplication": 0.9
+    }
+  }
+}

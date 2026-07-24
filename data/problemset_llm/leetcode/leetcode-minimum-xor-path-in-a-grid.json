@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-xor-path-in-a-grid",
+  "title": "Minimum XOR Path in a Grid",
+  "slug": "minimum-xor-path-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "statement": "Find the minimum XOR value of any path from the top-left to the bottom-right cell in a grid, moving only right or down, where the path cost is the XOR of all visited cells.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "bitmask",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909318,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "bitmask": 0.85,
+      "state-compression": 0.8
+    }
+  }
+}

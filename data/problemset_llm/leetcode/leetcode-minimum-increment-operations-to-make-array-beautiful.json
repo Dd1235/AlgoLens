@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-increment-operations-to-make-array-beautiful",
+  "title": "Minimum Increment Operations to Make Array Beautiful",
+  "slug": "minimum-increment-operations-to-make-array-beautiful",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array and a target value k, find the minimum number of increments needed so that every subarray of length at least 3 has a maximum element greater than or equal to k.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-max",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908888,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "prefix-max": 0.75,
+      "sliding-window": 0.7
+    }
+  }
+}

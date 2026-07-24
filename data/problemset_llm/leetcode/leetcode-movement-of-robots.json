@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-movement-of-robots",
+  "title": "Movement of Robots",
+  "slug": "movement-of-robots",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/movement-of-robots/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "brainteaser",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given initial positions and directions of robots on a number line, compute the sum of distances between all pairs of robots after d seconds, considering that robots reverse directions instantly upon collision.",
+  "tags": [
+    "array",
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "collision-simulation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908612,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "collision-simulation": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-circle-and-rectangle-overlapping",
+  "title": "Circle and Rectangle Overlapping",
+  "slug": "circle-and-rectangle-overlapping",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/circle-and-rectangle-overlapping/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "geometry"
+  ],
+  "statement": "Determine whether a given circle and an axis-aligned rectangle overlap by checking if they share at least one common point.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "geometry",
+    "distance-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910274,
+    "pattern_confidence": {
+      "geometry": 0.98,
+      "distance-check": 0.85
+    }
+  }
+}

@@ -14,6 +14,9 @@ const libCountBookmarks = document.getElementById("lib-count-bookmarks");
 const libCountDone = document.getElementById("lib-count-done");
 const libChips = libBar.querySelectorAll(".lib-chip");
 
+// :help works for everyone, signed in or not.
+const HELP_COMMANDS = new Set([":help", ":h"]);
+
 // Shell-style library commands: typing one of these in the search box bypasses
 // BM25 and lists the user's saved problems.
 const LIBRARY_COMMANDS = {
@@ -189,7 +192,7 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
-    setStatus("type a query to search");
+    setStatus("type a query to search · :help for the manual");
     resultsEl.innerHTML = "";
     currentQuery = "";
     currentOffset = 0;
@@ -197,6 +200,13 @@ async function runSearch(rawQuery, { append = false } = {}) {
     hideLoadMore();
     if (currentUser) setLibPath("~");
     return;
+  }
+
+  if (HELP_COMMANDS.has(q.toLowerCase())) {
+    currentQuery = "";
+    currentOffset = 0;
+    currentTotal = 0;
+    return renderHelp();
   }
 
   // Shell-style library commands.
@@ -254,9 +264,12 @@ function renderSingle(data, q, append) {
     return;
   }
   const lat = typeof data.latencyMs === "number" ? ` · ${data.latencyMs.toFixed(3)}ms` : "";
+  // Alias expansion is server-side; show what was added so the vocabulary is
+  // learnable ("aliens trick" → +wqs binary search).
+  const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
   const shown = currentOffset + data.hits.length;
   const total = currentTotal;
-  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${data.ranker}${lat}`);
+  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${data.ranker}${lat}${expanded}`);
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
@@ -377,6 +390,57 @@ function updatePatternPill() {
   }
 }
 
+const HELP_TEXT = `ALGOLENS(1)                                        the manual
+
+SEARCH — three ways to find a problem
+  knapsack coin change       keyword: exact terms, bm25 scores them
+  thief robbing houses       describe the idea: dense (minilm) bridges
+                             the vocabulary gap — try /?ranker=dense
+  wqs binary search          technique label: the curated taxonomy
+  Aliases expand automatically: "aliens trick" -> +wqs binary search
+  (the + in the status line shows what was added)
+
+RANKERS
+  bm25 (default) · tfidf · dense · hybrid (rrf fusion of bm25+dense)
+  per request:  /?q=two+sum&ranker=hybrid
+  the "compare rankers" toggle runs bm25 and dense side by side
+
+PATTERNS
+  every expanded result lists technique labels — click one to
+  filter results to that label; the pill clears it
+  browse the whole taxonomy with counts: /patterns.html
+
+COMMANDS
+  :help :h          this manual
+  :bookmarks :b     starred problems           (signed in)
+  :done :d          problems marked done       (signed in)
+  :all :lib         everything saved           (signed in)
+  Tab               cycles library views       (signed in)
+
+MORE
+  click a result to expand · "find similar" = cosine over the
+  stored embeddings · handles + combined heatmap: /profile.html`;
+
+function renderHelp() {
+  if (compareToggle.checked) {
+    compareToggle.checked = false;
+    applyMode();
+  }
+  clearPatternFilter({ reissue: false });
+  hideLoadMore();
+  if (currentUser) setLibPath("~/help");
+  setStatus("man algolens");
+  resultsEl.innerHTML = "";
+  const li = document.createElement("li");
+  li.className = "result help-block";
+  li.setAttribute("data-rank", "[man]");
+  const pre = document.createElement("pre");
+  pre.className = "help-man";
+  pre.textContent = HELP_TEXT;
+  li.appendChild(pre);
+  resultsEl.appendChild(li);
+}
+
 function updateLoadMore() {
   const shown = currentOffset + TOP_K;
   if (currentTotal > 0 && shown < currentTotal) {
@@ -423,7 +487,8 @@ function renderCompare(data, q) {
   });
   const totalHits = results.reduce((s, r) => s + r.hits.length, 0);
   if (totalHits === 0) { setStatus(`0 hits for "${q}"`); compareEl.innerHTML = ""; latencySummaryEl.textContent = ""; return; }
-  setStatus(`compare: "${q}"`);
+  const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
+  setStatus(`compare: "${q}"${expanded}`);
   latencySummaryEl.textContent = results.map((r) => `${r.ranker} ${r.latencyMs.toFixed(3)}ms`).join("  ·  ");
   compareEl.innerHTML = "";
   results.forEach((r, idx) => {
@@ -431,7 +496,7 @@ function renderCompare(data, q) {
     col.className = "compare-col";
     const head = document.createElement("div");
     head.className = "compare-col-head";
-    head.innerHTML = `<span class="ranker-name">${escapeHtml(r.ranker)}</span><span class="ranker-latency">${r.latencyMs.toFixed(3)}ms</span>`;
+    head.innerHTML = `<span class="ranker-name">${escapeHtml(r.ranker)}</span><span class="ranker-latency" title="scoring latency for this query">${r.latencyMs.toFixed(3)}ms</span>`;
     col.appendChild(head);
     const list = document.createElement("ul");
     list.className = "compare-list";
@@ -545,7 +610,7 @@ function renderHitsList(container, hits, opts = {}) {
       <p>${escapeHtml(hit.problem.statement || "")}</p>
       <p class="tags"><strong>tags:</strong> ${(hit.problem.tags || []).map(escapeHtml).join(", ")}</p>
       <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || [])
-        .map((p) => `<button type="button" class="pattern-chip" data-pattern="${escapeHtml(p)}">${escapeHtml(p)}</button>`)
+        .map((p) => `<button type="button" class="pattern-chip" data-pattern="${escapeHtml(p)}" title="filter results by this label">${escapeHtml(p)}</button>`)
         .join(" ")}</p>
       <p><a href="#" class="similar-link">find similar problems &rarr;</a>${
         hit.problem.source_url
@@ -692,5 +757,5 @@ if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
 } else if (bootQ) {
   runSearch(bootQ, { append: false });
 } else {
-  setStatus("type a query to search");
+  setStatus("type a query to search · :help for the manual");
 }

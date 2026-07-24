@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-rotate-non-negative-elements",
+  "title": "Rotate Non Negative Elements",
+  "slug": "rotate-non-negative-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/rotate-non-negative-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "simulation"
+  ],
+  "statement": "Given an integer array, rotate only the non-negative elements to the left by k positions cyclically, while keeping negative elements fixed in their original positions.",
+  "tags": [
+    "array",
+    "simulation"
+  ],
+  "patterns": [
+    "array-rotation",
+    "index-mapping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910021,
+    "pattern_confidence": {
+      "array-rotation": 0.95,
+      "index-mapping": 0.9
+    }
+  }
+}

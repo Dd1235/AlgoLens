@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-ways-to-reach-a-position-after-exactly-k-steps",
+  "title": "Number of Ways to Reach a Position After Exactly k Steps",
+  "slug": "number-of-ways-to-reach-a-position-after-exactly-k-steps",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-reach-a-position-after-exactly-k-steps/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "statement": "Count the number of distinct sequences of exactly k steps moving left or right on an infinite number line to reach a target position from a start position, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "combinatorics",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909014,
+    "pattern_confidence": {
+      "combinatorics": 0.95,
+      "dynamic-programming": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

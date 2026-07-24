@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-paint-house-iv",
+  "title": "Paint House IV",
+  "slug": "paint-house-iv",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/paint-house-iv/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an even number of houses in a line and a cost matrix for painting each house with one of three colors, find the minimum total painting cost such that no two adjacent houses share the same color and houses equidistant from the ends are painted different colors.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909774,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

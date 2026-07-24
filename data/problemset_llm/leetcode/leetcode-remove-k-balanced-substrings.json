@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-remove-k-balanced-substrings",
+  "title": "Remove K-Balanced Substrings",
+  "slug": "remove-k-balanced-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/remove-k-balanced-substrings/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "stack",
+    "simulation"
+  ],
+  "statement": "Given a string of parentheses and an integer k, repeatedly remove all non-overlapping substrings consisting of k consecutive '(' followed by k consecutive ')' until no such substring remains, then return the resulting string.",
+  "tags": [
+    "string",
+    "stack",
+    "simulation"
+  ],
+  "patterns": [
+    "stack",
+    "greedy",
+    "string-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908794,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "greedy": 0.85,
+      "string-simulation": 0.9
+    }
+  }
+}

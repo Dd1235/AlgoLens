@@ -38,6 +38,7 @@ CODEFORCES_PROBLEMS_URL = "https://codeforces.com/api/problemset.problems"
 
 LC_RECENT_BLOCK = "LeetCode Recent"
 LC_BLOCK = "LeetCode Hard"
+LC_MEDIUM_BLOCK = "LeetCode Medium Hardest"
 CF_BLOCK = "Codeforces Rated 1600-1900"
 SSL_CONTEXT = None
 
@@ -67,6 +68,7 @@ def remove_generated_block(text: str, name: str) -> str:
 def strip_generated_blocks(text: str) -> str:
     text = remove_generated_block(text, LC_RECENT_BLOCK)
     text = remove_generated_block(text, LC_BLOCK)
+    text = remove_generated_block(text, LC_MEDIUM_BLOCK)
     text = remove_generated_block(text, CF_BLOCK)
     return normalize_blank_lines(text)
 
@@ -192,15 +194,17 @@ def fetch_leetcode_recent_urls(count: int) -> list[str]:
             total = int(probe.get("totalLength") or 0)
             if total <= 0:
                 continue
-            # Over-fetch a little so paid-only entries can be dropped and the
+            # Over-fetch so paid-only and Easy entries can be dropped and the
             # window still fills.
-            window = count + 20
+            window = count + 40
             page = _leetcode_page(fields, max(0, total - window), window)
             questions = page.get("questions") or []
             if not questions:
                 continue
             if "paidOnly" in fields:
                 questions = [q for q in questions if not q.get("paidOnly")]
+            # Hard-focus corpus: Easy problems are never ingested.
+            questions = [q for q in questions if q.get("difficulty") != "EASY"]
             with_ids = [(q, _frontend_id(q)) for q in questions]
             if all(fid is not None for _, fid in with_ids):
                 with_ids.sort(key=lambda pair: pair[1], reverse=True)
@@ -218,6 +222,84 @@ def fetch_leetcode_recent_urls(count: int) -> list[str]:
             last_error = exc
             continue
     raise RuntimeError(f"could not fetch recent problems: {last_error}")
+
+
+def fetch_leetcode_medium_hardest_urls(count: int) -> list[str]:
+    """Non-premium Mediums sorted by ascending acceptance rate, hardest first.
+
+    Low acceptance rate is the difficulty signal for Mediums (contest Q3/Q4
+    grade). Sorting requires the acRate field; if the schema doesn't expose it,
+    fail loudly rather than ship an unsorted grab-bag.
+    """
+    filters = {
+        "filterCombineType": "ALL",
+        "difficultyFilter": {"difficulties": ["MEDIUM"], "operator": "IS"},
+    }
+    field_variants = [
+        "titleSlug difficulty acRate paidOnly",
+        "titleSlug difficulty acRate",
+    ]
+    last_error: Exception | None = None
+    for fields in field_variants:
+        query = (
+            "query mediums($limit: Int, $skip: Int, $filters: QuestionFilterInput) {"
+            " problemsetQuestionListV2(limit: $limit, skip: $skip, filters: $filters) {"
+            " totalLength questions { " + fields + " } } }"
+        )
+        try:
+            rows: list[tuple[float, str]] = []
+            total: int | None = None
+            skip = 0
+            limit = 100
+            while total is None or skip < total:
+                data = request_json(
+                    LEETCODE_GRAPHQL_URL,
+                    {"query": query, "variables": {"skip": skip, "limit": limit, "filters": filters}},
+                )
+                if data.get("errors"):
+                    raise RuntimeError(data["errors"])
+                page = (data.get("data") or {}).get("problemsetQuestionListV2") or {}
+                total = int(page.get("totalLength") or 0)
+                questions = page.get("questions") or []
+                if not questions:
+                    break
+                for q in questions:
+                    slug = q.get("titleSlug")
+                    ac_rate = q.get("acRate")
+                    if not slug or q.get("paidOnly"):
+                        continue
+                    if not isinstance(ac_rate, (int, float)):
+                        continue
+                    rows.append((float(ac_rate), f"https://leetcode.com/problems/{slug}/"))
+                skip += limit
+            if not rows:
+                raise RuntimeError("no mediums with acRate returned")
+            rows.sort(key=lambda pair: pair[0])
+            seen: set[str] = set()
+            urls: list[str] = []
+            for _rate, url in rows:  # order-preserving dedupe, hardest first
+                if url not in seen:
+                    seen.add(url)
+                    urls.append(url)
+            return urls[:count]
+        except RuntimeError as exc:
+            last_error = exc
+            continue
+    raise RuntimeError(f"acRate unavailable — refusing to ship unsorted mediums: {last_error}")
+
+
+def make_medium_block(urls: list[str], already_present: set[str]) -> tuple[str, int, int]:
+    added = [u for u in urls if u not in already_present]
+    lines = [
+        f"# BEGIN GENERATED: {LC_MEDIUM_BLOCK}",
+        "# LeetCode / Medium Hardest (generated)",
+        "# All non-premium mediums sorted by ascending acceptance rate; lowest N kept",
+        f"# Total medium URLs discovered: {len(urls)}",
+        f"# URLs already present elsewhere: {len(urls) - len(added)}",
+    ]
+    lines.extend(added)
+    lines.append(f"# END GENERATED: {LC_MEDIUM_BLOCK}")
+    return "\n".join(lines) + "\n", len(added), len(urls)
 
 
 def fetch_codeforces_rated_urls(min_rating: int, max_rating: int) -> dict[int, list[str]]:
@@ -246,6 +328,7 @@ def make_recent_block(urls: list[str], already_present: set[str]) -> tuple[str, 
         f"# BEGIN GENERATED: {LC_RECENT_BLOCK}",
         "# LeetCode / Recent (generated)",
         "# Newest problems by frontend id - proxy for recent contest problems",
+        "# Easy problems dropped at fetch (hard-focus corpus)",
         f"# Total recent URLs discovered: {len(urls)}",
         f"# URLs already present elsewhere: {len(urls) - len(added)}",
     ]
@@ -289,10 +372,12 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--urls", type=Path, default=DEFAULT_URLS)
     ap.add_argument("--recent-count", type=int, default=60, help="Newest-N LeetCode problems for the Recent block (0 disables)")
+    ap.add_argument("--medium-count", type=int, default=600, help="Lowest-acceptance-rate Mediums to keep (0 disables)")
     ap.add_argument("--min-rating", type=int, default=1600)
     ap.add_argument("--max-rating", type=int, default=1900)
     ap.add_argument("--skip-recent", action="store_true")
     ap.add_argument("--skip-leetcode", action="store_true")
+    ap.add_argument("--skip-medium", action="store_true")
     ap.add_argument("--skip-codeforces", action="store_true")
     ap.add_argument(
         "--insecure-ssl",
@@ -307,6 +392,7 @@ def main() -> int:
 
     do_recent = not args.skip_recent and args.recent_count > 0
     do_leetcode = not args.skip_leetcode
+    do_medium = not args.skip_medium and args.medium_count > 0
     do_codeforces = not args.skip_codeforces
 
     # Strip only the blocks about to be regenerated; skipped blocks stay put.
@@ -315,6 +401,8 @@ def main() -> int:
         base_text = remove_generated_block(base_text, LC_RECENT_BLOCK)
     if do_leetcode:
         base_text = remove_generated_block(base_text, LC_BLOCK)
+    if do_medium:
+        base_text = remove_generated_block(base_text, LC_MEDIUM_BLOCK)
     if do_codeforces:
         base_text = remove_generated_block(base_text, CF_BLOCK)
     base_text = normalize_blank_lines(base_text)
@@ -336,6 +424,13 @@ def main() -> int:
         blocks.append(block)
         present.update(lc_urls)
         print(f"LeetCode Hard: discovered {total}, generated added {added}")
+
+    if do_medium:
+        medium_urls = fetch_leetcode_medium_hardest_urls(args.medium_count)
+        block, added, total = make_medium_block(medium_urls, present)
+        blocks.append(block)
+        present.update(medium_urls)
+        print(f"LeetCode Medium Hardest: kept {total}, generated added {added}")
 
     if do_codeforces:
         cf_grouped = fetch_codeforces_rated_urls(args.min_rating, args.max_rating)

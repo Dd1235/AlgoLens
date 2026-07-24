@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-minimum-cost-to-remove-array-elements",
+  "title": "Find Minimum Cost to Remove Array Elements",
+  "slug": "find-minimum-cost-to-remove-array-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-minimum-cost-to-remove-array-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, remove all elements by repeatedly removing two elements from the first three or all remaining elements if fewer than three remain, minimizing the sum of the maximums of removed pairs or groups.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908476,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

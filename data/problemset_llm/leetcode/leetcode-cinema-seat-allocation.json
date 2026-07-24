@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-cinema-seat-allocation",
+  "title": "Cinema Seat Allocation",
+  "slug": "cinema-seat-allocation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/cinema-seat-allocation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given a cinema with n rows and reserved seats, determine the maximum number of four-person groups that can be seated in specific 4-seat blocks per row without overlapping reserved seats.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy",
+    "hash-map"
+  ],
+  "patterns": [
+    "bitmask",
+    "greedy",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909716,
+    "pattern_confidence": {
+      "bitmask": 0.95,
+      "greedy": 0.9,
+      "hash-map": 0.85
+    }
+  }
+}

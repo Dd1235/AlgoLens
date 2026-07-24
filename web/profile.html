@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>algolens · profile</title>
+    <script src="/theme.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>
+          <a href="/" class="home-link">algolens</a>
+          <span class="signature" title="dedeepya avancha">[da]</span>
+        </h1>
+        <nav class="header-actions" aria-label="Page actions">
+          <button type="button" class="theme-toggle" data-theme-toggle>
+            light mode
+          </button>
+          <a href="/" class="debug-link">search</a>
+          <a href="/patterns.html" class="debug-link">patterns</a>
+        </nav>
+      </header>
+      <p class="tagline">
+        ~/profile — your handles across judges, one combined picture.
+      </p>
+      <p id="profile-status" class="status">
+        loading<span class="cursor">_</span>
+      </p>
+
+      <form id="handles-form" class="handles-form" autocomplete="off">
+        <label class="handle-field">
+          <span>leetcode</span>
+          <input id="handle-leetcode" type="text" spellcheck="false" placeholder="username" />
+        </label>
+        <label class="handle-field">
+          <span>codeforces</span>
+          <input id="handle-codeforces" type="text" spellcheck="false" placeholder="handle" />
+        </label>
+        <label class="handle-field">
+          <span>codechef</span>
+          <input id="handle-codechef" type="text" spellcheck="false" placeholder="username" />
+        </label>
+        <button type="submit">save handles</button>
+        <span id="handles-msg" class="handles-msg"></span>
+      </form>
+
+      <div id="platform-cards" class="platform-cards"></div>
+
+      <section id="heatmap-section" class="heatmap-section hidden">
+        <p id="heatmap-total" class="heatmap-total"></p>
+        <div id="heatmap-months" class="heatmap-months"></div>
+        <div id="heatmap" class="heatmap"></div>
+        <p class="heatmap-foot">
+          <a href="#" id="refresh-link">refresh stats</a>
+          <span class="heatmap-legend">less <span class="hm hm-l0"></span><span class="hm hm-l1"></span><span class="hm hm-l2"></span><span class="hm hm-l3"></span><span class="hm hm-l4"></span> more</span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      algolens · stats cached ~12h server-side · codechef is best-effort (no
+      official api) · heatmap = lc + cf submissions + algolens done marks
+    </footer>
+    <script src="/profile.js"></script>
+  </body>
+</html>

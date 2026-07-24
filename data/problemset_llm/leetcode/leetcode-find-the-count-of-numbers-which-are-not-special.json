@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-count-of-numbers-which-are-not-special",
+  "title": "Find the Count of Numbers Which Are Not Special",
+  "slug": "find-the-count-of-numbers-which-are-not-special",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Count how many numbers in the given range [l, r] are not special, where a special number has exactly two proper divisors.",
+  "tags": [
+    "math",
+    "number-theory",
+    "counting"
+  ],
+  "patterns": [
+    "divisor-counting",
+    "range-query",
+    "sieve"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908615,
+    "pattern_confidence": {
+      "divisor-counting": 0.95,
+      "range-query": 0.7,
+      "sieve": 0.6
+    }
+  }
+}

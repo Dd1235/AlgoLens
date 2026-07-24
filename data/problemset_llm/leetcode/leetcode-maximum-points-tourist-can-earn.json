@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-points-tourist-can-earn",
+  "title": "Maximum Points Tourist Can Earn",
+  "slug": "maximum-points-tourist-can-earn",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-points-tourist-can-earn/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given n cities and k days, with stay and travel scores between cities, find the maximum points a tourist can earn by choosing to stay or travel each day starting from any city.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910016,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

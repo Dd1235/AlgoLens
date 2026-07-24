@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-second-highest-salary",
+  "title": "Second Highest Salary",
+  "slug": "second-highest-salary",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/second-highest-salary/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given an Employee table with unique IDs and salaries, find the second highest distinct salary or return null if it does not exist.",
+  "tags": [
+    "database",
+    "sql",
+    "query"
+  ],
+  "patterns": [
+    "aggregation",
+    "order-by",
+    "limit-offset"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909979,
+    "pattern_confidence": {
+      "aggregation": 0.95,
+      "order-by": 0.9,
+      "limit-offset": 0.85
+    }
+  }
+}

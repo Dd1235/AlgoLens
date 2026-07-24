@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-3sum-closest",
+  "title": "3Sum Closest",
+  "slug": "3sum-closest",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/3sum-closest/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a target value, find three distinct elements whose sum is closest to the target and return that sum.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "sorting"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sorting",
+    "closest-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910110,
+    "pattern_confidence": {
+      "two-pointers": 0.98,
+      "sorting": 0.95,
+      "closest-sum": 0.9
+    }
+  }
+}

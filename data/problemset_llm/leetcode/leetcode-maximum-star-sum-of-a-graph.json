@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-star-sum-of-a-graph",
+  "title": "Maximum Star Sum of a Graph",
+  "slug": "maximum-star-sum-of-a-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-star-sum-of-a-graph/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "graph",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an undirected graph with node values, find the maximum sum of a star subgraph centered at any node with at most k edges connecting to its neighbors.",
+  "tags": [
+    "graph",
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909508,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "heap": 0.88
+    }
+  }
+}

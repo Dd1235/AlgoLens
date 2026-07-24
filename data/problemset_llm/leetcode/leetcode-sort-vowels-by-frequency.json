@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-sort-vowels-by-frequency",
+  "title": "Sort Vowels by Frequency",
+  "slug": "sort-vowels-by-frequency",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sort-vowels-by-frequency/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "sorting",
+    "counting"
+  ],
+  "statement": "Rearrange the vowels in a given string so that they appear in non-increasing order of their frequency, breaking ties by their first occurrence, while keeping consonants in place.",
+  "tags": [
+    "string",
+    "sorting",
+    "counting",
+    "array"
+  ],
+  "patterns": [
+    "frequency-count",
+    "stable-sorting",
+    "two-pass-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908329,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "stable-sorting": 0.9,
+      "two-pass-scan": 0.85
+    }
+  }
+}

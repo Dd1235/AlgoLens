@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-string-without-aaa-or-bbb",
+  "title": "String Without AAA or BBB",
+  "slug": "string-without-aaa-or-bbb",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/string-without-aaa-or-bbb/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy"
+  ],
+  "statement": "Construct a string of length a + b containing exactly a 'a's and b 'b's without any substring of three identical consecutive characters.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "string-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909763,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "string-construction": 0.9
+    }
+  }
+}

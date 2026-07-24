@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-unique-paths-ii",
+  "title": "Unique Paths II",
+  "slug": "unique-paths-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/unique-paths-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a grid with obstacles, count the number of unique paths from the top-left to the bottom-right corner moving only right or down, avoiding obstacles.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "grid-traversal",
+    "obstacle-avoidance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909718,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "grid-traversal": 0.9,
+      "obstacle-avoidance": 0.85
+    }
+  }
+}

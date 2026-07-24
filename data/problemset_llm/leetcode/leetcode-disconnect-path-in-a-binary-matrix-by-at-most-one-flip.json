@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+  "title": "Disconnect Path in a Binary Matrix by at Most One Flip",
+  "slug": "disconnect-path-in-a-binary-matrix-by-at-most-one-flip",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "depth-first-search",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Given a binary matrix where movement is allowed only down or right through cells with value 1, determine if flipping at most one cell (except start and end) can disconnect the path from the top-left to bottom-right corner.",
+  "tags": [
+    "array",
+    "matrix",
+    "graph",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "dfs",
+    "grid-graph",
+    "path-existence",
+    "single-change-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908609,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "dfs": 0.9,
+      "grid-graph": 0.9,
+      "path-existence": 0.85,
+      "single-change-check": 0.8
+    }
+  }
+}

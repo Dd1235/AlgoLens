@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-check-if-move-is-legal",
+  "title": "Check if Move is Legal",
+  "slug": "check-if-move-is-legal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-move-is-legal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "matrix",
+    "enumeration"
+  ],
+  "statement": "Given an 8x8 board with cells marked as free, white, or black, determine if placing a piece of a given color at a specified free cell forms a legal move by creating a 'good line' where the placed cell is an endpoint of a line of three or more cells with endpoints of the same color and opposite-colored cells in between.",
+  "tags": [
+    "array",
+    "matrix",
+    "enumeration"
+  ],
+  "patterns": [
+    "directional-enumeration",
+    "line-checking",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910231,
+    "pattern_confidence": {
+      "directional-enumeration": 0.95,
+      "line-checking": 0.9,
+      "grid-traversal": 0.85
+    }
+  }
+}

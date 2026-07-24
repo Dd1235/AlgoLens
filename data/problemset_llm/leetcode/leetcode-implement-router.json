@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-implement-router",
+  "title": "Implement Router",
+  "slug": "implement-router",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/implement-router/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "design",
+    "queue",
+    "ordered-set"
+  ],
+  "statement": "Design a Router class to store packets with source, destination, and timestamp attributes under a fixed memory limit, supporting adding packets without duplicates, forwarding packets in FIFO order, and counting packets by destination within a timestamp range.",
+  "tags": [
+    "design",
+    "queue",
+    "hash-map",
+    "binary-search"
+  ],
+  "patterns": [
+    "fifo-queue",
+    "duplicate-detection",
+    "ordered-data-structure",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909250,
+    "pattern_confidence": {
+      "fifo-queue": 0.95,
+      "duplicate-detection": 0.9,
+      "ordered-data-structure": 0.85,
+      "binary-search": 0.8
+    }
+  }
+}

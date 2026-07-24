@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-bowl-subarrays",
+  "title": "Count Bowl Subarrays",
+  "slug": "count-bowl-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-bowl-subarrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Count the number of subarrays of length at least three where the minimum of the two ends is strictly greater than the maximum of all elements in between, given an array of distinct integers.",
+  "tags": [
+    "array",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910069,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "two-pointers": 0.85,
+      "sliding-window": 0.8
+    }
+  }
+}

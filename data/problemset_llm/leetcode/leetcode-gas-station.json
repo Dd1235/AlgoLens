@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-gas-station",
+  "title": "Gas Station",
+  "slug": "gas-station",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/gas-station/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given two arrays representing gas available at stations and cost to travel to the next station on a circular route, find the unique starting station index from which one can complete a full circuit without running out of gas, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "circular-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910052,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "prefix-sum": 0.85,
+      "circular-array": 0.8
+    }
+  }
+}

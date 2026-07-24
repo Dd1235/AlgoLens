@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-distance-in-arrays",
+  "title": "Maximum Distance in Arrays",
+  "slug": "maximum-distance-in-arrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-distance-in-arrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given multiple sorted arrays, select one integer from two different arrays to maximize the absolute difference between the chosen integers.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909765,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-word-search",
+  "title": "Word Search",
+  "slug": "word-search",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/word-search/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "backtracking",
+    "depth-first-search",
+    "matrix"
+  ],
+  "statement": "Given a 2D grid of characters and a target word, determine if the word can be formed by sequentially adjacent cells (horizontally or vertically) without reusing any cell.",
+  "tags": [
+    "array",
+    "matrix",
+    "backtracking",
+    "dfs"
+  ],
+  "patterns": [
+    "backtracking",
+    "dfs",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909992,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "dfs": 0.95,
+      "pruning": 0.7
+    }
+  }
+}

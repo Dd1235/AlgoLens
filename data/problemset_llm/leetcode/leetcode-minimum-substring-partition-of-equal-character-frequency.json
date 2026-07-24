@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-substring-partition-of-equal-character-frequency",
+  "title": "Minimum Substring Partition of Equal Character Frequency",
+  "slug": "minimum-substring-partition-of-equal-character-frequency",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "counting"
+  ],
+  "statement": "Partition a string into the minimum number of substrings such that each substring has equal frequency of all its characters.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "counting"
+  ],
+  "patterns": [
+    "prefix-frequency",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909364,
+    "pattern_confidence": {
+      "prefix-frequency": 0.9,
+      "dynamic-programming": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

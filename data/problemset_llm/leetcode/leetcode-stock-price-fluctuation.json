@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-stock-price-fluctuation",
+  "title": "Stock Price Fluctuation ",
+  "slug": "stock-price-fluctuation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stock-price-fluctuation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "design",
+    "heap-priority-queue",
+    "data-stream",
+    "ordered-set"
+  ],
+  "statement": "Maintain a data structure to update stock prices at given timestamps (possibly out of order and with corrections) and efficiently query the latest, maximum, and minimum prices.",
+  "tags": [
+    "hash-map",
+    "heap",
+    "data-structure",
+    "ordered-set"
+  ],
+  "patterns": [
+    "lazy-deletion",
+    "heap",
+    "hash-map",
+    "online-updates"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910133,
+    "pattern_confidence": {
+      "lazy-deletion": 0.95,
+      "heap": 0.9,
+      "hash-map": 0.9,
+      "online-updates": 0.85
+    }
+  }
+}

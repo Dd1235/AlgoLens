@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-closest-dessert-cost",
+  "title": "Closest Dessert Cost",
+  "slug": "closest-dessert-cost",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/closest-dessert-cost/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking"
+  ],
+  "statement": "Given base ice cream costs and topping costs (each topping can be used up to twice), find the dessert cost closest to a target value by choosing exactly one base and zero or more toppings.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking"
+  ],
+  "patterns": [
+    "backtracking",
+    "subset-enumeration",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910093,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "subset-enumeration": 0.9,
+      "state-space-search": 0.85
+    }
+  }
+}

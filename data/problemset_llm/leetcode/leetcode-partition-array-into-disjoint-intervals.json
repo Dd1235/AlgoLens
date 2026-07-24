@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-partition-array-into-disjoint-intervals",
+  "title": "Partition Array into Disjoint Intervals",
+  "slug": "partition-array-into-disjoint-intervals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-array-into-disjoint-intervals/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array"
+  ],
+  "statement": "Partition an integer array into two contiguous subarrays left and right such that every element in left is less than or equal to every element in right, and left is as small as possible. Return the length of left.",
+  "tags": [
+    "array"
+  ],
+  "patterns": [
+    "prefix-minimum",
+    "prefix-maximum",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910175,
+    "pattern_confidence": {
+      "prefix-minimum": 0.9,
+      "prefix-maximum": 0.9,
+      "linear-scan": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-managers-with-at-least-5-direct-reports",
+  "title": "Managers with at Least 5 Direct Reports",
+  "slug": "managers-with-at-least-5-direct-reports",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given an employee table with manager relationships, find all managers who have at least five direct reports.",
+  "tags": [
+    "database",
+    "aggregation",
+    "group-by"
+  ],
+  "patterns": [
+    "aggregation",
+    "group-by",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910144,
+    "pattern_confidence": {
+      "aggregation": 0.95,
+      "group-by": 0.9,
+      "filtering": 0.85
+    }
+  }
+}

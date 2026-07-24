@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-design-task-manager",
+  "title": "Design Task Manager",
+  "slug": "design-task-manager",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-task-manager/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "design",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "statement": "Implement a task manager that supports adding, editing, removing tasks with priorities per user, and executing the highest priority task globally with tie-breaking by task ID.",
+  "tags": [
+    "hash-map",
+    "heap",
+    "design"
+  ],
+  "patterns": [
+    "lazy-deletion",
+    "hash-map",
+    "heap",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910098,
+    "pattern_confidence": {
+      "lazy-deletion": 0.95,
+      "hash-map": 0.9,
+      "heap": 0.9,
+      "ordered-set": 0.85
+    }
+  }
+}

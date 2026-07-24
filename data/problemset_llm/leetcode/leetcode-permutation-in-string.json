@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-permutation-in-string",
+  "title": "Permutation in String",
+  "slug": "permutation-in-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/permutation-in-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "two-pointers",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given two strings s1 and s2, determine if s2 contains any permutation of s1 as a substring.",
+  "tags": [
+    "string",
+    "hash-map",
+    "sliding-window",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910159,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "two-pointers": 0.95,
+      "frequency-count": 0.9
+    }
+  }
+}

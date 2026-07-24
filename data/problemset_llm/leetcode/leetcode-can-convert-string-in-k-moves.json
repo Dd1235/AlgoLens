@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-can-convert-string-in-k-moves",
+  "title": "Can Convert String in K Moves",
+  "slug": "can-convert-string-in-k-moves",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/can-convert-string-in-k-moves/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string"
+  ],
+  "statement": "Given two strings s and t of equal length and an integer k, determine if s can be converted to t in at most k moves. Each move allows shifting a character at a unique index forward in the alphabet by the move number times, wrapping from 'z' to 'a'.",
+  "tags": [
+    "string",
+    "hash-map",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909076,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "modular-arithmetic": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

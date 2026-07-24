@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-transform-array-to-all-equal-elements",
+  "title": "Transform Array to All Equal Elements",
+  "slug": "transform-array-to-all-equal-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/transform-array-to-all-equal-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an array of 1s and -1s, determine if it is possible to make all elements equal by performing at most k operations, where each operation flips the signs of two adjacent elements.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908814,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.7
+    }
+  }
+}

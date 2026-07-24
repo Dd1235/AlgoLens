@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-elements-with-at-least-k-greater-values",
+  "title": "Count Elements With at Least K Greater Values",
+  "slug": "count-elements-with-at-least-k-greater-values",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "divide-and-conquer",
+    "sorting",
+    "quickselect"
+  ],
+  "statement": "Given an integer array and a value k, count how many elements have at least k strictly greater elements in the array.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "sorting",
+    "binary-search",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908735,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "binary-search": 0.9,
+      "counting": 0.85
+    }
+  }
+}

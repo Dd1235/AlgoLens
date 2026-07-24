@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-reach-end-of-array-with-max-score",
+  "title": "Reach End of Array With Max Score",
+  "slug": "reach-end-of-array-with-max-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reach-end-of-array-with-max-score/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an integer array, start at the first index and jump forward to reach the last index, maximizing the sum of jump scores where each jump score is the jump length multiplied by the value at the start index.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908835,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

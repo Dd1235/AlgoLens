@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-longest-non-decreasing-subarray-from-two-arrays",
+  "title": "Longest Non-decreasing Subarray From Two Arrays",
+  "slug": "longest-non-decreasing-subarray-from-two-arrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two arrays of equal length, construct a new array by choosing elements from either array at each index to maximize the length of the longest non-decreasing contiguous subarray.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908705,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

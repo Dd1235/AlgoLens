@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-the-power-of-k-size-subarrays-ii",
+  "title": "Find the Power of K-Size Subarrays II",
+  "slug": "find-the-power-of-k-size-subarrays-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-power-of-k-size-subarrays-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array and a window size k, determine for each subarray of size k whether its elements form a consecutive ascending sequence, returning the maximum element if true, or -1 otherwise.",
+  "tags": [
+    "array",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "monotonic-queue",
+    "window-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908738,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "monotonic-queue": 0.7,
+      "window-validation": 0.85
+    }
+  }
+}

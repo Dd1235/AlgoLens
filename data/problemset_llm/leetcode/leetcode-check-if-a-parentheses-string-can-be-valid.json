@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-check-if-a-parentheses-string-can-be-valid",
+  "title": "Check if a Parentheses String Can Be Valid",
+  "slug": "check-if-a-parentheses-string-can-be-valid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "stack",
+    "greedy"
+  ],
+  "statement": "Given a parentheses string and a binary locked string indicating which characters can be changed, determine if it is possible to modify the unlocked characters to form a valid parentheses string.",
+  "tags": [
+    "string",
+    "greedy",
+    "stack"
+  ],
+  "patterns": [
+    "greedy",
+    "stack",
+    "two-pass-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909733,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "stack": 0.9,
+      "two-pass-validation": 0.85
+    }
+  }
+}

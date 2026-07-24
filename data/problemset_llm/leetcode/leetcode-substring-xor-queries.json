@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-substring-xor-queries",
+  "title": "Substring XOR Queries",
+  "slug": "substring-xor-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/substring-xor-queries/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "bit-manipulation"
+  ],
+  "statement": "Given a binary string and queries with pairs of integers, find the shortest substring whose decimal value XORed with the first integer equals the second integer, or report no such substring exists. Return the substring endpoints with the smallest left index if multiple answers exist.",
+  "tags": [
+    "string",
+    "array",
+    "bit-manipulation",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "hash-map",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908933,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "hash-map": 0.9,
+      "sliding-window": 0.7
+    }
+  }
+}

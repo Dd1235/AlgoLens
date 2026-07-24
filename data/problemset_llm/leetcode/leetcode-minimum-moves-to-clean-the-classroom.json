@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-minimum-moves-to-clean-the-classroom",
+  "title": "Minimum Moves to Clean the Classroom",
+  "slug": "minimum-moves-to-clean-the-classroom",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "bit-manipulation",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Find the minimum moves to collect all litter in a grid starting from a given position with limited energy that resets at special cells, navigating around obstacles.",
+  "tags": [
+    "graph",
+    "bfs",
+    "bitmask",
+    "matrix"
+  ],
+  "patterns": [
+    "bfs",
+    "bitmask-dp",
+    "state-compression",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908574,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "bitmask-dp": 0.9,
+      "state-compression": 0.88,
+      "shortest-path": 0.95
+    }
+  }
+}

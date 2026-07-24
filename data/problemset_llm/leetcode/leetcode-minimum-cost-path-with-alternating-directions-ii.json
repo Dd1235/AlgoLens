@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-cost-path-with-alternating-directions-ii",
+  "title": "Minimum Cost Path with Alternating Directions II",
+  "slug": "minimum-cost-path-with-alternating-directions-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Find the minimum total cost to reach the bottom-right cell of a grid starting from the top-left, moving only right or down on odd steps and waiting on even steps, with costs for entering cells and waiting.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-machine-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909724,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-machine-dp": 0.9
+    }
+  }
+}

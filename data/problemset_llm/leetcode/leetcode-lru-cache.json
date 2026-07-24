@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-lru-cache",
+  "title": "LRU Cache",
+  "slug": "lru-cache",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lru-cache/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "linked-list",
+    "design",
+    "doubly-linked-list"
+  ],
+  "statement": "Implement a data structure for a Least Recently Used (LRU) cache supporting get and put operations in average O(1) time, evicting the least recently used item when capacity is exceeded.",
+  "tags": [
+    "hash-table",
+    "doubly-linked-list",
+    "design"
+  ],
+  "patterns": [
+    "hash-map",
+    "doubly-linked-list",
+    "cache-eviction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909985,
+    "pattern_confidence": {
+      "hash-map": 0.98,
+      "doubly-linked-list": 0.95,
+      "cache-eviction": 0.9
+    }
+  }
+}

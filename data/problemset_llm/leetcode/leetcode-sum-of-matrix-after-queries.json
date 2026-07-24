@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-sum-of-matrix-after-queries",
+  "title": "Sum of Matrix After Queries",
+  "slug": "sum-of-matrix-after-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-matrix-after-queries/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table"
+  ],
+  "statement": "Given an n x n zero matrix and a list of queries that set entire rows or columns to a given value, compute the sum of all elements after applying all queries.",
+  "tags": [
+    "array",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "reverse-iteration",
+    "set-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908753,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "reverse-iteration": 0.85,
+      "set-operations": 0.7
+    }
+  }
+}

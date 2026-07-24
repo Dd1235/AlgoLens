@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-movie-rating",
+  "title": "Movie Rating",
+  "slug": "movie-rating",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/movie-rating/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given tables of movies, users, and movie ratings with timestamps, find the user who rated the most movies (lexicographically smallest if tie) and the movie with the highest average rating in February 2020 (lexicographically smallest if tie).",
+  "tags": [
+    "database",
+    "aggregation",
+    "string",
+    "sorting"
+  ],
+  "patterns": [
+    "group-by",
+    "aggregation",
+    "lexicographical-order",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909626,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "aggregation": 0.95,
+      "lexicographical-order": 0.9,
+      "filtering": 0.9
+    }
+  }
+}

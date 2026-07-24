@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-intervals-between-identical-elements",
+  "title": "Intervals Between Identical Elements",
+  "slug": "intervals-between-identical-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/intervals-between-identical-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Given an array, compute for each element the sum of absolute index differences to all other identical elements in the array.",
+  "tags": [
+    "array",
+    "hash-map",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "grouping-by-value",
+    "cumulative-sums"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910024,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "grouping-by-value": 0.9,
+      "cumulative-sums": 0.85
+    }
+  }
+}

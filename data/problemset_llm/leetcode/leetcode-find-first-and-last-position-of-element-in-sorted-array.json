@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-first-and-last-position-of-element-in-sorted-array",
+  "title": "Find First and Last Position of Element in Sorted Array",
+  "slug": "find-first-and-last-position-of-element-in-sorted-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a sorted array of integers, find the first and last positions of a target value in O(log n) time, or return [-1, -1] if the target is not present.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910165,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "binary-search-answer": 0.95
+    }
+  }
+}

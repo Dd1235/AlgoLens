@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-check-if-array-pairs-are-divisible-by-k",
+  "title": "Check If Array Pairs Are Divisible by k",
+  "slug": "check-if-array-pairs-are-divisible-by-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting"
+  ],
+  "statement": "Given an even-length integer array and an integer k, determine if the array can be partitioned into pairs such that the sum of each pair is divisible by k.",
+  "tags": [
+    "array",
+    "hash-map",
+    "counting",
+    "math"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "frequency-counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909818,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.98,
+      "frequency-counting": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

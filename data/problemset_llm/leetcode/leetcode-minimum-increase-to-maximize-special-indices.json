@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-increase-to-maximize-special-indices",
+  "title": "Minimum Increase to Maximize Special Indices",
+  "slug": "minimum-increase-to-maximize-special-indices",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, increment elements to maximize the count of indices that are greater than their immediate neighbors, while minimizing the total increments needed to achieve this maximum.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908449,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.85,
+      "prefix-sum": 0.6
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-validate-binary-tree-nodes",
+  "title": "Validate Binary Tree Nodes",
+  "slug": "validate-binary-tree-nodes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/validate-binary-tree-nodes/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph",
+    "binary-tree"
+  ],
+  "statement": "Given n nodes with specified left and right children, determine if these nodes form exactly one valid binary tree without cycles or disconnected components.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909659,
+    "pattern_confidence": {
+      "cycle-detection": 0.95,
+      "union-find": 0.9,
+      "dfs": 0.85,
+      "bfs": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-concatenate-non-zero-digits-and-multiply-by-sum-ii",
+  "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+  "slug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "prefix-sum"
+  ],
+  "statement": "Given a digit string and multiple queries specifying substrings, for each substring form an integer by concatenating its non-zero digits, compute the sum of these digits, and return the product modulo 10^9+7.",
+  "tags": [
+    "string",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909525,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

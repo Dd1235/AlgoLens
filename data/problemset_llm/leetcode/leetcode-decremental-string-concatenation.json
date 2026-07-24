@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-decremental-string-concatenation",
+  "title": "Decremental String Concatenation",
+  "slug": "decremental-string-concatenation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/decremental-string-concatenation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given an array of strings, perform a sequence of concatenations where overlapping characters at the join are removed, choosing the order of concatenation each time to minimize the final string length.",
+  "tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908606,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "state-compression": 0.85
+    }
+  }
+}

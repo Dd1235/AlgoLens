@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-amount-of-money-robot-can-earn",
+  "title": "Maximum Amount of Money Robot Can Earn",
+  "slug": "maximum-amount-of-money-robot-can-earn",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Find the maximum total coins a robot can collect moving from the top-left to bottom-right of a grid, moving only right or down, with the ability to neutralize robbers in up to two cells to avoid losing coins.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909997,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85
+    }
+  }
+}

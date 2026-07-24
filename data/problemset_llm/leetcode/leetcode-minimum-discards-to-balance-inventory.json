@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-discards-to-balance-inventory",
+  "title": " Minimum Discards to Balance Inventory",
+  "slug": "minimum-discards-to-balance-inventory",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-discards-to-balance-inventory/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window",
+    "simulation",
+    "counting"
+  ],
+  "statement": "Given a sequence of item arrivals, determine the minimum number of items to discard so that in every sliding window of size w, no item type appears more than m times.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sliding-window",
+    "counting"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908914,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "hash-map": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

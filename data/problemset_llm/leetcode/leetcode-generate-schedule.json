@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-generate-schedule",
+  "title": "Generate Schedule",
+  "slug": "generate-schedule",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/generate-schedule/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "statement": "Generate a schedule for n teams where each pair plays twice (home and away), with exactly one match per day and no team playing on consecutive days, or return empty if impossible.",
+  "tags": [
+    "graph",
+    "greedy",
+    "combinatorics"
+  ],
+  "patterns": [
+    "round-robin-scheduling",
+    "greedy",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908531,
+    "pattern_confidence": {
+      "round-robin-scheduling": 0.95,
+      "greedy": 0.85,
+      "backtracking": 0.6
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-number-of-eaten-apples",
+  "title": "Maximum Number of Eaten Apples",
+  "slug": "maximum-number-of-eaten-apples",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-eaten-apples/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "heap-priority-queue"
+  ],
+  "statement": "Given daily apple growth and their spoilage durations, determine the maximum number of apples that can be eaten by consuming at most one apple per day, possibly beyond the initial growth period.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "heap",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909605,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "heap": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

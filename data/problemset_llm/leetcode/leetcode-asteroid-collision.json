@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-asteroid-collision",
+  "title": "Asteroid Collision",
+  "slug": "asteroid-collision",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/asteroid-collision/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "simulation"
+  ],
+  "statement": "Given an array representing asteroids moving left or right with sizes, simulate collisions where smaller asteroids explode upon meeting opposite-direction asteroids, and return the final state after all collisions.",
+  "tags": [
+    "array",
+    "stack",
+    "simulation"
+  ],
+  "patterns": [
+    "stack",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910064,
+    "pattern_confidence": {
+      "stack": 0.98,
+      "simulation": 0.95
+    }
+  }
+}

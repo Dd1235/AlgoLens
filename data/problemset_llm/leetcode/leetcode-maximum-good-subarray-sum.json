@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-good-subarray-sum",
+  "title": "Maximum Good Subarray Sum",
+  "slug": "maximum-good-subarray-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-good-subarray-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Given an array and an integer k, find the maximum sum of any subarray whose first and last elements differ by exactly k. Return 0 if no such subarray exists.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908480,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "hash-map": 0.9,
+      "sliding-window": 0.7
+    }
+  }
+}

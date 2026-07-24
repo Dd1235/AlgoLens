@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-k-to-reduce-array-within-limit",
+  "title": "Minimum K to Reduce Array Within Limit",
+  "slug": "minimum-k-to-reduce-array-within-limit",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-k-to-reduce-array-within-limit/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given an array of positive integers, find the minimum positive integer k such that the total number of operations to reduce all elements to non-positive by subtracting k at a time is at most k squared.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909390,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

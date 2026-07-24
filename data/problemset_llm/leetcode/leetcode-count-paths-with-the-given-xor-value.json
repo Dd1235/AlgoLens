@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-paths-with-the-given-xor-value",
+  "title": "Count Paths With the Given XOR Value",
+  "slug": "count-paths-with-the-given-xor-value",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-paths-with-the-given-xor-value/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "statement": "Count the number of paths from the top-left to bottom-right of a grid moving only right or down, where the XOR of all values on the path equals a given integer k. Return the count modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation",
+    "matrix"
+  ],
+  "patterns": [
+    "dp-on-grid",
+    "bitmask-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909377,
+    "pattern_confidence": {
+      "dp-on-grid": 0.98,
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9
+    }
+  }
+}

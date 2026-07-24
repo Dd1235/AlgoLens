@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-find-indices-with-index-and-value-difference-ii",
+  "title": "Find Indices With Index and Value Difference II",
+  "slug": "find-indices-with-index-and-value-difference-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers"
+  ],
+  "statement": "Given an integer array and two difference thresholds, find any pair of indices whose index difference and value difference both meet or exceed the given thresholds, or return [-1, -1] if none exist.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "two-pointers",
+    "binary-search",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908789,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "binary-search": 0.7,
+      "sliding-window": 0.6
+    }
+  }
+}

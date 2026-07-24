@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-operations-on-tree",
+  "title": "Operations on Tree",
+  "slug": "operations-on-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/operations-on-tree/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "design"
+  ],
+  "statement": "Design a data structure for a tree that supports locking, unlocking, and upgrading nodes with constraints on locked ancestors and descendants.",
+  "tags": [
+    "tree",
+    "design",
+    "dfs",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-traversal",
+    "state-maintenance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909768,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-traversal": 0.9,
+      "state-maintenance": 0.85
+    }
+  }
+}

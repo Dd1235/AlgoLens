@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-range-frequency-queries",
+  "title": "Range Frequency Queries",
+  "slug": "range-frequency-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/range-frequency-queries/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "design",
+    "segment-tree"
+  ],
+  "statement": "Design a data structure that, given an array, can efficiently return the frequency of a specified value within any subarray defined by given indices.",
+  "tags": [
+    "array",
+    "data-structure",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "hash-map",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909595,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "hash-map": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

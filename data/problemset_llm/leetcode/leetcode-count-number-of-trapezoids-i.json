@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-number-of-trapezoids-i",
+  "title": "Count Number of Trapezoids I",
+  "slug": "count-number-of-trapezoids-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-trapezoids-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given a set of distinct points on a plane, count the number of unique convex quadrilaterals with at least one pair of horizontal sides (horizontal trapezoids) formed by any four points, modulo 10^9+7.",
+  "tags": [
+    "geometry",
+    "combinatorics",
+    "hash-map"
+  ],
+  "patterns": [
+    "counting",
+    "hashing",
+    "combinatorial-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910032,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "hashing": 0.9,
+      "combinatorial-enumeration": 0.88
+    }
+  }
+}

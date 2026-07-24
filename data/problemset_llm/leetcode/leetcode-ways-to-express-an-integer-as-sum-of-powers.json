@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-ways-to-express-an-integer-as-sum-of-powers",
+  "title": "Ways to Express an Integer as Sum of Powers",
+  "slug": "ways-to-express-an-integer-as-sum-of-powers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of ways to represent an integer n as a sum of unique positive integers raised to the x-th power, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "subset-dp",
+    "memoization",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910212,
+    "pattern_confidence": {
+      "subset-dp": 0.95,
+      "memoization": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

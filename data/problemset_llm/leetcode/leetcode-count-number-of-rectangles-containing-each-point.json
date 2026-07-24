@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-count-number-of-rectangles-containing-each-point",
+  "title": "Count Number of Rectangles Containing Each Point",
+  "slug": "count-number-of-rectangles-containing-each-point",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-rectangles-containing-each-point/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "binary-indexed-tree",
+    "sorting"
+  ],
+  "statement": "Given rectangles defined by their lengths and heights from the origin and a list of points, determine for each point how many rectangles contain it, including edges.",
+  "tags": [
+    "array",
+    "fenwick-tree",
+    "sorting"
+  ],
+  "patterns": [
+    "coordinate-compression",
+    "fenwick-tree",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909068,
+    "pattern_confidence": {
+      "coordinate-compression": 0.95,
+      "fenwick-tree": 0.9,
+      "offline-queries": 0.85
+    }
+  }
+}

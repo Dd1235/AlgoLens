@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-closest-nodes-queries-in-a-binary-search-tree",
+  "title": "Closest Nodes Queries in a Binary Search Tree",
+  "slug": "closest-nodes-queries-in-a-binary-search-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "tree",
+    "depth-first-search",
+    "binary-search-tree",
+    "binary-tree"
+  ],
+  "statement": "Given a binary search tree and a list of queries, find for each query the largest value in the tree less than or equal to the query and the smallest value greater than or equal to the query, or -1 if such values do not exist.",
+  "tags": [
+    "tree",
+    "binary-search-tree",
+    "array"
+  ],
+  "patterns": [
+    "binary-search",
+    "inorder-traversal",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909702,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "inorder-traversal": 0.9,
+      "binary-search-answer": 0.93
+    }
+  }
+}

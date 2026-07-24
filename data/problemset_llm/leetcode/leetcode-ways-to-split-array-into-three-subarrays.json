@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-ways-to-split-array-into-three-subarrays",
+  "title": "Ways to Split Array Into Three Subarrays",
+  "slug": "ways-to-split-array-into-three-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of ways to split an array of non-negative integers into three contiguous subarrays such that the sum of the left subarray is at most the sum of the middle, and the sum of the middle is at most the sum of the right.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908861,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

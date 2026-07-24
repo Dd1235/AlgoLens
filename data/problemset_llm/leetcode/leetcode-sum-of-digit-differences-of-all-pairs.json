@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-sum-of-digit-differences-of-all-pairs",
+  "title": "Sum of Digit Differences of All Pairs",
+  "slug": "sum-of-digit-differences-of-all-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "counting"
+  ],
+  "statement": "Given an array of equal-length digit integers, compute the sum of digit-wise differences for all pairs of numbers.",
+  "tags": [
+    "array",
+    "math",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909557,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "combinatorics": 0.9
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-can-i-win",
+  "title": "Can I Win",
+  "slug": "can-i-win",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/can-i-win/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "memoization",
+    "game-theory",
+    "bitmask"
+  ],
+  "statement": "Two players alternately pick unique integers from 1 to maxChoosableInteger, adding to a running total; determine if the first player can force a win by reaching or exceeding desiredTotal under optimal play.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "game-theory",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "memoization",
+    "backtracking",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908721,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "memoization": 0.95,
+      "backtracking": 0.9,
+      "state-compression": 0.9
+    }
+  }
+}

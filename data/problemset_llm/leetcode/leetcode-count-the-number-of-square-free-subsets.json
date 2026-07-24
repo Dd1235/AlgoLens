@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-count-the-number-of-square-free-subsets",
+  "title": "Count the Number of Square-Free Subsets",
+  "slug": "count-the-number-of-square-free-subsets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-square-free-subsets/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "bit-manipulation",
+    "number-theory",
+    "bitmask"
+  ],
+  "statement": "Count the number of non-empty subsets of an integer array whose product is square-free, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "number-theory",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "dynamic-programming",
+    "modular-arithmetic",
+    "prime-factorization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908562,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "dynamic-programming": 0.9,
+      "modular-arithmetic": 0.85,
+      "prime-factorization": 0.8
+    }
+  }
+}

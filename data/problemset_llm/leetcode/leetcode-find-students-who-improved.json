@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-students-who-improved",
+  "title": "Find Students Who Improved",
+  "slug": "find-students-who-improved",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-students-who-improved/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given exam scores of students in various subjects on different dates, identify students who have taken at least two exams in the same subject and whose latest score is higher than their first score.",
+  "tags": [
+    "database",
+    "sorting",
+    "aggregation"
+  ],
+  "patterns": [
+    "group-by",
+    "window-functions",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910167,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "window-functions": 0.9,
+      "filtering": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-jumps-to-reach-home",
+  "title": "Minimum Jumps to Reach Home",
+  "slug": "minimum-jumps-to-reach-home",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-jumps-to-reach-home/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "breadth-first-search"
+  ],
+  "statement": "Given forbidden positions and jump lengths forward and backward with constraints, find the minimum jumps for a bug to reach a target position on the number line or determine it's impossible.",
+  "tags": [
+    "graph",
+    "bfs",
+    "array",
+    "hash-set"
+  ],
+  "patterns": [
+    "bfs",
+    "state-space-search",
+    "visited-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908687,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "state-space-search": 0.95,
+      "visited-set": 0.9
+    }
+  }
+}

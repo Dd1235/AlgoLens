@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-operations-to-make-array-equal-ii",
+  "title": "Minimum Operations to Make Array Equal II",
+  "slug": "minimum-operations-to-make-array-equal-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "statement": "Given two integer arrays of equal length and an integer k, determine the minimum number of operations to make the first array equal to the second by incrementing one element by k and decrementing another by k in each operation, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908810,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "modular-arithmetic": 0.9,
+      "difference-array": 0.85
+    }
+  }
+}

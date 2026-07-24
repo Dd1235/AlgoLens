@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-score-after-binary-swaps",
+  "title": "Maximum Score After Binary Swaps",
+  "slug": "maximum-score-after-binary-swaps",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-score-after-binary-swaps/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "greedy",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an integer array and a binary string, maximize the sum of elements at positions marked '1' by swapping adjacent '0' and '1' characters any number of times.",
+  "tags": [
+    "array",
+    "greedy",
+    "string"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908922,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

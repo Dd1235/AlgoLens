@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-append-k-integers-with-minimal-sum",
+  "title": "Append K Integers With Minimal Sum",
+  "slug": "append-k-integers-with-minimal-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/append-k-integers-with-minimal-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a number k, append k unique positive integers not in the array to minimize the sum of the appended integers. Return this minimal sum.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908577,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

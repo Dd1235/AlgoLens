@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-number-of-texts",
+  "title": "Count Number of Texts",
+  "slug": "count-number-of-texts",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-number-of-texts/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string of pressed digit keys representing repeated presses on a phone keypad, count the total number of possible original text messages that could have produced it, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910284,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "modular-arithmetic": 0.9,
+      "counting": 0.85
+    }
+  }
+}

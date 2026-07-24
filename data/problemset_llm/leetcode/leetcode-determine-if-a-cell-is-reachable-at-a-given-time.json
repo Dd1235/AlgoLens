@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-determine-if-a-cell-is-reachable-at-a-given-time",
+  "title": "Determine if a Cell Is Reachable at a Given Time",
+  "slug": "determine-if-a-cell-is-reachable-at-a-given-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a start and finish cell on an infinite 2D grid where each move can go to any of the 8 adjacent cells, determine if it is possible to reach the finish cell in exactly t steps.",
+  "tags": [
+    "math",
+    "geometry",
+    "grid"
+  ],
+  "patterns": [
+    "manhattan-distance",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909012,
+    "pattern_confidence": {
+      "manhattan-distance": 0.9,
+      "parity-check": 0.85
+    }
+  }
+}

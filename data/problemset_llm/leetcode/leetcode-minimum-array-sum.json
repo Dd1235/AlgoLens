@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-array-sum",
+  "title": "Minimum Array Sum",
+  "slug": "minimum-array-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-array-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array and two types of operations with usage limits, minimize the sum of the array after applying any combination of these operations at most once per index.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908732,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.7,
+      "state-compression": 0.6
+    }
+  }
+}

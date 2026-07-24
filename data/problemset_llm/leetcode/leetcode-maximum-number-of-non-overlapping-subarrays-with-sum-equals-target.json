@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
+  "title": "Maximum Number of Non-Overlapping Subarrays With Sum Equals Target",
+  "slug": "maximum-number-of-non-overlapping-subarrays-with-sum-equals-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given an array and a target sum, find the maximum number of non-overlapping subarrays whose sums equal the target.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "greedy",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910128,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "greedy": 0.95,
+      "hash-map": 0.9
+    }
+  }
+}

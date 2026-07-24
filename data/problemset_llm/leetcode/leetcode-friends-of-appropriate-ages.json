@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-friends-of-appropriate-ages",
+  "title": "Friends Of Appropriate Ages",
+  "slug": "friends-of-appropriate-ages",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/friends-of-appropriate-ages/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given an array of ages, count the total number of friend requests sent according to specific age-based rules restricting who can send requests to whom.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910228,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "sorting": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

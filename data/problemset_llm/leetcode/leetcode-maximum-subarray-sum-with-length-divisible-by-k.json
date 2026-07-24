@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-subarray-sum-with-length-divisible-by-k",
+  "title": "Maximum Subarray Sum With Length Divisible by K",
+  "slug": "maximum-subarray-sum-with-length-divisible-by-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Find the maximum sum of a subarray whose length is divisible by a given integer k.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "modular-arithmetic",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910197,
+    "pattern_confidence": {
+      "prefix-sum": 0.98,
+      "modular-arithmetic": 0.9,
+      "hash-map": 0.85
+    }
+  }
+}

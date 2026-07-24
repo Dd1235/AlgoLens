@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-product-of-two-integers-with-no-common-bits",
+  "title": "Maximum Product of Two Integers With No Common Bits",
+  "slug": "maximum-product-of-two-integers-with-no-common-bits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-product-of-two-integers-with-no-common-bits/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of integers, find two distinct elements whose product is maximized under the constraint that their binary representations share no common set bits. Return the maximum product or 0 if no such pair exists.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "bitmask",
+    "bitmask-dp",
+    "maximum-pair-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908426,
+    "pattern_confidence": {
+      "bitmask": 0.95,
+      "bitmask-dp": 0.85,
+      "maximum-pair-product": 0.7
+    }
+  }
+}

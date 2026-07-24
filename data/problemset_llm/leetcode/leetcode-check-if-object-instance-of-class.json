@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-check-if-object-instance-of-class",
+  "title": "Check if Object Instance of Class",
+  "slug": "check-if-object-instance-of-class",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-object-instance-of-class/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Determine whether a given value is an instance of a specified class or any of its superclasses based on method accessibility, including handling primitives and unusual cases.",
+  "tags": [
+    "object-oriented-programming",
+    "type-checking",
+    "class-hierarchy"
+  ],
+  "patterns": [
+    "class-hierarchy-traversal",
+    "method-accessibility-check",
+    "type-inspection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908656,
+    "pattern_confidence": {
+      "class-hierarchy-traversal": 0.9,
+      "method-accessibility-check": 0.85,
+      "type-inspection": 0.8
+    }
+  }
+}

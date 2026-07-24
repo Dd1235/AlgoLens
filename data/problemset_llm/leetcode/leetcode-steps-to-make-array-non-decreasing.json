@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-steps-to-make-array-non-decreasing",
+  "title": "Steps to Make Array Non-decreasing",
+  "slug": "steps-to-make-array-non-decreasing",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/steps-to-make-array-non-decreasing/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "linked-list",
+    "dynamic-programming",
+    "stack",
+    "monotonic-stack",
+    "simulation"
+  ],
+  "statement": "Given an integer array, repeatedly remove elements that violate the non-decreasing order condition until the array becomes non-decreasing, and return the number of such removal steps.",
+  "tags": [
+    "array",
+    "stack",
+    "dynamic-programming",
+    "simulation"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "simulation",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908535,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "simulation": 0.9,
+      "dynamic-programming": 0.7
+    }
+  }
+}

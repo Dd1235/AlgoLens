@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-earnings-from-taxi",
+  "title": "Maximum Earnings From Taxi",
+  "slug": "maximum-earnings-from-taxi",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-earnings-from-taxi/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a set of passenger rides along a one-directional road, determine the maximum earnings by optimally selecting non-overlapping rides considering distance and tips.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "binary-search",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909900,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "binary-search": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-plates-between-candles",
+  "title": "Plates Between Candles",
+  "slug": "plates-between-candles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/plates-between-candles/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "statement": "Given a string representing plates and candles, answer queries about the number of plates between candles within specified substrings.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909977,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search": 0.85
+    }
+  }
+}

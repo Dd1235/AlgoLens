@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-difference-score-in-a-grid",
+  "title": "Maximum Difference Score in a Grid",
+  "slug": "maximum-difference-score-in-a-grid",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-difference-score-in-a-grid/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a matrix of positive integers, find the maximum total score achievable by moving from any cell to cells strictly below or to the right, where each move's score is the difference between the destination and source cell values, and at least one move must be made.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "grid-traversal",
+    "maximization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910047,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "grid-traversal": 0.9,
+      "maximization": 0.85
+    }
+  }
+}

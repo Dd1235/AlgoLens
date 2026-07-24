@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-swap-for-longest-repeated-character-substring",
+  "title": "Swap For Longest Repeated Character Substring",
+  "slug": "swap-for-longest-repeated-character-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/swap-for-longest-repeated-character-substring/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a string, you may swap two characters once to maximize the length of the longest substring consisting of the same repeated character. Return this maximum length.",
+  "tags": [
+    "string",
+    "hash-map",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909694,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-count-words-obtained-after-adding-a-letter",
+  "title": "Count Words Obtained After Adding a Letter",
+  "slug": "count-words-obtained-after-adding-a-letter",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "bit-manipulation",
+    "sorting"
+  ],
+  "statement": "Given two lists of strings, determine how many target strings can be formed by adding exactly one new letter to a start string and then rearranging the letters.",
+  "tags": [
+    "array",
+    "string",
+    "hash-map",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask",
+    "hash-set",
+    "string-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909654,
+    "pattern_confidence": {
+      "bitmask": 0.9,
+      "hash-set": 0.95,
+      "string-transformation": 0.85
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-white-tiles-covered-by-a-carpet",
+  "title": "Maximum White Tiles Covered by a Carpet",
+  "slug": "maximum-white-tiles-covered-by-a-carpet",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sliding-window",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given non-overlapping intervals representing white tiles and a carpet length, find the maximum number of white tiles that can be covered by placing the carpet optimally.",
+  "tags": [
+    "array",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908964,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "prefix-sum": 0.9,
+      "binary-search": 0.85
+    }
+  }
+}

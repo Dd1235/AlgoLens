@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-number-of-food-buckets-to-feed-the-hamsters",
+  "title": "Minimum Number of Food Buckets to Feed the Hamsters",
+  "slug": "minimum-number-of-food-buckets-to-feed-the-hamsters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given a string representing hamsters and empty spots, place the minimum number of food buckets on empty spots so every hamster has a bucket adjacent to it, or return -1 if impossible.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910050,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "two-pointers": 0.85
+    }
+  }
+}
