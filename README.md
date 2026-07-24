@@ -9,7 +9,7 @@ Who it's for:
 - **Drilling a niche technique** — the [patterns page](web/patterns.html) lists the curated taxonomy (wqs-binary-search, slope-trick, booth-algorithm, …) with per-label counts; one click filters search to it. Fresh contest problems come in via `npm run corpus:refresh`, and the corpus is deliberately hard: no Easies, Mediums picked by lowest acceptance rate.
 - **One combined picture of your grind** — save your LeetCode/Codeforces/CodeChef/GitHub handles on the [profile page](web/profile.html): per-platform cards plus a tabbed heatmap — `dsa` (judges + problems you mark done here), `dev` (GitHub contributions), or `overall` — composed client-side from each source's calendar. Revisits paint instantly from a local snapshot and revalidate in the background.
 
-Type `:help` in the search box for the manual.
+Type `:help` in the search box for the manual. Usage and live latency numbers are public at [/stats.html](web/stats.html) — counted with an anonymous cookie, no IPs.
 
 Live demo: _coming — deploy runbook in docs/internals.md_
 

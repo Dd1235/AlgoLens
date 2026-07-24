@@ -456,7 +456,8 @@ COMMANDS
 
 MORE
   click a result to expand · "find similar" = cosine over the
-  stored embeddings · handles + combined heatmap: /profile.html`;
+  stored embeddings · handles + combined heatmap: /profile.html
+  live usage + latency numbers: /stats.html`;
 
 function renderHelp() {
   if (compareToggle.checked) {

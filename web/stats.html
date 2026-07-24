@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>algolens · stats</title>
+    <script src="/theme.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>
+          <a href="/" class="home-link">algolens</a>
+          <span class="signature" title="dedeepya avancha">[da]</span>
+        </h1>
+        <nav class="header-actions" aria-label="Page actions">
+          <button type="button" class="theme-toggle" data-theme-toggle>
+            light mode
+          </button>
+          <a href="/" class="debug-link">search</a>
+          <a href="/patterns.html" class="debug-link">patterns</a>
+          <a href="/profile.html" class="debug-link">profile</a>
+        </nav>
+      </header>
+      <p class="tagline">
+        ~/stats — live usage and performance, straight from the events log.
+      </p>
+      <p id="stats-status" class="status">loading<span class="cursor">_</span></p>
+
+      <div id="stat-cards" class="platform-cards"></div>
+
+      <section class="stats-section">
+        <h2>activity · last 14 days</h2>
+        <div id="daily-bars" class="daily-bars"></div>
+      </section>
+
+      <section class="stats-section">
+        <h2>live search latency · last 7 days</h2>
+        <table class="stats-table" id="ranker-table">
+          <thead><tr><th>ranker</th><th>searches</th><th>p50</th><th>p95</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <div class="stats-cols">
+        <section class="stats-section">
+          <h2>top queries · 7d</h2>
+          <ol id="top-queries" class="query-list"></ol>
+        </section>
+        <section class="stats-section">
+          <h2>zero-hit queries · 7d</h2>
+          <p class="card-dim">what people wanted and didn't find — the label backlog</p>
+          <ol id="zero-queries" class="query-list"></ol>
+        </section>
+      </div>
+    </main>
+    <footer>
+      algolens · counted with an anonymous cookie, no IPs or fingerprints
+      stored · cold starts happen because the free instance sleeps when idle
+    </footer>
+    <script src="/stats.js"></script>
+  </body>
+</html>

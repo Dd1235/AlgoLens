@@ -1,4 +1,5 @@
 const express = require("express");
+const { logEvent } = require("../telemetry");
 const bcrypt = require("bcryptjs");
 const db = require("../db");
 const { COOKIE_NAME, sign, cookieOptions } = require("../auth/jwt");
@@ -48,6 +49,7 @@ function createAuthRouter() {
 
     const token = sign({ sub: row.id, email: row.email });
     res.cookie(COOKIE_NAME, token, cookieOptions());
+    logEvent("signup", { visitor: req.visitor, userId: row.id });
     res.status(201).json({ user: { id: row.id, email: row.email } });
   });
 

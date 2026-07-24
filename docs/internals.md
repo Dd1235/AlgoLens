@@ -26,6 +26,7 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 | `GET /api/compare?q=&k=&rankers=` | The same query across several rankers in parallel (default all registered; `rankers=bm25,dense` narrows). Powers the side-by-side compare UI. |
 | `GET /api/patterns` | Canonical taxonomy grouped by category with per-label problem counts (zero counts included). Powers `/patterns.html`. |
 | `GET /api/handles` · `PUT /api/handles` | Signed-in user's LeetCode/Codeforces/CodeChef/GitHub handles. PUT body with any subset; empty string deletes; any change drops the cached stats row. |
+| `GET /api/stats` | Public aggregate usage/performance: visitors, searches, per-ranker live latency percentiles, top + zero-hit queries, cold starts. Powers `/stats.html`. |
 | `GET /api/profile?refresh=1` | Combined external stats: per-platform payloads (12h server-side cache; `refresh=1` floors it at 10min; stale-if-error). `combined` carries `totalSolved`, `algolensDone`, a platform→category map (`dsa`/`dev`), and the AlgoLens done-marks calendar — the client composes the dsa/dev/overall heatmap views from the per-source calendars, so tab switches cost zero network. Powers `/profile.html`. |
 | `POST /api/auth/signup` | Create user, bcrypt password, set httpOnly JWT cookie. |
 | `POST /api/auth/login` | Verify password, set httpOnly JWT cookie. |
@@ -102,6 +103,10 @@ Deliberately file-first: the problem corpus is JSON in git, and git is the datab
 ## Versioning and releases
 
 `main` is production (Render autoDeploy). Feature milestones happen on a branch (`v2`, …) and merge with `--no-ff` so one revert rolls the release back. Release order is fixed: (1) green gate (`npm run validate && npm run test:search && npm run test:profile && npm run bench:fast`), (2) **migrate Neon first** (`DATABASE_URL='…' bash db/run-migrations.sh` — migrations are additive-only, so running code ignores new tables and the migration is zero-downtime), (3) merge + push = deploy, (4) live checks. Rollback: Render → redeploy the previous deploy, or `git revert -m 1 <merge>`; additive migrations are left in place. Tags mark releases (`v1.0.0`, …).
+
+## Observability
+
+Hand-rolled, Postgres-backed (the free instance sleeps and its filesystem is wiped on deploy, so Neon is the only durable store): an append-only `events` table (0004) receives fire-and-forget writes — page visits (anonymous cookie id, no IPs), searches (query, ranker, latency, hit count), signups, and boots (cold-start counter with boot time). `/api/stats` aggregates it in one parallel query batch (latency percentiles via `percentile_cont`), cached 5 min; `/stats.html` renders it. Zero-hit queries double as the labeling backlog.
 
 ## Deploy (card-free)
 
