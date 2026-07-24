@@ -1,4 +1,5 @@
 const express = require("express");
+const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const db = require("../db");
@@ -133,11 +134,15 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         }));
       }
 
+      // searchId ties later outcome beacons (result_open, load_more,
+      // search_feedback) back to the exact query + ranker that produced them.
+      const searchId = crypto.randomUUID();
       if (q && offset === 0) {
         logEvent("search", {
           visitor: req.visitor,
           userId: req.user?.id,
           props: {
+            searchId,
             q: q.slice(0, 100),
             ranker,
             latencyMs,
@@ -148,6 +153,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         });
       }
       res.json({
+        searchId,
         query: q,
         expandedQuery: exp.expanded ? exp.query : undefined,
         ranker,
