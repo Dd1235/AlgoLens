@@ -106,7 +106,7 @@ Deliberately file-first: the problem corpus is JSON in git, and git is the datab
 
 ## Observability
 
-Hand-rolled, Postgres-backed (the free instance sleeps and its filesystem is wiped on deploy, so Neon is the only durable store): an append-only `events` table (0004) receives fire-and-forget writes — page visits (anonymous cookie id, no IPs), searches (query, ranker, latency, hit count), signups, and boots (cold-start counter with boot time). `/api/stats` aggregates it in one parallel query batch (latency percentiles via `percentile_cont`), cached 5 min; `/stats.html` renders it. Zero-hit queries double as the labeling backlog.
+Hand-rolled, Postgres-backed (the free instance sleeps and its filesystem is wiped on deploy, so Neon is the only durable store): an append-only `events` table (0004) receives fire-and-forget writes — page visits (anonymous cookie id, no IPs), searches (query, ranker, latency, hit count), signups, and boots (cold-start counter with boot time). `/api/stats` aggregates it in one parallel query batch (latency percentiles via `percentile_cont`), cached 5 min; `/stats.html` renders it. Zero-hit queries double as the labeling backlog. v6 adds **outcome events**: every search gets a `searchId`; the client beacons `result_open` (expand/external, with position), `pattern_selected`, `ranker_changed`, `load_more`, and `search_feedback` (useful y/n + optional reason) to an allowlisted `/api/track`; bookmark/done sets are logged server-side. The stats page turns these into a searches→opens→saves funnel, click-through rate per ranker, and recent not-useful reasons.
 
 ## Deploy (card-free)
 
