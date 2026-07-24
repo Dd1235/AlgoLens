@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-number-of-weeks-for-which-you-can-work",
+  "title": "Maximum Number of Weeks for Which You Can Work",
+  "slug": "maximum-number-of-weeks-for-which-you-can-work",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-weeks-for-which-you-can-work/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an array representing milestones for projects, determine the maximum number of weeks you can work on milestones without working on the same project in consecutive weeks.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909510,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.7
+    }
+  }
+}

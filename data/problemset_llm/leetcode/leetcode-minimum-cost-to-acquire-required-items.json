@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-cost-to-acquire-required-items",
+  "title": "Minimum Cost to Acquire Required Items",
+  "slug": "minimum-cost-to-acquire-required-items",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-acquire-required-items/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy"
+  ],
+  "statement": "Given costs for three item types and required amounts for two types, find the minimum total cost to meet or exceed both requirements using any combination of items.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908895,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "case-analysis": 0.85
+    }
+  }
+}

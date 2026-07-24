@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-longest-common-prefix-between-adjacent-strings-after-removals",
+  "title": "Longest Common Prefix Between Adjacent Strings After Removals",
+  "slug": "longest-common-prefix-between-adjacent-strings-after-removals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-common-prefix-between-adjacent-strings-after-removals/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string"
+  ],
+  "statement": "Given an array of strings, for each index, remove the string at that index and find the length of the longest common prefix among all adjacent pairs in the resulting array. Return an array of these lengths for every removal.",
+  "tags": [
+    "array",
+    "string"
+  ],
+  "patterns": [
+    "prefix-computation",
+    "sliding-window",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908775,
+    "pattern_confidence": {
+      "prefix-computation": 0.95,
+      "sliding-window": 0.7,
+      "two-pointers": 0.65
+    }
+  }
+}

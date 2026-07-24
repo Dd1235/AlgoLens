@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-unique-substrings-in-wraparound-string",
+  "title": "Unique Substrings in Wraparound String",
+  "slug": "unique-substrings-in-wraparound-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/unique-substrings-in-wraparound-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, count the number of unique non-empty substrings that appear as consecutive sequences in an infinite wraparound string of the English alphabet.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "substring-enumeration",
+    "consecutive-character-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909582,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "substring-enumeration": 0.85,
+      "consecutive-character-sequence": 0.9
+    }
+  }
+}

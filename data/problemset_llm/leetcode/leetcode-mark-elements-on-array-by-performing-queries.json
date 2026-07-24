@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-mark-elements-on-array-by-performing-queries",
+  "title": "Mark Elements on Array by Performing Queries",
+  "slug": "mark-elements-on-array-by-performing-queries",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sorting",
+    "heap-priority-queue",
+    "simulation"
+  ],
+  "statement": "Given an array of positive integers and a sequence of queries, each query marks a specified index and then marks a given number of smallest unmarked elements by value and index. After each query, return the sum of the remaining unmarked elements.",
+  "tags": [
+    "array",
+    "sorting",
+    "heap",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "heap",
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910190,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "heap": 0.9,
+      "sorting": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+  "title": "Maximum Number That Sum of the Prices Is Less Than or Equal to K",
+  "slug": "maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "statement": "Given integers k and x, find the largest number num such that the sum of set bits at positions multiple of x in all numbers from 1 to num does not exceed k.",
+  "tags": [
+    "bit-manipulation",
+    "math",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "bit-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909259,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85,
+      "bit-counting": 0.9
+    }
+  }
+}

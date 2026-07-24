@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-sell-diminishing-valued-colored-balls",
+  "title": "Sell Diminishing-Valued Colored Balls",
+  "slug": "sell-diminishing-valued-colored-balls",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sell-diminishing-valued-colored-balls/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given an inventory of colored balls with values equal to their current counts, sell a specified number of balls in any order to maximize total value, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908674,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "greedy": 0.9
+    }
+  }
+}

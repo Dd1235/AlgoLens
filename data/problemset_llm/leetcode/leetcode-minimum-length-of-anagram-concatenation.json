@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-length-of-anagram-concatenation",
+  "title": "Minimum Length of Anagram Concatenation",
+  "slug": "minimum-length-of-anagram-concatenation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-length-of-anagram-concatenation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "counting"
+  ],
+  "statement": "Given a string formed by concatenating anagrams of an unknown string t, determine the minimum possible length of t.",
+  "tags": [
+    "string",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "frequency-count",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909324,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "greedy": 0.8
+    }
+  }
+}

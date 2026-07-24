@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-sum-of-number-and-its-reverse",
+  "title": "Sum of Number and Its Reverse",
+  "slug": "sum-of-number-and-its-reverse",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-number-and-its-reverse/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "enumeration"
+  ],
+  "statement": "Determine if a given non-negative integer can be represented as the sum of a non-negative integer and its digit-reversed counterpart.",
+  "tags": [
+    "math",
+    "enumeration",
+    "number-theory"
+  ],
+  "patterns": [
+    "brute-force",
+    "digit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910206,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "digit-manipulation": 0.85
+    }
+  }
+}

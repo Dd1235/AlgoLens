@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-reverse-integer",
+  "title": "Reverse Integer",
+  "slug": "reverse-integer",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reverse-integer/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a signed 32-bit integer, reverse its digits and return the reversed integer. If the reversed integer overflows the 32-bit signed integer range, return 0. The environment does not support 64-bit integer storage.",
+  "tags": [
+    "math",
+    "integer"
+  ],
+  "patterns": [
+    "overflow-check",
+    "digit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908751,
+    "pattern_confidence": {
+      "overflow-check": 0.95,
+      "digit-manipulation": 0.9
+    }
+  }
+}

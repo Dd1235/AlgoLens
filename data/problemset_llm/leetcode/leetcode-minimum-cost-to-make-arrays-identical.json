@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-to-make-arrays-identical",
+  "title": "Minimum Cost to Make Arrays Identical",
+  "slug": "minimum-cost-to-make-arrays-identical",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-make-arrays-identical/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given two integer arrays and a fixed cost for splitting and rearranging contiguous subarrays, along with a cost proportional to element-wise adjustments, find the minimum total cost to transform one array into the other.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909110,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "prefix-sum": 0.6
+    }
+  }
+}

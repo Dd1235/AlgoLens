@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximize-the-topmost-element-after-k-moves",
+  "title": "Maximize the Topmost Element After K Moves",
+  "slug": "maximize-the-topmost-element-after-k-moves",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given a pile represented by an array with the topmost element at index 0, perform exactly k moves of removing the top element or adding back a previously removed element to maximize the topmost element after k moves. Return -1 if the pile cannot be non-empty after k moves.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908525,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

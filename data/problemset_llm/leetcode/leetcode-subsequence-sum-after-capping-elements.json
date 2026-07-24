@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-subsequence-sum-after-capping-elements",
+  "title": "Subsequence Sum After Capping Elements",
+  "slug": "subsequence-sum-after-capping-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/subsequence-sum-after-capping-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a target sum k, for each x from 1 to n, determine if there exists a subsequence in the array capped at x whose sum equals k.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "subset-sum",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908541,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "subset-sum": 0.95,
+      "prefix-sum": 0.8
+    }
+  }
+}

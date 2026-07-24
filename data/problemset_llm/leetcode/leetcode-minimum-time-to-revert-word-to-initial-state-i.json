@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-time-to-revert-word-to-initial-state-i",
+  "title": "Minimum Time to Revert Word to Initial State I",
+  "slug": "minimum-time-to-revert-word-to-initial-state-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Given a string and an integer k, repeatedly remove the first k characters and append any k characters to the end each second. Determine the minimum positive time until the string returns to its original state.",
+  "tags": [
+    "string",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "string-rotation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909528,
+    "pattern_confidence": {
+      "cycle-detection": 0.9,
+      "string-rotation": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

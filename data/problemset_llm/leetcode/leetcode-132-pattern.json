@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-132-pattern",
+  "title": "132 Pattern",
+  "slug": "132-pattern",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/132-pattern/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "stack",
+    "monotonic-stack",
+    "ordered-set"
+  ],
+  "statement": "Given an integer array, determine if there exists a subsequence of three elements that form a 132 pattern, where the first element is less than the third, which is less than the second, and their indices are in increasing order.",
+  "tags": [
+    "array",
+    "stack",
+    "ordered-set"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "binary-search",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908885,
+    "pattern_confidence": {
+      "monotonic-stack": 0.95,
+      "binary-search": 0.85,
+      "stack": 0.9
+    }
+  }
+}

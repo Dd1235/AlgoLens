@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-partition-string-into-substrings-with-values-at-most-k",
+  "title": "Partition String Into Substrings With Values at Most K",
+  "slug": "partition-string-into-substrings-with-values-at-most-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given a digit string and an integer k, partition the string into the minimum number of contiguous substrings such that each substring's integer value is at most k, or return -1 if impossible.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "prefix-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910005,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.85,
+      "prefix-check": 0.7
+    }
+  }
+}

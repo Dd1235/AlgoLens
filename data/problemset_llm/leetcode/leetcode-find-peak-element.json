@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-peak-element",
+  "title": "Find Peak Element",
+  "slug": "find-peak-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-peak-element/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given an integer array where elements are distinct from their neighbors, find any peak element index in O(log n) time, where a peak is greater than its adjacent elements.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909927,
+    "pattern_confidence": {
+      "binary-search": 0.98,
+      "binary-search-answer": 0.95
+    }
+  }
+}

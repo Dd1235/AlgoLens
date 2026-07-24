@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-to-move-between-indices",
+  "title": "Minimum Cost to Move Between Indices",
+  "slug": "minimum-cost-to-move-between-indices",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-move-between-indices/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given a strictly increasing array and queries asking for the minimum cost to move between two indices, where moves can be direct with cost equal to the absolute difference or to the closest adjacent index with cost 1, compute the minimal total cost for each query.",
+  "tags": [
+    "array",
+    "graph",
+    "shortest-path"
+  ],
+  "patterns": [
+    "shortest-path",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908321,
+    "pattern_confidence": {
+      "shortest-path": 0.95,
+      "prefix-sum": 0.7,
+      "greedy": 0.6
+    }
+  }
+}

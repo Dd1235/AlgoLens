@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-ways-to-split-array-into-good-subarrays",
+  "title": "Ways to Split Array Into Good Subarrays",
+  "slug": "ways-to-split-array-into-good-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/ways-to-split-array-into-good-subarrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Given a binary array, count the number of ways to split it into contiguous subarrays each containing exactly one '1', returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908903,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dynamic-programming": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

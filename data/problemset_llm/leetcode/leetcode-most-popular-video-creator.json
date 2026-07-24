@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-most-popular-video-creator",
+  "title": "Most Popular Video Creator",
+  "slug": "most-popular-video-creator",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/most-popular-video-creator/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given arrays of video creators, video ids, and view counts, find all creators with the highest total views and for each, return their most viewed video's lexicographically smallest id if there are ties.",
+  "tags": [
+    "array",
+    "hash-map",
+    "string",
+    "sorting"
+  ],
+  "patterns": [
+    "hash-map",
+    "aggregation",
+    "lexicographic-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909759,
+    "pattern_confidence": {
+      "hash-map": 0.98,
+      "aggregation": 0.9,
+      "lexicographic-comparison": 0.85
+    }
+  }
+}

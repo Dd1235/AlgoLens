@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-eat-pizzas",
+  "title": "Eat Pizzas!",
+  "slug": "eat-pizzas",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/eat-pizzas/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an array of pizza weights where the total number is a multiple of 4, partition the pizzas into groups of 4 eaten each day. On odd days, gain the weight of the heaviest pizza in the group; on even days, gain the weight of the second heaviest. Maximize the total gained weight by choosing the order optimally.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908829,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "greedy": 0.95
+    }
+  }
+}

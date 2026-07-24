@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-operations-to-make-a-special-number",
+  "title": "Minimum Operations to Make a Special Number",
+  "slug": "minimum-operations-to-make-a-special-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-a-special-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "greedy",
+    "enumeration"
+  ],
+  "statement": "Given a numeric string, find the minimum number of digit deletions required to make the resulting number divisible by 25.",
+  "tags": [
+    "string",
+    "math",
+    "greedy",
+    "enumeration"
+  ],
+  "patterns": [
+    "greedy",
+    "enumeration",
+    "string-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909162,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "enumeration": 0.85,
+      "string-manipulation": 0.8
+    }
+  }
+}

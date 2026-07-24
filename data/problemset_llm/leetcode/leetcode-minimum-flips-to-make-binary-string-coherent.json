@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-minimum-flips-to-make-binary-string-coherent",
+  "title": "Minimum Flips to Make Binary String Coherent",
+  "slug": "minimum-flips-to-make-binary-string-coherent",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/",
+  "source_topic": "LeetCode / Recent (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string"
+  ],
+  "statement": "Given a binary string, find the minimum number of character flips needed so that the string contains no subsequence \"011\" or \"110\".",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "subsequence-avoidance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908318,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "subsequence-avoidance": 0.9
+    }
+  }
+}

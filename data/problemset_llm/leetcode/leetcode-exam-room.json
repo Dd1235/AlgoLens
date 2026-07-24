@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-exam-room",
+  "title": "Exam Room",
+  "slug": "exam-room",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/exam-room/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "design",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "statement": "Simulate seating and leaving in a row of seats where each new student sits to maximize distance from others, choosing the lowest seat number if tied.",
+  "tags": [
+    "design",
+    "heap",
+    "ordered-set",
+    "simulation"
+  ],
+  "patterns": [
+    "heap",
+    "interval-management",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909592,
+    "pattern_confidence": {
+      "heap": 0.95,
+      "interval-management": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

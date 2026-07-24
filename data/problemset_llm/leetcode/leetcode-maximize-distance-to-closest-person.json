@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-maximize-distance-to-closest-person",
+  "title": "Maximize Distance to Closest Person",
+  "slug": "maximize-distance-to-closest-person",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-distance-to-closest-person/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array"
+  ],
+  "statement": "Given a row of seats with some occupied and some empty, find the maximum distance to the closest occupied seat if a new person sits optimally in an empty seat.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910216,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

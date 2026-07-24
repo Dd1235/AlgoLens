@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-bitwise-and-of-numbers-range",
+  "title": "Bitwise AND of Numbers Range",
+  "slug": "bitwise-and-of-numbers-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/bitwise-and-of-numbers-range/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "bit-manipulation"
+  ],
+  "statement": "Compute the bitwise AND of all integers within a given inclusive range [left, right].",
+  "tags": [
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "bitwise-operations",
+    "bitmask",
+    "prefix-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910119,
+    "pattern_confidence": {
+      "bitwise-operations": 0.98,
+      "bitmask": 0.95,
+      "prefix-computation": 0.7
+    }
+  }
+}

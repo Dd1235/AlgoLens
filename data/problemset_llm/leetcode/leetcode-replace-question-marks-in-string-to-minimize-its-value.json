@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-replace-question-marks-in-string-to-minimize-its-value",
+  "title": "Replace Question Marks in String to Minimize Its Value",
+  "slug": "replace-question-marks-in-string-to-minimize-its-value",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "greedy",
+    "sorting",
+    "heap-priority-queue",
+    "counting"
+  ],
+  "statement": "Given a string containing lowercase letters and '?' characters, replace all '?' with lowercase letters to minimize the sum of counts of previous occurrences of each character. Among all minimal solutions, return the lexicographically smallest resulting string.",
+  "tags": [
+    "string",
+    "greedy",
+    "counting"
+  ],
+  "patterns": [
+    "greedy",
+    "lexicographic-order",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908636,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "lexicographic-order": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

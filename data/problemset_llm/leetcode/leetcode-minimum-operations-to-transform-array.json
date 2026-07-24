@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-minimum-operations-to-transform-array",
+  "title": "Minimum Operations to Transform Array",
+  "slug": "minimum-operations-to-transform-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-transform-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given two integer arrays where the second is one element longer, find the minimum number of increment, decrement, and append operations to transform the first array into the second.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909339,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.7
+    }
+  }
+}

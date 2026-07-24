@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-longest-substring-with-at-least-k-repeating-characters",
+  "title": "Longest Substring with At Least K Repeating Characters",
+  "slug": "longest-substring-with-at-least-k-repeating-characters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "divide-and-conquer",
+    "sliding-window"
+  ],
+  "statement": "Find the length of the longest substring in which every character appears at least k times.",
+  "tags": [
+    "string",
+    "hash-table",
+    "divide-and-conquer",
+    "sliding-window"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "sliding-window",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909874,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.95,
+      "sliding-window": 0.85,
+      "frequency-count": 0.9
+    }
+  }
+}

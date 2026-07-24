@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-right-triangles",
+  "title": "Right Triangles",
+  "slug": "right-triangles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/right-triangles/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "combinatorics",
+    "counting"
+  ],
+  "statement": "Given a 2D boolean grid, count the number of right triangles formed by three cells with value 1, where one cell shares a row with another and shares a column with the third.",
+  "tags": [
+    "array",
+    "math",
+    "combinatorics",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "combinatorial-enumeration",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910116,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "combinatorial-enumeration": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

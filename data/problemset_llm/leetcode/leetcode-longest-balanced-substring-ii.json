@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-balanced-substring-ii",
+  "title": "Longest Balanced Substring II",
+  "slug": "longest-balanced-substring-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-balanced-substring-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "prefix-sum"
+  ],
+  "statement": "Given a string of characters 'a', 'b', and 'c', find the length of the longest substring where all distinct characters appear the same number of times.",
+  "tags": [
+    "string",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sliding-window",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909462,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "sliding-window": 0.85,
+      "binary-search-answer": 0.8
+    }
+  }
+}

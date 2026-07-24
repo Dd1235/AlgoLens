@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-drivers-with-improved-fuel-efficiency",
+  "title": "Find Drivers with Improved Fuel Efficiency",
+  "slug": "find-drivers-with-improved-fuel-efficiency",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-drivers-with-improved-fuel-efficiency/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given driver trip data with distances and fuel consumed, identify drivers whose average fuel efficiency improved from the first half to the second half of the year, considering only those with trips in both halves, and order results by improvement and name.",
+  "tags": [
+    "database",
+    "aggregation",
+    "math"
+  ],
+  "patterns": [
+    "group-by",
+    "filtering",
+    "arithmetic-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909957,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "filtering": 0.9,
+      "arithmetic-calculation": 0.85
+    }
+  }
+}

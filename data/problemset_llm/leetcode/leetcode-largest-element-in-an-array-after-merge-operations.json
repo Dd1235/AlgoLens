@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-largest-element-in-an-array-after-merge-operations",
+  "title": "Largest Element in an Array after Merge Operations",
+  "slug": "largest-element-in-an-array-after-merge-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-element-in-an-array-after-merge-operations/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an array of positive integers, repeatedly merge adjacent elements where the left is less than or equal to the right by summing them and deleting the left element. Determine the maximum possible value of any element in the final array after any sequence of such merges.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910035,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "stack": 0.7
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-cells-in-overlapping-horizontal-and-vertical-substrings",
+  "title": "Count Cells in Overlapping Horizontal and Vertical Substrings",
+  "slug": "count-cells-in-overlapping-horizontal-and-vertical-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "rolling-hash",
+    "string-matching",
+    "matrix",
+    "hash-function"
+  ],
+  "statement": "Given a character matrix and a pattern string, count the cells that appear in at least one horizontal substring and one vertical substring equal to the pattern, where substrings wrap across rows or columns but not cyclically.",
+  "tags": [
+    "array",
+    "string",
+    "matrix",
+    "hash-function"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "string-matching",
+    "two-dimensional-substring-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908594,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "string-matching": 0.9,
+      "two-dimensional-substring-search": 0.85
+    }
+  }
+}

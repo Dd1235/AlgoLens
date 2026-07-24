@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximize-number-of-subsequences-in-a-string",
+  "title": "Maximize Number of Subsequences in a String",
+  "slug": "maximize-number-of-subsequences-in-a-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given a string and a two-character pattern, insert one character (either pattern[0] or pattern[1]) anywhere in the string to maximize the number of times the pattern appears as a subsequence.",
+  "tags": [
+    "string",
+    "greedy",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908971,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

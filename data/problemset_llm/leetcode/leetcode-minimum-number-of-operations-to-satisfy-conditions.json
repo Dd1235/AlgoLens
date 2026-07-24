@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-number-of-operations-to-satisfy-conditions",
+  "title": "Minimum Number of Operations to Satisfy Conditions",
+  "slug": "minimum-number-of-operations-to-satisfy-conditions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-operations-to-satisfy-conditions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given a 2D grid, find the minimum number of cell value changes needed so that each cell equals the cell below it (if any) and differs from the cell to its right (if any).",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909499,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "state-compression": 0.7
+    }
+  }
+}

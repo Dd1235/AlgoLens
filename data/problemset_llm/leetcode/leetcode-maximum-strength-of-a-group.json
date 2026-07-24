@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-maximum-strength-of-a-group",
+  "title": "Maximum Strength of a Group",
+  "slug": "maximum-strength-of-a-group",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-strength-of-a-group/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "greedy",
+    "bit-manipulation",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, select a non-empty subset of elements to maximize the product of the chosen elements.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "greedy"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "backtracking",
+    "greedy",
+    "subset-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908550,
+    "pattern_confidence": {
+      "bitmask-dp": 0.9,
+      "backtracking": 0.85,
+      "greedy": 0.8,
+      "subset-enumeration": 0.88
+    }
+  }
+}

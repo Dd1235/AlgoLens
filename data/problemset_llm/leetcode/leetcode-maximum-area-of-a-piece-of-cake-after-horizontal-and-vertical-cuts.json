@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+  "title": "Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts",
+  "slug": "maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-area-of-a-piece-of-cake-after-horizontal-and-vertical-cuts/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a rectangular cake and arrays of horizontal and vertical cut positions, find the maximum area of any piece formed after all cuts, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909433,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "greedy": 0.9
+    }
+  }
+}

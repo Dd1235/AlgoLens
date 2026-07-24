@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-largest-time-for-given-digits",
+  "title": "Largest Time for Given Digits",
+  "slug": "largest-time-for-given-digits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-time-for-given-digits/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "backtracking",
+    "enumeration"
+  ],
+  "statement": "Given four digits, find the latest valid 24-hour time (HH:MM) that can be formed using each digit exactly once, or return an empty string if none exists.",
+  "tags": [
+    "array",
+    "string",
+    "backtracking",
+    "enumeration"
+  ],
+  "patterns": [
+    "backtracking",
+    "permutation-enumeration",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908947,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "permutation-enumeration": 0.9,
+      "pruning": 0.7
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-the-lexicographically-smallest-valid-sequence",
+  "title": "Find the Lexicographically Smallest Valid Sequence",
+  "slug": "find-the-lexicographically-smallest-valid-sequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given two strings word1 and word2, find the lexicographically smallest ascending sequence of indices in word1 whose characters form a string almost equal to word2 (differing by at most one character). Return the sequence or an empty array if none exists.",
+  "tags": [
+    "string",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908489,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.9,
+      "lexicographic-order": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimize-length-of-array-using-operations",
+  "title": "Minimize Length of Array Using Operations",
+  "slug": "minimize-length-of-array-using-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-length-of-array-using-operations/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers, repeatedly replace two elements by their modulo until no more operations can be performed, and determine the minimum possible length of the array after these operations.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "math"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908960,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "modular-arithmetic": 0.9,
+      "math": 0.85
+    }
+  }
+}

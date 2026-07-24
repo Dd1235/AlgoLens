@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-non-zero-product-of-the-array-elements",
+  "title": "Minimum Non-Zero Product of the Array Elements",
+  "slug": "minimum-non-zero-product-of-the-array-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-non-zero-product-of-the-array-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy",
+    "recursion"
+  ],
+  "statement": "Given an array of integers from 1 to 2^p - 1, you can swap corresponding bits between any two elements any number of times. Find the minimum non-zero product of all elements after such operations, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "greedy"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "bitwise-operations",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909031,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "bitwise-operations": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

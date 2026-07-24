@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-count-the-number-of-substrings-with-dominant-ones",
+  "title": "Count the Number of Substrings With Dominant Ones",
+  "slug": "count-the-number-of-substrings-with-dominant-ones",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "enumeration"
+  ],
+  "statement": "Given a binary string, count the number of substrings where the count of ones is at least the square of the count of zeros.",
+  "tags": [
+    "string",
+    "enumeration",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909468,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-max-difference-you-can-get-from-changing-an-integer",
+  "title": "Max Difference You Can Get From Changing an Integer",
+  "slug": "max-difference-you-can-get-from-changing-an-integer",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy"
+  ],
+  "statement": "Given an integer, apply two independent digit-replacement operations to maximize the difference between the resulting numbers, ensuring no leading zeros or zero values.",
+  "tags": [
+    "math",
+    "greedy",
+    "string"
+  ],
+  "patterns": [
+    "digit-replacement",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910072,
+    "pattern_confidence": {
+      "digit-replacement": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

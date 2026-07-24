@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimum-addition-to-make-integer-beautiful",
+  "title": "Minimum Addition to Make Integer Beautiful",
+  "slug": "minimum-addition-to-make-integer-beautiful",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy"
+  ],
+  "statement": "Given a positive integer n and a target digit sum, find the minimum non-negative integer x to add to n so that the digit sum of n+x is at most the target.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "digit-sum",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909172,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "digit-sum": 0.9,
+      "simulation": 0.7
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-number-of-work-sessions-to-finish-the-tasks",
+  "title": "Minimum Number of Work Sessions to Finish the Tasks",
+  "slug": "minimum-number-of-work-sessions-to-finish-the-tasks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Given tasks with durations and a maximum session time, find the minimum number of work sessions needed to complete all tasks without splitting any task across sessions.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "backtracking",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908892,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "backtracking": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-the-maximum-factor-score-of-array",
+  "title": "Find the Maximum Factor Score of Array",
+  "slug": "find-the-maximum-factor-score-of-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-maximum-factor-score-of-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, find the maximum product of the LCM and GCD of its elements after removing at most one element.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd-lcm-properties",
+    "prefix-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909417,
+    "pattern_confidence": {
+      "gcd-lcm-properties": 0.95,
+      "prefix-computation": 0.85
+    }
+  }
+}

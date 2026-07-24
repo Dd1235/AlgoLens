@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-levels-to-gain-more-points",
+  "title": "Minimum Levels to Gain More Points",
+  "slug": "minimum-levels-to-gain-more-points",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-levels-to-gain-more-points/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary array representing levels that can or cannot be cleared, determine the minimum number of initial levels Alice must play so that her total points exceed Bob's, assuming both play optimally and each plays at least one level.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "game-theory"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909361,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

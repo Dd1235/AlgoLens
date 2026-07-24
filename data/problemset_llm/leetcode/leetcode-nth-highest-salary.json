@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-nth-highest-salary",
+  "title": "Nth Highest Salary",
+  "slug": "nth-highest-salary",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/nth-highest-salary/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Given a table of employee salaries, find the nth highest distinct salary or return null if fewer than n distinct salaries exist.",
+  "tags": [
+    "database",
+    "sorting",
+    "query"
+  ],
+  "patterns": [
+    "order-by",
+    "limit-offset",
+    "distinct"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909295,
+    "pattern_confidence": {
+      "order-by": 0.95,
+      "limit-offset": 0.9,
+      "distinct": 0.9
+    }
+  }
+}

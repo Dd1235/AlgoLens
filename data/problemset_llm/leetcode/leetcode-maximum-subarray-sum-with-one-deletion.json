@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-subarray-sum-with-one-deletion",
+  "title": "Maximum Subarray Sum with One Deletion",
+  "slug": "maximum-subarray-sum-with-one-deletion",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, find the maximum sum of a non-empty contiguous subarray where you may optionally delete one element from that subarray to maximize the sum.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910075,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.7
+    }
+  }
+}

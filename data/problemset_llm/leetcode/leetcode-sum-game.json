@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-sum-game",
+  "title": "Sum Game",
+  "slug": "sum-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-game/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "greedy",
+    "game-theory"
+  ],
+  "statement": "Two players alternately replace '?' characters in an even-length digit string with digits 0-9. The game ends when no '?' remain, and Bob wins if the sums of the first and second halves are equal; otherwise, Alice wins. Determine if Alice wins assuming both play optimally.",
+  "tags": [
+    "string",
+    "math",
+    "game-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "game-theory",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910170,
+    "pattern_confidence": {
+      "game-theory": 0.95,
+      "greedy": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-find-maximum-area-of-a-triangle",
+  "title": "Find Maximum Area of a Triangle",
+  "slug": "find-maximum-area-of-a-triangle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-maximum-area-of-a-triangle/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "greedy",
+    "geometry",
+    "enumeration"
+  ],
+  "statement": "Given a set of unique points on a Cartesian plane, find twice the maximum area of a triangle formed by any three points where at least one side is parallel to the x-axis or y-axis. Return -1 if no such triangle with nonzero area exists.",
+  "tags": [
+    "array",
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "enumeration",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908648,
+    "pattern_confidence": {
+      "enumeration": 0.95,
+      "coordinate-compression": 0.7
+    }
+  }
+}

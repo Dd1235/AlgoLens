@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-double-modular-exponentiation",
+  "title": "Double Modular Exponentiation",
+  "slug": "double-modular-exponentiation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/double-modular-exponentiation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "simulation"
+  ],
+  "statement": "Given a list of quadruples [a, b, c, m] and a target, find all indices i where ((a^b % 10)^c) % m equals the target.",
+  "tags": [
+    "array",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "modular-exponentiation",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910044,
+    "pattern_confidence": {
+      "modular-exponentiation": 0.98,
+      "simulation": 0.85
+    }
+  }
+}

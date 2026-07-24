@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-array-of-doubled-pairs",
+  "title": "Array of Doubled Pairs",
+  "slug": "array-of-doubled-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/array-of-doubled-pairs/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Determine if an array of even length can be reordered so that every element at an odd index is double the element at the preceding even index.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "hash-map"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909321,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "hash-map": 0.9
+    }
+  }
+}

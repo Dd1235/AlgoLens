@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-division-operations-to-make-array-non-decreasing",
+  "title": "Minimum Division Operations to Make Array Non Decreasing",
+  "slug": "minimum-division-operations-to-make-array-non-decreasing",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, repeatedly divide elements by their greatest proper divisor to make the array non-decreasing with minimum operations, or determine if impossible.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908632,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.75,
+      "binary-search-answer": 0.7
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-prime-gap-balanced-subarrays",
+  "title": "Count Prime-Gap Balanced Subarrays",
+  "slug": "count-prime-gap-balanced-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-prime-gap-balanced-subarrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "queue",
+    "sliding-window",
+    "number-theory",
+    "monotonic-queue"
+  ],
+  "statement": "Count the number of contiguous subarrays containing at least two prime numbers where the difference between the maximum and minimum prime in the subarray is at most k.",
+  "tags": [
+    "array",
+    "number-theory",
+    "queue",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "monotonic-queue",
+    "prime-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908516,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "monotonic-queue": 0.9,
+      "prime-checking": 0.85
+    }
+  }
+}

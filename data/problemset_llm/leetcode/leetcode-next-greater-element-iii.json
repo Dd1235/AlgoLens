@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-next-greater-element-iii",
+  "title": "Next Greater Element III",
+  "slug": "next-greater-element-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/next-greater-element-iii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "two-pointers",
+    "string"
+  ],
+  "statement": "Given a positive integer, find the next greater integer using the same digits that fits in a 32-bit integer, or return -1 if none exists.",
+  "tags": [
+    "math",
+    "string",
+    "array"
+  ],
+  "patterns": [
+    "next-permutation",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908918,
+    "pattern_confidence": {
+      "next-permutation": 0.98,
+      "two-pointers": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

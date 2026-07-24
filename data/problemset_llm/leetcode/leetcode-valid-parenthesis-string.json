@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-valid-parenthesis-string",
+  "title": "Valid Parenthesis String",
+  "slug": "valid-parenthesis-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/valid-parenthesis-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "stack",
+    "greedy"
+  ],
+  "statement": "Given a string containing '(', ')', and '*', determine if it can be considered a valid parenthesis string where '*' can represent '(', ')', or an empty string.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "stack",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909349,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "dynamic-programming": 0.85,
+      "stack": 0.8
+    }
+  }
+}

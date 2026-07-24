@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-wiggle-subsequence",
+  "title": "Wiggle Subsequence",
+  "slug": "wiggle-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/wiggle-subsequence/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given an integer array, find the length of the longest subsequence where the differences between successive elements strictly alternate in sign (positive, negative, positive, etc.).",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910184,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

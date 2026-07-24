@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-next-permutation",
+  "title": "Next Permutation",
+  "slug": "next-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/next-permutation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers"
+  ],
+  "statement": "Given an array of integers, rearrange it in-place to the lexicographically next greater permutation. If no such permutation exists, rearrange it to the lowest possible order (sorted ascending).",
+  "tags": [
+    "array"
+  ],
+  "patterns": [
+    "two-pointers",
+    "in-place-rearrangement",
+    "lexicographical-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909781,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "in-place-rearrangement": 0.85,
+      "lexicographical-order": 0.8
+    }
+  }
+}

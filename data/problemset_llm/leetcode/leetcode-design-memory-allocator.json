@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-design-memory-allocator",
+  "title": "Design Memory Allocator",
+  "slug": "design-memory-allocator",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-memory-allocator/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "design",
+    "simulation"
+  ],
+  "statement": "Implement a memory allocator for a fixed-size array that supports allocating the leftmost block of consecutive free units with a given id and freeing all units with a specified id.",
+  "tags": [
+    "array",
+    "simulation",
+    "hash-map"
+  ],
+  "patterns": [
+    "interval-management",
+    "two-pointers",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910292,
+    "pattern_confidence": {
+      "interval-management": 0.95,
+      "two-pointers": 0.7,
+      "hash-map": 0.85
+    }
+  }
+}

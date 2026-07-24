@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-design-an-atm-machine",
+  "title": "Design an ATM Machine",
+  "slug": "design-an-atm-machine",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-an-atm-machine/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "design"
+  ],
+  "statement": "Implement an ATM that supports depositing banknotes of fixed denominations and withdrawing a specified amount using a greedy approach prioritizing larger denominations, rejecting withdrawals if exact change cannot be made.",
+  "tags": [
+    "array",
+    "greedy",
+    "design"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909761,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "simulation": 0.9
+    }
+  }
+}

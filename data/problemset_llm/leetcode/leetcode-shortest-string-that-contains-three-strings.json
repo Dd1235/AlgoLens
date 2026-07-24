@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-shortest-string-that-contains-three-strings",
+  "title": "Shortest String That Contains Three Strings",
+  "slug": "shortest-string-that-contains-three-strings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-string-that-contains-three-strings/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy",
+    "enumeration"
+  ],
+  "statement": "Given three strings, find the shortest string that contains all three as substrings. If multiple shortest strings exist, return the lexicographically smallest one.",
+  "tags": [
+    "string",
+    "greedy",
+    "enumeration"
+  ],
+  "patterns": [
+    "string-overlap",
+    "permutation-enumeration",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908744,
+    "pattern_confidence": {
+      "string-overlap": 0.95,
+      "permutation-enumeration": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

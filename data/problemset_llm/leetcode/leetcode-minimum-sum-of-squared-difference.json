@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-sum-of-squared-difference",
+  "title": "Minimum Sum of Squared Difference",
+  "slug": "minimum-sum-of-squared-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-sum-of-squared-difference/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given two integer arrays and a limited number of increment or decrement operations on their elements, minimize the sum of squared differences between corresponding elements after applying at most k1 and k2 modifications respectively.",
+  "tags": [
+    "array",
+    "greedy",
+    "heap",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "heap",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908571,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "heap": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

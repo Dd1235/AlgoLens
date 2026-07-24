@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-special-array-ii",
+  "title": "Special Array II",
+  "slug": "special-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/special-array-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and multiple queries specifying subarray ranges, determine for each query whether every adjacent pair in the subarray consists of elements with different parity.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909783,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "range-query": 0.9
+    }
+  }
+}

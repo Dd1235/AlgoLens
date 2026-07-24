@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-number-of-ways-to-split-a-string",
+  "title": "Number of Ways to Split a String",
+  "slug": "number-of-ways-to-split-a-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-to-split-a-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string"
+  ],
+  "statement": "Given a binary string, count the number of ways to split it into three non-empty parts such that each part contains the same number of ones, returning the result modulo 10^9+7.",
+  "tags": [
+    "string",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908873,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

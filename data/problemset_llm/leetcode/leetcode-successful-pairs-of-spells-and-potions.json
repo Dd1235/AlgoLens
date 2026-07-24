@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-successful-pairs-of-spells-and-potions",
+  "title": "Successful Pairs of Spells and Potions",
+  "slug": "successful-pairs-of-spells-and-potions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given two arrays representing strengths of spells and potions and a success threshold, determine for each spell how many potions form a pair with product at least the threshold.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910203,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

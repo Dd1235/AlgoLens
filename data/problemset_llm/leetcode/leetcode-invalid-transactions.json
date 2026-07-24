@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-invalid-transactions",
+  "title": "Invalid Transactions",
+  "slug": "invalid-transactions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/invalid-transactions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sorting"
+  ],
+  "statement": "Identify transactions that are possibly invalid because their amount exceeds 1000 or they occur within 60 minutes of another transaction with the same name but in a different city.",
+  "tags": [
+    "array",
+    "string",
+    "hash-map",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "hash-map",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908761,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "hash-map": 0.9,
+      "two-pointers": 0.7
+    }
+  }
+}

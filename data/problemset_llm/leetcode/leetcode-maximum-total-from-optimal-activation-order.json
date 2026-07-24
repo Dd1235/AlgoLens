@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-total-from-optimal-activation-order",
+  "title": "Maximum Total from Optimal Activation Order",
+  "slug": "maximum-total-from-optimal-activation-order",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-total-from-optimal-activation-order/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given arrays value and limit, activate elements in an order so that each activation respects the limit constraint on active elements, and elements become permanently inactive when active count reaches their limit. Maximize the total sum of activated values.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908818,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "heap": 0.85
+    }
+  }
+}

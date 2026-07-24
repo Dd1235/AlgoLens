@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-nth-digit",
+  "title": "Nth Digit",
+  "slug": "nth-digit",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/nth-digit/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Given a position n, find the nth digit in the infinite concatenation of all positive integers written sequentially.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "digit-extraction",
+    "prefix-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909155,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "digit-extraction": 0.9,
+      "prefix-counting": 0.85
+    }
+  }
+}

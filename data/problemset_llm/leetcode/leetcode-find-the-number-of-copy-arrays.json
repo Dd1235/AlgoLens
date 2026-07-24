@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-find-the-number-of-copy-arrays",
+  "title": "Find the Number of Copy Arrays",
+  "slug": "find-the-number-of-copy-arrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-number-of-copy-arrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math"
+  ],
+  "statement": "Given an original array and bounds for each element, count the number of arrays that have the same consecutive differences as the original and satisfy the given bounds for each element.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "range-intersection",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909952,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "range-intersection": 0.9,
+      "counting": 0.85
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-elements-to-add-to-form-a-given-sum",
+  "title": "Minimum Elements to Add to Form a Given Sum",
+  "slug": "minimum-elements-to-add-to-form-a-given-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an integer array with elements bounded by a limit, find the minimum number of elements to add so that the total sum equals a target goal while maintaining the element bounds.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "math"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909745,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "math": 0.9
+    }
+  }
+}

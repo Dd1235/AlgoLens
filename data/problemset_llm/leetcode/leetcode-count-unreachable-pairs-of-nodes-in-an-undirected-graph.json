@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+  "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+  "slug": "count-unreachable-pairs-of-nodes-in-an-undirected-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given an undirected graph with n nodes and edges, count the number of pairs of nodes that are unreachable from each other.",
+  "tags": [
+    "graph",
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "connected-components",
+    "union-find",
+    "dfs",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910244,
+    "pattern_confidence": {
+      "connected-components": 0.98,
+      "union-find": 0.95,
+      "dfs": 0.9,
+      "bfs": 0.9
+    }
+  }
+}

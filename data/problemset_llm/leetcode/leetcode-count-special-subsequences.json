@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-special-subsequences",
+  "title": "Count Special Subsequences",
+  "slug": "count-special-subsequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-special-subsequences/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "enumeration"
+  ],
+  "statement": "Count the number of length-4 subsequences (p, q, r, s) in an array where p < q < r < s, with gaps between indices, satisfying nums[p]*nums[r] = nums[q]*nums[s].",
+  "tags": [
+    "array",
+    "math",
+    "enumeration"
+  ],
+  "patterns": [
+    "hash-map",
+    "two-pointers",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908665,
+    "pattern_confidence": {
+      "hash-map": 0.9,
+      "two-pointers": 0.7,
+      "combinatorics": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-total-characters-in-string-after-transformations-i",
+  "title": "Total Characters in String After Transformations I",
+  "slug": "total-characters-in-string-after-transformations-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-characters-in-string-after-transformations-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "string",
+    "dynamic-programming",
+    "counting"
+  ],
+  "statement": "Given a string and a number of transformations, each character is replaced by the next alphabet character or \"ab\" if it is 'z'. Compute the length of the string after all transformations modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909770,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "counting": 0.85
+    }
+  }
+}

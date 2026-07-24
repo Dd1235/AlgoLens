@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-sentence-similarity-iii",
+  "title": "Sentence Similarity III",
+  "slug": "sentence-similarity-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sentence-similarity-iii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "string"
+  ],
+  "statement": "Determine if one sentence can be transformed into the other by inserting a contiguous sequence of words at some position.",
+  "tags": [
+    "string",
+    "array",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "string-splitting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910055,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.85,
+      "string-splitting": 0.9
+    }
+  }
+}

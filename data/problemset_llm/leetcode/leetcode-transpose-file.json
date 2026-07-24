@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-transpose-file",
+  "title": "Transpose File",
+  "slug": "transpose-file",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/transpose-file/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "shell"
+  ],
+  "statement": "Given a text file with rows of space-separated fields, output the transposed content where rows become columns and columns become rows.",
+  "tags": [
+    "array",
+    "string"
+  ],
+  "patterns": [
+    "matrix-transpose",
+    "parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908769,
+    "pattern_confidence": {
+      "matrix-transpose": 0.95,
+      "parsing": 0.85
+    }
+  }
+}

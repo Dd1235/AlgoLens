@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-monotone-increasing-digits",
+  "title": "Monotone Increasing Digits",
+  "slug": "monotone-increasing-digits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/monotone-increasing-digits/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy"
+  ],
+  "statement": "Given an integer n, find the largest number less than or equal to n whose digits are monotonically non-decreasing from left to right.",
+  "tags": [
+    "math",
+    "greedy",
+    "digit-dp"
+  ],
+  "patterns": [
+    "greedy",
+    "digit-dp",
+    "monotone-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910208,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "digit-dp": 0.9,
+      "monotone-sequence": 0.85
+    }
+  }
+}

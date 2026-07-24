@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-report-spam-message",
+  "title": "Report Spam Message",
+  "slug": "report-spam-message",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/report-spam-message/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string"
+  ],
+  "statement": "Given two arrays of strings, message and bannedWords, determine if the message contains at least two words that appear in bannedWords, indicating spam.",
+  "tags": [
+    "array",
+    "hash-map",
+    "string"
+  ],
+  "patterns": [
+    "hash-map",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910078,
+    "pattern_confidence": {
+      "hash-map": 0.98,
+      "counting": 0.9
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-sliding-subarray-beauty",
+  "title": "Sliding Subarray Beauty",
+  "slug": "sliding-subarray-beauty",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sliding-subarray-beauty/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array, for each contiguous subarray of size k, find the x-th smallest negative integer or 0 if fewer than x negatives exist, and return these values in order.",
+  "tags": [
+    "array",
+    "sliding-window",
+    "order-statistics",
+    "hash-map"
+  ],
+  "patterns": [
+    "sliding-window",
+    "order-statistics",
+    "balanced-binary-search-tree",
+    "two-heaps"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909038,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "order-statistics": 0.95,
+      "balanced-binary-search-tree": 0.85,
+      "two-heaps": 0.8
+    }
+  }
+}

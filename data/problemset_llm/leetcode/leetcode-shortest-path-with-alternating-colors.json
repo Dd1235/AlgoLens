@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-shortest-path-with-alternating-colors",
+  "title": "Shortest Path with Alternating Colors",
+  "slug": "shortest-path-with-alternating-colors",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-path-with-alternating-colors/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "breadth-first-search",
+    "graph"
+  ],
+  "statement": "Given a directed graph with edges colored red or blue, find the shortest path lengths from node 0 to every other node such that the path edges alternate colors. Return -1 if no such path exists.",
+  "tags": [
+    "graph",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "shortest-path",
+    "color-alternation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910029,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "shortest-path": 0.95,
+      "color-alternation": 0.9
+    }
+  }
+}

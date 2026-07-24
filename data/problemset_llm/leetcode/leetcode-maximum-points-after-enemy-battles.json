@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-maximum-points-after-enemy-battles",
+  "title": "Maximum Points After Enemy Battles",
+  "slug": "maximum-points-after-enemy-battles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-points-after-enemy-battles/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an initial energy and a list of enemy energies, maximize points by repeatedly defeating enemies if energy suffices or by marking enemies to regain energy, optimizing the sequence of operations.",
+  "tags": [
+    "array",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "energy-management"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908822,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "greedy": 0.95,
+      "energy-management": 0.8
+    }
+  }
+}

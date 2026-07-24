@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-solve-the-equation",
+  "title": "Solve the Equation",
+  "slug": "solve-the-equation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/solve-the-equation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "simulation"
+  ],
+  "statement": "Given a linear equation containing integer coefficients and the variable 'x', solve for 'x' or determine if there are no or infinite solutions. The equation includes '+' and '-' operations and exactly one '=' sign.",
+  "tags": [
+    "math",
+    "string",
+    "simulation"
+  ],
+  "patterns": [
+    "equation-parsing",
+    "algebraic-simplification",
+    "string-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909858,
+    "pattern_confidence": {
+      "equation-parsing": 0.95,
+      "algebraic-simplification": 0.9,
+      "string-processing": 0.85
+    }
+  }
+}

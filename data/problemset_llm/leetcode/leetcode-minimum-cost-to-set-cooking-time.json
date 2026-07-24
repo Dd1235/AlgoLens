@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-cost-to-set-cooking-time",
+  "title": "Minimum Cost to Set Cooking Time",
+  "slug": "minimum-cost-to-set-cooking-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-set-cooking-time/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "enumeration"
+  ],
+  "statement": "Given a target cooking time in seconds and costs for moving a finger and pushing digits on a microwave keypad, find the minimum total cost to input the time as minutes and seconds using up to four digits.",
+  "tags": [
+    "math",
+    "enumeration",
+    "simulation"
+  ],
+  "patterns": [
+    "brute-force",
+    "state-enumeration",
+    "cost-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909446,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "state-enumeration": 0.85,
+      "cost-calculation": 0.8
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-find-churn-risk-customers",
+  "title": "Find Churn Risk Customers",
+  "slug": "find-churn-risk-customers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-churn-risk-customers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Identify users at risk of churn by analyzing their subscription event history to find those currently active, with downgrade events, current revenue less than half their historical maximum, and subscribed for at least 60 days.",
+  "tags": [
+    "database",
+    "sql",
+    "aggregation",
+    "date-time"
+  ],
+  "patterns": [
+    "group-by",
+    "window-functions",
+    "filtering",
+    "aggregation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909908,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "window-functions": 0.9,
+      "filtering": 0.85,
+      "aggregation": 0.9
+    }
+  }
+}

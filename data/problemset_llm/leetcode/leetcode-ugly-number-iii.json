@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-ugly-number-iii",
+  "title": "Ugly Number III",
+  "slug": "ugly-number-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/ugly-number-iii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Find the n-th positive integer divisible by at least one of three given integers a, b, or c.",
+  "tags": [
+    "math",
+    "binary-search",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "inclusion-exclusion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908726,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "inclusion-exclusion": 0.9
+    }
+  }
+}

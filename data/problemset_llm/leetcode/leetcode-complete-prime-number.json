@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-complete-prime-number",
+  "title": "Complete Prime Number",
+  "slug": "complete-prime-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/complete-prime-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "enumeration",
+    "number-theory"
+  ],
+  "statement": "Determine if a given integer is a Complete Prime Number, meaning every prefix and suffix of its digit representation is prime. Single-digit numbers are Complete Prime Numbers only if they are prime.",
+  "tags": [
+    "math",
+    "number-theory",
+    "string"
+  ],
+  "patterns": [
+    "prefix-enumeration",
+    "suffix-enumeration",
+    "prime-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908993,
+    "pattern_confidence": {
+      "prefix-enumeration": 0.9,
+      "suffix-enumeration": 0.9,
+      "prime-checking": 0.95
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-search-in-rotated-sorted-array-ii",
+  "title": "Search in Rotated Sorted Array II",
+  "slug": "search-in-rotated-sorted-array-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a rotated sorted array that may contain duplicates, determine if a target value exists in the array using an efficient search method.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "modified-binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909344,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "modified-binary-search": 0.9
+    }
+  }
+}

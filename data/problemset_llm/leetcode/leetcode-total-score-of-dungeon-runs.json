@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-total-score-of-dungeon-runs",
+  "title": "Total Score of Dungeon Runs",
+  "slug": "total-score-of-dungeon-runs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-score-of-dungeon-runs/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "statement": "Given initial health points and arrays of damage and requirement for each dungeon room, compute the sum of points earned starting from each room to the end, where points are earned if remaining health after damage meets the requirement.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908703,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-longest-subsequence-with-decreasing-adjacent-difference",
+  "title": "Longest Subsequence With Decreasing Adjacent Difference",
+  "slug": "longest-subsequence-with-decreasing-adjacent-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Find the length of the longest subsequence in an integer array where the absolute differences between consecutive elements form a non-increasing sequence.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "longest-subsequence",
+    "monotonic-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908429,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "longest-subsequence": 0.95,
+      "monotonic-sequence": 0.9
+    }
+  }
+}

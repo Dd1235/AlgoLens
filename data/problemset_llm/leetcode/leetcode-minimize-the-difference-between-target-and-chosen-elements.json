@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-minimize-the-difference-between-target-and-chosen-elements",
+  "title": "Minimize the Difference Between Target and Chosen Elements",
+  "slug": "minimize-the-difference-between-target-and-chosen-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimize-the-difference-between-target-and-chosen-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given an m by n matrix, select one element from each row to minimize the absolute difference between the sum of chosen elements and a target value.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "patterns": [
+    "subset-dp",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909009,
+    "pattern_confidence": {
+      "subset-dp": 0.95,
+      "dp-optimization": 0.9
+    }
+  }
+}

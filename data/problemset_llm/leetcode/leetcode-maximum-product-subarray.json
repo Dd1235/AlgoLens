@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-product-subarray",
+  "title": "Maximum Product Subarray",
+  "slug": "maximum-product-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-product-subarray/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, find the contiguous subarray with the maximum product and return that product.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-product",
+    "max-min-tracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908996,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-product": 0.85,
+      "max-min-tracking": 0.8
+    }
+  }
+}

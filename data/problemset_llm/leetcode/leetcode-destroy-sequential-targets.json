@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-destroy-sequential-targets",
+  "title": "Destroy Sequential Targets",
+  "slug": "destroy-sequential-targets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/destroy-sequential-targets/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting"
+  ],
+  "statement": "Given an array of positive integers and a spacing value, find the minimal seed value that maximizes the count of elements reachable by repeatedly adding the spacing to the seed.",
+  "tags": [
+    "array",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "modulo-bucketing",
+    "frequency-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909488,
+    "pattern_confidence": {
+      "modulo-bucketing": 0.95,
+      "frequency-counting": 0.9
+    }
+  }
+}

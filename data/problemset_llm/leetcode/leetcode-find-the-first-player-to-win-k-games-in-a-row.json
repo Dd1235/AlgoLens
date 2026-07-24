@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-find-the-first-player-to-win-k-games-in-a-row",
+  "title": "Find The First Player to win K Games in a Row",
+  "slug": "find-the-first-player-to-win-k-games-in-a-row",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "simulation"
+  ],
+  "statement": "Given a queue of players with unique skill levels, simulate matches where the first two players compete and the winner stays at the front while the loser moves to the back. Determine the initial index of the first player to win k consecutive games.",
+  "tags": [
+    "array",
+    "queue",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation",
+    "queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909351,
+    "pattern_confidence": {
+      "simulation": 0.98,
+      "queue": 0.95
+    }
+  }
+}

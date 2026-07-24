@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximize-the-total-height-of-unique-towers",
+  "title": "Maximize the Total Height of Unique Towers",
+  "slug": "maximize-the-total-height-of-unique-towers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-the-total-height-of-unique-towers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an array of maximum allowed tower heights, assign distinct positive heights to each tower not exceeding their maximums to maximize the total height sum, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909049,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

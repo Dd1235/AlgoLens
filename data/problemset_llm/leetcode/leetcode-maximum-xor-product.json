@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-xor-product",
+  "title": "Maximum Xor Product",
+  "slug": "maximum-xor-product",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-xor-product/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given integers a, b, and n, find the maximum value of (a XOR x) * (b XOR x) for 0 ≤ x < 2^n, returning the result modulo 10^9+7.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "greedy"
+  ],
+  "patterns": [
+    "bitwise-enumeration",
+    "greedy",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908677,
+    "pattern_confidence": {
+      "bitwise-enumeration": 0.95,
+      "greedy": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

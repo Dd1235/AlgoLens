@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-previous-permutation-with-one-swap",
+  "title": "Previous Permutation With One Swap",
+  "slug": "previous-permutation-with-one-swap",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/previous-permutation-with-one-swap/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an array of positive integers, find the lexicographically largest permutation smaller than the original array by performing exactly one swap of two elements, or return the original array if no such permutation exists.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "one-swap",
+    "lexicographic-permutation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910142,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "one-swap": 0.95,
+      "lexicographic-permutation": 0.9
+    }
+  }
+}

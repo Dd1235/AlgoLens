@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-find-k-closest-elements",
+  "title": "Find K Closest Elements",
+  "slug": "find-k-closest-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-k-closest-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sliding-window",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a sorted array and integers k and x, find the k elements closest to x, with ties broken by smaller values, and return them sorted.",
+  "tags": [
+    "array",
+    "binary-search",
+    "two-pointers",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910222,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

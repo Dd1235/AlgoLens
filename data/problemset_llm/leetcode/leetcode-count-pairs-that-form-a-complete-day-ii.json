@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-pairs-that-form-a-complete-day-ii",
+  "title": "Count Pairs That Form a Complete Day II",
+  "slug": "count-pairs-that-form-a-complete-day-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-pairs-that-form-a-complete-day-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting"
+  ],
+  "statement": "Given an array of integers representing hours, count the number of pairs whose sum is a multiple of 24.",
+  "tags": [
+    "array",
+    "hash-map",
+    "counting",
+    "math"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "hash-map",
+    "pair-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909621,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "hash-map": 0.9,
+      "pair-counting": 0.85
+    }
+  }
+}

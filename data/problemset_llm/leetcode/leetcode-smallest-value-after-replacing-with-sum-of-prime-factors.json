@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-smallest-value-after-replacing-with-sum-of-prime-factors",
+  "title": "Smallest Value After Replacing With Sum of Prime Factors",
+  "slug": "smallest-value-after-replacing-with-sum-of-prime-factors",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "simulation",
+    "number-theory"
+  ],
+  "statement": "Given a positive integer n, repeatedly replace it with the sum of its prime factors (counting multiplicities) until it reaches the smallest possible value.",
+  "tags": [
+    "math",
+    "number-theory",
+    "simulation"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910246,
+    "pattern_confidence": {
+      "prime-factorization": 0.98,
+      "simulation": 0.85
+    }
+  }
+}

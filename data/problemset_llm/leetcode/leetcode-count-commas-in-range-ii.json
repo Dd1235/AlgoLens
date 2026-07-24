@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-count-commas-in-range-ii",
+  "title": "Count Commas in Range II",
+  "slug": "count-commas-in-range-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-commas-in-range-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an integer n, compute the total number of commas used when writing all integers from 1 to n inclusive in standard formatting, where commas separate every three digits from the right.",
+  "tags": [
+    "math",
+    "counting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "digit-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909384,
+    "pattern_confidence": {
+      "prefix-sum": 0.85,
+      "digit-dp": 0.75
+    }
+  }
+}

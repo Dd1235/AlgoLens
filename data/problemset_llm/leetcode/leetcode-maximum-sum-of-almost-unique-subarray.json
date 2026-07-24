@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-sum-of-almost-unique-subarray",
+  "title": "Maximum Sum of Almost Unique Subarray",
+  "slug": "maximum-sum-of-almost-unique-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-of-almost-unique-subarray/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window"
+  ],
+  "statement": "Given an integer array and parameters m and k, find the maximum sum of any contiguous subarray of length k that contains at least m distinct elements. Return 0 if no such subarray exists.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909431,
+    "pattern_confidence": {
+      "sliding-window": 0.98,
+      "hash-map": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

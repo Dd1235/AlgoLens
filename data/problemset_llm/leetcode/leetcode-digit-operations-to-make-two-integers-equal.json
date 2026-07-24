@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-digit-operations-to-make-two-integers-equal",
+  "title": "Digit Operations to Make Two Integers Equal",
+  "slug": "digit-operations-to-make-two-integers-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "graph",
+    "heap-priority-queue",
+    "number-theory",
+    "shortest-path"
+  ],
+  "statement": "Given two integers n and m with the same number of digits, transform n into m by incrementing or decrementing digits without ever making n prime at any intermediate step. Minimize the sum of all intermediate values of n during the transformation or return -1 if impossible.",
+  "tags": [
+    "math",
+    "graph",
+    "shortest-path",
+    "number-theory"
+  ],
+  "patterns": [
+    "shortest-path",
+    "bfs",
+    "prime-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908690,
+    "pattern_confidence": {
+      "shortest-path": 0.95,
+      "bfs": 0.9,
+      "prime-checking": 0.85
+    }
+  }
+}

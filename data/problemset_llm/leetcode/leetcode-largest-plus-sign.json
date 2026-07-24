@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-largest-plus-sign",
+  "title": "Largest Plus Sign",
+  "slug": "largest-plus-sign",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-plus-sign/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an n x n binary grid with some cells set to 0, find the largest order of an axis-aligned plus sign consisting entirely of 1s, where the order is defined by the length of its arms extending up, down, left, and right from a center cell.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "grid-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910162,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85,
+      "grid-processing": 0.7
+    }
+  }
+}

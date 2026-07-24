@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-decrease-elements-to-make-array-zigzag",
+  "title": "Decrease Elements To Make Array Zigzag",
+  "slug": "decrease-elements-to-make-array-zigzag",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given an integer array, find the minimum number of decrements needed to transform it into a zigzag array where either all even-indexed elements are greater than their neighbors or all odd-indexed elements are greater than their neighbors.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910157,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.85
+    }
+  }
+}

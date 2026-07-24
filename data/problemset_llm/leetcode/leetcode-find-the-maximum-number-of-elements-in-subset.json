@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-maximum-number-of-elements-in-subset",
+  "title": "Find the Maximum Number of Elements in Subset",
+  "slug": "find-the-maximum-number-of-elements-in-subset",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "enumeration"
+  ],
+  "statement": "Given an array of positive integers, find the largest subset that can be arranged in a symmetric pattern where elements form a sequence increasing by powers of two up to a peak and then decreasing symmetrically.",
+  "tags": [
+    "array",
+    "hash-map",
+    "enumeration"
+  ],
+  "patterns": [
+    "pattern-matching",
+    "frequency-count",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909491,
+    "pattern_confidence": {
+      "pattern-matching": 0.9,
+      "frequency-count": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

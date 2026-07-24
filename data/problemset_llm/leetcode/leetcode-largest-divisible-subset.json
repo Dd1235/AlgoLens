@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-largest-divisible-subset",
+  "title": "Largest Divisible Subset",
+  "slug": "largest-divisible-subset",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-divisible-subset/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a set of distinct positive integers, find the largest subset where every pair of elements is divisible by each other in some order.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sorting",
+    "divisibility-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910225,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "sorting": 0.95,
+      "divisibility-check": 0.9
+    }
+  }
+}

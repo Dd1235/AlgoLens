@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-count-special-triplets",
+  "title": "Count Special Triplets",
+  "slug": "count-special-triplets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-special-triplets/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "counting"
+  ],
+  "statement": "Count the number of triplets (i, j, k) in an array where i < j < k and both nums[i] and nums[k] equal twice nums[j]. Return the count modulo 10^9 + 7.",
+  "tags": [
+    "array",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "hash-map",
+    "two-pass-counting",
+    "prefix-frequency"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909935,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "two-pass-counting": 0.9,
+      "prefix-frequency": 0.85
+    }
+  }
+}

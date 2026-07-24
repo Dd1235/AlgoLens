@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-repeated-string-match",
+  "title": "Repeated String Match",
+  "slug": "repeated-string-match",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/repeated-string-match/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "string-matching"
+  ],
+  "statement": "Given two strings a and b, determine the minimum number of times a must be repeated so that b becomes a substring of the repeated string, or return -1 if impossible.",
+  "tags": [
+    "string",
+    "string-matching"
+  ],
+  "patterns": [
+    "string-repetition",
+    "substring-search",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909284,
+    "pattern_confidence": {
+      "string-repetition": 0.95,
+      "substring-search": 0.9,
+      "rolling-hash": 0.7
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-lexicographically-smallest-string-after-substring-operation",
+  "title": "Lexicographically Smallest String After Substring Operation",
+  "slug": "lexicographically-smallest-string-after-substring-operation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy"
+  ],
+  "statement": "Given a lowercase string, perform exactly one operation of selecting a non-empty substring and replacing each character with its preceding letter in the alphabet (with 'a' wrapping to 'z') to produce the lexicographically smallest possible resulting string.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "string-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908899,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "string-transformation": 0.85
+    }
+  }
+}

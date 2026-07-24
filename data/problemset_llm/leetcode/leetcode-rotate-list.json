@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-rotate-list",
+  "title": "Rotate List",
+  "slug": "rotate-list",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/rotate-list/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "linked-list",
+    "two-pointers"
+  ],
+  "statement": "Given the head of a singly linked list and an integer k, rotate the list to the right by k positions, effectively moving the last k nodes to the front.",
+  "tags": [
+    "linked-list",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "list-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909536,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "list-manipulation": 0.9
+    }
+  }
+}

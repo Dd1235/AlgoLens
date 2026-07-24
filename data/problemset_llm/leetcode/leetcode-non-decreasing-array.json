@@ -1,0 +1,29 @@
+{
+  "id": "leetcode-non-decreasing-array",
+  "title": "Non-decreasing Array",
+  "slug": "non-decreasing-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/non-decreasing-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array"
+  ],
+  "statement": "Determine if an integer array can be made non-decreasing by modifying at most one element, where non-decreasing means each element is less than or equal to the next.",
+  "tags": [
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "one-pass"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908544,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "one-pass": 0.9
+    }
+  }
+}

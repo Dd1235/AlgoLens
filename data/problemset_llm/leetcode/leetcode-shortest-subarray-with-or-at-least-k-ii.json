@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-shortest-subarray-with-or-at-least-k-ii",
+  "title": "Shortest Subarray With OR at Least K II",
+  "slug": "shortest-subarray-with-or-at-least-k-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "sliding-window"
+  ],
+  "statement": "Given an array of non-negative integers and an integer k, find the length of the shortest non-empty subarray whose bitwise OR is at least k, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "bitwise-or",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910269,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "bitwise-or": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

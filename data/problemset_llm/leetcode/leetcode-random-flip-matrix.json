@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-random-flip-matrix",
+  "title": "Random Flip Matrix",
+  "slug": "random-flip-matrix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/random-flip-matrix/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "reservoir-sampling",
+    "randomized"
+  ],
+  "statement": "Design a data structure to randomly flip zero-valued cells to one in an m by n binary matrix, ensuring each zero cell is equally likely to be chosen, with efficient flip and reset operations.",
+  "tags": [
+    "array",
+    "hash-map",
+    "randomized"
+  ],
+  "patterns": [
+    "reservoir-sampling",
+    "hash-map",
+    "random-sampling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909847,
+    "pattern_confidence": {
+      "reservoir-sampling": 0.9,
+      "hash-map": 0.85,
+      "random-sampling": 0.88
+    }
+  }
+}

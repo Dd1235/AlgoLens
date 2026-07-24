@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-powerful-integers",
+  "title": "Powerful Integers",
+  "slug": "powerful-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/powerful-integers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "enumeration"
+  ],
+  "statement": "Find all unique integers less than or equal to a given bound that can be expressed as the sum of powers of two given integers.",
+  "tags": [
+    "math",
+    "enumeration",
+    "hash-map"
+  ],
+  "patterns": [
+    "brute-force-enumeration",
+    "hash-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909692,
+    "pattern_confidence": {
+      "brute-force-enumeration": 0.95,
+      "hash-set": 0.9
+    }
+  }
+}

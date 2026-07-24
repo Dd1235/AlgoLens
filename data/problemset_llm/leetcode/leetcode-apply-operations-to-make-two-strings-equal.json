@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-apply-operations-to-make-two-strings-equal",
+  "title": "Apply Operations to Make Two Strings Equal",
+  "slug": "apply-operations-to-make-two-strings-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given two binary strings of equal length and a cost parameter, determine the minimum cost to make the first string equal to the second by flipping pairs of bits either at adjacent positions or arbitrary positions with different costs. Return -1 if it is impossible.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908600,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

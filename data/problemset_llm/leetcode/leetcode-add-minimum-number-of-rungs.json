@@ -1,0 +1,29 @@
+{
+  "id": "leetcode-add-minimum-number-of-rungs",
+  "title": "Add Minimum Number of Rungs",
+  "slug": "add-minimum-number-of-rungs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/add-minimum-number-of-rungs/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy"
+  ],
+  "statement": "Given a strictly increasing array of rung heights and a maximum climbing distance, determine the minimum number of additional rungs needed so that the distance between consecutive rungs does not exceed the limit.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909648,
+    "pattern_confidence": {
+      "greedy": 0.98
+    }
+  }
+}

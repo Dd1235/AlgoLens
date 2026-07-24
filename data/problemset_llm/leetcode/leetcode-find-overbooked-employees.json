@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-overbooked-employees",
+  "title": "Find Overbooked Employees",
+  "slug": "find-overbooked-employees",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-overbooked-employees/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Identify employees who spend more than half of a standard 40-hour work week in meetings for at least two weeks, counting meeting hours per employee per week and returning those with multiple meeting-heavy weeks ordered by count and name.",
+  "tags": [
+    "database",
+    "aggregation",
+    "date-time"
+  ],
+  "patterns": [
+    "group-by",
+    "windowing",
+    "filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909616,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "windowing": 0.9,
+      "filtering": 0.85
+    }
+  }
+}

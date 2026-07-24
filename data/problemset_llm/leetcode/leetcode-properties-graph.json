@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-properties-graph",
+  "title": "Properties Graph",
+  "slug": "properties-graph",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/properties-graph/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph"
+  ],
+  "statement": "Given a list of integer arrays, build an undirected graph where edges connect nodes whose arrays share at least k distinct common integers, then find the number of connected components in this graph.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "set-intersection",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910127,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "set-intersection": 0.9,
+      "graph-construction": 0.9
+    }
+  }
+}

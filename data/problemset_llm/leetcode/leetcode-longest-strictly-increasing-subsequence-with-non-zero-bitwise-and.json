@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+  "title": "Longest Strictly Increasing Subsequence With Non-Zero Bitwise AND",
+  "slug": "longest-strictly-increasing-subsequence-with-non-zero-bitwise-and",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-strictly-increasing-subsequence-with-non-zero-bitwise-and/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "bit-manipulation",
+    "enumeration"
+  ],
+  "statement": "Find the length of the longest strictly increasing subsequence in an integer array such that the bitwise AND of all elements in the subsequence is non-zero. Return 0 if no such subsequence exists.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "bitmask-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910295,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.95,
+      "bitmask-dp": 0.85,
+      "state-compression": 0.7
+    }
+  }
+}

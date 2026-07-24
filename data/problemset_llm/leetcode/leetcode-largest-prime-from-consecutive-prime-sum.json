@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-largest-prime-from-consecutive-prime-sum",
+  "title": "Largest Prime from Consecutive Prime Sum",
+  "slug": "largest-prime-from-consecutive-prime-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-prime-from-consecutive-prime-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer n, find the largest prime less than or equal to n that can be represented as the sum of consecutive prime numbers starting from 2, or return 0 if none exists.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "prime-sieve",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909270,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "prime-sieve": 0.95,
+      "binary-search": 0.85
+    }
+  }
+}

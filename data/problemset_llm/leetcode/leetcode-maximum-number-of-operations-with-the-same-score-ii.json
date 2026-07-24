@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-number-of-operations-with-the-same-score-ii",
+  "title": "Maximum Number of Operations With the Same Score II",
+  "slug": "maximum-number-of-operations-with-the-same-score-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "statement": "Given an array, repeatedly remove pairs of elements from either the front two, the last two, or the first and last elements, all with the same sum score, and find the maximum number of such operations possible.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "memoization",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908854,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "memoization": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

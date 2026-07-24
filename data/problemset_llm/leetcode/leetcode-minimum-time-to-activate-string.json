@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-time-to-activate-string",
+  "title": "Minimum Time to Activate String",
+  "slug": "minimum-time-to-activate-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-activate-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a string and an order of character replacements with '*', determine the minimum time at which the number of substrings containing at least one '*' reaches or exceeds a target k. If impossible, return -1.",
+  "tags": [
+    "string",
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910148,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85
+    }
+  }
+}

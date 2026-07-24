@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-divide-two-integers",
+  "title": "Divide Two Integers",
+  "slug": "divide-two-integers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/divide-two-integers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "bit-manipulation"
+  ],
+  "statement": "Divide two integers without using multiplication, division, or modulo operators, returning the truncated integer quotient within 32-bit signed integer limits.",
+  "tags": [
+    "math",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bit-shifting",
+    "binary-search",
+    "sign-handling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908453,
+    "pattern_confidence": {
+      "bit-shifting": 0.95,
+      "binary-search": 0.7,
+      "sign-handling": 0.85
+    }
+  }
+}

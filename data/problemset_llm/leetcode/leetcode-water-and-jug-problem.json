@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-water-and-jug-problem",
+  "title": "Water and Jug Problem",
+  "slug": "water-and-jug-problem",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/water-and-jug-problem/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "depth-first-search",
+    "breadth-first-search"
+  ],
+  "statement": "Given two jugs with fixed capacities and an infinite water supply, determine if it is possible to measure exactly the target amount of water using fill, empty, and pour operations.",
+  "tags": [
+    "math",
+    "graph",
+    "bfs",
+    "dfs"
+  ],
+  "patterns": [
+    "gcd",
+    "state-space-search",
+    "bfs",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909809,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "state-space-search": 0.9,
+      "bfs": 0.85,
+      "dfs": 0.8
+    }
+  }
+}

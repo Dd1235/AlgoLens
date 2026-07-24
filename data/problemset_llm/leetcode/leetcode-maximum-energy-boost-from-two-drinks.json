@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-energy-boost-from-two-drinks",
+  "title": "Maximum Energy Boost From Two Drinks",
+  "slug": "maximum-energy-boost-from-two-drinks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-energy-boost-from-two-drinks/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two arrays representing energy boosts from two drinks over n hours, maximize total energy by choosing one drink per hour with a mandatory one-hour cooldown when switching drinks.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-machine-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910258,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-machine-dp": 0.9
+    }
+  }
+}

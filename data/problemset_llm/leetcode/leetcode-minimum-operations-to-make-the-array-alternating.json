@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-operations-to-make-the-array-alternating",
+  "title": "Minimum Operations to Make the Array Alternating",
+  "slug": "minimum-operations-to-make-the-array-alternating",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-operations-to-make-the-array-alternating/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "greedy",
+    "counting"
+  ],
+  "statement": "Given an array of positive integers, find the minimum number of element changes required to make the array alternating such that elements at even indices are equal and elements at odd indices are equal, with no two adjacent elements equal.",
+  "tags": [
+    "array",
+    "hash-map",
+    "greedy",
+    "counting"
+  ],
+  "patterns": [
+    "frequency-count",
+    "greedy",
+    "two-pass"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908938,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "greedy": 0.9,
+      "two-pass": 0.85
+    }
+  }
+}

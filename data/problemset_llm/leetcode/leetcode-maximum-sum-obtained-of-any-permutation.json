@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-maximum-sum-obtained-of-any-permutation",
+  "title": "Maximum Sum Obtained of Any Permutation",
+  "slug": "maximum-sum-obtained-of-any-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-sum-obtained-of-any-permutation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "statement": "Given an array and multiple range requests, find a permutation of the array that maximizes the sum of all requested subarray sums modulo 10^9+7.",
+  "tags": [
+    "array",
+    "greedy",
+    "prefix-sum",
+    "sorting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "sorting",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909405,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.9,
+      "difference-array": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-moves-to-balance-circular-array",
+  "title": "Minimum Moves to Balance Circular Array",
+  "slug": "minimum-moves-to-balance-circular-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-balance-circular-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a circular array representing net balances of persons, find the minimum moves to make all balances non-negative by transferring units between neighbors, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "circular-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909359,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.85,
+      "circular-array": 0.8
+    }
+  }
+}

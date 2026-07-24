@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-deletions-to-make-array-beautiful",
+  "title": "Minimum Deletions to Make Array Beautiful",
+  "slug": "minimum-deletions-to-make-array-beautiful",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "greedy"
+  ],
+  "statement": "Given an integer array, delete the minimum number of elements so that the resulting array has even length and no two adjacent elements at even indices are equal.",
+  "tags": [
+    "array",
+    "greedy",
+    "stack"
+  ],
+  "patterns": [
+    "greedy",
+    "stack",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910255,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "stack": 0.85,
+      "two-pointers": 0.8
+    }
+  }
+}

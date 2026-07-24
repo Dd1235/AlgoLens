@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-snapshot-array",
+  "title": "Snapshot Array",
+  "slug": "snapshot-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/snapshot-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "binary-search",
+    "design"
+  ],
+  "statement": "Design a data structure that supports setting values at indices, taking snapshots of the entire array state, and retrieving values at specific indices from any snapshot efficiently.",
+  "tags": [
+    "array",
+    "hash-map",
+    "binary-search",
+    "design"
+  ],
+  "patterns": [
+    "binary-search",
+    "offline-queries",
+    "versioned-data-structure"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909001,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "offline-queries": 0.85,
+      "versioned-data-structure": 0.88
+    }
+  }
+}

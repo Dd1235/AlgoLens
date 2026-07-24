@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
+  "title": "Number of Ways Where Square of Number Is Equal to Product of Two Numbers",
+  "slug": "number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "two-pointers"
+  ],
+  "statement": "Given two integer arrays, count the number of triplets where the square of an element from one array equals the product of two distinct elements from the other array.",
+  "tags": [
+    "array",
+    "hash-map",
+    "math",
+    "two-pointers"
+  ],
+  "patterns": [
+    "hash-map",
+    "two-pointers",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909597,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "two-pointers": 0.85,
+      "counting": 0.9
+    }
+  }
+}

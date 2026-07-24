@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-interleaving-string",
+  "title": "Interleaving String",
+  "slug": "interleaving-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/interleaving-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Determine if a string s3 can be formed by interleaving two strings s1 and s2, preserving the order of characters from each string.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "two-dimensional-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909671,
+    "pattern_confidence": {
+      "dynamic-programming": 0.99,
+      "two-dimensional-dp": 0.95,
+      "state-compression": 0.7
+    }
+  }
+}

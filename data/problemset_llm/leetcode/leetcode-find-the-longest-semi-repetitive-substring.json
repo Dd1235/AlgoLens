@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-find-the-longest-semi-repetitive-substring",
+  "title": "Find the Longest Semi-Repetitive Substring",
+  "slug": "find-the-longest-semi-repetitive-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "sliding-window"
+  ],
+  "statement": "Given a digit string, find the length of the longest substring containing at most one pair of identical adjacent digits.",
+  "tags": [
+    "string",
+    "array"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909262,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-earliest-second-to-mark-indices-i",
+  "title": "Earliest Second to Mark Indices I",
+  "slug": "earliest-second-to-mark-indices-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/earliest-second-to-mark-indices-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given an array nums and a sequence of indices changeIndices, determine the earliest time by which all indices in nums can be marked by decrementing values and marking indices when their value reaches zero, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909020,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-decoded-string-at-index",
+  "title": "Decoded String at Index",
+  "slug": "decoded-string-at-index",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/decoded-string-at-index/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "stack"
+  ],
+  "statement": "Given an encoded string where letters are appended and digits indicate repeated expansions of the current string, find the k-th letter in the fully decoded string without explicitly constructing it.",
+  "tags": [
+    "string",
+    "math"
+  ],
+  "patterns": [
+    "reverse-simulation",
+    "modular-arithmetic",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909028,
+    "pattern_confidence": {
+      "reverse-simulation": 0.95,
+      "modular-arithmetic": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

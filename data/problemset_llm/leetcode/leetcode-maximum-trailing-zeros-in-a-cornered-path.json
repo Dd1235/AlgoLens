@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-trailing-zeros-in-a-cornered-path",
+  "title": "Maximum Trailing Zeros in a Cornered Path",
+  "slug": "maximum-trailing-zeros-in-a-cornered-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "matrix",
+    "prefix-sum"
+  ],
+  "statement": "Given a 2D grid of positive integers, find a path with at most one turn (cornered path) that maximizes the number of trailing zeros in the product of its values. The path moves horizontally then vertically or vice versa without revisiting cells.",
+  "tags": [
+    "array",
+    "matrix",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "enumeration",
+    "factorization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909080,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "enumeration": 0.85,
+      "factorization": 0.8
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "leetcode-minimum-average-difference",
+  "title": "Minimum Average Difference",
+  "slug": "minimum-average-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-average-difference/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, find the index where the absolute difference between the average of the prefix and the average of the suffix (rounded down) is minimized.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909636,
+    "pattern_confidence": {
+      "prefix-sum": 0.95
+    }
+  }
+}

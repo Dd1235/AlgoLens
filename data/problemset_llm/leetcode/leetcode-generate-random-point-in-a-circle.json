@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-generate-random-point-in-a-circle",
+  "title": "Generate Random Point in a Circle",
+  "slug": "generate-random-point-in-a-circle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/generate-random-point-in-a-circle/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "geometry",
+    "rejection-sampling",
+    "randomized"
+  ],
+  "statement": "Implement a class to generate uniform random points inside a given circle defined by its radius and center coordinates.",
+  "tags": [
+    "math",
+    "geometry",
+    "randomized"
+  ],
+  "patterns": [
+    "rejection-sampling",
+    "polar-coordinates",
+    "uniform-sampling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909566,
+    "pattern_confidence": {
+      "rejection-sampling": 0.95,
+      "polar-coordinates": 0.9,
+      "uniform-sampling": 0.9
+    }
+  }
+}

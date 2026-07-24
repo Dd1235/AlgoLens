@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-the-number-of-weak-characters-in-the-game",
+  "title": "The Number of Weak Characters in the Game",
+  "slug": "the-number-of-weak-characters-in-the-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "greedy",
+    "sorting",
+    "monotonic-stack"
+  ],
+  "statement": "Given a list of characters with attack and defense values, count how many characters are strictly weaker than another character with both higher attack and defense.",
+  "tags": [
+    "array",
+    "sorting",
+    "stack"
+  ],
+  "patterns": [
+    "sorting",
+    "monotonic-stack",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909689,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "monotonic-stack": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

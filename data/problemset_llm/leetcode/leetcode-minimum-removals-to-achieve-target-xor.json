@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-removals-to-achieve-target-xor",
+  "title": "Minimum Removals to Achieve Target XOR",
+  "slug": "minimum-removals-to-achieve-target-xor",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "statement": "Given an integer array and a target value, find the minimum number of elements to remove so that the XOR of the remaining elements equals the target, or return -1 if impossible.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "subset-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909451,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "subset-enumeration": 0.85
+    }
+  }
+}

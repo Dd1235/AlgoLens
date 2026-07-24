@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-make-k-subarray-sums-equal",
+  "title": "Make K-Subarray Sums Equal",
+  "slug": "make-k-subarray-sums-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/make-k-subarray-sums-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting",
+    "number-theory"
+  ],
+  "statement": "Given a circular integer array and an integer k, find the minimum number of increment/decrement operations needed so that all subarrays of length k have equal sums.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909176,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "modular-arithmetic": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

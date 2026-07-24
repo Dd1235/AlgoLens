@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-unique-xor-triplets-ii",
+  "title": "Number of Unique XOR Triplets II",
+  "slug": "number-of-unique-xor-triplets-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-unique-xor-triplets-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, count the number of distinct XOR values obtained by XORing all triplets (i, j, k) with i ≤ j ≤ k.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "enumeration"
+  ],
+  "patterns": [
+    "brute-force",
+    "bitwise-operations",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909938,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "bitwise-operations": 0.95,
+      "counting": 0.85
+    }
+  }
+}

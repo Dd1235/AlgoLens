@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-circular-array-loop",
+  "title": "Circular Array Loop",
+  "slug": "circular-array-loop",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/circular-array-loop/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers"
+  ],
+  "statement": "Given a circular array of non-zero integers representing jumps forward or backward, determine if there exists a cycle of length greater than one where all elements move in the same direction.",
+  "tags": [
+    "array",
+    "graph",
+    "two-pointers"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "two-pointers",
+    "fast-slow-pointer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909090,
+    "pattern_confidence": {
+      "cycle-detection": 0.95,
+      "two-pointers": 0.9,
+      "fast-slow-pointer": 0.9
+    }
+  }
+}

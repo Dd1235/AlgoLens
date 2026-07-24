@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-dota2-senate",
+  "title": "Dota2 Senate",
+  "slug": "dota2-senate",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/dota2-senate/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy",
+    "queue"
+  ],
+  "statement": "Given a sequence of senators from two parties, simulate a round-based banning process where each senator can ban an opponent senator's rights, and determine which party will eventually win.",
+  "tags": [
+    "string",
+    "queue",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "queue",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910261,
+    "pattern_confidence": {
+      "queue": 0.95,
+      "greedy": 0.9,
+      "simulation": 0.9
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-stable-subarrays-with-equal-boundary-and-interior-sum",
+  "title": "Stable Subarrays With Equal Boundary and Interior Sum",
+  "slug": "stable-subarrays-with-equal-boundary-and-interior-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stable-subarrays-with-equal-boundary-and-interior-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "prefix-sum"
+  ],
+  "statement": "Count the number of subarrays of length at least three where the first and last elements are equal and each equals the sum of all elements strictly between them.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908559,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.7,
+      "hash-map": 0.8
+    }
+  }
+}

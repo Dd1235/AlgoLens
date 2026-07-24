@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-value-at-a-given-index-in-a-bounded-array",
+  "title": "Maximum Value at a Given Index in a Bounded Array",
+  "slug": "maximum-value-at-a-given-index-in-a-bounded-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search",
+    "greedy"
+  ],
+  "statement": "Construct an array of length n with positive integers where adjacent elements differ by at most 1, the total sum does not exceed maxSum, and the value at a given index is maximized.",
+  "tags": [
+    "array",
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909179,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

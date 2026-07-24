@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-global-and-local-inversions",
+  "title": "Global and Local Inversions",
+  "slug": "global-and-local-inversions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/global-and-local-inversions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math"
+  ],
+  "statement": "Given a permutation array, determine if the total number of global inversions equals the number of local inversions, where global inversions count all pairs out of order and local inversions count only adjacent pairs out of order.",
+  "tags": [
+    "array",
+    "math",
+    "permutation"
+  ],
+  "patterns": [
+    "inversion-count",
+    "adjacent-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909533,
+    "pattern_confidence": {
+      "inversion-count": 0.95,
+      "adjacent-comparison": 0.9
+    }
+  }
+}

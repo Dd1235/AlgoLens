@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-super-ugly-number",
+  "title": "Super Ugly Number",
+  "slug": "super-ugly-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/super-ugly-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "dynamic-programming"
+  ],
+  "statement": "Find the nth super ugly number, defined as a positive integer whose prime factors are all in a given sorted list of primes.",
+  "tags": [
+    "array",
+    "math",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "multiple-pointer-dp",
+    "merge-k-sorted-lists",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909840,
+    "pattern_confidence": {
+      "multiple-pointer-dp": 0.95,
+      "merge-k-sorted-lists": 0.9,
+      "heap": 0.85
+    }
+  }
+}

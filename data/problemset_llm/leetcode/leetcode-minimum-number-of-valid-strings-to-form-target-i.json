@@ -1,0 +1,45 @@
+{
+  "id": "leetcode-minimum-number-of-valid-strings-to-form-target-i",
+  "title": "Minimum Number of Valid Strings to Form Target I",
+  "slug": "minimum-number-of-valid-strings-to-form-target-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "binary-search",
+    "dynamic-programming",
+    "greedy",
+    "trie",
+    "segment-tree",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Given an array of strings and a target string, find the minimum number of valid prefix substrings from the array that can be concatenated to form the target, or return -1 if impossible.",
+  "tags": [
+    "string",
+    "array",
+    "dynamic-programming",
+    "trie"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-matching",
+    "trie",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908485,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-matching": 0.9,
+      "trie": 0.85,
+      "string-matching": 0.8
+    }
+  }
+}

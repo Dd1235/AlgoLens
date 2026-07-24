@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-maximum-removals-from-source-string",
+  "title": "Find Maximum Removals From Source String",
+  "slug": "find-maximum-removals-from-source-string",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-maximum-removals-from-source-string/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a source string, a pattern subsequence, and a sorted list of removable indices, find the maximum number of removals from the source such that the pattern remains a subsequence after each removal. The removals do not shift indices of other characters.",
+  "tags": [
+    "string",
+    "array",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "subsequence-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909299,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "subsequence-check": 0.88
+    }
+  }
+}

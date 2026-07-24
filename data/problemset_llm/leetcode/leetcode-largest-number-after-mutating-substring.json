@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-largest-number-after-mutating-substring",
+  "title": "Largest Number After Mutating Substring",
+  "slug": "largest-number-after-mutating-substring",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-number-after-mutating-substring/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "greedy"
+  ],
+  "statement": "Given a numeric string and a digit mapping array, mutate a single contiguous substring by replacing each digit with its mapped digit to form the largest possible integer.",
+  "tags": [
+    "string",
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "substring-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909135,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "substring-manipulation": 0.9
+    }
+  }
+}

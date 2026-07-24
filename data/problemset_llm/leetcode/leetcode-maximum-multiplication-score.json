@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximum-multiplication-score",
+  "title": "Maximum Multiplication Score",
+  "slug": "maximum-multiplication-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-multiplication-score/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given two integer arrays a of size 4 and b of size at least 4, select four increasing indices from b to maximize the sum of products a[i] * b[selected_index_i].",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909425,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "state-compression": 0.85
+    }
+  }
+}

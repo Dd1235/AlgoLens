@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-node-with-highest-edge-score",
+  "title": "Node With Highest Edge Score",
+  "slug": "node-with-highest-edge-score",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/node-with-highest-edge-score/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "graph"
+  ],
+  "statement": "Given a directed graph where each node has exactly one outgoing edge, compute the edge score for each node as the sum of indices of nodes pointing to it, and return the node with the highest edge score (smallest index if tie).",
+  "tags": [
+    "graph",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "counting",
+    "hash-map",
+    "aggregation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910173,
+    "pattern_confidence": {
+      "counting": 0.9,
+      "hash-map": 0.85,
+      "aggregation": 0.8
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-reward-top-k-students",
+  "title": "Reward Top K Students",
+  "slug": "reward-top-k-students",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reward-top-k-students/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given lists of positive and negative feedback words, and multiple feedback reports associated with unique student IDs, compute each student's score by adding 3 points per positive word and subtracting 1 point per negative word in their reports, then return the top k students ranked by score and ID.",
+  "tags": [
+    "array",
+    "string",
+    "hash-map",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "hash-map",
+    "string-tokenization",
+    "sorting",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909945,
+    "pattern_confidence": {
+      "hash-map": 0.98,
+      "string-tokenization": 0.95,
+      "sorting": 0.9,
+      "heap": 0.85
+    }
+  }
+}

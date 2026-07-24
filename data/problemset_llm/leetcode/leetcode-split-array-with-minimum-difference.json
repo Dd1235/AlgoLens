@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-split-array-with-minimum-difference",
+  "title": "Split Array With Minimum Difference",
+  "slug": "split-array-with-minimum-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-array-with-minimum-difference/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array, split it into two contiguous subarrays where the left is strictly increasing and the right is strictly decreasing, and return the minimum absolute difference between their sums or -1 if no valid split exists.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908825,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-adding-two-negabinary-numbers",
+  "title": "Adding Two Negabinary Numbers",
+  "slug": "adding-two-negabinary-numbers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/adding-two-negabinary-numbers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math"
+  ],
+  "statement": "Given two numbers represented as arrays of bits in base -2, return their sum in the same base -2 array format without leading zeros.",
+  "tags": [
+    "array",
+    "math",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "base-conversion",
+    "bitwise-addition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909093,
+    "pattern_confidence": {
+      "base-conversion": 0.95,
+      "bitwise-addition": 0.9
+    }
+  }
+}

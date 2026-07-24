@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-heaters",
+  "title": "Heaters",
+  "slug": "heaters",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/heaters/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given positions of houses and heaters on a line, find the minimum uniform heater radius needed so that all houses are covered by at least one heater.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909494,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.85,
+      "sorting": 0.9
+    }
+  }
+}

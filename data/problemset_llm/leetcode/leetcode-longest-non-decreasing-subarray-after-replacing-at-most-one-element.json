@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+  "title": "Longest Non-Decreasing Subarray After Replacing at Most One Element",
+  "slug": "longest-non-decreasing-subarray-after-replacing-at-most-one-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, find the length of the longest non-decreasing contiguous subarray achievable by replacing at most one element with any integer.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908497,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "greedy": 0.85,
+      "prefix-sum": 0.6
+    }
+  }
+}

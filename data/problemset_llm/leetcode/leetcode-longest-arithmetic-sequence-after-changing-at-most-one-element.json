@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-longest-arithmetic-sequence-after-changing-at-most-one-element",
+  "title": "Longest Arithmetic Sequence After Changing At Most One Element",
+  "slug": "longest-arithmetic-sequence-after-changing-at-most-one-element",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "enumeration"
+  ],
+  "statement": "Given an integer array, you may replace at most one element with any integer to maximize the length of an arithmetic subarray (a subarray with constant consecutive differences). Return the maximum possible length of such a subarray.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "enumeration"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-differences",
+    "case-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908467,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "prefix-differences": 0.85,
+      "case-enumeration": 0.8
+    }
+  }
+}

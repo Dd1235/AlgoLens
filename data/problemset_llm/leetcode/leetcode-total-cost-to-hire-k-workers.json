@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-total-cost-to-hire-k-workers",
+  "title": "Total Cost to Hire K Workers",
+  "slug": "total-cost-to-hire-k-workers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-cost-to-hire-k-workers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "heap-priority-queue",
+    "simulation"
+  ],
+  "statement": "Given an array of worker costs, hire exactly k workers by repeatedly choosing the lowest cost worker from either the first or last candidates workers, breaking ties by index, and return the total hiring cost.",
+  "tags": [
+    "array",
+    "heap",
+    "simulation"
+  ],
+  "patterns": [
+    "two-heaps",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909602,
+    "pattern_confidence": {
+      "two-heaps": 0.95,
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

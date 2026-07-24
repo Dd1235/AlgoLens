@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-partition-to-k-equal-sum-subsets",
+  "title": "Partition to K Equal Sum Subsets",
+  "slug": "partition-to-k-equal-sum-subsets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "memoization",
+    "bitmask"
+  ],
+  "statement": "Determine if an integer array can be partitioned into k non-empty subsets each having the same sum.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bitmask",
+    "memoization"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "backtracking",
+    "memoization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909167,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "backtracking": 0.9,
+      "memoization": 0.88,
+      "state-compression": 0.85
+    }
+  }
+}

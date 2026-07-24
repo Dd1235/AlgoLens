@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-cost-to-make-two-binary-strings-equal",
+  "title": "Minimum Cost to Make Two Binary Strings Equal",
+  "slug": "minimum-cost-to-make-two-binary-strings-equal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-make-two-binary-strings-equal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "greedy"
+  ],
+  "statement": "Given two binary strings of equal length and costs for flipping bits, swapping bits within a string, or swapping bits between strings at the same index, find the minimum total cost to make the two strings equal using any sequence of these operations.",
+  "tags": [
+    "string",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "cost-optimization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909303,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "cost-optimization": 0.85,
+      "state-compression": 0.7
+    }
+  }
+}

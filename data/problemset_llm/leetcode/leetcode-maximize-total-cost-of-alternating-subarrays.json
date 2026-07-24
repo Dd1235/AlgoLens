@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-maximize-total-cost-of-alternating-subarrays",
+  "title": "Maximize Total Cost of Alternating Subarrays",
+  "slug": "maximize-total-cost-of-alternating-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, split it into contiguous subarrays to maximize the sum of alternating sign weighted sums of each subarray.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908651,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.85
+    }
+  }
+}

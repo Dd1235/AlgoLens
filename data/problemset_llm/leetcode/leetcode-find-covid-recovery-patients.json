@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-covid-recovery-patients",
+  "title": "Find COVID Recovery Patients",
+  "slug": "find-covid-recovery-patients",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-covid-recovery-patients/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "database"
+  ],
+  "statement": "Identify patients who have recovered from COVID by having at least one positive test followed by a negative test on a later date, and compute their recovery time as the days between these tests, returning results ordered by recovery time and patient name.",
+  "tags": [
+    "database",
+    "sorting",
+    "date-time"
+  ],
+  "patterns": [
+    "filtering",
+    "aggregation",
+    "window-functions"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909549,
+    "pattern_confidence": {
+      "filtering": 0.95,
+      "aggregation": 0.9,
+      "window-functions": 0.85
+    }
+  }
+}

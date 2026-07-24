@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-k-to-sort-a-permutation",
+  "title": "Maximum K to Sort a Permutation",
+  "slug": "maximum-k-to-sort-a-permutation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-k-to-sort-a-permutation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "bit-manipulation"
+  ],
+  "statement": "Given a permutation of integers from 0 to n-1, find the maximum non-negative integer k such that the array can be sorted by swapping elements only when their bitwise AND equals k.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909041,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "bitmask": 0.88
+    }
+  }
+}

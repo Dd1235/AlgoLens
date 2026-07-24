@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-largest-number",
+  "title": "Largest Number",
+  "slug": "largest-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/largest-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a list of non-negative integers, arrange them to form the largest possible concatenated number and return it as a string.",
+  "tags": [
+    "array",
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "custom-comparator",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909571,
+    "pattern_confidence": {
+      "custom-comparator": 0.98,
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

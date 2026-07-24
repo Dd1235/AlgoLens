@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-high-access-employees",
+  "title": "High-Access Employees",
+  "slug": "high-access-employees",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/high-access-employees/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "sorting"
+  ],
+  "statement": "Given employee access records with timestamps, identify employees who have accessed the system three or more times within any one-hour period (excluding exactly one-hour differences).",
+  "tags": [
+    "array",
+    "hash-map",
+    "string",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "sliding-window",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909982,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "sliding-window": 0.9,
+      "hash-map": 0.9
+    }
+  }
+}

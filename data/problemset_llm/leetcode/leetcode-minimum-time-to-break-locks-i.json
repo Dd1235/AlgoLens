@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-time-to-break-locks-i",
+  "title": "Minimum Time to Break Locks I",
+  "slug": "minimum-time-to-break-locks-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-time-to-break-locks-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "breadth-first-search",
+    "bitmask"
+  ],
+  "statement": "Given a sequence of locks each requiring a certain energy to break, and a sword whose energy increases linearly with a factor that increments after breaking each lock, determine the minimum time needed to break all locks in order.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "bitmask"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908785,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

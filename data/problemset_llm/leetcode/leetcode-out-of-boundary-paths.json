@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-out-of-boundary-paths",
+  "title": "Out of Boundary Paths",
+  "slug": "out-of-boundary-paths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/out-of-boundary-paths/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Count the number of ways to move a ball from a starting position in an m by n grid out of the grid boundary within a maximum number of moves, moving only to adjacent cells.",
+  "tags": [
+    "dynamic-programming",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910061,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "memoization": 0.9
+    }
+  }
+}

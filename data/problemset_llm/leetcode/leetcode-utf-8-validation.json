@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-utf-8-validation",
+  "title": "UTF-8 Validation",
+  "slug": "utf-8-validation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/utf-8-validation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of integers representing bytes, determine if the sequence forms a valid UTF-8 encoding according to the byte-length and bit-pattern rules of UTF-8 characters.",
+  "tags": [
+    "array",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask",
+    "state-machine",
+    "validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909862,
+    "pattern_confidence": {
+      "bitmask": 0.95,
+      "state-machine": 0.9,
+      "validation": 0.85
+    }
+  }
+}

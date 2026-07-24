@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-select-k-disjoint-special-substrings",
+  "title": "Select K Disjoint Special Substrings",
+  "slug": "select-k-disjoint-special-substrings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/select-k-disjoint-special-substrings/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given a string and an integer k, determine if it is possible to select k disjoint substrings where each substring contains characters that do not appear outside it in the string, and the substring is not the entire string.",
+  "tags": [
+    "string",
+    "greedy",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "patterns": [
+    "interval-selection",
+    "greedy",
+    "dynamic-programming",
+    "character-frequency"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908442,
+    "pattern_confidence": {
+      "interval-selection": 0.9,
+      "greedy": 0.85,
+      "dynamic-programming": 0.8,
+      "character-frequency": 0.75
+    }
+  }
+}

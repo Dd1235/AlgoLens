@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-speed-to-arrive-on-time",
+  "title": "Minimum Speed to Arrive on Time",
+  "slug": "minimum-speed-to-arrive-on-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given distances for sequential train rides and a time limit with integer-hour departure constraints, find the minimum integer speed to arrive on time or determine it is impossible.",
+  "tags": [
+    "array",
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910014,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "simulation": 0.85
+    }
+  }
+}

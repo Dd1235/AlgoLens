@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-longest-palindromic-subsequence-after-at-most-k-operations",
+  "title": "Longest Palindromic Subsequence After at Most K Operations",
+  "slug": "longest-palindromic-subsequence-after-at-most-k-operations",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string and a maximum number of character increment/decrement operations, find the length of the longest palindromic subsequence achievable after at most k such operations.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "edit-distance",
+    "palindrome-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909103,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "edit-distance": 0.85,
+      "palindrome-dp": 0.9
+    }
+  }
+}

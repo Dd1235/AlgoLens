@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-number-of-subsequences-after-one-inserting",
+  "title": "Maximum Number of Subsequences After One Inserting",
+  "slug": "maximum-number-of-subsequences-after-one-inserting",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
+  ],
+  "statement": "Given a string of uppercase letters, insert at most one letter to maximize the count of subsequences matching \"LCT\" in the resulting string.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "subsequence-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908747,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "greedy": 0.9,
+      "subsequence-counting": 0.92
+    }
+  }
+}

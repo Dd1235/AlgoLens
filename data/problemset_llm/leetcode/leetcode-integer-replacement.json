@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-integer-replacement",
+  "title": "Integer Replacement",
+  "slug": "integer-replacement",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/integer-replacement/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming",
+    "greedy",
+    "bit-manipulation",
+    "memoization"
+  ],
+  "statement": "Given a positive integer n, find the minimum number of operations to reduce it to 1 by repeatedly applying either division by 2 if even, or incrementing/decrementing by 1 if odd.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "bit-manipulation",
+    "memoization"
+  ],
+  "patterns": [
+    "memoization",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909053,
+    "pattern_confidence": {
+      "memoization": 0.95,
+      "greedy": 0.9,
+      "bit-manipulation": 0.85
+    }
+  }
+}

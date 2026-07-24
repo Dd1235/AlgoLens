@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-remove-k-digits",
+  "title": "Remove K Digits",
+  "slug": "remove-k-digits",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/remove-k-digits/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "stack",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "statement": "Given a numeric string and an integer k, remove exactly k digits to produce the smallest possible integer without leading zeros.",
+  "tags": [
+    "string",
+    "stack",
+    "greedy",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "greedy",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909025,
+    "pattern_confidence": {
+      "monotonic-stack": 0.98,
+      "greedy": 0.95,
+      "stack": 0.9
+    }
+  }
+}

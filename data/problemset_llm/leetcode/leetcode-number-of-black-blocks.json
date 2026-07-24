@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-black-blocks",
+  "title": "Number of Black Blocks",
+  "slug": "number-of-black-blocks",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-black-blocks/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "enumeration"
+  ],
+  "statement": "Given a large m x n grid with some cells colored black, count how many 2x2 blocks contain exactly i black cells for i from 0 to 4.",
+  "tags": [
+    "array",
+    "hash-map",
+    "enumeration"
+  ],
+  "patterns": [
+    "counting",
+    "coordinate-enumeration",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909475,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "coordinate-enumeration": 0.9,
+      "hash-map": 0.85
+    }
+  }
+}

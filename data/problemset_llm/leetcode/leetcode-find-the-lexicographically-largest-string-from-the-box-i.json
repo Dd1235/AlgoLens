@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-find-the-lexicographically-largest-string-from-the-box-i",
+  "title": "Find the Lexicographically Largest String From the Box I",
+  "slug": "find-the-lexicographically-largest-string-from-the-box-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "two-pointers",
+    "string",
+    "enumeration"
+  ],
+  "statement": "Given a string and a number of friends, repeatedly split the string into that many non-empty parts in all possible ways without repeating any previous split, then collect all split substrings into a box. Determine the lexicographically largest string present in the box after all rounds.",
+  "tags": [
+    "string",
+    "enumeration"
+  ],
+  "patterns": [
+    "enumeration",
+    "string-splitting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909381,
+    "pattern_confidence": {
+      "enumeration": 0.95,
+      "string-splitting": 0.9
+    }
+  }
+}

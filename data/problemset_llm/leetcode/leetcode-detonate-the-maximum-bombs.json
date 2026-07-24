@@ -1,0 +1,41 @@
+{
+  "id": "leetcode-detonate-the-maximum-bombs",
+  "title": "Detonate the Maximum Bombs",
+  "slug": "detonate-the-maximum-bombs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/detonate-the-maximum-bombs/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "depth-first-search",
+    "breadth-first-search",
+    "graph",
+    "geometry"
+  ],
+  "statement": "Given bombs with coordinates and blast radii, determine the maximum number of bombs that can be detonated starting from detonating a single bomb, where detonations propagate to bombs within range recursively.",
+  "tags": [
+    "geometry",
+    "graph",
+    "dfs",
+    "bfs"
+  ],
+  "patterns": [
+    "graph-construction",
+    "dfs",
+    "bfs",
+    "reachability"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910272,
+    "pattern_confidence": {
+      "graph-construction": 0.95,
+      "dfs": 0.9,
+      "bfs": 0.9,
+      "reachability": 0.85
+    }
+  }
+}

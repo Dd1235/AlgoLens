@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-k-highest-ranked-items-within-a-price-range",
+  "title": "K Highest Ranked Items Within a Price Range",
+  "slug": "k-highest-ranked-items-within-a-price-range",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "breadth-first-search",
+    "sorting",
+    "heap-priority-queue",
+    "matrix"
+  ],
+  "statement": "Given a grid representing a shop with walls, empty cells, and items with prices, find the positions of the k highest-ranked items within a specified price range reachable from a start cell. Ranking is based on shortest distance, then price, then row, then column. Return these items sorted by their rank.",
+  "tags": [
+    "graph",
+    "matrix",
+    "bfs",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "bfs",
+    "heap",
+    "multi-criteria-sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909919,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "heap": 0.95,
+      "multi-criteria-sorting": 0.9
+    }
+  }
+}

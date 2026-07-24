@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-design-auction-system",
+  "title": "Design Auction System",
+  "slug": "design-auction-system",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/design-auction-system/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "design",
+    "heap-priority-queue",
+    "ordered-set"
+  ],
+  "statement": "Design a system to manage bids from users on items, supporting adding, updating, and removing bids, and retrieving the highest bidder per item with tie-breaking by user ID.",
+  "tags": [
+    "hash-map",
+    "heap",
+    "ordered-set",
+    "design"
+  ],
+  "patterns": [
+    "heap",
+    "hash-map",
+    "ordered-set",
+    "lazy-deletion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909458,
+    "pattern_confidence": {
+      "heap": 0.95,
+      "hash-map": 0.9,
+      "ordered-set": 0.85,
+      "lazy-deletion": 0.8
+    }
+  }
+}

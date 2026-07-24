@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-jump-game",
+  "title": "Jump Game",
+  "slug": "jump-game",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/jump-game/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "statement": "Given an array where each element represents the maximum jump length from that position, determine if it is possible to reach the last index starting from the first index.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909411,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "dynamic-programming": 0.85
+    }
+  }
+}

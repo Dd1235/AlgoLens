@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-partition-array-into-two-equal-product-subsets",
+  "title": "Partition Array into Two Equal Product Subsets",
+  "slug": "partition-array-into-two-equal-product-subsets",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/partition-array-into-two-equal-product-subsets/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "bit-manipulation",
+    "recursion",
+    "enumeration"
+  ],
+  "statement": "Given an array of distinct positive integers and a target, determine if the array can be partitioned into two non-empty subsets whose products both equal the target.",
+  "tags": [
+    "array",
+    "backtracking",
+    "bitmask",
+    "recursion"
+  ],
+  "patterns": [
+    "backtracking",
+    "bitmask-enumeration",
+    "subset-product",
+    "pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908908,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "bitmask-enumeration": 0.9,
+      "subset-product": 0.85,
+      "pruning": 0.7
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-powx-n",
+  "title": "Pow(x, n)",
+  "slug": "powx-n",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/powx-n/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "recursion"
+  ],
+  "statement": "Implement a function to compute x raised to the integer power n efficiently, handling positive, negative, and zero exponents.",
+  "tags": [
+    "math",
+    "recursion"
+  ],
+  "patterns": [
+    "fast-exponentiation",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909245,
+    "pattern_confidence": {
+      "fast-exponentiation": 0.98,
+      "divide-and-conquer": 0.9
+    }
+  }
+}

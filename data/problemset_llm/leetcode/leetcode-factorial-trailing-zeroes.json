@@ -1,0 +1,30 @@
+{
+  "id": "leetcode-factorial-trailing-zeroes",
+  "title": "Factorial Trailing Zeroes",
+  "slug": "factorial-trailing-zeroes",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/factorial-trailing-zeroes/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an integer n, determine the number of trailing zeros in n! (the factorial of n).",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "counting",
+    "division-by-powers-of-5"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909930,
+    "pattern_confidence": {
+      "counting": 0.9,
+      "division-by-powers-of-5": 0.95
+    }
+  }
+}

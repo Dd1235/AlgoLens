@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-choose-k-elements-with-maximum-sum",
+  "title": "Choose K Elements With Maximum Sum",
+  "slug": "choose-k-elements-with-maximum-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/choose-k-elements-with-maximum-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "For each element in nums1, find all indices with smaller nums1 values and select up to k largest corresponding nums2 values to maximize their sum, returning these sums for all indices.",
+  "tags": [
+    "array",
+    "sorting",
+    "heap"
+  ],
+  "patterns": [
+    "sorting",
+    "max-heap",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908848,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "max-heap": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

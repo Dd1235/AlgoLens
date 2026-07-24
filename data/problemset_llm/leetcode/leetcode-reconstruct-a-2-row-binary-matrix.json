@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-reconstruct-a-2-row-binary-matrix",
+  "title": "Reconstruct a 2-Row Binary Matrix",
+  "slug": "reconstruct-a-2-row-binary-matrix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "matrix"
+  ],
+  "statement": "Reconstruct a 2-row binary matrix given the sums of each row and the sum of each column, or determine that no valid matrix exists.",
+  "tags": [
+    "array",
+    "greedy",
+    "matrix"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910124,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

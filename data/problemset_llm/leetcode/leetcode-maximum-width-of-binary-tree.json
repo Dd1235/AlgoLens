@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-width-of-binary-tree",
+  "title": "Maximum Width of Binary Tree",
+  "slug": "maximum-width-of-binary-tree",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-width-of-binary-tree/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "breadth-first-search",
+    "binary-tree"
+  ],
+  "statement": "Given a binary tree, find the maximum width among all levels, where width counts the distance between the leftmost and rightmost non-null nodes including nulls in between as if the tree were complete.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "bfs"
+  ],
+  "patterns": [
+    "level-order-traversal",
+    "indexing-nodes",
+    "bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909790,
+    "pattern_confidence": {
+      "level-order-traversal": 0.95,
+      "indexing-nodes": 0.9,
+      "bfs": 0.9
+    }
+  }
+}

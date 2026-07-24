@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-balanced-substring-after-one-swap",
+  "title": "Longest Balanced Substring After One Swap",
+  "slug": "longest-balanced-substring-after-one-swap",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-balanced-substring-after-one-swap/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "prefix-sum"
+  ],
+  "statement": "Given a binary string, you may perform at most one swap of any two characters and then select a balanced substring (equal number of '0's and '1's). Find the maximum length of such a balanced substring achievable.",
+  "tags": [
+    "string",
+    "array",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908423,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "hash-map": 0.85,
+      "binary-search-answer": 0.7
+    }
+  }
+}

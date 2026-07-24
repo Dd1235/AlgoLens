@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-cost-of-a-path-with-special-roads",
+  "title": "Minimum Cost of a Path With Special Roads",
+  "slug": "minimum-cost-of-a-path-with-special-roads",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Find the minimum cost to travel from a start point to a target point in 2D space using Manhattan distance and optionally directed special roads with given costs that can be used multiple times.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "geometry",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "graph-construction",
+    "manhattan-distance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909589,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "graph-construction": 0.9,
+      "manhattan-distance": 0.85
+    }
+  }
+}

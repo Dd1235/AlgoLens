@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-sets-of-k-non-overlapping-line-segments",
+  "title": "Number of Sets of K Non-Overlapping Line Segments",
+  "slug": "number-of-sets-of-k-non-overlapping-line-segments",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics",
+    "prefix-sum"
+  ],
+  "statement": "Given n points on a line, count the number of ways to draw exactly k non-overlapping line segments covering at least two points each, allowing shared endpoints. Return the count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909812,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-sum": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

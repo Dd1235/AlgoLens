@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-prime-pairs-with-target-sum",
+  "title": "Prime Pairs With Target Sum",
+  "slug": "prime-pairs-with-target-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/prime-pairs-with-target-sum/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "enumeration",
+    "number-theory"
+  ],
+  "statement": "Given an integer n, find all pairs of prime numbers (x, y) such that x + y = n and 1 <= x <= y <= n, returning the pairs sorted by x.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "enumeration"
+  ],
+  "patterns": [
+    "sieve",
+    "two-pointers",
+    "prime-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909125,
+    "pattern_confidence": {
+      "sieve": 0.95,
+      "two-pointers": 0.9,
+      "prime-checking": 0.9
+    }
+  }
+}

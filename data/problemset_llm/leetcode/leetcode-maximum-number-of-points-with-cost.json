@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-maximum-number-of-points-with-cost",
+  "title": "Maximum Number of Points with Cost",
+  "slug": "maximum-number-of-points-with-cost",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-number-of-points-with-cost/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "matrix"
+  ],
+  "statement": "Given an m by n matrix of points, select one cell per row to maximize the sum of chosen points minus the sum of absolute column differences between consecutive rows.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-max",
+    "row-by-row-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909444,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-max": 0.85,
+      "row-by-row-optimization": 0.8
+    }
+  }
+}

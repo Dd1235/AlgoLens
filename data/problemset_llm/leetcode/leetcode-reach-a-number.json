@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-reach-a-number",
+  "title": "Reach a Number",
+  "slug": "reach-a-number",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/reach-a-number/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "binary-search"
+  ],
+  "statement": "Starting at zero on an infinite number line, find the minimum number of moves needed to reach a given target position, where the i-th move covers i steps either left or right.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909756,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

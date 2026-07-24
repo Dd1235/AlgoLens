@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-maximum-square-area-by-removing-fences-from-a-field",
+  "title": "Maximum Square Area by Removing Fences From a Field",
+  "slug": "maximum-square-area-by-removing-fences-from-a-field",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-square-area-by-removing-fences-from-a-field/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "enumeration"
+  ],
+  "statement": "Given a rectangular field with fixed outer fences and internal horizontal and vertical fences, determine the maximum area of a square field that can be formed by removing some internal fences, or return -1 if impossible. The result should be given modulo 10^9+7.",
+  "tags": [
+    "array",
+    "geometry",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "binary-search-answer",
+    "prefix-differences"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910178,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "binary-search-answer": 0.9,
+      "prefix-differences": 0.85
+    }
+  }
+}

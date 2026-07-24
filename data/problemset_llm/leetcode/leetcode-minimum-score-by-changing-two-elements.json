@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-score-by-changing-two-elements",
+  "title": "Minimum Score by Changing Two Elements",
+  "slug": "minimum-score-by-changing-two-elements",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an integer array, minimize the sum of the minimum and maximum absolute differences between any two elements after changing exactly two elements.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-element-modification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910241,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-element-modification": 0.85
+    }
+  }
+}

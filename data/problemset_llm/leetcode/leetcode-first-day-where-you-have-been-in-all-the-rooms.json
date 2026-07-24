@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-first-day-where-you-have-been-in-all-the-rooms",
+  "title": "First Day Where You Have Been in All the Rooms",
+  "slug": "first-day-where-you-have-been-in-all-the-rooms",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/first-day-where-you-have-been-in-all-the-rooms/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given a sequence of rooms and rules for visiting them based on the parity of visits, determine the earliest day when all rooms have been visited at least once, returning the result modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909346,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

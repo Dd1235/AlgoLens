@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-wiggle-sort-ii",
+  "title": "Wiggle Sort II",
+  "slug": "wiggle-sort-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/wiggle-sort-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "greedy",
+    "sorting",
+    "quickselect"
+  ],
+  "statement": "Rearrange an integer array so that elements alternate between less than and greater than their neighbors, i.e., nums[0] < nums[1] > nums[2] < nums[3]..., with a guaranteed valid solution.",
+  "tags": [
+    "array",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "three-way-partitioning",
+    "virtual-indexing",
+    "quickselect"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909071,
+    "pattern_confidence": {
+      "three-way-partitioning": 0.95,
+      "virtual-indexing": 0.9,
+      "quickselect": 0.85
+    }
+  }
+}

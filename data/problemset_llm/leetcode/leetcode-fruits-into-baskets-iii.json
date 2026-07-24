@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-fruits-into-baskets-iii",
+  "title": "Fruits Into Baskets III",
+  "slug": "fruits-into-baskets-iii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/fruits-into-baskets-iii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "segment-tree",
+    "ordered-set"
+  ],
+  "statement": "Given two arrays representing fruit quantities and basket capacities, assign each fruit type to the leftmost basket that can hold it without exceeding capacity, with each basket holding only one fruit type. Determine how many fruit types remain unplaced after this allocation.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search",
+    "ordered-set"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909280,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.9,
+      "ordered-set": 0.85
+    }
+  }
+}

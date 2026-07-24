@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-split-array-into-maximum-number-of-subarrays",
+  "title": "Split Array Into Maximum Number of Subarrays",
+  "slug": "split-array-into-maximum-number-of-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-array-into-maximum-number-of-subarrays/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of non-negative integers, split it into the maximum number of contiguous subarrays so that the sum of their bitwise AND scores is minimized.",
+  "tags": [
+    "array",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "greedy",
+    "bitwise-and",
+    "prefix-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909522,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "bitwise-and": 0.9,
+      "prefix-computation": 0.7
+    }
+  }
+}

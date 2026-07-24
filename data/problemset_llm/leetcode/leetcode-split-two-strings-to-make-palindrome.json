@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-split-two-strings-to-make-palindrome",
+  "title": "Split Two Strings to Make Palindrome",
+  "slug": "split-two-strings-to-make-palindrome",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/split-two-strings-to-make-palindrome/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "two-pointers",
+    "string"
+  ],
+  "statement": "Given two strings of equal length, determine if there exists an index to split both strings such that concatenating the prefix of one with the suffix of the other forms a palindrome.",
+  "tags": [
+    "string",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "palindrome-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908766,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "palindrome-check": 0.9
+    }
+  }
+}

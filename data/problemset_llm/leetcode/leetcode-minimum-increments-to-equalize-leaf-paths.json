@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-minimum-increments-to-equalize-leaf-paths",
+  "title": "Minimum Increments to Equalize Leaf Paths",
+  "slug": "minimum-increments-to-equalize-leaf-paths",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "tree",
+    "depth-first-search"
+  ],
+  "statement": "Given a rooted tree with costs on nodes, determine the minimum number of nodes to increment so that all root-to-leaf path sums become equal.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "bottom-up-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909423,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-dp": 0.9,
+      "bottom-up-traversal": 0.85
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-minimum-moves-to-capture-the-queen",
+  "title": "Minimum Moves to Capture The Queen",
+  "slug": "minimum-moves-to-capture-the-queen",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-moves-to-capture-the-queen/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "enumeration"
+  ],
+  "statement": "Given positions of a white rook, a white bishop, and a black queen on an 8x8 chessboard, determine the minimum number of moves required for the white pieces to capture the queen, considering standard chess movement rules without jumping over pieces.",
+  "tags": [
+    "geometry",
+    "simulation",
+    "graph"
+  ],
+  "patterns": [
+    "shortest-path",
+    "bfs",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908492,
+    "pattern_confidence": {
+      "shortest-path": 0.95,
+      "bfs": 0.9,
+      "state-space-search": 0.88
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-length-of-the-longest-subsequence-that-sums-to-target",
+  "title": "Length of the Longest Subsequence That Sums to Target",
+  "slug": "length-of-the-longest-subsequence-that-sums-to-target",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/length-of-the-longest-subsequence-that-sums-to-target/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array and a target sum, find the length of the longest subsequence whose elements sum exactly to the target, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "subset-dp",
+    "longest-subsequence",
+    "sum-target"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909327,
+    "pattern_confidence": {
+      "subset-dp": 0.98,
+      "longest-subsequence": 0.9,
+      "sum-target": 0.85
+    }
+  }
+}

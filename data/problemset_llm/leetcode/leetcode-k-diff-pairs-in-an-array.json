@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-k-diff-pairs-in-an-array",
+  "title": "K-diff Pairs in an Array",
+  "slug": "k-diff-pairs-in-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-diff-pairs-in-an-array/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a value k, count the number of unique pairs with absolute difference equal to k.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909815,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.9,
+      "hash-map": 0.9
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-minimum-array-length-after-pair-removals",
+  "title": "Minimum Array Length After Pair Removals",
+  "slug": "minimum-array-length-after-pair-removals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-array-length-after-pair-removals/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "binary-search",
+    "greedy",
+    "counting"
+  ],
+  "statement": "Given a sorted integer array, repeatedly remove pairs of elements where the first is strictly less than the second, and return the minimum possible length after all such removals.",
+  "tags": [
+    "array",
+    "greedy",
+    "two-pointers",
+    "counting"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908603,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.9,
+      "counting": 0.85
+    }
+  }
+}

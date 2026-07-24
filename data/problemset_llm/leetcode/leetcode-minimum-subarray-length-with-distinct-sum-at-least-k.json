@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-subarray-length-with-distinct-sum-at-least-k",
+  "title": "Minimum Subarray Length With Distinct Sum At Least K",
+  "slug": "minimum-subarray-length-with-distinct-sum-at-least-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window"
+  ],
+  "statement": "Find the minimum length of a contiguous subarray whose sum of distinct elements is at least k, or return -1 if none exists.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908742,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9,
+      "hash-map": 0.9
+    }
+  }
+}

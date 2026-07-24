@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-univalue-path",
+  "title": "Longest Univalue Path",
+  "slug": "longest-univalue-path",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-univalue-path/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "tree",
+    "depth-first-search",
+    "binary-tree"
+  ],
+  "statement": "Given a binary tree, find the length of the longest path where all nodes have the same value. The path length is measured by the number of edges and may pass through any node, not necessarily the root.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "path-finding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909662,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "tree-dp": 0.95,
+      "path-finding": 0.9
+    }
+  }
+}

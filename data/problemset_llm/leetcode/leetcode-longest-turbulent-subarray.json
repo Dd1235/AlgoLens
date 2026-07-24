@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-longest-turbulent-subarray",
+  "title": "Longest Turbulent Subarray",
+  "slug": "longest-turbulent-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-turbulent-subarray/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sliding-window"
+  ],
+  "statement": "Find the length of the longest contiguous subarray where the comparison sign between adjacent elements alternates strictly, forming a turbulent pattern.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910154,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "dynamic-programming": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

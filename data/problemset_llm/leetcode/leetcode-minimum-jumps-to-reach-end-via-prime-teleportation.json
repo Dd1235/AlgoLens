@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-jumps-to-reach-end-via-prime-teleportation",
+  "title": "Minimum Jumps to Reach End via Prime Teleportation",
+  "slug": "minimum-jumps-to-reach-end-via-prime-teleportation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-jumps-to-reach-end-via-prime-teleportation/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "breadth-first-search",
+    "number-theory"
+  ],
+  "statement": "Given an array, find the minimum number of jumps to reach the last index starting from the first, where jumps can be to adjacent indices or via teleportation using prime numbers and divisibility conditions.",
+  "tags": [
+    "array",
+    "graph",
+    "number-theory",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "prime-checking",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909680,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "prime-checking": 0.9,
+      "graph-construction": 0.85
+    }
+  }
+}

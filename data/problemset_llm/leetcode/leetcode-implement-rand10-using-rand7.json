@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-implement-rand10-using-rand7",
+  "title": "Implement Rand10() Using Rand7()",
+  "slug": "implement-rand10-using-rand7",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/implement-rand10-using-rand7/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "rejection-sampling",
+    "randomized",
+    "probability-and-statistics"
+  ],
+  "statement": "Implement a function rand10() that generates a uniform random integer from 1 to 10 using only the given rand7() function which returns a uniform random integer from 1 to 7. Optimize to minimize the expected number of calls to rand7().",
+  "tags": [
+    "math",
+    "probability",
+    "randomized-algorithms"
+  ],
+  "patterns": [
+    "rejection-sampling",
+    "expected-value",
+    "probability-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909889,
+    "pattern_confidence": {
+      "rejection-sampling": 0.98,
+      "expected-value": 0.85,
+      "probability-analysis": 0.8
+    }
+  }
+}

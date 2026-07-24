@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-maximum-points-inside-the-square",
+  "title": "Maximum Points Inside the Square",
+  "slug": "maximum-points-inside-the-square",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-points-inside-the-square/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "string",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given points with tags on a 2D plane, find the largest number of points inside an axis-aligned square centered at the origin such that no two points inside share the same tag.",
+  "tags": [
+    "array",
+    "geometry",
+    "hash-map",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909315,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.85,
+      "hash-map": 0.9
+    }
+  }
+}

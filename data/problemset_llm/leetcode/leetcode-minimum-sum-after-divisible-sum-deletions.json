@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-minimum-sum-after-divisible-sum-deletions",
+  "title": "Minimum Sum After Divisible Sum Deletions",
+  "slug": "minimum-sum-after-divisible-sum-deletions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-sum-after-divisible-sum-deletions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "statement": "Given an integer array and an integer k, repeatedly delete any contiguous subarray whose sum is divisible by k to minimize the remaining sum of the array.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "prefix-sum",
+    "hash-map"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dynamic-programming",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909877,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dynamic-programming": 0.9,
+      "hash-map": 0.85
+    }
+  }
+}

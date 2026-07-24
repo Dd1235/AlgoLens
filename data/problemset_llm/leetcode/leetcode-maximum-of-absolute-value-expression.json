@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-of-absolute-value-expression",
+  "title": "Maximum of Absolute Value Expression",
+  "slug": "maximum-of-absolute-value-expression",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-of-absolute-value-expression/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math"
+  ],
+  "statement": "Given two integer arrays of equal length, find the maximum value of the expression |arr1[i] - arr1[j]| + |arr2[i] - arr2[j]| + |i - j| over all valid indices i and j.",
+  "tags": [
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "case-analysis",
+    "maximization",
+    "absolute-value-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910082,
+    "pattern_confidence": {
+      "case-analysis": 0.9,
+      "maximization": 0.85,
+      "absolute-value-manipulation": 0.9
+    }
+  }
+}

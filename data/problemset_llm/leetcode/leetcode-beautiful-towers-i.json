@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-beautiful-towers-i",
+  "title": "Beautiful Towers I",
+  "slug": "beautiful-towers-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/beautiful-towers-i/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "stack",
+    "monotonic-stack"
+  ],
+  "statement": "Given an array of tower heights, remove bricks to form a mountain-shaped sequence that is non-decreasing up to a peak and then non-increasing, maximizing the sum of the resulting heights.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "monotonic-stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909707,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.7
+    }
+  }
+}

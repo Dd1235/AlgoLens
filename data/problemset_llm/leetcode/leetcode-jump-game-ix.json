@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-jump-game-ix",
+  "title": "Jump Game IX",
+  "slug": "jump-game-ix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/jump-game-ix/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "statement": "Given an integer array, for each index find the maximum reachable value by jumping forward only to smaller values and backward only to larger values following the given rules.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "graph-traversal",
+    "monotonic-stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909828,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "graph-traversal": 0.9,
+      "monotonic-stack": 0.7
+    }
+  }
+}

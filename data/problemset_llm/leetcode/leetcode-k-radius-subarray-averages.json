@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-k-radius-subarray-averages",
+  "title": "K Radius Subarray Averages",
+  "slug": "k-radius-subarray-averages",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-radius-subarray-averages/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sliding-window"
+  ],
+  "statement": "Compute the k-radius average for each index in an integer array, where the average is the integer division of the sum of elements within radius k around that index, or -1 if insufficient elements exist.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909854,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "sliding-window": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-change-minimum-characters-to-satisfy-one-of-three-conditions",
+  "title": "Change Minimum Characters to Satisfy One of Three Conditions",
+  "slug": "change-minimum-characters-to-satisfy-one-of-three-conditions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "counting",
+    "prefix-sum"
+  ],
+  "statement": "Given two lowercase strings, find the minimum number of character changes needed so that one of three conditions holds: all letters in one string are strictly less than all letters in the other, or both strings consist of only one distinct letter.",
+  "tags": [
+    "string",
+    "array",
+    "counting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909122,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "counting": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-smallest-range-ii",
+  "title": "Smallest Range II",
+  "slug": "smallest-range-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-range-ii/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an integer array and a value k, modify each element by either adding or subtracting k to minimize the difference between the maximum and minimum elements in the resulting array.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784909106,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

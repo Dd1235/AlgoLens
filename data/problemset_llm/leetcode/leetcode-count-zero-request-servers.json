@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-count-zero-request-servers",
+  "title": "Count Zero Request Servers",
+  "slug": "count-zero-request-servers",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-zero-request-servers/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "sliding-window",
+    "sorting"
+  ],
+  "statement": "Given logs of requests received by servers at specific times, and queries with time intervals, determine how many servers received no requests within each queried interval.",
+  "tags": [
+    "array",
+    "hash-map",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "prefix-sum",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908976,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "prefix-sum": 0.85,
+      "offline-queries": 0.8
+    }
+  }
+}

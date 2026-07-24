@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-mice-and-cheese",
+  "title": "Mice and Cheese",
+  "slug": "mice-and-cheese",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/mice-and-cheese/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given two arrays representing points earned by two mice eating each type of cheese, assign exactly k types to the first mouse and the rest to the second mouse to maximize total points.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910113,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "difference-array": 0.7
+    }
+  }
+}

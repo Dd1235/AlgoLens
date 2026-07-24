@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-grid-teleportation-traversal",
+  "title": "Grid Teleportation Traversal",
+  "slug": "grid-teleportation-traversal",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/grid-teleportation-traversal/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Find the minimum moves to reach the bottom-right cell in a grid with obstacles and teleportation portals, where each portal letter can be used once to teleport between cells with the same letter.",
+  "tags": [
+    "graph",
+    "matrix",
+    "bfs",
+    "hash-map"
+  ],
+  "patterns": [
+    "bfs",
+    "state-space-search",
+    "visited-states-pruning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908521,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "state-space-search": 0.9,
+      "visited-states-pruning": 0.85
+    }
+  }
+}

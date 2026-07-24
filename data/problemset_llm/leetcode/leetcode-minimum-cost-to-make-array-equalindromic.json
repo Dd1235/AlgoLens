@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-minimum-cost-to-make-array-equalindromic",
+  "title": "Minimum Cost to Make Array Equalindromic",
+  "slug": "minimum-cost-to-make-array-equalindromic",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-to-make-array-equalindromic/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given an integer array, find the minimum total cost to change all elements to the same palindromic number by paying the absolute difference for each change.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908511,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

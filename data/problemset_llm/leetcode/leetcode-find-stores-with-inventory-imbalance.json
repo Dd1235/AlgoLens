@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-stores-with-inventory-imbalance",
+  "title": "Find Stores with Inventory Imbalance",
+  "slug": "find-stores-with-inventory-imbalance",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-stores-with-inventory-imbalance/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [],
+  "statement": "Identify stores with at least three products where the quantity of the most expensive product is less than that of the cheapest product, and compute the imbalance ratio as the cheapest quantity divided by the most expensive quantity, ordering results by this ratio descending and store name ascending.",
+  "tags": [
+    "database",
+    "aggregation",
+    "sorting"
+  ],
+  "patterns": [
+    "group-by",
+    "filtering",
+    "aggregation",
+    "order-by"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784910182,
+    "pattern_confidence": {
+      "group-by": 0.95,
+      "filtering": 0.9,
+      "aggregation": 0.9,
+      "order-by": 0.85
+    }
+  }
+}

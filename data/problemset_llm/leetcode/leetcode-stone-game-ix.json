@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-stone-game-ix",
+  "title": "Stone Game IX",
+  "slug": "stone-game-ix",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/stone-game-ix/",
+  "source_topic": "LeetCode / Medium Hardest (generated)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "greedy",
+    "counting",
+    "game-theory"
+  ],
+  "statement": "Two players alternately remove stones from a row, and the player who causes the sum of removed stones to be divisible by 3 loses; determine if the first player can win assuming optimal play.",
+  "tags": [
+    "array",
+    "math",
+    "game-theory",
+    "greedy",
+    "counting"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "game-theory",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1784908680,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "game-theory": 0.9,
+      "greedy": 0.85
+    }
+  }
+}
