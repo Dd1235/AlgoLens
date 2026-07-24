@@ -1227,3 +1227,26 @@ html[data-theme="light"] footer::after { content: ""; }
 
 .auth-foot strong { color: var(--text); }
 .auth-foot a { color: var(--accent); }
+
+/* Search feedback prompt */
+.feedback-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.7rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--text-dim);
+}
+
+.feedback-reason {
+  flex: 1 1 auto;
+  max-width: 340px;
+  background: transparent;
+  border: 1px dashed var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  padding: 0.2rem 0.5rem;
+}

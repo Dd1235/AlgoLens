@@ -52,6 +52,25 @@ let currentUser = null;
 let currentFilter = "all";
 let activePattern = "";
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
+let currentSearchId = null; // ties outcome beacons to the search that produced them
+let currentRankerAnswered = "";
+
+// Outcome beacon: fire-and-forget, survives page navigation via sendBeacon.
+function track(type, props = {}) {
+  const body = JSON.stringify({ type, props });
+  try {
+    if (navigator.sendBeacon) {
+      navigator.sendBeacon("/api/track", new Blob([body], { type: "application/json" }));
+      return;
+    }
+  } catch (_e) {}
+  fetch("/api/track", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body,
+    keepalive: true,
+  }).catch(() => {});
+}
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -70,6 +89,7 @@ input.addEventListener("focus", () => setStatus("ready"));
 loadMoreEl.addEventListener("click", () => {
   if (!currentQuery) return;
   currentOffset += TOP_K;
+  track("load_more", { searchId: currentSearchId, offset: currentOffset, ranker: currentRankerAnswered });
   runSearch(currentQuery, { append: true });
 });
 
@@ -108,6 +128,7 @@ async function populateRankerSelect() {
 }
 
 rankerSelect.addEventListener("change", () => {
+  track("ranker_changed", { from: activeRanker || "bm25", to: rankerSelect.value });
   activeRanker = rankerSelect.value;
   currentOffset = 0;
   if (currentQuery) runSearch(currentQuery, { append: false });
@@ -235,6 +256,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
     currentOffset = 0;
     currentTotal = 0;
     hideLoadMore();
+    hideFeedback();
     if (currentUser) setLibPath("~");
     return;
   }
@@ -288,8 +310,13 @@ async function runSearch(rawQuery, { append = false } = {}) {
   if (issuedAt !== lastQueryAt) return;
 
   currentTotal = data.total || 0;
+  if (!append) {
+    currentSearchId = data.searchId || null;
+    currentRankerAnswered = data.ranker || "";
+  }
   renderSingle(data, q, append);
   updateLoadMore();
+  if (!append) offerFeedback(data);
 }
 
 function renderSingle(data, q, append) {
@@ -313,6 +340,9 @@ function renderSingle(data, q, append) {
 async function runLibrary(type, q) {
   const issuedAt = ++lastQueryAt;
   clearPatternFilter({ reissue: false }); // library views ignore the pattern filter
+  currentSearchId = null;
+  currentRankerAnswered = "";
+  hideFeedback();
   setLibPath(`~/${type}`);
   setStatus(`ls ~/${type}`);
   hideLoadMore();
@@ -361,6 +391,9 @@ async function runLibrary(type, q) {
 async function runSimilar(problem) {
   const issuedAt = ++lastQueryAt;
   clearPatternFilter({ reissue: false }); // similar view is vector-driven, not filtered
+  currentSearchId = null;
+  currentRankerAnswered = "";
+  hideFeedback();
   const shortTitle = problem.title.length > 24 ? problem.title.slice(0, 24) + "…" : problem.title;
   if (currentUser) setLibPath(`~/similar/${problem.id}`);
   setStatus(`similar to "${shortTitle}" · dense cosine`);
@@ -393,6 +426,61 @@ async function runSimilar(problem) {
   renderHitsList(resultsEl, data.hits, { append: false, startIndex: 0 });
 }
 
+// "Was this useful?" — the one-line prompt under results. One answer per
+// search; a "no" reveals an optional reason box. Reasons land in the events
+// log and surface on /stats.html as the improvement backlog.
+const feedbackRow = document.getElementById("feedback-row");
+const feedbackAsk = feedbackRow.querySelector(".feedback-ask");
+const fbYes = document.getElementById("fb-yes");
+const fbNo = document.getElementById("fb-no");
+const fbReason = document.getElementById("fb-reason");
+const fbSend = document.getElementById("fb-send");
+let feedbackSearchId = null;
+
+function hideFeedback() {
+  feedbackRow.classList.add("hidden");
+}
+
+function offerFeedback(data) {
+  if (!data.searchId || !(data.hits || []).length) return hideFeedback();
+  feedbackSearchId = data.searchId;
+  feedbackAsk.textContent = "// useful?";
+  fbYes.classList.remove("hidden");
+  fbNo.classList.remove("hidden");
+  fbReason.classList.add("hidden");
+  fbSend.classList.add("hidden");
+  fbReason.value = "";
+  feedbackRow.classList.remove("hidden");
+}
+
+function sendFeedback(useful, reason) {
+  track("search_feedback", {
+    searchId: feedbackSearchId,
+    useful,
+    reason: reason || undefined,
+    ranker: currentRankerAnswered || undefined,
+    q: (currentQuery || "").slice(0, 100),
+  });
+  feedbackAsk.textContent = "// thanks, logged.";
+  for (const el of [fbYes, fbNo, fbReason, fbSend]) el.classList.add("hidden");
+}
+
+fbYes.addEventListener("click", () => sendFeedback(true));
+fbNo.addEventListener("click", () => {
+  fbYes.classList.add("hidden");
+  fbNo.classList.add("hidden");
+  fbReason.classList.remove("hidden");
+  fbSend.classList.remove("hidden");
+  fbReason.focus();
+});
+fbSend.addEventListener("click", () => sendFeedback(false, fbReason.value.trim()));
+fbReason.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    sendFeedback(false, fbReason.value.trim());
+  }
+});
+
 const patternPill = document.getElementById("pattern-pill");
 patternPill.addEventListener("click", () => clearPatternFilter());
 
@@ -400,6 +488,7 @@ patternPill.addEventListener("click", () => clearPatternFilter());
 // server filters post-rank). The pill under the status line shows the active
 // filter; clicking it clears the filter.
 function applyPatternFilter(pattern) {
+  track("pattern_selected", { pattern });
   activePattern = pattern;
   updatePatternPill();
   // Filtering needs a query to rank against; fall back to the label's words.
@@ -466,6 +555,9 @@ function renderHelp() {
   }
   clearPatternFilter({ reissue: false });
   hideLoadMore();
+  hideFeedback();
+  currentSearchId = null;
+  currentRankerAnswered = "";
   if (currentUser) setLibPath("~/help");
   setStatus("man algolens");
   resultsEl.innerHTML = "";
@@ -496,6 +588,7 @@ function hideLoadMore() {
 
 async function runCompare(q) {
   const issuedAt = ++lastQueryAt;
+  hideFeedback();
   if (currentUser) setLibPath(`~/compare "${q.length > 24 ? q.slice(0, 24) + "…" : q}"`);
   setStatus(`comparing: "${q}"`);
   hideLoadMore();
@@ -653,7 +746,7 @@ function renderHitsList(container, hits, opts = {}) {
         .join(" ")}</p>
       <p><a href="#" class="similar-link">find similar problems &rarr;</a>${
         hit.problem.source_url
-          ? ` · <a href="${escapeHtml(hit.problem.source_url)}" target="_blank" rel="noopener">open original problem &rarr;</a>`
+          ? ` · <a href="${escapeHtml(hit.problem.source_url)}" class="external-link" target="_blank" rel="noopener">open original problem &rarr;</a>`
           : ""
       }</p>
     `;
@@ -670,8 +763,33 @@ function renderHitsList(container, hits, opts = {}) {
     });
 
     header.addEventListener("click", () => {
+      const opening = detail.classList.contains("hidden");
       detail.classList.toggle("hidden");
+      // The outcome signal: someone cared enough to open this result. Logged
+      // once per card; position + searchId make CTR-per-ranker computable.
+      if (opening && !li.dataset.opened) {
+        li.dataset.opened = "1";
+        track("result_open", {
+          kind: "expand",
+          problemId: hit.problem.id,
+          position: startIndex + i + 1,
+          searchId: currentSearchId || undefined,
+          ranker: currentRankerAnswered || undefined,
+        });
+      }
     });
+    const externalLink = detail.querySelector(".external-link");
+    if (externalLink) {
+      externalLink.addEventListener("click", () => {
+        track("result_open", {
+          kind: "external",
+          problemId: hit.problem.id,
+          position: startIndex + i + 1,
+          searchId: currentSearchId || undefined,
+          ranker: currentRankerAnswered || undefined,
+        });
+      });
+    }
 
     li.appendChild(header);
     if (!libraryMode) li.appendChild(bar);
