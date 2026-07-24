@@ -114,6 +114,76 @@ const htmlResponse = (html, status = 200) => ({
     assert.equal(bad.error, "parse_failed");
   }
 
+  // ── GitHub via GraphQL (token path): normalization, zero-skip ──
+  {
+    process.env.GITHUB_TOKEN = "test-token";
+    const fetchImpl = async (url, opts) => {
+      if (!url.includes("api.github.com")) throw new Error("expected graphql path");
+      if (!opts.headers.authorization.includes("test-token")) throw new Error("missing token");
+      return jsonResponse({
+        data: {
+          user: {
+            contributionsCollection: {
+              contributionCalendar: {
+                totalContributions: 42,
+                weeks: [
+                  { contributionDays: [
+                    { date: "2026-07-20", contributionCount: 5 },
+                    { date: "2026-07-21", contributionCount: 0 },
+                    { date: "2026-07-22", contributionCount: 7 },
+                  ] },
+                ],
+              },
+            },
+          },
+        },
+      });
+    };
+    const r = await fetchPlatformStats("github", "octocat", { fetchImpl });
+    assert.equal(r.contributions, 42);
+    assert.equal(Object.keys(r.calendar).length, 2); // zero-count day skipped
+    assert.equal(r.calendar[String(Date.parse("2026-07-22T00:00:00Z") / 1000)], 7);
+    assert.ok(!r.approximate);
+
+    const notFound = await fetchPlatformStats("github", "nobody", {
+      fetchImpl: async () => jsonResponse({ data: { user: null } }),
+    });
+    assert.equal(notFound.error, "not_found");
+    delete process.env.GITHUB_TOKEN;
+  }
+
+  // ── GitHub via scrape (no token): tool-tip counts ──
+  {
+    delete process.env.GITHUB_TOKEN;
+    const html = `
+      <td id="contribution-day-component-0-1" data-date="2026-07-20" data-level="2"></td>
+      <td id="contribution-day-component-0-2" data-date="2026-07-21" data-level="0"></td>
+      <tool-tip for="contribution-day-component-0-1">6 contributions on July 20th.</tool-tip>
+      <tool-tip for="contribution-day-component-0-2">No contributions on July 21st.</tool-tip>`;
+    const r = await fetchPlatformStats("github", "octocat", { fetchImpl: async (url) => {
+      if (!url.includes("github.com/users/")) throw new Error("expected scrape path");
+      return htmlResponse(html);
+    } });
+    assert.equal(r.contributions, 6);
+    assert.equal(r.calendar[String(Date.parse("2026-07-20T00:00:00Z") / 1000)], 6);
+    assert.ok(!r.approximate);
+  }
+
+  // ── GitHub scrape: counts unparseable → levels as pseudo-counts, approximate ──
+  {
+    delete process.env.GITHUB_TOKEN;
+    const html = `
+      <td id="c1" data-date="2026-07-20" data-level="3"></td>
+      <td id="c2" data-date="2026-07-21" data-level="0"></td>`;
+    const r = await fetchPlatformStats("github", "octocat", { fetchImpl: async () => htmlResponse(html) });
+    assert.equal(r.approximate, true);
+    assert.equal(r.calendar[String(Date.parse("2026-07-20T00:00:00Z") / 1000)], 3);
+    assert.equal(r.contributions, null);
+
+    const garbage = await fetchPlatformStats("github", "octocat", { fetchImpl: async () => htmlResponse("<html>nope</html>") });
+    assert.equal(garbage.error, "parse_failed");
+  }
+
   // ── Timeout → unavailable, never throws ──
   {
     const fetchImpl = (_url, { signal }) =>
