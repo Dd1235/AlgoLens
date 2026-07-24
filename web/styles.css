@@ -679,6 +679,67 @@ html[data-theme="light"] .pattern-chip {
 .platform-card .card-dim { color: var(--text-muted); }
 .platform-card .card-meta { color: var(--text-dim); font-size: 0.68rem; }
 
+/* Profile heatmap: 53-week column-major grid, GitHub-style */
+.heatmap-section { margin: 0.5rem 0 1.5rem; }
+
+.heatmap-total {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin: 0 0 0.4rem;
+}
+
+.heatmap-months {
+  display: grid;
+  grid-template-columns: repeat(53, 10px);
+  gap: 3px;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  margin-bottom: 3px;
+}
+
+.heatmap {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 10px);
+  grid-auto-columns: 10px;
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 0.3rem;
+}
+
+.hm {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.hm-l0 { background: var(--surface-strong, rgba(138, 164, 191, 0.08)); }
+.hm-l1 { background: color-mix(in srgb, var(--accent) 30%, transparent); }
+.hm-l2 { background: color-mix(in srgb, var(--accent) 55%, transparent); }
+.hm-l3 { background: color-mix(in srgb, var(--accent) 78%, transparent); }
+.hm-l4 { background: var(--accent); }
+
+.heatmap-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  margin: 0.4rem 0 0;
+}
+
+.heatmap-foot a { color: var(--accent-2); text-decoration: none; }
+
+.heatmap-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--text-dim);
+}
+
 /* :help man page */
 .help-block { cursor: default; }
 
