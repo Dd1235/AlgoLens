@@ -17,6 +17,7 @@ const { createAuthRouter } = require("./routes/auth");
 const { createUserStateRouter } = require("./routes/user_state");
 const { createProfileRouter } = require("./routes/profile");
 const { createStatsRouter } = require("./routes/stats");
+const { createTrackRouter } = require("./routes/track");
 const { attachUser } = require("./auth/middleware");
 
 const app = express();
@@ -87,6 +88,7 @@ async function main() {
   app.use("/api", createUserStateRouter({ problems }));
   app.use("/api", createProfileRouter());
   app.use("/api", createStatsRouter());
+  app.use("/api", createTrackRouter());
   app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault, problems }));
   app.use("/api", createDebugRouter({ problems, indexes, defaultRanker: activeDefault }));
 

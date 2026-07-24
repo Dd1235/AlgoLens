@@ -112,6 +112,19 @@
       <button id="load-more" class="load-more hidden" type="button">
         load more
       </button>
+      <div id="feedback-row" class="feedback-row hidden">
+        <span class="feedback-ask">// useful?</span>
+        <button id="fb-yes" type="button" class="lib-chip" title="this search found what I wanted">y</button>
+        <button id="fb-no" type="button" class="lib-chip" title="not what I was looking for">n</button>
+        <input
+          id="fb-reason"
+          class="feedback-reason hidden"
+          type="text"
+          maxlength="200"
+          placeholder="what were you looking for? (optional)"
+        />
+        <button id="fb-send" type="button" class="lib-chip hidden">send</button>
+      </div>
       <div id="compare-results" class="compare-grid hidden"></div>
     </main>
     <footer>

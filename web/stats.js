@@ -82,10 +82,32 @@ async function load() {
   }
   if (!data.daily.length) barsEl.textContent = "no activity yet";
 
+  // Outcomes: the searches → opens → saves funnel + feedback.
+  const o = data.outcomes || {};
+  const opens = o.opens || {};
+  const saves = o.saves || {};
+  const fb = o.feedback || {};
+  document.getElementById("funnel").textContent =
+    `${data.searches.week} searches → ${opens.total || 0} results opened` +
+    `${opens.external ? ` (${opens.external} to the judge)` : ""}` +
+    `${opens.avg_position ? ` · avg opened position ${opens.avg_position}` : ""}` +
+    ` → ${(saves.bookmarks || 0) + (saves.dones || 0)} saved (${saves.bookmarks || 0} ★, ${saves.dones || 0} ✓)`;
+  const fbTotal = (fb.useful || 0) + (fb.not_useful || 0);
+  document.getElementById("feedback-line").textContent = fbTotal
+    ? `feedback: ${fb.useful || 0}/${fbTotal} said useful`
+    : "feedback: none yet — the // useful? prompt sits under results";
+  const reasonsEl = document.getElementById("feedback-reasons");
+  reasonsEl.innerHTML = "";
+  for (const r of fb.recentReasons || []) {
+    const li = document.createElement("li");
+    li.textContent = `"${r.reason}" — after searching "${r.q || "?"}"`;
+    reasonsEl.appendChild(li);
+  }
+
   rankerBody.innerHTML = "";
   for (const r of data.byRanker) {
     const tr = document.createElement("tr");
-    for (const v of [r.ranker, r.searches, `${r.p50_ms}ms`, `${r.p95_ms}ms`]) {
+    for (const v of [r.ranker, r.searches, `${r.p50_ms}ms`, `${r.p95_ms}ms`, r.opens ?? 0, r.ctr ?? 0]) {
       const td = document.createElement("td");
       td.textContent = String(v);
       tr.appendChild(td);

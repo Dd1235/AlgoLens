@@ -1,4 +1,5 @@
 const express = require("express");
+const { logEvent } = require("../telemetry");
 const db = require("../db");
 const { requireUser } = require("../auth/middleware");
 
@@ -58,6 +59,7 @@ function createUserStateRouter({ problems } = {}) {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "done", true);
+      logEvent("done_set", { visitor: req.visitor, userId: req.user.id, props: { problemId: req.params.problemId, on: true } });
       res.json({ ok: true });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });
@@ -68,6 +70,7 @@ function createUserStateRouter({ problems } = {}) {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "done", false);
+      logEvent("done_set", { visitor: req.visitor, userId: req.user.id, props: { problemId: req.params.problemId, on: false } });
       res.json({ ok: true });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });
@@ -78,6 +81,7 @@ function createUserStateRouter({ problems } = {}) {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "bookmarked", true);
+      logEvent("bookmark_set", { visitor: req.visitor, userId: req.user.id, props: { problemId: req.params.problemId, on: true } });
       res.json({ ok: true });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });
@@ -88,6 +92,7 @@ function createUserStateRouter({ problems } = {}) {
     if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
     try {
       await setFlag(req.user.id, req.params.problemId, "bookmarked", false);
+      logEvent("bookmark_set", { visitor: req.visitor, userId: req.user.id, props: { problemId: req.params.problemId, on: false } });
       res.json({ ok: true });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });

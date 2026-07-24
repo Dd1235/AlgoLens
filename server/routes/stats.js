@@ -11,7 +11,7 @@ function createStatsRouter() {
 
   router.get("/stats", async (_req, res) => {
     try {
-      const [visitors, searches, byRanker, topQueries, zeroHit, signups, boots, daily] =
+      const [visitors, searches, byRanker, topQueries, zeroHit, signups, boots, daily, opens, opensByRanker, saves, feedback, feedbackReasons] =
         await Promise.all([
           db.query(`
             SELECT
@@ -60,18 +60,58 @@ function createStatsRouter() {
             FROM events
             WHERE ts > now() - interval '14 days' AND type IN ('visit', 'search')
             GROUP BY 1 ORDER BY 1`),
+          // ── outcomes: did searching actually help? ──
+          db.query(`
+            SELECT count(*)::int AS total,
+                   count(*) FILTER (WHERE props->>'kind' = 'external')::int AS external,
+                   round(avg((props->>'position')::float)::numeric, 1) AS avg_position
+            FROM events WHERE type = 'result_open' AND ts > now() - interval '7 days'`),
+          db.query(`
+            SELECT props->>'ranker' AS ranker, count(*)::int AS opens
+            FROM events
+            WHERE type = 'result_open' AND ts > now() - interval '7 days' AND props ? 'ranker'
+            GROUP BY 1`),
+          db.query(`
+            SELECT
+              count(*) FILTER (WHERE type = 'bookmark_set' AND props->>'on' = 'true')::int AS bookmarks,
+              count(*) FILTER (WHERE type = 'done_set' AND props->>'on' = 'true')::int     AS dones
+            FROM events
+            WHERE ts > now() - interval '7 days' AND type IN ('bookmark_set', 'done_set')`),
+          db.query(`
+            SELECT
+              count(*) FILTER (WHERE props->>'useful' = 'true')::int  AS useful,
+              count(*) FILTER (WHERE props->>'useful' = 'false')::int AS not_useful
+            FROM events WHERE type = 'search_feedback' AND ts > now() - interval '7 days'`),
+          db.query(`
+            SELECT props->>'q' AS q, props->>'reason' AS reason
+            FROM events
+            WHERE type = 'search_feedback' AND props->>'useful' = 'false'
+              AND length(coalesce(props->>'reason', '')) > 0
+            ORDER BY ts DESC LIMIT 5`),
         ]);
+
+      // Stitch opens into the per-ranker table as click-through rate.
+      const opensMap = new Map(opensByRanker.rows.map((r) => [r.ranker, r.opens]));
+      const rankerRows = byRanker.rows.map((r) => {
+        const rOpens = opensMap.get(r.ranker) || 0;
+        return { ...r, opens: rOpens, ctr: r.searches ? +(rOpens / r.searches).toFixed(2) : 0 };
+      });
 
       res.set("Cache-Control", "public, max-age=300");
       res.json({
         visitors: visitors.rows[0],
         searches: searches.rows[0],
-        byRanker: byRanker.rows,
+        byRanker: rankerRows,
         topQueries: topQueries.rows,
         zeroHitQueries: zeroHit.rows,
         signups: signups.rows[0],
         coldStarts: boots.rows[0],
         daily: daily.rows,
+        outcomes: {
+          opens: opens.rows[0],
+          saves: saves.rows[0],
+          feedback: { ...feedback.rows[0], recentReasons: feedbackReasons.rows },
+        },
       });
     } catch (_err) {
       res.status(500).json({ error: "db_error" });
