@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>algolens</title>
+    <title>cosine</title>
     <script src="/theme.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main>
       <header class="page-header">
         <h1>
-          algolens
+          <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><polyline points="24,24 50,50 24,76" fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"></polyline><rect x="60" y="32" width="17" height="36" fill="var(--accent)"></rect></svg>
+          cosine
           <span class="signature" title="dedeepya avancha">[da]</span>
         </h1>
         <nav class="header-actions" aria-label="Page actions">
@@ -73,7 +75,7 @@
       </form>
       <div id="lib-bar" class="lib-bar" hidden>
         <span class="lib-prompt"
-          ><span class="lib-host">algolens</span
+          ><span class="lib-host">cosine</span
           ><span class="lib-path" id="lib-path">~</span
           ><span class="lib-cursor">$</span></span
         >
@@ -128,7 +130,7 @@
       <div id="compare-results" class="compare-grid hidden"></div>
     </main>
     <footer>
-      algolens v0.3 · built by deepya · rankers: tf-idf + bm25 + dense (minilm)
+      cosine v0.4 · built by deepya · rankers: tf-idf + bm25 + dense (minilm)
       + hybrid (rrf) · corpus: 1808 problems (leetcode + cses)
     </footer>
     <script src="/app.js"></script>

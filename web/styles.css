@@ -142,11 +142,19 @@ h1 {
   gap: 0.55rem;
 }
 
-h1::before {
-  content: "$";
-  color: var(--accent);
-  font-weight: 700;
-  text-shadow: 0 0 12px var(--accent-soft);
+/* The 1A brand mark (chevron + block cursor) replaces the old "$" prefix.
+   currentColor chevron + --accent cursor so it theme-switches with the site. */
+.brand-mark {
+  width: 1.05em;
+  height: 1.05em;
+  align-self: center;
+  flex: 0 0 auto;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
 }
 
 .signature {

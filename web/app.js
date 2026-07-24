@@ -516,7 +516,7 @@ function updatePatternPill() {
   }
 }
 
-const HELP_TEXT = `ALGOLENS(1)                                        the manual
+const HELP_TEXT = `COSINE(1)                                          the manual
 
 SEARCH — three ways to find a problem
   knapsack coin change       keyword: exact terms, bm25 scores them
@@ -559,7 +559,7 @@ function renderHelp() {
   currentSearchId = null;
   currentRankerAnswered = "";
   if (currentUser) setLibPath("~/help");
-  setStatus("man algolens");
+  setStatus("man cosine");
   resultsEl.innerHTML = "";
   const li = document.createElement("li");
   li.className = "result help-block";
