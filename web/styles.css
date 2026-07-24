@@ -1250,3 +1250,10 @@ html[data-theme="light"] footer::after { content: ""; }
   font-size: 0.74rem;
   padding: 0.2rem 0.5rem;
 }
+
+.funnel {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--text);
+  margin: 0.25rem 0;
+}

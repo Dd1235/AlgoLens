@@ -36,9 +36,17 @@
       </section>
 
       <section class="stats-section">
-        <h2>live search latency · last 7 days</h2>
+        <h2>outcomes · last 7 days</h2>
+        <p class="card-dim">did searching help? searches → opened results → saved problems</p>
+        <p id="funnel" class="funnel"></p>
+        <p id="feedback-line" class="funnel"></p>
+        <ol id="feedback-reasons" class="query-list"></ol>
+      </section>
+
+      <section class="stats-section">
+        <h2>live search latency + click-through · last 7 days</h2>
         <table class="stats-table" id="ranker-table">
-          <thead><tr><th>ranker</th><th>searches</th><th>p50</th><th>p95</th></tr></thead>
+          <thead><tr><th>ranker</th><th>searches</th><th>p50</th><th>p95</th><th>opens</th><th>ctr</th></tr></thead>
           <tbody></tbody>
         </table>
       </section>
