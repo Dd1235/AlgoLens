@@ -169,6 +169,11 @@
     "booths-algorithm": "booth-algorithm",
     "minimal-rotation": "booth-algorithm",
     "duval-algorithm": "lyndon-factorization",
-    "duvals-algorithm": "lyndon-factorization"
+    "duvals-algorithm": "lyndon-factorization",
+    "aliens": "wqs-binary-search",
+    "sweepline": "line-sweep",
+    "sweep-line": "line-sweep",
+    "scanline": "line-sweep",
+    "cht": "convex-hull-trick"
   }
 }
