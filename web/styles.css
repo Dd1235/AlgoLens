@@ -401,6 +401,15 @@ html[data-theme="light"] .theme-toggle {
 }
 
 .compare-col .result::before { display: none; }
+/* Narrow columns: let titles wrap to full names instead of ellipsizing, and
+   let the meta badges drop to their own line when space runs out. */
+.compare-col .result-header { flex-wrap: wrap; row-gap: 0.15rem; }
+.compare-col .result-title {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  flex-basis: 100%;
+}
+.compare-col .result-meta { margin-left: 0; }
 .compare-col .result {
   padding: 0.6rem 0.7rem 0.7rem;
 }
@@ -681,6 +690,12 @@ html[data-theme="light"] .pattern-chip {
 
 /* Profile heatmap: 53-week column-major grid, GitHub-style */
 .heatmap-section { margin: 0.5rem 0 1.5rem; }
+
+.heatmap-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.6rem;
+}
 
 .heatmap-total {
   font-family: var(--mono);

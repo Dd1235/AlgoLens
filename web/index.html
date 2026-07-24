@@ -36,13 +36,26 @@
           <a href="/debug.html" class="debug-link">debug</a>
         </nav>
       </header>
-      <p class="tagline">search dsa problems by keyword. ranked with bm25.</p>
+      <p class="tagline">
+        search dsa problems by keyword, or describe the idea and search by
+        meaning — pick a ranker.
+      </p>
       <form id="search-form" autocomplete="off">
         <input
           id="search-input"
           type="search"
           placeholder="graph cycle / monotonic / knapsack"
         />
+        <span class="filter-wrap">
+          <select
+            id="ranker-select"
+            class="filter-select"
+            aria-label="ranking mode"
+            title="how results are ranked: keyword match, semantic meaning, or both fused"
+          >
+            <option value="bm25">bm25 · keyword</option>
+          </select>
+        </span>
         <span id="filter-wrap" class="filter-wrap" hidden>
           <select
             id="filter-select"
