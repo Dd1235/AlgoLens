@@ -5,8 +5,11 @@ Wanted real keyword search over DSA problems. Sites filter by tags or matches pr
 Who it's for:
 
 - **Upsolving after a contest** — open the problem that beat you, hit "find similar", get its neighbors by stored-vector cosine.
-- **Searching by the idea, not the words** — "check if brackets open and close in the right order" finds `valid-parentheses` even though the corpus says "parentheses" (that's the dense ranker; the paraphrase slice in [experiments/05](experiments/05-dense-hybrid-rrf.md) is the receipt).
-- **Drilling a niche technique** — the [patterns page](web/patterns.html) lists the curated taxonomy (wqs-binary-search, slope-trick, booth-algorithm, …) with per-label counts; one click filters search to it. Fresh contest problems come in via `npm run corpus:refresh`.
+- **Searching by the idea, not the words** — "check if brackets open and close in the right order" finds `valid-parentheses` even though the corpus says "parentheses" (that's the dense ranker; the paraphrase slice in [experiments/05](experiments/05-dense-hybrid-rrf.md) is the receipt). Community names work too: "aliens trick" auto-expands to `wqs-binary-search` ([experiments/07](experiments/07-medium-hardest-growth.md) measures it — BM25 goes from a total miss to top-5).
+- **Drilling a niche technique** — the [patterns page](web/patterns.html) lists the curated taxonomy (wqs-binary-search, slope-trick, booth-algorithm, …) with per-label counts; one click filters search to it. Fresh contest problems come in via `npm run corpus:refresh`, and the corpus is deliberately hard: no Easies, Mediums picked by lowest acceptance rate.
+- **One combined picture of your grind** — save your LeetCode/Codeforces/CodeChef handles on the [profile page](web/profile.html): per-platform solved/rating cards plus one heatmap merging LC + CF submissions with problems you mark done here.
+
+Type `:help` in the search box for the manual.
 
 Live demo: _coming — deploy runbook in docs/internals.md_
 
