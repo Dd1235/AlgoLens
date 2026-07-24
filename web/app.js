@@ -515,6 +515,7 @@ async function runCompare(q) {
 }
 
 function renderCompare(data, q) {
+  hideLoadMore(); // compare has no pagination; clear any leftover button
   const results = data.results || [];
   if (results.length === 0) { setStatus("no rankers configured"); compareEl.innerHTML = ""; return; }
   const rankMaps = results.map((r) => {
