@@ -2,17 +2,16 @@
 
 Search 1,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
-Note: The Screenshots are not upto date, please explore the live website!
-
 **Live demo: [algolens-pp2m.onrender.com](https://algolens-pp2m.onrender.com/)** · [live stats](https://algolens-pp2m.onrender.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
+
+![Cosine walkthrough in dark mode](demo/deliverables/walkthrough-dark.gif#gh-dark-mode-only)
+![Cosine walkthrough in light mode](demo/deliverables/walkthrough-light.gif#gh-light-mode-only)
 
 ## Why this exists
 
 Google "cses euler path" and you get the CSES homepage, a blog post, and Wikipedia — not the actual Euler-path problems. "knapsack leetcode" is no better at surfacing the good knapsack DPs. Site tags help but stop at their site's border and at coarse labels: LeetCode has `dynamic-programming`, but nothing for `digit-dp`, `wqs-binary-search`, or `slope-trick`. And nothing anywhere answers _"I remember the story — a thief robbing houses — what was that problem?"_
 
 Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all three.
-
-![search](demo/01-search.png)
 
 ## Finding problems
 
@@ -28,17 +27,13 @@ Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all 
 - **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
 - **Bookmarks and done-marks** on every result, with a shell-style library (`:bookmarks`, `:done`, Tab cycles views). Done-marks feed the heatmap too.
 
-![library](demo/02-library-done.png)
-
 ## Small things that make it nice to use
 
 - **It's a terminal.** Monospace everything, a prompt-style path that follows you (`~/search "graph cycle"`, `~/done`, `~/profile`), a typewriter status line, light/dark themes. Type `:help` and a man page types itself out.
 - **Fast on purpose.** Keyword search answers in ~0.1 ms and semantic in ~2 ms; profile revisits paint instantly from a local snapshot and refresh in the background; every view is a shareable deep link (`/?pattern=wqs-binary-search&ranker=dense`).
 - **It shows its work.** Latency and ranker on every result set, query expansions made visible, a debug page exposing per-term scoring math, and a public stats page with real usage and live latency percentiles — including cold-start counts, because the free-tier instance sleeps and honesty beats mystery.
 
-![explain](demo/03-debug-explain.png)
-
-## Measured, not vibed
+## Measured
 
 Every ranking decision traces to a 55-query labeled benchmark (P@k, MRR, nDCG@10, Recall@100) with keyword / paraphrase / technique slices — it's why BM25 stays the default and the fancier rankers are opt-in. The numbers and their write-ups live in [experiments/](experiments/).
 
