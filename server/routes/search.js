@@ -2,6 +2,7 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const db = require("../db");
+const { expandQuery } = require("../search/query_expand");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
 // Pattern labels are slugs (see data/pattern_taxonomy.json); anything else is ignored.
@@ -88,6 +89,10 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const filter = VALID_FILTERS.has(filterRaw) ? filterRaw : "all";
     const patternRaw = (req.query.pattern || "").toString().toLowerCase();
     const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
+    // Alias expansion ("aliens trick" → +wqs binary search) happens here at
+    // the route, once, so every ranker — lexical, dense, gRPC — sees the
+    // searchable form. The response echoes expandedQuery when it differs.
+    const exp = expandQuery(q);
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
 
@@ -99,14 +104,14 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
 
       let hits, total, latencyMs;
       if (effectiveFilter === "all" && !pattern) {
-        ({ hits, total, latencyMs } = await timedSearch(index, q, k, offset));
+        ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset));
       } else {
         // Need the full ranked list so filters + slice produce a stable
         // total and disjoint pages. The ranker materializes everything before
         // slicing internally, so this costs no extra scoring work. The pattern
         // filter composes with done/notdone in the same pass and works for
         // anonymous users too.
-        const full = await timedSearch(index, q, FULL_PAGE_SIZE, 0);
+        const full = await timedSearch(index, exp.query, FULL_PAGE_SIZE, 0);
         latencyMs = full.latencyMs;
         const filtered = full.hits.filter((h) => {
           if (pattern && !(h.problem.patterns || []).includes(pattern)) return false;
@@ -127,7 +132,18 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         }));
       }
 
-      res.json({ query: q, ranker, latencyMs, offset, k, total, filter: effectiveFilter, pattern: pattern || undefined, hits });
+      res.json({
+        query: q,
+        expandedQuery: exp.expanded ? exp.query : undefined,
+        ranker,
+        latencyMs,
+        offset,
+        k,
+        total,
+        filter: effectiveFilter,
+        pattern: pattern || undefined,
+        hits,
+      });
     } catch (err) {
       res.status(502).json({ query: q, ranker, error: err.message || "search failed" });
     }
@@ -169,6 +185,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
   // done/pattern filters on purpose — it's a ranker-quality lens, not a browse view.
   router.get("/compare", async (req, res) => {
     const q = (req.query.q || "").toString();
+    const exp = expandQuery(q);
     const k = Number.parseInt(req.query.k, 10) || 10;
     const requested = (req.query.rankers || "")
       .toString()
@@ -180,14 +197,14 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const settled = await Promise.all(
       names.map(async (name) => {
         try {
-          const { hits, latencyMs } = await timedSearch(indexes[name], q, k);
+          const { hits, latencyMs } = await timedSearch(indexes[name], exp.query, k);
           return { ranker: name, latencyMs, hits };
         } catch (err) {
           return { ranker: name, latencyMs: null, error: err.message || "failed", hits: [] };
         }
       })
     );
-    res.json({ query: q, k, results: settled });
+    res.json({ query: q, expandedQuery: exp.expanded ? exp.query : undefined, k, results: settled });
   });
 
   return router;
