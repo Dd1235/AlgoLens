@@ -11,6 +11,7 @@ const refreshLink = document.getElementById("refresh-link");
 const PLATFORMS = ["leetcode", "codeforces", "codechef", "github"];
 const inputs = Object.fromEntries(PLATFORMS.map((p) => [p, document.getElementById(`handle-${p}`)]));
 const tabsEl = document.getElementById("heatmap-tabs");
+const TAB_ORDER = ["overall", "dsa", "dev"];
 
 let lastData = null;
 let activeTab = "overall";
@@ -183,7 +184,10 @@ function viewLabel(tab, total, data) {
 function renderActiveTab() {
   if (!lastData) return;
   for (const btn of tabsEl.querySelectorAll("[data-tab]")) {
-    btn.classList.toggle("is-active", btn.dataset.tab === activeTab);
+    const isActive = btn.dataset.tab === activeTab;
+    btn.classList.toggle("is-active", isActive);
+    btn.setAttribute("aria-selected", String(isActive));
+    btn.tabIndex = isActive ? 0 : -1;
   }
   const { merged } = composeView(activeTab, lastData);
   renderHeatmap(merged);
@@ -194,11 +198,46 @@ function renderActiveTab() {
   );
 }
 
+function selectTab(tab, { focus = false } = {}) {
+  if (!TAB_ORDER.includes(tab)) return;
+  activeTab = tab;
+  renderActiveTab();
+  if (focus) tabsEl.querySelector(`[data-tab="${tab}"]`)?.focus();
+}
+
 tabsEl.addEventListener("click", (e) => {
   const btn = e.target.closest("[data-tab]");
   if (!btn) return;
-  activeTab = btn.dataset.tab;
-  renderActiveTab();
+  selectTab(btn.dataset.tab);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (
+    (e.key !== "ArrowLeft" && e.key !== "ArrowRight") ||
+    e.defaultPrevented ||
+    e.altKey ||
+    e.ctrlKey ||
+    e.metaKey ||
+    e.shiftKey ||
+    !lastData ||
+    heatmapSection.classList.contains("hidden")
+  ) {
+    return;
+  }
+
+  const target = e.target;
+  if (
+    target instanceof HTMLElement &&
+    (target.matches("input, textarea, select") || target.isContentEditable)
+  ) {
+    return;
+  }
+
+  e.preventDefault();
+  const currentIndex = TAB_ORDER.indexOf(activeTab);
+  const direction = e.key === "ArrowRight" ? 1 : -1;
+  const nextIndex = (currentIndex + direction + TAB_ORDER.length) % TAB_ORDER.length;
+  selectTab(TAB_ORDER[nextIndex], { focus: tabsEl.contains(document.activeElement) });
 });
 
 // GitHub-style 53-week grid, column-major (grid-auto-flow: column with 7 rows

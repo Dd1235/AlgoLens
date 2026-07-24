@@ -53,10 +53,10 @@
       <div id="platform-cards" class="platform-cards"></div>
 
       <section id="heatmap-section" class="heatmap-section hidden">
-        <div id="heatmap-tabs" class="heatmap-tabs">
-          <button type="button" class="lib-chip is-active" data-tab="overall" title="everything: dsa + dev">overall</button>
-          <button type="button" class="lib-chip" data-tab="dsa" title="leetcode + codeforces + algolens done marks">dsa</button>
-          <button type="button" class="lib-chip" data-tab="dev" title="github contributions">dev</button>
+        <div id="heatmap-tabs" class="heatmap-tabs" role="tablist" aria-label="Activity view; use left and right arrow keys to switch">
+          <button type="button" class="lib-chip is-active" role="tab" aria-selected="true" tabindex="0" data-tab="overall" title="everything: dsa + dev">overall</button>
+          <button type="button" class="lib-chip" role="tab" aria-selected="false" tabindex="-1" data-tab="dsa" title="leetcode + codeforces + algolens done marks">dsa</button>
+          <button type="button" class="lib-chip" role="tab" aria-selected="false" tabindex="-1" data-tab="dev" title="github contributions">dev</button>
         </div>
         <p id="heatmap-total" class="heatmap-total"></p>
         <div id="heatmap-months" class="heatmap-months"></div>
