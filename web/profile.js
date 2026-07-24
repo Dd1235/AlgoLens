@@ -14,6 +14,35 @@ const tabsEl = document.getElementById("heatmap-tabs");
 
 let lastData = null;
 let activeTab = "overall";
+let currentUserId = null;
+
+// Stale-while-revalidate: the last good profile response is kept in
+// localStorage (keyed by user id, so accounts never see each other's data)
+// and painted instantly on the next visit while a fresh fetch runs behind it.
+const CACHE_KEY = "algolens_profile_v1";
+
+function readCache() {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return parsed && parsed.userId === currentUserId ? parsed.data : null;
+  } catch (_e) {
+    return null;
+  }
+}
+
+function saveCache(data) {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify({ userId: currentUserId, data }));
+  } catch (_e) {}
+}
+
+function clearCache() {
+  try {
+    localStorage.removeItem(CACHE_KEY);
+  } catch (_e) {}
+}
 
 function setStatus(text) {
   statusEl.innerHTML = "";
@@ -212,31 +241,33 @@ function renderHeatmap(heatmap) {
   heatmapSection.classList.remove("hidden");
 }
 
-async function load(refresh) {
-  setStatus(refresh ? "refreshing stats" : "loading profile");
-  let res, data;
-  try {
-    res = await fetch(`/api/profile${refresh ? "?refresh=1" : ""}`);
-    data = await res.json();
-  } catch (_e) {
-    setStatus("error: profile failed to load");
-    return;
-  }
-  if (!res.ok) {
-    setStatus("error: profile failed to load");
-    return;
-  }
-
+function applyData(data, { fromCache = false } = {}) {
   for (const p of PLATFORMS) inputs[p].value = data.handles[p] || "";
   lastData = data;
   renderCards(data);
   renderActiveTab();
   const savedCount = Object.keys(data.handles).length;
-  setStatus(
-    savedCount
-      ? `~/profile · ${data.combined.totalSolved} solved across judges · ${data.combined.algolensDone} done here`
-      : "~/profile · add your handles to pull combined stats"
-  );
+  const base = savedCount
+    ? `~/profile · ${data.combined.totalSolved} solved across judges · ${data.combined.algolensDone} done here`
+    : "~/profile · add your handles to pull combined stats";
+  setStatus(fromCache ? `${base} · cached, refreshing…` : base);
+  if (!fromCache) saveCache(data);
+}
+
+async function fetchProfileJson(refresh) {
+  const res = await fetch(`/api/profile${refresh ? "?refresh=1" : ""}`);
+  if (!res.ok) throw new Error("profile failed");
+  return res.json();
+}
+
+async function load(refresh) {
+  if (!lastData) setStatus(refresh ? "refreshing stats" : "loading profile");
+  try {
+    applyData(await fetchProfileJson(refresh));
+  } catch (_e) {
+    // Keep whatever is on screen (possibly the cached paint); just say so.
+    setStatus(lastData ? "refresh failed — showing last known stats" : "error: profile failed to load");
+  }
 }
 
 form.addEventListener("submit", async (e) => {
@@ -270,16 +301,28 @@ refreshLink.addEventListener("click", (e) => {
 
 // Gate: profile is meaningless anonymous — redirect to login (new convention
 // for authed pages; index.html itself still degrades gracefully instead).
+// The profile fetch starts in PARALLEL with the gate (it 401s harmlessly for
+// anon), and the cached paint lands as soon as the gate confirms identity.
 (async () => {
+  const early = fetchProfileJson(false).catch(() => null);
   try {
     const res = await fetch("/api/auth/me");
     if (!res.ok) {
+      clearCache();
       window.location.href = "/login.html";
       return;
     }
+    currentUserId = ((await res.json()).user || {}).id || null;
   } catch (_e) {
     window.location.href = "/login.html";
     return;
   }
-  load(false);
+
+  const cached = readCache();
+  if (cached) applyData(cached, { fromCache: true });
+  else setStatus("loading profile");
+
+  const fresh = await early;
+  if (fresh) applyData(fresh);
+  else load(false); // the parallel fetch raced a hiccup — one retry
 })();

@@ -90,11 +90,19 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
     const wantRefresh = req.query.refresh === "1";
     const maxAgeMs = wantRefresh ? REFRESH_FLOOR_MS : TTL_MS;
     try {
-      const handles = await loadHandles(req.user.id);
-      const cached = await db.query(
-        `SELECT platform, payload, fetched_at FROM user_platform_stats WHERE user_id = $1`,
-        [req.user.id]
-      );
+      // The three reads are independent — one Neon round-trip instead of a
+      // sequential waterfall (matters: Render↔Neon is a cross-region hop).
+      const [handles, cached, doneRows] = await Promise.all([
+        loadHandles(req.user.id),
+        db.query(
+          `SELECT platform, payload, fetched_at FROM user_platform_stats WHERE user_id = $1`,
+          [req.user.id]
+        ),
+        db.query(
+          `SELECT done_at FROM user_problem_state WHERE user_id = $1 AND done AND done_at IS NOT NULL`,
+          [req.user.id]
+        ),
+      ]);
       const cacheByPlatform = new Map(cached.rows.map((r) => [r.platform, r]));
 
       const platforms = {};
@@ -128,10 +136,6 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
       // AlgoLens done-marks calendar — no server-side pre-merge, so tab
       // switches cost zero network and the payload carries each day once.
       const cutoff = Math.floor(Date.now() / 1000 / DAY_SECONDS - HEATMAP_WINDOW_DAYS) * DAY_SECONDS;
-      const doneRows = await db.query(
-        `SELECT done_at FROM user_problem_state WHERE user_id = $1 AND done AND done_at IS NOT NULL`,
-        [req.user.id]
-      );
       const algolensCalendar = {};
       for (const row of doneRows.rows) {
         const daySec = Math.floor(new Date(row.done_at).getTime() / 1000 / DAY_SECONDS) * DAY_SECONDS;
@@ -144,6 +148,9 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
         (sum, s) => sum + (typeof s.solved === "number" ? s.solved : 0),
         0
       );
+      // Browser may reuse this for a minute (per user; ?refresh=1 is a
+      // different URL and always revalidates). Stats are 12h-cached anyway.
+      if (!wantRefresh) res.set("Cache-Control", "private, max-age=60");
       res.json({
         handles,
         platforms,
