@@ -47,6 +47,7 @@
             id="filter-select"
             class="filter-select"
             aria-label="filter results by done state"
+            title="filter results by your done state"
           >
             <option value="all">all</option>
             <option value="notdone">not done</option>
@@ -62,22 +63,22 @@
           ><span class="lib-cursor">$</span></span
         >
         <span class="lib-chips">
-          <button type="button" class="lib-chip" data-cmd=":bookmarks">
+          <button type="button" class="lib-chip" data-cmd=":bookmarks" title="list your starred problems (:b)">
             ★ <span id="lib-count-bookmarks">0</span> bookmarks
           </button>
-          <button type="button" class="lib-chip" data-cmd=":done">
+          <button type="button" class="lib-chip" data-cmd=":done" title="list problems you marked done (:d)">
             ✓ <span id="lib-count-done">0</span> done
           </button>
-          <button type="button" class="lib-chip" data-cmd=":all">
+          <button type="button" class="lib-chip" data-cmd=":all" title="list everything saved (:all)">
             : ls all
           </button>
-          <button type="button" class="lib-chip lib-chip-back" data-cmd="">
+          <button type="button" class="lib-chip lib-chip-back" data-cmd="" title="back to search">
             ↺ search
           </button>
         </span>
       </div>
       <div class="mode-row">
-        <label class="mode-toggle">
+        <label class="mode-toggle" title="run the same query on bm25 and dense side by side">
           <input id="compare-toggle" type="checkbox" />
           <span>compare rankers (bm25 / dense)</span>
         </label>

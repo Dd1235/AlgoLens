@@ -496,7 +496,7 @@ function renderCompare(data, q) {
     col.className = "compare-col";
     const head = document.createElement("div");
     head.className = "compare-col-head";
-    head.innerHTML = `<span class="ranker-name">${escapeHtml(r.ranker)}</span><span class="ranker-latency">${r.latencyMs.toFixed(3)}ms</span>`;
+    head.innerHTML = `<span class="ranker-name">${escapeHtml(r.ranker)}</span><span class="ranker-latency" title="scoring latency for this query">${r.latencyMs.toFixed(3)}ms</span>`;
     col.appendChild(head);
     const list = document.createElement("ul");
     list.className = "compare-list";
@@ -610,7 +610,7 @@ function renderHitsList(container, hits, opts = {}) {
       <p>${escapeHtml(hit.problem.statement || "")}</p>
       <p class="tags"><strong>tags:</strong> ${(hit.problem.tags || []).map(escapeHtml).join(", ")}</p>
       <p class="patterns"><strong>patterns:</strong> ${(hit.problem.patterns || [])
-        .map((p) => `<button type="button" class="pattern-chip" data-pattern="${escapeHtml(p)}">${escapeHtml(p)}</button>`)
+        .map((p) => `<button type="button" class="pattern-chip" data-pattern="${escapeHtml(p)}" title="filter results by this label">${escapeHtml(p)}</button>`)
         .join(" ")}</p>
       <p><a href="#" class="similar-link">find similar problems &rarr;</a>${
         hit.problem.source_url
