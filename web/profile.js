@@ -129,7 +129,7 @@ function renderCards(data) {
   const algolens = document.createElement("section");
   algolens.className = "platform-card";
   const name = document.createElement("h2");
-  name.textContent = "algolens";
+  name.textContent = "cosine";
   algolens.appendChild(name);
   const big = document.createElement("p");
   big.className = "card-big";
