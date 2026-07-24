@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
+const { logEvent } = require("../telemetry");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
 // Pattern labels are slugs (see data/pattern_taxonomy.json); anything else is ignored.
@@ -132,6 +133,20 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         }));
       }
 
+      if (q && offset === 0) {
+        logEvent("search", {
+          visitor: req.visitor,
+          userId: req.user?.id,
+          props: {
+            q: q.slice(0, 100),
+            ranker,
+            latencyMs,
+            total,
+            ...(pattern ? { pattern } : {}),
+            ...(exp.expanded ? { expanded: true } : {}),
+          },
+        });
+      }
       res.json({
         query: q,
         expandedQuery: exp.expanded ? exp.query : undefined,
@@ -174,6 +189,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
           bookmarked: userState.bookmarked.has(h.problem.id),
         }));
       }
+      logEvent("similar", { visitor: req.visitor, userId: req.user?.id, props: { problemId: req.params.problemId, latencyMs } });
       res.json({ problemId: req.params.problemId, source: result.source, ranker: "dense", latencyMs, k, total: result.total, hits });
     } catch (err) {
       res.status(502).json({ error: err.message || "similar failed" });
@@ -204,6 +220,9 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         }
       })
     );
+    if (q) {
+      logEvent("compare", { visitor: req.visitor, userId: req.user?.id, props: { q: q.slice(0, 100), rankers: names } });
+    }
     res.json({ query: q, expandedQuery: exp.expanded ? exp.query : undefined, k, results: settled });
   });
 

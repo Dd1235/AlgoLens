@@ -1,7 +1,10 @@
 require("dotenv").config({ quiet: true });
+const BOOT_START = Date.now();
 const express = require("express");
 const cookieParser = require("cookie-parser");
+const crypto = require("crypto");
 const path = require("path");
+const { logEvent } = require("./telemetry");
 const { loadProblems } = require("./data");
 const { TfIdfIndex } = require("./search/tfidf");
 const { Bm25Index } = require("./search/bm25");
@@ -61,6 +64,23 @@ async function main() {
   app.use(express.json({ limit: "32kb" }));
   app.use(cookieParser());
   app.use(attachUser);
+  // Anonymous visitor id (random cookie, no IP/UA stored) + page-view events.
+  app.use((req, res, next) => {
+    let visitor = req.cookies.algolens_visitor;
+    if (!visitor) {
+      visitor = crypto.randomUUID();
+      res.cookie("algolens_visitor", visitor, {
+        httpOnly: true,
+        sameSite: "lax",
+        maxAge: 365 * 24 * 60 * 60 * 1000,
+      });
+    }
+    req.visitor = visitor;
+    if (req.method === "GET" && (req.path === "/" || req.path.endsWith(".html"))) {
+      logEvent("visit", { visitor, userId: req.user?.id, props: { path: req.path } });
+    }
+    next();
+  });
   app.use(express.static(webDir));
   app.use("/api", createAuthRouter());
   app.use("/api", createUserStateRouter({ problems }));
@@ -70,6 +90,11 @@ async function main() {
 
   app.listen(PORT, () => {
     console.log(`AlgoLens listening on http://localhost:${PORT}`);
+    // On the free tier every idle spin-down means a fresh boot — counting
+    // these on the stats page explains cold-start latency honestly.
+    logEvent("boot", {
+      props: { bootMs: Date.now() - BOOT_START, rankers: Object.keys(indexes), problems: problems.length },
+    });
   });
 }
 
