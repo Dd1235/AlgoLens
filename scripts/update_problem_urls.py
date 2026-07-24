@@ -192,15 +192,17 @@ def fetch_leetcode_recent_urls(count: int) -> list[str]:
             total = int(probe.get("totalLength") or 0)
             if total <= 0:
                 continue
-            # Over-fetch a little so paid-only entries can be dropped and the
+            # Over-fetch so paid-only and Easy entries can be dropped and the
             # window still fills.
-            window = count + 20
+            window = count + 40
             page = _leetcode_page(fields, max(0, total - window), window)
             questions = page.get("questions") or []
             if not questions:
                 continue
             if "paidOnly" in fields:
                 questions = [q for q in questions if not q.get("paidOnly")]
+            # Hard-focus corpus: Easy problems are never ingested.
+            questions = [q for q in questions if q.get("difficulty") != "EASY"]
             with_ids = [(q, _frontend_id(q)) for q in questions]
             if all(fid is not None for _, fid in with_ids):
                 with_ids.sort(key=lambda pair: pair[1], reverse=True)
@@ -246,6 +248,7 @@ def make_recent_block(urls: list[str], already_present: set[str]) -> tuple[str, 
         f"# BEGIN GENERATED: {LC_RECENT_BLOCK}",
         "# LeetCode / Recent (generated)",
         "# Newest problems by frontend id - proxy for recent contest problems",
+        "# Easy problems dropped at fetch (hard-focus corpus)",
         f"# Total recent URLs discovered: {len(urls)}",
         f"# URLs already present elsewhere: {len(urls) - len(added)}",
     ]
