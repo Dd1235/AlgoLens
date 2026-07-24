@@ -5,6 +5,7 @@ const statusEl = document.getElementById("status");
 const loadMoreEl = document.getElementById("load-more");
 const filterSelect = document.getElementById("filter-select");
 const filterWrap = document.getElementById("filter-wrap");
+const rankerSelect = document.getElementById("ranker-select");
 const authWidget = document.getElementById("auth-widget");
 const authEmailEl = document.getElementById("auth-email");
 const logoutBtn = document.getElementById("logout-btn");
@@ -50,6 +51,7 @@ let currentTopScore = 0;
 let currentUser = null;
 let currentFilter = "all";
 let activePattern = "";
+let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -73,6 +75,41 @@ loadMoreEl.addEventListener("click", () => {
 
 filterSelect.addEventListener("change", () => {
   currentFilter = filterSelect.value;
+  if (currentQuery) runSearch(currentQuery, { append: false });
+});
+
+// Ranker picker: keyword (bm25), semantic (dense), or fused (hybrid).
+// Options come from /api/rankers so only registered rankers show up.
+const RANKER_LABELS = {
+  tfidf: "tfidf · classic",
+  bm25: "bm25 · keyword",
+  dense: "dense · semantic",
+  hybrid: "hybrid · both",
+  "bm25-grpc": "bm25-grpc · go",
+};
+
+async function populateRankerSelect() {
+  let data;
+  try {
+    const res = await fetch("/api/rankers");
+    data = await res.json();
+  } catch (_e) {
+    return; // keep the static bm25 option
+  }
+  rankerSelect.innerHTML = "";
+  for (const name of data.available || []) {
+    const opt = document.createElement("option");
+    opt.value = name;
+    opt.textContent = RANKER_LABELS[name] || name;
+    rankerSelect.appendChild(opt);
+  }
+  rankerSelect.value = activeRanker || data.default || "bm25";
+  if (!rankerSelect.value) rankerSelect.value = data.default || "bm25";
+}
+
+rankerSelect.addEventListener("change", () => {
+  activeRanker = rankerSelect.value;
+  currentOffset = 0;
   if (currentQuery) runSearch(currentQuery, { append: false });
 });
 
@@ -235,7 +272,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
   setStatus(`searching: "${q}"`);
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
-  const rankerParam = urlRanker ? `&ranker=${encodeURIComponent(urlRanker)}` : "";
+  const rankerParam = activeRanker ? `&ranker=${encodeURIComponent(activeRanker)}` : "";
   const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}`;
 
   let data;
@@ -749,6 +786,8 @@ function escapeHtml(s) {
 // Read-only — state is not written back to the URL while browsing.
 const bootParams = new URLSearchParams(location.search);
 const urlRanker = (bootParams.get("ranker") || "").trim().toLowerCase();
+if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
+populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
 if (bootQ) input.value = bootQ;
