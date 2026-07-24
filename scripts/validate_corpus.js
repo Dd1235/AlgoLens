@@ -28,6 +28,16 @@ const QUERIES_PATH = path.join(ROOT, "bench", "queries.json");
 
 const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const DIFFICULTIES = new Set(["Easy", "Medium", "Hard"]);
+// Hard-focus corpus: LeetCode Easies are not ingested. These four are the
+// deliberate exceptions — they ground 6 bench queries (two-sum, climbing
+// stairs, valid parentheses = the exp-05 paraphrase demo, binary search) and
+// the experiment write-ups depend on them staying in the corpus.
+const ANCHOR_EASIES = new Set([
+  "leetcode-two-sum",
+  "leetcode-climbing-stairs",
+  "leetcode-valid-parentheses",
+  "leetcode-binary-search",
+]);
 const SLICES = new Set(["keyword", "paraphrase", "technique"]);
 const MAX_LABELS = 12;
 const MAX_STATEMENT_CHARS = 600;
@@ -86,6 +96,9 @@ function checkProblem({ rel, platform, basename, problem }, taxonomy, driftCount
   }
   if (platform === "leetcode" && !DIFFICULTIES.has(problem.difficulty)) {
     err(`${rel}: leetcode difficulty "${problem.difficulty}" not in Easy/Medium/Hard`);
+  }
+  if (platform === "leetcode" && problem.difficulty === "Easy" && !ANCHOR_EASIES.has(problem.id)) {
+    warn(`${rel}: non-anchor Easy in a hard-focus corpus (anchors: ${[...ANCHOR_EASIES].join(", ")})`);
   }
   if (typeof problem.slug === "string" && !SLUG_RE.test(problem.slug)) {
     err(`${rel}: slug "${problem.slug}" is not slug-shaped`);
