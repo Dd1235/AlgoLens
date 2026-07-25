@@ -3,8 +3,9 @@ const db = require("../db");
 
 // Public aggregate stats over the events log — the numbers behind
 // /stats.html. Aggregate-only by design: raw events stay in the database.
-// All queries run in one parallel batch; the response is cacheable for a
-// few minutes (this is a dashboard, not a control loop).
+// All queries run in one parallel batch. The cache window is short on
+// purpose: HTTP caches are per-origin, so a long max-age made the same
+// numbers look different on onebysec.com vs the .onrender.com host.
 
 function createStatsRouter() {
   const router = express.Router();
@@ -97,8 +98,9 @@ function createStatsRouter() {
         return { ...r, opens: rOpens, ctr: r.searches ? +(rOpens / r.searches).toFixed(2) : 0 };
       });
 
-      res.set("Cache-Control", "public, max-age=300");
+      res.set("Cache-Control", "public, max-age=30");
       res.json({
+        generatedAt: new Date().toISOString(),
         visitors: visitors.rows[0],
         searches: searches.rows[0],
         byRanker: rankerRows,
