@@ -13,7 +13,8 @@
   ],
   "patterns": [
     "binomial-coefficients",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "stars-and-bars"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +22,8 @@
     "generated_at_unix": 1777951680,
     "pattern_confidence": {
       "binomial-coefficients": 0.98,
-      "modular-arithmetic": 0.95
+      "modular-arithmetic": 0.95,
+      "stars-and-bars": 1
     }
   }
 }

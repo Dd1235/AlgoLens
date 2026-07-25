@@ -26,7 +26,8 @@
     "dynamic-programming",
     "prefix-sum",
     "sliding-window",
-    "monotonic-queue"
+    "monotonic-queue",
+    "interval-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "dynamic-programming": 0.98,
       "prefix-sum": 0.95,
       "sliding-window": 0.85,
-      "monotonic-queue": 0.75
+      "monotonic-queue": 0.75,
+      "interval-dp": 1
     }
   }
 }

@@ -14,7 +14,9 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "prefix-sum"
+    "prefix-sum",
+    "stars-and-bars",
+    "inclusion-exclusion"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +24,9 @@
     "generated_at_unix": 1777951717,
     "pattern_confidence": {
       "dynamic-programming": 0.98,
-      "prefix-sum": 0.85
+      "prefix-sum": 0.85,
+      "stars-and-bars": 0.9,
+      "inclusion-exclusion": 0.8
     }
   }
 }

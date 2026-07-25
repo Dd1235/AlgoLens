@@ -14,7 +14,8 @@
   ],
   "patterns": [
     "greedy",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "mex"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +23,8 @@
     "generated_at_unix": 1777951293,
     "pattern_confidence": {
       "greedy": 0.95,
-      "constructive-algorithm": 0.9
+      "constructive-algorithm": 0.9,
+      "mex": 0.9
     }
   }
 }

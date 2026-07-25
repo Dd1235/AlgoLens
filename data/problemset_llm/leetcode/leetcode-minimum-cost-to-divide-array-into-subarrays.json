@@ -20,7 +20,8 @@
   "patterns": [
     "prefix-sum",
     "dynamic-programming",
-    "interval-dp"
+    "interval-dp",
+    "partition-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "dynamic-programming": 0.9,
-      "interval-dp": 0.85
+      "interval-dp": 0.85,
+      "partition-dp": 0.9
     }
   }
 }

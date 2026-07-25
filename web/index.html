@@ -44,7 +44,7 @@
           <a href="/profile.html" class="debug-link">profile</a>
         </nav>
       </header>
-      <p class="tagline">1808 dsa problems · search by keyword, by meaning, or by technique</p>
+      <p class="tagline">1808 dsa problems · search by keyword, by meaning, or by technique · <code>:help</code> for the manual</p>
       <form id="search-form" autocomplete="off">
         <input
           id="search-input"
@@ -56,9 +56,9 @@
             id="ranker-select"
             class="filter-select"
             aria-label="ranking mode"
-            title="how results are ranked: keyword match, semantic meaning, or both fused"
+            title="keyword = word match incl. labels · meaning = plain-english description · both = blended"
           >
-            <option value="bm25">bm25 · keyword</option>
+            <option value="bm25">keyword · bm25</option>
           </select>
         </span>
         <span id="filter-wrap" class="filter-wrap" hidden>
@@ -97,14 +97,14 @@
         </span>
       </div>
       <div class="mode-row">
-        <label class="mode-toggle" title="run the same query on bm25 and dense side by side">
+        <label class="mode-toggle" title="run the same query in keyword and meaning mode, side by side">
           <input id="compare-toggle" type="checkbox" />
-          <span>compare bm25 / dense</span>
+          <span>compare keyword / meaning</span>
         </label>
         <span id="latency-summary" class="latency-summary"></span>
       </div>
       <p id="status" class="status">
-        type a query to search · :help for the manual<span class="cursor">_</span>
+        type a query to search
       </p>
       <button
         id="pattern-pill"

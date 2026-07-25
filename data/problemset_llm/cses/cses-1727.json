@@ -14,7 +14,8 @@
   ],
   "patterns": [
     "expected-value-dp",
-    "probability-dp"
+    "probability-dp",
+    "inclusion-exclusion"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +23,8 @@
     "generated_at_unix": 1777951722,
     "pattern_confidence": {
       "expected-value-dp": 0.95,
-      "probability-dp": 0.9
+      "probability-dp": 0.9,
+      "inclusion-exclusion": 1
     }
   }
 }

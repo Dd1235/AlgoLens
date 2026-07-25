@@ -10,6 +10,7 @@ const { fetchLeetCode } = require("./leetcode");
 const { fetchCodeforces } = require("./codeforces");
 const { fetchCodeChef } = require("./codechef");
 const { fetchGitHub } = require("./github");
+const { fetchAtCoder } = require("./atcoder");
 
 const DAY_SECONDS = 86400;
 
@@ -33,6 +34,7 @@ const FETCHERS = {
   codeforces: fetchCodeforces,
   codechef: fetchCodeChef,
   github: fetchGitHub,
+  atcoder: fetchAtCoder,
 };
 
 function unavailable(error) {

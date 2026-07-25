@@ -17,7 +17,8 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "greedy"
+    "greedy",
+    "monotonic-queue-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "generated_at_unix": 1784908835,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "greedy": 0.7
+      "greedy": 0.7,
+      "monotonic-queue-optimization": 0.95
     }
   }
 }

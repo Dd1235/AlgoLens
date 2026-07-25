@@ -20,7 +20,8 @@
   "patterns": [
     "dynamic-programming",
     "counting",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "permutation-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "counting": 0.95,
-      "modular-arithmetic": 0.9
+      "modular-arithmetic": 0.9,
+      "permutation-counting": 1
     }
   }
 }

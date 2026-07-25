@@ -15,7 +15,8 @@
   "patterns": [
     "dfs",
     "subtree-dp",
-    "path-counting"
+    "path-counting",
+    "centroid-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "subtree-dp": 0.9,
-      "path-counting": 0.85
+      "path-counting": 0.85,
+      "centroid-decomposition": 1
     }
   }
 }

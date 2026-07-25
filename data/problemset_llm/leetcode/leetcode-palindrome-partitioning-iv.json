@@ -17,7 +17,8 @@
   ],
   "patterns": [
     "palindrome-check",
-    "dynamic-programming"
+    "dynamic-programming",
+    "manacher"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "generated_at_unix": 1777923883,
     "pattern_confidence": {
       "palindrome-check": 0.95,
-      "dynamic-programming": 0.9
+      "dynamic-programming": 0.9,
+      "manacher": 1
     }
   }
 }

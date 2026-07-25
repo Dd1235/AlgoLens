@@ -2,152 +2,465 @@
   "version": 1,
   "notes": "Single source of truth for the pattern vocabulary. scripts/annotate_problem_urls.py feeds `canonical` keys to the LLM as allowed examples and maps aliases on output; scripts/validate_corpus.js warns on non-canonical patterns; scripts/normalize_patterns.js rewrites aliases to canonical across the corpus. Aliases must point at an existing canonical key.",
   "canonical": {
-    "two-pointers": { "category": "array" },
-    "sliding-window": { "category": "array" },
-    "prefix-sum": { "category": "array" },
-    "prefix-xor": { "category": "array" },
-    "difference-array": { "category": "array" },
-    "sweep-line-difference": { "category": "array" },
-    "binary-search": { "category": "array" },
-    "binary-search-answer": { "category": "array" },
-    "ternary-search": { "category": "array" },
-    "sorting": { "category": "array" },
-    "greedy": { "category": "array" },
-    "heap": { "category": "array" },
-    "stack": { "category": "array" },
-    "monotonic-stack": { "category": "array" },
-    "monotonic-queue": { "category": "array" },
-    "queue": { "category": "array" },
-    "hash-map": { "category": "array" },
-    "coordinate-compression": { "category": "array" },
-    "offline-queries": { "category": "array" },
-    "contribution-technique": { "category": "array" },
-    "inclusion-exclusion": { "category": "array" },
-    "mex": { "category": "array" },
-    "order-statistics": { "category": "array" },
-    "sqrt-decomposition": { "category": "array" },
-    "mo-algorithm": { "category": "array" },
-    "dfs": { "category": "graph" },
-    "bfs": { "category": "graph" },
-    "multi-source-bfs": { "category": "graph" },
-    "flood-fill": { "category": "graph" },
-    "union-find": { "category": "graph" },
-    "dsu-rollback": { "category": "graph" },
-    "small-to-large-merging": { "category": "graph" },
-    "topological-sort": { "category": "graph" },
-    "cycle-detection": { "category": "graph" },
-    "shortest-path": { "category": "graph" },
-    "dijkstra": { "category": "graph" },
-    "bellman-ford": { "category": "graph" },
-    "floyd-warshall": { "category": "graph" },
-    "zero-one-bfs": { "category": "graph" },
-    "dag-dp": { "category": "graph" },
-    "functional-graph": { "category": "graph" },
-    "minimum-spanning-tree": { "category": "graph" },
-    "kruskal": { "category": "graph" },
-    "prim": { "category": "graph" },
-    "strongly-connected-components": { "category": "graph" },
-    "tarjan": { "category": "graph" },
-    "bridges": { "category": "graph" },
-    "articulation-points": { "category": "graph" },
-    "eulerian-path": { "category": "graph" },
-    "hamiltonian-dp": { "category": "graph" },
-    "max-flow": { "category": "graph" },
-    "min-cut": { "category": "graph" },
-    "dinic": { "category": "graph" },
-    "min-cost-flow": { "category": "graph" },
-    "bipartite-matching": { "category": "graph" },
-    "two-sat": { "category": "graph" },
-    "tree-dp": { "category": "tree" },
-    "rerooting-dp": { "category": "tree" },
-    "subtree-dp": { "category": "tree" },
-    "tree-diameter": { "category": "tree" },
-    "centroid-decomposition": { "category": "tree" },
-    "heavy-light-decomposition": { "category": "tree" },
-    "binary-lifting": { "category": "tree" },
-    "lca": { "category": "tree" },
-    "euler-tour": { "category": "tree" },
-    "tin-tout-ancestor-check": { "category": "tree" },
-    "tree-flattening": { "category": "tree" },
-    "dynamic-programming": { "category": "dp" },
-    "memoization": { "category": "dp" },
-    "digit-dp": { "category": "dp" },
-    "bitmask-dp": { "category": "dp" },
-    "subset-dp": { "category": "dp" },
-    "profile-dp": { "category": "dp" },
-    "dp-on-dag": { "category": "dp" },
-    "dp-optimization": { "category": "dp" },
-    "divide-and-conquer-dp": { "category": "dp" },
-    "knuth-optimization": { "category": "dp" },
-    "convex-hull-trick": { "category": "dp" },
-    "li-chao-tree": { "category": "dp" },
-    "wqs-binary-search": { "category": "dp" },
-    "slope-trick": { "category": "dp" },
-    "monotonic-queue-optimization": { "category": "dp" },
-    "sos-dp": { "category": "dp" },
-    "submask-enumeration": { "category": "dp" },
-    "interval-dp": { "category": "dp" },
-    "knapsack": { "category": "dp" },
-    "unbounded-knapsack": { "category": "dp" },
-    "bounded-knapsack": { "category": "dp" },
-    "partition-dp": { "category": "dp" },
-    "state-compression": { "category": "dp" },
-    "longest-increasing-subsequence": { "category": "dp" },
-    "edit-distance": { "category": "dp" },
-    "game-dp": { "category": "dp" },
-    "probability-dp": { "category": "dp" },
-    "expected-value-dp": { "category": "dp" },
-    "segment-tree": { "category": "data-structure" },
-    "fenwick-tree": { "category": "data-structure" },
-    "lazy-propagation": { "category": "data-structure" },
-    "persistent-segment-tree": { "category": "data-structure" },
-    "merge-sort-tree": { "category": "data-structure" },
-    "implicit-treap": { "category": "data-structure" },
-    "ordered-set": { "category": "data-structure" },
-    "multiset": { "category": "data-structure" },
-    "deque": { "category": "data-structure" },
-    "sparse-table": { "category": "data-structure" },
-    "trie": { "category": "string" },
-    "kmp": { "category": "string" },
-    "booth-algorithm": { "category": "string" },
-    "lyndon-factorization": { "category": "string" },
-    "z-function": { "category": "string" },
-    "rolling-hash": { "category": "string" },
-    "rabin-karp": { "category": "string" },
-    "suffix-array": { "category": "string" },
-    "suffix-automaton": { "category": "string" },
-    "palindrome-dp": { "category": "string" },
-    "manacher": { "category": "string" },
-    "aho-corasick": { "category": "string" },
-    "line-sweep": { "category": "math" },
-    "geometry": { "category": "math" },
-    "rectangle-union-area": { "category": "math" },
-    "interval-union": { "category": "math" },
-    "convex-hull": { "category": "math" },
-    "orientation-test": { "category": "math" },
-    "rotating-calipers": { "category": "math" },
-    "combinatorics": { "category": "math" },
-    "stars-and-bars": { "category": "math" },
-    "permutation-counting": { "category": "math" },
-    "number-theory": { "category": "math" },
-    "gcd": { "category": "math" },
-    "sieve": { "category": "math" },
-    "prime-factorization": { "category": "math" },
-    "modular-inverse": { "category": "math" },
-    "modular-arithmetic": { "category": "math" },
-    "matrix-exponentiation": { "category": "math" },
-    "linear-recurrence": { "category": "math" },
-    "fast-exponentiation": { "category": "math" },
-    "chinese-remainder-theorem": { "category": "math" },
-    "grundy-numbers": { "category": "math" },
-    "game-theory": { "category": "math" },
-    "counting": { "category": "math" },
-    "meet-in-the-middle": { "category": "general" },
-    "backtracking": { "category": "general" },
-    "branch-and-bound": { "category": "general" },
-    "constructive-algorithm": { "category": "general" },
-    "divide-and-conquer": { "category": "general" },
-    "simulation": { "category": "general" }
+    "two-pointers": {
+      "category": "array"
+    },
+    "sliding-window": {
+      "category": "array"
+    },
+    "prefix-sum": {
+      "category": "array"
+    },
+    "prefix-xor": {
+      "category": "array"
+    },
+    "difference-array": {
+      "category": "array"
+    },
+    "sweep-line-difference": {
+      "category": "array"
+    },
+    "binary-search": {
+      "category": "array"
+    },
+    "binary-search-answer": {
+      "category": "array"
+    },
+    "ternary-search": {
+      "category": "array"
+    },
+    "sorting": {
+      "category": "array"
+    },
+    "greedy": {
+      "category": "array"
+    },
+    "heap": {
+      "category": "array"
+    },
+    "stack": {
+      "category": "array"
+    },
+    "monotonic-stack": {
+      "category": "array"
+    },
+    "monotonic-queue": {
+      "category": "array"
+    },
+    "queue": {
+      "category": "array"
+    },
+    "hash-map": {
+      "category": "array"
+    },
+    "coordinate-compression": {
+      "category": "array"
+    },
+    "offline-queries": {
+      "category": "array"
+    },
+    "contribution-technique": {
+      "category": "array"
+    },
+    "inclusion-exclusion": {
+      "category": "array"
+    },
+    "mex": {
+      "category": "array"
+    },
+    "order-statistics": {
+      "category": "array"
+    },
+    "sqrt-decomposition": {
+      "category": "array"
+    },
+    "mo-algorithm": {
+      "category": "array"
+    },
+    "dfs": {
+      "category": "graph"
+    },
+    "bfs": {
+      "category": "graph"
+    },
+    "multi-source-bfs": {
+      "category": "graph"
+    },
+    "flood-fill": {
+      "category": "graph"
+    },
+    "union-find": {
+      "category": "graph"
+    },
+    "dsu-rollback": {
+      "category": "graph"
+    },
+    "small-to-large-merging": {
+      "category": "graph"
+    },
+    "topological-sort": {
+      "category": "graph"
+    },
+    "cycle-detection": {
+      "category": "graph"
+    },
+    "shortest-path": {
+      "category": "graph"
+    },
+    "dijkstra": {
+      "category": "graph"
+    },
+    "bellman-ford": {
+      "category": "graph"
+    },
+    "floyd-warshall": {
+      "category": "graph"
+    },
+    "zero-one-bfs": {
+      "category": "graph"
+    },
+    "dag-dp": {
+      "category": "graph"
+    },
+    "functional-graph": {
+      "category": "graph"
+    },
+    "minimum-spanning-tree": {
+      "category": "graph"
+    },
+    "kruskal": {
+      "category": "graph"
+    },
+    "prim": {
+      "category": "graph"
+    },
+    "strongly-connected-components": {
+      "category": "graph"
+    },
+    "tarjan": {
+      "category": "graph"
+    },
+    "bridges": {
+      "category": "graph"
+    },
+    "articulation-points": {
+      "category": "graph"
+    },
+    "eulerian-path": {
+      "category": "graph"
+    },
+    "hamiltonian-dp": {
+      "category": "graph"
+    },
+    "max-flow": {
+      "category": "graph"
+    },
+    "min-cut": {
+      "category": "graph"
+    },
+    "dinic": {
+      "category": "graph"
+    },
+    "min-cost-flow": {
+      "category": "graph"
+    },
+    "bipartite-matching": {
+      "category": "graph"
+    },
+    "two-sat": {
+      "category": "graph"
+    },
+    "tree-dp": {
+      "category": "tree"
+    },
+    "rerooting-dp": {
+      "category": "tree"
+    },
+    "subtree-dp": {
+      "category": "tree"
+    },
+    "tree-diameter": {
+      "category": "tree"
+    },
+    "centroid-decomposition": {
+      "category": "tree"
+    },
+    "heavy-light-decomposition": {
+      "category": "tree"
+    },
+    "binary-lifting": {
+      "category": "tree"
+    },
+    "lca": {
+      "category": "tree"
+    },
+    "euler-tour": {
+      "category": "tree"
+    },
+    "tin-tout-ancestor-check": {
+      "category": "tree"
+    },
+    "tree-flattening": {
+      "category": "tree"
+    },
+    "dynamic-programming": {
+      "category": "dp"
+    },
+    "memoization": {
+      "category": "dp"
+    },
+    "digit-dp": {
+      "category": "dp"
+    },
+    "bitmask-dp": {
+      "category": "dp"
+    },
+    "subset-dp": {
+      "category": "dp"
+    },
+    "profile-dp": {
+      "category": "dp"
+    },
+    "dp-on-dag": {
+      "category": "dp"
+    },
+    "dp-optimization": {
+      "category": "dp"
+    },
+    "divide-and-conquer-dp": {
+      "category": "dp"
+    },
+    "knuth-optimization": {
+      "category": "dp"
+    },
+    "convex-hull-trick": {
+      "category": "dp"
+    },
+    "li-chao-tree": {
+      "category": "dp"
+    },
+    "wqs-binary-search": {
+      "category": "dp"
+    },
+    "slope-trick": {
+      "category": "dp"
+    },
+    "monotonic-queue-optimization": {
+      "category": "dp"
+    },
+    "sos-dp": {
+      "category": "dp"
+    },
+    "submask-enumeration": {
+      "category": "dp"
+    },
+    "interval-dp": {
+      "category": "dp"
+    },
+    "knapsack": {
+      "category": "dp"
+    },
+    "unbounded-knapsack": {
+      "category": "dp"
+    },
+    "bounded-knapsack": {
+      "category": "dp"
+    },
+    "partition-dp": {
+      "category": "dp"
+    },
+    "state-compression": {
+      "category": "dp"
+    },
+    "longest-increasing-subsequence": {
+      "category": "dp"
+    },
+    "edit-distance": {
+      "category": "dp"
+    },
+    "game-dp": {
+      "category": "dp"
+    },
+    "probability-dp": {
+      "category": "dp"
+    },
+    "expected-value-dp": {
+      "category": "dp"
+    },
+    "segment-tree": {
+      "category": "data-structure"
+    },
+    "fenwick-tree": {
+      "category": "data-structure"
+    },
+    "lazy-propagation": {
+      "category": "data-structure"
+    },
+    "persistent-segment-tree": {
+      "category": "data-structure"
+    },
+    "merge-sort-tree": {
+      "category": "data-structure"
+    },
+    "implicit-treap": {
+      "category": "data-structure"
+    },
+    "ordered-set": {
+      "category": "data-structure"
+    },
+    "multiset": {
+      "category": "data-structure"
+    },
+    "deque": {
+      "category": "data-structure"
+    },
+    "sparse-table": {
+      "category": "data-structure"
+    },
+    "trie": {
+      "category": "string"
+    },
+    "kmp": {
+      "category": "string"
+    },
+    "booth-algorithm": {
+      "category": "string"
+    },
+    "lyndon-factorization": {
+      "category": "string"
+    },
+    "z-function": {
+      "category": "string"
+    },
+    "rolling-hash": {
+      "category": "string"
+    },
+    "rabin-karp": {
+      "category": "string"
+    },
+    "suffix-array": {
+      "category": "string"
+    },
+    "suffix-automaton": {
+      "category": "string"
+    },
+    "palindrome-dp": {
+      "category": "string"
+    },
+    "manacher": {
+      "category": "string"
+    },
+    "aho-corasick": {
+      "category": "string"
+    },
+    "line-sweep": {
+      "category": "math"
+    },
+    "geometry": {
+      "category": "math"
+    },
+    "rectangle-union-area": {
+      "category": "math"
+    },
+    "interval-union": {
+      "category": "math"
+    },
+    "convex-hull": {
+      "category": "math"
+    },
+    "orientation-test": {
+      "category": "math"
+    },
+    "rotating-calipers": {
+      "category": "math"
+    },
+    "combinatorics": {
+      "category": "math"
+    },
+    "stars-and-bars": {
+      "category": "math"
+    },
+    "permutation-counting": {
+      "category": "math"
+    },
+    "number-theory": {
+      "category": "math"
+    },
+    "gcd": {
+      "category": "math"
+    },
+    "sieve": {
+      "category": "math"
+    },
+    "prime-factorization": {
+      "category": "math"
+    },
+    "modular-inverse": {
+      "category": "math"
+    },
+    "modular-arithmetic": {
+      "category": "math"
+    },
+    "matrix-exponentiation": {
+      "category": "math"
+    },
+    "linear-recurrence": {
+      "category": "math"
+    },
+    "fast-exponentiation": {
+      "category": "math"
+    },
+    "chinese-remainder-theorem": {
+      "category": "math"
+    },
+    "grundy-numbers": {
+      "category": "math"
+    },
+    "game-theory": {
+      "category": "math"
+    },
+    "counting": {
+      "category": "math"
+    },
+    "meet-in-the-middle": {
+      "category": "general"
+    },
+    "backtracking": {
+      "category": "general"
+    },
+    "branch-and-bound": {
+      "category": "general"
+    },
+    "constructive-algorithm": {
+      "category": "general"
+    },
+    "divide-and-conquer": {
+      "category": "general"
+    },
+    "simulation": {
+      "category": "general"
+    },
+    "matrix-chain-multiplication": {
+      "category": "dp"
+    },
+    "mobius-inversion": {
+      "category": "math"
+    },
+    "lucas-theorem": {
+      "category": "math"
+    },
+    "berlekamp-massey": {
+      "category": "math"
+    },
+    "multinomial-coefficient": {
+      "category": "math"
+    },
+    "kirchhoff-theorem": {
+      "category": "graph"
+    },
+    "steiner-tree": {
+      "category": "graph"
+    }
   },
   "aliases": {
     "dp": "dynamic-programming",
@@ -174,6 +487,9 @@
     "sweepline": "line-sweep",
     "sweep-line": "line-sweep",
     "scanline": "line-sweep",
-    "cht": "convex-hull-trick"
+    "cht": "convex-hull-trick",
+    "mcm": "matrix-chain-multiplication",
+    "matrix-chain-dp": "matrix-chain-multiplication",
+    "dp-with-sliding-window": "monotonic-queue-optimization"
   }
 }

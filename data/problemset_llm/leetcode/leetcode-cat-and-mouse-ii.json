@@ -27,7 +27,8 @@
     "topological-sort",
     "memoization",
     "game-dp",
-    "state-space-search"
+    "state-space-search",
+    "grundy-numbers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -37,7 +38,8 @@
       "topological-sort": 0.85,
       "memoization": 0.95,
       "game-dp": 0.9,
-      "state-space-search": 0.9
+      "state-space-search": 0.9,
+      "grundy-numbers": 0.8
     }
   }
 }

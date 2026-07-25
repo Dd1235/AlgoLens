@@ -22,7 +22,8 @@
   "patterns": [
     "topological-sort",
     "cycle-detection",
-    "memoization"
+    "memoization",
+    "functional-graph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "topological-sort": 0.95,
       "cycle-detection": 0.9,
-      "memoization": 0.9
+      "memoization": 0.9,
+      "functional-graph": 1
     }
   }
 }

@@ -26,7 +26,8 @@
     "dp-on-dag",
     "gcd",
     "modular-arithmetic",
-    "state-compression"
+    "state-compression",
+    "mobius-inversion"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "dp-on-dag": 0.9,
       "gcd": 0.95,
       "modular-arithmetic": 0.9,
-      "state-compression": 0.85
+      "state-compression": 0.85,
+      "mobius-inversion": 1
     }
   }
 }

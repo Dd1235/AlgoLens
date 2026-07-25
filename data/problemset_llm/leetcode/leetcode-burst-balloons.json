@@ -17,7 +17,8 @@
   ],
   "patterns": [
     "interval-dp",
-    "dp-on-intervals"
+    "dp-on-intervals",
+    "matrix-chain-multiplication"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "generated_at_unix": 1777922393,
     "pattern_confidence": {
       "interval-dp": 0.98,
-      "dp-on-intervals": 0.95
+      "dp-on-intervals": 0.95,
+      "matrix-chain-multiplication": 0.9
     }
   }
 }

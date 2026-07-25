@@ -18,7 +18,8 @@
   "patterns": [
     "dynamic-programming",
     "state-compression",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "matrix-exponentiation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +28,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.99,
       "state-compression": 0.85,
-      "modular-arithmetic": 0.9
+      "modular-arithmetic": 0.9,
+      "matrix-exponentiation": 1
     }
   }
 }

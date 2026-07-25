@@ -20,7 +20,8 @@
   "patterns": [
     "dynamic-programming",
     "kmp",
-    "string-automaton"
+    "string-automaton",
+    "digit-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "kmp": 0.9,
-      "string-automaton": 0.88
+      "string-automaton": 0.88,
+      "digit-dp": 1
     }
   }
 }

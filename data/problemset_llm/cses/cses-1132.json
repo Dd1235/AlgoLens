@@ -15,7 +15,8 @@
   "patterns": [
     "tree-diameter",
     "two-pass-dfs",
-    "distance-calculation"
+    "distance-calculation",
+    "rerooting-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "tree-diameter": 0.98,
       "two-pass-dfs": 0.95,
-      "distance-calculation": 0.9
+      "distance-calculation": 0.9,
+      "rerooting-dp": 1
     }
   }
 }

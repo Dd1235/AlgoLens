@@ -184,6 +184,46 @@ const htmlResponse = (html, status = 200) => ({
     assert.equal(garbage.error, "parse_failed");
   }
 
+  // ── AtCoder: distinct AC solved, activity calendar, rating from history ──
+  {
+    const day = 86400;
+    const now = Math.floor(Date.now() / 1000);
+    const t1 = now - 3 * day, t2 = now - 2 * day;
+    const fetchImpl = async (url) => {
+      if (url.includes("kenkoooo")) {
+        if (url.includes("from_second=" + (t2 + 1))) return jsonResponse([]);
+        return jsonResponse([
+          { epoch_second: t1, result: "AC", problem_id: "abc300_a" },
+          { epoch_second: t1 + 60, result: "WA", problem_id: "abc300_b" },
+          { epoch_second: t2, result: "AC", problem_id: "abc300_a" }, // resolve, same problem
+          { epoch_second: t2, result: "AC", problem_id: "abc300_b" },
+        ]);
+      }
+      return jsonResponse([{ NewRating: 1234 }, { NewRating: 1500 }]);
+    };
+    const r = await fetchPlatformStats("atcoder", "someone", { fetchImpl });
+    assert.equal(r.solved, 2); // abc300_a counted once
+    assert.equal(r.rating, 1500); // latest contest
+    assert.equal(r.calendar[String(Math.floor(t1 / day) * day)], 2);
+
+    // Unknown handle: no submissions AND a 404 history page.
+    const missing = await fetchPlatformStats("atcoder", "nobody", {
+      fetchImpl: async (url) =>
+        url.includes("kenkoooo") ? jsonResponse([]) : jsonResponse({}, 404),
+    });
+    assert.equal(missing.error, "not_found");
+
+    // Rating endpoint down, submissions fine → still usable, rating null.
+    const partial = await fetchPlatformStats("atcoder", "someone", {
+      fetchImpl: async (url) => {
+        if (url.includes("kenkoooo")) return jsonResponse([{ epoch_second: t1, result: "AC", problem_id: "x" }]);
+        throw new Error("history down");
+      },
+    });
+    assert.equal(partial.solved, 1);
+    assert.equal(partial.rating, null);
+  }
+
   // ── Timeout → unavailable, never throws ──
   {
     const fetchImpl = (_url, { signal }) =>
@@ -203,7 +243,7 @@ const htmlResponse = (html, status = 200) => ({
   {
     const r = await fetchPlatformStats("codeforces", "x", { fetchImpl: async () => { throw new Error("ECONNRESET"); } });
     assert.equal(r.error, "fetch_failed");
-    const u = await fetchPlatformStats("atcoder", "x", {});
+    const u = await fetchPlatformStats("topcoder", "x", {}); // genuinely unsupported
     assert.equal(u.error, "unknown_platform");
   }
 
