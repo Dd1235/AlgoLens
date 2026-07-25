@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-divide-an-array-into-subarrays-with-minimum-cost-ii",
+  "title": "Divide an Array Into Subarrays With Minimum Cost II",
+  "current_patterns": [
+    "dynamic-programming",
+    "sliding-window",
+    "prefix-minimum"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1",
+  "created_at": "2026-07-25T21:13:21Z"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "leetcode-find-number-of-ways-to-reach-the-k-th-stair",
+  "title": "Find Number of Ways to Reach the K-th Stair",
+  "current_patterns": [
+    "state-compression",
+    "dynamic-programming",
+    "memoization"
+  ],
+  "candidates": [],
+  "model": "gpt-4.1",
+  "created_at": "2026-07-25T21:13:25Z"
+}

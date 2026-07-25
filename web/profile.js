@@ -8,7 +8,7 @@ const heatmapMonthsEl = document.getElementById("heatmap-months");
 const heatmapTotalEl = document.getElementById("heatmap-total");
 const refreshLink = document.getElementById("refresh-link");
 
-const PLATFORMS = ["leetcode", "codeforces", "codechef", "github"];
+const PLATFORMS = ["leetcode", "codeforces", "codechef", "github", "atcoder"];
 const inputs = Object.fromEntries(PLATFORMS.map((p) => [p, document.getElementById(`handle-${p}`)]));
 const tabsEl = document.getElementById("heatmap-tabs");
 const TAB_ORDER = ["overall", "dsa", "dev"];

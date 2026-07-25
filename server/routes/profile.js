@@ -2,13 +2,14 @@ const express = require("express");
 const db = require("../db");
 const { requireUser } = require("../auth/middleware");
 
-const PLATFORMS = ["leetcode", "codeforces", "codechef", "github"];
+const PLATFORMS = ["leetcode", "codeforces", "codechef", "github", "atcoder"];
 // Each activity source belongs to a category; the client composes the
 // dsa / dev / overall heatmap views from these. "algolens" = done-marks here.
 const CATEGORIES = {
   leetcode: "dsa",
   codeforces: "dsa",
   codechef: "dsa",
+  atcoder: "dsa",
   algolens: "dsa",
   github: "dev",
 };

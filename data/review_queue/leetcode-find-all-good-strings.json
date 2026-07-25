@@ -1,0 +1,19 @@
+{
+  "id": "leetcode-find-all-good-strings",
+  "title": "Find All Good Strings",
+  "current_patterns": [
+    "dynamic-programming",
+    "kmp",
+    "string-automaton"
+  ],
+  "candidates": [
+    {
+      "pattern": "digit-dp",
+      "confidence": 1.0,
+      "reasoning": "The problem requires counting strings between two bounds with forbidden substrings, which is a classic application of digit-dp (DP over positions with tight bounds).",
+      "in_taxonomy": true
+    }
+  ],
+  "model": "gpt-4.1",
+  "created_at": "2026-07-25T21:13:23Z"
+}
