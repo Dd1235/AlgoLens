@@ -127,8 +127,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 0.55rem;
+  gap: 0.4rem;
   flex-wrap: wrap;
+  font-size: 0.9em;
 }
 
 h1 {
@@ -175,7 +176,7 @@ html[data-theme="light"] .signature {
 }
 
 .debug-link {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   text-decoration: none;
   letter-spacing: 0.02em;
@@ -920,7 +921,7 @@ html[data-theme="light"] .result-detail a {
   color: var(--accent);
 }
 
-.hidden { display: none; }
+.hidden { display: none !important; }
 
 .load-more {
   display: block;
