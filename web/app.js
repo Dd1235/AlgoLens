@@ -159,22 +159,6 @@ input.addEventListener("keydown", (e) => {
   runSearch(next, { append: false });
 });
 
-// Terminal muscle memory: / focuses the box, ? opens the manual, Esc clears.
-document.addEventListener("keydown", (e) => {
-  const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "");
-  if (e.key === "/" && !typing && !e.metaKey && !e.ctrlKey) {
-    e.preventDefault();
-    input.focus();
-    input.select();
-  } else if (e.key === "?" && !typing) {
-    e.preventDefault();
-    renderHelp();
-  } else if (e.key === "Escape" && document.activeElement === input) {
-    input.value = "";
-    runSearch("", { append: false });
-  }
-});
-
 logoutBtn.addEventListener("click", async () => {
   try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
   currentUser = null;
@@ -266,7 +250,7 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
-    setStatus("type a query · / to focus · ? for help");
+    setStatus("type a query to search · :help for the manual");
     resultsEl.innerHTML = "";
     currentQuery = "";
     currentOffset = 0;
@@ -552,17 +536,12 @@ PATTERNS
   filter results to that label; the pill clears it
   browse the whole taxonomy with counts: /patterns.html
 
-KEYS
-  /                 focus the search box
-  ?                 this manual
-  Esc               clear the query
-  Tab               cycle library views       (signed in)
-
 COMMANDS
   :help :h          this manual
   :bookmarks :b     starred problems           (signed in)
   :done :d          problems marked done       (signed in)
   :all :lib         everything saved           (signed in)
+  Tab               cycle library views        (signed in)
 
 MORE
   click a result to expand · "find similar" = cosine over the
@@ -937,5 +916,5 @@ if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
 } else if (bootQ) {
   runSearch(bootQ, { append: false });
 } else {
-  setStatus("type a query · / to focus · ? for help");
+  setStatus("type a query to search · :help for the manual");
 }
