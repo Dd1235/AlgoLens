@@ -254,7 +254,7 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
-    setStatus("type a query to search · :help for the manual");
+    setStatus("type a query to search");
     resultsEl.innerHTML = "";
     currentQuery = "";
     currentOffset = 0;
@@ -651,17 +651,19 @@ function renderCompare(data, q) {
 
 function setStatus(text) {
   clearTimeout(typeTimer);
+  // The cursor shows only while the line is typing itself out. A blinking
+  // block sitting under the box at rest reads as "type here" — a real user
+  // lost minutes to exactly that.
   if (reduceMotion) {
-    statusEl.innerHTML = `${escapeHtml(text)}<span class="cursor">_</span>`;
+    statusEl.textContent = text;
     return;
   }
   let i = 0;
   const tick = () => {
     i = Math.min(i + 1, text.length);
-    statusEl.innerHTML = `${escapeHtml(text.slice(0, i))}<span class="cursor">_</span>`;
-    if (i < text.length) {
-      typeTimer = setTimeout(tick, 12);
-    }
+    const done = i >= text.length;
+    statusEl.innerHTML = escapeHtml(text.slice(0, i)) + (done ? "" : '<span class="cursor">_</span>');
+    if (!done) typeTimer = setTimeout(tick, 12);
   };
   tick();
 }
@@ -920,5 +922,9 @@ if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
 } else if (bootQ) {
   runSearch(bootQ, { append: false });
 } else {
-  setStatus("type a query to search · :help for the manual");
+  setStatus("type a query to search");
 }
+
+// Put the caret where typing actually goes. Pointer-fine only, so mobile
+// keyboards don't spring open on load.
+if (window.matchMedia("(pointer: fine)").matches) input.focus();
