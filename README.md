@@ -2,7 +2,7 @@
 
 Search 1,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
-**Live demo: [algolens-pp2m.onrender.com](https://algolens-pp2m.onrender.com/)** · [live stats](https://algolens-pp2m.onrender.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
+**Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
 ![Cosine walkthrough in dark mode](demo/deliverables/walkthrough-dark.gif#gh-dark-mode-only)
 ![Cosine walkthrough in light mode](demo/deliverables/walkthrough-light.gif#gh-light-mode-only)
