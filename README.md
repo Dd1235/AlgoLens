@@ -47,9 +47,3 @@ npm run dev            # http://localhost:3000
 ```
 
 Corpus embeddings ship in the repo; the first boot downloads the ~25 MB embedding model once into `.model-cache/`. No database? The app still boots and searches — only accounts/bookmarks need Postgres (`npm run services:start` brings up a local one on :5433).
-
-## More
-
-- [docs/internals.md](docs/internals.md) — architecture, API, corpus/label workflows, deploy + release runbooks
-- [docs/story.md](docs/story.md) — the build log: TF-IDF → BM25 → a failed C++ service → Go/gRPC → dense/hybrid → everything since
-- [experiments/](experiments/) — benchmark results, one write-up per milestone
