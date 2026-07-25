@@ -47,7 +47,9 @@ function queryList(el, rows) {
 async function load() {
   let data;
   try {
-    const res = await fetch("/api/stats");
+    // no-store: the dashboard should never show a cached snapshot, and the
+    // per-origin HTTP cache made onebysec.com and *.onrender.com disagree.
+    const res = await fetch("/api/stats", { cache: "no-store" });
     if (!res.ok) throw new Error("stats failed");
     data = await res.json();
   } catch (_e) {
@@ -118,7 +120,10 @@ async function load() {
   queryList(topEl, data.topQueries);
   queryList(zeroEl, data.zeroHitQueries);
 
-  statusEl.textContent = `~/stats · ${data.visitors.total} visitors ever · ${data.searches.total} searches served`;
+  const asOf = data.generatedAt
+    ? new Date(data.generatedAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+    : "now";
+  statusEl.textContent = `~/stats · ${data.visitors.total} visitors ever · ${data.searches.total} searches served · as of ${asOf}`;
 }
 
 load();
