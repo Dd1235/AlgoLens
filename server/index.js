@@ -63,6 +63,25 @@ async function main() {
   console.log(`Loaded ${problems.length} problems; rankers: ${Object.keys(indexes).join(", ")}; default: ${activeDefault}`);
 
   const webDir = path.join(__dirname, "..", "web");
+  // Render terminates TLS at its proxy; trust it so req.hostname/req.protocol
+  // reflect the real client request.
+  app.set("trust proxy", 1);
+
+  // One canonical host, so a session started on www isn't invisible on the
+  // apex (cookies are host-only). Only redirects *within* the canonical
+  // domain — the .onrender.com hostname is left alone so old links and
+  // Render's health check keep working. Unset CANONICAL_HOST = no redirects.
+  const canonicalHost = (process.env.CANONICAL_HOST || "").toLowerCase();
+  if (canonicalHost) {
+    app.use((req, res, next) => {
+      const host = (req.hostname || "").toLowerCase();
+      if (host !== canonicalHost && host.endsWith(`.${canonicalHost}`)) {
+        return res.redirect(301, `https://${canonicalHost}${req.originalUrl}`);
+      }
+      next();
+    });
+  }
+
   app.use(express.json({ limit: "32kb" }));
   app.use(cookieParser());
   app.use(attachUser);

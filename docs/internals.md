@@ -119,6 +119,12 @@ The app is one Docker image: the MiniLM model is baked at build time and the cor
 
 Free-tier realities: the instance spins down after ~15 min idle, so the first request after a quiet spell waits ~30–60 s on the platform cold start (the app itself boots in ~1 s — baked model, committed vectors). Memory is fine: ~101 MiB RSS against the 512 MB cap; `DENSE_DISABLED=1` is the escape hatch if that ever changes.
 
+### Custom domain
+
+1. Render → service → Settings → Custom Domains → add `onebysec.com` **and** `www.onebysec.com`; Render prints the DNS values.
+2. GoDaddy → DNS: delete the parking `A @` / `CNAME www` records, then add `A @ → <IP Render shows>` (GoDaddy has no ALIAS, so the apex must be an A record) and `CNAME www → algolens-pp2m.onrender.com`. TLS is issued automatically once DNS resolves.
+3. Set `CANONICAL_HOST=onebysec.com` in the Render env — subdomains 301 to the bare host so session cookies (host-only) live on one origin. The `.onrender.com` hostname is deliberately *not* redirected: old links keep working and the health check can't be broken by a 3xx.
+
 Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfiles card-free — create a Docker Space, push this repo to it, set `app_port: 3000` in the Space README front matter, and add `DATABASE_URL` + `JWT_SECRET` as Space secrets.
 
 ## Layout
