@@ -96,15 +96,18 @@ filterSelect.addEventListener("change", () => {
   if (currentQuery) runSearch(currentQuery, { append: false });
 });
 
-// Ranker picker: keyword (bm25), semantic (dense), or fused (hybrid).
-// Options come from /api/rankers so only registered rankers show up.
+// Ranker picker. Plain word first (a newcomer picks by meaning), technical
+// name second (this audience likes seeing it). tfidf and bm25-grpc are
+// deliberately not offered — they're bench/debug rankers, still reachable
+// with ?ranker= and on /debug.html.
 const RANKER_LABELS = {
-  tfidf: "tfidf · classic",
-  bm25: "bm25 · keyword",
-  dense: "dense · semantic",
-  hybrid: "hybrid · both",
-  "bm25-grpc": "bm25-grpc · go",
+  bm25: "keyword · bm25",
+  dense: "meaning · dense",
+  hybrid: "both · hybrid",
+  tfidf: "keyword · tfidf",
+  "bm25-grpc": "keyword · go",
 };
+const PICKER_RANKERS = ["bm25", "dense", "hybrid"];
 
 async function populateRankerSelect() {
   let data;
@@ -115,7 +118,7 @@ async function populateRankerSelect() {
     return; // keep the static bm25 option
   }
   rankerSelect.innerHTML = "";
-  for (const name of data.available || []) {
+  for (const name of (data.available || []).filter((r) => PICKER_RANKERS.includes(r))) {
     const opt = document.createElement("option");
     opt.value = name;
     opt.textContent = RANKER_LABELS[name] || name;
@@ -337,7 +340,8 @@ function renderSingle(data, q, append) {
   const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
   const shown = currentOffset + data.hits.length;
   const total = currentTotal;
-  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${data.ranker}${lat}${expanded}`);
+  const modeName = { bm25: "keyword", dense: "meaning", hybrid: "both" }[data.ranker] || data.ranker;
+  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${modeName} (${data.ranker})${lat}${expanded}`);
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
@@ -522,18 +526,21 @@ function updatePatternPill() {
 
 const HELP_TEXT = `COSINE(1)                                          the manual
 
-SEARCH — three ways to find a problem
-  knapsack coin change       keyword: exact terms, bm25 scores them
-  thief robbing houses       describe the idea: dense (minilm) bridges
-                             the vocabulary gap — try /?ranker=dense
-  wqs binary search          technique label: the curated taxonomy
-  Aliases expand automatically: "aliens trick" -> +wqs binary search
-  (the + in the status line shows what was added)
+SEARCH — pick a mode next to the box
 
-RANKERS
-  bm25 (default) · tfidf · dense · hybrid (rrf fusion of bm25+dense)
-  per request:  /?q=two+sum&ranker=hybrid
-  the "compare rankers" toggle runs bm25 and dense side by side
+  keyword    matches words in the title, the statement AND our technique
+             labels. A problem that opens "Alice and Bob play a game..."
+             never says "dp" — but its label does, so "game theory dp"
+             still finds it. Best when you know the terms.
+
+  meaning    describe it in plain english. "thief robbing houses" finds
+             House Robber; "check if brackets close in order" finds Valid
+             Parentheses. Best when you remember the story, not the words.
+
+  both       runs the two and blends the rankings. Use it when unsure.
+
+  Community names expand on their own: type "aliens trick" and the status
+  line shows "+wqs binary search" — you get the results and the real name.
 
 PATTERNS
   every expanded result lists technique labels — click one to
