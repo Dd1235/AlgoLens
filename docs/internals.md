@@ -88,6 +88,10 @@ Queries run through the same alias expansion as the serving path by default. Wri
 
 Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-asserted niche claims never land unreviewed.
 
+**Why label quality *is* recall.** A problem's search text is `title + statement + tags + patterns`, and the statement is an LLM *summary* — when the summary drops a term, only a label can carry it. That's why `mcm dp` matched nothing until `matrix-chain-multiplication` existed as a label (those words appear in no statement), and why only 1 of 4 mex problems was findable. A recall complaint is usually a labeling gap, not a ranking bug: check `npm run validate -- --gaps` and the audit loop before touching a ranker.
+
+**GeeksforGeeks is deliberately absent** from the profile: its user pages are client-rendered with no usable JSON endpoint, so any integration would be a scrape even more fragile than CodeChef's, breaking silently. Revisit if they ship an API.
+
 **Codeforces is deferred on purpose:** CF statement pages sit behind Cloudflare, so annotation would be metadata-only (title + tags, no statement) — weak lexical matching and weak embeddings. The 7 dormant files under `data/problemset_llm/codeforces/` also predate the current id scheme (`cf-279b-books` vs `codeforces-279-b`). Enabling CF is a data-quality problem, not a flag flip.
 
 ## Data organization

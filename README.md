@@ -15,7 +15,7 @@ Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all 
 
 ## Finding problems
 
-- **Three kinds of search, one box.** Keyword (`knapsack coin change` — BM25), semantic (`thief robbing houses for max money` finds House Robber — a sentence embedding bridges the vocabulary gap), or both fused (hybrid). A picker next to the search button switches modes; the status line always says which ranker answered, and how fast.
+- **Three search modes, one box.** **keyword** matches words in the title, statement *and* our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~150-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
@@ -24,7 +24,7 @@ Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all 
 
 ## Tracking the grind
 
-- **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
+- **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / AtCoder / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
 - **Bookmarks and done-marks** on every result, with a shell-style library (`:bookmarks`, `:done`, Tab cycles views). Done-marks feed the heatmap too.
 
 ## Small things that make it nice to use
