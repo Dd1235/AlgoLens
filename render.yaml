@@ -26,6 +26,11 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile
     healthCheckPath: /
+    # Custom domains are added in the dashboard for manually-created services;
+    # listed here so the blueprint stays the source of truth if it's ever applied.
+    domains:
+      - onebysec.com
+      - www.onebysec.com
     autoDeploy: true
     envVars:
       - key: NODE_ENV
@@ -43,3 +48,7 @@ services:
       # if/when the bench says so. gRPC ranker stays off in v1.
       - key: RANKER
         value: bm25
+      # Set once DNS resolves: sends www.* to the bare domain so sessions
+      # (host-only cookies) live on exactly one host. Leave unset to disable.
+      - key: CANONICAL_HOST
+        value: onebysec.com

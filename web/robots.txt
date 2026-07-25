@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /debug.html
+
+Sitemap: https://onebysec.com/sitemap.xml
