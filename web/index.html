@@ -39,10 +39,7 @@
           <a href="/debug.html" class="debug-link">debug</a>
         </nav>
       </header>
-      <p class="tagline">
-        search dsa problems by keyword, or describe the idea and search by
-        meaning — pick a ranker.
-      </p>
+      <p class="tagline">1808 dsa problems · search by keyword, by meaning, or by technique</p>
       <form id="search-form" autocomplete="off">
         <input
           id="search-input"
@@ -97,12 +94,12 @@
       <div class="mode-row">
         <label class="mode-toggle" title="run the same query on bm25 and dense side by side">
           <input id="compare-toggle" type="checkbox" />
-          <span>compare rankers (bm25 / dense)</span>
+          <span>compare bm25 / dense</span>
         </label>
         <span id="latency-summary" class="latency-summary"></span>
       </div>
       <p id="status" class="status">
-        type a query to search<span class="cursor">_</span>
+        type a query · / to focus · ? for help<span class="cursor">_</span>
       </p>
       <button
         id="pattern-pill"
@@ -129,10 +126,7 @@
       </div>
       <div id="compare-results" class="compare-grid hidden"></div>
     </main>
-    <footer>
-      cosine v0.4 · built by deepya · rankers: tf-idf + bm25 + dense (minilm)
-      + hybrid (rrf) · corpus: 1808 problems (leetcode + cses)
-    </footer>
+    <footer>cosine v0.4 · deepya · leetcode + cses · <a href="/stats.html">stats</a></footer>
     <script src="/app.js"></script>
   </body>
 </html>
