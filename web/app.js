@@ -191,7 +191,10 @@ function applyAuthState() {
   if (currentUser) {
     anon.hidden = true;
     signed.hidden = false;
-    authEmailEl.textContent = currentUser.email;
+    // Local part only — you know your own domain, and the full address is
+    // what pushes the nav onto a second row (content caps at 720px).
+    authEmailEl.textContent = String(currentUser.email).split("@")[0];
+    authEmailEl.title = currentUser.email;
     filterWrap.hidden = false;
     libBar.hidden = false;
     refreshLibraryCounts();

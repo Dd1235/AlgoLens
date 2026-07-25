@@ -1028,6 +1028,10 @@ html[data-theme="light"] footer::after { content: ""; }
 .auth-email {
   color: var(--text);
   font-weight: 500;
+  max-width: 14ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .auth-logout {
