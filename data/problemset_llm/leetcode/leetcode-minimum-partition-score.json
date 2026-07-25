@@ -23,7 +23,9 @@
   "patterns": [
     "dp-on-dag",
     "prefix-sum",
-    "interval-dp"
+    "interval-dp",
+    "wqs-binary-search",
+    "partition-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +34,9 @@
     "pattern_confidence": {
       "dp-on-dag": 0.9,
       "prefix-sum": 0.95,
-      "interval-dp": 0.85
+      "interval-dp": 0.85,
+      "wqs-binary-search": 0.85,
+      "partition-dp": 0.95
     }
   }
 }

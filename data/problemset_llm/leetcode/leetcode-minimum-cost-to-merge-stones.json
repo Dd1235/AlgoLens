@@ -20,7 +20,8 @@
   "patterns": [
     "interval-dp",
     "prefix-sum",
-    "dp-optimization"
+    "dp-optimization",
+    "matrix-chain-multiplication"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "interval-dp": 0.98,
       "prefix-sum": 0.9,
-      "dp-optimization": 0.85
+      "dp-optimization": 0.85,
+      "matrix-chain-multiplication": 0.9
     }
   }
 }

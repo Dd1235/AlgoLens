@@ -19,7 +19,8 @@
   ],
   "patterns": [
     "interval-dp",
-    "sorting"
+    "sorting",
+    "matrix-chain-multiplication"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +28,8 @@
     "generated_at_unix": 1777923519,
     "pattern_confidence": {
       "interval-dp": 0.98,
-      "sorting": 0.85
+      "sorting": 0.85,
+      "matrix-chain-multiplication": 0.9
     }
   }
 }

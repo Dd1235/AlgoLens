@@ -15,7 +15,8 @@
   "patterns": [
     "sliding-window",
     "ordered-set",
-    "hash-map"
+    "hash-map",
+    "mex"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "sliding-window": 0.98,
       "ordered-set": 0.85,
-      "hash-map": 0.8
+      "hash-map": 0.8,
+      "mex": 0.95
     }
   }
 }
