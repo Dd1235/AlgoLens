@@ -84,8 +84,6 @@ input.addEventListener("input", () => {
   debounceTimer = setTimeout(() => runSearch(input.value, { append: false }), DEBOUNCE_MS);
 });
 
-input.addEventListener("focus", () => setStatus("ready"));
-
 loadMoreEl.addEventListener("click", () => {
   if (!currentQuery) return;
   currentOffset += TOP_K;
@@ -150,9 +148,12 @@ libChips.forEach((chip) => {
 // signed in — picks up where they are in the LIBRARY_COMMANDS list.
 const TAB_CYCLE = [":bookmarks", ":done", ":all"];
 input.addEventListener("keydown", (e) => {
-  if (e.key !== "Tab" || !currentUser) return;
-  e.preventDefault();
+  if (e.key !== "Tab" || e.shiftKey || !currentUser) return;
   const cur = input.value.trim().toLowerCase();
+  // Only cycle from an empty box or from a library command. With a real query
+  // typed, Tab does its native job (move focus) instead of eating the query.
+  if (cur && !TAB_CYCLE.includes(cur)) return;
+  e.preventDefault();
   const idx = TAB_CYCLE.indexOf(cur);
   const next = TAB_CYCLE[(idx + 1) % TAB_CYCLE.length];
   input.value = next;
