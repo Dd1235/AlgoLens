@@ -16,7 +16,8 @@
     "kruskal",
     "union-find",
     "binary-lifting",
-    "lca"
+    "lca",
+    "minimum-spanning-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
       "kruskal": 0.98,
       "union-find": 0.95,
       "binary-lifting": 0.85,
-      "lca": 0.8
+      "lca": 0.8,
+      "minimum-spanning-tree": 1
     }
   }
 }

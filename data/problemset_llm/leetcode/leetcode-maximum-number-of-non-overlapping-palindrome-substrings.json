@@ -21,7 +21,8 @@
   "patterns": [
     "palindrome-check",
     "interval-dp",
-    "greedy-selection"
+    "greedy-selection",
+    "manacher"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "palindrome-check": 0.95,
       "interval-dp": 0.9,
-      "greedy-selection": 0.85
+      "greedy-selection": 0.85,
+      "manacher": 1
     }
   }
 }

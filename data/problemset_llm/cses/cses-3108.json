@@ -15,7 +15,8 @@
   "patterns": [
     "merge-k-sorted-lists",
     "binary-search-answer",
-    "two-pointers"
+    "two-pointers",
+    "meet-in-the-middle"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "merge-k-sorted-lists": 0.9,
       "binary-search-answer": 0.85,
-      "two-pointers": 0.7
+      "two-pointers": 0.7,
+      "meet-in-the-middle": 1
     }
   }
 }

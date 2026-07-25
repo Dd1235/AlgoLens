@@ -16,7 +16,8 @@
   "patterns": [
     "lca",
     "prefix-sum",
-    "distance-queries"
+    "distance-queries",
+    "steiner-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "lca": 0.95,
       "prefix-sum": 0.9,
-      "distance-queries": 0.88
+      "distance-queries": 0.88,
+      "steiner-tree": 1
     }
   }
 }

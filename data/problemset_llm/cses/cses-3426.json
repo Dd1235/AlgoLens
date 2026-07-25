@@ -13,7 +13,8 @@
   ],
   "patterns": [
     "prefix-xor",
-    "sliding-window"
+    "sliding-window",
+    "berlekamp-massey"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +22,8 @@
     "generated_at_unix": 1777951891,
     "pattern_confidence": {
       "prefix-xor": 0.98,
-      "sliding-window": 0.95
+      "sliding-window": 0.95,
+      "berlekamp-massey": 0.9
     }
   }
 }

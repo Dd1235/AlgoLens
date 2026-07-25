@@ -19,7 +19,9 @@
   "patterns": [
     "dynamic-programming",
     "prefix-sum",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "stars-and-bars",
+    "permutation-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +30,9 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "prefix-sum": 0.85,
-      "modular-arithmetic": 0.8
+      "modular-arithmetic": 0.8,
+      "stars-and-bars": 1,
+      "permutation-counting": 0.9
     }
   }
 }

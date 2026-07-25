@@ -20,7 +20,8 @@
   "patterns": [
     "dynamic-programming",
     "bfs",
-    "coin-change"
+    "coin-change",
+    "unbounded-knapsack"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "bfs": 0.85,
-      "coin-change": 0.95
+      "coin-change": 0.95,
+      "unbounded-knapsack": 1
     }
   }
 }

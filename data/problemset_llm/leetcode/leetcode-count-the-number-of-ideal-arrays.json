@@ -22,7 +22,8 @@
   "patterns": [
     "dp-on-dag",
     "combinatorics",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "stars-and-bars"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "dp-on-dag": 0.95,
       "combinatorics": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.85,
+      "stars-and-bars": 0.95
     }
   }
 }

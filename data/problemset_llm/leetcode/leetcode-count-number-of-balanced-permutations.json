@@ -22,7 +22,9 @@
   "patterns": [
     "dynamic-programming",
     "state-compression",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "inclusion-exclusion",
+    "permutation-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +33,9 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "state-compression": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.85,
+      "inclusion-exclusion": 0.8,
+      "permutation-counting": 1
     }
   }
 }

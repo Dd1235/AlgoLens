@@ -15,7 +15,8 @@
   "patterns": [
     "binary-lifting",
     "dfs",
-    "cycle-detection"
+    "cycle-detection",
+    "functional-graph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "binary-lifting": 0.95,
       "dfs": 0.9,
-      "cycle-detection": 0.85
+      "cycle-detection": 0.85,
+      "functional-graph": 1
     }
   }
 }

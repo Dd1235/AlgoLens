@@ -25,7 +25,8 @@
     "topological-sort",
     "state-compression",
     "game-dp",
-    "memoization"
+    "memoization",
+    "game-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
       "topological-sort": 0.9,
       "state-compression": 0.85,
       "game-dp": 0.95,
-      "memoization": 0.9
+      "memoization": 0.9,
+      "game-theory": 1
     }
   }
 }

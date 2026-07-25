@@ -442,6 +442,24 @@
     },
     "matrix-chain-multiplication": {
       "category": "dp"
+    },
+    "mobius-inversion": {
+      "category": "math"
+    },
+    "lucas-theorem": {
+      "category": "math"
+    },
+    "berlekamp-massey": {
+      "category": "math"
+    },
+    "multinomial-coefficient": {
+      "category": "math"
+    },
+    "kirchhoff-theorem": {
+      "category": "graph"
+    },
+    "steiner-tree": {
+      "category": "graph"
     }
   },
   "aliases": {

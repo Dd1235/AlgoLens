@@ -16,7 +16,8 @@
   "patterns": [
     "line-sweep",
     "coordinate-compression",
-    "event-sorting"
+    "event-sorting",
+    "fenwick-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "line-sweep": 0.98,
       "coordinate-compression": 0.9,
-      "event-sorting": 0.85
+      "event-sorting": 0.85,
+      "fenwick-tree": 1
     }
   }
 }

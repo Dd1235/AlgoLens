@@ -14,7 +14,8 @@
   ],
   "patterns": [
     "prefix-xor",
-    "binary-exponentiation"
+    "binary-exponentiation",
+    "lucas-theorem"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +23,8 @@
     "generated_at_unix": 1777951944,
     "pattern_confidence": {
       "prefix-xor": 0.95,
-      "binary-exponentiation": 0.7
+      "binary-exponentiation": 0.7,
+      "lucas-theorem": 0.9
     }
   }
 }

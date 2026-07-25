@@ -27,7 +27,8 @@
     "tree-dp",
     "dfs",
     "topological-sort",
-    "combinatorics"
+    "combinatorics",
+    "multinomial-coefficient"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -37,7 +38,8 @@
       "tree-dp": 0.95,
       "dfs": 0.9,
       "topological-sort": 0.85,
-      "combinatorics": 0.9
+      "combinatorics": 0.9,
+      "multinomial-coefficient": 1
     }
   }
 }

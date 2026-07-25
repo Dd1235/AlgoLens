@@ -21,7 +21,8 @@
   "patterns": [
     "dynamic-programming",
     "string-matching",
-    "prefix-check"
+    "prefix-check",
+    "trie"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "string-matching": 0.85,
-      "prefix-check": 0.8
+      "prefix-check": 0.8,
+      "trie": 0.9
     }
   }
 }

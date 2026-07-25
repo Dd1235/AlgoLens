@@ -19,7 +19,9 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "state-compression"
+    "state-compression",
+    "kmp",
+    "z-function"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +29,9 @@
     "generated_at_unix": 1784908606,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "state-compression": 0.85
+      "state-compression": 0.85,
+      "kmp": 1,
+      "z-function": 1
     }
   }
 }
