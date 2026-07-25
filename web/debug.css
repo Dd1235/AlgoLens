@@ -295,3 +295,7 @@ html[data-theme="light"] .note {
     gap: 0.25rem;
   }
 }
+
+/* Source links inside problem cards: no browser-default blue. */
+.problem-card .meta a { color: var(--text-muted); text-decoration: none; }
+.problem-card .meta a:hover { color: var(--accent); }

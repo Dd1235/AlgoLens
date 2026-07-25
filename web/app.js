@@ -84,8 +84,6 @@ input.addEventListener("input", () => {
   debounceTimer = setTimeout(() => runSearch(input.value, { append: false }), DEBOUNCE_MS);
 });
 
-input.addEventListener("focus", () => setStatus("ready"));
-
 loadMoreEl.addEventListener("click", () => {
   if (!currentQuery) return;
   currentOffset += TOP_K;
@@ -150,29 +148,16 @@ libChips.forEach((chip) => {
 // signed in — picks up where they are in the LIBRARY_COMMANDS list.
 const TAB_CYCLE = [":bookmarks", ":done", ":all"];
 input.addEventListener("keydown", (e) => {
-  if (e.key !== "Tab" || !currentUser) return;
-  e.preventDefault();
+  if (e.key !== "Tab" || e.shiftKey || !currentUser) return;
   const cur = input.value.trim().toLowerCase();
+  // Only cycle from an empty box or from a library command. With a real query
+  // typed, Tab does its native job (move focus) instead of eating the query.
+  if (cur && !TAB_CYCLE.includes(cur)) return;
+  e.preventDefault();
   const idx = TAB_CYCLE.indexOf(cur);
   const next = TAB_CYCLE[(idx + 1) % TAB_CYCLE.length];
   input.value = next;
   runSearch(next, { append: false });
-});
-
-// Terminal muscle memory: / focuses the box, ? opens the manual, Esc clears.
-document.addEventListener("keydown", (e) => {
-  const typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement?.tagName || "");
-  if (e.key === "/" && !typing && !e.metaKey && !e.ctrlKey) {
-    e.preventDefault();
-    input.focus();
-    input.select();
-  } else if (e.key === "?" && !typing) {
-    e.preventDefault();
-    renderHelp();
-  } else if (e.key === "Escape" && document.activeElement === input) {
-    input.value = "";
-    runSearch("", { append: false });
-  }
 });
 
 logoutBtn.addEventListener("click", async () => {
@@ -206,7 +191,10 @@ function applyAuthState() {
   if (currentUser) {
     anon.hidden = true;
     signed.hidden = false;
-    authEmailEl.textContent = currentUser.email;
+    // Local part only — you know your own domain, and the full address is
+    // what pushes the nav onto a second row (content caps at 720px).
+    authEmailEl.textContent = String(currentUser.email).split("@")[0];
+    authEmailEl.title = currentUser.email;
     filterWrap.hidden = false;
     libBar.hidden = false;
     refreshLibraryCounts();
@@ -266,7 +254,7 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
-    setStatus("type a query · / to focus · ? for help");
+    setStatus("type a query to search · :help for the manual");
     resultsEl.innerHTML = "";
     currentQuery = "";
     currentOffset = 0;
@@ -552,17 +540,12 @@ PATTERNS
   filter results to that label; the pill clears it
   browse the whole taxonomy with counts: /patterns.html
 
-KEYS
-  /                 focus the search box
-  ?                 this manual
-  Esc               clear the query
-  Tab               cycle library views       (signed in)
-
 COMMANDS
   :help :h          this manual
   :bookmarks :b     starred problems           (signed in)
   :done :d          problems marked done       (signed in)
   :all :lib         everything saved           (signed in)
+  Tab               cycle library views        (signed in)
 
 MORE
   click a result to expand · "find similar" = cosine over the
@@ -937,5 +920,5 @@ if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
 } else if (bootQ) {
   runSearch(bootQ, { append: false });
 } else {
-  setStatus("type a query · / to focus · ? for help");
+  setStatus("type a query to search · :help for the manual");
 }
