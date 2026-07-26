@@ -4,7 +4,6 @@ const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
 const loadMoreEl = document.getElementById("load-more");
 const filterSelect = document.getElementById("filter-select");
-const judgeSelect = document.getElementById("judge-select");
 const filterWrap = document.getElementById("filter-wrap");
 const rankerSelect = document.getElementById("ranker-select");
 const authWidget = document.getElementById("auth-widget");
@@ -18,6 +17,18 @@ const libChips = libBar.querySelectorAll(".lib-chip");
 
 // :help works for everyone, signed in or not.
 const HELP_COMMANDS = new Set([":help", ":h"]);
+
+// Comparing rankers is a thing you do while tuning the engine, not while
+// looking for a problem. It used to be a checkbox sitting above every search;
+// as a command it costs nothing until you ask for it.
+const COMPARE_COMMANDS = [":compare ", ":cmp "];
+function compareQuery(q) {
+  const lower = q.toLowerCase();
+  for (const cmd of COMPARE_COMMANDS) {
+    if (lower.startsWith(cmd)) return q.slice(cmd.length).trim();
+  }
+  return lower.trim() === ":compare" || lower.trim() === ":cmp" ? "" : null;
+}
 
 // Shell-style library commands: typing one of these in the search box bypasses
 // BM25 and lists the user's saved problems.
@@ -34,7 +45,8 @@ const LIBRARY_COMMANDS = {
 };
 
 const compareEl = document.getElementById("compare-results");
-const compareToggle = document.getElementById("compare-toggle");
+const judgeRow = document.getElementById("judge-row");
+const judgeClearBtn = document.getElementById("judge-clear");
 const latencySummaryEl = document.getElementById("latency-summary");
 // The compare view is a fixed pair — renderCompare's delta badges are pairwise.
 // Other registered rankers stay reachable via /api/compare?rankers=….
@@ -62,6 +74,7 @@ let currentFilter = filterSelect.value || "all";
 let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
+let compareMode = false;  // entered with :compare, left by any other query
 let currentSearchId = null; // ties outcome beacons to the search that produced them
 let currentRankerAnswered = "";
 
@@ -106,37 +119,7 @@ filterSelect.addEventListener("change", () => {
   if (currentQuery) runSearch(currentQuery, { append: false });
 });
 
-// Two ways into the same state. The dropdown is the one people find — clicking
-// a result's [lc]/[cf] tag is faster once you know it's there, but a filter
-// nobody can see is a filter nobody uses, which is how this shipped the first
-// time. The dropdown is single-judge; the tags are how you combine them.
-judgeSelect.addEventListener("change", () => {
-  activePlatforms.clear();
-  if (judgeSelect.value) activePlatforms.add(judgeSelect.value);
-  syncJudgeControls();
-  currentOffset = 0;
-  if (currentQuery || input.value.trim()) runSearch(input.value || currentQuery, { append: false });
-});
 
-// Keep the dropdown honest about what the tags did. More than one judge has no
-// single option to point at, so it says so rather than lying about one of them.
-function syncJudgeControls() {
-  const many = activePlatforms.size > 1;
-  let multi = judgeSelect.querySelector("option[value='__multi']");
-  if (many && !multi) {
-    multi = document.createElement("option");
-    multi.value = "__multi";
-    judgeSelect.appendChild(multi);
-  }
-  if (many) {
-    multi.textContent = `${activePlatforms.size} judges`;
-    judgeSelect.value = "__multi";
-  } else {
-    if (multi) multi.remove();
-    judgeSelect.value = activePlatforms.size ? [...activePlatforms][0] : "";
-  }
-  updatePlatformPill();
-}
 
 // Ranker picker. Plain word first (a newcomer picks by meaning), technical
 // name second (this audience likes seeing it). tfidf and bm25-grpc are
@@ -282,14 +265,36 @@ function setLibPath(path) {
 
 bootstrapAuth();
 
-compareToggle.addEventListener("change", () => {
-  applyMode();
-  if (input.value.trim()) runSearch(input.value, { append: false });
+// Judge chips. Multi-select on purpose: "codeforces + atcoder" is a real way
+// to think about practice, and the single-pick dropdown this replaced couldn't
+// express it. Lives here rather than in the library bar so anonymous users get
+// it too, and so it composes with :bookmarks / :done instead of fighting them.
+judgeRow.querySelectorAll(".judge-chip[data-platform]").forEach((chip) => {
+  chip.addEventListener("click", () => togglePlatformFilter(chip.dataset.platform));
 });
-applyMode();
+judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
+
+// Says what's narrowing the current view, so an empty or short list explains
+// itself instead of looking broken.
+function activeFacets() {
+  const bits = [];
+  if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
+  if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
+  return bits;
+}
+
+function syncJudgeControls() {
+  judgeRow.querySelectorAll(".judge-chip[data-platform]").forEach((chip) => {
+    const on = activePlatforms.has(chip.dataset.platform);
+    chip.classList.toggle("active", on);
+    chip.setAttribute("aria-pressed", String(on));
+  });
+  judgeClearBtn.classList.toggle("hidden", activePlatforms.size === 0);
+  updatePlatformPill();
+}
 
 function applyMode() {
-  if (compareToggle.checked) {
+  if (compareMode) {
     resultsEl.classList.add("hidden");
     compareEl.classList.remove("hidden");
     hideLoadMore();
@@ -314,6 +319,25 @@ async function runSearch(rawQuery, { append = false } = {}) {
     return;
   }
 
+  // :compare <query> — one-shot, leaves compare mode as soon as you search
+  // for something else.
+  const cmp = compareQuery(q);
+  if (cmp !== null) {
+    compareMode = true;
+    applyMode();
+    if (!cmp) {
+      setStatus("compare: type a query after :compare");
+      compareEl.innerHTML = "";
+      return;
+    }
+    currentQuery = q;
+    return runCompare(cmp);
+  }
+  if (compareMode) {
+    compareMode = false;
+    applyMode();
+  }
+
   if (HELP_COMMANDS.has(q.toLowerCase())) {
     currentQuery = "";
     currentOffset = 0;
@@ -331,7 +355,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
     return runLibrary(libraryType, q);
   }
 
-  if (compareToggle.checked) return runCompare(q);
+  if (compareMode) return runCompare(q);
 
   // Search mode: path drops the leading tilde and shows the query so the bar
   // reads like a real shell prompt: ~/search "graph cycle".
@@ -407,18 +431,22 @@ function renderSingle(data, q, append) {
 
 async function runLibrary(type, q) {
   const issuedAt = ++lastQueryAt;
-  clearPatternFilter({ reissue: false }); // library views ignore the pattern filter
-  clearPlatformFilter({ reissue: false });
+  clearPatternFilter({ reissue: false }); // a saved list isn't a ranked search
   currentSearchId = null;
   currentRankerAnswered = "";
   hideFeedback();
-  setLibPath(`~/${type}`);
-  setStatus(`ls ~/${type}`);
+  const facets = activeFacets();
+  setLibPath(`~/${type}${facets.length ? " " + facets.join(" ") : ""}`);
+  setStatus(`ls ~/${type}${facets.length ? " · " + facets.join(" · ") : ""}`);
   hideLoadMore();
 
   let data;
   try {
-    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}`);
+    // Judge and done filters carry into the library: "my bookmarked AtCoder
+    // problems I haven't finished" is one of the reasons to save things at all.
+    const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
+    const doneParam = currentFilter !== "all" ? `&filter=${currentFilter}` : "";
+    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}`);
     data = await res.json();
   } catch (err) {
     if (issuedAt !== lastQueryAt) return;
@@ -439,18 +467,21 @@ async function runLibrary(type, q) {
   currentTotal = hits.length;
 
   if (hits.length === 0) {
-    const empty =
-      type === "bookmarked"
-        ? "ls: ~/bookmarked is empty — star ☆ a problem to save it here"
-        : type === "done"
-        ? "ls: ~/done is empty — mark ○ a problem to track it"
-        : "ls: ~ is empty — bookmark or mark problems done from search";
+    // An empty list under a filter is a filter result, not an empty library —
+    // say which, or it reads as data loss.
+    const empty = facets.length
+      ? `ls: nothing in ~/${type} matches ${facets.join(" · ")}`
+      : type === "bookmarked"
+      ? "ls: ~/bookmarked is empty — star ☆ a problem to save it here"
+      : type === "done"
+      ? "ls: ~/done is empty — mark ○ a problem to track it"
+      : "ls: ~ is empty — bookmark or mark problems done from search";
     setStatus(empty);
     resultsEl.innerHTML = "";
     return;
   }
 
-  setStatus(`${hits.length} ${type === "all" ? "saved" : type}`);
+  setStatus(`${hits.length} ${type === "all" ? "saved" : type}${facets.length ? " · " + facets.join(" · ") : ""}`);
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
 }
 
@@ -661,16 +692,22 @@ FIND SIMILAR
   itself, not of your query. Built for upsolving: open the one that
   beat you, see its family.
 
+FILTERS — they stack, and they stack with the library too
+
+  judges       the lc / cses / cf / atc chips above the results, or
+               the [lc] tag on any card. Pick as many as you like;
+               "all ✕" drops them. Not a picker — a set.
+  pattern      click a technique label inside a result
+  all/notdone  the dropdown next to the ranker      (signed in)
+  /done
+
+  These compose. ":bookmarks" with cf+atc selected and "not done"
+  is your unfinished Codeforces and AtCoder saves — the path and the
+  status line always spell out what's narrowing the view.
+
 SAVING                                             (signed in)
   ☆ / ★              bookmark a problem, on any result card
   ○ / ✓              mark it done — done marks feed your heatmap
-  all / not done     the dropdown next to the ranker filters results
-  / done               by what you've finished
-
-COMPARE
-  the checkbox above the results runs your query in keyword and
-  meaning mode side by side, with rank deltas — the fastest way to
-  see what each mode is good at
 
 LINKS
   every view is shareable: /?q=knapsack · /?pattern=slope-trick
@@ -678,13 +715,14 @@ LINKS
 
 CORPUS
   four judges, tagged [lc] [cf] [atc] [cses] on every result
-  click a tag to see only that judge; click more to combine them,
-  click again to drop it — the pill under the status clears it
   deliberately hard: no LeetCode Easy, Codeforces and AtCoder
   stratified from 1300 up — the number on the card is the rating
 
 COMMANDS
   :help :h          this manual
+  :compare :cmp     ":compare knapsack" runs the query in keyword
+                    and meaning mode side by side, with rank deltas.
+                    Any ordinary search leaves compare mode.
   :bookmarks :b     starred problems           (signed in)
   :done :d          problems marked done       (signed in)
   :all :lib         everything saved           (signed in)
@@ -695,8 +733,8 @@ MORE
   live usage + latency: /stats.html · scoring math: /debug.html`;
 
 function renderHelp() {
-  if (compareToggle.checked) {
-    compareToggle.checked = false;
+  if (compareMode) {
+    compareMode = false;
     applyMode();
   }
   clearPatternFilter({ reissue: false });
