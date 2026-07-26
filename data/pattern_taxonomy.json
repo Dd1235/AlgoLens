@@ -463,6 +463,18 @@
     },
     "edmonds-karp": {
       "category": "graph"
+    },
+    "exchange-argument": {
+      "category": "array"
+    },
+    "fft": {
+      "category": "math"
+    },
+    "expression-parsing": {
+      "category": "string"
+    },
+    "interactive": {
+      "category": "general"
     }
   },
   "aliases": {
@@ -504,6 +516,43 @@
     "min-cost-max-flow": "min-cost-flow",
     "maximum-bipartite-matching": "bipartite-matching",
     "bipartite-flow": "bipartite-matching",
-    "graph-cut": "min-cut"
+    "graph-cut": "min-cut",
+    "advanced-dsu": "union-find",
+    "mst": "minimum-spanning-tree",
+    "01-bfs": "zero-one-bfs",
+    "topological-ordering": "topological-sort",
+    "shortest-path-algorithm": "shortest-path",
+    "binary-search-on-answer": "binary-search-answer",
+    "binary-search-on-every-start": "binary-search",
+    "binary-search-on-real-domain": "binary-search",
+    "sweepline-technique": "line-sweep",
+    "sorting-type": "sorting",
+    "dnc": "divide-and-conquer",
+    "string-trie": "trie",
+    "bit-trie": "trie",
+    "hashing": "rolling-hash",
+    "manacher-s": "manacher",
+    "lazy-propagation-and-range-updates": "lazy-propagation",
+    "basic-point-updates-and-range-queries": "segment-tree",
+    "kth-type-and-merge-sort-trees": "merge-sort-tree",
+    "coordinate-compression-and-offline-queries": "coordinate-compression",
+    "space-optimization": "dp-optimization",
+    "transition-optimization": "dp-optimization",
+    "sorting-based-dp-optimization": "dp-optimization",
+    "state-space-reduction": "state-compression",
+    "articulation-points-and-bridges": "articulation-points",
+    "contribution-on-bit": "contribution-technique",
+    "dfs-and-similar": "dfs",
+    "graph-matchings": "bipartite-matching",
+    "shortest-paths": "shortest-path",
+    "sortings": "sorting",
+    "2-sat": "two-sat",
+    "constructive-algorithms": "constructive-algorithm",
+    "games": "game-theory",
+    "bitmasks": "bitmask-dp",
+    "probabilities": "probability-dp",
+    "matrices": "matrix-exponentiation",
+    "string-suffix-structures": "suffix-array",
+    "kmp-z-algorithm": "kmp"
   }
 }
