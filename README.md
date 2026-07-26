@@ -11,7 +11,7 @@ Search 1,800+ competitive-programming problems the way you actually think about 
 
 Google "cses euler path" and you get the CSES homepage, a blog post, and Wikipedia — not the actual Euler-path problems. "knapsack leetcode" is no better at surfacing the good knapsack DPs. Site tags help but stop at their site's border and at coarse labels: LeetCode has `dynamic-programming`, but nothing for `digit-dp`, `wqs-binary-search`, or `slope-trick`. And nothing anywhere answers _"I remember the story — a thief robbing houses — what was that problem?"_
 
-Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all three.
+Cosine is one search box over LeetCode, CSES, Codeforces and AtCoder that handles all three.
 
 ## Finding problems
 
@@ -48,6 +48,8 @@ or wording, not ranking — that turned out to be the pattern.
 | "flows" returned nothing | No stemmer — added flow aliases and folded 9 scattered flow labels into the canonical set |
 | Similarity scores were confusing | Numeric scores are debug-only now; results keep the relative bar |
 | Didn't know bookmarks / done / filters existed | `:help` gained a SAVING section and a real explanation of "find similar" |
+| A cleared filter came back on refresh | Clearing the pill now drops `?pattern=` from the URL too |
+| "LeetCode-only is limiting" | Codeforces and AtCoder added — rating-stratified from 1300 up, no easies |
 
 ## Measured
 

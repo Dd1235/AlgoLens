@@ -1,4 +1,4 @@
-# AlgoLens — Developer Internals
+# Cosine — Developer Internals
 
 For users / recruiters: see [README.md](../README.md). This doc is for working in the codebase.
 
@@ -25,7 +25,7 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 | `GET /api/similar/:problemId?k=` | "Find similar": doc-to-doc cosine over the stored embeddings, self excluded. 503 if dense isn't registered, 404 for unknown ids. |
 | `GET /api/compare?q=&k=&rankers=` | The same query across several rankers in parallel (default all registered; `rankers=bm25,dense` narrows). Powers the side-by-side compare UI. |
 | `GET /api/patterns` | Canonical taxonomy grouped by category with per-label problem counts (zero counts included). Powers `/patterns.html`. |
-| `GET /api/handles` · `PUT /api/handles` | Signed-in user's LeetCode/Codeforces/CodeChef/GitHub handles. PUT body with any subset; empty string deletes; any change drops the cached stats row. |
+| `GET /api/handles` · `PUT /api/handles` | Signed-in user's LeetCode/Codeforces/CodeChef/AtCoder/GitHub handles. PUT body with any subset; empty string deletes; any change drops the cached stats row. |
 | `GET /api/stats` | Public aggregate usage/performance: visitors, searches, per-ranker live latency percentiles, top + zero-hit queries, cold starts. Powers `/stats.html`. |
 | `GET /api/profile?refresh=1` | Combined external stats: per-platform payloads (12h server-side cache; `refresh=1` floors it at 10min; stale-if-error). `combined` carries `totalSolved`, `algolensDone`, a platform→category map (`dsa`/`dev`), and the AlgoLens done-marks calendar — the client composes the dsa/dev/overall heatmap views from the per-source calendars, so tab switches cost zero network. Powers `/profile.html`. |
 | `POST /api/auth/signup` | Create user, bcrypt password, set httpOnly JWT cookie. |
@@ -151,11 +151,11 @@ Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfi
   /search        tokenize / inverted / tfidf / bm25 / embedding / dense / hybrid (+ tests)
   /routes        search + similar + debug + auth + user-state endpoints
   /auth          JWT cookie helpers + auth middleware
-  data.js        loads data/problemset_llm/{leetcode,cses}/*.json at boot
+  data.js        loads data/problemset_llm/{leetcode,cses,codeforces,atcoder}/*.json at boot
 /db              Postgres migrations
 /web             plain HTML/CSS/JS, no build step
 /data
-  /problemset_llm/{leetcode,cses,codeforces}/   LLM-annotated problem records
+  /problemset_llm/{leetcode,cses,codeforces,atcoder}/  LLM-annotated problem records
   /embeddings    committed corpus vectors (corpus.f32 + manifest.json); rebuild with `npm run embed`
   /review_queue  audit candidates awaiting human review (apply_review.js consumes)
   pattern_taxonomy.json   canonical pattern vocabulary + aliases (single source of truth)
