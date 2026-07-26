@@ -577,6 +577,11 @@ LINKS
   every view is shareable: /?q=knapsack · /?pattern=slope-trick
   /?ranker=dense · combine them
 
+CORPUS
+  four judges, tagged [lc] [cf] [atc] [cses] on every result
+  deliberately hard: no LeetCode Easy, Codeforces and AtCoder
+  stratified from 1300 up — the number on the card is the rating
+
 COMMANDS
   :help :h          this manual
   :bookmarks :b     starred problems           (signed in)
