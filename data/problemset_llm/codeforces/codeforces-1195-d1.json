@@ -11,9 +11,8 @@
     "math",
     "number theory"
   ],
-  "statement": "Given an array of equal-length integers, compute the sum over all pairs of a digit-interleaving function defined by alternating digits from the two numbers, modulo 998244353.",
+  "statement": "Given an array of equal-length integers, compute the sum over all pairs of a digit-interleaving function applied to each pair, modulo 998244353.",
   "tags": [
-    "array",
     "math",
     "number-theory",
     "combinatorics"
@@ -21,16 +20,18 @@
   "patterns": [
     "modular-arithmetic",
     "digit-manipulation",
-    "combinatorial-summation"
+    "pairwise-sum",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047795,
+    "generated_at_unix": 1785050099,
     "pattern_confidence": {
       "modular-arithmetic": 0.95,
       "digit-manipulation": 0.9,
-      "combinatorial-summation": 0.85
+      "pairwise-sum": 0.85,
+      "prefix-sum": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

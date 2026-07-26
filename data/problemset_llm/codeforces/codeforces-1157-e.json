@@ -21,18 +21,16 @@
   "patterns": [
     "greedy",
     "binary-search",
-    "ordered-set",
-    "modular-arithmetic"
+    "ordered-set"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047976,
+    "generated_at_unix": 1785050295,
     "pattern_confidence": {
       "greedy": 0.95,
       "binary-search": 0.85,
-      "ordered-set": 0.8,
-      "modular-arithmetic": 0.9
+      "ordered-set": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

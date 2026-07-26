@@ -10,25 +10,28 @@
     "*special",
     "brute force"
   ],
-  "statement": "Given two players each holding 18 cards from a 36-card deck, determine k distinct card distributions that yield k different absolute differences in game outcomes depending on which player moves first, under optimal play.",
+  "statement": "Given two players each holding 18 cards from a 36-card deck, determine the distinct values of the importance of the first move, defined as the absolute difference in game outcomes when either player starts first, under optimal play. Find k distinct card distributions that yield k distinct importance values.",
   "tags": [
     "game-theory",
     "combinatorics",
+    "brute-force",
     "backtracking"
   ],
   "patterns": [
-    "brute-force",
-    "state-space-search",
-    "game-dp"
+    "game-tree-search",
+    "minimax",
+    "state-space-enumeration",
+    "memoization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048109,
+    "generated_at_unix": 1785050419,
     "pattern_confidence": {
-      "brute-force": 0.95,
-      "state-space-search": 0.9,
-      "game-dp": 0.85
+      "game-tree-search": 0.95,
+      "minimax": 0.9,
+      "state-space-enumeration": 0.85,
+      "memoization": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

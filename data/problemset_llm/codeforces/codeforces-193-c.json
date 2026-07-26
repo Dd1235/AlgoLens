@@ -12,25 +12,25 @@
     "math",
     "matrices"
   ],
-  "statement": "Given the pairwise Hamming distances between four unknown binary strings, reconstruct a set of four strings over {a, b} with the same distances and minimal length.",
+  "statement": "Given the pairwise Hamming distances between four unknown binary strings composed of 'a' and 'b', reconstruct a set of four such strings of minimum length that match these distances.",
   "tags": [
     "string",
-    "math",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "math"
   ],
   "patterns": [
     "constructive-algorithm",
-    "binary-search-answer",
-    "bit-manipulation"
+    "hamming-distance",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048213,
+    "generated_at_unix": 1785050519,
     "pattern_confidence": {
       "constructive-algorithm": 0.95,
-      "binary-search-answer": 0.85,
-      "bit-manipulation": 0.7
+      "hamming-distance": 0.9,
+      "greedy": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

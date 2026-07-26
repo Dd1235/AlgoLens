@@ -11,25 +11,25 @@
     "math",
     "number theory"
   ],
-  "statement": "Count the number of triples (a, b, n) with given upper bounds where concatenating a and n divided by concatenating n and b equals a divided by b.",
+  "statement": "Count the number of triples (a, b, n) with given upper bounds where the ratio of concatenations an/nb equals a/b, treating concatenations as decimal strings without leading zeros.",
   "tags": [
     "math",
     "number-theory",
     "brute-force"
   ],
   "patterns": [
-    "constructive-algorithm",
-    "digit-manipulation",
-    "brute-force"
+    "brute-force",
+    "string-concatenation",
+    "ratio-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048302,
+    "generated_at_unix": 1785050612,
     "pattern_confidence": {
-      "constructive-algorithm": 0.85,
-      "digit-manipulation": 0.9,
-      "brute-force": 0.8
+      "brute-force": 0.9,
+      "string-concatenation": 0.7,
+      "ratio-check": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

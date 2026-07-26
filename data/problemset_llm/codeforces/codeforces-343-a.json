@@ -10,26 +10,26 @@
     "math",
     "number theory"
   ],
-  "statement": "Given unit resistors, construct an element with a target rational resistance using series and parallel connections, minimizing the number of resistors used.",
+  "statement": "Given unit resistors and two ways to combine them (series and parallel), find the minimum number of unit resistors needed to construct a resistor with a given rational resistance a/b.",
   "tags": [
     "math",
     "number-theory",
     "dynamic-programming"
   ],
   "patterns": [
+    "fraction-representation",
     "dp-on-rationals",
     "state-compression",
-    "fraction-normalization",
     "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048510,
+    "generated_at_unix": 1785050806,
     "pattern_confidence": {
-      "dp-on-rationals": 0.95,
-      "state-compression": 0.85,
-      "fraction-normalization": 0.9,
+      "fraction-representation": 0.9,
+      "dp-on-rationals": 0.85,
+      "state-compression": 0.7,
       "number-theory": 0.9
     }
   },

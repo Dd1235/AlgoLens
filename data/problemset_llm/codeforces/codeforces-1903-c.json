@@ -10,22 +10,25 @@
     "constructive algorithms",
     "greedy"
   ],
-  "statement": "Given an array, partition it into non-empty contiguous subarrays to maximize the sum of each subarray's sum multiplied by its position index in the partition.",
+  "statement": "Given an array, partition it into non-empty contiguous subarrays to maximize the sum of each subarray's sum multiplied by its 1-based position in the partition.",
   "tags": [
     "array",
-    "dynamic-programming"
+    "dynamic-programming",
+    "greedy"
   ],
   "patterns": [
+    "dynamic-programming",
     "prefix-sum",
-    "dynamic-programming"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047841,
+    "generated_at_unix": 1785050146,
     "pattern_confidence": {
-      "prefix-sum": 0.95,
-      "dynamic-programming": 0.9
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.9,
+      "greedy": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

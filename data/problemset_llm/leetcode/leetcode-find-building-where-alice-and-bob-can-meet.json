@@ -19,7 +19,8 @@
   "tags": [
     "array",
     "graph",
-    "binary-search"
+    "binary-search",
+    "data-structure"
   ],
   "patterns": [
     "binary-search-answer",

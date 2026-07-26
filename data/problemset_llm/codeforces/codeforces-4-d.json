@@ -12,23 +12,23 @@
   ],
   "statement": "Given many envelopes with width and height, find the longest strictly increasing chain by both dimensions such that a given card fits inside the smallest envelope in the chain without rotation.",
   "tags": [
-    "array",
+    "dynamic-programming",
     "sorting",
-    "dynamic-programming"
+    "geometry"
   ],
   "patterns": [
     "longest-increasing-subsequence",
-    "binary-search-answer",
-    "sorting"
+    "sorting",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048863,
+    "generated_at_unix": 1785050953,
     "pattern_confidence": {
       "longest-increasing-subsequence": 0.95,
-      "binary-search-answer": 0.85,
-      "sorting": 0.9
+      "sorting": 0.9,
+      "greedy": 0.7
     }
   },
   "source_topic": "Formwise / DP Level 1"

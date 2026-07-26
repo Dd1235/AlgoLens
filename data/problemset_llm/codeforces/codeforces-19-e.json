@@ -11,27 +11,27 @@
     "divide and conquer",
     "dsu"
   ],
-  "statement": "Given a graph, find all edges whose removal makes the graph bipartite (2-colorable without edges connecting same-colored vertices).",
+  "statement": "Given a graph with n points and edges, find all edges whose removal makes the graph bipartite (2-colorable without edges connecting same-colored vertices).",
   "tags": [
     "graph",
     "dfs",
-    "bipartite-check",
-    "union-find"
+    "union-find",
+    "bipartite-check"
   ],
   "patterns": [
     "dfs",
-    "bipartite-check",
     "bridge-finding",
+    "bipartite-check",
     "union-find"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048971,
+    "generated_at_unix": 1785051085,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "bipartite-check": 0.98,
+      "dfs": 0.9,
       "bridge-finding": 0.85,
+      "bipartite-check": 0.95,
       "union-find": 0.7
     }
   },

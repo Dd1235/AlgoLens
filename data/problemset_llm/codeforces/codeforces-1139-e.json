@@ -11,25 +11,29 @@
     "graph matchings",
     "graphs"
   ],
-  "statement": "Given students each belonging to one club with a potential value, and a sequence of days where one student leaves daily, determine the maximum mex of potentials from one selected student per club each day.",
+  "statement": "Given students each belonging to one club with a potential value, and a sequence of days where one student leaves daily, determine the maximum mex of potentials from one selected student per club after each departure.",
   "tags": [
-    "array",
     "graph",
-    "greedy"
+    "max-flow",
+    "matching",
+    "greedy",
+    "data-structure"
   ],
   "patterns": [
-    "binary-search-answer",
+    "max-flow",
     "greedy",
-    "mex"
+    "mex",
+    "offline-queries"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048224,
+    "generated_at_unix": 1785050529,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "max-flow": 0.9,
       "greedy": 0.85,
-      "mex": 0.9
+      "mex": 0.95,
+      "offline-queries": 0.7
     }
   },
   "source_topic": "Formwise / Graph Level 2"

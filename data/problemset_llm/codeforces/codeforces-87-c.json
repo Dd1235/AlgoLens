@@ -11,7 +11,7 @@
     "games",
     "math"
   ],
-  "statement": "Two players alternately split a pile of stones into strictly decreasing piles with consecutive differences of one; determine the winner assuming optimal play.",
+  "statement": "Two players alternately split a pile of stones into strictly decreasing piles with consecutive differences of one. The player unable to move loses. Determine the winner assuming optimal play.",
   "tags": [
     "game-theory",
     "dynamic-programming",
@@ -19,16 +19,16 @@
   ],
   "patterns": [
     "grundy-numbers",
-    "combinatorial-game",
+    "combinatorial-game-theory",
     "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048173,
+    "generated_at_unix": 1785050482,
     "pattern_confidence": {
       "grundy-numbers": 0.95,
-      "combinatorial-game": 0.9,
+      "combinatorial-game-theory": 0.9,
       "dynamic-programming": 0.85
     }
   },

@@ -12,25 +12,25 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a string, find the length of the longest lexicographically increasing subsequence among all its substrings.",
+  "statement": "Given a string, consider all its substrings starting at every position and extending to the end, then find the length of the longest lexicographically increasing subsequence among these substrings.",
   "tags": [
     "string",
     "dynamic-programming",
-    "lexicography"
+    "lexicographic-order"
   ],
   "patterns": [
     "longest-increasing-subsequence",
-    "string-substrings",
-    "lexicographic-comparison"
+    "suffix-array",
+    "dp-on-strings"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048352,
+    "generated_at_unix": 1785050661,
     "pattern_confidence": {
-      "longest-increasing-subsequence": 0.98,
-      "string-substrings": 0.9,
-      "lexicographic-comparison": 0.85
+      "longest-increasing-subsequence": 0.95,
+      "suffix-array": 0.9,
+      "dp-on-strings": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

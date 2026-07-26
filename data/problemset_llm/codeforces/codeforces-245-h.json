@@ -11,25 +11,25 @@
     "hashing",
     "strings"
   ],
-  "statement": "Given a string and multiple queries defined by substring indices, determine the number of palindromic substrings within each queried substring.",
+  "statement": "Given a string and multiple queries specifying substrings, determine the number of palindromic substrings within each queried substring.",
   "tags": [
     "string",
     "dynamic-programming",
     "rolling-hash"
   ],
   "patterns": [
-    "palindromic-substrings",
-    "prefix-sum",
-    "rolling-hash"
+    "palindrome-dp",
+    "prefix-hashing",
+    "range-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048752,
+    "generated_at_unix": 1785050836,
     "pattern_confidence": {
-      "palindromic-substrings": 0.95,
-      "prefix-sum": 0.85,
-      "rolling-hash": 0.8
+      "palindrome-dp": 0.95,
+      "prefix-hashing": 0.9,
+      "range-query": 0.85
     }
   },
   "source_topic": "Formwise / String"

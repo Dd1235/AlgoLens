@@ -13,28 +13,31 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a tree with n vertices, for each k from 1 to n, construct a graph G_k where edges connect vertices at distance at least k in the tree, and determine the number of connected components in G_k.",
+  "statement": "Given a tree with n vertices, for each integer k from 1 to n, construct a graph G_k where edges connect vertices at distance at least k in the tree, and determine the number of connected components in G_k.",
   "tags": [
     "tree",
     "graph",
-    "distance",
-    "dynamic-programming"
+    "dfs",
+    "dynamic-programming",
+    "greedy"
   ],
   "patterns": [
-    "distance-matrix",
-    "binary-search-answer",
+    "distance-calculation",
+    "connected-components",
     "dfs",
-    "connected-components"
+    "greedy",
+    "dp-on-trees"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048748,
+    "generated_at_unix": 1785050832,
     "pattern_confidence": {
-      "distance-matrix": 0.85,
-      "binary-search-answer": 0.75,
+      "distance-calculation": 0.9,
+      "connected-components": 0.95,
       "dfs": 0.9,
-      "connected-components": 0.9
+      "greedy": 0.85,
+      "dp-on-trees": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

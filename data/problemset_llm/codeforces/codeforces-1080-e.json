@@ -9,25 +9,29 @@
   "source_tags": [
     "strings"
   ],
-  "statement": "Given an n by m matrix of lowercase letters, count the number of submatrices for which each row can be reordered independently so that all rows and columns form palindromes.",
+  "statement": "Given an n by m matrix of lowercase letters, count the number of submatrices that can be rearranged row-wise so that every row and column in the submatrix forms a palindrome.",
   "tags": [
     "matrix",
-    "string",
-    "combinatorics"
+    "strings",
+    "palindrome",
+    "combinatorics",
+    "string"
   ],
   "patterns": [
     "palindrome",
-    "row-wise-reordering",
-    "submatrix-enumeration"
+    "row-wise-rearrangement",
+    "submatrix-enumeration",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048779,
+    "generated_at_unix": 1785050865,
     "pattern_confidence": {
       "palindrome": 0.95,
-      "row-wise-reordering": 0.9,
-      "submatrix-enumeration": 0.85
+      "row-wise-rearrangement": 0.9,
+      "submatrix-enumeration": 0.85,
+      "counting": 0.8
     }
   },
   "source_topic": "Formwise / String"

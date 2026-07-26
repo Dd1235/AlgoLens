@@ -13,25 +13,25 @@
     "math",
     "number theory"
   ],
-  "statement": "Count the number of ordered positive integer triplets (a, b, c) satisfying the inequalities ab + ac + bc ≤ n and a + b + c ≤ x.",
+  "statement": "Count the number of ordered positive integer triplets (a,b,c) satisfying the inequalities ab+ac+bc ≤ n and a+b+c ≤ x.",
   "tags": [
     "math",
     "combinatorics",
     "number-theory"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "brute-force",
-    "inequality-constraints"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047709,
+    "generated_at_unix": 1785050030,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "brute-force": 0.85,
-      "inequality-constraints": 0.8
+      "binary-search": 0.7,
+      "brute-force": 0.8,
+      "counting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

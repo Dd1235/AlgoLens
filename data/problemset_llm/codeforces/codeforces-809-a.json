@@ -13,23 +13,21 @@
   ],
   "statement": "Given n distinct points on a line, compute the sum over all non-empty subsets of the maximum distance between any two points in each subset, modulo 10^9+7.",
   "tags": [
-    "array",
     "math",
-    "combinatorics"
+    "combinatorics",
+    "sorting"
   ],
   "patterns": [
-    "contribution-technique",
     "sorting",
-    "modular-arithmetic"
+    "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047797,
+    "generated_at_unix": 1785050101,
     "pattern_confidence": {
-      "contribution-technique": 0.95,
-      "sorting": 0.9,
-      "modular-arithmetic": 0.85
+      "sorting": 0.95,
+      "contribution-technique": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

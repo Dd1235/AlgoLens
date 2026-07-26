@@ -10,25 +10,23 @@
     "bitmasks",
     "greedy"
   ],
-  "statement": "Given integers n and k, determine if n can be expressed as the sum of exactly k powers of two, and construct such a representation if possible.",
+  "statement": "Given integers n and k, determine if n can be expressed as the sum of exactly k powers of two.",
   "tags": [
+    "math",
     "bit-manipulation",
-    "greedy",
-    "math"
+    "greedy"
   ],
   "patterns": [
     "greedy",
-    "bitmask-manipulation",
-    "binary-representation"
+    "bitmask-representation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047817,
+    "generated_at_unix": 1785050121,
     "pattern_confidence": {
-      "greedy": 0.95,
-      "bitmask-manipulation": 0.9,
-      "binary-representation": 0.9
+      "greedy": 0.9,
+      "bitmask-representation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

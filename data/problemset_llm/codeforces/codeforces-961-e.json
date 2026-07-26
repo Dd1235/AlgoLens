@@ -9,22 +9,22 @@
   "source_tags": [
     "data structures"
   ],
-  "statement": "Given a TV series with multiple seasons and episodes, count the number of pairs (x, y) where both season x episode y and season y episode x exist, causing ambiguous search results.",
+  "statement": "Given a TV series with n seasons where each season has a certain number of episodes, count the number of pairs (x, y) with x < y such that season x has at least y episodes and season y has at least x episodes.",
   "tags": [
     "array",
     "counting"
   ],
   "patterns": [
     "counting",
-    "pair-enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048075,
+    "generated_at_unix": 1785050384,
     "pattern_confidence": {
-      "counting": 0.95,
-      "pair-enumeration": 0.9
+      "counting": 0.9,
+      "brute-force": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

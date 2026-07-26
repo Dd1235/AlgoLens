@@ -11,23 +11,18 @@
   ],
   "statement": "Given two sequences each differing from a hidden permutation by exactly one element, reconstruct any valid permutation consistent with these conditions.",
   "tags": [
-    "array",
-    "constructive-algorithm",
-    "permutation"
+    "permutation",
+    "constructive-algorithm"
   ],
   "patterns": [
-    "constructive-algorithm",
-    "case-analysis",
-    "greedy"
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047728,
+    "generated_at_unix": 1785050034,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "case-analysis": 0.85,
-      "greedy": 0.7
+      "constructive-algorithm": 0.95
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

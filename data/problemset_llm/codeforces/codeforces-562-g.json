@@ -7,7 +7,7 @@
   "difficulty": 2600,
   "rating": 2600,
   "source_tags": [],
-  "statement": "Given n servers each initially running 4 processes, and 4n replication rules that replace each old process with two new ones on specified servers, determine an order to apply all rules so that no server ever exceeds 9 processes during the replication, or report impossibility.",
+  "statement": "Given n servers each initially running 4 processes, and 4n replication rules that replace each old process with two new ones on specified servers, determine an order to apply all rules so that no server ever exceeds 9 processes at any time, or report impossibility.",
   "tags": [
     "graph",
     "topological-sort",
@@ -21,7 +21,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048370,
+    "generated_at_unix": 1785050679,
     "pattern_confidence": {
       "topological-sort": 0.95,
       "dependency-resolution": 0.9,

@@ -9,26 +9,26 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Count the number of ways to distribute exactly m lines of code among n programmers so that the total bugs do not exceed b, modulo a given number.",
+  "statement": "Count the number of ways to distribute exactly m lines of code among n programmers so that the total bugs do not exceed b, with each programmer introducing a fixed number of bugs per line. Output the count modulo a given number.",
   "tags": [
     "dynamic-programming",
     "combinatorics",
     "modular-arithmetic"
   ],
   "patterns": [
-    "dp-on-sums",
-    "prefix-sum",
-    "modular-dp",
+    "dynamic-programming",
+    "modular-arithmetic",
+    "counting",
     "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048783,
+    "generated_at_unix": 1785050869,
     "pattern_confidence": {
-      "dp-on-sums": 0.95,
-      "prefix-sum": 0.85,
-      "modular-dp": 0.9,
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "counting": 0.85,
       "dp-optimization": 0.9
     }
   },

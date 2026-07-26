@@ -9,26 +9,26 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Count the number of ways to partition students into groups so that the sum of the differences between the maximum and minimum work times in each group does not exceed a given limit.",
+  "statement": "Given n students each with a work time, count the number of ways to partition them into groups so that the sum of the imbalances (max minus min work time in each group) does not exceed k.",
   "tags": [
-    "array",
     "dynamic-programming",
-    "combinatorics"
+    "combinatorics",
+    "array"
   ],
   "patterns": [
-    "dynamic-programming",
-    "prefix-min-max",
-    "binary-search-answer",
+    "interval-dp",
+    "prefix-sum",
+    "sorting",
     "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048472,
+    "generated_at_unix": 1785050774,
     "pattern_confidence": {
-      "dynamic-programming": 0.98,
-      "prefix-min-max": 0.85,
-      "binary-search-answer": 0.75,
+      "interval-dp": 0.95,
+      "prefix-sum": 0.8,
+      "sorting": 0.7,
       "dp-optimization": 0.9
     }
   },

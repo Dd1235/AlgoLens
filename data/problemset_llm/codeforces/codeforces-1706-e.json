@@ -21,23 +21,23 @@
     "union-find",
     "binary-search",
     "trees",
-    "data-structures"
+    "divide-and-conquer"
   ],
   "patterns": [
-    "binary-search-answer",
     "union-find",
+    "binary-search",
     "offline-queries",
-    "interval-connectivity"
+    "divide-and-conquer"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048911,
+    "generated_at_unix": 1785051003,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "union-find": 0.9,
+      "union-find": 0.95,
+      "binary-search": 0.9,
       "offline-queries": 0.85,
-      "interval-connectivity": 0.8
+      "divide-and-conquer": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

@@ -11,8 +11,9 @@
   ],
   "statement": "Given a year y, find the next year after y whose calendar matches exactly, considering leap year rules.",
   "tags": [
+    "math",
     "implementation",
-    "math"
+    "date-time"
   ],
   "patterns": [
     "simulation",
@@ -21,7 +22,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048013,
+    "generated_at_unix": 1785050334,
     "pattern_confidence": {
       "simulation": 0.9,
       "modular-arithmetic": 0.85

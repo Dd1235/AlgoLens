@@ -11,25 +11,25 @@
     "data structures",
     "greedy"
   ],
-  "statement": "Given an array representing moisture levels of trees, find the minimum number of operations to reduce all moisture levels to zero using three types of range increment/decrement actions.",
+  "statement": "Given an array representing moisture levels of trees, find the minimum number of operations to reduce all values to zero using three types of range increment/decrement operations.",
   "tags": [
     "array",
     "greedy",
-    "constructive-algorithm"
+    "prefix-sum"
   ],
   "patterns": [
     "greedy",
-    "prefix-sum",
-    "constructive-algorithm"
+    "prefix-difference",
+    "range-update"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047944,
+    "generated_at_unix": 1785050259,
     "pattern_confidence": {
       "greedy": 0.95,
-      "prefix-sum": 0.85,
-      "constructive-algorithm": 0.9
+      "prefix-difference": 0.85,
+      "range-update": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

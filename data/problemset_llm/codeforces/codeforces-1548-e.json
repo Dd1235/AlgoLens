@@ -13,25 +13,29 @@
     "greedy",
     "math"
   ],
-  "statement": "Given two arrays representing paint layers applied to rows and columns of a grid, determine the number of maximal connected regions where the sum of row and column layers is at most a given threshold.",
+  "statement": "Given an n by m grid where each cell's paint layers equal the sum of a row value and a column value, identify the number of maximal connected components of cells with paint layers less than or equal to a threshold x.",
   "tags": [
-    "array",
+    "grid",
     "graph",
-    "connected-components"
+    "connected-components",
+    "greedy",
+    "math"
   ],
   "patterns": [
-    "binary-search-answer",
     "flood-fill",
-    "prefix-sum"
+    "dfs",
+    "connected-components",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048283,
+    "generated_at_unix": 1785050591,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
       "flood-fill": 0.95,
-      "prefix-sum": 0.7
+      "dfs": 0.9,
+      "connected-components": 0.9,
+      "greedy": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

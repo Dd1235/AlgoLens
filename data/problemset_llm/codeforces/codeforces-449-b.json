@@ -11,7 +11,7 @@
     "greedy",
     "shortest paths"
   ],
-  "statement": "Given a weighted undirected graph with roads and special train routes from the capital, determine the maximum number of train routes that can be closed without changing the shortest path distances from all cities to the capital.",
+  "statement": "Given a weighted undirected graph with roads and special train routes from the capital, determine the maximum number of train routes that can be removed without changing the shortest path distances from all cities to the capital.",
   "tags": [
     "graph",
     "shortest-path",
@@ -25,11 +25,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048852,
+    "generated_at_unix": 1785050941,
     "pattern_confidence": {
-      "dijkstra": 0.98,
-      "shortest-path": 0.95,
-      "greedy": 0.9
+      "dijkstra": 0.95,
+      "shortest-path": 0.9,
+      "greedy": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level-1"

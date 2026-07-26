@@ -11,12 +11,12 @@
     "greedy",
     "math"
   ],
-  "statement": "Given n bosses each with a point increment (which can be negative), determine the maximum score achievable by defeating all bosses in any order, with up to k resets that reset the bonus to zero without undoing defeated bosses.",
+  "statement": "Given n bosses each with a point increment value, determine the maximum score achievable by defeating all bosses in any order, using up to k resets that reset the bonus to zero without redoing defeated bosses.",
   "tags": [
-    "array",
-    "dynamic-programming",
     "greedy",
-    "math"
+    "math",
+    "dynamic-programming",
+    "constructive-algorithm"
   ],
   "patterns": [
     "dynamic-programming",
@@ -26,9 +26,9 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048219,
+    "generated_at_unix": 1785050524,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
+      "dynamic-programming": 0.9,
       "greedy": 0.85,
       "state-compression": 0.7
     }

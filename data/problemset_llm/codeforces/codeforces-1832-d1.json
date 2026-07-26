@@ -12,26 +12,26 @@
     "implementation",
     "math"
   ],
-  "statement": "Given an initial array where all elements are red, each operation toggles an element's color and adjusts its value by the operation index. For multiple queries, determine the maximum possible minimum element after exactly k operations, independently for each query.",
+  "statement": "Given an initial integer array where elements are initially red, each operation toggles an element's color and adds or subtracts the operation index accordingly. For multiple queries, determine the maximum possible minimum element value after exactly k operations applied independently from the initial array.",
   "tags": [
     "array",
-    "math",
+    "binary-search",
     "greedy",
-    "binary-search"
+    "math"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "greedy",
-    "prefix-sum"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048146,
+    "generated_at_unix": 1785050456,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
+      "binary-search": 0.9,
       "greedy": 0.85,
-      "prefix-sum": 0.7
+      "simulation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

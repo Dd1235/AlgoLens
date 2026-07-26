@@ -13,24 +13,27 @@
     "dp",
     "implementation"
   ],
-  "statement": "Given an array and a set of fixed positions, determine the minimum number of changes to make the array strictly increasing by only modifying elements outside the fixed set, or report impossibility.",
+  "statement": "Given an array and a subset of fixed positions, determine the minimum number of changes to make the array strictly increasing by only modifying elements outside the fixed subset, or report impossibility.",
   "tags": [
     "array",
     "dynamic-programming",
-    "binary-search"
+    "binary-search",
+    "constructive-algorithm"
   ],
   "patterns": [
-    "binary-search-answer",
     "longest-increasing-subsequence",
+    "binary-search",
+    "dynamic-programming",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048190,
+    "generated_at_unix": 1785050498,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "longest-increasing-subsequence": 0.85,
+      "longest-increasing-subsequence": 0.95,
+      "binary-search": 0.9,
+      "dynamic-programming": 0.85,
       "greedy": 0.7
     }
   },

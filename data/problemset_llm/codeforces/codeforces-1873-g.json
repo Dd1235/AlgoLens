@@ -10,7 +10,7 @@
     "constructive algorithms",
     "greedy"
   ],
-  "statement": "Given a string of characters 'A' and 'B', repeatedly perform operations that replace substrings 'AB' with 'BC' or 'BA' with 'CB', earning coins for each replacement, and determine the maximum coins obtainable.",
+  "statement": "Given a string of characters 'A' and 'B', repeatedly perform operations that replace adjacent pairs \"AB\" with \"BC\" or \"BA\" with \"CB\" to maximize the number of coins earned, where each replacement yields one coin.",
   "tags": [
     "string",
     "greedy",
@@ -18,17 +18,15 @@
   ],
   "patterns": [
     "greedy",
-    "string-replacement",
-    "constructive-algorithm"
+    "string-simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047874,
+    "generated_at_unix": 1785050184,
     "pattern_confidence": {
-      "greedy": 0.95,
-      "string-replacement": 0.9,
-      "constructive-algorithm": 0.85
+      "greedy": 0.9,
+      "string-simulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

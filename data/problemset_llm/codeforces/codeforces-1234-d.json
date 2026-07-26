@@ -13,24 +13,23 @@
   "tags": [
     "string",
     "data-structure",
+    "fenwick-tree",
     "segment-tree"
   ],
   "patterns": [
     "segment-tree",
     "fenwick-tree",
-    "bit-manipulation",
     "point-update",
     "range-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048889,
+    "generated_at_unix": 1785050979,
     "pattern_confidence": {
       "segment-tree": 0.9,
       "fenwick-tree": 0.85,
-      "bit-manipulation": 0.8,
-      "point-update": 0.9,
+      "point-update": 0.95,
       "range-query": 0.9
     }
   },

@@ -11,24 +11,24 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given multiple spiders represented as trees, glue them together by identifying beads to form a single spider with maximum possible diameter (longest distance between any two beads).",
+  "statement": "Given multiple spiders represented as trees, glue them together by identifying beads to form a single spider tree with maximum possible diameter (longest distance between any two beads).",
   "tags": [
     "tree",
     "dynamic-programming",
-    "graph"
+    "greedy"
   ],
   "patterns": [
+    "tree-diameter",
     "tree-dp",
-    "diameter-of-tree",
     "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047747,
+    "generated_at_unix": 1785050051,
     "pattern_confidence": {
-      "tree-dp": 0.95,
-      "diameter-of-tree": 0.9,
+      "tree-diameter": 0.95,
+      "tree-dp": 0.9,
       "constructive-algorithm": 0.85
     }
   },

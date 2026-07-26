@@ -11,7 +11,7 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given friends characterized by money and friendship factor, select a group where no friend feels poor (difference in money less than d) to maximize total friendship factor.",
+  "statement": "Given a list of friends each with money and friendship factor, select a group where no one feels poor (difference in money less than d) and maximize the sum of friendship factors.",
   "tags": [
     "array",
     "sorting",
@@ -20,16 +20,16 @@
   "patterns": [
     "two-pointers",
     "sorting",
-    "prefix-sum"
+    "sliding-window"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047881,
+    "generated_at_unix": 1785050191,
     "pattern_confidence": {
       "two-pointers": 0.95,
       "sorting": 0.9,
-      "prefix-sum": 0.85
+      "sliding-window": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

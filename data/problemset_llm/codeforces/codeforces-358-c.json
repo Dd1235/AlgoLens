@@ -11,11 +11,14 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given a sequence of commands to add numbers to a stack, queue, or deque and commands to extract numbers from these containers simultaneously, determine a strategy to maximize the sum of extracted numbers over all extraction operations.",
+  "statement": "Given a sequence of commands to add numbers to or extract numbers from a stack, queue, and deque with specific insertion and extraction rules, determine a strategy to maximize the sum of extracted numbers over all extraction operations.",
   "tags": [
     "data-structures",
     "greedy",
-    "implementation"
+    "implementation",
+    "stack",
+    "queue",
+    "deque"
   ],
   "patterns": [
     "greedy",
@@ -25,7 +28,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048223,
+    "generated_at_unix": 1785050527,
     "pattern_confidence": {
       "greedy": 0.95,
       "simulation": 0.9,

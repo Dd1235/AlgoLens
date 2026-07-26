@@ -9,28 +9,26 @@
   "source_tags": [
     "data structures"
   ],
-  "statement": "Given a sequence of non-negative integers, support range XOR updates and queries that ask for the number of distinct XOR values obtainable from subsequences within a specified subrange.",
+  "statement": "Given a sequence of non-negative integers, support two types of queries: applying XOR with a given value to a subrange, and reporting the number of distinct XOR sums (Kheshtaks) obtainable from subsequences of a subrange.",
   "tags": [
     "array",
-    "bitwise",
+    "bit-manipulation",
     "segment-tree",
-    "linear-algebra"
+    "data-structure"
   ],
   "patterns": [
     "segment-tree",
     "xor-basis",
-    "range-xor-update",
-    "subsequence-xor-count"
+    "lazy-propagation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048310,
+    "generated_at_unix": 1785050620,
     "pattern_confidence": {
       "segment-tree": 0.95,
-      "xor-basis": 0.98,
-      "range-xor-update": 0.9,
-      "subsequence-xor-count": 0.92
+      "xor-basis": 0.9,
+      "lazy-propagation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

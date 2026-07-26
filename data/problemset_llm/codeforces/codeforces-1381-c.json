@@ -14,28 +14,28 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given Bob's guess and two integers x and y representing exact matches and multiset intersection size with Alice's secret code, find a possible secret code consistent with these values.",
+  "statement": "Given a guess sequence and two integers x and y representing exact matches and multiset intersection size with a secret code, reconstruct a possible secret code consistent with these values.",
   "tags": [
-    "array",
+    "constructive-algorithm",
     "greedy",
-    "graph",
-    "implementation"
+    "two-pointers",
+    "sorting"
   ],
   "patterns": [
     "constructive-algorithm",
     "greedy",
     "two-pointers",
-    "matching"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048423,
+    "generated_at_unix": 1785050730,
     "pattern_confidence": {
       "constructive-algorithm": 0.95,
       "greedy": 0.9,
       "two-pointers": 0.7,
-      "matching": 0.75
+      "sorting": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

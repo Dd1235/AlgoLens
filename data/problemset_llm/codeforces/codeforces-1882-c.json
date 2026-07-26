@@ -10,22 +10,26 @@
     "brute force",
     "greedy"
   ],
-  "statement": "Given a deck of cards with values, you can repeatedly remove cards at odd positions to add their values to your score or remove cards at even positions without scoring, aiming to maximize the final score.",
+  "statement": "Given a deck of cards with fixed values, you can repeatedly remove cards at odd positions to add their values to your score or remove cards at even positions without scoring, aiming to maximize the total score before ending the game.",
   "tags": [
     "array",
+    "game-theory",
+    "greedy",
     "dynamic-programming"
   ],
   "patterns": [
+    "greedy",
     "dynamic-programming",
     "state-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047810,
+    "generated_at_unix": 1785050114,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "state-compression": 0.85
+      "greedy": 0.8,
+      "dynamic-programming": 0.9,
+      "state-compression": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

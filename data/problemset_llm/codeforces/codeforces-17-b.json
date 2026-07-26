@@ -12,29 +12,28 @@
     "greedy",
     "shortest paths"
   ],
-  "statement": "Given employees with qualifications and applications indicating possible supervisor-subordinate relations with associated costs, determine the minimum total cost to build a valid hierarchy tree where each employee except one has exactly one supervisor, or report impossibility.",
+  "statement": "Given employees with qualifications and applications indicating possible supervisor-subordinate relations with associated costs, construct a minimum-cost hierarchy tree where each employee except one has exactly one supervisor with higher qualification, or determine if it is impossible.",
   "tags": [
     "graph",
     "tree",
     "minimum-spanning-tree",
-    "union-find",
     "greedy"
   ],
   "patterns": [
+    "minimum-spanning-tree",
     "kruskal",
     "union-find",
-    "minimum-spanning-tree",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048530,
+    "generated_at_unix": 1785050826,
     "pattern_confidence": {
-      "kruskal": 0.95,
-      "union-find": 0.93,
-      "minimum-spanning-tree": 0.94,
-      "greedy": 0.9
+      "minimum-spanning-tree": 0.95,
+      "kruskal": 0.9,
+      "union-find": 0.9,
+      "greedy": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level-1"

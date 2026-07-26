@@ -12,27 +12,25 @@
     "dp",
     "math"
   ],
-  "statement": "Given cards each enabling jumps of certain lengths at a cost, find the minimum total cost to buy cards so that jumps can reach every integer position on an infinite tape.",
+  "statement": "Given cards each enabling jumps of certain lengths at a cost, find the minimal total cost to buy cards so that any integer position on an infinite tape can be reached by combining these jumps.",
   "tags": [
     "math",
-    "dynamic-programming",
-    "number-theory"
+    "number-theory",
+    "dynamic-programming"
   ],
   "patterns": [
     "gcd",
     "dynamic-programming",
-    "brute-force",
-    "binary-search-answer"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048776,
+    "generated_at_unix": 1785050862,
     "pattern_confidence": {
       "gcd": 0.95,
-      "dynamic-programming": 0.85,
-      "brute-force": 0.7,
-      "binary-search-answer": 0.6
+      "dynamic-programming": 0.7,
+      "brute-force": 0.6
     }
   },
   "source_topic": "Formwise / DP Optimizations"

@@ -7,25 +7,22 @@
   "difficulty": 1500,
   "rating": 1500,
   "source_tags": [],
-  "statement": "Given two sequences representing bitwise OR and AND of adjacent elements, determine if there exists an integer sequence with elements between 0 and 3 that satisfies these conditions, and construct one if possible.",
+  "statement": "Given two sequences a and b of length n-1 with values between 0 and 3, determine if there exists a sequence t of length n with values between 0 and 3 such that for each i, a_i equals the bitwise OR of t_i and t_{i+1}, and b_i equals the bitwise AND of t_i and t_{i+1}. If such a sequence exists, find one.",
   "tags": [
-    "array",
     "bit-manipulation",
     "dynamic-programming"
   ],
   "patterns": [
-    "state-compression",
-    "dynamic-programming",
-    "bit-manipulation"
+    "bitmask-dp",
+    "state-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047859,
+    "generated_at_unix": 1785050168,
     "pattern_confidence": {
-      "state-compression": 0.9,
-      "dynamic-programming": 0.85,
-      "bit-manipulation": 0.8
+      "bitmask-dp": 0.9,
+      "state-compression": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

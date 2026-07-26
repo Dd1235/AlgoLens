@@ -9,25 +9,26 @@
   "source_tags": [
     "brute force"
   ],
-  "statement": "Count the number of integer triples (a, b, c) with 1 ≤ a ≤ b ≤ c ≤ n that form a non-degenerate triangle and satisfy a ⊕ b ⊕ c = 0.",
+  "statement": "Count the number of integer triples (a, b, c) with 1 ≤ a ≤ b ≤ c ≤ n that form a non-degenerate triangle and satisfy a ⊕ b ⊕ c = 0, where ⊕ is the bitwise XOR.",
   "tags": [
     "math",
     "combinatorics",
-    "bitwise"
+    "bit-manipulation",
+    "geometry"
   ],
   "patterns": [
-    "bitwise-xor",
-    "triangle-inequality-check",
-    "counting"
+    "brute-force",
+    "bit-manipulation",
+    "triangle-inequality-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047750,
+    "generated_at_unix": 1785050055,
     "pattern_confidence": {
-      "bitwise-xor": 0.98,
-      "triangle-inequality-check": 0.95,
-      "counting": 0.9
+      "brute-force": 0.9,
+      "bit-manipulation": 0.7,
+      "triangle-inequality-check": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

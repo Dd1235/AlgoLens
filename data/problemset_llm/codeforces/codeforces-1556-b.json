@@ -12,22 +12,22 @@
   "statement": "Given an array of integers, find the minimum number of adjacent swaps required to rearrange the array so that no two neighboring elements have the same parity.",
   "tags": [
     "array",
-    "greedy",
-    "math"
+    "implementation",
+    "greedy"
   ],
   "patterns": [
     "greedy",
-    "parity-check",
-    "minimum-adjacent-swaps"
+    "counting",
+    "parity-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047864,
+    "generated_at_unix": 1785050173,
     "pattern_confidence": {
-      "greedy": 0.95,
-      "parity-check": 0.9,
-      "minimum-adjacent-swaps": 0.88
+      "greedy": 0.9,
+      "counting": 0.8,
+      "parity-check": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

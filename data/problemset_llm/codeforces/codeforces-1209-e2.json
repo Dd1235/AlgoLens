@@ -12,29 +12,29 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given an n by m matrix, you can cyclically shift any column any number of times. After all shifts, maximize the sum of the maximum elements from each row.",
+  "statement": "Given an n by m matrix, you can cyclically shift any column any number of times. After all shifts, compute the sum of the maximum elements in each row. Find the maximum possible sum achievable.",
   "tags": [
-    "array",
+    "matrix",
+    "greedy",
     "bit-manipulation",
     "dynamic-programming",
-    "greedy",
     "sorting"
   ],
   "patterns": [
     "bitmask-dp",
     "greedy",
     "sorting",
-    "state-compression"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048919,
+    "generated_at_unix": 1785051013,
     "pattern_confidence": {
-      "bitmask-dp": 0.95,
+      "bitmask-dp": 0.9,
       "greedy": 0.85,
       "sorting": 0.8,
-      "state-compression": 0.9
+      "dynamic-programming": 0.75
     }
   },
   "source_topic": "Formwise / DP Level 2"

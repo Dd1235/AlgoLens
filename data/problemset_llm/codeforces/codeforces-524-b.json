@@ -10,25 +10,25 @@
     "dp",
     "greedy"
   ],
-  "statement": "Given n friends each represented by a rectangle with width and height, determine the minimal possible area of a combined photo by optionally rotating each friend's rectangle (swapping width and height) and arranging them side by side.",
+  "statement": "Given n friends each represented by a rectangle with width and height, determine the minimal possible area of a combined photo by optionally rotating each friend's rectangle (swapping width and height) before arranging them side by side.",
   "tags": [
     "dynamic-programming",
-    "geometry",
-    "array"
+    "greedy",
+    "geometry"
   ],
   "patterns": [
-    "binary-search-answer",
-    "dynamic-programming",
-    "prefix-sum"
+    "bitmask-dp",
+    "greedy",
+    "rectangle-rotation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047923,
+    "generated_at_unix": 1785050234,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dynamic-programming": 0.85,
-      "prefix-sum": 0.7
+      "bitmask-dp": 0.9,
+      "greedy": 0.8,
+      "rectangle-rotation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

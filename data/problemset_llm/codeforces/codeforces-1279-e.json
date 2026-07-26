@@ -10,28 +10,25 @@
     "combinatorics",
     "dp"
   ],
-  "statement": "Given integers n and k, find the k-th lexicographically smallest permutation of length n that remains unchanged after a specific decomposition and reordering transformation based on reachable elements in the permutation.",
+  "statement": "Given integers n and k, find the k-th lexicographically smallest permutation of length n that remains unchanged after a specific decomposition and sorting transformation based on reachable elements and cyclic shifts.",
   "tags": [
     "permutation",
-    "graph",
-    "dynamic-programming",
-    "combinatorics"
+    "combinatorics",
+    "dynamic-programming"
   ],
   "patterns": [
     "lexicographic-enumeration",
-    "graph-components",
-    "dp-on-subsets",
-    "cycle-decomposition"
+    "permutation-decomposition",
+    "dp-on-permutations"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048455,
+    "generated_at_unix": 1785050759,
     "pattern_confidence": {
-      "lexicographic-enumeration": 0.95,
-      "graph-components": 0.9,
-      "dp-on-subsets": 0.85,
-      "cycle-decomposition": 0.9
+      "lexicographic-enumeration": 0.9,
+      "permutation-decomposition": 0.85,
+      "dp-on-permutations": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

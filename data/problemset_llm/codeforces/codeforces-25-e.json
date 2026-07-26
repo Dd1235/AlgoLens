@@ -10,25 +10,25 @@
     "hashing",
     "strings"
   ],
-  "statement": "Given three forbidden substrings, find the minimal length of a test string that contains at least one of these substrings, causing all three faulty solutions to fail.",
+  "statement": "Given three forbidden substrings, find the minimal length of a string that contains all three as substrings, causing all three faulty solutions to fail simultaneously.",
   "tags": [
     "string",
     "rolling-hash",
-    "automaton"
+    "string-matching"
   ],
   "patterns": [
     "string-matching",
-    "aho-corasick",
-    "binary-search-answer"
+    "substring-search",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048880,
+    "generated_at_unix": 1785050970,
     "pattern_confidence": {
-      "string-matching": 0.95,
-      "aho-corasick": 0.9,
-      "binary-search-answer": 0.7
+      "string-matching": 0.9,
+      "substring-search": 0.85,
+      "binary-search": 0.6
     }
   },
   "source_topic": "Formwise / String"

@@ -10,11 +10,11 @@
     "constructive algorithms",
     "two pointers"
   ],
-  "statement": "Given two multisets of integers, find nonempty subsets from each with equal sums or report no solution.",
+  "statement": "Given two multisets of integers, find nonempty subsets from each with equal sums or report no solution exists.",
   "tags": [
     "array",
     "math",
-    "constructive-algorithm"
+    "combinatorics"
   ],
   "patterns": [
     "subset-sum",
@@ -24,11 +24,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048311,
+    "generated_at_unix": 1785050622,
     "pattern_confidence": {
       "subset-sum": 0.95,
-      "meet-in-the-middle": 0.9,
-      "two-pointers": 0.7
+      "meet-in-the-middle": 0.85,
+      "two-pointers": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -17,20 +17,18 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "prefix-maximum",
-    "prefix-minimum",
-    "dynamic-programming",
-    "prefix-sum"
+    "prefix-max",
+    "suffix-max",
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047757,
+    "generated_at_unix": 1785050062,
     "pattern_confidence": {
-      "prefix-maximum": 0.95,
-      "prefix-minimum": 0.9,
-      "dynamic-programming": 0.85,
-      "prefix-sum": 0.7
+      "prefix-max": 0.9,
+      "suffix-max": 0.9,
+      "dynamic-programming": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

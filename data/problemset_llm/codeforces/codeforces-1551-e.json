@@ -11,24 +11,25 @@
     "brute force",
     "dp"
   ],
-  "statement": "Given a sequence and a target k, find the minimum number of deletions needed so that the resulting sequence has at least k elements equal to their own 1-based indices.",
+  "statement": "Given a sequence and a target number k, find the minimum deletions needed so that the resulting sequence has at least k elements equal to their own indices.",
   "tags": [
     "array",
-    "dynamic-programming"
+    "dynamic-programming",
+    "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "dynamic-programming",
-    "prefix-sum"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048903,
+    "generated_at_unix": 1785050994,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dynamic-programming": 0.85,
-      "prefix-sum": 0.7
+      "binary-search": 0.85,
+      "dynamic-programming": 0.8,
+      "greedy": 0.7
     }
   },
   "source_topic": "Formwise / DP Optimizations"

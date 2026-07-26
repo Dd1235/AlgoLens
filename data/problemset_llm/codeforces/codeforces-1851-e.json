@@ -12,24 +12,24 @@
     "graphs",
     "sortings"
   ],
-  "statement": "Given a directed acyclic graph representing potion mixing recipes and initial potions available for free, find the minimum cost to obtain each potion type by mixing or buying.",
+  "statement": "Given a set of potion types with costs and a mixing dependency graph without cycles, find the minimum cost to obtain each potion starting from an unlimited supply of certain base potions.",
   "tags": [
     "graph",
     "dynamic-programming",
     "topological-sort"
   ],
   "patterns": [
-    "dp-on-dag",
     "topological-sort",
+    "dag-dp",
     "shortest-path"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047867,
+    "generated_at_unix": 1785050177,
     "pattern_confidence": {
-      "dp-on-dag": 0.95,
-      "topological-sort": 0.9,
+      "topological-sort": 0.95,
+      "dag-dp": 0.9,
       "shortest-path": 0.85
     }
   },

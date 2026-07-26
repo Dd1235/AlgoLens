@@ -14,29 +14,31 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given yearly book publication counts and readers with satisfaction thresholds based on group size reading the same book, determine the maximum number of satisfied readers each year by assigning readers to books.",
+  "statement": "Given multiple years with a required number of books and readers each having a minimum satisfaction threshold based on how many share their book, determine the maximum number of satisfied readers per year by assigning readers to books optimally.",
   "tags": [
     "greedy",
     "binary-search",
-    "sorting",
     "two-pointers",
+    "sorting",
     "dynamic-programming"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "greedy",
+    "two-pointers",
     "sorting",
-    "two-pointers"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048332,
+    "generated_at_unix": 1785050642,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
-      "greedy": 0.9,
-      "sorting": 0.85,
-      "two-pointers": 0.8
+      "binary-search": 0.9,
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "sorting": 0.9,
+      "dynamic-programming": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

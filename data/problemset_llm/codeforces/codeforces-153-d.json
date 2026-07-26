@@ -11,21 +11,20 @@
   ],
   "statement": "Given a date in DD.MM.YYYY format and a number of days to add, compute the resulting date after applying the day shift.",
   "tags": [
-    "date",
     "math",
-    "implementation"
+    "date-time"
   ],
   "patterns": [
-    "date-arithmetic",
-    "simulation"
+    "simulation",
+    "date-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048185,
+    "generated_at_unix": 1785050493,
     "pattern_confidence": {
-      "date-arithmetic": 0.95,
-      "simulation": 0.9
+      "simulation": 0.9,
+      "date-arithmetic": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

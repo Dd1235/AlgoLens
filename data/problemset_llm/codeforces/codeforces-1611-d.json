@@ -13,8 +13,8 @@
   "statement": "Given a rooted tree and a permutation of its vertices, assign positive edge weights so that the vertices ordered by their distance from the root match the given permutation, or determine that it is impossible.",
   "tags": [
     "tree",
-    "graph",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "graph"
   ],
   "patterns": [
     "topological-sort",
@@ -24,7 +24,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047823,
+    "generated_at_unix": 1785050126,
     "pattern_confidence": {
       "topological-sort": 0.9,
       "distance-assignment": 0.85,

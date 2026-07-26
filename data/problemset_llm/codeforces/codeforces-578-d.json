@@ -18,17 +18,17 @@
   ],
   "patterns": [
     "longest-common-subsequence",
-    "counting",
-    "dynamic-programming"
+    "dynamic-programming",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048436,
+    "generated_at_unix": 1785050743,
     "pattern_confidence": {
-      "longest-common-subsequence": 0.98,
-      "counting": 0.9,
-      "dynamic-programming": 0.85
+      "longest-common-subsequence": 0.95,
+      "dynamic-programming": 0.9,
+      "counting": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

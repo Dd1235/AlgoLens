@@ -9,10 +9,9 @@
   "source_tags": [
     "implementation"
   ],
-  "statement": "Given a fractal painting process defined by an n×n model grid, repeatedly subdivide white squares into n² smaller squares and paint black squares according to the model, automating the fractal generation.",
+  "statement": "Given an n×n black-and-white model square, repeatedly subdivide white squares into n² smaller squares and paint black squares according to the model to generate a fractal pattern.",
   "tags": [
     "implementation",
-    "geometry",
     "simulation",
     "backtracking"
   ],
@@ -23,7 +22,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048478,
+    "generated_at_unix": 1785050775,
     "pattern_confidence": {
       "simulation": 0.95,
       "divide-and-conquer": 0.7

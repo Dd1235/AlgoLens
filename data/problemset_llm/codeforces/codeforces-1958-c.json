@@ -9,7 +9,7 @@
   "source_tags": [
     "*special"
   ],
-  "statement": "Given a log weighing 2^n grams, determine the minimum number of halving cuts needed to obtain a subset of logs summing exactly to k grams.",
+  "statement": "Given a log of weight 2^n grams, determine the minimum number of halving cuts needed to obtain a subset of logs summing to exactly k grams.",
   "tags": [
     "math",
     "bit-manipulation",
@@ -23,7 +23,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047886,
+    "generated_at_unix": 1785050199,
     "pattern_confidence": {
       "bit-count": 0.95,
       "greedy": 0.9,

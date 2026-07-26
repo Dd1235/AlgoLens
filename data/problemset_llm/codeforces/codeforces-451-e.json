@@ -11,26 +11,26 @@
     "combinatorics",
     "number theory"
   ],
-  "statement": "Given multiple boxes each containing a distinct color of flowers, count the number of ways to select exactly s flowers in total from these boxes, considering selections differing in any box as distinct. Return the count modulo 10^9+7.",
+  "statement": "Given multiple boxes each containing indistinguishable flowers of unique colors, count the number of ways to select exactly s flowers in total from these boxes, modulo 10^9+7.",
   "tags": [
     "combinatorics",
     "number-theory",
-    "dynamic-programming",
+    "modular-arithmetic",
     "math"
   ],
   "patterns": [
-    "combinatorics",
-    "modular-arithmetic",
+    "stars-and-bars",
+    "modular-exponentiation",
     "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048841,
+    "generated_at_unix": 1785050929,
     "pattern_confidence": {
-      "combinatorics": 0.95,
-      "modular-arithmetic": 0.9,
-      "dynamic-programming": 0.85
+      "stars-and-bars": 0.95,
+      "modular-exponentiation": 0.85,
+      "dynamic-programming": 0.7
     }
   },
   "source_topic": "Formwise / Math"

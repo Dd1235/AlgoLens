@@ -12,31 +12,28 @@
     "games",
     "trees"
   ],
-  "statement": "Given a large implicit tree formed by cells where x & y = 0, with some paths colored black, determine the minimum number of root-to-node path color-inversion operations needed so the second player has a winning strategy in a two-player game involving color flips on ancestor subsets.",
+  "statement": "Given a large implicit rooted tree defined by cells where x & y = 0, with some paths colored black, determine the minimum number of root-to-node path color-inversion operations needed so the second player has a winning strategy in a combinatorial game played on the tree.",
   "tags": [
-    "graph",
+    "tree",
     "bit-manipulation",
     "game-theory",
-    "tree",
-    "dfs"
+    "graph"
   ],
   "patterns": [
     "xor-game",
+    "grundy-numbers",
     "tree-dp",
-    "bitmask-dp",
-    "dfs",
-    "grundy-numbers"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048366,
+    "generated_at_unix": 1785050675,
     "pattern_confidence": {
       "xor-game": 0.95,
-      "tree-dp": 0.9,
-      "bitmask-dp": 0.85,
-      "dfs": 0.9,
-      "grundy-numbers": 0.9
+      "grundy-numbers": 0.9,
+      "tree-dp": 0.85,
+      "bit-manipulation": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

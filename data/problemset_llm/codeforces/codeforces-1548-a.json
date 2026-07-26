@@ -11,25 +11,25 @@
     "graphs",
     "greedy"
   ],
-  "statement": "Given a dynamic undirected graph of nobles with powers equal to their indices, repeatedly remove all nobles who have only friends with higher power until no such nobles remain, and report the count of remaining nobles after this process for multiple queries involving adding or removing friendships.",
+  "statement": "Given a dynamic undirected graph of nobles with powers equal to their indices, support adding and removing friendships and, for queries, simulate repeatedly removing nobles whose friends all have higher power until no such nobles remain, then report the count of survivors.",
   "tags": [
     "graph",
     "simulation",
-    "data-structure"
+    "dynamic-graph"
   ],
   "patterns": [
-    "simulation",
-    "dynamic-graph",
-    "greedy"
+    "greedy",
+    "brute-force",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047814,
+    "generated_at_unix": 1785050118,
     "pattern_confidence": {
-      "simulation": 0.95,
-      "dynamic-graph": 0.9,
-      "greedy": 0.85
+      "greedy": 0.9,
+      "brute-force": 0.8,
+      "simulation": 0.95
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

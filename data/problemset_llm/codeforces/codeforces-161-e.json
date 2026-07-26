@@ -10,7 +10,7 @@
     "brute force",
     "dp"
   ],
-  "statement": "Given t square symmetric matrices with prime numbers in each row, and only the first row primes known, count how many valid matrices can form each safe's password considering possible leading zeros in other rows.",
+  "statement": "Given t square matrices with known prime numbers in their first rows and the property that each matrix is symmetric, count the number of possible symmetric matrices consistent with the given first rows, allowing prime numbers with leading zeros in other rows.",
   "tags": [
     "matrix",
     "dynamic-programming",
@@ -19,19 +19,17 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "state-compression",
     "symmetry-check",
     "prime-validation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048285,
+    "generated_at_unix": 1785050592,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "state-compression": 0.85,
-      "symmetry-check": 0.9,
-      "prime-validation": 0.9
+      "dynamic-programming": 0.9,
+      "symmetry-check": 0.85,
+      "prime-validation": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

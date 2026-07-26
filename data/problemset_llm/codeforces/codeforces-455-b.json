@@ -14,26 +14,31 @@
     "strings",
     "trees"
   ],
-  "statement": "Two players alternately append letters to build a word that must remain a prefix of at least one given string; the player unable to move loses. Given multiple games played sequentially with loser of one starting the next, determine the ultimate winner assuming optimal play.",
+  "statement": "Two players alternately append letters to build a word that must remain a prefix of at least one given string; the player unable to move loses. Given multiple games played sequentially with the loser of one game starting the next, determine the overall winner assuming optimal play.",
   "tags": [
     "string",
     "game-theory",
     "trie",
+    "dfs",
     "dynamic-programming"
   ],
   "patterns": [
+    "trie",
     "dfs",
-    "game-dp",
-    "trie-construction"
+    "game-theory",
+    "dynamic-programming",
+    "prefix-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048823,
+    "generated_at_unix": 1785050910,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "game-dp": 0.9,
-      "trie-construction": 0.9
+      "trie": 0.95,
+      "dfs": 0.9,
+      "game-theory": 0.9,
+      "dynamic-programming": 0.85,
+      "prefix-tree": 0.9
     }
   },
   "source_topic": "Formwise / Trie"

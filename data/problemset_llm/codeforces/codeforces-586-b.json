@@ -9,25 +9,23 @@
   "source_tags": [
     "implementation"
   ],
-  "statement": "Laurenty must travel from his home to a shop and back in a two-row city grid with traffic lights at crossings, crossing the main avenue exactly once each way and taking a different route back, minimizing total waiting time at traffic lights.",
+  "statement": "Laurenty must travel from his home at the end of the second row to a shop at the start of the first row and back, crossing the main avenue exactly once each way, using different routes, minimizing total waiting time at traffic lights between houses in two rows.",
   "tags": [
     "graph",
-    "dynamic-programming",
-    "shortest-path"
+    "shortest-path",
+    "implementation"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "dynamic-programming"
+    "dynamic-programming",
+    "path-enumeration"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047825,
+    "generated_at_unix": 1785050128,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85,
-      "dynamic-programming": 0.8
+      "dynamic-programming": 0.7,
+      "path-enumeration": 0.6
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

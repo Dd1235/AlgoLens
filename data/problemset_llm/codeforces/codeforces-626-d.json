@@ -12,25 +12,25 @@
     "dp",
     "probabilities"
   ],
-  "statement": "Two players draw balls labeled with distinct integers in three rounds, and the winner is decided by who wins at least two rounds. Given the draws and outcomes, determine the probability that one player’s total sum of drawn balls is strictly greater than the other's.",
+  "statement": "Given a game where two players draw balls labeled with distinct integers over three rounds, determine the probability that one player's total sum of drawn balls exceeds the other's, despite losing the majority of rounds.",
   "tags": [
     "probability",
     "combinatorics",
     "dynamic-programming"
   ],
   "patterns": [
+    "brute-force",
     "probability-dp",
-    "combinatorial-enumeration",
-    "brute-force"
+    "combinatorial-enumeration"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048028,
+    "generated_at_unix": 1785050346,
     "pattern_confidence": {
-      "probability-dp": 0.9,
-      "combinatorial-enumeration": 0.85,
-      "brute-force": 0.7
+      "brute-force": 0.9,
+      "probability-dp": 0.7,
+      "combinatorial-enumeration": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

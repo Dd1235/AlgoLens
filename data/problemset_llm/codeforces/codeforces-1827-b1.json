@@ -14,25 +14,32 @@
     "trees",
     "two pointers"
   ],
-  "statement": "Given an array of distinct integers, compute the sum of the minimal time required to sort every subarray using range-sort operations where sorting a subarray takes time proportional to its length minus one.",
+  "statement": "Given an array of distinct integers, compute the sum over all subarrays of the minimum total time required to sort each subarray using range-sort operations, where sorting a sub-subarray takes time proportional to its length minus one.",
   "tags": [
     "array",
     "dynamic-programming",
-    "greedy"
+    "union-find",
+    "greedy",
+    "two-pointers",
+    "tree"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
+    "binary-search",
+    "dynamic-programming",
+    "union-find",
+    "greedy",
     "two-pointers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048242,
+    "generated_at_unix": 1785050550,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.85,
-      "two-pointers": 0.8
+      "binary-search": 0.85,
+      "dynamic-programming": 0.9,
+      "union-find": 0.8,
+      "greedy": 0.75,
+      "two-pointers": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

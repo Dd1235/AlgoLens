@@ -16,21 +16,22 @@
   "tags": [
     "geometry",
     "math",
+    "binary-search",
     "grid"
   ],
   "patterns": [
-    "binary-search-answer",
     "geometry",
-    "circle-inclusion-test"
+    "binary-search",
+    "two-pointers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048103,
+    "generated_at_unix": 1785050412,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
       "geometry": 0.95,
-      "circle-inclusion-test": 0.85
+      "binary-search": 0.85,
+      "two-pointers": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

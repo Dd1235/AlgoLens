@@ -9,11 +9,13 @@
   "statement": "Given a list of integers, repeatedly remove elements at specified positions and output the removed elements in order.",
   "tags": [
     "array",
-    "data-structure"
+    "data-structure",
+    "segment-tree"
   ],
   "patterns": [
     "fenwick-tree",
-    "order-statistics"
+    "order-statistics",
+    "merge-sort-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +23,8 @@
     "generated_at_unix": 1777951569,
     "pattern_confidence": {
       "fenwick-tree": 0.95,
-      "order-statistics": 0.9
+      "order-statistics": 0.9,
+      "merge-sort-tree": 0.9
     }
   }
 }

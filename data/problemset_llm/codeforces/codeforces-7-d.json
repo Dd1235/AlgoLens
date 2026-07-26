@@ -10,25 +10,25 @@
     "hashing",
     "strings"
   ],
-  "statement": "Given a string, compute the sum of palindrome degrees for all its prefixes, where the palindrome degree is defined recursively based on the string and its prefix and suffix palindromic properties.",
+  "statement": "Given a string, compute the sum of palindrome degrees of all its prefixes, where the palindrome degree is defined recursively based on the palindrome property of the string and its halves.",
   "tags": [
     "string",
     "rolling-hash",
     "dynamic-programming"
   ],
   "patterns": [
-    "prefix-hashing",
-    "dynamic-programming",
-    "palindrome"
+    "string-hashing",
+    "prefix-palindrome",
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048516,
+    "generated_at_unix": 1785050811,
     "pattern_confidence": {
-      "prefix-hashing": 0.95,
-      "dynamic-programming": 0.9,
-      "palindrome": 0.85
+      "string-hashing": 0.95,
+      "prefix-palindrome": 0.9,
+      "dynamic-programming": 0.9
     }
   },
   "source_topic": "Formwise / String"

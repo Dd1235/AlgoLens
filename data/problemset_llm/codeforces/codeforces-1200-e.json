@@ -16,22 +16,22 @@
   "statement": "Given a sequence of words, iteratively merge them from left to right by removing the longest prefix of the next word that matches a suffix of the current merged word, producing a compressed single word.",
   "tags": [
     "string",
-    "string-matching",
-    "implementation"
+    "implementation",
+    "string-matching"
   ],
   "patterns": [
-    "prefix-function",
     "kmp",
+    "prefix-function",
     "string-concatenation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049002,
+    "generated_at_unix": 1785051116,
     "pattern_confidence": {
-      "prefix-function": 0.95,
       "kmp": 0.9,
-      "string-concatenation": 0.85
+      "prefix-function": 0.85,
+      "string-concatenation": 0.8
     }
   },
   "source_topic": "Formwise / String"

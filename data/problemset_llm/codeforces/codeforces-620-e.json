@@ -11,27 +11,26 @@
     "data structures",
     "trees"
   ],
-  "statement": "Given a rooted tree, support queries that either recolor all nodes in a subtree or count the number of distinct colors in a subtree.",
+  "statement": "Given a rooted tree, support queries that either recolor all nodes in a subtree to a single color or count the number of distinct colors in a subtree.",
   "tags": [
     "tree",
     "data-structure",
-    "dfs"
+    "segment-tree",
+    "lazy-propagation"
   ],
   "patterns": [
     "tree-flattening",
     "segment-tree",
-    "lazy-propagation",
-    "subtree-query"
+    "lazy-propagation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048983,
+    "generated_at_unix": 1785051097,
     "pattern_confidence": {
       "tree-flattening": 0.95,
       "segment-tree": 0.9,
-      "lazy-propagation": 0.9,
-      "subtree-query": 0.9
+      "lazy-propagation": 0.9
     }
   },
   "source_topic": "Formwise / Trees"

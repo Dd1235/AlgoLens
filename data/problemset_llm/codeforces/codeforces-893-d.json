@@ -12,23 +12,26 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given a sequence of daily credit card transactions with deposits, withdrawals, and balance checks, determine the minimum number of days Luba must deposit money to keep the account balance within a limit and non-negative on check days, or report impossibility.",
+  "statement": "Given a sequence of daily transactions on a credit card account with a maximum balance limit, determine the minimum number of days on which deposits must be made to ensure the balance never exceeds the limit and is non-negative on specified check days.",
   "tags": [
     "array",
     "greedy",
+    "dynamic-programming",
     "implementation"
   ],
   "patterns": [
+    "greedy",
     "prefix-sum",
-    "greedy"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047917,
+    "generated_at_unix": 1785050230,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "greedy": 0.85
+      "greedy": 0.95,
+      "prefix-sum": 0.85,
+      "simulation": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -12,7 +12,7 @@
     "shortest paths",
     "trees"
   ],
-  "statement": "Given a tree and a sequence of vertices, determine if the sequence can represent a valid BFS traversal starting from vertex 1.",
+  "statement": "Given a tree and a sequence of vertices, determine if the sequence can represent a valid BFS traversal starting from vertex 1, considering arbitrary order of neighbors.",
   "tags": [
     "graph",
     "tree",
@@ -22,18 +22,16 @@
   "patterns": [
     "bfs",
     "queue",
-    "graph-traversal",
-    "tree-properties"
+    "tree-traversal"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048485,
+    "generated_at_unix": 1785050782,
     "pattern_confidence": {
       "bfs": 0.98,
       "queue": 0.9,
-      "graph-traversal": 0.85,
-      "tree-properties": 0.8
+      "tree-traversal": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level-1"

@@ -14,21 +14,21 @@
   "tags": [
     "greedy",
     "sorting",
-    "array"
+    "intervals"
   ],
   "patterns": [
     "greedy",
     "sorting",
-    "binary-search-answer"
+    "interval-covering"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047786,
+    "generated_at_unix": 1785050088,
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,
-      "binary-search-answer": 0.85
+      "interval-covering": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

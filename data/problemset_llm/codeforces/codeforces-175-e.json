@@ -12,25 +12,28 @@
     "geometry",
     "greedy"
   ],
-  "statement": "Given three types of towers with limited quantities and ranges placed on two parallel lines, determine the maximum damage dealt to a villain moving along a line, considering freezing towers slow the villain's speed multiplicatively.",
+  "statement": "Vasya must place a limited number of three types of towers along two lines to maximize damage on a villain moving along the x-axis, considering tower ranges, damage, and speed reduction effects from freezing towers.",
   "tags": [
     "geometry",
     "dynamic-programming",
-    "greedy"
+    "greedy",
+    "brute-force"
   ],
   "patterns": [
-    "binary-search-answer",
-    "simulation",
-    "greedy"
+    "geometry",
+    "dynamic-programming",
+    "greedy",
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048431,
+    "generated_at_unix": 1785050738,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "simulation": 0.85,
-      "greedy": 0.8
+      "geometry": 0.95,
+      "dynamic-programming": 0.85,
+      "greedy": 0.7,
+      "brute-force": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

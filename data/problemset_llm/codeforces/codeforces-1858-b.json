@@ -13,25 +13,26 @@
     "math",
     "number theory"
   ],
-  "statement": "Given benches and cookie sellers along a walkway, Petya eats cookies under certain timing and seller proximity rules. By removing exactly one cookie seller, determine the minimal number of cookies Petya will eat and count how many sellers can be removed to achieve this minimum.",
+  "statement": "Given a walkway with benches and cookie sellers, Petya walks from bench 1 to n eating cookies under certain conditions. By removing exactly one cookie seller, determine the minimum number of cookies Petya will eat and how many sellers can be removed to achieve this minimum.",
   "tags": [
-    "array",
     "greedy",
-    "math"
+    "math",
+    "number-theory",
+    "array"
   ],
   "patterns": [
     "greedy",
-    "prefix-sum",
-    "simulation"
+    "simulation",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047835,
+    "generated_at_unix": 1785050139,
     "pattern_confidence": {
-      "greedy": 0.9,
-      "prefix-sum": 0.7,
-      "simulation": 0.8
+      "greedy": 0.95,
+      "simulation": 0.9,
+      "prefix-sum": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

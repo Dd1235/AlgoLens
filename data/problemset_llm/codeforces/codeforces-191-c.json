@@ -11,25 +11,26 @@
     "dfs and similar",
     "trees"
   ],
-  "statement": "Given a tree with n cities connected by roads and a list of simple paths used by fools traveling between cities, determine for each road how many distinct fools' paths include it.",
+  "statement": "Given a tree with n cities connected by roads, and multiple simple paths used by fools traveling between cities, determine for each road how many distinct fools' paths include that road.",
   "tags": [
     "tree",
     "graph",
-    "dfs"
+    "dfs",
+    "data-structures"
   ],
   "patterns": [
     "dfs",
-    "tree-path-queries",
-    "path-counting"
+    "tree-paths",
+    "edge-contribution"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049009,
+    "generated_at_unix": 1785051123,
     "pattern_confidence": {
       "dfs": 0.95,
-      "tree-path-queries": 0.9,
-      "path-counting": 0.85
+      "tree-paths": 0.9,
+      "edge-contribution": 0.85
     }
   },
   "source_topic": "Formwise / Trees"

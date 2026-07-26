@@ -17,16 +17,16 @@
   "patterns": [
     "dynamic-programming",
     "longest-increasing-subsequence",
-    "consecutive-sequence"
+    "consecutive-integers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049010,
+    "generated_at_unix": 1785051125,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "longest-increasing-subsequence": 0.9,
-      "consecutive-sequence": 0.85
+      "consecutive-integers": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

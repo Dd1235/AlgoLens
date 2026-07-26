@@ -9,25 +9,24 @@
   "source_tags": [
     "dfs and similar"
   ],
-  "statement": "Given n cities and m important ordered city pairs, determine the minimum number of unidirectional teleportation pipes to build so that each pair is connected by a path from the first city to the second.",
+  "statement": "Given a set of cities and important ordered city pairs, determine the minimum number of unidirectional teleportation pipes to build so that each important pair is connected by a path from the first city to the second.",
   "tags": [
     "graph",
-    "shortest-path",
     "strongly-connected-components"
   ],
   "patterns": [
-    "graph-construction",
-    "transitive-closure",
-    "strongly-connected-components"
+    "strongly-connected-components",
+    "condensation-graph",
+    "minimum-edge-addition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048494,
+    "generated_at_unix": 1785050791,
     "pattern_confidence": {
-      "graph-construction": 0.95,
-      "transitive-closure": 0.9,
-      "strongly-connected-components": 0.85
+      "strongly-connected-components": 0.95,
+      "condensation-graph": 0.9,
+      "minimum-edge-addition": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level 2"

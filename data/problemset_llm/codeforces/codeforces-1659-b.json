@@ -12,25 +12,25 @@
     "greedy",
     "strings"
   ],
-  "statement": "Given a binary string and a fixed number of moves, each move flips all bits except one chosen bit. Determine the lexicographically largest string achievable after all moves and the count of selections per bit.",
+  "statement": "Given a binary string and a fixed number of moves where each move flips all bits except one chosen bit, find the lexicographically largest resulting string and the count of selections per bit after all moves.",
   "tags": [
     "string",
-    "bitmask-dp",
+    "bit-manipulation",
     "greedy",
     "constructive-algorithm"
   ],
   "patterns": [
     "greedy",
-    "bitmask-manipulation",
+    "bit-flipping",
     "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047771,
+    "generated_at_unix": 1785050074,
     "pattern_confidence": {
       "greedy": 0.95,
-      "bitmask-manipulation": 0.9,
+      "bit-flipping": 0.9,
       "constructive-algorithm": 0.85
     }
   },

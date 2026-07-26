@@ -10,22 +10,22 @@
     "binary search",
     "math"
   ],
-  "statement": "Given a pattern of messages forming an emote triangle and a ban threshold on consecutive emotes, determine how many messages can be sent before being banned or if all messages can be sent safely.",
+  "statement": "Given parameters defining an emote triangle pattern and a ban threshold on consecutive emotes, determine how many messages can be sent before being banned or if the entire pattern can be completed without ban.",
   "tags": [
     "math",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047809,
+    "generated_at_unix": 1785050112,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.84
+      "binary-search": 0.85,
+      "prefix-sum": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

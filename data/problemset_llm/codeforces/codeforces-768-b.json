@@ -11,26 +11,26 @@
     "dfs and similar",
     "divide and conquer"
   ],
-  "statement": "Starting from a list with a single integer n, repeatedly replace any element greater than 1 by three elements: floor(x/2), x mod 2, floor(x/2), until all elements are 0 or 1. Then answer queries asking for the count of 1s in given subranges of the final list.",
+  "statement": "Starting from a list with one element n, repeatedly replace any element greater than 1 by three elements: floor(x/2), x mod 2, and floor(x/2). After fully expanding, answer queries about the count of 1s in given subranges of the final list.",
   "tags": [
-    "array",
     "divide-and-conquer",
-    "prefix-sum",
+    "segment-tree",
+    "dfs",
     "backtracking"
   ],
   "patterns": [
     "divide-and-conquer",
-    "prefix-sum",
-    "binary-search-answer"
+    "segment-tree",
+    "dfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048908,
+    "generated_at_unix": 1785050999,
     "pattern_confidence": {
       "divide-and-conquer": 0.95,
-      "prefix-sum": 0.9,
-      "binary-search-answer": 0.85
+      "segment-tree": 0.9,
+      "dfs": 0.85
     }
   },
   "source_topic": "Formwise / Recursion Backtracking"

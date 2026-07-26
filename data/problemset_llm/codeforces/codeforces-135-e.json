@@ -9,25 +9,25 @@
   "source_tags": [
     "combinatorics"
   ],
-  "statement": "Given an alphabet of size k, count the number of strings whose longest substring that is also a weak subsequence has length exactly w, or determine if infinitely many such strings exist, modulo 10^9+7.",
+  "statement": "Count the number of strings over an alphabet of size k whose longest substring that is also a weak subsequence has length exactly w, or determine if infinitely many such strings exist, modulo 10^9+7.",
   "tags": [
     "string",
     "combinatorics",
-    "dynamic-programming"
+    "modular-arithmetic"
   ],
   "patterns": [
-    "counting",
-    "modular-arithmetic",
-    "dp-on-strings"
+    "combinatorics",
+    "string-subsequence",
+    "modular-exponentiation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048393,
+    "generated_at_unix": 1785050703,
     "pattern_confidence": {
-      "counting": 0.95,
-      "modular-arithmetic": 0.9,
-      "dp-on-strings": 0.85
+      "combinatorics": 0.95,
+      "string-subsequence": 0.9,
+      "modular-exponentiation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -13,25 +13,26 @@
     "dp",
     "two pointers"
   ],
-  "statement": "Given an n by m grid of building heights, find the largest square subgrid where every building's height is at least the side length of that square.",
+  "statement": "Given an n by m grid of building heights, find the largest square subgrid of size l by l where every building has height at least l.",
   "tags": [
     "array",
-    "dynamic-programming",
-    "binary-search"
+    "binary-search",
+    "two-pointers",
+    "prefix-sum"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "prefix-sum",
-    "dp-on-grid"
+    "two-pointers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048843,
+    "generated_at_unix": 1785050931,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.85,
-      "dp-on-grid": 0.8
+      "binary-search": 0.95,
+      "prefix-sum": 0.9,
+      "two-pointers": 0.7
     }
   },
   "source_topic": "Formwise / Binary Search"

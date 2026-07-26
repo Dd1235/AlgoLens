@@ -11,7 +11,7 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a sequence of beads, determine all prefix lengths that form a regular pattern defined by alternating sequences A and B repeated 2k+1 times with k+1 occurrences of A and k occurrences of B.",
+  "statement": "Given a sequence of beads, determine all prefixes that can be represented as an alternating concatenation of sequences A and B in the pattern A + B + A + B + ... + A with 2k+1 segments, where A and B may be empty.",
   "tags": [
     "string",
     "rolling-hash",
@@ -19,17 +19,17 @@
   ],
   "patterns": [
     "string-hashing",
-    "two-pointers",
-    "string-matching"
+    "pattern-detection",
+    "prefix-processing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049030,
+    "generated_at_unix": 1785051144,
     "pattern_confidence": {
       "string-hashing": 0.95,
-      "two-pointers": 0.7,
-      "string-matching": 0.85
+      "pattern-detection": 0.85,
+      "prefix-processing": 0.8
     }
   },
   "source_topic": "Formwise / String"

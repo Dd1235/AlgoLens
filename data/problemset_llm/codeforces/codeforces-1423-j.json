@@ -21,16 +21,16 @@
   "patterns": [
     "digit-dp",
     "state-compression",
-    "constructive-algorithm"
+    "bitmask-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048159,
+    "generated_at_unix": 1785050468,
     "pattern_confidence": {
       "digit-dp": 0.95,
       "state-compression": 0.85,
-      "constructive-algorithm": 0.7
+      "bitmask-dp": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

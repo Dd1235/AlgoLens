@@ -13,25 +13,28 @@
     "data structures",
     "dp"
   ],
-  "statement": "Given a grid with heights and time costs for ascent, descent, and flat moves, find a rectangular border path with sides at least length three whose traversal time is closest to a target time.",
+  "statement": "Given a grid with heights and time costs for moving on flat, ascending, or descending terrain, find a rectangular border path of at least 3 squares per side whose traversal time is closest to a target time.",
   "tags": [
-    "array",
-    "prefix-sum",
-    "geometry"
+    "grid",
+    "geometry",
+    "dynamic-programming",
+    "prefix-sum"
   ],
   "patterns": [
-    "binary-search-answer",
     "prefix-sum",
-    "two-pointers"
+    "binary-search",
+    "brute-force",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048194,
+    "generated_at_unix": 1785050502,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.85,
-      "two-pointers": 0.7
+      "prefix-sum": 0.9,
+      "binary-search": 0.85,
+      "brute-force": 0.8,
+      "constructive-algorithm": 0.75
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

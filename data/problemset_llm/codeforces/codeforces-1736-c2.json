@@ -17,21 +17,26 @@
     "array",
     "data-structures",
     "binary-search",
-    "dynamic-programming"
+    "dynamic-programming",
+    "two-pointers"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "offline-queries"
+    "binary-search",
+    "two-pointers",
+    "offline-queries",
+    "segment-tree",
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048113,
+    "generated_at_unix": 1785050422,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.85,
-      "offline-queries": 0.7
+      "binary-search": 0.85,
+      "two-pointers": 0.8,
+      "offline-queries": 0.7,
+      "segment-tree": 0.75,
+      "dynamic-programming": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

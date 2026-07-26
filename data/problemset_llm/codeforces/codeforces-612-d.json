@@ -10,25 +10,25 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given n segments on the real line and an integer k, find the minimal subset of these segments whose union covers exactly all points covered by at least k segments.",
+  "statement": "Given n segments on the real line and an integer k, find the minimal subset of these segments whose union covers exactly all points covered by at least k of the original segments.",
   "tags": [
     "greedy",
     "sorting",
     "intervals"
   ],
   "patterns": [
-    "line-sweep",
     "greedy",
-    "sorting"
+    "sorting",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048859,
+    "generated_at_unix": 1785050949,
     "pattern_confidence": {
-      "line-sweep": 0.95,
-      "greedy": 0.9,
-      "sorting": 0.85
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "line-sweep": 0.9
     }
   },
   "source_topic": "Formwise / Greedy And Sweepline"

@@ -12,7 +12,7 @@
     "math",
     "number theory"
   ],
-  "statement": "Given an array of positive integers, compute the sum of the minimum number of split operations needed to make every nonempty subarray non-decreasing, where each operation splits an element into two positive integers summing to it.",
+  "statement": "Given an array of positive integers, compute the sum of the minimum number of split operations required to make every nonempty subarray non-decreasing, modulo 998244353.",
   "tags": [
     "array",
     "dynamic-programming",
@@ -20,18 +20,18 @@
     "number-theory"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "greedy"
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048244,
+    "generated_at_unix": 1785050551,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85,
-      "greedy": 0.8
+      "dynamic-programming": 0.9,
+      "greedy": 0.8,
+      "prefix-sum": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

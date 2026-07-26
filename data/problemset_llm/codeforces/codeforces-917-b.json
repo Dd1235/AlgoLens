@@ -12,25 +12,28 @@
     "games",
     "graphs"
   ],
-  "statement": "Given a DAG with edges labeled by characters, two players alternately move their marbles along edges with non-decreasing character labels. Determine the winner for all initial marble positions assuming optimal play.",
+  "statement": "Given a DAG with edges labeled by letters, two players alternately move marbles along edges with non-decreasing character constraints. Determine the winner for all initial marble positions assuming optimal play.",
   "tags": [
     "graph",
     "game-theory",
-    "dynamic-programming"
+    "dynamic-programming",
+    "dfs"
   ],
   "patterns": [
     "dfs",
-    "memoization",
-    "game-dp"
+    "dynamic-programming",
+    "game-theory",
+    "top-down-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048067,
+    "generated_at_unix": 1785050377,
     "pattern_confidence": {
       "dfs": 0.95,
-      "memoization": 0.9,
-      "game-dp": 0.93
+      "dynamic-programming": 0.9,
+      "game-theory": 0.95,
+      "top-down-dp": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

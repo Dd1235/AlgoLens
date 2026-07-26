@@ -12,11 +12,12 @@
     "graphs",
     "greedy"
   ],
-  "statement": "Given a 7-segment display showing digits with some segments broken, determine the maximum possible number that can be formed by turning on exactly k currently off segments, allowing leading zeros.",
+  "statement": "Given a 7-segment display showing a number with some segments broken, determine the maximum possible number that can be formed by turning on exactly k previously off segments, allowing leading zeros.",
   "tags": [
     "bit-manipulation",
     "dynamic-programming",
-    "greedy"
+    "greedy",
+    "graphs"
   ],
   "patterns": [
     "bitmask-dp",
@@ -26,11 +27,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047894,
+    "generated_at_unix": 1785050207,
     "pattern_confidence": {
       "bitmask-dp": 0.95,
       "state-compression": 0.9,
-      "greedy": 0.85
+      "greedy": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

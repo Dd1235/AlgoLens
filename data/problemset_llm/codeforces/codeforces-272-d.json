@@ -11,7 +11,7 @@
     "math",
     "sortings"
   ],
-  "statement": "Count the number of distinct merged sequences formed by interleaving two sequences of points with non-decreasing x-coordinates, using all points exactly once, modulo m.",
+  "statement": "Count the number of distinct merged sequences formed by interleaving two sequences of points with non-decreasing x-coordinates, using all points exactly once, and output the result modulo m.",
   "tags": [
     "combinatorics",
     "math",
@@ -19,17 +19,17 @@
   ],
   "patterns": [
     "counting",
-    "combinatorial-enumeration",
+    "merge-sequences",
     "modular-arithmetic",
     "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047959,
+    "generated_at_unix": 1785050277,
     "pattern_confidence": {
       "counting": 0.95,
-      "combinatorial-enumeration": 0.9,
+      "merge-sequences": 0.9,
       "modular-arithmetic": 0.85,
       "combinatorics": 0.9
     }

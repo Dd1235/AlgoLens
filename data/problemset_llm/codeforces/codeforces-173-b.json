@@ -10,7 +10,7 @@
     "dfs and similar",
     "shortest paths"
   ],
-  "statement": "Given a grid with columns that can be made magical to reflect a basilisk's gaze, determine the minimum number of columns to make magical so that anyone entering the chamber is petrified or report if impossible.",
+  "statement": "Given a grid with regular columns and a basilisk's gaze entering from the bottom-right, determine the minimum number of columns to make magic (reflective) so that anyone entering from the top-left is petrified or prove it impossible.",
   "tags": [
     "grid",
     "graph",
@@ -18,19 +18,19 @@
     "dfs"
   ],
   "patterns": [
-    "binary-search-answer",
     "dfs",
+    "shortest-path",
     "state-space-search",
     "zero-one-bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048820,
+    "generated_at_unix": 1785050907,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dfs": 0.85,
-      "state-space-search": 0.8,
+      "dfs": 0.95,
+      "shortest-path": 0.9,
+      "state-space-search": 0.85,
       "zero-one-bfs": 0.9
     }
   },

@@ -16,27 +16,29 @@
   ],
   "statement": "Given n strings of equal length, find a string s such that each input string differs from s in at most one character position.",
   "tags": [
-    "strings",
-    "brute-force",
+    "string",
     "bit-manipulation",
     "dynamic-programming",
+    "brute-force",
     "rolling-hash"
   ],
   "patterns": [
-    "constructive-algorithm",
+    "brute-force",
     "bit-manipulation",
-    "string-comparison",
+    "constructive-algorithm",
+    "dynamic-programming",
     "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048077,
+    "generated_at_unix": 1785050386,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "bit-manipulation": 0.85,
-      "string-comparison": 0.9,
-      "rolling-hash": 0.8
+      "brute-force": 0.9,
+      "bit-manipulation": 0.7,
+      "constructive-algorithm": 0.85,
+      "dynamic-programming": 0.6,
+      "rolling-hash": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

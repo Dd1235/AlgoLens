@@ -11,7 +11,7 @@
     "sortings",
     "strings"
   ],
-  "statement": "Given a string and multiple queries each specifying a substring and a sort order, apply the sorting operations on the specified substrings and output the final string.",
+  "statement": "Given a string and multiple queries each specifying a substring and a sorting order, apply the sorting operations on the substrings and output the final string.",
   "tags": [
     "string",
     "data-structures",
@@ -22,17 +22,17 @@
     "segment-tree",
     "lazy-propagation",
     "range-update",
-    "range-query"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048986,
+    "generated_at_unix": 1785051100,
     "pattern_confidence": {
-      "segment-tree": 0.95,
-      "lazy-propagation": 0.9,
-      "range-update": 0.88,
-      "range-query": 0.85
+      "segment-tree": 0.9,
+      "lazy-propagation": 0.85,
+      "range-update": 0.8,
+      "sorting": 0.95
     }
   },
   "source_topic": "Formwise / Segment Trees"

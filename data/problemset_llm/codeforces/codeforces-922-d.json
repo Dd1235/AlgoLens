@@ -19,17 +19,17 @@
   "patterns": [
     "greedy",
     "sorting",
-    "counting-subsequences",
+    "subsequence-counting",
     "exchange-argument"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048017,
+    "generated_at_unix": 1785050338,
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,
-      "counting-subsequences": 0.85,
+      "subsequence-counting": 0.85,
       "exchange-argument": 0.9
     }
   },

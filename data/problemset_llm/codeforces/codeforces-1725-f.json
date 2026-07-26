@@ -11,12 +11,12 @@
     "data structures",
     "sortings"
   ],
-  "statement": "Given N rows each with contestants occupying intervals on an extremely wide grid, perform operations shifting contestants left or right by powers of two to achieve a target bitwise OR value Z. For each query with a target Z, determine the maximum number of contestants that can align in a single column after valid shifts.",
+  "statement": "Given N rows each with contestants occupying intervals on an extremely wide grid, perform operations shifting contestants in a row by k tiles east or west, updating a bitwise OR value Z of all k used. For queries with a target Z = W_j, find the maximum number of contestants that can align in a single column after operations resulting in Z = W_j.",
   "tags": [
     "bit-manipulation",
-    "intervals",
-    "math",
-    "greedy"
+    "interval",
+    "greedy",
+    "math"
   ],
   "patterns": [
     "bitmask-manipulation",
@@ -27,7 +27,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048131,
+    "generated_at_unix": 1785050441,
     "pattern_confidence": {
       "bitmask-manipulation": 0.95,
       "interval-merging": 0.9,

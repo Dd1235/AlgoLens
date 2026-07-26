@@ -11,25 +11,25 @@
     "math",
     "number theory"
   ],
-  "statement": "Given integers a, b, and n, determine whether n can be generated starting from 1 by repeatedly multiplying by a or adding b any number of times.",
+  "statement": "Given positive integers a, b, and n, determine whether n can be generated starting from 1 by repeatedly multiplying by a or adding b.",
   "tags": [
     "math",
     "number-theory",
     "constructive-algorithm"
   ],
   "patterns": [
-    "greedy",
-    "simulation",
-    "reachability"
+    "constructive-algorithm",
+    "reachability",
+    "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047846,
+    "generated_at_unix": 1785050153,
     "pattern_confidence": {
-      "greedy": 0.85,
-      "simulation": 0.8,
-      "reachability": 0.75
+      "constructive-algorithm": 0.9,
+      "reachability": 0.8,
+      "modular-arithmetic": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

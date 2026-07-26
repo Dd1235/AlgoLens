@@ -10,22 +10,22 @@
   "statement": "Given n daily alarms each ringing for one minute at fixed times, find the longest continuous time interval without any alarm ringing, possibly spanning across days.",
   "tags": [
     "array",
-    "intervals",
-    "binary-search"
+    "sorting",
+    "math"
   ],
   "patterns": [
-    "binary-search-answer",
-    "interval-merging",
-    "prefix-sum"
+    "sorting",
+    "circular-interval",
+    "interval-gap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048078,
+    "generated_at_unix": 1785050387,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "interval-merging": 0.85,
-      "prefix-sum": 0.7
+      "sorting": 0.95,
+      "circular-interval": 0.9,
+      "interval-gap": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

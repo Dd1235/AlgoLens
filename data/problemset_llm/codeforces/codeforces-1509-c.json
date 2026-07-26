@@ -10,27 +10,25 @@
     "dp",
     "greedy"
   ],
-  "statement": "Given speeds of n runners, reorder them to minimize the sum of discrepancies where each discrepancy is the difference between the maximum and minimum speed among the first i runners.",
+  "statement": "Given speeds of n runners, reorder them to minimize the sum of discrepancies defined as the difference between the maximum and minimum speed among the first i runners for all i.",
   "tags": [
     "array",
-    "dynamic-programming",
-    "greedy"
+    "sorting",
+    "dynamic-programming"
   ],
   "patterns": [
+    "sorting",
     "dynamic-programming",
-    "greedy",
-    "prefix-min-max",
-    "prefix-sum"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048507,
+    "generated_at_unix": 1785050803,
     "pattern_confidence": {
-      "dynamic-programming": 0.9,
-      "greedy": 0.85,
-      "prefix-min-max": 0.8,
-      "prefix-sum": 0.75
+      "sorting": 0.95,
+      "dynamic-programming": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Formwise / DP Optimizations"

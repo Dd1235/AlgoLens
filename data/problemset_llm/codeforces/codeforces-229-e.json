@@ -12,7 +12,7 @@
     "math",
     "probabilities"
   ],
-  "statement": "Given a list of gifts with possible duplicate names but distinct prices, select n gift names respecting their occurrence limits to maximize the total price, then find the probability of obtaining the n most expensive gifts under uniform random selection.",
+  "statement": "Given a multiset of gifts with names and distinct prices, select n gift names respecting their available counts to maximize the total price, then compute the probability of obtaining the n most expensive gifts under uniform random selection among possible price combinations.",
   "tags": [
     "combinatorics",
     "probability",
@@ -21,16 +21,16 @@
   ],
   "patterns": [
     "combinatorics",
-    "probability-calculation",
+    "probability-dp",
     "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048361,
+    "generated_at_unix": 1785050670,
     "pattern_confidence": {
       "combinatorics": 0.95,
-      "probability-calculation": 0.9,
+      "probability-dp": 0.9,
       "dynamic-programming": 0.85
     }
   },

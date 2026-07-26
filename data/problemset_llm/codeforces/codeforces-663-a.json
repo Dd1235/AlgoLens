@@ -16,22 +16,22 @@
   "tags": [
     "math",
     "greedy",
-    "constructive-algorithm",
-    "expression-parsing"
+    "expression-parsing",
+    "constructive-algorithm"
   ],
   "patterns": [
     "greedy",
     "constructive-algorithm",
-    "equation-solving"
+    "expression-parsing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047925,
+    "generated_at_unix": 1785050235,
     "pattern_confidence": {
       "greedy": 0.9,
       "constructive-algorithm": 0.85,
-      "equation-solving": 0.8
+      "expression-parsing": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -10,25 +10,23 @@
     "binary search",
     "greedy"
   ],
-  "statement": "Given counts of soldiers by height, select the maximum number of soldiers to form k equal-sized rows so that within each row, soldier heights differ by at most 1.",
+  "statement": "Given counts of soldiers by height, select the largest group divisible into k equal rows such that in each row, soldier heights differ by at most 1.",
   "tags": [
-    "array",
+    "binary-search",
     "greedy",
-    "binary-search"
+    "math"
   ],
   "patterns": [
     "binary-search-answer",
-    "greedy",
-    "prefix-sum"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048073,
+    "generated_at_unix": 1785050382,
     "pattern_confidence": {
       "binary-search-answer": 0.95,
-      "greedy": 0.9,
-      "prefix-sum": 0.8
+      "greedy": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

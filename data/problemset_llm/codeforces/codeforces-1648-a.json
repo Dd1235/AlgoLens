@@ -14,26 +14,27 @@
     "matrices",
     "sortings"
   ],
-  "statement": "Given an n by m grid with colored cells, compute the sum of Manhattan distances between every pair of cells sharing the same color.",
+  "statement": "Given an n by m grid with colored cells, compute the sum of Manhattan distances between all pairs of cells sharing the same color.",
   "tags": [
-    "array",
     "geometry",
     "combinatorics",
+    "sorting",
+    "array",
     "prefix-sum"
   ],
   "patterns": [
-    "prefix-sum",
     "sorting",
-    "grouping"
+    "prefix-sum",
+    "grouping-by-color"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048464,
+    "generated_at_unix": 1785050768,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "sorting": 0.85,
-      "grouping": 0.8
+      "sorting": 0.9,
+      "prefix-sum": 0.85,
+      "grouping-by-color": 0.8
     }
   },
   "source_topic": "Formwise / Contribution Technique & Prefix"

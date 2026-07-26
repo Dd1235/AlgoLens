@@ -12,25 +12,25 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a string, find the minimum length of its compressed form where the string is represented as concatenations of repeated substrings with their repetition counts.",
+  "statement": "Given a string, find the minimum length of a compressed representation formed by sequences of repeated substrings with their repetition counts.",
   "tags": [
     "string",
     "dynamic-programming",
     "rolling-hash"
   ],
   "patterns": [
-    "string-compression",
     "dynamic-programming",
-    "rolling-hash"
+    "string-hashing",
+    "substring-repetition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048809,
+    "generated_at_unix": 1785050897,
     "pattern_confidence": {
-      "string-compression": 0.95,
-      "dynamic-programming": 0.9,
-      "rolling-hash": 0.85
+      "dynamic-programming": 0.95,
+      "string-hashing": 0.85,
+      "substring-repetition": 0.8
     }
   },
   "source_topic": "Formwise / String"

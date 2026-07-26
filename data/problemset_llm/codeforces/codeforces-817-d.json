@@ -17,6 +17,7 @@
     "array",
     "divide-and-conquer",
     "data-structures",
+    "sorting",
     "prefix-sum"
   ],
   "patterns": [
@@ -27,11 +28,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049047,
+    "generated_at_unix": 1785051161,
     "pattern_confidence": {
       "contribution-technique": 0.95,
-      "monotonic-stack": 0.9,
-      "divide-and-conquer": 0.85
+      "monotonic-stack": 0.85,
+      "divide-and-conquer": 0.8
     }
   },
   "source_topic": "Formwise / Contribution Technique & Prefix"

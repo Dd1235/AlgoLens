@@ -11,25 +11,25 @@
     "greedy",
     "two pointers"
   ],
-  "statement": "Given a sequence of tower heights, merge adjacent towers by stacking to form a non-decreasing sequence with minimal merges.",
+  "statement": "Given a sequence of tower heights, merge adjacent towers by stacking to form a non-decreasing sequence of tower heights with the minimum number of merge operations.",
   "tags": [
     "array",
-    "dynamic-programming",
-    "greedy"
+    "greedy",
+    "dynamic-programming"
   ],
   "patterns": [
-    "dp-on-intervals",
+    "two-pointers",
     "greedy",
-    "two-pointers"
+    "dp-on-intervals"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048232,
+    "generated_at_unix": 1785050536,
     "pattern_confidence": {
-      "dp-on-intervals": 0.95,
-      "greedy": 0.85,
-      "two-pointers": 0.7
+      "two-pointers": 0.85,
+      "greedy": 0.9,
+      "dp-on-intervals": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

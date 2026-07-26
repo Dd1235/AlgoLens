@@ -11,11 +11,11 @@
     "brute force",
     "implementation"
   ],
-  "statement": "Count how many integers within a given interval have exactly one zero in their binary representation.",
+  "statement": "Given a range of years, count how many integers within that range have exactly one zero in their binary representation.",
   "tags": [
     "bit-manipulation",
-    "implementation",
-    "math"
+    "math",
+    "implementation"
   ],
   "patterns": [
     "bit-manipulation",
@@ -25,11 +25,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047885,
+    "generated_at_unix": 1785050196,
     "pattern_confidence": {
       "bit-manipulation": 0.9,
-      "brute-force": 0.85,
-      "binary-representation": 0.8
+      "brute-force": 0.8,
+      "binary-representation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -10,25 +10,25 @@
     "binary search",
     "two pointers"
   ],
-  "statement": "Given a sequence of robot moves on a 2D grid, find the minimum length of a contiguous subsegment to change so that the robot ends at a target position, or determine if it's impossible.",
+  "statement": "Given a sequence of robot moves on a 2D plane, find the minimum length of a contiguous subsegment of moves to change so that the robot ends at a target coordinate, or determine if it's impossible.",
   "tags": [
-    "array",
-    "geometry",
-    "two-pointers"
+    "string",
+    "two-pointers",
+    "binary-search"
   ],
   "patterns": [
-    "prefix-sum",
-    "binary-search-answer",
-    "two-pointers"
+    "two-pointers",
+    "binary-search",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048878,
+    "generated_at_unix": 1785050968,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "binary-search-answer": 0.92,
-      "two-pointers": 0.85
+      "two-pointers": 0.95,
+      "binary-search": 0.9,
+      "prefix-sum": 0.85
     }
   },
   "source_topic": "Formwise / Two Pointers"

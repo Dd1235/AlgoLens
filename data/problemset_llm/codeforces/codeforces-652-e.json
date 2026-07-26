@@ -12,7 +12,7 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a connected graph with bridges that disappear after crossing, determine if there exists a path from a start island to an artifact on a bridge and then to a dealer island without reusing any bridge.",
+  "statement": "Given a connected undirected graph with artifacts on some edges, determine if there exists a path from a start island to a dealer island passing through at least one artifact edge, where each edge can be used at most once (edges are destroyed after crossing).",
   "tags": [
     "graph",
     "dfs",
@@ -20,20 +20,20 @@
     "trees"
   ],
   "patterns": [
-    "bridge-finding",
     "dfs",
     "union-find",
-    "graph-connectivity"
+    "bridge-finding",
+    "path-existence"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049034,
+    "generated_at_unix": 1785051148,
     "pattern_confidence": {
-      "bridge-finding": 0.95,
-      "dfs": 0.9,
-      "union-find": 0.85,
-      "graph-connectivity": 0.9
+      "dfs": 0.95,
+      "union-find": 0.9,
+      "bridge-finding": 0.7,
+      "path-existence": 0.9
     }
   },
   "source_topic": "Formwise / Graph Level 2"

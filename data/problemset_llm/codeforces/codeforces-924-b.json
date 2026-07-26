@@ -11,7 +11,7 @@
     "greedy",
     "two pointers"
   ],
-  "statement": "Given an increasing sequence of energy states, select three distinct states i < j < k with Ek - Ei ≤ U to maximize the ratio (Ek - Ej) / (Ek - Ei).",
+  "statement": "Given a sorted list of energy states and an upper bound on the energy difference between the highest and lowest chosen states, find three distinct states maximizing the ratio of useful emitted energy to the energy spent under the constraint Ek - Ei ≤ U.",
   "tags": [
     "array",
     "binary-search",
@@ -19,18 +19,18 @@
     "two-pointers"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "two-pointers",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048057,
+    "generated_at_unix": 1785050365,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "two-pointers": 0.9,
-      "greedy": 0.85
+      "binary-search": 0.9,
+      "two-pointers": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

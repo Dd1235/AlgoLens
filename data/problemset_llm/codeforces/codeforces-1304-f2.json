@@ -11,28 +11,28 @@
     "dp",
     "greedy"
   ],
-  "statement": "Given daily animal counts in multiple forest areas over n days, schedule two cameras alternating every day to cover k consecutive areas each, maximizing the total unique animals observed, counting overlaps only once per day.",
+  "statement": "Given animal counts per area per day, schedule two cameras alternating every day to observe k consecutive areas for up to two days, maximizing total unique animals observed without double counting overlapping areas on the same day.",
   "tags": [
     "array",
     "dynamic-programming",
     "greedy",
-    "prefix-sum"
+    "intervals"
   ],
   "patterns": [
-    "prefix-sum",
+    "sliding-window",
     "dynamic-programming",
     "greedy",
-    "sliding-window"
+    "interval-overlap"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048206,
+    "generated_at_unix": 1785050512,
     "pattern_confidence": {
-      "prefix-sum": 0.95,
-      "dynamic-programming": 0.9,
+      "sliding-window": 0.9,
+      "dynamic-programming": 0.95,
       "greedy": 0.85,
-      "sliding-window": 0.8
+      "interval-overlap": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

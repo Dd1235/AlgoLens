@@ -15,7 +15,7 @@
     "math",
     "trees"
   ],
-  "statement": "Given an array, count the number of arrays with values in a given range that preserve the leftmost maximum positions on every subsegment as in the original array, modulo 10^9+7.",
+  "statement": "Count the number of arrays b of length n with elements between 1 and m such that for every subsegment, the leftmost maximum position matches that of a given array a, modulo 10^9+7.",
   "tags": [
     "array",
     "dynamic-programming",
@@ -24,17 +24,17 @@
   ],
   "patterns": [
     "divide-and-conquer-dp",
-    "binary-search-answer",
-    "modular-arithmetic"
+    "dynamic-programming",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048102,
+    "generated_at_unix": 1785050410,
     "pattern_confidence": {
       "divide-and-conquer-dp": 0.9,
-      "binary-search-answer": 0.85,
-      "modular-arithmetic": 0.8
+      "dynamic-programming": 0.85,
+      "binary-search": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

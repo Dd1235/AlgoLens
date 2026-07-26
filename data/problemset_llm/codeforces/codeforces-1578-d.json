@@ -7,24 +7,24 @@
   "difficulty": 3200,
   "rating": 3200,
   "source_tags": [],
-  "statement": "Given four infinite-order dragon curves starting at the origin with segments passing through unit squares, determine which curve contains the segment passing through a given square and find the segment's position on that curve.",
+  "statement": "Given four infinite-order dragon curves starting at the origin with segments of length √2, determine which curve passes through the unit square at (x, y) and find the segment's position on that curve.",
   "tags": [
     "geometry",
-    "math",
-    "fractal"
+    "fractal",
+    "math"
   ],
   "patterns": [
     "divide-and-conquer",
-    "recursive-geometry",
+    "recursive-construction",
     "coordinate-transformation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048273,
+    "generated_at_unix": 1785050581,
     "pattern_confidence": {
-      "divide-and-conquer": 0.9,
-      "recursive-geometry": 0.85,
+      "divide-and-conquer": 0.85,
+      "recursive-construction": 0.9,
       "coordinate-transformation": 0.8
     }
   },

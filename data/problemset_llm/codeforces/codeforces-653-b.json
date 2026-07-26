@@ -12,25 +12,25 @@
     "dp",
     "strings"
   ],
-  "statement": "Given a set of compression operations replacing two-letter prefixes with one letter, count how many length-n strings over six letters can be reduced to 'a' by applying n-1 operations.",
+  "statement": "Given a set of two-letter to one-letter compression operations over a six-letter alphabet, count how many length-n strings can be fully compressed to the single letter 'a' by applying n-1 operations.",
   "tags": [
     "string",
     "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [
-    "dynamic-programming",
+    "dp-on-dag",
     "state-compression",
-    "counting"
+    "bottom-up-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047870,
+    "generated_at_unix": 1785050181,
     "pattern_confidence": {
-      "dynamic-programming": 0.98,
+      "dp-on-dag": 0.9,
       "state-compression": 0.85,
-      "counting": 0.9
+      "bottom-up-dp": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

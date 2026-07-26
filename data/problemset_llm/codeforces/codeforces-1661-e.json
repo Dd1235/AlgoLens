@@ -14,28 +14,26 @@
     "math",
     "trees"
   ],
-  "statement": "Given a 3-row by n-column grid with free and taken cells, answer queries asking for the number of connected components formed by free cells within specified column intervals.",
+  "statement": "Given a 3-row matrix with free and taken cells, answer queries counting the number of connected components formed by free cells within specified column intervals, where connectivity is defined by adjacency in rows and columns.",
   "tags": [
-    "array",
+    "matrix",
     "graph",
     "union-find",
-    "dynamic-programming"
+    "queries"
   ],
   "patterns": [
     "union-find",
-    "prefix-sum",
     "offline-queries",
     "interval-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048380,
+    "generated_at_unix": 1785050690,
     "pattern_confidence": {
       "union-find": 0.95,
-      "prefix-sum": 0.85,
-      "offline-queries": 0.8,
-      "interval-query": 0.75
+      "offline-queries": 0.85,
+      "interval-query": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

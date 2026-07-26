@@ -11,28 +11,25 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a tree with n cities connected by roads, build up to k railway stations to minimize the sum of shortest travel times between all pairs of cities, where roads between stations have reduced traversal time.",
+  "statement": "Given a tree with weighted edges and a limit on how many nodes can have railway stations, select up to k nodes to minimize the sum of shortest path travel times between all pairs of cities, where edges between stations have reduced traversal time.",
   "tags": [
     "tree",
-    "graph",
     "greedy",
-    "dynamic-programming"
+    "shortest-path"
   ],
   "patterns": [
     "tree-dp",
     "greedy",
-    "binary-search-answer",
-    "prefix-sum"
+    "all-pairs-shortest-path"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048236,
+    "generated_at_unix": 1785050541,
     "pattern_confidence": {
-      "tree-dp": 0.95,
-      "greedy": 0.9,
-      "binary-search-answer": 0.85,
-      "prefix-sum": 0.8
+      "tree-dp": 0.9,
+      "greedy": 0.85,
+      "all-pairs-shortest-path": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

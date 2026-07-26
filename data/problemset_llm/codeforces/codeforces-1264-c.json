@@ -10,7 +10,7 @@
     "data structures",
     "probabilities"
   ],
-  "statement": "Given n mirrors each with a probability of saying 'beautiful', and a dynamic set of checkpoints, answer queries that toggle checkpoints and compute the expected number of days until a stopping condition, modulo 998244353.",
+  "statement": "Given n mirrors each with a probability of saying \"beautiful,\" and a dynamic set of checkpoints, process queries toggling checkpoints and after each query compute the expected days until success modulo 998244353.",
   "tags": [
     "probability",
     "data-structures",
@@ -24,11 +24,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048115,
+    "generated_at_unix": 1785050424,
     "pattern_confidence": {
-      "expected-value-dp": 0.95,
+      "expected-value-dp": 0.9,
       "segment-tree": 0.85,
-      "modular-inverse": 0.9
+      "modular-inverse": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

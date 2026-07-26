@@ -10,7 +10,7 @@
     "brute force",
     "number theory"
   ],
-  "statement": "Given a bitstring y, count how many cyclic shift amounts k exist such that y equals the XOR of some bitstring x and x shifted cyclically by k positions.",
+  "statement": "Given a bitstring y, count how many cyclic shifts k exist such that y equals the xor of some bitstring x and x shifted cyclically by k positions.",
   "tags": [
     "bit-manipulation",
     "string",
@@ -19,18 +19,16 @@
   "patterns": [
     "xor",
     "cyclic-shift",
-    "brute-force",
-    "string-matching"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048124,
+    "generated_at_unix": 1785050434,
     "pattern_confidence": {
       "xor": 0.95,
       "cyclic-shift": 0.9,
-      "brute-force": 0.7,
-      "string-matching": 0.6
+      "brute-force": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

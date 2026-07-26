@@ -16,25 +16,25 @@
     "tree",
     "dfs",
     "data-structure",
-    "counting",
+    "offline-queries",
     "graph"
   ],
   "patterns": [
     "dfs",
-    "subtree-query",
+    "tree-flattening",
     "offline-queries",
-    "frequency-buckets",
+    "counting",
     "union-find"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048882,
+    "generated_at_unix": 1785050971,
     "pattern_confidence": {
       "dfs": 0.95,
-      "subtree-query": 0.9,
+      "tree-flattening": 0.9,
       "offline-queries": 0.85,
-      "frequency-buckets": 0.8,
+      "counting": 0.8,
       "union-find": 0.9
     }
   },

@@ -12,21 +12,21 @@
   ],
   "statement": "Given a hidden binary array, determine the position of the k-th zero by querying sums over subranges, with a limited number of queries allowed.",
   "tags": [
-    "array",
+    "binary-search",
     "interactive",
-    "binary-search"
+    "array"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum"
+    "binary-search",
+    "interactive"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047936,
+    "generated_at_unix": 1785050246,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "prefix-sum": 0.85
+      "binary-search": 0.95,
+      "interactive": 0.9
     }
   },
   "source_topic": "Formwise / Binary Search"

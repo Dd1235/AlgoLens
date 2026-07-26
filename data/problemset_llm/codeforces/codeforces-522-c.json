@@ -9,7 +9,7 @@
   "source_tags": [
     "greedy"
   ],
-  "statement": "Given the initial counts of each dish and observations about passengers served before Polycarp, determine for each dish whether it could have been exhausted by the time Polycarp is served or if it was definitely still available.",
+  "statement": "Given the initial quantities of dishes and observations about passengers before Polycarp, determine for each dish whether it could have been exhausted before Polycarp was served or was definitely still available.",
   "tags": [
     "greedy",
     "simulation",
@@ -22,7 +22,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048107,
+    "generated_at_unix": 1785050416,
     "pattern_confidence": {
       "greedy": 0.95,
       "simulation": 0.9

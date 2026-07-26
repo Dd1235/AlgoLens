@@ -10,25 +10,23 @@
     "implementation",
     "two pointers"
   ],
-  "statement": "Given n items arranged in pages of size k and m special items, repeatedly remove all special items from the first page containing any special item, then let items above fall to fill empty positions, until no special items remain. Determine the total number of such removal operations.",
+  "statement": "Given n items arranged in pages of size k and a subset of m special items, repeatedly remove all special items from the first page containing any special items, allowing items below to move up and fill emptied positions, until no special items remain. Determine the total number of such removal operations.",
   "tags": [
     "array",
-    "simulation",
+    "implementation",
     "two-pointers"
   ],
   "patterns": [
-    "simulation",
     "two-pointers",
-    "greedy"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047748,
+    "generated_at_unix": 1785050053,
     "pattern_confidence": {
-      "simulation": 0.98,
-      "two-pointers": 0.85,
-      "greedy": 0.75
+      "two-pointers": 0.9,
+      "simulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -9,25 +9,25 @@
   "source_tags": [
     "implementation"
   ],
-  "statement": "Simulate a simple memory manager supporting allocation of contiguous memory blocks, erasure by block ID, and defragmentation that compacts allocated blocks towards the start while preserving order.",
+  "statement": "Implement a simple memory manager that supports allocating contiguous memory blocks, erasing allocated blocks by identifier, and defragmenting memory by shifting allocated blocks towards the beginning while preserving order.",
   "tags": [
-    "simulation",
-    "array",
-    "implementation"
+    "implementation",
+    "data-structure",
+    "simulation"
   ],
   "patterns": [
-    "simulation",
+    "interval-management",
     "two-pointers",
-    "interval-management"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048003,
+    "generated_at_unix": 1785050323,
     "pattern_confidence": {
-      "simulation": 0.98,
-      "two-pointers": 0.85,
-      "interval-management": 0.8
+      "interval-management": 0.9,
+      "two-pointers": 0.7,
+      "simulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

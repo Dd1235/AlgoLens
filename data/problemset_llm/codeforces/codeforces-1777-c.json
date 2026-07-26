@@ -13,26 +13,28 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given students with smartness values and multiple topics, select a team covering all topics where each topic has at least one proficient student, minimizing the maximum smartness difference within the team.",
+  "statement": "Given students with smartness values and multiple topics, select a team covering all topics via divisibility conditions while minimizing the maximum smartness difference within the team.",
   "tags": [
     "array",
     "number-theory",
-    "binary-search",
-    "two-pointers"
+    "two-pointers",
+    "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
     "two-pointers",
-    "modulo"
+    "binary-search",
+    "greedy",
+    "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048522,
+    "generated_at_unix": 1785050819,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "two-pointers": 0.85,
-      "modulo": 0.9
+      "two-pointers": 0.9,
+      "binary-search": 0.85,
+      "greedy": 0.8,
+      "modular-arithmetic": 0.75
     }
   },
   "source_topic": "Formwise / Two Pointers"

@@ -10,23 +10,22 @@
     "greedy",
     "math"
   ],
-  "statement": "Given sets of possible outer ring radii and metal densities, select values to maximize the inner disk radius such that the mass ratio of the ring to the disk equals a given fraction.",
+  "statement": "Given sets of possible values for the outer radius and densities of a medal's ring and inner disk, select values to maximize the inner radius such that the mass ratio of ring to disk equals a given fraction.",
   "tags": [
     "math",
-    "greedy",
-    "binary-search"
+    "greedy"
   ],
   "patterns": [
-    "binary-search-answer",
-    "equation-solving"
+    "formula-derivation",
+    "search-over-discrete-options"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047888,
+    "generated_at_unix": 1785050200,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "equation-solving": 0.85
+      "formula-derivation": 0.9,
+      "search-over-discrete-options": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

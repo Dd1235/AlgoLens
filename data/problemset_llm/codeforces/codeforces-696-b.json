@@ -12,25 +12,25 @@
     "probabilities",
     "trees"
   ],
-  "statement": "Given a rooted tree with n cities, compute the expected start time of a random DFS visit for each city starting from the root.",
+  "statement": "Given a rooted tree with n cities and n-1 roads, starting a random DFS from the root, compute the expected start time of the DFS visit for each city.",
   "tags": [
     "tree",
-    "graph",
+    "dfs",
     "probability",
-    "dfs"
+    "expected-value"
   ],
   "patterns": [
-    "expected-value-dp",
     "dfs",
+    "expected-value-dp",
     "tree-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048061,
+    "generated_at_unix": 1785050369,
     "pattern_confidence": {
-      "expected-value-dp": 0.95,
-      "dfs": 0.9,
+      "dfs": 0.95,
+      "expected-value-dp": 0.9,
       "tree-dp": 0.85
     }
   },

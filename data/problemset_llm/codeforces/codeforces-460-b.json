@@ -20,18 +20,18 @@
     "implementation"
   ],
   "patterns": [
+    "brute-force",
     "digit-sum",
-    "exponentiation",
-    "brute-force-search"
+    "exponentiation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047833,
+    "generated_at_unix": 1785050137,
     "pattern_confidence": {
-      "digit-sum": 0.95,
-      "exponentiation": 0.85,
-      "brute-force-search": 0.9
+      "brute-force": 0.95,
+      "digit-sum": 0.9,
+      "exponentiation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

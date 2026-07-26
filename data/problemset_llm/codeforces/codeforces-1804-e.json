@@ -13,28 +13,28 @@
     "dp",
     "graphs"
   ],
-  "statement": "Given a connected undirected network, assign each server an auxiliary neighbor so that a recursive routing procedure can find a path between any two servers without infinite loops, or determine that no such assignment exists.",
+  "statement": "Given a connected undirected graph, assign to each node exactly one neighbor as an auxiliary server so that a recursive routing procedure can find a path between any two distinct nodes without infinite loops, or determine that no such assignment exists.",
   "tags": [
     "graph",
     "dfs",
     "bit-manipulation",
-    "dynamic-programming"
+    "backtracking"
   ],
   "patterns": [
     "dfs",
-    "bitmask-dp",
-    "cycle-detection",
-    "state-compression"
+    "bit-manipulation",
+    "backtracking",
+    "cycle-detection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048122,
+    "generated_at_unix": 1785050432,
     "pattern_confidence": {
       "dfs": 0.95,
-      "bitmask-dp": 0.85,
-      "cycle-detection": 0.9,
-      "state-compression": 0.8
+      "bit-manipulation": 0.85,
+      "backtracking": 0.9,
+      "cycle-detection": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

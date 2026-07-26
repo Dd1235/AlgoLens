@@ -13,23 +13,23 @@
   ],
   "statement": "Given n suspects each making a statement accusing or defending a suspect, and knowing exactly m statements are true, determine which suspects lied and which told the truth.",
   "tags": [
-    "graph",
     "constructive-algorithm",
-    "implementation"
+    "implementation",
+    "logic"
   ],
   "patterns": [
-    "binary-search-answer",
-    "graph-modeling",
-    "truth-assignment"
+    "constructive-algorithm",
+    "case-analysis",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047933,
+    "generated_at_unix": 1785050243,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "graph-modeling": 0.85,
-      "truth-assignment": 0.8
+      "constructive-algorithm": 0.9,
+      "case-analysis": 0.85,
+      "simulation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

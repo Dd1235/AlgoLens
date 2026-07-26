@@ -11,7 +11,7 @@
     "math",
     "number theory"
   ],
-  "statement": "Determine if it is possible to paint an extremely large fence with planks indexed from 0, coloring planks divisible by r red, those divisible by b blue, and those divisible by both either color, such that no k consecutive painted planks share the same color.",
+  "statement": "Determine if it is possible to color an extremely large fence's planks red or blue under divisibility and consecutive color repetition constraints without violating the rules.",
   "tags": [
     "math",
     "number-theory",
@@ -20,16 +20,16 @@
   "patterns": [
     "greedy",
     "modular-arithmetic",
-    "case-analysis"
+    "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048526,
+    "generated_at_unix": 1785050822,
     "pattern_confidence": {
       "greedy": 0.95,
       "modular-arithmetic": 0.9,
-      "case-analysis": 0.85
+      "number-theory": 0.9
     }
   },
   "source_topic": "Formwise / Math"

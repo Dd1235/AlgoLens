@@ -9,24 +9,25 @@
   "source_tags": [
     "data structures"
   ],
-  "statement": "Given an array of distinct numbers, construct a graph where edges connect indices i<j if a_i < a_j. The weight is the number of connected components in this graph. After multiple updates changing array values, output the updated weight each time.",
+  "statement": "Given an array of distinct numbers, construct a graph where edges connect indices i<j if a_i < a_j, and define the array's weight as the number of connected components in this graph. After multiple update queries changing array values, output the updated weight each time.",
   "tags": [
     "array",
     "graph",
-    "data-structures"
+    "dynamic-updates",
+    "union-find"
   ],
   "patterns": [
-    "offline-queries",
     "union-find",
+    "offline-queries",
     "dynamic-connectivity"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048360,
+    "generated_at_unix": 1785050668,
     "pattern_confidence": {
-      "offline-queries": 0.9,
       "union-find": 0.95,
+      "offline-queries": 0.7,
       "dynamic-connectivity": 0.85
     }
   },

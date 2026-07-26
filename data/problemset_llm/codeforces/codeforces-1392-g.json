@@ -13,25 +13,25 @@
     "math",
     "shortest paths"
   ],
-  "statement": "Given a pie tray with k positions and n elves each able to swap two positions, select a contiguous segment of at least m elves to apply their swaps in order, maximizing the number of positions matching a target arrangement.",
+  "statement": "Given an initial and ideal arrangement of pies on a tray and a sequence of swap operations by elves, select a contiguous subsegment of swaps of length at least m to maximize the number of positions matching the ideal arrangement after applying those swaps.",
   "tags": [
     "bit-manipulation",
     "dynamic-programming",
-    "binary-search"
+    "array"
   ],
   "patterns": [
     "bitmask-dp",
-    "binary-search-answer",
-    "prefix-sum"
+    "sliding-window",
+    "prefix-xor"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048269,
+    "generated_at_unix": 1785050577,
     "pattern_confidence": {
       "bitmask-dp": 0.95,
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.7
+      "sliding-window": 0.7,
+      "prefix-xor": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

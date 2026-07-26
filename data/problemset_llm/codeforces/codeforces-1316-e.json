@@ -12,28 +12,26 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Select exactly p players for distinct positions and k audience members from n people to maximize total club strength, given individual audience strengths and position-specific player strengths.",
+  "statement": "Select exactly p players for distinct positions and k audience members from n people to maximize total club strength, considering individual audience strengths and position-specific player strengths.",
   "tags": [
-    "dynamic-programming",
     "bit-manipulation",
+    "dynamic-programming",
     "greedy",
     "sorting"
   ],
   "patterns": [
     "bitmask-dp",
     "greedy",
-    "sorting",
-    "state-compression"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048959,
+    "generated_at_unix": 1785051059,
     "pattern_confidence": {
       "bitmask-dp": 0.95,
-      "greedy": 0.85,
-      "sorting": 0.8,
-      "state-compression": 0.9
+      "greedy": 0.7,
+      "sorting": 0.6
     }
   },
   "source_topic": "Formwise / DP Level 2"

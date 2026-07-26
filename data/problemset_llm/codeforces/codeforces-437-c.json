@@ -11,7 +11,7 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given a toy composed of parts connected by ropes, find the order to remove all parts one by one to minimize the total energy spent, where removing a part costs the sum of values of its still-connected neighbors.",
+  "statement": "Given a toy composed of parts connected by ropes, each part's removal costs energy equal to the sum of values of its currently connected neighbors. Determine the order of removing parts to minimize the total energy spent.",
   "tags": [
     "graph",
     "greedy",
@@ -20,16 +20,16 @@
   "patterns": [
     "greedy",
     "sorting",
-    "graph-modeling"
+    "graph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048827,
+    "generated_at_unix": 1785050914,
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,
-      "graph-modeling": 0.85
+      "graph": 0.85
     }
   },
   "source_topic": "Formwise / Greedy And Sweepline"

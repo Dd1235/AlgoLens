@@ -9,22 +9,22 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given a weekly timetable with lessons scheduled over multiple days and hours, determine the minimum total time spent at the university if up to k lessons can be skipped, where daily attendance time is the span from the first to last attended lesson each day.",
+  "statement": "Given a weekly timetable with lessons scheduled over multiple days and a limit on how many lessons can be skipped, determine the minimum total hours spent at the university, where daily attendance time is from the first to last attended lesson each day.",
   "tags": [
-    "array",
-    "dynamic-programming"
+    "dynamic-programming",
+    "array"
   ],
   "patterns": [
     "dynamic-programming",
-    "prefix-sum"
+    "interval-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048042,
+    "generated_at_unix": 1785050355,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "prefix-sum": 0.8
+      "interval-dp": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

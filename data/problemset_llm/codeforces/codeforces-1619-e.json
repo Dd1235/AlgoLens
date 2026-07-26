@@ -15,7 +15,7 @@
     "math",
     "sortings"
   ],
-  "statement": "Given an array of non-negative integers, determine for each integer i from 0 to n whether it is possible to increment elements to make the MEX of the array exactly i, and if so, find the minimum number of increments required.",
+  "statement": "Given an array of non-negative integers, for each integer from 0 to n, determine if it is possible to increment elements to achieve that integer as the exact MEX of the array, and if so, find the minimum number of increments required.",
   "tags": [
     "array",
     "greedy",
@@ -25,17 +25,19 @@
   ],
   "patterns": [
     "greedy",
+    "sorting",
     "prefix-sum",
-    "sorting"
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048010,
+    "generated_at_unix": 1785050331,
     "pattern_confidence": {
       "greedy": 0.95,
+      "sorting": 0.9,
       "prefix-sum": 0.85,
-      "sorting": 0.9
+      "constructive-algorithm": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

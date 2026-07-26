@@ -14,26 +14,26 @@
     "implementation",
     "shortest paths"
   ],
-  "statement": "Find the minimum time to travel from the top-left to the bottom-right cell in a grid with blocked cells, free cells, and portals that allow teleportation at a cost based on portal values, with movement between adjacent free cells costing a fixed time.",
+  "statement": "Find the minimum time for Dima to travel from the top-left to the bottom-right cell on a grid with blocked cells, free cells, and portals that allow teleportation between each other at a cost based on portal values, while moving between adjacent free cells costs a fixed time.",
   "tags": [
     "graph",
     "shortest-path",
     "grid",
-    "implementation"
+    "greedy"
   ],
   "patterns": [
     "dijkstra",
-    "multi-source-bfs",
-    "graph-construction"
+    "multi-source-dijkstra",
+    "graph-modelling"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048480,
+    "generated_at_unix": 1785050777,
     "pattern_confidence": {
       "dijkstra": 0.98,
-      "multi-source-bfs": 0.85,
-      "graph-construction": 0.9
+      "multi-source-dijkstra": 0.9,
+      "graph-modelling": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level-1"

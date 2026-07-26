@@ -11,25 +11,25 @@
     "graphs",
     "shortest paths"
   ],
-  "statement": "Given a directed graph formed by roads on an equilateral triangle subdivided into smaller triangles, determine the minimum number of one-unit road segments whose directions must be reversed so that every intersection is reachable from every other.",
+  "statement": "Given a directed graph formed by roads on an equilateral triangular grid with fixed directions, find the minimum number of one-unit road segments whose directions must be reversed so that every intersection is reachable from every other intersection.",
   "tags": [
     "graph",
     "shortest-path",
     "constructive-algorithm"
   ],
   "patterns": [
-    "binary-search-answer",
     "strongly-connected-components",
-    "minimum-edge-reversal"
+    "minimum-edge-reversal",
+    "shortest-path"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048419,
+    "generated_at_unix": 1785050727,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "strongly-connected-components": 0.85,
-      "minimum-edge-reversal": 0.8
+      "strongly-connected-components": 0.9,
+      "minimum-edge-reversal": 0.85,
+      "shortest-path": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

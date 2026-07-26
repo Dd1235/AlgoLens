@@ -10,7 +10,7 @@
     "dp",
     "sortings"
   ],
-  "statement": "Given a weighted directed graph, find the length of the longest path where edge weights strictly increase along the path.",
+  "statement": "Given a weighted directed graph, find the length of the longest path (possibly with repeated vertices) where edge weights strictly increase along the path.",
   "tags": [
     "graph",
     "dynamic-programming",
@@ -18,17 +18,17 @@
   ],
   "patterns": [
     "longest-increasing-subsequence",
-    "dp-on-edges",
+    "dp-on-dag",
     "topological-sort",
     "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048808,
+    "generated_at_unix": 1785050896,
     "pattern_confidence": {
-      "longest-increasing-subsequence": 0.95,
-      "dp-on-edges": 0.9,
+      "longest-increasing-subsequence": 0.9,
+      "dp-on-dag": 0.85,
       "topological-sort": 0.7,
       "dp-optimization": 0.9
     }

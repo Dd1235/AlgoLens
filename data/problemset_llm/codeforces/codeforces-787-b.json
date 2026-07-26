@@ -11,25 +11,29 @@
     "implementation",
     "math"
   ],
-  "statement": "Given n universes each with a Rick and a Morty where exactly one is a traitor, and m groups containing multiple members (possibly with duplicates), determine if there exists an assignment of traitors such that some group consists entirely of traitors, causing the event to be canceled.",
+  "statement": "Given n universes each with one Rick and one Morty, and m groups containing multiple members (possibly with duplicates), determine if there exists an assignment of traitors (one per universe) such that at least one group consists entirely of traitors, indicating the event must be canceled.",
   "tags": [
     "graph",
     "bit-manipulation",
-    "greedy"
+    "greedy",
+    "set",
+    "combinatorics"
   ],
   "patterns": [
     "bit-manipulation",
-    "set-cover",
-    "greedy"
+    "greedy",
+    "set-operations",
+    "scenario-enumeration"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047775,
+    "generated_at_unix": 1785050079,
     "pattern_confidence": {
-      "bit-manipulation": 0.95,
-      "set-cover": 0.85,
-      "greedy": 0.8
+      "bit-manipulation": 0.9,
+      "greedy": 0.7,
+      "set-operations": 0.8,
+      "scenario-enumeration": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

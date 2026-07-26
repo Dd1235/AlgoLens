@@ -11,11 +11,11 @@
     "math",
     "number theory"
   ],
-  "statement": "Given a sequence of positive integers, find the greatest common divisor (GCD) of the least common multiples (LCMs) of all pairs of elements in the sequence.",
+  "statement": "Given a sequence of positive integers, compute the greatest common divisor (GCD) of the least common multiples (LCMs) of all pairs of elements in the sequence.",
   "tags": [
-    "array",
     "math",
-    "number-theory"
+    "number-theory",
+    "array"
   ],
   "patterns": [
     "gcd",
@@ -25,11 +25,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047893,
+    "generated_at_unix": 1785050205,
     "pattern_confidence": {
-      "gcd": 0.98,
-      "lcm": 0.97,
-      "pairwise-computation": 0.85
+      "gcd": 0.95,
+      "lcm": 0.95,
+      "pairwise-computation": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

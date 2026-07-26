@@ -11,7 +11,7 @@
     "dfs and similar",
     "trees"
   ],
-  "statement": "Given a rooted tree with initial node values, support updates that add a value to a node and propagate the negated value to all its descendants recursively, and queries that ask for the current value of a node.",
+  "statement": "Given a rooted tree with initial node values, support updates that add a value to a node and propagate the negation of that value to all its descendants recursively, and queries that report the current value of a node.",
   "tags": [
     "tree",
     "dfs",
@@ -19,17 +19,17 @@
   ],
   "patterns": [
     "dfs",
-    "tree-dp",
-    "difference-array"
+    "difference-array-on-tree",
+    "tree-flattening"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048754,
+    "generated_at_unix": 1785050837,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "tree-dp": 0.85,
-      "difference-array": 0.7
+      "dfs": 0.9,
+      "difference-array-on-tree": 0.85,
+      "tree-flattening": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

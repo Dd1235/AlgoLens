@@ -9,24 +9,22 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given two strings, find the minimum number of insertions, deletions, and replacements to transform one string into the other, and output the sequence of operations.",
+  "statement": "Given two strings s and t, find the minimum number of insert, delete, and replace operations to transform s into t, and output the sequence of these operations.",
   "tags": [
     "string",
     "dynamic-programming"
   ],
   "patterns": [
     "edit-distance",
-    "dynamic-programming",
-    "sequence-reconstruction"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048954,
+    "generated_at_unix": 1785051053,
     "pattern_confidence": {
-      "edit-distance": 0.99,
-      "dynamic-programming": 0.95,
-      "sequence-reconstruction": 0.85
+      "edit-distance": 0.98,
+      "dynamic-programming": 0.95
     }
   },
   "source_topic": "Formwise / DP Level 1"

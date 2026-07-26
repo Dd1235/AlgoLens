@@ -17,7 +17,8 @@
     "geometry",
     "array",
     "line-sweep",
-    "segment-tree"
+    "segment-tree",
+    "greedy"
   ],
   "patterns": [
     "line-sweep",

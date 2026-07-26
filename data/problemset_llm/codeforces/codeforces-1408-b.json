@@ -11,25 +11,26 @@
     "greedy",
     "math"
   ],
-  "statement": "Given a non-decreasing array of non-negative integers and an integer k, find the minimum number of non-decreasing arrays whose element-wise sum equals the given array, with each array containing at most k distinct elements, or determine if it's impossible.",
+  "statement": "Given a non-decreasing array of non-negative integers and an integer k, find the minimum number m of non-decreasing arrays whose element-wise sum equals the given array, with each array containing at most k distinct elements, or determine if no such decomposition exists.",
   "tags": [
     "array",
     "greedy",
+    "constructive-algorithm",
     "math"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
-    "prefix-sum"
+    "constructive-algorithm",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047754,
+    "generated_at_unix": 1785050058,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
-      "prefix-sum": 0.7
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "counting": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -14,21 +14,21 @@
   "tags": [
     "array",
     "greedy",
-    "prefix-sum"
+    "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "greedy"
+    "prefix-processing",
+    "greedy",
+    "fenwick-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048184,
+    "generated_at_unix": 1785050492,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85,
-      "greedy": 0.8
+      "prefix-processing": 0.9,
+      "greedy": 0.95,
+      "fenwick-tree": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

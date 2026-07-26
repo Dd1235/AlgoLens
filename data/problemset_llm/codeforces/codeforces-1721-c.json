@@ -11,25 +11,29 @@
     "greedy",
     "two pointers"
   ],
-  "statement": "Given a sorted array and a resulting sorted array after adding non-negative increments and re-sorting, determine the minimum and maximum increments for each element that could produce the final array.",
+  "statement": "Given a sorted array and a resulting sorted array formed by adding non-negative increments to the original elements and then sorting, determine for each element the minimum and maximum possible increments that could produce the resulting array.",
   "tags": [
     "array",
-    "sorting",
-    "binary-search"
+    "binary-search",
+    "greedy",
+    "two-pointers",
+    "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
+    "greedy",
     "two-pointers",
-    "greedy"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047731,
+    "generated_at_unix": 1785050037,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "two-pointers": 0.85,
-      "greedy": 0.8
+      "binary-search": 0.85,
+      "greedy": 0.9,
+      "two-pointers": 0.9,
+      "sorting": 0.95
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

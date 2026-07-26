@@ -11,9 +11,10 @@
     "math",
     "number theory"
   ],
-  "statement": "Given an array of positive integers, transform it into a 'good' array where every pair of adjacent elements has a gcd of 1, using at most n operations that replace pairs of elements under certain constraints.",
+  "statement": "Given an array of positive integers, transform it into a 'good' array where every pair of consecutive elements has a gcd of 1, using at most n operations that replace pairs of elements under certain constraints.",
   "tags": [
     "array",
+    "math",
     "number-theory",
     "constructive-algorithm"
   ],
@@ -24,7 +25,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047850,
+    "generated_at_unix": 1785050156,
     "pattern_confidence": {
       "gcd": 0.95,
       "constructive-algorithm": 0.9

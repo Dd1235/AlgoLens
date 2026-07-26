@@ -12,7 +12,7 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given a grid with a school and students' houses at integer coordinates, find an integer coordinate (not the school) to place a shawarma tent that lies on at least one shortest path from the school to as many students' houses as possible.",
+  "statement": "Given a grid with a school and multiple student houses, find an integer coordinate (not the school) where placing a shawarma tent maximizes the number of students whose shortest path from the school to their house passes through that point.",
   "tags": [
     "geometry",
     "grid",
@@ -21,16 +21,16 @@
   ],
   "patterns": [
     "manhattan-distance",
-    "shortest-path-counting",
+    "shortest-path",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047760,
+    "generated_at_unix": 1785050064,
     "pattern_confidence": {
-      "manhattan-distance": 0.98,
-      "shortest-path-counting": 0.9,
+      "manhattan-distance": 0.95,
+      "shortest-path": 0.9,
       "greedy": 0.85
     }
   },

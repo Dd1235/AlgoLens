@@ -13,30 +13,25 @@
     "math",
     "number theory"
   ],
-  "statement": "Given an array, support range multiplication updates and queries for the Euler's totient of the product of elements in a given range modulo 10^9+7.",
+  "statement": "Maintain an array under range multiplication updates and answer queries for the Euler's totient of the product of elements in a given range modulo 10^9+7.",
   "tags": [
-    "array",
     "number-theory",
     "segment-tree",
     "modular-arithmetic"
   ],
   "patterns": [
     "segment-tree",
-    "modular-arithmetic",
-    "prime-factorization",
-    "range-update",
-    "range-query"
+    "modular-exponentiation",
+    "prime-factorization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048750,
+    "generated_at_unix": 1785050834,
     "pattern_confidence": {
       "segment-tree": 0.95,
-      "modular-arithmetic": 0.9,
-      "prime-factorization": 0.85,
-      "range-update": 0.9,
-      "range-query": 0.9
+      "modular-exponentiation": 0.9,
+      "prime-factorization": 0.85
     }
   },
   "source_topic": "Formwise / Segment Trees"

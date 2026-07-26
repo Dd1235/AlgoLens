@@ -12,7 +12,7 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given an n×m grid where each cell contains a bear with hands either on mouth or eyes, process q updates that toggle a bear's state and after each update report the maximum length of consecutive bears with hands on eyes in any row.",
+  "statement": "Given an n×m grid with one bear per cell, each bear has hands on either mouth or eyes. After q updates toggling a bear's state, report the maximum length of consecutive bears with hands on eyes in any row.",
   "tags": [
     "array",
     "simulation",
@@ -20,17 +20,17 @@
   ],
   "patterns": [
     "segment-tree",
-    "range-query",
-    "point-update"
+    "range-update",
+    "range-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047865,
+    "generated_at_unix": 1785050175,
     "pattern_confidence": {
       "segment-tree": 0.9,
-      "range-query": 0.85,
-      "point-update": 0.85
+      "range-update": 0.85,
+      "range-query": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -11,25 +11,26 @@
     "strings",
     "trees"
   ],
-  "statement": "Given n strings, define a collapse operation on two strings that removes matching adjacent characters at the boundary. Compute the sum of lengths of all collapsed pairs formed by every pair of given strings.",
+  "statement": "Given n lowercase strings, define a collapse operation that removes matching adjacent characters at the boundary when concatenating two strings. Compute the sum of lengths of all collapsed pairs C(s_i, s_j) for 1 ≤ i,j ≤ n.",
   "tags": [
     "strings",
     "data-structures",
+    "trees",
     "trie"
   ],
   "patterns": [
-    "two-pointers",
     "string-processing",
-    "prefix-sum"
+    "two-pointers",
+    "prefix-sums"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048781,
+    "generated_at_unix": 1785050867,
     "pattern_confidence": {
-      "two-pointers": 0.9,
-      "string-processing": 0.85,
-      "prefix-sum": 0.7
+      "string-processing": 0.9,
+      "two-pointers": 0.7,
+      "prefix-sums": 0.6
     }
   },
   "source_topic": "Formwise / Trie"

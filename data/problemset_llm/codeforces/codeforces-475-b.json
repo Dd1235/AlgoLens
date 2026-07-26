@@ -12,25 +12,26 @@
     "graphs",
     "implementation"
   ],
-  "statement": "Given a grid of intersections formed by horizontal and vertical streets each assigned a one-way direction, determine if the resulting directed graph is strongly connected, meaning every junction is reachable from every other junction.",
+  "statement": "Given a grid formed by horizontal and vertical streets each assigned a one-way direction, determine if the resulting directed graph of intersections is strongly connected, i.e., every junction is reachable from every other junction.",
   "tags": [
     "graph",
+    "dfs",
     "strongly-connected-components",
-    "dfs"
+    "implementation"
   ],
   "patterns": [
     "dfs",
     "strongly-connected-components",
-    "graph-connectivity"
+    "graph-reachability"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047737,
+    "generated_at_unix": 1785050042,
     "pattern_confidence": {
       "dfs": 0.95,
       "strongly-connected-components": 0.9,
-      "graph-connectivity": 0.85
+      "graph-reachability": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

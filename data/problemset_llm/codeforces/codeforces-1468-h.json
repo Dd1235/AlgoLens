@@ -11,7 +11,7 @@
     "greedy",
     "math"
   ],
-  "statement": "Given a sequence of integers from 1 to n and an odd integer k, repeatedly select k elements and replace them with their median. Determine if a target sequence can be obtained after zero or more such steps.",
+  "statement": "Given a sequence of integers from 1 to n and an odd integer k, repeatedly select k elements and replace them by their median. Determine if a target sequence can be obtained after zero or more such steps.",
   "tags": [
     "array",
     "greedy",
@@ -19,18 +19,18 @@
     "constructive-algorithm"
   ],
   "patterns": [
-    "median-finding",
     "greedy",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "median-finding"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048154,
+    "generated_at_unix": 1785050463,
     "pattern_confidence": {
-      "median-finding": 0.9,
-      "greedy": 0.85,
-      "constructive-algorithm": 0.8
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95,
+      "median-finding": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

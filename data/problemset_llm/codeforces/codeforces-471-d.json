@@ -10,25 +10,24 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given two sequences representing tower heights, count how many contiguous segments in the first sequence can be shifted uniformly to match the second sequence exactly.",
+  "statement": "Given two sequences representing heights of towers in two walls, count how many contiguous segments in the first wall can be transformed by adding a constant offset to match the second wall exactly.",
   "tags": [
-    "array",
     "string",
-    "prefix-sum"
+    "array"
   ],
   "patterns": [
     "difference-array",
-    "prefix-sum",
-    "sliding-window"
+    "sliding-window",
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048766,
+    "generated_at_unix": 1785050848,
     "pattern_confidence": {
-      "difference-array": 0.95,
-      "prefix-sum": 0.9,
-      "sliding-window": 0.85
+      "difference-array": 0.9,
+      "sliding-window": 0.85,
+      "rolling-hash": 0.7
     }
   },
   "source_topic": "Formwise / String"

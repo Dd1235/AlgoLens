@@ -9,23 +9,23 @@
   "source_tags": [
     "implementation"
   ],
-  "statement": "Given a grid with some black and white cells, find the minimum number of white cells to paint black so that all black cells form a perfect square with sides aligned to the grid.",
+  "statement": "Given a grid with some black and white cells, find the minimum number of white cells to paint black so that all black cells form a perfect square aligned with the grid.",
   "tags": [
-    "array",
     "implementation",
-    "geometry"
+    "geometry",
+    "grid"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum"
+    "brute-force",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047838,
+    "generated_at_unix": 1785050143,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85
+      "brute-force": 0.9,
+      "simulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

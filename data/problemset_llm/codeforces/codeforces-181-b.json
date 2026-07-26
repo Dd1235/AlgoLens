@@ -13,22 +13,19 @@
   "statement": "Given n distinct points on a plane, count the number of unordered triplets (A, B, C) where B is the midpoint of segment AC.",
   "tags": [
     "geometry",
-    "math",
-    "sorting"
+    "combinatorics"
   ],
   "patterns": [
-    "sorting",
-    "two-pointers",
+    "brute-force",
     "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047762,
+    "generated_at_unix": 1785050066,
     "pattern_confidence": {
-      "sorting": 0.95,
-      "two-pointers": 0.85,
-      "binary-search": 0.8
+      "brute-force": 0.9,
+      "binary-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

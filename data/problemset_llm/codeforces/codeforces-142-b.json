@@ -11,28 +11,26 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given an n by m grid, place the maximum number of soldiers so that no two soldiers are at squared distance 5 apart, avoiding conflicts caused by the Fairy Godmother's curse.",
+  "statement": "Given an n×m grid, place the maximum number of soldiers so that no two soldiers are at squared distance 5 apart, avoiding conflicts caused by the Fairy Godmother's curse.",
   "tags": [
     "geometry",
-    "graph",
+    "combinatorics",
     "greedy",
-    "combinatorics"
+    "constructive-algorithm"
   ],
   "patterns": [
-    "conflict-graph",
-    "maximum-independent-set",
     "constructive-algorithm",
-    "distance-constraints"
+    "greedy",
+    "geometry"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047915,
+    "generated_at_unix": 1785050229,
     "pattern_confidence": {
-      "conflict-graph": 0.9,
-      "maximum-independent-set": 0.85,
-      "constructive-algorithm": 0.8,
-      "distance-constraints": 0.75
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85,
+      "geometry": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

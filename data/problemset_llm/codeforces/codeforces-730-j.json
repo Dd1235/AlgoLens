@@ -9,26 +9,26 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given n bottles each with remaining soda and capacity, find the minimal number of bottles needed to store all soda and the minimal time to pour soda into those bottles, where pouring x units takes x seconds and no bottle can exceed its capacity.",
+  "statement": "Given n bottles each with a current amount of soda and a maximum volume, find the minimal number of bottles needed to store all soda and the minimal total pouring time to achieve this, where pouring x units takes x seconds and no bottle can exceed its volume.",
   "tags": [
     "dynamic-programming",
     "greedy",
-    "binary-search"
+    "optimization"
   ],
   "patterns": [
-    "binary-search-answer",
     "dynamic-programming",
     "greedy",
+    "minimization",
     "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048513,
+    "generated_at_unix": 1785050810,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dynamic-programming": 0.85,
+      "dynamic-programming": 0.9,
       "greedy": 0.8,
+      "minimization": 0.7,
       "dp-optimization": 0.9
     }
   },

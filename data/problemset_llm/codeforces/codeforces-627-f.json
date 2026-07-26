@@ -12,28 +12,28 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a tree of islands with statues on all but one empty pedestal, determine which additional bridge to build to enable rearranging statues into a target order with minimal moves.",
+  "statement": "Given a tree of islands with statues on all but one island's pedestal, determine which additional bridge to build to enable rearranging statues into a target order with minimal moves, where moves consist of sliding a statue onto an adjacent empty pedestal.",
   "tags": [
-    "graph",
     "tree",
+    "graph",
     "union-find",
     "dfs"
   ],
   "patterns": [
-    "tree-dp",
+    "dfs",
     "union-find",
-    "binary-search-answer",
-    "dfs"
+    "tree-diameter",
+    "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048446,
+    "generated_at_unix": 1785050751,
     "pattern_confidence": {
-      "tree-dp": 0.9,
-      "union-find": 0.85,
-      "binary-search-answer": 0.7,
-      "dfs": 0.8
+      "dfs": 0.95,
+      "union-find": 0.9,
+      "tree-diameter": 0.85,
+      "contribution-technique": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

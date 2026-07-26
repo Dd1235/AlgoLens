@@ -14,22 +14,22 @@
     "graph",
     "tree",
     "dfs",
-    "data-structures"
+    "dynamic-graph"
   ],
   "patterns": [
     "dfs",
-    "dynamic-connectivity",
-    "tree-spanning",
+    "dynamic-graph",
+    "spanning-tree",
     "graph-updates"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048434,
+    "generated_at_unix": 1785050741,
     "pattern_confidence": {
-      "dfs": 0.98,
-      "dynamic-connectivity": 0.85,
-      "tree-spanning": 0.9,
+      "dfs": 0.95,
+      "dynamic-graph": 0.85,
+      "spanning-tree": 0.9,
       "graph-updates": 0.8
     }
   },

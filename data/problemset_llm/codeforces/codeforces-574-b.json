@@ -12,7 +12,7 @@
     "graphs",
     "hashing"
   ],
-  "statement": "Given a set of warriors and their acquaintance relationships, determine if there exists a trio of warriors all mutually acquainted, and if so, find the minimum sum of their recognitions, where recognition is defined as the number of acquaintances excluding the other two musketeers.",
+  "statement": "Given a graph of warriors where edges represent acquaintance, determine if there exists a triangle (three warriors all knowing each other) and find the minimum sum of their recognitions, defined as the number of acquaintances excluding the other two musketeers.",
   "tags": [
     "graph",
     "brute-force",
@@ -21,19 +21,17 @@
   ],
   "patterns": [
     "triangle-detection",
-    "degree-counting",
     "brute-force",
-    "adjacency-list"
+    "degree-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047773,
+    "generated_at_unix": 1785050076,
     "pattern_confidence": {
       "triangle-detection": 0.95,
-      "degree-counting": 0.9,
       "brute-force": 0.85,
-      "adjacency-list": 0.8
+      "degree-counting": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

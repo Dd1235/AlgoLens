@@ -9,25 +9,25 @@
   "source_tags": [
     "constructive algorithms"
   ],
-  "statement": "Place n houses on an n×n grid so that each wizard's house is uniquely positioned in its row, and each wizard can visit another house exactly a specified Manhattan distance away without blocking views in columns.",
+  "statement": "Place n houses on an n×n grid with exactly one house per row, so that each wizard can visit another house at a specified Manhattan distance, or determine that no such arrangement exists.",
   "tags": [
     "geometry",
-    "combinatorics",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "combinatorics"
   ],
   "patterns": [
-    "manhattan-distance",
     "constructive-algorithm",
-    "permutation-construction"
+    "manhattan-distance",
+    "permutation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048212,
+    "generated_at_unix": 1785050518,
     "pattern_confidence": {
-      "manhattan-distance": 0.95,
-      "constructive-algorithm": 0.9,
-      "permutation-construction": 0.85
+      "constructive-algorithm": 0.95,
+      "manhattan-distance": 0.9,
+      "permutation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

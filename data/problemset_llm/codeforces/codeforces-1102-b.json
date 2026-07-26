@@ -10,12 +10,11 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given an array and a number k, assign one of k colors to each element so that each color is used at least once and all elements of the same color are distinct, or determine that it is impossible.",
+  "statement": "Given an array and an integer k, assign one of k colors to each element so that each color is used at least once and all elements of the same color are distinct. Determine if such a coloring is possible and output any valid coloring if it exists.",
   "tags": [
     "array",
     "greedy",
-    "sorting",
-    "hash-map"
+    "sorting"
   ],
   "patterns": [
     "greedy",
@@ -25,7 +24,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047735,
+    "generated_at_unix": 1785050040,
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,

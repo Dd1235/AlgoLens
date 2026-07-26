@@ -11,7 +11,7 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a tree with some edges directed and others undirected, find the minimum total bribe cost to travel through a specified sequence of towns in order, considering that traveling against a road's direction requires paying exponentially increasing bribes.",
+  "statement": "Given a tree with some roads one-way and others potentially traversed illegally with increasing bribe costs, find the minimum total bribe cost to travel from the capital through a sequence of specified towns in order.",
   "tags": [
     "graph",
     "tree",
@@ -20,17 +20,19 @@
   ],
   "patterns": [
     "dfs",
-    "binary-search-answer",
-    "dp-on-tree"
+    "dp-on-tree",
+    "shortest-path",
+    "state-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048246,
+    "generated_at_unix": 1785050553,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "binary-search-answer": 0.85,
-      "dp-on-tree": 0.9
+      "dfs": 0.9,
+      "dp-on-tree": 0.85,
+      "shortest-path": 0.8,
+      "state-compression": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

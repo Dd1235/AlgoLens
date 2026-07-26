@@ -15,29 +15,29 @@
     "sortings",
     "trees"
   ],
-  "statement": "Given prerequisite constraints forming a partial order on topics and special pairs that must appear consecutively in the lecture order, determine if there exists a valid permutation of topics respecting all constraints and find one if possible.",
+  "statement": "Given prerequisite constraints forming a partial order on topics and special pairs that must appear consecutively in the lecture order, determine if there exists a permutation of topics respecting all prerequisites and consecutive pair constraints, and find one if it exists.",
   "tags": [
     "graph",
     "topological-sort",
-    "permutation",
     "dfs",
+    "union-find",
     "constructive-algorithm"
   ],
   "patterns": [
     "topological-sort",
     "dfs",
-    "constructive-algorithm",
-    "constraint-satisfaction"
+    "union-find",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048991,
+    "generated_at_unix": 1785051106,
     "pattern_confidence": {
-      "topological-sort": 0.98,
+      "topological-sort": 0.95,
       "dfs": 0.9,
-      "constructive-algorithm": 0.85,
-      "constraint-satisfaction": 0.8
+      "union-find": 0.85,
+      "constructive-algorithm": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

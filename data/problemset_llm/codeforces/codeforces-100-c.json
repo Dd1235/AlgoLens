@@ -10,10 +10,9 @@
     "*special",
     "implementation"
   ],
-  "statement": "Given two integers, output their sum using built-in language capabilities without implementing addition manually.",
+  "statement": "Determine if an experienced programmer can sum two integers using built-in language features rather than implementing the addition manually.",
   "tags": [
-    "implementation",
-    "math"
+    "implementation"
   ],
   "patterns": [
     "direct-computation"
@@ -21,9 +20,9 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047759,
+    "generated_at_unix": 1785050063,
     "pattern_confidence": {
-      "direct-computation": 0.95
+      "direct-computation": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -9,24 +9,16 @@
   "source_tags": [
     "*special"
   ],
-  "statement": "The problem involves analyzing a scenario depicted in an image, likely requiring algorithmic reasoning related to arrays or graphs, without explicit textual description.",
+  "statement": "Given an image-based problem without textual description, no explicit algorithmic details are provided for analysis.",
   "tags": [
-    "array",
-    "graph",
-    "dynamic-programming"
+    "special"
   ],
-  "patterns": [
-    "binary-search-answer",
-    "prefix-sum"
-  ],
+  "patterns": [],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048097,
-    "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.84
-    }
+    "generated_at_unix": 1785050405,
+    "pattern_confidence": {}
   },
   "source_topic": "Codeforces / rating 2000-2400"
 }

@@ -11,28 +11,28 @@
     "dp",
     "trees"
   ],
-  "statement": "Given a tree with cities having limited gasoline purchase amounts and roads with lengths, find a simple path between two cities such that Nut never runs out of gasoline while traveling and maximize the gasoline remaining at the end.",
+  "statement": "Given a tree with cities as nodes and roads as edges with lengths, find a simple path between two cities such that Nut never runs out of gasoline bought at each city, and maximize the remaining gasoline at the end of the path.",
   "tags": [
     "tree",
-    "graph",
     "dynamic-programming",
-    "binary-search"
+    "graph",
+    "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
+    "tree-dp",
     "dfs",
-    "prefix-sum",
-    "path-query"
+    "path-dp",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049000,
+    "generated_at_unix": 1785051115,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "tree-dp": 0.9,
       "dfs": 0.85,
-      "prefix-sum": 0.7,
-      "path-query": 0.75
+      "path-dp": 0.8,
+      "greedy": 0.6
     }
   },
   "source_topic": "Formwise / Trees"

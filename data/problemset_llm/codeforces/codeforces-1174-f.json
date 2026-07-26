@@ -14,28 +14,25 @@
     "interactive",
     "trees"
   ],
-  "statement": "Given a rooted tree and a hidden target node, identify the target by querying distances and ancestor-based path steps with constraints on query types and answers.",
+  "statement": "Given a rooted tree with a hidden target node, identify the target by querying distances from nodes to the target and querying the next node on the path to the target, with constraints on ancestor relationships and a limited number of queries.",
   "tags": [
     "tree",
-    "graph",
     "interactive",
-    "binary-search"
+    "graphs"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search-on-tree",
     "ancestor-check",
-    "distance-query",
-    "interactive-query"
+    "distance-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048250,
+    "generated_at_unix": 1785050558,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "binary-search-on-tree": 0.9,
       "ancestor-check": 0.85,
-      "distance-query": 0.8,
-      "interactive-query": 0.75
+      "distance-query": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

@@ -10,27 +10,25 @@
     "flows",
     "graphs"
   ],
-  "statement": "Given a simple graph with weighted vertices and edges, find a subgraph maximizing the sum of edge weights minus the sum of vertex weights.",
+  "statement": "Given a simple undirected graph with weights on vertices and edges, find a subgraph maximizing the sum of edge weights minus the sum of vertex weights, where edges are only included if both endpoints are in the subgraph.",
   "tags": [
     "graph",
-    "dynamic-programming",
+    "max-flow",
     "maximum-subgraph"
   ],
   "patterns": [
-    "maximum-subgraph",
-    "dynamic-programming",
-    "graph-optimization",
-    "max-flow"
+    "max-flow",
+    "minimum-cut",
+    "graph-transformation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048874,
+    "generated_at_unix": 1785050964,
     "pattern_confidence": {
-      "maximum-subgraph": 0.95,
-      "dynamic-programming": 0.85,
-      "graph-optimization": 0.9,
-      "max-flow": 0.9
+      "max-flow": 0.9,
+      "minimum-cut": 0.85,
+      "graph-transformation": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

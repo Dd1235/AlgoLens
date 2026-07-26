@@ -10,25 +10,23 @@
     "data structures",
     "implementation"
   ],
-  "statement": "Calculate the total time a skier takes to traverse a path described by directional moves, where moving along a new segment costs 5 seconds and revisiting an existing segment costs 1 second.",
+  "statement": "Calculate the total time a skier takes to traverse a path described by movements in four directions, where moving along a new segment costs 5 seconds and revisiting a segment costs 1 second.",
   "tags": [
-    "graph",
-    "implementation",
+    "string",
+    "simulation",
     "hash-map"
   ],
   "patterns": [
     "simulation",
-    "rolling-hash",
-    "path-tracking"
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047878,
+    "generated_at_unix": 1785050187,
     "pattern_confidence": {
       "simulation": 0.95,
-      "rolling-hash": 0.9,
-      "path-tracking": 0.88
+      "rolling-hash": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

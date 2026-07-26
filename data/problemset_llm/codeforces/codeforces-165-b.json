@@ -10,22 +10,22 @@
     "binary search",
     "implementation"
   ],
-  "statement": "Given a total number of lines n and a divisor k, find the minimum initial number v such that the sum of the series v + floor(v/k) + floor(v/k^2) + ... is at least n.",
+  "statement": "Given total lines n and a divisor k, find the minimum initial lines v such that the sum of v plus its successive integer divisions by k, k², k³, etc., is at least n.",
   "tags": [
     "math",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
-    "series-summation"
+    "binary-search",
+    "integer-division"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048892,
+    "generated_at_unix": 1785050982,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "series-summation": 0.85
+      "binary-search": 0.95,
+      "integer-division": 0.8
     }
   },
   "source_topic": "Formwise / Binary Search"

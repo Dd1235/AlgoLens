@@ -22,7 +22,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048528,
+    "generated_at_unix": 1785050824,
     "pattern_confidence": {
       "palindromic-substring": 0.95,
       "interval-dp": 0.9,

@@ -21,20 +21,22 @@
     "constructive-algorithm"
   ],
   "patterns": [
+    "constructive-algorithm",
     "dynamic-programming",
     "greedy",
-    "constructive-algorithm",
-    "counting"
+    "counting",
+    "divisor-enumeration"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048234,
+    "generated_at_unix": 1785050539,
     "pattern_confidence": {
-      "dynamic-programming": 0.85,
-      "greedy": 0.8,
       "constructive-algorithm": 0.9,
-      "counting": 0.75
+      "dynamic-programming": 0.7,
+      "greedy": 0.6,
+      "counting": 0.8,
+      "divisor-enumeration": 0.75
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

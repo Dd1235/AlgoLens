@@ -12,7 +12,7 @@
     "probabilities",
     "trees"
   ],
-  "statement": "Maintain a dynamically growing rooted tree with two query types: adding a child to a node and computing the expected height penalty of a subtree after random independent edge removals with probability 1/2.",
+  "statement": "Maintain a dynamically growing rooted tree and answer queries about the expected height of a subtree after independently removing each edge with probability 1/2.",
   "tags": [
     "tree",
     "dynamic-programming",
@@ -20,17 +20,15 @@
   ],
   "patterns": [
     "expected-value-dp",
-    "dynamic-tree",
-    "probabilistic-modeling"
+    "tree-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048411,
+    "generated_at_unix": 1785050719,
     "pattern_confidence": {
       "expected-value-dp": 0.95,
-      "dynamic-tree": 0.9,
-      "probabilistic-modeling": 0.85
+      "tree-dp": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

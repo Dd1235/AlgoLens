@@ -14,23 +14,23 @@
   "statement": "Given a binary matrix B where each element is the OR of all elements in the corresponding row and column of an unknown binary matrix A, reconstruct a possible matrix A or determine that no such matrix exists.",
   "tags": [
     "matrix",
-    "greedy",
     "bit-manipulation",
+    "greedy",
     "implementation"
   ],
   "patterns": [
     "greedy",
-    "bit-manipulation",
-    "logical-operations"
+    "bitwise-or",
+    "matrix-reconstruction"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047857,
+    "generated_at_unix": 1785050165,
     "pattern_confidence": {
       "greedy": 0.9,
-      "bit-manipulation": 0.7,
-      "logical-operations": 0.85
+      "bitwise-or": 0.85,
+      "matrix-reconstruction": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -11,25 +11,25 @@
     "data structures",
     "sortings"
   ],
-  "statement": "Maintain a multiset of diamonds with given weights and values under shipments and sales, and answer queries about the maximum total value achievable by greedily selecting diamonds with largest value and minimum weight within a weight capacity.",
+  "statement": "Maintain a multiset of diamonds with types having weight and value, support adding/removing diamonds, and answer queries for the maximum total value achievable by greedily selecting diamonds with highest value and lowest weight under a weight capacity constraint without modifying the store.",
   "tags": [
     "data-structures",
     "sorting",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
-    "greedy",
-    "ordered-data-structure"
+    "binary-search",
+    "sorting",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048452,
+    "generated_at_unix": 1785050756,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
-      "ordered-data-structure": 0.8
+      "binary-search": 0.85,
+      "sorting": 0.9,
+      "greedy": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

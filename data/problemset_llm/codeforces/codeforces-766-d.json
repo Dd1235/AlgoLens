@@ -13,28 +13,26 @@
     "dsu",
     "graphs"
   ],
-  "statement": "Maintain and verify synonym and antonym relations between words, detecting contradictions that arise from transitive properties, and answer queries about the relations based on previously added information.",
+  "statement": "Maintain synonym and antonym relations between words with transitive closure properties, detect contradictions when a pair is both equal and opposite, and answer queries about the relation status after processing a sequence of relations.",
   "tags": [
     "graph",
     "union-find",
-    "disjoint-set",
-    "dfs"
+    "dfs",
+    "dynamic-programming"
   ],
   "patterns": [
     "union-find",
-    "conflict-detection",
-    "bipartite-checking",
-    "transitive-closure"
+    "bipartite-check",
+    "conflict-detection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048813,
+    "generated_at_unix": 1785050901,
     "pattern_confidence": {
       "union-find": 0.98,
-      "conflict-detection": 0.93,
-      "bipartite-checking": 0.9,
-      "transitive-closure": 0.85
+      "bipartite-check": 0.9,
+      "conflict-detection": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level 2"

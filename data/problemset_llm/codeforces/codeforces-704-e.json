@@ -11,27 +11,28 @@
     "geometry",
     "trees"
   ],
-  "statement": "Given a tree with suits appearing and moving along shortest paths at given speeds and times, determine the earliest time when any two suits occupy the same location simultaneously, either at a junction or on a road segment.",
+  "statement": "Given a tree with suits appearing at certain times and moving along shortest paths at given speeds, determine the earliest time when two suits occupy the same exact location simultaneously, either at a junction or on a road segment.",
   "tags": [
     "tree",
     "geometry",
+    "simulation",
     "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
     "shortest-path",
     "event-simulation",
-    "line-sweep"
+    "continuous-movement",
+    "collision-detection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048376,
+    "generated_at_unix": 1785050686,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
       "shortest-path": 0.9,
       "event-simulation": 0.85,
-      "line-sweep": 0.7
+      "continuous-movement": 0.8,
+      "collision-detection": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

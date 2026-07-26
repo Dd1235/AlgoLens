@@ -11,25 +11,26 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given an undirected network and multiple message routes, determine if it is possible to assign directions to each edge so that all messages can be sent along directed paths from their sources to destinations.",
+  "statement": "Given an undirected network and multiple message routes, determine if directions can be assigned to edges so all messages can be sent along directed paths from their sources to destinations.",
   "tags": [
     "graph",
     "dfs",
-    "trees"
+    "directed-graph",
+    "connectivity"
   ],
   "patterns": [
     "dfs",
-    "graph-orientation",
-    "connectivity-check"
+    "directed-graph-feasibility",
+    "edge-orientation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048938,
+    "generated_at_unix": 1785051033,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "graph-orientation": 0.9,
-      "connectivity-check": 0.85
+      "dfs": 0.9,
+      "directed-graph-feasibility": 0.85,
+      "edge-orientation": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

@@ -12,25 +12,25 @@
     "implementation",
     "sortings"
   ],
-  "statement": "Given a binary string, find the maximum length k such that flipping any k consecutive bits any number of times can transform the entire string into all ones.",
+  "statement": "Given a binary string, find the maximum length k such that flipping any k consecutive bits any number of times can transform the string into all ones.",
   "tags": [
     "string",
-    "binary",
-    "greedy"
+    "greedy",
+    "bit-manipulation"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
+    "bit-flipping",
     "prefix-xor"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047934,
+    "generated_at_unix": 1785050245,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
       "greedy": 0.9,
-      "prefix-xor": 0.85
+      "bit-flipping": 0.85,
+      "prefix-xor": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

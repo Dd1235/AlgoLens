@@ -9,22 +9,22 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given a string, find the minimum number of operations to delete the entire string where each operation deletes a contiguous substring of identical characters.",
+  "statement": "Given a string, find the minimum number of operations to delete the entire string where each operation removes a contiguous substring of identical characters.",
   "tags": [
     "string",
     "dynamic-programming"
   ],
   "patterns": [
-    "interval-dp",
-    "dynamic-programming"
+    "dynamic-programming",
+    "interval-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048942,
+    "generated_at_unix": 1785051037,
     "pattern_confidence": {
-      "interval-dp": 0.95,
-      "dynamic-programming": 0.9
+      "dynamic-programming": 0.95,
+      "interval-dp": 0.9
     }
   },
   "source_topic": "Formwise / DP Level 1"

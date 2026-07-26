@@ -12,25 +12,26 @@
     "graphs",
     "greedy"
   ],
-  "statement": "Given a DAG of tasks where each task must be executed on either a coprocessor or main processor, find the minimum number of coprocessor calls needed to execute all coprocessor tasks respecting dependencies.",
+  "statement": "Given a DAG of tasks with dependencies and a partition into coprocessor-only and main processor-only tasks, find the minimum number of coprocessor calls needed to execute all coprocessor tasks respecting dependencies.",
   "tags": [
     "graph",
+    "dag",
     "dynamic-programming",
-    "dag"
+    "greedy"
   ],
   "patterns": [
     "topological-sort",
     "dp-on-dag",
-    "binary-search-answer"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049038,
+    "generated_at_unix": 1785051151,
     "pattern_confidence": {
       "topological-sort": 0.95,
       "dp-on-dag": 0.9,
-      "binary-search-answer": 0.85
+      "greedy": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level-1"

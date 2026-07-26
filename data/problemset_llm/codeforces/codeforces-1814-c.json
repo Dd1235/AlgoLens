@@ -11,25 +11,25 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Partition boxes numbered 1 to n into two ordered lists assigned to two robots with different per-box search times, to minimize the total weighted search time over multiple requests for balls of each color.",
+  "statement": "Divide n boxes into two ordered lists assigned to two robots with different per-box search times to minimize the total weighted search time over multiple requests for balls of specific colors.",
   "tags": [
     "greedy",
     "sorting",
-    "array"
+    "constructive-algorithm"
   ],
   "patterns": [
-    "constructive-algorithm",
     "greedy",
-    "sorting"
+    "sorting",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047778,
+    "generated_at_unix": 1785050082,
     "pattern_confidence": {
-      "constructive-algorithm": 0.9,
-      "greedy": 0.85,
-      "sorting": 0.8
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "constructive-algorithm": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

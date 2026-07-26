@@ -21,9 +21,9 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048045,
+    "generated_at_unix": 1785050358,
     "pattern_confidence": {
-      "sorting": 0.99
+      "sorting": 1.0
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

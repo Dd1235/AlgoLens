@@ -10,7 +10,7 @@
     "implementation",
     "sortings"
   ],
-  "statement": "Given a jagged table with strictly decreasing row lengths and distinct integers in its cells, rearrange the numbers by swapping to ensure each column and row is strictly increasing.",
+  "statement": "Given a Young tableau with rows of non-increasing length filled with distinct integers, rearrange the numbers by swapping cells so that each row and each column is strictly increasing.",
   "tags": [
     "array",
     "implementation",
@@ -18,17 +18,15 @@
   ],
   "patterns": [
     "greedy",
-    "sorting",
-    "simulation"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047862,
+    "generated_at_unix": 1785050171,
     "pattern_confidence": {
-      "greedy": 0.9,
-      "sorting": 0.95,
-      "simulation": 0.85
+      "greedy": 0.8,
+      "sorting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

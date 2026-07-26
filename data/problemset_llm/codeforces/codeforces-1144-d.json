@@ -10,7 +10,7 @@
     "constructive algorithms",
     "greedy"
   ],
-  "statement": "Given an integer array, perform operations on adjacent elements to make all elements equal with the minimum number of steps, and output the sequence of operations.",
+  "statement": "Given an integer array, transform it into an array of equal elements using operations that add or subtract the absolute difference between adjacent elements, minimizing the number of operations and outputting the sequence of operations.",
   "tags": [
     "array",
     "greedy",
@@ -23,7 +23,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047800,
+    "generated_at_unix": 1785050104,
     "pattern_confidence": {
       "greedy": 0.95,
       "constructive-algorithm": 0.9

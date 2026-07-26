@@ -10,25 +10,23 @@
     "implementation",
     "math"
   ],
-  "statement": "Given a permutation q and a target permutation s, determine if s can be obtained from the identity permutation after exactly k moves, where each move applies either q or its inverse to the current permutation, with the constraint that s never appeared before the k-th move.",
+  "statement": "Given a permutation q and a final permutation s obtained after k moves starting from the identity permutation, where each move applies either q or its inverse, determine if this sequence of moves can produce s without s appearing earlier.",
   "tags": [
-    "permutation",
     "math",
+    "permutation",
     "implementation"
   ],
   "patterns": [
-    "permutation-composition",
-    "inverse-permutation",
+    "permutation-inversion",
     "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047967,
+    "generated_at_unix": 1785050286,
     "pattern_confidence": {
-      "permutation-composition": 0.95,
-      "inverse-permutation": 0.9,
-      "simulation": 0.85
+      "permutation-inversion": 0.9,
+      "simulation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

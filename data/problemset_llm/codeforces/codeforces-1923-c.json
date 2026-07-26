@@ -10,25 +10,23 @@
     "constructive algorithms",
     "greedy"
   ],
-  "statement": "Given an array of positive integers, determine for multiple queries whether a specified subarray can be paired with another positive integer array of the same length satisfying sum equality and element-wise inequality conditions.",
+  "statement": "Given a positive integer array and multiple queries on subarrays, determine for each subarray whether there exists another positive integer array with the same sum but differing at every position.",
   "tags": [
     "array",
     "greedy",
     "constructive-algorithm"
   ],
   "patterns": [
-    "prefix-sum",
-    "binary-search-answer",
+    "greedy",
     "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047742,
+    "generated_at_unix": 1785050046,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "binary-search-answer": 0.85,
-      "constructive-algorithm": 0.95
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -10,7 +10,7 @@
     "geometry",
     "implementation"
   ],
-  "statement": "Given a rectangular box with mirrors on the ceiling and floor, and two holes on opposite sides at specified heights, find the maximum total score from mirrors hit by a laser beam entering one hole and exiting the other, reflecting according to the law of reflection and never hitting the same mirror twice.",
+  "statement": "Given a rectangular box with mirrors on its ceiling and floor, and two holes on opposite sides at specified heights, find the maximum total score achievable by a laser beam entering through one hole and exiting through the other, reflecting off mirrors without hitting any mirror more than once, following the law of reflection.",
   "tags": [
     "geometry",
     "implementation",
@@ -24,7 +24,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048157,
+    "generated_at_unix": 1785050467,
     "pattern_confidence": {
       "reflection-simulation": 0.95,
       "line-sweep": 0.7,

@@ -20,17 +20,17 @@
   ],
   "patterns": [
     "brute-force",
-    "hash-set",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "hash-set"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048019,
+    "generated_at_unix": 1785050341,
     "pattern_confidence": {
       "brute-force": 0.9,
-      "hash-set": 0.85,
-      "constructive-algorithm": 0.8
+      "constructive-algorithm": 0.85,
+      "hash-set": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

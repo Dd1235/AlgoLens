@@ -10,25 +10,22 @@
     "brute force",
     "number theory"
   ],
-  "statement": "Given an initial price and a maximum multiplier, find the product within the allowed multipliers that results in the maximum number of trailing zeros, choosing the largest such product if there are ties. If no improvement is possible, output the maximum product.",
+  "statement": "Given an initial price and a maximum multiplier, find the product within the allowed multipliers that results in the maximum number of trailing zeros, choosing the largest such product if multiple exist. If no improvement is possible, output the maximum product.",
   "tags": [
-    "math",
     "number-theory",
     "brute-force"
   ],
   "patterns": [
     "brute-force",
-    "factorization",
-    "count-trailing-zeros"
+    "trailing-zeros-count"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047844,
+    "generated_at_unix": 1785050150,
     "pattern_confidence": {
       "brute-force": 0.95,
-      "factorization": 0.85,
-      "count-trailing-zeros": 0.9
+      "trailing-zeros-count": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

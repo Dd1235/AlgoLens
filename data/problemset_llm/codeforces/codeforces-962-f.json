@@ -11,7 +11,7 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given an undirected graph without multiple edges or loops, identify all edges that belong to exactly one simple cycle.",
+  "statement": "Given an undirected graph without multiple edges or loops, identify all edges that belong to exactly one simple cycle (a cycle visiting each vertex once).",
   "tags": [
     "graph",
     "dfs",
@@ -25,11 +25,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048940,
+    "generated_at_unix": 1785051035,
     "pattern_confidence": {
       "dfs": 0.95,
-      "cycle-detection": 0.93,
-      "simple-cycle-identification": 0.9
+      "cycle-detection": 0.9,
+      "simple-cycle-identification": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level 2"

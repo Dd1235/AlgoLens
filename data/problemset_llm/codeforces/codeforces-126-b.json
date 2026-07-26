@@ -13,29 +13,29 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a string, find the longest substring that is simultaneously a prefix, a suffix, and also appears at least once more inside the string (not as prefix or suffix).",
+  "statement": "Given a string, find the longest substring that is simultaneously a prefix, a suffix, and also appears at least once more inside the string (not as prefix or suffix). If no such substring exists, report that.",
   "tags": [
     "string",
     "rolling-hash",
     "binary-search",
-    "dynamic-programming"
+    "suffix-array"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "string-hashing",
     "prefix-function",
-    "dynamic-programming",
+    "z-algorithm",
     "kmp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048934,
+    "generated_at_unix": 1785051030,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "string-hashing": 0.95,
-      "prefix-function": 0.9,
-      "dynamic-programming": 0.7,
+      "binary-search": 0.9,
+      "string-hashing": 0.85,
+      "prefix-function": 0.95,
+      "z-algorithm": 0.9,
       "kmp": 0.9
     }
   },

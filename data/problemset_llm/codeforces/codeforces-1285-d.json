@@ -18,24 +18,27 @@
   ],
   "statement": "Given a list of integers, find an integer X that minimizes the maximum XOR value between X and each element in the list.",
   "tags": [
-    "bitmask-dp",
-    "array",
+    "bit-manipulation",
     "binary-search",
+    "greedy",
+    "divide-and-conquer",
     "trie"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "bit-manipulation",
-    "xor-optimization"
+    "divide-and-conquer",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048498,
+    "generated_at_unix": 1785050795,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "bit-manipulation": 0.9,
-      "xor-optimization": 0.85
+      "binary-search": 0.9,
+      "bit-manipulation": 0.95,
+      "divide-and-conquer": 0.8,
+      "greedy": 0.7
     }
   },
   "source_topic": "Formwise / Trie"

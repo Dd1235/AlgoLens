@@ -11,25 +11,25 @@
     "graphs",
     "implementation"
   ],
-  "statement": "Given a directed graph with one museum per city and a weekly schedule of museum openings, find a route starting from city 1 on day 1 that maximizes the number of distinct museums visited, considering day-dependent openings and one-day travel times along one-way roads.",
+  "statement": "Given a directed graph with one museum per city and a weekly schedule of museum openings, find a route starting from city 1 on day 1 that maximizes the number of distinct museums visited, considering travel takes one night and museums open on specific days of the week.",
   "tags": [
     "graph",
     "dynamic-programming",
-    "bit-manipulation"
+    "implementation"
   ],
   "patterns": [
     "dp-on-dag",
     "state-compression",
-    "longest-path-in-dag"
+    "graph-traversal"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048963,
+    "generated_at_unix": 1785051064,
     "pattern_confidence": {
-      "dp-on-dag": 0.9,
-      "state-compression": 0.85,
-      "longest-path-in-dag": 0.8
+      "dp-on-dag": 0.85,
+      "state-compression": 0.7,
+      "graph-traversal": 0.9
     }
   },
   "source_topic": "Formwise / Graph Level 2"

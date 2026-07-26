@@ -10,25 +10,25 @@
     "combinatorics",
     "math"
   ],
-  "statement": "Given n and a prime m, compute the sum modulo m of the number of framed segments (subsegments where max minus min equals length minus one) over all permutations of length n.",
+  "statement": "Calculate the sum of the number of framed segments (subsegments where max minus min equals the length minus one) over all permutations of length n, modulo a given prime m.",
   "tags": [
     "combinatorics",
     "math",
-    "permutations"
+    "permutation"
   ],
   "patterns": [
-    "combinatorics",
-    "prefix-sum",
-    "modular-arithmetic"
+    "combinatorial-enumeration",
+    "modular-arithmetic",
+    "factorial-precomputation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047891,
+    "generated_at_unix": 1785050204,
     "pattern_confidence": {
-      "combinatorics": 0.95,
-      "prefix-sum": 0.7,
-      "modular-arithmetic": 0.9
+      "combinatorial-enumeration": 0.95,
+      "modular-arithmetic": 0.9,
+      "factorial-precomputation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

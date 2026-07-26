@@ -17,23 +17,27 @@
   ],
   "statement": "Given a sequence of integers, determine if there exists another sequence such that each original element can be represented as the difference of two elements from the new sequence.",
   "tags": [
-    "array",
     "math",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "bit-manipulation",
+    "dfs",
+    "dynamic-programming"
   ],
   "patterns": [
     "constructive-algorithm",
-    "brute-force",
-    "dfs"
+    "dfs",
+    "bit-manipulation",
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048051,
+    "generated_at_unix": 1785050361,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "brute-force": 0.7,
-      "dfs": 0.6
+      "constructive-algorithm": 0.9,
+      "dfs": 0.7,
+      "bit-manipulation": 0.6,
+      "dynamic-programming": 0.5
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

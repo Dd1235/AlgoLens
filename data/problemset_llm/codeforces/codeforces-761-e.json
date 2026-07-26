@@ -13,27 +13,26 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a tree, assign distinct integral coordinates to its vertices so that edges correspond to axis-aligned segments intersecting only at endpoints.",
+  "statement": "Given a tree, assign integral coordinates to its vertices so that edges correspond to axis-aligned segments without overlapping except at endpoints, ensuring distinct vertices have distinct coordinates.",
   "tags": [
-    "graph",
     "tree",
     "geometry",
-    "constructive-algorithm",
-    "dfs"
+    "graph",
+    "constructive-algorithm"
   ],
   "patterns": [
     "dfs",
-    "constructive-algorithm",
+    "greedy",
     "coordinate-assignment"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048129,
+    "generated_at_unix": 1785050439,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "constructive-algorithm": 0.9,
-      "coordinate-assignment": 0.85
+      "dfs": 0.9,
+      "greedy": 0.85,
+      "coordinate-assignment": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

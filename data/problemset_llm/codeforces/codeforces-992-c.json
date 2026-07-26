@@ -9,7 +9,7 @@
   "source_tags": [
     "math"
   ],
-  "statement": "Given an initial number of dresses and a number of months, compute the expected number of dresses after monthly doubling and probabilistic dress removal, modulo 10^9+7.",
+  "statement": "Given an initial number of dresses and a year length, compute the expected number of dresses after monthly doubling and probabilistic dress removal, modulo 10^9+7.",
   "tags": [
     "math",
     "probability",
@@ -17,15 +17,15 @@
   ],
   "patterns": [
     "expected-value-dp",
-    "modular-arithmetic"
+    "modular-exponentiation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047960,
+    "generated_at_unix": 1785050279,
     "pattern_confidence": {
       "expected-value-dp": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-exponentiation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

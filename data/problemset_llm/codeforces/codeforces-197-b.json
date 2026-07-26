@@ -9,22 +9,22 @@
   "source_tags": [
     "math"
   ],
-  "statement": "Given two polynomials P(x) and Q(x), compute the limit of their ratio P(x)/Q(x) as x approaches positive infinity.",
+  "statement": "Given two polynomials, compute the limit of their quotient as the variable approaches positive infinity.",
   "tags": [
     "math",
     "polynomial"
   ],
   "patterns": [
-    "limit-calculation",
-    "polynomial-degree-comparison"
+    "polynomial-limit",
+    "degree-comparison"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047842,
+    "generated_at_unix": 1785050147,
     "pattern_confidence": {
-      "limit-calculation": 0.95,
-      "polynomial-degree-comparison": 0.9
+      "polynomial-limit": 0.95,
+      "degree-comparison": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

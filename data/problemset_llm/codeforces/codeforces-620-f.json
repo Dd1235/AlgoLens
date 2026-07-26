@@ -11,25 +11,25 @@
     "strings",
     "trees"
   ],
-  "statement": "Given an array and multiple queries defined by index ranges, find for each query the maximum XOR value of a contiguous integer segment between any two array elements within the query range, where the segment is defined by values from ax to ay with ax ≤ ay.",
+  "statement": "Given an integer array and multiple queries defined by index ranges, for each query find the maximum XOR value of any subarray segment within the specified range where the subarray's start element is less than or equal to its end element.",
   "tags": [
     "array",
     "segment-tree",
     "bit-manipulation"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-xor",
-    "range-query"
+    "segment-tree",
+    "offline-queries",
+    "binary-lifting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048461,
+    "generated_at_unix": 1785050764,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-xor": 0.95,
-      "range-query": 0.85
+      "segment-tree": 0.9,
+      "offline-queries": 0.7,
+      "binary-lifting": 0.5
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

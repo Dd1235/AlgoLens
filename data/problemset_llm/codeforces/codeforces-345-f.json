@@ -9,7 +9,7 @@
   "source_tags": [
     "*special"
   ],
-  "statement": "Given multiple countries each with a list of popular superstitions, identify the superstitions that appear in the largest number of countries, ignoring case and word spacing differences.",
+  "statement": "Given a list of countries each with a set of popular superstitions, identify the superstitions that appear in the largest number of distinct countries, ignoring case and spacing differences in names.",
   "tags": [
     "string",
     "hash-map",
@@ -17,17 +17,17 @@
   ],
   "patterns": [
     "case-insensitive-comparison",
-    "counting",
-    "string-normalization"
+    "hash-map",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048297,
+    "generated_at_unix": 1785050607,
     "pattern_confidence": {
-      "case-insensitive-comparison": 0.95,
-      "counting": 0.9,
-      "string-normalization": 0.85
+      "case-insensitive-comparison": 0.9,
+      "hash-map": 0.95,
+      "counting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

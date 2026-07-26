@@ -12,7 +12,7 @@
     "math",
     "number theory"
   ],
-  "statement": "Given counts of experienced and newbie participants, form the maximum number of teams of size three where each team is either one experienced plus two newbies or two experienced plus one newbie.",
+  "statement": "Given counts of experienced and newbie participants, determine the maximum number of teams of size three that can be formed where each team is either one experienced plus two newbies or two experienced plus one newbie.",
   "tags": [
     "math",
     "greedy",
@@ -25,7 +25,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047743,
+    "generated_at_unix": 1785050047,
     "pattern_confidence": {
       "greedy": 0.95,
       "case-analysis": 0.85

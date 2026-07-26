@@ -13,27 +13,24 @@
     "number theory",
     "shortest paths"
   ],
-  "statement": "Given a set of spiders each with a number of legs, construct a graph where edges exist between spiders whose leg counts share a gcd greater than 1, then find the shortest path and minimum transmission time between two specified spiders.",
+  "statement": "Given a list of spiders characterized by their number of legs, define friendship edges between spiders whose leg counts share a gcd greater than 1. Compute the shortest message transmission time and an optimal path between two specified spiders in this graph.",
   "tags": [
     "graph",
     "number-theory",
     "gcd",
-    "shortest-path",
-    "bfs"
+    "shortest-path"
   ],
   "patterns": [
-    "gcd-based-graph-construction",
     "bfs",
-    "shortest-path"
+    "gcd-based-graph-construction"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047896,
+    "generated_at_unix": 1785050209,
     "pattern_confidence": {
-      "gcd-based-graph-construction": 0.95,
-      "bfs": 0.9,
-      "shortest-path": 0.9
+      "bfs": 0.95,
+      "gcd-based-graph-construction": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

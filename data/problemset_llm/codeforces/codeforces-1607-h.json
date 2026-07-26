@@ -13,9 +13,9 @@
   ],
   "statement": "Given n dishes each with fish and meat amounts, and a required amount to eat from each dish, determine how to split the eaten amount between fish and meat to minimize the number of distinct resulting dishes.",
   "tags": [
-    "array",
     "greedy",
-    "sorting"
+    "sorting",
+    "two-pointers"
   ],
   "patterns": [
     "greedy",
@@ -25,11 +25,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048196,
+    "generated_at_unix": 1785050504,
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,
-      "two-pointers": 0.7
+      "two-pointers": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

@@ -10,27 +10,27 @@
     "binary search",
     "data structures"
   ],
-  "statement": "Given warriors of various types arranged in a sequence, answer queries asking for the maximum size of a balanced army within a specified subrange, where balanced means no warrior type appears more than k times.",
+  "statement": "Given an array of warrior types and multiple queries specifying subranges, determine the maximum size of a balanced army in each subrange, where a balanced army contains at most k warriors of each type.",
   "tags": [
     "array",
     "binary-search",
-    "prefix-sum",
     "counting",
+    "query",
     "segment-tree"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "frequency-frequency-limiting"
+    "binary-search",
+    "two-pointers",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048198,
+    "generated_at_unix": 1785050506,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85,
-      "frequency-frequency-limiting": 0.7
+      "binary-search": 0.9,
+      "two-pointers": 0.85,
+      "counting": 0.8
     }
   },
   "source_topic": "Formwise / Segment Trees"

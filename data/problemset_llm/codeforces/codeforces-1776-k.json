@@ -17,18 +17,18 @@
     "math"
   ],
   "patterns": [
-    "probability-dp",
     "expected-value-dp",
-    "independent-events"
+    "probability-dp",
+    "independent-processes"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048429,
+    "generated_at_unix": 1785050736,
     "pattern_confidence": {
+      "expected-value-dp": 0.9,
       "probability-dp": 0.95,
-      "expected-value-dp": 0.85,
-      "independent-events": 0.9
+      "independent-processes": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

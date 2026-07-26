@@ -10,28 +10,25 @@
     "graphs",
     "shortest paths"
   ],
-  "statement": "Given a weighted directed graph, support queries to find shortest paths from vertex 1 and increment weights of specified edges dynamically.",
+  "statement": "Maintain shortest path distances from vertex 1 in a weighted directed graph under queries that either request the shortest path length to a vertex or increment weights of specified edges by 1.",
   "tags": [
     "graph",
     "shortest-path",
-    "dynamic-programming",
-    "data-structure"
+    "dynamic-graph"
   ],
   "patterns": [
-    "dynamic-shortest-path",
-    "incremental-updates",
     "dijkstra",
-    "lazy-updates"
+    "dynamic-shortest-path",
+    "incremental-update"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048313,
+    "generated_at_unix": 1785050624,
     "pattern_confidence": {
-      "dynamic-shortest-path": 0.95,
-      "incremental-updates": 0.9,
-      "dijkstra": 0.85,
-      "lazy-updates": 0.8
+      "dijkstra": 0.95,
+      "dynamic-shortest-path": 0.9,
+      "incremental-update": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

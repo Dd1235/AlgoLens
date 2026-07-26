@@ -12,25 +12,27 @@
     "strings",
     "trees"
   ],
-  "statement": "Given an infinite supply of strings s, find the minimum number of substrings (possibly reversed) cut from s and concatenated to form a target string t.",
+  "statement": "Given an infinite supply of strings s, determine the minimum number of substrings (possibly reversed) cut from copies of s needed to concatenate and form a target string t.",
   "tags": [
     "string",
     "dynamic-programming",
     "greedy"
   ],
   "patterns": [
-    "string-matching",
+    "substring-matching",
+    "string-reversal",
     "dp-on-strings",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048134,
+    "generated_at_unix": 1785050445,
     "pattern_confidence": {
-      "string-matching": 0.95,
-      "dp-on-strings": 0.9,
-      "greedy": 0.85
+      "substring-matching": 0.9,
+      "string-reversal": 0.85,
+      "dp-on-strings": 0.8,
+      "greedy": 0.75
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

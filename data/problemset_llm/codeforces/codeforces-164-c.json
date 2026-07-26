@@ -10,29 +10,29 @@
     "flows",
     "graphs"
   ],
-  "statement": "Given n tasks each with a start time, duration, and profit, and k identical machines that can run tasks without overlap, select a subset of tasks to maximize total profit.",
+  "statement": "Given n tasks each with a start time, duration, and profit, and k identical machines that can run one task at a time, select a subset of tasks to maximize total profit without overlapping tasks on the same machine.",
   "tags": [
-    "interval-scheduling",
     "greedy",
-    "dynamic-programming",
-    "binary-search",
+    "interval-scheduling",
+    "max-flow",
+    "graphs",
     "graph"
   ],
   "patterns": [
-    "binary-search-answer",
+    "max-flow",
     "interval-scheduling",
-    "dp-on-intervals",
-    "greedy"
+    "greedy",
+    "bipartite-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049032,
+    "generated_at_unix": 1785051146,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "max-flow": 0.9,
       "interval-scheduling": 0.95,
-      "dp-on-intervals": 0.85,
-      "greedy": 0.8
+      "greedy": 0.85,
+      "bipartite-matching": 0.7
     }
   },
   "source_topic": "Formwise / Graph Level 2"

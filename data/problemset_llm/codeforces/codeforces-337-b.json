@@ -11,7 +11,7 @@
     "math",
     "number theory"
   ],
-  "statement": "Given the aspect ratios of a monitor screen and a movie frame, determine the irreducible fraction representing the ratio of unused screen area after scaling the movie to fit maximally while preserving its aspect ratio.",
+  "statement": "Given the aspect ratios of a monitor screen and a movie frame, determine the irreducible fraction representing the portion of the screen left empty after scaling the movie to fit maximally while preserving its aspect ratio.",
   "tags": [
     "math",
     "geometry",
@@ -25,7 +25,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047845,
+    "generated_at_unix": 1785050151,
     "pattern_confidence": {
       "ratio-scaling": 0.95,
       "gcd": 0.9,

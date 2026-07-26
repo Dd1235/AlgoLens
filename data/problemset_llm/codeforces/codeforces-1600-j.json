@@ -10,11 +10,12 @@
     "bitmasks",
     "dfs and similar"
   ],
-  "statement": "Given a grid representing factory tiles with walls encoded in binary, determine the sizes of all enclosed rooms and output them sorted from largest to smallest.",
+  "statement": "Given a grid representing factory tiles with walls encoded as bits indicating walls on the four sides, determine the sizes of all enclosed rooms and output them sorted from largest to smallest.",
   "tags": [
-    "graph",
+    "grid",
     "bit-manipulation",
-    "dfs"
+    "dfs",
+    "connected-components"
   ],
   "patterns": [
     "bit-manipulation",
@@ -24,10 +25,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047815,
+    "generated_at_unix": 1785050120,
     "pattern_confidence": {
       "bit-manipulation": 0.95,
-      "dfs": 0.98,
+      "dfs": 0.9,
       "connected-components": 0.9
     }
   },

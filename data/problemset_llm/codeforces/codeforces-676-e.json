@@ -9,24 +9,24 @@
   "source_tags": [
     "math"
   ],
-  "statement": "Given a polynomial and a game scenario involving polynomial divisibility, determine if the human player can guarantee victory with optimal play.",
+  "statement": "Given a polynomial and a divisor polynomial, determine if the human player can guarantee victory in a game involving polynomial divisibility under optimal play.",
   "tags": [
     "math",
     "game-theory",
     "polynomial"
   ],
   "patterns": [
+    "polynomial-divisibility",
     "game-theory",
-    "polynomial-division",
     "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048217,
+    "generated_at_unix": 1785050522,
     "pattern_confidence": {
-      "game-theory": 0.95,
-      "polynomial-division": 0.9,
+      "polynomial-divisibility": 0.9,
+      "game-theory": 0.85,
       "constructive-algorithm": 0.7
     }
   },

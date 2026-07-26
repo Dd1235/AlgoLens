@@ -21,21 +21,19 @@
     "graph"
   ],
   "patterns": [
-    "dsu-on-tree",
     "dfs",
-    "subtree-queries",
-    "counting",
+    "dsu-on-tree",
+    "subtree-query",
     "union-find"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048899,
+    "generated_at_unix": 1785050990,
     "pattern_confidence": {
-      "dsu-on-tree": 0.95,
-      "dfs": 0.9,
-      "subtree-queries": 0.85,
-      "counting": 0.8,
+      "dfs": 0.95,
+      "dsu-on-tree": 0.9,
+      "subtree-query": 0.85,
       "union-find": 0.9
     }
   },

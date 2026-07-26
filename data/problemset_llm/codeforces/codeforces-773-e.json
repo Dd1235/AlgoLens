@@ -10,25 +10,25 @@
     "data structures",
     "sortings"
   ],
-  "statement": "Given a sequence of user estimated ratings, determine for each prefix length the maximum possible final community rating of a blog post after users rate it in some order according to a specific rating rule.",
+  "statement": "Given a sequence of users each with an estimated blog post rating, determine for each prefix of users the maximum possible final community rating after they sequentially rate the post according to whether their estimate is higher, lower, or equal to the current rating.",
   "tags": [
-    "array",
     "greedy",
-    "sorting"
+    "sorting",
+    "array"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "greedy"
+    "greedy",
+    "sorting",
+    "prefix-computation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048348,
+    "generated_at_unix": 1785050658,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.85,
-      "greedy": 0.9
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "prefix-computation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

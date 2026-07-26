@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-484-a",
+  "title": "Bits",
+  "slug": "484-a-bits",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/484/A",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms"
+  ],
+  "statement": "Given multiple queries with integer ranges [l, r], find the number x within each range that has the maximum number of set bits (popcount), choosing the smallest such number if there are ties.",
+  "tags": [
+    "bit-manipulation",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "bit-counting",
+    "binary-search",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785050828,
+    "pattern_confidence": {
+      "bit-counting": 0.95,
+      "binary-search": 0.8,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Formwise / Bit-Manipulation"
+}

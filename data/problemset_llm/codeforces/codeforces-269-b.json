@@ -9,25 +9,25 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given plants of m species placed on a line, find the minimum number of plants to replant so that the line can be divided into m contiguous sections each containing only one species in order.",
+  "statement": "Given positions of plants of m species on a line, partition the line into m contiguous sections for each species in order, minimizing the number of plants that must be replanted to achieve this arrangement.",
   "tags": [
-    "array",
     "dynamic-programming",
-    "greedy"
+    "greedy",
+    "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
-    "dp-on-sequences",
-    "two-pointers"
+    "dynamic-programming",
+    "sorting",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048800,
+    "generated_at_unix": 1785050886,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dp-on-sequences": 0.85,
-      "two-pointers": 0.7
+      "dynamic-programming": 0.9,
+      "sorting": 0.85,
+      "greedy": 0.7
     }
   },
   "source_topic": "Formwise / DP Level 1"

@@ -13,7 +13,7 @@
     "math",
     "two pointers"
   ],
-  "statement": "Given an array, count the number of quadruples (i, j, k, l) with increasing indices where the first and third elements are equal and the second and fourth elements are equal.",
+  "statement": "Given an array, count the number of quadruples (i, j, k, l) with increasing indices where the elements at positions i and k are equal, and the elements at positions j and l are equal.",
   "tags": [
     "array",
     "combinatorics",
@@ -21,18 +21,20 @@
     "hash-map"
   ],
   "patterns": [
+    "brute-force",
     "two-pointers",
-    "hash-map",
-    "combinatorics"
+    "rolling-hash",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047908,
+    "generated_at_unix": 1785050222,
     "pattern_confidence": {
-      "two-pointers": 0.85,
-      "hash-map": 0.9,
-      "combinatorics": 0.95
+      "brute-force": 0.9,
+      "two-pointers": 0.7,
+      "rolling-hash": 0.85,
+      "counting": 0.95
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -10,11 +10,11 @@
     "*special",
     "expression parsing"
   ],
-  "statement": "Given a simple arithmetic expression of the form 'n#m' where n and m are digits and # is either '+' or '-', compute and print the result of the expression.",
+  "statement": "Given a simple arithmetic expression of the form 'n#m' where n and m are single-digit integers and # is either '+' or '-', compute and output the result of the expression.",
   "tags": [
     "string",
     "expression-parsing",
-    "math"
+    "arithmetic"
   ],
   "patterns": [
     "parsing",
@@ -23,10 +23,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047730,
+    "generated_at_unix": 1785050035,
     "pattern_confidence": {
-      "parsing": 0.95,
-      "simulation": 0.8
+      "parsing": 0.9,
+      "simulation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

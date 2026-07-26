@@ -11,25 +11,25 @@
     "graphs",
     "implementation"
   ],
-  "statement": "Given multiple sets of integers, determine if there exist two sets sharing at least two distinct common elements, and identify such a pair if it exists.",
+  "statement": "Given multiple sets of integers, determine whether there exist two distinct sets sharing at least two different common elements, and if so, identify such a pair.",
   "tags": [
     "data-structures",
-    "graph",
-    "hash-map"
+    "graphs",
+    "rolling-hash"
   ],
   "patterns": [
     "hash-map",
-    "pairwise-intersection-check",
-    "set-intersection"
+    "set-intersection",
+    "pair-finding"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048249,
+    "generated_at_unix": 1785050557,
     "pattern_confidence": {
       "hash-map": 0.95,
-      "pairwise-intersection-check": 0.9,
-      "set-intersection": 0.85
+      "set-intersection": 0.9,
+      "pair-finding": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

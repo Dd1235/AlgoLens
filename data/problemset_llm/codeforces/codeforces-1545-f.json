@@ -11,25 +11,25 @@
     "data structures",
     "dp"
   ],
-  "statement": "Maintain three integer arrays with update operations on one array and queries counting triplets (i, j, k) with i < j < k ≤ r satisfying b[a_i] = a_j = c[a_k].",
+  "statement": "Maintain three integer arrays with updates to one array and queries counting triplets (i,j,k) with i<j<k≤r satisfying b[a_i] = a_j = c[a_k].",
   "tags": [
     "array",
     "data-structures",
     "dynamic-programming"
   ],
   "patterns": [
-    "prefix-sum",
     "offline-queries",
-    "fenwick-tree"
+    "fenwick-tree",
+    "coordinate-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048306,
+    "generated_at_unix": 1785050616,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
       "offline-queries": 0.85,
-      "fenwick-tree": 0.8
+      "fenwick-tree": 0.7,
+      "coordinate-compression": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

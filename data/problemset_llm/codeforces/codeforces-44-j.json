@@ -15,24 +15,21 @@
     "geometry",
     "constructive-algorithm",
     "greedy",
-    "graph",
-    "bipartite-matching"
+    "tiling"
   ],
   "patterns": [
+    "color-parity-check",
     "constructive-algorithm",
-    "greedy",
-    "bipartite-matching",
-    "graph-modeling"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048106,
+    "generated_at_unix": 1785050414,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "greedy": 0.9,
-      "bipartite-matching": 0.85,
-      "graph-modeling": 0.8
+      "color-parity-check": 0.9,
+      "constructive-algorithm": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

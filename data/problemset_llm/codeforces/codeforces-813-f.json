@@ -11,27 +11,27 @@
     "dsu",
     "graphs"
   ],
-  "statement": "Given a dynamic undirected graph with edge additions and removals, determine after each update whether the graph remains bipartite.",
+  "statement": "Maintain a dynamic undirected graph under edge additions and removals, and after each update determine whether the graph remains bipartite.",
   "tags": [
     "graph",
     "union-find",
-    "dynamic-graph"
+    "dynamic-connectivity"
   ],
   "patterns": [
-    "union-find",
+    "dsu-rollback",
     "offline-queries",
     "bipartite-checking",
-    "dynamic-connectivity"
+    "union-find"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049012,
+    "generated_at_unix": 1785051126,
     "pattern_confidence": {
-      "union-find": 0.95,
+      "dsu-rollback": 0.95,
       "offline-queries": 0.85,
       "bipartite-checking": 0.9,
-      "dynamic-connectivity": 0.9
+      "union-find": 0.9
     }
   },
   "source_topic": "Formwise / Graph Level 2"

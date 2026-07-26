@@ -10,25 +10,25 @@
     "data structures",
     "dp"
   ],
-  "statement": "Determine if it is possible to flip a cutlet multiple times within given time intervals so that it is fried exactly n seconds on each side, and if so, find the minimum number of flips required.",
+  "statement": "Given a total frying time of 2n seconds split evenly between two sides of a cutlet, determine if it is possible to flip the cutlet only during specified time intervals so that each side is fried exactly n seconds, and if so, find the minimum number of flips required.",
   "tags": [
-    "interval",
     "dynamic-programming",
+    "intervals",
     "greedy"
   ],
   "patterns": [
     "interval-dp",
     "greedy",
-    "binary-search-answer"
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048209,
+    "generated_at_unix": 1785050516,
     "pattern_confidence": {
       "interval-dp": 0.9,
-      "greedy": 0.85,
-      "binary-search-answer": 0.7
+      "greedy": 0.7,
+      "binary-search": 0.5
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

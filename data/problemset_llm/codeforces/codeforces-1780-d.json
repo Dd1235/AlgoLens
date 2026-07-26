@@ -12,26 +12,28 @@
     "constructive algorithms",
     "interactive"
   ],
-  "statement": "Given the initial count of set bits in a hidden positive integer n, guess n by repeatedly subtracting chosen integers and receiving updated set bit counts, using at most 30 operations.",
+  "statement": "Given the initial count of set bits in a hidden positive integer n, guess n by repeatedly subtracting chosen integers and observing updated set bit counts, with at most 30 operations allowed.",
   "tags": [
-    "bitmask-dp",
+    "bit-manipulation",
     "interactive",
     "constructive-algorithm",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
-    "bitmask-manipulation",
-    "interactive"
+    "interactive",
+    "bit-manipulation",
+    "binary-search",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047972,
+    "generated_at_unix": 1785050292,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "bitmask-manipulation": 0.85,
-      "interactive": 0.95
+      "interactive": 0.95,
+      "bit-manipulation": 0.9,
+      "binary-search": 0.85,
+      "constructive-algorithm": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

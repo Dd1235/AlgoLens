@@ -9,25 +9,25 @@
   "source_tags": [
     "ternary search"
   ],
-  "statement": "Given a sequence of integers, find a real number x that minimizes the maximum absolute segment sum of the sequence after subtracting x from each element.",
+  "statement": "Given a sequence of integers, find a real number x that minimizes the maximum absolute segment sum (poorness) of the sequence after subtracting x from each element.",
   "tags": [
     "array",
-    "math",
-    "binary-search"
+    "binary-search",
+    "ternary-search"
   ],
   "patterns": [
     "ternary-search",
-    "prefix-sum",
-    "binary-search-answer"
+    "sliding-window",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048191,
+    "generated_at_unix": 1785050500,
     "pattern_confidence": {
       "ternary-search": 0.95,
-      "prefix-sum": 0.85,
-      "binary-search-answer": 0.7
+      "sliding-window": 0.7,
+      "prefix-sum": 0.6
     }
   },
   "source_topic": "Formwise / Binary Search"

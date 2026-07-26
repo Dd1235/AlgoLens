@@ -19,21 +19,23 @@
     "permutations",
     "modular-arithmetic",
     "dynamic-programming",
-    "meet-in-the-middle"
+    "bit-manipulation"
   ],
   "patterns": [
     "meet-in-the-middle",
-    "dynamic-programming",
-    "modular-arithmetic"
+    "bitmask-dp",
+    "modular-arithmetic",
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047902,
+    "generated_at_unix": 1785050216,
     "pattern_confidence": {
       "meet-in-the-middle": 0.9,
-      "dynamic-programming": 0.85,
-      "modular-arithmetic": 0.8
+      "bitmask-dp": 0.85,
+      "modular-arithmetic": 0.95,
+      "combinatorics": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

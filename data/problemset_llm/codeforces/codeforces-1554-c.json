@@ -15,22 +15,21 @@
   "statement": "Given integers n and m, find the minimum excluded value (MEX) of the sequence formed by XORing n with every integer from 0 to m.",
   "tags": [
     "bit-manipulation",
-    "math",
-    "number-theory"
+    "math"
   ],
   "patterns": [
     "mex",
     "bitwise-xor",
-    "binary-search-answer"
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049004,
+    "generated_at_unix": 1785051118,
     "pattern_confidence": {
-      "mex": 0.98,
-      "bitwise-xor": 0.95,
-      "binary-search-answer": 0.7
+      "mex": 0.95,
+      "bitwise-xor": 0.9,
+      "binary-search": 0.6
     }
   },
   "source_topic": "Formwise / Bit-Manipulation"

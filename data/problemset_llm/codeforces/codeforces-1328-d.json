@@ -13,9 +13,8 @@
     "greedy",
     "math"
   ],
-  "statement": "Given a circular sequence of figures each with a type, color them using the minimum number of colors so that no two adjacent figures of different types share the same color.",
+  "statement": "Given a circular sequence of animal figures each with a type, color each figure using the minimum number of colors so that no two adjacent figures of different types share the same color.",
   "tags": [
-    "array",
     "greedy",
     "graph",
     "dynamic-programming",
@@ -24,20 +23,16 @@
   "patterns": [
     "greedy",
     "constructive-algorithm",
-    "circular-array",
-    "coloring",
-    "dynamic-programming"
+    "circular-sequence-coloring"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048022,
+    "generated_at_unix": 1785050344,
     "pattern_confidence": {
-      "greedy": 0.95,
-      "constructive-algorithm": 0.9,
-      "circular-array": 0.85,
-      "coloring": 0.9,
-      "dynamic-programming": 0.7
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "circular-sequence-coloring": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

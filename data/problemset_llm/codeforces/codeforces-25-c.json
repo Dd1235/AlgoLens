@@ -10,25 +10,25 @@
     "graphs",
     "shortest paths"
   ],
-  "statement": "Given a fully connected graph with known shortest distances between all city pairs, and a sequence of new roads to be added, determine how the sum of shortest distances between all pairs changes after each new road is constructed.",
+  "statement": "Given a fully connected weighted graph with known shortest distances between all city pairs, and a sequence of new roads to be added, determine how the sum of shortest distances between all pairs changes after each new road is constructed.",
   "tags": [
     "graph",
     "shortest-path",
-    "dynamic-programming"
+    "all-pairs-shortest-path"
   ],
   "patterns": [
     "floyd-warshall",
-    "all-pairs-shortest-path",
-    "incremental-update"
+    "incremental-shortest-path",
+    "distance-matrix-update"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047994,
+    "generated_at_unix": 1785050315,
     "pattern_confidence": {
-      "floyd-warshall": 0.95,
-      "all-pairs-shortest-path": 0.9,
-      "incremental-update": 0.85
+      "floyd-warshall": 0.9,
+      "incremental-shortest-path": 0.85,
+      "distance-matrix-update": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level-1"

@@ -11,7 +11,7 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a tree, repeatedly choose a root and recursively shuffle its subtrees to form a new tree, and find the maximum possible number of leaves in the resulting tree after exactly one shuffle.",
+  "statement": "Given a tree, perform a recursive re-rooting shuffle to create a new tree and determine the maximum possible number of leaves in the resulting tree.",
   "tags": [
     "tree",
     "dynamic-programming",
@@ -19,19 +19,17 @@
   ],
   "patterns": [
     "tree-dp",
-    "divide-and-conquer",
-    "rooting",
-    "greedy"
+    "rerooting-dp",
+    "divide-and-conquer"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048239,
+    "generated_at_unix": 1785050545,
     "pattern_confidence": {
       "tree-dp": 0.95,
-      "divide-and-conquer": 0.9,
-      "rooting": 0.85,
-      "greedy": 0.8
+      "rerooting-dp": 0.9,
+      "divide-and-conquer": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

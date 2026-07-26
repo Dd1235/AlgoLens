@@ -12,25 +12,25 @@
     "math",
     "sortings"
   ],
-  "statement": "Given n boxes each containing some blocks, determine the minimum number of extra blocks to add so that moving all blocks from any chosen box to the others is always possible without making the nephew sad.",
+  "statement": "Given n boxes each containing some blocks, determine the minimum number of extra blocks to add so that removing all blocks from any single box can be redistributed to the others without shortage.",
   "tags": [
-    "array",
-    "greedy",
     "math",
+    "greedy",
+    "binary-search",
     "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
+    "binary-search",
     "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047776,
+    "generated_at_unix": 1785050080,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
+      "greedy": 0.9,
+      "binary-search": 0.7,
       "sorting": 0.8
     }
   },

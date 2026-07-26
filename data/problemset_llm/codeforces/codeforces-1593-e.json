@@ -22,17 +22,17 @@
   ],
   "patterns": [
     "dfs",
-    "layered-removal",
-    "simulation"
+    "greedy",
+    "layered-removal"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048794,
+    "generated_at_unix": 1785050879,
     "pattern_confidence": {
       "dfs": 0.9,
-      "layered-removal": 0.85,
-      "simulation": 0.8
+      "greedy": 0.85,
+      "layered-removal": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

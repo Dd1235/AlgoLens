@@ -13,26 +13,26 @@
     "greedy",
     "interactive"
   ],
-  "statement": "In an interactive game, given a sequence of numbers one by one, decide on which position in a line of sheets to write each number so that eventually all sheets are filled with a non-decreasing sequence.",
+  "statement": "In an interactive game, given a sequence of numbers over multiple rounds, assign each number to a position in a line of sheets so that at any point all sheets are filled with a non-decreasing sequence from left to right. Determine the assignment strategy to help win the game.",
   "tags": [
-    "array",
     "interactive",
     "greedy",
-    "binary-search"
+    "binary-search",
+    "array"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
+    "binary-search",
     "interactive"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048200,
+    "generated_at_unix": 1785050507,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
-      "interactive": 0.95
+      "greedy": 0.95,
+      "binary-search": 0.85,
+      "interactive": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

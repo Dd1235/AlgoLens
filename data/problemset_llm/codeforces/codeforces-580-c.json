@@ -11,25 +11,23 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a rooted tree with some vertices containing cats, count the number of leaf nodes (restaurants) reachable from the root without passing through more than m consecutive cat vertices on the path.",
+  "statement": "Given a rooted tree with certain vertices containing cats, count the number of leaf nodes (restaurants) reachable from the root without encountering more than m consecutive cat vertices on the path.",
   "tags": [
     "tree",
-    "graph",
-    "dfs"
+    "dfs",
+    "graphs"
   ],
   "patterns": [
     "dfs",
-    "path-constraints",
-    "tree-traversal"
+    "path-constraints"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048993,
+    "generated_at_unix": 1785051107,
     "pattern_confidence": {
-      "dfs": 0.98,
-      "path-constraints": 0.9,
-      "tree-traversal": 0.95
+      "dfs": 0.95,
+      "path-constraints": 0.85
     }
   },
   "source_topic": "Formwise / Trees"

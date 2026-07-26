@@ -14,22 +14,25 @@
   "statement": "Given an n by n grid containing a snake represented as a simple path from head to tail, determine the positions of the head and tail by querying rectangles that return the number of snake border crossings along the path.",
   "tags": [
     "grid",
-    "graph",
-    "interactive"
+    "interactive",
+    "binary-search",
+    "geometry"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "interactive",
-    "prefix-sum"
+    "geometry",
+    "grid-traversal"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048085,
+    "generated_at_unix": 1785050395,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "interactive": 0.95,
-      "prefix-sum": 0.7
+      "binary-search": 0.9,
+      "interactive": 1.0,
+      "geometry": 0.8,
+      "grid-traversal": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

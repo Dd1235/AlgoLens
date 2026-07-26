@@ -10,25 +10,25 @@
     "constructive algorithms",
     "math"
   ],
-  "statement": "Given an array representing the number of distinct prefix maximums for each cyclic shift of a lost permutation, determine if such a permutation exists without reconstructing it.",
+  "statement": "Given an array representing the number of distinct prefix maximums for each cyclic shift of a lost permutation, determine if such a permutation exists that matches these values.",
   "tags": [
-    "array",
+    "permutation",
     "math",
     "constructive-algorithm"
   ],
   "patterns": [
+    "constructive-algorithm",
     "prefix-maximum",
-    "cyclic-shift",
-    "permutation-properties"
+    "cyclic-shift"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047948,
+    "generated_at_unix": 1785050264,
     "pattern_confidence": {
-      "prefix-maximum": 0.95,
-      "cyclic-shift": 0.9,
-      "permutation-properties": 0.85
+      "constructive-algorithm": 0.9,
+      "prefix-maximum": 0.85,
+      "cyclic-shift": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

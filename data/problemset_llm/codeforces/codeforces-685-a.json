@@ -12,25 +12,25 @@
     "dp",
     "math"
   ],
-  "statement": "Given a custom time format with hours and minutes represented in base 7 with fixed digit lengths, count how many valid hour-minute pairs have all distinct digits in their base-7 representation.",
+  "statement": "Given a custom time format with hours and minutes represented in base 7 with fixed digit lengths, count the number of valid hour-minute pairs where all digits used are distinct.",
   "tags": [
     "math",
     "combinatorics",
     "dynamic-programming"
   ],
   "patterns": [
+    "brute-force",
     "digit-dp",
-    "combinatorics",
-    "base-conversion"
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048069,
+    "generated_at_unix": 1785050379,
     "pattern_confidence": {
-      "digit-dp": 0.9,
-      "combinatorics": 0.85,
-      "base-conversion": 0.8
+      "brute-force": 0.9,
+      "digit-dp": 0.7,
+      "combinatorics": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

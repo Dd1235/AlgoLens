@@ -10,25 +10,25 @@
     "data structures",
     "implementation"
   ],
-  "statement": "Given a sequence of problem difficulties created one by one, determine after each creation if a complete set of distinct difficulties from 1 to n is available to hold a contest round and remove them from the pool.",
+  "statement": "Given a sequence of problem difficulties created one by one, determine after each creation whether a complete set of problems with all distinct difficulties from 1 to n is available to hold a contest round and remove them from the pool.",
   "tags": [
-    "array",
+    "data-structures",
     "implementation",
-    "data-structures"
+    "set"
   ],
   "patterns": [
     "greedy",
-    "set-maintenance",
-    "online-processing"
+    "simulation",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047764,
+    "generated_at_unix": 1785050067,
     "pattern_confidence": {
       "greedy": 0.9,
-      "set-maintenance": 0.85,
-      "online-processing": 0.8
+      "simulation": 0.85,
+      "counting": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -11,29 +11,27 @@
     "divide and conquer",
     "dsu"
   ],
-  "statement": "Maintain a dynamic set of 2D points with add and remove operations, and after each update, compute the size of the set extended by repeatedly adding missing points that complete axis-aligned rectangles formed by existing points.",
+  "statement": "Maintain a dynamic set of 2D points with add and remove operations, and after each update, compute the size of the set extended by repeatedly adding points that complete axis-aligned rectangles formed by existing points.",
   "tags": [
     "data-structures",
     "geometry",
     "union-find",
-    "divide-and-conquer",
+    "dynamic",
     "graph"
   ],
   "patterns": [
     "union-find",
     "divide-and-conquer",
-    "dynamic-set",
-    "rectangle-completion"
+    "offline-queries"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048884,
+    "generated_at_unix": 1785050973,
     "pattern_confidence": {
       "union-find": 0.9,
-      "divide-and-conquer": 0.85,
-      "dynamic-set": 0.8,
-      "rectangle-completion": 0.75
+      "divide-and-conquer": 0.7,
+      "offline-queries": 0.6
     }
   },
   "source_topic": "Formwise / Graph Level 2"

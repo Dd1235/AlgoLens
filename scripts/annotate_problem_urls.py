@@ -278,23 +278,21 @@ def platform_from_url(url: str) -> str:
 
 def base_from_url(item: UrlItem, cf_cache: dict[tuple[int, str], dict[str, Any]]) -> dict[str, Any]:
     platform_from_source = platform_from_url(item.url)
-    curated = curated_problem_by_url(item.url)
-    if curated and platform_from_source == "codeforces":
-        platform = curated.get("platform") or platform_from_url(item.url)
-        rating = curated.get("rating")
-        difficulty = curated.get("difficulty") if platform != "codeforces" or rating is not None else None
-        return {
-            "id": curated.get("id") or slugify(f"{platform_from_url(item.url)}-{curated.get('title', item.url)}"),
-            "title": curated.get("title") or item.url,
-            "slug": curated.get("slug") or slugify(curated.get("title", item.url)),
-            "platform": platform,
-            "source_url": item.url,
-            "source_topic": item.source_topic,
-            "difficulty": difficulty,
-            "rating": rating,
-            "source_tags": curated.get("source_tags") or curated.get("tags", []),
-            "source_text": curated.get("statement", ""),
-        }
+    if platform_from_source == "codeforces":
+        base = codeforces_metadata(item, cf_cache)
+        # The hand-written seeds in data/problems/ predate both the staged
+        # dataset and the current id scheme, so they are a statement fallback
+        # and nothing more. Letting them supply the id resurrected
+        # cf-510c-fox-and-names on a re-run and failed validation.
+        if not base.get("source_text"):
+            curated = curated_problem_by_url(item.url)
+            if curated:
+                base["source_text"] = curated.get("statement", "")
+                base["source_tags"] = base["source_tags"] or curated.get("source_tags") or curated.get("tags", [])
+                base["title"] = base["title"] or curated.get("title") or item.url
+                if base.get("rating") is None:
+                    base["rating"] = base["difficulty"] = curated.get("rating")
+        return base
 
     platform = platform_from_source
     if platform == "leetcode":

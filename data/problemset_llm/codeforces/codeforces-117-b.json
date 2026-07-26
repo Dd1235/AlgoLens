@@ -10,28 +10,25 @@
     "brute force",
     "number theory"
   ],
-  "statement": "Two players alternately choose nine-digit numbers not exceeding given limits a and b. The second player wins if the concatenation of their numbers is divisible by a given modulus; otherwise, the first player wins. Determine the winner assuming optimal play and find the lexicographically smallest winning move for the first player if applicable.",
+  "statement": "Two players alternately choose nine-digit strings not exceeding given limits a and b. The concatenation of these strings is checked for divisibility by a given modulus. Determine the winner assuming optimal play, and if the first player wins, find their lexicographically smallest winning choice.",
   "tags": [
-    "game-theory",
     "number-theory",
-    "string",
-    "dynamic-programming"
+    "game-theory",
+    "string"
   ],
   "patterns": [
-    "game-dp",
     "modular-arithmetic",
-    "lexicographic-order",
-    "state-compression"
+    "game-dp",
+    "lexicographic-ordering"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048071,
+    "generated_at_unix": 1785050381,
     "pattern_confidence": {
-      "game-dp": 0.95,
-      "modular-arithmetic": 0.9,
-      "lexicographic-order": 0.85,
-      "state-compression": 0.8
+      "modular-arithmetic": 0.95,
+      "game-dp": 0.9,
+      "lexicographic-ordering": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

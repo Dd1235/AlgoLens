@@ -10,25 +10,25 @@
     "binary search",
     "brute force"
   ],
-  "statement": "Given a hamburger recipe and available ingredients with prices, determine the maximum number of hamburgers that can be made with a limited budget by buying additional ingredients as needed.",
+  "statement": "Given a recipe string and initial quantities and prices of ingredients, determine the maximum number of hamburgers that can be made with a given budget, considering unlimited purchases from the store.",
   "tags": [
-    "string",
     "math",
-    "binary-search"
+    "binary-search",
+    "greedy"
   ],
   "patterns": [
-    "binary-search-answer",
-    "counting",
-    "greedy"
+    "binary-search",
+    "greedy",
+    "arithmetic-calculation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048868,
+    "generated_at_unix": 1785050959,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "counting": 0.85,
-      "greedy": 0.7
+      "binary-search": 0.95,
+      "greedy": 0.9,
+      "arithmetic-calculation": 0.85
     }
   },
   "source_topic": "Formwise / Binary Search"

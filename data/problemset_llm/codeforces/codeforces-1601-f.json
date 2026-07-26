@@ -12,25 +12,25 @@
     "math",
     "meet-in-the-middle"
   ],
-  "statement": "Given the lexicographical ordering of integers from 1 to n, compute the sum of (i - a_i) modulo 998244353 for all i, then take the result modulo 10^9+7.",
+  "statement": "Given the lexicographical ordering of integers from 1 to n, compute the sum of (i - a_i) modulo 998244353 for all i, then take the result modulo 10^9 + 7.",
   "tags": [
     "math",
     "number-theory",
-    "array"
+    "string"
   ],
   "patterns": [
     "modular-arithmetic",
-    "prefix-sum",
-    "lexicographical-order"
+    "lexicographic-ordering",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048417,
+    "generated_at_unix": 1785050725,
     "pattern_confidence": {
       "modular-arithmetic": 0.95,
-      "prefix-sum": 0.7,
-      "lexicographical-order": 0.85
+      "lexicographic-ordering": 0.9,
+      "prefix-sum": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"
