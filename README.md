@@ -48,8 +48,9 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 
 ## Small things that make it nice to use
 
+- **The URL is the state.** Query, judges, pattern, ranker and filter all live in the address bar, so refresh keeps your place, back leaves in one step, and copying the URL shares exactly what you're looking at (`/?q=knapsack&platform=codeforces,atcoder&ranker=dense`).
 - **It's a terminal.** Monospace everything, a prompt-style path that follows you (`~/search "graph cycle"`, `~/done`, `~/profile`), a typewriter status line, light/dark themes. Type `:help` and a man page types itself out.
-- **Fast on purpose.** Keyword search answers in ~0.1 ms and semantic in ~2 ms; profile revisits paint instantly from a local snapshot and refresh in the background; every view is a shareable deep link (`/?pattern=wqs-binary-search&ranker=dense`).
+- **Fast on purpose.** Keyword search answers in ~0.1 ms and semantic in ~2 ms; profile revisits paint instantly from a local snapshot and refresh in the background.
 - **It shows its work.** Latency and ranker on every result set, query expansions made visible, a debug page exposing per-term scoring math, and a public stats page with real usage and live latency percentiles — including cold-start counts, because the free-tier instance sleeps and honesty beats mystery.
 
 ## Feedback → fix
@@ -75,6 +76,7 @@ or wording, not ranking — that turned out to be the pattern.
 | "where is filter by judge?"                                         | It shipped as clickable result tags only, which nobody could see — added a plain dropdown next to the search box                        |
 | Judge filter was one-at-a-time, and saved lists ignored it entirely | Judges are now a multi-select chip set, and `:bookmarks` / `:done` / `:all` respect judge + done filters                                |
 | The compare checkbox was clutter for anyone not tuning the engine   | Moved to a `:compare <query>` command                                                                                                   |
+| Refreshing threw away the search | The address bar now mirrors query + judges + pattern + ranker + filter, so refresh and bookmarking keep the view |
 
 ## Measured
 
