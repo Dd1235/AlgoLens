@@ -1,0 +1,4098 @@
+{
+ "codeforces-1177-b": {
+  "topic": "Binary Search",
+  "form": "Binary Search On Answer",
+  "curated": [
+   "binary-search-on-answer"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-ugly-number-iii": {
+  "topic": "Binary Search",
+  "form": "Binary Search On Answer",
+  "curated": [
+   "binary-search-on-answer"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc203_d": {
+  "topic": "Binary Search",
+  "form": "Binary Search On Answer",
+  "curated": [
+   "binary-search-on-answer"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-size-subarray-sum": {
+  "topic": "Binary Search",
+  "form": "Binary Search on Every Start",
+  "curated": [
+   "binary-search-on-every-start"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-get-equal-substrings-within-budget": {
+  "topic": "Binary Search",
+  "form": "Binary Search on Every Start",
+  "curated": [
+   "binary-search-on-every-start"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-separate-squares-i": {
+  "topic": "Binary Search",
+  "form": "Binary Search On Real Domain",
+  "curated": [
+   "binary-search-on-real-domain"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc294_f": {
+  "topic": "Binary Search",
+  "form": "Binary Search On Real Domain",
+  "curated": [
+   "binary-search-on-real-domain"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-2132-e": {
+  "topic": "Binary Search",
+  "form": "Ternary Search",
+  "curated": [
+   "ternary-search"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-578-c": {
+  "topic": "Binary Search",
+  "form": "Ternary Search",
+  "curated": [
+   "ternary-search"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc205_d": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-371-c": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc149_e": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc215_f": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc248_d": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-285084-a": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-165-b": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-magnetic-force-between-two-balls": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1731-d": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1520-f1": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-speed-to-arrive-on-time": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-find-building-where-alice-and-bob-can-meet": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-fruits-harvested-after-at-most-k-steps": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-702-c": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-782-b": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-k-th-smallest-remaining-even-integer-in-subarray-queries": {
+  "topic": "Binary Search",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-inversion-count-in-subarrays-of-fixed-length": {
+  "topic": "Two Pointers",
+  "form": "Form 0",
+  "curated": [
+   "form-0"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-367-b": {
+  "topic": "Two Pointers",
+  "form": "Form 0",
+  "curated": [
+   "form-0"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc444_e": {
+  "topic": "Two Pointers",
+  "form": "Form 1",
+  "curated": [
+   "form-1"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-subarrays-with-cost-less-than-or-equal-to-k": {
+  "topic": "Two Pointers",
+  "form": "Form 1",
+  "curated": [
+   "form-1"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc430_c": {
+  "topic": "Two Pointers",
+  "form": "Form 1",
+  "curated": [
+   "form-1"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-subarrays-with-k-different-integers": {
+  "topic": "Two Pointers",
+  "form": "Form 1",
+  "curated": [
+   "form-1"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-number-of-subsequences-that-satisfy-the-given-sum-condition": {
+  "topic": "Two Pointers",
+  "form": "Form 2",
+  "curated": [
+   "form-2"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-boats-to-save-people": {
+  "topic": "Two Pointers",
+  "form": "Form 2",
+  "curated": [
+   "form-2"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1324-d": {
+  "topic": "Two Pointers",
+  "form": "Form 2",
+  "curated": [
+   "form-2"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-subsequence-with-the-minimum-score": {
+  "topic": "Two Pointers",
+  "form": "Form 3",
+  "curated": [
+   "form-3"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-most-profit-assigning-work": {
+  "topic": "Two Pointers",
+  "form": "Form 3",
+  "curated": [
+   "form-3"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc302_d": {
+  "topic": "Two Pointers",
+  "form": "Form 3",
+  "curated": [
+   "form-3"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-find-the-median-of-the-uniqueness-array": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-subarrays-with-score-less-than-k": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-k-radius-subarray-averages": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-window-substring": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-longest-substring-with-at-least-k-repeating-characters": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-6-e": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc130_d": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-max-value-of-equation": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-number-of-robots-within-budget": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-length-of-the-longest-valid-substring": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-subarray-length-with-distinct-sum-at-least-k": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-prime-gap-balanced-subarrays": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1333-c": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-3405": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1777-c": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1073-c": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-3219": {
+  "topic": "Two Pointers",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc153_d": {
+  "topic": "Recursion Backtracking",
+  "form": "DnC",
+  "curated": [
+   "dnc"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-2165": {
+  "topic": "Recursion Backtracking",
+  "form": "DnC",
+  "curated": [
+   "dnc"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-768-b": {
+  "topic": "Recursion Backtracking",
+  "form": "Kth Form",
+  "curated": [
+   "kth-form"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-896-a": {
+  "topic": "Recursion Backtracking",
+  "form": "Kth Form",
+  "curated": [
+   "kth-form"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc115_d": {
+  "topic": "Recursion Backtracking",
+  "form": "Kth Form",
+  "curated": [
+   "kth-form"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-k-th-symbol-in-grammar": {
+  "topic": "Recursion Backtracking",
+  "form": "Kth Form",
+  "curated": [
+   "kth-form"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-beautiful-arrangement": {
+  "topic": "Recursion Backtracking",
+  "form": "Backtracking",
+  "curated": [
+   "backtracking"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-target-sum": {
+  "topic": "Recursion Backtracking",
+  "form": "Backtracking",
+  "curated": [
+   "backtracking"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-ambiguous-coordinates": {
+  "topic": "Recursion Backtracking",
+  "form": "Backtracking",
+  "curated": [
+   "backtracking"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc114_c": {
+  "topic": "Recursion Backtracking",
+  "form": "Backtracking",
+  "curated": [
+   "backtracking"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-36-b": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1624": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-partition-array-into-two-equal-product-subsets": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc197_c": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc159_e": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc119_c": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc211_e": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-split-array-into-fibonacci-sequence": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-additive-number": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc450_e": {
+  "topic": "Recursion Backtracking",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-coloring-a-border": {
+  "topic": "Graph Level-1",
+  "form": "DFS",
+  "curated": [
+   "dfs"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-greatest-common-divisor-traversal": {
+  "topic": "Graph Level-1",
+  "form": "DFS",
+  "curated": [
+   "dfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-partition-factor": {
+  "topic": "Graph Level-1",
+  "form": "DFS",
+  "curated": [
+   "dfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-longest-cycle-in-a-graph": {
+  "topic": "Graph Level-1",
+  "form": "DFS",
+  "curated": [
+   "dfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc157_d": {
+  "topic": "Graph Level-1",
+  "form": "DFS",
+  "curated": [
+   "dfs"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-word-ladder": {
+  "topic": "Graph Level-1",
+  "form": "BFS",
+  "curated": [
+   "bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-sliding-puzzle": {
+  "topic": "Graph Level-1",
+  "form": "BFS",
+  "curated": [
+   "bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1037-d": {
+  "topic": "Graph Level-1",
+  "form": "BFS",
+  "curated": [
+   "bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1205-b": {
+  "topic": "Graph Level-1",
+  "form": "BFS",
+  "curated": [
+   "bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc453_d": {
+  "topic": "Graph Level-1",
+  "form": "BFS",
+  "curated": [
+   "bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1283-d": {
+  "topic": "Graph Level-1",
+  "form": "Multi-Source BFS",
+  "curated": [
+   "multi-source-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1194": {
+  "topic": "Graph Level-1",
+  "form": "Multi-Source BFS",
+  "curated": [
+   "multi-source-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-agc033_a": {
+  "topic": "Graph Level-1",
+  "form": "Multi-Source BFS",
+  "curated": [
+   "multi-source-bfs"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1272-e": {
+  "topic": "Graph Level-1",
+  "form": "Multi-Source BFS",
+  "curated": [
+   "multi-source-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-796-d": {
+  "topic": "Graph Level-1",
+  "form": "Multi-Source BFS",
+  "curated": [
+   "multi-source-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-strange-printer-ii": {
+  "topic": "Graph Level-1",
+  "form": "Topological-Ordering",
+  "curated": [
+   "topological-ordering"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-parallel-courses-iii": {
+  "topic": "Graph Level-1",
+  "form": "Topological-Ordering",
+  "curated": [
+   "topological-ordering"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-sort-items-by-groups-respecting-dependencies": {
+  "topic": "Graph Level-1",
+  "form": "Topological-Ordering",
+  "curated": [
+   "topological-ordering"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc209_e": {
+  "topic": "Graph Level-1",
+  "form": "Topological-Ordering",
+  "curated": [
+   "topological-ordering"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-510-c": {
+  "topic": "Graph Level-1",
+  "form": "Topological-Ordering",
+  "curated": [
+   "topological-ordering"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-time-to-visit-a-cell-in-a-grid": {
+  "topic": "Graph Level-1",
+  "form": "Shortest-Path-Algorithm",
+  "curated": [
+   "shortest-path-algorithm"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc137_e": {
+  "topic": "Graph Level-1",
+  "form": "Shortest-Path-Algorithm",
+  "curated": [
+   "shortest-path-algorithm"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-449-b": {
+  "topic": "Graph Level-1",
+  "form": "Shortest-Path-Algorithm",
+  "curated": [
+   "shortest-path-algorithm"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc204_e": {
+  "topic": "Graph Level-1",
+  "form": "Shortest-Path-Algorithm",
+  "curated": [
+   "shortest-path-algorithm"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc208_d": {
+  "topic": "Graph Level-1",
+  "form": "Shortest-Path-Algorithm",
+  "curated": [
+   "shortest-path-algorithm"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-cost-to-make-at-least-one-valid-path-in-a-grid": {
+  "topic": "Graph Level-1",
+  "form": "01-BFS",
+  "curated": [
+   "01-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-obstacle-removal-to-reach-corner": {
+  "topic": "Graph Level-1",
+  "form": "01-BFS",
+  "curated": [
+   "01-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc213_e": {
+  "topic": "Graph Level-1",
+  "form": "01-BFS",
+  "curated": [
+   "01-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-173-b": {
+  "topic": "Graph Level-1",
+  "form": "01-BFS",
+  "curated": [
+   "01-bfs"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc214_d": {
+  "topic": "Graph Level-1",
+  "form": "DSU",
+  "curated": [
+   "dsu"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-making-a-large-island": {
+  "topic": "Graph Level-1",
+  "form": "DSU",
+  "curated": [
+   "dsu"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-largest-component-size-by-common-factor": {
+  "topic": "Graph Level-1",
+  "form": "DSU",
+  "curated": [
+   "dsu"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-remove-max-number-of-edges-to-keep-graph-fully-traversable": {
+  "topic": "Graph Level-1",
+  "form": "DSU",
+  "curated": [
+   "dsu"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1081-d": {
+  "topic": "Graph Level-1",
+  "form": "DSU",
+  "curated": [
+   "dsu"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-17-b": {
+  "topic": "Graph Level-1",
+  "form": "MST",
+  "curated": [
+   "mst"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-arc076_b": {
+  "topic": "Graph Level-1",
+  "form": "MST",
+  "curated": [
+   "mst"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1245-d": {
+  "topic": "Graph Level-1",
+  "form": "MST",
+  "curated": [
+   "mst"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc235_e": {
+  "topic": "Graph Level-1",
+  "form": "MST",
+  "curated": [
+   "mst"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximize-spanning-tree-stability-with-upgrades": {
+  "topic": "Graph Level-1",
+  "form": "MST",
+  "curated": [
+   "mst"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc206_d": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc126_e": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-divide-nodes-into-the-maximum-number-of-groups": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1675-f": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-number-of-increasing-paths-in-a-grid": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-909-e": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-moves-to-move-a-box-to-their-target-location": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-check-if-the-rectangle-corner-is-reachable": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-rank-transform-of-a-matrix": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc364_f": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-590-c": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-arc090_c": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-25-c": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc143_e": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1520-g": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc302_f": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc317_e": {
+  "topic": "Graph Level-1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc121_d": {
+  "topic": "Bit-Manipulation",
+  "form": "Cyclic-Property",
+  "curated": [
+   "cyclic-property"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1146": {
+  "topic": "Bit-Manipulation",
+  "form": "Cyclic-Property",
+  "curated": [
+   "cyclic-property"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k": {
+  "topic": "Bit-Manipulation",
+  "form": "Cyclic-Property",
+  "curated": [
+   "cyclic-property"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc117_d": {
+  "topic": "Bit-Manipulation",
+  "form": "Contribution-On-Bit",
+  "curated": [
+   "contribution-on-bit"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc164_f": {
+  "topic": "Bit-Manipulation",
+  "form": "Contribution-On-Bit",
+  "curated": [
+   "contribution-on-bit"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-424-c": {
+  "topic": "Bit-Manipulation",
+  "form": "Operation-Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-number-of-excellent-pairs": {
+  "topic": "Bit-Manipulation",
+  "form": "Operation-Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc126_f": {
+  "topic": "Bit-Manipulation",
+  "form": "Operation-Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-484-a": {
+  "topic": "Bit-Manipulation",
+  "form": "MSB-To-LSB-Or-LSB-To-MSB",
+  "curated": [
+   "msb-to-lsb-or-lsb-to-msb"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-276-d": {
+  "topic": "Bit-Manipulation",
+  "form": "MSB-To-LSB-Or-LSB-To-MSB",
+  "curated": [
+   "msb-to-lsb-or-lsb-to-msb"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-operations-to-form-subsequence-with-target-sum": {
+  "topic": "Bit-Manipulation",
+  "form": "MSB-To-LSB-Or-LSB-To-MSB",
+  "curated": [
+   "msb-to-lsb-or-lsb-to-msb"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1554-c": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1325-d": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc147_d": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-triples-with-bitwise-and-equal-to-zero": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-243-a": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-2419": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-number-of-subarrays-with-and-value-of-k": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-find-subarray-with-bitwise-or-closest-to-k": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-988-d": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-good-subarrays": {
+  "topic": "Bit-Manipulation",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-sequences-to-k": {
+  "topic": "DP Level 1",
+  "form": "Form-1",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-sum-of-3-non-overlapping-subarrays": {
+  "topic": "DP Level 1",
+  "form": "Form-1",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-find-the-maximum-sequence-value-of-array": {
+  "topic": "DP Level 1",
+  "form": "Form-1",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc175_e": {
+  "topic": "DP Level 1",
+  "form": "Form-1",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc159_f": {
+  "topic": "DP Level 1",
+  "form": "Form-1",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-longest-unequal-adjacent-groups-subsequence-ii": {
+  "topic": "DP Level 1",
+  "form": "Form-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-number-of-removals-to-make-mountain-array": {
+  "topic": "DP Level 1",
+  "form": "Form-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-jump-game-v": {
+  "topic": "DP Level 1",
+  "form": "Form-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-269-b": {
+  "topic": "DP Level 1",
+  "form": "Form-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-4-d": {
+  "topic": "DP Level 1",
+  "form": "Form-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc185_e": {
+  "topic": "DP Level 1",
+  "form": "Form-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-56-d": {
+  "topic": "DP Level 1",
+  "form": "Form-3",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-regular-expression-matching": {
+  "topic": "DP Level 1",
+  "form": "Form-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1525-d": {
+  "topic": "DP Level 1",
+  "form": "Form-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc130_e": {
+  "topic": "DP Level 1",
+  "form": "Form-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-607-b": {
+  "topic": "DP Level 1",
+  "form": "Form-4",
+  "curated": [
+   "form-4"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc217_f": {
+  "topic": "DP Level 1",
+  "form": "Form-4",
+  "curated": [
+   "form-4"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-minimum-cost-to-merge-stones": {
+  "topic": "DP Level 1",
+  "form": "Form-4",
+  "curated": [
+   "form-4"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_n": {
+  "topic": "DP Level 1",
+  "form": "Form-4",
+  "curated": [
+   "form-4"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-stone-game-iii": {
+  "topic": "DP Level 1",
+  "form": "Form-5",
+  "curated": [
+   "form-5"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc206_f": {
+  "topic": "DP Level 1",
+  "form": "Form-5",
+  "curated": [
+   "form-5"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-dp_l": {
+  "topic": "DP Level 1",
+  "form": "Form-5",
+  "curated": [
+   "form-5"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-removals-to-achieve-target-xor": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-count-the-number-of-winning-sequences": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-sum-of-values-by-dividing-array": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-burst-balloons": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-5-c": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-interleaving-string": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1446-b": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-knight-probability-in-chessboard": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc197_e": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-stone-game-iv": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1132-f": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc125_d": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc169_f": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-number-of-ways-to-rearrange-sticks-with-k-sticks-visible": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc192_f": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-arc081_c": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc118_d": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-31-e": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-maximum-height-by-stacking-cuboids": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-number-of-ways-of-cutting-a-pizza": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-paint-house-iii": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-valid-permutations-for-di-sequence": {
+  "topic": "DP Level 1",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-81-a": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "cses-1091": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "cses-1749": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "atcoder-abc073_c": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "codeforces-4-c": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "atcoder-abc206_c": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "cses-1645": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "codeforces-637-b": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Easy"
+ },
+ "codeforces-1175-b": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc171_d": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1179-a": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-821-c": {
+  "topic": "STL",
+  "form": "Level-1",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-longest-balanced-substring-ii": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc237_d": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc157_e": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-132-pattern": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc158_d": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1629": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc216_d": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-arc061_b": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-number-of-visible-people-in-a-queue": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-smallest-range-covering-elements-from-k-lists": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-subarray-with-elements-greater-than-varying-threshold": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-2186": {
+  "topic": "STL",
+  "form": "Level-2",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-2042-d": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc170_e": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1154-e": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-the-skyline-problem": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-find-x-sum-of-all-k-long-subarrays-ii": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-797-c": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximal-rectangle": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-459-d": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-arc081_d": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1195-e": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-915-e": {
+  "topic": "STL",
+  "form": "Level-3",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1084-c": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-300-c": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc167_e": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-869-c": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc202_d": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-272-d": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc172_e": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc156_e": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1717": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1342-e": {
+  "topic": "Math",
+  "form": "Combinatorics",
+  "curated": [
+   "combinatorics"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc186_e": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc142_d": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1713": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-632-d": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1082": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-495-b": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc133_c": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-343-a": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc148_e": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-584-d": {
+  "topic": "Math",
+  "form": "Number-Theory",
+  "curated": [
+   "number-theory"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc110_d": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc206_e": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1260-c": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc170_d": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-451-e": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-340-c": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc179_e": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc096_d": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc125_c": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc169_d": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-439-e": {
+  "topic": "Math",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-817-d": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Contribution-Technique",
+  "curated": [
+   "contribution-technique"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-and-minimum-sums-of-at-most-size-k-subsequences": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Contribution-Technique",
+  "curated": [
+   "contribution-technique"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-power-of-heroes": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Contribution-Technique",
+  "curated": [
+   "contribution-technique"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-score-of-a-good-subarray": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Contribution-Technique",
+  "curated": [
+   "contribution-technique"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-sum-of-total-strength-of-wizards": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Contribution-Technique",
+  "curated": [
+   "contribution-technique"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1398-c": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Prefix-Sum",
+  "curated": [
+   "prefix-sum"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1661": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Prefix-Sum",
+  "curated": [
+   "prefix-sum"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1652": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Prefix-Sum",
+  "curated": [
+   "prefix-sum"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-increment-submatrices-by-one": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Prefix-Sum",
+  "curated": [
+   "prefix-sum"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-stamping-the-grid": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Prefix-Sum",
+  "curated": [
+   "prefix-sum"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-number-of-submatrices-that-sum-to-target": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-and-minimum-sums-of-at-most-size-k-subarrays": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-max-sum-of-rectangle-no-larger-than-k": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-sum-of-subsequence-widths": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-835-c": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc106_d": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-903-d": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc188_d": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-count-subarrays-with-fixed-bounds": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-463-c": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-stable-subarrays-with-equal-boundary-and-interior-sum": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1648-a": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-total-hamming-distance": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-count-the-number-of-beautiful-subarrays": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1644": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc194_c": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-maximum-subarray-sum-with-length-divisible-by-k": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-make-sum-divisible-by-p": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-sum-of-absolute-differences-in-a-sorted-array": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-corporate-flight-bookings": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-vowels-of-all-substrings": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1551-c": {
+  "topic": "Contribution Technique & Prefix",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-2093-g": {
+  "topic": "Trie",
+  "form": "Bit-Trie",
+  "curated": [
+   "bit-trie"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-282-e": {
+  "topic": "Trie",
+  "form": "Bit-Trie",
+  "curated": [
+   "bit-trie"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1416-c": {
+  "topic": "Trie",
+  "form": "Bit-Trie",
+  "curated": [
+   "bit-trie"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-maximum-subarray-xor-with-bounded-range": {
+  "topic": "Trie",
+  "form": "Bit-Trie",
+  "curated": [
+   "bit-trie"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-271-d": {
+  "topic": "Trie",
+  "form": "String-Trie",
+  "curated": [
+   "string-trie"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-palindrome-pairs": {
+  "topic": "Trie",
+  "form": "String-Trie",
+  "curated": [
+   "string-trie"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-prefix-and-suffix-search": {
+  "topic": "Trie",
+  "form": "String-Trie",
+  "curated": [
+   "string-trie"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-455-b": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1902-e": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-706-d": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-stream-of-characters": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-genetic-difference-query": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1285-d": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-514-c": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-633-c": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-pairs-with-xor-in-a-range": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-37-c": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-965-e": {
+  "topic": "Trie",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-126-b": {
+  "topic": "String",
+  "form": "KMP-Z-Algorithm",
+  "curated": [
+   "kmp-z-algorithm"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-432-d": {
+  "topic": "String",
+  "form": "KMP-Z-Algorithm",
+  "curated": [
+   "kmp-z-algorithm"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-number-of-subarrays-that-match-a-pattern-ii": {
+  "topic": "String",
+  "form": "KMP-Z-Algorithm",
+  "curated": [
+   "kmp-z-algorithm"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc135_f": {
+  "topic": "String",
+  "form": "KMP-Z-Algorithm",
+  "curated": [
+   "kmp-z-algorithm"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1733": {
+  "topic": "String",
+  "form": "KMP-Z-Algorithm",
+  "curated": [
+   "kmp-z-algorithm"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-longest-duplicate-substring": {
+  "topic": "String",
+  "form": "Hashing",
+  "curated": [
+   "hashing"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-580-e": {
+  "topic": "String",
+  "form": "Hashing",
+  "curated": [
+   "hashing"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-2420": {
+  "topic": "String",
+  "form": "Hashing",
+  "curated": [
+   "hashing"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc284_f": {
+  "topic": "String",
+  "form": "Hashing",
+  "curated": [
+   "hashing"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1326-d2": {
+  "topic": "String",
+  "form": "Manacher's",
+  "curated": [
+   "manacher-s"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-palindrome-partitioning-iv": {
+  "topic": "String",
+  "form": "Manacher's",
+  "curated": [
+   "manacher-s"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-number-of-non-overlapping-palindrome-substrings": {
+  "topic": "String",
+  "form": "Manacher's",
+  "curated": [
+   "manacher-s"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1732": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-471-d": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-longest-common-subpath": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-2106": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1200-e": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-distinct-echo-substrings": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-727-e": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-113-b": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-526-d": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1080-e": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-245-h": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-808-g": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-check-if-dfs-strings-are-palindromes": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-825-f": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-7-d": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-25-e": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1056-e": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-835-d": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc141_e": {
+  "topic": "String",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-339-d": {
+  "topic": "Segment Trees",
+  "form": "Basic-Point-Updates-and-Range-Queries",
+  "curated": [
+   "basic-point-updates-and-range-queries"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-380-c": {
+  "topic": "Segment Trees",
+  "form": "Basic-Point-Updates-and-Range-Queries",
+  "curated": [
+   "basic-point-updates-and-range-queries"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1234-d": {
+  "topic": "Segment Trees",
+  "form": "Basic-Point-Updates-and-Range-Queries",
+  "curated": [
+   "basic-point-updates-and-range-queries"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1288-e": {
+  "topic": "Segment Trees",
+  "form": "Basic-Point-Updates-and-Range-Queries",
+  "curated": [
+   "basic-point-updates-and-range-queries"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-range-module": {
+  "topic": "Segment Trees",
+  "form": "Lazy-Propagation-And-Range-Updates",
+  "curated": [
+   "lazy-propagation-and-range-updates"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-242-e": {
+  "topic": "Segment Trees",
+  "form": "Lazy-Propagation-And-Range-Updates",
+  "curated": [
+   "lazy-propagation-and-range-updates"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1736": {
+  "topic": "Segment Trees",
+  "form": "Lazy-Propagation-And-Range-Updates",
+  "curated": [
+   "lazy-propagation-and-range-updates"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-61-e": {
+  "topic": "Segment Trees",
+  "form": "Kth-Type-And-Merge-Sort-Trees",
+  "curated": [
+   "kth-type-and-merge-sort-trees"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1000-f": {
+  "topic": "Segment Trees",
+  "form": "Kth-Type-And-Merge-Sort-Trees",
+  "curated": [
+   "kth-type-and-merge-sort-trees"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-rectangle-area-ii": {
+  "topic": "Segment Trees",
+  "form": "Coordinate-Compression-and-Offline-Queries",
+  "curated": [
+   "coordinate-compression-and-offline-queries"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1144": {
+  "topic": "Segment Trees",
+  "form": "Coordinate-Compression-and-Offline-Queries",
+  "curated": [
+   "coordinate-compression-and-offline-queries"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-343-d": {
+  "topic": "Segment Trees",
+  "form": "Coordinate-Compression-and-Offline-Queries",
+  "curated": [
+   "coordinate-compression-and-offline-queries"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-19-d": {
+  "topic": "Segment Trees",
+  "form": "Coordinate-Compression-and-Offline-Queries",
+  "curated": [
+   "coordinate-compression-and-offline-queries"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1042-d": {
+  "topic": "Segment Trees",
+  "form": "Coordinate-Compression-and-Offline-Queries",
+  "curated": [
+   "coordinate-compression-and-offline-queries"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-substrings-that-satisfy-k-constraint-ii": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-palindromic-path-queries-in-a-tree": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-558-e": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-separate-squares-ii": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-893-f": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-2206": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-handling-sum-queries-after-update": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc339_g": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-12-d": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-650-d": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-fancy-sequence": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-2166": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-my-calendar-iii": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-of-smaller-numbers-after-self": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1439-c": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1208-d": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1114-f": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-813-e": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1143": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc343_f": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc346_g": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-number-of-pairs-satisfying-inequality": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc294_g": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc253_f": {
+  "topic": "Segment Trees",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1674": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1130": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-839-c": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1118-f1": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1098-a": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1328-e": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1593-e": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1131": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-height-trees": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1404-b": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1805-d": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1083-a": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-agc005_c": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1294-f": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1401-d": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-915-f": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-count-valid-paths-in-a-tree": {
+  "topic": "Trees",
+  "form": "Fundamental-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1076-e": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-tree-of-coprimes": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-580-c": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1687": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1688": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-208-e": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-832-d": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-519-e": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1133": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1324-f": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1187-e": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-dp_v": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-219-d": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc138_d": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-191-c": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-739-b": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc187_e": {
+  "topic": "Trees",
+  "form": "Intermediate-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1137": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-620-e": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-877-e": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-383-c": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1138": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-396-c": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc202_e": {
+  "topic": "Trees",
+  "form": "Advanced-Ideas",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-arc074_c": {
+  "topic": "DP Optimizations",
+  "form": "State-Space-Reduction",
+  "curated": [
+   "state-space-reduction"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-cherry-pickup": {
+  "topic": "DP Optimizations",
+  "form": "State-Space-Reduction",
+  "curated": [
+   "state-space-reduction"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-super-egg-drop": {
+  "topic": "DP Optimizations",
+  "form": "State-Space-Reduction",
+  "curated": [
+   "state-space-reduction"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-505-c": {
+  "topic": "DP Optimizations",
+  "form": "State-Space-Reduction",
+  "curated": [
+   "state-space-reduction"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_e": {
+  "topic": "DP Optimizations",
+  "form": "State-Rotation",
+  "curated": [
+   "state-rotation"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-number-of-refueling-stops": {
+  "topic": "DP Optimizations",
+  "form": "State-Rotation",
+  "curated": [
+   "state-rotation"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-837-d": {
+  "topic": "DP Optimizations",
+  "form": "State-Rotation",
+  "curated": [
+   "state-rotation"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-make-array-strictly-increasing": {
+  "topic": "DP Optimizations",
+  "form": "State-Rotation",
+  "curated": [
+   "state-rotation"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1303-e": {
+  "topic": "DP Optimizations",
+  "form": "State-Rotation",
+  "curated": [
+   "state-rotation"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1158": {
+  "topic": "DP Optimizations",
+  "form": "Space-Optimization",
+  "curated": [
+   "space-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1093": {
+  "topic": "DP Optimizations",
+  "form": "Space-Optimization",
+  "curated": [
+   "space-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-valid-palindrome-iii": {
+  "topic": "DP Optimizations",
+  "form": "Space-Optimization",
+  "curated": [
+   "space-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-730-j": {
+  "topic": "DP Optimizations",
+  "form": "Space-Optimization",
+  "curated": [
+   "space-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_m": {
+  "topic": "DP Optimizations",
+  "form": "Transition-Optimization",
+  "curated": [
+   "transition-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_t": {
+  "topic": "DP Optimizations",
+  "form": "Transition-Optimization",
+  "curated": [
+   "transition-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-number-of-points-with-cost": {
+  "topic": "DP Optimizations",
+  "form": "Transition-Optimization",
+  "curated": [
+   "transition-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-543-a": {
+  "topic": "DP Optimizations",
+  "form": "Transition-Optimization",
+  "curated": [
+   "transition-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_x": {
+  "topic": "DP Optimizations",
+  "form": "Sorting-Based DP Optimization",
+  "curated": [
+   "sorting-based-dp-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-626-f": {
+  "topic": "DP Optimizations",
+  "form": "Sorting-Based DP Optimization",
+  "curated": [
+   "sorting-based-dp-optimization"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-russian-doll-envelopes": {
+  "topic": "DP Optimizations",
+  "form": "Sorting-Based DP Optimization",
+  "curated": [
+   "sorting-based-dp-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-459-e": {
+  "topic": "DP Optimizations",
+  "form": "Sorting-Based DP Optimization",
+  "curated": [
+   "sorting-based-dp-optimization"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-painting-the-walls": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-366-c": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1096-d": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1509-c": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-arc057_b": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-tallest-billboard": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-510-d": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1551-e": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1381-b": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimize-the-difference": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_y": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-number-of-days-to-eat-n-oranges": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-jump-game-vii": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1140": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1475-g": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1295-c": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-977-f": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-467-c": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-longest-palindromic-subsequence": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-best-time-to-buy-and-sell-stock-iv": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-484-d": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-distinct-subsequences": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1745": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-profit-in-job-scheduling": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1061-c": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-best-team-with-no-conflicts": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-longest-string-chain": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-arc073_d": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-largest-divisible-subset": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-two-best-non-overlapping-events": {
+  "topic": "DP Optimizations",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1690": {
+  "topic": "DP Level 2",
+  "form": "Bitmask DP",
+  "curated": [
+   "bitmask-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-shortest-path-visiting-all-nodes": {
+  "topic": "DP Level 2",
+  "form": "Bitmask DP",
+  "curated": [
+   "bitmask-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-11-d": {
+  "topic": "DP Level 2",
+  "form": "Bitmask DP",
+  "curated": [
+   "bitmask-dp"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc180_e": {
+  "topic": "DP Level 2",
+  "form": "Bitmask DP",
+  "curated": [
+   "bitmask-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_s": {
+  "topic": "DP Level 2",
+  "form": "Digit DP",
+  "curated": [
+   "digit-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-2220": {
+  "topic": "DP Level 2",
+  "form": "Digit DP",
+  "curated": [
+   "digit-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1036-c": {
+  "topic": "DP Level 2",
+  "form": "Digit DP",
+  "curated": [
+   "digit-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-of-integers": {
+  "topic": "DP Level 2",
+  "form": "Digit DP",
+  "curated": [
+   "digit-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-stepping-numbers-in-range": {
+  "topic": "DP Level 2",
+  "form": "Digit DP",
+  "curated": [
+   "digit-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_p": {
+  "topic": "DP Level 2",
+  "form": "Tree DP",
+  "curated": [
+   "tree-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-binary-tree-cameras": {
+  "topic": "DP Level 2",
+  "form": "Tree DP",
+  "curated": [
+   "tree-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-161-d": {
+  "topic": "DP Level 2",
+  "form": "Tree DP",
+  "curated": [
+   "tree-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1153-d": {
+  "topic": "DP Level 2",
+  "form": "Tree DP",
+  "curated": [
+   "tree-dp"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-points-after-collecting-coins-from-all-nodes": {
+  "topic": "DP Level 2",
+  "form": "Tree DP",
+  "curated": [
+   "tree-dp"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc138_f": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-minimize-the-total-price-of-the-trips": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-2181": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-914-c": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-stickers-to-spell-word": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-count-the-number-of-powerful-integers": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-students-taking-exam": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1316-e": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1092-f": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-xor-sum-of-two-arrays": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1702-g2": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-non-negative-integers-without-consecutive-ones": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1209-e2": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-number-of-beautiful-integers-in-the-range": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-difference-between-maximum-and-minimum-price-sum": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-number-of-digit-one": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-painting-a-grid-with-three-different-colors": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-find-all-good-strings": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc129_e": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-628-d": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1132": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-abc201_e": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_o": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-numbers-with-repeated-digits": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-337-d": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-smallest-missing-genetic-value-in-each-subtree": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximize-score-after-n-operations": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1653": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-dp_u": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-8-c": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-401-d": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-55-d": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-855-e": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-number-of-ways-to-wear-different-hats-to-each-other": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-smallest-sufficient-team": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-score-after-removals-on-a-tree": {
+  "topic": "DP Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1090": {
+  "topic": "Greedy And Sweepline",
+  "form": "Sorting Type",
+  "curated": [
+   "sorting-type"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-number-of-arrows-to-burst-balloons": {
+  "topic": "Greedy And Sweepline",
+  "form": "Sorting Type",
+  "curated": [
+   "sorting-type"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1443-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Sorting Type",
+  "curated": [
+   "sorting-type"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-agc011_a": {
+  "topic": "Greedy And Sweepline",
+  "form": "Sorting Type",
+  "curated": [
+   "sorting-type"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-broken-calculator": {
+  "topic": "Greedy And Sweepline",
+  "form": "Operation Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-stamping-the-sequence": {
+  "topic": "Greedy And Sweepline",
+  "form": "Operation Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1474-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Operation Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1811-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Operation Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Easy"
+ },
+ "atcoder-abc140_d": {
+  "topic": "Greedy And Sweepline",
+  "form": "Operation Decoding",
+  "curated": [
+   "operation-decoding"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1630": {
+  "topic": "Greedy And Sweepline",
+  "form": "Exchange Argument",
+  "curated": [
+   "exchange-argument"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-922-d": {
+  "topic": "Greedy And Sweepline",
+  "form": "Exchange Argument",
+  "curated": [
+   "exchange-argument"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-minimum-initial-energy-to-finish-tasks": {
+  "topic": "Greedy And Sweepline",
+  "form": "Exchange Argument",
+  "curated": [
+   "exchange-argument"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-course-schedule-iii": {
+  "topic": "Greedy And Sweepline",
+  "form": "Exchange Argument",
+  "curated": [
+   "exchange-argument"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-maximum-value-of-concatenated-binary-segments": {
+  "topic": "Greedy And Sweepline",
+  "form": "Exchange Argument",
+  "curated": [
+   "exchange-argument"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1619": {
+  "topic": "Greedy And Sweepline",
+  "form": "Sweepline Technique",
+  "curated": [
+   "sweepline-technique"
+  ],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-612-d": {
+  "topic": "Greedy And Sweepline",
+  "form": "Sweepline Technique",
+  "curated": [
+   "sweepline-technique"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1164": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1073": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "cses-1631": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-minimum-number-of-taps-to-open-to-water-a-garden": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "leetcode-car-pooling": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1499-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-437-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-777-b": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-abc131_d": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-agc005_a": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-276-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-1335-c": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-arc088_a": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-arc094_a": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "atcoder-agc027_a": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "leetcode-single-threaded-cpu": {
+  "topic": "Greedy And Sweepline",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Medium"
+ },
+ "codeforces-600-e": {
+  "topic": "Graph Level 2",
+  "form": "Advanced DSU",
+  "curated": [
+   "advanced-dsu"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-375-d": {
+  "topic": "Graph Level 2",
+  "form": "Advanced DSU",
+  "curated": [
+   "advanced-dsu"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-741-d": {
+  "topic": "Graph Level 2",
+  "form": "Advanced DSU",
+  "curated": [
+   "advanced-dsu"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-813-f": {
+  "topic": "Graph Level 2",
+  "form": "Advanced DSU",
+  "curated": [
+   "advanced-dsu"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-critical-connections-in-a-network": {
+  "topic": "Graph Level 2",
+  "form": "Articulation Points and Bridges",
+  "curated": [
+   "articulation-points-and-bridges"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-732-f": {
+  "topic": "Graph Level 2",
+  "form": "Articulation Points and Bridges",
+  "curated": [
+   "articulation-points-and-bridges"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-700-c": {
+  "topic": "Graph Level 2",
+  "form": "Articulation Points and Bridges",
+  "curated": [
+   "articulation-points-and-bridges"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-118-e": {
+  "topic": "Graph Level 2",
+  "form": "Articulation Points and Bridges",
+  "curated": [
+   "articulation-points-and-bridges"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1000-e": {
+  "topic": "Graph Level 2",
+  "form": "Articulation Points and Bridges",
+  "curated": [
+   "articulation-points-and-bridges"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-427-c": {
+  "topic": "Graph Level 2",
+  "form": "Strongly Connected Components",
+  "curated": [
+   "strongly-connected-components"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1683": {
+  "topic": "Graph Level 2",
+  "form": "Strongly Connected Components",
+  "curated": [
+   "strongly-connected-components"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1682": {
+  "topic": "Graph Level 2",
+  "form": "Strongly Connected Components",
+  "curated": [
+   "strongly-connected-components"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1684": {
+  "topic": "Graph Level 2",
+  "form": "Strongly Connected Components",
+  "curated": [
+   "strongly-connected-components"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "cses-1686": {
+  "topic": "Graph Level 2",
+  "form": "Strongly Connected Components",
+  "curated": [
+   "strongly-connected-components"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1695": {
+  "topic": "Graph Level 2",
+  "form": "Flows",
+  "curated": [
+   "flows"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1711": {
+  "topic": "Graph Level 2",
+  "form": "Flows",
+  "curated": [
+   "flows"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-1696": {
+  "topic": "Graph Level 2",
+  "form": "Flows",
+  "curated": [
+   "flows"
+  ],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1082-g": {
+  "topic": "Graph Level 2",
+  "form": "Flows",
+  "curated": [
+   "flows"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1045-a": {
+  "topic": "Graph Level 2",
+  "form": "Flows",
+  "curated": [
+   "flows"
+  ],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-555-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1559-d2": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1706-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-402-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-628-f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc193_f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-999-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-132-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-505-d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-962-f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1416-d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-160-d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-766-d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "cses-2133": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-164-c": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-19-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1139-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-arc092_d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1253-d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-652-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-858-f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-abc205_f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-808-f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "leetcode-checking-existence-of-edge-length-limited-paths": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-311-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "atcoder-arc085_c": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1463-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-894-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-1137-c": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-1140-f": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-228-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "atcoder-arc090_b": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ },
+ "codeforces-231-e": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Extreme"
+ },
+ "codeforces-776-d": {
+  "topic": "Graph Level 2",
+  "form": "Mixed",
+  "curated": [],
+  "sheet_difficulty": "Hard"
+ }
+}

@@ -14,8 +14,7 @@
   ],
   "patterns": [
     "max-flow",
-    "min-cut",
-    "graph-cut"
+    "min-cut"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,8 +22,7 @@
     "generated_at_unix": 1777951542,
     "pattern_confidence": {
       "max-flow": 0.98,
-      "min-cut": 0.97,
-      "graph-cut": 0.95
+      "min-cut": 0.97
     }
   }
 }

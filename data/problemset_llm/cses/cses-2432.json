@@ -14,8 +14,7 @@
   ],
   "patterns": [
     "max-flow",
-    "bipartite-matching",
-    "network-flow"
+    "bipartite-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,8 +22,7 @@
     "generated_at_unix": 1777952202,
     "pattern_confidence": {
       "max-flow": 0.95,
-      "bipartite-matching": 0.9,
-      "network-flow": 0.85
+      "bipartite-matching": 0.9
     }
   }
 }

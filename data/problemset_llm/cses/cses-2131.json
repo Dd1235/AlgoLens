@@ -14,20 +14,18 @@
     "bipartite-graph"
   ],
   "patterns": [
-    "maximum-bipartite-matching",
-    "min-cost-max-flow",
-    "network-flow",
-    "bipartite-flow"
+    "bipartite-matching",
+    "min-cost-flow",
+    "max-flow"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777952204,
     "pattern_confidence": {
-      "maximum-bipartite-matching": 0.95,
-      "min-cost-max-flow": 0.9,
-      "network-flow": 0.9,
-      "bipartite-flow": 0.9
+      "bipartite-matching": 0.95,
+      "min-cost-flow": 0.9,
+      "max-flow": 0.9
     }
   }
 }

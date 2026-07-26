@@ -460,6 +460,9 @@
     },
     "steiner-tree": {
       "category": "graph"
+    },
+    "edmonds-karp": {
+      "category": "graph"
     }
   },
   "aliases": {
@@ -490,6 +493,17 @@
     "cht": "convex-hull-trick",
     "mcm": "matrix-chain-multiplication",
     "matrix-chain-dp": "matrix-chain-multiplication",
-    "dp-with-sliding-window": "monotonic-queue-optimization"
+    "dp-with-sliding-window": "monotonic-queue-optimization",
+    "flows": "max-flow",
+    "maxflow": "max-flow",
+    "maximum-flow": "max-flow",
+    "network-flow": "max-flow",
+    "flow-decomposition": "max-flow",
+    "augmenting-path": "max-flow",
+    "augmenting-paths": "max-flow",
+    "min-cost-max-flow": "min-cost-flow",
+    "maximum-bipartite-matching": "bipartite-matching",
+    "bipartite-flow": "bipartite-matching",
+    "graph-cut": "min-cut"
   }
 }

@@ -1,0 +1,336 @@
+{
+ "source": "data/formwise.xlsx",
+ "count": 55,
+ "problems": [
+  {
+   "name": "Aggressive Cows",
+   "url": "https://www.spoj.com/problems/AGGRCOW/",
+   "topic": "Binary Search",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Tripartite Station",
+   "url": "https://www.codechef.com/problems/TRPTSTIC",
+   "topic": "Binary Search",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "KATHTHI",
+   "url": "https://www.spoj.com/problems/KATHTHI/",
+   "topic": "Graph Level-1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Average Shortest Path",
+   "url": "https://www.codechef.com/problems/AVGSHORT",
+   "topic": "Graph Level-1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Liars",
+   "url": "https://www.hackerrank.com/challenges/liars/problem",
+   "topic": "Graph Level-1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "NR2 - Bhagat The Bit Man",
+   "url": "https://www.spoj.com/problems/NR2/",
+   "topic": "Bit-Manipulation",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "MIXTURES",
+   "url": "https://www.spoj.com/problems/MIXTURES/",
+   "topic": "DP Level 1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "MCOINS - Coins Game",
+   "url": "https://www.spoj.com/problems/MCOINS/",
+   "topic": "DP Level 1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "ADAGAME - Ada and Game",
+   "url": "https://www.spoj.com/problems/ADAGAME/",
+   "topic": "DP Level 1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Arithmetic Expressions",
+   "url": "https://www.hackerrank.com/challenges/arithmetic-expressions/problem",
+   "topic": "DP Level 1",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Cheerleaders",
+   "url": "https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2906",
+   "topic": "Math",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Maximum XOR subarray",
+   "url": "https://marisaoj.com/problem/240",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Prefix queries",
+   "url": "https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/prefix-queries-3-2c111491/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Query On Strings",
+   "url": "https://www.codechef.com/problems/NPLFLF",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Compare string",
+   "url": "https://marisaoj.com/problem/244",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Report",
+   "url": "https://marisaoj.com/problem/241",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Xor Queries",
+   "url": "https://www.codechef.com/problems/XRQRS",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Gotham PD",
+   "url": "https://www.codechef.com/problems/GPD",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Search Engine",
+   "url": "https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/search-engine/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "XOR-path on tree",
+   "url": "https://marisaoj.com/problem/630",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Nikitosh and xor",
+   "url": "https://www.codechef.com/problems/REBXOR",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Poem",
+   "url": "https://marisaoj.com/problem/426",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Beautiful Substrings",
+   "url": "https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/beautiful-substrings-008a53a4/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Special Subarrays",
+   "url": "https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/special-subarrays-4-99375442/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "SUBXOR - SubXor",
+   "url": "https://www.spoj.com/problems/SUBXOR/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "DICT - Search in the dictionary!",
+   "url": "https://www.spoj.com/problems/DICT/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "XOR paths",
+   "url": "https://www.hackerearth.com/practice/data-structures/advanced-data-structures/trie-keyword-tree/practice-problems/algorithm/xor-path-1-f7009db6/",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Mass XOR queries",
+   "url": "https://marisaoj.com/problem/242",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "The ancient book",
+   "url": "https://marisaoj.com/problem/654",
+   "topic": "Trie",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Palindromic Border",
+   "url": "https://www.hackerrank.com/challenges/palindromic-border/problem",
+   "topic": "String",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Enumerate Palindromes",
+   "url": "https://judge.yosupo.jp/problem/enumerate_palindromes",
+   "topic": "String",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "EPALIN - Extend to Palindrome",
+   "url": "https://www.spoj.com/problems/EPALIN/",
+   "topic": "String",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "NUMOFPAL - Number of Palindromes",
+   "url": "https://www.spoj.com/problems/NUMOFPAL/",
+   "topic": "String",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "GSS3 - Can you answer these queries III",
+   "url": "https://www.spoj.com/problems/GSS3/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "HORRIBLE - Horrible Queries",
+   "url": "https://www.spoj.com/problems/HORRIBLE/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "MULTQ3 - Multiples of 3",
+   "url": "https://www.spoj.com/problems/MULTQ3/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "K-query",
+   "url": "https://www.spoj.com/problems/KQUERY/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "The k-th number",
+   "url": "https://www.spoj.com/problems/MKTHNUM/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "INCSEQ - Increasing Sequences",
+   "url": "https://www.spoj.com/problems/INCSEQ/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "LITE - Light Switching",
+   "url": "https://www.spoj.com/problems/LITE/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "KGSS - Maximum Variance Segment Tree",
+   "url": "https://www.spoj.com/problems/KGSS/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "NICEDAY - The day of the competitors",
+   "url": "https://www.spoj.com/problems/NICEDAY/",
+   "topic": "Segment Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "PT07Z - Longest path in a tree",
+   "url": "https://www.spoj.com/problems/PT07Z/",
+   "topic": "Trees",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "LCS0 - Longest Common Subsequence",
+   "url": "https://www.spoj.com/problems/LCS0/",
+   "topic": "DP Optimizations",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Traveling by Stagecoach",
+   "url": "https://www.spoj.com/problems/TRSTAGE/",
+   "topic": "DP Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "369 Numbers",
+   "url": "https://www.spoj.com/problems/NUMTSN/",
+   "topic": "DP Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "LUCIFER Number",
+   "url": "https://www.spoj.com/problems/LUCIFER/",
+   "topic": "DP Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Ra-One Numbers",
+   "url": "https://www.spoj.com/problems/RAONE/",
+   "topic": "DP Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "I AM VERY BUSY",
+   "url": "https://www.spoj.com/problems/BUSYMAN/",
+   "topic": "Greedy And Sweepline",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Wine trading in Gergovia",
+   "url": "https://www.spoj.com/problems/GERGOVIA/",
+   "topic": "Greedy And Sweepline",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Load Balancing",
+   "url": "https://www.spoj.com/problems/BALIFE/",
+   "topic": "Greedy And Sweepline",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Capital City",
+   "url": "https://www.spoj.com/problems/CAPCITY/",
+   "topic": "Graph Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Rhezo and Destructive Mind",
+   "url": "https://www.hackerearth.com/practice/algorithms/graphs/articulation-points-and-bridges/practice-problems/algorithm/rhezo-and-destructive-mind/",
+   "topic": "Graph Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "PROFIT",
+   "url": "https://www.spoj.com/problems/PROFIT/",
+   "topic": "Graph Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Submerging Islands",
+   "url": "https://www.spoj.com/problems/SUBMERGE/",
+   "topic": "Graph Level 2",
+   "reason": "unsupported judge (no fetchable statement)"
+  }
+ ]
+}

@@ -49,7 +49,9 @@ let currentOffset = 0;
 let currentTotal = 0;
 let currentTopScore = 0;
 let currentUser = null;
-let currentFilter = "all";
+// Read from the DOM, not assumed: browsers can restore a <select> across a
+// soft reload, and a hardcoded "all" here would silently disagree with it.
+let currentFilter = filterSelect.value || "all";
 let activePattern = "";
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let currentSearchId = null; // ties outcome beacons to the search that produced them
@@ -174,7 +176,7 @@ logoutBtn.addEventListener("click", async () => {
   currentQuery = "";
   resultsEl.innerHTML = "";
   hideLoadMore();
-  setStatus("logged out · type a query to search");
+  setStatus("logged out");
 });
 
 async function bootstrapAuth() {
@@ -257,7 +259,7 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
-    setStatus("type a query to search");
+    setStatus("");
     resultsEl.innerHTML = "";
     currentQuery = "";
     currentOffset = 0;
@@ -509,6 +511,13 @@ function clearPatternFilter({ reissue = true } = {}) {
   if (!activePattern) return;
   activePattern = "";
   updatePatternPill();
+  // Drop ?pattern= from the address bar too. Without this, clearing a filter
+  // you arrived at via a deep link only lasted until the next refresh.
+  const url = new URL(location.href);
+  if (url.searchParams.has("pattern")) {
+    url.searchParams.delete("pattern");
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  }
   if (reissue && currentQuery) {
     currentOffset = 0;
     runSearch(currentQuery, { append: false });
@@ -547,6 +556,27 @@ PATTERNS
   filter results to that label; the pill clears it
   browse the whole taxonomy with counts: /patterns.html
 
+FIND SIMILAR
+  inside an expanded result: "find similar problems" lists the ten
+  problems closest in meaning to that one — neighbours of the problem
+  itself, not of your query. Built for upsolving: open the one that
+  beat you, see its family.
+
+SAVING                                             (signed in)
+  ☆ / ★              bookmark a problem, on any result card
+  ○ / ✓              mark it done — done marks feed your heatmap
+  all / not done     the dropdown next to the ranker filters results
+  / done               by what you've finished
+
+COMPARE
+  the checkbox above the results runs your query in keyword and
+  meaning mode side by side, with rank deltas — the fastest way to
+  see what each mode is good at
+
+LINKS
+  every view is shareable: /?q=knapsack · /?pattern=slope-trick
+  /?ranker=dense · combine them
+
 COMMANDS
   :help :h          this manual
   :bookmarks :b     starred problems           (signed in)
@@ -555,9 +585,8 @@ COMMANDS
   Tab               cycle library views        (signed in)
 
 MORE
-  click a result to expand · "find similar" = cosine over the
-  stored embeddings · handles + combined heatmap: /profile.html
-  live usage + latency numbers: /stats.html`;
+  handles + combined heatmap: /profile.html
+  live usage + latency: /stats.html · scoring math: /debug.html`;
 
 function renderHelp() {
   if (compareToggle.checked) {
@@ -715,9 +744,11 @@ function renderHitsList(container, hits, opts = {}) {
     const meta = document.createElement("span");
     meta.className = "result-meta";
     const diff = hit.problem.difficulty || "";
-    const trailing = libraryMode
-      ? formatRelative(hit.markedAt)
-      : (typeof hit.score === "number" ? hit.score.toFixed(4) : "—");
+    // No raw score on cards. It read as a precise "similarity %" it never was,
+    // and the same 4-decimal number meant a BM25 score in one view and a
+    // cosine in another. The bar below still shows relative strength; exact
+    // numbers live on /debug.html where they're explained.
+    const trailing = libraryMode ? formatRelative(hit.markedAt) : "";
     let metaHtml = `<span class="difficulty ${diffClass(diff)}">${escapeHtml(diff)}</span>${escapeHtml(trailing)}`;
     if (opts.otherRankMap) {
       const other = opts.otherRankMap.get(hit.problem.id);
@@ -929,7 +960,7 @@ if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
 } else if (bootQ) {
   runSearch(bootQ, { append: false });
 } else {
-  setStatus("type a query to search");
+  setStatus("");
 }
 
 // Put the caret where typing actually goes. Pointer-fine only, so mobile

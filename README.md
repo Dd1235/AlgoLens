@@ -33,6 +33,22 @@ Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all 
 - **Fast on purpose.** Keyword search answers in ~0.1 ms and semantic in ~2 ms; profile revisits paint instantly from a local snapshot and refresh in the background; every view is a shareable deep link (`/?pattern=wqs-binary-search&ranker=dense`).
 - **It shows its work.** Latency and ranker on every result set, query expansions made visible, a debug page exposing per-term scoring math, and a public stats page with real usage and live latency percentiles — including cold-start counts, because the free-tier instance sleeps and honesty beats mystery.
 
+## Feedback → fix
+
+A running log of what real users hit, and what changed. Most entries are labeling
+or wording, not ranking — that turned out to be the pattern.
+
+| Feedback | Fix |
+|---|---|
+| "aliens trick" found nothing | Query-side alias expansion — community names now expand to the canonical label |
+| The blinking bar under the box looked like the input | Search box takes focus on load; the cursor only shows while the status line types |
+| Four ranker names (tfidf/bm25/dense/hybrid) meant nothing | Three modes: **keyword** / **meaning** / **both**, explained in `:help` |
+| Stats looked stale on the new domain | Per-origin HTTP cache — window cut to 30s and an "as of" stamp added |
+| "mcm dp", "mex" returned nothing | Statements are summaries, so missing terms are missing *labels*; added the vocabulary + an LLM audit loop |
+| "flows" returned nothing | No stemmer — added flow aliases and folded 9 scattered flow labels into the canonical set |
+| Similarity scores were confusing | Numeric scores are debug-only now; results keep the relative bar |
+| Didn't know bookmarks / done / filters existed | `:help` gained a SAVING section and a real explanation of "find similar" |
+
 ## Measured
 
 Every ranking decision traces to a 55-query labeled benchmark (P@k, MRR, nDCG@10, Recall@100) with keyword / paraphrase / technique slices — it's why BM25 stays the default and the fancier rankers are opt-in. The numbers and their write-ups live in [experiments/](experiments/).
