@@ -63,6 +63,29 @@ const index = new HybridIndex({ lexical, dense });
   }
   assert.deepEqual(ex.docs.map((d) => d.problem.id), ["a", "c", "b", "d"]);
 
+  // Leg depth: floors at topN so an ordinary shallow query costs exactly what
+  // it always did, and widens only when the caller asks for more than that.
+  // The route relies on the widening to filter and page over the whole ranked
+  // list; the floor is what keeps the common path off the slow road.
+  {
+    const seen = [];
+    const spy = { search(_q, k) { seen.push(k); return { hits: [], total: 0 }; } };
+    const spied = new HybridIndex({
+      lexical: spy,
+      dense: { async search(_q, k) { seen.push(k); return { hits: [], total: 0 }; } },
+    });
+    await spied.search("q", 20, 0);
+    assert.deepEqual(seen, [100, 100], "a k=20 query must not widen the legs past topN");
+
+    seen.length = 0;
+    await spied.search("q", 20, 300);
+    assert.deepEqual(seen, [320, 320], "paging past topN must widen the legs to reach it");
+
+    seen.length = 0;
+    await spied.search("q", 5000, 0);
+    assert.deepEqual(seen, [5000, 5000], "the route's full-corpus fetch must reach every leg");
+  }
+
   console.log("hybrid tests passed");
 })().catch((err) => {
   console.error(err);

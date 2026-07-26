@@ -2,7 +2,7 @@
   "name": "algolens",
   "version": "0.1.0",
   "private": true,
-  "description": "DSA problem search engine — learning project",
+  "description": "DSA problem search engine \u2014 learning project",
   "main": "server/index.js",
   "scripts": {
     "dev": "nodemon server/index.js",
@@ -13,7 +13,7 @@
     "bench": "node bench/run.js",
     "bench:fast": "LATENCY_REPEATS=5 node bench/run.js",
     "bench:diff": "node bench/diff.js",
-    "test:search": "node server/search/tfidf.test.js && node server/search/bm25.test.js && node server/search/dense.test.js && node server/search/hybrid.test.js && node server/search/query_expand.test.js",
+    "test:search": "node server/search/tfidf.test.js && node server/search/bm25.test.js && node server/search/dense.test.js && node server/search/hybrid.test.js && node server/search/query_expand.test.js && node server/routes/search.test.js",
     "test:profile": "node server/profile/profile.test.js",
     "db:migrate": "bash db/run-migrations.sh",
     "services:start": "docker compose up -d",

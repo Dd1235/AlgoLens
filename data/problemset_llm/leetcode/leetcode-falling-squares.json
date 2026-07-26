@@ -20,7 +20,8 @@
   "patterns": [
     "segment-tree",
     "coordinate-compression",
-    "simulation"
+    "simulation",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "segment-tree": 0.95,
       "coordinate-compression": 0.9,
-      "simulation": 0.85
+      "simulation": 0.85,
+      "line-sweep": 0.9
     }
   }
 }

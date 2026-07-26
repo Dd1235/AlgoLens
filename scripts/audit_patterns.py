@@ -36,7 +36,11 @@ import annotate_problem_urls as annotate  # noqa: E402  (for the API key lookup)
 
 CORPUS_ROOT = ROOT / "data" / "problemset_llm"
 DEFAULT_OUT = ROOT / "data" / "review_queue"
-SERVED_PLATFORMS = ["leetcode", "cses"]
+# Every judge the server actually loads (server/data.js DEFAULT_PLATFORMS).
+# This used to read ["leetcode", "cses"] and was also the argparse `choices`,
+# so the 741 Codeforces and AtCoder records could not be audited at all — not
+# even by explicit --ids, since iter_problems filtered them back out.
+SERVED_PLATFORMS = ["leetcode", "cses", "codeforces", "atcoder"]
 
 AUDIT_SYSTEM = (
     "You audit competitive programming problems for MISSING well-known NAMED "
@@ -55,6 +59,31 @@ AUDIT_SYSTEM = (
 )
 
 
+# Open-ended discovery is good at niche NAMED algorithms and bad at broad
+# techniques: asked "what's missing?", the model reaches for booth-algorithm,
+# never line-sweep. So --technique swaps in a single yes/no question about one
+# label. That is the only way to close a gap like sweep-line, where the term
+# appears in 0 of 2,575 statements and the label is the sole carrier.
+def technique_system(technique: str) -> str:
+    # Tuned for recall, not precision, and that is deliberate. An earlier
+    # wording added "not merely that the problem mentions intervals, segments,
+    # or events" and scored 0 false positives — but it also answered no for
+    # Iron Man (CF 704E), a genuine sweep, and found 1 candidate in 219. This
+    # wording scored 6/8 on a hand-labeled probe: all 3 true sweeps caught, 2
+    # false positives. Since every candidate lands in a queue a human reads,
+    # a false positive costs one deletion and a false negative is invisible
+    # forever. Measure changes here against that probe before shipping them.
+    return (
+        f"You decide ONE question: is '{technique}' genuinely central to the "
+        "intended solution of this competitive programming problem? "
+        "Answer yes only if a strong solution actually sorts events or "
+        "endpoints and processes them in order while maintaining running "
+        "state. A greedy that merely sorts is not. Prefer NO when uncertain. "
+        'Return JSON only: {"applies": true|false, "confidence": 0.0-1.0, '
+        '"reasoning": "one line"}'
+    )
+
+
 def iter_problems(platforms: list[str]) -> list[dict[str, Any]]:
     out = []
     for platform in platforms:
@@ -66,7 +95,7 @@ def iter_problems(platforms: list[str]) -> list[dict[str, Any]]:
     return out
 
 
-def call_audit(problem: dict[str, Any], model: str) -> list[dict[str, Any]]:
+def call_audit(problem: dict[str, Any], model: str, technique: str | None = None) -> list[dict[str, Any]]:
     key = annotate.os.environ.get("OPENAI_API_KEY") or annotate.os.environ.get("OPEN_AI_API")
     if not key:
         raise RuntimeError("OPENAI_API_KEY or OPEN_AI_API is required")
@@ -77,10 +106,18 @@ def call_audit(problem: dict[str, Any], model: str) -> list[dict[str, Any]]:
         "current_patterns": problem.get("patterns", []),
         "canonical_patterns": CANONICAL_PATTERNS,
     }
+    if technique:
+        # Asking "is it a sweep?" while showing the labels it already has makes
+        # the model defend them: Iron Man (CF 704E) flips from YES 0.90 to no
+        # 0.90 purely because "event-simulation" is in the payload, and it
+        # answers "this is simulation, not a sweep". The whole point of an audit
+        # is to find what the current labels miss, so it must not see them.
+        # Deduping against existing labels still happens below, in code.
+        user = {k: v for k, v in user.items() if k not in ("current_patterns", "canonical_patterns")}
     payload = {
         "model": model,
         "messages": [
-            {"role": "system", "content": AUDIT_SYSTEM},
+            {"role": "system", "content": technique_system(technique) if technique else AUDIT_SYSTEM},
             {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
         ],
         "temperature": 0.1,
@@ -88,6 +125,16 @@ def call_audit(problem: dict[str, Any], model: str) -> list[dict[str, Any]]:
     }
     data = request_json(OPENAI_CHAT_COMPLETIONS_URL, payload, headers={"authorization": f"Bearer {key}"})
     parsed = json.loads(data["choices"][0]["message"]["content"])
+    if technique:
+        # Normalize the yes/no answer into the same candidate shape the rest of
+        # the pipeline (and apply_review.js) already understands.
+        parsed = {
+            "candidates": [{
+                "pattern": technique,
+                "confidence": parsed.get("confidence", 0),
+                "reasoning": parsed.get("reasoning", ""),
+            }] if parsed.get("applies") else []
+        }
 
     existing = {canonical_label(p) for p in problem.get("patterns", [])}
     canonical_set = set(CANONICAL_PATTERNS)
@@ -123,9 +170,11 @@ def main() -> int:
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--overwrite", action="store_true")
     ap.add_argument("--all", action="store_true", help="Audit the whole selection without --ids/--limit")
+    ap.add_argument("--technique", help="Ask only whether this one label applies, instead of open discovery")
+    ap.add_argument("--ids-file", type=Path, help="File of problem ids, one per line (composes with --ids)")
     args = ap.parse_args()
 
-    if not args.ids and args.limit is None and not args.all:
+    if not args.ids and not args.ids_file and args.limit is None and not args.all:
         print(
             "scope the run (--ids / --limit N / --all): every audited problem is one "
             "LLM call, and the full corpus is ~1,200 calls on gpt-4.1-mini",
@@ -134,8 +183,11 @@ def main() -> int:
         return 2
 
     problems = iter_problems(args.platform or SERVED_PLATFORMS)
-    if args.ids:
-        wanted = set(args.ids)
+    ids = list(args.ids or [])
+    if args.ids_file:
+        ids += [ln.strip() for ln in args.ids_file.read_text().splitlines() if ln.strip()]
+    if ids:
+        wanted = set(ids)
         problems = [p for p in problems if p["id"] in wanted]
         missing = wanted - {p["id"] for p in problems}
         for m in sorted(missing):
@@ -158,7 +210,7 @@ def main() -> int:
             skipped += 1
             continue
         try:
-            candidates = call_audit(problem, args.model)
+            candidates = call_audit(problem, args.model, args.technique)
         except Exception as exc:  # keep the batch moving
             print(f"[{i}/{len(problems)}] failed {problem['id']}: {exc}", file=sys.stderr)
             continue
@@ -170,8 +222,13 @@ def main() -> int:
             "model": args.model,
             "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         }
-        queue_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
-        written += 1
+        # Only queue problems that actually produced a candidate. Writing a file
+        # per audited problem buried the handful worth reading under hundreds of
+        # empty ones, and the queue is a human worklist — its length should mean
+        # "this much to review".
+        if candidates:
+            queue_path.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n")
+            written += 1
         found += len(candidates)
         tag = ", ".join(c["pattern"] for c in candidates) or "nothing"
         print(f"[{i}/{len(problems)}] {problem['id']}: {tag}")

@@ -9,8 +9,23 @@ const { logEvent } = require("../telemetry");
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
 // Pattern labels are slugs (see data/pattern_taxonomy.json); anything else is ignored.
 const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
-// Sentinel for "give me everything you have" — bigger than the corpus.
-const FULL_PAGE_SIZE = 100000;
+
+// Which judge a problem came from. A facet, not a topic — deliberately kept out
+// of the indexed document text, since putting "codeforces" in there would rank
+// 617 problems for the query "codeforces" and skew BM25's idf. Filtering the
+// ranked list instead costs one predicate over ~2.5k rows (~0.01 ms) against a
+// 0.2 ms bm25 query, so the facet stays where it belongs.
+function parsePlatforms(raw, known) {
+  const wanted = new Set(
+    String(raw || "")
+      .toLowerCase()
+      .split(",")
+      .map((s) => s.trim())
+      .filter((s) => known.has(s))
+  );
+  // Selecting every judge is the same as selecting none.
+  return wanted.size === known.size ? new Set() : wanted;
+}
 
 function pickRanker(indexes, defaultRanker, req) {
   const requested = (req.query.ranker || "").toString().toLowerCase();
@@ -78,6 +93,10 @@ function buildPatternsPayload(problems) {
 function createSearchRouter({ indexes, defaultRanker, problems }) {
   const router = express.Router();
   const patternsPayload = buildPatternsPayload(problems);
+  // "Everything you have" is exactly the corpus — asking for more just made the
+  // gRPC leg serialize a nonsense k over the wire.
+  const FULL_PAGE_SIZE = problems.length;
+  const KNOWN_PLATFORMS = new Set(problems.map((p) => p.platform));
 
   router.get("/patterns", (_req, res) => {
     res.json(patternsPayload);
@@ -91,6 +110,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const filter = VALID_FILTERS.has(filterRaw) ? filterRaw : "all";
     const patternRaw = (req.query.pattern || "").toString().toLowerCase();
     const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
+    const platforms = parsePlatforms(req.query.platform, KNOWN_PLATFORMS);
     // Alias expansion ("aliens trick" → +wqs binary search) happens here at
     // the route, once, so every ranker — lexical, dense, gRPC — sees the
     // searchable form. The response echoes expandedQuery when it differs.
@@ -105,18 +125,19 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
       const effectiveFilter = userState ? filter : "all";
 
       let hits, total, latencyMs;
-      if (effectiveFilter === "all" && !pattern) {
+      if (effectiveFilter === "all" && !pattern && !platforms.size) {
         ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset));
       } else {
         // Need the full ranked list so filters + slice produce a stable
         // total and disjoint pages. The ranker materializes everything before
-        // slicing internally, so this costs no extra scoring work. The pattern
-        // filter composes with done/notdone in the same pass and works for
-        // anonymous users too.
+        // slicing internally, so this costs no extra scoring work. Pattern,
+        // platform and done/notdone compose in the same pass; pattern and
+        // platform work for anonymous users too.
         const full = await timedSearch(index, exp.query, FULL_PAGE_SIZE, 0);
         latencyMs = full.latencyMs;
         const filtered = full.hits.filter((h) => {
           if (pattern && !(h.problem.patterns || []).includes(pattern)) return false;
+          if (platforms.size && !platforms.has(h.problem.platform)) return false;
           if (effectiveFilter === "all") return true;
           const isDone = userState.done.has(h.problem.id);
           return effectiveFilter === "done" ? isDone : !isDone;
@@ -163,6 +184,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         total,
         filter: effectiveFilter,
         pattern: pattern || undefined,
+        platform: platforms.size ? [...platforms].sort() : undefined,
         hits,
       });
     } catch (err) {

@@ -22,7 +22,8 @@
   "patterns": [
     "bit-manipulation",
     "greedy",
-    "hash-map"
+    "hash-map",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "bit-manipulation": 0.95,
       "greedy": 0.9,
-      "hash-map": 0.85
+      "hash-map": 0.85,
+      "line-sweep": 0.9
     }
   }
 }

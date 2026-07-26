@@ -22,7 +22,8 @@
   "patterns": [
     "prefix-sum",
     "binary-search-answer",
-    "two-pointers"
+    "two-pointers",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "binary-search-answer": 0.9,
-      "two-pointers": 0.7
+      "two-pointers": 0.7,
+      "line-sweep": 0.8
     }
   }
 }

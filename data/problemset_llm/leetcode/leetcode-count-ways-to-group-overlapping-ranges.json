@@ -19,7 +19,8 @@
   "patterns": [
     "union-find",
     "sorting",
-    "connected-components"
+    "connected-components",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "union-find": 0.98,
       "sorting": 0.9,
-      "connected-components": 0.95
+      "connected-components": 0.95,
+      "line-sweep": 0.9
     }
   }
 }

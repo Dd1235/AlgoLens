@@ -22,7 +22,8 @@
   "patterns": [
     "binary-search",
     "dp-on-dag",
-    "sorting"
+    "sorting",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "binary-search": 0.95,
       "dp-on-dag": 0.9,
-      "sorting": 0.85
+      "sorting": 0.85,
+      "line-sweep": 0.9
     }
   }
 }
