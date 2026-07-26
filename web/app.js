@@ -4,6 +4,7 @@ const resultsEl = document.getElementById("results");
 const statusEl = document.getElementById("status");
 const loadMoreEl = document.getElementById("load-more");
 const filterSelect = document.getElementById("filter-select");
+const judgeSelect = document.getElementById("judge-select");
 const filterWrap = document.getElementById("filter-wrap");
 const rankerSelect = document.getElementById("ranker-select");
 const authWidget = document.getElementById("auth-widget");
@@ -105,6 +106,38 @@ filterSelect.addEventListener("change", () => {
   if (currentQuery) runSearch(currentQuery, { append: false });
 });
 
+// Two ways into the same state. The dropdown is the one people find — clicking
+// a result's [lc]/[cf] tag is faster once you know it's there, but a filter
+// nobody can see is a filter nobody uses, which is how this shipped the first
+// time. The dropdown is single-judge; the tags are how you combine them.
+judgeSelect.addEventListener("change", () => {
+  activePlatforms.clear();
+  if (judgeSelect.value) activePlatforms.add(judgeSelect.value);
+  syncJudgeControls();
+  currentOffset = 0;
+  if (currentQuery || input.value.trim()) runSearch(input.value || currentQuery, { append: false });
+});
+
+// Keep the dropdown honest about what the tags did. More than one judge has no
+// single option to point at, so it says so rather than lying about one of them.
+function syncJudgeControls() {
+  const many = activePlatforms.size > 1;
+  let multi = judgeSelect.querySelector("option[value='__multi']");
+  if (many && !multi) {
+    multi = document.createElement("option");
+    multi.value = "__multi";
+    judgeSelect.appendChild(multi);
+  }
+  if (many) {
+    multi.textContent = `${activePlatforms.size} judges`;
+    judgeSelect.value = "__multi";
+  } else {
+    if (multi) multi.remove();
+    judgeSelect.value = activePlatforms.size ? [...activePlatforms][0] : "";
+  }
+  updatePlatformPill();
+}
+
 // Ranker picker. Plain word first (a newcomer picks by meaning), technical
 // name second (this audience likes seeing it). tfidf and bm25-grpc are
 // deliberately not offered — they're bench/debug rankers, still reachable
@@ -132,6 +165,10 @@ async function populateRankerSelect() {
     opt.value = name;
     opt.textContent = RANKER_LABELS[name] || name;
     rankerSelect.appendChild(opt);
+  }
+  if (data.corpusSize) {
+    const el = document.getElementById("corpus-size");
+    if (el) el.textContent = data.corpusSize.toLocaleString();
   }
   rankerSelect.value = activeRanker || data.default || "bm25";
   if (!rankerSelect.value) rankerSelect.value = data.default || "bm25";
@@ -565,7 +602,7 @@ function togglePlatformFilter(platform) {
   if (activePlatforms.has(platform)) activePlatforms.delete(platform);
   else activePlatforms.add(platform);
   track("platform_selected", { platform, active: [...activePlatforms].join(",") });
-  updatePlatformPill();
+  syncJudgeControls();
   currentOffset = 0;
   if (currentQuery || input.value.trim()) runSearch(input.value || currentQuery, { append: false });
 }
@@ -573,7 +610,7 @@ function togglePlatformFilter(platform) {
 function clearPlatformFilter({ reissue = true } = {}) {
   if (!activePlatforms.size) return;
   activePlatforms.clear();
-  updatePlatformPill();
+  syncJudgeControls();
   const url = new URL(location.href);
   if (url.searchParams.has("platform")) {
     url.searchParams.delete("platform");
@@ -852,8 +889,10 @@ function renderHitsList(container, hits, opts = {}) {
     // cosine in another. The bar below still shows relative strength; exact
     // numbers live on /debug.html where they're explained.
     const trailing = libraryMode ? formatRelative(hit.markedAt) : "";
-    let metaHtml = platformBadge(hit.problem.platform)
-      + `<span class="difficulty ${diffClass(diff)}">${escapeHtml(String(diff))}</span>${escapeHtml(trailing)}`;
+    // CSES ships no difficulty, so this used to render an empty bordered chip —
+    // visible furniture standing in for nothing.
+    const diffHtml = diff === "" ? "" : `<span class="difficulty ${diffClass(diff)}">${escapeHtml(String(diff))}</span>`;
+    let metaHtml = platformBadge(hit.problem.platform) + diffHtml + escapeHtml(trailing);
     if (opts.otherRankMap) {
       const other = opts.otherRankMap.get(hit.problem.id);
       metaHtml = rankDeltaBadge(i + 1, other, opts.otherName) + metaHtml;
@@ -1069,7 +1108,7 @@ const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
 for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
   if (PLATFORM_LABELS[p.trim()]) activePlatforms.add(p.trim());
 }
-updatePlatformPill();
+syncJudgeControls();
 if (bootQ) input.value = bootQ;
 if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
   applyPatternFilter(bootPattern);

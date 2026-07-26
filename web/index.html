@@ -4,12 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>cosine</title>
-    <meta name="description" content="Search 1,800+ competitive-programming problems by keyword, by describing the idea, or by technique label." />
+    <meta name="description" content="Search 2,500+ competitive-programming problems by keyword, by describing the idea, or by technique label." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="cosine" />
     <meta property="og:url" content="https://onebysec.com/" />
     <meta property="og:title" content="cosine — search DSA problems by meaning" />
-    <meta property="og:description" content="Search 1,800+ competitive-programming problems by keyword, by describing the idea, or by technique label." />
+    <meta property="og:description" content="Search 2,500+ competitive-programming problems by keyword, by describing the idea, or by technique label." />
     <meta name="twitter:card" content="summary" />
     <script src="/theme.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -44,7 +44,7 @@
           <a href="/profile.html" class="debug-link">profile</a>
         </nav>
       </header>
-      <p class="tagline">1808 dsa problems · search by keyword, by meaning, or by technique · <code>:help</code> for the manual</p>
+      <p class="tagline"><span id="corpus-size">2,575</span> dsa problems · search by keyword, by meaning, or by technique · <code>:help</code> for the manual</p>
       <form id="search-form" autocomplete="off">
         <input
           id="search-input"
@@ -59,6 +59,20 @@
             title="keyword = word match incl. labels · meaning = plain-english description · both = blended"
           >
             <option value="bm25">keyword · bm25</option>
+          </select>
+        </span>
+        <span class="filter-wrap">
+          <select
+            id="judge-select"
+            class="filter-select"
+            aria-label="filter results by judge"
+            title="show problems from one judge · the [lc] [cf] tags on results combine several"
+          >
+            <option value="">all judges</option>
+            <option value="leetcode">leetcode</option>
+            <option value="cses">cses</option>
+            <option value="codeforces">codeforces</option>
+            <option value="atcoder">atcoder</option>
           </select>
         </span>
         <span id="filter-wrap" class="filter-wrap" hidden>

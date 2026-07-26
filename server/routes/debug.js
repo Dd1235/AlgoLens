@@ -15,7 +15,9 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
   });
 
   router.get("/rankers", (req, res) => {
-    res.json({ available: Object.keys(indexes), default: defaultRanker });
+    // corpusSize rides along so the page's "N dsa problems" line comes from the
+    // corpus instead of a hardcoded number. It said 1808 for three ingests.
+    res.json({ available: Object.keys(indexes), default: defaultRanker, corpusSize: problems.length });
   });
 
   router.get("/index", (req, res) => {
