@@ -44,19 +44,19 @@ The last three power [/debug.html](../web/debug.html) and exist for learning, no
 ## How search works
 
 1. **Tokenize.** `title + statement + tags + patterns` for each problem; lowercase, strip non-alphanumeric, split on whitespace, drop a small stopword list ([server/search/tokenize.js](../server/search/tokenize.js)). Stopword list deliberately keeps DSA-relevant words like `two`, `one`, `all`, `same`.
-2. **Build index at boot.** Inverted postings (`Map<term, Set<docId>>`) plus per-doc term counts and lengths. ~15–20 ms for the 1808-doc corpus.
+2. **Build index at boot.** Inverted postings (`Map<term, Set<docId>>`) plus per-doc term counts and lengths. ~30–35 ms for the 2,574-doc corpus.
 3. **Score.** Both rankers walk the same posting lists.
    - **TF-IDF** ([server/search/tfidf.js](../server/search/tfidf.js)): `score = Σ TF(t,d) · IDF(t)` where `TF = count/doclen`, `IDF = log(N/df)`.
    - **BM25** ([server/search/bm25.js](../server/search/bm25.js)): Robertson–Spärck-Jones IDF + TF saturation (`k1=1.5`) + length normalization (`b=0.75`).
 4. **Rank.** Sort by score, return top-k.
 
-The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (2.65 MB at 1,808 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
+The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (3.77 MB at 2,574 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
 
 The HTTP layer ([server/routes/search.js](../server/routes/search.js)) only knows the `{ search(q, k, offset) -> { hits, total } }` interface. That's the seam every implementation sits behind: TF-IDF, BM25, the Go/gRPC client, dense, and hybrid — five registrations, zero route changes. One semantic note: for `dense`, `total` is always the corpus size (every doc has a similarity to every query); for `hybrid` it's the size of the fused candidate union (≤ 200).
 
 ### Where the inverted index ends and ranking begins
 
-The inverted index answers *"which docs contain term X?"* and nothing else. It produces the **candidate set**. Ranking is everything that comes after — TF-IDF and BM25 are first-stage rankers that sit on top of the inverted index. Dense retrieval replaces the candidate set entirely (every doc is a candidate); hybrid RRF is *fusion* of two first-stage rankers, not a reranker. A "reranker" specifically means a *second pass* over the top-k candidates with a more expensive model (e.g. a cross-encoder) — too costly to apply to all 1808 docs, cheap on a top-50 cut. We still don't have one, but hybrid's 0.984 Recall@100 makes its fused list the natural candidate feed when we do.
+The inverted index answers *"which docs contain term X?"* and nothing else. It produces the **candidate set**. Ranking is everything that comes after — TF-IDF and BM25 are first-stage rankers that sit on top of the inverted index. Dense retrieval replaces the candidate set entirely (every doc is a candidate); hybrid RRF is *fusion* of two first-stage rankers, not a reranker. A "reranker" specifically means a *second pass* over the top-k candidates with a more expensive model (e.g. a cross-encoder) — too costly to apply to all 2,574 docs, cheap on a top-50 cut. We still don't have one, but hybrid's 0.924 Recall@100 makes its fused list the natural candidate feed when we do.
 
 ## Tests
 
@@ -87,6 +87,10 @@ Queries run through the same alias expansion as the serving path by default. Wri
 - `node scripts/apply_review.js --write` merges only what a human left in the queue (deleting a candidate = rejecting it), then `npm run embed && npm run validate`.
 
 Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-asserted niche claims never land unreviewed.
+
+**Scoring the annotator.** Codeforces is the only judge in the corpus that publishes per-problem tags, which makes its slice the one place with ground truth. `python3 scripts/label_agreement.py` scores our labels against it — currently **macro precision 67%, macro recall 83%** over 364 records. Recall is the number that matters: a missed technique is an unfindable problem, and nothing scores below 69%. Low precision usually means we labeled something Codeforces didn't bother to, which helps search — except where it dilutes a specific label, as `binary-search-answer` does at 45% (see [experiments/08](../experiments/08-multi-judge-corpus.md)).
+
+**Reading a bench run after the corpus grows.** Relevance judgments are fixed id lists, so a bigger corpus mechanically depresses precision: new problems that are genuinely good answers were never judged, and count as misses. `python3 scripts/bench_diff.py <old.json> <new.json>` separates the two by reporting what share of top-5 slots went to problems that didn't exist in the baseline. High displacement with flat Recall@100 is crowding; falling Recall@100 is regression.
 
 **Why label quality *is* recall.** A problem's search text is `title + statement + tags + patterns`, and the statement is an LLM *summary* — when the summary drops a term, only a label can carry it. That's why `mcm dp` matched nothing until `matrix-chain-multiplication` existed as a label (those words appear in no statement), and why only 1 of 4 mex problems was findable. A recall complaint is usually a labeling gap, not a ranking bug: check `npm run validate -- --gaps` and the audit loop before touching a ranker.
 
