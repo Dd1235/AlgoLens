@@ -316,6 +316,14 @@ function applyMode() {
 
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
+  // An empty box with a filter still on isn't "nothing to show" — it's a
+  // browse. Clearing your query keeps the pattern and judge pills and lists
+  // everything they select, which is what the pills claim to be doing.
+  if (!q && (activePattern || activePlatforms.size)) {
+    currentQuery = "";
+    if (!append) currentOffset = 0;
+    return runBrowse({ append });
+  }
   if (!q) {
     setStatus("");
     resultsEl.innerHTML = "";
@@ -447,6 +455,52 @@ function renderSingle(data, q, append) {
   // left is what nothing else on the page tells you.
   setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}`);
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
+}
+
+// Filters with no query. Same wire format and the same result renderer as a
+// search — only the ranking is absent, so results come back in corpus order
+// and the status line says "browsing" rather than quoting a query nobody typed.
+async function runBrowse({ append = false } = {}) {
+  const issuedAt = ++lastQueryAt;
+  hideFeedback();
+  currentSearchId = null;
+  currentRankerAnswered = "";
+  const facets = activeFacets();
+  const label = [activePattern, ...facets].filter(Boolean).join(" · ");
+  if (currentUser) setLibPath(`~/browse ${label}`);
+  syncUrl();
+
+  const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
+  const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
+  const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
+  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}`;
+
+  let data;
+  try {
+    if (inFlight) inFlight.abort();
+    inFlight = new AbortController();
+    const res = await fetch(url, { signal: inFlight.signal });
+    data = await res.json();
+  } catch (err) {
+    if (err.name === "AbortError" || issuedAt !== lastQueryAt) return;
+    setStatus(`error: ${err.message || "browse failed"}`);
+    return;
+  }
+  if (issuedAt !== lastQueryAt) return;
+
+  currentTotal = data.total || 0;
+  if (!append) currentTopScore = 0;
+  const hits = data.hits || [];
+  if (!hits.length) {
+    setStatus(`nothing matches ${label}`);
+    resultsEl.innerHTML = "";
+    hideLoadMore();
+    return;
+  }
+  renderHitsList(resultsEl, hits, { append, startIndex: currentOffset, unranked: true });
+  const shown = currentOffset + hits.length;
+  setStatus(`browsing ${label} · ${shown} of ${currentTotal}`);
+  updateLoadMore();
 }
 
 async function runLibrary(type, q) {
@@ -614,8 +668,10 @@ function applyPatternFilter(pattern) {
   track("pattern_selected", { pattern });
   activePattern = pattern;
   updatePatternPill();
-  // Filtering needs a query to rank against; fall back to the label's words.
-  if (!input.value.trim()) input.value = pattern.replace(/-/g, " ");
+  // No slug-as-query substitution any more. It used to put "line sweep" in the
+  // box so BM25 had something to rank, which meant the search box filled with
+  // words you never typed — and clearing them dead-ended on a blank page. The
+  // server browses a filter with no query now, so the box stays yours.
   currentOffset = 0;
   runSearch(input.value, { append: false });
 }
@@ -716,7 +772,9 @@ SEARCH — pick a mode next to the box
 
 PATTERNS
   every expanded result lists technique labels — click one to
-  filter results to that label; the pill clears it
+  narrow your search to that label; the pill clears it
+  clear the query and the pill stays: you're now browsing every
+  problem with that label, not searching within your last query
   browse the whole taxonomy with counts: /patterns.html
 
 FIND SIMILAR
@@ -934,6 +992,10 @@ function renderHitsList(container, hits, opts = {}) {
   if (!opts.append) container.innerHTML = "";
   const startIndex = opts.startIndex || 0;
   const libraryMode = !!opts.libraryMode;
+  // A browse has no ranking, so a relevance bar would be drawing a number that
+  // doesn't exist. Library lists are the same — they're ordered by when you
+  // saved something, not by score.
+  const ranked = !opts.unranked && !libraryMode;
   currentTopScore = hits.reduce(
     (m, h) => (typeof h.score === "number" ? Math.max(m, h.score) : m),
     currentTopScore
@@ -992,6 +1054,7 @@ function renderHitsList(container, hits, opts = {}) {
     const fill = document.createElement("div");
     fill.className = "score-bar-fill";
     bar.appendChild(fill);
+    if (!ranked) bar.classList.add("hidden");
 
     const matched = document.createElement("div");
     matched.className = "result-matched";
