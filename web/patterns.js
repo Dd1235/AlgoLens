@@ -46,6 +46,8 @@ async function loadPatterns() {
       const chip = document.createElement("a");
       chip.className = "pattern-chip" + (count === 0 ? " empty" : "");
       chip.href = `/?pattern=${encodeURIComponent(pattern)}`;
+      // Browse the label. From there the shuffle chip appears, since browsing
+      // is the only state where a random order means anything.
       if (count === 0) chip.title = "no problems carry this label yet";
       chip.textContent = pattern + " ";
       const badge = document.createElement("span");

@@ -706,52 +706,6 @@ html[data-theme="light"] .pattern-chip {
   background: var(--accent-soft);
 }
 
-/* Vocabulary strip above the results: the technique family a query touches.
-   Deliberately quiet — it's an aside about what exists, not part of the answer. */
-.techniques {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin: 0 0 0.7rem;
-  font-size: 0.76rem;
-}
-
-.techniques.hidden { display: none !important; }
-
-.techniques-label {
-  color: var(--text-dim);
-  margin-right: 0.15rem;
-}
-.techniques-label::before { content: "// "; }
-
-.technique-chip {
-  font: inherit;
-  font-family: var(--mono);
-  color: var(--text-muted);
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--r-chip);
-  padding: 0.05rem 0.4rem;
-  margin: 0;
-  cursor: pointer;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.technique-chip:hover,
-.technique-chip:focus-visible {
-  color: var(--accent);
-  border-color: var(--accent);
-  background: var(--accent-soft);
-}
-
-.technique-count {
-  color: var(--text-dim);
-  margin-left: 0.35rem;
-  font-variant-numeric: tabular-nums;
-}
-
 .pattern-pill {
   display: inline-flex;
   align-items: center;

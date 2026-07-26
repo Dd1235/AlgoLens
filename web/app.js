@@ -46,7 +46,6 @@ const LIBRARY_COMMANDS = {
 
 const compareEl = document.getElementById("compare-results");
 const judgeRow = document.getElementById("judge-row");
-const techniquesEl = document.getElementById("techniques");
 const shuffleBtn = document.getElementById("shuffle-btn");
 const judgeClearBtn = document.getElementById("judge-clear");
 const latencySummaryEl = document.getElementById("latency-summary");
@@ -384,7 +383,6 @@ async function runSearch(rawQuery, { append = false } = {}) {
     currentTotal = 0;
     hideLoadMore();
     hideFeedback();
-    renderTechniques(null);
     if (currentUser) setLibPath("~");
     syncUrl();
     return;
@@ -507,7 +505,6 @@ function renderSingle(data, q, append) {
   // raw ranker id in parens (the picker already says "keyword · bm25"). What's
   // left is what nothing else on the page tells you.
   setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}`);
-  if (!append) renderTechniques(data.techniques);
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
@@ -518,7 +515,6 @@ async function runBrowse({ append = false } = {}) {
   const issuedAt = ++lastQueryAt;
   syncShuffleControl();
   hideFeedback();
-  renderTechniques(null);
   currentSearchId = null;
   currentRankerAnswered = "";
   const facets = activeFacets();
@@ -570,7 +566,6 @@ async function runBrowse({ append = false } = {}) {
 
 async function runLibrary(type, q) {
   const issuedAt = ++lastQueryAt;
-  renderTechniques(null);
   clearPatternFilter({ reissue: false }); // a saved list isn't a ranked search
   currentSearchId = null;
   currentRankerAnswered = "";
@@ -630,7 +625,6 @@ async function runLibrary(type, q) {
 // there's no text in the input and no load-more.
 async function runSimilar(problem) {
   const issuedAt = ++lastQueryAt;
-  renderTechniques(null);
   clearPatternFilter({ reissue: false }); // similar view is vector-driven, not filtered
   clearPlatformFilter({ reissue: false });
   currentSearchId = null;
@@ -768,41 +762,13 @@ function syncUrl() {
   if (activePattern) p.set("pattern", activePattern);
   if (activePlatforms.size) p.set("platform", [...activePlatforms].join(","));
   if (activeRanker) p.set("ranker", activeRanker);
+  if (activeShuffle !== null) p.set("shuffle", String(activeShuffle));
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
   const qs = p.toString();
   const next = location.pathname + (qs ? `?${qs}` : "") + location.hash;
   if (next !== location.pathname + location.search + location.hash) {
     history.replaceState(null, "", next);
   }
-}
-
-// The vocabulary strip. Technique labels are what make this corpus searchable
-// at all, but they only ever appeared inside an expanded result card — so
-// someone typing "dp" had no way to discover that digit-dp or slope-trick are
-// things. One dim line, each label a click into browsing it.
-function renderTechniques(list) {
-  if (!list || !list.length) {
-    techniquesEl.classList.add("hidden");
-    techniquesEl.innerHTML = "";
-    return;
-  }
-  techniquesEl.innerHTML =
-    '<span class="techniques-label">techniques</span>' +
-    list
-      .map(
-        (t) =>
-          `<button type="button" class="technique-chip" data-pattern="${escapeHtml(t.pattern)}"` +
-          ` title="browse the ${t.count} problems labelled ${escapeHtml(t.pattern)}">` +
-          `${escapeHtml(t.pattern)}<span class="technique-count">${t.count}</span></button>`
-      )
-      .join("");
-  techniquesEl.querySelectorAll(".technique-chip").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      input.value = "";
-      applyPatternFilter(btn.dataset.pattern);
-    });
-  });
-  techniquesEl.classList.remove("hidden");
 }
 
 function updatePatternPill() {
@@ -865,10 +831,12 @@ SEARCH — pick a mode next to the box
   line shows "+wqs binary search" — you get the results and the real name.
 
 TECHNIQUES
-  a search names the technique family it touches, above the
-  results — type "dp" and see digit-dp, tree-dp, slope-trick.
-  Click one to browse every problem carrying it.
-  the whole vocabulary, filterable: /patterns.html
+  /patterns.html is the vocabulary — all 165 technique labels
+  with counts, filterable. Type "dp" there and you get the whole
+  family: digit-dp, tree-dp, slope-trick, state-compression.
+  Click any one to browse the problems that carry it. Useful if
+  your exposure stops at one sheet and you don't know what to
+  even search for.
 
 BROWSE
   a filter with no query lists everything it selects, and
@@ -950,7 +918,6 @@ function renderHelp() {
   clearPatternFilter({ reissue: false });
   hideLoadMore();
   hideFeedback();
-  renderTechniques(null);
   currentSearchId = null;
   currentRankerAnswered = "";
   if (currentUser) setLibPath("~/help");
@@ -983,7 +950,6 @@ function hideLoadMore() {
 
 async function runCompare(q) {
   const issuedAt = ++lastQueryAt;
-  renderTechniques(null);
   hideFeedback();
   if (currentUser) setLibPath(`~/compare "${q.length > 24 ? q.slice(0, 24) + "…" : q}"`);
   // Same deal as runSearch: compare runs on every keystroke too, so announcing
@@ -1360,6 +1326,8 @@ if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
 populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+const bootShuffle = Number.parseInt(bootParams.get("shuffle"), 10);
+if (Number.isFinite(bootShuffle)) activeShuffle = bootShuffle;
 const bootFilter = (bootParams.get("filter") || "").trim().toLowerCase();
 if (["done", "notdone"].includes(bootFilter)) {
   currentFilter = bootFilter;
