@@ -34,9 +34,9 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 - **Three search modes, one box.** **keyword** matches words in the title, statement *and* our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
-- **Narrow to a judge.** Pick one from the dropdown next to the search box, or click the `[lc]` `[cf]` `[atc]` `[cses]` tag on any result — clicking several combines them. Shareable as `?platform=codeforces,atcoder`.
+- **Filters that stack.** Judges are a set, not a choice — toggle `lc` `cses` `cf` `atc` above the results, or click the tag on any card. They compose with technique labels, with done/not-done, and with your saved lists: `:bookmarks` + `cf`+`atc` + not-done is your unfinished Codeforces and AtCoder saves. Shareable as `?platform=codeforces,atcoder`.
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
-- **Compare rankers.** A toggle runs the same query on bm25 and dense side by side — watch keyword search find nothing for "thief" while semantic nails it.
+- **Compare rankers.** `:compare thief robbing houses` runs the query on bm25 and dense side by side with rank deltas — watch keyword search find nothing for "cheese" while semantic nails it. A command rather than permanent chrome, since it's an engine-tuning tool.
 - **A deliberately hard corpus.** 2,575 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces + AtCoder sampled across rating bands from 1300 up. No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
 
 ## Tracking the grind
@@ -71,6 +71,8 @@ or wording, not ranking — that turned out to be the pattern.
 | "can I see only Codeforces problems?" | Click the judge tag on any result; combine several, clear with the pill |
 | The "searching" line was distracting while typing | It animated one character at a time while the answer was already back — now it only appears if a search actually takes over 400ms |
 | "where is filter by judge?" | It shipped as clickable result tags only, which nobody could see — added a plain dropdown next to the search box |
+| Judge filter was one-at-a-time, and saved lists ignored it entirely | Judges are now a multi-select chip set, and `:bookmarks` / `:done` / `:all` respect judge + done filters |
+| The compare checkbox was clutter for anyone not tuning the engine | Moved to a `:compare <query>` command |
 
 ## Measured
 
