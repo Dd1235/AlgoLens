@@ -18,9 +18,10 @@ Cosine is one search box over LeetCode, CSES, Codeforces and AtCoder that handle
 - **Three search modes, one box.** **keyword** matches words in the title, statement *and* our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
+- **Narrow to a judge.** Every result is tagged `[lc]` `[cf]` `[atc]` `[cses]` — click a tag to see only that judge, click more to combine them. Shareable as `?platform=codeforces,atcoder`.
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
 - **Compare rankers.** A toggle runs the same query on bm25 and dense side by side — watch keyword search find nothing for "thief" while semantic nails it.
-- **A deliberately hard corpus.** 2,574 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces + AtCoder sampled across rating bands from 1300 up. No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
+- **A deliberately hard corpus.** 2,575 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces + AtCoder sampled across rating bands from 1300 up. No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
 
 ## Tracking the grind
 
@@ -50,10 +51,23 @@ or wording, not ranking — that turned out to be the pattern.
 | Didn't know bookmarks / done / filters existed | `:help` gained a SAVING section and a real explanation of "find similar" |
 | A cleared filter came back on refresh | Clearing the pill now drops `?pattern=` from the URL too |
 | "LeetCode-only is limiting" | Codeforces and AtCoder added — rating-stratified from 1300 up, no easies |
+| "sweep line finds nothing, and CF tags don't have that keyword" | Correct — Codeforces has no sweepline tag at all. Fixed by auditing the corpus for the technique directly; 17 problems gained the label |
+| "can I see only Codeforces problems?" | Click the judge tag on any result; combine several, clear with the pill |
 
 ## Measured
 
 Every ranking decision traces to a 55-query labeled benchmark (P@k, MRR, nDCG@10, Recall@100) with keyword / paraphrase / technique slices — it's why BM25 stays the default and the fancier rankers are opt-in. The numbers and their write-ups live in [experiments/](experiments/).
+
+## Ideas
+
+Things worth building, and the honest reason they aren't built yet.
+
+- **Filter or sort by difficulty.** Blocked on data, not code. CSES's 400 problems (15% of the corpus) carry no difficulty at all, LeetCode has three buckets rather than a scale, and AtCoder's community-estimated ratings aren't Codeforces ratings — they go negative. Ordering four judges together needs a normalization decision first; picking one badly is worse than not having the feature.
+- **Sort by difficulty instead of relevance.** As a re-sort of the top N, not the whole match set — sorting everything throws away the ranking you searched for.
+- **Difficulty relative to you, not absolute.** "Show me problems a bit above my level" is the version that's actually useful. Closer than it looks: your Codeforces and AtCoder ratings are already fetched and cached for the profile page, and they're already on the same scale as the problems' own ratings. It would work today for the 741 rated problems and needs a mapping for the rest.
+- **Recommendations from what you've solved.** Done-marks plus ratings are enough for a rule-based "next problem" heuristic before anything fancier is warranted.
+
+**On feasibility:** latency isn't the obstacle for any of these. Sorting or banding an already-ranked result list costs well under a millisecond at this corpus size — the same place the judge filter does its work, after ranking and before paging. The obstacles are a common difficulty scale across four judges, and the fact that ordering by anything other than relevance is a different product decision than it first appears.
 
 ## Run it
 

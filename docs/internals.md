@@ -17,7 +17,7 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 
 | Method · path | Purpose |
 |---|---|
-| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug. Alias queries are expanded server-side (`expandedQuery` echoed when it differs). |
+| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=&platform=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug; `platform=` takes a comma-separated judge list (unknown names dropped; naming all four is the same as naming none). Alias queries are expanded server-side (`expandedQuery` echoed when it differs). |
 | `GET /api/problems` | Whole corpus as loaded. |
 | `GET /api/rankers` | `{ available: [...], default: "..." }`. |
 | `GET /api/index?ranker=` | Inverted-index dump: every term with `df`, `idf`, postings. |
@@ -50,7 +50,7 @@ The last three power [/debug.html](../web/debug.html) and exist for learning, no
    - **BM25** ([server/search/bm25.js](../server/search/bm25.js)): Robertson–Spärck-Jones IDF + TF saturation (`k1=1.5`) + length normalization (`b=0.75`).
 4. **Rank.** Sort by score, return top-k.
 
-The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (3.77 MB at 2,574 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
+The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (3.77 MB at 2,574 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Each leg goes `max(topN, offset + k)` deep before fusing, so a shallow query keeps exp 05's tuning while the route's filter path — which asks for the whole ranked list — actually gets it. Reading `topN` there instead capped every fused set at 200 rows regardless of `k`, which silently emptied any filtered page past offset 200. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
 
 The HTTP layer ([server/routes/search.js](../server/routes/search.js)) only knows the `{ search(q, k, offset) -> { hits, total } }` interface. That's the seam every implementation sits behind: TF-IDF, BM25, the Go/gRPC client, dense, and hybrid — five registrations, zero route changes. One semantic note: for `dense`, `total` is always the corpus size (every doc has a similarity to every query); for `hybrid` it's the size of the fused candidate union (≤ 200).
 
@@ -184,7 +184,11 @@ Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfi
 - Pattern filter + clickable chips, ranker compare mode, patterns directory page — **shipped**
 - Corpus refresh pipeline (LeetCode Recent block) + niche-label audit/review queue — **shipped** (see Corpus workflows above)
 - Query-side alias expansion + `:help` + hard-focus corpus (easies purged, +561 lowest-acRate mediums) + profile/heatmap — **shipped** ([experiments/07](../experiments/07-medium-hardest-growth.md))
+- Multi-judge corpus: Codeforces + AtCoder ingest, rating-stratified from 1300 — **shipped** ([experiments/08](../experiments/08-multi-judge-corpus.md))
+- Judge filter (`platform=`, clickable result badges) + route-level tests — **shipped**
 - Scoped expansion (lexical legs only; dense embeds the raw query) — measured need in exp 07
 - Cross-encoder rerank over hybrid's top-50 (candidate floor measured in exp 06)
 - Recommendation layer over solved/bookmarked state
 - Real scraper for a standard sheet (Striver / NeetCode)
+- Cross-judge difficulty scale, then filter/sort by difficulty (blocked: CSES has no difficulty, LeetCode has buckets not a scale — see the README's Ideas section)
+- Difficulty relative to the signed-in user's rating (the profile already caches CF/AtCoder ratings on the corpus's own scale)
