@@ -4,6 +4,8 @@ Search 2,500+ competitive-programming problems the way you actually think about 
 
 **Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
+(The walkthrough maybe stale, please do check out the live deployment)
+
 ![Cosine walkthrough in dark mode](demo/deliverables/walkthrough-dark.gif#gh-dark-mode-only)
 ![Cosine walkthrough in light mode](demo/deliverables/walkthrough-light.gif#gh-light-mode-only)
 
@@ -17,21 +19,21 @@ Cosine is one search box over LeetCode, CSES, Codeforces and AtCoder that handle
 
 Real output from the live corpus, same query run both ways. **keyword** is BM25 over titles, statements and technique labels; **meaning** is cosine over sentence embeddings. Neither wins everywhere, which is why you can switch.
 
-| query | keyword (bm25) | meaning (dense) | |
-|---|---|---|---|
-| `cat and mouse` | Cat and Mouse · Cat and Mouse II · Mice and Cheese — **4 hits, all of them the ones you meant** | Cat and Mouse II · Cat and Mouse · Mice and Cheese · Design a Text Editor · Food Buckets to Feed the Hamsters | exact words → exact answers; semantic drifts into "small animal" territory |
-| `cheese` | Mice and Cheese. That's it — **one hit** | Giant Pizza · Hamburgers · Mice and Cheese · Pizza With 3n Slices · Banquet Preparations | no problem is *about* cheese, so keyword has nothing to match. Meaning finds the food cluster anyway |
-| `thief robbing houses` | House Robber · House Robber II · Count the Number of Houses at a Certain Distance II | House Robber · House Robber II · **Diamond Theft** · Profitable Schemes | you remember the story, not the title. Keyword rides the word "house" into unrelated house problems; meaning finds the heist that never says "rob" |
-| `aliens trick` | Best Time to Buy and Sell Stock IV · Minimum Partition Score · Min Total Space Wasted With K Resizings | Design Tutorial: Increase the Constraints · Qpwoeirut and Vertices · Planets Queries I | **the reversal.** "aliens trick" expands to `wqs-binary-search` and keyword nails it; the embedding model has never heard the phrase and returns noise |
-| `string dp graph` | **Longest Palindromic Path in Graph** — tagged `graph` + `dynamic-programming` + `string`, all three | Interleaving String · Strange Printer | stack technique words and the top hit is the problem that carries all of them |
-| `mex set` | Sliding Window Mex · MEX Queries · Maximize Mex | MEX Queries · Mex Grid Construction · Sliding Window Mex | niche vocabulary. No judge tags `mex`, so this search doesn't exist anywhere else |
-| `sweep line` | Intersection Points · Perfect Rectangle · Area of Rectangles | Lines and Queries II · Line Segments Trace I · Erect the Fence | the word "sweep" appears in **zero** problem statements — only the labels carry it |
+| query                  | keyword (bm25)                                                                                         | meaning (dense)                                                                                               |                                                                                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `cat and mouse`        | Cat and Mouse · Cat and Mouse II · Mice and Cheese — **4 hits, all of them the ones you meant**        | Cat and Mouse II · Cat and Mouse · Mice and Cheese · Design a Text Editor · Food Buckets to Feed the Hamsters | exact words → exact answers; semantic drifts into "small animal" territory                                                                             |
+| `cheese`               | Mice and Cheese. That's it — **one hit**                                                               | Giant Pizza · Hamburgers · Mice and Cheese · Pizza With 3n Slices · Banquet Preparations                      | no problem is _about_ cheese, so keyword has nothing to match. Meaning finds the food cluster anyway                                                   |
+| `thief robbing houses` | House Robber · House Robber II · Count the Number of Houses at a Certain Distance II                   | House Robber · House Robber II · **Diamond Theft** · Profitable Schemes                                       | you remember the story, not the title. Keyword rides the word "house" into unrelated house problems; meaning finds the heist that never says "rob"     |
+| `aliens trick`         | Best Time to Buy and Sell Stock IV · Minimum Partition Score · Min Total Space Wasted With K Resizings | Design Tutorial: Increase the Constraints · Qpwoeirut and Vertices · Planets Queries I                        | **the reversal.** "aliens trick" expands to `wqs-binary-search` and keyword nails it; the embedding model has never heard the phrase and returns noise |
+| `string dp graph`      | **Longest Palindromic Path in Graph** — tagged `graph` + `dynamic-programming` + `string`, all three   | Interleaving String · Strange Printer                                                                         | stack technique words and the top hit is the problem that carries all of them                                                                          |
+| `mex set`              | Sliding Window Mex · MEX Queries · Maximize Mex                                                        | MEX Queries · Mex Grid Construction · Sliding Window Mex                                                      | niche vocabulary. No judge tags `mex`, so this search doesn't exist anywhere else                                                                      |
+| `sweep line`           | Intersection Points · Perfect Rectangle · Area of Rectangles                                           | Lines and Queries II · Line Segments Trace I · Erect the Fence                                                | the word "sweep" appears in **zero** problem statements — only the labels carry it                                                                     |
 
 The pattern: **keyword wins when you know the vocabulary** — a technique name, a title fragment, a community nickname. **Meaning wins when you only remember what the problem was about.** `both` fuses the two rankings when you're not sure which you are.
 
 ## Finding problems
 
-- **Three search modes, one box.** **keyword** matches words in the title, statement *and* our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
+- **Three search modes, one box.** **keyword** matches words in the title, statement _and_ our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
 - **Filters that stack.** Judges are a set, not a choice — toggle `lc` `cses` `cf` `atc` above the results, or click the tag on any card. They compose with technique labels, with done/not-done, and with your saved lists: `:bookmarks` + `cf`+`atc` + not-done is your unfinished Codeforces and AtCoder saves. Shareable as `?platform=codeforces,atcoder`.
@@ -55,24 +57,24 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 A running log of what real users hit, and what changed. Most entries are labeling
 or wording, not ranking — that turned out to be the pattern.
 
-| Feedback | Fix |
-|---|---|
-| "aliens trick" found nothing | Query-side alias expansion — community names now expand to the canonical label |
-| The blinking bar under the box looked like the input | Search box takes focus on load; the cursor only shows while the status line types |
-| Four ranker names (tfidf/bm25/dense/hybrid) meant nothing | Three modes: **keyword** / **meaning** / **both**, explained in `:help` |
-| Stats looked stale on the new domain | Per-origin HTTP cache — window cut to 30s and an "as of" stamp added |
-| "mcm dp", "mex" returned nothing | Statements are summaries, so missing terms are missing *labels*; added the vocabulary + an LLM audit loop |
-| "flows" returned nothing | No stemmer — added flow aliases and folded 9 scattered flow labels into the canonical set |
-| Similarity scores were confusing | Numeric scores are debug-only now; results keep the relative bar |
-| Didn't know bookmarks / done / filters existed | `:help` gained a SAVING section and a real explanation of "find similar" |
-| A cleared filter came back on refresh | Clearing the pill now drops `?pattern=` from the URL too |
-| "LeetCode-only is limiting" | Codeforces and AtCoder added — rating-stratified from 1300 up, no easies |
-| "sweep line finds nothing, and CF tags don't have that keyword" | Correct — Codeforces has no sweepline tag at all. Fixed by auditing the corpus for the technique directly; 17 problems gained the label |
-| "can I see only Codeforces problems?" | Click the judge tag on any result; combine several, clear with the pill |
-| The "searching" line was distracting while typing | It animated one character at a time while the answer was already back — now it only appears if a search actually takes over 400ms |
-| "where is filter by judge?" | It shipped as clickable result tags only, which nobody could see — added a plain dropdown next to the search box |
-| Judge filter was one-at-a-time, and saved lists ignored it entirely | Judges are now a multi-select chip set, and `:bookmarks` / `:done` / `:all` respect judge + done filters |
-| The compare checkbox was clutter for anyone not tuning the engine | Moved to a `:compare <query>` command |
+| Feedback                                                            | Fix                                                                                                                                     |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| "aliens trick" found nothing                                        | Query-side alias expansion — community names now expand to the canonical label                                                          |
+| The blinking bar under the box looked like the input                | Search box takes focus on load; the cursor only shows while the status line types                                                       |
+| Four ranker names (tfidf/bm25/dense/hybrid) meant nothing           | Three modes: **keyword** / **meaning** / **both**, explained in `:help`                                                                 |
+| Stats looked stale on the new domain                                | Per-origin HTTP cache — window cut to 30s and an "as of" stamp added                                                                    |
+| "mcm dp", "mex" returned nothing                                    | Statements are summaries, so missing terms are missing _labels_; added the vocabulary + an LLM audit loop                               |
+| "flows" returned nothing                                            | No stemmer — added flow aliases and folded 9 scattered flow labels into the canonical set                                               |
+| Similarity scores were confusing                                    | Numeric scores are debug-only now; results keep the relative bar                                                                        |
+| Didn't know bookmarks / done / filters existed                      | `:help` gained a SAVING section and a real explanation of "find similar"                                                                |
+| A cleared filter came back on refresh                               | Clearing the pill now drops `?pattern=` from the URL too                                                                                |
+| "LeetCode-only is limiting"                                         | Codeforces and AtCoder added — rating-stratified from 1300 up, no easies                                                                |
+| "sweep line finds nothing, and CF tags don't have that keyword"     | Correct — Codeforces has no sweepline tag at all. Fixed by auditing the corpus for the technique directly; 17 problems gained the label |
+| "can I see only Codeforces problems?"                               | Click the judge tag on any result; combine several, clear with the pill                                                                 |
+| The "searching" line was distracting while typing                   | It animated one character at a time while the answer was already back — now it only appears if a search actually takes over 400ms       |
+| "where is filter by judge?"                                         | It shipped as clickable result tags only, which nobody could see — added a plain dropdown next to the search box                        |
+| Judge filter was one-at-a-time, and saved lists ignored it entirely | Judges are now a multi-select chip set, and `:bookmarks` / `:done` / `:all` respect judge + done filters                                |
+| The compare checkbox was clutter for anyone not tuning the engine   | Moved to a `:compare <query>` command                                                                                                   |
 
 ## Measured
 
