@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1291-b",
+  "title": "Array Sharpening",
+  "slug": "1291-b-array-sharpening",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1291/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given an array of non-negative integers, determine if it can be transformed into a strictly increasing then strictly decreasing sequence by repeatedly decrementing positive elements.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "monotonic-sequence-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047789,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "monotonic-sequence-check": 0.9
+    }
+  }
+}

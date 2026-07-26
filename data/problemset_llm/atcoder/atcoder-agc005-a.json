@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-agc005-a",
+  "title": "STring",
+  "slug": "agc005-a",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/agc005/tasks/agc005_a",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "source_tags": [],
+  "statement": "Given a string with equal numbers of 'S' and 'T', repeatedly remove the leftmost occurrence of the substring \"ST\" until none remain, and determine the final length of the string.",
+  "tags": [
+    "string",
+    "stack",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "stack",
+    "string-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047620,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "stack": 0.9,
+      "string-simulation": 0.85
+    }
+  },
+  "difficulty": 1054
+}

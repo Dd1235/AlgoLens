@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc175-e",
+  "title": "Picking Goods",
+  "slug": "abc175-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc175/tasks/abc175_e",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a grid with items placed on certain squares, find the maximum sum of item values collected on a path from the top-left to bottom-right corner moving only right or down, with the constraint of picking at most three items per row.",
+  "tags": [
+    "dynamic-programming",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "row-wise-limitation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047434,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "row-wise-limitation": 0.75
+    }
+  },
+  "difficulty": 1554
+}

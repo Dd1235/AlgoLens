@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-100-c",
+  "title": "A+B",
+  "slug": "100-c-a-b",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/100/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "*special",
+    "implementation"
+  ],
+  "statement": "Given two integers, output their sum using built-in language capabilities without implementing addition manually.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "direct-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047759,
+    "pattern_confidence": {
+      "direct-computation": 0.95
+    }
+  }
+}

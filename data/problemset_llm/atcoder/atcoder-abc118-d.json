@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc118-d",
+  "title": "Match Matching",
+  "slug": "abc118-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc118/tasks/abc118_d",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a number of matchsticks and a set of allowed digits with known matchstick costs, find the largest integer that can be formed using exactly all the matchsticks.",
+  "tags": [
+    "dynamic-programming",
+    "math",
+    "digit-dp"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "digit-dp",
+    "knapsack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047465,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "digit-dp": 0.9,
+      "knapsack": 0.85
+    }
+  },
+  "difficulty": 1657
+}

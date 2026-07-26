@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1985-f",
+  "title": "Final Boss",
+  "slug": "1985-f-final-boss",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1985/F",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "data structures"
+  ],
+  "statement": "Given a boss with health h and n attacks each with damage and cooldown, determine the minimum number of turns needed to reduce the boss's health to zero or below, using all available attacks each turn and respecting cooldowns.",
+  "tags": [
+    "array",
+    "simulation",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "simulation",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047790,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "simulation": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc159-e",
+  "title": "Dividing Chocolate",
+  "slug": "abc159-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc159/tasks/abc159_e",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "source_tags": [],
+  "statement": "Given a chocolate bar represented as a grid of 0s and 1s, determine the minimum number of horizontal and vertical cuts needed so that each resulting block contains at most K white squares (1s).",
+  "tags": [
+    "array",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047375,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85
+    }
+  },
+  "difficulty": 1450
+}

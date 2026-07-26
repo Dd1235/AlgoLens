@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc149-e",
+  "title": "Handshake",
+  "slug": "abc149-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc149/tasks/abc149_e",
+  "source_topic": "Formwise / Binary Search",
+  "source_tags": [],
+  "statement": "Given N guests each with a power value, perform M unique handshakes between pairs of guests (including self-pairs) to maximize the total happiness, where each handshake adds the sum of the two guests' powers to the happiness.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047341,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.7
+    }
+  },
+  "difficulty": 1905
+}

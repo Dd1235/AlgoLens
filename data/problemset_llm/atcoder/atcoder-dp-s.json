@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-s",
+  "title": "Digit Sum",
+  "slug": "dp-s",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_s",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Count the number of integers from 1 to a large number K whose digit sum is divisible by D, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "digit-dp",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047591,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

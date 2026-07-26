@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-64-b",
+  "title": "Expression",
+  "slug": "64-b-expression",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/64/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "*special",
+    "expression parsing"
+  ],
+  "statement": "Given a simple arithmetic expression of the form 'n#m' where n and m are digits and # is either '+' or '-', compute and print the result of the expression.",
+  "tags": [
+    "string",
+    "expression-parsing",
+    "math"
+  ],
+  "patterns": [
+    "parsing",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047730,
+    "pattern_confidence": {
+      "parsing": 0.95,
+      "simulation": 0.8
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc197-e",
+  "title": "Traveler",
+  "slug": "abc197-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc197/tasks/abc197_e",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given balls placed on a number line each with a color ID, find the minimum time to start at coordinate 0, collect all balls in non-descending order of their color IDs by visiting their coordinates, and return to 0.",
+  "tags": [
+    "array",
+    "sorting",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "coordinate-compression",
+    "sorting",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047454,
+    "pattern_confidence": {
+      "coordinate-compression": 0.9,
+      "sorting": 0.95,
+      "dynamic-programming": 0.9
+    }
+  },
+  "difficulty": 1379
+}

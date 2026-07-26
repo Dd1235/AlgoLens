@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-y",
+  "title": "Grid 2",
+  "slug": "dp-y",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_y",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Count the number of paths from the top-left to the bottom-right corner of a grid moving only right or down, avoiding given wall squares, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "inclusion-exclusion",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047577,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "inclusion-exclusion": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

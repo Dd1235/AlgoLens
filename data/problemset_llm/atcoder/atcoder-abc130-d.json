@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc130-d",
+  "title": "Enough Array",
+  "slug": "abc130-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc130/tasks/abc130_d",
+  "source_topic": "Formwise / Two Pointers",
+  "source_tags": [],
+  "statement": "Given an array of positive integers and a threshold K, count the number of contiguous subarrays whose sums are at least K.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047358,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "prefix-sum": 0.9
+    }
+  },
+  "difficulty": 865
+}

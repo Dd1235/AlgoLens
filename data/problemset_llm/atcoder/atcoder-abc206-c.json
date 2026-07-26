@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc206-c",
+  "title": "Swappable",
+  "slug": "abc206-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc206/tasks/abc206_c",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given an array, count the number of pairs of indices (i, j) with i < j where the elements at these indices are different.",
+  "tags": [
+    "array",
+    "counting",
+    "math"
+  ],
+  "patterns": [
+    "frequency-count",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047469,
+    "pattern_confidence": {
+      "frequency-count": 0.95,
+      "combinatorics": 0.9
+    }
+  },
+  "difficulty": 60
+}

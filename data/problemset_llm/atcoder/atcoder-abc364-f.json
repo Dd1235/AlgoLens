@@ -1,0 +1,34 @@
+{
+  "id": "atcoder-abc364-f",
+  "title": "Range Connect MST",
+  "slug": "abc364-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc364/tasks/abc364_f",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a graph with N + Q vertices initially without edges, Q operations add edges from vertex N+i to all vertices in a range [L_i, R_i] with cost C_i. Determine if the graph is connected after all operations and if so, find the cost of its minimum spanning tree.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "range-query",
+    "union-find"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "range-union",
+    "offline-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047412,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "union-find": 0.95,
+      "range-union": 0.85,
+      "offline-processing": 0.8
+    }
+  },
+  "difficulty": 1878
+}

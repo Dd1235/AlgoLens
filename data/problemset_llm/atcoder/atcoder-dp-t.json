@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-t",
+  "title": "Permutation",
+  "slug": "dp-t",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_t",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Count the number of permutations of size N that satisfy a sequence of inequalities between adjacent elements, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics",
+    "string"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047570,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "prefix-sum": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

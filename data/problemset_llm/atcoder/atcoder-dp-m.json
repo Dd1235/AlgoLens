@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-m",
+  "title": "Candies",
+  "slug": "dp-m",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_m",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Given N children and a total of K candies, count the number of ways to distribute all candies so that each child i receives between 0 and a_i candies, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp-on-dag",
+    "modular-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047568,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dp-on-dag": 0.85,
+      "modular-dp": 0.9
+    }
+  }
+}

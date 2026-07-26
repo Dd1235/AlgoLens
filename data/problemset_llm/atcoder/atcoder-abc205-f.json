@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc205-f",
+  "title": "Grid and Tokens",
+  "slug": "abc205-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc205/tasks/abc205_f",
+  "source_topic": "Formwise / Graph Level 2",
+  "source_tags": [],
+  "statement": "Given a grid and N pieces each with allowed row and column ranges, place as many pieces as possible on distinct rows and columns within their allowed ranges.",
+  "tags": [
+    "graph",
+    "bipartite-matching",
+    "maximum-matching"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "hungarian-algorithm",
+    "dfs-based-augmenting-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047632,
+    "pattern_confidence": {
+      "bipartite-matching": 0.98,
+      "hungarian-algorithm": 0.9,
+      "dfs-based-augmenting-path": 0.85
+    }
+  },
+  "difficulty": 2088
+}

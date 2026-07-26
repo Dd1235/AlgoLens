@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-ambiguous-coordinates",
+  "title": "Ambiguous Coordinates",
+  "slug": "ambiguous-coordinates",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/ambiguous-coordinates/description/",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "backtracking",
+    "enumeration"
+  ],
+  "statement": "Given a string representing digits enclosed in parentheses with all commas and decimal points removed, generate all possible original coordinate pairs by inserting a comma and decimal points following specific formatting rules that disallow extraneous zeros and invalid decimal placements.",
+  "tags": [
+    "string",
+    "backtracking",
+    "enumeration"
+  ],
+  "patterns": [
+    "backtracking",
+    "string-parsing",
+    "enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047368,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "string-parsing": 0.9,
+      "enumeration": 0.9
+    }
+  }
+}

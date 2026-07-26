@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc208-d",
+  "title": "Shortest Path Queries 2",
+  "slug": "abc208-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc208/tasks/abc208_d",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a directed weighted graph with N cities and M roads, compute the sum over all triples (s,t,k) of the shortest path from s to t using only intermediate cities numbered at most k, or 0 if no such path exists or s = t.",
+  "tags": [
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "floyd-warshall",
+    "all-pairs-shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047398,
+    "pattern_confidence": {
+      "floyd-warshall": 0.98,
+      "all-pairs-shortest-path": 0.95
+    }
+  },
+  "difficulty": 1190
+}

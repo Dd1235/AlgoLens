@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc159-f",
+  "title": "Knapsack for All Segments",
+  "slug": "abc159-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc159/tasks/abc159_f",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a sequence of integers and a target sum S, count the total number of strictly increasing subsequences within every subarray whose elements sum to S, and output the sum modulo 998244353.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dp-on-subsequences"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047436,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "dp-on-subsequences": 0.95
+    }
+  },
+  "difficulty": 1876
+}

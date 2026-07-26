@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-arc081-c",
+  "title": "Don't Be a Subsequence",
+  "slug": "arc081-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc081/tasks/arc081_c",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a string, find the shortest lexicographically smallest string of lowercase letters that is not a subsequence of the given string.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "subsequence-check",
+    "lexicographic-order",
+    "shortest-non-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047463,
+    "pattern_confidence": {
+      "subsequence-check": 0.95,
+      "lexicographic-order": 0.9,
+      "shortest-non-subsequence": 0.9
+    }
+  },
+  "difficulty": 2072
+}

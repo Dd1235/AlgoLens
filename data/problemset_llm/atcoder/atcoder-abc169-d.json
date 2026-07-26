@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc169-d",
+  "title": "Div Game",
+  "slug": "abc169-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc169/tasks/abc169_d",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given a positive integer N, repeatedly divide N by distinct prime power divisors to maximize the number of such operations until N becomes 1.",
+  "tags": [
+    "math",
+    "number-theory",
+    "prime-factorization"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047515,
+    "pattern_confidence": {
+      "prime-factorization": 0.98,
+      "greedy": 0.85
+    }
+  },
+  "difficulty": 732
+}

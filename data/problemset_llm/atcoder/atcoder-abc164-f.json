@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc164-f",
+  "title": "I hate Matrix Construction",
+  "slug": "abc164-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc164/tasks/abc164_f",
+  "source_topic": "Formwise / Bit-Manipulation",
+  "source_tags": [],
+  "statement": "Given arrays defining bitwise AND/OR constraints on each row and column, construct an N×N matrix of 64-bit integers satisfying these constraints or determine that no such matrix exists.",
+  "tags": [
+    "bit-manipulation",
+    "matrix",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "bitwise-operations",
+    "constructive-algorithm",
+    "constraint-satisfaction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047428,
+    "pattern_confidence": {
+      "bitwise-operations": 0.98,
+      "constructive-algorithm": 0.95,
+      "constraint-satisfaction": 0.9
+    }
+  },
+  "difficulty": 2683
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-31-b",
+  "title": "Sysadmin Bob",
+  "slug": "31-b-sysadmin-bob",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/31/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a concatenated string of email addresses without separators, reconstruct a valid sequence of original email addresses each in the form A@B, where A and B are lowercase letter strings.",
+  "tags": [
+    "string",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "string-parsing",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047782,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "string-parsing": 0.9,
+      "backtracking": 0.7
+    }
+  }
+}

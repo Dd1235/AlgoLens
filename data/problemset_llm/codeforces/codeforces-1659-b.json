@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1659-b",
+  "title": "Bit Flipping",
+  "slug": "1659-b-bit-flipping",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1659/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given a binary string and a fixed number of moves, each move flips all bits except one chosen bit. Determine the lexicographically largest string achievable after all moves and the count of selections per bit.",
+  "tags": [
+    "string",
+    "bitmask-dp",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "bitmask-manipulation",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047771,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "bitmask-manipulation": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

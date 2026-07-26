@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc339-g",
+  "title": "Smaller Sum",
+  "slug": "abc339-g",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc339/tasks/abc339_g",
+  "source_topic": "Formwise / Segment Trees",
+  "source_tags": [],
+  "statement": "Given a sequence and a series of online queries, each query asks for the sum of elements within a specified subrange that are less than or equal to a given value, where query parameters are encrypted using XOR with previous answers.",
+  "tags": [
+    "array",
+    "data-structure",
+    "offline-queries"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "fenwick-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047544,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "fenwick-tree": 0.85,
+      "coordinate-compression": 0.8
+    }
+  },
+  "difficulty": 1792
+}

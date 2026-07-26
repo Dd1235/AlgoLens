@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc248-d",
+  "title": "Range Count Query",
+  "slug": "abc248-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc248/tasks/abc248_d",
+  "source_topic": "Formwise / Binary Search",
+  "source_tags": [],
+  "statement": "Given an array and multiple queries each specifying a range and a value, count how many elements in the range equal the given value.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "offline-queries",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047344,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "offline-queries": 0.7,
+      "coordinate-compression": 0.6
+    }
+  },
+  "difficulty": 793
+}

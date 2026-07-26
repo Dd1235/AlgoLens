@@ -1,0 +1,35 @@
+{
+  "id": "atcoder-abc142-d",
+  "title": "Disjoint Set of Common Divisors",
+  "slug": "abc142-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc142/tasks/abc142_d",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given two positive integers, find the maximum number of their common divisors that can be selected such that every pair of chosen divisors is coprime.",
+  "tags": [
+    "math",
+    "number-theory",
+    "gcd",
+    "prime-factorization",
+    "combinatorics"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "gcd",
+    "coprimality",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047498,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "gcd": 0.9,
+      "coprimality": 0.9,
+      "counting": 0.85
+    }
+  },
+  "difficulty": 827
+}

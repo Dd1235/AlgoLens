@@ -1,0 +1,34 @@
+{
+  "id": "atcoder-abc253-f",
+  "title": "Operations on a Matrix",
+  "slug": "abc253-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc253/tasks/abc253_f",
+  "source_topic": "Formwise / Segment Trees",
+  "source_tags": [],
+  "statement": "Maintain an initially zero N×M matrix under three types of queries: add a value to all elements in a range of columns, replace all elements in a row with a given value, and retrieve the value of a specific element.",
+  "tags": [
+    "array",
+    "data-structure",
+    "range-update",
+    "point-query"
+  ],
+  "patterns": [
+    "difference-array",
+    "lazy-propagation",
+    "segment-tree",
+    "range-update-point-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047552,
+    "pattern_confidence": {
+      "difference-array": 0.9,
+      "lazy-propagation": 0.85,
+      "segment-tree": 0.8,
+      "range-update-point-query": 0.9
+    }
+  },
+  "difficulty": 1756
+}

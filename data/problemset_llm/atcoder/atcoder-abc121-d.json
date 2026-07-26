@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc121-d",
+  "title": "XOR World",
+  "slug": "abc121-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc121/tasks/abc121_d",
+  "source_topic": "Formwise / Bit-Manipulation",
+  "source_tags": [],
+  "statement": "Compute the XOR of all integers from A to B inclusive, where A and B are large integers up to 10^{12}.",
+  "tags": [
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "bitwise-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047423,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "bitwise-operations": 0.9
+    }
+  },
+  "difficulty": 1164
+}

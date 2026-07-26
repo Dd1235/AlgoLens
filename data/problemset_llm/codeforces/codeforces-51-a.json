@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-51-a",
+  "title": "Cheaterius's Problem",
+  "slug": "51-a-cheaterius-s-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/51/A",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given n 2x2 amulets each with four numbers, group them into piles where amulets are similar if one can be rotated by 90, 180, or 270 degrees to match the other without flipping.",
+  "tags": [
+    "array",
+    "implementation",
+    "geometry"
+  ],
+  "patterns": [
+    "rotation-normalization",
+    "hash-map",
+    "canonical-form"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047794,
+    "pattern_confidence": {
+      "rotation-normalization": 0.95,
+      "hash-map": 0.9,
+      "canonical-form": 0.88
+    }
+  }
+}

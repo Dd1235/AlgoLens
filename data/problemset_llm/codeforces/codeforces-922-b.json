@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-922-b",
+  "title": "Magic Forest",
+  "slug": "922-b-magic-forest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/922/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "brute force"
+  ],
+  "statement": "Count the number of integer triples (a, b, c) with 1 ≤ a ≤ b ≤ c ≤ n that form a non-degenerate triangle and satisfy a ⊕ b ⊕ c = 0.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "bitwise"
+  ],
+  "patterns": [
+    "bitwise-xor",
+    "triangle-inequality-check",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047750,
+    "pattern_confidence": {
+      "bitwise-xor": 0.98,
+      "triangle-inequality-check": 0.95,
+      "counting": 0.9
+    }
+  }
+}

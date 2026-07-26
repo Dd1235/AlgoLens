@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-abc235-e",
+  "title": "MST + 1",
+  "slug": "abc235-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc235/tasks/abc235_e",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a weighted connected undirected graph with distinct edge weights, answer queries asking whether adding a new edge with a unique weight to the graph results in a minimum spanning tree that includes this new edge.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "queries"
+  ],
+  "patterns": [
+    "kruskal",
+    "lca",
+    "binary-lifting",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047406,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "lca": 0.85,
+      "binary-lifting": 0.8,
+      "offline-queries": 0.75
+    }
+  },
+  "difficulty": 1304
+}

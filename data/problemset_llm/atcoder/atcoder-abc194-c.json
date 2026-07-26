@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc194-c",
+  "title": "Squared Error",
+  "slug": "abc194-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc194/tasks/abc194_c",
+  "source_topic": "Formwise / Contribution Technique & Prefix",
+  "source_tags": [],
+  "statement": "Given a sequence of integers, compute the sum of squared differences for every pair of elements where the first index is greater than the second.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047527,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "prefix-sum": 0.9
+    }
+  },
+  "difficulty": 386
+}

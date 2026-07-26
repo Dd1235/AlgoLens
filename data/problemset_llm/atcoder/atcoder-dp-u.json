@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-u",
+  "title": "Grouping",
+  "slug": "dp-u",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_u",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Divide N rabbits into groups to maximize the sum of compatibility scores between all pairs within the same group, given a symmetric compatibility matrix.",
+  "tags": [
+    "bitmask",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "subset-enumeration",
+    "dp-on-subsets"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047604,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "subset-enumeration": 0.95,
+      "dp-on-subsets": 0.93
+    }
+  }
+}

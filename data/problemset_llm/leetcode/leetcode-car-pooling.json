@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-car-pooling",
+  "title": "Car Pooling",
+  "slug": "car-pooling",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/car-pooling/description/",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting",
+    "heap-priority-queue",
+    "simulation",
+    "prefix-sum"
+  ],
+  "statement": "Given a list of passenger trips with pickup and drop-off locations along a one-way route and a vehicle capacity, determine if all passengers can be transported without exceeding capacity at any point.",
+  "tags": [
+    "array",
+    "sorting",
+    "simulation",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "line-sweep",
+    "prefix-sum",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047615,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "prefix-sum": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

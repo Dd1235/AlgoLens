@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-574-b",
+  "title": "Bear and Three Musketeers",
+  "slug": "574-b-bear-and-three-musketeers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/574/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "hashing"
+  ],
+  "statement": "Given a set of warriors and their acquaintance relationships, determine if there exists a trio of warriors all mutually acquainted, and if so, find the minimum sum of their recognitions, where recognition is defined as the number of acquaintances excluding the other two musketeers.",
+  "tags": [
+    "graph",
+    "brute-force",
+    "dfs",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "triangle-detection",
+    "degree-counting",
+    "brute-force",
+    "adjacency-list"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047773,
+    "pattern_confidence": {
+      "triangle-detection": 0.95,
+      "degree-counting": 0.9,
+      "brute-force": 0.85,
+      "adjacency-list": 0.8
+    }
+  }
+}

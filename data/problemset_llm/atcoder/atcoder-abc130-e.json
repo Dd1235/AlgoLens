@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc130-e",
+  "title": "Common Subsequence",
+  "slug": "abc130-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc130/tasks/abc130_e",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given two integer sequences, count the number of pairs of subsequences (one from each sequence) that are identical in content, considering subsequences distinct if their indices differ, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047442,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "difficulty": 1676
+}

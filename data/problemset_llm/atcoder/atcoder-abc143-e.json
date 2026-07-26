@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc143-e",
+  "title": "Travel by Car",
+  "slug": "abc143-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc143/tasks/abc143_e",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a weighted undirected graph with fuel tank capacity L, determine the minimum number of refills needed to travel between pairs of towns, refilling only at towns and never running out of fuel mid-road.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "floyd-warshall",
+    "binary-search-answer",
+    "graph-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047417,
+    "pattern_confidence": {
+      "floyd-warshall": 0.95,
+      "binary-search-answer": 0.85,
+      "graph-transformation": 0.8
+    }
+  },
+  "difficulty": 1695
+}

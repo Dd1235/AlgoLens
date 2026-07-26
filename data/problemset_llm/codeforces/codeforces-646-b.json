@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-646-b",
+  "title": "Ошибка передачи сообщения",
+  "slug": "646-b",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/646/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "*special",
+    "strings"
+  ],
+  "statement": "Given a received message string, determine if it can be formed by overlapping two identical messages with a positive overlap smaller than the message length, indicating a transmission error.",
+  "tags": [
+    "string",
+    "pattern-matching"
+  ],
+  "patterns": [
+    "string-overlap",
+    "prefix-function",
+    "knuth-morris-pratt"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047756,
+    "pattern_confidence": {
+      "string-overlap": 0.95,
+      "prefix-function": 0.9,
+      "knuth-morris-pratt": 0.85
+    }
+  }
+}

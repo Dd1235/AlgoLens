@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc148-e",
+  "title": "Double Factorial",
+  "slug": "abc148-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc148/tasks/abc148_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given a non-negative integer N, compute the number of trailing zeros in the decimal representation of the double factorial f(N), defined as the product of every second integer from N down to 1 or 2.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047501,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "counting": 0.9
+    }
+  },
+  "difficulty": 818
+}

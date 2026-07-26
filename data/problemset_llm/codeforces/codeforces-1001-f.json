@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1001-f",
+  "title": "Distinguish multi-qubit basis states",
+  "slug": "1001-f-distinguish-multi-qubit-basis-states",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1001/F",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "Given two distinct N-qubit basis states represented by bitstrings bits0 and bits1, determine which state the system is in by performing operations and measurements, returning 0 or 1 accordingly.",
+  "tags": [
+    "bitmask",
+    "quantum-computing",
+    "string"
+  ],
+  "patterns": [
+    "bitmask",
+    "state-identification",
+    "binary-classification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047766,
+    "pattern_confidence": {
+      "bitmask": 0.9,
+      "state-identification": 0.85,
+      "binary-classification": 0.8
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1778-b",
+  "title": "The Forbidden Permutation",
+  "slug": "1778-b-the-forbidden-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1778/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a permutation and a sequence of distinct elements, find the minimum number of adjacent swaps needed to ensure the sequence does not satisfy a certain positional closeness condition defined by a parameter d.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "index-mapping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047804,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "two-pointers": 0.7,
+      "index-mapping": 0.6
+    }
+  }
+}

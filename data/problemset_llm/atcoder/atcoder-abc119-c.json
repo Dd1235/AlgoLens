@@ -1,0 +1,34 @@
+{
+  "id": "atcoder-abc119-c",
+  "title": "Synthetic Kadomatsu",
+  "slug": "abc119-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc119/tasks/abc119_c",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "source_tags": [],
+  "statement": "Given N bamboos with specified lengths, find the minimum magic points required to create three bamboos of target lengths A, B, and C by extending, shortening, or combining the given bamboos.",
+  "tags": [
+    "backtracking",
+    "bitmask",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "backtracking",
+    "state-compression",
+    "subset-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047378,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "backtracking": 0.9,
+      "state-compression": 0.85,
+      "subset-enumeration": 0.8
+    }
+  },
+  "difficulty": 1346
+}

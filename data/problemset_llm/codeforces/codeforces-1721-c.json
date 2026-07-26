@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1721-c",
+  "title": "Min-Max Array Transformation",
+  "slug": "1721-c-min-max-array-transformation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1721/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Given a sorted array and a resulting sorted array after adding non-negative increments and re-sorting, determine the minimum and maximum increments for each element that could produce the final array.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047731,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "two-pointers": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

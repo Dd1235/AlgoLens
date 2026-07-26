@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-longest-string-chain",
+  "title": "Longest String Chain",
+  "slug": "longest-string-chain",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-string-chain/description/",
+  "source_topic": "Formwise / DP Optimizations",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "two-pointers",
+    "string",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given a list of lowercase words, find the length of the longest chain where each word is formed by inserting exactly one letter into its predecessor without changing the order of existing letters.",
+  "tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "hash-map",
+    "sorting"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sorting",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047583,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "sorting": 0.9,
+      "hash-map": 0.85
+    }
+  }
+}

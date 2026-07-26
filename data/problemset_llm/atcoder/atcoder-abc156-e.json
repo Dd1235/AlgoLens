@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc156-e",
+  "title": "Roaming",
+  "slug": "abc156-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc156/tasks/abc156_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given n rooms each initially with one person and k moves where a person moves from one room to another, count the number of possible distributions of people across the rooms after k moves, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "stars-and-bars",
+    "modular-exponentiation",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047494,
+    "pattern_confidence": {
+      "stars-and-bars": 0.95,
+      "modular-exponentiation": 0.85,
+      "combinatorics": 0.9
+    }
+  },
+  "difficulty": 1514
+}

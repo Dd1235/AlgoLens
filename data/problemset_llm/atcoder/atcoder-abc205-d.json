@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc205-d",
+  "title": "Kth Excluded",
+  "slug": "abc205-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc205/tasks/abc205_d",
+  "source_topic": "Formwise / Binary Search",
+  "source_tags": [],
+  "statement": "Given a sorted sequence of positive integers, answer queries asking for the k-th smallest positive integer not present in the sequence.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047339,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  },
+  "difficulty": 713
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1814-c",
+  "title": "Search in Parallel",
+  "slug": "1814-c-search-in-parallel",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1814/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Partition boxes numbered 1 to n into two ordered lists assigned to two robots with different per-box search times, to minimize the total weighted search time over multiple requests for balls of each color.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047778,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85,
+      "sorting": 0.8
+    }
+  }
+}

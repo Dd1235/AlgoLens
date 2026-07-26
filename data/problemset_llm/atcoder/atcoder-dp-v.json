@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-dp-v",
+  "title": "Subtree",
+  "slug": "dp-v",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_v",
+  "source_topic": "Formwise / Trees",
+  "source_tags": [],
+  "statement": "Given a tree with N vertices, count the number of ways to color vertices black or white such that all black vertices form a connected subgraph containing a specified vertex v, for each vertex v, modulo M.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "graph",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "rerooting-dp",
+    "tree-dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047556,
+    "pattern_confidence": {
+      "rerooting-dp": 0.95,
+      "tree-dp": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

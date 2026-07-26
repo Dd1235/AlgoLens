@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc188-d",
+  "title": "Snuke Prime",
+  "slug": "abc188-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc188/tasks/abc188_d",
+  "source_topic": "Formwise / Contribution Technique & Prefix",
+  "source_tags": [],
+  "statement": "Given multiple services each used over a range of days with daily costs, and a subscription plan costing a fixed daily fee for unlimited services, determine the minimum total cost to use all services by choosing when to subscribe or pay individually.",
+  "tags": [
+    "array",
+    "greedy",
+    "line-sweep"
+  ],
+  "patterns": [
+    "line-sweep",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047521,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "prefix-sum": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "difficulty": 933
+}

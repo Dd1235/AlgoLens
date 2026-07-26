@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1195-d1",
+  "title": "Submarine in the Rybinsk Sea (easy edition)",
+  "slug": "1195-d1-submarine-in-the-rybinsk-sea-easy-edition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1195/D1",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "combinatorics",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array of equal-length integers, compute the sum over all pairs of a digit-interleaving function defined by alternating digits from the two numbers, modulo 998244353.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "digit-manipulation",
+    "combinatorial-summation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047795,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "digit-manipulation": 0.9,
+      "combinatorial-summation": 0.85
+    }
+  }
+}

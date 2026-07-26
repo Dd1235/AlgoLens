@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1923-c",
+  "title": "Find B",
+  "slug": "1923-c-find-b",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1923/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given an array of positive integers, determine for multiple queries whether a specified subarray can be paired with another positive integer array of the same length satisfying sum equality and element-wise inequality conditions.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047742,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

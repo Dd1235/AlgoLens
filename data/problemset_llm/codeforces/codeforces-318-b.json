@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-318-b",
+  "title": "Strings of Power",
+  "slug": "318-b-strings-of-power",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/318/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "implementation",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Count the number of substrings in a given string that start with \"heavy\" and end with \"metal\", considering substrings as consecutive character sequences.",
+  "tags": [
+    "string",
+    "array",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum",
+    "substring-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047806,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "prefix-sum": 0.85,
+      "substring-search": 0.8
+    }
+  }
+}

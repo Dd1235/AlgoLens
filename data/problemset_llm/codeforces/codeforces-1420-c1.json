@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1420-c1",
+  "title": "Pokémon Army (easy version)",
+  "slug": "1420-c1-pok-mon-army-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1420/C1",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "constructive algorithms",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given an array of distinct integers representing pokémon strengths, find the maximum alternating sum of any non-empty subsequence. No swap operations occur in this version.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "subsequence",
+    "alternating-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047802,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.9,
+      "subsequence": 0.85,
+      "alternating-sum": 0.8
+    }
+  }
+}

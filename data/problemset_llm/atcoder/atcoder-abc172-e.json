@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc172-e",
+  "title": "NEQ",
+  "slug": "abc172-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc172/tasks/abc172_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Count the number of pairs of length-N sequences A and B with elements from 1 to M such that A and B are both permutations and differ at every position, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "factorial-precomputation",
+    "modular-inverse",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047491,
+    "pattern_confidence": {
+      "factorial-precomputation": 0.95,
+      "modular-inverse": 0.9,
+      "combinatorics": 0.93
+    }
+  },
+  "difficulty": 1880
+}

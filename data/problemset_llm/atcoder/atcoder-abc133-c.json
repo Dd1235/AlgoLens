@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc133-c",
+  "title": "Remainder Minimization 2019",
+  "slug": "abc133-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc133/tasks/abc133_c",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given a range [L, R], find two integers i and j within this range (i < j) that minimize (i × j) modulo 2019.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "brute-force",
+    "pigeonhole-principle"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047500,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "brute-force": 0.7,
+      "pigeonhole-principle": 0.6
+    }
+  },
+  "difficulty": 592
+}

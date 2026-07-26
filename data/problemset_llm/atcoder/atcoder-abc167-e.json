@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc167-e",
+  "title": "Colorful Blocks",
+  "slug": "abc167-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc167/tasks/abc167_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Count the number of ways to paint N blocks with M colors such that at most K pairs of adjacent blocks share the same color, modulo 998244353.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dp-on-sequences",
+    "combinatorics",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047487,
+    "pattern_confidence": {
+      "dp-on-sequences": 0.95,
+      "combinatorics": 0.9,
+      "modular-exponentiation": 0.85
+    }
+  },
+  "difficulty": 1442
+}

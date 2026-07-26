@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-arc076-b",
+  "title": "Built?",
+  "slug": "arc076-b",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc065/tasks/arc076_b",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given N towns on a plane, build roads connecting all towns with minimum total cost, where the cost to connect two towns is the minimum of the absolute differences of their x or y coordinates.",
+  "tags": [
+    "graph",
+    "geometry",
+    "minimum-spanning-tree"
+  ],
+  "patterns": [
+    "kruskal",
+    "sorting",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047403,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "sorting": 0.9,
+      "coordinate-compression": 0.85
+    }
+  },
+  "difficulty": 1615
+}

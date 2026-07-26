@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-longest-palindromic-subsequence",
+  "title": "Longest Palindromic Subsequence",
+  "slug": "longest-palindromic-subsequence",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-palindromic-subsequence/description/",
+  "source_topic": "Formwise / DP Optimizations",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given a string, find the length of its longest palindromic subsequence, which is a subsequence that reads the same forwards and backwards.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "memoization",
+    "longest-common-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047579,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "memoization": 0.85,
+      "longest-common-subsequence": 0.9
+    }
+  }
+}

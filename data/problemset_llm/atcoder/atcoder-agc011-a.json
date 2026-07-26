@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-agc011-a",
+  "title": "Airport Bus",
+  "slug": "agc011-a",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/agc011/tasks/agc011_a",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "source_tags": [],
+  "statement": "Given arrival times of passengers and constraints on bus capacity and maximum waiting time, determine the minimum number of buses needed so that each passenger boards a bus departing within their allowed time window.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047608,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95,
+      "two-pointers": 0.9
+    }
+  },
+  "difficulty": 827
+}

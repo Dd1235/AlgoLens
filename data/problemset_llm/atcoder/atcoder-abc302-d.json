@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc302-d",
+  "title": "Impartial Gift",
+  "slug": "abc302-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc302/tasks/abc302_d",
+  "source_topic": "Formwise / Two Pointers",
+  "source_tags": [],
+  "statement": "Given two lists of gift values for Aoki and Snuke, determine if there exists a pair whose values differ by at most D, and if so, find the maximum sum of such a pair.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "sorting"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047356,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "sorting": 0.9
+    }
+  },
+  "difficulty": 682
+}

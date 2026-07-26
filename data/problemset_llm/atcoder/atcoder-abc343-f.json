@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc343-f",
+  "title": "Second Largest Query",
+  "slug": "abc343-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc343/tasks/abc343_f",
+  "source_topic": "Formwise / Segment Trees",
+  "source_tags": [],
+  "statement": "Maintain an array with point updates and answer queries asking for the count of the second largest value in a given subrange.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "range-query",
+    "point-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047546,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "range-query": 0.9,
+      "point-update": 0.9
+    }
+  },
+  "difficulty": 1370
+}

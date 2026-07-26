@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc117-d",
+  "title": "XXOR",
+  "slug": "abc117-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc117/tasks/abc117_d",
+  "source_topic": "Formwise / Bit-Manipulation",
+  "source_tags": [],
+  "statement": "Given an array of non-negative integers and an upper bound K, find an integer X between 0 and K that maximizes the sum of XOR values between X and each array element.",
+  "tags": [
+    "bit-manipulation",
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "bitwise-xor",
+    "greedy",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047425,
+    "pattern_confidence": {
+      "bitwise-xor": 0.98,
+      "greedy": 0.85,
+      "bitmask": 0.8
+    }
+  },
+  "difficulty": 1423
+}

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-get-equal-substrings-within-budget",
+  "title": "Get Equal Substrings Within Budget",
+  "slug": "get-equal-substrings-within-budget",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/get-equal-substrings-within-budget/description/",
+  "source_topic": "Formwise / Binary Search",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "binary-search",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "statement": "Given two equal-length strings and a maximum cost, find the longest substring of the first string that can be changed to the corresponding substring of the second string with total character change cost not exceeding the maximum cost.",
+  "tags": [
+    "string",
+    "array"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047333,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "prefix-sum": 0.85
+    }
+  }
+}

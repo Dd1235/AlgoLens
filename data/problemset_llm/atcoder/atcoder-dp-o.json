@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-o",
+  "title": "Matching",
+  "slug": "dp-o",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_o",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Given an N×N compatibility matrix between N men and N women, count the number of perfect matchings where each man is paired with a compatible woman, modulo 10^9+7.",
+  "tags": [
+    "bitmask",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "perfect-matching-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047601,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "perfect-matching-count": 0.9
+    }
+  }
+}

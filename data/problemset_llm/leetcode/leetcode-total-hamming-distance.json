@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-total-hamming-distance",
+  "title": "Total Hamming Distance",
+  "slug": "total-hamming-distance",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/total-hamming-distance/description/",
+  "source_topic": "Formwise / Contribution Technique & Prefix",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "bit-manipulation"
+  ],
+  "statement": "Given an array of integers, compute the sum of Hamming distances between all pairs of elements, where Hamming distance counts differing bit positions.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "bit-counting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047523,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "bit-counting": 0.9,
+      "prefix-sum": 0.7
+    }
+  }
+}

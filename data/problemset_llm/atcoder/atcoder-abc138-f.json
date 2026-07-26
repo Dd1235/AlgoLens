@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc138-f",
+  "title": "Coincidence",
+  "slug": "abc138-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc138/tasks/abc138_f",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Count the number of integer pairs (x, y) with L ≤ x ≤ y ≤ R such that y mod x equals y XOR x, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "number-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic",
+    "bitmask-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047595,
+    "pattern_confidence": {
+      "digit-dp": 0.9,
+      "modular-arithmetic": 0.85,
+      "bitmask-dp": 0.8
+    }
+  },
+  "difficulty": 2431
+}

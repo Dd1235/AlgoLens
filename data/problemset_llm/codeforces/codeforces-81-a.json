@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-81-a",
+  "title": "Plug-in",
+  "slug": "81-a-plug-in",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/81/A",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a string, repeatedly remove pairs of consecutive identical letters until no such pairs remain, and output the resulting string.",
+  "tags": [
+    "string",
+    "stack",
+    "implementation"
+  ],
+  "patterns": [
+    "stack",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047767,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

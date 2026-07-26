@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc140-d",
+  "title": "Face Produces Unhappiness",
+  "slug": "abc140-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc140/tasks/abc140_d",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "source_tags": [],
+  "statement": "Given a queue of people facing either west or east, you can perform up to K segment reversals that flip directions and order within the segment. The goal is to maximize the number of people who are happy, where a person is happy if the person immediately in front faces the same direction.",
+  "tags": [
+    "array",
+    "greedy",
+    "string"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047613,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.7,
+      "prefix-sum": 0.6
+    }
+  },
+  "difficulty": 1074
+}

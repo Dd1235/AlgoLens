@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc216-d",
+  "title": "Pair of Balls",
+  "slug": "abc216-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc216/tasks/abc216_d",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given M cylinders each containing balls of various colors with exactly two balls per color in total, determine if it is possible to repeatedly remove pairs of top balls of the same color from two different cylinders until all cylinders are empty.",
+  "tags": [
+    "stack",
+    "graph",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation",
+    "stack",
+    "bipartite-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047479,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "stack": 0.9,
+      "bipartite-matching": 0.7
+    }
+  },
+  "difficulty": 1039
+}

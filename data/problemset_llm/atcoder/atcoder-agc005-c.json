@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-agc005-c",
+  "title": "Tree Restoring",
+  "slug": "agc005-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/agc005/tasks/agc005_c",
+  "source_topic": "Formwise / Trees",
+  "source_tags": [],
+  "statement": "Given a sequence representing the maximum distance from each vertex to its farthest vertex, determine if there exists a tree with those distance constraints.",
+  "tags": [
+    "tree",
+    "graph",
+    "distance"
+  ],
+  "patterns": [
+    "diameter-characterization",
+    "graph-construction",
+    "distance-metrics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047553,
+    "pattern_confidence": {
+      "diameter-characterization": 0.9,
+      "graph-construction": 0.85,
+      "distance-metrics": 0.8
+    }
+  },
+  "difficulty": 1976
+}

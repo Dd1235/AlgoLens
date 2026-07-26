@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc201-e",
+  "title": "Xor Distances",
+  "slug": "abc201-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc201/tasks/abc201_e",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Given a weighted tree, compute the XOR distance between every pair of vertices and output the sum of all these distances modulo 10^9+7.",
+  "tags": [
+    "tree",
+    "graph",
+    "bitwise"
+  ],
+  "patterns": [
+    "dfs",
+    "xor-basis",
+    "bitmask"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047599,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "xor-basis": 0.9,
+      "bitmask": 0.85
+    }
+  },
+  "difficulty": 1694
+}

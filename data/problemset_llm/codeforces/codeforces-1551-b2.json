@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1551-b2",
+  "title": "Wonderful Coloring - 2",
+  "slug": "1551-b2-wonderful-coloring-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1551/B2",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given a sequence and a number of colors k, paint elements so that no two equal elements share a color, all colors have the same count of painted elements, and the total painted elements is maximized.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search-answer",
+    "frequency-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047787,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search-answer": 0.9,
+      "frequency-count": 0.85
+    }
+  }
+}

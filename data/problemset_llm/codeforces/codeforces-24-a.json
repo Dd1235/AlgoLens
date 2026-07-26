@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-24-a",
+  "title": "Ring road",
+  "slug": "24-a-ring-road",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/24/A",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "graphs"
+  ],
+  "statement": "Given a ring of cities connected by one-way roads with known redirection costs, find the minimum total cost to redirect roads so that every city is reachable from every other city.",
+  "tags": [
+    "graph",
+    "greedy",
+    "cycle"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "greedy",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047745,
+    "pattern_confidence": {
+      "cycle-detection": 0.9,
+      "greedy": 0.85,
+      "graph-traversal": 0.8
+    }
+  }
+}

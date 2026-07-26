@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-broken-calculator",
+  "title": "Broken Calculator",
+  "slug": "broken-calculator",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/broken-calculator/description/",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "greedy"
+  ],
+  "statement": "Given a starting integer and a target integer, find the minimum number of operations to reach the target by either doubling the current number or subtracting one.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "reverse-greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047610,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "reverse-greedy": 0.9
+    }
+  }
+}

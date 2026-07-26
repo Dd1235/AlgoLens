@@ -1,0 +1,40 @@
+{
+  "id": "leetcode-two-best-non-overlapping-events",
+  "title": "Two Best Non-Overlapping Events",
+  "slug": "two-best-non-overlapping-events",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/two-best-non-overlapping-events/description/",
+  "source_topic": "Formwise / DP Optimizations",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sorting",
+    "heap-priority-queue"
+  ],
+  "statement": "Given a list of events with start time, end time, and value, select at most two non-overlapping events to maximize the sum of their values.",
+  "tags": [
+    "array",
+    "sorting",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "sorting",
+    "binary-search",
+    "dynamic-programming",
+    "two-pointer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047586,
+    "pattern_confidence": {
+      "sorting": 0.98,
+      "binary-search": 0.95,
+      "dynamic-programming": 0.9,
+      "two-pointer": 0.7
+    }
+  }
+}

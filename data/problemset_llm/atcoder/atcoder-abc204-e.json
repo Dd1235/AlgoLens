@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc204-e",
+  "title": "Rush Hour 2",
+  "slug": "abc204-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc204/tasks/abc204_e",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a weighted undirected graph with edge travel times dependent on the start time, find the earliest time to reach from city 1 to city N, allowing waiting at cities for integer times. If unreachable, output -1.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dijkstra",
+    "waiting-time-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047396,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "dijkstra": 0.9,
+      "waiting-time-optimization": 0.85
+    }
+  },
+  "difficulty": 1710
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-120-f",
+  "title": "Spiders",
+  "slug": "120-f-spiders",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/120/F",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given multiple spiders represented as trees, glue them together by identifying beads to form a single spider with maximum possible diameter (longest distance between any two beads).",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "tree-dp",
+    "diameter-of-tree",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047747,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "diameter-of-tree": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

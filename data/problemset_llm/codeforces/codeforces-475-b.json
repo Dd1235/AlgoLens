@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-475-b",
+  "title": "Strongly Connected City",
+  "slug": "475-b-strongly-connected-city",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/475/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "implementation"
+  ],
+  "statement": "Given a grid of intersections formed by horizontal and vertical streets each assigned a one-way direction, determine if the resulting directed graph is strongly connected, meaning every junction is reachable from every other junction.",
+  "tags": [
+    "graph",
+    "strongly-connected-components",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "strongly-connected-components",
+    "graph-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047737,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "strongly-connected-components": 0.9,
+      "graph-connectivity": 0.85
+    }
+  }
+}

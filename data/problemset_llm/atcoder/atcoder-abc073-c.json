@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc073-c",
+  "title": "Write and Erase",
+  "slug": "abc073-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc073/tasks/abc073_c",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given a sequence of numbers, simulate writing or erasing each number on a sheet: if the number is not present, write it; if it is present, erase it. Determine how many numbers remain on the sheet after all operations.",
+  "tags": [
+    "array",
+    "hash-map",
+    "simulation"
+  ],
+  "patterns": [
+    "hash-set",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047468,
+    "pattern_confidence": {
+      "hash-set": 0.95,
+      "simulation": 0.9
+    }
+  },
+  "difficulty": 454
+}

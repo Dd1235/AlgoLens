@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc153-d",
+  "title": "Caracal vs Monster",
+  "slug": "abc153-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc153/tasks/abc153_d",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "source_tags": [],
+  "statement": "Given a monster with initial health H, repeatedly attack monsters where attacking a monster with health greater than 1 splits it into two monsters with half the health, and attacking a monster with health 1 reduces it to zero. Find the minimum number of attacks needed to reduce all monsters' health to zero.",
+  "tags": [
+    "math",
+    "recursion",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "memoization",
+    "recursion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047360,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "memoization": 0.85,
+      "recursion": 0.95
+    }
+  },
+  "difficulty": -52
+}
