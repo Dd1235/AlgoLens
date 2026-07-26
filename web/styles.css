@@ -547,6 +547,26 @@ html[data-theme="light"] .result-title {
 .result-meta .platform-badge::before { content: "["; }
 .result-meta .platform-badge::after { content: "]"; }
 
+/* It's a filter button, not a label — but it should read as a badge until you
+   hover it, so the card header stays quiet. */
+.result-meta .platform-badge {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+.result-meta .platform-badge:hover,
+.result-meta .platform-badge:focus-visible {
+  color: var(--accent);
+  opacity: 1;
+}
+.result-meta .platform-badge.active {
+  color: var(--accent);
+  opacity: 1;
+  font-weight: 600;
+}
+
 .result-meta .difficulty.easy { color: var(--accent); border-color: var(--accent-soft); }
 .result-meta .difficulty.medium { color: var(--warn); border-color: rgba(251, 191, 119, 0.3); }
 .result-meta .difficulty.hard { color: var(--danger); border-color: rgba(255, 107, 129, 0.3); }

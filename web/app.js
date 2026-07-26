@@ -53,6 +53,7 @@ let currentUser = null;
 // soft reload, and a hardcoded "all" here would silently disagree with it.
 let currentFilter = filterSelect.value || "all";
 let activePattern = "";
+const activePlatforms = new Set(); // empty = every judge
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let currentSearchId = null; // ties outcome beacons to the search that produced them
 let currentRankerAnswered = "";
@@ -304,7 +305,8 @@ async function runSearch(rawQuery, { append = false } = {}) {
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const rankerParam = activeRanker ? `&ranker=${encodeURIComponent(activeRanker)}` : "";
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}`;
+  const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}${platformParam}`;
 
   let data;
   try {
@@ -350,6 +352,7 @@ function renderSingle(data, q, append) {
 async function runLibrary(type, q) {
   const issuedAt = ++lastQueryAt;
   clearPatternFilter({ reissue: false }); // library views ignore the pattern filter
+  clearPlatformFilter({ reissue: false });
   currentSearchId = null;
   currentRankerAnswered = "";
   hideFeedback();
@@ -401,6 +404,7 @@ async function runLibrary(type, q) {
 async function runSimilar(problem) {
   const issuedAt = ++lastQueryAt;
   clearPatternFilter({ reissue: false }); // similar view is vector-driven, not filtered
+  clearPlatformFilter({ reissue: false });
   currentSearchId = null;
   currentRankerAnswered = "";
   hideFeedback();
@@ -493,6 +497,8 @@ fbReason.addEventListener("keydown", (e) => {
 
 const patternPill = document.getElementById("pattern-pill");
 patternPill.addEventListener("click", () => clearPatternFilter());
+const platformPill = document.getElementById("platform-pill");
+platformPill.addEventListener("click", () => clearPlatformFilter());
 
 // Pattern chips narrow search results to problems carrying that label (the
 // server filters post-rank). The pill under the status line shows the active
@@ -530,6 +536,43 @@ function updatePatternPill() {
     patternPill.classList.remove("hidden");
   } else {
     patternPill.classList.add("hidden");
+  }
+}
+
+// The [lc] [cf] [atc] [cses] badge on every card doubles as the judge filter —
+// click to narrow, click again to drop it, several at once to union them. Same
+// post-rank filter as pattern chips, so it composes with them for free.
+function togglePlatformFilter(platform) {
+  if (activePlatforms.has(platform)) activePlatforms.delete(platform);
+  else activePlatforms.add(platform);
+  track("platform_selected", { platform, active: [...activePlatforms].join(",") });
+  updatePlatformPill();
+  currentOffset = 0;
+  if (currentQuery || input.value.trim()) runSearch(input.value || currentQuery, { append: false });
+}
+
+function clearPlatformFilter({ reissue = true } = {}) {
+  if (!activePlatforms.size) return;
+  activePlatforms.clear();
+  updatePlatformPill();
+  const url = new URL(location.href);
+  if (url.searchParams.has("platform")) {
+    url.searchParams.delete("platform");
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  }
+  if (reissue && currentQuery) {
+    currentOffset = 0;
+    runSearch(currentQuery, { append: false });
+  }
+}
+
+function updatePlatformPill() {
+  if (activePlatforms.size) {
+    const names = [...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]);
+    platformPill.textContent = `judge: ${names.join(" + ")} ✕`;
+    platformPill.classList.remove("hidden");
+  } else {
+    platformPill.classList.add("hidden");
   }
 }
 
@@ -575,10 +618,12 @@ COMPARE
 
 LINKS
   every view is shareable: /?q=knapsack · /?pattern=slope-trick
-  /?ranker=dense · combine them
+  /?ranker=dense · /?platform=codeforces,atcoder · combine them
 
 CORPUS
   four judges, tagged [lc] [cf] [atc] [cses] on every result
+  click a tag to see only that judge; click more to combine them,
+  click again to drop it — the pill under the status clears it
   deliberately hard: no LeetCode Easy, Codeforces and AtCoder
   stratified from 1300 up — the number on the card is the rating
 
@@ -730,7 +775,9 @@ const PLATFORM_LABELS = {
 function platformBadge(platform) {
   const [short, full] = PLATFORM_LABELS[platform] || [platform, platform];
   if (!short) return "";
-  return `<span class="platform-badge" title="${escapeHtml(full)}">${escapeHtml(short)}</span>`;
+  const on = activePlatforms.has(platform);
+  return `<button type="button" class="platform-badge${on ? " active" : ""}" data-platform="${escapeHtml(platform)}"
+    title="${escapeHtml(on ? `stop filtering to ${full}` : `only ${full}`)}">${escapeHtml(short)}</button>`;
 }
 
 // Badge wording deliberately leads with "vs <other>" — the old form put the
@@ -781,6 +828,14 @@ function renderHitsList(container, hits, opts = {}) {
       metaHtml = rankDeltaBadge(i + 1, other, opts.otherName) + metaHtml;
     }
     meta.innerHTML = metaHtml;
+    // The badge lives inside the header, which toggles the card open — so the
+    // filter click has to stop there or every judge filter also expands a result.
+    meta.querySelectorAll(".platform-badge").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        togglePlatformFilter(btn.dataset.platform);
+      });
+    });
 
     header.appendChild(title);
     header.appendChild(meta);
@@ -980,6 +1035,10 @@ if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
 populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
+  if (PLATFORM_LABELS[p.trim()]) activePlatforms.add(p.trim());
+}
+updatePlatformPill();
 if (bootQ) input.value = bootQ;
 if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
   applyPatternFilter(bootPattern);
