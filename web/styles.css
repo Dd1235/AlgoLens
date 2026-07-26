@@ -807,6 +807,27 @@ html[data-theme="light"] .pattern-chip {
   color: var(--text-muted);
 }
 
+/* Privacy disclosure next to the handle form. Collapsed by default — it should
+   be there when someone hesitates, not lecture everyone who doesn't. */
+.privacy-note {
+  margin: 0 0 1.6rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--r-control);
+  padding: 0.5rem 0.8rem;
+}
+.privacy-note summary {
+  cursor: pointer;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.privacy-note summary::before { content: "// "; color: var(--text-dim); }
+.privacy-note ul { margin: 0.7rem 0 0.2rem; padding-left: 1.1rem; }
+.privacy-note li { margin-bottom: 0.55rem; line-height: 1.5; }
+.privacy-note strong { color: var(--text); font-weight: 600; }
+.privacy-note a { color: var(--accent); }
+
 .platform-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));

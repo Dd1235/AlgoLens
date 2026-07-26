@@ -44,6 +44,7 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 ## Tracking the grind
 
 - **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / AtCoder / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
+- **Your handles are encrypted, and the claim stops where the truth does.** Linked usernames and the stats fetched with them are AES-256-GCM ciphertext; the key lives in the app environment, never in the database, so a database copy is unreadable on its own. No other user can see them — there's no public profile and no leaderboard. The judges themselves necessarily receive the username when your stats are fetched, and I won't claim "not even the admin can see it", because I run the server and that would be false. It isn't stored readably, deleting is immediate, and the code is here to check.
 - **Bookmarks and done-marks** on every result, with a shell-style library (`:bookmarks`, `:done`, Tab cycles views). Done-marks feed the heatmap too.
 
 ## Small things that make it nice to use
@@ -79,6 +80,8 @@ or wording, not ranking — that turned out to be the pattern.
 | Refreshing threw away the search | The address bar now mirrors query + judges + pattern + ranker + filter, so refresh and bookmarking keep the view |
 | Clicking a pattern chip could show 0 results | A filter with no query now browses that label instead of searching within your last one — `line-sweep` shows all 40, not the 0 that matched "cycle" |
 | Should a pattern filter survive a new query? | No — measured it: carrying a label into a new query dead-ends in 9 of 25 cases, a judge in 0 of 20. Labels drop when you type, judges stay |
+| "no section on what patterns even exist — I only know Striver's sheet" | Searches now name the technique family above the results, and the patterns page is filterable and out of the dev-tools nav |
+| "pick topics + difficulty, get 3 random problems" | Shipped the half the data supports: shuffle on any browse. The difficulty half can't work — 16% of the corpus has no difficulty and a band leaves 1-3 candidates per topic |
 
 ## Measured
 

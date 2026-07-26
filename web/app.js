@@ -864,6 +864,17 @@ SEARCH — pick a mode next to the box
   Community names expand on their own: type "aliens trick" and the status
   line shows "+wqs binary search" — you get the results and the real name.
 
+TECHNIQUES
+  a search names the technique family it touches, above the
+  results — type "dp" and see digit-dp, tree-dp, slope-trick.
+  Click one to browse every problem carrying it.
+  the whole vocabulary, filterable: /patterns.html
+
+BROWSE
+  a filter with no query lists everything it selects, and
+  "⤨ shuffle" draws that set in a random order. Most labels are
+  small, so it says when the pool is too thin to vary.
+
 PATTERNS
   every expanded result lists technique labels — click one to
   narrow your search to that label; the pill clears it
