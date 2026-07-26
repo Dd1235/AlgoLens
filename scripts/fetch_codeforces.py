@@ -81,6 +81,15 @@ def main() -> int:
         if offset % (args.page * 10) == 0:
             print(f"  scanned {offset + args.page}/{total}, kept {len(pool)}")
 
+    # Anything the curated sheet asked for is staged regardless of the sample —
+    # those problems are already chosen by a human.
+    wanted: set[str] = set()
+    labels_path = ROOT / "data" / "cache" / "formwise_labels.json"
+    if labels_path.exists():
+        wanted = {k for k in json.loads(labels_path.read_text()) if k.startswith("codeforces-")}
+    curated = [p for p in pool if p["id"] in wanted]
+    print(f"  curated from formwise: {len(curated)}/{len(wanted)} found in the dataset")
+
     # Even split across bands; deterministic order so reruns are reproducible.
     random.seed(7)
     per_band = max(1, args.count // len(BANDS))
@@ -91,6 +100,8 @@ def main() -> int:
         picked.extend(band[:per_band])
         print(f"  band {lo}-{hi}: {len(band)} available, took {min(per_band, len(band))}")
     picked = picked[: args.count]
+    have = {p["id"] for p in picked}
+    picked.extend(p for p in curated if p["id"] not in have)
 
     CACHE.parent.mkdir(parents=True, exist_ok=True)
     CACHE.write_text(json.dumps({p["id"]: p for p in picked}, ensure_ascii=False, indent=1) + "\n")
