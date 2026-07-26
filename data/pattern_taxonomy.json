@@ -475,6 +475,30 @@
     },
     "interactive": {
       "category": "general"
+    },
+    "bit-manipulation": {
+      "category": "math"
+    },
+    "connected-components": {
+      "category": "graph"
+    },
+    "subset-sum": {
+      "category": "dp"
+    },
+    "modular-exponentiation": {
+      "category": "math"
+    },
+    "string-matching": {
+      "category": "string"
+    },
+    "grid-traversal": {
+      "category": "graph"
+    },
+    "palindrome": {
+      "category": "string"
+    },
+    "brute-force": {
+      "category": "general"
     }
   },
   "aliases": {
@@ -549,10 +573,19 @@
     "2-sat": "two-sat",
     "constructive-algorithms": "constructive-algorithm",
     "games": "game-theory",
-    "bitmasks": "bitmask-dp",
+    "bitmasks": "bit-manipulation",
     "probabilities": "probability-dp",
     "matrices": "matrix-exponentiation",
     "string-suffix-structures": "suffix-array",
-    "kmp-z-algorithm": "kmp"
+    "kmp-z-algorithm": "kmp",
+    "bitmask": "bit-manipulation",
+    "bitwise-operations": "bit-manipulation",
+    "bitmask-enumeration": "bit-manipulation",
+    "frequency-count": "counting",
+    "frequency-counting": "counting",
+    "palindrome-check": "palindrome",
+    "pattern-matching": "string-matching",
+    "enumeration": "brute-force",
+    "exhaustive-search": "brute-force"
   }
 }
