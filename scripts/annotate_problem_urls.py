@@ -558,11 +558,15 @@ def annotation_prompt(base: dict[str, Any]) -> list[dict[str, str]]:
             "rating": base.get("rating"),
             "source_text": base.get("source_text", ""),
         },
+        # Placeholders, not sample values. Real slugs here leak: when this field
+        # read ["binary-search-answer", "prefix-sum"], the model emitted
+        # binary-search-answer first on 66% of the Codeforces batch and scored
+        # 45% precision against Codeforces' own binary-search tag.
         "output_schema": {
-            "statement": "1-3 sentence original summary",
-            "tags": ["array", "graph", "dp"],
-            "patterns": ["binary-search-answer", "prefix-sum"],
-            "pattern_confidence": {"binary-search-answer": 0.92, "prefix-sum": 0.84},
+            "statement": "<1-3 sentence original summary>",
+            "tags": ["<broad domain or data structure>", "..."],
+            "patterns": ["<algorithmic technique slug>", "..."],
+            "pattern_confidence": {"<same slugs as patterns>": "<number 0-1>"},
         },
     }
     return [

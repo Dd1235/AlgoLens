@@ -56,12 +56,20 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-support", type=int, default=10,
                     help="skip tags CF uses on fewer than this many problems")
+    ap.add_argument("--corpus", type=Path, default=CORPUS,
+                    help="directory of records to score (for A/B runs)")
+    ap.add_argument("--only", type=Path,
+                    help="file of ids, one per line; score just these")
     args = ap.parse_args()
 
+    keep = None
+    if args.only:
+        keep = {ln.strip() for ln in args.only.read_text().splitlines() if ln.strip()}
+
     records = []
-    for path in sorted(CORPUS.glob("*.json")):
+    for path in sorted(args.corpus.glob("*.json")):
         r = json.loads(path.read_text())
-        if r.get("source_tags"):
+        if r.get("source_tags") and (keep is None or r["id"] in keep):
             records.append(r)
     if not records:
         print("no codeforces records carry source_tags — nothing to score")

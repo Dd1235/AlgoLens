@@ -79,11 +79,13 @@ def main() -> int:
             added_patterns += 1
             changed = True
 
-        topic_tag = TOPIC_TAGS.get(meta.get("topic", ""))
-        if topic_tag and topic_tag not in problem.get("tags", []):
-            problem.setdefault("tags", []).append(topic_tag)
-            added_tags += 1
-            changed = True
+        # A problem filed under two tabs earns both tags.
+        for topic in meta.get("topics") or [meta.get("topic", "")]:
+            topic_tag = TOPIC_TAGS.get(topic)
+            if topic_tag and topic_tag not in problem.get("tags", []):
+                problem.setdefault("tags", []).append(topic_tag)
+                added_tags += 1
+                changed = True
 
         if changed:
             touched += 1
