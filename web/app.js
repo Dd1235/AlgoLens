@@ -49,7 +49,9 @@ let currentOffset = 0;
 let currentTotal = 0;
 let currentTopScore = 0;
 let currentUser = null;
-let currentFilter = "all";
+// Read from the DOM, not assumed: browsers can restore a <select> across a
+// soft reload, and a hardcoded "all" here would silently disagree with it.
+let currentFilter = filterSelect.value || "all";
 let activePattern = "";
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let currentSearchId = null; // ties outcome beacons to the search that produced them
@@ -509,6 +511,13 @@ function clearPatternFilter({ reissue = true } = {}) {
   if (!activePattern) return;
   activePattern = "";
   updatePatternPill();
+  // Drop ?pattern= from the address bar too. Without this, clearing a filter
+  // you arrived at via a deep link only lasted until the next refresh.
+  const url = new URL(location.href);
+  if (url.searchParams.has("pattern")) {
+    url.searchParams.delete("pattern");
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  }
   if (reissue && currentQuery) {
     currentOffset = 0;
     runSearch(currentQuery, { append: false });
