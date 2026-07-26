@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const CORPUS_ROOT = path.join(__dirname, "..", "data", "problemset_llm");
-const DEFAULT_PLATFORMS = ["leetcode", "cses"];
+const DEFAULT_PLATFORMS = ["leetcode", "cses", "codeforces", "atcoder"];
 
 function loadProblems({ platforms = DEFAULT_PLATFORMS, root = CORPUS_ROOT } = {}) {
   const problems = [];
