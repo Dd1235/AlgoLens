@@ -9,23 +9,22 @@
   "source_tags": [
     "*special"
   ],
-  "statement": "Given a mysterious programming language called \"Secret 2021\" accessible in a custom test environment, determine its identity and write a program in that language that outputs its name.",
+  "statement": "Given a mysterious programming language named \"Secret 2021\" accessible in a custom test environment, identify the language and write a program that outputs its name using that language.",
   "tags": [
-    "implementation",
     "interactive",
-    "string"
+    "simulation"
   ],
   "patterns": [
     "interactive",
-    "implementation"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048186,
+    "generated_at_unix": 1785050495,
     "pattern_confidence": {
       "interactive": 0.9,
-      "implementation": 0.85
+      "simulation": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

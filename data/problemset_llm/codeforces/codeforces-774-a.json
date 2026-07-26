@@ -10,25 +10,25 @@
     "*special",
     "ternary search"
   ],
-  "statement": "Given n visitors including adults and pupils, partition them into groups each containing at least one adult to minimize the total ticket cost defined by a fixed plus quadratic term based on group size.",
+  "statement": "Given n visitors including adults and pupils, partition them into groups each containing at least one adult to minimize the total ticket cost, where the cost of a group of size x is c1 + c2·(x - 1)^2.",
   "tags": [
-    "dynamic-programming",
     "math",
-    "greedy"
+    "greedy",
+    "binary-search"
   ],
   "patterns": [
     "ternary-search",
-    "dynamic-programming",
-    "convex-quadratic-optimization"
+    "greedy",
+    "binary-search-answer"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048238,
+    "generated_at_unix": 1785050543,
     "pattern_confidence": {
       "ternary-search": 0.9,
-      "dynamic-programming": 0.85,
-      "convex-quadratic-optimization": 0.8
+      "greedy": 0.85,
+      "binary-search-answer": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

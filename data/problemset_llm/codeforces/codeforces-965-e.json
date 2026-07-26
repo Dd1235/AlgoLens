@@ -13,29 +13,29 @@
     "strings",
     "trees"
   ],
-  "statement": "Given a list of unique variable names, find the minimum total length of prefixes assigned to each variable so that all prefixes are unique.",
+  "statement": "Given a list of unique variable names, find the minimum total length of non-empty prefixes assigned to each variable so that all prefixes are unique.",
   "tags": [
     "strings",
-    "tree",
+    "trie",
     "greedy",
     "dynamic-programming",
-    "trie"
+    "tree"
   ],
   "patterns": [
-    "prefix-tree",
+    "trie",
+    "prefix-uniqueness",
     "greedy",
-    "dp-on-tree",
-    "unique-prefixes"
+    "dp-on-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048469,
+    "generated_at_unix": 1785050771,
     "pattern_confidence": {
-      "prefix-tree": 0.95,
-      "greedy": 0.9,
-      "dp-on-tree": 0.85,
-      "unique-prefixes": 0.9
+      "trie": 0.95,
+      "prefix-uniqueness": 0.9,
+      "greedy": 0.85,
+      "dp-on-tree": 0.8
     }
   },
   "source_topic": "Formwise / Trie"

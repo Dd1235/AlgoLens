@@ -16,7 +16,8 @@
   "patterns": [
     "rerooting-dp",
     "tree-dp",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "rerooting-dp": 0.95,
       "tree-dp": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.85,
+      "dp-optimization": 0.9
     }
   }
 }

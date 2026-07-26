@@ -18,17 +18,17 @@
   ],
   "patterns": [
     "offline-queries",
-    "frequency-array",
-    "sqrt-decomposition"
+    "mo-algorithm",
+    "frequency-array"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047911,
+    "generated_at_unix": 1785050225,
     "pattern_confidence": {
       "offline-queries": 0.9,
-      "frequency-array": 0.85,
-      "sqrt-decomposition": 0.7
+      "mo-algorithm": 0.85,
+      "frequency-array": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

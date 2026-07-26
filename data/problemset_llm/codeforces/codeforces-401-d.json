@@ -13,11 +13,11 @@
     "dp",
     "number theory"
   ],
-  "statement": "Count how many permutations of the digits of a given number n, without leading zeros, are divisible by m.",
+  "statement": "Given a number n and a modulus m, count how many distinct permutations of n's digits (without leading zeros) are divisible by m.",
   "tags": [
-    "dynamic-programming",
     "number-theory",
     "combinatorics",
+    "dynamic-programming",
     "bit-manipulation"
   ],
   "patterns": [
@@ -28,11 +28,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048985,
+    "generated_at_unix": 1785051098,
     "pattern_confidence": {
-      "bitmask-dp": 0.98,
-      "digit-dp": 0.95,
-      "state-compression": 0.9
+      "bitmask-dp": 0.95,
+      "digit-dp": 0.9,
+      "state-compression": 0.85
     }
   },
   "source_topic": "Formwise / DP Level 2"

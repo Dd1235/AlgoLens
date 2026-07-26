@@ -15,25 +15,24 @@
   "statement": "Given a tree with digits on edges and an integer M coprime to 10, count ordered pairs of distinct vertices where the concatenation of digits along the shortest path forms a number divisible by M.",
   "tags": [
     "tree",
-    "graph",
     "number-theory",
     "dfs",
     "union-find"
   ],
   "patterns": [
+    "dfs",
     "dsu-on-tree",
     "modular-arithmetic",
-    "dfs",
     "divide-and-conquer"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048358,
+    "generated_at_unix": 1785050667,
     "pattern_confidence": {
-      "dsu-on-tree": 0.95,
+      "dfs": 0.95,
+      "dsu-on-tree": 0.9,
       "modular-arithmetic": 0.9,
-      "dfs": 0.9,
       "divide-and-conquer": 0.85
     }
   },

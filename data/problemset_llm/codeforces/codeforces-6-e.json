@@ -13,7 +13,7 @@
     "trees",
     "two pointers"
   ],
-  "statement": "Given a chronological sequence of book heights, find the longest contiguous segment where the height difference between the tallest and shortest book does not exceed a given limit k.",
+  "statement": "Given a chronological sequence of book heights, find the longest contiguous subsequence where the difference between the tallest and shortest book does not exceed a given threshold k.",
   "tags": [
     "array",
     "two-pointers",
@@ -22,16 +22,18 @@
   "patterns": [
     "two-pointers",
     "sliding-window",
-    "monotonic-queue"
+    "balanced-tree",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048771,
+    "generated_at_unix": 1785050854,
     "pattern_confidence": {
       "two-pointers": 0.95,
       "sliding-window": 0.9,
-      "monotonic-queue": 0.85
+      "balanced-tree": 0.7,
+      "binary-search": 0.6
     }
   },
   "source_topic": "Formwise / Two Pointers"

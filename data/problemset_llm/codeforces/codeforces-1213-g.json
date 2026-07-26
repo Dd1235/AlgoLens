@@ -21,20 +21,18 @@
     "sorting"
   ],
   "patterns": [
-    "offline-queries",
     "union-find",
-    "sorting",
-    "two-pointers"
+    "offline-queries",
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048020,
+    "generated_at_unix": 1785050342,
     "pattern_confidence": {
-      "offline-queries": 0.95,
-      "union-find": 0.96,
-      "sorting": 0.9,
-      "two-pointers": 0.85
+      "union-find": 0.95,
+      "offline-queries": 0.9,
+      "sorting": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

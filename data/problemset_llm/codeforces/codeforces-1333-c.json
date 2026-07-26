@@ -20,17 +20,17 @@
   ],
   "patterns": [
     "prefix-sum",
-    "binary-search-answer",
-    "two-pointers"
+    "two-pointers",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049036,
+    "generated_at_unix": 1785051149,
     "pattern_confidence": {
       "prefix-sum": 0.95,
-      "binary-search-answer": 0.9,
-      "two-pointers": 0.85
+      "two-pointers": 0.85,
+      "binary-search": 0.7
     }
   },
   "source_topic": "Formwise / Two Pointers"

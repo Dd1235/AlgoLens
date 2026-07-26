@@ -11,25 +11,25 @@
     "data structures",
     "trees"
   ],
-  "statement": "Maintain a dynamic set of integers under interval add, remove, and invert operations, and after each operation output the smallest positive integer not in the set (MEX).",
+  "statement": "Maintain a dynamic set of positive integers under interval add, remove, and invert operations, and after each operation output the smallest positive integer not in the set (MEX).",
   "tags": [
     "data-structures",
-    "binary-search",
-    "segment-tree"
+    "segment-tree",
+    "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
-    "interval-update",
-    "lazy-propagation"
+    "segment-tree",
+    "lazy-propagation",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048215,
+    "generated_at_unix": 1785050521,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "interval-update": 0.85,
-      "lazy-propagation": 0.8
+      "segment-tree": 0.95,
+      "lazy-propagation": 0.9,
+      "binary-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

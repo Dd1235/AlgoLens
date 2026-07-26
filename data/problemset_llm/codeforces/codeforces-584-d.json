@@ -20,17 +20,17 @@
   "patterns": [
     "prime-checking",
     "brute-force",
-    "constructive-algorithm",
+    "greedy",
     "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049024,
+    "generated_at_unix": 1785051137,
     "pattern_confidence": {
-      "prime-checking": 0.95,
-      "brute-force": 0.9,
-      "constructive-algorithm": 0.85,
+      "prime-checking": 0.9,
+      "brute-force": 0.8,
+      "greedy": 0.7,
       "number-theory": 0.9
     }
   },

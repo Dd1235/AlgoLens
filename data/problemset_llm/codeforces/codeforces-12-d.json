@@ -12,24 +12,23 @@
   ],
   "statement": "Given a list of ladies each with three attributes (beauty, intellect, richness), count how many have another lady strictly greater in all three attributes.",
   "tags": [
-    "array",
-    "sorting",
     "data-structures",
+    "sorting",
     "segment-tree"
   ],
   "patterns": [
+    "sorting",
     "coordinate-compression",
-    "fenwick-tree",
-    "offline-queries"
+    "fenwick-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048814,
+    "generated_at_unix": 1785050902,
     "pattern_confidence": {
-      "coordinate-compression": 0.9,
-      "fenwick-tree": 0.85,
-      "offline-queries": 0.8
+      "sorting": 0.95,
+      "coordinate-compression": 0.85,
+      "fenwick-tree": 0.8
     }
   },
   "source_topic": "Formwise / Segment Trees"

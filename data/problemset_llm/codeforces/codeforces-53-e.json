@@ -13,24 +13,23 @@
   "statement": "Count the number of spanning trees with exactly k leaves (dead ends) in a connected undirected graph with n junctions and m roads.",
   "tags": [
     "graph",
+    "combinatorics",
     "dynamic-programming",
-    "combinatorics"
+    "bit-manipulation"
   ],
   "patterns": [
-    "dynamic-programming",
-    "counting",
-    "spanning-tree",
-    "bitmask-dp"
+    "bitmask-dp",
+    "spanning-tree-counting",
+    "combinatorial-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048327,
+    "generated_at_unix": 1785050638,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "counting": 0.9,
-      "spanning-tree": 0.9,
-      "bitmask-dp": 0.85
+      "bitmask-dp": 0.9,
+      "spanning-tree-counting": 0.85,
+      "combinatorial-dp": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

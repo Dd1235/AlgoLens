@@ -11,25 +11,22 @@
     "implementation",
     "math"
   ],
-  "statement": "Given friendship relations among five people, determine if there exists a trio who are either all mutually acquainted or all mutually unacquainted.",
+  "statement": "Given a graph of five people with friendship relations, determine whether there exists a trio of three people who are either all mutually acquainted or all mutually unacquainted.",
   "tags": [
     "graph",
-    "combinatorics",
-    "implementation"
+    "combinatorics"
   ],
   "patterns": [
     "brute-force",
-    "clique-detection",
-    "triangle-check"
+    "triangle-detection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047784,
+    "generated_at_unix": 1785050087,
     "pattern_confidence": {
-      "brute-force": 0.95,
-      "clique-detection": 0.85,
-      "triangle-check": 0.9
+      "brute-force": 0.9,
+      "triangle-detection": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

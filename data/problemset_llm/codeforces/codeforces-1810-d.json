@@ -10,25 +10,25 @@
     "binary search",
     "math"
   ],
-  "statement": "Maintain a consistent integer tree height based on snails' climbing days and attributes, processing claims and queries to determine climbing days or report uncertainty.",
+  "statement": "Maintain consistent constraints on an unknown tree height based on snails' climbing days and attributes, and answer queries about climbing days for new snails or ignore contradictory information.",
   "tags": [
     "math",
     "binary-search",
     "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "interval-intersection",
-    "online-processing"
+    "constraint-satisfaction"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048030,
+    "generated_at_unix": 1785050348,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
+      "binary-search": 0.9,
       "interval-intersection": 0.85,
-      "online-processing": 0.8
+      "constraint-satisfaction": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

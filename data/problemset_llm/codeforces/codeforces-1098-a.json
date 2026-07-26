@@ -12,27 +12,26 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a rooted tree with known depths and partial sums of values on root-to-node paths, restore the original nonnegative values on each vertex or determine if it's impossible, minimizing the total sum of values when multiple solutions exist.",
+  "statement": "Given a rooted tree with known sums of values on root-to-vertex paths for vertices at odd depths and depths of all vertices, restore the original nonnegative values on each vertex minimizing their total sum, or determine if restoration is impossible.",
   "tags": [
     "tree",
-    "dynamic-programming",
-    "greedy"
-  ],
-  "patterns": [
-    "prefix-sum",
     "dfs",
     "greedy",
-    "binary-search-answer"
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "dfs",
+    "greedy",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048792,
+    "generated_at_unix": 1785050877,
     "pattern_confidence": {
-      "prefix-sum": 0.95,
       "dfs": 0.9,
       "greedy": 0.85,
-      "binary-search-answer": 0.7
+      "constructive-algorithm": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

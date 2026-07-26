@@ -10,25 +10,23 @@
     "brute force",
     "implementation"
   ],
-  "statement": "Given a sequence of moves painting cells black on an n×n grid, determine the earliest move after which a 3×3 black square appears, or report if it never appears.",
+  "statement": "Given an n×n grid initially white, cells are painted black one by one. Determine the earliest move after which there exists at least one 3×3 black square, or report that it never occurs.",
   "tags": [
     "array",
     "implementation",
     "geometry"
   ],
   "patterns": [
-    "simulation",
-    "prefix-sum",
-    "binary-search-answer"
+    "brute-force",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047839,
+    "generated_at_unix": 1785050145,
     "pattern_confidence": {
-      "simulation": 0.95,
-      "prefix-sum": 0.85,
-      "binary-search-answer": 0.9
+      "brute-force": 0.95,
+      "simulation": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

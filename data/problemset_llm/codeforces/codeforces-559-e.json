@@ -10,25 +10,25 @@
     "dp",
     "sortings"
   ],
-  "statement": "Given fixed-position spotlights on a linear path north of a monument, each can illuminate a segment either north or south. Determine directions to maximize the total illuminated length of the path.",
+  "statement": "Given fixed-position spotlights along a linear path north of a monument, each can illuminate a segment either north or south of its position. Determine directions to maximize the total illuminated length of the path.",
   "tags": [
-    "array",
-    "dynamic-programming",
-    "sorting"
+    "greedy",
+    "sorting",
+    "intervals"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "greedy"
+    "greedy",
+    "sorting",
+    "interval-coverage"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048350,
+    "generated_at_unix": 1785050659,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.85,
-      "greedy": 0.75
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "interval-coverage": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

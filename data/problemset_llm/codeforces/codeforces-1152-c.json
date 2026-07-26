@@ -18,18 +18,16 @@
     "brute-force"
   ],
   "patterns": [
-    "divisor-enumeration",
-    "gcd-lcm-properties",
-    "brute-force"
+    "brute-force",
+    "gcd-lcm-properties"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047971,
+    "generated_at_unix": 1785050289,
     "pattern_confidence": {
-      "divisor-enumeration": 0.9,
-      "gcd-lcm-properties": 0.95,
-      "brute-force": 0.8
+      "brute-force": 0.9,
+      "gcd-lcm-properties": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -15,7 +15,7 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a ciphered string formed by reversing words and concatenating them, and a list of words, determine if the original sentence can be reconstructed using the given words any number of times.",
+  "statement": "Given a ciphered string formed by reversing each word of an original sentence, converting all letters to lowercase, and removing spaces, reconstruct any original sentence using a given list of words that can be repeated.",
   "tags": [
     "string",
     "dynamic-programming",
@@ -23,18 +23,20 @@
     "trie"
   ],
   "patterns": [
-    "dynamic-programming",
     "string-reconstruction",
-    "rolling-hash"
+    "dp-on-strings",
+    "rolling-hash",
+    "backtracking"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048804,
+    "generated_at_unix": 1785050892,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "string-reconstruction": 0.9,
-      "rolling-hash": 0.85
+      "string-reconstruction": 0.95,
+      "dp-on-strings": 0.9,
+      "rolling-hash": 0.85,
+      "backtracking": 0.7
     }
   },
   "source_topic": "Formwise / Trie"

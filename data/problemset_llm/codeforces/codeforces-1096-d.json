@@ -9,24 +9,22 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given a string and a cost array for removing characters, find the minimum total cost to remove characters so that the subsequence \"hard\" does not appear in the string.",
+  "statement": "Given a string and costs for removing each character, find the minimum total cost to remove characters so that the subsequence \"hard\" does not appear in the string.",
   "tags": [
     "string",
     "dynamic-programming"
   ],
   "patterns": [
     "dynamic-programming",
-    "subsequence-avoidance",
-    "minimum-cost-removal"
+    "subsequence-avoidance"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048921,
+    "generated_at_unix": 1785051015,
     "pattern_confidence": {
       "dynamic-programming": 0.98,
-      "subsequence-avoidance": 0.9,
-      "minimum-cost-removal": 0.85
+      "subsequence-avoidance": 0.9
     }
   },
   "source_topic": "Formwise / DP Optimizations"

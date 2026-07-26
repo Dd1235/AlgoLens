@@ -12,26 +12,28 @@
     "math",
     "number theory"
   ],
-  "statement": "Given n identical 1kg apple pieces, determine the minimum number of halving operations needed to divide them equally among m people.",
+  "statement": "Given n identical 1kg apple pieces, determine the minimum number of halving operations needed to split them into pieces so that m people can each receive an equal total weight.",
   "tags": [
     "math",
+    "number-theory",
     "bit-manipulation",
-    "greedy",
-    "number-theory"
+    "greedy"
   ],
   "patterns": [
     "greedy",
     "bit-manipulation",
-    "binary-search-answer"
+    "binary-representation",
+    "division-and-conquer"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047826,
+    "generated_at_unix": 1785050130,
     "pattern_confidence": {
       "greedy": 0.9,
-      "bit-manipulation": 0.75,
-      "binary-search-answer": 0.7
+      "bit-manipulation": 0.7,
+      "binary-representation": 0.8,
+      "division-and-conquer": 0.6
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

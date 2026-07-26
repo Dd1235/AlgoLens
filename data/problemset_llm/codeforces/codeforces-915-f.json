@@ -15,8 +15,8 @@
   "statement": "Given a tree with values on each vertex, compute the sum over all pairs of vertices of the difference between the maximum and minimum values on the simple path connecting them.",
   "tags": [
     "tree",
-    "graph",
     "union-find",
+    "graphs",
     "data-structures"
   ],
   "patterns": [
@@ -27,7 +27,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048999,
+    "generated_at_unix": 1785051113,
     "pattern_confidence": {
       "dsu-on-tree": 0.95,
       "contribution-technique": 0.9,

@@ -10,25 +10,25 @@
     "data structures",
     "greedy"
   ],
-  "statement": "Given cameras monitoring two diamonds with different disabling durations, find the minimum time to hack cameras and steal both diamonds in order, or determine if impossible.",
+  "statement": "Given cameras monitoring two diamonds with different disabling times, determine the minimum time to hack cameras and steal both diamonds in order, or report impossibility.",
   "tags": [
     "greedy",
     "simulation",
-    "dynamic-programming"
+    "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
-    "dynamic-programming",
-    "simulation"
+    "greedy",
+    "simulation",
+    "state-space-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048378,
+    "generated_at_unix": 1785050688,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dynamic-programming": 0.85,
-      "simulation": 0.8
+      "greedy": 0.9,
+      "simulation": 0.85,
+      "state-space-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

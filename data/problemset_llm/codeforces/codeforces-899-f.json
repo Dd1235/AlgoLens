@@ -10,26 +10,24 @@
     "data structures",
     "strings"
   ],
-  "statement": "Given a string and multiple operations that remove all occurrences of a specified character within given index ranges, determine the resulting string after all removals.",
+  "statement": "Given a string and a sequence of operations that remove all occurrences of a specified character within given index ranges, determine the resulting string after all removals.",
   "tags": [
     "string",
-    "data-structures"
+    "data-structure"
   ],
   "patterns": [
-    "range-updates",
-    "offline-queries",
     "segment-tree",
-    "fenwick-tree"
+    "offline-queries",
+    "coordinate-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048221,
+    "generated_at_unix": 1785050525,
     "pattern_confidence": {
-      "range-updates": 0.9,
-      "offline-queries": 0.85,
-      "segment-tree": 0.7,
-      "fenwick-tree": 0.65
+      "segment-tree": 0.85,
+      "offline-queries": 0.8,
+      "coordinate-compression": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

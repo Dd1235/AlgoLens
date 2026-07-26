@@ -11,7 +11,7 @@
     "data structures",
     "trees"
   ],
-  "statement": "Given an array representing a sausage, split it into a prefix and a non-overlapping postfix to maximize the XOR of their XOR-values.",
+  "statement": "Given an array representing a sausage, split it into a prefix and a non-overlapping postfix (either can be empty) to maximize the XOR of the XOR-values of these two parts.",
   "tags": [
     "array",
     "bit-manipulation",
@@ -20,18 +20,18 @@
   ],
   "patterns": [
     "prefix-xor",
-    "two-pointers",
     "bit-manipulation",
+    "two-pointers",
     "trie"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048894,
+    "generated_at_unix": 1785050984,
     "pattern_confidence": {
-      "prefix-xor": 0.98,
-      "two-pointers": 0.85,
+      "prefix-xor": 0.95,
       "bit-manipulation": 0.9,
+      "two-pointers": 0.7,
       "trie": 0.9
     }
   },

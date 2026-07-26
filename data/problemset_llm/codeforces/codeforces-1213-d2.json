@@ -15,19 +15,20 @@
   "tags": [
     "array",
     "math",
-    "greedy"
+    "greedy",
+    "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
+    "brute-force",
     "sorting",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048016,
+    "generated_at_unix": 1785050336,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "brute-force": 0.9,
       "sorting": 0.85,
       "greedy": 0.8
     }

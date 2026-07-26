@@ -11,25 +11,28 @@
     "dp",
     "number theory"
   ],
-  "statement": "Given an array of positive integers and a limit k on how much each element can be decreased, find the maximum possible greatest common divisor (beauty) of the resulting array after decreasing elements by at most k.",
+  "statement": "Given an array of positive integers and a maximum decrement limit per element, find the maximum possible greatest common divisor (GCD) of a modified array where each element can be decreased by at most the limit but remains positive.",
   "tags": [
     "array",
     "number-theory",
-    "binary-search"
+    "math",
+    "dynamic-programming"
   ],
   "patterns": [
-    "binary-search-answer",
-    "gcd",
+    "greatest-common-divisor",
+    "dp-on-divisors",
+    "binary-search",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048127,
+    "generated_at_unix": 1785050437,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "gcd": 0.9,
-      "greedy": 0.7
+      "greatest-common-divisor": 0.95,
+      "dp-on-divisors": 0.7,
+      "binary-search": 0.6,
+      "greedy": 0.5
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

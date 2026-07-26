@@ -11,24 +11,24 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given preparation times for matches against opponents and a total preparation time limit, determine the best possible tournament rank achievable by selecting which matches to prepare for.",
+  "statement": "Given preparation times for matches against opponents and a total preparation time limit, determine the best possible tournament rank achievable by selectively preparing to win against some opponents.",
   "tags": [
     "greedy",
     "binary-search",
     "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
+    "binary-search",
     "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047954,
+    "generated_at_unix": 1785050273,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
-      "greedy": 0.9,
+      "greedy": 0.95,
+      "binary-search": 0.9,
       "sorting": 0.85
     }
   },

@@ -14,31 +14,28 @@
     "greedy",
     "matrices"
   ],
-  "statement": "Given a grid with directional transitions from each cell, place the maximum number of robots initially so that no two robots ever occupy the same cell simultaneously during infinite moves, maximizing the count of black cells occupied initially among all maximum placements.",
+  "statement": "Given a grid with directional transitions and black/white cells, place the maximum number of robots initially so that no two robots ever occupy the same cell simultaneously during infinite moves, maximizing the count of black cells occupied initially among all maximum placements.",
   "tags": [
-    "grid",
     "graph",
-    "dfs",
+    "grid",
     "union-find",
     "greedy"
   ],
   "patterns": [
     "strongly-connected-components",
-    "cycle-detection",
     "union-find",
-    "greedy",
-    "graph-contraction"
+    "cycle-detection",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048140,
+    "generated_at_unix": 1785050451,
     "pattern_confidence": {
       "strongly-connected-components": 0.95,
-      "cycle-detection": 0.9,
-      "union-find": 0.85,
-      "greedy": 0.8,
-      "graph-contraction": 0.75
+      "union-find": 0.9,
+      "cycle-detection": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

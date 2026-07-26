@@ -16,23 +16,24 @@
   "statement": "Given a string, find the longest palindrome that can be formed by concatenating a prefix and a suffix of the string.",
   "tags": [
     "string",
+    "palindrome",
     "rolling-hash",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "string-hashing",
-    "two-pointer",
+    "greedy",
     "manacher"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048918,
+    "generated_at_unix": 1785051011,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "binary-search": 0.9,
       "string-hashing": 0.95,
-      "two-pointer": 0.7,
+      "greedy": 0.8,
       "manacher": 0.9
     }
   },

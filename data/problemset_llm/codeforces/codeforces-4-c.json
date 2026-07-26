@@ -11,7 +11,7 @@
     "hashing",
     "implementation"
   ],
-  "statement": "Implement a registration system that assigns unique usernames by appending the smallest positive integer suffix if a requested name already exists.",
+  "statement": "Implement a registration system that assigns unique usernames by appending the smallest positive integer suffix when a requested name already exists.",
   "tags": [
     "hash-map",
     "string",
@@ -25,10 +25,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048862,
+    "generated_at_unix": 1785050952,
     "pattern_confidence": {
       "hash-map": 0.98,
-      "string-manipulation": 0.9
+      "string-manipulation": 0.85
     }
   },
   "source_topic": "Formwise / STL"

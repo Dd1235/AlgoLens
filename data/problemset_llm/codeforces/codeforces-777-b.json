@@ -12,12 +12,12 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given two n-digit numbers, one fixed and one reorderable, determine the minimum flicks the reorderable player can receive and the maximum flicks the fixed player can receive by optimally rearranging digits.",
+  "statement": "Given two n-digit numbers representing credit cards, one fixed and one reorderable, determine the minimum flicks the reorderable player can receive and the maximum flicks the fixed player can receive by optimally rearranging digits.",
   "tags": [
-    "array",
     "greedy",
+    "string",
     "sorting",
-    "dynamic-programming"
+    "counting"
   ],
   "patterns": [
     "greedy",
@@ -28,7 +28,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048503,
+    "generated_at_unix": 1785050799,
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,

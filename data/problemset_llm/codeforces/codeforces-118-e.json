@@ -18,18 +18,18 @@
   ],
   "patterns": [
     "dfs",
-    "bridge-finding",
     "strong-connectivity-check",
+    "edge-orientation",
     "articulation-points"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048519,
+    "generated_at_unix": 1785050815,
     "pattern_confidence": {
       "dfs": 0.95,
-      "bridge-finding": 0.9,
       "strong-connectivity-check": 0.9,
+      "edge-orientation": 0.85,
       "articulation-points": 0.9
     }
   },

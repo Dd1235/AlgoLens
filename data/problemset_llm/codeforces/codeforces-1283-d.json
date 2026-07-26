@@ -11,27 +11,26 @@
     "greedy",
     "shortest paths"
   ],
-  "statement": "Given distinct positions of Christmas trees on an integer number line and a number of people to place at distinct integer positions, find an arrangement of people minimizing the sum of distances from each person to the nearest tree.",
+  "statement": "Given distinct positions of Christmas trees on an integer line and a number of people to place at distinct integer positions not occupied by trees, find positions for the people to minimize the sum of their distances to the nearest tree.",
   "tags": [
-    "array",
     "greedy",
-    "binary-search",
+    "graphs",
+    "shortest-path",
+    "geometry",
     "graph"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
-    "two-pointers",
+    "bfs",
     "multi-source-bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048953,
+    "generated_at_unix": 1785051052,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
-      "two-pointers": 0.7,
+      "greedy": 0.9,
+      "bfs": 0.85,
       "multi-source-bfs": 0.9
     }
   },

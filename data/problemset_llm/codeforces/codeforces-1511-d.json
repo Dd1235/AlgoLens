@@ -13,23 +13,23 @@
     "greedy",
     "strings"
   ],
-  "statement": "Given length n and alphabet size k, construct a string of length n using the first k Latin letters that minimizes the number of pairs of equal adjacent character pairs occurring at different positions.",
+  "statement": "Given length n and alphabet size k, construct a length-n string using the first k Latin letters that minimizes the number of pairs of equal adjacent character pairs occurring at different positions.",
   "tags": [
     "string",
     "greedy",
-    "combinatorics"
+    "constructive-algorithm"
   ],
   "patterns": [
-    "constructive-algorithm",
-    "greedy"
+    "greedy",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047945,
+    "generated_at_unix": 1785050261,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "greedy": 0.9
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -10,25 +10,23 @@
     "brute force",
     "greedy"
   ],
-  "statement": "Given n tasks each with k subtasks taking fixed times per subtask index, and total time M, find the maximum points achievable by solving subtasks in any order, with extra points for fully completed tasks.",
+  "statement": "Given n tasks each with k subtasks having fixed times per subtask index, and a total time limit M, determine the maximum points achievable by solving subtasks in any order, where completing all subtasks of a task grants an extra point.",
   "tags": [
     "greedy",
     "math",
-    "array"
+    "sorting"
   ],
   "patterns": [
     "greedy",
-    "sorting",
-    "prefix-sum"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047951,
+    "generated_at_unix": 1785050265,
     "pattern_confidence": {
       "greedy": 0.95,
-      "sorting": 0.85,
-      "prefix-sum": 0.7
+      "sorting": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

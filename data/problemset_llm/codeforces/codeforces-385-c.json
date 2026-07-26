@@ -17,22 +17,23 @@
   ],
   "statement": "Given a sequence of integers and multiple queries defined by intervals, compute for each query the sum over all prime numbers in the interval of the count of sequence elements divisible by those primes.",
   "tags": [
-    "array",
     "number-theory",
-    "prefix-sum"
+    "prime-sieve",
+    "prefix-sum",
+    "array"
   ],
   "patterns": [
+    "sieve-of-eratosthenes",
     "prefix-sum",
-    "prime-sieve",
     "offline-queries"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047910,
+    "generated_at_unix": 1785050223,
     "pattern_confidence": {
-      "prefix-sum": 0.95,
-      "prime-sieve": 0.9,
+      "sieve-of-eratosthenes": 0.95,
+      "prefix-sum": 0.9,
       "offline-queries": 0.7
     }
   },

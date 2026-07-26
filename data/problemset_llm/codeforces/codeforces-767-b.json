@@ -10,25 +10,23 @@
     "brute force",
     "greedy"
   ],
-  "statement": "Given a schedule of visitors arriving at a passport office with a single receptionist working during a fixed time interval and serving each visitor for a fixed duration, determine the earliest time Vasya can arrive to minimize his waiting time and still be served.",
+  "statement": "Given a schedule of visitors arriving at a passport office with a single receptionist working between specified times and serving each visitor for a fixed duration, determine the earliest arrival time for Vasya to minimize his waiting time and ensure he is served.",
   "tags": [
     "simulation",
     "greedy",
     "queue"
   ],
   "patterns": [
-    "simulation",
     "greedy",
-    "binary-search-answer"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048148,
+    "generated_at_unix": 1785050458,
     "pattern_confidence": {
-      "simulation": 0.95,
-      "greedy": 0.9,
-      "binary-search-answer": 0.7
+      "greedy": 0.95,
+      "simulation": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

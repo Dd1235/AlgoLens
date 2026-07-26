@@ -10,25 +10,26 @@
     "binary search",
     "data structures"
   ],
-  "statement": "Given a boss with health h and n attacks each with damage and cooldown, determine the minimum number of turns needed to reduce the boss's health to zero or below, using all available attacks each turn and respecting cooldowns.",
+  "statement": "Given a boss with health h and n attacks each with damage a_i and cooldown c_i, determine the number of turns needed to reduce the boss's health to zero or below. Each turn, all attacks not on cooldown can be used simultaneously; if all are on cooldown, the turn is skipped.",
   "tags": [
-    "array",
     "simulation",
-    "binary-search"
+    "greedy",
+    "binary-search",
+    "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
     "simulation",
-    "prefix-sum"
+    "greedy",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047790,
+    "generated_at_unix": 1785050094,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "simulation": 0.85,
-      "prefix-sum": 0.7
+      "simulation": 0.95,
+      "greedy": 0.85,
+      "binary-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

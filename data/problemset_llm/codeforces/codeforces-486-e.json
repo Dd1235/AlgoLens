@@ -13,7 +13,7 @@
     "hashing",
     "math"
   ],
-  "statement": "Given a sequence, classify each element into one of three groups based on whether it appears in no, some, or all longest increasing subsequences of the sequence.",
+  "statement": "Given a sequence, classify each element based on whether it appears in no, some, or all longest increasing subsequences of the sequence.",
   "tags": [
     "array",
     "dynamic-programming",
@@ -21,17 +21,17 @@
   ],
   "patterns": [
     "longest-increasing-subsequence",
-    "counting",
+    "counting-lis",
     "dp-on-sequences"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048247,
+    "generated_at_unix": 1785050555,
     "pattern_confidence": {
       "longest-increasing-subsequence": 0.98,
-      "counting": 0.9,
-      "dp-on-sequences": 0.88
+      "counting-lis": 0.9,
+      "dp-on-sequences": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

@@ -17,26 +17,31 @@
     "strings",
     "two pointers"
   ],
-  "statement": "Given a string, perform any number of deletions of the last character and duplications of the entire string to produce the lexicographically smallest string of length exactly k.",
+  "statement": "Given a string, perform any number of deletions from the end and duplications of the entire string to produce the lexicographically smallest string of length exactly k.",
   "tags": [
     "string",
     "greedy",
     "binary-search",
+    "two-pointers",
     "rolling-hash"
   ],
   "patterns": [
-    "binary-search-answer",
+    "greedy",
+    "binary-search",
+    "two-pointers",
     "string-hashing",
-    "greedy"
+    "prefix-comparison"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047898,
+    "generated_at_unix": 1785050211,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "string-hashing": 0.85,
-      "greedy": 0.8
+      "greedy": 0.95,
+      "binary-search": 0.9,
+      "two-pointers": 0.85,
+      "string-hashing": 0.8,
+      "prefix-comparison": 0.75
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

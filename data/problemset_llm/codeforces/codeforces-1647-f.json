@@ -10,25 +10,26 @@
     "dp",
     "greedy"
   ],
-  "statement": "Given an array of distinct positive integers, count the number of distinct pairs of maxima from two subsequences that partition the array, where each subsequence forms a hill shape (strictly increasing then strictly decreasing).",
+  "statement": "Given an array of distinct positive integers, count the number of distinct pairs of maxima from two subsequences that partition the array such that both subsequences form hills (strictly increasing then strictly decreasing).",
   "tags": [
     "array",
     "dynamic-programming",
+    "greedy",
     "combinatorics"
   ],
   "patterns": [
-    "dp-on-subsequences",
-    "two-subsequence-partition",
-    "counting-distinct-pairs"
+    "dynamic-programming",
+    "greedy",
+    "subsequence-partitioning"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048425,
+    "generated_at_unix": 1785050732,
     "pattern_confidence": {
-      "dp-on-subsequences": 0.95,
-      "two-subsequence-partition": 0.9,
-      "counting-distinct-pairs": 0.85
+      "dynamic-programming": 0.9,
+      "greedy": 0.85,
+      "subsequence-partitioning": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -10,11 +10,10 @@
     "constructive algorithms",
     "math"
   ],
-  "statement": "Given an integer array without zeros, construct another array of the same length with no zero elements such that the dot product of the two arrays is zero and the sum of absolute values in the new array is at most 10^9.",
+  "statement": "Given a nonzero integer array, construct another array with no zero elements such that their dot product is zero and the sum of absolute values is bounded.",
   "tags": [
-    "array",
-    "constructive-algorithm",
-    "math"
+    "math",
+    "constructive-algorithm"
   ],
   "patterns": [
     "constructive-algorithm"
@@ -22,7 +21,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048059,
+    "generated_at_unix": 1785050367,
     "pattern_confidence": {
       "constructive-algorithm": 0.95
     }

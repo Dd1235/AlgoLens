@@ -10,27 +10,30 @@
     "flows",
     "graphs"
   ],
-  "statement": "Given constraints on a set of distinct positive integers with fixed counts per residue class modulo 5 and partial count hints up to certain values, determine if such a set can exist within given bounds.",
+  "statement": "Given constraints on the size and modular distribution of a set of distinct positive integers within a range, and partial count hints for prefixes, determine if such a set can exist.",
   "tags": [
     "math",
     "number-theory",
     "binary-search",
-    "prefix-sum",
+    "max-flow",
+    "graphs",
     "graph"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "modular-arithmetic"
+    "binary-search",
+    "max-flow",
+    "modular-arithmetic",
+    "feasibility-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049028,
+    "generated_at_unix": 1785051142,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "prefix-sum": 0.9,
-      "modular-arithmetic": 0.85
+      "binary-search": 0.9,
+      "max-flow": 0.85,
+      "modular-arithmetic": 0.8,
+      "feasibility-check": 0.75
     }
   },
   "source_topic": "Formwise / Graph Level 2"

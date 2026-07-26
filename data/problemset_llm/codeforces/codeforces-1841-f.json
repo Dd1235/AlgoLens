@@ -11,25 +11,25 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given groups of four races with hostile relationships, decide which groups to accept to maximize the sum of inhabitants plus total happiness, where happiness depends on friendly and hostile race counts.",
+  "statement": "Given groups of four races with counts, decide which groups to accept to maximize the sum of total inhabitants plus the sum of happiness values, where happiness depends on friendly and hostile race counts.",
   "tags": [
-    "greedy",
     "math",
+    "greedy",
     "combinatorics"
   ],
   "patterns": [
     "greedy",
     "case-analysis",
-    "brute-force"
+    "combinatorial-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048271,
+    "generated_at_unix": 1785050579,
     "pattern_confidence": {
       "greedy": 0.9,
-      "case-analysis": 0.75,
-      "brute-force": 0.6
+      "case-analysis": 0.7,
+      "combinatorial-optimization": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

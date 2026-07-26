@@ -13,24 +13,24 @@
     "math",
     "sortings"
   ],
-  "statement": "Given a sequence of exam difficulties, minimize the number of consecutive pairs with gcd equal to 1 by setting up to k difficulties to zero.",
+  "statement": "Given a sequence of exam difficulties, minimize the number of adjacent pairs with gcd equal to 1 by setting up to k exam difficulties to zero.",
   "tags": [
-    "array",
     "math",
-    "greedy"
+    "greedy",
+    "array"
   ],
   "patterns": [
-    "greedy",
     "gcd",
+    "greedy",
     "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048457,
+    "generated_at_unix": 1785050760,
     "pattern_confidence": {
-      "greedy": 0.9,
       "gcd": 0.95,
+      "greedy": 0.85,
       "brute-force": 0.7
     }
   },

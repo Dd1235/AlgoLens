@@ -12,26 +12,26 @@
     "greedy",
     "math"
   ],
-  "statement": "Given a grid with columns partially blocked from the bottom, determine for multiple queries if a robot moving in fixed-length repeated steps can reach a target cell from a start cell without hitting blocked cells or boundaries.",
+  "statement": "Given a grid with columns having blocked cells at the bottom, determine if a robot that moves in commands repeated k times can reach a target cell from a start cell without hitting blocked cells or leaving the grid.",
   "tags": [
     "grid",
-    "binary-search",
     "math",
+    "binary-search",
     "greedy"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "greedy"
+    "binary-search",
+    "greedy",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047947,
+    "generated_at_unix": 1785050262,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
-      "prefix-sum": 0.85,
-      "greedy": 0.8
+      "binary-search": 0.85,
+      "greedy": 0.8,
+      "simulation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

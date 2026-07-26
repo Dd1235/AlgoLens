@@ -13,28 +13,29 @@
     "number theory",
     "sortings"
   ],
-  "statement": "Given students grouped by university with associated skill levels, compute the total skill sum of all teams formed when each team has size k, for every k from 1 to n, where teams are formed by grouping the top k students repeatedly per university.",
+  "statement": "Given students from multiple universities with skill levels, compute for each team size k the total skill sum of all complete teams formed by grouping each university's students into teams of size k from strongest to weakest.",
   "tags": [
     "array",
     "sorting",
     "prefix-sum",
-    "greedy"
+    "greedy",
+    "number-theory"
   ],
   "patterns": [
-    "prefix-sum",
     "sorting",
-    "grouping",
-    "greedy"
+    "prefix-sum",
+    "greedy",
+    "grouping-by-size"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047868,
+    "generated_at_unix": 1785050179,
     "pattern_confidence": {
+      "sorting": 0.98,
       "prefix-sum": 0.95,
-      "sorting": 0.9,
-      "grouping": 0.85,
-      "greedy": 0.8
+      "greedy": 0.9,
+      "grouping-by-size": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

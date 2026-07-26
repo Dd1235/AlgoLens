@@ -20,17 +20,17 @@
     "segment-tree",
     "bit-manipulation",
     "range-update",
-    "alternating-operations"
+    "point-update"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048521,
+    "generated_at_unix": 1785050817,
     "pattern_confidence": {
       "segment-tree": 0.98,
       "bit-manipulation": 0.95,
-      "range-update": 0.85,
-      "alternating-operations": 0.9
+      "range-update": 0.7,
+      "point-update": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

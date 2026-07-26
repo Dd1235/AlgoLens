@@ -19,17 +19,17 @@
   ],
   "patterns": [
     "bitmask-dp",
-    "expression-parsing",
-    "memoization"
+    "expression-minimization",
+    "lexicographic-ordering"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048165,
+    "generated_at_unix": 1785050474,
     "pattern_confidence": {
       "bitmask-dp": 0.95,
-      "expression-parsing": 0.9,
-      "memoization": 0.85
+      "expression-minimization": 0.9,
+      "lexicographic-ordering": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

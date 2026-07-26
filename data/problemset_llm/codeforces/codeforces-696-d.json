@@ -12,7 +12,7 @@
     "matrices",
     "strings"
   ],
-  "statement": "Given a set of pickup lines with associated happiness values, construct a text of length up to L to maximize the total happiness gained from all occurrences of these lines as substrings, including overlapping ones.",
+  "statement": "Given a set of pickup lines with associated happiness values, construct a text message up to length l to maximize the total happiness gained from all occurrences of these lines as substrings, including overlapping ones.",
   "tags": [
     "string",
     "dynamic-programming",
@@ -20,17 +20,17 @@
   ],
   "patterns": [
     "aho-corasick",
-    "dynamic-programming",
-    "string-automaton"
+    "dp-on-dag",
+    "string-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048341,
+    "generated_at_unix": 1785050650,
     "pattern_confidence": {
       "aho-corasick": 0.98,
-      "dynamic-programming": 0.95,
-      "string-automaton": 0.9
+      "dp-on-dag": 0.9,
+      "string-matching": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

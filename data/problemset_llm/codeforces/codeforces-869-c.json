@@ -11,7 +11,7 @@
     "dp",
     "math"
   ],
-  "statement": "Count the number of ways to build bridges between three clusters of islands with constraints on connectivity and shortest distances within clusters, modulo 998244353.",
+  "statement": "Count the number of ways to build bidirectional bridges between three clusters of islands with given sizes, ensuring that within each cluster either islands are disconnected or shortest distances are at least 3, modulo 998244353.",
   "tags": [
     "graph",
     "combinatorics",
@@ -19,22 +19,20 @@
     "math"
   ],
   "patterns": [
-    "graph-construction",
-    "shortest-path-constraints",
+    "shortest-path",
+    "combinatorics",
     "modular-arithmetic",
-    "dp-on-subsets",
-    "combinatorics"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049019,
+    "generated_at_unix": 1785051132,
     "pattern_confidence": {
-      "graph-construction": 0.95,
-      "shortest-path-constraints": 0.9,
-      "modular-arithmetic": 0.85,
-      "dp-on-subsets": 0.8,
-      "combinatorics": 0.9
+      "shortest-path": 0.9,
+      "combinatorics": 0.95,
+      "modular-arithmetic": 0.9,
+      "dynamic-programming": 0.85
     }
   },
   "source_topic": "Formwise / Math"

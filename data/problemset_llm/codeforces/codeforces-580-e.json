@@ -15,25 +15,26 @@
   "tags": [
     "string",
     "data-structures",
-    "rolling-hash"
+    "rolling-hash",
+    "segment-tree"
   ],
   "patterns": [
     "string-periodicity",
-    "rolling-hash",
+    "string-hashing",
     "segment-tree",
-    "range-update",
-    "range-query"
+    "lazy-propagation",
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048995,
+    "generated_at_unix": 1785051109,
     "pattern_confidence": {
       "string-periodicity": 0.95,
-      "rolling-hash": 0.9,
+      "string-hashing": 0.9,
       "segment-tree": 0.85,
-      "range-update": 0.8,
-      "range-query": 0.8
+      "lazy-propagation": 0.8,
+      "rolling-hash": 0.9
     }
   },
   "source_topic": "Formwise / String"

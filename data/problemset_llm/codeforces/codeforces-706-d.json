@@ -12,11 +12,12 @@
     "data structures",
     "trees"
   ],
-  "statement": "Maintain a multiset of integers supporting insertions, deletions, and queries to find the maximum XOR of a given integer with any element in the multiset.",
+  "statement": "Maintain a multiset of integers supporting insertion, deletion, and queries to find the maximum XOR of a given integer with any element in the multiset.",
   "tags": [
     "data-structures",
-    "bitmask-dp",
-    "trees",
+    "bit-manipulation",
+    "binary-search",
+    "tree",
     "trie"
   ],
   "patterns": [
@@ -27,11 +28,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048886,
+    "generated_at_unix": 1785050975,
     "pattern_confidence": {
-      "binary-trie": 0.98,
-      "xor-maximization": 0.95,
-      "dynamic-insertion-deletion": 0.9
+      "binary-trie": 0.95,
+      "xor-maximization": 0.9,
+      "dynamic-insertion-deletion": 0.85
     }
   },
   "source_topic": "Formwise / Trie"

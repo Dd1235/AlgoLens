@@ -14,24 +14,21 @@
   "tags": [
     "tree",
     "data-structure",
-    "lca",
-    "range-update"
+    "lca"
   ],
   "patterns": [
-    "binary-lifting",
-    "segment-tree",
-    "lazy-propagation",
-    "offline-queries"
+    "range-update",
+    "lca",
+    "binary-lifting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048399,
+    "generated_at_unix": 1785050708,
     "pattern_confidence": {
-      "binary-lifting": 0.95,
-      "segment-tree": 0.9,
-      "lazy-propagation": 0.85,
-      "offline-queries": 0.7
+      "range-update": 0.9,
+      "lca": 0.95,
+      "binary-lifting": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

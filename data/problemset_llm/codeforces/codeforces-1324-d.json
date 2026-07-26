@@ -12,7 +12,7 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given two arrays representing interest values for teachers and students, count the number of pairs (i, j) with i < j where the sum of teacher interests exceeds the sum of student interests.",
+  "statement": "Given two arrays representing interest values for teachers and students, count the number of pairs of topics where the sum of teacher interests exceeds the sum of student interests.",
   "tags": [
     "array",
     "sorting",
@@ -21,16 +21,16 @@
   "patterns": [
     "sorting",
     "two-pointers",
-    "prefix-sum"
+    "pair-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048829,
+    "generated_at_unix": 1785050916,
     "pattern_confidence": {
       "sorting": 0.95,
       "two-pointers": 0.9,
-      "prefix-sum": 0.7
+      "pair-counting": 0.85
     }
   },
   "source_topic": "Formwise / Two Pointers"

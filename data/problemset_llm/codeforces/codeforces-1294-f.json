@@ -12,7 +12,7 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given an unweighted tree, select three distinct vertices to maximize the number of edges covered by the union of the simple paths connecting each pair among them.",
+  "statement": "Given an unweighted tree, select three distinct vertices to maximize the number of edges covered by the union of the three simple paths connecting each pair of these vertices.",
   "tags": [
     "tree",
     "graph",
@@ -28,7 +28,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048798,
+    "generated_at_unix": 1785050884,
     "pattern_confidence": {
       "dfs": 0.95,
       "tree-dp": 0.9,

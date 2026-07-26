@@ -11,25 +11,25 @@
     "brute force",
     "math"
   ],
-  "statement": "Given a sequence of non-negative integers, compute the sum over all triples (i, j, k) of (x_i & x_j) * (x_j | x_k) modulo 10^9+7.",
+  "statement": "Given a sequence of non-negative integers, compute the sum over all triples (i,j,k) of (x_i & x_j) * (x_j | x_k) modulo 10^9+7.",
   "tags": [
-    "array",
     "bit-manipulation",
-    "math"
+    "math",
+    "array"
   ],
   "patterns": [
     "bit-manipulation",
     "modular-arithmetic",
-    "contribution-technique"
+    "brute-force-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047913,
+    "generated_at_unix": 1785050227,
     "pattern_confidence": {
-      "bit-manipulation": 0.95,
-      "modular-arithmetic": 0.9,
-      "contribution-technique": 0.85
+      "bit-manipulation": 0.9,
+      "modular-arithmetic": 0.85,
+      "brute-force-optimization": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

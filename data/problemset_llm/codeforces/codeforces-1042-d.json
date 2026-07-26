@@ -11,7 +11,7 @@
     "divide and conquer",
     "two pointers"
   ],
-  "statement": "Given an integer array and a threshold t, count the number of contiguous subarrays whose sum is less than t.",
+  "statement": "Given an array and a threshold t, count the number of contiguous subarrays whose sum is less than t.",
   "tags": [
     "array",
     "prefix-sum",
@@ -21,17 +21,17 @@
   "patterns": [
     "prefix-sum",
     "two-pointers",
-    "binary-search-answer",
+    "sliding-window",
     "coordinate-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048875,
+    "generated_at_unix": 1785050965,
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "two-pointers": 0.9,
-      "binary-search-answer": 0.7,
+      "sliding-window": 0.85,
       "coordinate-compression": 0.9
     }
   },

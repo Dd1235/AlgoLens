@@ -9,25 +9,25 @@
   "source_tags": [
     "greedy"
   ],
-  "statement": "Given a multiset of coins with values that are powers of two, answer queries asking for the minimum number of coins needed to sum up to a given value or determine if it's impossible.",
+  "statement": "Given a multiset of coins with values that are powers of two, answer queries asking for the minimum number of coins needed to sum up to a given target value or determine if it's impossible.",
   "tags": [
-    "array",
     "greedy",
-    "bit-manipulation"
+    "math",
+    "array"
   ],
   "patterns": [
     "greedy",
     "bit-manipulation",
-    "prefix-sum"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048053,
+    "generated_at_unix": 1785050362,
     "pattern_confidence": {
-      "greedy": 0.98,
+      "greedy": 0.95,
       "bit-manipulation": 0.85,
-      "prefix-sum": 0.7
+      "counting": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

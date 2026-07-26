@@ -11,24 +11,24 @@
     "graphs",
     "greedy"
   ],
-  "statement": "Given a directed graph representing cities and one-way roads, find the minimum number of new one-way roads needed to ensure all cities are reachable from the capital city.",
+  "statement": "Given a directed graph representing cities and one-way roads, determine the minimum number of new one-way roads needed to ensure all cities are reachable from the capital city.",
   "tags": [
     "graph",
-    "greedy",
-    "dfs"
+    "dfs",
+    "greedy"
   ],
   "patterns": [
+    "dfs",
     "strongly-connected-components",
-    "topological-sort",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048816,
+    "generated_at_unix": 1785050903,
     "pattern_confidence": {
-      "strongly-connected-components": 0.95,
-      "topological-sort": 0.9,
+      "dfs": 0.95,
+      "strongly-connected-components": 0.9,
       "greedy": 0.85
     }
   },

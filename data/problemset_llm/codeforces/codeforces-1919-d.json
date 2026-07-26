@@ -14,26 +14,27 @@
     "sortings",
     "trees"
   ],
-  "statement": "Given an array representing distances from the root to leaves in DFS order, determine if there exists a complete binary tree with edges weighted 0 or 1 that matches these distances.",
+  "statement": "Given an array representing distances from the root to leaves in DFS order, determine if a complete binary tree with edges weighted 0 or 1 can produce these distances without reconstructing the tree.",
   "tags": [
     "tree",
     "binary-tree",
     "dfs",
+    "greedy",
     "constructive-algorithm"
   ],
   "patterns": [
     "dfs",
-    "constructive-algorithm",
-    "binary-tree-properties"
+    "greedy",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048150,
+    "generated_at_unix": 1785050459,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "constructive-algorithm": 0.9,
-      "binary-tree-properties": 0.85
+      "dfs": 0.9,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

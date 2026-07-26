@@ -11,25 +11,25 @@
     "geometry",
     "math"
   ],
-  "statement": "Find the N-th smallest positive integer x such that there exist positive integers a and b with a < b forming a right triangle and a square of area x arranged as described.",
+  "statement": "Given a positive integer N, find the N-th smallest integer x such that there exist positive integers a and b with a < b forming a right triangle and a square of area x arranged as described.",
   "tags": [
     "math",
     "geometry",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "number-theory",
-    "constructive-algorithm"
+    "geometry"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047848,
+    "generated_at_unix": 1785050155,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "binary-search": 0.85,
       "number-theory": 0.8,
-      "constructive-algorithm": 0.7
+      "geometry": 0.75
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

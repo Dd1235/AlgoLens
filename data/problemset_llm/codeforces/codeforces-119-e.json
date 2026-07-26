@@ -9,25 +9,24 @@
   "source_tags": [
     "geometry"
   ],
-  "statement": "Given n points in 3D space and m planes through the origin, determine the minimum total cost to build spheres of equal radius at these points so that for each plane, a laser ray perpendicular to it can activate all spheres by intersecting them.",
+  "statement": "Given n points in 3D space and m planes through the origin, determine the minimum total cost to construct spheres of equal radius around the points so that for each plane, a single laser ray perpendicular to it can activate all spheres by intersecting them.",
   "tags": [
     "geometry",
-    "binary-search",
-    "greedy"
+    "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "geometry",
-    "greedy"
+    "ray-sphere-intersection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048261,
+    "generated_at_unix": 1785050570,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "geometry": 0.9,
-      "greedy": 0.85
+      "binary-search": 0.9,
+      "geometry": 0.95,
+      "ray-sphere-intersection": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

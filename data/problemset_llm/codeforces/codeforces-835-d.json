@@ -19,20 +19,20 @@
     "rolling-hash"
   ],
   "patterns": [
-    "prefix-hashing",
-    "dp-on-substrings",
+    "string-hashing",
+    "dynamic-programming",
     "divide-and-conquer",
-    "binary-search-answer"
+    "palindrome-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048850,
+    "generated_at_unix": 1785050939,
     "pattern_confidence": {
-      "prefix-hashing": 0.95,
-      "dp-on-substrings": 0.9,
+      "string-hashing": 0.95,
+      "dynamic-programming": 0.9,
       "divide-and-conquer": 0.7,
-      "binary-search-answer": 0.6
+      "palindrome-dp": 0.85
     }
   },
   "source_topic": "Formwise / String"

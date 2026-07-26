@@ -10,25 +10,23 @@
     "dp",
     "strings"
   ],
-  "statement": "Given strings s and t, determine if t can be formed by concatenating up to two subsequences erased from s in order.",
+  "statement": "Given strings s and t, determine if t can be formed by concatenating up to two subsequences removed sequentially from s.",
   "tags": [
     "string",
     "dynamic-programming",
-    "two-pointers"
+    "subsequence"
   ],
   "patterns": [
-    "subsequence",
-    "two-pointers",
-    "dynamic-programming"
+    "two-subsequence-construction",
+    "dp-on-subsequences"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048904,
+    "generated_at_unix": 1785050995,
     "pattern_confidence": {
-      "subsequence": 0.95,
-      "two-pointers": 0.9,
-      "dynamic-programming": 0.85
+      "two-subsequence-construction": 0.9,
+      "dp-on-subsequences": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

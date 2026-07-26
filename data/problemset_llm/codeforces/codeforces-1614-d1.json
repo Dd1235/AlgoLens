@@ -10,7 +10,7 @@
     "dp",
     "number theory"
   ],
-  "statement": "Given an array of positive integers, reorder its elements to maximize the sum of gcds of all prefixes of the reordered array.",
+  "statement": "Given an array of positive integers, reorder its elements to maximize the sum of the gcd of all prefixes of the reordered array.",
   "tags": [
     "array",
     "number-theory",
@@ -24,10 +24,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048116,
+    "generated_at_unix": 1785050426,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "gcd": 0.98,
+      "dynamic-programming": 0.9,
+      "gcd": 0.95,
       "prefix-processing": 0.85
     }
   },

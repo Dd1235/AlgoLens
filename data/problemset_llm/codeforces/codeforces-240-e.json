@@ -19,18 +19,20 @@
     "shortest-path"
   ],
   "patterns": [
-    "minimum-spanning-arborescence",
     "dfs",
-    "greedy"
+    "greedy",
+    "minimum-spanning-arborescence",
+    "shortest-path"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048438,
+    "generated_at_unix": 1785050745,
     "pattern_confidence": {
-      "minimum-spanning-arborescence": 0.9,
-      "dfs": 0.85,
-      "greedy": 0.8
+      "dfs": 0.9,
+      "greedy": 0.85,
+      "minimum-spanning-arborescence": 0.7,
+      "shortest-path": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

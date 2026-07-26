@@ -12,7 +12,7 @@
     "dsu",
     "graphs"
   ],
-  "statement": "Given n rooms each locked or unlocked and m switches controlling doors where each door is controlled by exactly two switches, determine if there exists a toggle configuration of switches that unlocks all doors simultaneously.",
+  "statement": "Given n rooms each with a door initially locked or unlocked, and m switches where each door is controlled by exactly two switches, determine if there exists a toggle configuration of switches so that all doors are unlocked simultaneously.",
   "tags": [
     "graph",
     "two-sat",
@@ -26,11 +26,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048861,
+    "generated_at_unix": 1785050950,
     "pattern_confidence": {
       "two-sat": 0.98,
       "dfs": 0.85,
-      "union-find": 0.75
+      "union-find": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

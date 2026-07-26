@@ -10,25 +10,26 @@
     "binary search",
     "data structures"
   ],
-  "statement": "Given two integer sequences a and b and a step p, find all starting positions q in a such that the subsequence formed by elements at indices q, q+p, q+2p, ..., q+(m-1)p is an anagram of b.",
+  "statement": "Given two integer sequences a and b and an integer p, find all starting positions q in a such that the subsequence formed by elements at indices q, q+p, q+2p, ..., q+(m-1)p is an anagram of b.",
   "tags": [
     "array",
     "hash-map",
+    "string",
     "two-pointers"
   ],
   "patterns": [
-    "sliding-window",
     "hash-map",
+    "sliding-window",
     "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048839,
+    "generated_at_unix": 1785050927,
     "pattern_confidence": {
-      "sliding-window": 0.95,
-      "hash-map": 0.9,
-      "counting": 0.85
+      "hash-map": 0.95,
+      "sliding-window": 0.9,
+      "counting": 0.9
     }
   },
   "source_topic": "Formwise / Two Pointers"

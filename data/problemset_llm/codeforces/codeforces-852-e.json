@@ -9,25 +9,25 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given a tree with N cities and N-1 roads, count the ways to place casinos and choose a starting city so that no matter how a journey proceeds through unvisited adjacent cities, the traveler ends in a good mood. The mood flips each time a casino city is visited, starting good before the journey.",
+  "statement": "Given a tree with N cities and N-1 roads, count the ways to choose a starting city and place casinos so that John, traveling to unvisited adjacent cities and toggling mood at each casino, always ends in a good mood regardless of the path taken.",
   "tags": [
     "tree",
-    "graph",
-    "dynamic-programming"
+    "dynamic-programming",
+    "combinatorics"
   ],
   "patterns": [
     "tree-dp",
     "dfs",
-    "state-compression"
+    "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048257,
+    "generated_at_unix": 1785050566,
     "pattern_confidence": {
       "tree-dp": 0.95,
       "dfs": 0.9,
-      "state-compression": 0.7
+      "modular-arithmetic": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

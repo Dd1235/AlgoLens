@@ -11,7 +11,7 @@
     "dp",
     "math"
   ],
-  "statement": "Given an integer n and an array a with values in [-1, n], count permutations p of [1..n] where for each i with a_i ≠ -1, the count of elements ≤ i in the prefix p_1 to p_i equals a_i, modulo 998244353.",
+  "statement": "Given an integer n and an array a with values in [-1, n], count the number of permutations p of [1..n] such that for each i where a_i ≠ -1, the count of elements ≤ i in the prefix p_1 to p_i equals a_i, modulo 998244353.",
   "tags": [
     "combinatorics",
     "dynamic-programming",
@@ -19,17 +19,17 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "prefix-sum",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048281,
+    "generated_at_unix": 1785050588,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "prefix-sum": 0.7,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.9,
+      "counting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

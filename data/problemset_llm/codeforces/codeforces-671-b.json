@@ -10,25 +10,25 @@
     "binary search",
     "greedy"
   ],
-  "statement": "Given n citizens each with some coins, repeatedly transfer one coin from the richest to the poorest person for k days and determine the difference between the richest and poorest wealth after these transfers.",
+  "statement": "Given n citizens each with some coins, repeatedly transfer one coin from the richest to the poorest person for k days and find the difference between the richest and poorest wealth after these operations. The random choice among equals does not affect the final difference.",
   "tags": [
     "array",
     "greedy",
-    "sorting"
+    "binary-search"
   ],
   "patterns": [
     "greedy",
-    "binary-search-answer",
-    "prefix-sum"
+    "binary-search",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048207,
+    "generated_at_unix": 1785050514,
     "pattern_confidence": {
       "greedy": 0.95,
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85
+      "binary-search": 0.7,
+      "simulation": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

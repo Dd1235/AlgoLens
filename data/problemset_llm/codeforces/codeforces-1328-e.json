@@ -11,25 +11,25 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a rooted tree and multiple queries each with a set of vertices, determine if there exists a root-to-some-vertex path such that every queried vertex lies on the path or is adjacent to a vertex on the path.",
+  "statement": "Given a rooted tree and multiple queries each containing a set of vertices, determine if there exists a root-to-some-vertex path such that every vertex in the query set lies on the path or is adjacent to a vertex on the path.",
   "tags": [
     "tree",
     "graph",
     "dfs"
   ],
   "patterns": [
+    "dfs",
     "distance-check",
-    "path-existence",
-    "adjacency-check"
+    "path-existence"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048795,
+    "generated_at_unix": 1785050880,
     "pattern_confidence": {
-      "distance-check": 0.9,
-      "path-existence": 0.85,
-      "adjacency-check": 0.8
+      "dfs": 0.9,
+      "distance-check": 0.85,
+      "path-existence": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

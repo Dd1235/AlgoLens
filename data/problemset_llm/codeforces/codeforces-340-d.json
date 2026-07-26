@@ -13,21 +13,23 @@
   ],
   "statement": "Given a permutation, construct a graph based on the bubble sort process and find the size of its maximum independent set.",
   "tags": [
-    "array",
     "graph",
+    "permutation",
     "dynamic-programming"
   ],
   "patterns": [
-    "binary-search-answer",
-    "dp-on-dag"
+    "maximum-independent-set",
+    "bubble-sort-simulation",
+    "dp-on-graphs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047882,
+    "generated_at_unix": 1785050193,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dp-on-dag": 0.85
+      "maximum-independent-set": 0.95,
+      "bubble-sort-simulation": 0.85,
+      "dp-on-graphs": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

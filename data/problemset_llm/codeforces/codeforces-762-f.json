@@ -13,24 +13,24 @@
   ],
   "statement": "Given two trees S and T, count the number of connected subtrees of S that are isomorphic to T, modulo 10^9+7.",
   "tags": [
-    "graph",
     "tree",
+    "graph",
     "combinatorics",
     "isomorphism"
   ],
   "patterns": [
     "tree-isomorphism",
     "dp-on-trees",
-    "subtree-enumeration"
+    "rooted-tree-canonical-form"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048337,
+    "generated_at_unix": 1785050647,
     "pattern_confidence": {
-      "tree-isomorphism": 0.98,
-      "dp-on-trees": 0.9,
-      "subtree-enumeration": 0.85
+      "tree-isomorphism": 0.95,
+      "dp-on-trees": 0.85,
+      "rooted-tree-canonical-form": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

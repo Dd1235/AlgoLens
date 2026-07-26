@@ -11,7 +11,7 @@
     "graphs",
     "greedy"
   ],
-  "statement": "Given n wires each connecting two distinct contact points on a large circuit board, find the minimum time to re-solder wire ends so that all wires become connected via shared contact points, allowing signal passage between any pair.",
+  "statement": "Given n wires each connecting two distinct contact points on a large circuit board, find the minimum number of endpoint resolderings needed to make all wires connected via shared contact points, enabling signal passage between any pair of wires.",
   "tags": [
     "graph",
     "greedy",
@@ -19,17 +19,15 @@
   ],
   "patterns": [
     "union-find",
-    "greedy",
-    "connected-components"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048175,
+    "generated_at_unix": 1785050483,
     "pattern_confidence": {
       "union-find": 0.95,
-      "greedy": 0.9,
-      "connected-components": 0.9
+      "greedy": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

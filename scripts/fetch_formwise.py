@@ -125,14 +125,23 @@ def main() -> int:
                 skipped.append({"name": row["name"], "url": url, "topic": topic,
                                 "reason": "could not parse a problem id from the link"})
                 continue
+            form = (row["form"] or "").strip()
+            curated = [] if is_non_technique(form) else [slugify(form)]
             if pid in seen:
+                # 36 problems are filed under two tabs. The URL only needs
+                # annotating once, but both tabs' labels are real information —
+                # a problem in "DP Level 1" and "DP Optimizations" earns both.
+                entry = labels[pid]
+                if topic not in entry["topics"]:
+                    entry["topics"].append(topic)
+                for slug in curated:
+                    if slug not in entry["curated"]:
+                        entry["curated"].append(slug)
                 continue
             seen.add(pid)
             blocks.setdefault(topic, []).append(url)
-            form = (row["form"] or "").strip()
-            curated = [] if is_non_technique(form) else [slugify(form)]
-            labels[pid] = {"topic": topic, "form": form, "curated": curated,
-                           "sheet_difficulty": row["difficulty"]}
+            labels[pid] = {"topic": topic, "topics": [topic], "form": form,
+                           "curated": curated, "sheet_difficulty": row["difficulty"]}
 
     lines = ["# Generated from data/formwise.xlsx by scripts/fetch_formwise.py",
              "# Topic headers become source_topic; curated Form labels are in",

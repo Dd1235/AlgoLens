@@ -12,27 +12,28 @@
     "fft",
     "math"
   ],
-  "statement": "Manage a collection of flower types with dynamic updates to quantities and answer queries about the number of bouquets with total cost within a given limit over a range of flower types.",
+  "statement": "Maintain counts of flower types under additions and removals, and answer queries counting multisets of flowers within a given type range whose total cost does not exceed a limit.",
   "tags": [
     "data-structures",
-    "dynamic-programming",
-    "math"
+    "math",
+    "fft",
+    "combinatorics"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "segment-tree",
-    "knapsack"
+    "fft",
+    "prefix-product",
+    "range-query",
+    "multiset-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048409,
+    "generated_at_unix": 1785050718,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.85,
-      "segment-tree": 0.8,
-      "knapsack": 0.75
+      "fft": 0.95,
+      "prefix-product": 0.85,
+      "range-query": 0.8,
+      "multiset-counting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

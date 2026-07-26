@@ -16,29 +16,30 @@
     "sortings",
     "trees"
   ],
-  "statement": "Given a tree and a number k represented by its prime factorization, assign positive integers to edges so their product equals k with minimal ones, maximizing the sum of path sums between all pairs of nodes modulo 10^9+7.",
+  "statement": "Given a tree with n nodes and a number k represented by its prime factorization, assign positive integers to edges so their product equals k with minimal ones, maximizing the sum over all pairs of nodes of the path sums modulo 10^9+7.",
   "tags": [
     "tree",
     "number-theory",
+    "math",
     "dynamic-programming",
     "greedy",
-    "math"
+    "sorting"
   ],
   "patterns": [
     "prime-factorization",
     "tree-dp",
     "greedy",
-    "modular-arithmetic"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049022,
+    "generated_at_unix": 1785051136,
     "pattern_confidence": {
       "prime-factorization": 0.95,
       "tree-dp": 0.9,
       "greedy": 0.85,
-      "modular-arithmetic": 0.8
+      "sorting": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

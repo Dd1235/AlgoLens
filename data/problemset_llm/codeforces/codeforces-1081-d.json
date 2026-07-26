@@ -20,20 +20,20 @@
     "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
-    "union-find",
     "minimum-spanning-tree",
+    "union-find",
+    "binary-search",
     "offline-queries"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048517,
+    "generated_at_unix": 1785050813,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
+      "minimum-spanning-tree": 0.95,
       "union-find": 0.9,
-      "minimum-spanning-tree": 0.85,
-      "offline-queries": 0.7
+      "binary-search": 0.7,
+      "offline-queries": 0.6
     }
   },
   "source_topic": "Formwise / Graph Level-1"

@@ -11,22 +11,20 @@
   ],
   "statement": "Given a square integer matrix, rotate it 90 degrees clockwise.",
   "tags": [
-    "array",
-    "matrix"
+    "matrix",
+    "array"
   ],
   "patterns": [
     "in-place-rotation",
-    "matrix-transposition",
-    "reverse-rows"
+    "matrix-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048262,
+    "generated_at_unix": 1785050571,
     "pattern_confidence": {
-      "in-place-rotation": 0.95,
-      "matrix-transposition": 0.9,
-      "reverse-rows": 0.85
+      "in-place-rotation": 0.9,
+      "matrix-manipulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

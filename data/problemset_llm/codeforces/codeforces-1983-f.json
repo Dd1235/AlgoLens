@@ -13,7 +13,7 @@
     "greedy",
     "two pointers"
   ],
-  "statement": "Given an array of non-negative integers, find the k-th smallest minimum xor value among all subarrays of length at least two.",
+  "statement": "Given an array of non-negative integers, find the k-th smallest minimum xor value among all subarrays of length at least two, where the value of a subarray is defined as the minimum xor of any pair of elements within it.",
   "tags": [
     "array",
     "bit-manipulation",
@@ -28,10 +28,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048319,
+    "generated_at_unix": 1785050629,
     "pattern_confidence": {
       "binary-search-answer": 0.95,
-      "two-pointers": 0.85,
+      "two-pointers": 0.8,
       "bit-manipulation": 0.9
     }
   },

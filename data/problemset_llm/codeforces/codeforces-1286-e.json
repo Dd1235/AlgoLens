@@ -10,27 +10,28 @@
     "data structures",
     "strings"
   ],
-  "statement": "Process queries appending characters and weights to build a string and an array, then for each prefix, sum the minimum weights of all subsegments whose substring matches the prefix of the string.",
+  "statement": "Process queries that append characters and weights to arrays, and for each query, compute the sum of minimum weights over all subsegments whose corresponding substrings match the prefix of the string.",
   "tags": [
     "string",
-    "array",
-    "data-structures"
+    "data-structures",
+    "range-query",
+    "prefix-function"
   ],
   "patterns": [
     "prefix-function",
     "segment-tree",
     "range-minimum-query",
-    "prefix-sum"
+    "string-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048383,
+    "generated_at_unix": 1785050692,
     "pattern_confidence": {
       "prefix-function": 0.95,
       "segment-tree": 0.9,
       "range-minimum-query": 0.9,
-      "prefix-sum": 0.8
+      "string-matching": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

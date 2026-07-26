@@ -11,25 +11,22 @@
     "greedy",
     "strings"
   ],
-  "statement": "Given a text split into fixed-size messages, partition it into the minimum number of messages so that no sentence is split across messages, ignoring spaces between sentences when they are separated.",
+  "statement": "Given a text consisting of sentences separated by spaces, split it into the minimum number of fixed-length messages so that no sentence is broken across messages, and spaces between sentences can be omitted if they fall between messages.",
   "tags": [
     "string",
-    "greedy",
-    "dynamic-programming"
+    "greedy"
   ],
   "patterns": [
     "greedy",
-    "prefix-sum",
-    "binary-search-answer"
+    "string-splitting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048044,
+    "generated_at_unix": 1785050356,
     "pattern_confidence": {
       "greedy": 0.95,
-      "prefix-sum": 0.85,
-      "binary-search-answer": 0.7
+      "string-splitting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

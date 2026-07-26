@@ -20,7 +20,8 @@
   "patterns": [
     "sorting",
     "dynamic-programming",
-    "longest-increasing-subsequence"
+    "longest-increasing-subsequence",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "sorting": 0.95,
       "dynamic-programming": 0.98,
-      "longest-increasing-subsequence": 0.9
+      "longest-increasing-subsequence": 0.9,
+      "dp-optimization": 0.9
     }
   }
 }

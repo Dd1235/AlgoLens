@@ -12,25 +12,25 @@
     "brute force",
     "implementation"
   ],
-  "statement": "Given n IP addresses and a target number k of distinct networks, find a subnet mask with a prefix of ones followed by zeros that partitions the IPs into exactly k distinct networks, minimizing the number of ones in the mask. If no such mask exists, report impossibility.",
+  "statement": "Given n IP addresses and a target number k of distinct networks, find a subnet mask with a prefix of ones followed by zeros that partitions the IP addresses into exactly k distinct networks, minimizing the number of ones in the mask. If no such mask exists, report impossibility.",
   "tags": [
     "bit-manipulation",
-    "implementation",
-    "binary-search"
+    "brute-force",
+    "implementation"
   ],
   "patterns": [
-    "binary-search-answer",
     "bit-manipulation",
-    "prefix-enumeration"
+    "prefix-enumeration",
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048034,
+    "generated_at_unix": 1785050352,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
       "bit-manipulation": 0.9,
-      "prefix-enumeration": 0.85
+      "prefix-enumeration": 0.85,
+      "brute-force": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

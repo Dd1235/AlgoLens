@@ -11,11 +11,11 @@
     "implementation",
     "sortings"
   ],
-  "statement": "Given n days initially all working, process q orders that set intervals of days as working or non-working, and after each order report the total number of working days.",
+  "statement": "Given a sequence of days initially all working, process queries that set intervals of days to working or non-working, and after each query report the total number of working days.",
   "tags": [
-    "array",
     "data-structures",
     "intervals",
+    "segment-tree",
     "data-structure"
   ],
   "patterns": [
@@ -27,7 +27,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048997,
+    "generated_at_unix": 1785051111,
     "pattern_confidence": {
       "segment-tree": 0.95,
       "lazy-propagation": 0.9,

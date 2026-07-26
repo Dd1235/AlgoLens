@@ -11,7 +11,7 @@
     "dsu",
     "graphs"
   ],
-  "statement": "Given a social network with users grouped into friend groups, determine for each user how many users will eventually know a piece of news if that user starts spreading it, where friendship is defined by shared group membership and news spreads through connected friend components.",
+  "statement": "Given n users and m friend groups where friendship is defined by shared group membership, determine for each user how many users will eventually know the news if that user starts spreading it, assuming news spreads through connected friendship components.",
   "tags": [
     "graph",
     "union-find",
@@ -25,7 +25,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047799,
+    "generated_at_unix": 1785050103,
     "pattern_confidence": {
       "union-find": 0.95,
       "connected-components": 0.9,

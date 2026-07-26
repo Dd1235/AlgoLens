@@ -12,25 +12,25 @@
     "data structures",
     "greedy"
   ],
-  "statement": "Given a sequence and a number of colors k, paint elements so that no two equal elements share a color, all colors have the same count of painted elements, and the total painted elements is maximized.",
+  "statement": "Given a sequence and a number of colors k, color elements to maximize the total painted count such that each color class has distinct values and equal size.",
   "tags": [
     "array",
     "greedy",
-    "sorting"
+    "hash-map"
   ],
   "patterns": [
     "greedy",
-    "binary-search-answer",
-    "counting"
+    "counting",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047787,
+    "generated_at_unix": 1785050090,
     "pattern_confidence": {
       "greedy": 0.95,
-      "binary-search-answer": 0.9,
-      "counting": 0.85
+      "counting": 0.9,
+      "constructive-algorithm": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

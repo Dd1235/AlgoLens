@@ -11,27 +11,24 @@
     "expression parsing",
     "implementation"
   ],
-  "statement": "Given a sequence of nested for-loops and add commands that increment a 32-bit unsigned integer variable, determine the final value or detect if an overflow occurs beyond 2^32 - 1.",
+  "statement": "Given a sequence of nested for-loops and add commands that increment a 32-bit unsigned integer variable, determine the final value or detect if an overflow occurs beyond 2^32-1.",
   "tags": [
     "simulation",
     "stack",
     "implementation",
-    "math",
     "data-structure"
   ],
   "patterns": [
     "simulation",
-    "stack",
-    "overflow-detection"
+    "stack"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048062,
+    "generated_at_unix": 1785050372,
     "pattern_confidence": {
-      "simulation": 0.98,
-      "stack": 0.9,
-      "overflow-detection": 0.85
+      "simulation": 0.95,
+      "stack": 0.9
     }
   },
   "source_topic": "Formwise / STL"

@@ -10,25 +10,23 @@
     "math",
     "number theory"
   ],
-  "statement": "Given an integer n, split it into parts each at least 2 to minimize the sum of the maximum proper divisors of each part.",
+  "statement": "Given an integer n, split it into parts each at least 2 to minimize the sum of the largest proper divisors of each part.",
   "tags": [
     "math",
     "number-theory",
-    "dynamic-programming"
+    "greedy"
   ],
   "patterns": [
-    "prime-factorization",
-    "greedy",
-    "dynamic-programming"
+    "divisor-enumeration",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047974,
+    "generated_at_unix": 1785050293,
     "pattern_confidence": {
-      "prime-factorization": 0.95,
-      "greedy": 0.85,
-      "dynamic-programming": 0.8
+      "divisor-enumeration": 0.9,
+      "greedy": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

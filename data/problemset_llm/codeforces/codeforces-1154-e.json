@@ -11,12 +11,12 @@
     "implementation",
     "sortings"
   ],
-  "statement": "Given a row of students with distinct skill levels, two coaches alternately select the highest skilled remaining student along with up to k neighbors on each side to form their teams until all students are assigned.",
+  "statement": "Given a row of students with distinct skill levels, two coaches alternately select the student with the highest remaining skill and up to k neighbors on each side to form their teams until all students are assigned.",
   "tags": [
     "array",
+    "simulation",
     "greedy",
     "two-pointers",
-    "simulation",
     "data-structure"
   ],
   "patterns": [
@@ -27,7 +27,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048008,
+    "generated_at_unix": 1785050329,
     "pattern_confidence": {
       "greedy": 0.95,
       "two-pointers": 0.85,

@@ -12,7 +12,7 @@
     "hashing",
     "strings"
   ],
-  "statement": "Given a binary pattern string s and a target string t, count the number of ways to assign distinct non-empty substrings to 0 and 1 in s so that their concatenation equals t.",
+  "statement": "Given a binary pattern string and a target string, count the number of ways to assign distinct non-empty substrings to zeros and ones in the pattern to reconstruct the target string.",
   "tags": [
     "string",
     "rolling-hash",
@@ -20,17 +20,17 @@
   ],
   "patterns": [
     "string-hashing",
-    "two-pointers",
+    "two-pointer",
     "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048946,
+    "generated_at_unix": 1785051039,
     "pattern_confidence": {
-      "string-hashing": 0.95,
-      "two-pointers": 0.7,
-      "brute-force": 0.85
+      "string-hashing": 0.9,
+      "two-pointer": 0.7,
+      "brute-force": 0.8
     }
   },
   "source_topic": "Formwise / String"

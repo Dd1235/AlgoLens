@@ -108,11 +108,62 @@ taxonomy (`bit-manipulation`, `connected-components`, `subset-sum`,
 - Label agreement is measured only on Codeforces, the one judge with public
   tags. Whether the same precision holds on LeetCode is untested.
 
+## Follow-up — the over-labeling was a prompt bug, not the model
+
+Findings 3 and 4 blamed dilution on LLM labeling in general. That was wrong, and
+the ground-truth harness built for finding 4 is what caught it.
+
+The annotator's request included an `output_schema` field meant to show the
+*shape* of the expected JSON. It contained real values:
+
+```python
+"patterns": ["binary-search-answer", "prefix-sum"],
+"pattern_confidence": {"binary-search-answer": 0.92, "prefix-sum": 0.84},
+```
+
+The model read them as suggested answers. The giveaway is ordering, not
+frequency: `binary-search-answer` was emitted in **slot 0 on 113 of 170**
+records and `prefix-sum` in slot 1 — the example array's exact order.
+
+**A/B, same 80 Codeforces problems, scored against official tags.** On the 38
+all three arms completed, where Codeforces tags 5 as binary search:
+
+| arm | labels as binary search | precision |
+|---|---|---|
+| gpt-4.1-mini, leaked schema | 10 | 50% |
+| gpt-4.1-mini, placeholders | 5 | 80% |
+| gpt-4.1, placeholders | 3 | 100% (misses 2 of 5) |
+
+**Re-annotating all 611 with placeholders**, scored on the identical id set
+(n=616, Codeforces tags 87 as binary search):
+
+| | labels as binary search | slot 0 | precision | recall | prefix-sum |
+|---|---|---|---|---|---|
+| before | 174 | 113 | 44% | 87% | 117 |
+| after | **87** | 40 | **84%** | 84% | 41 |
+
+Macro precision 72% → 76%, macro recall 80% → 84% — both directions improved,
+which a genuine precision/recall tradeoff would not do. Search metrics moved
+within noise (hybrid P@1 +0.018, MRR +0.009, Recall@100 +0.006), as expected
+from a benchmark with no Codeforces queries.
+
+**A bigger model was the wrong fix.** gpt-4.1 buys precision by labeling less
+(3 where the truth is 5) — the wrong trade for a corpus where a missing label
+makes a problem unfindable. It also costs ~8× and is far more rate-limited: it
+completed 38 of 80 against 140 HTTP 429s while mini finished all 80. One line
+of prompt beat the model upgrade outright.
+
+Second-order finding: **all six few-shot examples are LeetCode or CSES**. The
+annotator has never been shown a Codeforces statement mapped to labels, which
+is an independent and still-unfixed reason its Codeforces labels are weaker.
+
 ## What this unlocks
 
-- **The over-labeling is now measurable, so it can be fixed.** `binary-search-answer`
-  at 45% precision is the top audit target; `scripts/label_agreement.py` is the
-  regression test for whether an audit pass helped.
+- **The over-labeling was measured, then fixed** (see the follow-up above):
+  `binary-search-answer` went 44% → 84% precision. `scripts/label_agreement.py`
+  is now the regression test for any future prompt or model change.
+- **Give the annotator a Codeforces few-shot example.** All six are LeetCode/CSES.
+  Worth measuring with the same harness before shipping.
 - **Benchmark queries for the new judges.** Until the query set covers Codeforces
   and AtCoder, every future corpus run will look like pure cost.
 - Dense at 2.7 ms is still far from needing an ANN index, but the O(N) slope is

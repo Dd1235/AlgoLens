@@ -9,25 +9,23 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given a permutation of length 2n, determine if it can be formed by recursively merging two disjoint arrays of length n each using a merge-like procedure that compares first elements.",
+  "statement": "Given a permutation p of length 2n, determine if it can be formed by recursively merging two disjoint arrays a and b of length n each using a merge procedure that compares first elements and appends the smaller one.",
   "tags": [
     "array",
     "permutation",
     "dynamic-programming"
   ],
   "patterns": [
-    "recursive-simulation",
     "dynamic-programming",
-    "two-pointer"
+    "recursive-simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048979,
+    "generated_at_unix": 1785051093,
     "pattern_confidence": {
-      "recursive-simulation": 0.9,
-      "dynamic-programming": 0.85,
-      "two-pointer": 0.7
+      "dynamic-programming": 0.9,
+      "recursive-simulation": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

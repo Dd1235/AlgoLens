@@ -9,7 +9,7 @@
   "source_tags": [
     "implementation"
   ],
-  "statement": "Given a string, repeatedly remove pairs of consecutive identical letters until no such pairs remain, and output the resulting string.",
+  "statement": "Given a string, repeatedly remove pairs of identical consecutive letters until no such pairs remain, and output the resulting string.",
   "tags": [
     "string",
     "stack",
@@ -23,7 +23,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047767,
+    "generated_at_unix": 1785050070,
     "pattern_confidence": {
       "stack": 0.95,
       "simulation": 0.9

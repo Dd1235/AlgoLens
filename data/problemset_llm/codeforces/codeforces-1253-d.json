@@ -14,28 +14,28 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given an undirected graph, determine the minimum number of edges to add so that for any reachable pair of nodes l < r, all intermediate nodes between l and r are also reachable from l.",
+  "statement": "Given an undirected graph with nodes numbered from 1 to n, determine the minimum number of edges to add so that for any reachable pair of nodes l and r with l<r, all intermediate nodes between l and r are also reachable from l, making the graph harmonious.",
   "tags": [
     "graph",
     "union-find",
     "greedy",
-    "sorting"
+    "constructive-algorithm"
   ],
   "patterns": [
+    "dfs",
     "union-find",
     "greedy",
-    "sorting",
     "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049021,
+    "generated_at_unix": 1785051134,
     "pattern_confidence": {
-      "union-find": 0.95,
-      "greedy": 0.9,
-      "sorting": 0.85,
-      "constructive-algorithm": 0.8
+      "dfs": 0.9,
+      "union-find": 0.85,
+      "greedy": 0.8,
+      "constructive-algorithm": 0.75
     }
   },
   "source_topic": "Formwise / Graph Level 2"

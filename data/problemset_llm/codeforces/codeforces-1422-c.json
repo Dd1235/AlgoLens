@@ -11,26 +11,25 @@
     "dp",
     "math"
   ],
-  "statement": "Given an integer price, compute the sum of all possible resulting integers after removing any non-empty contiguous substring of digits, modulo 10^9+7.",
+  "statement": "Given an integer price, compute the sum of all possible integers formed by removing a non-empty contiguous substring of digits from it, modulo 10^9+7.",
   "tags": [
-    "string",
+    "math",
     "combinatorics",
-    "dynamic-programming",
-    "math"
+    "dynamic-programming"
   ],
   "patterns": [
     "prefix-sum",
-    "contribution-technique",
-    "substring-enumeration"
+    "modular-arithmetic",
+    "combinatorial-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048040,
+    "generated_at_unix": 1785050353,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "contribution-technique": 0.85,
-      "substring-enumeration": 0.8
+      "modular-arithmetic": 0.95,
+      "combinatorial-sum": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

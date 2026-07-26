@@ -11,7 +11,7 @@
     "graphs",
     "shortest paths"
   ],
-  "statement": "Given a directed graph with equal-length edges and multiple bus companies each traveling random shortest paths between fixed endpoints, determine if it is possible to reach a target junction from a start junction using a finite number of bus rides and find the minimum worst-case number of buses needed.",
+  "statement": "Given a directed graph with equal-length edges and multiple bus companies each traveling random shortest paths between fixed endpoints, determine if it is possible to reach a destination from a start junction using these buses in finite time and find the minimum worst-case number of bus rides required.",
   "tags": [
     "graph",
     "shortest-path",
@@ -20,16 +20,16 @@
   "patterns": [
     "shortest-path",
     "dynamic-programming",
-    "binary-search-answer"
+    "state-space-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048325,
+    "generated_at_unix": 1785050636,
     "pattern_confidence": {
-      "shortest-path": 0.98,
-      "dynamic-programming": 0.9,
-      "binary-search-answer": 0.85
+      "shortest-path": 0.95,
+      "dynamic-programming": 0.85,
+      "state-space-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

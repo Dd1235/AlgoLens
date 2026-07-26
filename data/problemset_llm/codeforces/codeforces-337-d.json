@@ -12,26 +12,30 @@
     "dp",
     "trees"
   ],
-  "statement": "Given a tree of settlements and a set of affected settlements within a damage range d, determine which settlements could possibly contain the Book of Evil based on distance constraints.",
+  "statement": "Given a tree with n settlements and m known affected settlements within damage range d, determine which settlements could possibly contain the Book of Evil based on distance constraints.",
   "tags": [
     "tree",
     "graph",
+    "dfs",
+    "bfs",
     "distance",
     "dynamic-programming"
   ],
   "patterns": [
-    "binary-search-answer",
     "dfs",
-    "tree-dp"
+    "bfs",
+    "distance-calculation",
+    "tree-traversal"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048978,
+    "generated_at_unix": 1785051091,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dfs": 0.95,
-      "tree-dp": 0.9
+      "dfs": 0.9,
+      "bfs": 0.9,
+      "distance-calculation": 0.85,
+      "tree-traversal": 0.8
     }
   },
   "source_topic": "Formwise / DP Level 2"

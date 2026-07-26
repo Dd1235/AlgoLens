@@ -14,28 +14,25 @@
     "implementation",
     "sortings"
   ],
-  "statement": "Given an array of 2n positive integers, determine if there exists an initial sum x such that repeatedly removing pairs summing to x and updating x to the maximum of the pair can remove all elements.",
+  "statement": "Given an array of 2n positive integers, determine if there exists an initial sum x such that repeatedly removing pairs summing to x and updating x to the maximum of the removed pair can remove all elements.",
   "tags": [
     "array",
     "greedy",
-    "sorting",
-    "two-pointers"
+    "sorting"
   ],
   "patterns": [
     "greedy",
-    "sorting",
     "two-pointers",
-    "constructive-algorithm"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048847,
+    "generated_at_unix": 1785050934,
     "pattern_confidence": {
       "greedy": 0.95,
-      "sorting": 0.9,
       "two-pointers": 0.9,
-      "constructive-algorithm": 0.85
+      "sorting": 0.9
     }
   },
   "source_topic": "Formwise / Greedy And Sweepline"

@@ -16,26 +16,24 @@
     "trees",
     "two pointers"
   ],
-  "statement": "Given two forests on the same set of nodes, find the maximum set of edges that can be added to both so that both remain acyclic (forests).",
+  "statement": "Given two forests on the same set of nodes, find the maximum set of edges that can be added to both so that both remain acyclic (forests) after adding these edges.",
   "tags": [
     "graph",
+    "tree",
     "union-find",
-    "trees",
     "greedy"
   ],
   "patterns": [
     "union-find",
-    "greedy",
-    "cycle-detection"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048925,
+    "generated_at_unix": 1785051020,
     "pattern_confidence": {
-      "union-find": 0.98,
-      "greedy": 0.9,
-      "cycle-detection": 0.85
+      "union-find": 0.95,
+      "greedy": 0.9
     }
   },
   "source_topic": "Formwise / Graph Level 2"

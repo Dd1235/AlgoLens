@@ -15,22 +15,23 @@
   "statement": "Given a binary string, count the number of substrings where every character belongs to at least one palindrome substring of length greater than one.",
   "tags": [
     "string",
+    "combinatorics",
     "dynamic-programming",
-    "combinatorics"
+    "binary-search"
   ],
   "patterns": [
-    "palindromic-substrings",
-    "dynamic-programming",
-    "binary-search-answer"
+    "palindrome-dp",
+    "binary-search",
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048032,
+    "generated_at_unix": 1785050350,
     "pattern_confidence": {
-      "palindromic-substrings": 0.95,
-      "dynamic-programming": 0.9,
-      "binary-search-answer": 0.7
+      "palindrome-dp": 0.9,
+      "binary-search": 0.7,
+      "combinatorics": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

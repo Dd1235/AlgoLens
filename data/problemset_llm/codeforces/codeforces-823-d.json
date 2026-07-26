@@ -11,25 +11,25 @@
     "math",
     "strings"
   ],
-  "statement": "Given a string of letters 'V' and 'K' with some unknown positions, determine all possible periods of the string after filling unknowns with either letter, where a period means the string matches itself when shifted by that length.",
+  "statement": "Given a string of length n containing letters 'V', 'K', and unknown positions, determine all possible periods of the string after replacing unknowns with 'V' or 'K'. A period d means the string matches itself when shifted by d positions.",
   "tags": [
     "string",
     "math",
     "fft"
   ],
   "patterns": [
-    "string-period",
     "fast-fourier-transform",
-    "string-matching"
+    "periodicity",
+    "string-period"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048427,
+    "generated_at_unix": 1785050734,
     "pattern_confidence": {
-      "string-period": 0.95,
-      "fast-fourier-transform": 0.9,
-      "string-matching": 0.85
+      "fast-fourier-transform": 0.95,
+      "periodicity": 0.9,
+      "string-period": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

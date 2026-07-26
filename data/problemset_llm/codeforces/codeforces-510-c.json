@@ -4,35 +4,33 @@
   "slug": "510-c-fox-and-names",
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/510/C",
-  "source_topic": "Codeforces / Graphs and Grid Search",
+  "source_topic": "Codeforces / recheck",
+  "difficulty": 1600,
+  "rating": 1600,
   "source_tags": [
-    "graph",
-    "topological-sort",
-    "dfs",
-    "cycle-detection",
-    "string"
+    "dfs and similar",
+    "graphs",
+    "sortings"
   ],
-  "statement": "Given a list of words sorted lexicographically by an unknown alphabet, determine a valid letter order consistent with the list or report impossibility if no such order exists.",
+  "statement": "Given a list of words, determine if there exists a letter ordering of the Latin alphabet that makes the list sorted lexicographically under that order, and if so, find one such ordering.",
   "tags": [
     "graph",
-    "string",
     "topological-sort",
-    "cycle-detection"
+    "string"
   ],
   "patterns": [
     "topological-sort",
-    "dfs",
-    "cycle-detection"
+    "cycle-detection",
+    "directed-graph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1777953620,
+    "generated_at_unix": 1785051673,
     "pattern_confidence": {
       "topological-sort": 0.98,
-      "dfs": 0.95,
-      "cycle-detection": 0.93
+      "cycle-detection": 0.95,
+      "directed-graph": 0.9
     }
-  },
-  "difficulty": 1600
+  }
 }

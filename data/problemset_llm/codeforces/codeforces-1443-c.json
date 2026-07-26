@@ -11,25 +11,26 @@
     "greedy",
     "sortings"
   ],
-  "statement": "Given two arrays representing delivery times and pickup times for dishes from different restaurants, determine the minimum time after which all dishes can be at home by choosing which dishes to pick up personally and which to have delivered.",
+  "statement": "Given two arrays representing delivery times and pickup times for dishes from different restaurants, determine the minimum time to have all dishes at home by choosing which dishes to pick up personally and which to have delivered by couriers working in parallel.",
   "tags": [
     "array",
     "greedy",
-    "binary-search"
+    "binary-search",
+    "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
+    "binary-search",
     "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048912,
+    "generated_at_unix": 1785051005,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
-      "sorting": 0.8
+      "greedy": 0.95,
+      "binary-search": 0.9,
+      "sorting": 0.85
     }
   },
   "source_topic": "Formwise / Greedy And Sweepline"

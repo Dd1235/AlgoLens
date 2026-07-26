@@ -13,23 +13,23 @@
   ],
   "statement": "Given a row of coins each showing either obverse or reverse, and two sets of photo segments with constraints that each Arkady's photo contains at least one obverse and each Kirill's photo contains at least one reverse, count the number of valid coin side assignments modulo 10^9+7.",
   "tags": [
-    "array",
+    "combinatorics",
     "dynamic-programming",
-    "combinatorics"
+    "intervals"
   ],
   "patterns": [
     "inclusion-exclusion",
-    "prefix-sum",
-    "dp-on-intervals"
+    "dynamic-programming",
+    "interval-covering"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048316,
+    "generated_at_unix": 1785050626,
     "pattern_confidence": {
       "inclusion-exclusion": 0.95,
-      "prefix-sum": 0.85,
-      "dp-on-intervals": 0.8
+      "dynamic-programming": 0.9,
+      "interval-covering": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

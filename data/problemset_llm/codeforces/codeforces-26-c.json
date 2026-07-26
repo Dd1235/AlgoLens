@@ -12,9 +12,8 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given a room of size n by m and three types of planks (1×2, 2×1, and 2×2), determine if it is possible to cover the floor completely without overlaps and find one valid arrangement if it exists.",
+  "statement": "Determine if a rectangular room can be fully covered using given quantities of 1×2, 2×1, and 2×2 planks, and if so, provide one valid tiling arrangement.",
   "tags": [
-    "geometry",
     "combinatorics",
     "greedy",
     "implementation"
@@ -26,10 +25,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048080,
+    "generated_at_unix": 1785050389,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "greedy": 0.9
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

@@ -12,23 +12,21 @@
   ],
   "statement": "Given levels each with two completion times for one or two stars, select levels to earn at least a target number of stars minimizing total time, with each level played at most once for either one or two stars.",
   "tags": [
-    "array",
     "greedy",
-    "sorting"
+    "sorting",
+    "array"
   ],
   "patterns": [
     "greedy",
-    "sorting",
-    "binary-search-answer"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048288,
+    "generated_at_unix": 1785050596,
     "pattern_confidence": {
       "greedy": 0.95,
-      "sorting": 0.9,
-      "binary-search-answer": 0.85
+      "sorting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

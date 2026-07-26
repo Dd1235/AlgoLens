@@ -9,25 +9,23 @@
   "source_tags": [
     "two pointers"
   ],
-  "statement": "Given two circular strings with unique characters, find the maximum length of a substring from the first string that appears as a subsequence in the second string after optimally breaking both circles into linear strings.",
+  "statement": "Given two circular strings with unique characters, find the maximum length of a substring from the first string that can appear as a subsequence in the second string after optimally breaking both circles into linear strings.",
   "tags": [
     "string",
-    "dynamic-programming",
-    "two-pointers"
+    "two-pointers",
+    "subsequence"
   ],
   "patterns": [
     "two-pointers",
-    "dynamic-programming",
     "substring-subsequence-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048252,
+    "generated_at_unix": 1785050560,
     "pattern_confidence": {
-      "two-pointers": 0.9,
-      "dynamic-programming": 0.95,
-      "substring-subsequence-matching": 0.85
+      "two-pointers": 0.85,
+      "substring-subsequence-matching": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

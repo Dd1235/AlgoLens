@@ -9,25 +9,23 @@
   "source_tags": [
     "implementation"
   ],
-  "statement": "Given n 2x2 amulets each with four numbers, group them into piles where amulets are similar if one can be rotated by 90, 180, or 270 degrees to match the other without flipping.",
+  "statement": "Given n 2×2 amulets each with four numbers representing dots, group them into piles where amulets are considered similar if one can be rotated by 90, 180, or 270 degrees to match the other without flipping. Output the number of such distinct piles.",
   "tags": [
     "array",
     "implementation",
-    "geometry"
+    "hash-map"
   ],
   "patterns": [
     "rotation-normalization",
-    "hash-map",
-    "canonical-form"
+    "hash-map"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047794,
+    "generated_at_unix": 1785050098,
     "pattern_confidence": {
-      "rotation-normalization": 0.95,
-      "hash-map": 0.9,
-      "canonical-form": 0.88
+      "rotation-normalization": 0.9,
+      "hash-map": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

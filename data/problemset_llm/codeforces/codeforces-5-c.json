@@ -23,16 +23,16 @@
   "patterns": [
     "stack",
     "dynamic-programming",
-    "two-pointers"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048988,
+    "generated_at_unix": 1785051102,
     "pattern_confidence": {
       "stack": 0.95,
       "dynamic-programming": 0.9,
-      "two-pointers": 0.7
+      "greedy": 0.7
     }
   },
   "source_topic": "Formwise / DP Level 1"

@@ -10,25 +10,25 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given up to 10 four-digit PIN codes, find the minimum number of digit changes needed so that all PIN codes become unique.",
+  "statement": "Given up to 10 four-digit PIN codes, find the minimum number of digit changes needed so that all PIN codes become distinct.",
   "tags": [
     "string",
     "greedy",
-    "brute-force"
+    "implementation"
   ],
   "patterns": [
-    "backtracking",
     "greedy",
-    "state-enumeration"
+    "brute-force",
+    "backtracking"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047707,
+    "generated_at_unix": 1785050028,
     "pattern_confidence": {
-      "backtracking": 0.85,
       "greedy": 0.9,
-      "state-enumeration": 0.8
+      "brute-force": 0.7,
+      "backtracking": 0.6
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

@@ -11,25 +11,28 @@
     "greedy",
     "two pointers"
   ],
-  "statement": "Given gadgets priced in either dollars or pounds and daily exchange rates, determine the earliest day by which k gadgets can be purchased within a burles budget, buying each gadget at most once.",
+  "statement": "Given exchange rates for dollars and pounds over several days and a list of gadgets each priced in one currency, determine the earliest day by which k gadgets can be purchased within a burles budget, buying each gadget at most once.",
   "tags": [
-    "array",
+    "binary-search",
     "greedy",
-    "binary-search"
+    "two-pointers",
+    "sorting"
   ],
   "patterns": [
     "binary-search-answer",
+    "greedy",
     "sorting",
-    "greedy"
+    "two-pointers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048182,
+    "generated_at_unix": 1785050490,
     "pattern_confidence": {
       "binary-search-answer": 0.95,
-      "sorting": 0.9,
-      "greedy": 0.85
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "two-pointers": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

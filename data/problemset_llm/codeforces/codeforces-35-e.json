@@ -10,7 +10,7 @@
     "data structures",
     "sortings"
   ],
-  "statement": "Given a set of rectangular skyscrapers represented by intervals and heights on a 2D plane, find a minimal-area axis-aligned polyline enclosing all buildings and the ground, starting and ending at height zero, with minimal length among such polylines.",
+  "statement": "Given a set of rectangular skyscrapers represented by their horizontal intervals and heights, construct a minimal-area axis-aligned polyline enclosing all buildings and the ground, starting and ending at ground level, with minimal length and perpendicular consecutive segments.",
   "tags": [
     "geometry",
     "greedy",
@@ -24,11 +24,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048133,
+    "generated_at_unix": 1785050443,
     "pattern_confidence": {
-      "line-sweep": 0.95,
-      "greedy": 0.9,
-      "sorting": 0.9
+      "line-sweep": 0.9,
+      "greedy": 0.85,
+      "sorting": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

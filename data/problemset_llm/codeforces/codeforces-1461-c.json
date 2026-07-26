@@ -13,23 +13,22 @@
   ],
   "statement": "Given a permutation and a sequence of probabilistic prefix-sorting experiments, compute the probability that the permutation becomes fully sorted after all experiments.",
   "tags": [
-    "array",
     "probability",
-    "dynamic-programming"
+    "dynamic-programming",
+    "math",
+    "permutation"
   ],
   "patterns": [
     "probability-dp",
-    "prefix-processing",
-    "expected-value-computation"
+    "prefix-processing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047872,
+    "generated_at_unix": 1785050183,
     "pattern_confidence": {
       "probability-dp": 0.95,
-      "prefix-processing": 0.9,
-      "expected-value-computation": 0.85
+      "prefix-processing": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

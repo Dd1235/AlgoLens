@@ -9,26 +9,25 @@
   "source_tags": [
     "matrices"
   ],
-  "statement": "Given a base string of all 'a's and groups of 4 identical strings each representing letter shifts, determine for multiple target strings how many ways exist to transform the base into each target by applying strings from the groups, counting distinct usage patterns modulo 10^9+7.",
+  "statement": "Given a base string of all 'a's and n groups of 4 equal strings each, determine for multiple queries how many ways to transform the base string into a target string by applying strings from the groups, where each application shifts letters cyclically by the alphabet position of the corresponding character.",
   "tags": [
     "string",
     "combinatorics",
-    "modular-arithmetic",
-    "dynamic-programming"
+    "modular-arithmetic"
   ],
   "patterns": [
-    "dynamic-programming",
     "modular-arithmetic",
-    "combinatorics"
+    "combinatorics",
+    "string-transformation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048267,
+    "generated_at_unix": 1785050575,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "modular-arithmetic": 0.9,
-      "combinatorics": 0.9
+      "modular-arithmetic": 0.95,
+      "combinatorics": 0.9,
+      "string-transformation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

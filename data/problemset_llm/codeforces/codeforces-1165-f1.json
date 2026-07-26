@@ -10,22 +10,25 @@
     "binary search",
     "greedy"
   ],
-  "statement": "Given daily earnings and microtransaction orders with special sale days for certain types, determine the earliest day by which all required microtransactions can be purchased.",
+  "statement": "Given daily earnings and microtransaction purchase requirements with special sale days for certain types, determine the earliest day by which all required microtransactions can be bought.",
   "tags": [
-    "array",
-    "greedy"
+    "binary-search",
+    "greedy",
+    "simulation"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum"
+    "binary-search",
+    "greedy",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048253,
+    "generated_at_unix": 1785050562,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.84
+      "binary-search": 0.95,
+      "greedy": 0.85,
+      "simulation": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

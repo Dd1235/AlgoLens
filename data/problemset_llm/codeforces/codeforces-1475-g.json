@@ -12,28 +12,26 @@
     "number theory",
     "sortings"
   ],
-  "statement": "Given an array, find the minimum number of elements to remove so that for every pair of distinct elements, one divides the other. The goal is to transform the array into a \"beautiful\" array under this divisibility condition.",
+  "statement": "Given an array, find the minimum number of elements to remove so that for every pair of distinct elements, one divides the other.",
   "tags": [
     "array",
     "dynamic-programming",
-    "graph",
-    "number-theory"
+    "number-theory",
+    "sorting"
   ],
   "patterns": [
     "longest-divisible-subsequence",
     "dynamic-programming",
-    "graph-dag",
-    "topological-sort"
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048496,
+    "generated_at_unix": 1785050793,
     "pattern_confidence": {
       "longest-divisible-subsequence": 0.95,
       "dynamic-programming": 0.9,
-      "graph-dag": 0.85,
-      "topological-sort": 0.8
+      "sorting": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

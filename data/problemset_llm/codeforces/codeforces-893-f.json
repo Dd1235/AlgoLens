@@ -21,17 +21,17 @@
     "euler-tour",
     "tree-flattening",
     "segment-tree",
-    "binary-search-answer"
+    "binary-lifting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048833,
+    "generated_at_unix": 1785050920,
     "pattern_confidence": {
-      "euler-tour": 0.95,
-      "tree-flattening": 0.93,
-      "segment-tree": 0.9,
-      "binary-search-answer": 0.85
+      "euler-tour": 0.9,
+      "tree-flattening": 0.85,
+      "segment-tree": 0.8,
+      "binary-lifting": 0.75
     }
   },
   "source_topic": "Formwise / Segment Trees"

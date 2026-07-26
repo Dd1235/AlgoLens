@@ -11,25 +11,27 @@
     "dp",
     "greedy"
   ],
-  "statement": "Divide a line of children, each with an integer charisma, into consecutive groups to maximize the sum of each group's maximum charisma difference.",
+  "statement": "Divide a line of children, each with an integer charisma, into consecutive groups to maximize the sum of each group's sociability, defined as the maximum charisma difference within that group.",
   "tags": [
     "array",
     "dynamic-programming",
     "greedy"
   ],
   "patterns": [
-    "interval-dp",
+    "dynamic-programming",
+    "greedy",
     "sliding-window",
     "two-pointers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048746,
+    "generated_at_unix": 1785050830,
     "pattern_confidence": {
-      "interval-dp": 0.95,
-      "sliding-window": 0.85,
-      "two-pointers": 0.8
+      "dynamic-programming": 0.95,
+      "greedy": 0.7,
+      "sliding-window": 0.6,
+      "two-pointers": 0.6
     }
   },
   "source_topic": "Formwise / DP Optimizations"

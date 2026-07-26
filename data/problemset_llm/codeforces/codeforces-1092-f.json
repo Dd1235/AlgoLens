@@ -11,25 +11,25 @@
     "dp",
     "trees"
   ],
-  "statement": "Given a tree with values assigned to each vertex, find the vertex that maximizes the sum of distances to all other vertices weighted by their values.",
+  "statement": "Given a tree with values assigned to each vertex, find the vertex that maximizes the sum of the products of the distance from that vertex to every other vertex and the corresponding vertex values.",
   "tags": [
     "tree",
-    "graph",
+    "dfs",
     "dynamic-programming"
   ],
   "patterns": [
     "rerooting-dp",
-    "dfs",
-    "tree-dp"
+    "tree-dp",
+    "dfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048909,
+    "generated_at_unix": 1785051001,
     "pattern_confidence": {
-      "rerooting-dp": 0.98,
-      "dfs": 0.95,
-      "tree-dp": 0.93
+      "rerooting-dp": 0.95,
+      "tree-dp": 0.9,
+      "dfs": 0.85
     }
   },
   "source_topic": "Formwise / DP Level 2"

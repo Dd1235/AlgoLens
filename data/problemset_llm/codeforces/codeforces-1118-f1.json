@@ -10,25 +10,25 @@
     "dfs and similar",
     "trees"
   ],
-  "statement": "Given a tree with vertices colored red, blue, or uncolored, count the edges whose removal splits the tree into two components each containing vertices of only one color or none.",
+  "statement": "Given a tree with vertices colored red, blue, or uncolored, count the edges whose removal splits the tree into two components each containing vertices of at most one color (red or blue).",
   "tags": [
     "tree",
-    "graph",
-    "dfs"
+    "dfs",
+    "graph"
   ],
   "patterns": [
     "dfs",
-    "subtree-color-count",
-    "tree-partition"
+    "color-separation",
+    "connected-components"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048487,
+    "generated_at_unix": 1785050783,
     "pattern_confidence": {
-      "dfs": 0.98,
-      "subtree-color-count": 0.9,
-      "tree-partition": 0.85
+      "dfs": 0.95,
+      "color-separation": 0.85,
+      "connected-components": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

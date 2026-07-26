@@ -10,26 +10,28 @@
     "hashing",
     "implementation"
   ],
-  "statement": "Given a picture of size A×B, determine how many ways it can be cut into rectangular pieces of size X×Y (where X divides A and Y divides B) such that all pieces are unique up to rotation, and find the minimal piece size that produces such a puzzle.",
+  "statement": "Given a picture of size A×B, count how many ways to cut it into rectangular pieces of size X×Y (with A divisible by X and B divisible by Y) produce puzzles where all pieces are unique up to rotation, and find the minimal piece size that yields such a puzzle.",
   "tags": [
-    "string",
     "rolling-hash",
     "implementation",
-    "geometry"
+    "geometry",
+    "string"
   ],
   "patterns": [
-    "binary-search-answer",
-    "string-hashing",
-    "rotation-normalization"
+    "rolling-hash",
+    "rotations",
+    "brute-force",
+    "pattern-recognition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048007,
+    "generated_at_unix": 1785050328,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "string-hashing": 0.85,
-      "rotation-normalization": 0.8
+      "rolling-hash": 0.95,
+      "rotations": 0.9,
+      "brute-force": 0.85,
+      "pattern-recognition": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

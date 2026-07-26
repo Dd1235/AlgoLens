@@ -10,25 +10,25 @@
     "greedy",
     "math"
   ],
-  "statement": "Given a permutation and a sequence of distinct elements, find the minimum number of adjacent swaps needed to ensure the sequence does not satisfy a certain positional closeness condition defined by a parameter d.",
+  "statement": "Given a permutation and a sequence of distinct elements, find the minimum number of adjacent swaps needed to reorder the permutation so that the sequence is not \"not good\" according to a position-based condition involving a distance parameter d.",
   "tags": [
-    "array",
+    "permutation",
     "greedy",
     "math"
   ],
   "patterns": [
     "greedy",
-    "two-pointers",
-    "index-mapping"
+    "adjacent-swaps",
+    "position-indexing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047804,
+    "generated_at_unix": 1785050108,
     "pattern_confidence": {
       "greedy": 0.9,
-      "two-pointers": 0.7,
-      "index-mapping": 0.6
+      "adjacent-swaps": 0.85,
+      "position-indexing": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

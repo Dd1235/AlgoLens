@@ -10,26 +10,27 @@
     "brute force",
     "combinatorics"
   ],
-  "statement": "Count how many length-n numbers composed only of digits a and b have a digit sum that itself is a number composed only of digits a and b, modulo 10^9+7.",
+  "statement": "Count the number of length-n integers composed only of two given digits a and b, such that the sum of their digits is also a number consisting only of digits a and b, modulo 10^9+7.",
   "tags": [
     "combinatorics",
     "math",
-    "number-theory",
-    "dynamic-programming"
+    "number-theory"
   ],
   "patterns": [
-    "combinatorics",
-    "digit-dp",
-    "modular-arithmetic"
+    "brute-force",
+    "modular-arithmetic",
+    "digit-enumeration",
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048463,
+    "generated_at_unix": 1785050766,
     "pattern_confidence": {
-      "combinatorics": 0.95,
-      "digit-dp": 0.9,
-      "modular-arithmetic": 0.85
+      "brute-force": 0.8,
+      "modular-arithmetic": 0.9,
+      "digit-enumeration": 0.85,
+      "combinatorics": 0.9
     }
   },
   "source_topic": "Formwise / Math"

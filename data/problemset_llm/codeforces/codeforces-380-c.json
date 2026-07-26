@@ -24,11 +24,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048877,
+    "generated_at_unix": 1785050967,
     "pattern_confidence": {
-      "segment-tree": 0.95,
-      "stack": 0.9,
-      "prefix-sum": 0.85
+      "segment-tree": 0.9,
+      "stack": 0.7,
+      "prefix-sum": 0.6
     }
   },
   "source_topic": "Formwise / Segment Trees"

@@ -18,18 +18,18 @@
     "greedy"
   ],
   "patterns": [
-    "greedy",
     "two-pointers",
-    "binary-search-answer"
+    "greedy",
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048762,
+    "generated_at_unix": 1785050845,
     "pattern_confidence": {
-      "greedy": 0.95,
       "two-pointers": 0.9,
-      "binary-search-answer": 0.85
+      "greedy": 0.85,
+      "dynamic-programming": 0.8
     }
   },
   "source_topic": "Formwise / DP Optimizations"

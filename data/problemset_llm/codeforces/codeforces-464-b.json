@@ -10,25 +10,25 @@
     "brute force",
     "geometry"
   ],
-  "statement": "Given eight points with scrambled coordinate orders per point, determine if they can represent the vertices of a cube in 3D space with integer coordinates, and restore the original coordinates if possible.",
+  "statement": "Given eight points with scrambled coordinate orders per point, determine if they can represent the vertices of a cube with integer coordinates, and if so, restore the original coordinates.",
   "tags": [
     "geometry",
     "brute-force",
     "combinatorics"
   ],
   "patterns": [
-    "backtracking",
-    "permutation-enumeration",
+    "brute-force",
+    "coordinate-permutation",
     "geometry-validation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048118,
+    "generated_at_unix": 1785050428,
     "pattern_confidence": {
-      "backtracking": 0.9,
-      "permutation-enumeration": 0.85,
-      "geometry-validation": 0.8
+      "brute-force": 0.95,
+      "coordinate-permutation": 0.9,
+      "geometry-validation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

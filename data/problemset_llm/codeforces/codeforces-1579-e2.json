@@ -10,25 +10,23 @@
     "data structures",
     "greedy"
   ],
-  "statement": "Given an array, sequentially insert each element either at the beginning or end of a deque to minimize the total number of inversions in the resulting sequence.",
+  "statement": "Given an array, sequentially insert each element either at the beginning or the end of a deque to minimize the total number of inversions in the resulting sequence.",
   "tags": [
     "array",
     "deque",
-    "dynamic-programming"
+    "greedy"
   ],
   "patterns": [
-    "dynamic-programming",
     "greedy",
-    "inversion-count"
+    "inversion-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048066,
+    "generated_at_unix": 1785050375,
     "pattern_confidence": {
-      "dynamic-programming": 0.9,
-      "greedy": 0.7,
-      "inversion-count": 0.85
+      "greedy": 0.95,
+      "inversion-counting": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

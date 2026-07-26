@@ -16,29 +16,32 @@
     "implementation",
     "trees"
   ],
-  "statement": "Given a tree, for each vertex removed, determine the minimum cost and edges to add to reconnect the remaining vertices into a tree, where adding an edge costs the absolute difference of its endpoints' indices.",
+  "statement": "Given a tree of n vertices, for each vertex v, determine the minimum cost and edges to add to restore a tree after removing v and its incident edges, where adding an edge between vertices a and b costs |a - b|.",
   "tags": [
     "tree",
     "graph",
     "union-find",
     "greedy",
-    "binary-search"
+    "binary-search",
+    "dfs"
   ],
   "patterns": [
     "union-find",
     "greedy",
-    "binary-search-answer",
-    "tree-reconstruction"
+    "binary-search",
+    "dfs",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048443,
+    "generated_at_unix": 1785050750,
     "pattern_confidence": {
       "union-find": 0.95,
       "greedy": 0.9,
-      "binary-search-answer": 0.85,
-      "tree-reconstruction": 0.8
+      "binary-search": 0.7,
+      "dfs": 0.85,
+      "constructive-algorithm": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

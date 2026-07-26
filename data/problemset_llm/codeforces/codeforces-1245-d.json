@@ -13,15 +13,17 @@
     "shortest paths",
     "trees"
   ],
-  "statement": "Given cities with coordinates and costs for building power stations and connecting wires, find the minimum total cost to supply electricity to all cities by choosing which cities get power stations and which connections to build.",
+  "statement": "Given cities with coordinates and costs to build power stations or connect cities by wires with Manhattan distance cost, find the minimum total cost to supply electricity to all cities by choosing which cities get power stations and which connections to build.",
   "tags": [
     "graph",
     "union-find",
     "greedy",
-    "geometry"
+    "geometry",
+    "minimum-spanning-tree"
   ],
   "patterns": [
     "minimum-spanning-tree",
+    "kruskal",
     "union-find",
     "manhattan-distance",
     "greedy"
@@ -29,12 +31,13 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048501,
+    "generated_at_unix": 1785050797,
     "pattern_confidence": {
       "minimum-spanning-tree": 0.98,
-      "union-find": 0.95,
-      "manhattan-distance": 0.9,
-      "greedy": 0.85
+      "kruskal": 0.95,
+      "union-find": 0.9,
+      "manhattan-distance": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level-1"

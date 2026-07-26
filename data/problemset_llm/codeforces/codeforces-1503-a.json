@@ -10,28 +10,26 @@
     "constructive algorithms",
     "greedy"
   ],
-  "statement": "Given a binary string, construct two balanced bracket sequences of the same length such that positions with '1' have identical brackets and positions with '0' have different brackets, or determine that it is impossible.",
+  "statement": "Given a binary string, construct two balanced bracket sequences of the same length that satisfy specific equality and inequality conditions based on the binary digits, or determine that it is impossible.",
   "tags": [
     "string",
-    "greedy",
     "constructive-algorithm",
-    "stack"
+    "greedy",
+    "brackets"
   ],
   "patterns": [
     "greedy",
-    "balanced-brackets",
     "constructive-algorithm",
-    "stack-simulation"
+    "balanced-brackets"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048001,
+    "generated_at_unix": 1785050322,
     "pattern_confidence": {
       "greedy": 0.95,
-      "balanced-brackets": 0.9,
       "constructive-algorithm": 0.9,
-      "stack-simulation": 0.85
+      "balanced-brackets": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

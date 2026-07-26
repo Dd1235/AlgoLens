@@ -12,27 +12,28 @@
     "implementation",
     "math"
   ],
-  "statement": "Given two arrays representing transparency coefficients of horizontal and vertical threads, and queries that increment or decrement ranges in these arrays, compute after each query the number of sub-squares in the resulting fabric where no two adjacent cells have equal transparency coefficients.",
+  "statement": "Given two arrays representing transparency coefficients of horizontal and vertical threads, and queries that increment or decrement ranges of these coefficients, maintain and output after each query the count of sub-squares in the resulting fabric where no two adjacent cells have equal transparency values.",
   "tags": [
     "array",
     "data-structures",
-    "combinatorics"
+    "combinatorics",
+    "implementation"
   ],
   "patterns": [
-    "range-update",
-    "prefix-sum",
     "difference-array",
-    "counting"
+    "prefix-sum",
+    "range-update",
+    "query-processing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048335,
+    "generated_at_unix": 1785050645,
     "pattern_confidence": {
-      "range-update": 0.95,
-      "prefix-sum": 0.9,
-      "difference-array": 0.85,
-      "counting": 0.8
+      "difference-array": 0.9,
+      "prefix-sum": 0.85,
+      "range-update": 0.9,
+      "query-processing": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -13,26 +13,28 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a set of initial strings, efficiently answer queries asking whether there exists a stored string of the same length that differs from a given query string in exactly one character.",
+  "statement": "Given a set of initial strings, efficiently answer queries asking whether there exists a stored string of the same length that differs from a given query string in exactly one character position.",
   "tags": [
     "string",
     "rolling-hash",
-    "data-structure",
+    "data-structures",
     "trie"
   ],
   "patterns": [
     "string-hashing",
-    "hash-map",
-    "fixed-length-pattern-matching"
+    "hash-set",
+    "fixed-length-string-matching",
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048801,
+    "generated_at_unix": 1785050888,
     "pattern_confidence": {
       "string-hashing": 0.95,
-      "hash-map": 0.9,
-      "fixed-length-pattern-matching": 0.85
+      "hash-set": 0.9,
+      "fixed-length-string-matching": 0.85,
+      "rolling-hash": 0.9
     }
   },
   "source_topic": "Formwise / Trie"

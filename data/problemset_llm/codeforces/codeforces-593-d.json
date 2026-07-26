@@ -13,25 +13,26 @@
     "math",
     "trees"
   ],
-  "statement": "Given a tree with values on edges, process queries that either update an edge's value or compute the result of repeatedly dividing a number by the edge values along the unique path between two vertices.",
+  "statement": "Given a tree with values on edges, support two types of operations: update an edge's value to a smaller positive integer, and compute the result of repeatedly dividing a given number by the edge values along the unique path between two vertices.",
   "tags": [
     "tree",
-    "graph",
-    "data-structure"
+    "data-structure",
+    "dfs",
+    "math"
   ],
   "patterns": [
     "dfs",
     "path-query",
-    "edge-updates"
+    "edge-update"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048093,
+    "generated_at_unix": 1785050402,
     "pattern_confidence": {
       "dfs": 0.9,
       "path-query": 0.85,
-      "edge-updates": 0.8
+      "edge-update": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

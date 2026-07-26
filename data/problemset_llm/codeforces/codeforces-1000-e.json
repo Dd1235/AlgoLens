@@ -11,7 +11,7 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a connected undirected graph, determine the maximum number of edges that can be critical (i.e., must be used on every path) between some pair of start and end locations chosen arbitrarily.",
+  "statement": "Given a connected undirected graph, determine the maximum number of edges that can be critical (i.e., must be used in every path) between some pair of start and end nodes chosen to maximize this count.",
   "tags": [
     "graph",
     "dfs",
@@ -22,18 +22,18 @@
     "bridge-finding",
     "dfs",
     "cut-edge",
-    "graph-connectivity",
+    "critical-edge",
     "articulation-points"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048949,
+    "generated_at_unix": 1785051048,
     "pattern_confidence": {
       "bridge-finding": 0.95,
       "dfs": 0.9,
-      "cut-edge": 0.9,
-      "graph-connectivity": 0.85,
+      "cut-edge": 0.85,
+      "critical-edge": 0.8,
       "articulation-points": 0.9
     }
   },

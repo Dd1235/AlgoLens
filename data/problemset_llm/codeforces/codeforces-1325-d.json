@@ -12,7 +12,7 @@
     "greedy",
     "number theory"
   ],
-  "statement": "Given two integers u and v, construct the shortest array whose elements XOR to u and sum to v.",
+  "statement": "Given two integers u and v, construct the shortest array whose elements have bitwise XOR equal to u and sum equal to v.",
   "tags": [
     "bit-manipulation",
     "greedy",
@@ -27,7 +27,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048470,
+    "generated_at_unix": 1785050773,
     "pattern_confidence": {
       "bit-manipulation": 0.95,
       "greedy": 0.9,

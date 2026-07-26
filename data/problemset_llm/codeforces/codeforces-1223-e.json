@@ -11,25 +11,25 @@
     "sortings",
     "trees"
   ],
-  "statement": "Given a weighted tree and multiple queries, find the maximum sum of weights of edges whose endpoints share at least one color in a k-coloring where each color is used at most twice per vertex.",
+  "statement": "Given a weighted tree and multiple queries, find the maximum sum of weights of edges whose endpoints share at least one color in a k-coloring where each vertex is assigned exactly k colors and each color is used at most twice.",
   "tags": [
     "tree",
     "dynamic-programming",
-    "graph"
+    "greedy"
   ],
   "patterns": [
     "tree-dp",
-    "binary-search-answer",
-    "greedy"
+    "greedy",
+    "coloring"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048164,
+    "generated_at_unix": 1785050471,
     "pattern_confidence": {
-      "tree-dp": 0.95,
-      "binary-search-answer": 0.85,
-      "greedy": 0.7
+      "tree-dp": 0.9,
+      "greedy": 0.7,
+      "coloring": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

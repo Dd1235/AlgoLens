@@ -10,24 +10,25 @@
     "data structures",
     "trees"
   ],
-  "statement": "Given a rooted tree with vertex values, support queries that reassign parent-child relationships and update vertex values, while after each query computing the expected value of the lowest common ancestor of two randomly chosen vertices.",
+  "statement": "Given a rooted tree with vertex values and dynamic parent reassignment queries, maintain and compute the expected value of the lowest common ancestor of two randomly chosen vertices after each update.",
   "tags": [
     "tree",
-    "data-structure",
+    "dynamic-tree",
+    "lca",
     "expected-value"
   ],
   "patterns": [
+    "link-cut-tree",
     "lca",
-    "dynamic-tree",
     "expected-value-computation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048279,
+    "generated_at_unix": 1785050586,
     "pattern_confidence": {
-      "lca": 0.98,
-      "dynamic-tree": 0.9,
+      "link-cut-tree": 0.95,
+      "lca": 0.9,
       "expected-value-computation": 0.85
     }
   },

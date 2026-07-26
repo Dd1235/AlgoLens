@@ -12,7 +12,7 @@
     "implementation",
     "math"
   ],
-  "statement": "Given the rankings of a participant in two rounds of a competition, determine the minimum and maximum possible overall place based on the sum of their ranks compared to others, considering all possible arrangements of other participants' ranks.",
+  "statement": "Given unique rankings of participants in two rounds, determine the minimum and maximum possible overall place of a specific participant based on the sum of their two ranks, considering all possible arrangements of other participants' ranks.",
   "tags": [
     "math",
     "greedy",
@@ -20,18 +20,18 @@
     "implementation"
   ],
   "patterns": [
-    "binary-search-answer",
-    "sorting",
-    "greedy"
+    "constructive-algorithm",
+    "greedy",
+    "case-analysis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047942,
+    "generated_at_unix": 1785050258,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "sorting": 0.85,
-      "greedy": 0.8
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85,
+      "case-analysis": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

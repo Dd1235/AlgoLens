@@ -18,17 +18,17 @@
     "combinatorics"
   ],
   "patterns": [
-    "digit-dp",
     "bit-counting",
+    "dp-on-binary-representation",
     "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048871,
+    "generated_at_unix": 1785050962,
     "pattern_confidence": {
-      "digit-dp": 0.9,
       "bit-counting": 0.95,
+      "dp-on-binary-representation": 0.9,
       "modular-arithmetic": 0.85
     }
   },

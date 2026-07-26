@@ -12,25 +12,28 @@
     "number theory",
     "shortest paths"
   ],
-  "statement": "Given a graph with platforms each having a level that changes cyclically after each step, find the minimum steps to move from the first to the last platform by only moving between connected platforms of the same current level.",
+  "statement": "Given a graph of platforms each with a level that changes cyclically after each step, find the minimum steps to move from platform 1 to platform n by only moving along edges connecting platforms of the same current level.",
   "tags": [
     "graph",
-    "number-theory",
-    "shortest-path"
+    "shortest-path",
+    "modular-arithmetic",
+    "number-theory"
   ],
   "patterns": [
+    "shortest-path",
+    "modular-leveling",
     "state-expansion",
-    "modular-arithmetic",
-    "bfs-on-expanded-graph"
+    "bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048099,
+    "generated_at_unix": 1785050408,
     "pattern_confidence": {
-      "state-expansion": 0.95,
-      "modular-arithmetic": 0.9,
-      "bfs-on-expanded-graph": 0.9
+      "shortest-path": 0.95,
+      "modular-leveling": 0.85,
+      "state-expansion": 0.9,
+      "bfs": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

@@ -12,25 +12,28 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a weighted directed graph with vertices that can be toggled between highlighted and normal states, maintain the minimum total edge weight needed so that every normal vertex can reach at least one highlighted vertex, updating this cost after each highlight/unhighlight query.",
+  "statement": "Given a weighted directed graph with vertices that can be toggled between highlighted and normal states, maintain the minimum total edge weight subset ensuring every normal vertex can reach at least one highlighted vertex, and report this cost after each toggle query.",
   "tags": [
     "graph",
-    "dynamic-programming",
-    "data-structures"
+    "dynamic-graph",
+    "shortest-path",
+    "data-structure"
   ],
   "patterns": [
-    "dynamic-connectivity",
-    "minimum-reachability-subgraph",
-    "incremental-updates"
+    "dynamic-shortest-path",
+    "incremental-updates",
+    "decremental-updates",
+    "minimum-reachable-subgraph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048275,
+    "generated_at_unix": 1785050583,
     "pattern_confidence": {
-      "dynamic-connectivity": 0.9,
-      "minimum-reachability-subgraph": 0.85,
-      "incremental-updates": 0.8
+      "dynamic-shortest-path": 0.9,
+      "incremental-updates": 0.85,
+      "decremental-updates": 0.85,
+      "minimum-reachable-subgraph": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

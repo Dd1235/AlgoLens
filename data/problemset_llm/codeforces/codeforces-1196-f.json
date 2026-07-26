@@ -12,7 +12,7 @@
     "shortest paths",
     "sortings"
   ],
-  "statement": "Given a connected undirected weighted graph, find the k-th smallest shortest path distance between any two distinct vertices, counting each pair only once.",
+  "statement": "Given a connected undirected weighted graph, find the k-th smallest shortest path distance between any pair of distinct vertices, counting each pair only once regardless of order.",
   "tags": [
     "graph",
     "shortest-path",
@@ -21,16 +21,16 @@
   "patterns": [
     "all-pairs-shortest-path",
     "sorting",
-    "binary-search-answer"
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048228,
+    "generated_at_unix": 1785050533,
     "pattern_confidence": {
       "all-pairs-shortest-path": 0.95,
       "sorting": 0.9,
-      "binary-search-answer": 0.85
+      "binary-search": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

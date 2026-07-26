@@ -12,28 +12,25 @@
     "graphs",
     "interactive"
   ],
-  "statement": "Given an interactive scenario with a nearly complete graph missing (n-2) edges, find a Hamiltonian path by querying vertex degrees and missing edges, removing vertices iteratively within n queries.",
+  "statement": "Given a nearly complete undirected graph missing exactly n-2 edges, interactively query vertex degrees and missing edges to reconstruct a Hamiltonian path in at most n queries.",
   "tags": [
     "graph",
     "interactive",
-    "constructive-algorithm",
-    "hamiltonian-path"
+    "constructive-algorithm"
   ],
   "patterns": [
     "interactive",
     "constructive-algorithm",
-    "degree-query",
-    "graph-construction"
+    "degree-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048330,
+    "generated_at_unix": 1785050640,
     "pattern_confidence": {
-      "interactive": 1.0,
+      "interactive": 0.95,
       "constructive-algorithm": 0.9,
-      "degree-query": 0.85,
-      "graph-construction": 0.8
+      "degree-query": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

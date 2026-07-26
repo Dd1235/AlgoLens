@@ -14,27 +14,29 @@
     "implementation",
     "math"
   ],
-  "statement": "Determine if three given rectangular logos can be arranged without overlap to exactly cover a square billboard, allowing rotation but no empty space.",
+  "statement": "Determine if three given rectangular logos can be arranged without overlap to exactly cover a square billboard, allowing rotation of logos with sides parallel to the billboard.",
   "tags": [
     "geometry",
-    "bit-manipulation",
     "brute-force",
+    "bit-manipulation",
     "implementation",
-    "math"
+    "constructive-algorithm"
   ],
   "patterns": [
-    "constructive-algorithm",
+    "brute-force",
     "bit-manipulation",
-    "case-analysis"
+    "constructive-algorithm",
+    "geometry-checks"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047953,
+    "generated_at_unix": 1785050271,
     "pattern_confidence": {
-      "constructive-algorithm": 0.95,
-      "bit-manipulation": 0.9,
-      "case-analysis": 0.85
+      "brute-force": 0.9,
+      "bit-manipulation": 0.85,
+      "constructive-algorithm": 0.8,
+      "geometry-checks": 0.75
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

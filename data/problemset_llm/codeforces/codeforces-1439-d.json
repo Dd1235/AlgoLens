@@ -11,26 +11,25 @@
     "dp",
     "fft"
   ],
-  "statement": "Given n computers in a row and m participants each wanting to sit behind a preferred computer entering from left or right, compute the sum of all possible total 'madness' distances over all seating assignments where no participant fails to find a seat, modulo a prime p.",
+  "statement": "Given n computers in a row and m participants each wanting to sit behind a preferred computer entering from left or right, compute the sum of all possible total displacement distances (madness) over all seating assignments where no participant fails to find a seat, modulo a given prime.",
   "tags": [
-    "array",
     "combinatorics",
     "dynamic-programming",
-    "math"
+    "modular-arithmetic"
   ],
   "patterns": [
-    "dynamic-programming",
-    "prefix-sum",
+    "dp-on-dag",
+    "state-compression",
     "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048346,
+    "generated_at_unix": 1785050656,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "prefix-sum": 0.85,
-      "modular-arithmetic": 0.9
+      "dp-on-dag": 0.9,
+      "state-compression": 0.85,
+      "modular-arithmetic": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -13,25 +13,20 @@
   ],
   "statement": "Starting from island 0, repeatedly jump east with jump lengths that can change by at most 1 from the previous jump length, collecting gems on visited islands. Determine the maximum number of gems collectible under these jump constraints.",
   "tags": [
-    "array",
     "dynamic-programming",
-    "graph"
+    "array"
   ],
   "patterns": [
     "dynamic-programming",
-    "dfs",
-    "memoization",
     "state-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048492,
+    "generated_at_unix": 1785050789,
     "pattern_confidence": {
-      "dynamic-programming": 0.98,
-      "dfs": 0.85,
-      "memoization": 0.9,
-      "state-compression": 0.9
+      "dynamic-programming": 0.95,
+      "state-compression": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

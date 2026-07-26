@@ -13,26 +13,28 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a rooted tree with positive integers on vertices and edges, for each vertex find how many vertices in its subtree have a path distance from it not exceeding the vertex's own value.",
+  "statement": "Given a rooted tree with positive integers on vertices and edges, for each vertex v find how many vertices u in v's subtree satisfy that the distance from v to u along edges is at most the value at u.",
   "tags": [
     "tree",
-    "graph",
+    "dfs",
     "binary-search",
-    "dfs"
+    "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
     "dfs",
+    "binary-search",
+    "tree-dp",
     "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048826,
+    "generated_at_unix": 1785050913,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
       "dfs": 0.95,
-      "prefix-sum": 0.8
+      "binary-search": 0.85,
+      "tree-dp": 0.8,
+      "prefix-sum": 0.7
     }
   },
   "source_topic": "Formwise / Trees"

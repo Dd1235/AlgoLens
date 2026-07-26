@@ -17,25 +17,25 @@
   "statement": "Given a string and a set of forbidden substrings, find the longest contiguous substring of the given string that does not contain any forbidden substring.",
   "tags": [
     "string",
-    "dynamic-programming",
-    "two-pointers",
-    "rolling-hash"
-  ],
-  "patterns": [
-    "binary-search-answer",
     "rolling-hash",
     "two-pointers",
     "dynamic-programming"
   ],
+  "patterns": [
+    "two-pointers",
+    "rolling-hash",
+    "dynamic-programming",
+    "substring-avoidance"
+  ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047905,
+    "generated_at_unix": 1785050220,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "two-pointers": 0.9,
       "rolling-hash": 0.85,
-      "two-pointers": 0.8,
-      "dynamic-programming": 0.75
+      "dynamic-programming": 0.8,
+      "substring-avoidance": 0.75
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

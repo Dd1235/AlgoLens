@@ -12,25 +12,25 @@
     "sortings",
     "strings"
   ],
-  "statement": "Given a string and an integer k, color characters into k groups so that each group's subsequence forms a palindrome, maximizing the minimum length among these palindromic subsequences.",
+  "statement": "Given a string and an integer k, color some characters with colors 1 to k so that each color class forms a palindrome after any swaps within that color, maximizing the minimum length among these k palindrome strings.",
   "tags": [
     "string",
     "greedy",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "greedy",
-    "palindrome"
+    "palindrome-construction"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047752,
+    "generated_at_unix": 1785050057,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
+      "binary-search": 0.9,
       "greedy": 0.85,
-      "palindrome": 0.8
+      "palindrome-construction": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

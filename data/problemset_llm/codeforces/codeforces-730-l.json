@@ -9,25 +9,27 @@
   "source_tags": [
     "data structures"
   ],
-  "statement": "Given a string representing a simplified arithmetic expression, answer queries asking whether a substring is a valid sub-expression and if so, compute its value modulo 10^9+7 following standard operator precedence.",
+  "statement": "Given a string representing a simplified arithmetic expression, answer queries that ask whether a substring is a valid sub-expression and, if so, compute its value modulo 10^9+7 respecting operator precedence.",
   "tags": [
     "string",
-    "dynamic-programming",
-    "parsing"
+    "parsing",
+    "data-structure"
   ],
   "patterns": [
-    "dp-on-dag",
+    "dynamic-programming",
+    "interval-dp",
     "expression-parsing",
-    "memoization"
+    "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048264,
+    "generated_at_unix": 1785050573,
     "pattern_confidence": {
-      "dp-on-dag": 0.9,
-      "expression-parsing": 0.95,
-      "memoization": 0.85
+      "dynamic-programming": 0.95,
+      "interval-dp": 0.9,
+      "expression-parsing": 0.98,
+      "modular-arithmetic": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

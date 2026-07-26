@@ -11,7 +11,7 @@
     "math",
     "strings"
   ],
-  "statement": "Given two equal-length strings a and b, count the number of distinct permutations of a that are lexicographically greater than a and less than b, modulo 10^9+7.",
+  "statement": "Given two equal-length strings a and b, count the number of distinct permutations of a that are lexicographically greater than a but less than b, modulo 10^9+7.",
   "tags": [
     "string",
     "combinatorics",
@@ -19,16 +19,16 @@
   ],
   "patterns": [
     "lexicographic-order",
-    "counting-permutations",
+    "permutation-counting",
     "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048136,
+    "generated_at_unix": 1785050447,
     "pattern_confidence": {
       "lexicographic-order": 0.95,
-      "counting-permutations": 0.9,
+      "permutation-counting": 0.9,
       "modular-arithmetic": 0.85
     }
   },

@@ -10,22 +10,24 @@
     "dp",
     "graphs"
   ],
-  "statement": "Given a directed graph with edges initially containing mushrooms that decrease in quantity each time the edge is used, determine the maximum mushrooms Ralph can collect starting from a given node.",
+  "statement": "Given a directed graph with edges labeled by initial mushroom counts that decrease by an increasing amount each time the edge is used, find the maximum total mushrooms collectible starting from a given node.",
   "tags": [
     "graph",
     "dynamic-programming"
   ],
   "patterns": [
-    "binary-search-answer",
-    "dp-on-graphs"
+    "dp-on-graphs",
+    "state-compression",
+    "memoization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048981,
+    "generated_at_unix": 1785051095,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "dp-on-graphs": 0.88
+      "dp-on-graphs": 0.95,
+      "state-compression": 0.7,
+      "memoization": 0.85
     }
   },
   "source_topic": "Formwise / Graph Level 2"

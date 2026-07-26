@@ -16,16 +16,18 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "prefix-sum",
-    "interval-dp"
+    "dynamic-programming",
+    "interval-dp",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047977,
+    "generated_at_unix": 1785050296,
     "pattern_confidence": {
-      "prefix-sum": 0.95,
-      "interval-dp": 0.9
+      "dynamic-programming": 0.95,
+      "interval-dp": 0.9,
+      "prefix-sum": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

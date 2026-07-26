@@ -12,7 +12,7 @@
     "implementation",
     "sortings"
   ],
-  "statement": "Given an array and multiple queries asking for sums over subranges, reorder the array elements to maximize the total sum of all query results.",
+  "statement": "Given an array and multiple range queries, reorder the array elements to maximize the total sum of all query sums over their respective intervals.",
   "tags": [
     "array",
     "greedy",
@@ -20,18 +20,18 @@
     "sorting"
   ],
   "patterns": [
-    "prefix-sum",
     "greedy",
+    "prefix-sum",
     "sorting",
     "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049005,
+    "generated_at_unix": 1785051120,
     "pattern_confidence": {
-      "prefix-sum": 0.95,
-      "greedy": 0.9,
+      "greedy": 0.95,
+      "prefix-sum": 0.9,
       "sorting": 0.9,
       "contribution-technique": 0.85
     }

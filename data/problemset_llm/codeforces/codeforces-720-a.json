@@ -9,24 +9,24 @@
   "source_tags": [
     "greedy"
   ],
-  "statement": "Given two queues of people at opposite sides of a hall with n×m seats, determine if it is possible to assign each person a seat so that their walking distance does not exceed their stamina.",
+  "statement": "Given two queues of people at opposite sides of a hall with n×m seats, determine if it is possible to assign each person a seat so that the walking distance to their seat does not exceed their stamina.",
   "tags": [
     "greedy",
     "geometry",
-    "array"
+    "bipartite-matching"
   ],
   "patterns": [
-    "binary-search-answer",
     "greedy",
+    "bipartite-matching",
     "manhattan-distance"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048230,
+    "generated_at_unix": 1785050535,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "greedy": 0.85,
+      "greedy": 0.9,
+      "bipartite-matching": 0.85,
       "manhattan-distance": 0.8
     }
   },

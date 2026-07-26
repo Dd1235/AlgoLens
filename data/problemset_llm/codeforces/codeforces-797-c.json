@@ -11,7 +11,7 @@
     "greedy",
     "strings"
   ],
-  "statement": "Given a string s, repeatedly move its first character to string t, and then move the last character of t to string u, aiming to empty s and t while making u lexicographically minimal.",
+  "statement": "Given a string s, repeatedly move its first character to string t, then move the last character of t to string u, aiming to empty s and t while making u lexicographically minimal.",
   "tags": [
     "string",
     "greedy",
@@ -26,11 +26,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048803,
+    "generated_at_unix": 1785050889,
     "pattern_confidence": {
       "greedy": 0.95,
-      "two-pointer": 0.85,
-      "simulation": 0.8
+      "two-pointer": 0.7,
+      "simulation": 0.85
     }
   },
   "source_topic": "Formwise / STL"

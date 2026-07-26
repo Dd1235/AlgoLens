@@ -11,11 +11,12 @@
     "dp",
     "matrices"
   ],
-  "statement": "Given a digit string and multiple updates changing digits, after each update count the number of pairs of non-negative integers whose digit-wise sum matches the string under a custom addition rule, outputting results modulo 998244353.",
+  "statement": "Given a digit string and multiple updates changing digits, after each update count the number of pairs of non-negative integers whose digit-wise sum concatenation equals the updated string under a custom addition rule, modulo 998244353.",
   "tags": [
     "string",
     "dynamic-programming",
-    "data-structures"
+    "data-structures",
+    "modular-arithmetic"
   ],
   "patterns": [
     "digit-dp",
@@ -25,7 +26,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048395,
+    "generated_at_unix": 1785050704,
     "pattern_confidence": {
       "digit-dp": 0.95,
       "segment-tree": 0.85,

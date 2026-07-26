@@ -10,25 +10,25 @@
     "combinatorics",
     "probabilities"
   ],
-  "statement": "Given a bracket sequence with characters '(', ')', and '?', compute the sum of maximum depths of all correct bracket subsequences formed by replacing '?' with '(' or ')' modulo 998244353.",
+  "statement": "Given a bracket sequence with characters '(', ')', and '?', compute the sum of maximum depths of all correct bracket subsequences formed by replacing each '?' with '(' or ')', modulo 998244353.",
   "tags": [
     "string",
     "combinatorics",
     "dynamic-programming"
   ],
   "patterns": [
-    "prefix-sum",
-    "dp-on-dag",
-    "binary-exponentiation"
+    "dynamic-programming",
+    "combinatorics",
+    "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048304,
+    "generated_at_unix": 1785050614,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "dp-on-dag": 0.85,
-      "binary-exponentiation": 0.7
+      "dynamic-programming": 0.95,
+      "combinatorics": 0.9,
+      "modular-arithmetic": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

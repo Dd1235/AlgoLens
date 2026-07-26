@@ -11,7 +11,7 @@
     "math",
     "number theory"
   ],
-  "statement": "Given two equal-length lowercase strings and an integer m, find a prime p ≥ m and a base r such that their polynomial hash values modulo p collide.",
+  "statement": "Given two equal-length lowercase strings and an integer m, find a prime p≥m and a base r such that their polynomial hash values modulo p collide.",
   "tags": [
     "string",
     "math",
@@ -19,16 +19,16 @@
   ],
   "patterns": [
     "polynomial-hashing",
-    "collision-detection",
+    "collision-finding",
     "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048344,
+    "generated_at_unix": 1785050654,
     "pattern_confidence": {
-      "polynomial-hashing": 0.98,
-      "collision-detection": 0.9,
+      "polynomial-hashing": 0.95,
+      "collision-finding": 0.9,
       "modular-arithmetic": 0.85
     }
   },

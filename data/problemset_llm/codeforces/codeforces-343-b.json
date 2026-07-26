@@ -11,25 +11,23 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given two wires connected from fixed contacts on the left to fixed contacts on the right, determine if the wires can be untangled without unplugging or moving the device, based on their crossing sequence.",
+  "statement": "Given two wires connected at fixed contacts on the left and right, determine if the wires can be untangled without unplugging or moving the device, based on their crossing order.",
   "tags": [
     "greedy",
-    "implementation",
-    "geometry"
+    "data-structures",
+    "implementation"
   ],
   "patterns": [
     "greedy",
-    "simulation",
-    "crossing-detection"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047957,
+    "generated_at_unix": 1785050276,
     "pattern_confidence": {
       "greedy": 0.9,
-      "simulation": 0.85,
-      "crossing-detection": 0.8
+      "simulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

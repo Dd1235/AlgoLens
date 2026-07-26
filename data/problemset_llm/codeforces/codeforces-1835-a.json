@@ -11,25 +11,25 @@
     "implementation",
     "math"
   ],
-  "statement": "Find the k-th lexicographically smallest equality of the form a + b = c where a, b, and c have fixed digit lengths and no leading zeros, or determine if it does not exist.",
+  "statement": "Find the k-th lexicographically smallest equality of the form a + b = c where a, b, and c are positive integers with fixed digit lengths A, B, and C respectively, written without leading zeros, or determine if it does not exist.",
   "tags": [
     "math",
-    "string",
-    "binary-search"
+    "brute-force",
+    "implementation"
   ],
   "patterns": [
-    "binary-search-answer",
-    "digit-dp",
-    "lexicographic-order"
+    "lexicographic-enumeration",
+    "digit-enumeration",
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047985,
+    "generated_at_unix": 1785050305,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "digit-dp": 0.85,
-      "lexicographic-order": 0.8
+      "lexicographic-enumeration": 0.9,
+      "digit-enumeration": 0.85,
+      "brute-force": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

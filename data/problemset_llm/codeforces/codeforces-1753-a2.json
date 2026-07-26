@@ -19,20 +19,20 @@
     "constructive-algorithm"
   ],
   "patterns": [
-    "prefix-sum",
+    "alternating-sum",
+    "partitioning",
     "greedy",
-    "dynamic-programming",
-    "constructive-algorithm"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047854,
+    "generated_at_unix": 1785050161,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "greedy": 0.85,
-      "dynamic-programming": 0.8,
-      "constructive-algorithm": 0.75
+      "alternating-sum": 0.9,
+      "partitioning": 0.85,
+      "greedy": 0.8,
+      "dynamic-programming": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

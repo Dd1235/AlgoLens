@@ -11,26 +11,25 @@
     "brute force",
     "data structures"
   ],
-  "statement": "Simulate monsters moving along a line of towers with mana capacities and regeneration, where each tower damages passing monsters by the minimum of monster health and tower mana, and determine the total health of monsters after passing all towers.",
+  "statement": "Simulate monsters moving along a line of towers, each with mana capacity and regeneration, where towers deal damage to monsters based on current mana and monster health, and compute the total remaining health of monsters after passing all towers.",
   "tags": [
     "simulation",
-    "array",
-    "greedy",
-    "data-structures"
+    "data-structures",
+    "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
+    "simulation",
+    "binary-search",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048296,
+    "generated_at_unix": 1785050605,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.8,
-      "greedy": 0.85
+      "simulation": 0.95,
+      "binary-search": 0.7,
+      "greedy": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

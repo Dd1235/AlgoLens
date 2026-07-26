@@ -11,24 +11,24 @@
     "implementation",
     "math"
   ],
-  "statement": "Given n distinct destinations on a line starting from 0, find the average total distance traveled over all permutations visiting each destination exactly once without returning to start.",
+  "statement": "Given n distinct destinations on a line, compute the average total walking distance over all permutations of visiting all destinations exactly once, starting from position 0 and ending at the last visited destination.",
   "tags": [
-    "array",
+    "math",
     "combinatorics",
-    "math"
+    "implementation"
   ],
   "patterns": [
-    "permutation-enumeration",
     "expected-value",
+    "permutation-enumeration",
     "distance-calculation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048866,
+    "generated_at_unix": 1785050957,
     "pattern_confidence": {
-      "permutation-enumeration": 0.9,
       "expected-value": 0.95,
+      "permutation-enumeration": 0.9,
       "distance-calculation": 0.85
     }
   },

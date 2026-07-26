@@ -10,25 +10,28 @@
     "brute force",
     "data structures"
   ],
-  "statement": "Given a theater seating layout and each person's preferred seat, assign seats to all people minimizing Manhattan distance to their preferred seat with tie-breaking by row and then seat number.",
+  "statement": "Given a theater seating plan and each person's preferred seat, assign seats to each person minimizing Manhattan distance to their preferred seat, breaking ties by row and then by seat number.",
   "tags": [
     "geometry",
     "greedy",
-    "data-structures"
+    "data-structures",
+    "bfs"
   ],
   "patterns": [
     "bfs",
-    "heap",
-    "greedy"
+    "greedy",
+    "manhattan-distance",
+    "tie-breaking"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048162,
+    "generated_at_unix": 1785050470,
     "pattern_confidence": {
       "bfs": 0.95,
-      "heap": 0.9,
-      "greedy": 0.85
+      "greedy": 0.9,
+      "manhattan-distance": 0.85,
+      "tie-breaking": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

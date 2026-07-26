@@ -11,24 +11,24 @@
     "data structures",
     "graphs"
   ],
-  "statement": "Given an undirected graph and an integer k, find either a clique of size k or a non-empty vertex subset where every vertex has at least k neighbors within the subset, or report if neither exists.",
+  "statement": "Given an undirected graph and an integer k, find either a clique of size k or a non-empty vertex subset where each vertex has at least k neighbors within the subset, or report that neither exists.",
   "tags": [
     "graph",
     "constructive-algorithm",
-    "data-structures"
+    "data-structure"
   ],
   "patterns": [
     "greedy",
-    "degree-pruning",
+    "degree-based-pruning",
     "clique-detection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048317,
+    "generated_at_unix": 1785050627,
     "pattern_confidence": {
       "greedy": 0.9,
-      "degree-pruning": 0.85,
+      "degree-based-pruning": 0.85,
       "clique-detection": 0.8
     }
   },

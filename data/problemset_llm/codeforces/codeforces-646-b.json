@@ -10,7 +10,7 @@
     "*special",
     "strings"
   ],
-  "statement": "Given a received message string, determine if it can be formed by overlapping two identical messages with a positive overlap smaller than the message length, indicating a transmission error.",
+  "statement": "Given a received message string, determine if it can be formed by overlapping two identical messages with a positive overlap smaller than the message length, and if so, find the original message.",
   "tags": [
     "string",
     "string-matching"
@@ -18,16 +18,16 @@
   "patterns": [
     "string-overlap",
     "prefix-function",
-    "knuth-morris-pratt"
+    "kmp-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047756,
+    "generated_at_unix": 1785050060,
     "pattern_confidence": {
       "string-overlap": 0.95,
       "prefix-function": 0.9,
-      "knuth-morris-pratt": 0.85
+      "kmp-algorithm": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

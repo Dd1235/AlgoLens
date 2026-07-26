@@ -13,12 +13,12 @@
     "implementation",
     "trees"
   ],
-  "statement": "Given an undirected graph with distinct integer values on vertices, process queries that either find and remove the maximum value in the connected component of a given vertex or delete an edge from the graph.",
+  "statement": "Given an undirected graph with distinct integer values on vertices, support queries to find and remove the maximum value in the connected component of a given vertex, and to delete edges dynamically.",
   "tags": [
     "graph",
     "union-find",
-    "data-structure",
-    "queries"
+    "dynamic-graph",
+    "data-structure"
   ],
   "patterns": [
     "union-find",
@@ -28,11 +28,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048857,
+    "generated_at_unix": 1785050947,
     "pattern_confidence": {
-      "union-find": 0.98,
-      "offline-queries": 0.9,
-      "dynamic-connectivity": 0.85
+      "union-find": 0.95,
+      "offline-queries": 0.85,
+      "dynamic-connectivity": 0.9
     }
   },
   "source_topic": "Formwise / Graph Level 2"

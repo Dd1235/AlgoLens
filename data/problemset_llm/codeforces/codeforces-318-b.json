@@ -11,25 +11,25 @@
     "strings",
     "two pointers"
   ],
-  "statement": "Count the number of substrings in a given string that start with \"heavy\" and end with \"metal\", considering substrings as consecutive character sequences.",
+  "statement": "Count the number of substrings in a given string that start with \"heavy\" and end with \"metal\".",
   "tags": [
     "string",
-    "array",
-    "two-pointers"
+    "two-pointers",
+    "implementation"
   ],
   "patterns": [
     "two-pointers",
-    "prefix-sum",
-    "substring-search"
+    "substring-search",
+    "string-scanning"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047806,
+    "generated_at_unix": 1785050109,
     "pattern_confidence": {
       "two-pointers": 0.9,
-      "prefix-sum": 0.85,
-      "substring-search": 0.8
+      "substring-search": 0.85,
+      "string-scanning": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

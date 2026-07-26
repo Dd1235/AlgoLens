@@ -11,7 +11,7 @@
     "dfs and similar",
     "trees"
   ],
-  "statement": "Given a rooted tree with letters on edges, for each vertex find the longest simple path in its subtree whose edge letters can be rearranged into a palindrome.",
+  "statement": "Given a rooted tree with letters on edges, for each vertex find the longest simple path within its subtree whose edge letters can be rearranged into a palindrome.",
   "tags": [
     "tree",
     "dfs",
@@ -21,20 +21,20 @@
   ],
   "patterns": [
     "dfs",
-    "bitmask-dp",
+    "bit-manipulation",
     "palindrome",
-    "subtree-dp",
+    "subtree-query",
     "union-find"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048914,
+    "generated_at_unix": 1785051007,
     "pattern_confidence": {
-      "dfs": 0.98,
-      "bitmask-dp": 0.95,
-      "palindrome": 0.9,
-      "subtree-dp": 0.9,
+      "dfs": 0.95,
+      "bit-manipulation": 0.9,
+      "palindrome": 0.85,
+      "subtree-query": 0.9,
       "union-find": 0.9
     }
   },

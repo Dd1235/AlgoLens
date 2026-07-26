@@ -10,25 +10,25 @@
     "data structures",
     "divide and conquer"
   ],
-  "statement": "Given a permutation and associated move costs, split it into two non-empty sets and rearrange elements between them so all elements in the first set are less than those in the second, minimizing total move cost.",
+  "statement": "Given a permutation and associated move costs for each element, split the permutation into two non-empty parts and then move elements between parts to ensure all elements in the first set are less than those in the second, minimizing total move cost.",
   "tags": [
     "array",
     "greedy",
     "dynamic-programming"
   ],
   "patterns": [
-    "prefix-sum",
-    "binary-search-answer",
-    "divide-and-conquer"
+    "prefix-suffix-partition",
+    "cost-minimization",
+    "dp-on-prefix-suffix"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048111,
+    "generated_at_unix": 1785050421,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "binary-search-answer": 0.85,
-      "divide-and-conquer": 0.7
+      "prefix-suffix-partition": 0.95,
+      "cost-minimization": 0.9,
+      "dp-on-prefix-suffix": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

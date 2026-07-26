@@ -9,25 +9,22 @@
   "source_tags": [
     "graphs"
   ],
-  "statement": "Given a ring of cities connected by one-way roads with known redirection costs, find the minimum total cost to redirect roads so that every city is reachable from every other city.",
+  "statement": "Given a ring of n cities connected by n one-way roads, each with a cost to reverse direction, find the minimum total cost to redirect roads so that the resulting graph is strongly connected (every city reachable from every other).",
   "tags": [
     "graph",
-    "greedy",
-    "cycle"
+    "strongly-connected-components"
   ],
   "patterns": [
     "cycle-detection",
-    "greedy",
-    "graph-traversal"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047745,
+    "generated_at_unix": 1785050049,
     "pattern_confidence": {
       "cycle-detection": 0.9,
-      "greedy": 0.85,
-      "graph-traversal": 0.8
+      "greedy": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

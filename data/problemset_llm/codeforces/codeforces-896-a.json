@@ -10,25 +10,26 @@
     "binary search",
     "dfs and similar"
   ],
-  "statement": "Given an infinite sequence of recursively defined strings, answer queries asking for the k-th character of the n-th string or '.' if out of bounds.",
+  "statement": "Given a recursively defined infinite sequence of strings where each string is constructed by embedding the previous string twice within a fixed template, answer queries asking for the k-th character of the n-th string or '.' if out of bounds.",
   "tags": [
     "string",
-    "dynamic-programming",
+    "binary-search",
+    "dfs",
     "backtracking"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "dfs"
+    "binary-search",
+    "dfs",
+    "string-indexing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048064,
+    "generated_at_unix": 1785050373,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "prefix-sum": 0.85,
-      "dfs": 0.7
+      "binary-search": 0.9,
+      "dfs": 0.85,
+      "string-indexing": 0.8
     }
   },
   "source_topic": "Formwise / Recursion Backtracking"

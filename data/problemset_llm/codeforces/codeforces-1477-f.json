@@ -12,11 +12,11 @@
     "math",
     "probabilities"
   ],
-  "statement": "Given chocolate bars with lengths, repeatedly split a randomly chosen bar (proportional to its length) into two until all bars are at most length k, and compute the expected number of splits modulo a prime.",
+  "statement": "Given chocolate bars with lengths, repeatedly split a randomly chosen bar (chosen with probability proportional to its length) into two parts until all bars have length at most k, and compute the expected number of splits modulo a prime.",
   "tags": [
-    "probability",
     "math",
-    "expected-value",
+    "probability",
+    "combinatorics",
     "modular-arithmetic"
   ],
   "patterns": [
@@ -27,7 +27,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048363,
+    "generated_at_unix": 1785050672,
     "pattern_confidence": {
       "expected-value-dp": 0.95,
       "probability-dp": 0.9,

@@ -10,25 +10,25 @@
     "data structures",
     "math"
   ],
-  "statement": "Given an array and multiple queries specifying subarray ranges, compute the sum of Lipschitz constants for all sub-subarrays within each queried range.",
+  "statement": "Given an array and multiple queries specifying subarray ranges, compute for each query the sum of Lipschitz constants of all sub-subarrays within the specified subarray. The Lipschitz constant of a subarray is defined as the maximum ratio of absolute difference of elements to their index distance.",
   "tags": [
     "array",
     "math",
-    "prefix-sum"
+    "data-structures"
   ],
   "patterns": [
     "prefix-sum",
-    "binary-search-answer",
-    "two-pointers"
+    "two-pointers",
+    "sliding-window"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048179,
+    "generated_at_unix": 1785050488,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "binary-search-answer": 0.85,
-      "two-pointers": 0.7
+      "prefix-sum": 0.85,
+      "two-pointers": 0.7,
+      "sliding-window": 0.65
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

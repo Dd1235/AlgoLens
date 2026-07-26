@@ -11,7 +11,7 @@
     "graphs",
     "greedy"
   ],
-  "statement": "Assign integer ranks from 1 to k to military men with given order constraints so that each order-giver has a strictly higher rank than the receiver, and all ranks from 1 to k are used at least once.",
+  "statement": "Assign integer ranks from 1 to k to military men in a directed graph of orders so that each order goes from a higher-ranked person to a lower-ranked one, and all ranks from 1 to k are used at least once.",
   "tags": [
     "graph",
     "greedy",
@@ -19,17 +19,15 @@
   ],
   "patterns": [
     "topological-sort",
-    "greedy",
-    "constructive-algorithm"
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048385,
+    "generated_at_unix": 1785050693,
     "pattern_confidence": {
-      "topological-sort": 0.95,
-      "greedy": 0.9,
-      "constructive-algorithm": 0.85
+      "topological-sort": 0.9,
+      "greedy": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

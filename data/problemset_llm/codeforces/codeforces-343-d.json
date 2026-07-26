@@ -12,7 +12,7 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a rooted tree where each vertex can be filled or emptied of water, support operations to fill a vertex and all its descendants, empty a vertex and all its ancestors, and query whether a vertex is currently filled.",
+  "statement": "Simulate operations on a rooted tree where filling a vertex fills its entire subtree, emptying a vertex empties it and all its ancestors, and queries check if a vertex is currently filled with water.",
   "tags": [
     "tree",
     "dfs",
@@ -22,18 +22,20 @@
   ],
   "patterns": [
     "dfs",
-    "simulation",
-    "ancestor-descendant-updates",
+    "tree-flattening",
+    "lazy-propagation",
+    "segment-tree",
     "coordinate-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048511,
+    "generated_at_unix": 1785050808,
     "pattern_confidence": {
-      "dfs": 0.95,
-      "simulation": 0.9,
-      "ancestor-descendant-updates": 0.85,
+      "dfs": 0.9,
+      "tree-flattening": 0.85,
+      "lazy-propagation": 0.8,
+      "segment-tree": 0.75,
       "coordinate-compression": 0.9
     }
   },

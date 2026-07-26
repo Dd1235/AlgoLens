@@ -11,18 +11,19 @@
   ],
   "statement": "Given an integer n, output an n by n chessboard pattern where the top-left square is white ('.') and colors alternate between black ('#') and white in a checkerboard fashion.",
   "tags": [
-    "array",
-    "implementation"
+    "implementation",
+    "string",
+    "matrix"
   ],
   "patterns": [
-    "pattern-generation"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048014,
+    "generated_at_unix": 1785050335,
     "pattern_confidence": {
-      "pattern-generation": 0.9
+      "simulation": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

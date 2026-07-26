@@ -11,7 +11,7 @@
     "greedy",
     "math"
   ],
-  "statement": "Given an array, choose for each element whether to add it directly or add its absolute value to maximize the final cumulative value.",
+  "statement": "Given an array, choose for each element whether to add it directly or add its absolute value to maximize the final cumulative sum.",
   "tags": [
     "array",
     "dynamic-programming",
@@ -24,9 +24,9 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047740,
+    "generated_at_unix": 1785050044,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
+      "dynamic-programming": 0.9,
       "greedy": 0.7
     }
   },

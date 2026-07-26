@@ -14,7 +14,7 @@
     "number theory",
     "sortings"
   ],
-  "statement": "Given an initial number of candies and enemies each with a candy count, count permutations of enemy orderings where Yuzu can win all duels by having enough candies at each step, then identify integers for which the count of such permutations is not divisible by a given prime.",
+  "statement": "Given an initial candy count and enemies with candy amounts, count permutations of duels where the player wins all by having enough candies at each step. Then, for a prime p, find all initial candy counts where the count of such permutations is not divisible by p.",
   "tags": [
     "combinatorics",
     "number-theory",
@@ -22,20 +22,20 @@
     "sorting"
   ],
   "patterns": [
-    "counting",
+    "combinatorics",
     "modular-arithmetic",
     "permutation-counting",
-    "binary-search-answer"
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047962,
+    "generated_at_unix": 1785050281,
     "pattern_confidence": {
-      "counting": 0.95,
+      "combinatorics": 0.95,
       "modular-arithmetic": 0.9,
       "permutation-counting": 0.9,
-      "binary-search-answer": 0.7
+      "binary-search": 0.6
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

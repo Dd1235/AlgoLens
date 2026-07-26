@@ -9,25 +9,25 @@
   "source_tags": [
     "dp"
   ],
-  "statement": "Given a string containing 'B', 'W', and 'X' (unknown characters), count the number of ways to replace 'X' with 'B' or 'W' so that the resulting string contains two non-overlapping substrings of length k: one all 'B's followed later by one all 'W's.",
+  "statement": "Given a black-and-white string with some damaged characters marked as 'X', count the number of ways to replace 'X' with 'B' or 'W' so that the resulting string contains two non-overlapping substrings of length k: one all 'B's followed by one all 'W's.",
   "tags": [
     "string",
     "dynamic-programming",
     "combinatorics"
   ],
   "patterns": [
-    "prefix-sum",
-    "binary-search-answer",
-    "dp-on-strings"
+    "dynamic-programming",
+    "prefix-computation",
+    "modular-arithmetic"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048168,
+    "generated_at_unix": 1785050477,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "binary-search-answer": 0.85,
-      "dp-on-strings": 0.88
+      "dynamic-programming": 0.95,
+      "prefix-computation": 0.85,
+      "modular-arithmetic": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

@@ -9,25 +9,28 @@
   "source_tags": [
     "expression parsing"
   ],
-  "statement": "Given a nested simplified HTML-like table string, count the number of cells in each table, including nested ones.",
+  "statement": "Given a nested simplified HTML-like table structure, count the number of cells in each table, including nested ones, where tables may have varying row and cell counts.",
   "tags": [
     "string",
+    "parsing",
     "stack",
-    "parsing"
+    "tree"
   ],
   "patterns": [
-    "stack",
     "expression-parsing",
-    "recursive-parsing"
+    "stack",
+    "dfs",
+    "tree-construction"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047992,
+    "generated_at_unix": 1785050313,
     "pattern_confidence": {
-      "stack": 0.95,
-      "expression-parsing": 0.9,
-      "recursive-parsing": 0.85
+      "expression-parsing": 0.95,
+      "stack": 0.9,
+      "dfs": 0.85,
+      "tree-construction": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

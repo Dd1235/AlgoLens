@@ -14,29 +14,31 @@
     "graphs",
     "trees"
   ],
-  "statement": "Given a grid representing island, ocean, and underwater volcano cells, answer queries about the maximum minimum Manhattan distance to a volcano on a round trip path that fully encircles the island starting from a given ocean or volcano cell.",
+  "statement": "Given a grid representing an island surrounded by ocean and underwater volcanoes, answer queries about the maximum minimum Manhattan distance to a volcano on any round trip path starting from a given ocean or volcano cell that fully encircles the island.",
   "tags": [
+    "grid",
     "graph",
     "geometry",
-    "grid",
     "union-find",
-    "binary-search"
+    "trees"
   ],
   "patterns": [
-    "binary-search-answer",
-    "union-find",
+    "connected-components",
     "manhattan-distance",
-    "connected-components"
+    "binary-search",
+    "union-find",
+    "tree-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048441,
+    "generated_at_unix": 1785050747,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
+      "connected-components": 0.95,
+      "manhattan-distance": 0.9,
+      "binary-search": 0.85,
       "union-find": 0.9,
-      "manhattan-distance": 0.85,
-      "connected-components": 0.9
+      "tree-dp": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

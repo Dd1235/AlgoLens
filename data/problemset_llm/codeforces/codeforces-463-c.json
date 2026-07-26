@@ -16,22 +16,21 @@
     "greedy",
     "implementation",
     "geometry",
-    "rolling-hash",
     "prefix-sum"
   ],
   "patterns": [
     "greedy",
     "diagonal-indexing",
-    "hash-map"
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048975,
+    "generated_at_unix": 1785051089,
     "pattern_confidence": {
       "greedy": 0.95,
       "diagonal-indexing": 0.9,
-      "hash-map": 0.85
+      "rolling-hash": 0.85
     }
   },
   "source_topic": "Formwise / Contribution Technique & Prefix"

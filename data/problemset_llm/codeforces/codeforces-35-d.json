@@ -10,23 +10,25 @@
     "dp",
     "greedy"
   ],
-  "statement": "Given n days and animals arriving each day with daily food requirements, determine the maximum number of animals that can be accepted so that no animal ever lacks food, starting with an initial food supply X.",
+  "statement": "Given n days and an initial amount of food X, each day an animal arrives requiring a fixed daily food amount from its arrival day to day n. Determine the maximum number of animals that can be accepted without any animal becoming sad due to insufficient food.",
   "tags": [
-    "array",
     "greedy",
-    "dynamic-programming"
+    "dynamic-programming",
+    "array"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum"
+    "greedy",
+    "prefix-sum",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047996,
+    "generated_at_unix": 1785050317,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "prefix-sum": 0.84
+      "greedy": 0.95,
+      "prefix-sum": 0.85,
+      "binary-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

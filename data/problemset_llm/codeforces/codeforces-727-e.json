@@ -12,7 +12,7 @@
     "string suffix structures",
     "strings"
   ],
-  "statement": "Given a cyclic concatenation of distinct fixed-length game names from a known set, reconstruct any valid sequence of games that could form the given cyclic string without repetition.",
+  "statement": "Given a cyclic concatenation of distinct fixed-length game names from a known set of popular games, reconstruct any valid sequence of games that could form the cyclic string without repetition.",
   "tags": [
     "string",
     "rolling-hash",
@@ -20,16 +20,16 @@
   ],
   "patterns": [
     "string-hashing",
-    "rolling-hash",
+    "suffix-structures",
     "cycle-detection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048926,
+    "generated_at_unix": 1785051021,
     "pattern_confidence": {
-      "string-hashing": 0.95,
-      "rolling-hash": 0.9,
+      "string-hashing": 0.9,
+      "suffix-structures": 0.85,
       "cycle-detection": 0.7
     }
   },

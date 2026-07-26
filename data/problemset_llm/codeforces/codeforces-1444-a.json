@@ -19,16 +19,14 @@
   ],
   "patterns": [
     "divisor-enumeration",
-    "prime-factorization",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047807,
+    "generated_at_unix": 1785050111,
     "pattern_confidence": {
-      "divisor-enumeration": 0.95,
-      "prime-factorization": 0.9,
+      "divisor-enumeration": 0.9,
       "greedy": 0.7
     }
   },

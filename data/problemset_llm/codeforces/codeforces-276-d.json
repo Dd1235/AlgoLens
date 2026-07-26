@@ -15,22 +15,22 @@
   ],
   "statement": "Given a range [l, r], find the maximum XOR value of any pair (a, b) with l ≤ a ≤ b ≤ r.",
   "tags": [
-    "bitmask-dp",
-    "math",
-    "greedy",
-    "bit-manipulation"
+    "bit-manipulation",
+    "math"
   ],
   "patterns": [
-    "bit-manipulation",
-    "greedy"
+    "bitwise-xor",
+    "greedy",
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049007,
+    "generated_at_unix": 1785051121,
     "pattern_confidence": {
-      "bit-manipulation": 0.95,
-      "greedy": 0.9
+      "bitwise-xor": 0.98,
+      "greedy": 0.85,
+      "bit-manipulation": 0.9
     }
   },
   "source_topic": "Formwise / Bit-Manipulation"

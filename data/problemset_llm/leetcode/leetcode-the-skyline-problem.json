@@ -22,7 +22,9 @@
     "geometry",
     "heap",
     "sorting",
-    "data-structure"
+    "data-structure",
+    "segment-tree",
+    "greedy"
   ],
   "patterns": [
     "line-sweep",

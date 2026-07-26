@@ -10,25 +10,25 @@
     "dp",
     "math"
   ],
-  "statement": "Find a path from the top-left to the bottom-right of an n×n matrix moving only right or down, such that the product of the numbers on the path ends with the fewest trailing zeros.",
+  "statement": "Find a path from the top-left to the bottom-right of a matrix moving only right or down, such that the product of the numbers along the path ends with the fewest trailing zeros.",
   "tags": [
-    "matrix",
     "dynamic-programming",
+    "matrix",
     "math"
   ],
   "patterns": [
     "dynamic-programming",
-    "factorization",
-    "path-finding"
+    "path-finding",
+    "trailing-zeros-count"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048203,
+    "generated_at_unix": 1785050510,
     "pattern_confidence": {
       "dynamic-programming": 0.98,
-      "factorization": 0.85,
-      "path-finding": 0.8
+      "path-finding": 0.85,
+      "trailing-zeros-count": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

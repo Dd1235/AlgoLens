@@ -11,25 +11,28 @@
     "dp",
     "graphs"
   ],
-  "statement": "Simulate a program with variables x and y on sequences starting with different initial values, determining the final y or if the program runs indefinitely.",
+  "statement": "Given a sequence and a program that updates two variables x and y based on the sequence values with specific rules, determine for each starting position whether the program terminates and output the final y or -1 if it runs indefinitely.",
   "tags": [
     "array",
-    "graph",
-    "dynamic-programming"
+    "simulation",
+    "dynamic-programming",
+    "graph"
   ],
   "patterns": [
-    "simulation",
     "dfs",
-    "memoization"
+    "cycle-detection",
+    "memoization",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047979,
+    "generated_at_unix": 1785050298,
     "pattern_confidence": {
-      "simulation": 0.95,
       "dfs": 0.9,
-      "memoization": 0.85
+      "cycle-detection": 0.85,
+      "memoization": 0.8,
+      "simulation": 0.75
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -10,25 +10,27 @@
     "binary search",
     "data structures"
   ],
-  "statement": "Maintain an array with constraints that propagate increments forward, and support queries for the sum of any contiguous subarray.",
+  "statement": "Given arrays a and k, support incrementing a[i] by x with cascading updates to maintain a[i+1] ≥ a[i] + k[i], and answer sum queries on subarrays of a.",
   "tags": [
     "array",
-    "data-structure",
-    "prefix-sum"
+    "segment-tree",
+    "data-structure"
   ],
   "patterns": [
-    "prefix-sum",
+    "segment-tree",
+    "lazy-propagation",
     "range-update",
-    "propagation"
+    "range-query"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048091,
+    "generated_at_unix": 1785050400,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "range-update": 0.85,
-      "propagation": 0.8
+      "segment-tree": 0.95,
+      "lazy-propagation": 0.9,
+      "range-update": 0.9,
+      "range-query": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

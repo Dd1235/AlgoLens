@@ -11,25 +11,28 @@
     "dp",
     "trees"
   ],
-  "statement": "Given a tree where vertices are initially white, you paint vertices black one by one starting from any vertex, each time gaining points equal to the size of the white connected component containing the chosen vertex. The goal is to maximize the total points gained by the time all vertices are black.",
+  "statement": "Given a tree where vertices are initially white, you iteratively paint vertices black starting from one vertex and then only adjacent white vertices, gaining points equal to the size of the white connected component containing the chosen vertex each turn. The goal is to maximize the total points gained by the time all vertices are black.",
   "tags": [
     "tree",
-    "graph",
-    "dynamic-programming"
+    "dfs",
+    "dynamic-programming",
+    "game-theory"
   ],
   "patterns": [
     "dfs",
     "tree-dp",
+    "game-dp",
     "connected-components"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048524,
+    "generated_at_unix": 1785050821,
     "pattern_confidence": {
       "dfs": 0.95,
       "tree-dp": 0.9,
-      "connected-components": 0.85
+      "game-dp": 0.85,
+      "connected-components": 0.8
     }
   },
   "source_topic": "Formwise / Trees"

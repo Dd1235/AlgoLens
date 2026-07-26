@@ -11,25 +11,27 @@
     "flows",
     "graphs"
   ],
-  "statement": "Given cards with power, magic number, and level, find the minimum character level needed to build a deck with total power at least k, where no two cards have magic numbers summing to a prime and only cards with level at most the character's level can be used.",
+  "statement": "Given cards each with power, magic number, and level, find the minimum character level needed to select a subset of cards with total power at least k, such that no two cards have magic numbers summing to a prime and all cards have level at most the character's level.",
   "tags": [
     "graph",
     "binary-search",
     "number-theory"
   ],
   "patterns": [
-    "binary-search-answer",
-    "max-flow",
-    "prime-checking"
+    "binary-search",
+    "prime-checking",
+    "graph-construction",
+    "maximum-independent-set"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048773,
+    "generated_at_unix": 1785050856,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
-      "max-flow": 0.9,
-      "prime-checking": 0.85
+      "binary-search": 0.95,
+      "prime-checking": 0.9,
+      "graph-construction": 0.85,
+      "maximum-independent-set": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

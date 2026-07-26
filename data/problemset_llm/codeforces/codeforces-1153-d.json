@@ -13,25 +13,25 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a rooted tree where internal nodes have min or max operations on their children, assign distinct integers to leaves to maximize the root's value.",
+  "statement": "Given a rooted tree where internal nodes have min or max operations over their children, assign distinct integers to leaves to maximize the root's value.",
   "tags": [
     "tree",
     "dynamic-programming",
-    "binary-search"
+    "greedy"
   ],
   "patterns": [
-    "binary-search-answer",
     "dfs",
-    "tree-dp"
+    "tree-dp",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048483,
+    "generated_at_unix": 1785050780,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "dfs": 0.9,
-      "tree-dp": 0.9
+      "dfs": 0.95,
+      "tree-dp": 0.9,
+      "binary-search": 0.7
     }
   },
   "source_topic": "Formwise / DP Level 2"

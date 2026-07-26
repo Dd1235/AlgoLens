@@ -10,27 +10,25 @@
     "data structures",
     "trees"
   ],
-  "statement": "Given a tree with n vertices labeled 1 to n, compute the sum of the diameters of all vertex intervals [l, r], where the diameter is the maximum distance between any two vertices within that interval.",
+  "statement": "Given a tree with vertices numbered from 1 to n, compute the sum of the diameters of all subtrees induced by consecutive vertex intervals [l, r].",
   "tags": [
     "tree",
-    "graph",
-    "data-structures"
+    "data-structures",
+    "intervals"
   ],
   "patterns": [
-    "two-pointers",
-    "sliding-window",
     "tree-diameter",
-    "distance-query"
+    "two-pointers",
+    "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048391,
+    "generated_at_unix": 1785050701,
     "pattern_confidence": {
-      "two-pointers": 0.85,
-      "sliding-window": 0.8,
       "tree-diameter": 0.95,
-      "distance-query": 0.7
+      "two-pointers": 0.7,
+      "contribution-technique": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

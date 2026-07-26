@@ -10,7 +10,7 @@
     "data structures",
     "divide and conquer"
   ],
-  "statement": "Given an array and multiple queries specifying subarray ranges, find an element that appears exactly once within each queried subarray, or report none if no such element exists.",
+  "statement": "Given an integer array and multiple queries specifying subarray ranges, find for each query any element that appears exactly once within the specified subarray, or report none if no such element exists.",
   "tags": [
     "array",
     "data-structures",
@@ -18,19 +18,19 @@
     "segment-tree"
   ],
   "patterns": [
+    "mo-algorithm",
+    "counting",
     "divide-and-conquer",
-    "binary-search-answer",
-    "offline-queries",
     "merge-sort-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048951,
+    "generated_at_unix": 1785051050,
     "pattern_confidence": {
-      "divide-and-conquer": 0.9,
-      "binary-search-answer": 0.85,
-      "offline-queries": 0.9,
+      "mo-algorithm": 0.9,
+      "counting": 0.85,
+      "divide-and-conquer": 0.7,
       "merge-sort-tree": 0.9
     }
   },

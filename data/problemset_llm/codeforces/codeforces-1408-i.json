@@ -10,28 +10,28 @@
     "dp",
     "math"
   ],
-  "statement": "Given an array of distinct non-negative integers and a number k, compute the probability distribution of the bitwise XOR of the array after k random decrements, outputting each probability modulo a prime.",
+  "statement": "Given an array of distinct integers within a range and a number of random decrements applied uniformly over time, compute the probability distribution of the final bitwise XOR of the array elements.",
   "tags": [
     "dynamic-programming",
     "probability",
     "bit-manipulation",
-    "modular-arithmetic"
+    "math"
   ],
   "patterns": [
     "dynamic-programming",
-    "probability-dp",
-    "modular-inverse",
-    "bitmask-dp"
+    "modular-arithmetic",
+    "bitmask-dp",
+    "expected-value-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048356,
+    "generated_at_unix": 1785050665,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "probability-dp": 0.9,
-      "modular-inverse": 0.85,
-      "bitmask-dp": 0.8
+      "dynamic-programming": 0.9,
+      "modular-arithmetic": 0.85,
+      "bitmask-dp": 0.8,
+      "expected-value-dp": 0.75
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -12,7 +12,7 @@
     "data structures",
     "greedy"
   ],
-  "statement": "Given an array, answer queries asking for the largest subarray starting at a given position whose bitwise AND is at least a given threshold.",
+  "statement": "Given an array and multiple queries each with parameters k and l, find the largest index r≥l such that the bitwise AND of the subarray from l to r is at least k.",
   "tags": [
     "array",
     "bit-manipulation",
@@ -20,18 +20,18 @@
     "data-structures"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "bitwise-and",
-    "prefix-computation"
+    "prefix-processing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047832,
+    "generated_at_unix": 1785050135,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
+      "binary-search": 0.95,
       "bitwise-and": 0.9,
-      "prefix-computation": 0.7
+      "prefix-processing": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

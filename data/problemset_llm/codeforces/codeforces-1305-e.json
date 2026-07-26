@@ -12,26 +12,26 @@
     "implementation",
     "math"
   ],
-  "statement": "Given n problems with strictly increasing positive integer scores, construct a score distribution so that the number of triples (i, j, k) with i < j < k and a_i + a_j = a_k equals m, or determine that no such distribution exists.",
+  "statement": "Given n problems with strictly increasing positive integer scores, construct a score distribution such that the number of triples (i, j, k) with i<j<k and a_i + a_j = a_k equals a given integer m, or determine that no such distribution exists.",
   "tags": [
-    "array",
     "math",
     "constructive-algorithm",
-    "greedy"
+    "greedy",
+    "implementation"
   ],
   "patterns": [
     "constructive-algorithm",
     "greedy",
-    "two-pointers"
+    "case-analysis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048152,
+    "generated_at_unix": 1785050462,
     "pattern_confidence": {
       "constructive-algorithm": 0.95,
-      "greedy": 0.9,
-      "two-pointers": 0.6
+      "greedy": 0.85,
+      "case-analysis": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

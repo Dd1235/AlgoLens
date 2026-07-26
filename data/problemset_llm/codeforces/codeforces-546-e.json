@@ -11,7 +11,7 @@
     "graphs",
     "math"
   ],
-  "statement": "Given a graph with cities each having an initial number of soldiers, determine if soldiers can move at most one road to achieve a target distribution of soldiers per city.",
+  "statement": "Given n cities each with an initial number of soldiers and bidirectional roads connecting them, determine if it is possible to redistribute soldiers so that each city ends up with a specified number of soldiers, where each soldier can move at most one road away or stay in place.",
   "tags": [
     "graph",
     "max-flow",
@@ -19,15 +19,15 @@
   ],
   "patterns": [
     "max-flow",
-    "graph-construction"
+    "bipartite-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048178,
+    "generated_at_unix": 1785050486,
     "pattern_confidence": {
       "max-flow": 0.95,
-      "graph-construction": 0.85
+      "bipartite-matching": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

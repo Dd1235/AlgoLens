@@ -11,11 +11,11 @@
     "implementation",
     "strings"
   ],
-  "statement": "Given a string and two lengths p and q, determine how to split the string into pieces each of length p or q.",
+  "statement": "Given a string and two lengths p and q, determine how to split the string into substrings each of length p or q, covering the entire string.",
   "tags": [
     "string",
     "math",
-    "implementation"
+    "brute-force"
   ],
   "patterns": [
     "brute-force",
@@ -25,7 +25,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047879,
+    "generated_at_unix": 1785050189,
     "pattern_confidence": {
       "brute-force": 0.9,
       "greedy": 0.7,

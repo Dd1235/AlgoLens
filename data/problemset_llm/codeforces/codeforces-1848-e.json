@@ -12,25 +12,25 @@
     "math",
     "number theory"
   ],
-  "statement": "Given a coordinate x and multiple multipliers, determine for each scaled coordinate the maximum number of distinct positive integer forces f_i such that the stone skipping distances sum to that coordinate, with results modulo a prime M.",
+  "statement": "Given a coordinate on the shoreline and a sequence of multipliers, determine for each multiplied coordinate the maximum number of distinct positive integer forces such that stones thrown with these forces all touch the water at that coordinate, modulo a prime number.",
   "tags": [
     "math",
     "number-theory",
-    "binary-search"
+    "modular-arithmetic"
   ],
   "patterns": [
-    "binary-search-answer",
     "prefix-sum",
-    "modular-arithmetic"
+    "modular-exponentiation",
+    "prime-modulo"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048374,
+    "generated_at_unix": 1785050684,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "prefix-sum": 0.8,
-      "modular-arithmetic": 0.85
+      "prefix-sum": 0.85,
+      "modular-exponentiation": 0.8,
+      "prime-modulo": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

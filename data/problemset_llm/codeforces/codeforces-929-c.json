@@ -11,25 +11,25 @@
     "combinatorics",
     "math"
   ],
-  "statement": "Given players with positions and numbers, count the number of 6-player lineups (1 goalie, 2 defenders, 3 forwards) where the maximum number is at most twice the minimum number among chosen players.",
+  "statement": "Count the number of ways to select a hockey starting lineup of 1 goalkeeper, 2 defenders, and 3 forwards such that the jersey numbers of any two chosen players differ by at most a factor of two.",
   "tags": [
     "combinatorics",
     "math",
-    "array"
+    "counting"
   ],
   "patterns": [
-    "two-pointers",
-    "sorting",
-    "combinatorics"
+    "combinatorial-enumeration",
+    "two-pointer",
+    "sorting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047999,
+    "generated_at_unix": 1785050320,
     "pattern_confidence": {
-      "two-pointers": 0.9,
-      "sorting": 0.85,
-      "combinatorics": 0.95
+      "combinatorial-enumeration": 0.95,
+      "two-pointer": 0.7,
+      "sorting": 0.8
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

@@ -10,26 +10,24 @@
     "data structures",
     "implementation"
   ],
-  "statement": "Given a deque of n elements, repeatedly perform operations that remove the first two elements, reorder them based on their values, and reinsert them at the front and back. For q queries, determine the pair of elements removed at the m-th operation.",
+  "statement": "Simulate operations on a deque where in each operation the first two elements are compared and reordered by placing the larger at the front and the smaller at the back, then answer queries about which two elements are removed at a given operation number.",
   "tags": [
     "deque",
     "simulation",
-    "array",
+    "data-structures",
     "data-structure"
   ],
   "patterns": [
     "simulation",
-    "two-pointers",
-    "periodicity-detection"
+    "deque"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048941,
+    "generated_at_unix": 1785051036,
     "pattern_confidence": {
-      "simulation": 0.98,
-      "two-pointers": 0.7,
-      "periodicity-detection": 0.85
+      "simulation": 0.95,
+      "deque": 0.9
     }
   },
   "source_topic": "Formwise / STL"

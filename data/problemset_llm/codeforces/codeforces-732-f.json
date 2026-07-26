@@ -10,26 +10,26 @@
     "dfs and similar",
     "graphs"
   ],
-  "statement": "Given an undirected connected graph, orient each edge to maximize the minimum number of reachable cities from any city in the resulting directed graph.",
+  "statement": "Given a connected undirected graph, orient each edge to maximize the minimum number of reachable nodes from any city in the resulting directed graph.",
   "tags": [
     "graph",
     "strongly-connected-components",
-    "binary-search"
+    "dfs"
   ],
   "patterns": [
-    "binary-search-answer",
     "dfs",
-    "strong-connectivity",
+    "strongly-connected-components",
+    "graph-orientation",
     "articulation-points"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048989,
+    "generated_at_unix": 1785051103,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dfs": 0.85,
-      "strong-connectivity": 0.88,
+      "dfs": 0.9,
+      "strongly-connected-components": 0.85,
+      "graph-orientation": 0.8,
       "articulation-points": 0.9
     }
   },

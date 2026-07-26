@@ -9,9 +9,10 @@
   "source_tags": [
     "brute force"
   ],
-  "statement": "Simulate Joe's movement on an n-floor house with m cells per floor, where he moves left or right, breaks bricks, and falls down empty cells until reaching the first floor.",
+  "statement": "Simulate Joe's movement through a multi-floor house with cells containing empty spaces, bricks, or concrete walls, following specific rules for falling, moving, breaking bricks, and changing direction until he reaches the first floor.",
   "tags": [
     "simulation",
+    "implementation",
     "array"
   ],
   "patterns": [
@@ -21,10 +22,10 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048176,
+    "generated_at_unix": 1785050485,
     "pattern_confidence": {
       "simulation": 0.98,
-      "state-machine": 0.85
+      "state-machine": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

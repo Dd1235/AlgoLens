@@ -10,25 +10,26 @@
     "dp",
     "implementation"
   ],
-  "statement": "Given stars with coordinates and cyclic brightness values, answer queries about the total brightness of stars within given rectangular regions at specific times.",
+  "statement": "Given stars with coordinates and cyclic brightness values, answer queries about the total brightness of stars within given rectangular regions at specified times.",
   "tags": [
     "geometry",
     "dynamic-programming",
-    "prefix-sum"
+    "prefix-sum",
+    "2d-array"
   ],
   "patterns": [
     "prefix-sum",
     "coordinate-compression",
-    "modular-arithmetic"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048848,
+    "generated_at_unix": 1785050936,
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "coordinate-compression": 0.9,
-      "modular-arithmetic": 0.85
+      "simulation": 0.85
     }
   },
   "source_topic": "Formwise / Contribution Technique & Prefix"

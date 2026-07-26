@@ -14,7 +14,7 @@
     "shortest paths",
     "trees"
   ],
-  "statement": "Given a tree with police stations in some cities and a distance limit d, find the maximum number of roads that can be removed so that every city remains within distance d of at least one police station.",
+  "statement": "Given a tree with police stations in some cities and a distance limit d, find the maximum number of edges that can be removed so that every city remains within distance d of at least one police station.",
   "tags": [
     "tree",
     "graph",
@@ -24,20 +24,18 @@
   ],
   "patterns": [
     "dfs",
-    "distance-limited-coverage",
     "greedy",
-    "tree-pruning",
+    "distance-limited-coverage",
     "multi-source-bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048764,
+    "generated_at_unix": 1785050847,
     "pattern_confidence": {
       "dfs": 0.95,
-      "distance-limited-coverage": 0.9,
-      "greedy": 0.85,
-      "tree-pruning": 0.88,
+      "greedy": 0.9,
+      "distance-limited-coverage": 0.85,
       "multi-source-bfs": 0.9
     }
   },

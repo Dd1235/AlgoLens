@@ -10,24 +10,24 @@
     "dp",
     "strings"
   ],
-  "statement": "Given a string and a scoring array for palindrome substring lengths (with some lengths forbidden), find the maximum total score achievable by repeatedly deleting palindrome substrings.",
+  "statement": "Given a string and a scoring array for palindrome substrings of various lengths (with some lengths forbidden), repeatedly delete palindrome substrings to maximize total points earned.",
   "tags": [
     "string",
     "dynamic-programming"
   ],
   "patterns": [
-    "interval-dp",
     "palindrome-dp",
+    "interval-dp",
     "memoization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048432,
+    "generated_at_unix": 1785050740,
     "pattern_confidence": {
-      "interval-dp": 0.95,
-      "palindrome-dp": 0.97,
-      "memoization": 0.9
+      "palindrome-dp": 0.95,
+      "interval-dp": 0.9,
+      "memoization": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

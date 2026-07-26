@@ -16,23 +16,22 @@
   "statement": "Given a tree with k chips initially placed on distinct black vertices, repeatedly move chips in a fixed cyclic order to adjacent white vertices, coloring them black, until no moves remain. Determine the maximum number of moves possible.",
   "tags": [
     "tree",
-    "graph",
     "greedy",
     "dfs"
   ],
   "patterns": [
-    "binary-search-answer",
+    "greedy",
     "dfs",
-    "greedy"
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048138,
+    "generated_at_unix": 1785050448,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
+      "greedy": 0.9,
       "dfs": 0.85,
-      "greedy": 0.8
+      "binary-search": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

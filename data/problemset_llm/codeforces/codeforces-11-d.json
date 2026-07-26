@@ -11,25 +11,28 @@
     "dp",
     "graphs"
   ],
-  "statement": "Given an undirected simple graph, determine the number of simple cycles (cycles without repeated vertices or edges) present in the graph.",
+  "statement": "Given an undirected simple graph, count the number of simple cycles, where a simple cycle is defined as a cycle with no repeated vertices or edges.",
   "tags": [
     "graph",
-    "bit-manipulation",
+    "cycle-detection",
+    "dfs",
     "dynamic-programming"
   ],
   "patterns": [
-    "bitmask-dp",
+    "dfs",
+    "backtracking",
     "cycle-detection",
-    "state-compression"
+    "bitmask-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049045,
+    "generated_at_unix": 1785051160,
     "pattern_confidence": {
-      "bitmask-dp": 0.95,
-      "cycle-detection": 0.9,
-      "state-compression": 0.85
+      "dfs": 0.95,
+      "backtracking": 0.85,
+      "cycle-detection": 0.98,
+      "bitmask-dp": 0.9
     }
   },
   "source_topic": "Formwise / DP Level 2"

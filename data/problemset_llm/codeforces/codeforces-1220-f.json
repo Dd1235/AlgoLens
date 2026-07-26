@@ -10,25 +10,28 @@
     "binary search",
     "data structures"
   ],
-  "statement": "Given a permutation, construct a binary tree by recursively choosing the minimum element as root and splitting the permutation. For each cyclic shift of the permutation, build such a tree and find the shift that produces the tree with minimum depth.",
+  "statement": "Given a permutation, construct a binary tree by recursively choosing the minimum element as root and splitting the permutation into left and right subtrees. For every cyclic shift of the permutation, build such a tree and determine which shift yields the tree with minimum depth.",
   "tags": [
     "array",
-    "tree",
-    "binary-tree"
+    "binary-tree",
+    "binary-search",
+    "segment-tree"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
+    "segment-tree",
     "divide-and-conquer",
-    "prefix-minimums"
+    "sliding-window"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048413,
+    "generated_at_unix": 1785050721,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "divide-and-conquer": 0.85,
-      "prefix-minimums": 0.7
+      "binary-search": 0.9,
+      "segment-tree": 0.85,
+      "divide-and-conquer": 0.8,
+      "sliding-window": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

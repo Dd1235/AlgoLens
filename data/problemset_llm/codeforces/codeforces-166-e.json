@@ -11,26 +11,24 @@
     "math",
     "matrices"
   ],
-  "statement": "Count the number of distinct closed walks of length n starting and ending at a specific vertex on a tetrahedron, with results modulo 10^9+7.",
+  "statement": "Count the number of distinct closed walks of length n starting and ending at vertex D on a tetrahedron, modulo 10^9+7.",
   "tags": [
     "graph",
     "dynamic-programming",
-    "matrix-exponentiation",
-    "math"
+    "math",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "matrix-exponentiation",
-    "dp-on-dag",
-    "graph-walk-counting"
+    "dp-on-dag"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047851,
+    "generated_at_unix": 1785050158,
     "pattern_confidence": {
-      "matrix-exponentiation": 0.98,
-      "dp-on-dag": 0.7,
-      "graph-walk-counting": 0.9
+      "matrix-exponentiation": 0.95,
+      "dp-on-dag": 0.6
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

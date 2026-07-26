@@ -11,26 +11,26 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given n players sitting around a table each holding n cards with numbers from 1 to n, find a sequence of at most n²-n operations where each player simultaneously passes one card to the right, to reach a state where every player holds only cards with their own number.",
+  "statement": "Given n players seated around a table each holding n cards with integers from 1 to n, find a sequence of at most n²-n operations where each player simultaneously passes one card to the right, so that eventually every player holds only cards with their own number.",
   "tags": [
-    "array",
-    "simulation",
+    "constructive-algorithm",
     "greedy",
-    "constructive-algorithm"
+    "implementation",
+    "simulation"
   ],
   "patterns": [
-    "simulation",
+    "constructive-algorithm",
     "greedy",
-    "constructive-algorithm"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048421,
+    "generated_at_unix": 1785050729,
     "pattern_confidence": {
-      "simulation": 0.95,
+      "constructive-algorithm": 0.95,
       "greedy": 0.9,
-      "constructive-algorithm": 0.9
+      "simulation": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

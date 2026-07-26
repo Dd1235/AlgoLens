@@ -13,26 +13,26 @@
     "math",
     "number theory"
   ],
-  "statement": "Count the number of non-empty subsequences of an integer array where each element in the subsequence is divisible by its 1-based position index, modulo 10^9+7.",
+  "statement": "Given an integer array, count the number of non-empty subsequences where the element at position i in the subsequence is divisible by i, modulo 10^9+7.",
   "tags": [
     "array",
     "dynamic-programming",
     "number-theory",
-    "combinatorics"
+    "math"
   ],
   "patterns": [
     "dynamic-programming",
     "modular-arithmetic",
-    "subsequence-enumeration"
+    "divisibility"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048835,
+    "generated_at_unix": 1785050922,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "modular-arithmetic": 0.9,
-      "subsequence-enumeration": 0.85
+      "divisibility": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

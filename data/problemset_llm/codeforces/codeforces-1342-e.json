@@ -11,25 +11,26 @@
     "fft",
     "math"
   ],
-  "statement": "Count the number of ways to place n rooks on an n×n board so that every empty cell is attacked by at least one rook and exactly k pairs of rooks attack each other, modulo 998244353.",
+  "statement": "Count the number of ways to place n rooks on an n×n board so that every empty cell is attacked by at least one rook and exactly k pairs of rooks attack each other, with the result modulo 998244353.",
   "tags": [
     "combinatorics",
-    "math",
-    "fft"
+    "math"
   ],
   "patterns": [
     "inclusion-exclusion",
     "polynomial-multiplication",
+    "fft",
     "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048845,
+    "generated_at_unix": 1785050932,
     "pattern_confidence": {
       "inclusion-exclusion": 0.9,
       "polynomial-multiplication": 0.85,
-      "combinatorics": 0.95
+      "fft": 0.8,
+      "combinatorics": 0.9
     }
   },
   "source_topic": "Formwise / Math"

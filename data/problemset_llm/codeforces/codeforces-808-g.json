@@ -10,26 +10,24 @@
     "dp",
     "strings"
   ],
-  "statement": "Given a string with letters and question marks, replace the question marks to maximize the number of occurrences (including overlapping) of a given target substring.",
+  "statement": "Given a string with letters and question marks, replace the question marks to maximize the number of (possibly overlapping) occurrences of a given target substring.",
   "tags": [
     "string",
     "dynamic-programming"
   ],
   "patterns": [
+    "kmp",
     "string-matching",
-    "dynamic-programming",
-    "prefix-function",
-    "kmp"
+    "dp-on-strings"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048774,
+    "generated_at_unix": 1785050858,
     "pattern_confidence": {
-      "string-matching": 0.95,
-      "dynamic-programming": 0.9,
-      "prefix-function": 0.85,
-      "kmp": 0.8
+      "kmp": 0.95,
+      "string-matching": 0.9,
+      "dp-on-strings": 0.85
     }
   },
   "source_topic": "Formwise / String"

@@ -15,20 +15,21 @@
   "tags": [
     "tree",
     "graph",
+    "dfs",
     "dynamic-programming"
   ],
   "patterns": [
-    "tree-dp",
     "dfs",
+    "tree-dp",
     "distance-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048865,
+    "generated_at_unix": 1785050955,
     "pattern_confidence": {
-      "tree-dp": 0.95,
-      "dfs": 0.9,
+      "dfs": 0.95,
+      "tree-dp": 0.9,
       "distance-counting": 0.85
     }
   },

@@ -11,27 +11,25 @@
     "divide and conquer",
     "dp"
   ],
-  "statement": "Given a sequence of buildings with distinct heights and associated beauty values, partition the buildings into contiguous segments (photos) so that each building belongs to exactly one segment. The beauty of each photo is the beauty value of the shortest building in that segment. Find the partition maximizing the sum of photo beauties.",
+  "statement": "Given a sequence of buildings with distinct heights and associated beauty values, partition the sequence into contiguous segments (photos) so that each building belongs to exactly one segment. The beauty of each segment is the beauty value of its shortest building, and the goal is to maximize the sum of segment beauties.",
   "tags": [
     "array",
     "dynamic-programming",
-    "stack"
+    "divide-and-conquer"
   ],
   "patterns": [
+    "divide-and-conquer-dp",
     "monotonic-stack",
-    "dynamic-programming",
-    "partition-dp",
-    "contribution-technique"
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048226,
+    "generated_at_unix": 1785050531,
     "pattern_confidence": {
-      "monotonic-stack": 0.9,
-      "dynamic-programming": 0.95,
-      "partition-dp": 0.9,
-      "contribution-technique": 0.85
+      "divide-and-conquer-dp": 0.9,
+      "monotonic-stack": 0.7,
+      "dynamic-programming": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

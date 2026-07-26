@@ -10,25 +10,26 @@
     "brute force",
     "math"
   ],
-  "statement": "Compute the sum of a custom logarithm-like function defined via prime factorization and a cubic polynomial function over all integers from 1 to n, modulo 2^32.",
+  "statement": "Compute the sum of a custom logarithm-like function exlog_f(i) for all integers from 1 to n, where f is a cubic polynomial and exlog_f is defined via prime factorization weighted by f evaluated at primes, modulo 2^32.",
   "tags": [
     "number-theory",
     "math",
+    "prime-factorization",
     "modular-arithmetic"
   ],
   "patterns": [
-    "prime-factorization",
-    "polynomial-evaluation",
-    "prefix-sum"
+    "prime-sieve",
+    "prefix-sum",
+    "polynomial-evaluation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048372,
+    "generated_at_unix": 1785050681,
     "pattern_confidence": {
-      "prime-factorization": 0.95,
-      "polynomial-evaluation": 0.9,
-      "prefix-sum": 0.85
+      "prime-sieve": 0.9,
+      "prefix-sum": 0.85,
+      "polynomial-evaluation": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

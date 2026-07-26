@@ -12,26 +12,24 @@
     "implementation",
     "math"
   ],
-  "statement": "Given a row of n cells and m painting operations each painting a contiguous segment with a distinct color, determine positions for each segment so that all colors appear at least once and all cells are painted after all operations.",
+  "statement": "Given a row of n cells and m painting operations each painting a segment of length l_i with a unique color, determine positions p_i to paint so that all colors appear at least once and all cells are colored after all operations.",
   "tags": [
-    "array",
     "greedy",
     "constructive-algorithm",
-    "implementation"
+    "implementation",
+    "math"
   ],
   "patterns": [
     "greedy",
-    "constructive-algorithm",
-    "interval-placement"
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047929,
+    "generated_at_unix": 1785050239,
     "pattern_confidence": {
       "greedy": 0.95,
-      "constructive-algorithm": 0.9,
-      "interval-placement": 0.85
+      "constructive-algorithm": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

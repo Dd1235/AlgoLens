@@ -11,27 +11,27 @@
     "math",
     "number theory"
   ],
-  "statement": "Given an array and a number m, find the longest subsequence whose least common multiple (LCM) is at most m.",
+  "statement": "Given an array and a number m, find a longest subsequence whose least common multiple (LCM) is at most m. The LCM of an empty subsequence is defined as 1.",
   "tags": [
     "array",
+    "math",
     "number-theory",
-    "dynamic-programming",
-    "math"
+    "dynamic-programming"
   ],
   "patterns": [
-    "binary-search-answer",
     "dynamic-programming",
     "lcm-computation",
+    "subsequence-enumeration",
     "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048767,
+    "generated_at_unix": 1785050850,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dynamic-programming": 0.85,
-      "lcm-computation": 0.8,
+      "dynamic-programming": 0.9,
+      "lcm-computation": 0.85,
+      "subsequence-enumeration": 0.8,
       "number-theory": 0.9
     }
   },

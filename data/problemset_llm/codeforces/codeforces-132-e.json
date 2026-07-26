@@ -10,26 +10,26 @@
     "flows",
     "graphs"
   ],
-  "statement": "Given a sequence of integers and a limited number of variables, generate a program using assignments and print operations that outputs the sequence while minimizing the total penalty defined by the sum of set bits in assigned integers.",
+  "statement": "Given a sequence of integers and a limited number of variables, generate a program using assignments and print operations that outputs the sequence while minimizing the total penalty defined as the sum of set bits in assigned integers.",
   "tags": [
-    "string",
-    "dynamic-programming",
     "bit-manipulation",
+    "greedy",
+    "dynamic-programming",
     "graph"
   ],
   "patterns": [
-    "dynamic-programming",
     "bit-counting",
-    "state-compression"
+    "dp-optimization",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048299,
+    "generated_at_unix": 1785050609,
     "pattern_confidence": {
-      "dynamic-programming": 0.95,
-      "bit-counting": 0.9,
-      "state-compression": 0.85
+      "bit-counting": 0.95,
+      "dp-optimization": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

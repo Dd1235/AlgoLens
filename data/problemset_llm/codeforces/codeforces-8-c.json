@@ -10,25 +10,25 @@
     "bitmasks",
     "dp"
   ],
-  "statement": "Given coordinates of a handbag and scattered objects, find the minimal total squared-distance time to carry all objects back to the handbag, carrying at most two objects at once and starting at the handbag location.",
+  "statement": "Given coordinates of a handbag and scattered objects, find the minimal total squared-distance time to carry all objects back to the handbag, moving at most two objects at a time without intermediate drops.",
   "tags": [
     "geometry",
-    "dynamic-programming",
-    "bit-manipulation"
+    "bit-manipulation",
+    "dynamic-programming"
   ],
   "patterns": [
     "bitmask-dp",
     "state-compression",
-    "geometry-distance-calculation"
+    "combinatorial-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048936,
+    "generated_at_unix": 1785051031,
     "pattern_confidence": {
       "bitmask-dp": 0.95,
       "state-compression": 0.9,
-      "geometry-distance-calculation": 0.85
+      "combinatorial-optimization": 0.85
     }
   },
   "source_topic": "Formwise / DP Level 2"

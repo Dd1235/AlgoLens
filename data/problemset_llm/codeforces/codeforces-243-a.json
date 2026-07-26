@@ -12,21 +12,22 @@
   "statement": "Given a sequence of non-negative integers, count the number of distinct values obtained by taking the bitwise OR of every contiguous subarray.",
   "tags": [
     "array",
-    "bit-manipulation"
+    "bit-manipulation",
+    "set"
   ],
   "patterns": [
-    "bitmask-dp",
-    "set-based-dp",
-    "prefix-processing"
+    "bitwise-or",
+    "prefix-processing",
+    "distinct-values"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785049040,
+    "generated_at_unix": 1785051152,
     "pattern_confidence": {
-      "bitmask-dp": 0.95,
-      "set-based-dp": 0.9,
-      "prefix-processing": 0.85
+      "bitwise-or": 0.95,
+      "prefix-processing": 0.85,
+      "distinct-values": 0.8
     }
   },
   "source_topic": "Formwise / Bit-Manipulation"

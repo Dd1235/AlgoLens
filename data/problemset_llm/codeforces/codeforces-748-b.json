@@ -10,25 +10,25 @@
     "implementation",
     "strings"
   ],
-  "statement": "Given two strings representing the intended and typed keyboard input, determine which pairs of keys could have swapped positions, with each key involved in at most one such pair.",
+  "statement": "Given two strings representing the intended pattern and the typed output, identify pairs of keys that may have swapped positions on a keyboard, ensuring each key is involved in at most one swapped pair.",
   "tags": [
-    "strings",
-    "graph",
-    "implementation"
+    "string",
+    "implementation",
+    "graph"
   ],
   "patterns": [
-    "graph-construction",
-    "connected-components",
-    "pair-matching"
+    "union-find",
+    "disjoint-set",
+    "string-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047876,
+    "generated_at_unix": 1785050186,
     "pattern_confidence": {
-      "graph-construction": 0.9,
-      "connected-components": 0.85,
-      "pair-matching": 0.8
+      "union-find": 0.9,
+      "disjoint-set": 0.9,
+      "string-matching": 0.7
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

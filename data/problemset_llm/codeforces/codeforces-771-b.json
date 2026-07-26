@@ -10,11 +10,10 @@
     "constructive algorithms",
     "greedy"
   ],
-  "statement": "Given a sequence of yes/no indicators for every consecutive group of k soldiers, assign names to n soldiers so that each group is effective (all distinct names) if and only if the corresponding indicator is \"YES\".",
+  "statement": "Given a sequence of n soldiers and a list of n-k+1 indicators specifying whether each consecutive group of k soldiers has distinct names, reconstruct any valid assignment of names that satisfies these constraints.",
   "tags": [
-    "array",
-    "greedy",
     "string",
+    "greedy",
     "constructive-algorithm"
   ],
   "patterns": [
@@ -24,7 +23,7 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047792,
+    "generated_at_unix": 1785050096,
     "pattern_confidence": {
       "greedy": 0.95,
       "constructive-algorithm": 0.9

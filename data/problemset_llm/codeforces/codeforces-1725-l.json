@@ -9,25 +9,22 @@
   "source_tags": [
     "data structures"
   ],
-  "statement": "Given an array of stove temperatures, perform operations that flip the sign of a stove's temperature and add its value to its neighbors, to make all temperatures non-negative with minimum operations or determine impossibility.",
+  "statement": "Given an array representing stove temperatures, perform operations that flip the sign of a stove's temperature and add its value to its neighbors, to make all temperatures non-negative with minimum operations or determine impossibility.",
   "tags": [
     "array",
-    "greedy",
-    "simulation"
+    "greedy"
   ],
   "patterns": [
     "greedy",
-    "simulation",
-    "state-transformation"
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048156,
+    "generated_at_unix": 1785050465,
     "pattern_confidence": {
       "greedy": 0.85,
-      "simulation": 0.9,
-      "state-transformation": 0.8
+      "simulation": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

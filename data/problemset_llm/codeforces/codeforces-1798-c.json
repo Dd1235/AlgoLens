@@ -11,26 +11,25 @@
     "math",
     "number theory"
   ],
-  "statement": "Given counts and costs of candy types, choose pack sizes dividing the counts to minimize the number of contiguous equal-cost segments formed by pack costs.",
+  "statement": "Given n candy types with quantities and per-candy costs, choose pack sizes dividing the quantities so that the pack costs form a sequence with the minimum number of contiguous equal-cost segments (price tags).",
   "tags": [
     "math",
     "greedy",
-    "number-theory",
-    "array"
+    "number-theory"
   ],
   "patterns": [
     "greedy",
     "divisor-enumeration",
-    "segment-partitioning"
+    "sequence-compression"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047980,
+    "generated_at_unix": 1785050300,
     "pattern_confidence": {
       "greedy": 0.95,
       "divisor-enumeration": 0.9,
-      "segment-partitioning": 0.85
+      "sequence-compression": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

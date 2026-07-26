@@ -12,12 +12,11 @@
     "dsu",
     "graphs"
   ],
-  "statement": "Given a graph with roads marked as asphalted or not, determine if there exists a sequence of city toggles (flipping all roads from that city) to make all roads asphalted within at most n operations.",
+  "statement": "Given a graph with roads marked as asphalted or not, determine if it is possible to make all roads asphalted by toggling the asphalt state of all roads incident to chosen cities, performing at most one toggle per city.",
   "tags": [
     "graph",
     "two-sat",
-    "union-find",
-    "dfs"
+    "union-find"
   ],
   "patterns": [
     "two-sat",
@@ -27,11 +26,11 @@
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048947,
+    "generated_at_unix": 1785051046,
     "pattern_confidence": {
       "two-sat": 0.95,
-      "dfs": 0.9,
-      "union-find": 0.85
+      "dfs": 0.85,
+      "union-find": 0.8
     }
   },
   "source_topic": "Formwise / Graph Level 2"

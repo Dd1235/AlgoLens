@@ -14,25 +14,26 @@
     "implementation",
     "strings"
   ],
-  "statement": "Given a digit expression with plus and multiplication operators, insert exactly one pair of brackets to maximize the expression's value.",
+  "statement": "Given an arithmetic expression of digits combined with plus and multiplication operators, insert exactly one pair of brackets to maximize the expression's value.",
   "tags": [
     "string",
     "dynamic-programming",
-    "math"
+    "greedy",
+    "expression-parsing"
   ],
   "patterns": [
-    "expression-parsing",
-    "dynamic-programming",
-    "bracket-insertion"
+    "dp-on-intervals",
+    "greedy",
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048120,
+    "generated_at_unix": 1785050429,
     "pattern_confidence": {
-      "expression-parsing": 0.95,
-      "dynamic-programming": 0.9,
-      "bracket-insertion": 0.85
+      "dp-on-intervals": 0.9,
+      "greedy": 0.7,
+      "brute-force": 0.6
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

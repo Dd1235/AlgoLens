@@ -10,28 +10,25 @@
     "sortings",
     "two pointers"
   ],
-  "statement": "Given an array of non-negative integers representing sound intensities, choose a range [l, r] to compress the array so that the number of distinct values fits in a given bit budget, minimizing the count of changed elements after clamping values outside [l, r].",
+  "statement": "Given an array of non-negative integers representing sound intensities, choose a range [l;r] to clamp values outside this range so that the compressed file fits into a given size limit, minimizing the number of changed elements.",
   "tags": [
     "array",
     "binary-search",
-    "prefix-sum",
-    "bit-manipulation"
+    "sorting"
   ],
   "patterns": [
-    "binary-search-answer",
     "two-pointers",
-    "prefix-sum",
-    "bit-counting"
+    "binary-search",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047969,
+    "generated_at_unix": 1785050288,
     "pattern_confidence": {
-      "binary-search-answer": 0.95,
-      "two-pointers": 0.9,
-      "prefix-sum": 0.85,
-      "bit-counting": 0.7
+      "two-pointers": 0.95,
+      "binary-search": 0.9,
+      "prefix-sum": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

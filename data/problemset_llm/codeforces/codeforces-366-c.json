@@ -11,23 +11,23 @@
   ],
   "statement": "Given fruits each with taste and calories, select a non-empty subset so that the ratio of total taste to total calories equals a given value k, maximizing the total taste.",
   "tags": [
-    "array",
     "dynamic-programming",
-    "math"
+    "math",
+    "knapsack"
   ],
   "patterns": [
-    "binary-search-answer",
-    "dp-on-subsets",
-    "prefix-sum"
+    "dynamic-programming",
+    "knapsack",
+    "ratio-constraint"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048482,
+    "generated_at_unix": 1785050779,
     "pattern_confidence": {
-      "binary-search-answer": 0.92,
-      "dp-on-subsets": 0.88,
-      "prefix-sum": 0.75
+      "dynamic-programming": 0.95,
+      "knapsack": 0.9,
+      "ratio-constraint": 0.85
     }
   },
   "source_topic": "Formwise / DP Optimizations"

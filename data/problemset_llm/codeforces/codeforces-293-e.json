@@ -14,23 +14,22 @@
   "statement": "Given a weighted tree, count the number of vertex pairs whose shortest path has length at most l and total edge weight at most w.",
   "tags": [
     "tree",
-    "graph",
     "divide-and-conquer",
     "data-structures"
   ],
   "patterns": [
-    "divide-and-conquer-on-tree",
-    "binary-search-answer",
-    "two-pointers"
+    "centroid-decomposition",
+    "two-constraints-pair-counting",
+    "distance-limited-pairs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048397,
+    "generated_at_unix": 1785050706,
     "pattern_confidence": {
-      "divide-and-conquer-on-tree": 0.95,
-      "binary-search-answer": 0.85,
-      "two-pointers": 0.7
+      "centroid-decomposition": 0.95,
+      "two-constraints-pair-counting": 0.9,
+      "distance-limited-pairs": 0.85
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

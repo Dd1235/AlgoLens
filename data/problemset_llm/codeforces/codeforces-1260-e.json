@@ -11,25 +11,25 @@
     "dp",
     "greedy"
   ],
-  "statement": "Given a knockout boxing tournament with n boxers of distinct strengths, determine the minimum total bribe cost needed to ensure a specific boxer wins, by optimally pairing boxers each round and bribing opponents to guarantee victory.",
+  "statement": "Given a knockout boxing tournament with n boxers of distinct strengths, determine the minimum bribery cost to ensure a specific boxer wins by optimally pairing opponents each round.",
   "tags": [
-    "greedy",
     "dynamic-programming",
-    "game-theory"
+    "greedy",
+    "brute-force"
   ],
   "patterns": [
-    "dp-on-tournament-tree",
-    "state-compression",
-    "constructive-algorithm"
+    "dp-on-dag",
+    "divide-and-conquer",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048142,
+    "generated_at_unix": 1785050453,
     "pattern_confidence": {
-      "dp-on-tournament-tree": 0.95,
-      "state-compression": 0.85,
-      "constructive-algorithm": 0.8
+      "dp-on-dag": 0.9,
+      "divide-and-conquer": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

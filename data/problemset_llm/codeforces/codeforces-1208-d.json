@@ -12,26 +12,27 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given an array representing, for each position, the sum of all smaller elements before it in a hidden permutation, reconstruct the original permutation.",
+  "statement": "Given an array where each element represents the sum of all smaller elements before it in a hidden permutation, reconstruct the original permutation.",
   "tags": [
     "array",
     "data-structures",
+    "fenwick-tree",
     "greedy",
     "segment-tree"
   ],
   "patterns": [
     "fenwick-tree",
-    "prefix-sum",
-    "binary-search"
+    "greedy",
+    "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048966,
+    "generated_at_unix": 1785051079,
     "pattern_confidence": {
-      "fenwick-tree": 0.9,
-      "prefix-sum": 0.85,
-      "binary-search": 0.8
+      "fenwick-tree": 0.95,
+      "greedy": 0.9,
+      "prefix-sum": 0.85
     }
   },
   "source_topic": "Formwise / Segment Trees"

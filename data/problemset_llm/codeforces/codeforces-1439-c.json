@@ -13,7 +13,7 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Given a non-increasing array representing meal costs in shops, support updates that increase costs up to a position and queries that count how many meals can be bought starting from a given shop with a given amount of money.",
+  "statement": "Given a non-increasing array representing meal costs in shops, support two query types: updating the first x shops to have costs at least y, and given a starting shop and money, determine how many meals can be bought sequentially from that shop onward.",
   "tags": [
     "array",
     "data-structures",
@@ -21,18 +21,18 @@
     "segment-tree"
   ],
   "patterns": [
-    "binary-search-answer",
-    "prefix-sum",
-    "range-update"
+    "binary-search",
+    "segment-tree",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048906,
+    "generated_at_unix": 1785050998,
     "pattern_confidence": {
-      "binary-search-answer": 0.93,
-      "prefix-sum": 0.85,
-      "range-update": 0.8
+      "binary-search": 0.9,
+      "segment-tree": 0.85,
+      "greedy": 0.8
     }
   },
   "source_topic": "Formwise / Segment Trees"

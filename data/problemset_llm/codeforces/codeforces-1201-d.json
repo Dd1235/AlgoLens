@@ -12,25 +12,26 @@
     "greedy",
     "implementation"
   ],
-  "statement": "On an n by m grid with k treasures and q safe columns, starting from (1,1) you can move up only in safe columns and left or right freely, and must collect all treasures in minimum moves.",
+  "statement": "On an n by m grid with k treasures and q safe columns, starting at (1,1) you can move up only in safe columns and left/right freely, never down. Find the minimum moves to collect all treasures.",
   "tags": [
     "grid",
     "dynamic-programming",
+    "greedy",
     "binary-search"
   ],
   "patterns": [
-    "binary-search-answer",
+    "binary-search",
     "dynamic-programming",
     "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048170,
+    "generated_at_unix": 1785050479,
     "pattern_confidence": {
-      "binary-search-answer": 0.9,
-      "dynamic-programming": 0.85,
-      "greedy": 0.7
+      "binary-search": 0.85,
+      "dynamic-programming": 0.9,
+      "greedy": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

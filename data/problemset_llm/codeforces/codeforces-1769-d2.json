@@ -10,7 +10,7 @@
     "*special",
     "brute force"
   ],
-  "statement": "Two players play a card game with specific rules for placing cards in turn. Given initial hands, determine distinct values of the importance of the first move, defined as the absolute difference in game outcomes depending on who starts first, and find k hands with unique importance values.",
+  "statement": "Two players play a card game with specific rules for placing cards in sequence by suit. Given initial hands, determine the difference in game outcomes when each player starts first, and find multiple distinct initial deals with unique such differences under optimal play.",
   "tags": [
     "game-theory",
     "backtracking",
@@ -19,19 +19,19 @@
   ],
   "patterns": [
     "minimax",
-    "state-space-search",
-    "memoization",
-    "game-dp"
+    "game-tree-search",
+    "state-space-exploration",
+    "memoization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048082,
+    "generated_at_unix": 1785050391,
     "pattern_confidence": {
       "minimax": 0.95,
-      "state-space-search": 0.9,
-      "memoization": 0.85,
-      "game-dp": 0.8
+      "game-tree-search": 0.9,
+      "state-space-exploration": 0.85,
+      "memoization": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

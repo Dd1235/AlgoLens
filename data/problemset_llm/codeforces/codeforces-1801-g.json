@@ -14,22 +14,22 @@
   "statement": "Given a string t and a set of strings s_i, answer queries asking for the count of substrings within a specified substring of t that match any string from the set.",
   "tags": [
     "string",
-    "data-structures",
-    "suffix-array"
+    "string-matching",
+    "data-structures"
   ],
   "patterns": [
-    "suffix-automaton",
+    "aho-corasick",
     "offline-queries",
     "prefix-sum"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048389,
+    "generated_at_unix": 1785050696,
     "pattern_confidence": {
-      "suffix-automaton": 0.95,
-      "offline-queries": 0.85,
-      "prefix-sum": 0.8
+      "aho-corasick": 0.95,
+      "offline-queries": 0.8,
+      "prefix-sum": 0.7
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

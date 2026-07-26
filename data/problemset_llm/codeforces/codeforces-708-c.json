@@ -14,29 +14,29 @@
     "greedy",
     "trees"
   ],
-  "statement": "Given a tree, determine for each vertex whether it can become a centroid after performing at most one edge replacement that keeps the graph a tree.",
+  "statement": "Given a tree, determine for each vertex whether it can become a centroid after performing at most one edge replacement that keeps the graph a tree. A centroid is defined as a vertex whose removal leaves connected components all of size at most n/2.",
   "tags": [
     "tree",
     "graph",
     "dfs",
-    "dynamic-programming",
-    "greedy"
+    "greedy",
+    "data-structures"
   ],
   "patterns": [
-    "tree-dp",
     "dfs",
+    "tree-dp",
     "greedy",
-    "edge-replacement"
+    "centroid-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048241,
+    "generated_at_unix": 1785050547,
     "pattern_confidence": {
-      "tree-dp": 0.95,
-      "dfs": 0.9,
+      "dfs": 0.95,
+      "tree-dp": 0.9,
       "greedy": 0.85,
-      "edge-replacement": 0.8
+      "centroid-decomposition": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

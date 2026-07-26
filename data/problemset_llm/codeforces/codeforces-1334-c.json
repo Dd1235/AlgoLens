@@ -12,25 +12,25 @@
     "greedy",
     "math"
   ],
-  "statement": "Given n monsters arranged in a circle with initial health and explosion damage values, determine the minimum number of bullets needed to kill all monsters, considering that killing one monster causes an explosion damaging the next monster and potentially triggering a chain reaction.",
+  "statement": "Given n monsters arranged in a circle with initial health and explosion damage values, determine the minimum bullets needed to kill all monsters, considering that killing one monster causes an explosion damaging the next, potentially triggering a chain reaction.",
   "tags": [
-    "array",
     "greedy",
-    "math"
+    "math",
+    "simulation"
   ],
   "patterns": [
     "greedy",
-    "constructive-algorithm",
-    "simulation"
+    "simulation",
+    "constructive-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785047965,
+    "generated_at_unix": 1785050284,
     "pattern_confidence": {
       "greedy": 0.95,
-      "constructive-algorithm": 0.9,
-      "simulation": 0.85
+      "simulation": 0.9,
+      "constructive-algorithm": 0.85
     }
   },
   "source_topic": "Codeforces / rating 1600-1900"

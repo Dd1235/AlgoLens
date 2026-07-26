@@ -13,28 +13,28 @@
     "dsu",
     "graphs"
   ],
-  "statement": "Given an undirected graph with n cities and m roads, count the number of paths that traverse exactly m-2 roads twice and exactly 2 roads once, where paths can start and end at any city and are considered different if the sets of singly-traversed roads differ.",
+  "statement": "Given an undirected graph with n cities and m roads, count the number of distinct paths that traverse exactly m-2 roads twice and exactly 2 roads once, starting and ending at any city. Two paths differ if the sets of roads used exactly once differ.",
   "tags": [
     "graph",
     "combinatorics",
-    "dfs",
-    "union-find"
+    "union-find",
+    "dfs"
   ],
   "patterns": [
     "dfs",
     "union-find",
-    "combinatorics",
-    "graph-traversal"
+    "constructive-algorithm",
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785048089,
+    "generated_at_unix": 1785050398,
     "pattern_confidence": {
       "dfs": 0.9,
       "union-find": 0.85,
-      "combinatorics": 0.9,
-      "graph-traversal": 0.8
+      "constructive-algorithm": 0.8,
+      "counting": 0.75
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"
