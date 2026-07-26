@@ -17,9 +17,6 @@
     "difference-array": {
       "category": "array"
     },
-    "sweep-line-difference": {
-      "category": "array"
-    },
     "binary-search": {
       "category": "array"
     },
@@ -586,6 +583,7 @@
     "palindrome-check": "palindrome",
     "pattern-matching": "string-matching",
     "enumeration": "brute-force",
-    "exhaustive-search": "brute-force"
+    "exhaustive-search": "brute-force",
+    "sweep-line-difference": "line-sweep"
   }
 }

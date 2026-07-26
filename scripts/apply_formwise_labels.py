@@ -36,6 +36,10 @@ TOPIC_TAGS = {
     "Contribution Technique & Prefix": "prefix-sum", "Trie": "trie",
     "String": "string", "Segment Trees": "segment-tree", "Trees": "tree",
     "DP Optimizations": "dynamic-programming", "DP Level 2": "dynamic-programming",
+    # This tab is two techniques in one, and only ~1 in 5 of its problems is
+    # actually a sweep — blanket-applying line-sweep here would have been wrong.
+    # The sweep half goes through the targeted auditor instead:
+    #   python3 scripts/audit_patterns.py --technique line-sweep --ids-file <ids>
     "Greedy And Sweepline": "greedy", "Graph Level 2": "graph",
 }
 
