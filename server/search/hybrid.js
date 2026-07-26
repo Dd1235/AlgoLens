@@ -14,10 +14,17 @@ class HybridIndex {
     this.topN = topN;
   }
 
-  async _legs(query) {
+  // depth is how deep each leg goes before fusing. It floors at topN so the
+  // common shallow query keeps exp 05's tuning, and widens when the caller
+  // asks for more than 100 rows — which the route does when it has to filter
+  // and page over the whole ranked list. Reading topN here instead of the
+  // caller's k capped every fused result set at 200 rows no matter what was
+  // requested, so filtered pages past offset 200 came back empty.
+  async _legs(query, depth = this.topN) {
+    const n = Math.max(this.topN, depth);
     const [lex, den] = await Promise.all([
-      Promise.resolve(this.lexical.search(query, this.topN, 0)),
-      this.dense.search(query, this.topN, 0),
+      Promise.resolve(this.lexical.search(query, n, 0)),
+      this.dense.search(query, n, 0),
     ]);
     return { lex: lex.hits, den: den.hits };
   }
@@ -55,7 +62,7 @@ class HybridIndex {
   }
 
   async search(query, k = 10, offset = 0) {
-    const { lex, den } = await this._legs(query);
+    const { lex, den } = await this._legs(query, offset + k);
     const rows = this._fuse(lex, den);
     const hits = rows
       .slice(offset, offset + k)
