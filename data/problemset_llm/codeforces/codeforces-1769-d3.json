@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1769-d3",
+  "title": "Игра в Девятку III",
+  "slug": "1769-d3-iii",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1769/D3",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "*special",
+    "brute force"
+  ],
+  "statement": "Given two players each holding 18 cards from a 36-card deck, determine k distinct card distributions that yield k different absolute differences in game outcomes depending on which player moves first, under optimal play.",
+  "tags": [
+    "game-theory",
+    "combinatorics",
+    "backtracking"
+  ],
+  "patterns": [
+    "brute-force",
+    "state-space-search",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048109,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "state-space-search": 0.9,
+      "game-dp": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc186-e",
+  "title": "Throne",
+  "slug": "abc186-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc186/tasks/abc186_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given a circle of N chairs with a throne, and a starting position S steps clockwise from the throne, determine the minimum number of moves of size K clockwise needed to reach the throne, or report -1 if impossible, for multiple test cases.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "linear-congruence",
+    "extended-euclidean-algorithm",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047496,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.98,
+      "linear-congruence": 0.95,
+      "extended-euclidean-algorithm": 0.9,
+      "number-theory": 0.9
+    }
+  },
+  "difficulty": 1461
+}

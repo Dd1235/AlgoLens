@@ -14,10 +14,10 @@
   "tags": [
     "array",
     "hash-map",
-    "frequency-count"
+    "counting"
   ],
   "patterns": [
-    "frequency-counting",
+    "counting",
     "hash-map",
     "greedy"
   ],
@@ -26,7 +26,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923312,
     "pattern_confidence": {
-      "frequency-counting": 0.98,
+      "counting": 0.98,
       "hash-map": 0.95,
       "greedy": 0.85
     }

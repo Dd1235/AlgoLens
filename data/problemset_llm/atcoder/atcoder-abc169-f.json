@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc169-f",
+  "title": "Knapsack for All Subsets",
+  "slug": "abc169-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc169/tasks/abc169_f",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a sequence of positive integers and a target sum S, compute the sum over all non-empty subsets T of the count of non-empty subsets of T whose elements sum to S, modulo 998244353.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "subset-dp",
+    "modular-arithmetic",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047459,
+    "pattern_confidence": {
+      "subset-dp": 0.98,
+      "modular-arithmetic": 0.9,
+      "counting": 0.85
+    }
+  },
+  "difficulty": 1698
+}

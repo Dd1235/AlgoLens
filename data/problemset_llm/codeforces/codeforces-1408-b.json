@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1408-b",
+  "title": "Arrays Sum",
+  "slug": "1408-b-arrays-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1408/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a non-decreasing array of non-negative integers and an integer k, find the minimum number of non-decreasing arrays whose element-wise sum equals the given array, with each array containing at most k distinct elements, or determine if it's impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047754,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -16,7 +16,7 @@
     "sorting"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "sorting",
     "hash-map"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784908639,
     "pattern_confidence": {
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "sorting": 0.9,
       "hash-map": 0.9
     }

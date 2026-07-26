@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1360-f",
+  "title": "Spy-string",
+  "slug": "1360-f-spy-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1360/F",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "constructive algorithms",
+    "dp",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given n strings of equal length, find a string s such that each input string differs from s in at most one character position.",
+  "tags": [
+    "strings",
+    "brute-force",
+    "bit-manipulation",
+    "dynamic-programming",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "bit-manipulation",
+    "string-comparison",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048077,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "bit-manipulation": 0.85,
+      "string-comparison": 0.9,
+      "rolling-hash": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

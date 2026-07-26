@@ -16,7 +16,8 @@
   "patterns": [
     "sorting",
     "modular-arithmetic",
-    "greedy"
+    "greedy",
+    "exchange-argument"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "sorting": 0.95,
       "modular-arithmetic": 0.9,
-      "greedy": 0.9
+      "greedy": 0.9,
+      "exchange-argument": 0.9
     }
   }
 }

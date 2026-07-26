@@ -9,7 +9,7 @@
   "statement": "Given n family members each with two wishes about pizza toppings being included or excluded, determine a topping selection that satisfies at least one wish per member or report impossibility.",
   "tags": [
     "graph",
-    "2-sat",
+    "two-sat",
     "boolean-satisfiability"
   ],
   "patterns": [

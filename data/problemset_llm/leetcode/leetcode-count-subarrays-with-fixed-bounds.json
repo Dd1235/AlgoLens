@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "two-pointers",
-    "monotonic-queue"
+    "monotonic-queue",
+    "prefix-sum"
   ],
   "patterns": [
     "sliding-window",

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1582-d",
+  "title": "Vupsen, Pupsen and 0",
+  "slug": "1582-d-vupsen-pupsen-and-0",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1582/D",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given an integer array without zeros, construct another array of the same length with no zero elements such that the dot product of the two arrays is zero and the sum of absolute values in the new array is at most 10^9.",
+  "tags": [
+    "array",
+    "constructive-algorithm",
+    "math"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048059,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

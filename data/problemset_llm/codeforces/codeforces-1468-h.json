@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1468-h",
+  "title": "K and Medians",
+  "slug": "1468-h-k-and-medians",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1468/H",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a sequence of integers from 1 to n and an odd integer k, repeatedly select k elements and replace them with their median. Determine if a target sequence can be obtained after zero or more such steps.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "median-finding",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048154,
+    "pattern_confidence": {
+      "median-finding": 0.9,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

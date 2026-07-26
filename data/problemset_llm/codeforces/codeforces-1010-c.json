@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1010-c",
+  "title": "Border",
+  "slug": "1010-c-border",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1010/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "number theory"
+  ],
+  "statement": "Given infinite banknotes of specified denominations and a base k number system, determine for which last digits d it is possible to form a tax amount ending with d without receiving change.",
+  "tags": [
+    "number-theory",
+    "math"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "coin-change",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047989,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "coin-change": 0.9,
+      "dynamic-programming": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

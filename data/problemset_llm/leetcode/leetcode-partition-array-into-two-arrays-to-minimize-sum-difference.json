@@ -19,7 +19,7 @@
   "statement": "Given an array of 2*n integers, partition it into two arrays of length n each to minimize the absolute difference of their sums.",
   "tags": [
     "array",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "sorting"
   ],

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1283-d",
+  "title": "Christmas Trees",
+  "slug": "1283-d-christmas-trees",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1283/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "graphs",
+    "greedy",
+    "shortest paths"
+  ],
+  "statement": "Given distinct positions of Christmas trees on an integer number line and a number of people to place at distinct integer positions, find an arrangement of people minimizing the sum of distances from each person to the nearest tree.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search",
+    "graph"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "two-pointers",
+    "multi-source-bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048953,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "two-pointers": 0.7,
+      "multi-source-bfs": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

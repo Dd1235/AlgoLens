@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-761-e",
+  "title": "Dasha and Puzzle",
+  "slug": "761-e-dasha-and-puzzle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/761/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "constructive algorithms",
+    "dfs and similar",
+    "graphs",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree, assign distinct integral coordinates to its vertices so that edges correspond to axis-aligned segments intersecting only at endpoints.",
+  "tags": [
+    "graph",
+    "tree",
+    "geometry",
+    "constructive-algorithm",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "constructive-algorithm",
+    "coordinate-assignment"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048129,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "constructive-algorithm": 0.9,
+      "coordinate-assignment": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

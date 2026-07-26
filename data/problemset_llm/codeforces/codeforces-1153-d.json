@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1153-d",
+  "title": "Serval and Rooted Tree",
+  "slug": "1153-d-serval-and-rooted-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1153/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a rooted tree where internal nodes have min or max operations on their children, assign distinct integers to leaves to maximize the root's value.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dfs",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048483,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "dfs": 0.9,
+      "tree-dp": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

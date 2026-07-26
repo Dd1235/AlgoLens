@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-913-e",
+  "title": "Logical Expression",
+  "slug": "913-e-logical-expression",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/913/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "shortest paths"
+  ],
+  "statement": "Given a boolean function of three variables defined by its truth table, find the shortest and lexicographically smallest logical expression using AND, OR, NOT, variables x, y, z, and parentheses that matches the function.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "string"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "expression-parsing",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048165,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "expression-parsing": 0.9,
+      "memoization": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1520-g",
+  "title": "To Go Or Not To Go?",
+  "slug": "1520-g-to-go-or-not-to-go",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1520/G",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "greedy",
+    "implementation",
+    "shortest paths"
+  ],
+  "statement": "Find the minimum time to travel from the top-left to the bottom-right cell in a grid with blocked cells, free cells, and portals that allow teleportation at a cost based on portal values, with movement between adjacent free cells costing a fixed time.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "grid",
+    "implementation"
+  ],
+  "patterns": [
+    "dijkstra",
+    "multi-source-bfs",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048480,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "multi-source-bfs": 0.85,
+      "graph-construction": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

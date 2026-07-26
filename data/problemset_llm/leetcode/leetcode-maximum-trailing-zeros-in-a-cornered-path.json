@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "prefix-sum",
-    "enumeration",
+    "brute-force",
     "factorization"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1784909080,
     "pattern_confidence": {
       "prefix-sum": 0.95,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "factorization": 0.8
     }
   }

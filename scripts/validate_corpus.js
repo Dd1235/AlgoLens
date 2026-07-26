@@ -28,6 +28,7 @@ const QUERIES_PATH = path.join(ROOT, "bench", "queries.json");
 
 const SLUG_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const DIFFICULTIES = new Set(["Easy", "Medium", "Hard"]);
+const RATED_PLATFORMS = new Set(["codeforces", "atcoder"]);
 // Hard-focus corpus: LeetCode Easies are not ingested. These four are the
 // deliberate exceptions — they ground 6 bench queries (two-sum, climbing
 // stairs, valid parentheses = the exp-05 paraphrase demo, binary search) and
@@ -99,6 +100,12 @@ function checkProblem({ rel, platform, basename, problem }, taxonomy, driftCount
   }
   if (platform === "leetcode" && problem.difficulty === "Easy" && !ANCHOR_EASIES.has(problem.id)) {
     warn(`${rel}: non-anchor Easy in a hard-focus corpus (anchors: ${[...ANCHOR_EASIES].join(", ")})`);
+  }
+  // Codeforces and AtCoder carry a numeric rating instead of a named tier; the
+  // UI bands it for colour, so a stringified "1500" would silently render grey.
+  if (RATED_PLATFORMS.has(platform) && problem.difficulty != null
+      && typeof problem.difficulty !== "number") {
+    err(`${rel}: ${platform} difficulty must be a number, got ${typeof problem.difficulty}`);
   }
   if (typeof problem.slug === "string" && !SLUG_RE.test(problem.slug)) {
     err(`${rel}: slug "${problem.slug}" is not slug-shaped`);

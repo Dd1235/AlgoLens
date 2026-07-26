@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-339-d",
+  "title": "Xenia and Bit Operations",
+  "slug": "339-d-xenia-and-bit-operations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/339/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a sequence of length 2^n, repeatedly combine adjacent elements using alternating bitwise OR and XOR operations until one value remains. After updates to elements, output the resulting value each time.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "segment-tree",
+    "bit-manipulation",
+    "range-update",
+    "alternating-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048521,
+    "pattern_confidence": {
+      "segment-tree": 0.98,
+      "bit-manipulation": 0.95,
+      "range-update": 0.85,
+      "alternating-operations": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

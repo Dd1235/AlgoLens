@@ -1,0 +1,27 @@
+{
+  "id": "atcoder-dp-n",
+  "title": "Slimes",
+  "slug": "dp-n",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_n",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a sequence of slimes with sizes, repeatedly combine two adjacent slimes into one, incurring a cost equal to their sum, and find the minimum total cost to combine all slimes into one.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "interval-dp",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047446,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "prefix-sum": 0.85
+    }
+  }
+}

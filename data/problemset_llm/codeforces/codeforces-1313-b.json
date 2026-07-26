@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1313-b",
+  "title": "Different Rules",
+  "slug": "1313-b-different-rules",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1313/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given the rankings of a participant in two rounds of a competition, determine the minimum and maximum possible overall place based on the sum of their ranks compared to others, considering all possible arrangements of other participants' ranks.",
+  "tags": [
+    "math",
+    "greedy",
+    "constructive-algorithm",
+    "implementation"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047942,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "sorting": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

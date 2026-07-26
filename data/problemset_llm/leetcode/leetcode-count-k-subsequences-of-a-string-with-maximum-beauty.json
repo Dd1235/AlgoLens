@@ -22,7 +22,7 @@
     "math"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "sorting",
     "greedy",
     "modular-arithmetic",
@@ -33,7 +33,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922623,
     "pattern_confidence": {
-      "frequency-count": 0.98,
+      "counting": 0.98,
       "sorting": 0.95,
       "greedy": 0.9,
       "modular-arithmetic": 0.88,

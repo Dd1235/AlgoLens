@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-915-e",
+  "title": "Physical Education Lessons",
+  "slug": "915-e-physical-education-lessons",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/915/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "data structures",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given n days initially all working, process q orders that set intervals of days as working or non-working, and after each order report the total number of working days.",
+  "tags": [
+    "array",
+    "data-structures",
+    "intervals",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "lazy-propagation",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048997,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "lazy-propagation": 0.9,
+      "range-update": 0.9,
+      "range-query": 0.9
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

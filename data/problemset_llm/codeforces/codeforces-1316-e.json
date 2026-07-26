@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1316-e",
+  "title": "Team Building",
+  "slug": "1316-e-team-building",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1316/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Select exactly p players for distinct positions and k audience members from n people to maximize total club strength, given individual audience strengths and position-specific player strengths.",
+  "tags": [
+    "dynamic-programming",
+    "bit-manipulation",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "greedy",
+    "sorting",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048959,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "greedy": 0.85,
+      "sorting": 0.8,
+      "state-compression": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

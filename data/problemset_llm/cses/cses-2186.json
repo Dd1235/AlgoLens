@@ -10,7 +10,8 @@
   "tags": [
     "string",
     "prefix-sum",
-    "hash-map"
+    "hash-map",
+    "data-structure"
   ],
   "patterns": [
     "prefix-sum",

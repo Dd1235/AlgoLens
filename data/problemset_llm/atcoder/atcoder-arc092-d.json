@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-arc092-d",
+  "title": "Two Faced Edges",
+  "slug": "arc092-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc092/tasks/arc092_d",
+  "source_topic": "Formwise / Graph Level 2",
+  "source_tags": [],
+  "statement": "Given a directed graph, determine for each edge whether reversing it changes the number of strongly connected components in the graph.",
+  "tags": [
+    "graph",
+    "strongly-connected-components"
+  ],
+  "patterns": [
+    "tarjan",
+    "bridge-edge-detection",
+    "strongly-connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047630,
+    "pattern_confidence": {
+      "tarjan": 0.95,
+      "bridge-edge-detection": 0.9,
+      "strongly-connected-components": 0.98
+    }
+  },
+  "difficulty": 3351
+}

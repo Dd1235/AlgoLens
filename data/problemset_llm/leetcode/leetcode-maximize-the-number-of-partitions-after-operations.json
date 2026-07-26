@@ -17,12 +17,12 @@
     "string",
     "greedy",
     "two-pointers",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "two-pointers",
     "greedy",
-    "bitmask",
+    "bit-manipulation",
     "prefix-frequency-count"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "two-pointers": 0.95,
       "greedy": 0.9,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "prefix-frequency-count": 0.8
     }
   }

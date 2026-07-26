@@ -17,7 +17,7 @@
   "tags": [
     "graph",
     "dynamic-programming",
-    "bitmask",
+    "bit-manipulation",
     "bfs"
   ],
   "patterns": [

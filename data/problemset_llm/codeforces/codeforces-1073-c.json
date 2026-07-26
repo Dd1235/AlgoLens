@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1073-c",
+  "title": "Vasya and Robot",
+  "slug": "1073-c-vasya-and-robot",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1073/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "two pointers"
+  ],
+  "statement": "Given a sequence of robot moves on a 2D grid, find the minimum length of a contiguous subsegment to change so that the robot ends at a target position, or determine if it's impossible.",
+  "tags": [
+    "array",
+    "geometry",
+    "two-pointers"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048878,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.92,
+      "two-pointers": 0.85
+    }
+  },
+  "source_topic": "Formwise / Two Pointers"
+}

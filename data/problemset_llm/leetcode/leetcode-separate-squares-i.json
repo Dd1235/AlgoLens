@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-separate-squares-i",
+  "title": "Separate Squares I",
+  "slug": "separate-squares-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/separate-squares-i/description/",
+  "source_topic": "Formwise / Binary Search",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search"
+  ],
+  "statement": "Given a list of axis-aligned squares defined by their bottom-left coordinates and side lengths, find the lowest horizontal line such that the total area of the squares above the line equals the total area below it, counting overlapping areas multiple times.",
+  "tags": [
+    "array",
+    "geometry",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047336,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.84,
+      "binary-search": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1700-c",
+  "title": "Helping the Nature",
+  "slug": "1700-c-helping-the-nature",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1700/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given an array representing moisture levels of trees, find the minimum number of operations to reduce all moisture levels to zero using three types of range increment/decrement actions.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047944,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.85,
+      "constructive-algorithm": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

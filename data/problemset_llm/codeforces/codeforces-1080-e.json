@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1080-e",
+  "title": "Sonya and Matrix Beauty",
+  "slug": "1080-e-sonya-and-matrix-beauty",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1080/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "strings"
+  ],
+  "statement": "Given an n by m matrix of lowercase letters, count the number of submatrices for which each row can be reordered independently so that all rows and columns form palindromes.",
+  "tags": [
+    "matrix",
+    "string",
+    "combinatorics"
+  ],
+  "patterns": [
+    "palindrome",
+    "row-wise-reordering",
+    "submatrix-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048779,
+    "pattern_confidence": {
+      "palindrome": 0.95,
+      "row-wise-reordering": 0.9,
+      "submatrix-enumeration": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

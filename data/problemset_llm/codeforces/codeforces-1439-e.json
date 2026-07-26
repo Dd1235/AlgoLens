@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1439-e",
+  "title": "Cheat and Win",
+  "slug": "1439-e-cheat-and-win",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1439/E",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "games",
+    "trees"
+  ],
+  "statement": "Given a large implicit tree formed by cells where x & y = 0, with some paths colored black, determine the minimum number of root-to-node path color-inversion operations needed so the second player has a winning strategy in a two-player game involving color flips on ancestor subsets.",
+  "tags": [
+    "graph",
+    "bit-manipulation",
+    "game-theory",
+    "tree",
+    "dfs"
+  ],
+  "patterns": [
+    "xor-game",
+    "tree-dp",
+    "bitmask-dp",
+    "dfs",
+    "grundy-numbers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048366,
+    "pattern_confidence": {
+      "xor-game": 0.95,
+      "tree-dp": 0.9,
+      "bitmask-dp": 0.85,
+      "dfs": 0.9,
+      "grundy-numbers": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1132-f",
+  "title": "Clear the String",
+  "slug": "1132-f-clear-the-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1132/F",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given a string, find the minimum number of operations to delete the entire string where each operation deletes a contiguous substring of identical characters.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "interval-dp",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048942,
+    "pattern_confidence": {
+      "interval-dp": 0.95,
+      "dynamic-programming": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Level 1"
+}

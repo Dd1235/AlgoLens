@@ -19,7 +19,7 @@
     "array",
     "dynamic-programming",
     "number-theory",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",

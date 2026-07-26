@@ -1,0 +1,46 @@
+{
+  "id": "codeforces-1416-c",
+  "title": "XOR Inverse",
+  "slug": "1416-c-xor-inverse",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1416/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "divide and conquer",
+    "dp",
+    "greedy",
+    "math",
+    "sortings",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given an array of non-negative integers, find a non-negative integer x to XOR with each element to minimize the number of inversions in the resulting array, choosing the smallest such x if multiple exist.",
+  "tags": [
+    "array",
+    "bitmask-dp",
+    "divide-and-conquer",
+    "dynamic-programming",
+    "trie"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "bitmask-dp",
+    "greedy",
+    "trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048855,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "bitmask-dp": 0.85,
+      "greedy": 0.7,
+      "trie": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

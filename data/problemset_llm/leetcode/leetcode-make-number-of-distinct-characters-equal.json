@@ -18,7 +18,7 @@
     "counting"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "character-swapping",
     "set-comparison"
   ],
@@ -27,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784908597,
     "pattern_confidence": {
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "character-swapping": 0.9,
       "set-comparison": 0.85
     }

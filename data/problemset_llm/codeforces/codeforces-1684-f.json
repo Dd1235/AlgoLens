@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1684-f",
+  "title": "Diverse Segments",
+  "slug": "1684-f-diverse-segments",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1684/F",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "two pointers"
+  ],
+  "statement": "Given an array and multiple subsegments, find the minimum length of a single subsegment to replace so that all given subsegments contain distinct elements, or determine that no replacement is needed.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048286,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "sliding-window": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

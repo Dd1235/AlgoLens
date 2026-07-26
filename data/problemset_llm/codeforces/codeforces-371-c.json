@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-371-c",
+  "title": "Hamburgers",
+  "slug": "371-c-hamburgers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/371/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "binary search",
+    "brute force"
+  ],
+  "statement": "Given a hamburger recipe and available ingredients with prices, determine the maximum number of hamburgers that can be made with a limited budget by buying additional ingredients as needed.",
+  "tags": [
+    "string",
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048868,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "counting": 0.85,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Formwise / Binary Search"
+}

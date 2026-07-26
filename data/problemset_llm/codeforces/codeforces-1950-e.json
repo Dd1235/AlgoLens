@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1950-e",
+  "title": "Nearly Shortest Repeating Substring",
+  "slug": "1950-e-nearly-shortest-repeating-substring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1950/E",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "number theory",
+    "strings"
+  ],
+  "statement": "Given a string, find the shortest substring length such that repeating this substring forms a string differing from the original in at most one character.",
+  "tags": [
+    "string",
+    "number-theory",
+    "implementation"
+  ],
+  "patterns": [
+    "string-periodicity",
+    "brute-force",
+    "prefix-function"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047883,
+    "pattern_confidence": {
+      "string-periodicity": 0.95,
+      "brute-force": 0.7,
+      "prefix-function": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

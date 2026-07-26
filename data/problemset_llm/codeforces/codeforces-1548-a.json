@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1548-a",
+  "title": "Web of Lies",
+  "slug": "1548-a-web-of-lies",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1548/A",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "brute force",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Given a dynamic undirected graph of nobles with powers equal to their indices, repeatedly remove all nobles who have only friends with higher power until no such nobles remain, and report the count of remaining nobles after this process for multiple queries involving adding or removing friendships.",
+  "tags": [
+    "graph",
+    "simulation",
+    "data-structure"
+  ],
+  "patterns": [
+    "simulation",
+    "dynamic-graph",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047814,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "dynamic-graph": 0.9,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "atcoder-abc157-e",
+  "title": "Simple String Queries",
+  "slug": "abc157-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc157/tasks/abc157_e",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given a string, support queries that either update a character at a position or count the number of distinct characters in a substring.",
+  "tags": [
+    "string",
+    "data-structure",
+    "segment-tree",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "segment-tree",
+    "bit-manipulation",
+    "range-query",
+    "point-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047475,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "bit-manipulation": 0.9,
+      "range-query": 0.9,
+      "point-update": 0.85
+    }
+  },
+  "difficulty": 1443
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1458-f",
+  "title": "Range Diameter Sum",
+  "slug": "1458-f-range-diameter-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1458/F",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a tree with n vertices labeled 1 to n, compute the sum of the diameters of all vertex intervals [l, r], where the diameter is the maximum distance between any two vertices within that interval.",
+  "tags": [
+    "tree",
+    "graph",
+    "data-structures"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sliding-window",
+    "tree-diameter",
+    "distance-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048391,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "sliding-window": 0.8,
+      "tree-diameter": 0.95,
+      "distance-query": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

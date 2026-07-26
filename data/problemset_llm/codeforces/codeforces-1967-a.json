@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1967-a",
+  "title": "Permutation Counting",
+  "slug": "1967-a-permutation-counting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1967/A",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "implementation",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given initial counts of cards numbered 1 to n and k coins to buy additional cards, determine the maximum number of contiguous subarrays of length n that form a permutation of [1..n] after rearranging all cards.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047727,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.8,
+      "greedy": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

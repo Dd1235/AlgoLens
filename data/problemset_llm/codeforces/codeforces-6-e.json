@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-6-e",
+  "title": "Exposition",
+  "slug": "6-e-exposition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/6/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dsu",
+    "trees",
+    "two pointers"
+  ],
+  "statement": "Given a chronological sequence of book heights, find the longest contiguous segment where the height difference between the tallest and shortest book does not exceed a given limit k.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "data-structures"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sliding-window",
+    "monotonic-queue"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048771,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "sliding-window": 0.9,
+      "monotonic-queue": 0.85
+    }
+  },
+  "source_topic": "Formwise / Two Pointers"
+}

@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "greedy",
-    "frequency-count",
+    "counting",
     "set-operations"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1784909911,
     "pattern_confidence": {
       "greedy": 0.95,
-      "frequency-count": 0.9,
+      "counting": 0.9,
       "set-operations": 0.85
     }
   }

@@ -15,7 +15,7 @@
   "statement": "Given an m by n grid and counts of introverts and extroverts, place people to maximize total happiness, where happiness depends on neighbors and person type.",
   "tags": [
     "dynamic-programming",
-    "bitmask",
+    "bit-manipulation",
     "grid"
   ],
   "patterns": [

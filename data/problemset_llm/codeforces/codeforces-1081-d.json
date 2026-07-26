@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1081-d",
+  "title": "Maximum Distance",
+  "slug": "1081-d-maximum-distance",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1081/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dsu",
+    "graphs",
+    "shortest paths",
+    "sortings"
+  ],
+  "statement": "Given a connected undirected weighted graph with special vertices, compute for each special vertex the maximum among the minimal maximum-edge-weight paths to any other special vertex.",
+  "tags": [
+    "graph",
+    "union-find",
+    "shortest-path",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "minimum-spanning-tree",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048517,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "minimum-spanning-tree": 0.85,
+      "offline-queries": 0.7
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

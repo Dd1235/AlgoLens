@@ -23,7 +23,8 @@
   "patterns": [
     "0-1-bfs",
     "graph-traversal",
-    "shortest-path"
+    "shortest-path",
+    "zero-one-bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
     "pattern_confidence": {
       "0-1-bfs": 0.95,
       "graph-traversal": 0.9,
-      "shortest-path": 0.9
+      "shortest-path": 0.9,
+      "zero-one-bfs": 0.9
     }
   }
 }

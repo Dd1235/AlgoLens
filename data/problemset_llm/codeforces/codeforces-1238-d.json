@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1238-d",
+  "title": "AB-string",
+  "slug": "1238-d-ab-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1238/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "combinatorics",
+    "dp",
+    "strings"
+  ],
+  "statement": "Given a binary string, count the number of substrings where every character belongs to at least one palindrome substring of length greater than one.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "palindromic-substrings",
+    "dynamic-programming",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048032,
+    "pattern_confidence": {
+      "palindromic-substrings": 0.95,
+      "dynamic-programming": 0.9,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1919-d",
+  "title": "01 Tree",
+  "slug": "1919-d-01-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1919/D",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures",
+    "dsu",
+    "greedy",
+    "sortings",
+    "trees"
+  ],
+  "statement": "Given an array representing distances from the root to leaves in DFS order, determine if there exists a complete binary tree with edges weighted 0 or 1 that matches these distances.",
+  "tags": [
+    "tree",
+    "binary-tree",
+    "dfs",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "dfs",
+    "constructive-algorithm",
+    "binary-tree-properties"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048150,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "constructive-algorithm": 0.9,
+      "binary-tree-properties": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

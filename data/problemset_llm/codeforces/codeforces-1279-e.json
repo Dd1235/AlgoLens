@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1279-e",
+  "title": "New Year Permutations",
+  "slug": "1279-e-new-year-permutations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1279/E",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "combinatorics",
+    "dp"
+  ],
+  "statement": "Given integers n and k, find the k-th lexicographically smallest permutation of length n that remains unchanged after a specific decomposition and reordering transformation based on reachable elements in the permutation.",
+  "tags": [
+    "permutation",
+    "graph",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "lexicographic-enumeration",
+    "graph-components",
+    "dp-on-subsets",
+    "cycle-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048455,
+    "pattern_confidence": {
+      "lexicographic-enumeration": 0.95,
+      "graph-components": 0.9,
+      "dp-on-subsets": 0.85,
+      "cycle-decomposition": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

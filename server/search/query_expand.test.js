@@ -17,10 +17,12 @@ const { expandQuery } = require("./query_expand");
 }
 
 // The exp-06 regression case: "sum over subsets" now reaches the sos-dp label.
+// "bitmask" contributes too — it became an alias of bit-manipulation once that
+// label was promoted out of the gaps report, so two aliases fire here.
 {
   const r = expandQuery("sum over subsets bitmask");
   assert.equal(r.expanded, true);
-  assert.deepEqual(r.added, ["sos", "dp"]);
+  assert.deepEqual(r.added, ["sos", "dp", "bit", "manipulation"]);
 }
 
 // Words already present are not re-added — and independent aliases compose:

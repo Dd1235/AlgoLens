@@ -20,7 +20,7 @@
   "patterns": [
     "binary-search-answer",
     "greedy",
-    "bitwise-operations"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.9,
       "greedy": 0.85,
-      "bitwise-operations": 0.9
+      "bit-manipulation": 0.9
     }
   }
 }

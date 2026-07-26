@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-arc090-b",
+  "title": "People on a Line",
+  "slug": "arc090-b",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc087/tasks/arc090_b",
+  "source_topic": "Formwise / Graph Level 2",
+  "source_tags": [],
+  "statement": "Given N people on a line and M constraints specifying relative distances between pairs, determine if there exists a consistent assignment of coordinates satisfying all constraints.",
+  "tags": [
+    "graph",
+    "union-find",
+    "difference-constraints"
+  ],
+  "patterns": [
+    "union-find",
+    "difference-constraints",
+    "graph-consistency-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047636,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "difference-constraints": 0.9,
+      "graph-consistency-check": 0.85
+    }
+  },
+  "difficulty": 1452
+}

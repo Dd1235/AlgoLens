@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-94-b",
+  "title": "Friends",
+  "slug": "94-b-friends",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/94/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "graphs",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given friendship relations among five people, determine if there exists a trio who are either all mutually acquainted or all mutually unacquainted.",
+  "tags": [
+    "graph",
+    "combinatorics",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "clique-detection",
+    "triangle-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047784,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "clique-detection": 0.85,
+      "triangle-check": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

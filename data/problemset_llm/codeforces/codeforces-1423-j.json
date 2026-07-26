@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1423-j",
+  "title": "Bubble Cup hypothesis",
+  "slug": "1423-j-bubble-cup-hypothesis",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1423/J",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "dp",
+    "math"
+  ],
+  "statement": "Count the number of polynomials with coefficients from 0 to 7 such that the polynomial evaluated at 2 equals a given number m.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "digit-dp",
+    "state-compression",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048159,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "state-compression": 0.85,
+      "constructive-algorithm": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

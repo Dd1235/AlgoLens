@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc110-d",
+  "title": "Factorization",
+  "slug": "abc110-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc110/tasks/abc110_d",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Count the number of length-N sequences of positive integers whose product equals M, modulo 10^9+7.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "stars-and-bars",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047503,
+    "pattern_confidence": {
+      "prime-factorization": 0.98,
+      "stars-and-bars": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "difficulty": 1695
+}

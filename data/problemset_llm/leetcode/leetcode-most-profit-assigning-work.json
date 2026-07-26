@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-most-profit-assigning-work",
+  "title": "Most Profit Assigning Work",
+  "slug": "most-profit-assigning-work",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/most-profit-assigning-work/description/",
+  "source_topic": "Formwise / Two Pointers",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "binary-search",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given arrays of job difficulties and profits, and an array of worker abilities, assign each worker at most one job they can complete to maximize total profit. Jobs can be assigned multiple times to different workers.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "binary-search",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047354,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "binary-search": 0.9
+    }
+  }
+}

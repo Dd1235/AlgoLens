@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc453-d",
+  "title": "Go Straight",
+  "slug": "abc453-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc453/tasks/abc453_d",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a grid with cells that impose movement constraints, determine if there is a path from a start cell to a goal cell moving up, down, left, or right, while respecting direction-change rules in special cells, and output one valid sequence of moves if possible.",
+  "tags": [
+    "graph",
+    "grid",
+    "shortest-path",
+    "state-space-search"
+  ],
+  "patterns": [
+    "bfs",
+    "state-encoding",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047388,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "state-encoding": 0.9,
+      "graph-traversal": 0.9
+    }
+  },
+  "difficulty": 1011
+}

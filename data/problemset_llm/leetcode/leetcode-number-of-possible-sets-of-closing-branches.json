@@ -16,7 +16,7 @@
   "statement": "Given a connected undirected weighted graph, count the number of subsets of nodes to close so that the remaining nodes have pairwise shortest-path distances at most maxDistance.",
   "tags": [
     "graph",
-    "bitmask",
+    "bit-manipulation",
     "shortest-path",
     "dynamic-programming"
   ],

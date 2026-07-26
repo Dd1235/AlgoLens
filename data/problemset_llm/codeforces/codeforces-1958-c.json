@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1958-c",
+  "title": "Firewood",
+  "slug": "1958-c-firewood",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1958/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "Given a log weighing 2^n grams, determine the minimum number of halving cuts needed to obtain a subset of logs summing exactly to k grams.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "greedy"
+  ],
+  "patterns": [
+    "bit-count",
+    "greedy",
+    "binary-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047886,
+    "pattern_confidence": {
+      "bit-count": 0.95,
+      "greedy": 0.9,
+      "binary-representation": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-126-b",
+  "title": "Password",
+  "slug": "126-b-password",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/126/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "dp",
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string, find the longest substring that is simultaneously a prefix, a suffix, and also appears at least once more inside the string (not as prefix or suffix).",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "string-hashing",
+    "prefix-function",
+    "dynamic-programming",
+    "kmp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048934,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "string-hashing": 0.95,
+      "prefix-function": 0.9,
+      "dynamic-programming": 0.7,
+      "kmp": 0.9
+    }
+  },
+  "source_topic": "Formwise / String"
+}

@@ -19,7 +19,7 @@
     "greedy"
   ],
   "patterns": [
-    "palindrome-check",
+    "palindrome",
     "interval-dp",
     "greedy-selection",
     "manacher"
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923348,
     "pattern_confidence": {
-      "palindrome-check": 0.95,
+      "palindrome": 0.95,
       "interval-dp": 0.9,
       "greedy-selection": 0.85,
       "manacher": 1

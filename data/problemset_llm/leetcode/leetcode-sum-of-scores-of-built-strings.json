@@ -18,7 +18,7 @@
   "tags": [
     "string",
     "prefix",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "rolling-hash",

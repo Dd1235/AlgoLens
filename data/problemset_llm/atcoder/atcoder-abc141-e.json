@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc141-e",
+  "title": "Who Says a Pun?",
+  "slug": "abc141-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc141/tasks/abc141_e",
+  "source_topic": "Formwise / String",
+  "source_tags": [],
+  "statement": "Given a string, find the length of the longest non-empty substring that appears at least twice without overlapping. If no such substring exists, output 0.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-repeated-substring",
+    "dp-on-strings"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047542,
+    "pattern_confidence": {
+      "longest-repeated-substring": 0.95,
+      "dp-on-strings": 0.9
+    }
+  },
+  "difficulty": 1459
+}

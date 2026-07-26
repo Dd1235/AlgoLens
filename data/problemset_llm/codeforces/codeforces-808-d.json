@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-808-d",
+  "title": "Array Division",
+  "slug": "808-d-array-division",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/808/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given an array of positive integers, determine if it is possible to move exactly one element to a different position so that the array can be split into two non-empty consecutive parts with equal sums.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "implementation"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047941,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "two-pointers": 0.7,
+      "binary-search-answer": 0.6
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

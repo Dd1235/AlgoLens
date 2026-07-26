@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-581-c",
+  "title": "Developing Skills",
+  "slug": "581-c-developing-skills",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/581/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "implementation",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given initial skill levels and a limited number of improvement units, distribute the units optimally to maximize the sum of the floor division of each skill by 10, with skills capped at 100.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047855,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

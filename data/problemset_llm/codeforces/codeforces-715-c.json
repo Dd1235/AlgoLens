@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-715-c",
+  "title": "Digit Tree",
+  "slug": "715-c-digit-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/715/C",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dfs and similar",
+    "divide and conquer",
+    "dsu",
+    "trees"
+  ],
+  "statement": "Given a tree with digits on edges and an integer M coprime to 10, count ordered pairs of distinct vertices where the concatenation of digits along the shortest path forms a number divisible by M.",
+  "tags": [
+    "tree",
+    "graph",
+    "number-theory",
+    "dfs",
+    "union-find"
+  ],
+  "patterns": [
+    "dsu-on-tree",
+    "modular-arithmetic",
+    "dfs",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048358,
+    "pattern_confidence": {
+      "dsu-on-tree": 0.95,
+      "modular-arithmetic": 0.9,
+      "dfs": 0.9,
+      "divide-and-conquer": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

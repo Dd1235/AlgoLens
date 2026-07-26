@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1220-f",
+  "title": "Gardener Alex",
+  "slug": "1220-f-gardener-alex",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1220/F",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "binary search",
+    "data structures"
+  ],
+  "statement": "Given a permutation, construct a binary tree by recursively choosing the minimum element as root and splitting the permutation. For each cyclic shift of the permutation, build such a tree and find the shift that produces the tree with minimum depth.",
+  "tags": [
+    "array",
+    "tree",
+    "binary-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "divide-and-conquer",
+    "prefix-minimums"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048413,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "divide-and-conquer": 0.85,
+      "prefix-minimums": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

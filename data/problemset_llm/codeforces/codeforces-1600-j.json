@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1600-j",
+  "title": "Robot Factory",
+  "slug": "1600-j-robot-factory",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1600/J",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "bitmasks",
+    "dfs and similar"
+  ],
+  "statement": "Given a grid representing factory tiles with walls encoded in binary, determine the sizes of all enclosed rooms and output them sorted from largest to smallest.",
+  "tags": [
+    "graph",
+    "bit-manipulation",
+    "dfs"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "dfs",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047815,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "dfs": 0.98,
+      "connected-components": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

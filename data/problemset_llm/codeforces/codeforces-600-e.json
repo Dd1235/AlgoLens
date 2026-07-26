@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-600-e",
+  "title": "Lomsat gelral",
+  "slug": "600-e-lomsat-gelral",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/600/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "dsu",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with colored vertices, for each vertex find the sum of colors that appear most frequently in its subtree.",
+  "tags": [
+    "tree",
+    "dfs",
+    "union-find",
+    "data-structures",
+    "graph"
+  ],
+  "patterns": [
+    "dsu-on-tree",
+    "dfs",
+    "subtree-queries",
+    "counting",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048899,
+    "pattern_confidence": {
+      "dsu-on-tree": 0.95,
+      "dfs": 0.9,
+      "subtree-queries": 0.85,
+      "counting": 0.8,
+      "union-find": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

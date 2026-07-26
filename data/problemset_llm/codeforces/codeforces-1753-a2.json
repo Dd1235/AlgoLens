@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1753-a2",
+  "title": "Make Nonzero Sum (hard version)",
+  "slug": "1753-a2-make-nonzero-sum-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1753/A2",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "constructive algorithms",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given an array of -1, 0, and 1, partition it into contiguous segments so that the sum of the alternating sums of these segments equals zero, or determine that no such partition exists.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "dynamic-programming",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047854,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "greedy": 0.85,
+      "dynamic-programming": 0.8,
+      "constructive-algorithm": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

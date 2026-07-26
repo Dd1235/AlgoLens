@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1548-e",
+  "title": "Gregor and the Two Painters",
+  "slug": "1548-e-gregor-and-the-two-painters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1548/E",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "graphs",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given two arrays representing paint layers applied to rows and columns of a grid, determine the number of maximal connected regions where the sum of row and column layers is at most a given threshold.",
+  "tags": [
+    "array",
+    "graph",
+    "connected-components"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "flood-fill",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048283,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "flood-fill": 0.95,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

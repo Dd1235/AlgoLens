@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-arc094-a",
+  "title": "Same Integers",
+  "slug": "arc094-a",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc093/tasks/arc094_a",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "source_tags": [],
+  "statement": "Given three integers A, B, and C, find the minimum number of operations to make all three equal by either incrementing two chosen numbers by 1 or one chosen number by 2 repeatedly.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "case-analysis",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047624,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "case-analysis": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  },
+  "difficulty": 301
+}

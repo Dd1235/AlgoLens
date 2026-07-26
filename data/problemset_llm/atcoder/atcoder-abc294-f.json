@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc294-f",
+  "title": "Sugar Water 2",
+  "slug": "abc294-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc294/tasks/abc294_f",
+  "source_topic": "Formwise / Binary Search",
+  "source_tags": [],
+  "statement": "Given two lists of sugar water compositions, find the K-th highest sugar concentration obtained by mixing one from each list. The concentration is defined as the percentage of sugar in the total mixture.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047337,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.7,
+      "binary-search": 0.9
+    }
+  },
+  "difficulty": 1891
+}

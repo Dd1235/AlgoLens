@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-627-f",
+  "title": "Island Puzzle",
+  "slug": "627-f-island-puzzle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/627/F",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a tree of islands with statues on all but one empty pedestal, determine which additional bridge to build to enable rearranging statues into a target order with minimal moves.",
+  "tags": [
+    "graph",
+    "tree",
+    "union-find",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-dp",
+    "union-find",
+    "binary-search-answer",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048446,
+    "pattern_confidence": {
+      "tree-dp": 0.9,
+      "union-find": 0.85,
+      "binary-search-answer": 0.7,
+      "dfs": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-coloring-a-border",
+  "title": "Coloring A Border",
+  "slug": "coloring-a-border",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/coloring-a-border/description/",
+  "source_topic": "Formwise / Graph Level-1",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "depth-first-search",
+    "breadth-first-search",
+    "matrix"
+  ],
+  "statement": "Given a grid with colored cells, identify the connected component containing a specified cell and recolor its border cells with a new color. The border consists of cells adjacent to cells outside the component or on the grid boundary.",
+  "tags": [
+    "array",
+    "graph",
+    "matrix"
+  ],
+  "patterns": [
+    "dfs",
+    "bfs",
+    "connected-component"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047384,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bfs": 0.9,
+      "connected-component": 0.92
+    }
+  }
+}

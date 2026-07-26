@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1870-h",
+  "title": "Standard Graph Problem",
+  "slug": "1870-h-standard-graph-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1870/H",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "data structures",
+    "graphs",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a weighted directed graph with vertices that can be toggled between highlighted and normal states, maintain the minimum total edge weight needed so that every normal vertex can reach at least one highlighted vertex, updating this cost after each highlight/unhighlight query.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "data-structures"
+  ],
+  "patterns": [
+    "dynamic-connectivity",
+    "minimum-reachability-subgraph",
+    "incremental-updates"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048275,
+    "pattern_confidence": {
+      "dynamic-connectivity": 0.9,
+      "minimum-reachability-subgraph": 0.85,
+      "incremental-updates": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

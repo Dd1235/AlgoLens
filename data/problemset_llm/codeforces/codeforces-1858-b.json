@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1858-b",
+  "title": "The Walkway",
+  "slug": "1858-b-the-walkway",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1858/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given benches and cookie sellers along a walkway, Petya eats cookies under certain timing and seller proximity rules. By removing exactly one cookie seller, determine the minimal number of cookies Petya will eat and count how many sellers can be removed to achieve this minimum.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047835,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "prefix-sum": 0.7,
+      "simulation": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

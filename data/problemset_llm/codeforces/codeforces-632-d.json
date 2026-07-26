@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-632-d",
+  "title": "Longest Subsequence",
+  "slug": "632-d-longest-subsequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/632/D",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array and a number m, find the longest subsequence whose least common multiple (LCM) is at most m.",
+  "tags": [
+    "array",
+    "number-theory",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "lcm-computation",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048767,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "lcm-computation": 0.8,
+      "number-theory": 0.9
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

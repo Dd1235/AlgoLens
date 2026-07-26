@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1537-e1",
+  "title": "Erase and Extend (Easy Version)",
+  "slug": "1537-e1-erase-and-extend-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1537/E1",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "dp",
+    "greedy",
+    "hashing",
+    "implementation",
+    "string suffix structures",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Given a string, perform any number of deletions of the last character and duplications of the entire string to produce the lexicographically smallest string of length exactly k.",
+  "tags": [
+    "string",
+    "greedy",
+    "binary-search",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "string-hashing",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047898,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "string-hashing": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

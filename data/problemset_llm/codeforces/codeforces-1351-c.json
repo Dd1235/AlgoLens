@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1351-c",
+  "title": "Skier",
+  "slug": "1351-c-skier",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1351/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Calculate the total time a skier takes to traverse a path described by directional moves, where moving along a new segment costs 5 seconds and revisiting an existing segment costs 1 second.",
+  "tags": [
+    "graph",
+    "implementation",
+    "hash-map"
+  ],
+  "patterns": [
+    "simulation",
+    "rolling-hash",
+    "path-tracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047878,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "rolling-hash": 0.9,
+      "path-tracking": 0.88
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

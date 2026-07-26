@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-260-b",
+  "title": "Ancient Prophesy",
+  "slug": "260-b-ancient-prophesy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/260/B",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a string containing digits and dashes, find the valid date in dd-mm-yyyy format (years 2013-2015) that appears most frequently as a substring, considering correct day and month ranges without leap years.",
+  "tags": [
+    "string",
+    "implementation",
+    "brute-force"
+  ],
+  "patterns": [
+    "substring-enumeration",
+    "validation-check",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047932,
+    "pattern_confidence": {
+      "substring-enumeration": 0.95,
+      "validation-check": 0.9,
+      "counting": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

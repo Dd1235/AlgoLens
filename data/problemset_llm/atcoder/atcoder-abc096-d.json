@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc096-d",
+  "title": "Five, Five Everywhere",
+  "slug": "abc096-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc096/tasks/abc096_d",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Construct a sequence of N distinct prime numbers (N between 5 and 55) such that the sum of any five distinct elements is always composite.",
+  "tags": [
+    "math",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "combinatorial-constraints",
+    "prime-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047512,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "combinatorial-constraints": 0.9,
+      "prime-checking": 0.85
+    }
+  },
+  "difficulty": 1226
+}

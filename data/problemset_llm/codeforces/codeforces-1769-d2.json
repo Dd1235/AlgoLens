@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1769-d2",
+  "title": "Игра в Девятку II",
+  "slug": "1769-d2-ii",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1769/D2",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "*special",
+    "brute force"
+  ],
+  "statement": "Two players play a card game with specific rules for placing cards in turn. Given initial hands, determine distinct values of the importance of the first move, defined as the absolute difference in game outcomes depending on who starts first, and find k hands with unique importance values.",
+  "tags": [
+    "game-theory",
+    "backtracking",
+    "brute-force",
+    "combinatorics"
+  ],
+  "patterns": [
+    "minimax",
+    "state-space-search",
+    "memoization",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048082,
+    "pattern_confidence": {
+      "minimax": 0.95,
+      "state-space-search": 0.9,
+      "memoization": 0.85,
+      "game-dp": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

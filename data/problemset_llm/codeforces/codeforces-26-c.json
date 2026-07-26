@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-26-c",
+  "title": "Parquet",
+  "slug": "26-c-parquet",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/26/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "combinatorics",
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a room of size n by m and three types of planks (1×2, 2×1, and 2×2), determine if it is possible to cover the floor completely without overlaps and find one valid arrangement if it exists.",
+  "tags": [
+    "geometry",
+    "combinatorics",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048080,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

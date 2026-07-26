@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-455-b",
+  "title": "A Lot of Games",
+  "slug": "455-b-a-lot-of-games",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/455/B",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "games",
+    "implementation",
+    "strings",
+    "trees"
+  ],
+  "statement": "Two players alternately append letters to build a word that must remain a prefix of at least one given string; the player unable to move loses. Given multiple games played sequentially with loser of one starting the next, determine the ultimate winner assuming optimal play.",
+  "tags": [
+    "string",
+    "game-theory",
+    "trie",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dfs",
+    "game-dp",
+    "trie-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048823,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "game-dp": 0.9,
+      "trie-construction": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

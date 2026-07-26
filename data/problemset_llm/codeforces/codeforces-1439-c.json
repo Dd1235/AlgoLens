@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1439-c",
+  "title": "Greedy Shopping",
+  "slug": "1439-c-greedy-shopping",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1439/C",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "divide and conquer",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a non-increasing array representing meal costs in shops, support updates that increase costs up to a position and queries that count how many meals can be bought starting from a given shop with a given amount of money.",
+  "tags": [
+    "array",
+    "data-structures",
+    "binary-search",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "range-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048906,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "range-update": 0.8
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

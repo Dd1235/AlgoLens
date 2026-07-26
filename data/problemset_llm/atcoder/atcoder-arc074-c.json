@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-arc074-c",
+  "title": "RGB Sequence",
+  "slug": "arc074-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc074/tasks/arc074_c",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Count the number of ways to paint N squares with three colors so that M given intervals each contain exactly a specified number of distinct colors, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics",
+    "intervals"
+  ],
+  "patterns": [
+    "dp-on-intervals",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047564,
+    "pattern_confidence": {
+      "dp-on-intervals": 0.95,
+      "state-compression": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "difficulty": 2519
+}

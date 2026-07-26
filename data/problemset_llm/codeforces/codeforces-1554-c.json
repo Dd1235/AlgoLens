@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1554-c",
+  "title": "Mikasa",
+  "slug": "1554-c-mikasa",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1554/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "bitmasks",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given integers n and m, find the minimum excluded value (MEX) of the sequence formed by XORing n with every integer from 0 to m.",
+  "tags": [
+    "bit-manipulation",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "mex",
+    "bitwise-xor",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049004,
+    "pattern_confidence": {
+      "mex": 0.98,
+      "bitwise-xor": 0.95,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Formwise / Bit-Manipulation"
+}

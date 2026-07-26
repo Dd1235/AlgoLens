@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1140-f",
+  "title": "Extending Set of Points",
+  "slug": "1140-f-extending-set-of-points",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1140/F",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "dsu"
+  ],
+  "statement": "Maintain a dynamic set of 2D points with add and remove operations, and after each update, compute the size of the set extended by repeatedly adding missing points that complete axis-aligned rectangles formed by existing points.",
+  "tags": [
+    "data-structures",
+    "geometry",
+    "union-find",
+    "divide-and-conquer",
+    "graph"
+  ],
+  "patterns": [
+    "union-find",
+    "divide-and-conquer",
+    "dynamic-set",
+    "rectangle-completion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048884,
+    "pattern_confidence": {
+      "union-find": 0.9,
+      "divide-and-conquer": 0.85,
+      "dynamic-set": 0.8,
+      "rectangle-completion": 0.75
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

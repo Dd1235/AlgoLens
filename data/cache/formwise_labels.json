@@ -15,7 +15,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc203_d": {
+ "atcoder-abc203-d": {
   "topic": "Binary Search",
   "form": "Binary Search On Answer",
   "curated": [
@@ -47,7 +47,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc294_f": {
+ "atcoder-abc294-f": {
   "topic": "Binary Search",
   "form": "Binary Search On Real Domain",
   "curated": [
@@ -71,7 +71,7 @@
   ],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc205_d": {
+ "atcoder-abc205-d": {
   "topic": "Binary Search",
   "form": "Mixed",
   "curated": [],
@@ -83,19 +83,19 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc149_e": {
+ "atcoder-abc149-e": {
   "topic": "Binary Search",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc215_f": {
+ "atcoder-abc215-f": {
   "topic": "Binary Search",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc248_d": {
+ "atcoder-abc248-d": {
   "topic": "Binary Search",
   "form": "Mixed",
   "curated": [],
@@ -170,97 +170,73 @@
  "leetcode-minimum-inversion-count-in-subarrays-of-fixed-length": {
   "topic": "Two Pointers",
   "form": "Form 0",
-  "curated": [
-   "form-0"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-367-b": {
   "topic": "Two Pointers",
   "form": "Form 0",
-  "curated": [
-   "form-0"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc444_e": {
+ "atcoder-abc444-e": {
   "topic": "Two Pointers",
   "form": "Form 1",
-  "curated": [
-   "form-1"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-count-subarrays-with-cost-less-than-or-equal-to-k": {
   "topic": "Two Pointers",
   "form": "Form 1",
-  "curated": [
-   "form-1"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc430_c": {
+ "atcoder-abc430-c": {
   "topic": "Two Pointers",
   "form": "Form 1",
-  "curated": [
-   "form-1"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-subarrays-with-k-different-integers": {
   "topic": "Two Pointers",
   "form": "Form 1",
-  "curated": [
-   "form-1"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-number-of-subsequences-that-satisfy-the-given-sum-condition": {
   "topic": "Two Pointers",
   "form": "Form 2",
-  "curated": [
-   "form-2"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-boats-to-save-people": {
   "topic": "Two Pointers",
   "form": "Form 2",
-  "curated": [
-   "form-2"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "codeforces-1324-d": {
   "topic": "Two Pointers",
   "form": "Form 2",
-  "curated": [
-   "form-2"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-subsequence-with-the-minimum-score": {
   "topic": "Two Pointers",
   "form": "Form 3",
-  "curated": [
-   "form-3"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-most-profit-assigning-work": {
   "topic": "Two Pointers",
   "form": "Form 3",
-  "curated": [
-   "form-3"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc302_d": {
+ "atcoder-abc302-d": {
   "topic": "Two Pointers",
   "form": "Form 3",
-  "curated": [
-   "form-3"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-find-the-median-of-the-uniqueness-array": {
@@ -299,7 +275,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc130_d": {
+ "atcoder-abc130-d": {
   "topic": "Two Pointers",
   "form": "Mixed",
   "curated": [],
@@ -365,7 +341,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc153_d": {
+ "atcoder-abc153-d": {
   "topic": "Recursion Backtracking",
   "form": "DnC",
   "curated": [
@@ -384,33 +360,25 @@
  "codeforces-768-b": {
   "topic": "Recursion Backtracking",
   "form": "Kth Form",
-  "curated": [
-   "kth-form"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "codeforces-896-a": {
   "topic": "Recursion Backtracking",
   "form": "Kth Form",
-  "curated": [
-   "kth-form"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc115_d": {
+ "atcoder-abc115-d": {
   "topic": "Recursion Backtracking",
   "form": "Kth Form",
-  "curated": [
-   "kth-form"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-k-th-symbol-in-grammar": {
   "topic": "Recursion Backtracking",
   "form": "Kth Form",
-  "curated": [
-   "kth-form"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-beautiful-arrangement": {
@@ -437,7 +405,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc114_c": {
+ "atcoder-abc114-c": {
   "topic": "Recursion Backtracking",
   "form": "Backtracking",
   "curated": [
@@ -469,25 +437,25 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc197_c": {
+ "atcoder-abc197-c": {
   "topic": "Recursion Backtracking",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc159_e": {
+ "atcoder-abc159-e": {
   "topic": "Recursion Backtracking",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc119_c": {
+ "atcoder-abc119-c": {
   "topic": "Recursion Backtracking",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc211_e": {
+ "atcoder-abc211-e": {
   "topic": "Recursion Backtracking",
   "form": "Mixed",
   "curated": [],
@@ -505,7 +473,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc450_e": {
+ "atcoder-abc450-e": {
   "topic": "Recursion Backtracking",
   "form": "Mixed",
   "curated": [],
@@ -543,7 +511,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc157_d": {
+ "atcoder-abc157-d": {
   "topic": "Graph Level-1",
   "form": "DFS",
   "curated": [
@@ -583,7 +551,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc453_d": {
+ "atcoder-abc453-d": {
   "topic": "Graph Level-1",
   "form": "BFS",
   "curated": [
@@ -607,7 +575,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-agc033_a": {
+ "atcoder-agc033-a": {
   "topic": "Graph Level-1",
   "form": "Multi-Source BFS",
   "curated": [
@@ -655,7 +623,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc209_e": {
+ "atcoder-abc209-e": {
   "topic": "Graph Level-1",
   "form": "Topological-Ordering",
   "curated": [
@@ -679,7 +647,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc137_e": {
+ "atcoder-abc137-e": {
   "topic": "Graph Level-1",
   "form": "Shortest-Path-Algorithm",
   "curated": [
@@ -695,7 +663,7 @@
   ],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc204_e": {
+ "atcoder-abc204-e": {
   "topic": "Graph Level-1",
   "form": "Shortest-Path-Algorithm",
   "curated": [
@@ -703,7 +671,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc208_d": {
+ "atcoder-abc208-d": {
   "topic": "Graph Level-1",
   "form": "Shortest-Path-Algorithm",
   "curated": [
@@ -727,7 +695,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc213_e": {
+ "atcoder-abc213-e": {
   "topic": "Graph Level-1",
   "form": "01-BFS",
   "curated": [
@@ -743,7 +711,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc214_d": {
+ "atcoder-abc214-d": {
   "topic": "Graph Level-1",
   "form": "DSU",
   "curated": [
@@ -791,7 +759,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-arc076_b": {
+ "atcoder-arc076-b": {
   "topic": "Graph Level-1",
   "form": "MST",
   "curated": [
@@ -807,7 +775,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc235_e": {
+ "atcoder-abc235-e": {
   "topic": "Graph Level-1",
   "form": "MST",
   "curated": [
@@ -823,13 +791,13 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc206_d": {
+ "atcoder-abc206-d": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc126_e": {
+ "atcoder-abc126-e": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
@@ -877,7 +845,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc364_f": {
+ "atcoder-abc364-f": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
@@ -895,7 +863,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-arc090_c": {
+ "atcoder-arc090-c": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
@@ -907,7 +875,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc143_e": {
+ "atcoder-abc143-e": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
@@ -919,43 +887,37 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc302_f": {
+ "atcoder-abc302-f": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc317_e": {
+ "atcoder-abc317-e": {
   "topic": "Graph Level-1",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc121_d": {
+ "atcoder-abc121-d": {
   "topic": "Bit-Manipulation",
   "form": "Cyclic-Property",
-  "curated": [
-   "cyclic-property"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "cses-1146": {
   "topic": "Bit-Manipulation",
   "form": "Cyclic-Property",
-  "curated": [
-   "cyclic-property"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k": {
   "topic": "Bit-Manipulation",
   "form": "Cyclic-Property",
-  "curated": [
-   "cyclic-property"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc117_d": {
+ "atcoder-abc117-d": {
   "topic": "Bit-Manipulation",
   "form": "Contribution-On-Bit",
   "curated": [
@@ -963,7 +925,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc164_f": {
+ "atcoder-abc164-f": {
   "topic": "Bit-Manipulation",
   "form": "Contribution-On-Bit",
   "curated": [
@@ -974,49 +936,37 @@
  "codeforces-424-c": {
   "topic": "Bit-Manipulation",
   "form": "Operation-Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-number-of-excellent-pairs": {
   "topic": "Bit-Manipulation",
   "form": "Operation-Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc126_f": {
+ "atcoder-abc126-f": {
   "topic": "Bit-Manipulation",
   "form": "Operation-Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Extreme"
  },
  "codeforces-484-a": {
   "topic": "Bit-Manipulation",
   "form": "MSB-To-LSB-Or-LSB-To-MSB",
-  "curated": [
-   "msb-to-lsb-or-lsb-to-msb"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-276-d": {
   "topic": "Bit-Manipulation",
   "form": "MSB-To-LSB-Or-LSB-To-MSB",
-  "curated": [
-   "msb-to-lsb-or-lsb-to-msb"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-minimum-operations-to-form-subsequence-with-target-sum": {
   "topic": "Bit-Manipulation",
   "form": "MSB-To-LSB-Or-LSB-To-MSB",
-  "curated": [
-   "msb-to-lsb-or-lsb-to-msb"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-1554-c": {
@@ -1031,7 +981,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc147_d": {
+ "atcoder-abc147-d": {
   "topic": "Bit-Manipulation",
   "form": "Mixed",
   "curated": [],
@@ -1097,13 +1047,13 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc175_e": {
+ "atcoder-abc175-e": {
   "topic": "DP Level 1",
   "form": "Form-1",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc159_f": {
+ "atcoder-abc159-f": {
   "topic": "DP Level 1",
   "form": "Form-1",
   "curated": [],
@@ -1139,7 +1089,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc185_e": {
+ "atcoder-abc185-e": {
   "topic": "DP Level 1",
   "form": "Form-3",
   "curated": [],
@@ -1163,7 +1113,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc130_e": {
+ "atcoder-abc130-e": {
   "topic": "DP Level 1",
   "form": "Form-3",
   "curated": [],
@@ -1172,57 +1122,43 @@
  "codeforces-607-b": {
   "topic": "DP Level 1",
   "form": "Form-4",
-  "curated": [
-   "form-4"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc217_f": {
+ "atcoder-abc217-f": {
   "topic": "DP Level 1",
   "form": "Form-4",
-  "curated": [
-   "form-4"
-  ],
+  "curated": [],
   "sheet_difficulty": "Extreme"
  },
  "leetcode-minimum-cost-to-merge-stones": {
   "topic": "DP Level 1",
   "form": "Form-4",
-  "curated": [
-   "form-4"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_n": {
+ "atcoder-dp-n": {
   "topic": "DP Level 1",
   "form": "Form-4",
-  "curated": [
-   "form-4"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-stone-game-iii": {
   "topic": "DP Level 1",
   "form": "Form-5",
-  "curated": [
-   "form-5"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc206_f": {
+ "atcoder-abc206-f": {
   "topic": "DP Level 1",
   "form": "Form-5",
-  "curated": [
-   "form-5"
-  ],
+  "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-dp_l": {
+ "atcoder-dp-l": {
   "topic": "DP Level 1",
   "form": "Form-5",
-  "curated": [
-   "form-5"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-minimum-removals-to-achieve-target-xor": {
@@ -1273,7 +1209,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc197_e": {
+ "atcoder-abc197-e": {
   "topic": "DP Level 1",
   "form": "Mixed",
   "curated": [],
@@ -1291,13 +1227,13 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc125_d": {
+ "atcoder-abc125-d": {
   "topic": "DP Level 1",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc169_f": {
+ "atcoder-abc169-f": {
   "topic": "DP Level 1",
   "form": "Mixed",
   "curated": [],
@@ -1309,19 +1245,19 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc192_f": {
+ "atcoder-abc192-f": {
   "topic": "DP Level 1",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-arc081_c": {
+ "atcoder-arc081-c": {
   "topic": "DP Level 1",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc118_d": {
+ "atcoder-abc118-d": {
   "topic": "DP Level 1",
   "form": "Mixed",
   "curated": [],
@@ -1375,7 +1311,7 @@
   "curated": [],
   "sheet_difficulty": "Easy"
  },
- "atcoder-abc073_c": {
+ "atcoder-abc073-c": {
   "topic": "STL",
   "form": "Level-1",
   "curated": [],
@@ -1387,7 +1323,7 @@
   "curated": [],
   "sheet_difficulty": "Easy"
  },
- "atcoder-abc206_c": {
+ "atcoder-abc206-c": {
   "topic": "STL",
   "form": "Level-1",
   "curated": [],
@@ -1411,7 +1347,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc171_d": {
+ "atcoder-abc171-d": {
   "topic": "STL",
   "form": "Level-1",
   "curated": [],
@@ -1435,13 +1371,13 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc237_d": {
+ "atcoder-abc237-d": {
   "topic": "STL",
   "form": "Level-2",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc157_e": {
+ "atcoder-abc157-e": {
   "topic": "STL",
   "form": "Level-2",
   "curated": [],
@@ -1453,7 +1389,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc158_d": {
+ "atcoder-abc158-d": {
   "topic": "STL",
   "form": "Level-2",
   "curated": [],
@@ -1465,13 +1401,13 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc216_d": {
+ "atcoder-abc216-d": {
   "topic": "STL",
   "form": "Level-2",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-arc061_b": {
+ "atcoder-arc061-b": {
   "topic": "STL",
   "form": "Level-2",
   "curated": [],
@@ -1507,7 +1443,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc170_e": {
+ "atcoder-abc170-e": {
   "topic": "STL",
   "form": "Level-3",
   "curated": [],
@@ -1549,7 +1485,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-arc081_d": {
+ "atcoder-arc081-d": {
   "topic": "STL",
   "form": "Level-3",
   "curated": [],
@@ -1583,7 +1519,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc167_e": {
+ "atcoder-abc167-e": {
   "topic": "Math",
   "form": "Combinatorics",
   "curated": [
@@ -1599,7 +1535,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc202_d": {
+ "atcoder-abc202-d": {
   "topic": "Math",
   "form": "Combinatorics",
   "curated": [
@@ -1615,7 +1551,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc172_e": {
+ "atcoder-abc172-e": {
   "topic": "Math",
   "form": "Combinatorics",
   "curated": [
@@ -1623,7 +1559,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc156_e": {
+ "atcoder-abc156-e": {
   "topic": "Math",
   "form": "Combinatorics",
   "curated": [
@@ -1647,7 +1583,7 @@
   ],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc186_e": {
+ "atcoder-abc186-e": {
   "topic": "Math",
   "form": "Number-Theory",
   "curated": [
@@ -1655,7 +1591,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc142_d": {
+ "atcoder-abc142-d": {
   "topic": "Math",
   "form": "Number-Theory",
   "curated": [
@@ -1695,7 +1631,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc133_c": {
+ "atcoder-abc133-c": {
   "topic": "Math",
   "form": "Number-Theory",
   "curated": [
@@ -1711,7 +1647,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc148_e": {
+ "atcoder-abc148-e": {
   "topic": "Math",
   "form": "Number-Theory",
   "curated": [
@@ -1727,13 +1663,13 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc110_d": {
+ "atcoder-abc110-d": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc206_e": {
+ "atcoder-abc206-e": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
@@ -1745,7 +1681,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc170_d": {
+ "atcoder-abc170-d": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
@@ -1763,25 +1699,25 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc179_e": {
+ "atcoder-abc179-e": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc096_d": {
+ "atcoder-abc096-d": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc125_c": {
+ "atcoder-abc125-c": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc169_d": {
+ "atcoder-abc169-d": {
   "topic": "Math",
   "form": "Mixed",
   "curated": [],
@@ -1903,7 +1839,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc106_d": {
+ "atcoder-abc106-d": {
   "topic": "Contribution Technique & Prefix",
   "form": "Mixed",
   "curated": [],
@@ -1915,7 +1851,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc188_d": {
+ "atcoder-abc188-d": {
   "topic": "Contribution Technique & Prefix",
   "form": "Mixed",
   "curated": [],
@@ -1963,7 +1899,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc194_c": {
+ "atcoder-abc194-c": {
   "topic": "Contribution Technique & Prefix",
   "form": "Mixed",
   "curated": [],
@@ -2151,7 +2087,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc135_f": {
+ "atcoder-abc135-f": {
   "topic": "String",
   "form": "KMP-Z-Algorithm",
   "curated": [
@@ -2191,7 +2127,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc284_f": {
+ "atcoder-abc284-f": {
   "topic": "String",
   "form": "Hashing",
   "curated": [
@@ -2331,7 +2267,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc141_e": {
+ "atcoder-abc141-e": {
   "topic": "String",
   "form": "Mixed",
   "curated": [],
@@ -2491,7 +2427,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc339_g": {
+ "atcoder-abc339-g": {
   "topic": "Segment Trees",
   "form": "Mixed",
   "curated": [],
@@ -2563,13 +2499,13 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc343_f": {
+ "atcoder-abc343-f": {
   "topic": "Segment Trees",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc346_g": {
+ "atcoder-abc346-g": {
   "topic": "Segment Trees",
   "form": "Mixed",
   "curated": [],
@@ -2581,13 +2517,13 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc294_g": {
+ "atcoder-abc294-g": {
   "topic": "Segment Trees",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc253_f": {
+ "atcoder-abc253-f": {
   "topic": "Segment Trees",
   "form": "Mixed",
   "curated": [],
@@ -2665,7 +2601,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-agc005_c": {
+ "atcoder-agc005-c": {
   "topic": "Trees",
   "form": "Fundamental-Ideas",
   "curated": [],
@@ -2761,7 +2697,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-dp_v": {
+ "atcoder-dp-v": {
   "topic": "Trees",
   "form": "Intermediate-Ideas",
   "curated": [],
@@ -2773,7 +2709,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc138_d": {
+ "atcoder-abc138-d": {
   "topic": "Trees",
   "form": "Intermediate-Ideas",
   "curated": [],
@@ -2791,7 +2727,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc187_e": {
+ "atcoder-abc187-e": {
   "topic": "Trees",
   "form": "Intermediate-Ideas",
   "curated": [],
@@ -2833,13 +2769,13 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc202_e": {
+ "atcoder-abc202-e": {
   "topic": "Trees",
   "form": "Advanced-Ideas",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-arc074_c": {
+ "atcoder-arc074-c": {
   "topic": "DP Optimizations",
   "form": "State-Space-Reduction",
   "curated": [
@@ -2871,44 +2807,34 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_e": {
+ "atcoder-dp-e": {
   "topic": "DP Optimizations",
   "form": "State-Rotation",
-  "curated": [
-   "state-rotation"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "leetcode-minimum-number-of-refueling-stops": {
   "topic": "DP Optimizations",
   "form": "State-Rotation",
-  "curated": [
-   "state-rotation"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-837-d": {
   "topic": "DP Optimizations",
   "form": "State-Rotation",
-  "curated": [
-   "state-rotation"
-  ],
+  "curated": [],
   "sheet_difficulty": "Extreme"
  },
  "leetcode-make-array-strictly-increasing": {
   "topic": "DP Optimizations",
   "form": "State-Rotation",
-  "curated": [
-   "state-rotation"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-1303-e": {
   "topic": "DP Optimizations",
   "form": "State-Rotation",
-  "curated": [
-   "state-rotation"
-  ],
+  "curated": [],
   "sheet_difficulty": "Extreme"
  },
  "cses-1158": {
@@ -2943,7 +2869,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_m": {
+ "atcoder-dp-m": {
   "topic": "DP Optimizations",
   "form": "Transition-Optimization",
   "curated": [
@@ -2951,7 +2877,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_t": {
+ "atcoder-dp-t": {
   "topic": "DP Optimizations",
   "form": "Transition-Optimization",
   "curated": [
@@ -2975,7 +2901,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_x": {
+ "atcoder-dp-x": {
   "topic": "DP Optimizations",
   "form": "Sorting-Based DP Optimization",
   "curated": [
@@ -3031,7 +2957,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-arc057_b": {
+ "atcoder-arc057-b": {
   "topic": "DP Optimizations",
   "form": "Mixed",
   "curated": [],
@@ -3067,7 +2993,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_y": {
+ "atcoder-dp-y": {
   "topic": "DP Optimizations",
   "form": "Mixed",
   "curated": [],
@@ -3169,7 +3095,7 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-arc073_d": {
+ "atcoder-arc073-d": {
   "topic": "DP Optimizations",
   "form": "Mixed",
   "curated": [],
@@ -3211,7 +3137,7 @@
   ],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc180_e": {
+ "atcoder-abc180-e": {
   "topic": "DP Level 2",
   "form": "Bitmask DP",
   "curated": [
@@ -3219,7 +3145,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_s": {
+ "atcoder-dp-s": {
   "topic": "DP Level 2",
   "form": "Digit DP",
   "curated": [
@@ -3259,7 +3185,7 @@
   ],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_p": {
+ "atcoder-dp-p": {
   "topic": "DP Level 2",
   "form": "Tree DP",
   "curated": [
@@ -3299,7 +3225,7 @@
   ],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc138_f": {
+ "atcoder-abc138-f": {
   "topic": "DP Level 2",
   "form": "Mixed",
   "curated": [],
@@ -3407,7 +3333,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc129_e": {
+ "atcoder-abc129-e": {
   "topic": "DP Level 2",
   "form": "Mixed",
   "curated": [],
@@ -3425,13 +3351,13 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-abc201_e": {
+ "atcoder-abc201-e": {
   "topic": "DP Level 2",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_o": {
+ "atcoder-dp-o": {
   "topic": "DP Level 2",
   "form": "Mixed",
   "curated": [],
@@ -3467,7 +3393,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-dp_u": {
+ "atcoder-dp-u": {
   "topic": "DP Level 2",
   "form": "Mixed",
   "curated": [],
@@ -3539,7 +3465,7 @@
   ],
   "sheet_difficulty": "Medium"
  },
- "atcoder-agc011_a": {
+ "atcoder-agc011-a": {
   "topic": "Greedy And Sweepline",
   "form": "Sorting Type",
   "curated": [
@@ -3550,41 +3476,31 @@
  "leetcode-broken-calculator": {
   "topic": "Greedy And Sweepline",
   "form": "Operation Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "leetcode-stamping-the-sequence": {
   "topic": "Greedy And Sweepline",
   "form": "Operation Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-1474-c": {
   "topic": "Greedy And Sweepline",
   "form": "Operation Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Hard"
  },
  "codeforces-1811-c": {
   "topic": "Greedy And Sweepline",
   "form": "Operation Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Easy"
  },
- "atcoder-abc140_d": {
+ "atcoder-abc140-d": {
   "topic": "Greedy And Sweepline",
   "form": "Operation Decoding",
-  "curated": [
-   "operation-decoding"
-  ],
+  "curated": [],
   "sheet_difficulty": "Medium"
  },
  "cses-1630": {
@@ -3691,13 +3607,13 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-abc131_d": {
+ "atcoder-abc131-d": {
   "topic": "Greedy And Sweepline",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-agc005_a": {
+ "atcoder-agc005-a": {
   "topic": "Greedy And Sweepline",
   "form": "Mixed",
   "curated": [],
@@ -3715,19 +3631,19 @@
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-arc088_a": {
+ "atcoder-arc088-a": {
   "topic": "Greedy And Sweepline",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-arc094_a": {
+ "atcoder-arc094-a": {
   "topic": "Greedy And Sweepline",
   "form": "Mixed",
   "curated": [],
   "sheet_difficulty": "Medium"
  },
- "atcoder-agc027_a": {
+ "atcoder-agc027-a": {
   "topic": "Greedy And Sweepline",
   "form": "Mixed",
   "curated": [],
@@ -3921,7 +3837,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc193_f": {
+ "atcoder-abc193-f": {
   "topic": "Graph Level 2",
   "form": "Mixed",
   "curated": [],
@@ -3993,7 +3909,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-arc092_d": {
+ "atcoder-arc092-d": {
   "topic": "Graph Level 2",
   "form": "Mixed",
   "curated": [],
@@ -4017,7 +3933,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-abc205_f": {
+ "atcoder-abc205-f": {
   "topic": "Graph Level 2",
   "form": "Mixed",
   "curated": [],
@@ -4041,7 +3957,7 @@
   "curated": [],
   "sheet_difficulty": "Extreme"
  },
- "atcoder-arc085_c": {
+ "atcoder-arc085-c": {
   "topic": "Graph Level 2",
   "form": "Mixed",
   "curated": [],
@@ -4077,7 +3993,7 @@
   "curated": [],
   "sheet_difficulty": "Hard"
  },
- "atcoder-arc090_b": {
+ "atcoder-arc090-b": {
   "topic": "Graph Level 2",
   "form": "Mixed",
   "curated": [],

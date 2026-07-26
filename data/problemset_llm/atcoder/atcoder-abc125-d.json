@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc125-d",
+  "title": "Flipping Signs",
+  "slug": "abc125-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc125/tasks/abc125_d",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given a sequence of integers, repeatedly flip the signs of adjacent pairs to maximize the sum of the resulting sequence.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047456,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.7
+    }
+  },
+  "difficulty": 833
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1100-b",
+  "title": "Build a Contest",
+  "slug": "1100-b-build-a-contest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1100/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given a sequence of problem difficulties created one by one, determine after each creation if a complete set of distinct difficulties from 1 to n is available to hold a contest round and remove them from the pool.",
+  "tags": [
+    "array",
+    "implementation",
+    "data-structures"
+  ],
+  "patterns": [
+    "greedy",
+    "set-maintenance",
+    "online-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047764,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "set-maintenance": 0.85,
+      "online-processing": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

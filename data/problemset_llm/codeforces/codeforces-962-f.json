@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-962-f",
+  "title": "Simple Cycles Edges",
+  "slug": "962-f-simple-cycles-edges",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/962/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given an undirected graph without multiple edges or loops, identify all edges that belong to exactly one simple cycle.",
+  "tags": [
+    "graph",
+    "dfs",
+    "cycle-detection"
+  ],
+  "patterns": [
+    "dfs",
+    "cycle-detection",
+    "simple-cycle-identification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048940,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "cycle-detection": 0.93,
+      "simple-cycle-identification": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

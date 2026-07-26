@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1184-a3",
+  "title": "Heidi Learns Hashing (Hard)",
+  "slug": "1184-a3-heidi-learns-hashing-hard",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1184/A3",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "fft",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given two equal-length lowercase strings and an integer m, find a prime p ≥ m and a base r such that their polynomial hash values modulo p collide.",
+  "tags": [
+    "string",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "polynomial-hashing",
+    "collision-detection",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048344,
+    "pattern_confidence": {
+      "polynomial-hashing": 0.98,
+      "collision-detection": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

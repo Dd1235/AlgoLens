@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1000-f",
+  "title": "One Occurrence",
+  "slug": "1000-f-one-occurrence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1000/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "divide and conquer"
+  ],
+  "statement": "Given an array and multiple queries specifying subarray ranges, find an element that appears exactly once within each queried subarray, or report none if no such element exists.",
+  "tags": [
+    "array",
+    "data-structures",
+    "offline-queries",
+    "segment-tree"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "binary-search-answer",
+    "offline-queries",
+    "merge-sort-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048951,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "binary-search-answer": 0.85,
+      "offline-queries": 0.9,
+      "merge-sort-tree": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

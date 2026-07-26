@@ -13,22 +13,22 @@
   "statement": "Find the sum of the n smallest positive integers that are palindromic in both base-10 and base-k representations.",
   "tags": [
     "math",
-    "enumeration",
+    "brute-force",
     "palindrome"
   ],
   "patterns": [
-    "palindrome-check",
+    "palindrome",
     "base-conversion",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924181,
     "pattern_confidence": {
-      "palindrome-check": 0.95,
+      "palindrome": 0.95,
       "base-conversion": 0.9,
-      "enumeration": 0.85
+      "brute-force": 0.85
     }
   }
 }

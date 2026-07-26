@@ -9,7 +9,7 @@
   "statement": "Given two lists of integer weights for apples and bananas, count for each possible sum w between 2 and 2k how many pairs of one apple and one banana have combined weight w.",
   "tags": [
     "array",
-    "frequency-count"
+    "counting"
   ],
   "patterns": [
     "frequency-array",

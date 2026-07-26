@@ -15,7 +15,7 @@
   "statement": "Given a list of required skills and a list of people with their skills, find the smallest team of people covering all required skills.",
   "tags": [
     "array",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming"
   ],
   "patterns": [

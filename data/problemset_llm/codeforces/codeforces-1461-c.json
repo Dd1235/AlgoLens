@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1461-c",
+  "title": "Random Events",
+  "slug": "1461-c-random-events",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1461/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "dp",
+    "math",
+    "probabilities"
+  ],
+  "statement": "Given a permutation and a sequence of probabilistic prefix-sorting experiments, compute the probability that the permutation becomes fully sorted after all experiments.",
+  "tags": [
+    "array",
+    "probability",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "probability-dp",
+    "prefix-processing",
+    "expected-value-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047872,
+    "pattern_confidence": {
+      "probability-dp": 0.95,
+      "prefix-processing": 0.9,
+      "expected-value-computation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

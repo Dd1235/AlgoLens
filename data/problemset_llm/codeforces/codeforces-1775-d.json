@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1775-d",
+  "title": "Friendly Spiders",
+  "slug": "1775-d-friendly-spiders",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1775/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "math",
+    "number theory",
+    "shortest paths"
+  ],
+  "statement": "Given a set of spiders each with a number of legs, construct a graph where edges exist between spiders whose leg counts share a gcd greater than 1, then find the shortest path and minimum transmission time between two specified spiders.",
+  "tags": [
+    "graph",
+    "number-theory",
+    "gcd",
+    "shortest-path",
+    "bfs"
+  ],
+  "patterns": [
+    "gcd-based-graph-construction",
+    "bfs",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047896,
+    "pattern_confidence": {
+      "gcd-based-graph-construction": 0.95,
+      "bfs": 0.9,
+      "shortest-path": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

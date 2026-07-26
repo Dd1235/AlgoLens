@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-961-e",
+  "title": "Tufurama",
+  "slug": "961-e-tufurama",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/961/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Given a TV series with multiple seasons and episodes, count the number of pairs (x, y) where both season x episode y and season y episode x exist, causing ambiguous search results.",
+  "tags": [
+    "array",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "pair-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048075,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "pair-enumeration": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

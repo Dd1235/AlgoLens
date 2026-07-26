@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc193-f",
+  "title": "Zebraness",
+  "slug": "abc193-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc193/tasks/abc193_f",
+  "source_topic": "Formwise / Graph Level 2",
+  "source_tags": [],
+  "statement": "Given an N×N grid with cells colored black, white, or unknown, paint the unknown cells black or white to maximize the number of adjacent black-white pairs.",
+  "tags": [
+    "grid",
+    "graph",
+    "bipartite-graph",
+    "max-flow"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "max-flow",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047628,
+    "pattern_confidence": {
+      "bipartite-matching": 0.95,
+      "max-flow": 0.9,
+      "graph-construction": 0.85
+    }
+  },
+  "difficulty": 2475
+}

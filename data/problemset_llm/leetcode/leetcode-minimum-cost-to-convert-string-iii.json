@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "interval-dp",
-    "pattern-matching",
+    "string-matching",
     "dp-on-substrings"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1784730952,
     "pattern_confidence": {
       "interval-dp": 0.9,
-      "pattern-matching": 0.85,
+      "string-matching": 0.85,
       "dp-on-substrings": 0.88
     }
   }

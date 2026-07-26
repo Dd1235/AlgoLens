@@ -11,7 +11,7 @@
     "graph",
     "tree",
     "dfs",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "tree-isomorphism",

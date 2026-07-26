@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-894-e",
+  "title": "Ralph and Mushrooms",
+  "slug": "894-e-ralph-and-mushrooms",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/894/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "dp",
+    "graphs"
+  ],
+  "statement": "Given a directed graph with edges initially containing mushrooms that decrease in quantity each time the edge is used, determine the maximum mushrooms Ralph can collect starting from a given node.",
+  "tags": [
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp-on-graphs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048981,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "dp-on-graphs": 0.88
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "codeforces-1401-d",
+  "title": "Maximum Distributed Tree",
+  "slug": "1401-d-maximum-distributed-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1401/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "implementation",
+    "math",
+    "number theory",
+    "sortings",
+    "trees"
+  ],
+  "statement": "Given a tree and a number k represented by its prime factorization, assign positive integers to edges so their product equals k with minimal ones, maximizing the sum of path sums between all pairs of nodes modulo 10^9+7.",
+  "tags": [
+    "tree",
+    "number-theory",
+    "dynamic-programming",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "tree-dp",
+    "greedy",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049022,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "tree-dp": 0.9,
+      "greedy": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

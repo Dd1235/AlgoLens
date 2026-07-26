@@ -15,11 +15,11 @@
   "tags": [
     "math",
     "string",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
-    "palindrome-check",
-    "enumeration",
+    "palindrome",
+    "brute-force",
     "binary-search-answer"
   ],
   "annotation": {
@@ -27,8 +27,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924199,
     "pattern_confidence": {
-      "palindrome-check": 0.98,
-      "enumeration": 0.9,
+      "palindrome": 0.98,
+      "brute-force": 0.9,
       "binary-search-answer": 0.7
     }
   }

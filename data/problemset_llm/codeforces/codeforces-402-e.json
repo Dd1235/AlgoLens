@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-402-e",
+  "title": "Strictly Positive Matrix",
+  "slug": "402-e-strictly-positive-matrix",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/402/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "graphs",
+    "math"
+  ],
+  "statement": "Given a nonnegative n×n matrix with positive sum of diagonal elements, determine if there exists an integer power k ≥ 1 such that the matrix raised to k is strictly positive (all entries > 0).",
+  "tags": [
+    "matrix",
+    "graph",
+    "math"
+  ],
+  "patterns": [
+    "matrix-exponentiation",
+    "graph-transitive-closure",
+    "boolean-matrix-multiplication"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048854,
+    "pattern_confidence": {
+      "matrix-exponentiation": 0.95,
+      "graph-transitive-closure": 0.9,
+      "boolean-matrix-multiplication": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

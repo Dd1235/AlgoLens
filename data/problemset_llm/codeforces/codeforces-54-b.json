@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-54-b",
+  "title": "Cutting Jigsaw Puzzle",
+  "slug": "54-b-cutting-jigsaw-puzzle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/54/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "hashing",
+    "implementation"
+  ],
+  "statement": "Given a picture of size A×B, determine how many ways it can be cut into rectangular pieces of size X×Y (where X divides A and Y divides B) such that all pieces are unique up to rotation, and find the minimal piece size that produces such a puzzle.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "implementation",
+    "geometry"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "string-hashing",
+    "rotation-normalization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048007,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "string-hashing": 0.85,
+      "rotation-normalization": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -36,8 +36,14 @@ NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 RID = "{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id"
 SUPPORTED = ("leetcode.com", "codeforces.com", "atcoder.jp", "cses.fi")
 # Curriculum bookkeeping, not techniques — the LLM labels cover these problems.
-NON_TECHNIQUE_FORMS = {"mixed", "form-1", "form-2", "form-3", "level-1", "level-2",
-                       "level-3", "fundamental-ideas", "intermediate-ideas", "advanced-ideas"}
+NON_TECHNIQUE_FORMS = {"mixed", "level-1", "level-2", "level-3", "fundamental-ideas",
+                       "intermediate-ideas", "advanced-ideas", "kth-form", "operation-decoding",
+                       "state-rotation", "cyclic-property", "msb-to-lsb-or-lsb-to-msb"}
+
+
+def is_non_technique(form: str) -> bool:
+    f = form.strip().lower().replace(" ", "-")
+    return not f or f in NON_TECHNIQUE_FORMS or re.fullmatch(r"form-\d+", f) is not None
 
 
 def slugify(s: str) -> str:
@@ -53,7 +59,7 @@ def problem_id(url: str) -> str | None:
         return f"cses-{m.group(1)}" if m else None
     if "atcoder.jp" in url:
         m = re.search(r"/tasks/([A-Za-z0-9_]+)", url)
-        return f"atcoder-{m.group(1).lower()}" if m else None
+        return f"atcoder-{m.group(1).lower().replace(chr(95), chr(45))}" if m else None
     if "codeforces.com" in url:
         m = re.search(r"/(?:problemset/problem|contest/\d+/problem)/?(\d+)?/?([A-Za-z]\d?)", url)
         m2 = re.search(r"/problemset/problem/(\d+)/([A-Za-z]\d?)", url) or \
@@ -124,7 +130,7 @@ def main() -> int:
             seen.add(pid)
             blocks.setdefault(topic, []).append(url)
             form = (row["form"] or "").strip()
-            curated = [] if form.lower() in NON_TECHNIQUE_FORMS or not form else [slugify(form)]
+            curated = [] if is_non_technique(form) else [slugify(form)]
             labels[pid] = {"topic": topic, "form": form, "curated": curated,
                            "sheet_difficulty": row["difficulty"]}
 

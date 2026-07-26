@@ -17,14 +17,14 @@
   "tags": [
     "graph",
     "dynamic-programming",
-    "bitmask",
+    "bit-manipulation",
     "string"
   ],
   "patterns": [
     "bitmask-dp",
     "state-compression",
     "dfs",
-    "palindrome-check"
+    "palindrome"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +34,7 @@
       "bitmask-dp": 0.95,
       "state-compression": 0.9,
       "dfs": 0.85,
-      "palindrome-check": 0.8
+      "palindrome": 0.8
     }
   }
 }

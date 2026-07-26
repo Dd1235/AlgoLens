@@ -15,7 +15,7 @@
   "statement": "Given a string and parameters for a polynomial rolling hash, find the first substring of a given length whose hash matches a target value.",
   "tags": [
     "string",
-    "hashing",
+    "rolling-hash",
     "array"
   ],
   "patterns": [

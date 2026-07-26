@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-dp-x",
+  "title": "Tower",
+  "slug": "dp-x",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_x",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Given N blocks each with weight, solidness, and value, build a tower by stacking some blocks so that for every block, the total weight above it does not exceed its solidness. Maximize the sum of values of the chosen blocks.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "dp-on-subsets",
+    "sorting",
+    "knapsack",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047573,
+    "pattern_confidence": {
+      "dp-on-subsets": 0.95,
+      "sorting": 0.9,
+      "knapsack": 0.85,
+      "dp-optimization": 0.9
+    }
+  }
+}

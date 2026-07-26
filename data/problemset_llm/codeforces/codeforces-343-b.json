@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-343-b",
+  "title": "Alternating Current",
+  "slug": "343-b-alternating-current",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/343/B",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given two wires connected from fixed contacts on the left to fixed contacts on the right, determine if the wires can be untangled without unplugging or moving the device, based on their crossing sequence.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "geometry"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "crossing-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047957,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85,
+      "crossing-detection": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

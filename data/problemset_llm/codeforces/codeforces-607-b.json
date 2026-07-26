@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-607-b",
+  "title": "Zuma",
+  "slug": "607-b-zuma",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/607/B",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given a sequence of colored gemstones, find the minimum number of steps to remove all gemstones by repeatedly deleting palindromic contiguous substrings.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "palindromic-substring",
+    "interval-dp",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048528,
+    "pattern_confidence": {
+      "palindromic-substring": 0.95,
+      "interval-dp": 0.9,
+      "dynamic-programming": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 1"
+}

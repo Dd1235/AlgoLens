@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc215-f",
+  "title": "Dist Max 2",
+  "slug": "abc215-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc215/tasks/abc215_f",
+  "source_topic": "Formwise / Binary Search",
+  "source_tags": [],
+  "statement": "Given N distinct points on a 2D plane, find the maximum value of the minimum difference between their x-coordinates and y-coordinates among all pairs of points.",
+  "tags": [
+    "geometry",
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047343,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.7,
+      "binary-search-answer": 0.8
+    }
+  },
+  "difficulty": 1853
+}

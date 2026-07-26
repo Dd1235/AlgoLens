@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1823-d",
+  "title": "Unique Palindromes",
+  "slug": "1823-d-unique-palindromes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1823/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "constructive algorithms",
+    "math",
+    "strings"
+  ],
+  "statement": "Given a string length n and k conditions on the number of unique palindromic substrings in prefixes, determine if there exists a string of length n satisfying all conditions simultaneously.",
+  "tags": [
+    "string",
+    "palindromes",
+    "constructive-algorithm",
+    "math"
+  ],
+  "patterns": [
+    "palindromic-substrings",
+    "prefix-processing",
+    "binary-search-answer",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047938,
+    "pattern_confidence": {
+      "palindromic-substrings": 0.95,
+      "prefix-processing": 0.9,
+      "binary-search-answer": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1198-a",
+  "title": "MP3",
+  "slug": "1198-a-mp3",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1198/A",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given an array of non-negative integers representing sound intensities, choose a range [l, r] to compress the array so that the number of distinct values fits in a given bit budget, minimizing the count of changed elements after clamping values outside [l, r].",
+  "tags": [
+    "array",
+    "binary-search",
+    "prefix-sum",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "prefix-sum",
+    "bit-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047969,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.9,
+      "prefix-sum": 0.85,
+      "bit-counting": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

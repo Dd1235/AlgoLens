@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1439-d",
+  "title": "INOI Final Contests",
+  "slug": "1439-d-inoi-final-contests",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1439/D",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "fft"
+  ],
+  "statement": "Given n computers in a row and m participants each wanting to sit behind a preferred computer entering from left or right, compute the sum of all possible total 'madness' distances over all seating assignments where no participant fails to find a seat, modulo a prime p.",
+  "tags": [
+    "array",
+    "combinatorics",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048346,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

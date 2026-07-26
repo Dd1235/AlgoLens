@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1835-a",
+  "title": "k-th equality",
+  "slug": "1835-a-k-th-equality",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1835/A",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "math"
+  ],
+  "statement": "Find the k-th lexicographically smallest equality of the form a + b = c where a, b, and c have fixed digit lengths and no leading zeros, or determine if it does not exist.",
+  "tags": [
+    "math",
+    "string",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "digit-dp",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047985,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "digit-dp": 0.85,
+      "lexicographic-order": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

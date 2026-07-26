@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-464-b",
+  "title": "Restore Cube",
+  "slug": "464-b-restore-cube",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/464/B",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "brute force",
+    "geometry"
+  ],
+  "statement": "Given eight points with scrambled coordinate orders per point, determine if they can represent the vertices of a cube in 3D space with integer coordinates, and restore the original coordinates if possible.",
+  "tags": [
+    "geometry",
+    "brute-force",
+    "combinatorics"
+  ],
+  "patterns": [
+    "backtracking",
+    "permutation-enumeration",
+    "geometry-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048118,
+    "pattern_confidence": {
+      "backtracking": 0.9,
+      "permutation-enumeration": 0.85,
+      "geometry-validation": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

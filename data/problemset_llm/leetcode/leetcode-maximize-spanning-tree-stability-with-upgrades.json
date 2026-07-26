@@ -24,7 +24,8 @@
   "patterns": [
     "binary-search-answer",
     "union-find",
-    "greedy"
+    "greedy",
+    "minimum-spanning-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "union-find": 0.9,
-      "greedy": 0.9
+      "greedy": 0.9,
+      "minimum-spanning-tree": 0.9
     }
   }
 }

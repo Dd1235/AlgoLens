@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1984-c1",
+  "title": "Magnitude (Easy Version)",
+  "slug": "1984-c1-magnitude-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1984/C1",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array, choose for each element whether to add it directly or add its absolute value to maximize the final cumulative value.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047740,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

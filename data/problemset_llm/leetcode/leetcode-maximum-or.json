@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "greedy",
-    "bitmask",
+    "bit-manipulation",
     "prefix-sum"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784909584,
     "pattern_confidence": {
       "greedy": 0.95,
-      "bitmask": 0.7,
+      "bit-manipulation": 0.7,
       "prefix-sum": 0.6
     }
   }

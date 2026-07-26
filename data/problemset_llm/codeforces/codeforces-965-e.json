@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-965-e",
+  "title": "Short Code",
+  "slug": "965-e-short-code",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/965/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "greedy",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given a list of unique variable names, find the minimum total length of prefixes assigned to each variable so that all prefixes are unique.",
+  "tags": [
+    "strings",
+    "tree",
+    "greedy",
+    "dynamic-programming",
+    "trie"
+  ],
+  "patterns": [
+    "prefix-tree",
+    "greedy",
+    "dp-on-tree",
+    "unique-prefixes"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048469,
+    "pattern_confidence": {
+      "prefix-tree": 0.95,
+      "greedy": 0.9,
+      "dp-on-tree": 0.85,
+      "unique-prefixes": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

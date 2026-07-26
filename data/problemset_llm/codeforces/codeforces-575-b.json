@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-575-b",
+  "title": "Bribes",
+  "slug": "575-b-bribes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/575/B",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a tree with some edges directed and others undirected, find the minimum total bribe cost to travel through a specified sequence of towns in order, considering that traveling against a road's direction requires paying exponentially increasing bribes.",
+  "tags": [
+    "graph",
+    "tree",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dfs",
+    "binary-search-answer",
+    "dp-on-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048246,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "binary-search-answer": 0.85,
+      "dp-on-tree": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

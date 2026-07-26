@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "backtracking",
-    "bitmask-enumeration",
+    "bit-manipulation",
     "pruning"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784731051,
     "pattern_confidence": {
       "backtracking": 0.98,
-      "bitmask-enumeration": 0.9,
+      "bit-manipulation": 0.9,
       "pruning": 0.85
     }
   }

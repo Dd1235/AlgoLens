@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-656-c",
+  "title": "Without Text",
+  "slug": "656-c-without-text",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/656/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "The problem involves analyzing a scenario depicted in an image, likely requiring algorithmic reasoning related to arrays or graphs, without explicit textual description.",
+  "tags": [
+    "array",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048097,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.84
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

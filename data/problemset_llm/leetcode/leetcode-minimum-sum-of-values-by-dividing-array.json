@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "bitmask",
+    "bit-manipulation",
     "prefix-and",
     "binary-search-answer"
   ],
@@ -32,7 +32,7 @@
     "generated_at_unix": 1777923686,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "prefix-and": 0.8,
       "binary-search-answer": 0.7
     }

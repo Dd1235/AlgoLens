@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1996-d",
+  "title": "Fun",
+  "slug": "1996-d-fun",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1996/D",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "combinatorics",
+    "math",
+    "number theory"
+  ],
+  "statement": "Count the number of ordered positive integer triplets (a, b, c) satisfying the inequalities ab + ac + bc ≤ n and a + b + c ≤ x.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "brute-force",
+    "inequality-constraints"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047709,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "brute-force": 0.85,
+      "inequality-constraints": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

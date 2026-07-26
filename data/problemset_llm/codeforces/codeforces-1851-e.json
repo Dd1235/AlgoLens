@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1851-e",
+  "title": "Nastya and Potions",
+  "slug": "1851-e-nastya-and-potions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1851/E",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "sortings"
+  ],
+  "statement": "Given a directed acyclic graph representing potion mixing recipes and initial potions available for free, find the minimum cost to obtain each potion type by mixing or buying.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "topological-sort"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "topological-sort",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047867,
+    "pattern_confidence": {
+      "dp-on-dag": 0.95,
+      "topological-sort": 0.9,
+      "shortest-path": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

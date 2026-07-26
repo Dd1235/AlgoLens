@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-boats-to-save-people",
+  "title": "Boats to Save People",
+  "slug": "boats-to-save-people",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/boats-to-save-people/description/",
+  "source_topic": "Formwise / Two Pointers",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "greedy",
+    "sorting"
+  ],
+  "statement": "Given weights of people and a boat weight limit, find the minimum number of boats needed to carry everyone if each boat can hold at most two people without exceeding the limit.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047352,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "two-pointers": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

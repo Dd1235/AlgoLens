@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1648-a",
+  "title": "Weird Sum",
+  "slug": "1648-a-weird-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1648/A",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "combinatorics",
+    "data structures",
+    "geometry",
+    "math",
+    "matrices",
+    "sortings"
+  ],
+  "statement": "Given an n by m grid with colored cells, compute the sum of Manhattan distances between every pair of cells sharing the same color.",
+  "tags": [
+    "array",
+    "geometry",
+    "combinatorics",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sorting",
+    "grouping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048464,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "sorting": 0.85,
+      "grouping": 0.8
+    }
+  },
+  "source_topic": "Formwise / Contribution Technique & Prefix"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-arc061-b",
+  "title": "Snuke's Coloring",
+  "slug": "arc061-b",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc045/tasks/arc061_b",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given a large grid with some cells painted black, count how many 3×3 subrectangles contain exactly j black cells for each j from 0 to 9.",
+  "tags": [
+    "array",
+    "geometry",
+    "hash-map",
+    "data-structure"
+  ],
+  "patterns": [
+    "coordinate-compression",
+    "hash-map",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047481,
+    "pattern_confidence": {
+      "coordinate-compression": 0.9,
+      "hash-map": 0.95,
+      "counting": 0.9
+    }
+  },
+  "difficulty": 1682
+}

@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-corporate-flight-bookings",
+  "title": "Corporate Flight Bookings",
+  "slug": "corporate-flight-bookings",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/corporate-flight-bookings/description/",
+  "source_topic": "Formwise / Contribution Technique & Prefix",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "statement": "Given a list of flight seat bookings over flight ranges, compute the total seats reserved for each individual flight.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "difference-array",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047531,
+    "pattern_confidence": {
+      "difference-array": 0.95,
+      "prefix-sum": 0.9
+    }
+  }
+}

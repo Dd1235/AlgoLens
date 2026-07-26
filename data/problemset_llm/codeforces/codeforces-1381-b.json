@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1381-b",
+  "title": "Unmerge",
+  "slug": "1381-b-unmerge",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1381/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given a permutation of length 2n, determine if it can be formed by recursively merging two disjoint arrays of length n each using a merge-like procedure that compares first elements.",
+  "tags": [
+    "array",
+    "permutation",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "recursive-simulation",
+    "dynamic-programming",
+    "two-pointer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048979,
+    "pattern_confidence": {
+      "recursive-simulation": 0.9,
+      "dynamic-programming": 0.85,
+      "two-pointer": 0.7
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

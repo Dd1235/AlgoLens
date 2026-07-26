@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-abc157-d",
+  "title": "Friend Suggestions",
+  "slug": "abc157-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc157/tasks/abc157_d",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given users with friendship and blockship relations, determine for each user how many other users are friend candidates—those connected by friendship paths but not directly friends or blocked.",
+  "tags": [
+    "graph",
+    "union-find",
+    "disjoint-set"
+  ],
+  "patterns": [
+    "union-find",
+    "connected-components",
+    "set-difference",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047385,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "connected-components": 0.9,
+      "set-difference": 0.85,
+      "dfs": 0.9
+    }
+  },
+  "difficulty": 1208
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1110-b",
+  "title": "Tape",
+  "slug": "1110-b-tape",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1110/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a stick divided into segments with some broken segments, cover all broken segments using at most k continuous tape pieces minimizing the total tape length.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047786,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1702-g2",
+  "title": "Passable Paths (hard version)",
+  "slug": "1702-g2-passable-paths-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1702/G2",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "trees"
+  ],
+  "statement": "Given a tree and multiple queries each containing a set of vertices, determine for each query whether there exists a simple path in the tree passing through all vertices in the set.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "lca",
+    "path-checking",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048922,
+    "pattern_confidence": {
+      "lca": 0.95,
+      "path-checking": 0.9,
+      "dfs": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

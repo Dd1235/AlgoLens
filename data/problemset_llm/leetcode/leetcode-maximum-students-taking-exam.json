@@ -16,7 +16,7 @@
   "statement": "Given a classroom seating layout with broken and available seats, determine the maximum number of students that can be seated without allowing cheating based on adjacency constraints.",
   "tags": [
     "array",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "matrix"
   ],

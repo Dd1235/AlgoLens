@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-505-c",
+  "title": "Mr. Kitayuta, the Treasure Hunter",
+  "slug": "505-c-mr-kitayuta-the-treasure-hunter",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/505/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "two pointers"
+  ],
+  "statement": "Starting from island 0, repeatedly jump east with jump lengths that can change by at most 1 from the previous jump length, collecting gems on visited islands. Determine the maximum number of gems collectible under these jump constraints.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "dfs",
+    "memoization",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048492,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "dfs": 0.85,
+      "memoization": 0.9,
+      "state-compression": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

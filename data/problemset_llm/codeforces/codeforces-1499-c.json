@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1499-c",
+  "title": "Minimum Grid Path",
+  "slug": "1499-c-minimum-grid-path",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1499/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "greedy",
+    "math"
+  ],
+  "statement": "Find a polygonal path from (0,0) to (n,n) with alternating horizontal and vertical segments, minimizing the sum of segment lengths weighted by given costs, with at most n segments.",
+  "tags": [
+    "math",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048818,
+    "pattern_confidence": {
+      "prefix-sum": 0.85,
+      "dynamic-programming": 0.9,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

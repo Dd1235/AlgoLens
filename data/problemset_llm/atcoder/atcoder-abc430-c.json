@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc430-c",
+  "title": "Truck Driver",
+  "slug": "abc430-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc430/tasks/abc430_c",
+  "source_topic": "Formwise / Two Pointers",
+  "source_tags": [],
+  "statement": "Given a string of characters 'a' and 'b' and integers A and B, count the number of substrings where the count of 'a' is at least A and the count of 'b' is less than B.",
+  "tags": [
+    "string",
+    "array",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047351,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.9,
+      "binary-search-answer": 0.7
+    }
+  },
+  "difficulty": 750
+}

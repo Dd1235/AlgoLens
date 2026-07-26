@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-930-e",
+  "title": "Coins Exhibition",
+  "slug": "930-e-coins-exhibition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/930/E",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "math"
+  ],
+  "statement": "Given a row of coins each showing either obverse or reverse, and two sets of photo segments with constraints that each Arkady's photo contains at least one obverse and each Kirill's photo contains at least one reverse, count the number of valid coin side assignments modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "prefix-sum",
+    "dp-on-intervals"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048316,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.95,
+      "prefix-sum": 0.85,
+      "dp-on-intervals": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

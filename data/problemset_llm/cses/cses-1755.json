@@ -13,7 +13,7 @@
     "counting"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "constructive-algorithm"
   ],
   "annotation": {
@@ -21,7 +21,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951274,
     "pattern_confidence": {
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "constructive-algorithm": 0.9
     }
   }

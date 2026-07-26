@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "string",
-    "prefix-sum"
+    "prefix-sum",
+    "segment-tree"
   ],
   "patterns": [
     "binary-search-answer",

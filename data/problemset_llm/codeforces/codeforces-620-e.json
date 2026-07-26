@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-620-e",
+  "title": "New Year Tree",
+  "slug": "620-e-new-year-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/620/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a rooted tree, support queries that either recolor all nodes in a subtree or count the number of distinct colors in a subtree.",
+  "tags": [
+    "tree",
+    "data-structure",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-flattening",
+    "segment-tree",
+    "lazy-propagation",
+    "subtree-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048983,
+    "pattern_confidence": {
+      "tree-flattening": 0.95,
+      "segment-tree": 0.9,
+      "lazy-propagation": 0.9,
+      "subtree-query": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

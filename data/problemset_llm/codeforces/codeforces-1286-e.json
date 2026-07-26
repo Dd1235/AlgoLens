@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1286-e",
+  "title": "Fedya the Potter Strikes Back",
+  "slug": "1286-e-fedya-the-potter-strikes-back",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1286/E",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "data structures",
+    "strings"
+  ],
+  "statement": "Process queries appending characters and weights to build a string and an array, then for each prefix, sum the minimum weights of all subsegments whose substring matches the prefix of the string.",
+  "tags": [
+    "string",
+    "array",
+    "data-structures"
+  ],
+  "patterns": [
+    "prefix-function",
+    "segment-tree",
+    "range-minimum-query",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048383,
+    "pattern_confidence": {
+      "prefix-function": 0.95,
+      "segment-tree": 0.9,
+      "range-minimum-query": 0.9,
+      "prefix-sum": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-288-c",
+  "title": "Polo the Penguin and XOR operation",
+  "slug": "288-c-polo-the-penguin-and-xor-operation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/288/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an integer n, find a permutation of numbers from 0 to n that maximizes the sum of bitwise XOR between each index and its corresponding element in the permutation.",
+  "tags": [
+    "math",
+    "permutation",
+    "bitwise"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047904,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

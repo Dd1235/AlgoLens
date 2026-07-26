@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc170-e",
+  "title": "Smart Infants",
+  "slug": "abc170-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc170/tasks/abc170_e",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Maintain the highest rating infant in each kindergarten and after each infant transfer, report the minimum among these highest ratings across all kindergartens.",
+  "tags": [
+    "data-structure",
+    "heap"
+  ],
+  "patterns": [
+    "lazy-deletion",
+    "multiset",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047484,
+    "pattern_confidence": {
+      "lazy-deletion": 0.95,
+      "multiset": 0.9,
+      "heap": 0.9
+    }
+  },
+  "difficulty": 1502
+}

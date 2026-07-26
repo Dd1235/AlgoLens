@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-abc213-e",
+  "title": "Stronger Takahashi",
+  "slug": "abc213-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc213/tasks/abc213_e",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a grid with passable and blocked cells, find the minimum number of 2x2 block-destruction punches needed for Takahashi to reach from the top-left to the bottom-right cell moving only up, down, left, or right through passable cells.",
+  "tags": [
+    "graph",
+    "grid",
+    "shortest-path"
+  ],
+  "patterns": [
+    "bfs",
+    "0-1-bfs",
+    "state-graph-expansion",
+    "zero-one-bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047400,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "0-1-bfs": 0.9,
+      "state-graph-expansion": 0.85,
+      "zero-one-bfs": 0.9
+    }
+  },
+  "difficulty": 1423
+}

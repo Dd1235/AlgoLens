@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1200-e",
+  "title": "Compress Words",
+  "slug": "1200-e-compress-words",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1200/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "brute force",
+    "hashing",
+    "implementation",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a sequence of words, iteratively merge them from left to right by removing the longest prefix of the next word that matches a suffix of the current merged word, producing a compressed single word.",
+  "tags": [
+    "string",
+    "string-matching",
+    "implementation"
+  ],
+  "patterns": [
+    "prefix-function",
+    "kmp",
+    "string-concatenation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049002,
+    "pattern_confidence": {
+      "prefix-function": 0.95,
+      "kmp": 0.9,
+      "string-concatenation": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

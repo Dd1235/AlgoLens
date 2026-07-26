@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-526-d",
+  "title": "Om Nom and Necklace",
+  "slug": "526-d-om-nom-and-necklace",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/526/D",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a sequence of beads, determine all prefix lengths that form a regular pattern defined by alternating sequences A and B repeated 2k+1 times with k+1 occurrences of A and k occurrences of B.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "string-hashing",
+    "two-pointers",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049030,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "two-pointers": 0.7,
+      "string-matching": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-197-b",
+  "title": "Limit",
+  "slug": "197-b-limit",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/197/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given two polynomials P(x) and Q(x), compute the limit of their ratio P(x)/Q(x) as x approaches positive infinity.",
+  "tags": [
+    "math",
+    "polynomial"
+  ],
+  "patterns": [
+    "limit-calculation",
+    "polynomial-degree-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047842,
+    "pattern_confidence": {
+      "limit-calculation": 0.95,
+      "polynomial-degree-comparison": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

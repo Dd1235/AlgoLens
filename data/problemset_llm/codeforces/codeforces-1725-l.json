@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1725-l",
+  "title": "Lemper Cooking Competition",
+  "slug": "1725-l-lemper-cooking-competition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1725/L",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Given an array of stove temperatures, perform operations that flip the sign of a stove's temperature and add its value to its neighbors, to make all temperatures non-negative with minimum operations or determine impossibility.",
+  "tags": [
+    "array",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "state-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048156,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "simulation": 0.9,
+      "state-transformation": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

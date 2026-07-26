@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-234-h",
+  "title": "Merging Two Decks",
+  "slug": "234-h-merging-two-decks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/234/H",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given two decks of cards with some face up and some face down, merge them preserving the relative order within each deck, then perform a minimal sequence of prefix-reversal flips to make all cards face down.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "prefix-reversal",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048144,
+    "pattern_confidence": {
+      "prefix-reversal": 0.9,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-354-c",
+  "title": "Vasya and Beautiful Arrays",
+  "slug": "354-c-vasya-and-beautiful-arrays",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/354/C",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "number theory"
+  ],
+  "statement": "Given an array of positive integers and a limit k on how much each element can be decreased, find the maximum possible greatest common divisor (beauty) of the resulting array after decreasing elements by at most k.",
+  "tags": [
+    "array",
+    "number-theory",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "gcd",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048127,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "gcd": 0.9,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -16,11 +16,11 @@
   "tags": [
     "array",
     "bit-manipulation",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "brute-force",
-    "bitwise-operations",
+    "bit-manipulation",
     "counting"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784909938,
     "pattern_confidence": {
       "brute-force": 0.9,
-      "bitwise-operations": 0.95,
+      "bit-manipulation": 0.95,
       "counting": 0.85
     }
   }

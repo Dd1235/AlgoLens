@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "modular-arithmetic",
-    "frequency-counting",
+    "counting",
     "greedy"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784909818,
     "pattern_confidence": {
       "modular-arithmetic": 0.98,
-      "frequency-counting": 0.95,
+      "counting": 0.95,
       "greedy": 0.85
     }
   }

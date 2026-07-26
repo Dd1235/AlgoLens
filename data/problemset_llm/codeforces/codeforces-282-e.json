@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-282-e",
+  "title": "Sausage Maximization",
+  "slug": "282-e-sausage-maximization",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/282/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given an array representing a sausage, split it into a prefix and a non-overlapping postfix to maximize the XOR of their XOR-values.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "prefix-sum",
+    "trie"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "two-pointers",
+    "bit-manipulation",
+    "trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048894,
+    "pattern_confidence": {
+      "prefix-xor": 0.98,
+      "two-pointers": 0.85,
+      "bit-manipulation": 0.9,
+      "trie": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

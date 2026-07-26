@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-longest-unequal-adjacent-groups-subsequence-ii",
+  "title": "Longest Unequal Adjacent Groups Subsequence II",
+  "slug": "longest-unequal-adjacent-groups-subsequence-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/description/",
+  "source_topic": "Formwise / DP Level 1",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "dynamic-programming"
+  ],
+  "statement": "Given arrays words and groups, find the longest subsequence of indices where adjacent words have equal length, differ in exactly one character (Hamming distance 1), and belong to different groups. Return the corresponding words of this subsequence.",
+  "tags": [
+    "array",
+    "string",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-path-in-dag",
+    "hamming-distance",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047438,
+    "pattern_confidence": {
+      "longest-path-in-dag": 0.95,
+      "hamming-distance": 0.9,
+      "dp-on-dag": 0.9
+    }
+  }
+}

@@ -21,7 +21,7 @@
     "counting"
   ],
   "patterns": [
-    "enumeration",
+    "brute-force",
     "hash-map",
     "digit-manipulation"
   ],
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909151,
     "pattern_confidence": {
-      "enumeration": 0.9,
+      "brute-force": 0.9,
       "hash-map": 0.85,
       "digit-manipulation": 0.8
     }

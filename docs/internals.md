@@ -1,4 +1,4 @@
-# AlgoLens — Developer Internals
+# Cosine — Developer Internals
 
 For users / recruiters: see [README.md](../README.md). This doc is for working in the codebase.
 
@@ -25,7 +25,7 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 | `GET /api/similar/:problemId?k=` | "Find similar": doc-to-doc cosine over the stored embeddings, self excluded. 503 if dense isn't registered, 404 for unknown ids. |
 | `GET /api/compare?q=&k=&rankers=` | The same query across several rankers in parallel (default all registered; `rankers=bm25,dense` narrows). Powers the side-by-side compare UI. |
 | `GET /api/patterns` | Canonical taxonomy grouped by category with per-label problem counts (zero counts included). Powers `/patterns.html`. |
-| `GET /api/handles` · `PUT /api/handles` | Signed-in user's LeetCode/Codeforces/CodeChef/GitHub handles. PUT body with any subset; empty string deletes; any change drops the cached stats row. |
+| `GET /api/handles` · `PUT /api/handles` | Signed-in user's LeetCode/Codeforces/CodeChef/AtCoder/GitHub handles. PUT body with any subset; empty string deletes; any change drops the cached stats row. |
 | `GET /api/stats` | Public aggregate usage/performance: visitors, searches, per-ranker live latency percentiles, top + zero-hit queries, cold starts. Powers `/stats.html`. |
 | `GET /api/profile?refresh=1` | Combined external stats: per-platform payloads (12h server-side cache; `refresh=1` floors it at 10min; stale-if-error). `combined` carries `totalSolved`, `algolensDone`, a platform→category map (`dsa`/`dev`), and the AlgoLens done-marks calendar — the client composes the dsa/dev/overall heatmap views from the per-source calendars, so tab switches cost zero network. Powers `/profile.html`. |
 | `POST /api/auth/signup` | Create user, bcrypt password, set httpOnly JWT cookie. |
@@ -44,19 +44,19 @@ The last three power [/debug.html](../web/debug.html) and exist for learning, no
 ## How search works
 
 1. **Tokenize.** `title + statement + tags + patterns` for each problem; lowercase, strip non-alphanumeric, split on whitespace, drop a small stopword list ([server/search/tokenize.js](../server/search/tokenize.js)). Stopword list deliberately keeps DSA-relevant words like `two`, `one`, `all`, `same`.
-2. **Build index at boot.** Inverted postings (`Map<term, Set<docId>>`) plus per-doc term counts and lengths. ~15–20 ms for the 1808-doc corpus.
+2. **Build index at boot.** Inverted postings (`Map<term, Set<docId>>`) plus per-doc term counts and lengths. ~30–35 ms for the 2,574-doc corpus.
 3. **Score.** Both rankers walk the same posting lists.
    - **TF-IDF** ([server/search/tfidf.js](../server/search/tfidf.js)): `score = Σ TF(t,d) · IDF(t)` where `TF = count/doclen`, `IDF = log(N/df)`.
    - **BM25** ([server/search/bm25.js](../server/search/bm25.js)): Robertson–Spärck-Jones IDF + TF saturation (`k1=1.5`) + length normalization (`b=0.75`).
 4. **Rank.** Sort by score, return top-k.
 
-The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (2.65 MB at 1,808 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
+The dense path skips all four steps: problems are embedded offline (`npm run embed` → [scripts/embed_corpus.js](../scripts/embed_corpus.js), model identity pinned in [server/search/embedding.js](../server/search/embedding.js)) into a committed vector artifact (3.77 MB at 2,574 docs); at request time **dense** ([server/search/dense.js](../server/search/dense.js)) embeds the query in-process (MiniLM q8 ONNX, ~0.5 ms) and brute-force dot-products the whole corpus (~0.8 ms; vectors are unit-norm so cosine = dot). **hybrid** ([server/search/hybrid.js](../server/search/hybrid.js)) runs BM25 and dense legs, then reciprocal-rank-fuses their top-100s: `score(d) = Σ 1/(60 + rank)`. Per-slice quality numbers live in [experiments/05](../experiments/05-dense-hybrid-rrf.md).
 
 The HTTP layer ([server/routes/search.js](../server/routes/search.js)) only knows the `{ search(q, k, offset) -> { hits, total } }` interface. That's the seam every implementation sits behind: TF-IDF, BM25, the Go/gRPC client, dense, and hybrid — five registrations, zero route changes. One semantic note: for `dense`, `total` is always the corpus size (every doc has a similarity to every query); for `hybrid` it's the size of the fused candidate union (≤ 200).
 
 ### Where the inverted index ends and ranking begins
 
-The inverted index answers *"which docs contain term X?"* and nothing else. It produces the **candidate set**. Ranking is everything that comes after — TF-IDF and BM25 are first-stage rankers that sit on top of the inverted index. Dense retrieval replaces the candidate set entirely (every doc is a candidate); hybrid RRF is *fusion* of two first-stage rankers, not a reranker. A "reranker" specifically means a *second pass* over the top-k candidates with a more expensive model (e.g. a cross-encoder) — too costly to apply to all 1808 docs, cheap on a top-50 cut. We still don't have one, but hybrid's 0.984 Recall@100 makes its fused list the natural candidate feed when we do.
+The inverted index answers *"which docs contain term X?"* and nothing else. It produces the **candidate set**. Ranking is everything that comes after — TF-IDF and BM25 are first-stage rankers that sit on top of the inverted index. Dense retrieval replaces the candidate set entirely (every doc is a candidate); hybrid RRF is *fusion* of two first-stage rankers, not a reranker. A "reranker" specifically means a *second pass* over the top-k candidates with a more expensive model (e.g. a cross-encoder) — too costly to apply to all 2,574 docs, cheap on a top-50 cut. We still don't have one, but hybrid's 0.924 Recall@100 makes its fused list the natural candidate feed when we do.
 
 ## Tests
 
@@ -88,11 +88,28 @@ Queries run through the same alias expansion as the serving path by default. Wri
 
 Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-asserted niche claims never land unreviewed.
 
+**Scoring the annotator.** Codeforces is the only judge in the corpus that publishes per-problem tags, which makes its slice the one place with ground truth. `python3 scripts/label_agreement.py` scores our labels against it — currently **macro precision 67%, macro recall 83%** over 364 records. Recall is the number that matters: a missed technique is an unfindable problem, and nothing scores below 69%. Low precision usually means we labeled something Codeforces didn't bother to, which helps search — except where it dilutes a specific label, as `binary-search-answer` does at 45% (see [experiments/08](../experiments/08-multi-judge-corpus.md)).
+
+**Reading a bench run after the corpus grows.** Relevance judgments are fixed id lists, so a bigger corpus mechanically depresses precision: new problems that are genuinely good answers were never judged, and count as misses. `python3 scripts/bench_diff.py <old.json> <new.json>` separates the two by reporting what share of top-5 slots went to problems that didn't exist in the baseline. High displacement with flat Recall@100 is crowding; falling Recall@100 is regression.
+
 **Why label quality *is* recall.** A problem's search text is `title + statement + tags + patterns`, and the statement is an LLM *summary* — when the summary drops a term, only a label can carry it. That's why `mcm dp` matched nothing until `matrix-chain-multiplication` existed as a label (those words appear in no statement), and why only 1 of 4 mex problems was findable. A recall complaint is usually a labeling gap, not a ranking bug: check `npm run validate -- --gaps` and the audit loop before touching a ranker.
 
 **GeeksforGeeks is deliberately absent** from the profile: its user pages are client-rendered with no usable JSON endpoint, so any integration would be a scrape even more fragile than CodeChef's, breaking silently. Revisit if they ship an API.
 
-**Codeforces is deferred on purpose:** CF statement pages sit behind Cloudflare, so annotation would be metadata-only (title + tags, no statement) — weak lexical matching and weak embeddings. The 7 dormant files under `data/problemset_llm/codeforces/` also predate the current id scheme (`cf-279b-books` vs `codeforces-279-b`). Enabling CF is a data-quality problem, not a flag flip.
+**Three statement sources, one annotator.** Every problem — whatever the judge — ends up as the same record shape through `scripts/annotate_problem_urls.py`; only *where the statement comes from* differs, and each staging script writes a cache the annotator reads instead of fetching:
+
+| Judge | Statement from | Staged by | Why not the obvious way |
+| --- | --- | --- | --- |
+| LeetCode | official GraphQL | `corpus:refresh` | — |
+| CSES | task page | `corpus:refresh` | — |
+| Codeforces | `open-r1/codeforces` on HF datasets-server | `scripts/fetch_codeforces.py` | codeforces.com returns 403 to any script (Cloudflare). The dataset ships statement + official tags + rating unauthenticated, which is strictly more than a scrape would get. |
+| AtCoder | atcoder.jp task page | `scripts/fetch_atcoder.py` | kenkoooo's API has difficulty but no statement text. |
+
+CF is stratified across rating bands (1300-1500 / 1600-1900 / 2000-2400 / 2500+) rather than taken in id order, so the batch isn't all 1300s — the band with by far the most problems. Ids are `codeforces-<contest>-<index>` and `atcoder-<task_id>` with underscores hyphenated (the validator's slug rule).
+
+**The curated sheet.** `data/formwise.xlsx` is 17 topic tabs with a human `Form` column ("Binary Search On Answer"). `scripts/fetch_formwise.py` parses it with stdlib zipfile+ElementTree (hyperlink targets live in `xl/worksheets/_rels/*.rels`, not the cell text), and `scripts/apply_formwise_labels.py` merges the human labels *after* annotation — tab name → tag, `Form` → pattern, both folded through the alias map. Curriculum-only Forms (`Mixed`, `Form-N`, `Kth Form`, `Level-N`) are dropped: they label a worksheet position, not a technique, and the LLM's own labels cover those problems.
+
+**Skipped problems are recorded, not dropped.** Anything on a judge with no fetchable statement lands in [data/skipped_problems.json](../data/skipped_problems.json) with a name, link, and reason. A curated list that silently loses 8% of its entries is worse than one that says which 8% — and the file is the worklist if a judge later becomes reachable.
 
 ## Data organization
 
@@ -138,11 +155,11 @@ Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfi
   /search        tokenize / inverted / tfidf / bm25 / embedding / dense / hybrid (+ tests)
   /routes        search + similar + debug + auth + user-state endpoints
   /auth          JWT cookie helpers + auth middleware
-  data.js        loads data/problemset_llm/{leetcode,cses}/*.json at boot
+  data.js        loads data/problemset_llm/{leetcode,cses,codeforces,atcoder}/*.json at boot
 /db              Postgres migrations
 /web             plain HTML/CSS/JS, no build step
 /data
-  /problemset_llm/{leetcode,cses,codeforces}/   LLM-annotated problem records
+  /problemset_llm/{leetcode,cses,codeforces,atcoder}/  LLM-annotated problem records
   /embeddings    committed corpus vectors (corpus.f32 + manifest.json); rebuild with `npm run embed`
   /review_queue  audit candidates awaiting human review (apply_review.js consumes)
   pattern_taxonomy.json   canonical pattern vocabulary + aliases (single source of truth)

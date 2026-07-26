@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1380-f",
+  "title": "Strange Addition",
+  "slug": "1380-f-strange-addition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1380/F",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "matrices"
+  ],
+  "statement": "Given a digit string and multiple updates changing digits, after each update count the number of pairs of non-negative integers whose digit-wise sum matches the string under a custom addition rule, outputting results modulo 998244353.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "data-structures"
+  ],
+  "patterns": [
+    "digit-dp",
+    "segment-tree",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048395,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "segment-tree": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

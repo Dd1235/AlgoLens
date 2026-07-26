@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-855-b",
+  "title": "Marvolo Gaunt's Ring",
+  "slug": "855-b-marvolo-gaunt-s-ring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/855/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "dp"
+  ],
+  "statement": "Given an array and coefficients p, q, r, find the maximum value of p·a[i] + q·a[j] + r·a[k] for indices i ≤ j ≤ k.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-maximum",
+    "prefix-minimum",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047757,
+    "pattern_confidence": {
+      "prefix-maximum": 0.95,
+      "prefix-minimum": 0.9,
+      "dynamic-programming": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

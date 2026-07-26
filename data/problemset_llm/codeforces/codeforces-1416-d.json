@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1416-d",
+  "title": "Graph and Queries",
+  "slug": "1416-d-graph-and-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1416/D",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "dsu",
+    "graphs",
+    "implementation",
+    "trees"
+  ],
+  "statement": "Given an undirected graph with distinct integer values on vertices, process queries that either find and remove the maximum value in the connected component of a given vertex or delete an edge from the graph.",
+  "tags": [
+    "graph",
+    "union-find",
+    "data-structure",
+    "queries"
+  ],
+  "patterns": [
+    "union-find",
+    "offline-queries",
+    "dynamic-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048857,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "offline-queries": 0.9,
+      "dynamic-connectivity": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

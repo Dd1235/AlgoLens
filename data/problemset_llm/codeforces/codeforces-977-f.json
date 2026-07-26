@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-977-f",
+  "title": "Consecutive Subsequence",
+  "slug": "977-f-consecutive-subsequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/977/F",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Find the longest subsequence of an integer array that forms a sequence of consecutive increasing integers.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "longest-increasing-subsequence",
+    "consecutive-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049010,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "longest-increasing-subsequence": 0.9,
+      "consecutive-sequence": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

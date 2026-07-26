@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc126-e",
+  "title": "1 or 2",
+  "slug": "abc126-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc126/tasks/abc126_e",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given N cards each labeled with 1 or 2, and M parity constraints on sums of pairs plus a value, determine the minimum number of cards to reveal to deduce all card values without contradiction.",
+  "tags": [
+    "graph",
+    "union-find",
+    "parity"
+  ],
+  "patterns": [
+    "union-find",
+    "parity-constraints",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047410,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "parity-constraints": 0.9,
+      "connected-components": 0.85
+    }
+  },
+  "difficulty": 1340
+}

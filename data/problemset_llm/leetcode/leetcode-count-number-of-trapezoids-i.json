@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "counting",
-    "hashing",
+    "rolling-hash",
     "combinatorial-enumeration"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784910032,
     "pattern_confidence": {
       "counting": 0.95,
-      "hashing": 0.9,
+      "rolling-hash": 0.9,
       "combinatorial-enumeration": 0.88
     }
   }

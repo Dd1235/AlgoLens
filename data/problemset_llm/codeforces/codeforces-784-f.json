@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-784-f",
+  "title": "Crunching Numbers Just for You",
+  "slug": "784-f-crunching-numbers-just-for-you",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/784/F",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "*special",
+    "implementation"
+  ],
+  "statement": "Given an array of integers, sort the array in non-descending order.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048045,
+    "pattern_confidence": {
+      "sorting": 0.99
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -20,7 +20,7 @@
     "array",
     "math",
     "dynamic-programming",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",

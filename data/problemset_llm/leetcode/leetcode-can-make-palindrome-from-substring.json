@@ -22,7 +22,7 @@
   ],
   "patterns": [
     "prefix-xor",
-    "bitmask",
+    "bit-manipulation",
     "prefix-sum"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1784909465,
     "pattern_confidence": {
       "prefix-xor": 0.95,
-      "bitmask": 0.9,
+      "bit-manipulation": 0.9,
       "prefix-sum": 0.85
     }
   }

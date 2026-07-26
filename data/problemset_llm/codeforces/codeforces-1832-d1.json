@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1832-d1",
+  "title": "Red-Blue Operations (Easy Version)",
+  "slug": "1832-d1-red-blue-operations-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1832/D1",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an initial array where all elements are red, each operation toggles an element's color and adjusts its value by the operation index. For multiple queries, determine the maximum possible minimum element after exactly k operations, independently for each query.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048146,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "greedy": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1857-f",
+  "title": "Sum and Product",
+  "slug": "1857-f-sum-and-product",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1857/F",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "math"
+  ],
+  "statement": "Given an array, answer queries asking for the count of pairs whose sum and product equal given values.",
+  "tags": [
+    "array",
+    "math",
+    "hash-map"
+  ],
+  "patterns": [
+    "hash-map",
+    "pair-enumeration",
+    "quadratic-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047928,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "pair-enumeration": 0.9,
+      "quadratic-check": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-922-f",
+  "title": "Divisibility",
+  "slug": "922-f-divisibility",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/922/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "constructive algorithms",
+    "dp",
+    "greedy",
+    "number theory"
+  ],
+  "statement": "Given an integer n and a target value k, find a subset of {1, 2, ..., n} such that the number of pairs (a, b) with a < b and a divides b equals k.",
+  "tags": [
+    "number-theory",
+    "combinatorics",
+    "dynamic-programming",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "constructive-algorithm",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048234,
+    "pattern_confidence": {
+      "dynamic-programming": 0.85,
+      "greedy": 0.8,
+      "constructive-algorithm": 0.9,
+      "counting": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

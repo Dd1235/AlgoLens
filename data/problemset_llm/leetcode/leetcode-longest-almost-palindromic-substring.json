@@ -20,7 +20,7 @@
   "patterns": [
     "two-pointers",
     "dynamic-programming",
-    "palindrome-check"
+    "palindrome"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "two-pointers": 0.95,
       "dynamic-programming": 0.9,
-      "palindrome-check": 0.85
+      "palindrome": 0.85
     }
   }
 }

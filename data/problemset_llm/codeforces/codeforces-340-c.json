@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-340-c",
+  "title": "Tourist Problem",
+  "slug": "340-c-tourist-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/340/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "combinatorics",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given n distinct destinations on a line starting from 0, find the average total distance traveled over all permutations visiting each destination exactly once without returning to start.",
+  "tags": [
+    "array",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "permutation-enumeration",
+    "expected-value",
+    "distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048866,
+    "pattern_confidence": {
+      "permutation-enumeration": 0.9,
+      "expected-value": 0.95,
+      "distance-calculation": 0.85
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

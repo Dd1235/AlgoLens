@@ -18,7 +18,8 @@
     "array",
     "matrix",
     "stack",
-    "dynamic-programming"
+    "dynamic-programming",
+    "data-structure"
   ],
   "patterns": [
     "monotonic-stack",

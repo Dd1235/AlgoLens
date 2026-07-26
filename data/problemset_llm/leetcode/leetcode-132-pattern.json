@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "stack",
-    "ordered-set"
+    "ordered-set",
+    "data-structure"
   ],
   "patterns": [
     "monotonic-stack",

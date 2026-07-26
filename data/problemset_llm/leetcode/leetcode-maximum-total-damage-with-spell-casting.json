@@ -24,7 +24,7 @@
   "patterns": [
     "dynamic-programming",
     "sorting",
-    "frequency-count"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +33,7 @@
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "sorting": 0.9,
-      "frequency-count": 0.85
+      "counting": 0.85
     }
   }
 }

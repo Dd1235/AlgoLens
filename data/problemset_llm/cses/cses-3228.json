@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "interactive-problem",
-    "bitmask",
+    "bit-manipulation",
     "binary-search-answer"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777951919,
     "pattern_confidence": {
       "interactive-problem": 0.98,
-      "bitmask": 0.7,
+      "bit-manipulation": 0.7,
       "binary-search-answer": 0.6
     }
   }

@@ -21,7 +21,7 @@
   "patterns": [
     "binary-search-answer",
     "segment-tree",
-    "bitwise-operations"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.9,
       "segment-tree": 0.85,
-      "bitwise-operations": 0.8
+      "bit-manipulation": 0.8
     }
   }
 }

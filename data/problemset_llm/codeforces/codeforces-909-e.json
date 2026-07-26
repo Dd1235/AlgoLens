@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-909-e",
+  "title": "Coprocessor",
+  "slug": "909-e-coprocessor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/909/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Given a DAG of tasks where each task must be executed on either a coprocessor or main processor, find the minimum number of coprocessor calls needed to execute all coprocessor tasks respecting dependencies.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "dag"
+  ],
+  "patterns": [
+    "topological-sort",
+    "dp-on-dag",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049038,
+    "pattern_confidence": {
+      "topological-sort": 0.95,
+      "dp-on-dag": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

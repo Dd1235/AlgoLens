@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc206-d",
+  "title": "KAIBUNsyo",
+  "slug": "abc206-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc206/tasks/abc206_d",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a sequence of integers, find the minimum number of operations to make it a palindrome by repeatedly replacing all occurrences of one integer with another.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047408,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "greedy": 0.85,
+      "graph-construction": 0.8
+    }
+  },
+  "difficulty": 879
+}

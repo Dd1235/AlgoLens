@@ -21,7 +21,7 @@
   "patterns": [
     "prefix-xor",
     "prefix-sum",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,7 @@
     "pattern_confidence": {
       "prefix-xor": 0.9,
       "prefix-sum": 0.85,
-      "bitmask": 0.8
+      "bit-manipulation": 0.8
     }
   }
 }

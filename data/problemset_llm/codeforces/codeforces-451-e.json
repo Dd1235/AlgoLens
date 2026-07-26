@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-451-e",
+  "title": "Devu and Flowers",
+  "slug": "451-e-devu-and-flowers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/451/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "bitmasks",
+    "combinatorics",
+    "number theory"
+  ],
+  "statement": "Given multiple boxes each containing a distinct color of flowers, count the number of ways to select exactly s flowers in total from these boxes, considering selections differing in any box as distinct. Return the count modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "number-theory",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "combinatorics",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048841,
+    "pattern_confidence": {
+      "combinatorics": 0.95,
+      "modular-arithmetic": 0.9,
+      "dynamic-programming": 0.85
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

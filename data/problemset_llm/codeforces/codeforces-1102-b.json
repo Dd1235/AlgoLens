@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1102-b",
+  "title": "Array K-Coloring",
+  "slug": "1102-b-array-k-coloring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1102/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array and a number k, assign one of k colors to each element so that each color is used at least once and all elements of the same color are distinct, or determine that it is impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "hash-map"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047735,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "counting": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

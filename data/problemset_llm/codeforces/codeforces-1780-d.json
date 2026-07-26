@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1780-d",
+  "title": "Bit Guessing Game",
+  "slug": "1780-d-bit-guessing-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1780/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "bitmasks",
+    "constructive algorithms",
+    "interactive"
+  ],
+  "statement": "Given the initial count of set bits in a hidden positive integer n, guess n by repeatedly subtracting chosen integers and receiving updated set bit counts, using at most 30 operations.",
+  "tags": [
+    "bitmask-dp",
+    "interactive",
+    "constructive-algorithm",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "bitmask-manipulation",
+    "interactive"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047972,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "bitmask-manipulation": 0.85,
+      "interactive": 0.95
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

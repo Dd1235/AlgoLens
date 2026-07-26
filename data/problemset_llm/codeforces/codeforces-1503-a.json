@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1503-a",
+  "title": "Balance the Bits",
+  "slug": "1503-a-balance-the-bits",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1503/A",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given a binary string, construct two balanced bracket sequences of the same length such that positions with '1' have identical brackets and positions with '0' have different brackets, or determine that it is impossible.",
+  "tags": [
+    "string",
+    "greedy",
+    "constructive-algorithm",
+    "stack"
+  ],
+  "patterns": [
+    "greedy",
+    "balanced-brackets",
+    "constructive-algorithm",
+    "stack-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048001,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "balanced-brackets": 0.9,
+      "constructive-algorithm": 0.9,
+      "stack-simulation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-808-f",
+  "title": "Card Game",
+  "slug": "808-f-card-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/808/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "binary search",
+    "flows",
+    "graphs"
+  ],
+  "statement": "Given cards with power, magic number, and level, find the minimum character level needed to build a deck with total power at least k, where no two cards have magic numbers summing to a prime and only cards with level at most the character's level can be used.",
+  "tags": [
+    "graph",
+    "binary-search",
+    "number-theory"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "max-flow",
+    "prime-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048773,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "max-flow": 0.9,
+      "prime-checking": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-601-b",
+  "title": "Lipshitz Sequence",
+  "slug": "601-b-lipshitz-sequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/601/B",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "data structures",
+    "math"
+  ],
+  "statement": "Given an array and multiple queries specifying subarray ranges, compute the sum of Lipschitz constants for all sub-subarrays within each queried range.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048179,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

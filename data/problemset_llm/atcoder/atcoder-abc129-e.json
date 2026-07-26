@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc129-e",
+  "title": "Sum Equals Xor",
+  "slug": "abc129-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc129/tasks/abc129_e",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Count the number of pairs of non-negative integers (a, b) such that a + b is less than or equal to a given binary number L and a + b equals a XOR b, with the result modulo 10^9 + 7.",
+  "tags": [
+    "bitwise",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "digit-dp",
+    "bit-manipulation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047597,
+    "pattern_confidence": {
+      "digit-dp": 0.95,
+      "bit-manipulation": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "difficulty": 1547
+}

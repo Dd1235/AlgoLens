@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "greedy",
-    "enumeration",
+    "brute-force",
     "binary-search-answer"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1784909683,
     "pattern_confidence": {
       "greedy": 0.95,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "binary-search-answer": 0.7
     }
   }

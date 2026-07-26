@@ -15,7 +15,7 @@
   "tags": [
     "string",
     "greedy",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "string-overlap",

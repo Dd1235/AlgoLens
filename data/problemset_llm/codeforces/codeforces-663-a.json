@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-663-a",
+  "title": "Rebus",
+  "slug": "663-a-rebus",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/663/A",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms",
+    "expression parsing",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an arithmetic expression with question marks separated by plus and minus signs equaling a positive integer n, assign positive integers to each question mark so that the equation holds true.",
+  "tags": [
+    "math",
+    "greedy",
+    "constructive-algorithm",
+    "expression-parsing"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "equation-solving"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047925,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "equation-solving": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

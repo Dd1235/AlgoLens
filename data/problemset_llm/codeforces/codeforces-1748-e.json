@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1748-e",
+  "title": "Yet Another Array Counting Problem",
+  "slug": "1748-e-yet-another-array-counting-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1748/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "divide and conquer",
+    "dp",
+    "flows",
+    "math",
+    "trees"
+  ],
+  "statement": "Given an array, count the number of arrays with values in a given range that preserve the leftmost maximum positions on every subsegment as in the original array, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "divide-and-conquer",
+    "math"
+  ],
+  "patterns": [
+    "divide-and-conquer-dp",
+    "binary-search-answer",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048102,
+    "pattern_confidence": {
+      "divide-and-conquer-dp": 0.9,
+      "binary-search-answer": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

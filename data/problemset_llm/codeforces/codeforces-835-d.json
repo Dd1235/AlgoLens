@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-835-d",
+  "title": "Palindromic characteristics",
+  "slug": "835-d-palindromic-characteristics",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/835/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given a string, compute for each k the number of substrings that are k-palindromes, where k-palindromes are defined recursively by equal left and right halves that are (k-1)-palindromes.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "prefix-hashing",
+    "dp-on-substrings",
+    "divide-and-conquer",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048850,
+    "pattern_confidence": {
+      "prefix-hashing": 0.95,
+      "dp-on-substrings": 0.9,
+      "divide-and-conquer": 0.7,
+      "binary-search-answer": 0.6
+    }
+  },
+  "source_topic": "Formwise / String"
+}

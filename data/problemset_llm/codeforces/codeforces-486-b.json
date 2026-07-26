@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-486-b",
+  "title": "OR in Matrix",
+  "slug": "486-b-or-in-matrix",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/486/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "hashing",
+    "implementation"
+  ],
+  "statement": "Given a binary matrix B where each element is the OR of all elements in the corresponding row and column of an unknown binary matrix A, reconstruct a possible matrix A or determine that no such matrix exists.",
+  "tags": [
+    "matrix",
+    "greedy",
+    "bit-manipulation",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "bit-manipulation",
+    "logical-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047857,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "bit-manipulation": 0.7,
+      "logical-operations": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

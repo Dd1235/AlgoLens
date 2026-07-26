@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-175-e",
+  "title": "Power Defence",
+  "slug": "175-e-power-defence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/175/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "geometry",
+    "greedy"
+  ],
+  "statement": "Given three types of towers with limited quantities and ranges placed on two parallel lines, determine the maximum damage dealt to a villain moving along a line, considering freezing towers slow the villain's speed multiplicatively.",
+  "tags": [
+    "geometry",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048431,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "simulation": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -15,11 +15,11 @@
   "tags": [
     "array",
     "hash-map",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
-    "pattern-matching",
-    "frequency-count",
+    "string-matching",
+    "counting",
     "two-pointers"
   ],
   "annotation": {
@@ -27,8 +27,8 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909491,
     "pattern_confidence": {
-      "pattern-matching": 0.9,
-      "frequency-count": 0.85,
+      "string-matching": 0.9,
+      "counting": 0.85,
       "two-pointers": 0.7
     }
   }

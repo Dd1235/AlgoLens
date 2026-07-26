@@ -13,7 +13,7 @@
   "statement": "Given a binary string, count the number of substrings where the count of ones is at least the square of the count of zeros.",
   "tags": [
     "string",
-    "enumeration",
+    "brute-force",
     "prefix-sum"
   ],
   "patterns": [

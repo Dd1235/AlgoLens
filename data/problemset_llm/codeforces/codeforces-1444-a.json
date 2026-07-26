@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1444-a",
+  "title": "Division",
+  "slug": "1444-a-division",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1444/A",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given multiple pairs of integers, for each pair find the greatest divisor of the first integer that is not divisible by the second integer.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force"
+  ],
+  "patterns": [
+    "divisor-enumeration",
+    "prime-factorization",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047807,
+    "pattern_confidence": {
+      "divisor-enumeration": 0.95,
+      "prime-factorization": 0.9,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

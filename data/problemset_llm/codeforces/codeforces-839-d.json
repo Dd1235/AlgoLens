@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-839-d",
+  "title": "Winter is here",
+  "slug": "839-d-winter-is-here",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/839/D",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array of soldier strengths, compute the sum over all increasing subsequences (clans) of their length multiplied by the gcd of their elements, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "gcd",
+    "dp-on-subsequences",
+    "inclusion-exclusion",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048096,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "dp-on-subsequences": 0.95,
+      "inclusion-exclusion": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "leetcode-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+  "title": "The k-th Lexicographical String of All Happy Strings of Length n",
+  "slug": "the-k-th-lexicographical-string-of-all-happy-strings-of-length-n",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "backtracking"
+  ],
+  "statement": "Generate the k-th lexicographically smallest string of length n composed of letters 'a', 'b', and 'c' with no two identical consecutive characters, or return an empty string if fewer than k such strings exist.",
+  "tags": [
+    "string",
+    "backtracking",
+    "combinatorics"
+  ],
+  "patterns": [
+    "backtracking",
+    "lexicographical-order",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047372,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "lexicographical-order": 0.9,
+      "counting": 0.85
+    }
+  }
+}

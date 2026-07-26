@@ -22,7 +22,8 @@
   "patterns": [
     "prefix-trie",
     "suffix-trie",
-    "combined-key-hashing"
+    "combined-key-hashing",
+    "trie"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "prefix-trie": 0.95,
       "suffix-trie": 0.95,
-      "combined-key-hashing": 0.9
+      "combined-key-hashing": 0.9,
+      "trie": 0.9
     }
   }
 }

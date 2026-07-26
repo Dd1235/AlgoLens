@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-241-c",
+  "title": "Mirror Box",
+  "slug": "241-c-mirror-box",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/241/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "geometry",
+    "implementation"
+  ],
+  "statement": "Given a rectangular box with mirrors on the ceiling and floor, and two holes on opposite sides at specified heights, find the maximum total score from mirrors hit by a laser beam entering one hole and exiting the other, reflecting according to the law of reflection and never hitting the same mirror twice.",
+  "tags": [
+    "geometry",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "reflection-simulation",
+    "line-sweep",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048157,
+    "pattern_confidence": {
+      "reflection-simulation": 0.95,
+      "line-sweep": 0.7,
+      "greedy": 0.6
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

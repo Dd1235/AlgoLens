@@ -16,10 +16,10 @@
   "tags": [
     "array",
     "backtracking",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
-    "bitmask-enumeration",
+    "bit-manipulation",
     "backtracking",
     "state-compression"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923331,
     "pattern_confidence": {
-      "bitmask-enumeration": 0.95,
+      "bit-manipulation": 0.95,
       "backtracking": 0.9,
       "state-compression": 0.85
     }

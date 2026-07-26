@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1208-d",
+  "title": "Restore Permutation",
+  "slug": "1208-d-restore-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1208/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given an array representing, for each position, the sum of all smaller elements before it in a hidden permutation, reconstruct the original permutation.",
+  "tags": [
+    "array",
+    "data-structures",
+    "greedy",
+    "segment-tree"
+  ],
+  "patterns": [
+    "fenwick-tree",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048966,
+    "pattern_confidence": {
+      "fenwick-tree": 0.9,
+      "prefix-sum": 0.85,
+      "binary-search": 0.8
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

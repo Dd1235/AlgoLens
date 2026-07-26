@@ -22,7 +22,7 @@
     "sliding-window",
     "two-pointers",
     "hash-map",
-    "frequency-count"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
       "sliding-window": 0.98,
       "two-pointers": 0.95,
       "hash-map": 0.9,
-      "frequency-count": 0.88
+      "counting": 0.88
     }
   }
 }

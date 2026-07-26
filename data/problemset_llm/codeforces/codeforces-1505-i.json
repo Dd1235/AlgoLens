@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1505-i",
+  "title": "Mysterious language again, seriously?",
+  "slug": "1505-i-mysterious-language-again-seriously",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1505/I",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "Given a mysterious programming language called \"Secret 2021\" accessible in a custom test environment, determine its identity and write a program in that language that outputs its name.",
+  "tags": [
+    "implementation",
+    "interactive",
+    "string"
+  ],
+  "patterns": [
+    "interactive",
+    "implementation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048186,
+    "pattern_confidence": {
+      "interactive": 0.9,
+      "implementation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

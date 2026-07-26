@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1647-f",
+  "title": "Madoka and Laziness",
+  "slug": "1647-f-madoka-and-laziness",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1647/F",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given an array of distinct positive integers, count the number of distinct pairs of maxima from two subsequences that partition the array, where each subsequence forms a hill shape (strictly increasing then strictly decreasing).",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp-on-subsequences",
+    "two-subsequence-partition",
+    "counting-distinct-pairs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048425,
+    "pattern_confidence": {
+      "dp-on-subsequences": 0.95,
+      "two-subsequence-partition": 0.9,
+      "counting-distinct-pairs": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

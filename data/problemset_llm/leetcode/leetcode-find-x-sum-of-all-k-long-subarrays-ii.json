@@ -17,13 +17,14 @@
     "array",
     "hash-map",
     "sliding-window",
-    "heap"
+    "heap",
+    "data-structure"
   ],
   "patterns": [
     "sliding-window",
     "hash-map",
     "heap",
-    "frequency-counting"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,7 @@
       "sliding-window": 0.95,
       "hash-map": 0.9,
       "heap": 0.85,
-      "frequency-counting": 0.9
+      "counting": 0.9
     }
   }
 }

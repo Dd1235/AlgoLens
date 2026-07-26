@@ -9,7 +9,8 @@
   "statement": "Given arrival and leaving times of customers in a restaurant, determine the maximum number of customers present simultaneously.",
   "tags": [
     "array",
-    "sorting"
+    "sorting",
+    "greedy"
   ],
   "patterns": [
     "line-sweep",

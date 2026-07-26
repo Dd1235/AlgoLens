@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-514-c",
+  "title": "Watto and Mechanism",
+  "slug": "514-c-watto-and-mechanism",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/514/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a set of initial strings, efficiently answer queries asking whether there exists a stored string of the same length that differs from a given query string in exactly one character.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "data-structure",
+    "trie"
+  ],
+  "patterns": [
+    "string-hashing",
+    "hash-map",
+    "fixed-length-pattern-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048801,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "hash-map": 0.9,
+      "fixed-length-pattern-matching": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

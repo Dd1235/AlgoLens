@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1798-c",
+  "title": "Candy Store",
+  "slug": "1798-c-candy-store",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1798/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given counts and costs of candy types, choose pack sizes dividing the counts to minimize the number of contiguous equal-cost segments formed by pack costs.",
+  "tags": [
+    "math",
+    "greedy",
+    "number-theory",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "divisor-enumeration",
+    "segment-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047980,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "divisor-enumeration": 0.9,
+      "segment-partitioning": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

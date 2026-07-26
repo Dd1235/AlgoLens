@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-839-c",
+  "title": "Journey",
+  "slug": "839-c-journey",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/839/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "probabilities",
+    "trees"
+  ],
+  "statement": "Given a tree with n cities connected by n-1 roads, starting from city 1, a horse travels randomly to unvisited adjacent cities with equal probability until no unvisited city remains. Compute the expected length of this journey.",
+  "tags": [
+    "tree",
+    "graph",
+    "probability",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "expected-value",
+    "dfs",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048778,
+    "pattern_confidence": {
+      "expected-value": 0.98,
+      "dfs": 0.9,
+      "tree-dp": 0.88
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1260-c",
+  "title": "Infinite Fence",
+  "slug": "1260-c-infinite-fence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1260/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Determine if it is possible to paint an extremely large fence with planks indexed from 0, coloring planks divisible by r red, those divisible by b blue, and those divisible by both either color, such that no k consecutive painted planks share the same color.",
+  "tags": [
+    "math",
+    "number-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048526,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "modular-arithmetic": 0.9,
+      "case-analysis": 0.85
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

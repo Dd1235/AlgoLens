@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-118-e",
+  "title": "Bertown roads",
+  "slug": "118-e-bertown-roads",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/118/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dfs and similar",
+    "graphs"
+  ],
+  "statement": "Given a connected undirected graph, determine if it is possible to orient all edges to make the graph strongly connected, and if so, provide one such orientation.",
+  "tags": [
+    "graph",
+    "dfs",
+    "strongly-connected-components"
+  ],
+  "patterns": [
+    "dfs",
+    "bridge-finding",
+    "strong-connectivity-check",
+    "articulation-points"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048519,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bridge-finding": 0.9,
+      "strong-connectivity-check": 0.9,
+      "articulation-points": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

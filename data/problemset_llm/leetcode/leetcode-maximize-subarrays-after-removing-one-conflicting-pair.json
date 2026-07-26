@@ -16,11 +16,11 @@
   "tags": [
     "array",
     "prefix-sum",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "prefix-sum",
-    "enumeration",
+    "brute-force",
     "binary-search-answer"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1777923263,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "binary-search-answer": 0.7
     }
   }

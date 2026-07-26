@@ -10,7 +10,8 @@
   "tags": [
     "array",
     "sliding-window",
-    "data-structure"
+    "data-structure",
+    "two-pointers"
   ],
   "patterns": [
     "sliding-window",

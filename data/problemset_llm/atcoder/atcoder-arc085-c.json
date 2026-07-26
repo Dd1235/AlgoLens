@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-arc085-c",
+  "title": "MUL",
+  "slug": "arc085-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc085/tasks/arc085_c",
+  "source_topic": "Formwise / Graph Level 2",
+  "source_tags": [],
+  "statement": "Given N gems each with a value, you can repeatedly smash all gems labeled with multiples of a chosen integer to maximize the sum of values of remaining gems. Determine the maximum achievable sum.",
+  "tags": [
+    "math",
+    "number-theory",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "dynamic-programming",
+    "multiples-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047634,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.95,
+      "dynamic-programming": 0.9,
+      "multiples-enumeration": 0.85
+    }
+  },
+  "difficulty": 2571
+}

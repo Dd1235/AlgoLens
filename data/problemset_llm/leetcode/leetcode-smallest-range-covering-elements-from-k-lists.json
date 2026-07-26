@@ -19,7 +19,8 @@
     "array",
     "heap",
     "greedy",
-    "sorting"
+    "sorting",
+    "data-structure"
   ],
   "patterns": [
     "heap",

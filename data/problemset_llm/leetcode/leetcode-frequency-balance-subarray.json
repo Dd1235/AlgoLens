@@ -15,7 +15,7 @@
   ],
   "patterns": [
     "sliding-window",
-    "frequency-count",
+    "counting",
     "two-pointers"
   ],
   "annotation": {
@@ -24,7 +24,7 @@
     "generated_at_unix": 1784731038,
     "pattern_confidence": {
       "sliding-window": 0.95,
-      "frequency-count": 0.9,
+      "counting": 0.9,
       "two-pointers": 0.9
     }
   }

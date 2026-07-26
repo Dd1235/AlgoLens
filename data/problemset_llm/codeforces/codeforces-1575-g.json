@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1575-g",
+  "title": "GCD Festival",
+  "slug": "1575-g-gcd-festival",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1575/G",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array of integers, compute the sum over all pairs of the product of the gcd of the pair's values and the gcd of their indices, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "modular-arithmetic",
+    "double-summation",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048259,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "modular-arithmetic": 0.9,
+      "double-summation": 0.85,
+      "number-theory": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -20,7 +20,7 @@
   "tags": [
     "array",
     "string",
-    "bitmask",
+    "bit-manipulation",
     "backtracking",
     "dynamic-programming"
   ],

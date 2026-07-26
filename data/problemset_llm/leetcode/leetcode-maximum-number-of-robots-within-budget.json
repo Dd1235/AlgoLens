@@ -20,7 +20,8 @@
     "array",
     "sliding-window",
     "heap",
-    "prefix-sum"
+    "prefix-sum",
+    "two-pointers"
   ],
   "patterns": [
     "binary-search-answer",

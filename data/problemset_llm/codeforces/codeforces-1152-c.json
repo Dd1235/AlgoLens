@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1152-c",
+  "title": "Neko does Maths",
+  "slug": "1152-c-neko-does-maths",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1152/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given two integers a and b, find the smallest non-negative integer k that minimizes the least common multiple of (a+k) and (b+k). If multiple such k exist, choose the smallest one.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force"
+  ],
+  "patterns": [
+    "divisor-enumeration",
+    "gcd-lcm-properties",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047971,
+    "pattern_confidence": {
+      "divisor-enumeration": 0.9,
+      "gcd-lcm-properties": 0.95,
+      "brute-force": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

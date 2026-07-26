@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1875-c",
+  "title": "Jellyfish and Green Apple",
+  "slug": "1875-c-jellyfish-and-green-apple",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1875/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "bitmasks",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given n identical 1kg apple pieces, determine the minimum number of halving operations needed to divide them equally among m people.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "bit-manipulation",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047826,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "bit-manipulation": 0.75,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

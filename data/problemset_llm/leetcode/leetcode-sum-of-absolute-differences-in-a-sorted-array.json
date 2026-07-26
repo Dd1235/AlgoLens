@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-sum-of-absolute-differences-in-a-sorted-array",
+  "title": "Sum of Absolute Differences in a Sorted Array",
+  "slug": "sum-of-absolute-differences-in-a-sorted-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/description/",
+  "source_topic": "Formwise / Contribution Technique & Prefix",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "statement": "Given a sorted integer array, compute for each element the sum of absolute differences between it and all other elements.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047529,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "contribution-technique": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc217-f",
+  "title": "Make Pair",
+  "slug": "abc217-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc217/tasks/abc217_f",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given 2N students in a row and pairs of students on good terms, count the number of ways to repeatedly remove adjacent good-term pairs until all students are paired, modulo 998244353.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics",
+    "graph"
+  ],
+  "patterns": [
+    "interval-dp",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047444,
+    "pattern_confidence": {
+      "interval-dp": 0.95,
+      "dynamic-programming": 0.9,
+      "combinatorics": 0.85
+    }
+  },
+  "difficulty": 1954
+}

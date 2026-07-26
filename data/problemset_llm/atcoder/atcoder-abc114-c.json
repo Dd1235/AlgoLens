@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc114-c",
+  "title": "755",
+  "slug": "abc114-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc114/tasks/abc114_c",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "source_tags": [],
+  "statement": "Count how many integers from 1 to N contain only the digits 3, 5, and 7 and include each of these digits at least once in their decimal representation.",
+  "tags": [
+    "backtracking",
+    "digit-dp",
+    "combinatorics"
+  ],
+  "patterns": [
+    "backtracking",
+    "digit-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047370,
+    "pattern_confidence": {
+      "backtracking": 0.95,
+      "digit-dp": 0.9,
+      "state-compression": 0.7
+    }
+  },
+  "difficulty": 1045
+}

@@ -16,7 +16,7 @@
     "dynamic-programming"
   ],
   "patterns": [
-    "palindrome-check",
+    "palindrome",
     "dynamic-programming",
     "manacher"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923883,
     "pattern_confidence": {
-      "palindrome-check": 0.95,
+      "palindrome": 0.95,
       "dynamic-programming": 0.9,
       "manacher": 1
     }

@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc237-d",
+  "title": "LR insertion",
+  "slug": "abc237-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc237/tasks/abc237_d",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Starting from a sequence containing 0, insert integers 1 to N either immediately left or right of the previous integer based on a given string of 'L' and 'R' instructions, then output the final sequence.",
+  "tags": [
+    "linked-list",
+    "array",
+    "data-structure"
+  ],
+  "patterns": [
+    "simulation",
+    "linked-list"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047473,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "linked-list": 0.9
+    }
+  },
+  "difficulty": 544
+}

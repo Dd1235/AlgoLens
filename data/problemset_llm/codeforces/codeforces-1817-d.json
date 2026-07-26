@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1817-d",
+  "title": "Toy Machine",
+  "slug": "1817-d-toy-machine",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1817/D",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "constructive algorithms",
+    "games",
+    "implementation"
+  ],
+  "statement": "Given a toy machine with two rows of cells and toys initially placed in the top row except corners, simulate moves (left, right, up, down) that slide all toys simultaneously until blocked, to bring a specified toy to the leftmost top cell within a large move limit.",
+  "tags": [
+    "simulation",
+    "implementation",
+    "constructive-algorithm",
+    "game-theory"
+  ],
+  "patterns": [
+    "simulation",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048354,
+    "pattern_confidence": {
+      "simulation": 0.98,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

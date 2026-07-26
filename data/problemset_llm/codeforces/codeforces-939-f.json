@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-939-f",
+  "title": "Cutlet",
+  "slug": "939-f-cutlet",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/939/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "dp"
+  ],
+  "statement": "Determine if it is possible to flip a cutlet multiple times within given time intervals so that it is fried exactly n seconds on each side, and if so, find the minimum number of flips required.",
+  "tags": [
+    "interval",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "interval-dp",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048209,
+    "pattern_confidence": {
+      "interval-dp": 0.9,
+      "greedy": 0.85,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

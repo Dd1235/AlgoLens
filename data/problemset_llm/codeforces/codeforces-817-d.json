@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-817-d",
+  "title": "Imbalanced Array",
+  "slug": "817-d-imbalanced-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/817/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "dsu",
+    "sortings"
+  ],
+  "statement": "Calculate the sum of the differences between the maximum and minimum elements over all subsegments of a given array.",
+  "tags": [
+    "array",
+    "divide-and-conquer",
+    "data-structures",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "monotonic-stack",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049047,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "monotonic-stack": 0.9,
+      "divide-and-conquer": 0.85
+    }
+  },
+  "source_topic": "Formwise / Contribution Technique & Prefix"
+}

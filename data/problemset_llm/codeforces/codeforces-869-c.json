@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-869-c",
+  "title": "The Intriguing Obsession",
+  "slug": "869-c-the-intriguing-obsession",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/869/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Count the number of ways to build bridges between three clusters of islands with constraints on connectivity and shortest distances within clusters, modulo 998244353.",
+  "tags": [
+    "graph",
+    "combinatorics",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "graph-construction",
+    "shortest-path-constraints",
+    "modular-arithmetic",
+    "dp-on-subsets",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049019,
+    "pattern_confidence": {
+      "graph-construction": 0.95,
+      "shortest-path-constraints": 0.9,
+      "modular-arithmetic": 0.85,
+      "dp-on-subsets": 0.8,
+      "combinatorics": 0.9
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1398-c",
+  "title": "Good Subarrays",
+  "slug": "1398-c-good-subarrays",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1398/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "math"
+  ],
+  "statement": "Given an array of digits from 0 to 9, count the number of subarrays whose sum of elements equals the subarray length.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048924,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "counting": 0.9
+    }
+  },
+  "source_topic": "Formwise / Contribution Technique & Prefix"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1542-b",
+  "title": "Plus and Multiply",
+  "slug": "1542-b-plus-and-multiply",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1542/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "constructive algorithms",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given integers a, b, and n, determine whether n can be generated starting from 1 by repeatedly multiplying by a or adding b any number of times.",
+  "tags": [
+    "math",
+    "number-theory",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "reachability"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047846,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "simulation": 0.8,
+      "reachability": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

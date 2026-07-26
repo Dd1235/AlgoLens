@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-424-d",
+  "title": "Biathlon Track",
+  "slug": "424-d-biathlon-track",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/424/D",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "constructive algorithms",
+    "data structures",
+    "dp"
+  ],
+  "statement": "Given a grid with heights and time costs for ascent, descent, and flat moves, find a rectangular border path with sides at least length three whose traversal time is closest to a target time.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "geometry"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048194,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.85,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

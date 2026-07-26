@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-arc088-a",
+  "title": "Multiple Gift",
+  "slug": "arc088-a",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc083/tasks/arc088_a",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "source_tags": [],
+  "statement": "Given integers X and Y, find the longest sequence of integers between X and Y where each subsequent element is a strictly greater multiple of the previous one.",
+  "tags": [
+    "math",
+    "number-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search-answer",
+    "multiplicative-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047622,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "binary-search-answer": 0.8,
+      "multiplicative-sequence": 0.85
+    }
+  },
+  "difficulty": 392
+}

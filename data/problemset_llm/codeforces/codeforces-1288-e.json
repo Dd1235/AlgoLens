@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1288-e",
+  "title": "Messenger Simulator",
+  "slug": "1288-e-messenger-simulator",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1288/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Maintain a permutation representing a recent chat list of friends, initially in order 1 to n. After each message from a friend, move that friend to the front, shifting others accordingly. For each friend, determine the minimum and maximum positions they have occupied throughout all updates.",
+  "tags": [
+    "array",
+    "data-structure",
+    "simulation",
+    "segment-tree"
+  ],
+  "patterns": [
+    "simulation",
+    "index-tracking",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048789,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "index-tracking": 0.9,
+      "fenwick-tree": 0.7,
+      "segment-tree": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-best-team-with-no-conflicts",
+  "title": "Best Team With No Conflicts",
+  "slug": "best-team-with-no-conflicts",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/best-team-with-no-conflicts/description/",
+  "source_topic": "Formwise / DP Optimizations",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "statement": "Given players with scores and ages, select a team with the highest total score such that no younger player has a strictly higher score than an older player, allowing players of the same age without conflict.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sorting",
+    "longest-non-decreasing-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047581,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "sorting": 0.95,
+      "longest-non-decreasing-subsequence": 0.9
+    }
+  }
+}

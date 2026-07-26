@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1139-e",
+  "title": "Maximize Mex",
+  "slug": "1139-e-maximize-mex",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1139/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "flows",
+    "graph matchings",
+    "graphs"
+  ],
+  "statement": "Given students each belonging to one club with a potential value, and a sequence of days where one student leaves daily, determine the maximum mex of potentials from one selected student per club each day.",
+  "tags": [
+    "array",
+    "graph",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "mex"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048224,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "mex": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

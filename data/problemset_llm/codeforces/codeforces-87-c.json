@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-87-c",
+  "title": "Interesting Game",
+  "slug": "87-c-interesting-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/87/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dp",
+    "games",
+    "math"
+  ],
+  "statement": "Two players alternately split a pile of stones into strictly decreasing piles with consecutive differences of one; determine the winner assuming optimal play.",
+  "tags": [
+    "game-theory",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "grundy-numbers",
+    "combinatorial-game",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048173,
+    "pattern_confidence": {
+      "grundy-numbers": 0.95,
+      "combinatorial-game": 0.9,
+      "dynamic-programming": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

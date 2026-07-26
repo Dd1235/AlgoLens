@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-153-d",
+  "title": "Date Change",
+  "slug": "153-d-date-change",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/153/D",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "Given a date in DD.MM.YYYY format and a number of days to add, compute the resulting date after applying the day shift.",
+  "tags": [
+    "date",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "date-arithmetic",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048185,
+    "pattern_confidence": {
+      "date-arithmetic": 0.95,
+      "simulation": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

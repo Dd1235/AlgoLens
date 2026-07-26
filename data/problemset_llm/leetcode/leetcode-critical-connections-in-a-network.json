@@ -20,7 +20,8 @@
   "patterns": [
     "tarjan",
     "bridge-finding",
-    "dfs"
+    "dfs",
+    "articulation-points"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "tarjan": 0.98,
       "bridge-finding": 0.97,
-      "dfs": 0.95
+      "dfs": 0.95,
+      "articulation-points": 0.9
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-arc081-d",
+  "title": "Flip and Rectangles",
+  "slug": "arc081-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc081/tasks/arc081_d",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given a grid of black and white cells, you can flip any row or column any number of times to maximize the area of a rectangle consisting entirely of black cells. Determine the maximum possible rectangle area after optimal flips.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy",
+    "data-structure"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047486,
+    "pattern_confidence": {
+      "bit-manipulation": 0.85,
+      "greedy": 0.8,
+      "prefix-sum": 0.7
+    }
+  },
+  "difficulty": 2608
+}

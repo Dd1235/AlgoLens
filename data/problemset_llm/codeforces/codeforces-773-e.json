@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-773-e",
+  "title": "Blog Post Rating",
+  "slug": "773-e-blog-post-rating",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/773/E",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "data structures",
+    "sortings"
+  ],
+  "statement": "Given a sequence of user estimated ratings, determine for each prefix length the maximum possible final community rating of a blog post after users rate it in some order according to a specific rating rule.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048348,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.85,
+      "greedy": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -21,7 +21,8 @@
     "array",
     "geometry",
     "heap",
-    "sorting"
+    "sorting",
+    "data-structure"
   ],
   "patterns": [
     "line-sweep",

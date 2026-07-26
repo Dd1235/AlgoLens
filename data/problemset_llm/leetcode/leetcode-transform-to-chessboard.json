@@ -20,7 +20,7 @@
     "math"
   ],
   "patterns": [
-    "bitmask",
+    "bit-manipulation",
     "greedy",
     "pattern-validation"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924254,
     "pattern_confidence": {
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "greedy": 0.8,
       "pattern-validation": 0.9
     }

@@ -19,7 +19,7 @@
     "greedy"
   ],
   "patterns": [
-    "bitwise-operations",
+    "bit-manipulation",
     "greedy",
     "sorting"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922450,
     "pattern_confidence": {
-      "bitwise-operations": 0.95,
+      "bit-manipulation": 0.95,
       "greedy": 0.9,
       "sorting": 0.85
     }

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-166-e",
+  "title": "Tetrahedron",
+  "slug": "166-e-tetrahedron",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/166/E",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "dp",
+    "math",
+    "matrices"
+  ],
+  "statement": "Count the number of distinct closed walks of length n starting and ending at a specific vertex on a tetrahedron, with results modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "matrix-exponentiation",
+    "math"
+  ],
+  "patterns": [
+    "matrix-exponentiation",
+    "dp-on-dag",
+    "graph-walk-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047851,
+    "pattern_confidence": {
+      "matrix-exponentiation": 0.98,
+      "dp-on-dag": 0.7,
+      "graph-walk-counting": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

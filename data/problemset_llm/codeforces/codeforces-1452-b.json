@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1452-b",
+  "title": "Toy Blocks",
+  "slug": "1452-b-toy-blocks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1452/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given n boxes each containing some blocks, determine the minimum number of extra blocks to add so that moving all blocks from any chosen box to the others is always possible without making the nephew sad.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047776,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "sorting": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

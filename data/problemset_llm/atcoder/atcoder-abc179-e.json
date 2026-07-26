@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc179-e",
+  "title": "Sequence Sum",
+  "slug": "abc179-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc179/tasks/abc179_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given integers N, X, and M, define a sequence where A_1 = X and A_{n+1} = (A_n)^2 mod M. Compute the sum of the first N terms of this sequence efficiently, even for very large N.",
+  "tags": [
+    "math",
+    "number-theory",
+    "modular-arithmetic",
+    "sequence"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "modular-exponentiation",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047509,
+    "pattern_confidence": {
+      "cycle-detection": 0.95,
+      "modular-exponentiation": 0.85,
+      "prefix-sum": 0.8
+    }
+  },
+  "difficulty": 1175
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-283-b",
+  "title": "Cow Program",
+  "slug": "283-b-cow-program",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/283/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs"
+  ],
+  "statement": "Simulate a program with variables x and y on sequences starting with different initial values, determining the final y or if the program runs indefinitely.",
+  "tags": [
+    "array",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "simulation",
+    "dfs",
+    "memoization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047979,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "dfs": 0.9,
+      "memoization": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

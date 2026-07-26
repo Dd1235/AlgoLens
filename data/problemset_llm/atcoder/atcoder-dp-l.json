@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-dp-l",
+  "title": "Deque",
+  "slug": "dp-l",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_l",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Two players alternately remove elements from either end of a sequence, each accumulating the removed values as their score. Both play optimally, with the first player aiming to maximize the difference between their score and the second player's score. Determine the final score difference after all elements are removed.",
+  "tags": [
+    "array",
+    "game-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "interval-dp",
+    "minimax",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047450,
+    "pattern_confidence": {
+      "interval-dp": 0.98,
+      "minimax": 0.95,
+      "game-dp": 0.93
+    }
+  }
+}

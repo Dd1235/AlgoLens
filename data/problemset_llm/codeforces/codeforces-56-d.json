@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-56-d",
+  "title": "Changing a String",
+  "slug": "56-d-changing-a-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/56/D",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given two strings, find the minimum number of insertions, deletions, and replacements to transform one string into the other, and output the sequence of operations.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "edit-distance",
+    "dynamic-programming",
+    "sequence-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048954,
+    "pattern_confidence": {
+      "edit-distance": 0.99,
+      "dynamic-programming": 0.95,
+      "sequence-reconstruction": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 1"
+}

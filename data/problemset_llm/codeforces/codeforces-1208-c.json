@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1208-c",
+  "title": "Magic Grid",
+  "slug": "1208-c-magic-grid",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1208/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Construct an n by n matrix containing all integers from 0 to n²-1 exactly once, where n is a multiple of 4, such that the bitwise XOR of every row and every column is equal.",
+  "tags": [
+    "array",
+    "bitwise",
+    "constructive-algorithm",
+    "matrix"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "bitwise-xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048049,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "bitwise-xor": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

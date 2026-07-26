@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-432-d",
+  "title": "Prefixes and Suffixes",
+  "slug": "432-d-prefixes-and-suffixes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/432/D",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dp",
+    "string suffix structures",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Given a string, for each prefix that is also a suffix, determine how many times it appears as a substring within the string.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "prefix-function"
+  ],
+  "patterns": [
+    "prefix-function",
+    "string-matching",
+    "counting-substrings",
+    "kmp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048509,
+    "pattern_confidence": {
+      "prefix-function": 0.98,
+      "string-matching": 0.9,
+      "counting-substrings": 0.85,
+      "kmp": 0.9
+    }
+  },
+  "source_topic": "Formwise / String"
+}

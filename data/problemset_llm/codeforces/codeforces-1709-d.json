@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1709-d",
+  "title": "Rorororobot",
+  "slug": "1709-d-rorororobot",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1709/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a grid with columns partially blocked from the bottom, determine for multiple queries if a robot moving in fixed-length repeated steps can reach a target cell from a start cell without hitting blocked cells or boundaries.",
+  "tags": [
+    "grid",
+    "binary-search",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047947,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "prefix-sum": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

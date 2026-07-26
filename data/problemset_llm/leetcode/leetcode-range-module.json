@@ -22,7 +22,8 @@
     "interval-union",
     "ordered-set",
     "segment-tree",
-    "binary-search"
+    "binary-search",
+    "lazy-propagation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "interval-union": 0.95,
       "ordered-set": 0.9,
       "segment-tree": 0.85,
-      "binary-search": 0.8
+      "binary-search": 0.8,
+      "lazy-propagation": 0.9
     }
   }
 }

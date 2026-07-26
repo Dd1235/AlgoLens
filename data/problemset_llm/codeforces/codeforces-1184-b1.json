@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1184-b1",
+  "title": "The Doctor Meets Vader (Easy)",
+  "slug": "1184-b1-the-doctor-meets-vader-easy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1184/B1",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "sortings"
+  ],
+  "statement": "Given spaceships with attacking powers and empire bases with defensive powers and gold, determine for each spaceship the total gold it can steal from all bases with defense not exceeding its attack power.",
+  "tags": [
+    "array",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "sorting",
+    "prefix-sum",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047738,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "prefix-sum": 0.9,
+      "binary-search": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

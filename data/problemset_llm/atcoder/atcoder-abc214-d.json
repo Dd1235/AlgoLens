@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc214-d",
+  "title": "Sum of Maximum Weights",
+  "slug": "abc214-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc214/tasks/abc214_d",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a weighted tree, compute the sum over all pairs of vertices of the maximum edge weight on the shortest path between them.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find"
+  ],
+  "patterns": [
+    "contribution-technique",
+    "union-find",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047401,
+    "pattern_confidence": {
+      "contribution-technique": 0.95,
+      "union-find": 0.9,
+      "sorting": 0.85
+    }
+  },
+  "difficulty": 1341
+}

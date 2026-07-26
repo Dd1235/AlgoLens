@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-766-d",
+  "title": "Mahmoud and a Dictionary",
+  "slug": "766-d-mahmoud-and-a-dictionary",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/766/D",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Maintain and verify synonym and antonym relations between words, detecting contradictions that arise from transitive properties, and answer queries about the relations based on previously added information.",
+  "tags": [
+    "graph",
+    "union-find",
+    "disjoint-set",
+    "dfs"
+  ],
+  "patterns": [
+    "union-find",
+    "conflict-detection",
+    "bipartite-checking",
+    "transitive-closure"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048813,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "conflict-detection": 0.93,
+      "bipartite-checking": 0.9,
+      "transitive-closure": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

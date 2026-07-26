@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1509-c",
+  "title": "The Sports Festival",
+  "slug": "1509-c-the-sports-festival",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1509/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given speeds of n runners, reorder them to minimize the sum of discrepancies where each discrepancy is the difference between the maximum and minimum speed among the first i runners.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "prefix-min-max",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048507,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.85,
+      "prefix-min-max": 0.8,
+      "prefix-sum": 0.75
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

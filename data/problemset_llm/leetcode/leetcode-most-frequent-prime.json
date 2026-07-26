@@ -20,12 +20,12 @@
     "array",
     "math",
     "number-theory",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "directional-enumeration",
     "prime-checking",
-    "frequency-counting"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "directional-enumeration": 0.95,
       "prime-checking": 0.9,
-      "frequency-counting": 0.85
+      "counting": 0.85
     }
   }
 }

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-618-f",
+  "title": "Double Knapsack",
+  "slug": "618-f-double-knapsack",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/618/F",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "constructive algorithms",
+    "two pointers"
+  ],
+  "statement": "Given two multisets of integers, find nonempty subsets from each with equal sums or report no solution.",
+  "tags": [
+    "array",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "subset-sum",
+    "meet-in-the-middle",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048311,
+    "pattern_confidence": {
+      "subset-sum": 0.95,
+      "meet-in-the-middle": 0.9,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

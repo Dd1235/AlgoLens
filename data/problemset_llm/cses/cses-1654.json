@@ -12,7 +12,7 @@
     "bitwise"
   ],
   "patterns": [
-    "bitmask",
+    "bit-manipulation",
     "prefix-sum",
     "fast-zeta-transform",
     "mobius-inversion"
@@ -22,7 +22,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951947,
     "pattern_confidence": {
-      "bitmask": 0.95,
+      "bit-manipulation": 0.95,
       "prefix-sum": 0.85,
       "fast-zeta-transform": 0.9,
       "mobius-inversion": 0.9

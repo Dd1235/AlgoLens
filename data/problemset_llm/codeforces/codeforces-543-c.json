@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-543-c",
+  "title": "Remembering Strings",
+  "slug": "543-c-remembering-strings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/543/C",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "bitmasks",
+    "dp"
+  ],
+  "statement": "Given a multiset of equal-length strings, find the minimum cost to modify characters so that each string has a unique character at some position distinguishing it from all others.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "bit-manipulation",
+    "graph"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "minimum-cost-matching",
+    "state-compression",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048339,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "minimum-cost-matching": 0.85,
+      "state-compression": 0.9,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

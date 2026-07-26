@@ -16,13 +16,13 @@
   "statement": "Given a tree with n cities, count for each distance d the number of connected subtrees whose maximum distance between any two cities is exactly d.",
   "tags": [
     "tree",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "graph"
   ],
   "patterns": [
     "bitmask-dp",
-    "enumeration",
+    "brute-force",
     "distance-calculation"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "generated_at_unix": 1777922706,
     "pattern_confidence": {
       "bitmask-dp": 0.95,
-      "enumeration": 0.9,
+      "brute-force": 0.9,
       "distance-calculation": 0.85
     }
   }

@@ -14,11 +14,11 @@
   "tags": [
     "array",
     "greedy",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "greedy",
-    "enumeration",
+    "brute-force",
     "two-pointer"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1784909668,
     "pattern_confidence": {
       "greedy": 0.9,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "two-pointer": 0.6
     }
   }

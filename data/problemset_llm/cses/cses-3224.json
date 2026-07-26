@@ -15,7 +15,7 @@
   ],
   "patterns": [
     "sliding-window",
-    "frequency-count",
+    "counting",
     "balanced-heap",
     "hash-map"
   ],
@@ -25,7 +25,7 @@
     "generated_at_unix": 1777951898,
     "pattern_confidence": {
       "sliding-window": 0.98,
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "balanced-heap": 0.85,
       "hash-map": 0.9
     }

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-61-e",
+  "title": "Enemy is weak",
+  "slug": "61-e-enemy-is-weak",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/61/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given an array of distinct integers representing soldiers' powers, count the number of strictly decreasing triplets (i, j, k) with i < j < k and a[i] > a[j] > a[k].",
+  "tags": [
+    "array",
+    "data-structures",
+    "fenwick-tree",
+    "segment-tree"
+  ],
+  "patterns": [
+    "fenwick-tree",
+    "counting-inversions",
+    "contribution-technique",
+    "merge-sort-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048489,
+    "pattern_confidence": {
+      "fenwick-tree": 0.95,
+      "counting-inversions": 0.9,
+      "contribution-technique": 0.85,
+      "merge-sort-tree": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

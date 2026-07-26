@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-8-c",
+  "title": "Looking for Order",
+  "slug": "8-c-looking-for-order",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/8/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "bitmasks",
+    "dp"
+  ],
+  "statement": "Given coordinates of a handbag and scattered objects, find the minimal total squared-distance time to carry all objects back to the handbag, carrying at most two objects at once and starting at the handbag location.",
+  "tags": [
+    "geometry",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "geometry-distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048936,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "geometry-distance-calculation": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

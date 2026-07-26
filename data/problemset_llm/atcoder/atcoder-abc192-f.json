@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc192-f",
+  "title": "Potion",
+  "slug": "abc192-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc192/tasks/abc192_f",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given N materials each with a magic power, choose a non-empty subset to mix so that the potion's magic power reaches exactly X at the earliest time, where the power increases by the subset size each second after mixing.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "subset-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047461,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "subset-sum": 0.9
+    }
+  },
+  "difficulty": 1783
+}

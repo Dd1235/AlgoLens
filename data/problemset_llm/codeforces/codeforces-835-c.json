@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-835-c",
+  "title": "Star sky",
+  "slug": "835-c-star-sky",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/835/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "dp",
+    "implementation"
+  ],
+  "statement": "Given stars with coordinates and cyclic brightness values, answer queries about the total brightness of stars within given rectangular regions at specific times.",
+  "tags": [
+    "geometry",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "coordinate-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048848,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "coordinate-compression": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Formwise / Contribution Technique & Prefix"
+}

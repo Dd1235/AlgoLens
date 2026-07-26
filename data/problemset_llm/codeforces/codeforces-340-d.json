@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-340-d",
+  "title": "Bubble Sort Graph",
+  "slug": "340-d-bubble-sort-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/340/D",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dp"
+  ],
+  "statement": "Given a permutation, construct a graph based on the bubble sort process and find the size of its maximum independent set.",
+  "tags": [
+    "array",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047882,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dp-on-dag": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1579-e2",
+  "title": "Array Optimization by Deque",
+  "slug": "1579-e2-array-optimization-by-deque",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1579/E2",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given an array, sequentially insert each element either at the beginning or end of a deque to minimize the total number of inversions in the resulting sequence.",
+  "tags": [
+    "array",
+    "deque",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "inversion-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048066,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.7,
+      "inversion-count": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

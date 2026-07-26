@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-208-e",
+  "title": "Blood Cousins",
+  "slug": "208-e-blood-cousins",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/208/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dfs and similar",
+    "trees"
+  ],
+  "statement": "Given a family tree with parent-child relationships, for multiple queries each specifying a person and an integer p, determine how many p-th cousins that person has, where p-th cousins share a common p-th ancestor.",
+  "tags": [
+    "tree",
+    "dfs",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-lifting",
+    "dfs",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049041,
+    "pattern_confidence": {
+      "binary-lifting": 0.95,
+      "dfs": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

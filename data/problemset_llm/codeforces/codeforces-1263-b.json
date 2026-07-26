@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1263-b",
+  "title": "PIN Codes",
+  "slug": "1263-b-pin-codes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1263/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given up to 10 four-digit PIN codes, find the minimum number of digit changes needed so that all PIN codes become unique.",
+  "tags": [
+    "string",
+    "greedy",
+    "brute-force"
+  ],
+  "patterns": [
+    "backtracking",
+    "greedy",
+    "state-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047707,
+    "pattern_confidence": {
+      "backtracking": 0.85,
+      "greedy": 0.9,
+      "state-enumeration": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

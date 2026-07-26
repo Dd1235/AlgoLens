@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-200-a",
+  "title": "Cinema",
+  "slug": "200-a-cinema",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/200/A",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "brute force",
+    "data structures"
+  ],
+  "statement": "Given a theater seating layout and each person's preferred seat, assign seats to all people minimizing Manhattan distance to their preferred seat with tie-breaking by row and then seat number.",
+  "tags": [
+    "geometry",
+    "greedy",
+    "data-structures"
+  ],
+  "patterns": [
+    "bfs",
+    "heap",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048162,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "heap": 0.9,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

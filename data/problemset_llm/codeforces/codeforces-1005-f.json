@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1005-f",
+  "title": "Berland and the Shortest Paths",
+  "slug": "1005-f-berland-and-the-shortest-paths",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1005/F",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Given a connected undirected graph with n cities and roads, select n-1 roads forming a spanning tree that minimizes the sum of shortest distances from city 1 to all other cities, and output k distinct such minimal spanning trees if they exist.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "spanning-tree",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "shortest-path-tree",
+    "spanning-tree-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048255,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "shortest-path-tree": 0.9,
+      "spanning-tree-enumeration": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

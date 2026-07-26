@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-142-b",
+  "title": "Help General",
+  "slug": "142-b-help-general",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/142/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given an n by m grid, place the maximum number of soldiers so that no two soldiers are at squared distance 5 apart, avoiding conflicts caused by the Fairy Godmother's curse.",
+  "tags": [
+    "geometry",
+    "graph",
+    "greedy",
+    "combinatorics"
+  ],
+  "patterns": [
+    "conflict-graph",
+    "maximum-independent-set",
+    "constructive-algorithm",
+    "distance-constraints"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047915,
+    "pattern_confidence": {
+      "conflict-graph": 0.9,
+      "maximum-independent-set": 0.85,
+      "constructive-algorithm": 0.8,
+      "distance-constraints": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

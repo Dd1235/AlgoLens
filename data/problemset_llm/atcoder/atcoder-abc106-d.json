@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc106-d",
+  "title": "D",
+  "slug": "abc106-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc106/tasks/abc106_d",
+  "source_topic": "Formwise / Contribution Technique & Prefix",
+  "source_tags": [],
+  "statement": "Given N cities on a line and M trains each running between two cities, answer Q queries asking how many trains run entirely within a specified city segment.",
+  "tags": [
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047519,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "offline-queries": 0.85
+    }
+  },
+  "difficulty": 1319
+}

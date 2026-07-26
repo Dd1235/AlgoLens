@@ -1,6 +1,6 @@
 # Cosine
 
-Search 1,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
+Search 2,500+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
 **Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
@@ -11,16 +11,16 @@ Search 1,800+ competitive-programming problems the way you actually think about 
 
 Google "cses euler path" and you get the CSES homepage, a blog post, and Wikipedia — not the actual Euler-path problems. "knapsack leetcode" is no better at surfacing the good knapsack DPs. Site tags help but stop at their site's border and at coarse labels: LeetCode has `dynamic-programming`, but nothing for `digit-dp`, `wqs-binary-search`, or `slope-trick`. And nothing anywhere answers _"I remember the story — a thief robbing houses — what was that problem?"_
 
-Cosine is one search box over LeetCode + CSES (more upcoming!) that handles all three.
+Cosine is one search box over LeetCode, CSES, Codeforces and AtCoder that handles all three.
 
 ## Finding problems
 
 - **Three search modes, one box.** **keyword** matches words in the title, statement *and* our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
-- **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~150-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
+- **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
 - **Compare rankers.** A toggle runs the same query on bm25 and dense side by side — watch keyword search find nothing for "thief" while semantic nails it.
-- **A deliberately hard corpus.** Every LeetCode Hard, all of CSES, and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade) — no Easy filler, because the best ~1,800 hard problems beat 4,000 padded ones. Fresh contest problems flow in through one refresh command, with niche labels human-reviewed before they ship.
+- **A deliberately hard corpus.** 2,574 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces + AtCoder sampled across rating bands from 1300 up. No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
 
 ## Tracking the grind
 
@@ -48,6 +48,8 @@ or wording, not ranking — that turned out to be the pattern.
 | "flows" returned nothing | No stemmer — added flow aliases and folded 9 scattered flow labels into the canonical set |
 | Similarity scores were confusing | Numeric scores are debug-only now; results keep the relative bar |
 | Didn't know bookmarks / done / filters existed | `:help` gained a SAVING section and a real explanation of "find similar" |
+| A cleared filter came back on refresh | Clearing the pill now drops `?pattern=` from the URL too |
+| "LeetCode-only is limiting" | Codeforces and AtCoder added — rating-stratified from 1300 up, no easies |
 
 ## Measured
 

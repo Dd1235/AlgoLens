@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1995-d",
+  "title": "Cases",
+  "slug": "1995-d-cases",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1995/D",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dp",
+    "strings"
+  ],
+  "statement": "Given a text without spaces composed of letters from the first c letters of the alphabet, where each word ends with a letter defining its case, and words have length at most k, determine the minimum number of distinct cases possible in the language.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "dynamic-programming",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048172,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "dynamic-programming": 0.9,
+      "brute-force": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-776-d",
+  "title": "The Door Problem",
+  "slug": "776-d-the-door-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/776/D",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "2-sat",
+    "dfs and similar",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Given n rooms each locked or unlocked and m switches controlling doors where each door is controlled by exactly two switches, determine if there exists a toggle configuration of switches that unlocks all doors simultaneously.",
+  "tags": [
+    "graph",
+    "two-sat",
+    "union-find"
+  ],
+  "patterns": [
+    "two-sat",
+    "dfs",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048861,
+    "pattern_confidence": {
+      "two-sat": 0.98,
+      "dfs": 0.85,
+      "union-find": 0.75
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

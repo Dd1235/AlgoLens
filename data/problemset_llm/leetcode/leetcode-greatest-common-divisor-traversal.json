@@ -22,7 +22,8 @@
   "patterns": [
     "union-find",
     "gcd",
-    "connectivity-check"
+    "connectivity-check",
+    "dfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "union-find": 0.98,
       "gcd": 0.95,
-      "connectivity-check": 0.9
+      "connectivity-check": 0.9,
+      "dfs": 0.9
     }
   }
 }

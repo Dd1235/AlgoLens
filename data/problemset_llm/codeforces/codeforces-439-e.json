@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-439-e",
+  "title": "Devu and Birthday Celebration",
+  "slug": "439-e-devu-and-birthday-celebration",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/439/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Given n sweets and f friends, count the number of ways to distribute all sweets so that each friend gets at least one sweet and the greatest common divisor of all given amounts is 1. Multiple queries with different n and f values are given, and results must be computed modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "number-theory",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048891,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.95,
+      "modular-arithmetic": 0.9,
+      "dynamic-programming": 0.85
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

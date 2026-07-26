@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "enumeration",
+    "brute-force",
     "maximum-weight-matching"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923459,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "enumeration": 0.9,
+      "brute-force": 0.9,
       "maximum-weight-matching": 0.85
     }
   }

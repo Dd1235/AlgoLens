@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-arc073-d",
+  "title": "Many Moves",
+  "slug": "arc073-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc073/tasks/arc073_d",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Given two pieces initially placed on distinct squares in a row, process a sequence of queries by moving one piece at a time to specified squares in order, minimizing the total movement time.",
+  "tags": [
+    "dynamic-programming",
+    "array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047584,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "interval-dp": 0.85
+    }
+  },
+  "difficulty": 2867
+}

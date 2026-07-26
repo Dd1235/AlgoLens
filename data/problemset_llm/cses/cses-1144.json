@@ -9,7 +9,8 @@
   "statement": "Maintain a list of employee salaries with support for updates to individual salaries and queries counting how many salaries fall within a given range.",
   "tags": [
     "array",
-    "fenwick-tree"
+    "fenwick-tree",
+    "segment-tree"
   ],
   "patterns": [
     "fenwick-tree",

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-939-e",
+  "title": "Maximize!",
+  "slug": "939-e-maximize",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/939/E",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "ternary search",
+    "two pointers"
+  ],
+  "statement": "Maintain a multiset of positive integers with insertions in non-decreasing order and answer queries to find a subset maximizing the difference between its maximum element and its average.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048012,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "two-pointers": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-696-d",
+  "title": "Legen...",
+  "slug": "696-d-legen",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/696/D",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "matrices",
+    "strings"
+  ],
+  "statement": "Given a set of pickup lines with associated happiness values, construct a text of length up to L to maximize the total happiness gained from all occurrences of these lines as substrings, including overlapping ones.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "automaton"
+  ],
+  "patterns": [
+    "aho-corasick",
+    "dynamic-programming",
+    "string-automaton"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048341,
+    "pattern_confidence": {
+      "aho-corasick": 0.98,
+      "dynamic-programming": 0.95,
+      "string-automaton": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

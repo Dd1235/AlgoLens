@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "linear-basis",
-    "bitmask",
+    "bit-manipulation",
     "greedy"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923464,
     "pattern_confidence": {
       "linear-basis": 0.98,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "greedy": 0.9
     }
   }

@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc125-c",
+  "title": "GCD on Blackboard",
+  "slug": "abc125-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc125/tasks/abc125_c",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given N integers, replace exactly one integer with any value between 1 and 10^9 to maximize the greatest common divisor (GCD) of all integers after the replacement.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047513,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "counting": 0.85,
+      "greedy": 0.75
+    }
+  },
+  "difficulty": 1197
+}

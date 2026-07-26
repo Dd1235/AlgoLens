@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-626-f",
+  "title": "Group Projects",
+  "slug": "626-f-group-projects",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/626/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Count the number of ways to partition students into groups so that the sum of the differences between the maximum and minimum work times in each group does not exceed a given limit.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-min-max",
+    "binary-search-answer",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048472,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "prefix-min-max": 0.85,
+      "binary-search-answer": 0.75,
+      "dp-optimization": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

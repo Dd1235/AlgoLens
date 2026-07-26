@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-656-b",
+  "title": "Scrambled",
+  "slug": "656-b-scrambled",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/656/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "*special",
+    "implementation"
+  ],
+  "statement": "Given arrays M and R, determine the percentage of days (over infinitely many days) on which a washing event occurs, where washing happens on day D if there exists an index i such that D mod M[i] = R[i].",
+  "tags": [
+    "array",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "inclusion-exclusion",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047982,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "inclusion-exclusion": 0.9,
+      "binary-search-answer": 0.6
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1970-b3",
+  "title": "Exact Neighbours (Hard)",
+  "slug": "1970-b3-exact-neighbours-hard",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1970/B3",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Place n houses on an n×n grid so that each wizard's house is uniquely positioned in its row, and each wizard can visit another house exactly a specified Manhattan distance away without blocking views in columns.",
+  "tags": [
+    "geometry",
+    "combinatorics",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "manhattan-distance",
+    "constructive-algorithm",
+    "permutation-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048212,
+    "pattern_confidence": {
+      "manhattan-distance": 0.95,
+      "constructive-algorithm": 0.9,
+      "permutation-construction": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

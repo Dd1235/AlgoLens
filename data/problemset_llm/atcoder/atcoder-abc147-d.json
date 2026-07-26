@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc147-d",
+  "title": "Xor Sum 4",
+  "slug": "abc147-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc147/tasks/abc147_d",
+  "source_topic": "Formwise / Bit-Manipulation",
+  "source_tags": [],
+  "statement": "Given an array of integers, compute the sum of XOR values for all distinct pairs modulo 10^9+7.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "counting-bits",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047432,
+    "pattern_confidence": {
+      "bit-manipulation": 0.98,
+      "counting-bits": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "difficulty": 1205
+}

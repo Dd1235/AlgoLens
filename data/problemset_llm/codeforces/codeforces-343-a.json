@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-343-a",
+  "title": "Rational Resistance",
+  "slug": "343-a-rational-resistance",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/343/A",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given unit resistors, construct an element with a target rational resistance using series and parallel connections, minimizing the number of resistors used.",
+  "tags": [
+    "math",
+    "number-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp-on-rationals",
+    "state-compression",
+    "fraction-normalization",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048510,
+    "pattern_confidence": {
+      "dp-on-rationals": 0.95,
+      "state-compression": 0.85,
+      "fraction-normalization": 0.9,
+      "number-theory": 0.9
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

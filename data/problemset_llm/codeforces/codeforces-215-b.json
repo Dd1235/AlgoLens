@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-215-b",
+  "title": "Olympic Medal",
+  "slug": "215-b-olympic-medal",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/215/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given sets of possible outer ring radii and metal densities, select values to maximize the inner disk radius such that the mass ratio of the ring to the disk equals a given fraction.",
+  "tags": [
+    "math",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "equation-solving"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047888,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "equation-solving": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -17,11 +17,12 @@
   "tags": [
     "tree",
     "string",
-    "data-structure"
+    "data-structure",
+    "segment-tree"
   ],
   "patterns": [
     "lca",
-    "bitmask",
+    "bit-manipulation",
     "segment-tree",
     "tree-flattening"
   ],
@@ -31,7 +32,7 @@
     "generated_at_unix": 1777923888,
     "pattern_confidence": {
       "lca": 0.95,
-      "bitmask": 0.9,
+      "bit-manipulation": 0.9,
       "segment-tree": 0.88,
       "tree-flattening": 0.85
     }

@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-magnetic-force-between-two-balls",
+  "title": "Magnetic Force Between Two Balls",
+  "slug": "magnetic-force-between-two-balls",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/magnetic-force-between-two-balls/description/",
+  "source_topic": "Formwise / Binary Search",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "sorting"
+  ],
+  "statement": "Given positions of baskets and a number of balls, place the balls to maximize the minimum distance between any two balls.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047347,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

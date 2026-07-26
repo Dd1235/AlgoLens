@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-485-b",
+  "title": "Valuable Resources",
+  "slug": "485-b-valuable-resources",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/485/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Given points representing mines on a Cartesian plane, find the minimum area of an axis-aligned square that encloses all points.",
+  "tags": [
+    "geometry",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "bounding-box",
+    "minimum-enclosing-square",
+    "coordinate-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047780,
+    "pattern_confidence": {
+      "bounding-box": 0.95,
+      "minimum-enclosing-square": 0.9,
+      "coordinate-processing": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-593-d",
+  "title": "Happy Tree Party",
+  "slug": "593-d-happy-tree-party",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/593/D",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "graphs",
+    "math",
+    "trees"
+  ],
+  "statement": "Given a tree with values on edges, process queries that either update an edge's value or compute the result of repeatedly dividing a number by the edge values along the unique path between two vertices.",
+  "tags": [
+    "tree",
+    "graph",
+    "data-structure"
+  ],
+  "patterns": [
+    "dfs",
+    "path-query",
+    "edge-updates"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048093,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "path-query": 0.85,
+      "edge-updates": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

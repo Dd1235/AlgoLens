@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1848-e",
+  "title": "Vika and Stone Skipping",
+  "slug": "1848-e-vika-and-stone-skipping",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1848/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a coordinate x and multiple multipliers, determine for each scaled coordinate the maximum number of distinct positive integer forces f_i such that the stone skipping distances sum to that coordinate, with results modulo a prime M.",
+  "tags": [
+    "math",
+    "number-theory",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048374,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.8,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

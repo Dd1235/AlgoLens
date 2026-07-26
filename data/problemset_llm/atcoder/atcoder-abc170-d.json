@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc170-d",
+  "title": "Not Divisible",
+  "slug": "abc170-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc170/tasks/abc170_d",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Given a sequence of integers, count how many elements are not divisible by any other distinct element in the sequence.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "divisor-check",
+    "sieve-like-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047508,
+    "pattern_confidence": {
+      "counting": 0.9,
+      "divisor-check": 0.85,
+      "sieve-like-enumeration": 0.8
+    }
+  },
+  "difficulty": 1033
+}

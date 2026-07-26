@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1648-b",
+  "title": "Integral Array",
+  "slug": "1648-b-integral-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1648/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "data structures",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, determine if for every pair of elements x and y with x ≥ y, the floor of x divided by y is also present in the array.",
+  "tags": [
+    "array",
+    "math",
+    "set"
+  ],
+  "patterns": [
+    "brute-force",
+    "hash-set",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048019,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "hash-set": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

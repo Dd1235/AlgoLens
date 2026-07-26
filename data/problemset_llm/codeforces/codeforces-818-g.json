@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-818-g",
+  "title": "Four Melodies",
+  "slug": "818-g-four-melodies",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/818/G",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "flows",
+    "graphs"
+  ],
+  "statement": "Given a sequence of notes, find four non-empty, non-overlapping subsequences each forming a melody where adjacent notes differ by 1 or are congruent modulo 7, maximizing the total length sum.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "subsequence",
+    "state-compression",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048387,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "subsequence": 0.9,
+      "state-compression": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

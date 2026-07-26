@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-366-c",
+  "title": "Dima and Salad",
+  "slug": "366-c-dima-and-salad",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/366/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given fruits each with taste and calories, select a non-empty subset so that the ratio of total taste to total calories equals a given value k, maximizing the total taste.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dp-on-subsets",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048482,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "dp-on-subsets": 0.88,
+      "prefix-sum": 0.75
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-240-e",
+  "title": "Road Repairs",
+  "slug": "240-e-road-repairs",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/240/E",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Given a directed graph with some edges initially unusable, find the minimum set of edges to repair so that all nodes are reachable from the capital city.",
+  "tags": [
+    "graph",
+    "dfs",
+    "greedy",
+    "shortest-path"
+  ],
+  "patterns": [
+    "minimum-spanning-arborescence",
+    "dfs",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048438,
+    "pattern_confidence": {
+      "minimum-spanning-arborescence": 0.9,
+      "dfs": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

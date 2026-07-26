@@ -15,7 +15,7 @@
   "statement": "Given a grid with walls, keys, locks, and a start position, find the minimum moves to collect all keys while only passing through locks if their keys are obtained.",
   "tags": [
     "graph",
-    "bitmask",
+    "bit-manipulation",
     "bfs",
     "matrix"
   ],

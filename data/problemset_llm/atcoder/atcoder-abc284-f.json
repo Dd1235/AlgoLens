@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc284-f",
+  "title": "ABCBAC",
+  "slug": "abc284-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc284/tasks/abc284_f",
+  "source_topic": "Formwise / String",
+  "source_tags": [],
+  "statement": "Given a string T of length 2N, find a string S of length N and an integer i such that concatenating the first i characters of S, the reverse of S, and the last N-i characters of S equals T, or report -1 if no such pair exists.",
+  "tags": [
+    "string",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "string-reversal",
+    "constructive-algorithm",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047540,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "string-reversal": 0.85,
+      "constructive-algorithm": 0.8,
+      "rolling-hash": 0.9
+    }
+  },
+  "difficulty": 1575
+}

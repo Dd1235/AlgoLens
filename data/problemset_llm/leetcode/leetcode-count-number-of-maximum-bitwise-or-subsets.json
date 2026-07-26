@@ -17,13 +17,12 @@
     "array",
     "bit-manipulation",
     "backtracking",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "submask-enumeration",
-    "bitmask-enumeration",
-    "backtracking",
-    "bitwise-operations"
+    "bit-manipulation",
+    "backtracking"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,9 +30,8 @@
     "generated_at_unix": 1784715346,
     "pattern_confidence": {
       "submask-enumeration": 0.9,
-      "bitmask-enumeration": 0.95,
-      "backtracking": 0.9,
-      "bitwise-operations": 0.9
+      "bit-manipulation": 0.95,
+      "backtracking": 0.9
     }
   }
 }

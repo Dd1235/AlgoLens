@@ -19,7 +19,8 @@
   "tags": [
     "array",
     "bit-manipulation",
-    "data-structure"
+    "data-structure",
+    "trie"
   ],
   "patterns": [
     "sliding-window",

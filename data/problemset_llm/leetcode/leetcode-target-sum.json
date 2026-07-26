@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-target-sum",
+  "title": "Target Sum",
+  "slug": "target-sum",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/target-sum/description/",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking"
+  ],
+  "statement": "Given an integer array, count the number of ways to assign '+' or '-' signs to each element so that the resulting expression sums to a target value.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking"
+  ],
+  "patterns": [
+    "subset-sum",
+    "memoization",
+    "state-compression",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047366,
+    "pattern_confidence": {
+      "subset-sum": 0.95,
+      "memoization": 0.9,
+      "state-compression": 0.85,
+      "backtracking": 0.9
+    }
+  }
+}

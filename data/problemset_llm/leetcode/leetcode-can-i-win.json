@@ -19,7 +19,7 @@
     "math",
     "dynamic-programming",
     "game-theory",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",

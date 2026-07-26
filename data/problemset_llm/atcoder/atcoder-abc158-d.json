@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc158-d",
+  "title": "String Formation",
+  "slug": "abc158-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc158/tasks/abc158_d",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given a string and a sequence of operations that either reverse the string or add a character to its front or back, determine the final string after all operations are applied.",
+  "tags": [
+    "string",
+    "deque",
+    "data-structure"
+  ],
+  "patterns": [
+    "simulation",
+    "two-pointers",
+    "deque"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047477,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "two-pointers": 0.7,
+      "deque": 0.9
+    }
+  },
+  "difficulty": 610
+}

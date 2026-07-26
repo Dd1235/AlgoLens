@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-643-e",
+  "title": "Bear and Destroying Subtrees",
+  "slug": "643-e-bear-and-destroying-subtrees",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/643/E",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dp",
+    "math",
+    "probabilities",
+    "trees"
+  ],
+  "statement": "Maintain a dynamically growing rooted tree with two query types: adding a child to a node and computing the expected height penalty of a subtree after random independent edge removals with probability 1/2.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "probability"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "dynamic-tree",
+    "probabilistic-modeling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048411,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "dynamic-tree": 0.9,
+      "probabilistic-modeling": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

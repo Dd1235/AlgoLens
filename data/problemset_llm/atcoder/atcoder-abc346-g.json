@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc346-g",
+  "title": "Alone",
+  "slug": "abc346-g",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc346/tasks/abc346_g",
+  "source_topic": "Formwise / Segment Trees",
+  "source_tags": [],
+  "statement": "Given an integer sequence, count the number of subarrays that contain at least one element appearing exactly once within that subarray.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "hash-map",
+    "segment-tree"
+  ],
+  "patterns": [
+    "two-pointers",
+    "hash-map",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047548,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "hash-map": 0.9,
+      "sliding-window": 0.85
+    }
+  },
+  "difficulty": 2166
+}

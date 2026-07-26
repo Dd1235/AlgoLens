@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1559-d2",
+  "title": "Mocha and Diana (Hard Version)",
+  "slug": "1559-d2-mocha-and-diana-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1559/D2",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "greedy",
+    "trees",
+    "two pointers"
+  ],
+  "statement": "Given two forests on the same set of nodes, find the maximum set of edges that can be added to both so that both remain acyclic (forests).",
+  "tags": [
+    "graph",
+    "union-find",
+    "trees",
+    "greedy"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048925,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "greedy": 0.9,
+      "cycle-detection": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

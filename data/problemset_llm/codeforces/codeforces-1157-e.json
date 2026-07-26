@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1157-e",
+  "title": "Minimum Array",
+  "slug": "1157-e-minimum-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1157/E",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given two arrays of equal length with elements in the range [0, n-1], reorder the second array to minimize lexicographically the array formed by element-wise sums modulo n.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search",
+    "data-structures"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "ordered-set",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047976,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.85,
+      "ordered-set": 0.8,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

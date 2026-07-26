@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc171-d",
+  "title": "Replacing",
+  "slug": "abc171-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc171/tasks/abc171_d",
+  "source_topic": "Formwise / STL",
+  "source_tags": [],
+  "statement": "Given a sequence of positive integers, perform Q operations where in each operation all occurrences of a value B_i are replaced by C_i, and after each operation output the sum of the sequence.",
+  "tags": [
+    "array",
+    "hash-map",
+    "data-structure"
+  ],
+  "patterns": [
+    "counting",
+    "incremental-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047472,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "incremental-update": 0.9
+    }
+  },
+  "difficulty": 498
+}

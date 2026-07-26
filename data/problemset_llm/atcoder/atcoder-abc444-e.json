@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-abc444-e",
+  "title": "Sparse Range",
+  "slug": "abc444-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc444/tasks/abc444_e",
+  "source_topic": "Formwise / Two Pointers",
+  "source_tags": [],
+  "statement": "Given an integer sequence and a positive integer D, count the number of subarray intervals where every pair of elements differs by at least D.",
+  "tags": [
+    "array",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047348,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "sliding-window": 0.9
+    }
+  },
+  "difficulty": 1107
+}

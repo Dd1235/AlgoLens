@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-161-d",
+  "title": "Distance in Tree",
+  "slug": "161-d-distance-in-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/161/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "trees"
+  ],
+  "statement": "Given a tree with n vertices and a positive integer k, count the number of distinct vertex pairs whose shortest path distance is exactly k edges.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "distance-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048865,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "distance-counting": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

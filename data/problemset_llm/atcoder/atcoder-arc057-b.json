@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-arc057-b",
+  "title": "高橋君ゲーム",
+  "slug": "arc057-b",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc057/tasks/arc057_b",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Given N days with a_i games played each day and a total of K wins over all days, determine the maximum number of days on which the cumulative win rate strictly increases compared to the previous day.",
+  "tags": [
+    "dynamic-programming",
+    "prefix-sum",
+    "array"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047575,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "dynamic-programming": 0.8
+    }
+  },
+  "difficulty": 2220
+}

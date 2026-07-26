@@ -17,7 +17,8 @@
     "tree",
     "graph",
     "xor",
-    "dfs"
+    "dfs",
+    "dynamic-programming"
   ],
   "patterns": [
     "dfs",

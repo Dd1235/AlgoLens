@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-383-c",
+  "title": "Propagating tree",
+  "slug": "383-c-propagating-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/383/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with initial node values, support updates that add a value to a node and propagate the negated value to all its descendants recursively, and queries that ask for the current value of a node.",
+  "tags": [
+    "tree",
+    "dfs",
+    "data-structure"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "difference-array"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048754,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-dp": 0.85,
+      "difference-array": 0.7
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

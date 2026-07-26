@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-dp-e",
+  "title": "Knapsack 2",
+  "slug": "dp-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_e",
+  "source_topic": "Formwise / DP Optimizations",
+  "source_tags": [],
+  "statement": "Given N items each with a weight and value, select a subset with total weight at most W to maximize the sum of values.",
+  "tags": [
+    "dynamic-programming",
+    "knapsack",
+    "optimization"
+  ],
+  "patterns": [
+    "knapsack",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047566,
+    "pattern_confidence": {
+      "knapsack": 0.99,
+      "dp-optimization": 0.85
+    }
+  }
+}

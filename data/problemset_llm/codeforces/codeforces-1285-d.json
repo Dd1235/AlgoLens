@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1285-d",
+  "title": "Dr. Evil Underscores",
+  "slug": "1285-d-dr-evil-underscores",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1285/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dfs and similar",
+    "divide and conquer",
+    "dp",
+    "greedy",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given a list of integers, find an integer X that minimizes the maximum XOR value between X and each element in the list.",
+  "tags": [
+    "bitmask-dp",
+    "array",
+    "binary-search",
+    "trie"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "bit-manipulation",
+    "xor-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048498,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "bit-manipulation": 0.9,
+      "xor-optimization": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

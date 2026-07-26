@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc206-e",
+  "title": "Divide Both",
+  "slug": "abc206-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc206/tasks/abc206_e",
+  "source_topic": "Formwise / Math",
+  "source_tags": [],
+  "statement": "Count the number of integer pairs (x,y) within [L,R] where their gcd is greater than 1 and neither x/g nor y/g equals 1.",
+  "tags": [
+    "math",
+    "number-theory",
+    "gcd",
+    "counting"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "sieve",
+    "gcd-based-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047505,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.9,
+      "sieve": 0.85,
+      "gcd-based-counting": 0.95
+    }
+  },
+  "difficulty": 1745
+}

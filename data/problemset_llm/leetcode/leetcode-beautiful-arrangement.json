@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-beautiful-arrangement",
+  "title": "Beautiful Arrangement",
+  "slug": "beautiful-arrangement",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/beautiful-arrangement/description/",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "dynamic-programming",
+    "backtracking",
+    "bit-manipulation",
+    "bitmask"
+  ],
+  "statement": "Count the number of permutations of integers 1 to n where each element at position i is divisible by i or i is divisible by the element.",
+  "tags": [
+    "backtracking",
+    "bit-manipulation",
+    "dynamic-programming",
+    "permutation"
+  ],
+  "patterns": [
+    "backtracking",
+    "bitmask-dp",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047363,
+    "pattern_confidence": {
+      "backtracking": 0.98,
+      "bitmask-dp": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

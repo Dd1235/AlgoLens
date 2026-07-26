@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1804-e",
+  "title": "Routing",
+  "slug": "1804-e-routing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1804/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dfs and similar",
+    "dp",
+    "graphs"
+  ],
+  "statement": "Given a connected undirected network, assign each server an auxiliary neighbor so that a recursive routing procedure can find a path between any two servers without infinite loops, or determine that no such assignment exists.",
+  "tags": [
+    "graph",
+    "dfs",
+    "bit-manipulation",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dfs",
+    "bitmask-dp",
+    "cycle-detection",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048122,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bitmask-dp": 0.85,
+      "cycle-detection": 0.9,
+      "state-compression": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

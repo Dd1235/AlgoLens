@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1681-d",
+  "title": "Required Length",
+  "slug": "1681-d-required-length",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1681/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "dp",
+    "hashing",
+    "shortest paths"
+  ],
+  "statement": "Starting from an integer x, repeatedly multiply x by one of its digits to reach a number with decimal length n in the minimum number of operations.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "bfs",
+    "state-space-search",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047983,
+    "pattern_confidence": {
+      "bfs": 0.9,
+      "state-space-search": 0.85,
+      "dynamic-programming": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

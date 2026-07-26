@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-762-a",
+  "title": "k-th divisor",
+  "slug": "762-a-k-th-divisor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/762/A",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given integers n and k, find the k-th smallest divisor of n or determine that it does not exist.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "divisor-enumeration",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047828,
+    "pattern_confidence": {
+      "divisor-enumeration": 0.95,
+      "sorting": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

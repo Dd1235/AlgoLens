@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1909-f2",
+  "title": "Small Permutation Problem (Hard Version)",
+  "slug": "1909-f2-small-permutation-problem-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1909/F2",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Given an integer n and an array a with values in [-1, n], count permutations p of [1..n] where for each i with a_i ≠ -1, the count of elements ≤ i in the prefix p_1 to p_i equals a_i, modulo 998244353.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048281,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.7,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

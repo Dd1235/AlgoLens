@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-685-a",
+  "title": "Robbers' watch",
+  "slug": "685-a-robbers-watch",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/685/A",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Given a custom time format with hours and minutes represented in base 7 with fixed digit lengths, count how many valid hour-minute pairs have all distinct digits in their base-7 representation.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "digit-dp",
+    "combinatorics",
+    "base-conversion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048069,
+    "pattern_confidence": {
+      "digit-dp": 0.9,
+      "combinatorics": 0.85,
+      "base-conversion": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

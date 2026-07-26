@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-knight-probability-in-chessboard",
+  "title": "Knight Probability in Chessboard",
+  "slug": "knight-probability-in-chessboard",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/knight-probability-in-chessboard/description/",
+  "source_topic": "Formwise / DP Level 1",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming"
+  ],
+  "statement": "Calculate the probability that a knight remains on an n x n chessboard after making exactly k random moves starting from a given position, where each move is chosen uniformly among all possible knight moves.",
+  "tags": [
+    "dynamic-programming",
+    "probability",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "probability-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047452,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "probability-dp": 0.9
+    }
+  }
+}

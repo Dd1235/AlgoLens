@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-555-e",
+  "title": "Case of Computer Network",
+  "slug": "555-e-case-of-computer-network",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/555/E",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given an undirected network and multiple message routes, determine if it is possible to assign directions to each edge so that all messages can be sent along directed paths from their sources to destinations.",
+  "tags": [
+    "graph",
+    "dfs",
+    "trees"
+  ],
+  "patterns": [
+    "dfs",
+    "graph-orientation",
+    "connectivity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048938,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "graph-orientation": 0.9,
+      "connectivity-check": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

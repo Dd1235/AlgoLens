@@ -22,7 +22,7 @@
     "array",
     "dynamic-programming",
     "memoization",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",

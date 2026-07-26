@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1641-b",
+  "title": "Repetitions Decoding",
+  "slug": "1641-b-repetitions-decoding",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1641/B",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an integer array, determine if it can be partitioned into contiguous tandem repeats after inserting zero or more pairs of equal elements anywhere in the array.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "constructive-algorithm",
+    "string-patterns"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048084,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "constructive-algorithm": 0.85,
+      "string-patterns": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

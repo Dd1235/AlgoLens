@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-652-e",
+  "title": "Pursuit For Artifacts",
+  "slug": "652-e-pursuit-for-artifacts",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/652/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a connected graph with bridges that disappear after crossing, determine if there exists a path from a start island to an artifact on a bridge and then to a dealer island without reusing any bridge.",
+  "tags": [
+    "graph",
+    "dfs",
+    "union-find",
+    "trees"
+  ],
+  "patterns": [
+    "bridge-finding",
+    "dfs",
+    "union-find",
+    "graph-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049034,
+    "pattern_confidence": {
+      "bridge-finding": 0.95,
+      "dfs": 0.9,
+      "union-find": 0.85,
+      "graph-connectivity": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

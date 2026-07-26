@@ -15,7 +15,7 @@
   "statement": "Count the number of distinct non-empty substrings of a given string that can be represented as the concatenation of a string with itself.",
   "tags": [
     "string",
-    "hashing",
+    "rolling-hash",
     "trie"
   ],
   "patterns": [

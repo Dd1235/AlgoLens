@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1984-e",
+  "title": "Shuffle",
+  "slug": "1984-e-shuffle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1984/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree, repeatedly choose a root and recursively shuffle its subtrees to form a new tree, and find the maximum possible number of leaves in the resulting tree after exactly one shuffle.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "tree-dp",
+    "divide-and-conquer",
+    "rooting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048239,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "divide-and-conquer": 0.9,
+      "rooting": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

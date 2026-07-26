@@ -471,16 +471,20 @@ def atcoder_metadata(item: UrlItem) -> dict[str, Any]:
         page = request_text(item.url + "?lang=en")
         m = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
         if m:
-            title = html_to_text(m.group(1)).split(" - ")[0].strip() or task
+            # AtCoder titles read "D - Pond"; keep the name, drop the index.
+            raw = html_to_text(m.group(1)).strip()
+            raw = re.sub(r"\s*[-|]\s*AtCoder.*$", "", raw).strip()
+            part = re.match(r"^[A-Za-z]\d?\s+-\s+(.+)$", raw)
+            title = (part.group(1) if part else raw) or task
         # English statement lives in a span with lang-en; fall back to the page
         en = re.search(r'<span class="lang-en">(.*?)</span>\s*</div>', page, re.S)
         source_text = trim_problem_page_text(en.group(1) if en else page)
     except (HTTPError, URLError, TimeoutError):
         pass
     return {
-        "id": f"atcoder-{task}",
+        "id": f"atcoder-{task.replace('_', '-')}",
         "title": title,
-        "slug": task,
+        "slug": task.replace("_", "-"),
         "platform": "atcoder",
         "source_url": item.url,
         "source_topic": item.source_topic,
@@ -687,7 +691,7 @@ def predicted_output_path(out_dir: Path, item: UrlItem) -> Path | None:
     if platform == "atcoder":
         task = atcoder_task_id(item.url)
         if task:
-            return out_dir / platform / f"atcoder-{task}.json"
+            return out_dir / platform / f"atcoder-{task.replace('_', '-')}.json"
     return None
 
 

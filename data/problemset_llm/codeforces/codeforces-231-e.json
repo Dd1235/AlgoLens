@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-231-e",
+  "title": "Cactus",
+  "slug": "231-e-cactus",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/231/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a vertex cactus graph and multiple pairs of vertices, count the number of distinct simple paths between each pair modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "dfs",
+    "trees"
+  ],
+  "patterns": [
+    "dfs",
+    "dynamic-programming",
+    "cycle-detection",
+    "tree-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048973,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "dynamic-programming": 0.9,
+      "cycle-detection": 0.85,
+      "tree-decomposition": 0.8
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

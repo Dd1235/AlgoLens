@@ -25,7 +25,8 @@
   "patterns": [
     "0-1-bfs",
     "dijkstra",
-    "heap"
+    "heap",
+    "zero-one-bfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
     "pattern_confidence": {
       "0-1-bfs": 0.98,
       "dijkstra": 0.9,
-      "heap": 0.85
+      "heap": 0.85,
+      "zero-one-bfs": 0.9
     }
   }
 }

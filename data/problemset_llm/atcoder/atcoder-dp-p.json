@@ -1,0 +1,28 @@
+{
+  "id": "atcoder-dp-p",
+  "title": "Independent Set",
+  "slug": "dp-p",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/dp/tasks/dp_p",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Given a tree, count the number of ways to color each vertex black or white such that no two adjacent vertices are both black, modulo 10^9+7.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "tree-dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047593,
+    "pattern_confidence": {
+      "tree-dp": 0.98,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-78-d",
+  "title": "Archer's Shot",
+  "slug": "78-d-archer-s-shot",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/78/D",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "binary search",
+    "geometry",
+    "math",
+    "two pointers"
+  ],
+  "statement": "Given an infinite hexagonal grid with cells of side length 1, and an archer positioned at the center of one cell with a circular shot range, determine how many cells lie entirely within or on the boundary of the archer's shot circle.",
+  "tags": [
+    "geometry",
+    "math",
+    "grid"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "geometry",
+    "circle-inclusion-test"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048103,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "geometry": 0.95,
+      "circle-inclusion-test": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

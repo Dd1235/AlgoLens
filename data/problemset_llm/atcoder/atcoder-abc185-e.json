@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc185-e",
+  "title": "Sequence Matching",
+  "slug": "abc185-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc185/tasks/abc185_e",
+  "source_topic": "Formwise / DP Level 1",
+  "source_tags": [],
+  "statement": "Given two integer sequences, remove elements from each to create subsequences of equal length minimizing the sum of removed elements plus mismatched positions between the subsequences.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "edit-distance",
+    "sequence-alignment"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047440,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "edit-distance": 0.95,
+      "sequence-alignment": 0.9
+    }
+  },
+  "difficulty": 1468
+}

@@ -13,7 +13,7 @@
   ],
   "patterns": [
     "linear-basis",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +21,7 @@
     "generated_at_unix": 1777951933,
     "pattern_confidence": {
       "linear-basis": 0.98,
-      "bitmask": 0.85
+      "bit-manipulation": 0.85
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1158-a",
+  "title": "The Party and Sweets",
+  "slug": "1158-a-the-party-and-sweets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1158/A",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "greedy",
+    "implementation",
+    "math",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given arrays representing the minimum sweets each boy gave to any girl and the maximum sweets each girl received from any boy, find the minimum total sweets distributed consistent with these constraints.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047820,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

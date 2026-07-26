@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1593-e",
+  "title": "Gardener and Tree",
+  "slug": "1593-e-gardener-and-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1593/E",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "dfs and similar",
+    "greedy",
+    "implementation",
+    "trees"
+  ],
+  "statement": "Given a tree with n vertices, repeatedly remove all leaves k times and determine how many vertices remain after these operations.",
+  "tags": [
+    "tree",
+    "graph",
+    "greedy"
+  ],
+  "patterns": [
+    "dfs",
+    "layered-removal",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048794,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "layered-removal": 0.85,
+      "simulation": 0.8
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

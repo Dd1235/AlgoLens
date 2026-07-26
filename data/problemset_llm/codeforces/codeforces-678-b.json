@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-678-b",
+  "title": "The Same Calendar",
+  "slug": "678-b-the-same-calendar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/678/B",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a year y, find the next year after y whose calendar matches exactly, considering leap year rules.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "simulation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048013,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

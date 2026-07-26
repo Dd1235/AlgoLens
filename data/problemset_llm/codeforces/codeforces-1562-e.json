@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1562-e",
+  "title": "Rescue Niwen!",
+  "slug": "1562-e-rescue-niwen",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1562/E",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string, find the length of the longest lexicographically increasing subsequence among all its substrings.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "lexicography"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "string-substrings",
+    "lexicographic-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048352,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "string-substrings": 0.9,
+      "lexicographic-comparison": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

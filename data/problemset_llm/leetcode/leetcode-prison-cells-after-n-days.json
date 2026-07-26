@@ -21,7 +21,7 @@
   "patterns": [
     "state-simulation",
     "cycle-detection",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,7 @@
     "pattern_confidence": {
       "state-simulation": 0.98,
       "cycle-detection": 0.85,
-      "bitmask": 0.8
+      "bit-manipulation": 0.8
     }
   }
 }

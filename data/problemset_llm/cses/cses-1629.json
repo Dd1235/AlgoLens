@@ -10,7 +10,8 @@
   "tags": [
     "greedy",
     "sorting",
-    "intervals"
+    "intervals",
+    "data-structure"
   ],
   "patterns": [
     "interval-scheduling",

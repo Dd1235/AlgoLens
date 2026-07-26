@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1404-b",
+  "title": "Tree Tag",
+  "slug": "1404-b-tree-tag",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1404/B",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "games",
+    "trees"
+  ],
+  "statement": "Two players alternately move on a tree with given maximum jump distances; determine which player wins if both play optimally, considering the possibility of meeting at the same vertex.",
+  "tags": [
+    "graph",
+    "tree",
+    "game-theory",
+    "dfs",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dfs",
+    "game-theory",
+    "tree-diameter",
+    "distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048895,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "game-theory": 0.9,
+      "tree-diameter": 0.85,
+      "distance-calculation": 0.8
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

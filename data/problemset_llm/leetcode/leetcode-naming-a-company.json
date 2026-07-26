@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "hash-map",
-    "enumeration",
+    "brute-force",
     "prefix-grouping"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923740,
     "pattern_confidence": {
       "hash-map": 0.98,
-      "enumeration": 0.9,
+      "brute-force": 0.9,
       "prefix-grouping": 0.85
     }
   }

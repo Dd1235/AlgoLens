@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-181-b",
+  "title": "Number of Triplets",
+  "slug": "181-b-number-of-triplets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/181/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "binary search",
+    "brute force"
+  ],
+  "statement": "Given n distinct points on a plane, count the number of unordered triplets (A, B, C) where B is the midpoint of segment AC.",
+  "tags": [
+    "geometry",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047762,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.85,
+      "binary-search": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

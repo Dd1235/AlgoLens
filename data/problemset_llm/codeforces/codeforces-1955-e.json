@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1955-e",
+  "title": "Long Inversions",
+  "slug": "1955-e-long-inversions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1955/E",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a binary string, find the maximum length k such that flipping any k consecutive bits any number of times can transform the entire string into all ones.",
+  "tags": [
+    "string",
+    "binary",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047934,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9,
+      "prefix-xor": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

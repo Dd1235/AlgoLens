@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1223-e",
+  "title": "Paint the Tree",
+  "slug": "1223-e-paint-the-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1223/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "dp",
+    "sortings",
+    "trees"
+  ],
+  "statement": "Given a weighted tree and multiple queries, find the maximum sum of weights of edges whose endpoints share at least one color in a k-coloring where each color is used at most twice per vertex.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "graph"
+  ],
+  "patterns": [
+    "tree-dp",
+    "binary-search-answer",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048164,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "binary-search-answer": 0.85,
+      "greedy": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

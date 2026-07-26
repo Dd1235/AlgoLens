@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-558-e",
+  "title": "A Simple Task",
+  "slug": "558-e-a-simple-task",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/558/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "data structures",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given a string and multiple queries each specifying a substring and a sort order, apply the sorting operations on the specified substrings and output the final string.",
+  "tags": [
+    "string",
+    "data-structures",
+    "sorting",
+    "segment-tree"
+  ],
+  "patterns": [
+    "segment-tree",
+    "lazy-propagation",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048986,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "lazy-propagation": 0.9,
+      "range-update": 0.88,
+      "range-query": 0.85
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

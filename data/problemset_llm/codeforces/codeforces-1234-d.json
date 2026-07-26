@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1234-d",
+  "title": "Distinct Characters Queries",
+  "slug": "1234-d-distinct-characters-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1234/D",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Given a string with lowercase letters, support queries that either update a character at a position or count the number of distinct characters in a substring.",
+  "tags": [
+    "string",
+    "data-structure",
+    "segment-tree"
+  ],
+  "patterns": [
+    "segment-tree",
+    "fenwick-tree",
+    "bit-manipulation",
+    "point-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048889,
+    "pattern_confidence": {
+      "segment-tree": 0.9,
+      "fenwick-tree": 0.85,
+      "bit-manipulation": 0.8,
+      "point-update": 0.9,
+      "range-query": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

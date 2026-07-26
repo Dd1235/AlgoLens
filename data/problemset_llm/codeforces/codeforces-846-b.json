@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-846-b",
+  "title": "Math Show",
+  "slug": "846-b-math-show",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/846/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Given n tasks each with k subtasks taking fixed times per subtask index, and total time M, find the maximum points achievable by solving subtasks in any order, with extra points for fully completed tasks.",
+  "tags": [
+    "greedy",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047951,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc203-d",
+  "title": "Pond",
+  "slug": "abc203-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc203/tasks/abc203_d",
+  "source_topic": "Formwise / Binary Search",
+  "source_tags": [],
+  "statement": "Given an N×N grid of heights, find the minimum possible median height of any K×K subgrid within it. The median is defined as the (⌊K²/2⌋+1)-th smallest element in the subgrid.",
+  "tags": [
+    "array",
+    "binary-search",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "2d-prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047320,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "2d-prefix-sum": 0.9
+    }
+  },
+  "difficulty": 1622
+}

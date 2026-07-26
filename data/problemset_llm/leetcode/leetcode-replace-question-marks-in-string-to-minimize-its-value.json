@@ -23,7 +23,7 @@
   "patterns": [
     "greedy",
     "lexicographic-order",
-    "frequency-count"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "lexicographic-order": 0.9,
-      "frequency-count": 0.85
+      "counting": 0.85
     }
   }
 }

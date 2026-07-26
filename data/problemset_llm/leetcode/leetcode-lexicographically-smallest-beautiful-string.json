@@ -18,7 +18,7 @@
   "patterns": [
     "greedy",
     "lexicographic-construction",
-    "palindrome-check"
+    "palindrome"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +27,7 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "lexicographic-construction": 0.9,
-      "palindrome-check": 0.85
+      "palindrome": 0.85
     }
   }
 }

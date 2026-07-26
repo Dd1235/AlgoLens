@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-321-a",
+  "title": "Ciel and Robot",
+  "slug": "321-a-ciel-and-robot",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/321/A",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "implementation",
+    "math"
+  ],
+  "statement": "A robot moves on a 2D plane following an infinite repetition of a given command string composed of U, D, L, R moves. Determine if the robot can reach a specified coordinate after some number of steps.",
+  "tags": [
+    "string",
+    "math",
+    "geometry"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047939,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

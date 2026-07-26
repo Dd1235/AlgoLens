@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-19-d",
+  "title": "Points",
+  "slug": "19-d-points",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/19/D",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Maintain a dynamic set of points with add and remove operations, and for queries find the point strictly above and to the right of a given point that is minimal in x-coordinate and then minimal in y-coordinate.",
+  "tags": [
+    "data-structures",
+    "geometry",
+    "ordered-set",
+    "segment-tree"
+  ],
+  "patterns": [
+    "balanced-binary-search-tree",
+    "coordinate-compression",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048969,
+    "pattern_confidence": {
+      "balanced-binary-search-tree": 0.95,
+      "coordinate-compression": 0.85,
+      "order-statistics": 0.8
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

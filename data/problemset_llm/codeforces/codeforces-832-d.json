@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-832-d",
+  "title": "Misha, Grisha and Underground",
+  "slug": "832-d-misha-grisha-and-underground",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/832/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a tree and three chosen stations a, b, c, assign roles s, f, t to maximize the count of stations on the shortest path from t to f that were also visited by Misha traveling from s to f.",
+  "tags": [
+    "tree",
+    "graph",
+    "shortest-path"
+  ],
+  "patterns": [
+    "lca",
+    "distance-preprocessing",
+    "case-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048965,
+    "pattern_confidence": {
+      "lca": 0.95,
+      "distance-preprocessing": 0.9,
+      "case-enumeration": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

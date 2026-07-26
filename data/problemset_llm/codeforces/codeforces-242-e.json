@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-242-e",
+  "title": "XOR on Segment",
+  "slug": "242-e-xor-on-segment",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/242/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "bitmasks",
+    "data structures"
+  ],
+  "statement": "Given an integer array, support two operations: applying XOR with a given number to all elements in a segment, and querying the sum of elements in a segment.",
+  "tags": [
+    "array",
+    "bitmask-dp",
+    "segment-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "segment-tree",
+    "lazy-propagation",
+    "bitwise-xor",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048897,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "lazy-propagation": 0.93,
+      "bitwise-xor": 0.9,
+      "range-update": 0.9,
+      "range-query": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

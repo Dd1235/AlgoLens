@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-508-b",
+  "title": "Anton and currency you all know",
+  "slug": "508-b-anton-and-currency-you-all-know",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/508/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "math",
+    "strings"
+  ],
+  "statement": "Given an odd integer representing today's exchange rate, find the maximum even integer obtainable by swapping exactly two distinct digits.",
+  "tags": [
+    "math",
+    "greedy",
+    "string"
+  ],
+  "patterns": [
+    "greedy",
+    "digit-manipulation",
+    "string-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047733,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "digit-manipulation": 0.9,
+      "string-processing": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

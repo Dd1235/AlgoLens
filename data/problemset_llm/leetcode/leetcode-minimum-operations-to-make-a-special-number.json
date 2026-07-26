@@ -17,11 +17,11 @@
     "string",
     "math",
     "greedy",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "greedy",
-    "enumeration",
+    "brute-force",
     "string-manipulation"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1784909162,
     "pattern_confidence": {
       "greedy": 0.9,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "string-manipulation": 0.8
     }
   }

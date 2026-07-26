@@ -9,7 +9,7 @@
   "statement": "Count the number of ways to place eight queens on an 8x8 chessboard with some squares blocked, so that no two queens attack each other and queens are only placed on free squares.",
   "tags": [
     "backtracking",
-    "bitmask",
+    "bit-manipulation",
     "combinatorics"
   ],
   "patterns": [

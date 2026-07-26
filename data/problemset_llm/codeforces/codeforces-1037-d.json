@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1037-d",
+  "title": "Valid BFS?",
+  "slug": "1037-d-valid-bfs",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1037/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "shortest paths",
+    "trees"
+  ],
+  "statement": "Given a tree and a sequence of vertices, determine if the sequence can represent a valid BFS traversal starting from vertex 1.",
+  "tags": [
+    "graph",
+    "tree",
+    "bfs",
+    "queue"
+  ],
+  "patterns": [
+    "bfs",
+    "queue",
+    "graph-traversal",
+    "tree-properties"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048485,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "queue": 0.9,
+      "graph-traversal": 0.85,
+      "tree-properties": 0.8
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc450-e",
+  "title": "Fibonacci String",
+  "slug": "abc450-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc450/tasks/abc450_e",
+  "source_topic": "Formwise / Recursion Backtracking",
+  "source_tags": [],
+  "statement": "Given two initial strings X and Y, define a sequence where each subsequent string is the concatenation of the previous two. For a very large index string S_{10^{18}}, answer queries counting occurrences of a character within specified substring ranges.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "binary-search",
+    "backtracking"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047382,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "prefix-sum": 0.85,
+      "binary-search-answer": 0.8
+    }
+  },
+  "difficulty": 1352
+}

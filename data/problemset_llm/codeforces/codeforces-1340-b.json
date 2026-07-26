@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1340-b",
+  "title": "Nastya and Scoreboard",
+  "slug": "1340-b-nastya-and-scoreboard",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1340/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Given a 7-segment display showing digits with some segments broken, determine the maximum possible number that can be formed by turning on exactly k currently off segments, allowing leading zeros.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047894,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

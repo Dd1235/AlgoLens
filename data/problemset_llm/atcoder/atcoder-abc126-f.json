@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc126-f",
+  "title": "XOR Matching",
+  "slug": "abc126-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc126/tasks/abc126_f",
+  "source_topic": "Formwise / Bit-Manipulation",
+  "source_tags": [],
+  "statement": "Construct a sequence of length 2^{M+1} where each integer from 0 to 2^M-1 appears exactly twice, and for each pair of equal elements, the xor of the elements between them equals K. Determine if such a sequence exists and output one if possible.",
+  "tags": [
+    "bit-manipulation",
+    "constructive-algorithm",
+    "sequence"
+  ],
+  "patterns": [
+    "xor-properties",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047430,
+    "pattern_confidence": {
+      "xor-properties": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  },
+  "difficulty": 1770
+}

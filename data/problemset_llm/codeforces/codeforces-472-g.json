@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-472-g",
+  "title": "Design Tutorial: Increase the Constraints",
+  "slug": "472-g-design-tutorial-increase-the-constraints",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/472/G",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "fft"
+  ],
+  "statement": "Given two binary strings and multiple queries, each asking for the Hamming distance between specified substrings, efficiently compute the number of differing positions for each query.",
+  "tags": [
+    "string",
+    "bit-manipulation",
+    "data-structures"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "offline-queries",
+    "fast-fourier-transform"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048407,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "offline-queries": 0.7,
+      "fast-fourier-transform": 0.6
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

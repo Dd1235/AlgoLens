@@ -1,0 +1,44 @@
+{
+  "id": "codeforces-1706-e",
+  "title": "Qpwoeirut and Vertices",
+  "slug": "1706-e-qpwoeirut-and-vertices",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1706/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dfs and similar",
+    "divide and conquer",
+    "dsu",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a connected undirected graph with edges numbered from 1 to m, answer queries asking for the minimum prefix of edges needed so that all vertices in a given interval [l, r] are mutually reachable using only those edges.",
+  "tags": [
+    "graph",
+    "union-find",
+    "binary-search",
+    "trees",
+    "data-structures"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "offline-queries",
+    "interval-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048911,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "offline-queries": 0.85,
+      "interval-connectivity": 0.8
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

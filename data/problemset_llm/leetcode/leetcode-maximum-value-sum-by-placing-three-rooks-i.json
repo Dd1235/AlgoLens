@@ -17,7 +17,7 @@
     "array",
     "dynamic-programming",
     "matrix",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "dynamic-programming",

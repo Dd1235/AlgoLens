@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc180-e",
+  "title": "Traveling Salesman among Aerial Cities",
+  "slug": "abc180-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc180/tasks/abc180_e",
+  "source_topic": "Formwise / DP Level 2",
+  "source_tags": [],
+  "statement": "Find the minimum cost to start at city 1, visit all cities at least once in any order, and return to city 1, where travel cost depends on Manhattan distance plus a non-negative height difference component.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "geometry"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "traveling-salesman-problem"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047589,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "traveling-salesman-problem": 0.97
+    }
+  },
+  "difficulty": 1256
+}

@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-650-d",
+  "title": "Zip-line",
+  "slug": "650-d-zip-line",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/650/D",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dp",
+    "hashing"
+  ],
+  "statement": "Given a sequence of tree heights, and multiple independent assumptions changing the height of one tree, determine the maximum length of an increasing subsequence (zip-line) under each assumption.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-search",
+    "data-structures",
+    "segment-tree"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "binary-search-answer",
+    "offline-queries",
+    "segment-tree"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048761,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "binary-search-answer": 0.9,
+      "offline-queries": 0.75,
+      "segment-tree": 0.7
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

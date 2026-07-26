@@ -18,7 +18,7 @@
     "array",
     "bit-manipulation",
     "dynamic-programming",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "bitmask-dp",

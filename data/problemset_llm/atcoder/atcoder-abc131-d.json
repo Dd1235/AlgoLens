@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc131-d",
+  "title": "Megalomania",
+  "slug": "abc131-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc131/tasks/abc131_d",
+  "source_topic": "Formwise / Greedy And Sweepline",
+  "source_tags": [],
+  "statement": "Given N jobs each with a processing time and a deadline, determine if all jobs can be scheduled sequentially starting at time 0 so that each finishes by its deadline.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047617,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.95
+    }
+  },
+  "difficulty": 588
+}

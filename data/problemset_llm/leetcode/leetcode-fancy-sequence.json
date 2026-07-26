@@ -16,7 +16,8 @@
   "tags": [
     "data-structure",
     "math",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "segment-tree"
   ],
   "patterns": [
     "lazy-propagation",

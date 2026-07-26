@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc302-f",
+  "title": "Merge Set",
+  "slug": "abc302-f",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc302/tasks/abc302_f",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given N sets of integers between 1 and M, repeatedly merge two sets sharing at least one common element to form their union. Determine the minimum number of merges needed to obtain a set containing both 1 and M, or report impossibility.",
+  "tags": [
+    "graph",
+    "union-find",
+    "set"
+  ],
+  "patterns": [
+    "union-find",
+    "bfs",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047419,
+    "pattern_confidence": {
+      "union-find": 0.98,
+      "bfs": 0.85,
+      "shortest-path": 0.8
+    }
+  },
+  "difficulty": 1430
+}

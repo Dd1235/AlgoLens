@@ -10,7 +10,8 @@
   "tags": [
     "bitwise",
     "math",
-    "number-theory"
+    "number-theory",
+    "bit-manipulation"
   ],
   "patterns": [
     "bit-counting",

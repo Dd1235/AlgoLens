@@ -22,7 +22,7 @@
   "patterns": [
     "binary-search-answer",
     "greedy",
-    "bitmask",
+    "bit-manipulation",
     "sorting"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "greedy": 0.9,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "sorting": 0.8
     }
   }

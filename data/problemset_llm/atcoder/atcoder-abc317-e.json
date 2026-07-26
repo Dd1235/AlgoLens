@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc317-e",
+  "title": "Avoid Eye Contact",
+  "slug": "abc317-e",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc317/tasks/abc317_e",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a grid with obstacles, people facing directions with lines of sight, a start, and a goal, determine the minimum moves to reach the goal without entering any line of sight or impassable squares.",
+  "tags": [
+    "graph",
+    "grid",
+    "shortest-path",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "line-of-sight-marking",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047422,
+    "pattern_confidence": {
+      "bfs": 0.98,
+      "line-of-sight-marking": 0.9,
+      "grid-traversal": 0.85
+    }
+  },
+  "difficulty": 1085
+}

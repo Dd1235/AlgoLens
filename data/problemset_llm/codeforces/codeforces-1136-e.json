@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1136-e",
+  "title": "Nastya Hasn't Written a Legend",
+  "slug": "1136-e-nastya-hasn-t-written-a-legend",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1136/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "binary search",
+    "data structures"
+  ],
+  "statement": "Maintain an array with constraints that propagate increments forward, and support queries for the sum of any contiguous subarray.",
+  "tags": [
+    "array",
+    "data-structure",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "range-update",
+    "propagation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048091,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "range-update": 0.85,
+      "propagation": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

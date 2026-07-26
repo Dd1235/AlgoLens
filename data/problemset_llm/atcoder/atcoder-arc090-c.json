@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-arc090-c",
+  "title": "Avoiding Collision",
+  "slug": "arc090-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc090/tasks/arc090_c",
+  "source_topic": "Formwise / Graph Level-1",
+  "source_tags": [],
+  "statement": "Given a weighted undirected graph and two distinct start vertices, count the number of pairs of shortest paths from each start to the other's vertex such that the two paths never meet at any vertex or edge, modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dijkstra",
+    "dp-on-dag",
+    "counting-paths",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047415,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "dp-on-dag": 0.9,
+      "counting-paths": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  },
+  "difficulty": 2319
+}

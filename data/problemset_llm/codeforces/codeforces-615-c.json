@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-615-c",
+  "title": "Running Track",
+  "slug": "615-c-running-track",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/615/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given an infinite supply of strings s, find the minimum number of substrings (possibly reversed) cut from s and concatenated to form a target string t.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "string-matching",
+    "dp-on-strings",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048134,
+    "pattern_confidence": {
+      "string-matching": 0.95,
+      "dp-on-strings": 0.9,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

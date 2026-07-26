@@ -17,7 +17,7 @@
     "array",
     "math",
     "number-theory",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "sieve",

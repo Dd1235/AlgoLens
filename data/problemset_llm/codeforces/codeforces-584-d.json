@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-584-d",
+  "title": "Dima and Lisa",
+  "slug": "584-d-dima-and-lisa",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/584/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an odd number, represent it as the sum of at most three prime numbers.",
+  "tags": [
+    "math",
+    "number-theory",
+    "prime"
+  ],
+  "patterns": [
+    "prime-checking",
+    "brute-force",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049024,
+    "pattern_confidence": {
+      "prime-checking": 0.95,
+      "brute-force": 0.9,
+      "constructive-algorithm": 0.85,
+      "number-theory": 0.9
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

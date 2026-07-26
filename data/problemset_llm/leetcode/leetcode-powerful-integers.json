@@ -14,7 +14,7 @@
   "statement": "Find all unique integers less than or equal to a given bound that can be expressed as the sum of powers of two given integers.",
   "tags": [
     "math",
-    "enumeration",
+    "brute-force",
     "hash-map"
   ],
   "patterns": [

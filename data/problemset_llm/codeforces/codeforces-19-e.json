@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-19-e",
+  "title": "Fairy",
+  "slug": "19-e-fairy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/19/E",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "dfs and similar",
+    "divide and conquer",
+    "dsu"
+  ],
+  "statement": "Given a graph, find all edges whose removal makes the graph bipartite (2-colorable without edges connecting same-colored vertices).",
+  "tags": [
+    "graph",
+    "dfs",
+    "bipartite-check",
+    "union-find"
+  ],
+  "patterns": [
+    "dfs",
+    "bipartite-check",
+    "bridge-finding",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048971,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bipartite-check": 0.98,
+      "bridge-finding": 0.85,
+      "union-find": 0.7
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

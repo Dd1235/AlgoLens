@@ -14,7 +14,7 @@
   "tags": [
     "geometry",
     "array",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "brute-force-enumeration",

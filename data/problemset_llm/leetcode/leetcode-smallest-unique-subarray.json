@@ -22,8 +22,7 @@
   ],
   "patterns": [
     "binary-search-answer",
-    "rolling-hash",
-    "hashing"
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,8 +30,7 @@
     "generated_at_unix": 1784731101,
     "pattern_confidence": {
       "binary-search-answer": 0.95,
-      "rolling-hash": 0.9,
-      "hashing": 0.88
+      "rolling-hash": 0.9
     }
   }
 }

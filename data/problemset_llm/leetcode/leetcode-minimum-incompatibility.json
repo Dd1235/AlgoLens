@@ -16,7 +16,7 @@
   "statement": "Partition an integer array into k equal-sized subsets with no duplicates within each subset, minimizing the sum of the differences between the maximum and minimum elements in each subset, or return -1 if impossible.",
   "tags": [
     "array",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "backtracking"
   ],

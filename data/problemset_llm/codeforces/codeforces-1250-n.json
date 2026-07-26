@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1250-n",
+  "title": "Wires",
+  "slug": "1250-n-wires",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1250/N",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Given n wires each connecting two distinct contact points on a large circuit board, find the minimum time to re-solder wire ends so that all wires become connected via shared contact points, allowing signal passage between any pair.",
+  "tags": [
+    "graph",
+    "greedy",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048175,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "greedy": 0.9,
+      "connected-components": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

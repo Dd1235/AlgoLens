@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1607-h",
+  "title": "Banquet Preparations 2",
+  "slug": "1607-h-banquet-preparations-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1607/H",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given n dishes each with fish and meat amounts, and a required amount to eat from each dish, determine how to split the eaten amount between fish and meat to minimize the number of distinct resulting dishes.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048196,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1624-d",
+  "title": "Palindromes Coloring",
+  "slug": "1624-d-palindromes-coloring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1624/D",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given a string and an integer k, color characters into k groups so that each group's subsequence forms a palindrome, maximizing the minimum length among these palindromic subsequences.",
+  "tags": [
+    "string",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "palindrome"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047752,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "greedy": 0.85,
+      "palindrome": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

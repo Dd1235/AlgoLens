@@ -16,7 +16,7 @@
   "tags": [
     "array",
     "math",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "hash-map",

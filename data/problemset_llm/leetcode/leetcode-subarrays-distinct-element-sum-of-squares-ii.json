@@ -16,7 +16,7 @@
   "tags": [
     "array",
     "prefix-sum",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "two-pointers",

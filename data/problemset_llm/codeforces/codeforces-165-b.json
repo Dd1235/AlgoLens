@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-165-b",
+  "title": "Burning Midnight Oil",
+  "slug": "165-b-burning-midnight-oil",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/165/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "implementation"
+  ],
+  "statement": "Given a total number of lines n and a divisor k, find the minimum initial number v such that the sum of the series v + floor(v/k) + floor(v/k^2) + ... is at least n.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "series-summation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048892,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "series-summation": 0.85
+    }
+  },
+  "source_topic": "Formwise / Binary Search"
+}

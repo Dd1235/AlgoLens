@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1295-c",
+  "title": "Obtain The String",
+  "slug": "1295-c-obtain-the-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1295/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given strings s and t, find the minimum number of operations to form t by repeatedly appending subsequences of s to an initially empty string z.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048762,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-628-f",
+  "title": "Bear and Fair Set",
+  "slug": "628-f-bear-and-fair-set",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/628/F",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "flows",
+    "graphs"
+  ],
+  "statement": "Given constraints on a set of distinct positive integers with fixed counts per residue class modulo 5 and partial count hints up to certain values, determine if such a set can exist within given bounds.",
+  "tags": [
+    "math",
+    "number-theory",
+    "binary-search",
+    "prefix-sum",
+    "graph"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049028,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

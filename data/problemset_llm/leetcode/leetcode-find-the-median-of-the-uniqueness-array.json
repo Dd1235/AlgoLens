@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "hash-map",
-    "binary-search"
+    "binary-search",
+    "two-pointers"
   ],
   "patterns": [
     "binary-search-answer",

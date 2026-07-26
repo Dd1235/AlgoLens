@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-202-b",
+  "title": "Brand New Easy Problem",
+  "slug": "202-b-brand-new-easy-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/202/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force"
+  ],
+  "statement": "Determine if a given problem's word sequence can be matched as a subsequence permutation in any archived problem, and if so, find the one with the highest similarity based on minimal inversions.",
+  "tags": [
+    "string",
+    "sequence",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "longest-common-subsequence",
+    "inversion-count",
+    "permutation-subsequence",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047900,
+    "pattern_confidence": {
+      "longest-common-subsequence": 0.95,
+      "inversion-count": 0.9,
+      "permutation-subsequence": 0.85,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

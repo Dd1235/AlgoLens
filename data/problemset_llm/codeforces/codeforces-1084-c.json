@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1084-c",
+  "title": "The Fair Nut and String",
+  "slug": "1084-c-the-fair-nut-and-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1084/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "implementation"
+  ],
+  "statement": "Count the number of strictly increasing index sequences in a string where each chosen character is 'a' and between consecutive chosen indices there is at least one 'b'. Compute the result modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum",
+    "modular-arithmetic",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048797,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "prefix-sum": 0.85,
+      "modular-arithmetic": 0.9,
+      "combinatorics": 0.9
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

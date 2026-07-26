@@ -577,6 +577,11 @@ LINKS
   every view is shareable: /?q=knapsack · /?pattern=slope-trick
   /?ranker=dense · combine them
 
+CORPUS
+  four judges, tagged [lc] [cf] [atc] [cses] on every result
+  deliberately hard: no LeetCode Easy, Codeforces and AtCoder
+  stratified from 1300 up — the number on the card is the rating
+
 COMMANDS
   :help :h          this manual
   :bookmarks :b     starred problems           (signed in)
@@ -704,8 +709,28 @@ function setStatus(text) {
   tick();
 }
 
+// Two difficulty scales share one column: LeetCode's Easy/Medium/Hard (stored
+// capitalized — this compared lowercase and silently coloured nothing) and the
+// numeric ratings Codeforces and AtCoder use. Rating cuts follow div2 shape:
+// A/B grade, C/D, then E and up.
 function diffClass(d) {
-  return d === "easy" || d === "medium" || d === "hard" ? d : "";
+  if (typeof d === "number") return d < 1600 ? "easy" : d < 2100 ? "medium" : "hard";
+  const k = String(d || "").toLowerCase();
+  return k === "easy" || k === "medium" || k === "hard" ? k : "";
+}
+
+// How each community actually refers to its judge, short enough to sit inline.
+const PLATFORM_LABELS = {
+  leetcode: ["lc", "LeetCode"],
+  codeforces: ["cf", "Codeforces"],
+  atcoder: ["atc", "AtCoder"],
+  cses: ["cses", "CSES"],
+};
+
+function platformBadge(platform) {
+  const [short, full] = PLATFORM_LABELS[platform] || [platform, platform];
+  if (!short) return "";
+  return `<span class="platform-badge" title="${escapeHtml(full)}">${escapeHtml(short)}</span>`;
 }
 
 // Badge wording deliberately leads with "vs <other>" — the old form put the
@@ -749,7 +774,8 @@ function renderHitsList(container, hits, opts = {}) {
     // cosine in another. The bar below still shows relative strength; exact
     // numbers live on /debug.html where they're explained.
     const trailing = libraryMode ? formatRelative(hit.markedAt) : "";
-    let metaHtml = `<span class="difficulty ${diffClass(diff)}">${escapeHtml(diff)}</span>${escapeHtml(trailing)}`;
+    let metaHtml = platformBadge(hit.problem.platform)
+      + `<span class="difficulty ${diffClass(diff)}">${escapeHtml(String(diff))}</span>${escapeHtml(trailing)}`;
     if (opts.otherRankMap) {
       const other = opts.otherRankMap.get(hit.problem.id);
       metaHtml = rankDeltaBadge(i + 1, other, opts.otherName) + metaHtml;

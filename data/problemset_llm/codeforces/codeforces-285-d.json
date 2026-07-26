@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-285-d",
+  "title": "Permutation Sum",
+  "slug": "285-d-permutation-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/285/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "bitmasks",
+    "combinatorics",
+    "dp",
+    "implementation",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given an integer n, count the number of ordered pairs of permutations (a, b) of length n such that their element-wise modular sum permutation c exists as defined by ci = ((ai - 1 + bi - 1) mod n) + 1. Return the count modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "permutations",
+    "modular-arithmetic",
+    "dynamic-programming",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "dynamic-programming",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047902,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.9,
+      "dynamic-programming": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

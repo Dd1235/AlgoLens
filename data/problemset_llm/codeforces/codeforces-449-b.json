@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-449-b",
+  "title": "Jzzhu and Cities",
+  "slug": "449-b-jzzhu-and-cities",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/449/B",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "graphs",
+    "greedy",
+    "shortest paths"
+  ],
+  "statement": "Given a weighted undirected graph with roads and special train routes from the capital, determine the maximum number of train routes that can be closed without changing the shortest path distances from all cities to the capital.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "greedy"
+  ],
+  "patterns": [
+    "dijkstra",
+    "shortest-path",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048852,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "shortest-path": 0.95,
+      "greedy": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

@@ -15,7 +15,7 @@
   "statement": "Given a string, find the shortest palindrome by adding characters only to the front of the string.",
   "tags": [
     "string",
-    "hashing",
+    "rolling-hash",
     "string-matching"
   ],
   "patterns": [

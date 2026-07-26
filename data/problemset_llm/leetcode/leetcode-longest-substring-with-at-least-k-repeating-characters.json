@@ -17,12 +17,13 @@
     "string",
     "hash-table",
     "divide-and-conquer",
-    "sliding-window"
+    "sliding-window",
+    "two-pointers"
   ],
   "patterns": [
     "divide-and-conquer",
     "sliding-window",
-    "frequency-count"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,7 @@
     "pattern_confidence": {
       "divide-and-conquer": 0.95,
       "sliding-window": 0.85,
-      "frequency-count": 0.9
+      "counting": 0.9
     }
   }
 }

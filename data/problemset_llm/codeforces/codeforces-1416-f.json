@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1416-f",
+  "title": "Showing Off",
+  "slug": "1416-f-showing-off",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1416/F",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "flows",
+    "graph matchings",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a matrix where each cell has a direction pointing to an adjacent cell and a cost, and a resulting matrix where each cell's value is the sum of costs of all cells reachable by following directions from it, reconstruct any valid original cost and direction matrices that produce the given sums.",
+  "tags": [
+    "matrix",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "graph-traversal",
+    "strongly-connected-components",
+    "dp-on-graph",
+    "topological-sort"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048343,
+    "pattern_confidence": {
+      "graph-traversal": 0.95,
+      "strongly-connected-components": 0.9,
+      "dp-on-graph": 0.85,
+      "topological-sort": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

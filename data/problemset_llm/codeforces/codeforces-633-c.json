@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-633-c",
+  "title": "Spy Syndrome 2",
+  "slug": "633-c-spy-syndrome-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/633/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "hashing",
+    "implementation",
+    "sortings",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a ciphered string formed by reversing words and concatenating them, and a list of words, determine if the original sentence can be reconstructed using the given words any number of times.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash",
+    "trie"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "string-reconstruction",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048804,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "string-reconstruction": 0.9,
+      "rolling-hash": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

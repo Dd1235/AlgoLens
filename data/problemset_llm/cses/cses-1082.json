@@ -13,7 +13,8 @@
   ],
   "patterns": [
     "prefix-sum",
-    "binary-search-answer"
+    "binary-search-answer",
+    "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +22,8 @@
     "generated_at_unix": 1777951663,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "binary-search-answer": 0.85
+      "binary-search-answer": 0.85,
+      "number-theory": 0.9
     }
   }
 }

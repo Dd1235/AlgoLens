@@ -17,7 +17,7 @@
   ],
   "patterns": [
     "two-pointers",
-    "palindrome-check"
+    "palindrome"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +25,7 @@
     "generated_at_unix": 1784908766,
     "pattern_confidence": {
       "two-pointers": 0.95,
-      "palindrome-check": 0.9
+      "palindrome": 0.9
     }
   }
 }
