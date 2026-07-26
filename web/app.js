@@ -837,6 +837,13 @@ CORPUS
   deliberately hard: no LeetCode Easy, Codeforces and AtCoder
   stratified from 1300 up — the number on the card is the rating
 
+JUDGES
+  all four are on until you narrow. Click one in the judges row
+  (or its tag on any result) to see only that judge; click more
+  to add them back; "all ✕" resets. Turning the last one off
+  returns to all four, so this filter can never find nothing.
+  Judges stay put as you search — a technique label doesn't.
+
 COMMANDS
   :help :h          this manual
   :compare :cmp     ":compare knapsack" runs the query in keyword
