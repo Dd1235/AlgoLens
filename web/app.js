@@ -105,6 +105,22 @@ form.addEventListener("submit", (e) => {
 
 input.addEventListener("input", () => {
   clearTimeout(debounceTimer);
+  // Typing a new question ends the drill-down that produced the pattern.
+  //
+  // Judges and patterns look like the same kind of filter and aren't. A judge
+  // is a standing preference over ~500 problems, so carrying it into a new
+  // query always leaves you something: across 5 queries x 4 judges, the
+  // emptiest cell was still 14 results. A pattern is a drill-down into the
+  // results you were just reading, and the median one covers a single problem
+  // — 9 of 25 query x pattern pairs return nothing at all. Keeping it turns
+  // the next search into a dead end you have to notice and undo.
+  //
+  // Clearing the box is different and still keeps it: that's browsing the
+  // label, not asking a new question.
+  if (activePattern && input.value.trim()) {
+    activePattern = "";
+    updatePatternPill();
+  }
   debounceTimer = setTimeout(() => runSearch(input.value, { append: false }), DEBOUNCE_MS);
 });
 
@@ -773,8 +789,13 @@ SEARCH — pick a mode next to the box
 PATTERNS
   every expanded result lists technique labels — click one to
   narrow your search to that label; the pill clears it
-  clear the query and the pill stays: you're now browsing every
-  problem with that label, not searching within your last query
+
+  clear the query and the label stays: you're browsing every
+  problem carrying it. Type a new query and the label drops —
+  it was a drill-down into what you were reading, and most
+  labels are narrow enough that keeping it would find nothing.
+  Judges are not like this: they stay until you drop them.
+
   browse the whole taxonomy with counts: /patterns.html
 
 FIND SIMILAR
