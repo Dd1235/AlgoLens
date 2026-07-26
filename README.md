@@ -13,6 +13,22 @@ Google "cses euler path" and you get the CSES homepage, a blog post, and Wikiped
 
 Cosine is one search box over LeetCode, CSES, Codeforces and AtCoder that handles all three.
 
+## What that looks like
+
+Real output from the live corpus, same query run both ways. **keyword** is BM25 over titles, statements and technique labels; **meaning** is cosine over sentence embeddings. Neither wins everywhere, which is why you can switch.
+
+| query | keyword (bm25) | meaning (dense) | |
+|---|---|---|---|
+| `cat and mouse` | Cat and Mouse · Cat and Mouse II · Mice and Cheese — **4 hits, all of them the ones you meant** | Cat and Mouse II · Cat and Mouse · Mice and Cheese · Design a Text Editor · Food Buckets to Feed the Hamsters | exact words → exact answers; semantic drifts into "small animal" territory |
+| `cheese` | Mice and Cheese. That's it — **one hit** | Giant Pizza · Hamburgers · Mice and Cheese · Pizza With 3n Slices · Banquet Preparations | no problem is *about* cheese, so keyword has nothing to match. Meaning finds the food cluster anyway |
+| `thief robbing houses` | House Robber · House Robber II · Count the Number of Houses at a Certain Distance II | House Robber · House Robber II · **Diamond Theft** · Profitable Schemes | you remember the story, not the title. Keyword rides the word "house" into unrelated house problems; meaning finds the heist that never says "rob" |
+| `aliens trick` | Best Time to Buy and Sell Stock IV · Minimum Partition Score · Min Total Space Wasted With K Resizings | Design Tutorial: Increase the Constraints · Qpwoeirut and Vertices · Planets Queries I | **the reversal.** "aliens trick" expands to `wqs-binary-search` and keyword nails it; the embedding model has never heard the phrase and returns noise |
+| `string dp graph` | **Longest Palindromic Path in Graph** — tagged `graph` + `dynamic-programming` + `string`, all three | Interleaving String · Strange Printer | stack technique words and the top hit is the problem that carries all of them |
+| `mex set` | Sliding Window Mex · MEX Queries · Maximize Mex | MEX Queries · Mex Grid Construction · Sliding Window Mex | niche vocabulary. No judge tags `mex`, so this search doesn't exist anywhere else |
+| `sweep line` | Intersection Points · Perfect Rectangle · Area of Rectangles | Lines and Queries II · Line Segments Trace I · Erect the Fence | the word "sweep" appears in **zero** problem statements — only the labels carry it |
+
+The pattern: **keyword wins when you know the vocabulary** — a technique name, a title fragment, a community nickname. **Meaning wins when you only remember what the problem was about.** `both` fuses the two rankings when you're not sure which you are.
+
 ## Finding problems
 
 - **Three search modes, one box.** **keyword** matches words in the title, statement *and* our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
