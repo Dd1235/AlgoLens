@@ -36,6 +36,7 @@ DEFAULT_OUT = ROOT / "data" / "problemset_llm"
 CURATED_PROBLEMS = ROOT / "data" / "problems"
 CACHE_DIR = ROOT / "data" / "cache"
 CODEFORCES_CACHE = CACHE_DIR / "codeforces_problemset.problems.json"
+CODEFORCES_STATEMENTS = CACHE_DIR / "codeforces_statements.json"
 OPENAI_CHAT_COMPLETIONS_URL = "https://api.openai.com/v1/chat/completions"
 CODEFORCES_PROBLEMS_URL = "https://codeforces.com/api/problemset.problems"
 LEETCODE_GRAPHQL_URL = "https://leetcode.com/graphql"
@@ -270,6 +271,8 @@ def platform_from_url(url: str) -> str:
         return "codeforces"
     if "cses.fi" in host:
         return "cses"
+    if "atcoder.jp" in host:
+        return "atcoder"
     return host.replace("www.", "")
 
 
@@ -300,6 +303,8 @@ def base_from_url(item: UrlItem, cf_cache: dict[tuple[int, str], dict[str, Any]]
         return codeforces_metadata(item, cf_cache)
     if platform == "cses":
         return cses_metadata(item)
+    if platform == "atcoder":
+        return atcoder_metadata(item)
     title = urlparse(item.url).path.strip("/").split("/")[-1] or item.url
     return {
         "id": slugify(f"{platform}-{title}"),
@@ -399,25 +404,29 @@ def codeforces_metadata(item: UrlItem, cf_cache: dict[tuple[int, str], dict[str,
     key = codeforces_problem_key(item.url)
     p = cf_cache.get(key) if key else None
     contest_id, index = key if key else (None, None)
-    title = p.get("name") if p else f"{contest_id}{index}"
-    slug = slugify(f"{contest_id}-{index}-{title}")
-    source_text = ""
-    try:
-        page = request_text(item.url)
-        source_text = trim_problem_page_text(page)
-    except (HTTPError, URLError, TimeoutError):
-        pass
+    pid = f"codeforces-{contest_id}-{str(index).lower()}"
+
+    # codeforces.com answers scripts with a Cloudflare challenge, so statements
+    # come from the staged open dataset (scripts/fetch_codeforces.py). Official
+    # tags and rating ride along with it.
+    staged = {}
+    if CODEFORCES_STATEMENTS.exists():
+        staged = json.loads(CODEFORCES_STATEMENTS.read_text()).get(pid, {})
+
+    title = staged.get("title") or (p.get("name") if p else f"{contest_id}{index}")
+    tags = staged.get("tags") or (p.get("tags", []) if p else [])
+    rating = staged.get("rating") or (p.get("rating") if p else None)
     return {
-        "id": f"codeforces-{contest_id}-{str(index).lower()}",
+        "id": pid,
         "title": title,
-        "slug": slug,
+        "slug": slugify(f"{contest_id}-{index}-{title}"),
         "platform": "codeforces",
         "source_url": item.url,
         "source_topic": item.source_topic,
-        "difficulty": p.get("rating") if p else None,
-        "rating": p.get("rating") if p else None,
-        "source_tags": p.get("tags", []) if p else [],
-        "source_text": source_text,
+        "difficulty": rating,
+        "rating": rating,
+        "source_tags": tags,
+        "source_text": staged.get("statement", ""),
     }
 
 
@@ -439,6 +448,40 @@ def cses_metadata(item: UrlItem) -> dict[str, Any]:
         "title": title,
         "slug": slugify(title),
         "platform": "cses",
+        "source_url": item.url,
+        "source_topic": item.source_topic,
+        "difficulty": None,
+        "rating": None,
+        "source_tags": [],
+        "source_text": source_text,
+    }
+
+
+def atcoder_task_id(url: str) -> str | None:
+    m = re.search(r"/tasks/([A-Za-z0-9_]+)", url)
+    return m.group(1).lower() if m else None
+
+
+def atcoder_metadata(item: UrlItem) -> dict[str, Any]:
+    task = atcoder_task_id(item.url) or slugify(item.url)
+    contest = re.search(r"/contests/([A-Za-z0-9_-]+)", item.url)
+    title = task
+    source_text = ""
+    try:
+        page = request_text(item.url + "?lang=en")
+        m = re.search(r"<title>(.*?)</title>", page, re.S | re.I)
+        if m:
+            title = html_to_text(m.group(1)).split(" - ")[0].strip() or task
+        # English statement lives in a span with lang-en; fall back to the page
+        en = re.search(r'<span class="lang-en">(.*?)</span>\s*</div>', page, re.S)
+        source_text = trim_problem_page_text(en.group(1) if en else page)
+    except (HTTPError, URLError, TimeoutError):
+        pass
+    return {
+        "id": f"atcoder-{task}",
+        "title": title,
+        "slug": task,
+        "platform": "atcoder",
         "source_url": item.url,
         "source_topic": item.source_topic,
         "difficulty": None,
@@ -641,6 +684,10 @@ def predicted_output_path(out_dir: Path, item: UrlItem) -> Path | None:
         key = codeforces_problem_key(item.url)
         if key:
             return out_dir / platform / f"codeforces-{key[0]}-{str(key[1]).lower()}.json"
+    if platform == "atcoder":
+        task = atcoder_task_id(item.url)
+        if task:
+            return out_dir / platform / f"atcoder-{task}.json"
     return None
 
 
