@@ -179,6 +179,18 @@ html[data-theme="light"] .signature {
   border-color: var(--accent-soft);
 }
 
+/* Same bracketed shape as .debug-link, but not dimmed — patterns is a feature,
+   not a dev tool, and it was invisible sitting next to "debug". */
+.nav-link {
+  font-size: 0.72rem;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.nav-link::before { content: "[ "; color: var(--text-dim); }
+.nav-link::after  { content: " ]"; color: var(--text-dim); }
+.nav-link:hover { color: var(--text); }
+
 .debug-link {
   font-size: 0.72rem;
   color: var(--text-muted);
@@ -973,6 +985,32 @@ html[data-theme="light"] .pattern-chip {
   color: inherit;
   text-decoration: none;
 }
+
+.pattern-filter {
+  width: 100%;
+  margin: 0 0 1.4rem;
+  padding: 0.55rem 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--text);
+  background: var(--surface-code);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-control);
+  outline: none;
+}
+.pattern-filter:focus { border-color: var(--accent); }
+.pattern-filter::placeholder { color: var(--text-dim); opacity: 1; }
+
+.cat-count {
+  margin-left: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--text-dim);
+  letter-spacing: 0;
+}
+
+.pattern-chip.hidden,
+.pattern-cat.hidden { display: none !important; }
 
 .pattern-cat h2 {
   font-family: var(--mono);
