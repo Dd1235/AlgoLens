@@ -77,6 +77,7 @@ or wording, not ranking — that turned out to be the pattern.
 | Judge filter was one-at-a-time, and saved lists ignored it entirely | Judges are now a multi-select chip set, and `:bookmarks` / `:done` / `:all` respect judge + done filters                                |
 | The compare checkbox was clutter for anyone not tuning the engine   | Moved to a `:compare <query>` command                                                                                                   |
 | Refreshing threw away the search | The address bar now mirrors query + judges + pattern + ranker + filter, so refresh and bookmarking keep the view |
+| Clicking a pattern chip could show 0 results | A filter with no query now browses that label instead of searching within your last one — `line-sweep` shows all 40, not the 0 that matched "cycle" |
 
 ## Measured
 
