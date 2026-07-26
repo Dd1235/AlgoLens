@@ -724,9 +724,11 @@ function renderHitsList(container, hits, opts = {}) {
     const meta = document.createElement("span");
     meta.className = "result-meta";
     const diff = hit.problem.difficulty || "";
-    const trailing = libraryMode
-      ? formatRelative(hit.markedAt)
-      : (typeof hit.score === "number" ? hit.score.toFixed(4) : "—");
+    // No raw score on cards. It read as a precise "similarity %" it never was,
+    // and the same 4-decimal number meant a BM25 score in one view and a
+    // cosine in another. The bar below still shows relative strength; exact
+    // numbers live on /debug.html where they're explained.
+    const trailing = libraryMode ? formatRelative(hit.markedAt) : "";
     let metaHtml = `<span class="difficulty ${diffClass(diff)}">${escapeHtml(diff)}</span>${escapeHtml(trailing)}`;
     if (opts.otherRankMap) {
       const other = opts.otherRankMap.get(hit.problem.id);
