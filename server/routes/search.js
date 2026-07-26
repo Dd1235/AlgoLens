@@ -90,9 +90,68 @@ function buildPatternsPayload(problems) {
   return { version: 1, totalProblems: (problems || []).length, categories };
 }
 
+// Flatten the taxonomy once into the shape the resolver wants: slug -> its
+// category and count, so a query can be answered without touching the corpus.
+function buildTechniqueIndex(patternsPayload) {
+  const byPattern = new Map();
+  for (const { category, patterns } of patternsPayload.categories) {
+    for (const { pattern, count } of patterns) byPattern.set(pattern, { category, count });
+  }
+  return byPattern;
+}
+
+// Which techniques does this query touch? The point is vocabulary discovery:
+// someone typing "dp" has no way to learn that digit-dp, tree-dp or slope-trick
+// exist, because labels only appear inside an expanded result card.
+//
+// The family is a union of two rules, and both are load-bearing:
+//   - slug contains a query token   -> catches tree-dp, which lives under the
+//                                      "tree" category, not "dp"
+//   - shares a category with a hit  -> catches state-compression (157 problems,
+//                                      category dp, no "dp" in the slug)
+// Either rule alone misses a large chunk of the family it claims to describe.
+function resolveTechniques(query, techniqueIndex, limit = 10) {
+  const tokens = String(query || "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t.length >= 2);
+  if (!tokens.length) return [];
+
+  const direct = new Set();
+  for (const [pattern] of techniqueIndex) {
+    const parts = pattern.split("-");
+    if (tokens.some((t) => parts.includes(t))) direct.add(pattern);
+  }
+  // Pull in a whole category only when the query names one. Expanding to the
+  // siblings of any matched label sounds right and isn't: "sweep line" hits
+  // line-sweep, whose category is math, and math also holds modular-arithmetic,
+  // counting and gcd — none of which have anything to do with a sweep. The
+  // category axis is coarse (8 buckets over 165 labels), so it earns its place
+  // only for the broad word someone browsing types: dp, graph, tree, string.
+  const categories = new Set();
+  for (const [, meta] of techniqueIndex) {
+    if (tokens.includes(meta.category)) categories.add(meta.category);
+  }
+  if (!direct.size && !categories.size) return [];
+
+  const family = [];
+  for (const [pattern, meta] of techniqueIndex) {
+    if (!meta.count) continue; // never advertise a label with no problems
+    if (direct.has(pattern) || categories.has(meta.category)) {
+      family.push({ pattern, count: meta.count, direct: direct.has(pattern) });
+    }
+  }
+  // Purely by how much of the corpus carries the label. Ranking slug matches
+  // first put functional-graph (2 problems) above dfs (203) for the query
+  // "graph" — a technically exact match that tells a newcomer nothing.
+  family.sort((a, b) => b.count - a.count || a.pattern.localeCompare(b.pattern));
+  return family.slice(0, limit).map(({ pattern, count }) => ({ pattern, count }));
+}
+
 function createSearchRouter({ indexes, defaultRanker, problems }) {
   const router = express.Router();
   const patternsPayload = buildPatternsPayload(problems);
+  const techniqueIndex = buildTechniqueIndex(patternsPayload);
   // "Everything you have" is exactly the corpus — asking for more just made the
   // gRPC leg serialize a nonsense k over the wire.
   const FULL_PAGE_SIZE = problems.length;
@@ -125,6 +184,9 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
       const effectiveFilter = userState ? filter : "all";
 
       const hasFilter = effectiveFilter !== "all" || !!pattern || platforms.size > 0;
+      // Resolved from the pre-built index, not the corpus — a walk over 165
+      // in-memory entries, so it costs nothing next to ranking.
+      const techniques = pattern ? [] : resolveTechniques(q, techniqueIndex);
 
       let hits, total, latencyMs;
       if (!q.trim() && hasFilter) {
@@ -203,6 +265,9 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         total,
         filter: effectiveFilter,
         pattern: pattern || undefined,
+        // Vocabulary, not results: the techniques this query touches, so the
+        // taxonomy is discoverable without expanding a card.
+        techniques: techniques.length ? techniques : undefined,
         platform: platforms.size ? [...platforms].sort() : undefined,
         hits,
       });
