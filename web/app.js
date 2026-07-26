@@ -75,6 +75,7 @@ let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let compareMode = false;  // entered with :compare, left by any other query
+let bootNeedsAuth = false; // restored state that only means something signed in
 let currentSearchId = null; // ties outcome beacons to the search that produced them
 let currentRankerAnswered = "";
 
@@ -215,6 +216,14 @@ async function bootstrapAuth() {
     }
   } catch (_e) {}
   applyAuthState();
+  // The boot search deliberately fires before this resolves — waiting on
+  // /auth/me would add a round trip to every deep link. Two pieces of restored
+  // state need a user though: the done filter, and a library command like
+  // :bookmarks (which would otherwise be searched as a literal string). Those
+  // re-issue once here instead of being silently dropped.
+  const wasPending = bootNeedsAuth;
+  bootNeedsAuth = false;
+  if (wasPending && currentUser && currentQuery) reissueSearch();
 }
 
 function applyAuthState() {
@@ -316,6 +325,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
     hideLoadMore();
     hideFeedback();
     if (currentUser) setLibPath("~");
+    syncUrl();
     return;
   }
 
@@ -352,6 +362,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
       currentQuery = q;
       currentOffset = 0;
     }
+    syncUrl();
     return runLibrary(libraryType, q);
   }
 
@@ -366,6 +377,7 @@ async function runSearch(rawQuery, { append = false } = {}) {
     currentOffset = 0;
     currentTopScore = 0;
   }
+  syncUrl();
 
   const issuedAt = ++lastQueryAt;
   // Deliberately not setStatus(): that runs the typewriter, so every keystroke
@@ -604,16 +616,33 @@ function clearPatternFilter({ reissue = true } = {}) {
   if (!activePattern) return;
   activePattern = "";
   updatePatternPill();
-  // Drop ?pattern= from the address bar too. Without this, clearing a filter
-  // you arrived at via a deep link only lasted until the next refresh.
-  const url = new URL(location.href);
-  if (url.searchParams.has("pattern")) {
-    url.searchParams.delete("pattern");
-    history.replaceState(null, "", url.pathname + url.search + url.hash);
-  }
+  syncUrl();
   if (reissue && currentQuery) {
     currentOffset = 0;
     runSearch(currentQuery, { append: false });
+  }
+}
+
+// The address bar mirrors what you're looking at. It used to be read-only —
+// deep links worked, but only if you typed one by hand, so a refresh threw away
+// your query, your judges and your filter.
+//
+// replaceState, never pushState: runSearch fires on every debounced keystroke,
+// so pushing would bury the real previous page under "g", "gr", "gra". Back
+// still leaves the app in one step, which is what people expect from a search
+// box. Offset is deliberately absent — restoring page 5 would silently refetch
+// everything above it.
+function syncUrl() {
+  const p = new URLSearchParams();
+  if (currentQuery) p.set("q", currentQuery);
+  if (activePattern) p.set("pattern", activePattern);
+  if (activePlatforms.size) p.set("platform", [...activePlatforms].join(","));
+  if (activeRanker) p.set("ranker", activeRanker);
+  if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
+  const qs = p.toString();
+  const next = location.pathname + (qs ? `?${qs}` : "") + location.hash;
+  if (next !== location.pathname + location.search + location.hash) {
+    history.replaceState(null, "", next);
   }
 }
 
@@ -642,11 +671,7 @@ function clearPlatformFilter({ reissue = true } = {}) {
   if (!activePlatforms.size) return;
   activePlatforms.clear();
   syncJudgeControls();
-  const url = new URL(location.href);
-  if (url.searchParams.has("platform")) {
-    url.searchParams.delete("platform");
-    history.replaceState(null, "", url.pathname + url.search + url.hash);
-  }
+  syncUrl();
   if (reissue && currentQuery) {
     currentOffset = 0;
     runSearch(currentQuery, { append: false });
@@ -1135,19 +1160,26 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-// Deep links: /?pattern=wqs-binary-search, /?q=slope+trick, /?ranker=dense.
-// Read-only — state is not written back to the URL while browsing.
+// Deep links, both directions: the URL is read here at boot and written by
+// syncUrl() as you browse, so refresh, bookmark and share all keep the view.
 const bootParams = new URLSearchParams(location.search);
 const urlRanker = (bootParams.get("ranker") || "").trim().toLowerCase();
 if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
 populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+const bootFilter = (bootParams.get("filter") || "").trim().toLowerCase();
+if (["done", "notdone"].includes(bootFilter)) {
+  currentFilter = bootFilter;
+  filterSelect.value = bootFilter;
+  bootNeedsAuth = true;
+}
 for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
   if (PLATFORM_LABELS[p.trim()]) activePlatforms.add(p.trim());
 }
 syncJudgeControls();
 if (bootQ) input.value = bootQ;
+if (LIBRARY_COMMANDS[bootQ.toLowerCase()]) bootNeedsAuth = true;
 if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
   applyPatternFilter(bootPattern);
 } else if (bootQ) {
