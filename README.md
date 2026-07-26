@@ -53,6 +53,7 @@ or wording, not ranking — that turned out to be the pattern.
 | "LeetCode-only is limiting" | Codeforces and AtCoder added — rating-stratified from 1300 up, no easies |
 | "sweep line finds nothing, and CF tags don't have that keyword" | Correct — Codeforces has no sweepline tag at all. Fixed by auditing the corpus for the technique directly; 17 problems gained the label |
 | "can I see only Codeforces problems?" | Click the judge tag on any result; combine several, clear with the pill |
+| The "searching" line was distracting while typing | It animated one character at a time while the answer was already back — now it only appears if a search actually takes over 400ms |
 
 ## Measured
 
