@@ -179,29 +179,20 @@ html[data-theme="light"] .signature {
   border-color: var(--accent-soft);
 }
 
-/* Same bracketed shape as .debug-link, but not dimmed — patterns is a feature,
-   not a dev tool, and it was invisible sitting next to "debug". */
+/* The header holds real pages — search, patterns, profile — and the footer
+   holds the dev tools. One weight for all three: accenting only `patterns`
+   made it read as the important one rather than simply findable. */
 .nav-link {
-  font-size: 0.72rem;
-  color: var(--accent);
-  text-decoration: none;
-  letter-spacing: 0.02em;
-}
-.nav-link::before { content: "[ "; color: var(--text-dim); }
-.nav-link::after  { content: " ]"; color: var(--text-dim); }
-.nav-link:hover { color: var(--text); }
-
-.debug-link {
   font-size: 0.72rem;
   color: var(--text-muted);
   text-decoration: none;
   letter-spacing: 0.02em;
 }
+.nav-link::before { content: "[ "; color: var(--text-dim); }
+.nav-link::after  { content: " ]"; color: var(--text-dim); }
+.nav-link:hover { color: var(--accent); }
 
-.debug-link::before { content: "[ "; color: var(--text-dim); }
-.debug-link::after  { content: " ]"; color: var(--text-dim); }
-.debug-link:hover { color: var(--accent-2); }
-html[data-theme="light"] .debug-link:hover { color: var(--accent); }
+
 
 .tagline {
   margin: 0 0 1.4rem;
