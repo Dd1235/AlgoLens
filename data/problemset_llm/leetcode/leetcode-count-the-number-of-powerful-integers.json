@@ -15,7 +15,8 @@
   "tags": [
     "math",
     "string",
-    "digit-dp"
+    "digit-dp",
+    "dynamic-programming"
   ],
   "patterns": [
     "digit-dp",

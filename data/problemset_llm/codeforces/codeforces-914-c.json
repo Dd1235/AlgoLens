@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-914-c",
+  "title": "Travelling Salesman and Special Numbers",
+  "slug": "914-c-travelling-salesman-and-special-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/914/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "combinatorics",
+    "dp"
+  ],
+  "statement": "Given a positive integer n and an integer k, count how many numbers up to n require exactly k iterations of replacing the number by the count of set bits in its binary representation to reach 1, modulo 10^9+7.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "digit-dp",
+    "bit-counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048871,
+    "pattern_confidence": {
+      "digit-dp": 0.9,
+      "bit-counting": 0.95,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

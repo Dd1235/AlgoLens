@@ -15,8 +15,7 @@
     "math"
   ],
   "patterns": [
-    "bitwise-operations",
-    "bitmask",
+    "bit-manipulation",
     "prefix-computation"
   ],
   "annotation": {
@@ -24,8 +23,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784910119,
     "pattern_confidence": {
-      "bitwise-operations": 0.98,
-      "bitmask": 0.95,
+      "bit-manipulation": 0.98,
       "prefix-computation": 0.7
     }
   }

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1083-a",
+  "title": "The Fair Nut and the Best Path",
+  "slug": "1083-a-the-fair-nut-and-the-best-path",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1083/A",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "trees"
+  ],
+  "statement": "Given a tree with cities having limited gasoline purchase amounts and roads with lengths, find a simple path between two cities such that Nut never runs out of gasoline while traveling and maximize the gasoline remaining at the end.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dfs",
+    "prefix-sum",
+    "path-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049000,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dfs": 0.85,
+      "prefix-sum": 0.7,
+      "path-query": 0.75
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

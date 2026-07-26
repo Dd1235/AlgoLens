@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-813-e",
+  "title": "Army Creation",
+  "slug": "813-e-army-creation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/813/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "binary search",
+    "data structures"
+  ],
+  "statement": "Given warriors of various types arranged in a sequence, answer queries asking for the maximum size of a balanced army within a specified subrange, where balanced means no warrior type appears more than k times.",
+  "tags": [
+    "array",
+    "binary-search",
+    "prefix-sum",
+    "counting",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "frequency-frequency-limiting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048198,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "frequency-frequency-limiting": 0.7
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

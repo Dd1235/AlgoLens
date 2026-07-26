@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1928-f",
+  "title": "Digital Patterns",
+  "slug": "1928-f-digital-patterns",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1928/F",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "combinatorics",
+    "data structures",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given two arrays representing transparency coefficients of horizontal and vertical threads, and queries that increment or decrement ranges in these arrays, compute after each query the number of sub-squares in the resulting fabric where no two adjacent cells have equal transparency coefficients.",
+  "tags": [
+    "array",
+    "data-structures",
+    "combinatorics"
+  ],
+  "patterns": [
+    "range-update",
+    "prefix-sum",
+    "difference-array",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048335,
+    "pattern_confidence": {
+      "range-update": 0.95,
+      "prefix-sum": 0.9,
+      "difference-array": 0.85,
+      "counting": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

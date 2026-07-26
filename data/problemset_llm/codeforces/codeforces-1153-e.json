@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1153-e",
+  "title": "Serval and Snake",
+  "slug": "1153-e-serval-and-snake",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1153/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "interactive"
+  ],
+  "statement": "Given an n by n grid containing a snake represented as a simple path from head to tail, determine the positions of the head and tail by querying rectangles that return the number of snake border crossings along the path.",
+  "tags": [
+    "grid",
+    "graph",
+    "interactive"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interactive",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048085,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "interactive": 0.95,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

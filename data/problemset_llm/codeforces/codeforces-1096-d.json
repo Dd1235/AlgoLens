@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1096-d",
+  "title": "Easy Problem",
+  "slug": "1096-d-easy-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1096/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given a string and a cost array for removing characters, find the minimum total cost to remove characters so that the subsequence \"hard\" does not appear in the string.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "subsequence-avoidance",
+    "minimum-cost-removal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048921,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "subsequence-avoidance": 0.9,
+      "minimum-cost-removal": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

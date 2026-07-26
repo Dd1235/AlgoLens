@@ -13,7 +13,8 @@
   "statement": "Compute the k-radius average for each index in an integer array, where the average is the integer division of the sum of elements within radius k around that index, or -1 if insufficient elements exist.",
   "tags": [
     "array",
-    "prefix-sum"
+    "prefix-sum",
+    "two-pointers"
   ],
   "patterns": [
     "prefix-sum",

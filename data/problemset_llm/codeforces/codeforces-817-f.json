@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-817-f",
+  "title": "MEX Queries",
+  "slug": "817-f-mex-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/817/F",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "trees"
+  ],
+  "statement": "Maintain a dynamic set of integers under interval add, remove, and invert operations, and after each operation output the smallest positive integer not in the set (MEX).",
+  "tags": [
+    "data-structures",
+    "binary-search",
+    "segment-tree"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interval-update",
+    "lazy-propagation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048215,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "interval-update": 0.85,
+      "lazy-propagation": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

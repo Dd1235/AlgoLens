@@ -14,10 +14,10 @@
   "statement": "Given a string and a number of friends, repeatedly split the string into that many non-empty parts in all possible ways without repeating any previous split, then collect all split substrings into a box. Determine the lexicographically largest string present in the box after all rounds.",
   "tags": [
     "string",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
-    "enumeration",
+    "brute-force",
     "string-splitting"
   ],
   "annotation": {
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909381,
     "pattern_confidence": {
-      "enumeration": 0.95,
+      "brute-force": 0.95,
       "string-splitting": 0.9
     }
   }

@@ -14,7 +14,7 @@
   "statement": "Given positions and heights of trees sorted by position, determine the maximum number of trees that can be cut down to the left or right without overlapping fallen segments or occupied points.",
   "tags": [
     "greedy",
-    "dp",
+    "dynamic-programming",
     "intervals",
     "sorting"
   ],

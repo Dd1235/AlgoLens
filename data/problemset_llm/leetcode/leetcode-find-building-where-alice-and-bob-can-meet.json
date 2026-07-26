@@ -18,7 +18,8 @@
   "statement": "Given an array of building heights and queries with two starting positions, determine the leftmost building where both can meet by moving only to buildings with strictly greater height and higher index. Return -1 if no such meeting building exists.",
   "tags": [
     "array",
-    "graph"
+    "graph",
+    "binary-search"
   ],
   "patterns": [
     "binary-search-answer",

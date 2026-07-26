@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-893-f",
+  "title": "Subtree Minimum Query",
+  "slug": "893-f-subtree-minimum-query",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/893/F",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with values on vertices, answer queries asking for the minimum value in the subtree of a given vertex restricted to nodes within a certain distance from it.",
+  "tags": [
+    "tree",
+    "range-query",
+    "data-structure",
+    "segment-tree"
+  ],
+  "patterns": [
+    "euler-tour",
+    "tree-flattening",
+    "segment-tree",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048833,
+    "pattern_confidence": {
+      "euler-tour": 0.95,
+      "tree-flattening": 0.93,
+      "segment-tree": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

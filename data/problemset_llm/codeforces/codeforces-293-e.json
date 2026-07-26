@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-293-e",
+  "title": "Close Vertices",
+  "slug": "293-e-close-vertices",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/293/E",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "trees"
+  ],
+  "statement": "Given a weighted tree, count the number of vertex pairs whose shortest path has length at most l and total edge weight at most w.",
+  "tags": [
+    "tree",
+    "graph",
+    "divide-and-conquer",
+    "data-structures"
+  ],
+  "patterns": [
+    "divide-and-conquer-on-tree",
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048397,
+    "pattern_confidence": {
+      "divide-and-conquer-on-tree": 0.95,
+      "binary-search-answer": 0.85,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

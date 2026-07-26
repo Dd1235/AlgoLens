@@ -13,22 +13,22 @@
   "statement": "Given an integer n, find the largest palindrome number that can be expressed as the product of two n-digit integers, and return the result modulo 1337.",
   "tags": [
     "math",
-    "enumeration",
+    "brute-force",
     "number-theory"
   ],
   "patterns": [
-    "palindrome-check",
+    "palindrome",
     "modular-arithmetic",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923118,
     "pattern_confidence": {
-      "palindrome-check": 0.95,
+      "palindrome": 0.95,
       "modular-arithmetic": 0.9,
-      "enumeration": 0.85
+      "brute-force": 0.85
     }
   }
 }

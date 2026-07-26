@@ -15,12 +15,12 @@
   "tags": [
     "string",
     "backtracking",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "backtracking",
     "string-parsing",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "backtracking": 0.95,
       "string-parsing": 0.9,
-      "enumeration": 0.9
+      "brute-force": 0.9
     }
   }
 }

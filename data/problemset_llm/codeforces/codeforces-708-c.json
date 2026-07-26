@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-708-c",
+  "title": "Centroids",
+  "slug": "708-c-centroids",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/708/C",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree, determine for each vertex whether it can become a centroid after performing at most one edge replacement that keeps the graph a tree.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "greedy",
+    "edge-replacement"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048241,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "greedy": 0.85,
+      "edge-replacement": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

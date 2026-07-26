@@ -21,7 +21,8 @@
   "patterns": [
     "sorting",
     "greedy",
-    "heap"
+    "heap",
+    "exchange-argument"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "sorting": 0.98,
       "greedy": 0.97,
-      "heap": 0.95
+      "heap": 0.95,
+      "exchange-argument": 0.9
     }
   }
 }

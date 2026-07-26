@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1098-a",
+  "title": "Sum in the tree",
+  "slug": "1098-a-sum-in-the-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1098/A",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "constructive algorithms",
+    "dfs and similar",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with known depths and partial sums of values on root-to-node paths, restore the original nonnegative values on each vertex or determine if it's impossible, minimizing the total sum of values when multiple solutions exist.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dfs",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048792,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dfs": 0.9,
+      "greedy": 0.85,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1520-f1",
+  "title": "Guess the K-th Zero (Easy version)",
+  "slug": "1520-f1-guess-the-k-th-zero-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1520/F1",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "binary search",
+    "interactive"
+  ],
+  "statement": "Given a hidden binary array, determine the position of the k-th zero by querying sums over subranges, with a limited number of queries allowed.",
+  "tags": [
+    "array",
+    "interactive",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047936,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85
+    }
+  },
+  "source_topic": "Formwise / Binary Search"
+}

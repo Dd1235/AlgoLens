@@ -9,7 +9,7 @@
   "statement": "Given a text string and a pattern string, count how many times the pattern occurs as a substring in the text.",
   "tags": [
     "string",
-    "pattern-matching"
+    "string-matching"
   ],
   "patterns": [
     "string-matching",

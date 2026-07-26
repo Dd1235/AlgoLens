@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-735-d",
+  "title": "Taxes",
+  "slug": "735-d-taxes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/735/D",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an integer n, split it into parts each at least 2 to minimize the sum of the maximum proper divisors of each part.",
+  "tags": [
+    "math",
+    "number-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047974,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "greedy": 0.85,
+      "dynamic-programming": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1552-d",
+  "title": "Array Differentiation",
+  "slug": "1552-d-array-differentiation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1552/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "constructive algorithms",
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "math"
+  ],
+  "statement": "Given a sequence of integers, determine if there exists another sequence such that each original element can be represented as the difference of two elements from the new sequence.",
+  "tags": [
+    "array",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "brute-force",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048051,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "brute-force": 0.7,
+      "dfs": 0.6
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

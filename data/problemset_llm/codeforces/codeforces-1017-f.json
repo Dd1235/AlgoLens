@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1017-f",
+  "title": "The Neutral Zone",
+  "slug": "1017-f-the-neutral-zone",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1017/F",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "brute force",
+    "math"
+  ],
+  "statement": "Compute the sum of a custom logarithm-like function defined via prime factorization and a cubic polynomial function over all integers from 1 to n, modulo 2^32.",
+  "tags": [
+    "number-theory",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "polynomial-evaluation",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048372,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "polynomial-evaluation": 0.9,
+      "prefix-sum": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1979-f",
+  "title": "Kostyanych's Theorem",
+  "slug": "1979-f-kostyanych-s-theorem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1979/F",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "graphs",
+    "interactive"
+  ],
+  "statement": "Given an interactive scenario with a nearly complete graph missing (n-2) edges, find a Hamiltonian path by querying vertex degrees and missing edges, removing vertices iteratively within n queries.",
+  "tags": [
+    "graph",
+    "interactive",
+    "constructive-algorithm",
+    "hamiltonian-path"
+  ],
+  "patterns": [
+    "interactive",
+    "constructive-algorithm",
+    "degree-query",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048330,
+    "pattern_confidence": {
+      "interactive": 1.0,
+      "constructive-algorithm": 0.9,
+      "degree-query": 0.85,
+      "graph-construction": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

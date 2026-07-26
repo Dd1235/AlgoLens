@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1264-c",
+  "title": "Beautiful Mirrors with queries",
+  "slug": "1264-c-beautiful-mirrors-with-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1264/C",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "probabilities"
+  ],
+  "statement": "Given n mirrors each with a probability of saying 'beautiful', and a dynamic set of checkpoints, answer queries that toggle checkpoints and compute the expected number of days until a stopping condition, modulo 998244353.",
+  "tags": [
+    "probability",
+    "data-structures",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "segment-tree",
+    "modular-inverse"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048115,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "segment-tree": 0.85,
+      "modular-inverse": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -16,7 +16,7 @@
   "statement": "Given a binary string and an integer k, determine the minimum number of operations needed to flip exactly k distinct bits per operation to make all characters '1', or return -1 if impossible.",
   "tags": [
     "string",
-    "bitmask",
+    "bit-manipulation",
     "math"
   ],
   "patterns": [

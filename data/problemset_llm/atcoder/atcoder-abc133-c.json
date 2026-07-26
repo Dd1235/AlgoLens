@@ -14,7 +14,8 @@
   "patterns": [
     "modular-arithmetic",
     "brute-force",
-    "pigeonhole-principle"
+    "pigeonhole-principle",
+    "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,7 +24,8 @@
     "pattern_confidence": {
       "modular-arithmetic": 0.95,
       "brute-force": 0.7,
-      "pigeonhole-principle": 0.6
+      "pigeonhole-principle": 0.6,
+      "number-theory": 0.9
     }
   },
   "difficulty": 592

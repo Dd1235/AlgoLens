@@ -24,7 +24,7 @@
   "patterns": [
     "gcd",
     "coprime-check",
-    "frequency-counting",
+    "counting",
     "greedy"
   ],
   "annotation": {
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "gcd": 0.98,
       "coprime-check": 0.95,
-      "frequency-counting": 0.85,
+      "counting": 0.85,
       "greedy": 0.8
     }
   }

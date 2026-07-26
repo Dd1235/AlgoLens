@@ -20,7 +20,7 @@
     "counting"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "greedy",
     "two-pass"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784908938,
     "pattern_confidence": {
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "greedy": 0.9,
       "two-pass": 0.85
     }

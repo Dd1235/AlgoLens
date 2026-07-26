@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1294-f",
+  "title": "Three Paths on a Tree",
+  "slug": "1294-f-three-paths-on-a-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1294/F",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given an unweighted tree, select three distinct vertices to maximize the number of edges covered by the union of the simple paths connecting each pair among them.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048798,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-dp": 0.9,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

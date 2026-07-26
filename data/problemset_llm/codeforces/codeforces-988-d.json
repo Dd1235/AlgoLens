@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-988-d",
+  "title": "Points and Powers of Two",
+  "slug": "988-d-points-and-powers-of-two",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/988/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "math"
+  ],
+  "statement": "Given distinct points on a line, find the largest subset where the distance between every pair of points is a power of two.",
+  "tags": [
+    "array",
+    "math",
+    "graph",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "brute-force",
+    "bitmask-dp",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048505,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "bitmask-dp": 0.7,
+      "graph-construction": 0.75
+    }
+  },
+  "source_topic": "Formwise / Bit-Manipulation"
+}

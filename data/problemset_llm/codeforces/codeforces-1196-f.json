@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1196-f",
+  "title": "K-th Path",
+  "slug": "1196-f-k-th-path",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1196/F",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "shortest paths",
+    "sortings"
+  ],
+  "statement": "Given a connected undirected weighted graph, find the k-th smallest shortest path distance between any two distinct vertices, counting each pair only once.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "sorting"
+  ],
+  "patterns": [
+    "all-pairs-shortest-path",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048228,
+    "pattern_confidence": {
+      "all-pairs-shortest-path": 0.95,
+      "sorting": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

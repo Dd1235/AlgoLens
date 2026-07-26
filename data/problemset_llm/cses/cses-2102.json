@@ -9,7 +9,7 @@
   "statement": "Given a text string and multiple pattern strings, determine for each pattern whether it occurs as a substring in the text.",
   "tags": [
     "string",
-    "pattern-matching",
+    "string-matching",
     "trie"
   ],
   "patterns": [

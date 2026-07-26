@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-896-b",
+  "title": "Ithea Plays With Chtholly",
+  "slug": "896-b-ithea-plays-with-chtholly",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/896/B",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "games",
+    "greedy",
+    "interactive"
+  ],
+  "statement": "In an interactive game, given a sequence of numbers one by one, decide on which position in a line of sheets to write each number so that eventually all sheets are filled with a non-decreasing sequence.",
+  "tags": [
+    "array",
+    "interactive",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "interactive"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048200,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "interactive": 0.95
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

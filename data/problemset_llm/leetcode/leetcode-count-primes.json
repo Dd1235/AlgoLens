@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "sieve",
-    "enumeration",
+    "brute-force",
     "prefix-sum"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784908980,
     "pattern_confidence": {
       "sieve": 0.98,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "prefix-sum": 0.75
     }
   }

@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1661-e",
+  "title": "Narrow Components",
+  "slug": "1661-e-narrow-components",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1661/E",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "dp",
+    "dsu",
+    "math",
+    "trees"
+  ],
+  "statement": "Given a 3-row by n-column grid with free and taken cells, answer queries asking for the number of connected components formed by free cells within specified column intervals.",
+  "tags": [
+    "array",
+    "graph",
+    "union-find",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "union-find",
+    "prefix-sum",
+    "offline-queries",
+    "interval-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048380,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "prefix-sum": 0.85,
+      "offline-queries": 0.8,
+      "interval-query": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

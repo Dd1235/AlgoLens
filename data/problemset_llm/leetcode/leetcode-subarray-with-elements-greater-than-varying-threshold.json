@@ -15,7 +15,8 @@
   "statement": "Given an integer array and a threshold, find the length of any contiguous subarray where every element is greater than the threshold divided by the subarray length, or return -1 if none exists.",
   "tags": [
     "array",
-    "binary-search"
+    "binary-search",
+    "data-structure"
   ],
   "patterns": [
     "binary-search-answer",

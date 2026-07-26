@@ -19,7 +19,7 @@
     "combinatorics"
   ],
   "patterns": [
-    "bitmask",
+    "bit-manipulation",
     "state-enumeration",
     "combinatorial-analysis"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784910289,
     "pattern_confidence": {
-      "bitmask": 0.95,
+      "bit-manipulation": 0.95,
       "state-enumeration": 0.9,
       "combinatorial-analysis": 0.85
     }

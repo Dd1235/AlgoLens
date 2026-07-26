@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-767-b",
+  "title": "The Queue",
+  "slug": "767-b-the-queue",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/767/B",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Given a schedule of visitors arriving at a passport office with a single receptionist working during a fixed time interval and serving each visitor for a fixed duration, determine the earliest time Vasya can arrive to minimize his waiting time and still be served.",
+  "tags": [
+    "simulation",
+    "greedy",
+    "queue"
+  ],
+  "patterns": [
+    "simulation",
+    "greedy",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048148,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "greedy": 0.9,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

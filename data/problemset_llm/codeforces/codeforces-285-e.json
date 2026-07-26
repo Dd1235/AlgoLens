@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-285-e",
+  "title": "Positions in Permutations",
+  "slug": "285-e-positions-in-permutations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/285/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Count the number of permutations of size n that have exactly k positions i where the absolute difference between the element at position i and i is 1, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048450,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

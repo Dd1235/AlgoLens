@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1114-f",
+  "title": "Please, another Queries on Array?",
+  "slug": "1114-f-please-another-queries-on-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1114/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "divide and conquer",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array, support range multiplication updates and queries for the Euler's totient of the product of elements in a given range modulo 10^9+7.",
+  "tags": [
+    "array",
+    "number-theory",
+    "segment-tree",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "segment-tree",
+    "modular-arithmetic",
+    "prime-factorization",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048750,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "modular-arithmetic": 0.9,
+      "prime-factorization": 0.85,
+      "range-update": 0.9,
+      "range-query": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-823-d",
+  "title": "Rusty String",
+  "slug": "823-d-rusty-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/823/D",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "fft",
+    "math",
+    "strings"
+  ],
+  "statement": "Given a string of letters 'V' and 'K' with some unknown positions, determine all possible periods of the string after filling unknowns with either letter, where a period means the string matches itself when shifted by that length.",
+  "tags": [
+    "string",
+    "math",
+    "fft"
+  ],
+  "patterns": [
+    "string-period",
+    "fast-fourier-transform",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048427,
+    "pattern_confidence": {
+      "string-period": 0.95,
+      "fast-fourier-transform": 0.9,
+      "string-matching": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

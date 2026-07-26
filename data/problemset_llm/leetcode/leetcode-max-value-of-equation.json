@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "queue",
-    "monotonic-queue"
+    "monotonic-queue",
+    "two-pointers"
   ],
   "patterns": [
     "monotonic-queue",

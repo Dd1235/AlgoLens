@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-915-f",
+  "title": "Imbalance Value of a Tree",
+  "slug": "915-f-imbalance-value-of-a-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/915/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "dsu",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a tree with values on each vertex, compute the sum over all pairs of vertices of the difference between the maximum and minimum values on the simple path connecting them.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find",
+    "data-structures"
+  ],
+  "patterns": [
+    "dsu-on-tree",
+    "contribution-technique",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048999,
+    "pattern_confidence": {
+      "dsu-on-tree": 0.95,
+      "contribution-technique": 0.9,
+      "tree-dp": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

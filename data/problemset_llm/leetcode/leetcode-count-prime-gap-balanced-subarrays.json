@@ -19,7 +19,8 @@
     "array",
     "number-theory",
     "queue",
-    "sliding-window"
+    "sliding-window",
+    "two-pointers"
   ],
   "patterns": [
     "sliding-window",

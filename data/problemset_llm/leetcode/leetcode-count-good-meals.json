@@ -18,7 +18,7 @@
   ],
   "patterns": [
     "hash-map",
-    "bitmask",
+    "bit-manipulation",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1784908797,
     "pattern_confidence": {
       "hash-map": 0.98,
-      "bitmask": 0.7,
+      "bit-manipulation": 0.7,
       "modular-arithmetic": 0.85
     }
   }

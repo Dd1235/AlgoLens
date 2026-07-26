@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-696-b",
+  "title": "Puzzles",
+  "slug": "696-b-puzzles",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/696/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "math",
+    "probabilities",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with n cities, compute the expected start time of a random DFS visit for each city starting from the root.",
+  "tags": [
+    "tree",
+    "graph",
+    "probability",
+    "dfs"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "dfs",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048061,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "dfs": 0.9,
+      "tree-dp": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

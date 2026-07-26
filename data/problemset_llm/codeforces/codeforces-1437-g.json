@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1437-g",
+  "title": "Death DBMS",
+  "slug": "1437-g-death-dbms",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1437/G",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "string suffix structures",
+    "strings",
+    "trees"
+  ],
+  "statement": "Maintain a database of victims with names and suspicion values, supporting updates to suspicion values and queries to find the maximum suspicion value among victims whose names appear as substrings of a given query string.",
+  "tags": [
+    "string",
+    "data-structure",
+    "tree"
+  ],
+  "patterns": [
+    "aho-corasick",
+    "segment-tree",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048277,
+    "pattern_confidence": {
+      "aho-corasick": 0.98,
+      "segment-tree": 0.9,
+      "offline-queries": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

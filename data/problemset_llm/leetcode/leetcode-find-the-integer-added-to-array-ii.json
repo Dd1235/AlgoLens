@@ -17,12 +17,12 @@
     "array",
     "sorting",
     "two-pointers",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "sorting",
     "two-pointers",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +31,7 @@
     "pattern_confidence": {
       "sorting": 0.95,
       "two-pointers": 0.9,
-      "enumeration": 0.85
+      "brute-force": 0.85
     }
   }
 }

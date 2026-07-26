@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-732-f",
+  "title": "Tourist Reform",
+  "slug": "732-f-tourist-reform",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/732/F",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "dfs and similar",
+    "graphs"
+  ],
+  "statement": "Given an undirected connected graph, orient each edge to maximize the minimum number of reachable cities from any city in the resulting directed graph.",
+  "tags": [
+    "graph",
+    "strongly-connected-components",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dfs",
+    "strong-connectivity",
+    "articulation-points"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048989,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dfs": 0.85,
+      "strong-connectivity": 0.88,
+      "articulation-points": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

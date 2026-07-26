@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-7-d",
+  "title": "Palindrome Degree",
+  "slug": "7-d-palindrome-degree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/7/D",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given a string, compute the sum of palindrome degrees for all its prefixes, where the palindrome degree is defined recursively based on the string and its prefix and suffix palindromic properties.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-hashing",
+    "dynamic-programming",
+    "palindrome"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048516,
+    "pattern_confidence": {
+      "prefix-hashing": 0.95,
+      "dynamic-programming": 0.9,
+      "palindrome": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

@@ -20,7 +20,7 @@
   "patterns": [
     "sliding-window",
     "two-pointers",
-    "frequency-count"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "sliding-window": 0.98,
       "two-pointers": 0.95,
-      "frequency-count": 0.9
+      "counting": 0.9
     }
   }
 }

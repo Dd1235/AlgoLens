@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-762-f",
+  "title": "Tree nesting",
+  "slug": "762-f-tree-nesting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/762/F",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "combinatorics",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given two trees S and T, count the number of connected subtrees of S that are isomorphic to T, modulo 10^9+7.",
+  "tags": [
+    "graph",
+    "tree",
+    "combinatorics",
+    "isomorphism"
+  ],
+  "patterns": [
+    "tree-isomorphism",
+    "dp-on-trees",
+    "subtree-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048337,
+    "pattern_confidence": {
+      "tree-isomorphism": 0.98,
+      "dp-on-trees": 0.9,
+      "subtree-enumeration": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

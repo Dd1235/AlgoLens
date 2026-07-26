@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1324-f",
+  "title": "Maximum White Subtree",
+  "slug": "1324-f-maximum-white-subtree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1324/F",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a tree with vertices colored white or black, for each vertex find the maximum difference between the count of white and black vertices in any subtree containing that vertex.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "rerooting-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048830,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "rerooting-dp": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

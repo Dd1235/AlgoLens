@@ -9,8 +9,9 @@
   "statement": "Partition a sequence into contiguous intervals to minimize the XOR of their bitwise OR values.",
   "tags": [
     "array",
-    "bitwise-operations",
-    "dynamic-programming"
+    "bit-manipulation",
+    "dynamic-programming",
+    "backtracking"
   ],
   "patterns": [
     "bitmask-dp",

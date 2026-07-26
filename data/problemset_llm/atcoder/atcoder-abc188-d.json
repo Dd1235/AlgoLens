@@ -10,7 +10,8 @@
   "tags": [
     "array",
     "greedy",
-    "line-sweep"
+    "line-sweep",
+    "prefix-sum"
   ],
   "patterns": [
     "line-sweep",

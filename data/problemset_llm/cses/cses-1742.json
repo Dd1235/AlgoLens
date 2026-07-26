@@ -10,7 +10,7 @@
   "tags": [
     "geometry",
     "simulation",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "simulation",

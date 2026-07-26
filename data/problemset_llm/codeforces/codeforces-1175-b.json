@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1175-b",
+  "title": "Catch Overflow!",
+  "slug": "1175-b-catch-overflow",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1175/B",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "data structures",
+    "expression parsing",
+    "implementation"
+  ],
+  "statement": "Given a sequence of nested for-loops and add commands that increment a 32-bit unsigned integer variable, determine the final value or detect if an overflow occurs beyond 2^32 - 1.",
+  "tags": [
+    "simulation",
+    "stack",
+    "implementation",
+    "math",
+    "data-structure"
+  ],
+  "patterns": [
+    "simulation",
+    "stack",
+    "overflow-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048062,
+    "pattern_confidence": {
+      "simulation": 0.98,
+      "stack": 0.9,
+      "overflow-detection": 0.85
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

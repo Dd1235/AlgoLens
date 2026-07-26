@@ -18,7 +18,8 @@
     "array",
     "sorting",
     "greedy",
-    "binary-search"
+    "binary-search",
+    "two-pointers"
   ],
   "patterns": [
     "sorting",

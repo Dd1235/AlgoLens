@@ -14,10 +14,10 @@
   "tags": [
     "array",
     "math",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
-    "frequency-counting",
+    "counting",
     "greedy",
     "modular-arithmetic"
   ],
@@ -26,7 +26,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784731097,
     "pattern_confidence": {
-      "frequency-counting": 0.9,
+      "counting": 0.9,
       "greedy": 0.85,
       "modular-arithmetic": 0.9
     }

@@ -22,7 +22,7 @@
   "patterns": [
     "prefix-xor",
     "dfs",
-    "bitmask",
+    "bit-manipulation",
     "hash-map"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "prefix-xor": 0.95,
       "dfs": 0.9,
-      "bitmask": 0.9,
+      "bit-manipulation": 0.9,
       "hash-map": 0.85
     }
   }

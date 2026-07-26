@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1175-g",
+  "title": "Yet Another Partiton Problem",
+  "slug": "1175-g-yet-another-partiton-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1175/G",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "dp",
+    "geometry",
+    "two pointers"
+  ],
+  "statement": "Partition an array into k contiguous subsegments to minimize the sum of each segment's length multiplied by its maximum element.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "divide-and-conquer-dp",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048333,
+    "pattern_confidence": {
+      "divide-and-conquer-dp": 0.95,
+      "dynamic-programming": 0.9,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

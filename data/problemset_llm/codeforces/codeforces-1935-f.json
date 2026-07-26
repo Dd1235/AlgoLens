@@ -1,0 +1,45 @@
+{
+  "id": "codeforces-1935-f",
+  "title": "Andrey's Tree",
+  "slug": "1935-f-andrey-s-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1935/F",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "data structures",
+    "dfs and similar",
+    "dsu",
+    "greedy",
+    "implementation",
+    "trees"
+  ],
+  "statement": "Given a tree, for each vertex removed, determine the minimum cost and edges to add to reconnect the remaining vertices into a tree, where adding an edge costs the absolute difference of its endpoints' indices.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy",
+    "binary-search-answer",
+    "tree-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048443,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "greedy": 0.9,
+      "binary-search-answer": 0.85,
+      "tree-reconstruction": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

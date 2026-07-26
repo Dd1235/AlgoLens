@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1179-a",
+  "title": "Valeriy and Deque",
+  "slug": "1179-a-valeriy-and-deque",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1179/A",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given a deque of n elements, repeatedly perform operations that remove the first two elements, reorder them based on their values, and reinsert them at the front and back. For q queries, determine the pair of elements removed at the m-th operation.",
+  "tags": [
+    "deque",
+    "simulation",
+    "array",
+    "data-structure"
+  ],
+  "patterns": [
+    "simulation",
+    "two-pointers",
+    "periodicity-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048941,
+    "pattern_confidence": {
+      "simulation": 0.98,
+      "two-pointers": 0.7,
+      "periodicity-detection": 0.85
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-748-b",
+  "title": "Santa Claus and Keyboard Check",
+  "slug": "748-b-santa-claus-and-keyboard-check",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/748/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given two strings representing the intended and typed keyboard input, determine which pairs of keys could have swapped positions, with each key involved in at most one such pair.",
+  "tags": [
+    "strings",
+    "graph",
+    "implementation"
+  ],
+  "patterns": [
+    "graph-construction",
+    "connected-components",
+    "pair-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047876,
+    "pattern_confidence": {
+      "graph-construction": 0.9,
+      "connected-components": 0.85,
+      "pair-matching": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

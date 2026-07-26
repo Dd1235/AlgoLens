@@ -22,7 +22,8 @@
   "patterns": [
     "longest-increasing-subsequence",
     "binary-search",
-    "sorting"
+    "sorting",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "longest-increasing-subsequence": 0.98,
       "binary-search": 0.95,
-      "sorting": 0.9
+      "sorting": 0.9,
+      "dp-optimization": 0.9
     }
   }
 }

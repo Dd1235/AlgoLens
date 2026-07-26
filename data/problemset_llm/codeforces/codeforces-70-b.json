@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-70-b",
+  "title": "Text Messaging",
+  "slug": "70-b-text-messaging",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/70/B",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "expression parsing",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given a text split into fixed-size messages, partition it into the minimum number of messages so that no sentence is split across messages, ignoring spaces between sentences when they are separated.",
+  "tags": [
+    "string",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048044,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.85,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

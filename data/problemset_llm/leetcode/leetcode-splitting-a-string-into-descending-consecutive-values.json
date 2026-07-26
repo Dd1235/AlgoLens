@@ -15,12 +15,12 @@
   "tags": [
     "string",
     "backtracking",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "backtracking",
     "dfs",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "backtracking": 0.98,
       "dfs": 0.9,
-      "enumeration": 0.85
+      "brute-force": 0.85
     }
   }
 }

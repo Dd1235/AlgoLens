@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-343-d",
+  "title": "Water Tree",
+  "slug": "343-d-water-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/343/D",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a rooted tree where each vertex can be filled or emptied of water, support operations to fill a vertex and all its descendants, empty a vertex and all its ancestors, and query whether a vertex is currently filled.",
+  "tags": [
+    "tree",
+    "dfs",
+    "simulation",
+    "data-structure",
+    "segment-tree"
+  ],
+  "patterns": [
+    "dfs",
+    "simulation",
+    "ancestor-descendant-updates",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048511,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "simulation": 0.9,
+      "ancestor-descendant-updates": 0.85,
+      "coordinate-compression": 0.9
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

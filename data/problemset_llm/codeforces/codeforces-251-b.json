@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-251-b",
+  "title": "Playing with Permutations",
+  "slug": "251-b-playing-with-permutations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/251/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a permutation q and a target permutation s, determine if s can be obtained from the identity permutation after exactly k moves, where each move applies either q or its inverse to the current permutation, with the constraint that s never appeared before the k-th move.",
+  "tags": [
+    "permutation",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "permutation-composition",
+    "inverse-permutation",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047967,
+    "pattern_confidence": {
+      "permutation-composition": 0.95,
+      "inverse-permutation": 0.9,
+      "simulation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

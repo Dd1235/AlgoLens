@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-119-e",
+  "title": "Alternative Reality",
+  "slug": "119-e-alternative-reality",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/119/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "geometry"
+  ],
+  "statement": "Given n points in 3D space and m planes through the origin, determine the minimum total cost to build spheres of equal radius at these points so that for each plane, a laser ray perpendicular to it can activate all spheres by intersecting them.",
+  "tags": [
+    "geometry",
+    "binary-search",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "geometry",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048261,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "geometry": 0.9,
+      "greedy": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

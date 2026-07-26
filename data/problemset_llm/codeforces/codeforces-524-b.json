@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-524-b",
+  "title": "Фото на память - 2 (round version)",
+  "slug": "524-b-2-round-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/524/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given n friends each represented by a rectangle with width and height, determine the minimal possible area of a combined photo by optionally rotating each friend's rectangle (swapping width and height) and arranging them side by side.",
+  "tags": [
+    "dynamic-programming",
+    "geometry",
+    "array"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047923,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

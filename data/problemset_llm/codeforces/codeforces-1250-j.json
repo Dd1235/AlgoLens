@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1250-j",
+  "title": "The Parade",
+  "slug": "1250-j-the-parade",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1250/J",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "greedy"
+  ],
+  "statement": "Given counts of soldiers by height, select the maximum number of soldiers to form k equal-sized rows so that within each row, soldier heights differ by at most 1.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048073,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "greedy": 0.9,
+      "prefix-sum": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

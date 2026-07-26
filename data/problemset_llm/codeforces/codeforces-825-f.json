@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-825-f",
+  "title": "String Compression",
+  "slug": "825-f-string-compression",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/825/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "dp",
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string, find the minimum length of its compressed form where the string is represented as concatenations of repeated substrings with their repetition counts.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "string-compression",
+    "dynamic-programming",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048809,
+    "pattern_confidence": {
+      "string-compression": 0.95,
+      "dynamic-programming": 0.9,
+      "rolling-hash": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

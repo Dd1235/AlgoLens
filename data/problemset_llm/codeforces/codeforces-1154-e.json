@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1154-e",
+  "title": "Two Teams",
+  "slug": "1154-e-two-teams",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1154/E",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "data structures",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a row of students with distinct skill levels, two coaches alternately select the highest skilled remaining student along with up to k neighbors on each side to form their teams until all students are assigned.",
+  "tags": [
+    "array",
+    "greedy",
+    "two-pointers",
+    "simulation",
+    "data-structure"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048008,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "simulation": 0.9
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

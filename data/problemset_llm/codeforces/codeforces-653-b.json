@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-653-b",
+  "title": "Bear and Compressing",
+  "slug": "653-b-bear-and-compressing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/653/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "dp",
+    "strings"
+  ],
+  "statement": "Given a set of compression operations replacing two-letter prefixes with one letter, count how many length-n strings over six letters can be reduced to 'a' by applying n-1 operations.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047870,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "state-compression": 0.85,
+      "counting": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

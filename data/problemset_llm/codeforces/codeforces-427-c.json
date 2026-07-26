@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-427-c",
+  "title": "Checkposts",
+  "slug": "427-c-checkposts",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/427/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "two pointers"
+  ],
+  "statement": "Given a directed graph with costs for building checkposts at each junction, find the minimum total cost to secure all junctions by placing checkposts so that each junction is protected by a checkpost in its strongly connected component, and count the number of ways to achieve this minimum cost with the fewest checkposts.",
+  "tags": [
+    "graph",
+    "strongly-connected-components",
+    "combinatorics"
+  ],
+  "patterns": [
+    "tarjan",
+    "kosaraju",
+    "counting",
+    "dp-on-graph",
+    "strongly-connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048785,
+    "pattern_confidence": {
+      "tarjan": 0.95,
+      "kosaraju": 0.9,
+      "counting": 0.85,
+      "dp-on-graph": 0.7,
+      "strongly-connected-components": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

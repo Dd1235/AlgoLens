@@ -9,7 +9,7 @@
   "statement": "Given the bottom row of a pyramid where each upper element is the xor of the two elements below it, find the topmost element of the pyramid.",
   "tags": [
     "array",
-    "bitwise-operations"
+    "bit-manipulation"
   ],
   "patterns": [
     "prefix-xor",

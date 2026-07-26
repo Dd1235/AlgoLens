@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-237-b",
+  "title": "Young Table",
+  "slug": "237-b-young-table",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/237/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a jagged table with strictly decreasing row lengths and distinct integers in its cells, rearrange the numbers by swapping to ensure each column and row is strictly increasing.",
+  "tags": [
+    "array",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047862,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.95,
+      "simulation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

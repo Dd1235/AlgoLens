@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1801-g",
+  "title": "A task for substrings",
+  "slug": "1801-g-a-task-for-substrings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1801/G",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string t and a set of strings s_i, answer queries asking for the count of substrings within a specified substring of t that match any string from the set.",
+  "tags": [
+    "string",
+    "data-structures",
+    "suffix-array"
+  ],
+  "patterns": [
+    "suffix-automaton",
+    "offline-queries",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048389,
+    "pattern_confidence": {
+      "suffix-automaton": 0.95,
+      "offline-queries": 0.85,
+      "prefix-sum": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

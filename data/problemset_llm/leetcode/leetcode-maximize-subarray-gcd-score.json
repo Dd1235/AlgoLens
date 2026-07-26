@@ -22,7 +22,7 @@
   "patterns": [
     "dynamic-programming",
     "gcd-computation",
-    "enumeration",
+    "brute-force",
     "state-compression"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "dynamic-programming": 0.9,
       "gcd-computation": 0.95,
-      "enumeration": 0.85,
+      "brute-force": 0.85,
       "state-compression": 0.8
     }
   }

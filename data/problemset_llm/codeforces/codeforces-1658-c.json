@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1658-c",
+  "title": "Shinju and the Lost Permutation",
+  "slug": "1658-c-shinju-and-the-lost-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1658/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given an array representing the number of distinct prefix maximums for each cyclic shift of a lost permutation, determine if such a permutation exists without reconstructing it.",
+  "tags": [
+    "array",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "prefix-maximum",
+    "cyclic-shift",
+    "permutation-properties"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047948,
+    "pattern_confidence": {
+      "prefix-maximum": 0.95,
+      "cyclic-shift": 0.9,
+      "permutation-properties": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

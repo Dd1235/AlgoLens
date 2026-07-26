@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-877-e",
+  "title": "Danil and a Part-time Job",
+  "slug": "877-e-danil-and-a-part-time-job",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/877/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with lights in each node, support toggling all lights in a subtree and querying how many lights are on in a subtree.",
+  "tags": [
+    "tree",
+    "bit-manipulation",
+    "data-structure"
+  ],
+  "patterns": [
+    "tree-flattening",
+    "fenwick-tree",
+    "bit-manipulation",
+    "subtree-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048756,
+    "pattern_confidence": {
+      "tree-flattening": 0.95,
+      "fenwick-tree": 0.9,
+      "bit-manipulation": 0.85,
+      "subtree-query": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

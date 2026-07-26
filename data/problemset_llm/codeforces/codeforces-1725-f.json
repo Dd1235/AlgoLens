@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1725-f",
+  "title": "Field Photography",
+  "slug": "1725-f-field-photography",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1725/F",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "bitmasks",
+    "data structures",
+    "sortings"
+  ],
+  "statement": "Given N rows each with contestants occupying intervals on an extremely wide grid, perform operations shifting contestants left or right by powers of two to achieve a target bitwise OR value Z. For each query with a target Z, determine the maximum number of contestants that can align in a single column after valid shifts.",
+  "tags": [
+    "bit-manipulation",
+    "intervals",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "bitmask-manipulation",
+    "interval-merging",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048131,
+    "pattern_confidence": {
+      "bitmask-manipulation": 0.95,
+      "interval-merging": 0.9,
+      "greedy": 0.85,
+      "bit-manipulation": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

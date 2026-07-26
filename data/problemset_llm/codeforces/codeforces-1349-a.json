@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1349-a",
+  "title": "Orac and LCM",
+  "slug": "1349-a-orac-and-lcm",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1349/A",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "data structures",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a sequence of positive integers, find the greatest common divisor (GCD) of the least common multiples (LCMs) of all pairs of elements in the sequence.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "lcm",
+    "pairwise-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047893,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "lcm": 0.97,
+      "pairwise-computation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

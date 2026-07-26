@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-628-d",
+  "title": "Magic Numbers",
+  "slug": "628-d-magic-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/628/D",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Count integers within a given range that are divisible by m and have a specific digit d appearing only at even positions in their decimal representation. Return the count modulo 10^9+7.",
+  "tags": [
+    "math",
+    "digit-dp",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "digit-dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049026,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

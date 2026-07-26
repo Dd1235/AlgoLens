@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1334-c",
+  "title": "Circle of Monsters",
+  "slug": "1334-c-circle-of-monsters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1334/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given n monsters arranged in a circle with initial health and explosion damage values, determine the minimum number of bullets needed to kill all monsters, considering that killing one monster causes an explosion damaging the next monster and potentially triggering a chain reaction.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047965,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9,
+      "simulation": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

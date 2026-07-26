@@ -10,7 +10,8 @@
   "tags": [
     "array",
     "geometry",
-    "hash-map"
+    "hash-map",
+    "data-structure"
   ],
   "patterns": [
     "coordinate-compression",

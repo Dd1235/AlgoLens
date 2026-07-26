@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-848-c",
+  "title": "Goodbye Souvenir",
+  "slug": "848-c-goodbye-souvenir",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/848/C",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "divide and conquer"
+  ],
+  "statement": "Given a sequence of beads with shapes that can change over time, support queries to find the sum of differences between last and first occurrences of each shape within specified subsegments.",
+  "tags": [
+    "array",
+    "data-structures",
+    "offline-queries",
+    "segment-tree"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "offline-queries",
+    "segment-tree",
+    "coordinate-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048368,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "offline-queries": 0.85,
+      "segment-tree": 0.8,
+      "coordinate-compression": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

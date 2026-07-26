@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-37-c",
+  "title": "Old Berland Language",
+  "slug": "37-c-old-berland-language",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/37/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given lengths of n binary words with no word being a prefix of another, determine if such a prefix-free set of words exists and reconstruct the words if possible.",
+  "tags": [
+    "string",
+    "tree",
+    "greedy",
+    "data-structures",
+    "trie"
+  ],
+  "patterns": [
+    "prefix-tree",
+    "greedy",
+    "prefix-free-set",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048832,
+    "pattern_confidence": {
+      "prefix-tree": 0.9,
+      "greedy": 0.85,
+      "prefix-free-set": 0.95,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

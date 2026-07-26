@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-917-b",
+  "title": "MADMAX",
+  "slug": "917-b-madmax",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/917/B",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "games",
+    "graphs"
+  ],
+  "statement": "Given a DAG with edges labeled by characters, two players alternately move their marbles along edges with non-decreasing character labels. Determine the winner for all initial marble positions assuming optimal play.",
+  "tags": [
+    "graph",
+    "game-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dfs",
+    "memoization",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048067,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "memoization": 0.9,
+      "game-dp": 0.93
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

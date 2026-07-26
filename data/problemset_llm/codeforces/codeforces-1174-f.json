@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1174-f",
+  "title": "Ehab and the Big Finale",
+  "slug": "1174-f-ehab-and-the-big-finale",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1174/F",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "constructive algorithms",
+    "divide and conquer",
+    "graphs",
+    "implementation",
+    "interactive",
+    "trees"
+  ],
+  "statement": "Given a rooted tree and a hidden target node, identify the target by querying distances and ancestor-based path steps with constraints on query types and answers.",
+  "tags": [
+    "tree",
+    "graph",
+    "interactive",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "ancestor-check",
+    "distance-query",
+    "interactive-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048250,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "ancestor-check": 0.85,
+      "distance-query": 0.8,
+      "interactive-query": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

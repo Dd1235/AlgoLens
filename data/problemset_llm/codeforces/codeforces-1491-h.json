@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1491-h",
+  "title": "Yuezheng Ling and Dynamic Tree",
+  "slug": "1491-h-yuezheng-ling-and-dynamic-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1491/H",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with parent pointers, support range updates that decrease parent indices within a range and queries to find the lowest common ancestor (LCA) of two nodes.",
+  "tags": [
+    "tree",
+    "data-structure",
+    "lca",
+    "range-update"
+  ],
+  "patterns": [
+    "binary-lifting",
+    "segment-tree",
+    "lazy-propagation",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048399,
+    "pattern_confidence": {
+      "binary-lifting": 0.95,
+      "segment-tree": 0.9,
+      "lazy-propagation": 0.85,
+      "offline-queries": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

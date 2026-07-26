@@ -15,11 +15,12 @@
   "tags": [
     "math",
     "bit-manipulation",
-    "recursion"
+    "recursion",
+    "backtracking"
   ],
   "patterns": [
     "divide-and-conquer",
-    "bitwise-operations",
+    "bit-manipulation",
     "recursion"
   ],
   "annotation": {
@@ -28,7 +29,7 @@
     "generated_at_unix": 1784910066,
     "pattern_confidence": {
       "divide-and-conquer": 0.95,
-      "bitwise-operations": 0.9,
+      "bit-manipulation": 0.9,
       "recursion": 0.9
     }
   }

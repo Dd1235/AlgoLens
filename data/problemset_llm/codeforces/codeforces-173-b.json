@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-173-b",
+  "title": "Chamber of Secrets",
+  "slug": "173-b-chamber-of-secrets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/173/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "shortest paths"
+  ],
+  "statement": "Given a grid with columns that can be made magical to reflect a basilisk's gaze, determine the minimum number of columns to make magical so that anyone entering the chamber is petrified or report if impossible.",
+  "tags": [
+    "grid",
+    "graph",
+    "shortest-path",
+    "dfs"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dfs",
+    "state-space-search",
+    "zero-one-bfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048820,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dfs": 0.85,
+      "state-space-search": 0.8,
+      "zero-one-bfs": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

@@ -15,7 +15,8 @@
   "tags": [
     "string",
     "array",
-    "hash-map"
+    "hash-map",
+    "data-structure"
   ],
   "patterns": [
     "prefix-sum",

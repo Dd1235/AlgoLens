@@ -15,7 +15,7 @@
   "tags": [
     "array",
     "hash-map",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "counting",

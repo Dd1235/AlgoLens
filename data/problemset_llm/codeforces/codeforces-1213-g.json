@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1213-g",
+  "title": "Path Queries",
+  "slug": "1213-g-path-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1213/G",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "divide and conquer",
+    "dsu",
+    "graphs",
+    "sortings",
+    "trees"
+  ],
+  "statement": "Given a weighted tree and multiple queries, for each query find the number of vertex pairs whose maximum edge weight on the path between them does not exceed the query value.",
+  "tags": [
+    "tree",
+    "graph",
+    "union-find",
+    "sorting"
+  ],
+  "patterns": [
+    "offline-queries",
+    "union-find",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048020,
+    "pattern_confidence": {
+      "offline-queries": 0.95,
+      "union-find": 0.96,
+      "sorting": 0.9,
+      "two-pointers": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

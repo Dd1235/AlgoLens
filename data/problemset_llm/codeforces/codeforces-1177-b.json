@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1177-b",
+  "title": "Digits Sequence (Hard Edition)",
+  "slug": "1177-b-digits-sequence-hard-edition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1177/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "divide and conquer",
+    "implementation"
+  ],
+  "statement": "Given an infinite concatenation of positive integers starting from 1, find the k-th digit in this sequence.",
+  "tags": [
+    "math",
+    "string",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048769,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.85,
+      "number-theory": 0.7
+    }
+  },
+  "source_topic": "Formwise / Binary Search"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1082-g",
+  "title": "Petya and Graph",
+  "slug": "1082-g-petya-and-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1082/G",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "flows",
+    "graphs"
+  ],
+  "statement": "Given a simple graph with weighted vertices and edges, find a subgraph maximizing the sum of edge weights minus the sum of vertex weights.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "maximum-subgraph"
+  ],
+  "patterns": [
+    "maximum-subgraph",
+    "dynamic-programming",
+    "graph-optimization",
+    "max-flow"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048874,
+    "pattern_confidence": {
+      "maximum-subgraph": 0.95,
+      "dynamic-programming": 0.85,
+      "graph-optimization": 0.9,
+      "max-flow": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

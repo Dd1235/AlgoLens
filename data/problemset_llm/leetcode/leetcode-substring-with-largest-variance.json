@@ -21,7 +21,7 @@
   "patterns": [
     "sliding-window",
     "two-pointers",
-    "enumeration",
+    "brute-force",
     "greedy"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "pattern_confidence": {
       "sliding-window": 0.9,
       "two-pointers": 0.85,
-      "enumeration": 0.8,
+      "brute-force": 0.8,
       "greedy": 0.75
     }
   }

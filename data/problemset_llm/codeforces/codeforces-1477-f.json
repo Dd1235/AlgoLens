@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1477-f",
+  "title": "Nezzar and Chocolate Bars",
+  "slug": "1477-f-nezzar-and-chocolate-bars",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1477/F",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "combinatorics",
+    "fft",
+    "math",
+    "probabilities"
+  ],
+  "statement": "Given chocolate bars with lengths, repeatedly split a randomly chosen bar (proportional to its length) into two until all bars are at most length k, and compute the expected number of splits modulo a prime.",
+  "tags": [
+    "probability",
+    "math",
+    "expected-value",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "probability-dp",
+    "modular-inverse"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048363,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "probability-dp": 0.9,
+      "modular-inverse": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

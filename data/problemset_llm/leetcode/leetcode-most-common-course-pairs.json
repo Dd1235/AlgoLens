@@ -16,7 +16,7 @@
   "patterns": [
     "filtering",
     "sorting",
-    "frequency-counting"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +25,7 @@
     "pattern_confidence": {
       "filtering": 0.95,
       "sorting": 0.9,
-      "frequency-counting": 0.9
+      "counting": 0.9
     }
   }
 }

@@ -20,7 +20,7 @@
     "hash-map"
   ],
   "patterns": [
-    "frequency-counting",
+    "counting",
     "combinatorial-enumeration",
     "prefix-sum"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777924152,
     "pattern_confidence": {
-      "frequency-counting": 0.95,
+      "counting": 0.95,
       "combinatorial-enumeration": 0.9,
       "prefix-sum": 0.7
     }

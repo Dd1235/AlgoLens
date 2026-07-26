@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-922-d",
+  "title": "Robot Vacuum Cleaner",
+  "slug": "922-d-robot-vacuum-cleaner",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/922/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given multiple strings composed of 's' and 'h', reorder them to maximize the number of subsequence occurrences of \"sh\" in their concatenation.",
+  "tags": [
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "counting-subsequences",
+    "exchange-argument"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048017,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "counting-subsequences": 0.85,
+      "exchange-argument": 0.9
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

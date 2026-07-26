@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "digit-dp",
-    "bitmask",
+    "bit-manipulation",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1785047597,
     "pattern_confidence": {
       "digit-dp": 0.95,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "modular-arithmetic": 0.9
     }
   },

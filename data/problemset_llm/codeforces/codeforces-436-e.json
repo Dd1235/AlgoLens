@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-436-e",
+  "title": "Cardboard Box",
+  "slug": "436-e-cardboard-box",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/436/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given levels each with two completion times for one or two stars, select levels to earn at least a target number of stars minimizing total time, with each level played at most once for either one or two stars.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048288,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

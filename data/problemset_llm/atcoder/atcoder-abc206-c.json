@@ -10,10 +10,11 @@
   "tags": [
     "array",
     "counting",
-    "math"
+    "math",
+    "data-structure"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "combinatorics"
   ],
   "annotation": {
@@ -21,7 +22,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785047469,
     "pattern_confidence": {
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "combinatorics": 0.9
     }
   },

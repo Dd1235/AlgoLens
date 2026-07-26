@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1920-f2",
+  "title": "Smooth Sailing (Hard Version)",
+  "slug": "1920-f2-smooth-sailing-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1920/F2",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dsu",
+    "geometry",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a grid representing island, ocean, and underwater volcano cells, answer queries about the maximum minimum Manhattan distance to a volcano on a round trip path that fully encircles the island starting from a given ocean or volcano cell.",
+  "tags": [
+    "graph",
+    "geometry",
+    "grid",
+    "union-find",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "union-find",
+    "manhattan-distance",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048441,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "union-find": 0.9,
+      "manhattan-distance": 0.85,
+      "connected-components": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-164-c",
+  "title": "Machine Programming",
+  "slug": "164-c-machine-programming",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/164/C",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "flows",
+    "graphs"
+  ],
+  "statement": "Given n tasks each with a start time, duration, and profit, and k identical machines that can run tasks without overlap, select a subset of tasks to maximize total profit.",
+  "tags": [
+    "interval-scheduling",
+    "greedy",
+    "dynamic-programming",
+    "binary-search",
+    "graph"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interval-scheduling",
+    "dp-on-intervals",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049032,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "interval-scheduling": 0.95,
+      "dp-on-intervals": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

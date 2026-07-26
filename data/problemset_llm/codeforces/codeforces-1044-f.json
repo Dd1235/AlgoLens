@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1044-f",
+  "title": "DFS",
+  "slug": "1044-f-dfs",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1044/F",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Given a tree and a sequence of edge toggle updates on a graph containing the tree as a subgraph, determine after each update how many vertices can serve as a DFS root that produces the original tree as the DFS spanning tree.",
+  "tags": [
+    "graph",
+    "tree",
+    "dfs",
+    "data-structures"
+  ],
+  "patterns": [
+    "dfs",
+    "dynamic-connectivity",
+    "tree-spanning",
+    "graph-updates"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048434,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "dynamic-connectivity": 0.85,
+      "tree-spanning": 0.9,
+      "graph-updates": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

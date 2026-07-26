@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-460-b",
+  "title": "Little Dima and Equation",
+  "slug": "460-b-little-dima-and-equation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/460/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Find all integer solutions x (0 < x < 10^9) to the equation x = b * s(x)^a + c, where s(x) is the sum of digits of x and a, b, c are given constants.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "digit-sum",
+    "exponentiation",
+    "brute-force-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047833,
+    "pattern_confidence": {
+      "digit-sum": 0.95,
+      "exponentiation": 0.85,
+      "brute-force-search": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

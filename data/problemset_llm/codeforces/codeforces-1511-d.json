@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1511-d",
+  "title": "Min Cost String",
+  "slug": "1511-d-min-cost-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1511/D",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "graphs",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given length n and alphabet size k, construct a string of length n using the first k Latin letters that minimizes the number of pairs of equal adjacent character pairs occurring at different positions.",
+  "tags": [
+    "string",
+    "greedy",
+    "combinatorics"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047945,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

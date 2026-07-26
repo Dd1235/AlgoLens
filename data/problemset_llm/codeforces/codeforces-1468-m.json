@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1468-m",
+  "title": "Similar Sets",
+  "slug": "1468-m-similar-sets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1468/M",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "data structures",
+    "graphs",
+    "implementation"
+  ],
+  "statement": "Given multiple sets of integers, determine if there exist two sets sharing at least two distinct common elements, and identify such a pair if it exists.",
+  "tags": [
+    "data-structures",
+    "graph",
+    "hash-map"
+  ],
+  "patterns": [
+    "hash-map",
+    "pairwise-intersection-check",
+    "set-intersection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048249,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "pairwise-intersection-check": 0.9,
+      "set-intersection": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

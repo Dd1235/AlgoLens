@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-424-c",
+  "title": "Magic Formulas",
+  "slug": "424-c-magic-formulas",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/424/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a sequence of positive integers, compute the xor of values derived by xoring each element with the xor of all remainders of its index modulo every position from 1 to n.",
+  "tags": [
+    "array",
+    "math",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "modular-arithmetic",
+    "bitwise-xor"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049014,
+    "pattern_confidence": {
+      "prefix-xor": 0.95,
+      "modular-arithmetic": 0.9,
+      "bitwise-xor": 0.9
+    }
+  },
+  "source_topic": "Formwise / Bit-Manipulation"
+}

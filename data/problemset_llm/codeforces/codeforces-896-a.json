@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-896-a",
+  "title": "Nephren gives a riddle",
+  "slug": "896-a-nephren-gives-a-riddle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/896/A",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "dfs and similar"
+  ],
+  "statement": "Given an infinite sequence of recursively defined strings, answer queries asking for the k-th character of the n-th string or '.' if out of bounds.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "backtracking"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048064,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "prefix-sum": 0.85,
+      "dfs": 0.7
+    }
+  },
+  "source_topic": "Formwise / Recursion Backtracking"
+}

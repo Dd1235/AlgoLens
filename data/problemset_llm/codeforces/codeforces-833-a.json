@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-833-a",
+  "title": "The Meaningless Game",
+  "slug": "833-a-the-meaningless-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/833/A",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given final scores of two players after multiple rounds where scores are multiplied by powers of a chosen number k, determine if such final scores could result from the game's rules.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "exponentiation",
+    "feasibility-check",
+    "number-factorization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047920,
+    "pattern_confidence": {
+      "exponentiation": 0.9,
+      "feasibility-check": 0.85,
+      "number-factorization": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

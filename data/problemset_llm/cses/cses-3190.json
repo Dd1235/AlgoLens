@@ -10,7 +10,7 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "dynamic-programming",

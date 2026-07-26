@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1932-g",
+  "title": "Moving Platforms",
+  "slug": "1932-g-moving-platforms",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1932/G",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "graphs",
+    "math",
+    "number theory",
+    "shortest paths"
+  ],
+  "statement": "Given a graph with platforms each having a level that changes cyclically after each step, find the minimum steps to move from the first to the last platform by only moving between connected platforms of the same current level.",
+  "tags": [
+    "graph",
+    "number-theory",
+    "shortest-path"
+  ],
+  "patterns": [
+    "state-expansion",
+    "modular-arithmetic",
+    "bfs-on-expanded-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048099,
+    "pattern_confidence": {
+      "state-expansion": 0.95,
+      "modular-arithmetic": 0.9,
+      "bfs-on-expanded-graph": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

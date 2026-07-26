@@ -16,7 +16,7 @@
   "statement": "Count the number of permutations of integers 1 to n where each element at position i is divisible by i or i is divisible by the element.",
   "tags": [
     "backtracking",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "permutation"
   ],

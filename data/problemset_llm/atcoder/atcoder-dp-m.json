@@ -15,7 +15,8 @@
   "patterns": [
     "prefix-sum",
     "dp-on-dag",
-    "modular-dp"
+    "modular-dp",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "dp-on-dag": 0.85,
-      "modular-dp": 0.9
+      "modular-dp": 0.9,
+      "dp-optimization": 0.9
     }
   }
 }

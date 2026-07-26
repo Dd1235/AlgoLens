@@ -20,7 +20,7 @@
     "matrix",
     "graph",
     "dynamic-programming",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",

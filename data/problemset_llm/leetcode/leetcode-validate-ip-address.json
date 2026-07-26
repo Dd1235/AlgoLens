@@ -16,7 +16,7 @@
   ],
   "patterns": [
     "string-validation",
-    "pattern-matching"
+    "string-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +24,7 @@
     "generated_at_unix": 1784908622,
     "pattern_confidence": {
       "string-validation": 0.95,
-      "pattern-matching": 0.9
+      "string-matching": 0.9
     }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1253-d",
+  "title": "Harmonious Graph",
+  "slug": "1253-d-harmonious-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1253/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "constructive algorithms",
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an undirected graph, determine the minimum number of edges to add so that for any reachable pair of nodes l < r, all intermediate nodes between l and r are also reachable from l.",
+  "tags": [
+    "graph",
+    "union-find",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "union-find",
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049021,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1482-e",
+  "title": "Skyline Photo",
+  "slug": "1482-e-skyline-photo",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1482/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "dp"
+  ],
+  "statement": "Given a sequence of buildings with distinct heights and associated beauty values, partition the buildings into contiguous segments (photos) so that each building belongs to exactly one segment. The beauty of each photo is the beauty value of the shortest building in that segment. Find the partition maximizing the sum of photo beauties.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "stack"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "dynamic-programming",
+    "partition-dp",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048226,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "dynamic-programming": 0.95,
+      "partition-dp": 0.9,
+      "contribution-technique": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

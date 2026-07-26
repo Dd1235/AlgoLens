@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1095-c",
+  "title": "Powers Of Two",
+  "slug": "1095-c-powers-of-two",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1095/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "bitmasks",
+    "greedy"
+  ],
+  "statement": "Given integers n and k, determine if n can be expressed as the sum of exactly k powers of two, and construct such a representation if possible.",
+  "tags": [
+    "bit-manipulation",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "bitmask-manipulation",
+    "binary-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047817,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "bitmask-manipulation": 0.9,
+      "binary-representation": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

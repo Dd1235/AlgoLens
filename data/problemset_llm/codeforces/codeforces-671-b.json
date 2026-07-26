@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-671-b",
+  "title": "Robin Hood",
+  "slug": "671-b-robin-hood",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/671/B",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "binary search",
+    "greedy"
+  ],
+  "statement": "Given n citizens each with some coins, repeatedly transfer one coin from the richest to the poorest person for k days and determine the difference between the richest and poorest wealth after these transfers.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048207,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

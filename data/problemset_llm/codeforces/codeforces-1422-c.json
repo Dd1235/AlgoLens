@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1422-c",
+  "title": "Bargain",
+  "slug": "1422-c-bargain",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1422/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Given an integer price, compute the sum of all possible resulting integers after removing any non-empty contiguous substring of digits, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "combinatorics",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "contribution-technique",
+    "substring-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048040,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "contribution-technique": 0.85,
+      "substring-enumeration": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -19,12 +19,14 @@
     "math",
     "dynamic-programming",
     "sorting",
-    "combinatorics"
+    "combinatorics",
+    "prefix-sum"
   ],
   "patterns": [
     "sorting",
     "prefix-sum",
-    "combinatorics"
+    "combinatorics",
+    "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +35,8 @@
     "pattern_confidence": {
       "sorting": 0.95,
       "prefix-sum": 0.9,
-      "combinatorics": 0.85
+      "combinatorics": 0.85,
+      "contribution-technique": 0.9
     }
   }
 }

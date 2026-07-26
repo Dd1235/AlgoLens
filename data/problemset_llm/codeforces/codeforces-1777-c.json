@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1777-c",
+  "title": "Quiz Master",
+  "slug": "1777-c-quiz-master",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1777/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "math",
+    "number theory",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given students with smartness values and multiple topics, select a team covering all topics where each topic has at least one proficient student, minimizing the maximum smartness difference within the team.",
+  "tags": [
+    "array",
+    "number-theory",
+    "binary-search",
+    "two-pointers"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "modulo"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048522,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.85,
+      "modulo": 0.9
+    }
+  },
+  "source_topic": "Formwise / Two Pointers"
+}

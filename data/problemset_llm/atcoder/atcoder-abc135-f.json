@@ -15,7 +15,8 @@
   "patterns": [
     "string-matching",
     "kmp-algorithm",
-    "binary-search-answer"
+    "binary-search-answer",
+    "kmp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "string-matching": 0.95,
       "kmp-algorithm": 0.9,
-      "binary-search-answer": 0.85
+      "binary-search-answer": 0.85,
+      "kmp": 0.9
     }
   },
   "difficulty": 2388

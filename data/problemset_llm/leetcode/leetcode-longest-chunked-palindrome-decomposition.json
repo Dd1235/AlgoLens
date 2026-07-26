@@ -19,7 +19,7 @@
     "string",
     "dynamic-programming",
     "two-pointers",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "two-pointers",

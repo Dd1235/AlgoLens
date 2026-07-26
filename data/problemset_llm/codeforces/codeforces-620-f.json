@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-620-f",
+  "title": "Xors on Segments",
+  "slug": "620-f-xors-on-segments",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/620/F",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "data structures",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given an array and multiple queries defined by index ranges, find for each query the maximum XOR value of a contiguous integer segment between any two array elements within the query range, where the segment is defined by values from ax to ay with ax ≤ ay.",
+  "tags": [
+    "array",
+    "segment-tree",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-xor",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048461,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-xor": 0.95,
+      "range-query": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

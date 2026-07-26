@@ -16,12 +16,14 @@
   "tags": [
     "array",
     "two-pointers",
-    "string-matching"
+    "string-matching",
+    "string"
   ],
   "patterns": [
     "sliding-window",
-    "pattern-matching",
-    "two-pointers"
+    "string-matching",
+    "two-pointers",
+    "kmp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,8 +31,9 @@
     "generated_at_unix": 1777923804,
     "pattern_confidence": {
       "sliding-window": 0.95,
-      "pattern-matching": 0.9,
-      "two-pointers": 0.85
+      "string-matching": 0.9,
+      "two-pointers": 0.85,
+      "kmp": 0.9
     }
   }
 }

@@ -14,7 +14,8 @@
   "patterns": [
     "modular-arithmetic",
     "linear-congruence",
-    "extended-euclidean-algorithm"
+    "extended-euclidean-algorithm",
+    "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,7 +24,8 @@
     "pattern_confidence": {
       "modular-arithmetic": 0.98,
       "linear-congruence": 0.95,
-      "extended-euclidean-algorithm": 0.9
+      "extended-euclidean-algorithm": 0.9,
+      "number-theory": 0.9
     }
   },
   "difficulty": 1461

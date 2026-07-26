@@ -15,7 +15,8 @@
   "patterns": [
     "kruskal",
     "sorting",
-    "coordinate-compression"
+    "coordinate-compression",
+    "minimum-spanning-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "kruskal": 0.95,
       "sorting": 0.9,
-      "coordinate-compression": 0.85
+      "coordinate-compression": 0.85,
+      "minimum-spanning-tree": 0.9
     }
   },
   "difficulty": 1615

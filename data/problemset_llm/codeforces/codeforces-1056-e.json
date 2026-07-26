@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1056-e",
+  "title": "Check Transcription",
+  "slug": "1056-e-check-transcription",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1056/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given a binary pattern string s and a target string t, count the number of ways to assign distinct non-empty substrings to 0 and 1 in s so that their concatenation equals t.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "brute-force"
+  ],
+  "patterns": [
+    "string-hashing",
+    "two-pointers",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048946,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "two-pointers": 0.7,
+      "brute-force": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

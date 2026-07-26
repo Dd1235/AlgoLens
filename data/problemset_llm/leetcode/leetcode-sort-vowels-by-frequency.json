@@ -19,7 +19,7 @@
     "array"
   ],
   "patterns": [
-    "frequency-count",
+    "counting",
     "stable-sorting",
     "two-pass-scan"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784908329,
     "pattern_confidence": {
-      "frequency-count": 0.95,
+      "counting": 0.95,
       "stable-sorting": 0.9,
       "two-pass-scan": 0.85
     }

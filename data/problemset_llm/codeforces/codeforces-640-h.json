@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-640-h",
+  "title": "Rotate Matrix",
+  "slug": "640-h-rotate-matrix",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/640/H",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "Given a square integer matrix, rotate it 90 degrees clockwise.",
+  "tags": [
+    "array",
+    "matrix"
+  ],
+  "patterns": [
+    "in-place-rotation",
+    "matrix-transposition",
+    "reverse-rows"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048262,
+    "pattern_confidence": {
+      "in-place-rotation": 0.95,
+      "matrix-transposition": 0.9,
+      "reverse-rows": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

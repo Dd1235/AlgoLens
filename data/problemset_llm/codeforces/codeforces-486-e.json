@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-486-e",
+  "title": "LIS of Sequence",
+  "slug": "486-e-lis-of-sequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/486/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "greedy",
+    "hashing",
+    "math"
+  ],
+  "statement": "Given a sequence, classify each element into one of three groups based on whether it appears in no, some, or all longest increasing subsequences of the sequence.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "counting",
+    "dp-on-sequences"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048247,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.98,
+      "counting": 0.9,
+      "dp-on-sequences": 0.88
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

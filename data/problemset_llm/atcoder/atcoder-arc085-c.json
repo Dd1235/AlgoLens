@@ -10,7 +10,8 @@
   "tags": [
     "math",
     "number-theory",
-    "dynamic-programming"
+    "dynamic-programming",
+    "graph"
   ],
   "patterns": [
     "inclusion-exclusion",

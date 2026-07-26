@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-471-d",
+  "title": "MUH and Cube Walls",
+  "slug": "471-d-muh-and-cube-walls",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/471/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given two sequences representing tower heights, count how many contiguous segments in the first sequence can be shifted uniformly to match the second sequence exactly.",
+  "tags": [
+    "array",
+    "string",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "difference-array",
+    "prefix-sum",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048766,
+    "pattern_confidence": {
+      "difference-array": 0.95,
+      "prefix-sum": 0.9,
+      "sliding-window": 0.85
+    }
+  },
+  "source_topic": "Formwise / String"
+}

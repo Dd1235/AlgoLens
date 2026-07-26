@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-367-b",
+  "title": "Sereja ans Anagrams",
+  "slug": "367-b-sereja-ans-anagrams",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/367/B",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "data structures"
+  ],
+  "statement": "Given two integer sequences a and b and a step p, find all starting positions q in a such that the subsequence formed by elements at indices q, q+p, q+2p, ..., q+(m-1)p is an anagram of b.",
+  "tags": [
+    "array",
+    "hash-map",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sliding-window",
+    "hash-map",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048839,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "hash-map": 0.9,
+      "counting": 0.85
+    }
+  },
+  "source_topic": "Formwise / Two Pointers"
+}

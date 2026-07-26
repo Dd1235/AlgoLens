@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-380-c",
+  "title": "Sereja and Brackets",
+  "slug": "380-c-sereja-and-brackets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/380/C",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "data structures",
+    "schedules"
+  ],
+  "statement": "Given a bracket sequence and multiple queries specifying substrings, determine the length of the longest correct bracket subsequence within each substring.",
+  "tags": [
+    "string",
+    "data-structures",
+    "segment-tree"
+  ],
+  "patterns": [
+    "segment-tree",
+    "stack",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048877,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "stack": 0.9,
+      "prefix-sum": 0.85
+    }
+  },
+  "source_topic": "Formwise / Segment Trees"
+}

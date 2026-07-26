@@ -15,7 +15,8 @@
   "patterns": [
     "bitwise-xor",
     "greedy",
-    "bitmask"
+    "bit-manipulation",
+    "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "bitwise-xor": 0.98,
       "greedy": 0.85,
-      "bitmask": 0.8
+      "bit-manipulation": 0.8,
+      "contribution-technique": 0.9
     }
   },
   "difficulty": 1423

@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1623-e",
+  "title": "Middle Duplication",
+  "slug": "1623-e-middle-duplication",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1623/E",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "greedy",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given a binary tree with character labels on nodes, find the lexicographically smallest in-order string representation by duplicating labels of at most k nodes under the constraint that a node's label can be duplicated only if it is the root or its parent label is duplicated.",
+  "tags": [
+    "tree",
+    "string",
+    "dynamic-programming",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "dynamic-programming",
+    "lexicographic-comparison",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048321,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "dynamic-programming": 0.9,
+      "lexicographic-comparison": 0.85,
+      "tree-dp": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

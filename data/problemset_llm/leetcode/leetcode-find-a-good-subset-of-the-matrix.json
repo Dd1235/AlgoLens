@@ -19,7 +19,7 @@
     "combinatorics"
   ],
   "patterns": [
-    "bitmask-enumeration",
+    "bit-manipulation",
     "prefix-sum",
     "greedy"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777922864,
     "pattern_confidence": {
-      "bitmask-enumeration": 0.95,
+      "bit-manipulation": 0.95,
       "prefix-sum": 0.85,
       "greedy": 0.7
     }

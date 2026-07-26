@@ -16,7 +16,7 @@
     "bit-manipulation"
   ],
   "patterns": [
-    "bitwise-operations",
+    "bit-manipulation",
     "in-place-transformation",
     "greedy"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909530,
     "pattern_confidence": {
-      "bitwise-operations": 0.95,
+      "bit-manipulation": 0.95,
       "in-place-transformation": 0.85,
       "greedy": 0.7
     }

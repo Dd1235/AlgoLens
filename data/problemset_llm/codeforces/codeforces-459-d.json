@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-459-d",
+  "title": "Pashmak and Parmida's problem",
+  "slug": "459-d-pashmak-and-parmida-s-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/459/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "sortings"
+  ],
+  "statement": "Given a sequence of integers, count the number of pairs of indices (i, j) with i < j where the frequency of the element at position i in the prefix [1..i] is greater than the frequency of the element at position j in the suffix [j..n].",
+  "tags": [
+    "array",
+    "frequency",
+    "divide-and-conquer",
+    "sorting",
+    "data-structure"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "prefix-frequency",
+    "suffix-frequency",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048806,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "prefix-frequency": 0.85,
+      "suffix-frequency": 0.85,
+      "sorting": 0.8
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

@@ -19,13 +19,13 @@
     "string",
     "dynamic-programming",
     "graph",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",
     "topological-sort",
     "state-compression",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +35,7 @@
       "bitmask-dp": 0.95,
       "topological-sort": 0.85,
       "state-compression": 0.9,
-      "enumeration": 0.9
+      "brute-force": 0.9
     }
   }
 }

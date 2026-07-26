@@ -15,7 +15,8 @@
   "tags": [
     "array",
     "math",
-    "sorting"
+    "sorting",
+    "prefix-sum"
   ],
   "patterns": [
     "sorting",

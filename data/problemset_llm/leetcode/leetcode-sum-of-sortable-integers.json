@@ -17,7 +17,7 @@
     "array",
     "math",
     "sorting",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "divisor-enumeration",

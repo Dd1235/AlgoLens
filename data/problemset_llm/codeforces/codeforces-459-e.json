@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-459-e",
+  "title": "Pashmak and Graph",
+  "slug": "459-e-pashmak-and-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/459/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dp",
+    "sortings"
+  ],
+  "statement": "Given a weighted directed graph, find the length of the longest path where edge weights strictly increase along the path.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "sorting"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "dp-on-edges",
+    "topological-sort",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048808,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.95,
+      "dp-on-edges": 0.9,
+      "topological-sort": 0.7,
+      "dp-optimization": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

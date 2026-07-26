@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1326-d2",
+  "title": "Prefix-Suffix Palindrome (Hard version)",
+  "slug": "1326-d2-prefix-suffix-palindrome-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1326/D2",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string, find the longest palindrome that can be formed by concatenating a prefix and a suffix of the string.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "string-hashing",
+    "two-pointer",
+    "manacher"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048918,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "string-hashing": 0.95,
+      "two-pointer": 0.7,
+      "manacher": 0.9
+    }
+  },
+  "source_topic": "Formwise / String"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1736-c2",
+  "title": "Good Subarrays (Hard Version)",
+  "slug": "1736-c2-good-subarrays-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1736/C2",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dp",
+    "two pointers"
+  ],
+  "statement": "Given an array and multiple independent queries that temporarily update one element, determine for each query how many subarrays satisfy the condition that each element is at least its 1-based position within the subarray.",
+  "tags": [
+    "array",
+    "data-structures",
+    "binary-search",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048113,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.85,
+      "offline-queries": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

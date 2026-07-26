@@ -16,7 +16,8 @@
     "kruskal",
     "lca",
     "binary-lifting",
-    "offline-queries"
+    "offline-queries",
+    "minimum-spanning-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
       "kruskal": 0.95,
       "lca": 0.85,
       "binary-lifting": 0.8,
-      "offline-queries": 0.75
+      "offline-queries": 0.75,
+      "minimum-spanning-tree": 0.9
     }
   },
   "difficulty": 1304

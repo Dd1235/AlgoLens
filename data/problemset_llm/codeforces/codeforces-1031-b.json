@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1031-b",
+  "title": "Curiosity Has No Limits",
+  "slug": "1031-b-curiosity-has-no-limits",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1031/B",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [],
+  "statement": "Given two sequences representing bitwise OR and AND of adjacent elements, determine if there exists an integer sequence with elements between 0 and 3 that satisfies these conditions, and construct one if possible.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "state-compression",
+    "dynamic-programming",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047859,
+    "pattern_confidence": {
+      "state-compression": 0.9,
+      "dynamic-programming": 0.85,
+      "bit-manipulation": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

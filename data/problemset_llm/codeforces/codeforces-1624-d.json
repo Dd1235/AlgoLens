@@ -21,7 +21,7 @@
   "patterns": [
     "binary-search-answer",
     "greedy",
-    "palindrome-check"
+    "palindrome"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.93,
       "greedy": 0.85,
-      "palindrome-check": 0.8
+      "palindrome": 0.8
     }
-  }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
 }

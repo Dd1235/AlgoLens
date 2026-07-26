@@ -15,7 +15,7 @@
   "tags": [
     "array",
     "matrix",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "brute-force-enumeration",

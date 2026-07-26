@@ -23,7 +23,7 @@
   "patterns": [
     "lca",
     "path-query",
-    "frequency-count",
+    "counting",
     "dfs",
     "hash-map"
   ],
@@ -34,7 +34,7 @@
     "pattern_confidence": {
       "lca": 0.95,
       "path-query": 0.9,
-      "frequency-count": 0.85,
+      "counting": 0.85,
       "dfs": 0.9,
       "hash-map": 0.8
     }

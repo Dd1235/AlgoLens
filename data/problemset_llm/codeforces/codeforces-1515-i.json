@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1515-i",
+  "title": "Phoenix and Diamonds",
+  "slug": "1515-i-phoenix-and-diamonds",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1515/I",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "sortings"
+  ],
+  "statement": "Maintain a multiset of diamonds with given weights and values under shipments and sales, and answer queries about the maximum total value achievable by greedily selecting diamonds with largest value and minimum weight within a weight capacity.",
+  "tags": [
+    "data-structures",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "ordered-data-structure"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048452,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "ordered-data-structure": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

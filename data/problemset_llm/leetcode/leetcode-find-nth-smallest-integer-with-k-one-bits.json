@@ -20,7 +20,7 @@
   "patterns": [
     "combinatorial-enumeration",
     "binary-search-answer",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "combinatorial-enumeration": 0.95,
       "binary-search-answer": 0.85,
-      "bitmask": 0.9
+      "bit-manipulation": 0.9
     }
   }
 }

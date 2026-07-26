@@ -21,7 +21,7 @@
   "patterns": [
     "greedy",
     "binary-search-answer",
-    "frequency-count"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,8 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "binary-search-answer": 0.9,
-      "frequency-count": 0.85
+      "counting": 0.85
     }
-  }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
 }

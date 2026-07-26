@@ -11,11 +11,11 @@
     "string",
     "data-structure",
     "segment-tree",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "segment-tree",
-    "bitmask",
+    "bit-manipulation",
     "range-query",
     "point-update"
   ],
@@ -25,7 +25,7 @@
     "generated_at_unix": 1785047475,
     "pattern_confidence": {
       "segment-tree": 0.95,
-      "bitmask": 0.9,
+      "bit-manipulation": 0.9,
       "range-query": 0.9,
       "point-update": 0.85
     }

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1260-e",
+  "title": "Tournament",
+  "slug": "1260-e-tournament",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1260/E",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a knockout boxing tournament with n boxers of distinct strengths, determine the minimum total bribe cost needed to ensure a specific boxer wins, by optimally pairing boxers each round and bribing opponents to guarantee victory.",
+  "tags": [
+    "greedy",
+    "dynamic-programming",
+    "game-theory"
+  ],
+  "patterns": [
+    "dp-on-tournament-tree",
+    "state-compression",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048142,
+    "pattern_confidence": {
+      "dp-on-tournament-tree": 0.95,
+      "state-compression": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

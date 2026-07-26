@@ -12,7 +12,7 @@
   "statement": "Count how many integers from 0 to n have binary representations without consecutive ones.",
   "tags": [
     "dynamic-programming",
-    "bitmask",
+    "bit-manipulation",
     "binary"
   ],
   "patterns": [

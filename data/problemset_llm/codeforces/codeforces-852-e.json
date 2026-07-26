@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-852-e",
+  "title": "Casinos and travel",
+  "slug": "852-e-casinos-and-travel",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/852/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given a tree with N cities and N-1 roads, count the ways to place casinos and choose a starting city so that no matter how a journey proceeds through unvisited adjacent cities, the traveler ends in a good mood. The mood flips each time a casino city is visited, starting good before the journey.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048257,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "state-compression": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

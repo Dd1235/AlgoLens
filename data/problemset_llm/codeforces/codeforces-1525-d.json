@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1525-d",
+  "title": "Armchairs",
+  "slug": "1525-d-armchairs",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1525/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dp",
+    "flows",
+    "graph matchings",
+    "greedy"
+  ],
+  "statement": "Given a line of armchairs with some occupied and some free, find the minimum total time to sequentially move all occupants to free armchairs so that initially occupied seats become empty.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers",
+    "dp-on-sequences"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047964,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "two-pointers": 0.88,
+      "dp-on-sequences": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 1"
+}

@@ -10,13 +10,15 @@
   "tags": [
     "array",
     "range-query",
-    "data-structure"
+    "data-structure",
+    "segment-tree"
   ],
   "patterns": [
     "difference-array",
     "prefix-sum",
     "range-update",
-    "range-sum-query"
+    "range-sum-query",
+    "lazy-propagation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +28,8 @@
       "difference-array": 0.95,
       "prefix-sum": 0.9,
       "range-update": 0.9,
-      "range-sum-query": 0.9
+      "range-sum-query": 0.9,
+      "lazy-propagation": 0.9
     }
   }
 }

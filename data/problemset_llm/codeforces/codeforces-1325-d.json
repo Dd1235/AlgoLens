@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1325-d",
+  "title": "Ehab the Xorcist",
+  "slug": "1325-d-ehab-the-xorcist",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1325/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "greedy",
+    "number theory"
+  ],
+  "statement": "Given two integers u and v, construct the shortest array whose elements XOR to u and sum to v.",
+  "tags": [
+    "bit-manipulation",
+    "greedy",
+    "number-theory",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048470,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "greedy": 0.9,
+      "constructive-algorithm": 0.9
+    }
+  },
+  "source_topic": "Formwise / Bit-Manipulation"
+}

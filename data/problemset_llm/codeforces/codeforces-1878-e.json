@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1878-e",
+  "title": "Iva & Pav",
+  "slug": "1878-e-iva-pav",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1878/E",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "bitmasks",
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given an array, answer queries asking for the largest subarray starting at a given position whose bitwise AND is at least a given threshold.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "binary-search",
+    "data-structures"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "bitwise-and",
+    "prefix-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047832,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "bitwise-and": 0.9,
+      "prefix-computation": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

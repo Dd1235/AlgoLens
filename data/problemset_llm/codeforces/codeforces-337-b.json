@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-337-b",
+  "title": "Routine Problem",
+  "slug": "337-b-routine-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/337/B",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given the aspect ratios of a monitor screen and a movie frame, determine the irreducible fraction representing the ratio of unused screen area after scaling the movie to fit maximally while preserving its aspect ratio.",
+  "tags": [
+    "math",
+    "geometry",
+    "number-theory"
+  ],
+  "patterns": [
+    "ratio-scaling",
+    "gcd",
+    "fraction-reduction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047845,
+    "pattern_confidence": {
+      "ratio-scaling": 0.95,
+      "gcd": 0.9,
+      "fraction-reduction": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

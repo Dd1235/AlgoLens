@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-832-e",
+  "title": "Vasya and Shifts",
+  "slug": "832-e-vasya-and-shifts",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/832/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "matrices"
+  ],
+  "statement": "Given a base string of all 'a's and groups of 4 identical strings each representing letter shifts, determine for multiple target strings how many ways exist to transform the base into each target by applying strings from the groups, counting distinct usage patterns modulo 10^9+7.",
+  "tags": [
+    "string",
+    "combinatorics",
+    "modular-arithmetic",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048267,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "combinatorics": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

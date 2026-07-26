@@ -10,7 +10,8 @@
   "tags": [
     "math",
     "recursion",
-    "dynamic-programming"
+    "dynamic-programming",
+    "backtracking"
   ],
   "patterns": [
     "divide-and-conquer",

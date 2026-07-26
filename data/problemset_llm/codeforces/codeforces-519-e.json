@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-519-e",
+  "title": "A and B and Lecture Rooms",
+  "slug": "519-e-a-and-b-and-lecture-rooms",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/519/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dfs and similar",
+    "dp",
+    "trees"
+  ],
+  "statement": "Given a tree with n rooms connected by corridors, and daily sets of contest rooms, determine for each day how many rooms can serve as discussion points equidistant from all contest rooms.",
+  "tags": [
+    "tree",
+    "graph",
+    "binary-search",
+    "distance",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dfs",
+    "tree-dp",
+    "distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048466,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "dfs": 0.9,
+      "tree-dp": 0.85,
+      "distance-calculation": 0.8
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

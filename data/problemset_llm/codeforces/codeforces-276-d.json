@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-276-d",
+  "title": "Little Girl and Maximum XOR",
+  "slug": "276-d-little-girl-and-maximum-xor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/276/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a range [l, r], find the maximum XOR value of any pair (a, b) with l ≤ a ≤ b ≤ r.",
+  "tags": [
+    "bitmask-dp",
+    "math",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049007,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "greedy": 0.9
+    }
+  },
+  "source_topic": "Formwise / Bit-Manipulation"
+}

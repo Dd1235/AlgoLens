@@ -16,7 +16,8 @@
     "array",
     "simulation",
     "heap",
-    "sorting"
+    "sorting",
+    "greedy"
   ],
   "patterns": [
     "heap",

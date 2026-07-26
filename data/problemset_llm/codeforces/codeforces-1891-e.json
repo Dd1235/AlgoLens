@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1891-e",
+  "title": "Brukhovich and Exams",
+  "slug": "1891-e-brukhovich-and-exams",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1891/E",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a sequence of exam difficulties, minimize the number of consecutive pairs with gcd equal to 1 by setting up to k difficulties to zero.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "gcd",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048457,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "gcd": 0.95,
+      "brute-force": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

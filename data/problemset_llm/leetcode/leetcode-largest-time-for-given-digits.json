@@ -17,7 +17,7 @@
     "array",
     "string",
     "backtracking",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "backtracking",

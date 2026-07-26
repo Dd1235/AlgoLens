@@ -19,7 +19,7 @@
   "tags": [
     "array",
     "backtracking",
-    "bitmask",
+    "bit-manipulation",
     "counting",
     "dynamic-programming"
   ],

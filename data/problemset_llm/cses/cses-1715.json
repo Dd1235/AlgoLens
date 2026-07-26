@@ -15,7 +15,7 @@
   "patterns": [
     "modular-arithmetic",
     "factorials",
-    "frequency-count",
+    "counting",
     "multinomial-coefficient"
   ],
   "annotation": {
@@ -25,7 +25,7 @@
     "pattern_confidence": {
       "modular-arithmetic": 0.98,
       "factorials": 0.95,
-      "frequency-count": 0.9,
+      "counting": 0.9,
       "multinomial-coefficient": 1
     }
   }

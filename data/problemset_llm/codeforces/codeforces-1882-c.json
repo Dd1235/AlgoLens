@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1882-c",
+  "title": "Card Game",
+  "slug": "1882-c-card-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1882/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Given a deck of cards with values, you can repeatedly remove cards at odd positions to add their values to your score or remove cards at even positions without scoring, aiming to maximize the final score.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047810,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "state-compression": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

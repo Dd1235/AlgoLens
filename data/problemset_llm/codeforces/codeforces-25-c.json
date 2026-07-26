@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-25-c",
+  "title": "Roads in Berland",
+  "slug": "25-c-roads-in-berland",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/25/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Given a fully connected graph with known shortest distances between all city pairs, and a sequence of new roads to be added, determine how the sum of shortest distances between all pairs changes after each new road is constructed.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "floyd-warshall",
+    "all-pairs-shortest-path",
+    "incremental-update"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047994,
+    "pattern_confidence": {
+      "floyd-warshall": 0.95,
+      "all-pairs-shortest-path": 0.9,
+      "incremental-update": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

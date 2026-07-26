@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1551-c",
+  "title": "Interesting Story",
+  "slug": "1551-c-interesting-story",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1551/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "greedy",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given a list of words over the letters 'a' to 'e', select the largest subset such that there exists a letter whose total count in the subset exceeds the combined count of all other letters.",
+  "tags": [
+    "array",
+    "greedy",
+    "strings",
+    "sorting",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048901,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Formwise / Contribution Technique & Prefix"
+}

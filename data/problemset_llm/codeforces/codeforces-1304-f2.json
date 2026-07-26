@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1304-f2",
+  "title": "Animal Observation (hard version)",
+  "slug": "1304-f2-animal-observation-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1304/F2",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given daily animal counts in multiple forest areas over n days, schedule two cameras alternating every day to cover k consecutive areas each, maximizing the total unique animals observed, counting overlaps only once per day.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "dynamic-programming",
+    "greedy",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048206,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "dynamic-programming": 0.9,
+      "greedy": 0.85,
+      "sliding-window": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

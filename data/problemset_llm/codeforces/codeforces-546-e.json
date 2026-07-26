@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-546-e",
+  "title": "Soldier and Traveling",
+  "slug": "546-e-soldier-and-traveling",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/546/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "flows",
+    "graphs",
+    "math"
+  ],
+  "statement": "Given a graph with cities each having an initial number of soldiers, determine if soldiers can move at most one road to achieve a target distribution of soldiers per city.",
+  "tags": [
+    "graph",
+    "max-flow",
+    "math"
+  ],
+  "patterns": [
+    "max-flow",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048178,
+    "pattern_confidence": {
+      "max-flow": 0.95,
+      "graph-construction": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

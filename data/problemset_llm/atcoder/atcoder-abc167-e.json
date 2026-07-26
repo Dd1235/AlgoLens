@@ -10,7 +10,8 @@
   "tags": [
     "combinatorics",
     "dynamic-programming",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "math"
   ],
   "patterns": [
     "dp-on-sequences",

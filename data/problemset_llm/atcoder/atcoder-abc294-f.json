@@ -13,7 +13,8 @@
   ],
   "patterns": [
     "binary-search-answer",
-    "two-pointers"
+    "two-pointers",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +22,8 @@
     "generated_at_unix": 1785047337,
     "pattern_confidence": {
       "binary-search-answer": 0.95,
-      "two-pointers": 0.7
+      "two-pointers": 0.7,
+      "binary-search": 0.9
     }
   },
   "difficulty": 1891

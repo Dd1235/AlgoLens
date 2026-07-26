@@ -20,7 +20,7 @@
   "patterns": [
     "dp-on-array",
     "modular-arithmetic",
-    "frequency-counting"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "dp-on-array": 0.95,
       "modular-arithmetic": 0.9,
-      "frequency-counting": 0.85
+      "counting": 0.85
     }
   }
 }

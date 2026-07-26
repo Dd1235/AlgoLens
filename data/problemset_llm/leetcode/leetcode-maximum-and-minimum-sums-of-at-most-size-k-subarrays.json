@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "stack",
-    "monotonic-stack"
+    "monotonic-stack",
+    "prefix-sum"
   ],
   "patterns": [
     "monotonic-stack",

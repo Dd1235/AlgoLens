@@ -24,7 +24,7 @@
     "contribution-technique",
     "fenwick-tree",
     "prefix-sum",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +34,7 @@
       "contribution-technique": 0.95,
       "fenwick-tree": 0.9,
       "prefix-sum": 0.85,
-      "enumeration": 0.8
+      "brute-force": 0.8
     }
   }
 }

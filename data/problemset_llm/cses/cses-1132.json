@@ -10,7 +10,8 @@
   "tags": [
     "tree",
     "graph",
-    "dfs"
+    "dfs",
+    "dynamic-programming"
   ],
   "patterns": [
     "tree-diameter",

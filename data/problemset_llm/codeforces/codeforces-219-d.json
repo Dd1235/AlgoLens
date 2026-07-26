@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-219-d",
+  "title": "Choosing Capital for Treeland",
+  "slug": "219-d-choosing-capital-for-treeland",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/219/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a tree with directed edges, find the city to choose as capital so that the minimum number of edges must be reversed to ensure all cities are reachable from it.",
+  "tags": [
+    "graph",
+    "tree",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "rerooting-dp",
+    "dfs",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048931,
+    "pattern_confidence": {
+      "rerooting-dp": 0.95,
+      "dfs": 0.9,
+      "tree-dp": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

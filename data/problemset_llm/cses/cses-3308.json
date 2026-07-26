@@ -10,7 +10,7 @@
   "tags": [
     "graph",
     "backtracking",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "backtracking",

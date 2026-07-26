@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-774-a",
+  "title": "Amusement Park",
+  "slug": "774-a-amusement-park",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/774/A",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "*special",
+    "ternary search"
+  ],
+  "statement": "Given n visitors including adults and pupils, partition them into groups each containing at least one adult to minimize the total ticket cost defined by a fixed plus quadratic term based on group size.",
+  "tags": [
+    "dynamic-programming",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "ternary-search",
+    "dynamic-programming",
+    "convex-quadratic-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048238,
+    "pattern_confidence": {
+      "ternary-search": 0.9,
+      "dynamic-programming": 0.85,
+      "convex-quadratic-optimization": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -18,7 +18,7 @@
   ],
   "patterns": [
     "gaussian-elimination",
-    "bitmask",
+    "bit-manipulation",
     "greedy"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1784909034,
     "pattern_confidence": {
       "gaussian-elimination": 0.95,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "greedy": 0.7
     }
   }

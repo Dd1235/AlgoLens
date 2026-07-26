@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1793-e",
+  "title": "Velepin and Marketing",
+  "slug": "1793-e-velepin-and-marketing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1793/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dp",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given yearly book publication counts and readers with satisfaction thresholds based on group size reading the same book, determine the maximum number of satisfied readers each year by assigning readers to books.",
+  "tags": [
+    "greedy",
+    "binary-search",
+    "sorting",
+    "two-pointers",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048332,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "two-pointers": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

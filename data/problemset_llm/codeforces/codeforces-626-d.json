@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-626-d",
+  "title": "Jerry's Protest",
+  "slug": "626-d-jerry-s-protest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/626/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "combinatorics",
+    "dp",
+    "probabilities"
+  ],
+  "statement": "Two players draw balls labeled with distinct integers in three rounds, and the winner is decided by who wins at least two rounds. Given the draws and outcomes, determine the probability that one player’s total sum of drawn balls is strictly greater than the other's.",
+  "tags": [
+    "probability",
+    "combinatorics",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "probability-dp",
+    "combinatorial-enumeration",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048028,
+    "pattern_confidence": {
+      "probability-dp": 0.9,
+      "combinatorial-enumeration": 0.85,
+      "brute-force": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

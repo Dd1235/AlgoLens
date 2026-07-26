@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1446-b",
+  "title": "Catching Cheaters",
+  "slug": "1446-b-catching-cheaters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1446/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dp",
+    "strings"
+  ],
+  "statement": "Given two strings, find the maximum similarity score defined as 4 times the length of the longest common subsequence of any pair of substrings minus the sum of their lengths.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "longest-common-subsequence",
+    "substring-enumeration",
+    "dp-on-substrings"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048968,
+    "pattern_confidence": {
+      "longest-common-subsequence": 0.98,
+      "substring-enumeration": 0.85,
+      "dp-on-substrings": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Level 1"
+}

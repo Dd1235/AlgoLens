@@ -18,7 +18,8 @@
     "prime-factorization",
     "gcd",
     "coprimality",
-    "counting"
+    "counting",
+    "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
       "prime-factorization": 0.95,
       "gcd": 0.9,
       "coprimality": 0.9,
-      "counting": 0.85
+      "counting": 0.85,
+      "number-theory": 0.9
     }
   },
   "difficulty": 827

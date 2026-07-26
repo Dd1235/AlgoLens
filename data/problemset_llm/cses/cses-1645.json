@@ -9,7 +9,8 @@
   "statement": "Given an array of integers, find for each position the nearest position to the left with a smaller value, or 0 if none exists.",
   "tags": [
     "array",
-    "stack"
+    "stack",
+    "data-structure"
   ],
   "patterns": [
     "monotonic-stack",

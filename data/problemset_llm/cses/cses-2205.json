@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "gray-code-generation",
-    "bitmask",
+    "bit-manipulation",
     "backtracking"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777951277,
     "pattern_confidence": {
       "gray-code-generation": 0.98,
-      "bitmask": 0.9,
+      "bit-manipulation": 0.9,
       "backtracking": 0.7
     }
   }

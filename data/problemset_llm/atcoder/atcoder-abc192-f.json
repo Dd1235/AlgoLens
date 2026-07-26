@@ -10,7 +10,8 @@
   "tags": [
     "math",
     "combinatorics",
-    "binary-search"
+    "binary-search",
+    "dynamic-programming"
   ],
   "patterns": [
     "binary-search-answer",

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-883-b",
+  "title": "Berland Army",
+  "slug": "883-b-berland-army",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/883/B",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "constructive algorithms",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Assign integer ranks from 1 to k to military men with given order constraints so that each order-giver has a strictly higher rank than the receiver, and all ranks from 1 to k are used at least once.",
+  "tags": [
+    "graph",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "topological-sort",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048385,
+    "pattern_confidence": {
+      "topological-sort": 0.95,
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

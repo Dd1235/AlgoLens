@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-132-e",
+  "title": "Bits of merry old England",
+  "slug": "132-e-bits-of-merry-old-england",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/132/E",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "flows",
+    "graphs"
+  ],
+  "statement": "Given a sequence of integers and a limited number of variables, generate a program using assignments and print operations that outputs the sequence while minimizing the total penalty defined by the sum of set bits in assigned integers.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "bit-manipulation",
+    "graph"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "bit-counting",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048299,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "bit-counting": 0.9,
+      "state-compression": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

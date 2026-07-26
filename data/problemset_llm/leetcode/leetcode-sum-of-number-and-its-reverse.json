@@ -13,7 +13,7 @@
   "statement": "Determine if a given non-negative integer can be represented as the sum of a non-negative integer and its digit-reversed counterpart.",
   "tags": [
     "math",
-    "enumeration",
+    "brute-force",
     "number-theory"
   ],
   "patterns": [

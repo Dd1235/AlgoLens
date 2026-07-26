@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1061-c",
+  "title": "Multiplicity",
+  "slug": "1061-c-multiplicity",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1061/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Count the number of non-empty subsequences of an integer array where each element in the subsequence is divisible by its 1-based position index, modulo 10^9+7.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "subsequence-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048835,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "subsequence-enumeration": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

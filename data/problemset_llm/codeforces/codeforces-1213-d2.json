@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1213-d2",
+  "title": "Equalizing by Division (hard version)",
+  "slug": "1213-d2-equalizing-by-division-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1213/D2",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "brute force",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given an array, find the minimum number of division-by-two operations needed so that at least k elements become equal.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048016,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "sorting": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

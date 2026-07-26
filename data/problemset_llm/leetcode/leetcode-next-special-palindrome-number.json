@@ -21,7 +21,7 @@
     "backtracking",
     "digit-dp",
     "palindrome-dp",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +31,7 @@
       "backtracking": 0.95,
       "digit-dp": 0.85,
       "palindrome-dp": 0.8,
-      "bitmask": 0.75
+      "bit-manipulation": 0.75
     }
   }
 }

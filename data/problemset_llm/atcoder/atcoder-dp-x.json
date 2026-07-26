@@ -15,7 +15,8 @@
   "patterns": [
     "dp-on-subsets",
     "sorting",
-    "knapsack"
+    "knapsack",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "dp-on-subsets": 0.95,
       "sorting": 0.9,
-      "knapsack": 0.85
+      "knapsack": 0.85,
+      "dp-optimization": 0.9
     }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-375-d",
+  "title": "Tree and Queries",
+  "slug": "375-d-tree-and-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/375/D",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with colored vertices, answer queries asking how many colors appear at least a given number of times in the subtree of a specified vertex.",
+  "tags": [
+    "tree",
+    "dfs",
+    "data-structure",
+    "counting",
+    "graph"
+  ],
+  "patterns": [
+    "dfs",
+    "subtree-query",
+    "offline-queries",
+    "frequency-buckets",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048882,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "subtree-query": 0.9,
+      "offline-queries": 0.85,
+      "frequency-buckets": 0.8,
+      "union-find": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

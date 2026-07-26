@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-238-e",
+  "title": "Meeting Her",
+  "slug": "238-e-meeting-her",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/238/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "dp",
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Given a directed graph with equal-length edges and multiple bus companies each traveling random shortest paths between fixed endpoints, determine if it is possible to reach a target junction from a start junction using a finite number of bus rides and find the minimum worst-case number of buses needed.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "shortest-path",
+    "dynamic-programming",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048325,
+    "pattern_confidence": {
+      "shortest-path": 0.98,
+      "dynamic-programming": 0.9,
+      "binary-search-answer": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1205-b",
+  "title": "Shortest Cycle",
+  "slug": "1205-b-shortest-cycle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1205/B",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Given an array of integers, construct a graph where edges exist between nodes whose values share at least one common set bit, and find the length of the shortest cycle in this graph or determine if no cycles exist.",
+  "tags": [
+    "array",
+    "graph",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "shortest-cycle",
+    "bfs",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048887,
+    "pattern_confidence": {
+      "bit-manipulation": 0.98,
+      "shortest-cycle": 0.95,
+      "bfs": 0.9,
+      "cycle-detection": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

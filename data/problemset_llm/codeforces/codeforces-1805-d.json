@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1805-d",
+  "title": "A Wide, Wide Graph",
+  "slug": "1805-d-a-wide-wide-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1805/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree with n vertices, for each k from 1 to n, construct a graph G_k where edges connect vertices at distance at least k in the tree, and determine the number of connected components in G_k.",
+  "tags": [
+    "tree",
+    "graph",
+    "distance",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "distance-matrix",
+    "binary-search-answer",
+    "dfs",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048748,
+    "pattern_confidence": {
+      "distance-matrix": 0.85,
+      "binary-search-answer": 0.75,
+      "dfs": 0.9,
+      "connected-components": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

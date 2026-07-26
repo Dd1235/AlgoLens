@@ -17,7 +17,7 @@
   "tags": [
     "array",
     "string",
-    "hashing",
+    "rolling-hash",
     "binary-search"
   ],
   "patterns": [

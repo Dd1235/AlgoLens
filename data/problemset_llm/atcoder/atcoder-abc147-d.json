@@ -13,7 +13,7 @@
     "math"
   ],
   "patterns": [
-    "bitwise-operations",
+    "bit-manipulation",
     "counting-bits",
     "modular-arithmetic"
   ],
@@ -22,7 +22,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785047432,
     "pattern_confidence": {
-      "bitwise-operations": 0.98,
+      "bit-manipulation": 0.98,
       "counting-bits": 0.95,
       "modular-arithmetic": 0.9
     }

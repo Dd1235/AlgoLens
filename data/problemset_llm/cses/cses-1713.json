@@ -15,7 +15,8 @@
   "patterns": [
     "prime-factorization",
     "sieve",
-    "preprocessing"
+    "preprocessing",
+    "number-theory"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "prime-factorization": 0.95,
       "sieve": 0.9,
-      "preprocessing": 0.85
+      "preprocessing": 0.85,
+      "number-theory": 0.9
     }
   }
 }

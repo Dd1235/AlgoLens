@@ -13,11 +13,13 @@
   "statement": "Given a list of axis-aligned squares defined by their bottom-left coordinates and side lengths, find the lowest horizontal line such that the total area of the squares above the line equals the total area below it, counting overlapping areas multiple times.",
   "tags": [
     "array",
-    "geometry"
+    "geometry",
+    "binary-search"
   ],
   "patterns": [
     "binary-search-answer",
-    "prefix-sum"
+    "prefix-sum",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +27,8 @@
     "generated_at_unix": 1785047336,
     "pattern_confidence": {
       "binary-search-answer": 0.92,
-      "prefix-sum": 0.84
+      "prefix-sum": 0.84,
+      "binary-search": 0.9
     }
   }
 }

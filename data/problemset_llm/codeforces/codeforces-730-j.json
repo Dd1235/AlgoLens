@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-730-j",
+  "title": "Bottles",
+  "slug": "730-j-bottles",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/730/J",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given n bottles each with remaining soda and capacity, find the minimal number of bottles needed to store all soda and the minimal time to pour soda into those bottles, where pouring x units takes x seconds and no bottle can exceed its capacity.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "greedy",
+    "dp-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048513,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "greedy": 0.8,
+      "dp-optimization": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

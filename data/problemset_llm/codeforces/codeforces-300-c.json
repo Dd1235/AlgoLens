@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-300-c",
+  "title": "Beautiful Numbers",
+  "slug": "300-c-beautiful-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/300/C",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "combinatorics"
+  ],
+  "statement": "Count how many length-n numbers composed only of digits a and b have a digit sum that itself is a number composed only of digits a and b, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "number-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "combinatorics",
+    "digit-dp",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048463,
+    "pattern_confidence": {
+      "combinatorics": 0.95,
+      "digit-dp": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

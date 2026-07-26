@@ -9,7 +9,8 @@
   "statement": "Given a string and a sequence of operations that either reverse the string or add a character to its front or back, determine the final string after all operations are applied.",
   "tags": [
     "string",
-    "deque"
+    "deque",
+    "data-structure"
   ],
   "patterns": [
     "simulation",

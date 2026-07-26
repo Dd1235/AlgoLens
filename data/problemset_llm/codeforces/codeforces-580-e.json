@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-580-e",
+  "title": "Kefa and Watch",
+  "slug": "580-e-kefa-and-watch",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/580/E",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "data structures",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given a digit string representing a watch's serial number, support substring updates setting all digits to a given character and queries checking if a substring has a given period.",
+  "tags": [
+    "string",
+    "data-structures",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "string-periodicity",
+    "rolling-hash",
+    "segment-tree",
+    "range-update",
+    "range-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048995,
+    "pattern_confidence": {
+      "string-periodicity": 0.95,
+      "rolling-hash": 0.9,
+      "segment-tree": 0.85,
+      "range-update": 0.8,
+      "range-query": 0.8
+    }
+  },
+  "source_topic": "Formwise / String"
+}

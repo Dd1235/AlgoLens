@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-903-d",
+  "title": "Almost Difference",
+  "slug": "903-d-almost-difference",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/903/D",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "data structures",
+    "math"
+  ],
+  "statement": "Given an integer array, compute the sum over all pairs (i, j) with i ≤ j of a function that equals the difference y - x if the absolute difference |x - y| is greater than 1, and zero otherwise.",
+  "tags": [
+    "array",
+    "math",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "pairwise-sum",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048491,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "pairwise-sum": 0.85,
+      "case-analysis": 0.7
+    }
+  },
+  "source_topic": "Formwise / Contribution Technique & Prefix"
+}

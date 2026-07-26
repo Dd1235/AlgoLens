@@ -9,7 +9,8 @@
   "statement": "Given a string, find the shortest lexicographically smallest string of lowercase letters that is not a subsequence of the given string.",
   "tags": [
     "string",
-    "greedy"
+    "greedy",
+    "dynamic-programming"
   ],
   "patterns": [
     "subsequence-check",

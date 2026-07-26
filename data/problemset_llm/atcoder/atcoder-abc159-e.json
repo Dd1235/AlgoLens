@@ -10,7 +10,8 @@
   "tags": [
     "array",
     "binary-search",
-    "prefix-sum"
+    "prefix-sum",
+    "backtracking"
   ],
   "patterns": [
     "binary-search-answer",

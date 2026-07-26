@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-797-c",
+  "title": "Minimal string",
+  "slug": "797-c-minimal-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/797/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given a string s, repeatedly move its first character to string t, and then move the last character of t to string u, aiming to empty s and t while making u lexicographically minimal.",
+  "tags": [
+    "string",
+    "greedy",
+    "data-structures",
+    "data-structure"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointer",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048803,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointer": 0.85,
+      "simulation": 0.8
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

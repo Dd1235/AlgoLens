@@ -14,7 +14,7 @@
     "counting"
   ],
   "patterns": [
-    "frequency-counting",
+    "counting",
     "divisor-check",
     "sieve-like-enumeration"
   ],
@@ -23,7 +23,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785047508,
     "pattern_confidence": {
-      "frequency-counting": 0.9,
+      "counting": 0.9,
       "divisor-check": 0.85,
       "sieve-like-enumeration": 0.8
     }

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-245-h",
+  "title": "Queries for Number of Palindromes",
+  "slug": "245-h-queries-for-number-of-palindromes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/245/H",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dp",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given a string and multiple queries defined by substring indices, determine the number of palindromic substrings within each queried substring.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "palindromic-substrings",
+    "prefix-sum",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048752,
+    "pattern_confidence": {
+      "palindromic-substrings": 0.95,
+      "prefix-sum": 0.85,
+      "rolling-hash": 0.8
+    }
+  },
+  "source_topic": "Formwise / String"
+}

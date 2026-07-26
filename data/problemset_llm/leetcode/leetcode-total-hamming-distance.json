@@ -15,7 +15,8 @@
   "tags": [
     "array",
     "bit-manipulation",
-    "math"
+    "math",
+    "prefix-sum"
   ],
   "patterns": [
     "contribution-technique",

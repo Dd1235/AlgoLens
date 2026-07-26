@@ -16,7 +16,8 @@
     "array",
     "sliding-window",
     "fenwick-tree",
-    "segment-tree"
+    "segment-tree",
+    "two-pointers"
   ],
   "patterns": [
     "sliding-window",

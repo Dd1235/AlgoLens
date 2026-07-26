@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-220-b",
+  "title": "Little Elephant and Array",
+  "slug": "220-b-little-elephant-and-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/220/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures"
+  ],
+  "statement": "Given an array and multiple queries defined by subarray ranges, count for each query how many numbers appear exactly as many times as their own value within the specified subarray.",
+  "tags": [
+    "array",
+    "queries",
+    "counting"
+  ],
+  "patterns": [
+    "offline-queries",
+    "frequency-array",
+    "sqrt-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047911,
+    "pattern_confidence": {
+      "offline-queries": 0.9,
+      "frequency-array": 0.85,
+      "sqrt-decomposition": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

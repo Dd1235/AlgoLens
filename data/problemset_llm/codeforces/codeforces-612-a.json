@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-612-a",
+  "title": "The Text Splitting",
+  "slug": "612-a-the-text-splitting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/612/A",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a string and two lengths p and q, determine how to split the string into pieces each of length p or q.",
+  "tags": [
+    "string",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "greedy",
+    "integer-partition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047879,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "greedy": 0.7,
+      "integer-partition": 0.6
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

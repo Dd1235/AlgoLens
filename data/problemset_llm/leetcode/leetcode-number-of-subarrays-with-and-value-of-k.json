@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "two-pointers",
-    "bitmask",
+    "bit-manipulation",
     "prefix-and"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1777923806,
     "pattern_confidence": {
       "two-pointers": 0.9,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "prefix-and": 0.8
     }
   }

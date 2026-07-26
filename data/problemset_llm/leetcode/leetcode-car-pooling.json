@@ -18,7 +18,8 @@
     "array",
     "sorting",
     "simulation",
-    "prefix-sum"
+    "prefix-sum",
+    "greedy"
   ],
   "patterns": [
     "line-sweep",

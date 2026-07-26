@@ -9,7 +9,7 @@
   "statement": "Given N bamboos with specified lengths, find the minimum magic points required to create three bamboos of target lengths A, B, and C by extending, shortening, or combining the given bamboos.",
   "tags": [
     "backtracking",
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "combinatorics"
   ],

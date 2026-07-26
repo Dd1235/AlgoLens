@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1342-e",
+  "title": "Placing Rooks",
+  "slug": "1342-e-placing-rooks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1342/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "combinatorics",
+    "fft",
+    "math"
+  ],
+  "statement": "Count the number of ways to place n rooks on an n×n board so that every empty cell is attacked by at least one rook and exactly k pairs of rooks attack each other, modulo 998244353.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "fft"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "polynomial-multiplication",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048845,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.9,
+      "polynomial-multiplication": 0.85,
+      "combinatorics": 0.95
+    }
+  },
+  "source_topic": "Formwise / Math"
+}

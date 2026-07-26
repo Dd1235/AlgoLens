@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "modulo-bucketing",
-    "frequency-counting"
+    "counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +27,7 @@
     "generated_at_unix": 1784909488,
     "pattern_confidence": {
       "modulo-bucketing": 0.95,
-      "frequency-counting": 0.9
+      "counting": 0.9
     }
   }
 }

@@ -10,7 +10,8 @@
   "tags": [
     "geometry",
     "array",
-    "sorting"
+    "sorting",
+    "binary-search"
   ],
   "patterns": [
     "sorting",

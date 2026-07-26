@@ -10,12 +10,14 @@
   "tags": [
     "combinatorics",
     "string",
-    "dynamic-programming"
+    "dynamic-programming",
+    "math"
   ],
   "patterns": [
     "combinatorial-enumeration",
     "lexicographical-order",
-    "dp-with-memoization"
+    "dp-with-memoization",
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +26,8 @@
     "pattern_confidence": {
       "combinatorial-enumeration": 0.95,
       "lexicographical-order": 0.9,
-      "dp-with-memoization": 0.85
+      "dp-with-memoization": 0.85,
+      "combinatorics": 0.9
     }
   },
   "difficulty": 966

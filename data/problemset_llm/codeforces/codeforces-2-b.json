@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-2-b",
+  "title": "The least round way",
+  "slug": "2-b-the-least-round-way",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/2/B",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "dp",
+    "math"
+  ],
+  "statement": "Find a path from the top-left to the bottom-right of an n×n matrix moving only right or down, such that the product of the numbers on the path ends with the fewest trailing zeros.",
+  "tags": [
+    "matrix",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "factorization",
+    "path-finding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048203,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "factorization": 0.85,
+      "path-finding": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

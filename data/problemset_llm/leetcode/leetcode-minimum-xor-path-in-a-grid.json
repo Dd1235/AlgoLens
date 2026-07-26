@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "bitmask",
+    "bit-manipulation",
     "state-compression"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1784909318,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "bitmask": 0.85,
+      "bit-manipulation": 0.85,
       "state-compression": 0.8
     }
   }

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-587-e",
+  "title": "Duff as a Queen",
+  "slug": "587-e-duff-as-a-queen",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/587/E",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "data structures"
+  ],
+  "statement": "Given a sequence of non-negative integers, support range XOR updates and queries that ask for the number of distinct XOR values obtainable from subsequences within a specified subrange.",
+  "tags": [
+    "array",
+    "bitwise",
+    "segment-tree",
+    "linear-algebra"
+  ],
+  "patterns": [
+    "segment-tree",
+    "xor-basis",
+    "range-xor-update",
+    "subsequence-xor-count"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048310,
+    "pattern_confidence": {
+      "segment-tree": 0.95,
+      "xor-basis": 0.98,
+      "range-xor-update": 0.9,
+      "subsequence-xor-count": 0.92
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

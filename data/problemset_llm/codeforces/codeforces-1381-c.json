@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1381-c",
+  "title": "Mastermind",
+  "slug": "1381-c-mastermind",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1381/C",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "constructive algorithms",
+    "graph matchings",
+    "greedy",
+    "implementation",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given Bob's guess and two integers x and y representing exact matches and multiset intersection size with Alice's secret code, find a possible secret code consistent with these values.",
+  "tags": [
+    "array",
+    "greedy",
+    "graph",
+    "implementation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy",
+    "two-pointers",
+    "matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048423,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.9,
+      "two-pointers": 0.7,
+      "matching": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

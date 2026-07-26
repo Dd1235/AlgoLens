@@ -21,7 +21,7 @@
     "graph",
     "dynamic-programming",
     "backtracking",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
     "bitmask-dp",

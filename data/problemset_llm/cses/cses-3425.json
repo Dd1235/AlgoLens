@@ -9,12 +9,12 @@
   "statement": "Given a set of positive integers, find two disjoint subsets with the same sum or determine that no such subsets exist.",
   "tags": [
     "array",
-    "bitmask",
+    "bit-manipulation",
     "meet-in-the-middle"
   ],
   "patterns": [
     "meet-in-the-middle",
-    "bitmask-enumeration",
+    "bit-manipulation",
     "subset-sum"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777952221,
     "pattern_confidence": {
       "meet-in-the-middle": 0.95,
-      "bitmask-enumeration": 0.9,
+      "bit-manipulation": 0.9,
       "subset-sum": 0.88
     }
   }

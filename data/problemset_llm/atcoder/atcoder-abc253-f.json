@@ -11,7 +11,8 @@
     "array",
     "data-structure",
     "range-update",
-    "point-query"
+    "point-query",
+    "segment-tree"
   ],
   "patterns": [
     "difference-array",

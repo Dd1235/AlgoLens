@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Divide N rabbits into groups to maximize the sum of compatibility scores between all pairs within the same group, given a symmetric compatibility matrix.",
   "tags": [
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "combinatorics"
   ],

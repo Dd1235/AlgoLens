@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-578-d",
+  "title": "LCS Again",
+  "slug": "578-d-lcs-again",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/578/D",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a string S of length n over the first m lowercase letters, count how many strings T of length n over the same alphabet have an LCS with S of length exactly n-1.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "longest-common-subsequence",
+    "counting",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048436,
+    "pattern_confidence": {
+      "longest-common-subsequence": 0.98,
+      "counting": 0.9,
+      "dynamic-programming": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

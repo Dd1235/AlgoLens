@@ -15,9 +15,8 @@
   "statement": "Given an array of integers and a number of slots where each slot can hold up to two numbers, assign all numbers to slots to maximize the sum of bitwise AND between each number and its slot number.",
   "tags": [
     "array",
-    "bitmask",
-    "dynamic-programming",
-    "bit-manipulation"
+    "bit-manipulation",
+    "dynamic-programming"
   ],
   "patterns": [
     "bitmask-dp",

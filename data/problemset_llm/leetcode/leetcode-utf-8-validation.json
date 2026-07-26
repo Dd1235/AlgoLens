@@ -16,7 +16,7 @@
     "bit-manipulation"
   ],
   "patterns": [
-    "bitmask",
+    "bit-manipulation",
     "state-machine",
     "validation"
   ],
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909862,
     "pattern_confidence": {
-      "bitmask": 0.95,
+      "bit-manipulation": 0.95,
       "state-machine": 0.9,
       "validation": 0.85
     }

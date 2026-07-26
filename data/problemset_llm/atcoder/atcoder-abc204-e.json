@@ -15,7 +15,8 @@
   "patterns": [
     "binary-search-answer",
     "dijkstra",
-    "waiting-time-optimization"
+    "waiting-time-optimization",
+    "shortest-path"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "dijkstra": 0.9,
-      "waiting-time-optimization": 0.85
+      "waiting-time-optimization": 0.85,
+      "shortest-path": 0.9
     }
   },
   "difficulty": 1710

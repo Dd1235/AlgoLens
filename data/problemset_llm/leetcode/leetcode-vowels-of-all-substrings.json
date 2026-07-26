@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "math",
-    "dynamic-programming"
+    "dynamic-programming",
+    "prefix-sum"
   ],
   "patterns": [
     "contribution-technique",

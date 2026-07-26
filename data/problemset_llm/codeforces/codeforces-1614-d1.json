@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1614-d1",
+  "title": "Divan and Kostomuksha (easy version)",
+  "slug": "1614-d1-divan-and-kostomuksha-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1614/D1",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "dp",
+    "number theory"
+  ],
+  "statement": "Given an array of positive integers, reorder its elements to maximize the sum of gcds of all prefixes of the reordered array.",
+  "tags": [
+    "array",
+    "number-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "gcd",
+    "prefix-processing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048116,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "gcd": 0.98,
+      "prefix-processing": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

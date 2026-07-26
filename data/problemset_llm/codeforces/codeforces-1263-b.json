@@ -30,5 +30,6 @@
       "greedy": 0.9,
       "state-enumeration": 0.8
     }
-  }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
 }

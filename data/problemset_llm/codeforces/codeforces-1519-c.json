@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1519-c",
+  "title": "Berland Regional",
+  "slug": "1519-c-berland-regional",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1519/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "greedy",
+    "number theory",
+    "sortings"
+  ],
+  "statement": "Given students grouped by university with associated skill levels, compute the total skill sum of all teams formed when each team has size k, for every k from 1 to n, where teams are formed by grouping the top k students repeatedly per university.",
+  "tags": [
+    "array",
+    "sorting",
+    "prefix-sum",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "sorting",
+    "grouping",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047868,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "sorting": 0.9,
+      "grouping": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
+}

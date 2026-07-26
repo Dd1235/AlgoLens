@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-741-e",
+  "title": "Arpa’s abnormal DNA and Mehrdad’s deep interest",
+  "slug": "741-e-arpa-s-abnormal-dna-and-mehrdad-s-deep-interest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/741/E",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "string suffix structures"
+  ],
+  "statement": "Given a string S and another string T, insert T into S at positions within a specified range and modulo condition, then find the lexicographically smallest resulting string and the smallest insertion index for multiple queries.",
+  "tags": [
+    "string",
+    "data-structures",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "string-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048448,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85,
+      "string-comparison": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

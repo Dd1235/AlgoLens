@@ -16,12 +16,12 @@
   "tags": [
     "array",
     "backtracking",
-    "bitmask",
+    "bit-manipulation",
     "recursion"
   ],
   "patterns": [
     "backtracking",
-    "bitmask-enumeration",
+    "bit-manipulation",
     "subset-product",
     "pruning"
   ],
@@ -31,7 +31,7 @@
     "generated_at_unix": 1784908908,
     "pattern_confidence": {
       "backtracking": 0.95,
-      "bitmask-enumeration": 0.9,
+      "bit-manipulation": 0.9,
       "subset-product": 0.85,
       "pruning": 0.7
     }

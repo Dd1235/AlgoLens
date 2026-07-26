@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-228-e",
+  "title": "The Road to Berland is Paved With Good Intentions",
+  "slug": "228-e-the-road-to-berland-is-paved-with-good-intentions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/228/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "2-sat",
+    "dfs and similar",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Given a graph with roads marked as asphalted or not, determine if there exists a sequence of city toggles (flipping all roads from that city) to make all roads asphalted within at most n operations.",
+  "tags": [
+    "graph",
+    "two-sat",
+    "union-find",
+    "dfs"
+  ],
+  "patterns": [
+    "two-sat",
+    "dfs",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048947,
+    "pattern_confidence": {
+      "two-sat": 0.95,
+      "dfs": 0.9,
+      "union-find": 0.85
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

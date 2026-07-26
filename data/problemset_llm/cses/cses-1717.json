@@ -15,7 +15,8 @@
   "patterns": [
     "derangement",
     "inclusion-exclusion",
-    "modular-exponentiation"
+    "modular-exponentiation",
+    "combinatorics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "derangement": 0.98,
       "inclusion-exclusion": 0.95,
-      "modular-exponentiation": 0.9
+      "modular-exponentiation": 0.9,
+      "combinatorics": 0.9
     }
   }
 }

@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "modular-arithmetic",
-    "bitwise-operations",
+    "bit-manipulation",
     "greedy"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1784909031,
     "pattern_confidence": {
       "modular-arithmetic": 0.95,
-      "bitwise-operations": 0.9,
+      "bit-manipulation": 0.9,
       "greedy": 0.85
     }
   }

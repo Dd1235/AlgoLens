@@ -22,7 +22,7 @@
     "string",
     "array",
     "dynamic-programming",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "rolling-hash",

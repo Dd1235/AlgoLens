@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-702-c",
+  "title": "Cellular Network",
+  "slug": "702-c-cellular-network",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/702/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "implementation",
+    "two pointers"
+  ],
+  "statement": "Given positions of cities and cellular towers on a line, find the minimal radius r so that every city is within distance r of at least one tower.",
+  "tags": [
+    "array",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048869,
+    "pattern_confidence": {
+      "binary-search-answer": 0.95,
+      "two-pointers": 0.85
+    }
+  },
+  "source_topic": "Formwise / Binary Search"
+}

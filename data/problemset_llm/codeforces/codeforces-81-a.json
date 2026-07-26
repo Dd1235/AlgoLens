@@ -13,7 +13,8 @@
   "tags": [
     "string",
     "stack",
-    "implementation"
+    "implementation",
+    "data-structure"
   ],
   "patterns": [
     "stack",
@@ -27,5 +28,6 @@
       "stack": 0.95,
       "simulation": 0.9
     }
-  }
+  },
+  "source_topic": "Formwise / STL"
 }

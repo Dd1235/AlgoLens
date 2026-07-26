@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-5-c",
+  "title": "Longest Regular Bracket Sequence",
+  "slug": "5-c-longest-regular-bracket-sequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/5/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures",
+    "dp",
+    "greedy",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given a string of parentheses, find the length of the longest substring that forms a valid regular bracket sequence and count how many such longest substrings exist.",
+  "tags": [
+    "string",
+    "stack",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "stack",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048988,
+    "pattern_confidence": {
+      "stack": 0.95,
+      "dynamic-programming": 0.9,
+      "two-pointers": 0.7
+    }
+  },
+  "source_topic": "Formwise / DP Level 1"
+}

@@ -20,7 +20,7 @@
   "patterns": [
     "binary-search-answer",
     "union-find",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +29,7 @@
     "pattern_confidence": {
       "binary-search-answer": 0.95,
       "union-find": 0.9,
-      "bitmask": 0.88
+      "bit-manipulation": 0.88
     }
   }
 }

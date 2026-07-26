@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1211-i",
+  "title": "Unusual Graph",
+  "slug": "1211-i-unusual-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1211/I",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "*special",
+    "graphs"
+  ],
+  "statement": "Given a graph with n vertices where edges exist between vertices whose assigned integers differ in exactly one bit, reconstruct any sequence of integers (each between 0 and 15) that produces the given graph under this rule.",
+  "tags": [
+    "graph",
+    "bit-manipulation",
+    "xor",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "xor-properties",
+    "graph-construction",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048294,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "xor-properties": 0.9,
+      "graph-construction": 0.85,
+      "backtracking": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

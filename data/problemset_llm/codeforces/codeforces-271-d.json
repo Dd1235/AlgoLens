@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-271-d",
+  "title": "Good Substrings",
+  "slug": "271-d-good-substrings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/271/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "data structures",
+    "strings"
+  ],
+  "statement": "Given a string and a classification of letters as good or bad, count the number of distinct substrings containing at most k bad letters.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "two-pointers",
+    "prefix-sum",
+    "trie"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum",
+    "string-hashing",
+    "sliding-window",
+    "trie"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048811,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "prefix-sum": 0.9,
+      "string-hashing": 0.88,
+      "sliding-window": 0.85,
+      "trie": 0.9
+    }
+  },
+  "source_topic": "Formwise / Trie"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-345-g",
+  "title": "Suffix Subgroup",
+  "slug": "345-g-suffix-subgroup",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/345/G",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "*special",
+    "strings"
+  ],
+  "statement": "Given a list of strings, find the largest subset of strings all sharing a common suffix.",
+  "tags": [
+    "strings",
+    "trie",
+    "suffix"
+  ],
+  "patterns": [
+    "suffix-trie",
+    "string-hashing",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048087,
+    "pattern_confidence": {
+      "suffix-trie": 0.95,
+      "string-hashing": 0.85,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

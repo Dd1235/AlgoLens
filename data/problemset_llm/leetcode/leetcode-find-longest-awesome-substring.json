@@ -19,8 +19,8 @@
   ],
   "patterns": [
     "prefix-xor",
-    "bitmask",
-    "palindrome-check"
+    "bit-manipulation",
+    "palindrome"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,8 +28,8 @@
     "generated_at_unix": 1777922897,
     "pattern_confidence": {
       "prefix-xor": 0.95,
-      "bitmask": 0.9,
-      "palindrome-check": 0.85
+      "bit-manipulation": 0.9,
+      "palindrome": 0.85
     }
   }
 }

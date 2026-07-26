@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1392-g",
+  "title": "Omkar and Pies",
+  "slug": "1392-g-omkar-and-pies",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1392/G",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "bitmasks",
+    "dfs and similar",
+    "dp",
+    "math",
+    "shortest paths"
+  ],
+  "statement": "Given a pie tray with k positions and n elves each able to swap two positions, select a contiguous segment of at least m elves to apply their swaps in order, maximizing the number of positions matching a target arrangement.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048269,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

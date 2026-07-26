@@ -19,7 +19,8 @@
   "patterns": [
     "dynamic-programming",
     "prefix-max",
-    "row-by-row-optimization"
+    "row-by-row-optimization",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.98,
       "prefix-max": 0.85,
-      "row-by-row-optimization": 0.8
+      "row-by-row-optimization": 0.8,
+      "dp-optimization": 0.9
     }
   }
 }

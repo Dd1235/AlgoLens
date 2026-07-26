@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-311-e",
+  "title": "Biologist",
+  "slug": "311-e-biologist",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/311/E",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "flows"
+  ],
+  "statement": "Given n dogs each with a cost to change gender and m bettors who specify subsets of dogs and desired genders, determine the maximum net profit SmallR can achieve by choosing which dogs to change so that bettors' success conditions are met or compensated.",
+  "tags": [
+    "graph",
+    "max-flow",
+    "optimization"
+  ],
+  "patterns": [
+    "max-flow",
+    "minimum-cut",
+    "flow-network-construction",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048787,
+    "pattern_confidence": {
+      "max-flow": 0.98,
+      "minimum-cut": 0.95,
+      "flow-network-construction": 0.93,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

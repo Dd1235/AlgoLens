@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1762-e",
+  "title": "Tree Sum",
+  "slug": "1762-e-tree-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1762/E",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "combinatorics",
+    "math",
+    "trees"
+  ],
+  "statement": "Given all edge-weighted trees with n vertices where each edge weight is ±1 and each vertex's incident edges multiply to -1, compute the sum of the distances from vertex 1 to vertex n over all such trees modulo 998244353.",
+  "tags": [
+    "tree",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "cayleys-formula",
+    "tree-enumeration",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048415,
+    "pattern_confidence": {
+      "cayleys-formula": 0.95,
+      "tree-enumeration": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-788-b",
+  "title": "Weird journey",
+  "slug": "788-b-weird-journey",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/788/B",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "combinatorics",
+    "constructive algorithms",
+    "dfs and similar",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Given an undirected graph with n cities and m roads, count the number of paths that traverse exactly m-2 roads twice and exactly 2 roads once, where paths can start and end at any city and are considered different if the sets of singly-traversed roads differ.",
+  "tags": [
+    "graph",
+    "combinatorics",
+    "dfs",
+    "union-find"
+  ],
+  "patterns": [
+    "dfs",
+    "union-find",
+    "combinatorics",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048089,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "union-find": 0.85,
+      "combinatorics": 0.9,
+      "graph-traversal": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

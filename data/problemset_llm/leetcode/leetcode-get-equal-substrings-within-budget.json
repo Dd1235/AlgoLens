@@ -15,11 +15,13 @@
   "statement": "Given two equal-length strings and a maximum cost, find the longest substring of the first string that can be changed to the corresponding substring of the second string with total character change cost not exceeding the maximum cost.",
   "tags": [
     "string",
-    "array"
+    "array",
+    "binary-search"
   ],
   "patterns": [
     "sliding-window",
-    "prefix-sum"
+    "prefix-sum",
+    "binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +29,8 @@
     "generated_at_unix": 1785047333,
     "pattern_confidence": {
       "sliding-window": 0.95,
-      "prefix-sum": 0.85
+      "prefix-sum": 0.85,
+      "binary-search": 0.9
     }
   }
 }

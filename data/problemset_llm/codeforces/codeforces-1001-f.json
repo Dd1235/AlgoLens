@@ -11,12 +11,12 @@
   ],
   "statement": "Given two distinct N-qubit basis states represented by bitstrings bits0 and bits1, determine which state the system is in by performing operations and measurements, returning 0 or 1 accordingly.",
   "tags": [
-    "bitmask",
+    "bit-manipulation",
     "quantum-computing",
     "string"
   ],
   "patterns": [
-    "bitmask",
+    "bit-manipulation",
     "state-identification",
     "binary-classification"
   ],
@@ -25,9 +25,10 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785047766,
     "pattern_confidence": {
-      "bitmask": 0.9,
+      "bit-manipulation": 0.9,
       "state-identification": 0.85,
       "binary-classification": 0.8
     }
-  }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
 }

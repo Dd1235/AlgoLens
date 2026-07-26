@@ -10,7 +10,8 @@
   "tags": [
     "string",
     "dynamic-programming",
-    "binary-search"
+    "binary-search",
+    "backtracking"
   ],
   "patterns": [
     "divide-and-conquer",

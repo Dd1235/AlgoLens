@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1474-c",
+  "title": "Array Destruction",
+  "slug": "1474-c-array-destruction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1474/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "data structures",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array of 2n positive integers, determine if there exists an initial sum x such that repeatedly removing pairs summing to x and updating x to the maximum of the pair can remove all elements.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048847,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

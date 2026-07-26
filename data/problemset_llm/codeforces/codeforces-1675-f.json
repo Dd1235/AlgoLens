@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1675-f",
+  "title": "Vlad and Unfinished Business",
+  "slug": "1675-f-vlad-and-unfinished-business",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1675/F",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree with n houses and roads, find the minimum time Vlad needs to visit a set of specified houses in any order starting from his house and ending at Nastya's house, minimizing walking time along the roads.",
+  "tags": [
+    "tree",
+    "graph",
+    "shortest-path",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "tree-dp",
+    "shortest-path",
+    "greedy",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048758,
+    "pattern_confidence": {
+      "tree-dp": 0.9,
+      "shortest-path": 0.85,
+      "greedy": 0.8,
+      "dfs": 0.75
+    }
+  },
+  "source_topic": "Formwise / Graph Level-1"
+}

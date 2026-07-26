@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-858-f",
+  "title": "Wizard's Tour",
+  "slug": "858-f-wizard-s-tour",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/858/F",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "constructive algorithms",
+    "dfs and similar",
+    "graphs"
+  ],
+  "statement": "Given a graph with undirected edges, find the maximum number of episodes where each episode is a path of length two edges using distinct edges without reusing any edge in any direction.",
+  "tags": [
+    "graph",
+    "dfs",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "dfs",
+    "greedy",
+    "path-decomposition",
+    "edge-disjoint-paths"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049016,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "greedy": 0.85,
+      "path-decomposition": 0.8,
+      "edge-disjoint-paths": 0.8
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

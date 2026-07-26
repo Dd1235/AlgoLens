@@ -9,7 +9,7 @@
   "statement": "Given an array of integers, compute for each integer k from 0 to n the number of non-empty subsets whose bitwise AND equals k, modulo 10^9+7.",
   "tags": [
     "array",
-    "bitwise-operations",
+    "bit-manipulation",
     "dynamic-programming"
   ],
   "patterns": [

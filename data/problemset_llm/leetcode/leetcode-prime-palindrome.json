@@ -18,7 +18,7 @@
   ],
   "patterns": [
     "prime-checking",
-    "palindrome-check",
+    "palindrome",
     "binary-search-answer"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1784908625,
     "pattern_confidence": {
       "prime-checking": 0.95,
-      "palindrome-check": 0.9,
+      "palindrome": 0.9,
       "binary-search-answer": 0.85
     }
   }

@@ -13,7 +13,7 @@
   "statement": "Given a received message string, determine if it can be formed by overlapping two identical messages with a positive overlap smaller than the message length, indicating a transmission error.",
   "tags": [
     "string",
-    "pattern-matching"
+    "string-matching"
   ],
   "patterns": [
     "string-overlap",
@@ -29,5 +29,6 @@
       "prefix-function": 0.9,
       "knuth-morris-pratt": 0.85
     }
-  }
+  },
+  "source_topic": "Codeforces / rating 1300-1500"
 }

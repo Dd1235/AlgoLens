@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1118-f1",
+  "title": "Tree Cutting (Easy Version)",
+  "slug": "1118-f1-tree-cutting-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1118/F1",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "trees"
+  ],
+  "statement": "Given a tree with vertices colored red, blue, or uncolored, count the edges whose removal splits the tree into two components each containing vertices of only one color or none.",
+  "tags": [
+    "tree",
+    "graph",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "subtree-color-count",
+    "tree-partition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048487,
+    "pattern_confidence": {
+      "dfs": 0.98,
+      "subtree-color-count": 0.9,
+      "tree-partition": 0.85
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

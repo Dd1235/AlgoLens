@@ -1,0 +1,44 @@
+{
+  "id": "codeforces-1328-d",
+  "title": "Carousel",
+  "slug": "1328-d-carousel",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1328/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms",
+    "dp",
+    "graphs",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a circular sequence of figures each with a type, color them using the minimum number of colors so that no two adjacent figures of different types share the same color.",
+  "tags": [
+    "array",
+    "greedy",
+    "graph",
+    "dynamic-programming",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "circular-array",
+    "coloring",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048022,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9,
+      "circular-array": 0.85,
+      "coloring": 0.9,
+      "dynamic-programming": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

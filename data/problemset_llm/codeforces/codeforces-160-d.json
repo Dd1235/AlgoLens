@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-160-d",
+  "title": "Edges in MST",
+  "slug": "160-d-edges-in-mst",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/160/D",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "sortings"
+  ],
+  "statement": "Given a connected weighted undirected graph, determine for each edge whether it is included in all minimum spanning trees, in at least one MST, or in no MST.",
+  "tags": [
+    "graph",
+    "union-find",
+    "minimum-spanning-tree",
+    "sorting"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "edge-classification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048125,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "union-find": 0.93,
+      "edge-classification": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

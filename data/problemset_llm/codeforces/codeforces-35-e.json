@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-35-e",
+  "title": "Parade",
+  "slug": "35-e-parade",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/35/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "data structures",
+    "sortings"
+  ],
+  "statement": "Given a set of rectangular skyscrapers represented by intervals and heights on a 2D plane, find a minimal-area axis-aligned polyline enclosing all buildings and the ground, starting and ending at height zero, with minimal length among such polylines.",
+  "tags": [
+    "geometry",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "line-sweep",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048133,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

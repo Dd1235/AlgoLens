@@ -17,7 +17,7 @@
     "data-structure"
   ],
   "patterns": [
-    "frequency-counting",
+    "counting",
     "hash-map"
   ],
   "annotation": {
@@ -25,7 +25,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784908707,
     "pattern_confidence": {
-      "frequency-counting": 0.95,
+      "counting": 0.95,
       "hash-map": 0.9
     }
   }

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1551-e",
+  "title": "Fixed Points",
+  "slug": "1551-e-fixed-points",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1551/E",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "dp"
+  ],
+  "statement": "Given a sequence and a target k, find the minimum number of deletions needed so that the resulting sequence has at least k elements equal to their own 1-based indices.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048903,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "dynamic-programming": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

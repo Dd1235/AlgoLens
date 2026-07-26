@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1827-b1",
+  "title": "Range Sorting (Easy Version)",
+  "slug": "1827-b1-range-sorting-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1827/B1",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "binary search",
+    "dp",
+    "dsu",
+    "greedy",
+    "trees",
+    "two pointers"
+  ],
+  "statement": "Given an array of distinct integers, compute the sum of the minimal time required to sort every subarray using range-sort operations where sorting a subarray takes time proportional to its length minus one.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048242,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.85,
+      "two-pointers": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

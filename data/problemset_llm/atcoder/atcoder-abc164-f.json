@@ -13,18 +13,20 @@
     "constructive-algorithm"
   ],
   "patterns": [
-    "bitwise-operations",
+    "bit-manipulation",
     "constructive-algorithm",
-    "constraint-satisfaction"
+    "constraint-satisfaction",
+    "contribution-technique"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785047428,
     "pattern_confidence": {
-      "bitwise-operations": 0.98,
+      "bit-manipulation": 0.98,
       "constructive-algorithm": 0.95,
-      "constraint-satisfaction": 0.9
+      "constraint-satisfaction": 0.9,
+      "contribution-technique": 0.9
     }
   },
   "difficulty": 2683

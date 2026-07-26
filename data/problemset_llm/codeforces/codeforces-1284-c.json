@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1284-c",
+  "title": "New Year and Permutation",
+  "slug": "1284-c-new-year-and-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1284/C",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "combinatorics",
+    "math"
+  ],
+  "statement": "Given n and a prime m, compute the sum modulo m of the number of framed segments (subsegments where max minus min equals length minus one) over all permutations of length n.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "permutations"
+  ],
+  "patterns": [
+    "combinatorics",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047891,
+    "pattern_confidence": {
+      "combinatorics": 0.95,
+      "prefix-sum": 0.7,
+      "modular-arithmetic": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

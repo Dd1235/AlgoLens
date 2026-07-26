@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-722-e",
+  "title": "Research Rover",
+  "slug": "722-e-research-rover",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/722/E",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "combinatorics",
+    "dp"
+  ],
+  "statement": "A rover moves randomly along shortest paths on a grid from the top-left to bottom-right cell, losing half its battery (rounded down) upon entering anomaly cells; compute the expected battery charge upon arrival.",
+  "tags": [
+    "grid",
+    "dynamic-programming",
+    "probability",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dp-on-grid",
+    "expected-value-dp",
+    "combinatorial-path-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048401,
+    "pattern_confidence": {
+      "dp-on-grid": 0.95,
+      "expected-value-dp": 0.93,
+      "combinatorial-path-counting": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

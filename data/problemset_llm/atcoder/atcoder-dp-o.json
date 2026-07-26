@@ -8,7 +8,7 @@
   "source_tags": [],
   "statement": "Given an N×N compatibility matrix between N men and N women, count the number of perfect matchings where each man is paired with a compatible woman, modulo 10^9+7.",
   "tags": [
-    "bitmask",
+    "bit-manipulation",
     "dynamic-programming",
     "combinatorics"
   ],

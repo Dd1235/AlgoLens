@@ -15,7 +15,8 @@
   "patterns": [
     "union-find",
     "connected-components",
-    "set-difference"
+    "set-difference",
+    "dfs"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "union-find": 0.95,
       "connected-components": 0.9,
-      "set-difference": 0.85
+      "set-difference": 0.85,
+      "dfs": 0.9
     }
   },
   "difficulty": 1208

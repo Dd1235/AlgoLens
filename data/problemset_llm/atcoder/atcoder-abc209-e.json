@@ -15,7 +15,8 @@
   "patterns": [
     "dfs",
     "cycle-detection",
-    "game-dp"
+    "game-dp",
+    "topological-sort"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "cycle-detection": 0.9,
-      "game-dp": 0.92
+      "game-dp": 0.92,
+      "topological-sort": 0.9
     }
   },
   "difficulty": 2153

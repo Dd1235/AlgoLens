@@ -17,7 +17,8 @@
     "bellman-ford",
     "negative-cycle-detection",
     "dp-on-dag",
-    "longest-path-in-weighted-graph"
+    "longest-path-in-weighted-graph",
+    "shortest-path"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +28,8 @@
       "bellman-ford": 0.95,
       "negative-cycle-detection": 0.9,
       "dp-on-dag": 0.7,
-      "longest-path-in-weighted-graph": 0.85
+      "longest-path-in-weighted-graph": 0.85,
+      "shortest-path": 0.9
     }
   },
   "difficulty": 1740

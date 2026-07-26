@@ -9,7 +9,8 @@
   "statement": "Starting from a sequence containing 0, insert integers 1 to N either immediately left or right of the previous integer based on a given string of 'L' and 'R' instructions, then output the final sequence.",
   "tags": [
     "linked-list",
-    "array"
+    "array",
+    "data-structure"
   ],
   "patterns": [
     "simulation",

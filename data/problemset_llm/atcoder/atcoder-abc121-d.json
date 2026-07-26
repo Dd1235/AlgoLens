@@ -13,7 +13,7 @@
   ],
   "patterns": [
     "prefix-xor",
-    "bitwise-operations"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +21,7 @@
     "generated_at_unix": 1785047423,
     "pattern_confidence": {
       "prefix-xor": 0.95,
-      "bitwise-operations": 0.9
+      "bit-manipulation": 0.9
     }
   },
   "difficulty": 1164

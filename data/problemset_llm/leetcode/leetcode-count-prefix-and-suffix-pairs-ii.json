@@ -19,7 +19,7 @@
     "array",
     "string",
     "trie",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "rolling-hash",

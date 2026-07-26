@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-467-c",
+  "title": "George and Job",
+  "slug": "467-c-george-and-job",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/467/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dp",
+    "implementation"
+  ],
+  "statement": "Given a sequence of integers, select k non-overlapping subarrays each of fixed length m to maximize the sum of their elements.",
+  "tags": [
+    "array",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "interval-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047977,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "interval-dp": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Optimizations"
+}

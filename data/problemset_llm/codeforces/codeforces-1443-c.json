@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1443-c",
+  "title": "The Delivery Dilemma",
+  "slug": "1443-c-the-delivery-dilemma",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1443/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given two arrays representing delivery times and pickup times for dishes from different restaurants, determine the minimum time after which all dishes can be at home by choosing which dishes to pick up personally and which to have delivered.",
+  "tags": [
+    "array",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048912,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "sorting": 0.8
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

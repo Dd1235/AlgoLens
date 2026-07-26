@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-55-d",
+  "title": "Beautiful numbers",
+  "slug": "55-d-beautiful-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/55/D",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "dp",
+    "number theory"
+  ],
+  "statement": "Count how many positive integers within given ranges are divisible by each of their nonzero digits.",
+  "tags": [
+    "number-theory",
+    "dynamic-programming",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048821,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "binary-search-answer": 0.9,
+      "prefix-sum": 0.85
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

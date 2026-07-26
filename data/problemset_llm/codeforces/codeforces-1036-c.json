@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1036-c",
+  "title": "Classy Numbers",
+  "slug": "1036-c-classy-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1036/C",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "combinatorics",
+    "dp"
+  ],
+  "statement": "Count the integers within given segments whose decimal representation contains at most three non-zero digits.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "counting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048837,
+    "pattern_confidence": {
+      "digit-dp": 0.98,
+      "counting": 0.9,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

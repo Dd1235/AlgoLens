@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1000-e",
+  "title": "We Need More Bosses",
+  "slug": "1000-e-we-need-more-bosses",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1000/E",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a connected undirected graph, determine the maximum number of edges that can be critical (i.e., must be used on every path) between some pair of start and end locations chosen arbitrarily.",
+  "tags": [
+    "graph",
+    "dfs",
+    "bridges",
+    "connectivity"
+  ],
+  "patterns": [
+    "bridge-finding",
+    "dfs",
+    "cut-edge",
+    "graph-connectivity",
+    "articulation-points"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048949,
+    "pattern_confidence": {
+      "bridge-finding": 0.95,
+      "dfs": 0.9,
+      "cut-edge": 0.9,
+      "graph-connectivity": 0.85,
+      "articulation-points": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

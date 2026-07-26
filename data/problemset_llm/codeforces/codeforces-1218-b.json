@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1218-b",
+  "title": "Guarding warehouses",
+  "slug": "1218-b-guarding-warehouses",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1218/B",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "data structures",
+    "geometry"
+  ],
+  "statement": "Given multiple non-overlapping convex polygonal warehouses, determine the total area visible through an X-ray that can penetrate exactly one wall, representing the monitored warehouse area.",
+  "tags": [
+    "geometry",
+    "data-structures"
+  ],
+  "patterns": [
+    "line-sweep",
+    "convex-hull",
+    "geometry",
+    "polygon-area",
+    "interval-union"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048292,
+    "pattern_confidence": {
+      "line-sweep": 0.9,
+      "convex-hull": 0.7,
+      "geometry": 0.95,
+      "polygon-area": 0.9,
+      "interval-union": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "hash-map",
-    "counting"
+    "counting",
+    "two-pointers"
   ],
   "patterns": [
     "sliding-window",

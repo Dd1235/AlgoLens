@@ -13,7 +13,7 @@
   "statement": "Given an integer n, determine the number of ways to express n as a sum of consecutive positive integers.",
   "tags": [
     "math",
-    "enumeration",
+    "brute-force",
     "number-theory"
   ],
   "patterns": [

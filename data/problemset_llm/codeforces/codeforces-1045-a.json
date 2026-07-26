@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1045-a",
+  "title": "Last chance",
+  "slug": "1045-a-last-chance",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1045/A",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "data structures",
+    "flows",
+    "graph matchings",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given a line of alien spaceships and three weapon types with specific targeting constraints, determine the maximum number of spaceships that can be destroyed using each weapon exactly once per target.",
+  "tags": [
+    "graph",
+    "matching",
+    "dynamic-programming",
+    "intervals"
+  ],
+  "patterns": [
+    "maximum-matching",
+    "interval-covering",
+    "dynamic-programming",
+    "max-flow"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048403,
+    "pattern_confidence": {
+      "maximum-matching": 0.95,
+      "interval-covering": 0.9,
+      "dynamic-programming": 0.85,
+      "max-flow": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

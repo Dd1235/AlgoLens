@@ -14,7 +14,8 @@
   ],
   "patterns": [
     "0-1-knapsack",
-    "dynamic-programming"
+    "dynamic-programming",
+    "dp-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +23,8 @@
     "generated_at_unix": 1777951404,
     "pattern_confidence": {
       "0-1-knapsack": 0.98,
-      "dynamic-programming": 0.95
+      "dynamic-programming": 0.95,
+      "dp-optimization": 0.9
     }
   }
 }

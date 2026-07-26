@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1646-f",
+  "title": "Playing Around the Table",
+  "slug": "1646-f-playing-around-the-table",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1646/F",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given n players sitting around a table each holding n cards with numbers from 1 to n, find a sequence of at most n²-n operations where each player simultaneously passes one card to the right, to reach a state where every player holds only cards with their own number.",
+  "tags": [
+    "array",
+    "simulation",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "simulation",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048421,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "greedy": 0.9,
+      "constructive-algorithm": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

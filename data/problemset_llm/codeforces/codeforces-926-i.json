@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-926-i",
+  "title": "A Vital Problem",
+  "slug": "926-i-a-vital-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/926/I",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [],
+  "statement": "Given n daily alarms each ringing for one minute at fixed times, find the longest continuous time interval without any alarm ringing, possibly spanning across days.",
+  "tags": [
+    "array",
+    "intervals",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "interval-merging",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048078,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "interval-merging": 0.85,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

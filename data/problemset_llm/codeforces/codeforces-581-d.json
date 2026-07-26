@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-581-d",
+  "title": "Three Logos",
+  "slug": "581-d-three-logos",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/581/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "constructive algorithms",
+    "geometry",
+    "implementation",
+    "math"
+  ],
+  "statement": "Determine if three given rectangular logos can be arranged without overlap to exactly cover a square billboard, allowing rotation but no empty space.",
+  "tags": [
+    "geometry",
+    "bit-manipulation",
+    "brute-force",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "bit-manipulation",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047953,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "bit-manipulation": 0.9,
+      "case-analysis": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

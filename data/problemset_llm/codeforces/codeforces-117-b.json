@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-117-b",
+  "title": "Very Interesting Game",
+  "slug": "117-b-very-interesting-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/117/B",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "brute force",
+    "number theory"
+  ],
+  "statement": "Two players alternately choose nine-digit numbers not exceeding given limits a and b. The second player wins if the concatenation of their numbers is divisible by a given modulus; otherwise, the first player wins. Determine the winner assuming optimal play and find the lexicographically smallest winning move for the first player if applicable.",
+  "tags": [
+    "game-theory",
+    "number-theory",
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "game-dp",
+    "modular-arithmetic",
+    "lexicographic-order",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048071,
+    "pattern_confidence": {
+      "game-dp": 0.95,
+      "modular-arithmetic": 0.9,
+      "lexicographic-order": 0.85,
+      "state-compression": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1415-e",
+  "title": "New Game Plus!",
+  "slug": "1415-e-new-game-plus",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1415/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given n bosses each with a point increment (which can be negative), determine the maximum score achievable by defeating all bosses in any order, with up to k resets that reset the bonus to zero without undoing defeated bosses.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048219,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "greedy": 0.85,
+      "state-compression": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

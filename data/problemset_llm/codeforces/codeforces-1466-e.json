@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1466-e",
+  "title": "Apollo versus Pan",
+  "slug": "1466-e-apollo-versus-pan",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1466/E",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "math"
+  ],
+  "statement": "Given a sequence of non-negative integers, compute the sum over all triples (i, j, k) of (x_i & x_j) * (x_j | x_k) modulo 10^9+7.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "math"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "modular-arithmetic",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047913,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "modular-arithmetic": 0.9,
+      "contribution-technique": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

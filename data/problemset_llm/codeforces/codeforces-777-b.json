@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-777-b",
+  "title": "Game of Credit Cards",
+  "slug": "777-b-game-of-credit-cards",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/777/B",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given two n-digit numbers, one fixed and one reorderable, determine the minimum flicks the reorderable player can receive and the maximum flicks the fixed player can receive by optimally rearranging digits.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048503,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.85,
+      "counting": 0.8
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

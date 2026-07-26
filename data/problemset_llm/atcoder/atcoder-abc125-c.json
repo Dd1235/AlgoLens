@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "gcd",
-    "frequency-count",
+    "counting",
     "greedy"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1785047513,
     "pattern_confidence": {
       "gcd": 0.98,
-      "frequency-count": 0.85,
+      "counting": 0.85,
       "greedy": 0.75
     }
   },

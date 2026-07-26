@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-35-d",
+  "title": "Animals",
+  "slug": "35-d-animals",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/35/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given n days and animals arriving each day with daily food requirements, determine the maximum number of animals that can be accepted so that no animal ever lacks food, starting with an initial food supply X.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047996,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.84
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

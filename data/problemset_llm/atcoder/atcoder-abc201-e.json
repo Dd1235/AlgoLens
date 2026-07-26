@@ -10,12 +10,13 @@
   "tags": [
     "tree",
     "graph",
-    "bitwise"
+    "bitwise",
+    "dynamic-programming"
   ],
   "patterns": [
     "dfs",
     "xor-basis",
-    "bitmask"
+    "bit-manipulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,7 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "xor-basis": 0.9,
-      "bitmask": 0.85
+      "bit-manipulation": 0.85
     }
   },
   "difficulty": 1694

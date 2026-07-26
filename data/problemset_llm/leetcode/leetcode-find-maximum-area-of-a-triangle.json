@@ -21,7 +21,7 @@
     "math"
   ],
   "patterns": [
-    "enumeration",
+    "brute-force",
     "coordinate-compression"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784908648,
     "pattern_confidence": {
-      "enumeration": 0.95,
+      "brute-force": 0.95,
       "coordinate-compression": 0.7
     }
   }

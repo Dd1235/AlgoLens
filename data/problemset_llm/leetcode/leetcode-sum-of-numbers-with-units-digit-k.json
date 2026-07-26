@@ -16,12 +16,12 @@
   "tags": [
     "math",
     "greedy",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "greedy",
     "modular-arithmetic",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +30,7 @@
     "pattern_confidence": {
       "greedy": 0.9,
       "modular-arithmetic": 0.85,
-      "enumeration": 0.8
+      "brute-force": 0.8
     }
   }
 }

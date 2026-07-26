@@ -10,7 +10,8 @@
   "tags": [
     "array",
     "hash-map",
-    "simulation"
+    "simulation",
+    "data-structure"
   ],
   "patterns": [
     "hash-set",

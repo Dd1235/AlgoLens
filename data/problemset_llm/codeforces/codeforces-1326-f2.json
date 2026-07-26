@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1326-f2",
+  "title": "Wise Men (Hard Version)",
+  "slug": "1326-f2-wise-men-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1326/F2",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "math"
+  ],
+  "statement": "Given n wise men and their acquaintance relations, count for each binary string of length n-1 how many permutations of the wise men produce that string indicating adjacency of acquaintances in the permutation.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "bit-manipulation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "permutation-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048290,
+    "pattern_confidence": {
+      "bitmask-dp": 0.98,
+      "state-compression": 0.95,
+      "permutation-counting": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

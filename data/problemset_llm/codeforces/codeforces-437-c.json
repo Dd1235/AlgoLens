@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-437-c",
+  "title": "The Child and Toy",
+  "slug": "437-c-the-child-and-toy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/437/C",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "graphs",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a toy composed of parts connected by ropes, find the order to remove all parts one by one to minimize the total energy spent, where removing a part costs the sum of values of its still-connected neighbors.",
+  "tags": [
+    "graph",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "graph-modeling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048827,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "graph-modeling": 0.85
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

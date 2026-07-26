@@ -18,7 +18,8 @@
     "tree",
     "array",
     "dfs",
-    "union-find"
+    "union-find",
+    "dynamic-programming"
   ],
   "patterns": [
     "dfs",

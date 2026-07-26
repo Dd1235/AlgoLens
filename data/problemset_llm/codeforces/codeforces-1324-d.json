@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1324-d",
+  "title": "Pair of Topics",
+  "slug": "1324-d-pair-of-topics",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1324/D",
+  "difficulty": 1400,
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given two arrays representing interest values for teachers and students, count the number of pairs (i, j) with i < j where the sum of teacher interests exceeds the sum of student interests.",
+  "tags": [
+    "array",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048829,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.9,
+      "prefix-sum": 0.7
+    }
+  },
+  "source_topic": "Formwise / Two Pointers"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-612-d",
+  "title": "The Union of k-Segments",
+  "slug": "612-d-the-union-of-k-segments",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/612/D",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given n segments on the real line and an integer k, find the minimal subset of these segments whose union covers exactly all points covered by at least k segments.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "intervals"
+  ],
+  "patterns": [
+    "line-sweep",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048859,
+    "pattern_confidence": {
+      "line-sweep": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.85
+    }
+  },
+  "source_topic": "Formwise / Greedy And Sweepline"
+}

@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "gcd",
-    "enumeration",
+    "brute-force",
     "divisor-enumeration"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923764,
     "pattern_confidence": {
       "gcd": 0.98,
-      "enumeration": 0.9,
+      "brute-force": 0.9,
       "divisor-enumeration": 0.85
     }
   }

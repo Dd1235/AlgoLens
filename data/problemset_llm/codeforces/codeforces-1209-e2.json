@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1209-e2",
+  "title": "Rotate Columns (hard version)",
+  "slug": "1209-e2-rotate-columns-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1209/E2",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an n by m matrix, you can cyclically shift any column any number of times. After all shifts, maximize the sum of the maximum elements from each row.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "dynamic-programming",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "greedy",
+    "sorting",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048919,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "greedy": 0.85,
+      "sorting": 0.8,
+      "state-compression": 0.9
+    }
+  },
+  "source_topic": "Formwise / DP Level 2"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1910-f",
+  "title": "Build Railway Stations",
+  "slug": "1910-f-build-railway-stations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1910/F",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "*special",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree with n cities connected by roads, build up to k railway stations to minimize the sum of shortest travel times between all pairs of cities, where roads between stations have reduced traversal time.",
+  "tags": [
+    "tree",
+    "graph",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "tree-dp",
+    "greedy",
+    "binary-search-answer",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048236,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "greedy": 0.9,
+      "binary-search-answer": 0.85,
+      "prefix-sum": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1731-d",
+  "title": "Valiant's New Map",
+  "slug": "1731-d-valiant-s-new-map",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1731/D",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "data structures",
+    "dp",
+    "two pointers"
+  ],
+  "statement": "Given an n by m grid of building heights, find the largest square subgrid where every building's height is at least the side length of that square.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "prefix-sum",
+    "dp-on-grid"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048843,
+    "pattern_confidence": {
+      "binary-search-answer": 0.92,
+      "prefix-sum": 0.85,
+      "dp-on-grid": 0.8
+    }
+  },
+  "source_topic": "Formwise / Binary Search"
+}

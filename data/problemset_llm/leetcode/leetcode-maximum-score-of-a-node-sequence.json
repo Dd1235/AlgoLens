@@ -17,7 +17,7 @@
     "graph",
     "array",
     "sorting",
-    "enumeration"
+    "brute-force"
   ],
   "patterns": [
     "neighbor-enumeration",

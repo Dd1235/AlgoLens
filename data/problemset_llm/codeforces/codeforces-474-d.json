@@ -12,13 +12,13 @@
   ],
   "statement": "Count the number of valid flower sequences whose total length falls within given query ranges, where one flower color can appear singly and the other must appear in contiguous blocks of fixed size k.",
   "tags": [
-    "dp",
+    "dynamic-programming",
     "combinatorics",
     "prefix-sum"
   ],
   "patterns": [
     "prefix-sum",
-    "dp",
+    "dynamic-programming",
     "binary-search-answer"
   ],
   "annotation": {
@@ -27,7 +27,7 @@
     "generated_at_unix": 1777953624,
     "pattern_confidence": {
       "prefix-sum": 0.9,
-      "dp": 0.95,
+      "dynamic-programming": 0.95,
       "binary-search-answer": 0.7
     }
   }

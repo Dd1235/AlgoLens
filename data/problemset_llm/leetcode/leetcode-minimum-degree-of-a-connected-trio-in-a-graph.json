@@ -13,7 +13,7 @@
   "statement": "Given an undirected graph, find the minimum degree of any connected trio (a triangle subgraph) where the degree is the count of edges connecting the trio to nodes outside it, or return -1 if no trio exists.",
   "tags": [
     "graph",
-    "enumeration",
+    "brute-force",
     "triangle-detection"
   ],
   "patterns": [

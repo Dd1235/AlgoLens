@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1408-i",
+  "title": "Bitwise Magic",
+  "slug": "1408-i-bitwise-magic",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1408/I",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "dp",
+    "math"
+  ],
+  "statement": "Given an array of distinct non-negative integers and a number k, compute the probability distribution of the bitwise XOR of the array after k random decrements, outputting each probability modulo a prime.",
+  "tags": [
+    "dynamic-programming",
+    "probability",
+    "bit-manipulation",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "probability-dp",
+    "modular-inverse",
+    "bitmask-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048356,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "probability-dp": 0.9,
+      "modular-inverse": 0.85,
+      "bitmask-dp": 0.8
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

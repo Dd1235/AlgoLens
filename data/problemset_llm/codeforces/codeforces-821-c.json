@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-821-c",
+  "title": "Okabe and Boxes",
+  "slug": "821-c-okabe-and-boxes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/821/C",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a sequence of push and pop commands on a stack with boxes numbered 1 to n, determine the minimum number of times the stack must be reordered to pop the boxes in ascending order.",
+  "tags": [
+    "stack",
+    "greedy",
+    "data-structures",
+    "data-structure"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048790,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9
+    }
+  },
+  "source_topic": "Formwise / STL"
+}

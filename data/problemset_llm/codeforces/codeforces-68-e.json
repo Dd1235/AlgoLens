@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-68-e",
+  "title": "Contact",
+  "slug": "68-e-contact",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/68/E",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "geometry"
+  ],
+  "statement": "Given four alien ships shaped as non-degenerate triangles, determine the minimum number of points (columns) needed on a plane so that each ship can be placed on three points forming a triangle congruent to the ship under rotation, translation, or reflection.",
+  "tags": [
+    "geometry",
+    "combinatorics"
+  ],
+  "patterns": [
+    "triangle-congruence",
+    "geometric-transformation",
+    "combinatorial-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048405,
+    "pattern_confidence": {
+      "triangle-congruence": 0.95,
+      "geometric-transformation": 0.9,
+      "combinatorial-optimization": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

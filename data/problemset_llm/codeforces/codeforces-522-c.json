@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-522-c",
+  "title": "Chicken or Fish?",
+  "slug": "522-c-chicken-or-fish",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/522/C",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given the initial counts of each dish and observations about passengers served before Polycarp, determine for each dish whether it could have been exhausted by the time Polycarp is served or if it was definitely still available.",
+  "tags": [
+    "greedy",
+    "simulation",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048107,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

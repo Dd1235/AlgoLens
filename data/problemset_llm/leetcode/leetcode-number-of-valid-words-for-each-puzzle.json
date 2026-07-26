@@ -17,10 +17,10 @@
   "tags": [
     "array",
     "string",
-    "bitmask"
+    "bit-manipulation"
   ],
   "patterns": [
-    "bitmask-enumeration",
+    "bit-manipulation",
     "hash-map",
     "subset-enumeration"
   ],
@@ -29,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923816,
     "pattern_confidence": {
-      "bitmask-enumeration": 0.98,
+      "bit-manipulation": 0.98,
       "hash-map": 0.95,
       "subset-enumeration": 0.9
     }

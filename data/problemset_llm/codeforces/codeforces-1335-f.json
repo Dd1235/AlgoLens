@@ -1,0 +1,45 @@
+{
+  "id": "codeforces-1335-f",
+  "title": "Robots on a Grid",
+  "slug": "1335-f-robots-on-a-grid",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1335/F",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "greedy",
+    "matrices"
+  ],
+  "statement": "Given a grid with directional transitions from each cell, place the maximum number of robots initially so that no two robots ever occupy the same cell simultaneously during infinite moves, maximizing the count of black cells occupied initially among all maximum placements.",
+  "tags": [
+    "grid",
+    "graph",
+    "dfs",
+    "union-find",
+    "greedy"
+  ],
+  "patterns": [
+    "strongly-connected-components",
+    "cycle-detection",
+    "union-find",
+    "greedy",
+    "graph-contraction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048140,
+    "pattern_confidence": {
+      "strongly-connected-components": 0.95,
+      "cycle-detection": 0.9,
+      "union-find": 0.85,
+      "greedy": 0.8,
+      "graph-contraction": 0.75
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

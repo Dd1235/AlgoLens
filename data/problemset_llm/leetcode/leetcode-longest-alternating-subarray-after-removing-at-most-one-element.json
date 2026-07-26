@@ -19,7 +19,7 @@
   "patterns": [
     "two-pointers",
     "dynamic-programming",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +28,7 @@
     "pattern_confidence": {
       "two-pointers": 0.85,
       "dynamic-programming": 0.95,
-      "enumeration": 0.8
+      "brute-force": 0.8
     }
   }
 }

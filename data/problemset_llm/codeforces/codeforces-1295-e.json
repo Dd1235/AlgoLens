@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1295-e",
+  "title": "Permutation Separation",
+  "slug": "1295-e-permutation-separation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1295/E",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "data structures",
+    "divide and conquer"
+  ],
+  "statement": "Given a permutation and associated move costs, split it into two non-empty sets and rearrange elements between them so all elements in the first set are less than those in the second, minimizing total move cost.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search-answer",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048111,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "binary-search-answer": 0.85,
+      "divide-and-conquer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

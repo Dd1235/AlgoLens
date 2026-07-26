@@ -9,10 +9,11 @@
   "statement": "Given a sequence of positive integers, perform Q operations where in each operation all occurrences of a value B_i are replaced by C_i, and after each operation output the sum of the sequence.",
   "tags": [
     "array",
-    "hash-map"
+    "hash-map",
+    "data-structure"
   ],
   "patterns": [
-    "frequency-counting",
+    "counting",
     "incremental-update"
   ],
   "annotation": {
@@ -20,7 +21,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785047472,
     "pattern_confidence": {
-      "frequency-counting": 0.95,
+      "counting": 0.95,
       "incremental-update": 0.9
     }
   },

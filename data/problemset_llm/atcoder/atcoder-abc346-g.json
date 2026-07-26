@@ -10,7 +10,8 @@
   "tags": [
     "array",
     "two-pointers",
-    "hash-map"
+    "hash-map",
+    "segment-tree"
   ],
   "patterns": [
     "two-pointers",

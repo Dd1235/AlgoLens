@@ -14,7 +14,8 @@
   "patterns": [
     "two-pointers",
     "string-reversal",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "rolling-hash"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,7 +24,8 @@
     "pattern_confidence": {
       "two-pointers": 0.9,
       "string-reversal": 0.85,
-      "constructive-algorithm": 0.8
+      "constructive-algorithm": 0.8,
+      "rolling-hash": 0.9
     }
   },
   "difficulty": 1575

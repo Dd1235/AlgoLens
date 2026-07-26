@@ -10,12 +10,13 @@
   "tags": [
     "string",
     "prefix-function",
-    "pattern-matching"
+    "string-matching"
   ],
   "patterns": [
     "prefix-function",
     "knuth-morris-pratt",
-    "string-period"
+    "string-period",
+    "kmp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "prefix-function": 0.98,
       "knuth-morris-pratt": 0.95,
-      "string-period": 0.9
+      "string-period": 0.9,
+      "kmp": 0.9
     }
   }
 }

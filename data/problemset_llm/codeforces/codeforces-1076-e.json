@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1076-e",
+  "title": "Vasya and a Tree",
+  "slug": "1076-e-vasya-and-a-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1076/E",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "data structures",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with initially zero values on vertices, process queries that add a value to all vertices within a certain distance from a given vertex in its subtree, then report the final values on all vertices.",
+  "tags": [
+    "tree",
+    "data-structures",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "prefix-sum",
+    "tree-level-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049043,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "prefix-sum": 0.85,
+      "tree-level-order": 0.7
+    }
+  },
+  "source_topic": "Formwise / Trees"
+}

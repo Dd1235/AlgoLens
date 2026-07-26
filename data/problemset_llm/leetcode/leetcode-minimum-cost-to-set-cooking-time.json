@@ -13,7 +13,7 @@
   "statement": "Given a target cooking time in seconds and costs for moving a finger and pushing digits on a microwave keypad, find the minimum total cost to input the time as minutes and seconds using up to four digits.",
   "tags": [
     "math",
-    "enumeration",
+    "brute-force",
     "simulation"
   ],
   "patterns": [

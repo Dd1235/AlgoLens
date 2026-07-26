@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1400-d",
+  "title": "Zigzags",
+  "slug": "1400-d-zigzags",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1400/D",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "brute force",
+    "combinatorics",
+    "data structures",
+    "math",
+    "two pointers"
+  ],
+  "statement": "Given an array, count the number of quadruples (i, j, k, l) with increasing indices where the first and third elements are equal and the second and fourth elements are equal.",
+  "tags": [
+    "array",
+    "combinatorics",
+    "two-pointers",
+    "hash-map"
+  ],
+  "patterns": [
+    "two-pointers",
+    "hash-map",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047908,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "hash-map": 0.9,
+      "combinatorics": 0.95
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

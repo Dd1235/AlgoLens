@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1783-c",
+  "title": "Yet Another Tournament",
+  "slug": "1783-c-yet-another-tournament",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1783/C",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given preparation times for matches against opponents and a total preparation time limit, determine the best possible tournament rank achievable by selecting which matches to prepare for.",
+  "tags": [
+    "greedy",
+    "binary-search",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047954,
+    "pattern_confidence": {
+      "binary-search-answer": 0.93,
+      "greedy": 0.9,
+      "sorting": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

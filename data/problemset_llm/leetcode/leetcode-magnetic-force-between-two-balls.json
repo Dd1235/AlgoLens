@@ -14,7 +14,8 @@
   "statement": "Given positions of baskets and a number of balls, place the balls to maximize the minimum distance between any two balls.",
   "tags": [
     "array",
-    "sorting"
+    "sorting",
+    "binary-search"
   ],
   "patterns": [
     "binary-search-answer",

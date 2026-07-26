@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1370-f2",
+  "title": "The Hidden Pair (Hard Version)",
+  "slug": "1370-f2-the-hidden-pair-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1370/F2",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "binary search",
+    "dfs and similar",
+    "graphs",
+    "interactive",
+    "shortest paths",
+    "trees"
+  ],
+  "statement": "Given a tree with two hidden distinct nodes, identify both nodes by querying subsets of nodes to find one minimizing the sum of distances to the hidden nodes, with a limited number of queries allowed.",
+  "tags": [
+    "graph",
+    "tree",
+    "interactive"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "distance-query",
+    "interactive"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048459,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "distance-query": 0.85,
+      "interactive": 0.95
+    }
+  },
+  "source_topic": "Codeforces / rating 2500-3500"
+}

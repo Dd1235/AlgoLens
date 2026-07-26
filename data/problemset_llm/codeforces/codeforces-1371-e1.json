@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1371-e1",
+  "title": "Asterism (Easy Version)",
+  "slug": "1371-e1-asterism-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1371/E1",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "combinatorics",
+    "math",
+    "number theory",
+    "sortings"
+  ],
+  "statement": "Given an initial number of candies and enemies each with a candy count, count permutations of enemy orderings where Yuzu can win all duels by having enough candies at each step, then identify integers for which the count of such permutations is not divisible by a given prime.",
+  "tags": [
+    "combinatorics",
+    "number-theory",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "counting",
+    "modular-arithmetic",
+    "permutation-counting",
+    "binary-search-answer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785047962,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "modular-arithmetic": 0.9,
+      "permutation-counting": 0.9,
+      "binary-search-answer": 0.7
+    }
+  },
+  "source_topic": "Codeforces / rating 1600-1900"
+}

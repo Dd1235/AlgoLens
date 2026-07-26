@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-813-f",
+  "title": "Bipartite Checking",
+  "slug": "813-f-bipartite-checking",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/813/F",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "data structures",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Given a dynamic undirected graph with edge additions and removals, determine after each update whether the graph remains bipartite.",
+  "tags": [
+    "graph",
+    "union-find",
+    "dynamic-graph"
+  ],
+  "patterns": [
+    "union-find",
+    "offline-queries",
+    "bipartite-checking",
+    "dynamic-connectivity"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785049012,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "offline-queries": 0.85,
+      "bipartite-checking": 0.9,
+      "dynamic-connectivity": 0.9
+    }
+  },
+  "source_topic": "Formwise / Graph Level 2"
+}

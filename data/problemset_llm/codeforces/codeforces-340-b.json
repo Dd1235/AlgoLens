@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-340-b",
+  "title": "Maximal Area Quadrilateral",
+  "slug": "340-b-maximal-area-quadrilateral",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/340/B",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "brute force",
+    "geometry"
+  ],
+  "statement": "Given a set of points in the plane, find the maximum area of any simple quadrilateral formed by four of these points.",
+  "tags": [
+    "geometry",
+    "combinatorics",
+    "brute-force"
+  ],
+  "patterns": [
+    "convex-hull",
+    "area-calculation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785048201,
+    "pattern_confidence": {
+      "convex-hull": 0.9,
+      "area-calculation": 0.95,
+      "brute-force": 0.85
+    }
+  },
+  "source_topic": "Codeforces / rating 2000-2400"
+}

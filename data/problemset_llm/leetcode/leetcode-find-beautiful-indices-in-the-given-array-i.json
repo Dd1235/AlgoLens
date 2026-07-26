@@ -19,7 +19,7 @@
     "string",
     "array",
     "two-pointers",
-    "hashing"
+    "rolling-hash"
   ],
   "patterns": [
     "rolling-hash",

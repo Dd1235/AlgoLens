@@ -25,7 +25,7 @@
     "prefix-sum",
     "binary-search",
     "counting",
-    "enumeration"
+    "brute-force"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +35,7 @@
       "prefix-sum": 0.9,
       "binary-search": 0.85,
       "counting": 0.9,
-      "enumeration": 0.88
+      "brute-force": 0.88
     }
   }
 }
