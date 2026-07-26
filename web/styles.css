@@ -4,6 +4,10 @@
 
 :root {
   color-scheme: dark;
+  --r-cell: 2px;    /* heatmap squares, bars — dense data */
+  --r-chip: 4px;    /* inline chips, tags, toggles, tabs */
+  --r-control: 6px; /* buttons, inputs */
+  --r-card: 8px;    /* cards, forms, containers */
   --bg: #0d1117;
   --bg-elevated: #111820;
   --surface: #111820;
@@ -164,7 +168,7 @@ h1 {
   background: var(--accent-soft);
   border: 1px solid rgba(138, 164, 191, 0.22);
   padding: 0.05rem 0.4rem;
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   letter-spacing: 0.04em;
   align-self: center;
   margin-left: 0.2rem;
@@ -203,7 +207,7 @@ html[data-theme="light"] .debug-link:hover { color: var(--accent); }
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent),
     var(--surface-code);
   border: 1px solid var(--border-strong);
-  border-radius: 8px;
+  border-radius: var(--r-card);
   padding: 0.1rem 0.1rem 0.1rem 0.85rem;
   position: relative;
   transition: border-color 140ms ease, box-shadow 140ms ease;
@@ -226,7 +230,6 @@ html[data-theme="light"] .debug-link:hover { color: var(--accent); }
 
 html[data-theme="light"] #search-form,
 html[data-theme="light"] #explain-form {
-  border-radius: 10px;
   box-shadow: none;
 }
 
@@ -253,7 +256,7 @@ button {
   font-size: 0.82rem;
   font-family: var(--mono);
   border: 1px solid var(--accent);
-  border-radius: 6px;
+  border-radius: var(--r-control);
   background: var(--surface-strong);
   color: var(--accent);
   cursor: pointer;
@@ -286,7 +289,6 @@ button:active { transform: scale(0.97); }
 
 html[data-theme="light"] button {
   background: transparent;
-  border-radius: 7px;
 }
 
 html[data-theme="light"] button:hover {
@@ -363,7 +365,7 @@ html[data-theme="light"] .theme-toggle {
   color: var(--text-muted);
   background: none;
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   padding: 0.05rem 0.45rem;
   cursor: pointer;
   letter-spacing: 0.02em;
@@ -404,7 +406,7 @@ html[data-theme="light"] .theme-toggle {
 .compare-col {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--r-card);
   padding: 0.75rem 0.85rem 0.95rem;
   min-width: 0;
 }
@@ -459,7 +461,7 @@ html[data-theme="light"] .theme-toggle {
 .rank-delta {
   display: inline-block;
   padding: 0.02rem 0.34rem;
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   font-size: 0.66rem;
   letter-spacing: 0.04em;
   margin-right: 0.4rem;
@@ -480,7 +482,7 @@ html[data-theme="light"] .theme-toggle {
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 58%),
     var(--surface);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: var(--r-card);
   padding: 0.85rem 1rem 0.95rem;
   box-shadow: var(--shadow);
   position: relative;
@@ -509,7 +511,6 @@ html[data-theme="light"] .theme-toggle {
 }
 
 html[data-theme="light"] .result {
-  border-radius: 10px;
 }
 
 html[data-theme="light"] .result::before {
@@ -562,7 +563,7 @@ html[data-theme="light"] .result-title {
 .result-meta .difficulty {
   text-transform: lowercase;
   padding: 0.05rem 0.4rem;
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   border: 1px solid var(--border-strong);
   margin-right: 0.35rem;
   background: rgba(255, 255, 255, 0.018);
@@ -606,6 +607,9 @@ html[data-theme="light"] .result-meta .difficulty {
   background: transparent;
 }
 
+/* The two exemptions from the radius scale: a fill bar is a continuous
+   quantity, so a capsule is the honest shape for it. Everything else — chips,
+   tabs, cards — is a rectangle. */
 .score-bar {
   margin-top: 0.55rem;
   height: 4px;
@@ -638,7 +642,7 @@ html[data-theme="light"] .result-meta .difficulty {
   color: var(--accent);
   border: 1px solid rgba(138, 164, 191, 0.18);
   padding: 0.05rem 0.5rem;
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   font-family: var(--mono);
   font-size: 0.72rem;
   letter-spacing: 0.02em;
@@ -647,7 +651,6 @@ html[data-theme="light"] .result-meta .difficulty {
 html[data-theme="light"] .matched-chip {
   background: var(--accent-soft);
   border: 0;
-  border-radius: 999px;
 }
 
 .matched-chip::before { content: "+ "; opacity: 0.7; }
@@ -659,7 +662,7 @@ html[data-theme="light"] .matched-chip {
   color: var(--accent);
   border: 1px solid rgba(138, 164, 191, 0.18);
   padding: 0.05rem 0.5rem;
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   font-family: var(--mono);
   font-size: 0.72rem;
   letter-spacing: 0.02em;
@@ -683,7 +686,7 @@ html[data-theme="light"] .pattern-chip {
   color: var(--accent);
   border: 1px solid var(--accent-soft, rgba(138, 164, 191, 0.3));
   padding: 0.1rem 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--r-chip);
   font-family: var(--mono);
   font-size: 0.72rem;
   letter-spacing: 0.02em;
@@ -720,7 +723,7 @@ html[data-theme="light"] .pattern-chip {
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   width: 11rem;
 }
 
@@ -739,7 +742,7 @@ html[data-theme="light"] .pattern-chip {
 
 .platform-card {
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--r-control);
   padding: 0.7rem 0.85rem;
   font-family: var(--mono);
   background: var(--surface);
@@ -797,7 +800,7 @@ html[data-theme="light"] .pattern-chip {
 .hm {
   width: 10px;
   height: 10px;
-  border-radius: 2px;
+  border-radius: var(--r-cell);
   display: inline-block;
 }
 
@@ -885,7 +888,7 @@ html[data-theme="light"] .pattern-chip {
   width: 18px;
   background: var(--accent);
   opacity: 0.75;
-  border-radius: 2px 2px 0 0;
+  border-radius: var(--r-cell) var(--r-cell) 0 0;
 }
 
 .daily-bar-label {
@@ -993,7 +996,7 @@ html[data-theme="light"] .result-detail a {
   font-size: 0.8rem;
   letter-spacing: 0.03em;
   border: 1px dashed var(--border-strong);
-  border-radius: 6px;
+  border-radius: var(--r-control);
   background: transparent;
   color: var(--text-muted);
 }
@@ -1194,7 +1197,7 @@ html[data-theme="light"] footer::after { content: ""; }
   background: transparent;
   color: var(--text-muted);
   border: 1px dashed var(--border-strong);
-  border-radius: 999px;
+  border-radius: var(--r-chip);
   cursor: pointer;
 }
 
@@ -1232,7 +1235,7 @@ html[data-theme="light"] footer::after { content: ""; }
   border: 1px solid var(--border-strong);
   background: transparent;
   color: var(--text-muted);
-  border-radius: 5px;
+  border-radius: var(--r-chip);
   cursor: pointer;
 }
 
@@ -1252,7 +1255,7 @@ html[data-theme="light"] footer::after { content: ""; }
   margin-top: 1.5rem;
   padding: 1.25rem;
   border: 1px dashed var(--border-strong);
-  border-radius: 8px;
+  border-radius: var(--r-card);
   background: var(--surface);
 }
 
@@ -1277,7 +1280,7 @@ html[data-theme="light"] footer::after { content: ""; }
   padding: 0.55rem 0.7rem;
   background: var(--surface-strong);
   border: 1px solid var(--border-strong);
-  border-radius: 6px;
+  border-radius: var(--r-control);
   color: var(--text);
 }
 
@@ -1322,7 +1325,7 @@ html[data-theme="light"] footer::after { content: ""; }
   max-width: 340px;
   background: transparent;
   border: 1px dashed var(--border);
-  border-radius: 4px;
+  border-radius: var(--r-chip);
   color: var(--text);
   font-family: var(--mono);
   font-size: 0.74rem;
