@@ -430,14 +430,22 @@ function renderSingle(data, q, append) {
     }
     return;
   }
-  const lat = typeof data.latencyMs === "number" ? ` · ${data.latencyMs.toFixed(3)}ms` : "";
+  // "ranked in", not a bare number. This clock wraps index.search() only — no
+  // network, no JSON, no user-state read — so it ran 13-66x faster than the
+  // round trip even on localhost, and far more than that over the wire. A bare
+  // "0.373ms" next to results you waited a beat for is the same false precision
+  // the per-result similarity scores had before they moved to /debug.
+  const lat = typeof data.latencyMs === "number" ? ` · ranked in ${data.latencyMs.toFixed(3)}ms` : "";
   // Alias expansion is server-side; show what was added so the vocabulary is
   // learnable ("aliens trick" → +wqs binary search).
   const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
   const shown = currentOffset + data.hits.length;
   const total = currentTotal;
   const modeName = { bm25: "keyword", dense: "meaning", hybrid: "both" }[data.ranker] || data.ranker;
-  setStatus(`showing 1–${shown} of ${total} for "${q}" via ${modeName} (${data.ranker})${lat}${expanded}`);
+  // Dropped from this line: the query (it's in the box two rows up) and the
+  // raw ranker id in parens (the picker already says "keyword · bm25"). What's
+  // left is what nothing else on the page tells you.
+  setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}`);
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
