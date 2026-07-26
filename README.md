@@ -95,9 +95,19 @@ Things worth building, and the honest reason they aren't built yet.
 - **Filter or sort by difficulty.** Blocked on data, not code. CSES's 400 problems (15% of the corpus) carry no difficulty at all, LeetCode has three buckets rather than a scale, and AtCoder's community-estimated ratings aren't Codeforces ratings — they go negative. Ordering four judges together needs a normalization decision first; picking one badly is worse than not having the feature.
 - **Sort by difficulty instead of relevance.** As a re-sort of the top N, not the whole match set — sorting everything throws away the ranking you searched for.
 - **Difficulty relative to you, not absolute.** "Show me problems a bit above my level" is the version that's actually useful. Closer than it looks: your Codeforces and AtCoder ratings are already fetched and cached for the profile page, and they're already on the same scale as the problems' own ratings. It would work today for the 741 rated problems and needs a mapping for the rest.
+- **Multi-technique queries, and the practice set they'd unlock.** `fenwick graph` doesn't return problems that need both — BM25 scores one bag of words, so the rarer term wins and you get mostly Fenwick problems. Running each technique as its own query and drawing a stratified sample across them would fix that, and it's also the shape a "give me N problems for OA prep" feature needs. Both want the same missing piece — a difficulty scale that works across four judges — which is why that scale is the highest-value next thing rather than another judge.
 - **Recommendations from what you've solved.** Done-marks plus ratings are enough for a rule-based "next problem" heuristic before anything fancier is warranted.
 
 **On feasibility:** latency isn't the obstacle for any of these. Sorting or banding an already-ranked result list costs well under a millisecond at this corpus size — the same place the judge filter does its work, after ranking and before paging. The obstacles are a common difficulty scale across four judges, and the fact that ordering by anything other than relevance is a different product decision than it first appears.
+
+## What gets logged
+
+Search counts, latency percentiles and a click-through funnel go to a Postgres `events` table and surface on [/stats.html](https://onebysec.com/stats.html). No IPs, no user agents — an anonymous cookie id, plus your user id if you're signed in.
+
+Two things learned the hard way and now fixed in code:
+
+- **Only the deployed app writes events** (`NODE_ENV=production`). Local development points `DATABASE_URL` at the same database, so without that gate every dev restart and test query lands in the public stats — which is exactly what happened: two thirds of recorded "visitors" turned out to be a curl loop, and the top-queries list was a load test. Numbers you publish have to come from real usage or they're not numbers.
+- **The search counter counts keystrokes, not questions.** Typing is debounced, so `graph` logs `g`, `gr`, `gra`… Measured at 38% of search events being a prefix of the next one typed within 5 seconds. Worth knowing before reading any total on that page.
 
 ## Run it
 
