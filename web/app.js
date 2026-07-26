@@ -315,7 +315,6 @@ function syncJudgeControls() {
     chip.setAttribute("aria-pressed", String(on));
   });
   judgeClearBtn.classList.toggle("hidden", activePlatforms.size === 0);
-  updatePlatformPill();
 }
 
 function applyMode() {
@@ -333,8 +332,8 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   // An empty box with a filter still on isn't "nothing to show" — it's a
-  // browse. Clearing your query keeps the pattern and judge pills and lists
-  // everything they select, which is what the pills claim to be doing.
+  // browse. Clearing your query keeps the active label and judges and lists
+  // everything they select, which is what they claim to be doing.
   if (!q && (activePattern || activePlatforms.size)) {
     currentQuery = "";
     if (!append) currentOffset = 0;
@@ -674,12 +673,11 @@ fbReason.addEventListener("keydown", (e) => {
 
 const patternPill = document.getElementById("pattern-pill");
 patternPill.addEventListener("click", () => clearPatternFilter());
-const platformPill = document.getElementById("platform-pill");
-platformPill.addEventListener("click", () => clearPlatformFilter());
 
 // Pattern chips narrow search results to problems carrying that label (the
 // server filters post-rank). The pill under the status line shows the active
-// filter; clicking it clears the filter.
+// label; clicking it clears it. Judges need no such pill — their own chips
+// show which are on and carry the clear button.
 function applyPatternFilter(pattern) {
   track("pattern_selected", { pattern });
   activePattern = pattern;
@@ -755,16 +753,6 @@ function clearPlatformFilter({ reissue = true } = {}) {
   if (reissue && currentQuery) {
     currentOffset = 0;
     runSearch(currentQuery, { append: false });
-  }
-}
-
-function updatePlatformPill() {
-  if (activePlatforms.size) {
-    const names = [...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]);
-    platformPill.textContent = `judge: ${names.join(" + ")} ✕`;
-    platformPill.classList.remove("hidden");
-  } else {
-    platformPill.classList.add("hidden");
   }
 }
 
