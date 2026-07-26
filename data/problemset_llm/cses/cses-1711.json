@@ -13,18 +13,14 @@
     "path-decomposition"
   ],
   "patterns": [
-    "max-flow",
-    "flow-decomposition",
-    "augmenting-paths"
+    "max-flow"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951547,
     "pattern_confidence": {
-      "max-flow": 0.98,
-      "flow-decomposition": 0.9,
-      "augmenting-paths": 0.85
+      "max-flow": 0.98
     }
   }
 }

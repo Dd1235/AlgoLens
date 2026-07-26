@@ -14,7 +14,7 @@
   "patterns": [
     "minimum-vertex-cover",
     "konig-theorem",
-    "maximum-bipartite-matching"
+    "bipartite-matching"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,7 +23,7 @@
     "pattern_confidence": {
       "minimum-vertex-cover": 0.95,
       "konig-theorem": 0.9,
-      "maximum-bipartite-matching": 0.9
+      "bipartite-matching": 0.9
     }
   }
 }
