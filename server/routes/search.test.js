@@ -23,9 +23,12 @@ const problems = Array.from({ length: 300 }, (_, i) => ({
 const hit = (p, score) => ({ problem: p, score, matchedTerms: ["graph"] });
 
 // Honors k/offset the way the real rankers do: rank everything, then slice.
+// Also mirrors their empty-query guard — tfidf/bm25/dense all return nothing
+// for "", which is exactly why a filter with no query needs its own path.
 function stubRanker(order = problems) {
   return {
-    search(_q, k = 10, offset = 0) {
+    search(q, k = 10, offset = 0) {
+      if (!q.trim()) return { hits: [], total: 0 };
       const ranked = order.map((p, i) => hit(p, 1000 - i));
       return { hits: ranked.slice(offset, offset + k), total: ranked.length };
     },
@@ -37,7 +40,8 @@ function stubRanker(order = problems) {
 // silently caps at 200 again and the pagination test below fails.
 const lexicalLeg = stubRanker();
 const denseLeg = {
-  async search(_q, k = 10, offset = 0) {
+  async search(q, k = 10, offset = 0) {
+    if (!q.trim()) return { hits: [], total: 0 };
     const ranked = [...problems].reverse().map((p, i) => hit(p, 1 - i / 1000));
     return { hits: ranked.slice(offset, offset + k), total: ranked.length };
   },
@@ -140,6 +144,40 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
     const d = await get("q=graph&ranker=hybrid&k=20&platform=atcoder");
     assert.equal(d.total, 75);
     assert.deepEqual(platformsOf(d), ["atcoder"]);
+  }
+
+  // An empty query with a filter is a browse, not an empty result. Every ranker
+  // returns nothing for "", so this used to report 0 hits for a label carrying
+  // hundreds of problems.
+  {
+    const d = await get("q=&k=10&pattern=dfs");
+    assert.equal(d.total, 100, "browsing a label must find every problem carrying it");
+    assert.ok(d.hits.every((h) => h.problem.patterns.includes("dfs")));
+  }
+
+  // Browse composes the same facets search does.
+  {
+    const d = await get("q=&k=10&platform=atcoder");
+    assert.equal(d.total, 75);
+
+    const both = await get("q=&k=10&platform=atcoder&pattern=dfs");
+    assert.equal(both.total, 25);
+    assert.ok(both.hits.every((h) => h.problem.platform === "atcoder" && h.problem.patterns.includes("dfs")));
+  }
+
+  // Browse pages disjointly, like search.
+  {
+    const a = await get("q=&k=40&offset=0&pattern=greedy");
+    const b = await get("q=&k=40&offset=40&pattern=greedy");
+    const ids = new Set([...a.hits, ...b.hits].map((h) => h.problem.id));
+    assert.equal(ids.size, 80, "browse pages must not overlap");
+  }
+
+  // No query and no filter is still nothing — browse needs something to browse.
+  {
+    const d = await get("q=&k=10");
+    assert.equal(d.total, 0);
+    assert.equal(d.hits.length, 0);
   }
 
   // Anonymous + done filter degrades to "all" instead of dereferencing a null

@@ -124,8 +124,27 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
       const userState = req.user ? await loadUserState(req.user.id) : null;
       const effectiveFilter = userState ? filter : "all";
 
+      const hasFilter = effectiveFilter !== "all" || !!pattern || platforms.size > 0;
+
       let hits, total, latencyMs;
-      if (effectiveFilter === "all" && !pattern && !platforms.size) {
+      if (!q.trim() && hasFilter) {
+        // Browse, not search. Every ranker returns nothing for an empty query
+        // — correctly, there is nothing to rank — so filtering the empty list
+        // gave 0 results for a label carrying 40 problems. A filter with no
+        // query is a legitimate request ("show me the line-sweep problems"),
+        // and it's answered from the corpus in stable order instead.
+        const t = process.hrtime.bigint();
+        const browsed = problems.filter((p) => {
+          if (pattern && !(p.patterns || []).includes(pattern)) return false;
+          if (platforms.size && !platforms.has(p.platform)) return false;
+          if (effectiveFilter === "all") return true;
+          const isDone = userState.done.has(p.id);
+          return effectiveFilter === "done" ? isDone : !isDone;
+        });
+        latencyMs = +(Number(process.hrtime.bigint() - t) / 1e6).toFixed(3);
+        total = browsed.length;
+        hits = browsed.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
+      } else if (!hasFilter) {
         ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset));
       } else {
         // Need the full ranked list so filters + slice produce a stable
