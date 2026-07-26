@@ -92,7 +92,20 @@ Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-
 
 **GeeksforGeeks is deliberately absent** from the profile: its user pages are client-rendered with no usable JSON endpoint, so any integration would be a scrape even more fragile than CodeChef's, breaking silently. Revisit if they ship an API.
 
-**Codeforces is deferred on purpose:** CF statement pages sit behind Cloudflare, so annotation would be metadata-only (title + tags, no statement) — weak lexical matching and weak embeddings. The 7 dormant files under `data/problemset_llm/codeforces/` also predate the current id scheme (`cf-279b-books` vs `codeforces-279-b`). Enabling CF is a data-quality problem, not a flag flip.
+**Three statement sources, one annotator.** Every problem — whatever the judge — ends up as the same record shape through `scripts/annotate_problem_urls.py`; only *where the statement comes from* differs, and each staging script writes a cache the annotator reads instead of fetching:
+
+| Judge | Statement from | Staged by | Why not the obvious way |
+| --- | --- | --- | --- |
+| LeetCode | official GraphQL | `corpus:refresh` | — |
+| CSES | task page | `corpus:refresh` | — |
+| Codeforces | `open-r1/codeforces` on HF datasets-server | `scripts/fetch_codeforces.py` | codeforces.com returns 403 to any script (Cloudflare). The dataset ships statement + official tags + rating unauthenticated, which is strictly more than a scrape would get. |
+| AtCoder | atcoder.jp task page | `scripts/fetch_atcoder.py` | kenkoooo's API has difficulty but no statement text. |
+
+CF is stratified across rating bands (1300-1500 / 1600-1900 / 2000-2400 / 2500+) rather than taken in id order, so the batch isn't all 1300s — the band with by far the most problems. Ids are `codeforces-<contest>-<index>` and `atcoder-<task_id>` with underscores hyphenated (the validator's slug rule).
+
+**The curated sheet.** `data/formwise.xlsx` is 17 topic tabs with a human `Form` column ("Binary Search On Answer"). `scripts/fetch_formwise.py` parses it with stdlib zipfile+ElementTree (hyperlink targets live in `xl/worksheets/_rels/*.rels`, not the cell text), and `scripts/apply_formwise_labels.py` merges the human labels *after* annotation — tab name → tag, `Form` → pattern, both folded through the alias map. Curriculum-only Forms (`Mixed`, `Form-N`, `Kth Form`, `Level-N`) are dropped: they label a worksheet position, not a technique, and the LLM's own labels cover those problems.
+
+**Skipped problems are recorded, not dropped.** Anything on a judge with no fetchable statement lands in [data/skipped_problems.json](../data/skipped_problems.json) with a name, link, and reason. A curated list that silently loses 8% of its entries is worse than one that says which 8% — and the file is the worklist if a judge later becomes reachable.
 
 ## Data organization
 
