@@ -176,7 +176,7 @@ logoutBtn.addEventListener("click", async () => {
   currentQuery = "";
   resultsEl.innerHTML = "";
   hideLoadMore();
-  setStatus("logged out · type a query to search");
+  setStatus("logged out");
 });
 
 async function bootstrapAuth() {
@@ -259,7 +259,7 @@ function applyMode() {
 async function runSearch(rawQuery, { append = false } = {}) {
   const q = rawQuery.trim();
   if (!q) {
-    setStatus("type a query to search");
+    setStatus("");
     resultsEl.innerHTML = "";
     currentQuery = "";
     currentOffset = 0;
@@ -940,7 +940,7 @@ if (/^[a-z0-9]+(-[a-z0-9]+)*$/.test(bootPattern)) {
 } else if (bootQ) {
   runSearch(bootQ, { append: false });
 } else {
-  setStatus("type a query to search");
+  setStatus("");
 }
 
 // Put the caret where typing actually goes. Pointer-fine only, so mobile
