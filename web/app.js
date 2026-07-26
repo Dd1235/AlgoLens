@@ -735,8 +735,10 @@ SAVING                                             (signed in)
   ○ / ✓              mark it done — done marks feed your heatmap
 
 LINKS
-  every view is shareable: /?q=knapsack · /?pattern=slope-trick
-  /?ranker=dense · /?platform=codeforces,atcoder · combine them
+  the address bar follows what you're looking at — query, judges,
+  pattern, ranker and filter all land in the URL, so refresh keeps
+  your view and copying the URL shares exactly what you see:
+  /?q=knapsack&platform=codeforces,atcoder&ranker=dense
 
 CORPUS
   four judges, tagged [lc] [cf] [atc] [cses] on every result
