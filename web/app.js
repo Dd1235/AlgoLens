@@ -556,6 +556,27 @@ PATTERNS
   filter results to that label; the pill clears it
   browse the whole taxonomy with counts: /patterns.html
 
+FIND SIMILAR
+  inside an expanded result: "find similar problems" lists the ten
+  problems closest in meaning to that one — neighbours of the problem
+  itself, not of your query. Built for upsolving: open the one that
+  beat you, see its family.
+
+SAVING                                             (signed in)
+  ☆ / ★              bookmark a problem, on any result card
+  ○ / ✓              mark it done — done marks feed your heatmap
+  all / not done     the dropdown next to the ranker filters results
+  / done               by what you've finished
+
+COMPARE
+  the checkbox above the results runs your query in keyword and
+  meaning mode side by side, with rank deltas — the fastest way to
+  see what each mode is good at
+
+LINKS
+  every view is shareable: /?q=knapsack · /?pattern=slope-trick
+  /?ranker=dense · combine them
+
 COMMANDS
   :help :h          this manual
   :bookmarks :b     starred problems           (signed in)
@@ -564,9 +585,8 @@ COMMANDS
   Tab               cycle library views        (signed in)
 
 MORE
-  click a result to expand · "find similar" = cosine over the
-  stored embeddings · handles + combined heatmap: /profile.html
-  live usage + latency numbers: /stats.html`;
+  handles + combined heatmap: /profile.html
+  live usage + latency: /stats.html · scoring math: /debug.html`;
 
 function renderHelp() {
   if (compareToggle.checked) {
