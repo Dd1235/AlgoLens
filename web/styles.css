@@ -537,6 +537,16 @@ html[data-theme="light"] .result-title {
   background: rgba(255, 255, 255, 0.018);
 }
 
+/* Which judge a result came from. Deliberately quieter than the difficulty
+   chip — it's orienting information, not a ranking signal. */
+.result-meta .platform-badge {
+  color: var(--text-dim);
+  margin-right: 0.35rem;
+  opacity: 0.85;
+}
+.result-meta .platform-badge::before { content: "["; }
+.result-meta .platform-badge::after { content: "]"; }
+
 .result-meta .difficulty.easy { color: var(--accent); border-color: var(--accent-soft); }
 .result-meta .difficulty.medium { color: var(--warn); border-color: rgba(251, 191, 119, 0.3); }
 .result-meta .difficulty.hard { color: var(--danger); border-color: rgba(255, 107, 129, 0.3); }
