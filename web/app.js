@@ -214,6 +214,12 @@ input.addEventListener("keydown", (e) => {
 
 logoutBtn.addEventListener("click", async () => {
   try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
+  // The profile page caches its whole response — handles included — under this
+  // key so revisits paint instantly. It used to be cleared only when
+  // /profile.html next loaded while signed out, so logging out from here left
+  // someone's linked usernames sitting in localStorage on a shared machine.
+  // Duplicated rather than imported: these two pages share no module.
+  try { localStorage.removeItem("algolens_profile_v1"); } catch (_e) {}
   currentUser = null;
   applyAuthState();
   clearPatternFilter({ reissue: false });
