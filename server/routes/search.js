@@ -27,6 +27,30 @@ function parsePlatforms(raw, known) {
   return wanted.size === known.size ? new Set() : wanted;
 }
 
+// Deterministic shuffle. A seed rather than Math.random because the browse is
+// paged: without one, "load more" would reshuffle and hand back problems the
+// first page already showed. Same seed in the URL = same order across pages,
+// and a new seed is a new draw.
+function mulberry32(seed) {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffledBy(list, seed) {
+  const rand = mulberry32(seed);
+  const out = list.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
 function pickRanker(indexes, defaultRanker, req) {
   const requested = (req.query.ranker || "").toString().toLowerCase();
   if (requested && indexes[requested]) return requested;
@@ -111,6 +135,8 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const patternRaw = (req.query.pattern || "").toString().toLowerCase();
     const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
     const platforms = parsePlatforms(req.query.platform, KNOWN_PLATFORMS);
+    const shuffleSeed = Number.parseInt(req.query.shuffle, 10);
+    const shuffle = Number.isFinite(shuffleSeed) ? shuffleSeed : null;
     // Alias expansion ("aliens trick" → +wqs binary search) happens here at
     // the route, once, so every ranker — lexical, dense, gRPC — sees the
     // searchable form. The response echoes expandedQuery when it differs.
@@ -141,9 +167,10 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
           const isDone = userState.done.has(p.id);
           return effectiveFilter === "done" ? isDone : !isDone;
         });
+        const ordered = shuffle === null ? browsed : shuffledBy(browsed, shuffle);
         latencyMs = +(Number(process.hrtime.bigint() - t) / 1e6).toFixed(3);
-        total = browsed.length;
-        hits = browsed.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
+        total = ordered.length;
+        hits = ordered.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
       } else if (!hasFilter) {
         ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset));
       } else {
@@ -204,6 +231,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         filter: effectiveFilter,
         pattern: pattern || undefined,
         platform: platforms.size ? [...platforms].sort() : undefined,
+        shuffled: shuffle === null ? undefined : true,
         hits,
       });
     } catch (err) {

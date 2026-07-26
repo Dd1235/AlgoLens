@@ -121,6 +121,20 @@ Deliberately file-first: the problem corpus is JSON in git, and git is the datab
 
 **Load latency is three stacked caches:** the route's independent Neon reads run in one parallel round-trip (not a waterfall); responses carry `Cache-Control: private, max-age=60`; and the page paints instantly from a per-user localStorage snapshot while revalidating in the background (stale-while-revalidate — the profile fetch also starts in parallel with the auth gate). Warm API call ~0.25s; perceived revisit load ~0ms.
 
+## Handles are encrypted at rest
+
+`user_platform_handles.handle` and `user_platform_stats.payload` are AES-256-GCM ciphertext (`server/crypto/secrets.js`), format `v1:<iv>:<tag>:<ct>`. The key comes from `HANDLE_KEY` in the **app environment** — Render's generated value — and deliberately never goes near Neon. That split is the whole property: `DATABASE_URL` on its own decrypts nothing.
+
+Three decisions worth knowing:
+
+- **Reversible, not hashed.** The server has to send the handle to leetcode.com, codeforces.com and the rest to fetch stats, so a one-way function is impossible. Those five judges receive the username on every cache miss regardless of anything done here.
+- **The key is derived, not required verbatim.** `HKDF-SHA256` over whatever `HANDLE_KEY` holds, so any high-entropy secret works. Demanding exactly 32 base64 bytes would have turned Render's `generateValue` into a boot crash.
+- **The stats payload is encrypted too.** A 371-day submission calendar plus a rating fingerprints the linked account as well as the handle does; encrypting one and not the other would be theatre.
+
+Boot calls `assertKeyPresent()` and throws without it — a server that started keyless would silently write plaintext, and nobody would notice until they looked in the database. Rows written before migration 0006 have no `v1:` prefix, decrypt to themselves, and get re-encrypted on next write; `node scripts/encrypt_handles.js --write` converts them in bulk. **Rotating `HANDLE_KEY` orphans every existing row** — there is no key-id in the format, so a rotation needs a decrypt-with-old, re-encrypt-with-new pass before the swap.
+
+What this does not do: put the data beyond whoever runs the server. Any operator can read what their own process handles, so the user-facing wording on `/profile.html` says that outright rather than claiming otherwise.
+
 ## Versioning and releases
 
 `main` is production (Render autoDeploy). Feature milestones happen on a branch (`v2`, …) and merge with `--no-ff` so one revert rolls the release back. Release order is fixed: (1) green gate (`npm run validate && npm run test:search && npm run test:profile && npm run bench:fast`), (2) **migrate Neon first** (`DATABASE_URL='…' bash db/run-migrations.sh` — migrations are additive-only, so running code ignores new tables and the migration is zero-downtime), (3) merge + push = deploy, (4) live checks. Rollback: Render → redeploy the previous deploy, or `git revert -m 1 <merge>`; additive migrations are left in place. Tags mark releases (`v1.0.0`, …).
@@ -135,7 +149,7 @@ The app is one Docker image: the MiniLM model is baked at build time and the cor
 
 1. **Neon (Postgres):** create a project, copy the **pooled** connection string, append `sslmode=require`. Run migrations once from your machine: `DATABASE_URL='…' bash db/run-migrations.sh`.
 2. **Optional `GITHUB_TOKEN`** (Render env + local `.env`): a personal access token with zero scopes — enables exact GitHub contribution data via GraphQL instead of the scrape fallback.
-3. **Render (app):** *skip Blueprints — applying one requires a payment method on file.* Instead: Dashboard → New → **Web Service** → pick this GitHub repo (the Dockerfile is auto-detected) → Instance type **Free** → env vars `DATABASE_URL` (from Neon) and `JWT_SECRET` (any long random string, e.g. `openssl rand -hex 32`). Optional: health check path `/`. Render injects `PORT` and the app binds it. [render.yaml](../render.yaml) is the reference for these settings.
+3. **Render (app):** *skip Blueprints — applying one requires a payment method on file.* Instead: Dashboard → New → **Web Service** → pick this GitHub repo (the Dockerfile is auto-detected) → Instance type **Free** → env vars `DATABASE_URL` (from Neon), `JWT_SECRET` and `HANDLE_KEY` (each any long random string, e.g. `openssl rand -base64 32`). **`HANDLE_KEY` must be set before the first deploy that includes it — the app refuses to boot without it**, deliberately, so it can never silently store handles in the clear. Keep it in Render only; putting it anywhere near the database defeats the point of encrypting these columns at all. Optional: health check path `/`. Render injects `PORT` and the app binds it. [render.yaml](../render.yaml) is the reference for these settings.
 4. **Verify live:** `/api/rankers` lists `dense` + `hybrid`, `/patterns.html` renders, and a signup → bookmark round-trip works.
 
 Free-tier realities: the instance spins down after ~15 min idle, so the first request after a quiet spell waits ~30–60 s on the platform cold start (the app itself boots in ~1 s — baked model, committed vectors). Memory is fine: ~101 MiB RSS against the 512 MB cap; `DENSE_DISABLED=1` is the escape hatch if that ever changes.

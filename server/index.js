@@ -19,11 +19,17 @@ const { createProfileRouter } = require("./routes/profile");
 const { createStatsRouter } = require("./routes/stats");
 const { createTrackRouter } = require("./routes/track");
 const { attachUser } = require("./auth/middleware");
+const secrets = require("./crypto/secrets");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 async function main() {
+  // Die here, not on the first user who saves a handle. Without the key the
+  // profile route would happily write plaintext handles and nobody would find
+  // out until they looked in the database.
+  secrets.assertKeyPresent();
+
   const problems = loadProblems();
   const indexes = {
     tfidf: new TfIdfIndex(problems),

@@ -17,6 +17,8 @@ const HANDLE_RE = /^[A-Za-z0-9_.-]{1,64}$/;
 // External stats are cached in user_platform_stats; a row older than the TTL
 // is refetched. ?refresh=1 shrinks the TTL to a floor so the button works but
 // can't hammer the upstream APIs.
+const secrets = require("../crypto/secrets");
+
 const TTL_MS = 12 * 60 * 60 * 1000;
 const REFRESH_FLOOR_MS = 10 * 60 * 1000;
 const DAY_SECONDS = 86400;
@@ -28,7 +30,9 @@ async function loadHandles(userId) {
     [userId]
   );
   const handles = {};
-  for (const row of result.rows) handles[row.platform] = row.handle;
+  // Rows written before encryption shipped come back without the version
+  // prefix and decrypt to themselves, so this needs no backfill to work.
+  for (const row of result.rows) handles[row.platform] = secrets.decrypt(row.handle);
   return handles;
 }
 
@@ -68,7 +72,7 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
              VALUES ($1, $2, $3)
              ON CONFLICT (user_id, platform)
              DO UPDATE SET handle = EXCLUDED.handle, updated_at = NOW()`,
-            [req.user.id, platform, handle]
+            [req.user.id, platform, secrets.encrypt(handle)]
           );
         } else {
           await db.query(
@@ -112,13 +116,13 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
           const row = cacheByPlatform.get(platform);
           const age = row ? Date.now() - new Date(row.fetched_at).getTime() : Infinity;
           if (row && age < maxAgeMs) {
-            platforms[platform] = { ...row.payload, fetchedAt: row.fetched_at };
+            platforms[platform] = { ...secrets.decryptJson(row.payload), fetchedAt: row.fetched_at };
             return;
           }
           const payload = await fetchStats(platform, handle);
           if (payload.unavailable && row) {
             // stale-if-error: keep serving the last good numbers
-            platforms[platform] = { ...row.payload, fetchedAt: row.fetched_at, stale: true };
+            platforms[platform] = { ...secrets.decryptJson(row.payload), fetchedAt: row.fetched_at, stale: true };
             return;
           }
           await db.query(
@@ -126,7 +130,7 @@ function createProfileRouter({ fetchStats = require("../profile").fetchPlatformS
              VALUES ($1, $2, $3, NOW())
              ON CONFLICT (user_id, platform)
              DO UPDATE SET payload = EXCLUDED.payload, fetched_at = NOW()`,
-            [req.user.id, platform, JSON.stringify(payload)]
+            [req.user.id, platform, JSON.stringify(secrets.encryptJson(payload))]
           );
           platforms[platform] = { ...payload, fetchedAt: new Date().toISOString() };
         })

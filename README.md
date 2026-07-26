@@ -35,6 +35,7 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 
 - **Three search modes, one box.** **keyword** matches words in the title, statement _and_ our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
+- **A page for what exists.** You can't search for a technique you've never heard of, and most people's exposure stops at one sheet. The patterns page lists all 165 labels with counts and a filter: type `dp` and get the whole family — `digit-dp`, `tree-dp`, `slope-trick`, `state-compression` — each clickable into the problems carrying it. It's a directory, not a tutorial, and it stays out of the search page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
 - **Filters that stack.** Judges are a set, not a choice — toggle `lc` `cses` `cf` `atc` above the results, or click the tag on any card. They compose with technique labels, with done/not-done, and with your saved lists: `:bookmarks` + `cf`+`atc` + not-done is your unfinished Codeforces and AtCoder saves. Judges persist across searches; a technique label doesn't, because it's a drill-down into what you were reading and the median label covers a single problem. Shareable as `?platform=codeforces,atcoder`.
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
@@ -44,6 +45,7 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 ## Tracking the grind
 
 - **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / AtCoder / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
+- **Your handles are encrypted, and the claim stops where the truth does.** Linked usernames and the stats fetched with them are AES-256-GCM ciphertext; the key lives in the app environment, never in the database, so a database copy is unreadable on its own. No other user can see them — there's no public profile and no leaderboard. The judges themselves necessarily receive the username when your stats are fetched, and I won't claim "not even the admin can see it", because I run the server and that would be false. It isn't stored readably, deleting is immediate, and the code is here to check.
 - **Bookmarks and done-marks** on every result, with a shell-style library (`:bookmarks`, `:done`, Tab cycles views). Done-marks feed the heatmap too.
 
 ## Small things that make it nice to use
@@ -79,6 +81,8 @@ or wording, not ranking — that turned out to be the pattern.
 | Refreshing threw away the search | The address bar now mirrors query + judges + pattern + ranker + filter, so refresh and bookmarking keep the view |
 | Clicking a pattern chip could show 0 results | A filter with no query now browses that label instead of searching within your last one — `line-sweep` shows all 40, not the 0 that matched "cycle" |
 | Should a pattern filter survive a new query? | No — measured it: carrying a label into a new query dead-ends in 9 of 25 cases, a judge in 0 of 20. Labels drop when you type, judges stay |
+| "no section on what patterns even exist — I only know Striver's sheet" | Searches now name the technique family above the results, and the patterns page is filterable and out of the dev-tools nav |
+| "pick topics + difficulty, get 3 random problems" | Shipped the half the data supports: shuffle on any browse. The difficulty half can't work — 16% of the corpus has no difficulty and a band leaves 1-3 candidates per topic |
 
 ## Measured
 

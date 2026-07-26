@@ -21,7 +21,7 @@
             light mode
           </button>
           <a href="/" class="debug-link">search</a>
-          <a href="/patterns.html" class="debug-link">patterns</a>
+          <a href="/patterns.html" class="nav-link">patterns</a>
         </nav>
       </header>
       <p class="tagline">handles across judges · one combined picture</p>
@@ -53,6 +53,45 @@
         <button type="submit">save handles</button>
         <span id="handles-msg" class="handles-msg"></span>
       </form>
+
+      <details class="privacy-note">
+        <summary>what happens to a handle you enter</summary>
+        <ul>
+          <li>
+            <strong>No one else can see it.</strong> There is no public profile,
+            no leaderboard, and no page or endpoint that takes a username and
+            shows you someone's account. Every query the server makes for your
+            data is scoped to your own session.
+          </li>
+          <li>
+            <strong>It's encrypted in the database.</strong> Handles and the
+            stats fetched with them are stored as AES-256-GCM ciphertext. The
+            key lives in the application's environment, not in the database, so
+            a copy of the database — a backup, a leaked connection string, a
+            breach at the database host — is unreadable on its own.
+          </li>
+          <li>
+            <strong>The judges see it, unavoidably.</strong> To show your solved
+            counts and heatmap, the server asks LeetCode, Codeforces, CodeChef,
+            GitHub or AtCoder about that username. Those requests go to them
+            directly. Nothing can change that and it would be dishonest to imply
+            otherwise.
+          </li>
+          <li>
+            <strong>Deleting is immediate.</strong> Clear a field and save: the
+            handle row and its cached stats are deleted, not flagged.
+          </li>
+          <li>
+            <strong>What I can't promise.</strong> I run the server, and any
+            operator can in principle read what their own server processes — so
+            "even the admin can't see it" would be a lie, and you should
+            distrust any site that claims it. What's true is that it isn't
+            stored readably, it's one click from deletion, and
+            <a href="https://github.com/Dd1235/Cosine" target="_blank" rel="noopener">the code is public</a>
+            if you'd rather check than take my word.
+          </li>
+        </ul>
+      </details>
 
       <div id="platform-cards" class="platform-cards"></div>
 

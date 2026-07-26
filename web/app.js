@@ -46,6 +46,7 @@ const LIBRARY_COMMANDS = {
 
 const compareEl = document.getElementById("compare-results");
 const judgeRow = document.getElementById("judge-row");
+const shuffleBtn = document.getElementById("shuffle-btn");
 const judgeClearBtn = document.getElementById("judge-clear");
 const latencySummaryEl = document.getElementById("latency-summary");
 // The compare view is a fixed pair — renderCompare's delta badges are pairwise.
@@ -75,6 +76,7 @@ let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let compareMode = false;  // entered with :compare, left by any other query
+let activeShuffle = null; // seed for the current browse order; null = corpus order
 let bootNeedsAuth = false; // restored state that only means something signed in
 let currentSearchId = null; // ties outcome beacons to the search that produced them
 let currentRankerAnswered = "";
@@ -211,6 +213,12 @@ input.addEventListener("keydown", (e) => {
 
 logoutBtn.addEventListener("click", async () => {
   try { await fetch("/api/auth/logout", { method: "POST" }); } catch (_e) {}
+  // The profile page caches its whole response — handles included — under this
+  // key so revisits paint instantly. It used to be cleared only when
+  // /profile.html next loaded while signed out, so logging out from here left
+  // someone's linked usernames sitting in localStorage on a shared machine.
+  // Duplicated rather than imported: these two pages share no module.
+  try { localStorage.removeItem("algolens_profile_v1"); } catch (_e) {}
   currentUser = null;
   applyAuthState();
   clearPatternFilter({ reissue: false });
@@ -299,6 +307,14 @@ judgeRow.querySelectorAll(".judge-chip[data-platform]").forEach((chip) => {
 });
 judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 
+// Shuffle only exists on a browse — there's nothing to shuffle in a ranked
+// search, where the order IS the answer.
+shuffleBtn.addEventListener("click", () => {
+  activeShuffle = Math.floor(Math.random() * 1e9);
+  currentOffset = 0;
+  runBrowse({ append: false });
+});
+
 // Says what's narrowing the current view, so an empty or short list explains
 // itself instead of looking broken.
 function activeFacets() {
@@ -306,6 +322,14 @@ function activeFacets() {
   if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
   return bits;
+}
+
+// Browsing = an empty box with a filter on. That's the only state where a
+// shuffle means anything.
+function syncShuffleControl() {
+  const browsing = !input.value.trim() && (activePattern || activePlatforms.size > 0);
+  shuffleBtn.classList.toggle("hidden", !browsing);
+  shuffleBtn.classList.toggle("active", browsing && activeShuffle !== null);
 }
 
 function syncJudgeControls() {
@@ -323,6 +347,7 @@ function syncJudgeControls() {
   // four filters someone applied.
   judgeRow.classList.toggle("all-on", unfiltered);
   judgeClearBtn.classList.toggle("hidden", unfiltered);
+  syncShuffleControl();
 }
 
 function applyMode() {
@@ -347,6 +372,9 @@ async function runSearch(rawQuery, { append = false } = {}) {
     if (!append) currentOffset = 0;
     return runBrowse({ append });
   }
+  // A real query re-ranks, so any shuffled order is retired with it.
+  activeShuffle = null;
+  syncShuffleControl();
   if (!q) {
     setStatus("");
     resultsEl.innerHTML = "";
@@ -485,6 +513,7 @@ function renderSingle(data, q, append) {
 // and the status line says "browsing" rather than quoting a query nobody typed.
 async function runBrowse({ append = false } = {}) {
   const issuedAt = ++lastQueryAt;
+  syncShuffleControl();
   hideFeedback();
   currentSearchId = null;
   currentRankerAnswered = "";
@@ -496,7 +525,8 @@ async function runBrowse({ append = false } = {}) {
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}`;
+  const shuffleParam = activeShuffle === null ? "" : `&shuffle=${activeShuffle}`;
+  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}${shuffleParam}`;
 
   let data;
   try {
@@ -522,7 +552,15 @@ async function runBrowse({ append = false } = {}) {
   }
   renderHitsList(resultsEl, hits, { append, startIndex: currentOffset, unranked: true });
   const shown = currentOffset + hits.length;
-  setStatus(`browsing ${label} · ${shown} of ${currentTotal}`);
+  // Don't sell a shuffle the pool can't deliver. Most technique labels are
+  // small — the median canonical label covers 8 problems — so past a certain
+  // point "random" hands back the same problems and pretending otherwise is
+  // the difference between a useful feature and a lie.
+  const thin = activeShuffle !== null && currentTotal > 0 && currentTotal <= 10
+    ? ` · only ${currentTotal} match, so a shuffle won't vary much`
+    : "";
+  const order = activeShuffle === null ? "" : " · shuffled";
+  setStatus(`browsing ${label} · ${shown} of ${currentTotal}${order}${thin}`);
   updateLoadMore();
 }
 
@@ -724,6 +762,7 @@ function syncUrl() {
   if (activePattern) p.set("pattern", activePattern);
   if (activePlatforms.size) p.set("platform", [...activePlatforms].join(","));
   if (activeRanker) p.set("ranker", activeRanker);
+  if (activeShuffle !== null) p.set("shuffle", String(activeShuffle));
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
   const qs = p.toString();
   const next = location.pathname + (qs ? `?${qs}` : "") + location.hash;
@@ -790,6 +829,19 @@ SEARCH — pick a mode next to the box
 
   Community names expand on their own: type "aliens trick" and the status
   line shows "+wqs binary search" — you get the results and the real name.
+
+TECHNIQUES
+  /patterns.html is the vocabulary — all 165 technique labels
+  with counts, filterable. Type "dp" there and you get the whole
+  family: digit-dp, tree-dp, slope-trick, state-compression.
+  Click any one to browse the problems that carry it. Useful if
+  your exposure stops at one sheet and you don't know what to
+  even search for.
+
+BROWSE
+  a filter with no query lists everything it selects, and
+  "⤨ shuffle" draws that set in a random order. Most labels are
+  small, so it says when the pool is too thin to vary.
 
 PATTERNS
   every expanded result lists technique labels — click one to
@@ -1274,6 +1326,8 @@ if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
 populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+const bootShuffle = Number.parseInt(bootParams.get("shuffle"), 10);
+if (Number.isFinite(bootShuffle)) activeShuffle = bootShuffle;
 const bootFilter = (bootParams.get("filter") || "").trim().toLowerCase();
 if (["done", "notdone"].includes(bootFilter)) {
   currentFilter = bootFilter;

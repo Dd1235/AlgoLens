@@ -173,6 +173,37 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
     assert.equal(ids.size, 80, "browse pages must not overlap");
   }
 
+  // Shuffle: same seed is stable, different seeds reorder, and neither changes
+  // which problems are in the set.
+  {
+    const a = await get("q=&k=10&pattern=greedy&shuffle=1");
+    const b = await get("q=&k=10&pattern=greedy&shuffle=1");
+    const c = await get("q=&k=10&pattern=greedy&shuffle=2");
+    const plain = await get("q=&k=10&pattern=greedy");
+    const ids = (d) => d.hits.map((h) => h.problem.id);
+    assert.deepEqual(ids(a), ids(b), "one seed must give one order");
+    assert.notDeepEqual(ids(a), ids(c), "a different seed must reorder");
+    assert.notDeepEqual(ids(a), ids(plain), "shuffled must differ from corpus order");
+    assert.equal(a.total, plain.total, "shuffling must not change the set size");
+    assert.equal(a.shuffled, true);
+    assert.equal(plain.shuffled, undefined);
+  }
+
+  // Paging a shuffled browse stays disjoint — the reason the seed exists.
+  {
+    const a = await get("q=&k=40&offset=0&pattern=greedy&shuffle=9");
+    const b = await get("q=&k=40&offset=40&pattern=greedy&shuffle=9");
+    const ids = new Set([...a.hits, ...b.hits].map((h) => h.problem.id));
+    assert.equal(ids.size, 80, "shuffled pages must not repeat a problem");
+  }
+
+  // A garbage seed is ignored rather than 400ing.
+  {
+    const d = await get("q=&k=5&pattern=greedy&shuffle=abc");
+    assert.equal(d.shuffled, undefined);
+    assert.equal(d.total, 200);
+  }
+
   // No query and no filter is still nothing — browse needs something to browse.
   {
     const d = await get("q=&k=10");
