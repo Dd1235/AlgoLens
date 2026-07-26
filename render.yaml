@@ -43,6 +43,12 @@ services:
         sync: false
       - key: JWT_SECRET
         generateValue: true
+      # Encrypts linked judge handles and their cached stats. generateValue
+      # gives 32 random bytes that live in Render and never touch Neon — that
+      # split is the whole point: a database copy is ciphertext without it.
+      # Changing this value orphans existing rows, so rotate deliberately.
+      - key: HANDLE_KEY
+        generateValue: true
       # Default ranker stays bm25 (best MRR on the bench); dense + hybrid are
       # registered and reachable per-request via ?ranker=. Flip to hybrid here
       # if/when the bench says so. gRPC ranker stays off in v1.
