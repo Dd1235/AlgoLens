@@ -399,9 +399,6 @@ html[data-theme="light"] .theme-toggle {
   font-weight: 400;
 }
 
-.shuffle-chip { margin-left: 0.55rem; }
-.shuffle-chip.hidden { display: none !important; }
-
 .judge-chip.judge-clear {
   color: var(--text-dim);
   border-style: dashed;

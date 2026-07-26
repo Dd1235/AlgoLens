@@ -82,7 +82,7 @@ or wording, not ranking — that turned out to be the pattern.
 | Clicking a pattern chip could show 0 results | A filter with no query now browses that label instead of searching within your last one — `line-sweep` shows all 40, not the 0 that matched "cycle" |
 | Should a pattern filter survive a new query? | No — measured it: carrying a label into a new query dead-ends in 9 of 25 cases, a judge in 0 of 20. Labels drop when you type, judges stay |
 | "no section on what patterns even exist — I only know Striver's sheet" | Searches now name the technique family above the results, and the patterns page is filterable and out of the dev-tools nav |
-| "pick topics + difficulty, get 3 random problems" | Shipped the half the data supports: shuffle on any browse. The difficulty half can't work — 16% of the corpus has no difficulty and a band leaves 1-3 candidates per topic |
+| "pick topics + difficulty, get 3 random problems" | Not shipped. The difficulty half can't work — 16% of the corpus has no difficulty and a band leaves 1-3 candidates per topic. A shuffle was tried and reverted: one label at a time is too narrow to be worth the chrome |
 
 ## Measured
 
