@@ -47,6 +47,7 @@ const LIBRARY_COMMANDS = {
 const compareEl = document.getElementById("compare-results");
 const judgeRow = document.getElementById("judge-row");
 const techniquesEl = document.getElementById("techniques");
+const shuffleBtn = document.getElementById("shuffle-btn");
 const judgeClearBtn = document.getElementById("judge-clear");
 const latencySummaryEl = document.getElementById("latency-summary");
 // The compare view is a fixed pair — renderCompare's delta badges are pairwise.
@@ -76,6 +77,7 @@ let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let compareMode = false;  // entered with :compare, left by any other query
+let activeShuffle = null; // seed for the current browse order; null = corpus order
 let bootNeedsAuth = false; // restored state that only means something signed in
 let currentSearchId = null; // ties outcome beacons to the search that produced them
 let currentRankerAnswered = "";
@@ -300,6 +302,14 @@ judgeRow.querySelectorAll(".judge-chip[data-platform]").forEach((chip) => {
 });
 judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 
+// Shuffle only exists on a browse — there's nothing to shuffle in a ranked
+// search, where the order IS the answer.
+shuffleBtn.addEventListener("click", () => {
+  activeShuffle = Math.floor(Math.random() * 1e9);
+  currentOffset = 0;
+  runBrowse({ append: false });
+});
+
 // Says what's narrowing the current view, so an empty or short list explains
 // itself instead of looking broken.
 function activeFacets() {
@@ -307,6 +317,14 @@ function activeFacets() {
   if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
   return bits;
+}
+
+// Browsing = an empty box with a filter on. That's the only state where a
+// shuffle means anything.
+function syncShuffleControl() {
+  const browsing = !input.value.trim() && (activePattern || activePlatforms.size > 0);
+  shuffleBtn.classList.toggle("hidden", !browsing);
+  shuffleBtn.classList.toggle("active", browsing && activeShuffle !== null);
 }
 
 function syncJudgeControls() {
@@ -324,6 +342,7 @@ function syncJudgeControls() {
   // four filters someone applied.
   judgeRow.classList.toggle("all-on", unfiltered);
   judgeClearBtn.classList.toggle("hidden", unfiltered);
+  syncShuffleControl();
 }
 
 function applyMode() {
@@ -348,6 +367,9 @@ async function runSearch(rawQuery, { append = false } = {}) {
     if (!append) currentOffset = 0;
     return runBrowse({ append });
   }
+  // A real query re-ranks, so any shuffled order is retired with it.
+  activeShuffle = null;
+  syncShuffleControl();
   if (!q) {
     setStatus("");
     resultsEl.innerHTML = "";
@@ -488,6 +510,7 @@ function renderSingle(data, q, append) {
 // and the status line says "browsing" rather than quoting a query nobody typed.
 async function runBrowse({ append = false } = {}) {
   const issuedAt = ++lastQueryAt;
+  syncShuffleControl();
   hideFeedback();
   renderTechniques(null);
   currentSearchId = null;
@@ -500,7 +523,8 @@ async function runBrowse({ append = false } = {}) {
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}`;
+  const shuffleParam = activeShuffle === null ? "" : `&shuffle=${activeShuffle}`;
+  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}${shuffleParam}`;
 
   let data;
   try {
@@ -526,7 +550,15 @@ async function runBrowse({ append = false } = {}) {
   }
   renderHitsList(resultsEl, hits, { append, startIndex: currentOffset, unranked: true });
   const shown = currentOffset + hits.length;
-  setStatus(`browsing ${label} · ${shown} of ${currentTotal}`);
+  // Don't sell a shuffle the pool can't deliver. Most technique labels are
+  // small — the median canonical label covers 8 problems — so past a certain
+  // point "random" hands back the same problems and pretending otherwise is
+  // the difference between a useful feature and a lie.
+  const thin = activeShuffle !== null && currentTotal > 0 && currentTotal <= 10
+    ? ` · only ${currentTotal} match, so a shuffle won't vary much`
+    : "";
+  const order = activeShuffle === null ? "" : " · shuffled";
+  setStatus(`browsing ${label} · ${shown} of ${currentTotal}${order}${thin}`);
   updateLoadMore();
 }
 
