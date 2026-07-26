@@ -61,20 +61,6 @@
             <option value="bm25">keyword · bm25</option>
           </select>
         </span>
-        <span class="filter-wrap">
-          <select
-            id="judge-select"
-            class="filter-select"
-            aria-label="filter results by judge"
-            title="show problems from one judge · the [lc] [cf] tags on results combine several"
-          >
-            <option value="">all judges</option>
-            <option value="leetcode">leetcode</option>
-            <option value="cses">cses</option>
-            <option value="codeforces">codeforces</option>
-            <option value="atcoder">atcoder</option>
-          </select>
-        </span>
         <span id="filter-wrap" class="filter-wrap" hidden>
           <select
             id="filter-select"
@@ -111,10 +97,14 @@
         </span>
       </div>
       <div class="mode-row">
-        <label class="mode-toggle" title="run the same query in keyword and meaning mode, side by side">
-          <input id="compare-toggle" type="checkbox" />
-          <span>compare keyword / meaning</span>
-        </label>
+        <span class="judge-row" id="judge-row" role="group" aria-label="filter results by judge">
+          <span class="judge-label">judges:</span>
+          <button type="button" class="judge-chip" data-platform="leetcode" aria-pressed="false" title="include LeetCode">lc</button>
+          <button type="button" class="judge-chip" data-platform="cses" aria-pressed="false" title="include CSES">cses</button>
+          <button type="button" class="judge-chip" data-platform="codeforces" aria-pressed="false" title="include Codeforces">cf</button>
+          <button type="button" class="judge-chip" data-platform="atcoder" aria-pressed="false" title="include AtCoder">atc</button>
+          <button type="button" class="judge-chip judge-clear hidden" id="judge-clear" title="show every judge again">all ✕</button>
+        </span>
         <span id="latency-summary" class="latency-summary"></span>
       </div>
       <p id="status" class="status"></p>

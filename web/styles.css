@@ -342,17 +342,48 @@ html[data-theme="light"] .theme-toggle {
   flex-wrap: wrap;
 }
 
-.mode-toggle {
+/* Judge chips: a toggle set, not a picker — any combination is valid, so they
+   read as independent switches rather than radio buttons. */
+.judge-row {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.judge-label {
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+  margin-right: 0.1rem;
+}
+
+.judge-chip {
+  font: inherit;
+  font-family: var(--mono);
+  color: var(--text-muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.05rem 0.45rem;
   cursor: pointer;
   letter-spacing: 0.02em;
 }
 
-.mode-toggle input {
-  accent-color: var(--accent);
-  cursor: pointer;
+.judge-chip:hover,
+.judge-chip:focus-visible {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.judge-chip.active {
+  color: var(--accent);
+  border-color: var(--accent-soft);
+  background: var(--accent-wash, rgba(255, 255, 255, 0.03));
+}
+
+.judge-chip.judge-clear {
+  color: var(--text-dim);
+  border-style: dashed;
 }
 
 .latency-summary {

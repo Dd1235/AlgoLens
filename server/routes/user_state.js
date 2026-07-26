@@ -107,6 +107,16 @@ function createUserStateRouter({ problems } = {}) {
     if (type !== "bookmarked" && type !== "done" && type !== "all") {
       return res.status(400).json({ error: "bad_type" });
     }
+    // The saved lists take the same facets as search, so a view like "my
+    // bookmarked AtCoder problems that aren't done yet" is expressible. Both
+    // are applied while hydrating, not in SQL — problem_id is a free-form
+    // string with no join to the corpus.
+    const wanted = new Set(
+      (req.query.platform || "").toString().toLowerCase().split(",").map((x) => x.trim()).filter(Boolean)
+    );
+    const doneFilter = ["done", "notdone"].includes((req.query.filter || "").toString().toLowerCase())
+      ? req.query.filter.toString().toLowerCase()
+      : "all";
     let where = "user_id = $1";
     if (type === "done") where += " AND done";
     if (type === "bookmarked") where += " AND bookmarked";
@@ -123,6 +133,9 @@ function createUserStateRouter({ problems } = {}) {
       for (const row of result.rows) {
         const problem = problemsById.get(row.problem_id);
         if (!problem) continue; // dangling row from a removed corpus entry
+        if (wanted.size && !wanted.has(problem.platform)) continue;
+        if (doneFilter === "done" && !row.done) continue;
+        if (doneFilter === "notdone" && row.done) continue;
         items.push({
           problem,
           done: row.done,
@@ -130,7 +143,13 @@ function createUserStateRouter({ problems } = {}) {
           markedAt: (row.bookmarked_at || row.done_at || row.updated_at || new Date()).toISOString(),
         });
       }
-      res.json({ type, total: items.length, items });
+      res.json({
+        type,
+        total: items.length,
+        platform: wanted.size ? [...wanted].sort() : undefined,
+        filter: doneFilter,
+        items,
+      });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });
     }
