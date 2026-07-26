@@ -15,7 +15,8 @@
   "patterns": [
     "segment-tree",
     "dynamic-line-container",
-    "offline-queries"
+    "offline-queries",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "segment-tree": 0.95,
       "dynamic-line-container": 0.9,
-      "offline-queries": 0.7
+      "offline-queries": 0.7,
+      "line-sweep": 0.9
     }
   }
 }

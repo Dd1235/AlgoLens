@@ -22,7 +22,8 @@
   "patterns": [
     "binary-search-answer",
     "segment-tree",
-    "coordinate-compression"
+    "coordinate-compression",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.9,
       "segment-tree": 0.85,
-      "coordinate-compression": 0.8
+      "coordinate-compression": 0.8,
+      "line-sweep": 0.9
     }
   }
 }

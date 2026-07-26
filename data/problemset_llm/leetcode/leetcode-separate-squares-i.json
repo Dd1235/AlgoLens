@@ -19,7 +19,8 @@
   "patterns": [
     "binary-search-answer",
     "prefix-sum",
-    "binary-search"
+    "binary-search",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.92,
       "prefix-sum": 0.84,
-      "binary-search": 0.9
+      "binary-search": 0.9,
+      "line-sweep": 0.9
     }
   }
 }

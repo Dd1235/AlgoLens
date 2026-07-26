@@ -21,7 +21,8 @@
   "patterns": [
     "interval-union",
     "ordered-set",
-    "segment-tree"
+    "segment-tree",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "interval-union": 0.95,
       "ordered-set": 0.9,
-      "segment-tree": 0.85
+      "segment-tree": 0.85,
+      "line-sweep": 0.9
     }
   }
 }

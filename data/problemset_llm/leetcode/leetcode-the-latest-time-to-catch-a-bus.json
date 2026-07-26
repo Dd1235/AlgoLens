@@ -21,7 +21,8 @@
   "patterns": [
     "sorting",
     "greedy",
-    "binary-search-answer"
+    "binary-search-answer",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "sorting": 0.95,
       "greedy": 0.9,
-      "binary-search-answer": 0.85
+      "binary-search-answer": 0.85,
+      "line-sweep": 0.9
     }
   }
 }

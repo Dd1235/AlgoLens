@@ -23,7 +23,8 @@
     "ordered-set",
     "segment-tree",
     "binary-search",
-    "lazy-propagation"
+    "lazy-propagation",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
       "ordered-set": 0.9,
       "segment-tree": 0.85,
       "binary-search": 0.8,
-      "lazy-propagation": 0.9
+      "lazy-propagation": 0.9,
+      "line-sweep": 0.9
     }
   }
 }

@@ -22,7 +22,8 @@
   "patterns": [
     "coordinate-compression",
     "sorting",
-    "greedy"
+    "greedy",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "coordinate-compression": 0.85,
       "sorting": 0.9,
-      "greedy": 0.8
+      "greedy": 0.8,
+      "line-sweep": 0.9
     }
   }
 }

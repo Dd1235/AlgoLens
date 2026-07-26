@@ -15,7 +15,8 @@
   "patterns": [
     "coordinate-compression",
     "sorting",
-    "dynamic-programming"
+    "dynamic-programming",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "coordinate-compression": 0.9,
       "sorting": 0.95,
-      "dynamic-programming": 0.9
+      "dynamic-programming": 0.9,
+      "line-sweep": 0.9
     }
   },
   "difficulty": 1379

@@ -22,7 +22,8 @@
     "shortest-path",
     "event-simulation",
     "continuous-movement",
-    "collision-detection"
+    "collision-detection",
+    "line-sweep"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "shortest-path": 0.9,
       "event-simulation": 0.85,
       "continuous-movement": 0.8,
-      "collision-detection": 0.8
+      "collision-detection": 0.8,
+      "line-sweep": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"
