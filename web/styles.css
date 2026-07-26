@@ -377,10 +377,15 @@ html[data-theme="light"] .theme-toggle {
   border-color: var(--border-strong);
 }
 
+/* The only signal that a judge is on — there used to be a redundant
+   "judge: lc ✕" pill under the status line carrying it too. --accent-wash was
+   never defined, so this fell through to a 3% white wash: invisible on dark,
+   meaningless on light. */
 .judge-chip.active {
   color: var(--accent);
-  border-color: var(--accent-soft);
-  background: var(--accent-wash, rgba(255, 255, 255, 0.03));
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 600;
 }
 
 .judge-chip.judge-clear {
