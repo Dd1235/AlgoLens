@@ -309,12 +309,20 @@ function activeFacets() {
 }
 
 function syncJudgeControls() {
+  // An empty set means "every judge" — the server collapses none and all-four
+  // to the same no-filter query. So the default has to render every chip as on:
+  // showing them all off said "nothing is included", which is a state this
+  // filter cannot actually reach and which implies an empty result set.
+  const unfiltered = activePlatforms.size === 0;
   judgeRow.querySelectorAll(".judge-chip[data-platform]").forEach((chip) => {
-    const on = activePlatforms.has(chip.dataset.platform);
+    const on = unfiltered || activePlatforms.has(chip.dataset.platform);
     chip.classList.toggle("active", on);
     chip.setAttribute("aria-pressed", String(on));
   });
-  judgeClearBtn.classList.toggle("hidden", activePlatforms.size === 0);
+  // Quieter styling while it's the default, so four lit chips don't read as
+  // four filters someone applied.
+  judgeRow.classList.toggle("all-on", unfiltered);
+  judgeClearBtn.classList.toggle("hidden", unfiltered);
 }
 
 function applyMode() {
@@ -737,8 +745,17 @@ function updatePatternPill() {
 // click to narrow, click again to drop it, several at once to union them. Same
 // post-rank filter as pattern chips, so it composes with them for free.
 function togglePlatformFilter(platform) {
-  if (activePlatforms.has(platform)) activePlatforms.delete(platform);
-  else activePlatforms.add(platform);
+  if (activePlatforms.size === 0) {
+    // Everything was included, so clicking one judge means "just this one" —
+    // not "all except this one", which is what a plain checkbox would do and
+    // is almost never what someone clicking a judge wants.
+    activePlatforms.add(platform);
+  } else if (activePlatforms.has(platform)) {
+    // Turning off the last active judge lands back on "all", never on none.
+    activePlatforms.delete(platform);
+  } else {
+    activePlatforms.add(platform);
+  }
   track("platform_selected", { platform, active: [...activePlatforms].join(",") });
   syncJudgeControls();
   currentOffset = 0;

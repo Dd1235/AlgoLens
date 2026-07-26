@@ -388,6 +388,14 @@ html[data-theme="light"] .theme-toggle {
   font-weight: 600;
 }
 
+/* All four on because nobody has filtered yet — true, but it shouldn't shout
+   like a deliberate selection does. */
+.judge-row.all-on .judge-chip.active {
+  border-color: var(--border-strong);
+  background: none;
+  font-weight: 400;
+}
+
 .judge-chip.judge-clear {
   color: var(--text-dim);
   border-style: dashed;
