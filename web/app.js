@@ -40,10 +40,16 @@ const latencySummaryEl = document.getElementById("latency-summary");
 const COMPARE_RANKERS = ["bm25", "dense"];
 
 const DEBOUNCE_MS = 200;
+// How long a search may take before we admit to it. Under this, the answer
+// lands first and the user never sees a "searching" flash; over it (a sleeping
+// free-tier instance takes ~a minute to wake) they get told what's happening.
+const SEARCHING_AFTER_MS = 400;
 const TOP_K = 20;
 let debounceTimer = null;
 let lastQueryAt = 0;
 let typeTimer = null;
+let searchingTimer = null;
+let inFlight = null; // aborts the request a newer keystroke just superseded
 let currentQuery = "";
 let currentOffset = 0;
 let currentTotal = 0;
@@ -301,7 +307,16 @@ async function runSearch(rawQuery, { append = false } = {}) {
   }
 
   const issuedAt = ++lastQueryAt;
-  setStatus(`searching: "${q}"`);
+  // Deliberately not setStatus(): that runs the typewriter, so every keystroke
+  // animated `searching: "..."` one character at a time and then the result
+  // line restarted the animation on top of it. Two typewriters racing per
+  // keystroke read as noise. This waits, and prints plainly if it fires.
+  clearTimeout(searchingTimer);
+  searchingTimer = setTimeout(() => {
+    if (issuedAt !== lastQueryAt) return;
+    clearTimeout(typeTimer);
+    statusEl.textContent = `searching: "${q}"`;
+  }, SEARCHING_AFTER_MS);
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const rankerParam = activeRanker ? `&ranker=${encodeURIComponent(activeRanker)}` : "";
@@ -310,10 +325,14 @@ async function runSearch(rawQuery, { append = false } = {}) {
 
   let data;
   try {
-    const res = await fetch(url);
+    if (inFlight) inFlight.abort();
+    inFlight = new AbortController();
+    const res = await fetch(url, { signal: inFlight.signal });
     data = await res.json();
   } catch (err) {
-    if (issuedAt !== lastQueryAt) return;
+    // A superseded request is the normal case while typing, not an error.
+    if (err.name === "AbortError" || issuedAt !== lastQueryAt) return;
+    clearTimeout(searchingTimer);
     setStatus(`error: ${err.message || "search failed"}`);
     return;
   }
@@ -680,17 +699,28 @@ async function runCompare(q) {
   const issuedAt = ++lastQueryAt;
   hideFeedback();
   if (currentUser) setLibPath(`~/compare "${q.length > 24 ? q.slice(0, 24) + "…" : q}"`);
-  setStatus(`comparing: "${q}"`);
+  // Same deal as runSearch: compare runs on every keystroke too, so announcing
+  // it up front animated a line nobody had time to read.
+  clearTimeout(searchingTimer);
+  searchingTimer = setTimeout(() => {
+    if (issuedAt !== lastQueryAt) return;
+    clearTimeout(typeTimer);
+    statusEl.textContent = `comparing: "${q}"`;
+  }, SEARCHING_AFTER_MS);
   hideLoadMore();
 
   let data;
   try {
+    if (inFlight) inFlight.abort();
+    inFlight = new AbortController();
     const res = await fetch(
-      `/api/compare?q=${encodeURIComponent(q)}&k=10&rankers=${COMPARE_RANKERS.join(",")}`
+      `/api/compare?q=${encodeURIComponent(q)}&k=10&rankers=${COMPARE_RANKERS.join(",")}`,
+      { signal: inFlight.signal }
     );
     data = await res.json();
   } catch (err) {
-    if (issuedAt !== lastQueryAt) return;
+    if (err.name === "AbortError" || issuedAt !== lastQueryAt) return;
+    clearTimeout(searchingTimer);
     setStatus(`error: ${err.message || "compare failed"}`);
     return;
   }
@@ -737,6 +767,7 @@ function renderCompare(data, q) {
 
 function setStatus(text) {
   clearTimeout(typeTimer);
+  clearTimeout(searchingTimer);
   // The cursor shows only while the line is typing itself out. A blinking
   // block sitting under the box at rest reads as "type here" — a real user
   // lost minutes to exactly that.
