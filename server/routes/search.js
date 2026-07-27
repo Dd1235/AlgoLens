@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
+const { tokenize } = require("../search/tokenize");
 const { logEvent } = require("../telemetry");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
@@ -97,6 +98,24 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
   // gRPC leg serialize a nonsense k over the wire.
   const FULL_PAGE_SIZE = problems.length;
   const KNOWN_PLATFORMS = new Set(problems.map((p) => p.platform));
+  // Every term that appears anywhere in the corpus. A query whose words are all
+  // absent from this set cannot match anything, and saying so beats what the
+  // rankers do on their own: BM25 returns nothing (fine), but dense compares
+  // meaning-vectors and every document has *some* cosine similarity to any
+  // input, so it confidently hands back its least-bad guess. Someone typed a
+  // person's name and got problems back.
+  //
+  // A similarity threshold cannot fix that — measured on the live corpus, the
+  // worst real query ("cheese", 0.314) scores below the best gibberish
+  // ("qqqqq", 0.452), so any cutoff that blocks junk also blocks cheese.
+  // Vocabulary separates them cleanly instead: real queries have at least one
+  // known word, nonsense has none.
+  const VOCABULARY = new Set();
+  for (const p of problems) {
+    for (const term of tokenize([p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" "))) {
+      VOCABULARY.add(term);
+    }
+  }
 
   router.get("/patterns", (_req, res) => {
     res.json(patternsPayload);
@@ -117,6 +136,24 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const exp = expandQuery(q);
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
+
+    // Checked against the expanded query, so an alias that resolves to real
+    // vocabulary ("aliens trick" -> wqs binary search) still counts as known.
+    const queryTerms = q.trim() ? tokenize(exp.query) : [];
+    const unknownTerms = queryTerms.filter((t) => !VOCABULARY.has(t));
+    if (queryTerms.length && unknownTerms.length === queryTerms.length) {
+      return res.json({
+        query: q,
+        ranker,
+        latencyMs: 0,
+        offset,
+        k,
+        total: 0,
+        filter,
+        unknownTerms: [...new Set(unknownTerms)].slice(0, 5),
+        hits: [],
+      });
+    }
 
     try {
       // Load the user's done/bookmarked sets once. Anonymous users skip this
