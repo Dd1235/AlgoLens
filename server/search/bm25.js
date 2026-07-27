@@ -1,4 +1,4 @@
-const { tokenize } = require("./tokenize");
+const { tokenize, normalizeNumbers } = require("./tokenize");
 
 function problemText(p) {
   return [p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" ");
@@ -50,14 +50,19 @@ class Bm25Index {
     });
 
     problems.forEach((p, docId) => {
-      const key = tokenize(p.title || "").join(" ");
-      if (!key) return;
-      let set = this.byTitle.get(key);
-      if (!set) {
-        set = new Set();
-        this.byTitle.set(key, set);
+      const words = normalizeNumbers(tokenize(p.title || ""));
+      if (!words.length) return;
+      // Two keys per title: spaced and unspaced. LeetCode writes "3Sum" as one
+      // word, which tokenizes to a single term, so a user typing "3 sum" would
+      // otherwise never match it. Unspacing both sides makes the two forms meet.
+      for (const key of new Set([words.join(" "), words.join("")])) {
+        let set = this.byTitle.get(key);
+        if (!set) {
+          set = new Set();
+          this.byTitle.set(key, set);
+        }
+        set.add(docId);
       }
-      set.add(docId);
     });
 
     this.avgdl = this.N > 0 ? totalLen / this.N : 0;
@@ -85,11 +90,27 @@ class Bm25Index {
   // match wins outright rather than merely nudging.
   static TITLE_BONUS = 1000;
 
-  search(query, k = 10, offset = 0) {
+  // `opts.raw` is the user's query before alias expansion. The known-item
+  // check needs it: expansion appends words ("2 sum" -> "2 sum two"), and an
+  // appended word means the query is no longer equal to any title, so the
+  // exact-match bonus would never fire on an expanded query. Optional, so the
+  // other rankers behind this interface are unaffected.
+  search(query, k = 10, offset = 0, opts = {}) {
     const queryTokens = tokenize(query);
     if (queryTokens.length === 0) return { hits: [], total: 0 };
-    const titleKey = queryTokens.join(" ");
-    const exactTitle = this.byTitle.get(titleKey);
+    // Digits normalized on both sides, so "2 sum" is a known-item hit for the
+    // problem titled "Two Sum" the same way "two sum" is.
+    // Four candidate keys, because digits are ambiguous in titles. "2 sum"
+    // needs the digit turned into a word to reach "Two Sum"; "3 sum" needs it
+    // left alone to reach "3Sum", which is a single token. Trying both forms,
+    // spaced and unspaced, covers every combination and costs four Map lookups.
+    const rawTokens = tokenize(opts.raw || query);
+    const variants = [rawTokens, normalizeNumbers(rawTokens)];
+    let exactTitle = null;
+    for (const words of variants) {
+      exactTitle = this.byTitle.get(words.join(" ")) || this.byTitle.get(words.join(""));
+      if (exactTitle) break;
+    }
 
     const scoreByDoc = new Map();
     const matchedByDoc = new Map();

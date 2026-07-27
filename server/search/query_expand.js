@@ -9,6 +9,8 @@ const path = require("path");
 // detected, so every ranker (lexical, dense, gRPC) sees the searchable form.
 // Append-only: the original tokens stay, so existing matches are preserved.
 
+const { NUMBER_WORDS } = require("./tokenize");
+
 const TAXONOMY = JSON.parse(
   fs.readFileSync(path.join(__dirname, "..", "..", "data", "pattern_taxonomy.json"), "utf8")
 );
@@ -19,14 +21,6 @@ const MAX_QUERY_LENGTH = 300;
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 // Longest phrases first so "aliens trick" is consumed before "aliens" would be.
-// Digit/word equivalences the taxonomy can't express, because they aren't
-// technique names. "2 sum" found Two Sum nowhere at all: the tokenizer splits
-// on non-alphanumerics, so "2" and "two" are unrelated terms and no problem
-// title contains the digit. Deliberately tiny and append-only — "k" is NOT
-// here, since it means something specific in this domain and expanding it
-// would fire on half the corpus.
-const NUMBER_WORDS = { 2: "two", 3: "three", 4: "four", "1": "one" };
-
 const RULES = Object.entries(TAXONOMY.aliases || {})
   .map(([alias, canonical]) => {
     const aliasWords = alias.split("-");

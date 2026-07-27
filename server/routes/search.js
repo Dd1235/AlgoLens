@@ -34,9 +34,9 @@ function pickRanker(indexes, defaultRanker, req) {
   return defaultRanker;
 }
 
-async function timedSearch(index, q, k, offset = 0) {
+async function timedSearch(index, q, k, offset = 0, opts = {}) {
   const t = process.hrtime.bigint();
-  const result = await Promise.resolve(index.search(q, k, offset));
+  const result = await Promise.resolve(index.search(q, k, offset, opts));
   const latencyMs = Number(process.hrtime.bigint() - t) / 1e6;
   // Handle both old (array) and new ({ hits, total }) return shapes for backwards compat
   if (Array.isArray(result)) {
@@ -182,14 +182,14 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         total = browsed.length;
         hits = browsed.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
       } else if (!hasFilter) {
-        ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset));
+        ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset, { raw: q }));
       } else {
         // Need the full ranked list so filters + slice produce a stable
         // total and disjoint pages. The ranker materializes everything before
         // slicing internally, so this costs no extra scoring work. Pattern,
         // platform and done/notdone compose in the same pass; pattern and
         // platform work for anonymous users too.
-        const full = await timedSearch(index, exp.query, FULL_PAGE_SIZE, 0);
+        const full = await timedSearch(index, exp.query, FULL_PAGE_SIZE, 0, { raw: q });
         latencyMs = full.latencyMs;
         const filtered = full.hits.filter((h) => {
           if (pattern && !(h.problem.patterns || []).includes(pattern)) return false;
