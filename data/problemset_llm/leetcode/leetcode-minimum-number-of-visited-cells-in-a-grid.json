@@ -21,7 +21,9 @@
     "array",
     "graph",
     "bfs",
-    "queue"
+    "queue",
+    "union-find",
+    "monotonic-stack"
   ],
   "patterns": [
     "bfs",

@@ -17,7 +17,8 @@
     "array",
     "dynamic-programming",
     "binary-search",
-    "segment-tree"
+    "segment-tree",
+    "rolling-hash"
   ],
   "patterns": [
     "longest-increasing-subsequence",

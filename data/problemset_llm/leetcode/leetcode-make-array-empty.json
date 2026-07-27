@@ -20,7 +20,10 @@
     "array",
     "greedy",
     "sorting",
-    "queue"
+    "queue",
+    "fenwick-tree",
+    "segment-tree",
+    "ordered-set"
   ],
   "patterns": [
     "greedy",

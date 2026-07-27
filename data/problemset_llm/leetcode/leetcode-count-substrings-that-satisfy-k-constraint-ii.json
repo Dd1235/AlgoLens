@@ -18,7 +18,8 @@
     "array",
     "string",
     "prefix-sum",
-    "segment-tree"
+    "segment-tree",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

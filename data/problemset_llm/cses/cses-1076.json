@@ -11,7 +11,7 @@
     "array",
     "two-pointers",
     "heap",
-    "balanced-tree"
+    "ordered-set"
   ],
   "patterns": [
     "sliding-window",

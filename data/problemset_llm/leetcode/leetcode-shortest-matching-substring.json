@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "two-pointers",
-    "binary-search"
+    "binary-search",
+    "string-matching"
   ],
   "patterns": [
     "two-pointers",

@@ -14,7 +14,8 @@
   "statement": "Given an integer array, you may remove all occurrences of exactly one element once to maximize the maximum subarray sum of the resulting array. Return this maximum subarray sum.",
   "tags": [
     "array",
-    "dynamic-programming"
+    "dynamic-programming",
+    "segment-tree"
   ],
   "patterns": [
     "kadane",

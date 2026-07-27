@@ -19,7 +19,10 @@
   "tags": [
     "array",
     "prefix-sum",
-    "sliding-window"
+    "sliding-window",
+    "segment-tree",
+    "monotonic-stack",
+    "monotonic-queue"
   ],
   "patterns": [
     "binary-search-answer",

@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "sorting",
-    "two-pointers"
+    "two-pointers",
+    "sliding-window"
   ],
   "patterns": [
     "two-pointers",

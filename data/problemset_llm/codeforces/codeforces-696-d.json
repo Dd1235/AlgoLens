@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "dynamic-programming",
-    "automaton"
+    "automaton",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "aho-corasick",

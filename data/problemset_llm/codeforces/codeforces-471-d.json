@@ -13,7 +13,8 @@
   "statement": "Given two sequences representing heights of towers in two walls, count how many contiguous segments in the first wall can be transformed by adding a constant offset to match the second wall exactly.",
   "tags": [
     "string",
-    "array"
+    "array",
+    "suffix-array"
   ],
   "patterns": [
     "difference-array",

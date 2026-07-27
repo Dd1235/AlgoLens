@@ -15,7 +15,8 @@
   "tags": [
     "combinatorics",
     "dynamic-programming",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "fft"
   ],
   "patterns": [
     "dp-on-dag",

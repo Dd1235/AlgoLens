@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "prefix-sum",
-    "binary-search"
+    "binary-search",
+    "sliding-window"
   ],
   "patterns": [
     "prefix-sum",

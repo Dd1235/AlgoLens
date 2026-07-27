@@ -14,7 +14,8 @@
   "statement": "Given a text consisting of sentences separated by spaces, split it into the minimum number of fixed-length messages so that no sentence is broken across messages, and spaces between sentences can be omitted if they fall between messages.",
   "tags": [
     "string",
-    "greedy"
+    "greedy",
+    "expression-parsing"
   ],
   "patterns": [
     "greedy",

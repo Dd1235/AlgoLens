@@ -17,7 +17,8 @@
   "tags": [
     "math",
     "dynamic-programming",
-    "graph"
+    "graph",
+    "rolling-hash"
   ],
   "patterns": [
     "bfs",

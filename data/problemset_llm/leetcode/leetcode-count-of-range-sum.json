@@ -21,7 +21,8 @@
     "prefix-sum",
     "divide-and-conquer",
     "fenwick-tree",
-    "segment-tree"
+    "segment-tree",
+    "ordered-set"
   ],
   "patterns": [
     "prefix-sum",

@@ -19,12 +19,13 @@
     "design",
     "queue",
     "hash-map",
-    "binary-search"
+    "binary-search",
+    "ordered-set"
   ],
   "patterns": [
     "fifo-queue",
     "duplicate-detection",
-    "ordered-data-structure",
+    "ordered-set",
     "binary-search"
   ],
   "annotation": {
@@ -34,7 +35,7 @@
     "pattern_confidence": {
       "fifo-queue": 0.95,
       "duplicate-detection": 0.9,
-      "ordered-data-structure": 0.85,
+      "ordered-set": 0.85,
       "binary-search": 0.8
     }
   }

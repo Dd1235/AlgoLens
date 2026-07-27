@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "combinatorics"
+    "combinatorics",
+    "sliding-window"
   ],
   "patterns": [
     "prefix-sum",

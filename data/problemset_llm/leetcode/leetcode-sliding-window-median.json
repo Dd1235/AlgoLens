@@ -17,11 +17,11 @@
     "array",
     "sliding-window",
     "heap",
-    "balanced-tree"
+    "ordered-set"
   ],
   "patterns": [
     "two-heaps",
-    "balanced-binary-search-tree",
+    "ordered-set",
     "sliding-window"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777924066,
     "pattern_confidence": {
       "two-heaps": 0.98,
-      "balanced-binary-search-tree": 0.9,
+      "ordered-set": 0.9,
       "sliding-window": 0.95
     }
   }

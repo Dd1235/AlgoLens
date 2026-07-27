@@ -14,7 +14,8 @@
   "statement": "Given sorted prize positions on a line and a segment length k, select two segments of length k to maximize the total prizes covered by at least one segment.",
   "tags": [
     "array",
-    "binary-search"
+    "binary-search",
+    "sliding-window"
   ],
   "patterns": [
     "two-pointers",

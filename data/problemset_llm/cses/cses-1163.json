@@ -13,7 +13,6 @@
     "set"
   ],
   "patterns": [
-    "balanced-binary-search-tree",
     "ordered-set",
     "binary-search"
   ],
@@ -22,8 +21,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951339,
     "pattern_confidence": {
-      "balanced-binary-search-tree": 0.95,
-      "ordered-set": 0.9,
+      "ordered-set": 0.95,
       "binary-search": 0.7
     }
   }

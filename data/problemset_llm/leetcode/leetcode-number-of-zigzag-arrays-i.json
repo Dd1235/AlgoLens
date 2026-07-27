@@ -14,7 +14,8 @@
   "tags": [
     "dynamic-programming",
     "combinatorics",
-    "array"
+    "array",
+    "prefix-sum"
   ],
   "patterns": [
     "dynamic-programming",

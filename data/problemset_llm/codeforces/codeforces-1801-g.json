@@ -15,7 +15,8 @@
   "tags": [
     "string",
     "string-matching",
-    "data-structures"
+    "data-structures",
+    "suffix-array"
   ],
   "patterns": [
     "aho-corasick",

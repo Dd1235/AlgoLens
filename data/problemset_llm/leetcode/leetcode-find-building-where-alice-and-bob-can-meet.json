@@ -20,7 +20,9 @@
     "array",
     "graph",
     "binary-search",
-    "data-structure"
+    "data-structure",
+    "fenwick-tree",
+    "segment-tree"
   ],
   "patterns": [
     "binary-search-answer",

@@ -16,7 +16,9 @@
   "tags": [
     "array",
     "prefix-sum",
-    "rolling-hash"
+    "rolling-hash",
+    "fenwick-tree",
+    "segment-tree"
   ],
   "patterns": [
     "two-pointers",

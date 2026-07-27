@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "constructive-algorithm",
-    "math"
+    "math",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "constructive-algorithm",

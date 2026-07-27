@@ -17,7 +17,8 @@
     "array",
     "binary-search",
     "segment-tree",
-    "data-structure"
+    "data-structure",
+    "fenwick-tree"
   ],
   "patterns": [
     "binary-search-answer",

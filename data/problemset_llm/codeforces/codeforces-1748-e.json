@@ -20,7 +20,8 @@
     "array",
     "dynamic-programming",
     "divide-and-conquer",
-    "math"
+    "math",
+    "max-flow"
   ],
   "patterns": [
     "divide-and-conquer-dp",

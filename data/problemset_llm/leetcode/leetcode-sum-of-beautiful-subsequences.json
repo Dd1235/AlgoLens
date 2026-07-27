@@ -17,7 +17,8 @@
     "array",
     "math",
     "dynamic-programming",
-    "number-theory"
+    "number-theory",
+    "fenwick-tree"
   ],
   "patterns": [
     "dynamic-programming",

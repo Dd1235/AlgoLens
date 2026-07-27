@@ -19,7 +19,8 @@
     "tree",
     "graph",
     "dfs",
-    "string"
+    "string",
+    "topological-sort"
   ],
   "patterns": [
     "dfs",

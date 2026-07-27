@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "union-find",
-    "prefix-sum"
+    "prefix-sum",
+    "ordered-set"
   ],
   "patterns": [
     "union-find",

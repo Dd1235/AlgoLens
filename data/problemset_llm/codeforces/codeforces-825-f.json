@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "dynamic-programming",
-    "rolling-hash"
+    "rolling-hash",
+    "suffix-array"
   ],
   "patterns": [
     "dynamic-programming",

@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "array",
-    "dynamic-programming"
+    "dynamic-programming",
+    "suffix-array"
   ],
   "patterns": [
     "dynamic-programming",

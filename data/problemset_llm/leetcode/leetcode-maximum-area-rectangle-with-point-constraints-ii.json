@@ -19,7 +19,9 @@
     "geometry",
     "array",
     "sorting",
-    "binary-search"
+    "binary-search",
+    "fenwick-tree",
+    "segment-tree"
   ],
   "patterns": [
     "binary-search-answer",

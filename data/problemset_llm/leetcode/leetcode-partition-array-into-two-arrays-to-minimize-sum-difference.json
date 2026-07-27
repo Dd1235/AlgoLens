@@ -21,7 +21,8 @@
     "array",
     "bit-manipulation",
     "dynamic-programming",
-    "sorting"
+    "sorting",
+    "ordered-set"
   ],
   "patterns": [
     "bitmask-dp",

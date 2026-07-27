@@ -19,7 +19,8 @@
     "constructive-algorithm",
     "greedy",
     "two-pointers",
-    "sorting"
+    "sorting",
+    "bipartite-matching"
   ],
   "patterns": [
     "constructive-algorithm",

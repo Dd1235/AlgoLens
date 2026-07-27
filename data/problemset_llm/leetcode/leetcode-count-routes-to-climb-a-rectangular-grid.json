@@ -16,7 +16,8 @@
   "tags": [
     "grid",
     "dynamic-programming",
-    "geometry"
+    "geometry",
+    "prefix-sum"
   ],
   "patterns": [
     "dynamic-programming",

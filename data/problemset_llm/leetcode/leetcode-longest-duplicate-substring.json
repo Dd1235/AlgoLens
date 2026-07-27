@@ -19,7 +19,8 @@
     "string",
     "binary-search",
     "rolling-hash",
-    "suffix-array"
+    "suffix-array",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

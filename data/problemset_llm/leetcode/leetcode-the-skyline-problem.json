@@ -24,7 +24,9 @@
     "sorting",
     "data-structure",
     "segment-tree",
-    "greedy"
+    "greedy",
+    "fenwick-tree",
+    "ordered-set"
   ],
   "patterns": [
     "line-sweep",

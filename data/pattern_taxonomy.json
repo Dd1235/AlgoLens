@@ -595,6 +595,23 @@
     "splay-tree": "ordered-set",
     "skip-list": "ordered-set",
     "binary-search-tree": "ordered-set",
-    "bst": "ordered-set"
+    "bst": "ordered-set",
+    "treap": "ordered-set",
+    "policy-based-tree": "ordered-set",
+    "pbds": "ordered-set",
+    "order-statistic-tree": "ordered-set",
+    "sorted-set": "ordered-set",
+    "sorted-list": "ordered-set",
+    "sorted-container": "ordered-set",
+    "balanced-tree": "ordered-set",
+    "ordered-map": "ordered-set",
+    "ordered-dictionary": "ordered-set",
+    "ordered-data-structure": "ordered-set",
+    "balanced-data-structure": "ordered-set",
+    "skiplist": "ordered-set",
+    "kth-order-statistic": "order-statistics",
+    "kth-smallest": "order-statistics",
+    "order-statistic": "order-statistics",
+    "kth-largest": "order-statistics"
   }
 }

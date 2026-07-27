@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "greedy"
+    "greedy",
+    "rolling-hash"
   ],
   "patterns": [
     "longest-increasing-subsequence",

@@ -16,7 +16,8 @@
   "tags": [
     "math",
     "number-theory",
-    "string"
+    "string",
+    "meet-in-the-middle"
   ],
   "patterns": [
     "modular-arithmetic",

@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "prefix-sum",
-    "brute-force"
+    "brute-force",
+    "segment-tree"
   ],
   "patterns": [
     "prefix-sum",

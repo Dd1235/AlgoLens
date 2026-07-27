@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "geometry",
-    "sorting"
+    "sorting",
+    "ordered-set"
   ],
   "patterns": [
     "coordinate-compression",

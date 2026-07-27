@@ -20,7 +20,8 @@
     "string",
     "dynamic-programming",
     "rolling-hash",
-    "trie"
+    "trie",
+    "suffix-array"
   ],
   "patterns": [
     "string-reconstruction",

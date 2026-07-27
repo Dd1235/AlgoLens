@@ -16,7 +16,8 @@
   "tags": [
     "graph",
     "shortest-path",
-    "dynamic-programming"
+    "dynamic-programming",
+    "topological-sort"
   ],
   "patterns": [
     "dijkstra",

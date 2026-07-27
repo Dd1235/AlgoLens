@@ -23,7 +23,8 @@
     "greedy",
     "binary-search",
     "two-pointers",
-    "rolling-hash"
+    "rolling-hash",
+    "suffix-array"
   ],
   "patterns": [
     "greedy",

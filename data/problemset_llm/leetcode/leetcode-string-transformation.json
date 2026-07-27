@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "dynamic-programming",
-    "math"
+    "math",
+    "string-matching"
   ],
   "patterns": [
     "string-rotation",

@@ -17,12 +17,13 @@
   "tags": [
     "array",
     "two-pointers",
-    "data-structures"
+    "data-structures",
+    "union-find"
   ],
   "patterns": [
     "two-pointers",
     "sliding-window",
-    "balanced-tree",
+    "ordered-set",
     "binary-search"
   ],
   "annotation": {
@@ -32,7 +33,7 @@
     "pattern_confidence": {
       "two-pointers": 0.95,
       "sliding-window": 0.9,
-      "balanced-tree": 0.7,
+      "ordered-set": 0.7,
       "binary-search": 0.6
     }
   },

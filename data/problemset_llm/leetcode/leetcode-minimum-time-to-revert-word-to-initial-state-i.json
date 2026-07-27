@@ -16,7 +16,9 @@
   "tags": [
     "string",
     "math",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "rolling-hash",
+    "string-matching"
   ],
   "patterns": [
     "cycle-detection",

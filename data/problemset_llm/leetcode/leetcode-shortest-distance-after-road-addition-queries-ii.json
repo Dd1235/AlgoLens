@@ -16,7 +16,8 @@
   "tags": [
     "graph",
     "array",
-    "shortest-path"
+    "shortest-path",
+    "ordered-set"
   ],
   "patterns": [
     "greedy",

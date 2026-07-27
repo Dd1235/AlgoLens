@@ -10,7 +10,7 @@
   "tags": [
     "string",
     "data-structure",
-    "balanced-tree"
+    "ordered-set"
   ],
   "patterns": [
     "implicit-treap",

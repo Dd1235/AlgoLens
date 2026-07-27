@@ -17,7 +17,8 @@
     "array",
     "greedy",
     "binary-search",
-    "ordered-set"
+    "ordered-set",
+    "segment-tree"
   ],
   "patterns": [
     "greedy",

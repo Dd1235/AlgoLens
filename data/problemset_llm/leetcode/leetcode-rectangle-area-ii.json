@@ -18,7 +18,8 @@
     "array",
     "line-sweep",
     "segment-tree",
-    "greedy"
+    "greedy",
+    "ordered-set"
   ],
   "patterns": [
     "line-sweep",

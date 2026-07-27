@@ -16,7 +16,8 @@
     "string",
     "dynamic-programming",
     "data-structures",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "digit-dp",

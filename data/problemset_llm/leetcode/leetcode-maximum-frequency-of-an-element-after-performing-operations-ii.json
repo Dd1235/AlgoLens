@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "sorting",
-    "binary-search"
+    "binary-search",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

@@ -14,7 +14,8 @@
   "tags": [
     "string",
     "combinatorics",
-    "dynamic-programming"
+    "dynamic-programming",
+    "probability-dp"
   ],
   "patterns": [
     "dynamic-programming",

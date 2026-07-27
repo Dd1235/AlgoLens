@@ -14,7 +14,8 @@
   "statement": "Given an array of maximum heights, construct a mountain-shaped array of heights within these limits that maximizes the sum of heights.",
   "tags": [
     "array",
-    "dynamic-programming"
+    "dynamic-programming",
+    "monotonic-stack"
   ],
   "patterns": [
     "prefix-sum",

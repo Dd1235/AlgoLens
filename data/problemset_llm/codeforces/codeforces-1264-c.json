@@ -14,7 +14,8 @@
   "tags": [
     "probability",
     "data-structures",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "probability-dp"
   ],
   "patterns": [
     "expected-value-dp",

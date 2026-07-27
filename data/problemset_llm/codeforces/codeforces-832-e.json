@@ -13,7 +13,8 @@
   "tags": [
     "string",
     "combinatorics",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "modular-arithmetic",

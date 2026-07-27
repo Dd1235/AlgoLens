@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "sliding-window",
-    "balanced-tree",
+    "ordered-set",
     "bucket-sort"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777922566,
     "pattern_confidence": {
       "sliding-window": 0.95,
-      "balanced-tree": 0.9,
+      "ordered-set": 0.9,
       "bucket-sort": 0.85
     }
   }

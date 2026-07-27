@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "prefix-sum",
-    "brute-force"
+    "brute-force",
+    "sliding-window"
   ],
   "patterns": [
     "prefix-sum",

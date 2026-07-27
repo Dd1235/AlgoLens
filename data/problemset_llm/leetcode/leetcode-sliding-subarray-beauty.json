@@ -21,7 +21,7 @@
   "patterns": [
     "sliding-window",
     "order-statistics",
-    "balanced-binary-search-tree",
+    "ordered-set",
     "two-heaps"
   ],
   "annotation": {
@@ -31,7 +31,7 @@
     "pattern_confidence": {
       "sliding-window": 0.98,
       "order-statistics": 0.95,
-      "balanced-binary-search-tree": 0.85,
+      "ordered-set": 0.85,
       "two-heaps": 0.8
     }
   }

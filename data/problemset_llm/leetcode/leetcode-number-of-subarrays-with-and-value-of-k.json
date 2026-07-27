@@ -15,7 +15,8 @@
   "statement": "Given an integer array and a target integer k, count the number of subarrays whose bitwise AND equals k.",
   "tags": [
     "array",
-    "bit-manipulation"
+    "bit-manipulation",
+    "segment-tree"
   ],
   "patterns": [
     "two-pointers",

@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "math",
-    "binary-search"
+    "binary-search",
+    "segment-tree"
   ],
   "patterns": [
     "binary-search-answer",

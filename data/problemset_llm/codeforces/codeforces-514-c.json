@@ -18,7 +18,8 @@
     "string",
     "rolling-hash",
     "data-structures",
-    "trie"
+    "trie",
+    "suffix-array"
   ],
   "patterns": [
     "string-hashing",

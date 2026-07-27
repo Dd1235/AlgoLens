@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "string",
-    "bit-manipulation"
+    "bit-manipulation",
+    "trie"
   ],
   "patterns": [
     "bit-manipulation",

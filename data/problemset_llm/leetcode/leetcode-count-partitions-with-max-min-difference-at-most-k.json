@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "monotonic-queue"
+    "monotonic-queue",
+    "prefix-sum"
   ],
   "patterns": [
     "partition-dp",

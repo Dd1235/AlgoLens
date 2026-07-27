@@ -18,7 +18,8 @@
     "array",
     "graph",
     "bfs",
-    "ordered-set"
+    "ordered-set",
+    "union-find"
   ],
   "patterns": [
     "bfs",

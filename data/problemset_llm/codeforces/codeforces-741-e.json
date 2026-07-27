@@ -15,7 +15,8 @@
     "string",
     "suffix-automaton",
     "modular-arithmetic",
-    "query-processing"
+    "query-processing",
+    "suffix-array"
   ],
   "patterns": [
     "suffix-automaton",

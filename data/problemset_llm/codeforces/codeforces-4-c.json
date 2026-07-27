@@ -16,7 +16,8 @@
     "hash-map",
     "string",
     "implementation",
-    "data-structure"
+    "data-structure",
+    "rolling-hash"
   ],
   "patterns": [
     "hash-map",

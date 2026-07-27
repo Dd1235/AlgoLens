@@ -17,7 +17,7 @@
   "statement": "Given a binary search tree and a list of queries, find for each query the largest value in the tree less than or equal to the query and the smallest value greater than or equal to the query, or -1 if such values do not exist.",
   "tags": [
     "tree",
-    "binary-search-tree",
+    "ordered-set",
     "array"
   ],
   "patterns": [

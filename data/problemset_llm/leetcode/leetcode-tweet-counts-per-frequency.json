@@ -19,7 +19,8 @@
     "hash-map",
     "array",
     "binary-search",
-    "design"
+    "design",
+    "ordered-set"
   ],
   "patterns": [
     "binary-search",

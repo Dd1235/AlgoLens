@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "math"
+    "math",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

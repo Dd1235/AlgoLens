@@ -15,7 +15,8 @@
   "tags": [
     "string",
     "math",
-    "number-theory"
+    "number-theory",
+    "fft"
   ],
   "patterns": [
     "polynomial-hashing",

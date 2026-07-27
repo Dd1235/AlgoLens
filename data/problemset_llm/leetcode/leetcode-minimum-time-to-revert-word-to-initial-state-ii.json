@@ -16,7 +16,9 @@
   "tags": [
     "string",
     "math",
-    "number-theory"
+    "number-theory",
+    "rolling-hash",
+    "string-matching"
   ],
   "patterns": [
     "string-rotation",
