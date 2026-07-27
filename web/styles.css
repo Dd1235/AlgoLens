@@ -489,10 +489,6 @@ html[data-theme="light"] .theme-toggle {
 .rank-delta.down { color: var(--warn); border-color: rgba(215, 186, 125, 0.25); }
 .rank-delta.absent { color: var(--danger); border-color: rgba(244, 112, 103, 0.25); }
 
-@media (max-width: 720px) {
-  .compare-grid { grid-template-columns: 1fr; }
-}
-
 .result {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 58%),
@@ -1400,4 +1396,106 @@ html[data-theme="light"] footer::after { content: ""; }
   font-size: 0.78rem;
   color: var(--text);
   margin: 0.25rem 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Mobile. Everything below 720px, in one place.
+
+   Before this, the whole responsive design was five declarations and none of
+   them touched the search form: at 390px the form needed ~439px signed-out and
+   ~540px signed-in against a 333px box, with no flex-wrap and no min-width:0 on
+   the input, so the submit button was pushed off the right edge. Nobody saw a
+   scrollbar because body{overflow-x:hidden} was silently clipping it — along
+   with the heatmap month labels and two columns of the stats table.
+
+   The rule here: fix the overflow, don't hide it. overflow-x:hidden stays as a
+   guard against the last stray pixel, not as the thing holding the layout up.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  main { padding: 1.5rem 0.9rem 4rem; }
+
+  /* The search form becomes two rows: the input owns the first, the controls
+     share the second. min-width:0 is the load-bearing part — without it a text
+     input refuses to shrink below its intrinsic `size` and shoves everything
+     after it off-screen. */
+  #search-form {
+    flex-wrap: wrap;
+    padding: 0.35rem 0.5rem;
+    row-gap: 0.35rem;
+  }
+  #search-input {
+    min-width: 0;
+    flex: 1 1 100%;
+    /* 16px exactly. Safari zooms the viewport on focus for anything smaller and
+       never zooms back out, so the first tap on the search box breaks the page. */
+    font-size: 16px;
+    padding: 0.5rem 0;
+  }
+  #search-form .filter-wrap {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
+    flex: 0 1 auto;
+  }
+  #search-form .filter-wrap:first-of-type { margin-left: 0; }
+  #search-form button[type="submit"] { margin-left: auto; }
+  .filter-select { font-size: 16px; }
+
+  /* Same iOS zoom trap on every other input in the app. */
+  .pattern-filter,
+  .auth-form input,
+  .handle-field input,
+  .feedback-reason { font-size: 16px; }
+
+  /* Tap targets. These were 14-22px tall; the platform guidance is 44px and
+     the chips sit adjacent, so mis-hits were near-certain. */
+  .judge-chip,
+  .pattern-chip,
+  .lib-chip,
+  .technique-chip {
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.7rem;
+  }
+  .nav-link,
+  .auth-link,
+  .auth-logout,
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+  }
+  .result-action { min-width: 38px; min-height: 34px; justify-content: center; }
+
+  /* Result titles were truncating to ~14 characters, because the meta cluster
+     and the action buttons are both flex:0 0 auto with nowrap and ate over half
+     the card. Let the header wrap instead. */
+  .result-header { flex-wrap: wrap; row-gap: 0.3rem; }
+  .result-title { flex: 1 1 100%; white-space: normal; overflow: visible; }
+  .result-meta { margin-left: 0; }
+
+  /* Fixed 11rem inputs forced five stacked half-width rows. */
+  .handle-field { flex: 1 1 100%; }
+  .handle-field input { width: 100%; max-width: none; }
+
+  /* The month labels were a fixed 686px grid with no scroll container of their
+     own, while the grid below had one — so the labels were unreachable AND the
+     two would have desynced on swipe. One scroller around both fixes both. */
+  .heatmap-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .heatmap-scroll .heatmap { overflow-x: visible; }
+
+  /* Six columns of monospace against a 350px box. */
+  .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  .lib-bar { row-gap: 0.4rem; }
+  .compare-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 420px) {
+  /* The prompt chevron and its margin are ~18px of a 333px line. */
+  #search-form::before { display: none; }
+  main { padding: 1.2rem 0.75rem 4rem; }
+  .tagline { font-size: 0.75rem; }
 }

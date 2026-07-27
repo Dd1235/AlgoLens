@@ -102,8 +102,13 @@
           <button type="button" class="lib-chip" role="tab" aria-selected="false" tabindex="-1" data-tab="dev" title="github contributions">dev</button>
         </div>
         <p id="heatmap-total" class="heatmap-total"></p>
-        <div id="heatmap-months" class="heatmap-months"></div>
-        <div id="heatmap" class="heatmap"></div>
+        <!-- One scroller around both. The months grid had no overflow-x of its
+             own while the cells below did, so on a phone the labels were both
+             unreachable and would have scrolled independently of the grid. -->
+        <div class="heatmap-scroll">
+          <div id="heatmap-months" class="heatmap-months"></div>
+          <div id="heatmap" class="heatmap"></div>
+        </div>
         <p class="heatmap-foot">
           <a href="#" id="refresh-link">refresh stats</a>
           <span class="heatmap-legend">less <span class="hm hm-l0"></span><span class="hm hm-l1"></span><span class="hm hm-l2"></span><span class="hm hm-l3"></span><span class="hm hm-l4"></span> more</span>
