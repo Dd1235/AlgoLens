@@ -15,6 +15,19 @@ class Bm25Index {
     this.docLengths = [];
     this.df = new Map();
     this.postings = new Map();
+    // Known-item lookup: normalized title -> docIds. Typing a problem's exact
+    // name is a different intent from describing one, and BM25 can't tell them
+    // apart — it sees a bag of words either way, so "two sum" put Two Sum at
+    // rank 28 behind Sum of Two Values, which shares both terms in a longer
+    // title. Two users reported the ordering independently.
+    //
+    // This is deliberately narrow. Boosting titles inside the document text was
+    // tried first and rejected: it lifted title and keyword queries but cost
+    // paraphrase badly (P@1 0.250 -> 0.083), because a paraphrase avoids the
+    // title's words by construction, so the boost helps a problem's competitors
+    // more than the problem itself. An exact-match bonus fires only when the
+    // whole query is a title and is invisible to every other query.
+    this.byTitle = new Map();
 
     let totalLen = 0;
     problems.forEach((p, docId) => {
@@ -34,6 +47,17 @@ class Bm25Index {
         }
         set.add(docId);
       }
+    });
+
+    problems.forEach((p, docId) => {
+      const key = tokenize(p.title || "").join(" ");
+      if (!key) return;
+      let set = this.byTitle.get(key);
+      if (!set) {
+        set = new Set();
+        this.byTitle.set(key, set);
+      }
+      set.add(docId);
     });
 
     this.avgdl = this.N > 0 ? totalLen / this.N : 0;
@@ -57,9 +81,15 @@ class Bm25Index {
     return idf * (num / den);
   }
 
+  // Enough to clear the top of any realistic BM25 score, so an exact title
+  // match wins outright rather than merely nudging.
+  static TITLE_BONUS = 1000;
+
   search(query, k = 10, offset = 0) {
     const queryTokens = tokenize(query);
     if (queryTokens.length === 0) return { hits: [], total: 0 };
+    const titleKey = queryTokens.join(" ");
+    const exactTitle = this.byTitle.get(titleKey);
 
     const scoreByDoc = new Map();
     const matchedByDoc = new Map();
@@ -84,7 +114,10 @@ class Bm25Index {
     for (const [docId, score] of scoreByDoc) {
       hits.push({
         problem: this.problems[docId],
-        score,
+        // The whole query is this problem's title: it is the answer, not a
+        // candidate. Ties among several same-titled problems keep their BM25
+        // order underneath the bonus.
+        score: exactTitle && exactTitle.has(docId) ? score + Bm25Index.TITLE_BONUS : score,
         matchedTerms: matchedByDoc.get(docId),
       });
     }

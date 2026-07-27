@@ -39,7 +39,7 @@ const ANCHOR_EASIES = new Set([
   "leetcode-valid-parentheses",
   "leetcode-binary-search",
 ]);
-const SLICES = new Set(["keyword", "paraphrase", "technique"]);
+const SLICES = new Set(["keyword", "paraphrase", "technique", "title"]);
 const MAX_LABELS = 12;
 const MAX_STATEMENT_CHARS = 600;
 
