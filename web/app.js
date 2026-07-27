@@ -149,7 +149,9 @@ const RANKER_LABELS = {
   tfidf: "keyword · tfidf",
   "bm25-grpc": "keyword · go",
 };
-const PICKER_RANKERS = ["bm25", "dense", "hybrid"];
+// hybrid is no longer registered server-side; the label stays in RANKER_LABELS
+// so an old ?ranker=hybrid link still renders a sensible status line.
+const PICKER_RANKERS = ["bm25", "dense"];
 
 async function populateRankerSelect() {
   let data;

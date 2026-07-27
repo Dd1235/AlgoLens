@@ -55,7 +55,16 @@ async function main() {
     const dense = await tryCreateDenseIndex(problems);
     if (dense) {
       indexes.dense = dense;
-      indexes.hybrid = new HybridIndex({ lexical: indexes.bm25, dense });
+      // Hybrid is no longer served. Users found it confusing for a reason that
+      // is inherent, not a bug: its dense leg gives every document some cosine
+      // similarity, so a nonsense query still came back with 100 confident
+      // results. Its click-through was also the worst of the three (0.02
+      // against bm25's 0.10 and dense's 0.12).
+      //
+      // The class is deliberately still here and still tested — bench/run.js
+      // builds its own, and routes/search.test.js uses it for the regression
+      // test on the fused-set pagination bug. This is a serving decision.
+      void HybridIndex;
       const s = dense.stats();
       console.log(`dense ranker ready (${s.model}, ${s.dims}d, ${s.dtype}, ${s.count} vectors) — registered dense + hybrid`);
     }
