@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "binary-search",
-    "ordered-map",
+    "ordered-set",
     "time-based-query"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1784910236,
     "pattern_confidence": {
       "binary-search": 0.98,
-      "ordered-map": 0.9,
+      "ordered-set": 0.9,
       "time-based-query": 0.85
     }
   }

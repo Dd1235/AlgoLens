@@ -20,7 +20,8 @@
     "array",
     "dynamic-programming",
     "queue",
-    "prefix-sum"
+    "prefix-sum",
+    "segment-tree"
   ],
   "patterns": [
     "dynamic-programming",

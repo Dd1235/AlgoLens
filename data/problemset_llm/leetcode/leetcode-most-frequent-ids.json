@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "frequency-tracking",
-    "balanced-data-structure",
+    "ordered-set",
     "heap",
     "hash-map"
   ],
@@ -31,7 +31,7 @@
     "generated_at_unix": 1784909563,
     "pattern_confidence": {
       "frequency-tracking": 0.95,
-      "balanced-data-structure": 0.9,
+      "ordered-set": 0.9,
       "heap": 0.85,
       "hash-map": 0.9
     }

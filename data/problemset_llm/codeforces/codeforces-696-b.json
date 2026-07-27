@@ -17,7 +17,8 @@
     "tree",
     "dfs",
     "probability",
-    "expected-value"
+    "expected-value",
+    "probability-dp"
   ],
   "patterns": [
     "dfs",

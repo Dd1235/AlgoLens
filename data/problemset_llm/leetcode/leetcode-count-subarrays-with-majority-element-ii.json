@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "prefix-sum",
-    "hash-map"
+    "hash-map",
+    "segment-tree"
   ],
   "patterns": [
     "prefix-sum",

@@ -15,7 +15,8 @@
   "tags": [
     "graph",
     "binary-search",
-    "number-theory"
+    "number-theory",
+    "max-flow"
   ],
   "patterns": [
     "binary-search",

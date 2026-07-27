@@ -23,7 +23,9 @@
     "string",
     "array",
     "dynamic-programming",
-    "trie"
+    "trie",
+    "segment-tree",
+    "rolling-hash"
   ],
   "patterns": [
     "dynamic-programming",

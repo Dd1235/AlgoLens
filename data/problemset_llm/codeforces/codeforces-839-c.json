@@ -19,7 +19,8 @@
     "graph",
     "probability",
     "dfs",
-    "dynamic-programming"
+    "dynamic-programming",
+    "probability-dp"
   ],
   "patterns": [
     "dfs",

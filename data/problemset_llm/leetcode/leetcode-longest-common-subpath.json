@@ -18,7 +18,8 @@
     "array",
     "string",
     "rolling-hash",
-    "binary-search"
+    "binary-search",
+    "suffix-array"
   ],
   "patterns": [
     "binary-search-answer",

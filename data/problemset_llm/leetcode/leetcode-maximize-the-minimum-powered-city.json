@@ -17,7 +17,8 @@
   "statement": "Given an array representing power stations in cities and a range of power coverage, determine the maximum minimum power any city can have after optimally adding a limited number of new power stations.",
   "tags": [
     "array",
-    "binary-search"
+    "binary-search",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

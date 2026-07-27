@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "data-structure",
-    "binary-search"
+    "binary-search",
+    "segment-tree"
   ],
   "patterns": [
     "binary-search",

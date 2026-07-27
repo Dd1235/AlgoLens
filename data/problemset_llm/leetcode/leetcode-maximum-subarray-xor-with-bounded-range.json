@@ -20,7 +20,8 @@
     "array",
     "bit-manipulation",
     "data-structure",
-    "trie"
+    "trie",
+    "prefix-sum"
   ],
   "patterns": [
     "sliding-window",

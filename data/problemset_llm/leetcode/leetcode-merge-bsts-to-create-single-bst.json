@@ -17,7 +17,7 @@
   "statement": "Given multiple small BSTs, merge them by replacing leaf nodes with roots of other BSTs to form a single valid BST if possible.",
   "tags": [
     "tree",
-    "binary-search-tree",
+    "ordered-set",
     "graph",
     "dfs"
   ],

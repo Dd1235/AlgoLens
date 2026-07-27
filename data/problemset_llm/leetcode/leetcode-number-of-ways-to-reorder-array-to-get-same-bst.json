@@ -24,7 +24,8 @@
     "tree",
     "dynamic-programming",
     "combinatorics",
-    "binary-search-tree"
+    "ordered-set",
+    "union-find"
   ],
   "patterns": [
     "divide-and-conquer",

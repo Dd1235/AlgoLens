@@ -16,7 +16,8 @@
   "tags": [
     "stack",
     "hash-map",
-    "design"
+    "design",
+    "ordered-set"
   ],
   "patterns": [
     "frequency-stack",

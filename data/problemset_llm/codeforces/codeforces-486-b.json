@@ -16,7 +16,8 @@
     "matrix",
     "bit-manipulation",
     "greedy",
-    "implementation"
+    "implementation",
+    "rolling-hash"
   ],
   "patterns": [
     "greedy",

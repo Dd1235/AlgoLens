@@ -15,7 +15,8 @@
   "statement": "Given a string, for every prefix that is also a suffix, determine how many times that prefix appears as a substring within the entire string.",
   "tags": [
     "string",
-    "dynamic-programming"
+    "dynamic-programming",
+    "suffix-array"
   ],
   "patterns": [
     "prefix-function",

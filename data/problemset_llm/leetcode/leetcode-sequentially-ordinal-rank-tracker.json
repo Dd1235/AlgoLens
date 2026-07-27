@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "two-heaps",
-    "balanced-binary-search-tree",
+    "ordered-set",
     "online-query"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777924011,
     "pattern_confidence": {
       "two-heaps": 0.95,
-      "balanced-binary-search-tree": 0.9,
+      "ordered-set": 0.9,
       "online-query": 0.85
     }
   }

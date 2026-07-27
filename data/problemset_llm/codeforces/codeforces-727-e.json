@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "rolling-hash",
-    "data-structures"
+    "data-structures",
+    "suffix-array"
   ],
   "patterns": [
     "string-hashing",

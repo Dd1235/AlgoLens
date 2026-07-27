@@ -17,7 +17,8 @@
   "tags": [
     "string",
     "array",
-    "hash-map"
+    "hash-map",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

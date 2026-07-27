@@ -18,7 +18,8 @@
   "tags": [
     "string",
     "prefix",
-    "rolling-hash"
+    "rolling-hash",
+    "suffix-array"
   ],
   "patterns": [
     "rolling-hash",

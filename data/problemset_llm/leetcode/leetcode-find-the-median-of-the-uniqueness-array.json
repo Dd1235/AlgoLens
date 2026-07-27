@@ -17,7 +17,8 @@
     "array",
     "hash-map",
     "binary-search",
-    "two-pointers"
+    "two-pointers",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search-answer",

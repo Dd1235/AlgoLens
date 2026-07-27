@@ -16,7 +16,7 @@
   "statement": "Given a binary tree, find the maximum sum of keys in any subtree that forms a valid binary search tree (BST).",
   "tags": [
     "tree",
-    "binary-search-tree",
+    "ordered-set",
     "dynamic-programming",
     "dfs"
   ],

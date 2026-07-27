@@ -16,7 +16,7 @@
   "tags": [
     "tree",
     "binary-tree",
-    "binary-search-tree",
+    "ordered-set",
     "dfs"
   ],
   "patterns": [

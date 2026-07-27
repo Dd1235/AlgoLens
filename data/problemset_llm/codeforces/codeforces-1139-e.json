@@ -17,7 +17,8 @@
     "max-flow",
     "matching",
     "greedy",
-    "data-structure"
+    "data-structure",
+    "bipartite-matching"
   ],
   "patterns": [
     "max-flow",

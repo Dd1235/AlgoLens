@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "data-structures",
-    "trees"
+    "trees",
+    "suffix-array"
   ],
   "patterns": [
     "suffix-automaton",

@@ -14,7 +14,8 @@
   "statement": "Given a numeric string representing concatenated positive integers without leading zeros, count the number of ways to split it into a non-decreasing sequence of integers modulo 10^9+7.",
   "tags": [
     "string",
-    "dynamic-programming"
+    "dynamic-programming",
+    "suffix-array"
   ],
   "patterns": [
     "dp-on-string",

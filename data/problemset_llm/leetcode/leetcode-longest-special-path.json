@@ -18,7 +18,8 @@
     "tree",
     "graph",
     "dfs",
-    "hash-map"
+    "hash-map",
+    "prefix-sum"
   ],
   "patterns": [
     "dfs",

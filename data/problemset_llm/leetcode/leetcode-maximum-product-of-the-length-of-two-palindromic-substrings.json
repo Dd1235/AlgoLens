@@ -16,7 +16,8 @@
   "tags": [
     "string",
     "dynamic-programming",
-    "two-pointers"
+    "two-pointers",
+    "rolling-hash"
   ],
   "patterns": [
     "manacher",

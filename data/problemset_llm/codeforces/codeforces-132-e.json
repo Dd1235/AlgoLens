@@ -15,7 +15,8 @@
     "bit-manipulation",
     "greedy",
     "dynamic-programming",
-    "graph"
+    "graph",
+    "max-flow"
   ],
   "patterns": [
     "bit-counting",

@@ -20,7 +20,8 @@
     "array",
     "fenwick-tree",
     "merge-sort",
-    "segment-tree"
+    "segment-tree",
+    "ordered-set"
   ],
   "patterns": [
     "divide-and-conquer",

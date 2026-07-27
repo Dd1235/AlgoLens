@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "bit-manipulation",
-    "queue"
+    "queue",
+    "prefix-sum"
   ],
   "patterns": [
     "sliding-window",

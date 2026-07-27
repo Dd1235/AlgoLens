@@ -18,7 +18,8 @@
     "divide-and-conquer",
     "data-structures",
     "sorting",
-    "prefix-sum"
+    "prefix-sum",
+    "union-find"
   ],
   "patterns": [
     "contribution-technique",

@@ -17,7 +17,8 @@
     "array",
     "string",
     "prefix-sum",
-    "binary-search"
+    "binary-search",
+    "segment-tree"
   ],
   "patterns": [
     "prefix-sum",

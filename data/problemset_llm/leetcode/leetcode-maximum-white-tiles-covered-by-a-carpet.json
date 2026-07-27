@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "sorting",
-    "prefix-sum"
+    "prefix-sum",
+    "sliding-window"
   ],
   "patterns": [
     "two-pointers",

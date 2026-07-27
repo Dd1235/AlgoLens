@@ -18,7 +18,8 @@
     "tree",
     "dfs",
     "hash-map",
-    "two-pointers"
+    "two-pointers",
+    "prefix-sum"
   ],
   "patterns": [
     "dfs",

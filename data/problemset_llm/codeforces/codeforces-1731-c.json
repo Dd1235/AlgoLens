@@ -18,7 +18,8 @@
     "array",
     "bit-manipulation",
     "number-theory",
-    "prefix-xor"
+    "prefix-xor",
+    "rolling-hash"
   ],
   "patterns": [
     "prefix-xor",

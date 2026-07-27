@@ -16,7 +16,8 @@
   "tags": [
     "array",
     "hash-map",
-    "sorting"
+    "sorting",
+    "sliding-window"
   ],
   "patterns": [
     "binary-search",

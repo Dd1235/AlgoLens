@@ -17,7 +17,9 @@
     "greedy",
     "dynamic-programming",
     "graph",
-    "matching"
+    "matching",
+    "max-flow",
+    "bipartite-matching"
   ],
   "patterns": [
     "dynamic-programming",

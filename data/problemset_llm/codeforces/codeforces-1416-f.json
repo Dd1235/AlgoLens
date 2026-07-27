@@ -17,7 +17,9 @@
     "graph",
     "matrix",
     "greedy",
-    "implementation"
+    "implementation",
+    "max-flow",
+    "bipartite-matching"
   ],
   "patterns": [
     "graph-construction",

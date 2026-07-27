@@ -16,7 +16,8 @@
   "tags": [
     "tree",
     "dynamic-programming",
-    "probability"
+    "probability",
+    "probability-dp"
   ],
   "patterns": [
     "expected-value-dp",

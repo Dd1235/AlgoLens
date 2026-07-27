@@ -19,7 +19,8 @@
     "string",
     "array",
     "two-pointers",
-    "rolling-hash"
+    "rolling-hash",
+    "string-matching"
   ],
   "patterns": [
     "rolling-hash",

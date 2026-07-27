@@ -22,7 +22,9 @@
     "string",
     "array",
     "dynamic-programming",
-    "rolling-hash"
+    "rolling-hash",
+    "segment-tree",
+    "string-matching"
   ],
   "patterns": [
     "rolling-hash",

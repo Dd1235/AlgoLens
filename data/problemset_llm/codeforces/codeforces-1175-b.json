@@ -16,7 +16,8 @@
     "simulation",
     "stack",
     "implementation",
-    "data-structure"
+    "data-structure",
+    "expression-parsing"
   ],
   "patterns": [
     "simulation",

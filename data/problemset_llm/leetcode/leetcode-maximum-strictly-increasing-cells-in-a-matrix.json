@@ -22,7 +22,8 @@
     "dynamic-programming",
     "graph",
     "sorting",
-    "binary-search"
+    "binary-search",
+    "ordered-set"
   ],
   "patterns": [
     "topological-sort",

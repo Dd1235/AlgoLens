@@ -16,7 +16,9 @@
   "tags": [
     "array",
     "binary-search",
-    "data-structure"
+    "data-structure",
+    "union-find",
+    "monotonic-stack"
   ],
   "patterns": [
     "binary-search-answer",

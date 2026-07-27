@@ -17,7 +17,9 @@
   "tags": [
     "string",
     "implementation",
-    "string-matching"
+    "string-matching",
+    "rolling-hash",
+    "suffix-array"
   ],
   "patterns": [
     "kmp",

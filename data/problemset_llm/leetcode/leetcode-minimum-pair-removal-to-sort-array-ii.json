@@ -20,7 +20,8 @@
     "array",
     "heap",
     "greedy",
-    "simulation"
+    "simulation",
+    "ordered-set"
   ],
   "patterns": [
     "heap",

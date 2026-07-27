@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "dynamic-programming",
-    "bit-manipulation"
+    "bit-manipulation",
+    "backtracking"
   ],
   "patterns": [
     "bitmask-dp",

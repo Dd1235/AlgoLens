@@ -17,7 +17,8 @@
   "tags": [
     "tree",
     "graph",
-    "dfs"
+    "dfs",
+    "topological-sort"
   ],
   "patterns": [
     "dfs",

@@ -19,7 +19,8 @@
     "graph",
     "grid",
     "union-find",
-    "greedy"
+    "greedy",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "strongly-connected-components",

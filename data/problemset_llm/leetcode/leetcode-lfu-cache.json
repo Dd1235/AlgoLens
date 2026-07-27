@@ -21,7 +21,7 @@
   ],
   "patterns": [
     "frequency-list",
-    "ordered-dictionary",
+    "ordered-set",
     "hash-map"
   ],
   "annotation": {
@@ -30,7 +30,7 @@
     "generated_at_unix": 1777923147,
     "pattern_confidence": {
       "frequency-list": 0.95,
-      "ordered-dictionary": 0.9,
+      "ordered-set": 0.9,
       "hash-map": 0.85
     }
   }

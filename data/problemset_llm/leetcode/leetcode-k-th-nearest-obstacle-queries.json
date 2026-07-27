@@ -19,7 +19,7 @@
   "patterns": [
     "heap",
     "online-queries",
-    "kth-order-statistic"
+    "order-statistics"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +28,7 @@
     "pattern_confidence": {
       "heap": 0.95,
       "online-queries": 0.9,
-      "kth-order-statistic": 0.85
+      "order-statistics": 0.85
     }
   }
 }

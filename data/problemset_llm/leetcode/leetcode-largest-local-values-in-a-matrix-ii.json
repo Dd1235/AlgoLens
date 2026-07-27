@@ -15,7 +15,8 @@
   "tags": [
     "array",
     "matrix",
-    "implementation"
+    "implementation",
+    "prefix-sum"
   ],
   "patterns": [
     "brute-force",

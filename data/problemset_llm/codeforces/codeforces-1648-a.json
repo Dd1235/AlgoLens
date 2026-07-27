@@ -20,7 +20,8 @@
     "combinatorics",
     "sorting",
     "array",
-    "prefix-sum"
+    "prefix-sum",
+    "matrix-exponentiation"
   ],
   "patterns": [
     "sorting",

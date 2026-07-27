@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "string",
-    "hash-map"
+    "hash-map",
+    "suffix-array"
   ],
   "patterns": [
     "binary-search-answer",

@@ -20,7 +20,8 @@
     "binary-tree",
     "dfs",
     "greedy",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "union-find"
   ],
   "patterns": [
     "dfs",

@@ -16,7 +16,7 @@
   "patterns": [
     "greedy",
     "sorting",
-    "balanced-binary-search-tree",
+    "ordered-set",
     "interval-scheduling"
   ],
   "annotation": {
@@ -26,7 +26,7 @@
     "pattern_confidence": {
       "greedy": 0.98,
       "sorting": 0.95,
-      "balanced-binary-search-tree": 0.85,
+      "ordered-set": 0.85,
       "interval-scheduling": 0.9
     }
   }

@@ -16,7 +16,8 @@
   "tags": [
     "graph",
     "dfs",
-    "cycle-detection"
+    "cycle-detection",
+    "topological-sort"
   ],
   "patterns": [
     "dfs",

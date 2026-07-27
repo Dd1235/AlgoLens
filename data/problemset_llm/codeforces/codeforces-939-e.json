@@ -17,7 +17,8 @@
     "data-structure",
     "greedy",
     "binary-search",
-    "two-pointers"
+    "two-pointers",
+    "ternary-search"
   ],
   "patterns": [
     "greedy",

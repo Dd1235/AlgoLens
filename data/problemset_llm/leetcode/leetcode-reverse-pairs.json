@@ -19,7 +19,9 @@
   "tags": [
     "array",
     "divide-and-conquer",
-    "merge-sort"
+    "merge-sort",
+    "segment-tree",
+    "ordered-set"
   ],
   "patterns": [
     "merge-sort",

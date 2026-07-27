@@ -19,7 +19,8 @@
     "array",
     "dynamic-programming",
     "queue",
-    "monotonic-queue"
+    "monotonic-queue",
+    "sliding-window"
   ],
   "patterns": [
     "dynamic-programming",

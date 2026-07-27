@@ -17,7 +17,8 @@
     "array",
     "two-pointers",
     "string-matching",
-    "string"
+    "string",
+    "rolling-hash"
   ],
   "patterns": [
     "sliding-window",
