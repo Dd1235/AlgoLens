@@ -19,6 +19,14 @@ const MAX_QUERY_LENGTH = 300;
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 // Longest phrases first so "aliens trick" is consumed before "aliens" would be.
+// Digit/word equivalences the taxonomy can't express, because they aren't
+// technique names. "2 sum" found Two Sum nowhere at all: the tokenizer splits
+// on non-alphanumerics, so "2" and "two" are unrelated terms and no problem
+// title contains the digit. Deliberately tiny and append-only — "k" is NOT
+// here, since it means something specific in this domain and expanding it
+// would fire on half the corpus.
+const NUMBER_WORDS = { 2: "two", 3: "three", 4: "four", "1": "one" };
+
 const RULES = Object.entries(TAXONOMY.aliases || {})
   .map(([alias, canonical]) => {
     const aliasWords = alias.split("-");
@@ -55,6 +63,17 @@ function expandQuery(q) {
       added.push(word);
     }
   }
+  // A bare digit that has a word form: append the word. Runs after the alias
+  // rules so it can't consume their budget, and only for standalone tokens so
+  // "1234" and "abc2" are untouched.
+  for (const token of lower.split(/[^a-z0-9]+/)) {
+    const word = NUMBER_WORDS[token];
+    if (!word || present.has(word) || added.length >= MAX_ADDED_WORDS) continue;
+    present.add(word);
+    added.push(word);
+    matches.push(token);
+  }
+
   if (!added.length) return { query: q, expanded: false, added, matches };
   return { query: `${q} ${added.join(" ")}`, expanded: true, added, matches };
 }
