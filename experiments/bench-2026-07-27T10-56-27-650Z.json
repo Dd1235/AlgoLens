@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-07-27T11:07:24.931Z",
+  "timestamp": "2026-07-27T10:56:27.651Z",
   "corpus": {
     "docs": 2575,
-    "loadMs": 58,
+    "loadMs": 61,
     "build": {
-      "tfidf": 31,
-      "bm25": 38,
-      "dense": 132
+      "tfidf": 32,
+      "bm25": 34,
+      "dense": 133
     }
   },
   "queriesFile": "bench/queries.json",
@@ -62,9 +62,9 @@
         }
       },
       "latency": {
-        "median_ms": 0.168,
-        "p95_ms": 0.468,
-        "mean_ms": 0.199
+        "median_ms": 0.165,
+        "p95_ms": 0.466,
+        "mean_ms": 0.197
       },
       "perQuery": [
         {
@@ -103,9 +103,9 @@
           "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.342,
+            "median_ms": 0.319,
             "p95_ms": 0.64,
-            "mean_ms": 0.43
+            "mean_ms": 0.415
           }
         },
         {
@@ -144,9 +144,9 @@
           "nDCG@10": 0.432,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.07,
-            "p95_ms": 0.077,
-            "mean_ms": 0.074
+            "median_ms": 0.073,
+            "p95_ms": 0.081,
+            "mean_ms": 0.077
           }
         },
         {
@@ -187,9 +187,9 @@
           "nDCG@10": 0.713,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.139,
-            "p95_ms": 0.162,
-            "mean_ms": 0.149
+            "median_ms": 0.135,
+            "p95_ms": 0.175,
+            "mean_ms": 0.144
           }
         },
         {
@@ -227,9 +227,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.238,
-            "p95_ms": 0.26,
-            "mean_ms": 0.243
+            "median_ms": 0.23,
+            "p95_ms": 0.257,
+            "mean_ms": 0.237
           }
         },
         {
@@ -268,9 +268,9 @@
           "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.054,
-            "p95_ms": 0.067,
-            "mean_ms": 0.058
+            "median_ms": 0.052,
+            "p95_ms": 0.058,
+            "mean_ms": 0.055
           }
         },
         {
@@ -309,9 +309,9 @@
           "nDCG@10": 0.671,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.017,
+            "median_ms": 0.016,
             "p95_ms": 0.018,
-            "mean_ms": 0.017
+            "mean_ms": 0.016
           }
         },
         {
@@ -348,9 +348,9 @@
           "nDCG@10": 0.289,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.22,
-            "p95_ms": 0.231,
-            "mean_ms": 0.227
+            "median_ms": 0.215,
+            "p95_ms": 0.249,
+            "mean_ms": 0.224
           }
         },
         {
@@ -388,9 +388,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.244,
-            "p95_ms": 0.277,
-            "mean_ms": 0.251
+            "median_ms": 0.257,
+            "p95_ms": 0.284,
+            "mean_ms": 0.266
           }
         },
         {
@@ -430,7 +430,7 @@
           "Recall@100": 1,
           "latency": {
             "median_ms": 0.13,
-            "p95_ms": 0.147,
+            "p95_ms": 0.142,
             "mean_ms": 0.136
           }
         },
@@ -469,9 +469,9 @@
           "nDCG@10": 0.613,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 0.25,
-            "p95_ms": 0.266,
-            "mean_ms": 0.255
+            "median_ms": 0.254,
+            "p95_ms": 0.275,
+            "mean_ms": 0.259
           }
         },
         {
@@ -512,7 +512,7 @@
           "latency": {
             "median_ms": 0.017,
             "p95_ms": 0.019,
-            "mean_ms": 0.02
+            "mean_ms": 0.019
           }
         },
         {
@@ -551,9 +551,9 @@
           "nDCG@10": 0.235,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.187,
-            "p95_ms": 0.197,
-            "mean_ms": 0.191
+            "median_ms": 0.179,
+            "p95_ms": 0.199,
+            "mean_ms": 0.184
           }
         },
         {
@@ -592,9 +592,9 @@
           "nDCG@10": 0.765,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.203,
-            "p95_ms": 0.215,
-            "mean_ms": 0.21
+            "median_ms": 0.192,
+            "p95_ms": 0.224,
+            "mean_ms": 0.202
           }
         },
         {
@@ -634,8 +634,8 @@
           "nDCG@10": 0,
           "Recall@100": 0.75,
           "latency": {
-            "median_ms": 0.121,
-            "p95_ms": 0.133,
+            "median_ms": 0.122,
+            "p95_ms": 0.129,
             "mean_ms": 0.122
           }
         },
@@ -676,7 +676,7 @@
           "nDCG@10": 0.637,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.037,
+            "median_ms": 0.038,
             "p95_ms": 0.042,
             "mean_ms": 0.04
           }
@@ -717,9 +717,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 0.133,
-            "p95_ms": 0.146,
-            "mean_ms": 0.137
+            "median_ms": 0.128,
+            "p95_ms": 0.137,
+            "mean_ms": 0.132
           }
         },
         {
@@ -758,9 +758,9 @@
           "nDCG@10": 0.235,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.088,
-            "p95_ms": 0.097,
-            "mean_ms": 0.092
+            "median_ms": 0.087,
+            "p95_ms": 0.092,
+            "mean_ms": 0.09
           }
         },
         {
@@ -799,8 +799,8 @@
           "nDCG@10": 0.156,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.16,
-            "p95_ms": 0.192,
+            "median_ms": 0.164,
+            "p95_ms": 0.178,
             "mean_ms": 0.168
           }
         },
@@ -838,9 +838,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.191,
-            "p95_ms": 0.207,
-            "mean_ms": 0.199
+            "median_ms": 0.182,
+            "p95_ms": 0.194,
+            "mean_ms": 0.189
           }
         },
         {
@@ -879,9 +879,9 @@
           "nDCG@10": 0.156,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.203,
-            "p95_ms": 0.215,
-            "mean_ms": 0.208
+            "median_ms": 0.2,
+            "p95_ms": 0.217,
+            "mean_ms": 0.205
           }
         },
         {
@@ -920,9 +920,9 @@
           "nDCG@10": 0.167,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.12,
-            "p95_ms": 0.13,
-            "mean_ms": 0.124
+            "median_ms": 0.116,
+            "p95_ms": 0.122,
+            "mean_ms": 0.119
           }
         },
         {
@@ -961,9 +961,9 @@
           "nDCG@10": 0.498,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.206,
-            "p95_ms": 0.224,
-            "mean_ms": 0.214
+            "median_ms": 0.201,
+            "p95_ms": 0.223,
+            "mean_ms": 0.21
           }
         },
         {
@@ -1000,9 +1000,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.223,
-            "p95_ms": 0.261,
-            "mean_ms": 0.231
+            "median_ms": 0.21,
+            "p95_ms": 0.228,
+            "mean_ms": 0.217
           }
         },
         {
@@ -1041,9 +1041,9 @@
           "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.378,
-            "p95_ms": 0.391,
-            "mean_ms": 0.386
+            "median_ms": 0.384,
+            "p95_ms": 0.417,
+            "mean_ms": 0.393
           }
         },
         {
@@ -1082,9 +1082,9 @@
           "nDCG@10": 0.141,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.198,
-            "p95_ms": 0.211,
-            "mean_ms": 0.205
+            "median_ms": 0.189,
+            "p95_ms": 0.202,
+            "mean_ms": 0.196
           }
         },
         {
@@ -1122,9 +1122,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.255,
-            "p95_ms": 0.28,
-            "mean_ms": 0.263
+            "median_ms": 0.262,
+            "p95_ms": 0.282,
+            "mean_ms": 0.27
           }
         },
         {
@@ -1162,9 +1162,9 @@
           "nDCG@10": 0.92,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.04,
-            "p95_ms": 0.052,
-            "mean_ms": 0.042
+            "median_ms": 0.039,
+            "p95_ms": 0.041,
+            "mean_ms": 0.039
           }
         },
         {
@@ -1201,8 +1201,8 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.072,
-            "p95_ms": 0.08,
+            "median_ms": 0.074,
+            "p95_ms": 0.079,
             "mean_ms": 0.077
           }
         },
@@ -1242,9 +1242,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.07,
-            "p95_ms": 0.085,
-            "mean_ms": 0.072
+            "median_ms": 0.068,
+            "p95_ms": 0.075,
+            "mean_ms": 0.07
           }
         },
         {
@@ -1283,8 +1283,8 @@
           "Recall@100": 0.5,
           "latency": {
             "median_ms": 0.292,
-            "p95_ms": 0.44,
-            "mean_ms": 0.302
+            "p95_ms": 0.434,
+            "mean_ms": 0.305
           }
         },
         {
@@ -1322,9 +1322,9 @@
           "nDCG@10": 0.613,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.469,
-            "p95_ms": 0.628,
-            "mean_ms": 0.481
+            "median_ms": 0.486,
+            "p95_ms": 0.604,
+            "mean_ms": 0.503
           }
         },
         {
@@ -1361,9 +1361,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.03,
-            "p95_ms": 0.033,
-            "mean_ms": 0.03
+            "median_ms": 0.031,
+            "p95_ms": 0.034,
+            "mean_ms": 0.032
           }
         },
         {
@@ -1401,8 +1401,8 @@
           "nDCG@10": 0.693,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.168,
-            "p95_ms": 0.195,
+            "median_ms": 0.165,
+            "p95_ms": 0.192,
             "mean_ms": 0.176
           }
         },
@@ -1440,9 +1440,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.449,
-            "p95_ms": 0.633,
-            "mean_ms": 0.463
+            "median_ms": 0.434,
+            "p95_ms": 0.573,
+            "mean_ms": 0.447
           }
         },
         {
@@ -1480,8 +1480,8 @@
           "Recall@100": 1,
           "latency": {
             "median_ms": 0.075,
-            "p95_ms": 0.081,
-            "mean_ms": 0.078
+            "p95_ms": 0.088,
+            "mean_ms": 0.081
           }
         },
         {
@@ -1518,9 +1518,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.408,
-            "p95_ms": 0.55,
-            "mean_ms": 0.42
+            "median_ms": 0.396,
+            "p95_ms": 0.45,
+            "mean_ms": 0.41
           }
         },
         {
@@ -1557,9 +1557,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.101,
-            "p95_ms": 0.105,
-            "mean_ms": 0.102
+            "median_ms": 0.1,
+            "p95_ms": 0.117,
+            "mean_ms": 0.104
           }
         },
         {
@@ -1596,9 +1596,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.078,
-            "p95_ms": 0.086,
-            "mean_ms": 0.082
+            "median_ms": 0.076,
+            "p95_ms": 0.087,
+            "mean_ms": 0.08
           }
         },
         {
@@ -1635,9 +1635,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.046,
-            "p95_ms": 0.051,
-            "mean_ms": 0.049
+            "median_ms": 0.045,
+            "p95_ms": 0.048,
+            "mean_ms": 0.045
           }
         },
         {
@@ -1674,9 +1674,9 @@
           "nDCG@10": 0.5,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.162,
-            "p95_ms": 0.177,
-            "mean_ms": 0.166
+            "median_ms": 0.156,
+            "p95_ms": 0.195,
+            "mean_ms": 0.164
           }
         },
         {
@@ -1713,9 +1713,9 @@
           "nDCG@10": 0.431,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.118,
-            "p95_ms": 0.133,
-            "mean_ms": 0.123
+            "median_ms": 0.115,
+            "p95_ms": 0.127,
+            "mean_ms": 0.119
           }
         },
         {
@@ -1752,8 +1752,8 @@
           "nDCG@10": 0.356,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.057,
-            "p95_ms": 0.06,
+            "median_ms": 0.056,
+            "p95_ms": 0.061,
             "mean_ms": 0.057
           }
         },
@@ -1793,9 +1793,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.303,
-            "p95_ms": 0.446,
-            "mean_ms": 0.313
+            "median_ms": 0.297,
+            "p95_ms": 0.456,
+            "mean_ms": 0.309
           }
         },
         {
@@ -1834,8 +1834,8 @@
           "nDCG@10": 0,
           "Recall@100": 0,
           "latency": {
-            "median_ms": 0.16,
-            "p95_ms": 0.165,
+            "median_ms": 0.158,
+            "p95_ms": 0.179,
             "mean_ms": 0.164
           }
         },
@@ -1874,9 +1874,9 @@
           "nDCG@10": 0.378,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.468,
-            "p95_ms": 0.611,
-            "mean_ms": 0.479
+            "median_ms": 0.461,
+            "p95_ms": 0.635,
+            "mean_ms": 0.475
           }
         },
         {
@@ -1915,9 +1915,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.311,
-            "p95_ms": 0.346,
-            "mean_ms": 0.321
+            "median_ms": 0.315,
+            "p95_ms": 0.349,
+            "mean_ms": 0.323
           }
         },
         {
@@ -1957,9 +1957,9 @@
           "nDCG@10": 0.514,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.436,
-            "p95_ms": 0.58,
-            "mean_ms": 0.45
+            "median_ms": 0.441,
+            "p95_ms": 0.581,
+            "mean_ms": 0.453
           }
         },
         {
@@ -1997,8 +1997,8 @@
           "nDCG@10": 0.177,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 0.216,
-            "p95_ms": 0.233,
+            "median_ms": 0.215,
+            "p95_ms": 0.234,
             "mean_ms": 0.224
           }
         },
@@ -2037,9 +2037,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.442,
-            "p95_ms": 0.557,
-            "mean_ms": 0.452
+            "median_ms": 0.448,
+            "p95_ms": 0.564,
+            "mean_ms": 0.46
           }
         },
         {
@@ -2076,9 +2076,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.279,
-            "p95_ms": 0.319,
-            "mean_ms": 0.287
+            "median_ms": 0.274,
+            "p95_ms": 0.3,
+            "mean_ms": 0.283
           }
         },
         {
@@ -2115,9 +2115,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.28,
-            "p95_ms": 0.295,
-            "mean_ms": 0.287
+            "median_ms": 0.275,
+            "p95_ms": 0.302,
+            "mean_ms": 0.281
           }
         },
         {
@@ -2158,9 +2158,9 @@
           "nDCG@10": 0.64,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.616,
-            "p95_ms": 0.832,
-            "mean_ms": 0.635
+            "median_ms": 0.613,
+            "p95_ms": 0.833,
+            "mean_ms": 0.632
           }
         },
         {
@@ -2199,9 +2199,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.348,
-            "p95_ms": 0.496,
-            "mean_ms": 0.359
+            "median_ms": 0.336,
+            "p95_ms": 0.459,
+            "mean_ms": 0.348
           }
         },
         {
@@ -2239,9 +2239,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.449,
-            "p95_ms": 0.609,
-            "mean_ms": 0.462
+            "median_ms": 0.456,
+            "p95_ms": 0.606,
+            "mean_ms": 0.467
           }
         },
         {
@@ -2280,9 +2280,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.161,
-            "p95_ms": 0.18,
-            "mean_ms": 0.166
+            "median_ms": 0.157,
+            "p95_ms": 0.164,
+            "mean_ms": 0.161
           }
         },
         {
@@ -2319,9 +2319,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.333,
-            "p95_ms": 0.463,
-            "mean_ms": 0.344
+            "median_ms": 0.317,
+            "p95_ms": 0.462,
+            "mean_ms": 0.328
           }
         },
         {
@@ -2397,9 +2397,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.105,
-            "p95_ms": 0.111,
-            "mean_ms": 0.108
+            "median_ms": 0.099,
+            "p95_ms": 0.107,
+            "mean_ms": 0.103
           }
         },
         {
@@ -2436,9 +2436,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.021,
-            "p95_ms": 0.026,
-            "mean_ms": 0.021
+            "median_ms": 0.019,
+            "p95_ms": 0.023,
+            "mean_ms": 0.02
           }
         },
         {
@@ -2553,9 +2553,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.021,
-            "p95_ms": 0.023,
-            "mean_ms": 0.022
+            "median_ms": 0.02,
+            "p95_ms": 0.022,
+            "mean_ms": 0.02
           }
         },
         {
@@ -2592,9 +2592,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.055,
-            "p95_ms": 0.065,
-            "mean_ms": 0.059
+            "median_ms": 0.053,
+            "p95_ms": 0.062,
+            "mean_ms": 0.057
           }
         }
       ]
@@ -2604,19 +2604,19 @@
       "queryCount": 63,
       "aggregate": {
         "queryCount": 63,
-        "P@1": 0.508,
-        "P@5": 0.225,
-        "MRR": 0.637,
-        "nDCG@10": 0.594,
+        "P@1": 0.492,
+        "P@5": 0.219,
+        "MRR": 0.622,
+        "nDCG@10": 0.573,
         "Recall@100": 0.918
       },
       "bySlice": {
         "keyword": {
           "queryCount": 30,
           "P@1": 0.633,
-          "P@5": 0.267,
+          "P@5": 0.26,
           "MRR": 0.725,
-          "nDCG@10": 0.599,
+          "nDCG@10": 0.589,
           "Recall@100": 0.911
         },
         "paraphrase": {
@@ -2637,17 +2637,17 @@
         },
         "title": {
           "queryCount": 8,
-          "P@1": 0.875,
-          "P@5": 0.2,
-          "MRR": 0.938,
-          "nDCG@10": 0.954,
+          "P@1": 0.75,
+          "P@5": 0.175,
+          "MRR": 0.817,
+          "nDCG@10": 0.829,
           "Recall@100": 1
         }
       },
       "latency": {
-        "median_ms": 0.18,
-        "p95_ms": 0.498,
-        "mean_ms": 0.214
+        "median_ms": 0.173,
+        "p95_ms": 0.49,
+        "mean_ms": 0.224
       },
       "perQuery": [
         {
@@ -2659,10 +2659,6 @@
             "leetcode-3sum"
           ],
           "top5": [
-            {
-              "id": "leetcode-two-sum",
-              "score": 1003.729
-            },
             {
               "id": "cses-1640",
               "score": 4.4213
@@ -2678,17 +2674,21 @@
             {
               "id": "cses-3150",
               "score": 4.386
+            },
+            {
+              "id": "leetcode-3sum-closest",
+              "score": 4.304
             }
           ],
           "P@1": 1,
-          "P@5": 0.4,
+          "P@5": 0.2,
           "RR": 1,
-          "nDCG@10": 0.765,
+          "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.375,
-            "p95_ms": 0.657,
-            "mean_ms": 0.477
+            "median_ms": 0.332,
+            "p95_ms": 0.629,
+            "mean_ms": 0.413
           }
         },
         {
@@ -2727,9 +2727,9 @@
           "nDCG@10": 0.432,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.083,
-            "p95_ms": 0.088,
-            "mean_ms": 0.083
+            "median_ms": 0.076,
+            "p95_ms": 0.079,
+            "mean_ms": 0.077
           }
         },
         {
@@ -2770,9 +2770,9 @@
           "nDCG@10": 0.636,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.166,
-            "p95_ms": 0.189,
-            "mean_ms": 0.173
+            "median_ms": 0.14,
+            "p95_ms": 0.155,
+            "mean_ms": 0.145
           }
         },
         {
@@ -2785,7 +2785,7 @@
           "top5": [
             {
               "id": "leetcode-binary-tree-level-order-traversal",
-              "score": 1027.5039
+              "score": 27.5039
             },
             {
               "id": "leetcode-maximum-width-of-binary-tree",
@@ -2810,9 +2810,9 @@
           "nDCG@10": 0.92,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.263,
-            "p95_ms": 0.356,
-            "mean_ms": 0.281
+            "median_ms": 0.237,
+            "p95_ms": 0.248,
+            "mean_ms": 0.242
           }
         },
         {
@@ -2826,7 +2826,7 @@
           "top5": [
             {
               "id": "leetcode-longest-increasing-subsequence",
-              "score": 1017.4224
+              "score": 17.4224
             },
             {
               "id": "cses-1145",
@@ -2851,9 +2851,9 @@
           "nDCG@10": 0.605,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.061,
-            "p95_ms": 0.065,
-            "mean_ms": 0.062
+            "median_ms": 0.056,
+            "p95_ms": 0.06,
+            "mean_ms": 0.058
           }
         },
         {
@@ -2892,9 +2892,9 @@
           "nDCG@10": 0.853,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.019,
+            "median_ms": 0.018,
             "p95_ms": 0.02,
-            "mean_ms": 0.019
+            "mean_ms": 0.018
           }
         },
         {
@@ -2931,9 +2931,9 @@
           "nDCG@10": 0.431,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.234,
-            "p95_ms": 0.262,
-            "mean_ms": 0.241
+            "median_ms": 0.223,
+            "p95_ms": 0.236,
+            "mean_ms": 0.23
           }
         },
         {
@@ -2971,9 +2971,9 @@
           "nDCG@10": 0.307,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.263,
-            "p95_ms": 0.276,
-            "mean_ms": 0.269
+            "median_ms": 0.267,
+            "p95_ms": 0.28,
+            "mean_ms": 0.271
           }
         },
         {
@@ -2987,7 +2987,7 @@
           "top5": [
             {
               "id": "leetcode-sliding-window-maximum",
-              "score": 1013.2179
+              "score": 13.2179
             },
             {
               "id": "cses-3227",
@@ -3012,9 +3012,9 @@
           "nDCG@10": 0.671,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.143,
-            "p95_ms": 0.151,
-            "mean_ms": 0.146
+            "median_ms": 0.136,
+            "p95_ms": 0.147,
+            "mean_ms": 0.14
           }
         },
         {
@@ -3052,9 +3052,9 @@
           "nDCG@10": 0.613,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 0.275,
-            "p95_ms": 0.315,
-            "mean_ms": 0.283
+            "median_ms": 0.266,
+            "p95_ms": 0.274,
+            "mean_ms": 0.269
           }
         },
         {
@@ -3093,7 +3093,7 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.02,
+            "median_ms": 0.018,
             "p95_ms": 0.021,
             "mean_ms": 0.02
           }
@@ -3134,9 +3134,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.206,
-            "p95_ms": 0.212,
-            "mean_ms": 0.209
+            "median_ms": 0.19,
+            "p95_ms": 0.204,
+            "mean_ms": 0.194
           }
         },
         {
@@ -3175,9 +3175,9 @@
           "nDCG@10": 0.765,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.22,
-            "p95_ms": 0.232,
-            "mean_ms": 0.226
+            "median_ms": 0.199,
+            "p95_ms": 0.216,
+            "mean_ms": 0.205
           }
         },
         {
@@ -3217,9 +3217,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.135,
-            "p95_ms": 0.14,
-            "mean_ms": 0.138
+            "median_ms": 0.129,
+            "p95_ms": 0.134,
+            "mean_ms": 0.132
           }
         },
         {
@@ -3259,9 +3259,9 @@
           "nDCG@10": 0.776,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.041,
-            "p95_ms": 0.043,
-            "mean_ms": 0.041
+            "median_ms": 0.04,
+            "p95_ms": 0.053,
+            "mean_ms": 0.043
           }
         },
         {
@@ -3300,9 +3300,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.139,
-            "p95_ms": 0.145,
-            "mean_ms": 0.142
+            "median_ms": 0.131,
+            "p95_ms": 0.141,
+            "mean_ms": 0.135
           }
         },
         {
@@ -3341,9 +3341,9 @@
           "nDCG@10": 0.704,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.095,
-            "p95_ms": 0.1,
-            "mean_ms": 0.098
+            "median_ms": 0.091,
+            "p95_ms": 0.098,
+            "mean_ms": 0.095
           }
         },
         {
@@ -3383,8 +3383,8 @@
           "Recall@100": 0.667,
           "latency": {
             "median_ms": 0.169,
-            "p95_ms": 0.183,
-            "mean_ms": 0.173
+            "p95_ms": 0.182,
+            "mean_ms": 0.174
           }
         },
         {
@@ -3421,9 +3421,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.202,
-            "p95_ms": 0.216,
-            "mean_ms": 0.209
+            "median_ms": 0.187,
+            "p95_ms": 0.199,
+            "mean_ms": 0.194
           }
         },
         {
@@ -3462,9 +3462,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.216,
-            "p95_ms": 0.249,
-            "mean_ms": 0.224
+            "median_ms": 0.213,
+            "p95_ms": 0.243,
+            "mean_ms": 0.219
           }
         },
         {
@@ -3503,9 +3503,9 @@
           "nDCG@10": 0.304,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.132,
-            "p95_ms": 0.137,
-            "mean_ms": 0.135
+            "median_ms": 0.121,
+            "p95_ms": 0.131,
+            "mean_ms": 0.126
           }
         },
         {
@@ -3544,9 +3544,9 @@
           "nDCG@10": 0.704,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.217,
-            "p95_ms": 0.236,
-            "mean_ms": 0.223
+            "median_ms": 0.208,
+            "p95_ms": 0.228,
+            "mean_ms": 0.216
           }
         },
         {
@@ -3583,9 +3583,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.239,
-            "p95_ms": 0.27,
-            "mean_ms": 0.248
+            "median_ms": 0.218,
+            "p95_ms": 0.227,
+            "mean_ms": 0.222
           }
         },
         {
@@ -3624,9 +3624,9 @@
           "nDCG@10": 0.626,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.412,
-            "p95_ms": 0.438,
-            "mean_ms": 0.419
+            "median_ms": 0.399,
+            "p95_ms": 0.56,
+            "mean_ms": 0.415
           }
         },
         {
@@ -3665,9 +3665,9 @@
           "nDCG@10": 0.402,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.209,
-            "p95_ms": 0.216,
-            "mean_ms": 0.212
+            "median_ms": 0.198,
+            "p95_ms": 0.225,
+            "mean_ms": 0.207
           }
         },
         {
@@ -3705,9 +3705,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.281,
-            "p95_ms": 0.294,
-            "mean_ms": 0.288
+            "median_ms": 0.276,
+            "p95_ms": 0.301,
+            "mean_ms": 0.282
           }
         },
         {
@@ -3745,8 +3745,8 @@
           "nDCG@10": 0.92,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.045,
-            "p95_ms": 0.047,
+            "median_ms": 0.043,
+            "p95_ms": 0.053,
             "mean_ms": 0.046
           }
         },
@@ -3784,9 +3784,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.081,
-            "p95_ms": 0.086,
-            "mean_ms": 0.085
+            "median_ms": 0.077,
+            "p95_ms": 0.085,
+            "mean_ms": 0.078
           }
         },
         {
@@ -3825,9 +3825,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 0.078,
-            "p95_ms": 0.085,
-            "mean_ms": 0.081
+            "median_ms": 0.072,
+            "p95_ms": 0.084,
+            "mean_ms": 0.077
           }
         },
         {
@@ -3865,9 +3865,9 @@
           "nDCG@10": 0.613,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 0.309,
-            "p95_ms": 0.327,
-            "mean_ms": 0.316
+            "median_ms": 0.298,
+            "p95_ms": 0.32,
+            "mean_ms": 0.306
           }
         },
         {
@@ -3905,9 +3905,9 @@
           "nDCG@10": 0.807,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.497,
-            "p95_ms": 0.688,
-            "mean_ms": 0.512
+            "median_ms": 0.489,
+            "p95_ms": 0.606,
+            "mean_ms": 0.503
           }
         },
         {
@@ -3944,9 +3944,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.037,
-            "p95_ms": 0.049,
-            "mean_ms": 0.04
+            "median_ms": 0.034,
+            "p95_ms": 0.039,
+            "mean_ms": 0.034
           }
         },
         {
@@ -3984,9 +3984,9 @@
           "nDCG@10": 0.693,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.181,
-            "p95_ms": 0.201,
-            "mean_ms": 0.186
+            "median_ms": 0.169,
+            "p95_ms": 0.189,
+            "mean_ms": 0.173
           }
         },
         {
@@ -4023,9 +4023,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.474,
-            "p95_ms": 0.619,
-            "mean_ms": 0.486
+            "median_ms": 0.451,
+            "p95_ms": 0.615,
+            "mean_ms": 0.465
           }
         },
         {
@@ -4062,9 +4062,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.082,
-            "p95_ms": 0.097,
-            "mean_ms": 0.085
+            "median_ms": 0.078,
+            "p95_ms": 0.085,
+            "mean_ms": 0.08
           }
         },
         {
@@ -4101,9 +4101,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.423,
-            "p95_ms": 0.556,
-            "mean_ms": 0.432
+            "median_ms": 0.393,
+            "p95_ms": 0.533,
+            "mean_ms": 0.404
           }
         },
         {
@@ -4140,9 +4140,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.11,
-            "p95_ms": 0.117,
-            "mean_ms": 0.114
+            "median_ms": 0.106,
+            "p95_ms": 0.111,
+            "mean_ms": 0.109
           }
         },
         {
@@ -4179,7 +4179,7 @@
           "nDCG@10": 0,
           "Recall@100": 0,
           "latency": {
-            "median_ms": 0.083,
+            "median_ms": 0.08,
             "p95_ms": 0.086,
             "mean_ms": 0.083
           }
@@ -4218,9 +4218,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.053,
-            "p95_ms": 0.061,
-            "mean_ms": 0.056
+            "median_ms": 0.048,
+            "p95_ms": 0.051,
+            "mean_ms": 0.049
           }
         },
         {
@@ -4257,9 +4257,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.171,
-            "p95_ms": 0.19,
-            "mean_ms": 0.175
+            "median_ms": 0.16,
+            "p95_ms": 0.18,
+            "mean_ms": 0.169
           }
         },
         {
@@ -4296,9 +4296,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.126,
-            "p95_ms": 0.136,
-            "mean_ms": 0.129
+            "median_ms": 0.122,
+            "p95_ms": 0.127,
+            "mean_ms": 0.123
           }
         },
         {
@@ -4335,9 +4335,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.063,
-            "p95_ms": 0.073,
-            "mean_ms": 0.067
+            "median_ms": 0.059,
+            "p95_ms": 0.063,
+            "mean_ms": 0.062
           }
         },
         {
@@ -4376,9 +4376,9 @@
           "nDCG@10": 0.54,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.324,
-            "p95_ms": 0.353,
-            "mean_ms": 0.331
+            "median_ms": 0.312,
+            "p95_ms": 1.935,
+            "mean_ms": 0.558
           }
         },
         {
@@ -4417,9 +4417,9 @@
           "nDCG@10": 0,
           "Recall@100": 0,
           "latency": {
-            "median_ms": 0.178,
-            "p95_ms": 0.194,
-            "mean_ms": 0.184
+            "median_ms": 0.191,
+            "p95_ms": 6.889,
+            "mean_ms": 1.05
           }
         },
         {
@@ -4457,9 +4457,9 @@
           "nDCG@10": 0.544,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.499,
-            "p95_ms": 0.726,
-            "mean_ms": 0.528
+            "median_ms": 0.481,
+            "p95_ms": 1.648,
+            "mean_ms": 0.626
           }
         },
         {
@@ -4498,9 +4498,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.338,
-            "p95_ms": 0.362,
-            "mean_ms": 0.347
+            "median_ms": 0.329,
+            "p95_ms": 0.373,
+            "mean_ms": 0.338
           }
         },
         {
@@ -4540,9 +4540,9 @@
           "nDCG@10": 0.849,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.475,
-            "p95_ms": 0.508,
-            "mean_ms": 0.485
+            "median_ms": 0.466,
+            "p95_ms": 0.606,
+            "mean_ms": 0.478
           }
         },
         {
@@ -4580,9 +4580,9 @@
           "nDCG@10": 0.307,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 0.228,
-            "p95_ms": 0.257,
-            "mean_ms": 0.236
+            "median_ms": 0.22,
+            "p95_ms": 0.262,
+            "mean_ms": 0.23
           }
         },
         {
@@ -4620,9 +4620,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.49,
-            "p95_ms": 0.647,
-            "mean_ms": 0.5
+            "median_ms": 0.477,
+            "p95_ms": 0.637,
+            "mean_ms": 0.49
           }
         },
         {
@@ -4659,9 +4659,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.293,
-            "p95_ms": 0.454,
-            "mean_ms": 0.304
+            "median_ms": 0.284,
+            "p95_ms": 0.335,
+            "mean_ms": 0.293
           }
         },
         {
@@ -4698,9 +4698,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.297,
-            "p95_ms": 0.308,
-            "mean_ms": 0.304
+            "median_ms": 0.287,
+            "p95_ms": 0.329,
+            "mean_ms": 0.297
           }
         },
         {
@@ -4741,9 +4741,9 @@
           "nDCG@10": 0.55,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.661,
-            "p95_ms": 0.841,
-            "mean_ms": 0.678
+            "median_ms": 0.639,
+            "p95_ms": 0.807,
+            "mean_ms": 0.657
           }
         },
         {
@@ -4782,9 +4782,9 @@
           "nDCG@10": 0.156,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.367,
-            "p95_ms": 0.53,
-            "mean_ms": 0.381
+            "median_ms": 0.35,
+            "p95_ms": 0.399,
+            "mean_ms": 0.364
           }
         },
         {
@@ -4822,9 +4822,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.491,
-            "p95_ms": 0.664,
-            "mean_ms": 0.504
+            "median_ms": 0.475,
+            "p95_ms": 0.591,
+            "mean_ms": 0.489
           }
         },
         {
@@ -4863,9 +4863,9 @@
           "nDCG@10": 0.202,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.17,
-            "p95_ms": 0.177,
-            "mean_ms": 0.174
+            "median_ms": 0.16,
+            "p95_ms": 0.175,
+            "mean_ms": 0.169
           }
         },
         {
@@ -4875,10 +4875,6 @@
             "leetcode-two-sum"
           ],
           "top5": [
-            {
-              "id": "leetcode-two-sum",
-              "score": 1003.729
-            },
             {
               "id": "cses-1640",
               "score": 4.4213
@@ -4894,17 +4890,21 @@
             {
               "id": "cses-3150",
               "score": 4.386
+            },
+            {
+              "id": "leetcode-3sum-closest",
+              "score": 4.304
             }
           ],
-          "P@1": 1,
-          "P@5": 0.2,
-          "RR": 1,
-          "nDCG@10": 1,
+          "P@1": 0,
+          "P@5": 0,
+          "RR": 0.036,
+          "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.362,
-            "p95_ms": 0.387,
-            "mean_ms": 0.37
+            "median_ms": 0.327,
+            "p95_ms": 0.372,
+            "mean_ms": 0.337
           }
         },
         {
@@ -4916,7 +4916,7 @@
           "top5": [
             {
               "id": "leetcode-house-robber",
-              "score": 1014.2497
+              "score": 14.2497
             },
             {
               "id": "leetcode-house-robber-ii",
@@ -4955,7 +4955,7 @@
           "top5": [
             {
               "id": "leetcode-clone-graph",
-              "score": 1011.6145
+              "score": 11.6145
             },
             {
               "id": "cses-1756",
@@ -4980,9 +4980,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.118,
-            "p95_ms": 0.127,
-            "mean_ms": 0.122
+            "median_ms": 0.102,
+            "p95_ms": 0.111,
+            "mean_ms": 0.106
           }
         },
         {
@@ -4994,11 +4994,11 @@
           "top5": [
             {
               "id": "cses-1639",
-              "score": 1016.7734
+              "score": 16.7734
             },
             {
               "id": "leetcode-edit-distance",
-              "score": 1014.8761
+              "score": 14.8761
             },
             {
               "id": "codeforces-56-d",
@@ -5019,9 +5019,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.022,
-            "p95_ms": 0.024,
-            "mean_ms": 0.023
+            "median_ms": 0.021,
+            "p95_ms": 0.022,
+            "mean_ms": 0.021
           }
         },
         {
@@ -5033,7 +5033,7 @@
           "top5": [
             {
               "id": "leetcode-coin-change",
-              "score": 1014.3629
+              "score": 14.3629
             },
             {
               "id": "cses-1634",
@@ -5060,7 +5060,7 @@
           "latency": {
             "median_ms": 0.007,
             "p95_ms": 0.008,
-            "mean_ms": 0.007
+            "mean_ms": 0.009
           }
         },
         {
@@ -5072,7 +5072,7 @@
           "top5": [
             {
               "id": "leetcode-trapping-rain-water",
-              "score": 1022.8002
+              "score": 22.8002
             },
             {
               "id": "leetcode-trapping-rain-water-ii",
@@ -5097,9 +5097,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.003,
+            "median_ms": 0.002,
             "p95_ms": 0.003,
-            "mean_ms": 0.003
+            "mean_ms": 0.002
           }
         },
         {
@@ -5111,7 +5111,7 @@
           "top5": [
             {
               "id": "leetcode-valid-parentheses",
-              "score": 1014.2165
+              "score": 14.2165
             },
             {
               "id": "leetcode-longest-valid-parentheses",
@@ -5136,9 +5136,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.023,
-            "p95_ms": 0.027,
-            "mean_ms": 0.026
+            "median_ms": 0.021,
+            "p95_ms": 0.026,
+            "mean_ms": 0.021
           }
         },
         {
@@ -5150,7 +5150,7 @@
           "top5": [
             {
               "id": "leetcode-longest-increasing-subsequence",
-              "score": 1017.4224
+              "score": 17.4224
             },
             {
               "id": "cses-1145",
@@ -5175,9 +5175,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 0.061,
-            "p95_ms": 0.071,
-            "mean_ms": 0.063
+            "median_ms": 0.058,
+            "p95_ms": 0.069,
+            "mean_ms": 0.06
           }
         }
       ]
@@ -5228,9 +5228,9 @@
         }
       },
       "latency": {
-        "median_ms": 2.666,
-        "p95_ms": 3.187,
-        "mean_ms": 2.73
+        "median_ms": 2.676,
+        "p95_ms": 3.099,
+        "mean_ms": 2.713
       },
       "perQuery": [
         {
@@ -5269,9 +5269,9 @@
           "nDCG@10": 0.765,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.349,
-            "p95_ms": 2.856,
-            "mean_ms": 2.465
+            "median_ms": 2.419,
+            "p95_ms": 3.321,
+            "mean_ms": 2.53
           }
         },
         {
@@ -5310,9 +5310,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 2.472,
-            "p95_ms": 2.835,
-            "mean_ms": 2.507
+            "median_ms": 2.471,
+            "p95_ms": 2.624,
+            "mean_ms": 2.494
           }
         },
         {
@@ -5353,9 +5353,9 @@
           "nDCG@10": 0.272,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.403,
-            "p95_ms": 2.547,
-            "mean_ms": 2.426
+            "median_ms": 2.411,
+            "p95_ms": 2.525,
+            "mean_ms": 2.432
           }
         },
         {
@@ -5393,9 +5393,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.465,
-            "p95_ms": 2.562,
-            "mean_ms": 2.486
+            "median_ms": 2.467,
+            "p95_ms": 2.804,
+            "mean_ms": 2.495
           }
         },
         {
@@ -5434,9 +5434,9 @@
           "nDCG@10": 0.498,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.458,
-            "p95_ms": 2.882,
-            "mean_ms": 2.494
+            "median_ms": 2.471,
+            "p95_ms": 3.234,
+            "mean_ms": 2.574
           }
         },
         {
@@ -5475,9 +5475,9 @@
           "nDCG@10": 0.593,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.448,
-            "p95_ms": 2.784,
-            "mean_ms": 2.477
+            "median_ms": 2.452,
+            "p95_ms": 2.746,
+            "mean_ms": 2.476
           }
         },
         {
@@ -5514,9 +5514,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.517,
-            "p95_ms": 2.575,
-            "mean_ms": 2.534
+            "median_ms": 2.529,
+            "p95_ms": 2.607,
+            "mean_ms": 2.549
           }
         },
         {
@@ -5554,9 +5554,9 @@
           "nDCG@10": 0.204,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.454,
-            "p95_ms": 2.766,
-            "mean_ms": 2.496
+            "median_ms": 2.459,
+            "p95_ms": 2.891,
+            "mean_ms": 2.488
           }
         },
         {
@@ -5595,9 +5595,9 @@
           "nDCG@10": 0.651,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.397,
-            "p95_ms": 2.443,
-            "mean_ms": 2.417
+            "median_ms": 2.417,
+            "p95_ms": 2.495,
+            "mean_ms": 2.441
           }
         },
         {
@@ -5635,9 +5635,9 @@
           "nDCG@10": 0.387,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.663,
-            "p95_ms": 3.148,
-            "mean_ms": 2.788
+            "median_ms": 2.676,
+            "p95_ms": 2.997,
+            "mean_ms": 2.77
           }
         },
         {
@@ -5676,9 +5676,9 @@
           "nDCG@10": 0.967,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.39,
-            "p95_ms": 2.721,
-            "mean_ms": 2.429
+            "median_ms": 2.4,
+            "p95_ms": 2.431,
+            "mean_ms": 2.42
           }
         },
         {
@@ -5717,9 +5717,9 @@
           "nDCG@10": 0.202,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 2.457,
-            "p95_ms": 2.844,
-            "mean_ms": 2.509
+            "median_ms": 2.476,
+            "p95_ms": 2.901,
+            "mean_ms": 2.559
           }
         },
         {
@@ -5758,9 +5758,9 @@
           "nDCG@10": 0.704,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.546,
-            "p95_ms": 2.869,
-            "mean_ms": 2.592
+            "median_ms": 2.557,
+            "p95_ms": 2.901,
+            "mean_ms": 2.591
           }
         },
         {
@@ -5800,9 +5800,9 @@
           "nDCG@10": 0.13,
           "Recall@100": 0.25,
           "latency": {
-            "median_ms": 2.448,
-            "p95_ms": 2.907,
-            "mean_ms": 2.55
+            "median_ms": 2.454,
+            "p95_ms": 2.889,
+            "mean_ms": 2.539
           }
         },
         {
@@ -5842,9 +5842,9 @@
           "nDCG@10": 0.805,
           "Recall@100": 0.75,
           "latency": {
-            "median_ms": 2.607,
-            "p95_ms": 3.062,
-            "mean_ms": 2.689
+            "median_ms": 2.597,
+            "p95_ms": 2.942,
+            "mean_ms": 2.641
           }
         },
         {
@@ -5883,9 +5883,9 @@
           "nDCG@10": 0,
           "Recall@100": 0,
           "latency": {
-            "median_ms": 2.536,
-            "p95_ms": 2.919,
-            "mean_ms": 2.639
+            "median_ms": 2.526,
+            "p95_ms": 2.957,
+            "mean_ms": 2.583
           }
         },
         {
@@ -5924,9 +5924,9 @@
           "nDCG@10": 0.712,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.534,
-            "p95_ms": 2.928,
-            "mean_ms": 2.585
+            "median_ms": 2.516,
+            "p95_ms": 2.595,
+            "mean_ms": 2.533
           }
         },
         {
@@ -5965,9 +5965,9 @@
           "nDCG@10": 0.235,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.493,
-            "p95_ms": 3.509,
-            "mean_ms": 2.69
+            "median_ms": 2.483,
+            "p95_ms": 3.4,
+            "mean_ms": 2.624
           }
         },
         {
@@ -6005,8 +6005,8 @@
           "Recall@100": 1,
           "latency": {
             "median_ms": 2.598,
-            "p95_ms": 2.962,
-            "mean_ms": 2.623
+            "p95_ms": 2.932,
+            "mean_ms": 2.628
           }
         },
         {
@@ -6045,9 +6045,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.583,
-            "p95_ms": 3.305,
-            "mean_ms": 2.735
+            "median_ms": 2.584,
+            "p95_ms": 3.498,
+            "mean_ms": 2.737
           }
         },
         {
@@ -6086,9 +6086,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.649,
-            "p95_ms": 2.907,
-            "mean_ms": 2.696
+            "median_ms": 2.665,
+            "p95_ms": 4.473,
+            "mean_ms": 2.886
           }
         },
         {
@@ -6127,9 +6127,9 @@
           "nDCG@10": 0.453,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.67,
-            "p95_ms": 2.77,
-            "mean_ms": 2.69
+            "median_ms": 2.653,
+            "p95_ms": 2.987,
+            "mean_ms": 2.704
           }
         },
         {
@@ -6166,9 +6166,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.72,
-            "p95_ms": 3.249,
-            "mean_ms": 2.775
+            "median_ms": 2.704,
+            "p95_ms": 2.973,
+            "mean_ms": 2.728
           }
         },
         {
@@ -6207,9 +6207,9 @@
           "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.798,
-            "p95_ms": 3.296,
-            "mean_ms": 2.911
+            "median_ms": 2.793,
+            "p95_ms": 3.136,
+            "mean_ms": 2.89
           }
         },
         {
@@ -6248,9 +6248,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.589,
-            "p95_ms": 3.028,
-            "mean_ms": 2.665
+            "median_ms": 2.578,
+            "p95_ms": 2.951,
+            "mean_ms": 2.625
           }
         },
         {
@@ -6288,9 +6288,9 @@
           "nDCG@10": 0.92,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.8,
-            "p95_ms": 3.343,
-            "mean_ms": 2.865
+            "median_ms": 2.784,
+            "p95_ms": 3.066,
+            "mean_ms": 2.812
           }
         },
         {
@@ -6328,9 +6328,9 @@
           "nDCG@10": 0.693,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.591,
-            "p95_ms": 3.042,
-            "mean_ms": 2.647
+            "median_ms": 2.575,
+            "p95_ms": 2.984,
+            "mean_ms": 2.632
           }
         },
         {
@@ -6367,9 +6367,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.642,
+            "median_ms": 2.631,
             "p95_ms": 2.906,
-            "mean_ms": 2.678
+            "mean_ms": 2.658
           }
         },
         {
@@ -6408,9 +6408,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 2.662,
-            "p95_ms": 2.973,
-            "mean_ms": 2.696
+            "median_ms": 2.66,
+            "p95_ms": 2.859,
+            "mean_ms": 2.691
           }
         },
         {
@@ -6448,9 +6448,9 @@
           "nDCG@10": 0.185,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.756,
-            "p95_ms": 3.318,
-            "mean_ms": 2.858
+            "median_ms": 2.761,
+            "p95_ms": 3.086,
+            "mean_ms": 2.845
           }
         },
         {
@@ -6488,9 +6488,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.756,
-            "p95_ms": 3.075,
-            "mean_ms": 2.786
+            "median_ms": 2.749,
+            "p95_ms": 3.084,
+            "mean_ms": 2.793
           }
         },
         {
@@ -6528,8 +6528,8 @@
           "Recall@100": 1,
           "latency": {
             "median_ms": 2.75,
-            "p95_ms": 3.044,
-            "mean_ms": 2.788
+            "p95_ms": 2.911,
+            "mean_ms": 2.774
           }
         },
         {
@@ -6567,9 +6567,9 @@
           "nDCG@10": 0.456,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.84,
-            "p95_ms": 3.238,
-            "mean_ms": 2.88
+            "median_ms": 2.848,
+            "p95_ms": 3.157,
+            "mean_ms": 2.892
           }
         },
         {
@@ -6606,9 +6606,9 @@
           "nDCG@10": 0.5,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.767,
-            "p95_ms": 3.516,
-            "mean_ms": 2.869
+            "median_ms": 2.748,
+            "p95_ms": 3.069,
+            "mean_ms": 2.787
           }
         },
         {
@@ -6645,9 +6645,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.718,
-            "p95_ms": 3.003,
-            "mean_ms": 2.749
+            "median_ms": 2.705,
+            "p95_ms": 2.935,
+            "mean_ms": 2.726
           }
         },
         {
@@ -6684,9 +6684,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.918,
-            "p95_ms": 3.322,
-            "mean_ms": 2.982
+            "median_ms": 2.894,
+            "p95_ms": 3.392,
+            "mean_ms": 2.976
           }
         },
         {
@@ -6723,9 +6723,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.702,
-            "p95_ms": 2.971,
-            "mean_ms": 2.729
+            "median_ms": 2.706,
+            "p95_ms": 3.068,
+            "mean_ms": 2.745
           }
         },
         {
@@ -6762,9 +6762,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.738,
-            "p95_ms": 3.105,
-            "mean_ms": 2.787
+            "median_ms": 2.747,
+            "p95_ms": 2.973,
+            "mean_ms": 2.767
           }
         },
         {
@@ -6801,9 +6801,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.649,
-            "p95_ms": 3.02,
-            "mean_ms": 2.701
+            "median_ms": 2.665,
+            "p95_ms": 2.943,
+            "mean_ms": 2.696
           }
         },
         {
@@ -6840,9 +6840,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.824,
-            "p95_ms": 3.117,
-            "mean_ms": 2.887
+            "median_ms": 2.854,
+            "p95_ms": 4.298,
+            "mean_ms": 3.019
           }
         },
         {
@@ -6879,9 +6879,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.691,
-            "p95_ms": 3.022,
-            "mean_ms": 2.717
+            "median_ms": 2.711,
+            "p95_ms": 2.999,
+            "mean_ms": 2.809
           }
         },
         {
@@ -6918,9 +6918,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.646,
-            "p95_ms": 2.693,
-            "mean_ms": 2.665
+            "median_ms": 2.671,
+            "p95_ms": 3.076,
+            "mean_ms": 2.704
           }
         },
         {
@@ -6959,9 +6959,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 2.707,
-            "p95_ms": 3.066,
-            "mean_ms": 2.756
+            "median_ms": 2.699,
+            "p95_ms": 2.985,
+            "mean_ms": 2.727
           }
         },
         {
@@ -7000,9 +7000,9 @@
           "nDCG@10": 0,
           "Recall@100": 0,
           "latency": {
-            "median_ms": 3.038,
-            "p95_ms": 3.248,
-            "mean_ms": 3.071
+            "median_ms": 2.779,
+            "p95_ms": 2.827,
+            "mean_ms": 2.792
           }
         },
         {
@@ -7040,9 +7040,9 @@
           "nDCG@10": 0.525,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.023,
-            "p95_ms": 3.332,
-            "mean_ms": 3.07
+            "median_ms": 2.75,
+            "p95_ms": 3.088,
+            "mean_ms": 2.813
           }
         },
         {
@@ -7081,9 +7081,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 3.138,
-            "p95_ms": 3.551,
-            "mean_ms": 3.191
+            "median_ms": 2.89,
+            "p95_ms": 3.174,
+            "mean_ms": 2.924
           }
         },
         {
@@ -7123,9 +7123,9 @@
           "nDCG@10": 0.195,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.26,
-            "p95_ms": 3.537,
-            "mean_ms": 3.297
+            "median_ms": 2.988,
+            "p95_ms": 3.317,
+            "mean_ms": 3.02
           }
         },
         {
@@ -7163,9 +7163,9 @@
           "nDCG@10": 0.237,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.043,
-            "p95_ms": 5.749,
-            "mean_ms": 3.346
+            "median_ms": 2.751,
+            "p95_ms": 3.655,
+            "mean_ms": 2.934
           }
         },
         {
@@ -7203,9 +7203,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 3.081,
-            "p95_ms": 4.142,
-            "mean_ms": 3.24
+            "median_ms": 3.04,
+            "p95_ms": 3.325,
+            "mean_ms": 3.141
           }
         },
         {
@@ -7242,9 +7242,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.774,
-            "p95_ms": 2.89,
-            "mean_ms": 2.801
+            "median_ms": 2.765,
+            "p95_ms": 2.883,
+            "mean_ms": 2.802
           }
         },
         {
@@ -7281,9 +7281,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.849,
-            "p95_ms": 3.004,
-            "mean_ms": 2.9
+            "median_ms": 2.865,
+            "p95_ms": 3.222,
+            "mean_ms": 2.912
           }
         },
         {
@@ -7324,9 +7324,9 @@
           "nDCG@10": 0.366,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.784,
-            "p95_ms": 3.923,
-            "mean_ms": 3.009
+            "median_ms": 2.779,
+            "p95_ms": 3.292,
+            "mean_ms": 2.857
           }
         },
         {
@@ -7365,9 +7365,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 3.036,
-            "p95_ms": 3.136,
-            "mean_ms": 3.073
+            "median_ms": 3.079,
+            "p95_ms": 5.447,
+            "mean_ms": 3.42
           }
         },
         {
@@ -7405,9 +7405,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 3.037,
-            "p95_ms": 3.125,
-            "mean_ms": 3.061
+            "median_ms": 3.07,
+            "p95_ms": 3.516,
+            "mean_ms": 3.143
           }
         },
         {
@@ -7446,9 +7446,9 @@
           "nDCG@10": 0.141,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.66,
-            "p95_ms": 2.791,
-            "mean_ms": 2.702
+            "median_ms": 2.674,
+            "p95_ms": 2.772,
+            "mean_ms": 2.703
           }
         },
         {
@@ -7485,9 +7485,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.449,
-            "p95_ms": 3.338,
-            "mean_ms": 2.593
+            "median_ms": 2.459,
+            "p95_ms": 2.748,
+            "mean_ms": 2.537
           }
         },
         {
@@ -7524,9 +7524,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.463,
-            "p95_ms": 2.608,
-            "mean_ms": 2.502
+            "median_ms": 2.519,
+            "p95_ms": 3.178,
+            "mean_ms": 2.634
           }
         },
         {
@@ -7563,9 +7563,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.451,
-            "p95_ms": 2.591,
-            "mean_ms": 2.494
+            "median_ms": 2.447,
+            "p95_ms": 2.674,
+            "mean_ms": 2.503
           }
         },
         {
@@ -7602,9 +7602,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.471,
-            "p95_ms": 2.854,
-            "mean_ms": 2.537
+            "median_ms": 2.462,
+            "p95_ms": 2.636,
+            "mean_ms": 2.509
           }
         },
         {
@@ -7641,9 +7641,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.443,
-            "p95_ms": 2.587,
-            "mean_ms": 2.484
+            "median_ms": 2.461,
+            "p95_ms": 2.982,
+            "mean_ms": 2.538
           }
         },
         {
@@ -7680,9 +7680,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.543,
-            "p95_ms": 2.955,
-            "mean_ms": 2.595
+            "median_ms": 2.525,
+            "p95_ms": 2.678,
+            "mean_ms": 2.568
           }
         },
         {
@@ -7719,9 +7719,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.445,
-            "p95_ms": 2.587,
-            "mean_ms": 2.488
+            "median_ms": 2.458,
+            "p95_ms": 2.64,
+            "mean_ms": 2.514
           }
         },
         {
@@ -7758,9 +7758,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.587,
-            "p95_ms": 2.72,
-            "mean_ms": 2.626
+            "median_ms": 2.596,
+            "p95_ms": 2.92,
+            "mean_ms": 2.65
           }
         }
       ]
@@ -7770,19 +7770,19 @@
       "queryCount": 63,
       "aggregate": {
         "queryCount": 63,
-        "P@1": 0.54,
-        "P@5": 0.225,
-        "MRR": 0.662,
-        "nDCG@10": 0.607,
+        "P@1": 0.524,
+        "P@5": 0.219,
+        "MRR": 0.649,
+        "nDCG@10": 0.595,
         "Recall@100": 0.939
       },
       "bySlice": {
         "keyword": {
           "queryCount": 30,
           "P@1": 0.6,
-          "P@5": 0.267,
+          "P@5": 0.26,
           "MRR": 0.711,
-          "nDCG@10": 0.586,
+          "nDCG@10": 0.582,
           "Recall@100": 0.906
         },
         "paraphrase": {
@@ -7803,17 +7803,17 @@
         },
         "title": {
           "queryCount": 8,
-          "P@1": 0.875,
-          "P@5": 0.2,
-          "MRR": 0.938,
-          "nDCG@10": 0.954,
+          "P@1": 0.75,
+          "P@5": 0.175,
+          "MRR": 0.833,
+          "nDCG@10": 0.873,
           "Recall@100": 1
         }
       },
       "latency": {
-        "median_ms": 2.969,
-        "p95_ms": 3.636,
-        "mean_ms": 3.04
+        "median_ms": 2.957,
+        "p95_ms": 3.646,
+        "mean_ms": 3.053
       },
       "perQuery": [
         {
@@ -7826,35 +7826,35 @@
           ],
           "top5": [
             {
-              "id": "leetcode-two-sum",
-              "score": 0.0325
-            },
-            {
               "id": "cses-1640",
-              "score": 0.0325
+              "score": 0.0328
             },
             {
               "id": "cses-1641",
-              "score": 0.0313
+              "score": 0.0315
             },
             {
               "id": "leetcode-sum-of-square-numbers",
-              "score": 0.031
+              "score": 0.0313
             },
             {
               "id": "leetcode-find-two-non-overlapping-sub-arrays-each-with-target-sum",
-              "score": 0.029
+              "score": 0.0292
+            },
+            {
+              "id": "leetcode-3sum-closest",
+              "score": 0.0279
             }
           ],
           "P@1": 1,
-          "P@5": 0.4,
+          "P@5": 0.2,
           "RR": 1,
-          "nDCG@10": 0.765,
+          "nDCG@10": 0.636,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.014,
-            "p95_ms": 3.371,
-            "mean_ms": 3.067
+            "median_ms": 3.042,
+            "p95_ms": 3.493,
+            "mean_ms": 3.115
           }
         },
         {
@@ -7893,9 +7893,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.726,
-            "p95_ms": 2.993,
-            "mean_ms": 2.782
+            "median_ms": 2.752,
+            "p95_ms": 3.316,
+            "mean_ms": 2.874
           }
         },
         {
@@ -7936,9 +7936,9 @@
           "nDCG@10": 0.807,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.771,
-            "p95_ms": 3.051,
-            "mean_ms": 2.844
+            "median_ms": 2.731,
+            "p95_ms": 3.009,
+            "mean_ms": 2.842
           }
         },
         {
@@ -7976,9 +7976,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.968,
-            "p95_ms": 3.197,
-            "mean_ms": 3.015
+            "median_ms": 2.932,
+            "p95_ms": 3.307,
+            "mean_ms": 3.026
           }
         },
         {
@@ -8017,9 +8017,9 @@
           "nDCG@10": 0.626,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.7,
-            "p95_ms": 2.958,
-            "mean_ms": 2.741
+            "median_ms": 2.687,
+            "p95_ms": 2.948,
+            "mean_ms": 2.764
           }
         },
         {
@@ -8058,9 +8058,9 @@
           "nDCG@10": 0.853,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.631,
-            "p95_ms": 2.959,
-            "mean_ms": 2.679
+            "median_ms": 2.626,
+            "p95_ms": 3.167,
+            "mean_ms": 2.697
           }
         },
         {
@@ -8097,9 +8097,9 @@
           "nDCG@10": 0.356,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.986,
-            "p95_ms": 3.25,
-            "mean_ms": 3.033
+            "median_ms": 2.965,
+            "p95_ms": 3.328,
+            "mean_ms": 3.036
           }
         },
         {
@@ -8137,9 +8137,9 @@
           "nDCG@10": 0.387,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.949,
-            "p95_ms": 3.46,
-            "mean_ms": 3.055
+            "median_ms": 2.94,
+            "p95_ms": 3.168,
+            "mean_ms": 2.979
           }
         },
         {
@@ -8178,9 +8178,9 @@
           "nDCG@10": 0.704,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.735,
-            "p95_ms": 2.989,
-            "mean_ms": 2.771
+            "median_ms": 2.734,
+            "p95_ms": 2.987,
+            "mean_ms": 2.784
           }
         },
         {
@@ -8218,9 +8218,9 @@
           "nDCG@10": 0.613,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.191,
-            "p95_ms": 3.415,
-            "mean_ms": 3.247
+            "median_ms": 3.164,
+            "p95_ms": 3.406,
+            "mean_ms": 3.219
           }
         },
         {
@@ -8259,9 +8259,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.593,
-            "p95_ms": 2.871,
-            "mean_ms": 2.625
+            "median_ms": 2.569,
+            "p95_ms": 2.834,
+            "mean_ms": 2.598
           }
         },
         {
@@ -8300,9 +8300,9 @@
           "nDCG@10": 0.202,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.889,
-            "p95_ms": 3.132,
-            "mean_ms": 2.935
+            "median_ms": 2.861,
+            "p95_ms": 3.255,
+            "mean_ms": 2.95
           }
         },
         {
@@ -8341,9 +8341,9 @@
           "nDCG@10": 0.765,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.029,
-            "p95_ms": 3.556,
-            "mean_ms": 3.16
+            "median_ms": 2.976,
+            "p95_ms": 3.361,
+            "mean_ms": 3.057
           }
         },
         {
@@ -8383,9 +8383,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.25,
           "latency": {
-            "median_ms": 2.809,
-            "p95_ms": 3.552,
-            "mean_ms": 2.94
+            "median_ms": 2.775,
+            "p95_ms": 3.049,
+            "mean_ms": 2.835
           }
         },
         {
@@ -8425,9 +8425,9 @@
           "nDCG@10": 0.832,
           "Recall@100": 0.75,
           "latency": {
-            "median_ms": 2.804,
-            "p95_ms": 3.413,
-            "mean_ms": 2.905
+            "median_ms": 2.802,
+            "p95_ms": 3.073,
+            "mean_ms": 2.848
           }
         },
         {
@@ -8466,9 +8466,9 @@
           "nDCG@10": 0,
           "Recall@100": 0.333,
           "latency": {
-            "median_ms": 2.85,
-            "p95_ms": 3.064,
-            "mean_ms": 2.885
+            "median_ms": 2.874,
+            "p95_ms": 3.936,
+            "mean_ms": 3.053
           }
         },
         {
@@ -8507,9 +8507,9 @@
           "nDCG@10": 0.765,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.803,
-            "p95_ms": 3.394,
-            "mean_ms": 2.927
+            "median_ms": 2.796,
+            "p95_ms": 3.275,
+            "mean_ms": 2.931
           }
         },
         {
@@ -8548,9 +8548,9 @@
           "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.845,
-            "p95_ms": 3.1,
-            "mean_ms": 2.895
+            "median_ms": 2.842,
+            "p95_ms": 3.102,
+            "mean_ms": 2.894
           }
         },
         {
@@ -8587,9 +8587,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.005,
-            "p95_ms": 3.238,
-            "mean_ms": 3.043
+            "median_ms": 3.004,
+            "p95_ms": 3.443,
+            "mean_ms": 3.132
           }
         },
         {
@@ -8628,9 +8628,9 @@
           "nDCG@10": 0.182,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.895,
-            "p95_ms": 3.145,
-            "mean_ms": 2.943
+            "median_ms": 2.903,
+            "p95_ms": 3.143,
+            "mean_ms": 3.012
           }
         },
         {
@@ -8669,9 +8669,9 @@
           "nDCG@10": 0.277,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.841,
+            "median_ms": 2.832,
             "p95_ms": 3.074,
-            "mean_ms": 2.876
+            "mean_ms": 2.881
           }
         },
         {
@@ -8710,9 +8710,9 @@
           "nDCG@10": 0.531,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.983,
-            "p95_ms": 3.292,
-            "mean_ms": 3.036
+            "median_ms": 2.963,
+            "p95_ms": 3.233,
+            "mean_ms": 3.021
           }
         },
         {
@@ -8749,9 +8749,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.057,
-            "p95_ms": 3.427,
-            "mean_ms": 3.117
+            "median_ms": 3.03,
+            "p95_ms": 3.253,
+            "mean_ms": 3.07
           }
         },
         {
@@ -8790,9 +8790,9 @@
           "nDCG@10": 0.469,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.323,
-            "p95_ms": 3.57,
-            "mean_ms": 3.381
+            "median_ms": 3.324,
+            "p95_ms": 3.556,
+            "mean_ms": 3.365
           }
         },
         {
@@ -8831,9 +8831,9 @@
           "nDCG@10": 0.167,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.91,
-            "p95_ms": 3.899,
-            "mean_ms": 3.093
+            "median_ms": 2.876,
+            "p95_ms": 3.212,
+            "mean_ms": 2.944
           }
         },
         {
@@ -8871,9 +8871,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.185,
-            "p95_ms": 4.708,
-            "mean_ms": 3.414
+            "median_ms": 3.188,
+            "p95_ms": 3.413,
+            "mean_ms": 3.283
           }
         },
         {
@@ -8911,9 +8911,9 @@
           "nDCG@10": 0.92,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.684,
-            "p95_ms": 3.961,
-            "mean_ms": 2.892
+            "median_ms": 2.676,
+            "p95_ms": 2.951,
+            "mean_ms": 2.71
           }
         },
         {
@@ -8950,9 +8950,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.765,
-            "p95_ms": 3.13,
-            "mean_ms": 2.912
+            "median_ms": 2.768,
+            "p95_ms": 3.055,
+            "mean_ms": 2.881
           }
         },
         {
@@ -8991,9 +8991,9 @@
           "nDCG@10": 0.296,
           "Recall@100": 0.667,
           "latency": {
-            "median_ms": 2.818,
-            "p95_ms": 4.655,
-            "mean_ms": 3.072
+            "median_ms": 2.807,
+            "p95_ms": 3.803,
+            "mean_ms": 2.992
           }
         },
         {
@@ -9031,9 +9031,9 @@
           "nDCG@10": 0.307,
           "Recall@100": 0.5,
           "latency": {
-            "median_ms": 3.156,
-            "p95_ms": 3.516,
-            "mean_ms": 3.251
+            "median_ms": 3.192,
+            "p95_ms": 3.49,
+            "mean_ms": 3.244
           }
         },
         {
@@ -9071,9 +9071,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.39,
-            "p95_ms": 3.724,
-            "mean_ms": 3.486
+            "median_ms": 3.434,
+            "p95_ms": 4.815,
+            "mean_ms": 3.614
           }
         },
         {
@@ -9110,9 +9110,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.818,
-            "p95_ms": 3.102,
-            "mean_ms": 2.84
+            "median_ms": 2.83,
+            "p95_ms": 3.058,
+            "mean_ms": 2.858
           }
         },
         {
@@ -9150,9 +9150,9 @@
           "nDCG@10": 0.571,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.107,
-            "p95_ms": 3.513,
-            "mean_ms": 3.172
+            "median_ms": 3.078,
+            "p95_ms": 3.409,
+            "mean_ms": 3.13
           }
         },
         {
@@ -9189,9 +9189,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.352,
-            "p95_ms": 3.633,
-            "mean_ms": 3.394
+            "median_ms": 3.409,
+            "p95_ms": 6.509,
+            "mean_ms": 3.846
           }
         },
         {
@@ -9228,9 +9228,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.832,
-            "p95_ms": 3.147,
-            "mean_ms": 2.88
+            "median_ms": 2.831,
+            "p95_ms": 3.133,
+            "mean_ms": 2.86
           }
         },
         {
@@ -9267,9 +9267,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.444,
-            "p95_ms": 3.799,
-            "mean_ms": 3.506
+            "median_ms": 3.395,
+            "p95_ms": 3.659,
+            "mean_ms": 3.433
           }
         },
         {
@@ -9306,9 +9306,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.871,
-            "p95_ms": 3.474,
-            "mean_ms": 2.945
+            "median_ms": 2.877,
+            "p95_ms": 3.273,
+            "mean_ms": 2.932
           }
         },
         {
@@ -9345,9 +9345,9 @@
           "nDCG@10": 0.289,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.888,
-            "p95_ms": 3.248,
-            "mean_ms": 2.933
+            "median_ms": 2.907,
+            "p95_ms": 4.641,
+            "mean_ms": 3.124
           }
         },
         {
@@ -9384,9 +9384,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.758,
-            "p95_ms": 3.133,
-            "mean_ms": 2.803
+            "median_ms": 2.797,
+            "p95_ms": 3.899,
+            "mean_ms": 2.996
           }
         },
         {
@@ -9423,9 +9423,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.071,
-            "p95_ms": 3.368,
-            "mean_ms": 3.103
+            "median_ms": 3.06,
+            "p95_ms": 3.376,
+            "mean_ms": 3.095
           }
         },
         {
@@ -9462,9 +9462,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.889,
-            "p95_ms": 3.229,
-            "mean_ms": 2.933
+            "median_ms": 2.887,
+            "p95_ms": 3.24,
+            "mean_ms": 2.965
           }
         },
         {
@@ -9501,9 +9501,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.766,
-            "p95_ms": 3.124,
-            "mean_ms": 2.811
+            "median_ms": 2.781,
+            "p95_ms": 3.122,
+            "mean_ms": 2.803
           }
         },
         {
@@ -9542,9 +9542,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.137,
-            "p95_ms": 3.444,
-            "mean_ms": 3.178
+            "median_ms": 3.126,
+            "p95_ms": 3.463,
+            "mean_ms": 3.166
           }
         },
         {
@@ -9583,9 +9583,9 @@
           "nDCG@10": 0,
           "Recall@100": 0,
           "latency": {
-            "median_ms": 3.022,
-            "p95_ms": 3.319,
-            "mean_ms": 3.052
+            "median_ms": 3.015,
+            "p95_ms": 3.276,
+            "mean_ms": 3.042
           }
         },
         {
@@ -9623,9 +9623,9 @@
           "nDCG@10": 0.624,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.379,
-            "p95_ms": 3.667,
-            "mean_ms": 3.43
+            "median_ms": 3.369,
+            "p95_ms": 3.706,
+            "mean_ms": 3.445
           }
         },
         {
@@ -9664,9 +9664,9 @@
           "nDCG@10": 0.369,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.329,
-            "p95_ms": 3.602,
-            "mean_ms": 3.372
+            "median_ms": 3.319,
+            "p95_ms": 3.613,
+            "mean_ms": 3.414
           }
         },
         {
@@ -9706,9 +9706,9 @@
           "nDCG@10": 0.659,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.597,
-            "p95_ms": 3.884,
-            "mean_ms": 3.647
+            "median_ms": 3.6,
+            "p95_ms": 3.87,
+            "mean_ms": 3.639
           }
         },
         {
@@ -9746,9 +9746,9 @@
           "nDCG@10": 0.387,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.064,
-            "p95_ms": 3.404,
-            "mean_ms": 3.128
+            "median_ms": 3.071,
+            "p95_ms": 3.385,
+            "mean_ms": 3.108
           }
         },
         {
@@ -9786,9 +9786,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.603,
-            "p95_ms": 3.896,
-            "mean_ms": 3.707
+            "median_ms": 3.597,
+            "p95_ms": 3.845,
+            "mean_ms": 3.627
           }
         },
         {
@@ -9825,9 +9825,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.143,
-            "p95_ms": 3.446,
-            "mean_ms": 3.183
+            "median_ms": 3.136,
+            "p95_ms": 3.434,
+            "mean_ms": 3.185
           }
         },
         {
@@ -9864,9 +9864,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.227,
-            "p95_ms": 3.488,
-            "mean_ms": 3.273
+            "median_ms": 3.241,
+            "p95_ms": 6.081,
+            "mean_ms": 3.559
           }
         },
         {
@@ -9907,9 +9907,9 @@
           "nDCG@10": 0.613,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.56,
-            "p95_ms": 3.843,
-            "mean_ms": 3.6
+            "median_ms": 3.559,
+            "p95_ms": 4.468,
+            "mean_ms": 3.756
           }
         },
         {
@@ -9948,9 +9948,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.472,
-            "p95_ms": 3.973,
-            "mean_ms": 3.629
+            "median_ms": 3.557,
+            "p95_ms": 6.425,
+            "mean_ms": 3.967
           }
         },
         {
@@ -9988,9 +9988,9 @@
           "nDCG@10": 0,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 3.674,
-            "p95_ms": 3.929,
-            "mean_ms": 3.718
+            "median_ms": 3.643,
+            "p95_ms": 4.123,
+            "mean_ms": 3.729
           }
         },
         {
@@ -10029,9 +10029,9 @@
           "nDCG@10": 0.235,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.9,
-            "p95_ms": 3.234,
-            "mean_ms": 2.942
+            "median_ms": 2.891,
+            "p95_ms": 3.356,
+            "mean_ms": 2.972
           }
         },
         {
@@ -10042,35 +10042,35 @@
           ],
           "top5": [
             {
-              "id": "leetcode-two-sum",
-              "score": 0.0325
-            },
-            {
               "id": "cses-1640",
-              "score": 0.0325
+              "score": 0.0328
             },
             {
               "id": "cses-1641",
-              "score": 0.0313
+              "score": 0.0315
             },
             {
               "id": "leetcode-sum-of-square-numbers",
-              "score": 0.031
+              "score": 0.0313
             },
             {
               "id": "leetcode-find-two-non-overlapping-sub-arrays-each-with-target-sum",
-              "score": 0.029
+              "score": 0.0292
+            },
+            {
+              "id": "leetcode-3sum-closest",
+              "score": 0.0279
             }
           ],
-          "P@1": 1,
-          "P@5": 0.2,
-          "RR": 1,
-          "nDCG@10": 1,
+          "P@1": 0,
+          "P@5": 0,
+          "RR": 0.167,
+          "nDCG@10": 0.356,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.924,
-            "p95_ms": 3.205,
-            "mean_ms": 2.951
+            "median_ms": 2.889,
+            "p95_ms": 3.256,
+            "mean_ms": 2.963
           }
         },
         {
@@ -10107,9 +10107,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.457,
-            "p95_ms": 2.835,
-            "mean_ms": 2.501
+            "median_ms": 2.469,
+            "p95_ms": 2.981,
+            "mean_ms": 2.518
           }
         },
         {
@@ -10146,9 +10146,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.642,
-            "p95_ms": 4.651,
-            "mean_ms": 2.892
+            "median_ms": 2.607,
+            "p95_ms": 2.97,
+            "mean_ms": 2.638
           }
         },
         {
@@ -10185,9 +10185,9 @@
           "nDCG@10": 0.631,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.503,
-            "p95_ms": 2.785,
-            "mean_ms": 2.551
+            "median_ms": 2.507,
+            "p95_ms": 2.963,
+            "mean_ms": 2.557
           }
         },
         {
@@ -10224,9 +10224,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.476,
-            "p95_ms": 2.793,
-            "mean_ms": 2.505
+            "median_ms": 2.473,
+            "p95_ms": 2.804,
+            "mean_ms": 2.503
           }
         },
         {
@@ -10264,8 +10264,8 @@
           "Recall@100": 1,
           "latency": {
             "median_ms": 2.54,
-            "p95_ms": 3.048,
-            "mean_ms": 2.654
+            "p95_ms": 2.574,
+            "mean_ms": 2.56
           }
         },
         {
@@ -10302,9 +10302,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.506,
-            "p95_ms": 2.822,
-            "mean_ms": 2.536
+            "median_ms": 2.507,
+            "p95_ms": 2.969,
+            "mean_ms": 2.554
           }
         },
         {
@@ -10341,9 +10341,9 @@
           "nDCG@10": 1,
           "Recall@100": 1,
           "latency": {
-            "median_ms": 2.685,
-            "p95_ms": 3.047,
-            "mean_ms": 2.708
+            "median_ms": 2.688,
+            "p95_ms": 3.116,
+            "mean_ms": 2.739
           }
         }
       ]

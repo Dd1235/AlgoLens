@@ -1,4 +1,4 @@
-const { tokenize } = require("./tokenize");
+const { tokenize, normalizeNumbers } = require("./tokenize");
 
 function problemText(p) {
   return [p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" ");
@@ -15,6 +15,19 @@ class Bm25Index {
     this.docLengths = [];
     this.df = new Map();
     this.postings = new Map();
+    // Known-item lookup: normalized title -> docIds. Typing a problem's exact
+    // name is a different intent from describing one, and BM25 can't tell them
+    // apart — it sees a bag of words either way, so "two sum" put Two Sum at
+    // rank 28 behind Sum of Two Values, which shares both terms in a longer
+    // title. Two users reported the ordering independently.
+    //
+    // This is deliberately narrow. Boosting titles inside the document text was
+    // tried first and rejected: it lifted title and keyword queries but cost
+    // paraphrase badly (P@1 0.250 -> 0.083), because a paraphrase avoids the
+    // title's words by construction, so the boost helps a problem's competitors
+    // more than the problem itself. An exact-match bonus fires only when the
+    // whole query is a title and is invisible to every other query.
+    this.byTitle = new Map();
 
     let totalLen = 0;
     problems.forEach((p, docId) => {
@@ -31,6 +44,22 @@ class Bm25Index {
         if (!set) {
           set = new Set();
           this.postings.set(term, set);
+        }
+        set.add(docId);
+      }
+    });
+
+    problems.forEach((p, docId) => {
+      const words = normalizeNumbers(tokenize(p.title || ""));
+      if (!words.length) return;
+      // Two keys per title: spaced and unspaced. LeetCode writes "3Sum" as one
+      // word, which tokenizes to a single term, so a user typing "3 sum" would
+      // otherwise never match it. Unspacing both sides makes the two forms meet.
+      for (const key of new Set([words.join(" "), words.join("")])) {
+        let set = this.byTitle.get(key);
+        if (!set) {
+          set = new Set();
+          this.byTitle.set(key, set);
         }
         set.add(docId);
       }
@@ -57,9 +86,31 @@ class Bm25Index {
     return idf * (num / den);
   }
 
-  search(query, k = 10, offset = 0) {
+  // Enough to clear the top of any realistic BM25 score, so an exact title
+  // match wins outright rather than merely nudging.
+  static TITLE_BONUS = 1000;
+
+  // `opts.raw` is the user's query before alias expansion. The known-item
+  // check needs it: expansion appends words ("2 sum" -> "2 sum two"), and an
+  // appended word means the query is no longer equal to any title, so the
+  // exact-match bonus would never fire on an expanded query. Optional, so the
+  // other rankers behind this interface are unaffected.
+  search(query, k = 10, offset = 0, opts = {}) {
     const queryTokens = tokenize(query);
     if (queryTokens.length === 0) return { hits: [], total: 0 };
+    // Digits normalized on both sides, so "2 sum" is a known-item hit for the
+    // problem titled "Two Sum" the same way "two sum" is.
+    // Four candidate keys, because digits are ambiguous in titles. "2 sum"
+    // needs the digit turned into a word to reach "Two Sum"; "3 sum" needs it
+    // left alone to reach "3Sum", which is a single token. Trying both forms,
+    // spaced and unspaced, covers every combination and costs four Map lookups.
+    const rawTokens = tokenize(opts.raw || query);
+    const variants = [rawTokens, normalizeNumbers(rawTokens)];
+    let exactTitle = null;
+    for (const words of variants) {
+      exactTitle = this.byTitle.get(words.join(" ")) || this.byTitle.get(words.join(""));
+      if (exactTitle) break;
+    }
 
     const scoreByDoc = new Map();
     const matchedByDoc = new Map();
@@ -84,7 +135,10 @@ class Bm25Index {
     for (const [docId, score] of scoreByDoc) {
       hits.push({
         problem: this.problems[docId],
-        score,
+        // The whole query is this problem's title: it is the answer, not a
+        // candidate. Ties among several same-titled problems keep their BM25
+        // order underneath the bonus.
+        score: exactTitle && exactTitle.has(docId) ? score + Bm25Index.TITLE_BONUS : score,
         matchedTerms: matchedByDoc.get(docId),
       });
     }

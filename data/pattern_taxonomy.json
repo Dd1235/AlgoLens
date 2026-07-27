@@ -584,6 +584,17 @@
     "pattern-matching": "string-matching",
     "enumeration": "brute-force",
     "exhaustive-search": "brute-force",
-    "sweep-line-difference": "line-sweep"
+    "sweep-line-difference": "line-sweep",
+    "avl-tree": "ordered-set",
+    "avl": "ordered-set",
+    "red-black-tree": "ordered-set",
+    "rb-tree": "ordered-set",
+    "balanced-bst": "ordered-set",
+    "self-balancing-bst": "ordered-set",
+    "balanced-binary-search-tree": "ordered-set",
+    "splay-tree": "ordered-set",
+    "skip-list": "ordered-set",
+    "binary-search-tree": "ordered-set",
+    "bst": "ordered-set"
   }
 }

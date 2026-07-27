@@ -29,11 +29,11 @@ Real output from the live corpus, same query run both ways. **keyword** is BM25 
 | `mex set`              | Sliding Window Mex · MEX Queries · Maximize Mex                                                        | MEX Queries · Mex Grid Construction · Sliding Window Mex                                                      | niche vocabulary. No judge tags `mex`, so this search doesn't exist anywhere else                                                                      |
 | `sweep line`           | Intersection Points · Perfect Rectangle · Area of Rectangles                                           | Lines and Queries II · Line Segments Trace I · Erect the Fence                                                | the word "sweep" appears in **zero** problem statements — only the labels carry it                                                                     |
 
-The pattern: **keyword wins when you know the vocabulary** — a technique name, a title fragment, a community nickname. **Meaning wins when you only remember what the problem was about.** `both` fuses the two rankings when you're not sure which you are.
+The pattern: **keyword wins when you know the vocabulary** — a technique name, a title fragment, a community nickname. **Meaning wins when you only remember what the problem was about.** Typing a problem's exact name always puts that problem first, whichever mode you're in.
 
 ## Finding problems
 
-- **Three search modes, one box.** **keyword** matches words in the title, statement _and_ our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. **both** blends them. Pick one next to the search button; the status line says which answered, and how fast.
+- **Two search modes, one box.** **keyword** matches words in the title, statement _and_ our technique labels — a problem that opens "Alice and Bob play a game…" never says "dp", but its label does, so `game theory dp` still finds it. **meaning** takes plain english: `thief robbing houses` finds House Robber. Pick one next to the search button; the status line says which answered, and how fast. (A third mode, `hybrid`, was retired: fusing the two inherited semantic search's inability to return zero results, so nonsense queries came back confident.)
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **A page for what exists.** You can't search for a technique you've never heard of, and most people's exposure stops at one sheet. The patterns page lists all 165 labels with counts and a filter: type `dp` and get the whole family — `digit-dp`, `tree-dp`, `slope-trick`, `state-compression` — each clickable into the problems carrying it. It's a directory, not a tutorial, and it stays out of the search page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
@@ -83,6 +83,10 @@ or wording, not ranking — that turned out to be the pattern.
 | Should a pattern filter survive a new query? | No — measured it: carrying a label into a new query dead-ends in 9 of 25 cases, a judge in 0 of 20. Labels drop when you type, judges stay |
 | "no section on what patterns even exist — I only know Striver's sheet" | Searches now name the technique family above the results, and the patterns page is filterable and out of the dev-tools nav |
 | "pick topics + difficulty, get 3 random problems" | Not shipped. The difficulty half can't work — 16% of the corpus has no difficulty and a band leaves 1-3 candidates per topic. A shuffle was tried and reverted: one label at a time is too narrow to be worth the chrome |
+| "2-sum was 10-11th, not first" | Worse than reported — rank 28. Typing a problem's exact name now puts that problem first; `two sum`, `2 sum` and `3 sum` all work |
+| "hybrid returns results for a random name" | Semantic search gives every problem some similarity, so it can never return zero. Hybrid retired; a query whose words appear nowhere in the corpus now says so |
+| "UI for phone wasn't as good as desktop" | The search bar overflowed by ~200px and was being hidden rather than fixed. Full mobile pass: form restacks, inputs no longer trigger iOS zoom, heatmap and stats table scroll, tap targets from ~16px to 34px |
+| "AVL tree and niche techniques missing" | AVL is a textbook structure, not a contest technique — `avl tree` now routes to the ordered-set problems the corpus actually has |
 
 ## Measured
 

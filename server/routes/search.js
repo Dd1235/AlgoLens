@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
+const { tokenize } = require("../search/tokenize");
 const { logEvent } = require("../telemetry");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
@@ -33,9 +34,9 @@ function pickRanker(indexes, defaultRanker, req) {
   return defaultRanker;
 }
 
-async function timedSearch(index, q, k, offset = 0) {
+async function timedSearch(index, q, k, offset = 0, opts = {}) {
   const t = process.hrtime.bigint();
-  const result = await Promise.resolve(index.search(q, k, offset));
+  const result = await Promise.resolve(index.search(q, k, offset, opts));
   const latencyMs = Number(process.hrtime.bigint() - t) / 1e6;
   // Handle both old (array) and new ({ hits, total }) return shapes for backwards compat
   if (Array.isArray(result)) {
@@ -97,6 +98,24 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
   // gRPC leg serialize a nonsense k over the wire.
   const FULL_PAGE_SIZE = problems.length;
   const KNOWN_PLATFORMS = new Set(problems.map((p) => p.platform));
+  // Every term that appears anywhere in the corpus. A query whose words are all
+  // absent from this set cannot match anything, and saying so beats what the
+  // rankers do on their own: BM25 returns nothing (fine), but dense compares
+  // meaning-vectors and every document has *some* cosine similarity to any
+  // input, so it confidently hands back its least-bad guess. Someone typed a
+  // person's name and got problems back.
+  //
+  // A similarity threshold cannot fix that — measured on the live corpus, the
+  // worst real query ("cheese", 0.314) scores below the best gibberish
+  // ("qqqqq", 0.452), so any cutoff that blocks junk also blocks cheese.
+  // Vocabulary separates them cleanly instead: real queries have at least one
+  // known word, nonsense has none.
+  const VOCABULARY = new Set();
+  for (const p of problems) {
+    for (const term of tokenize([p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" "))) {
+      VOCABULARY.add(term);
+    }
+  }
 
   router.get("/patterns", (_req, res) => {
     res.json(patternsPayload);
@@ -117,6 +136,24 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const exp = expandQuery(q);
     const ranker = pickRanker(indexes, defaultRanker, req);
     const index = indexes[ranker];
+
+    // Checked against the expanded query, so an alias that resolves to real
+    // vocabulary ("aliens trick" -> wqs binary search) still counts as known.
+    const queryTerms = q.trim() ? tokenize(exp.query) : [];
+    const unknownTerms = queryTerms.filter((t) => !VOCABULARY.has(t));
+    if (queryTerms.length && unknownTerms.length === queryTerms.length) {
+      return res.json({
+        query: q,
+        ranker,
+        latencyMs: 0,
+        offset,
+        k,
+        total: 0,
+        filter,
+        unknownTerms: [...new Set(unknownTerms)].slice(0, 5),
+        hits: [],
+      });
+    }
 
     try {
       // Load the user's done/bookmarked sets once. Anonymous users skip this
@@ -145,14 +182,14 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         total = browsed.length;
         hits = browsed.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
       } else if (!hasFilter) {
-        ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset));
+        ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset, { raw: q }));
       } else {
         // Need the full ranked list so filters + slice produce a stable
         // total and disjoint pages. The ranker materializes everything before
         // slicing internally, so this costs no extra scoring work. Pattern,
         // platform and done/notdone compose in the same pass; pattern and
         // platform work for anonymous users too.
-        const full = await timedSearch(index, exp.query, FULL_PAGE_SIZE, 0);
+        const full = await timedSearch(index, exp.query, FULL_PAGE_SIZE, 0, { raw: q });
         latencyMs = full.latencyMs;
         const filtered = full.hits.filter((h) => {
           if (pattern && !(h.problem.patterns || []).includes(pattern)) return false;

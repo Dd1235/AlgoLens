@@ -9,6 +9,8 @@ const path = require("path");
 // detected, so every ranker (lexical, dense, gRPC) sees the searchable form.
 // Append-only: the original tokens stay, so existing matches are preserved.
 
+const { NUMBER_WORDS } = require("./tokenize");
+
 const TAXONOMY = JSON.parse(
   fs.readFileSync(path.join(__dirname, "..", "..", "data", "pattern_taxonomy.json"), "utf8")
 );
@@ -55,6 +57,17 @@ function expandQuery(q) {
       added.push(word);
     }
   }
+  // A bare digit that has a word form: append the word. Runs after the alias
+  // rules so it can't consume their budget, and only for standalone tokens so
+  // "1234" and "abc2" are untouched.
+  for (const token of lower.split(/[^a-z0-9]+/)) {
+    const word = NUMBER_WORDS[token];
+    if (!word || present.has(word) || added.length >= MAX_ADDED_WORDS) continue;
+    present.add(word);
+    added.push(word);
+    matches.push(token);
+  }
+
   if (!added.length) return { query: q, expanded: false, added, matches };
   return { query: `${q} ${added.join(" ")}`, expanded: true, added, matches };
 }

@@ -149,7 +149,9 @@ const RANKER_LABELS = {
   tfidf: "keyword · tfidf",
   "bm25-grpc": "keyword · go",
 };
-const PICKER_RANKERS = ["bm25", "dense", "hybrid"];
+// hybrid is no longer registered server-side; the label stays in RANKER_LABELS
+// so an old ?ranker=hybrid link still renders a sensible status line.
+const PICKER_RANKERS = ["bm25", "dense"];
 
 async function populateRankerSelect() {
   let data;
@@ -399,6 +401,24 @@ async function runSearch(rawQuery, { append = false } = {}) {
 
   // Shell-style library commands.
   const libraryType = currentUser ? LIBRARY_COMMANDS[q.toLowerCase()] : null;
+  // A leading colon means "command", and every real one has been matched by
+  // now — so this is a typo or a half-typed command, not a question about
+  // problems. Searching the corpus for ":bo" costs a round trip to say nothing.
+  // Also stops the debounce firing a query per keystroke while someone types
+  // ":bookmarks" one character at a time.
+  if (!libraryType && q.startsWith(":")) {
+    currentQuery = "";
+    currentOffset = 0;
+    currentTotal = 0;
+    hideLoadMore();
+    hideFeedback();
+    resultsEl.innerHTML = "";
+    const known = currentUser
+      ? ":help :bookmarks :done :all :compare"
+      : ":help :compare  (sign in for :bookmarks, :done, :all)";
+    setStatus(`${q} is not a command · try ${known}`);
+    return;
+  }
   if (libraryType) {
     if (!append) {
       currentQuery = q;
@@ -467,7 +487,15 @@ async function runSearch(rawQuery, { append = false } = {}) {
 function renderSingle(data, q, append) {
   if (!data.hits || data.hits.length === 0) {
     if (!append) {
-      setStatus(`0 hits for "${q}"`);
+      // Name the words that matched nothing. "0 hits" reads as a broken search;
+      // "no problem mentions deepya" tells you the corpus is finite and that
+      // your query, not the engine, is the thing to change.
+      const unknown = data.unknownTerms || [];
+      setStatus(
+        unknown.length
+          ? `no problem mentions ${unknown.map((t) => `"${t}"`).join(" or ")} — try a technique, a title, or describe the problem`
+          : `0 hits for "${q}"`
+      );
       resultsEl.innerHTML = "";
     }
     return;
@@ -788,6 +816,10 @@ const HELP_TEXT = `COSINE(1)                                          the manual
 
 SEARCH — pick a mode next to the box
 
+  typing a problem's exact name puts that problem first: "two sum"
+  and "2 sum" both land on Two Sum. Words that appear nowhere in
+  the corpus say so rather than guessing.
+
   keyword    matches words in the title, the statement AND our technique
              labels. A problem that opens "Alice and Bob play a game..."
              never says "dp" — but its label does, so "game theory dp"
@@ -859,6 +891,10 @@ CORPUS
   four judges, tagged [lc] [cf] [atc] [cses] on every result
   deliberately hard: no LeetCode Easy, Codeforces and AtCoder
   stratified from 1300 up — the number on the card is the rating
+
+COMMANDS START WITH ":"
+  anything beginning with a colon is a command, never a search —
+  a typo like ":bo" tells you so instead of querying the corpus
 
 JUDGES
   all four are on until you narrow. Click one in the judges row

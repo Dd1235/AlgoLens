@@ -21,4 +21,22 @@ function tokenize(text) {
     .filter((tok) => tok.length > 0 && !STOPWORDS.has(tok));
 }
 
-module.exports = { tokenize, STOPWORDS };
+
+// Digit/word equivalences. Not technique names, so the taxonomy can't hold
+// them: the tokenizer splits on non-alphanumerics, which makes "2" and "two"
+// unrelated terms, and no problem title spells the digit. "2 sum" found Two Sum
+// at rank 75 before this existed.
+//
+// Deliberately tiny. "k" is absent on purpose — it means something specific in
+// this domain and expanding it would fire on a large slice of the corpus.
+const NUMBER_WORDS = { 1: "one", 2: "two", 3: "three", 4: "four" };
+
+// Rewrites standalone digit tokens to their word form. Used for the known-item
+// title lookup, where the query has to match a title exactly.
+function normalizeNumbers(tokens) {
+  return tokens.map((t) => NUMBER_WORDS[t] || t);
+}
+
+module.exports = {
+  NUMBER_WORDS,
+  normalizeNumbers, tokenize, STOPWORDS };
