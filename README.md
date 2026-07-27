@@ -83,6 +83,10 @@ or wording, not ranking — that turned out to be the pattern.
 | Should a pattern filter survive a new query? | No — measured it: carrying a label into a new query dead-ends in 9 of 25 cases, a judge in 0 of 20. Labels drop when you type, judges stay |
 | "no section on what patterns even exist — I only know Striver's sheet" | Searches now name the technique family above the results, and the patterns page is filterable and out of the dev-tools nav |
 | "pick topics + difficulty, get 3 random problems" | Not shipped. The difficulty half can't work — 16% of the corpus has no difficulty and a band leaves 1-3 candidates per topic. A shuffle was tried and reverted: one label at a time is too narrow to be worth the chrome |
+| "2-sum was 10-11th, not first" | Worse than reported — rank 28. Typing a problem's exact name now puts that problem first; `two sum`, `2 sum` and `3 sum` all work |
+| "hybrid returns results for a random name" | Semantic search gives every problem some similarity, so it can never return zero. Hybrid retired; a query whose words appear nowhere in the corpus now says so |
+| "UI for phone wasn't as good as desktop" | The search bar overflowed by ~200px and was being hidden rather than fixed. Full mobile pass: form restacks, inputs no longer trigger iOS zoom, heatmap and stats table scroll, tap targets from ~16px to 34px |
+| "AVL tree and niche techniques missing" | AVL is a textbook structure, not a contest technique — `avl tree` now routes to the ordered-set problems the corpus actually has |
 
 ## Measured
 

@@ -816,6 +816,10 @@ const HELP_TEXT = `COSINE(1)                                          the manual
 
 SEARCH — pick a mode next to the box
 
+  typing a problem's exact name puts that problem first: "two sum"
+  and "2 sum" both land on Two Sum. Words that appear nowhere in
+  the corpus say so rather than guessing.
+
   keyword    matches words in the title, the statement AND our technique
              labels. A problem that opens "Alice and Bob play a game..."
              never says "dp" — but its label does, so "game theory dp"
@@ -887,6 +891,10 @@ CORPUS
   four judges, tagged [lc] [cf] [atc] [cses] on every result
   deliberately hard: no LeetCode Easy, Codeforces and AtCoder
   stratified from 1300 up — the number on the card is the rating
+
+COMMANDS START WITH ":"
+  anything beginning with a colon is a command, never a search —
+  a typo like ":bo" tells you so instead of querying the corpus
 
 JUDGES
   all four are on until you narrow. Click one in the judges row
