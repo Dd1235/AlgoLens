@@ -399,6 +399,24 @@ async function runSearch(rawQuery, { append = false } = {}) {
 
   // Shell-style library commands.
   const libraryType = currentUser ? LIBRARY_COMMANDS[q.toLowerCase()] : null;
+  // A leading colon means "command", and every real one has been matched by
+  // now — so this is a typo or a half-typed command, not a question about
+  // problems. Searching the corpus for ":bo" costs a round trip to say nothing.
+  // Also stops the debounce firing a query per keystroke while someone types
+  // ":bookmarks" one character at a time.
+  if (!libraryType && q.startsWith(":")) {
+    currentQuery = "";
+    currentOffset = 0;
+    currentTotal = 0;
+    hideLoadMore();
+    hideFeedback();
+    resultsEl.innerHTML = "";
+    const known = currentUser
+      ? ":help :bookmarks :done :all :compare"
+      : ":help :compare  (sign in for :bookmarks, :done, :all)";
+    setStatus(`${q} is not a command · try ${known}`);
+    return;
+  }
   if (libraryType) {
     if (!append) {
       currentQuery = q;
@@ -467,7 +485,15 @@ async function runSearch(rawQuery, { append = false } = {}) {
 function renderSingle(data, q, append) {
   if (!data.hits || data.hits.length === 0) {
     if (!append) {
-      setStatus(`0 hits for "${q}"`);
+      // Name the words that matched nothing. "0 hits" reads as a broken search;
+      // "no problem mentions deepya" tells you the corpus is finite and that
+      // your query, not the engine, is the thing to change.
+      const unknown = data.unknownTerms || [];
+      setStatus(
+        unknown.length
+          ? `no problem mentions ${unknown.map((t) => `"${t}"`).join(" or ")} — try a technique, a title, or describe the problem`
+          : `0 hits for "${q}"`
+      );
       resultsEl.innerHTML = "";
     }
     return;
