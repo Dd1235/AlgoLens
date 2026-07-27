@@ -305,6 +305,20 @@ judgeRow.querySelectorAll(".judge-chip[data-platform]").forEach((chip) => {
 });
 judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 
+// Names whatever is narrowing the current view, so a short or empty library
+// listing explains itself instead of looking broken.
+//
+// This was deleted by accident when the browse shuffle was reverted — the
+// removal was done by slicing between two source markers, and this function sat
+// between them. runLibrary still called it, so :bookmarks / :done / :all threw
+// a ReferenceError and rendered nothing at all.
+function activeFacets() {
+  const bits = [];
+  if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
+  if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
+  return bits;
+}
+
 function syncJudgeControls() {
   // An empty set means "every judge" — the server collapses none and all-four
   // to the same no-filter query. So the default has to render every chip as on:
