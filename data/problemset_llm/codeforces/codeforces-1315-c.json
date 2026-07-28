@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1315-c",
+  "title": "Restoring Permutation",
+  "slug": "1315-c-restoring-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1315/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a sequence b of length n, construct the lexicographically smallest permutation a of length 2n such that for each i, b_i equals the minimum of a_{2i-1} and a_{2i}, or determine that no such permutation exists.",
+  "tags": [
+    "greedy",
+    "permutation"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217258,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

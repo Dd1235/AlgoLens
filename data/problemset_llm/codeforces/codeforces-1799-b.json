@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1799-b",
+  "title": "Equalize by Divide",
+  "slug": "1799-b-equalize-by-divide",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1799/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, determine if it is possible to make all elements equal by repeatedly replacing an element with the ceiling of its division by another element, and if so, provide a sequence of operations within a bounded number of steps.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217297,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

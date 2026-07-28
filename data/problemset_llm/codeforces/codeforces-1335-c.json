@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1335-c",
+  "title": "Two Teams Composing",
+  "slug": "1335-c-two-teams-composing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1335/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a list of student skills, determine the largest team size x such that two teams of size x can be formed: one with all distinct skills and the other with all identical skills, without overlapping students.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216808,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "counting": 0.85
+    }
+  }
+}

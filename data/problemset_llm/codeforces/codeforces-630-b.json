@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-630-b",
+  "title": "Moore's Law",
+  "slug": "630-b-moore-s-law",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/630/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Simulate the exponential growth of transistor count over time, increasing by a fixed multiplier every second, to display real-time values reflecting Moore's law.",
+  "tags": [
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "exponential-growth",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217339,
+    "pattern_confidence": {
+      "exponential-growth": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

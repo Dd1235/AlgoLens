@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1928-b",
+  "title": "Equalize",
+  "slug": "1928-b-equalize",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1928/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given an array, find the maximum frequency of any value achievable by adding a permutation of 1 to n to the array elements element-wise.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217306,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.85,
+      "greedy": 0.9
+    }
+  }
+}

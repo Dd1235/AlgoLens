@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1388-b",
+  "title": "Captain Flint and a Long Voyage",
+  "slug": "1388-b-captain-flint-and-a-long-voyage",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1388/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an integer x of length n, convert each digit to its binary form and concatenate to form k. After removing the last n digits from k, find the integer x of length n that maximizes the resulting number r, and among those, choose the minimal x.",
+  "tags": [
+    "math",
+    "greedy",
+    "string"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-representation",
+    "string-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216700,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "binary-representation": 0.85,
+      "string-manipulation": 0.8
+    }
+  }
+}

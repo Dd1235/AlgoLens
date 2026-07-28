@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1121-b",
+  "title": "Mike and Children",
+  "slug": "1121-b-mike-and-children",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1121/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given sweets with distinct sizes, pair them so that all pairs have the same sum, maximizing the number of pairs formed without reusing sweets.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216940,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "sorting": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

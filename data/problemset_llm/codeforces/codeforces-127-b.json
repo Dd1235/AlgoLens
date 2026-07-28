@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-127-b",
+  "title": "Canvas Frames",
+  "slug": "127-b-canvas-frames",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/127/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given sticks of various lengths, determine the maximum number of rectangular or square frames that can be formed using pairs of sticks without breaking or combining them.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216693,
+    "pattern_confidence": {
+      "counting": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

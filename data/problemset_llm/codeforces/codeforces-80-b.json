@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-80-b",
+  "title": "Depression",
+  "slug": "80-b-depression",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/80/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "geometry",
+    "math"
+  ],
+  "statement": "Given a digital clock initially showing 12:00, compute the smallest forward rotation angles in degrees for the hour and minute hands to display a specified time, considering continuous and independent movement of each hand.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "angle-calculation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217351,
+    "pattern_confidence": {
+      "angle-calculation": 0.95,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

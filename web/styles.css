@@ -399,6 +399,40 @@ html[data-theme="light"] .theme-toggle {
   font-weight: 400;
 }
 
+/* Per-judge difficulty. Sits under the judges row and only exists while a
+   judge is selected, because none of these scales is comparable to another. */
+.difficulty-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.45rem 0 0;
+  font-size: 0.78rem;
+}
+.difficulty-row.hidden { display: none !important; }
+
+.difficulty-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.difficulty-label {
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+.difficulty-label::after { content: ":"; }
+
+.difficulty-chip[disabled] {
+  opacity: 0.35;
+  cursor: default;
+}
+.difficulty-chip[disabled]:hover {
+  color: var(--text-muted);
+  border-color: var(--border);
+  background: none;
+}
+
 .judge-chip.judge-clear {
   color: var(--text-dim);
   border-style: dashed;
@@ -1412,6 +1446,15 @@ html[data-theme="light"] footer::after { content: ""; }
    guard against the last stray pixel, not as the thing holding the layout up.
    ───────────────────────────────────────────────────────────────────────── */
 
+/* Tablet / small laptop. The judges row plus a difficulty group is the widest
+   chrome on the page — it fits 760px comfortably but crowds an iPad in portrait
+   (768px) once two judges are selected, so let the groups stack there rather
+   than at the phone breakpoint. */
+@media (max-width: 900px) {
+  .difficulty-row { row-gap: 0.35rem; }
+  .difficulty-group { flex-wrap: wrap; }
+}
+
 @media (max-width: 720px) {
   main { padding: 1.5rem 0.9rem 4rem; }
 
@@ -1453,7 +1496,8 @@ html[data-theme="light"] footer::after { content: ""; }
   .judge-chip,
   .pattern-chip,
   .lib-chip,
-  .technique-chip {
+  .technique-chip,
+  .difficulty-chip {
     min-height: 34px;
     display: inline-flex;
     align-items: center;
@@ -1490,6 +1534,11 @@ html[data-theme="light"] footer::after { content: ""; }
   .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
   .lib-bar { row-gap: 0.4rem; }
+
+  /* On a phone the judge label and its bands want their own line each, so a
+     group never splits mid-row. */
+  .difficulty-row { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .difficulty-group { width: 100%; }
   .compare-grid { grid-template-columns: 1fr; }
 }
 

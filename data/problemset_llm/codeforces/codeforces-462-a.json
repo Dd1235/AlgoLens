@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-462-a",
+  "title": "Appleman and Easy Task",
+  "slug": "462-a-appleman-and-easy-task",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/462/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given an n×n grid with cells marked 'x' or 'o', determine if every cell has an even number of adjacent cells containing 'o'.",
+  "tags": [
+    "grid",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "adjacency-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216754,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "adjacency-check": 0.9
+    }
+  }
+}

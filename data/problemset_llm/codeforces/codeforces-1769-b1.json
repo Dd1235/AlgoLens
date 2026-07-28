@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1769-b1",
+  "title": "Копирование файлов I",
+  "slug": "1769-b1-i",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1769/B1",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "*special",
+    "brute force",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given sizes of files copied sequentially, find all integer percentages from 0 to 100 that appear simultaneously on both the current file progress bar and the overall progress bar during copying.",
+  "tags": [
+    "math",
+    "implementation",
+    "brute-force"
+  ],
+  "patterns": [
+    "simulation",
+    "floor-function",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216725,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "floor-function": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

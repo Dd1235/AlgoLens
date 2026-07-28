@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1411-b",
+  "title": "Fair Numbers",
+  "slug": "1411-b-fair-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1411/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "number theory"
+  ],
+  "statement": "Given a positive integer n, find the smallest integer x greater than or equal to n such that x is divisible by each of its nonzero digits.",
+  "tags": [
+    "number-theory",
+    "brute-force"
+  ],
+  "patterns": [
+    "brute-force",
+    "digit-iteration",
+    "divisibility-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216703,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "digit-iteration": 0.9,
+      "divisibility-check": 0.9
+    }
+  }
+}

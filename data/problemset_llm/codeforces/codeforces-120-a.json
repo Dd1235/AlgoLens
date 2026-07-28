@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-120-a",
+  "title": "Elevator",
+  "slug": "120-a-elevator",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/120/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given the entrance door and the rail a person holds inside a two-door elevator with two rails, determine if the person is left-handed or right-handed.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216677,
+    "pattern_confidence": {
+      "case-analysis": 0.9
+    }
+  }
+}

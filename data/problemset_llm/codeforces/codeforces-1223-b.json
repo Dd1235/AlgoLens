@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1223-b",
+  "title": "Strings Equalization",
+  "slug": "1223-b-strings-equalization",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1223/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "strings"
+  ],
+  "statement": "Given two equal-length strings, determine if one can be transformed into the other by repeatedly assigning the value of one adjacent character to the other in either string.",
+  "tags": [
+    "strings",
+    "union-find"
+  ],
+  "patterns": [
+    "union-find",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216682,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "connected-components": 0.9
+    }
+  }
+}

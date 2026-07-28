@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-609-b",
+  "title": "The Best Gift",
+  "slug": "609-b-the-best-gift",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/609/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Given n books each belonging to one of m genres, count the number of ways to select two books of different genres.",
+  "tags": [
+    "combinatorics",
+    "implementation"
+  ],
+  "patterns": [
+    "counting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216902,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

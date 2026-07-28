@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-766-a",
+  "title": "Mahmoud and Longest Uncommon Subsequence",
+  "slug": "766-a-mahmoud-and-longest-uncommon-subsequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/766/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "strings"
+  ],
+  "statement": "Given two strings, find the length of the longest subsequence that is a subsequence of one string but not the other.",
+  "tags": [
+    "strings",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "subsequence",
+    "string-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216776,
+    "pattern_confidence": {
+      "subsequence": 0.95,
+      "string-comparison": 0.9
+    }
+  }
+}

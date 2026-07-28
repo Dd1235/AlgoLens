@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1288-b",
+  "title": "Yet Another Meme Problem",
+  "slug": "1288-b-yet-another-meme-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1288/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given two integers A and B, count the number of pairs (a, b) with 1 ≤ a ≤ A and 1 ≤ b ≤ B such that a·b + a + b equals the concatenation of a and b.",
+  "tags": [
+    "math",
+    "number-theory",
+    "string"
+  ],
+  "patterns": [
+    "equation-solving",
+    "concatenation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216806,
+    "pattern_confidence": {
+      "equation-solving": 0.9,
+      "concatenation": 0.85,
+      "brute-force": 0.6
+    }
+  }
+}

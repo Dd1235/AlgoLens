@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-385-b",
+  "title": "Bear and Strings",
+  "slug": "385-b-bear-and-strings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/385/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation",
+    "math",
+    "strings"
+  ],
+  "statement": "Given a lowercase string, count the number of substring pairs (i, j) such that the substring from i to j contains \"bear\" as a substring.",
+  "tags": [
+    "string",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "substring-search",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217323,
+    "pattern_confidence": {
+      "substring-search": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

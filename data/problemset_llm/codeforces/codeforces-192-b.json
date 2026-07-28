@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-192-b",
+  "title": "Walking in the Rain",
+  "slug": "192-b-walking-in-the-rain",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/192/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given a row of tiles each destroyed after a certain day of rain, determine the maximum number of days before the first tile, last tile, or the path from the first to last tile becomes impassable using moves to adjacent or next-adjacent tiles.",
+  "tags": [
+    "array",
+    "graph",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "graph-reachability",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216877,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "graph-reachability": 0.85,
+      "simulation": 0.7
+    }
+  }
+}

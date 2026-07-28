@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1986-c",
+  "title": "Update Queries",
+  "slug": "1986-c-update-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1986/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a string and a set of update operations defined by indices and replacement characters, find the lexicographically smallest string achievable by rearranging the order of these updates before applying them sequentially.",
+  "tags": [
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216884,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

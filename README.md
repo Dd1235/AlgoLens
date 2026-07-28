@@ -1,6 +1,6 @@
 # Cosine
 
-Search 2,500+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
+Search 2,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
 **Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
@@ -37,10 +37,11 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 - **Technique labels deeper than "dp".** Every problem carries curated pattern labels from a ~165-slug taxonomy — `digit-dp`, `wqs-binary-search`, `slope-trick`, `booth-algorithm`. Click any label to filter results to it; browse the whole taxonomy with per-label counts on the patterns page.
 - **A page for what exists.** You can't search for a technique you've never heard of, and most people's exposure stops at one sheet. The patterns page lists all 165 labels with counts and a filter: type `dp` and get the whole family — `digit-dp`, `tree-dp`, `slope-trick`, `state-compression` — each clickable into the problems carrying it. It's a directory, not a tutorial, and it stays out of the search page.
 - **Community names just work.** Type "aliens trick" and the query quietly expands to `wqs-binary-search` — the status line shows `+wqs binary search`, so you also learn the canonical name.
+- **Difficulty, on each judge's own terms.** Select a judge and its native scale appears: Easy/Medium/Hard for LeetCode, rating bands for Codeforces and AtCoder. There is deliberately no shared scale — a CF 1600 is not "the same as" a LeetCode Medium and pretending otherwise would be a lie — so a band filters only its own judge and leaves the others alone. CSES publishes no difficulty, so it simply offers none.
 - **Filters that stack.** Judges are a set, not a choice — toggle `lc` `cses` `cf` `atc` above the results, or click the tag on any card. They compose with technique labels, with done/not-done, and with your saved lists: `:bookmarks` + `cf`+`atc` + not-done is your unfinished Codeforces and AtCoder saves. Judges persist across searches; a technique label doesn't, because it's a drill-down into what you were reading and the median label covers a single problem. Shareable as `?platform=codeforces,atcoder`.
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
 - **Compare rankers.** `:compare thief robbing houses` runs the query on bm25 and dense side by side with rank deltas — watch keyword search find nothing for "cheese" while semantic nails it. A command rather than permanent chrome, since it's an engine-tuning tool.
-- **A deliberately hard corpus.** 2,575 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces + AtCoder sampled across rating bands from 1300 up. No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
+- **A deliberately hard corpus.** 2,825 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces sampled across rating bands from 1000 up and AtCoder from its own scale. No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
 
 ## Tracking the grind
 
@@ -87,6 +88,7 @@ or wording, not ranking — that turned out to be the pattern.
 | "hybrid returns results for a random name" | Semantic search gives every problem some similarity, so it can never return zero. Hybrid retired; a query whose words appear nowhere in the corpus now says so |
 | "UI for phone wasn't as good as desktop" | The search bar overflowed by ~200px and was being hidden rather than fixed. Full mobile pass: form restacks, inputs no longer trigger iOS zoom, heatmap and stats table scroll, tap targets from ~16px to 34px |
 | "AVL tree and niche techniques missing" | AVL is a textbook structure, not a contest technique — `avl tree` now routes to the ordered-set problems the corpus actually has |
+| "can I filter by difficulty?" | Per judge, on its own scale — LeetCode tiers, Codeforces and AtCoder rating bands. A band never filters a judge you didn't pick. Codeforces also grew 250 problems in the 1000–1299 range so the easier band has content |
 
 ## Measured
 

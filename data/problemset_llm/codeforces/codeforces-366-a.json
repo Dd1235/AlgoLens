@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-366-a",
+  "title": "Dima and Guards",
+  "slug": "366-a-dima-and-guards",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/366/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given four guardposts each with two guards having minimum acceptable prices for chocolate and juice gifts, determine if there exists a guardpost where buying one gift per guard with total cost exactly n is possible.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "brute-force",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216894,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "case-analysis": 0.8
+    }
+  }
+}

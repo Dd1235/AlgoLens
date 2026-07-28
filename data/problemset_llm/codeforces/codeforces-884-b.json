@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-884-b",
+  "title": "Japanese Crosswords Strike Back",
+  "slug": "884-b-japanese-crosswords-strike-back",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/884/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given the length and encoding of a one-dimensional Japanese crossword (a binary string), determine if there exists exactly one binary string matching that encoding and length.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "string-matching",
+    "uniqueness-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216919,
+    "pattern_confidence": {
+      "string-matching": 0.8,
+      "uniqueness-check": 0.7
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1800-c2",
+  "title": "Powering the Hero (hard version)",
+  "slug": "1800-c2-powering-the-hero-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1800/C2",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "data structures",
+    "greedy"
+  ],
+  "statement": "Given a deck of hero and bonus cards, select cards from the top to build an army maximizing total power by strategically placing or discarding bonus cards and applying them to hero cards.",
+  "tags": [
+    "greedy",
+    "data-structures",
+    "stack"
+  ],
+  "patterns": [
+    "greedy",
+    "stack",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216860,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "stack": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

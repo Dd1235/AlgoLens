@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1743-c",
+  "title": "Save the Magazines",
+  "slug": "1743-c-save-the-magazines",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1743/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a row of boxes each containing magazines and some initially covered with lids, determine the maximum number of magazines that can be saved by moving each lid at most once either to the same box or the previous box.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216848,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.7
+    }
+  }
+}

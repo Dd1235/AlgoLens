@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1221-a",
+  "title": "2048 Game",
+  "slug": "1221-a-2048-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1221/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given multiple queries each with a multiset of powers of two, determine if it is possible to combine equal elements repeatedly to form the number 2048.",
+  "tags": [
+    "math",
+    "greedy",
+    "multiset"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216681,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.8
+    }
+  }
+}

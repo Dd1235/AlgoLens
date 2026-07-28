@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1213-b",
+  "title": "Bad Prices",
+  "slug": "1213-b-bad-prices",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1213/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given multiple test cases each with a sequence of daily prices, count how many days have a price that is higher than some future day's price.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "reverse-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216804,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "reverse-traversal": 0.85
+    }
+  }
+}

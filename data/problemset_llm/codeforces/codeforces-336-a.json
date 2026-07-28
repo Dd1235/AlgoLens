@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-336-a",
+  "title": "Vasily the Bear and Triangle",
+  "slug": "336-a-vasily-the-bear-and-triangle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/336/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a rectangle with vertices at (0,0) and (x,y), find two integer-coordinate points A and C forming a right isosceles triangle with vertex B=(0,0) such that the rectangle lies inside or on the triangle and the triangle's area is minimized.",
+  "tags": [
+    "geometry",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "geometry",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216743,
+    "pattern_confidence": {
+      "geometry": 0.95,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

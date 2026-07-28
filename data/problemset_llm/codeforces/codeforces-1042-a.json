@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1042-a",
+  "title": "Benches",
+  "slug": "1042-a-benches",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1042/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "implementation"
+  ],
+  "statement": "Given the current number of people sitting on each of n benches and m additional people arriving, determine the minimum and maximum possible maximum occupancy on any bench after seating all newcomers without anyone leaving.",
+  "tags": [
+    "array",
+    "binary-search",
+    "implementation"
+  ],
+  "patterns": [
+    "binary-search",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216791,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "greedy": 0.8
+    }
+  }
+}

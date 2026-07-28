@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1610-b",
+  "title": "Kalindrome Array",
+  "slug": "1610-b-kalindrome-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1610/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Determine if an array can become a palindrome by deleting zero or more occurrences of a single chosen value.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "greedy"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216824,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

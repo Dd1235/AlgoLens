@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-15-a",
+  "title": "Cottage Village",
+  "slug": "15-a-cottage-village",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/15/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a set of non-overlapping square houses aligned on the x-axis, determine the number of possible positions to place a new square house of fixed side length so that it touches at least one existing house without overlapping any.",
+  "tags": [
+    "geometry",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "line-sweep",
+    "geometry"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217276,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "line-sweep": 0.8,
+      "geometry": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1327-b",
+  "title": "Princesses and Princes",
+  "slug": "1327-b-princesses-and-princes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1327/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "graphs",
+    "greedy"
+  ],
+  "statement": "Given n daughters and n kingdoms with each daughter having a list of preferred kingdoms, assign princes greedily to maximize marriages. Determine if adding one new kingdom to one daughter's list can increase the total number of marriages, and if so, find such an addition.",
+  "tags": [
+    "greedy",
+    "graphs",
+    "brute-force"
+  ],
+  "patterns": [
+    "greedy",
+    "bipartite-matching",
+    "augmentation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217260,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "bipartite-matching": 0.85,
+      "augmentation": 0.7
+    }
+  }
+}

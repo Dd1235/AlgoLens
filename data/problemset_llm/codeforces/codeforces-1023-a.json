@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1023-a",
+  "title": "Single Wildcard Pattern Matching",
+  "slug": "1023-a-single-wildcard-pattern-matching",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1023/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a pattern string containing lowercase letters and at most one wildcard '*', determine if a target string matches the pattern where '*' can be replaced by any sequence of lowercase letters (including empty).",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216924,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

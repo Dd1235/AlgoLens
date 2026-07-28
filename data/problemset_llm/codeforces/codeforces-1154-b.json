@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1154-b",
+  "title": "Make Them Equal",
+  "slug": "1154-b-make-them-equal",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1154/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an integer sequence, determine the minimum non-negative integer D such that by adding, subtracting, or leaving unchanged D to each element, all elements can be made equal, or report -1 if impossible.",
+  "tags": [
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216946,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

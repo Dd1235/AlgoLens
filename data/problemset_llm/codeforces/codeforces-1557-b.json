@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1557-b",
+  "title": "Moamen and k-subarrays",
+  "slug": "1557-b-moamen-and-k-subarrays",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1557/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array of distinct integers, determine if it can be sorted by splitting it into exactly k non-empty subarrays, then reordering and merging these subarrays.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "subarray-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216815,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "subarray-partitioning": 0.8
+    }
+  }
+}

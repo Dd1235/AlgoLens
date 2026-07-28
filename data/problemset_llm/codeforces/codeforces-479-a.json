@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-479-a",
+  "title": "Expression",
+  "slug": "479-a-expression",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/479/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "math"
+  ],
+  "statement": "Given three positive integers a, b, and c, insert '+' and '*' operators and parentheses between them (without changing their order) to maximize the expression's value.",
+  "tags": [
+    "math",
+    "brute-force"
+  ],
+  "patterns": [
+    "brute-force",
+    "expression-evaluation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216755,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "expression-evaluation": 0.9
+    }
+  }
+}

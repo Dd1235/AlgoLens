@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-688-b",
+  "title": "Lovely Palindromes",
+  "slug": "688-b-lovely-palindromes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/688/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given a positive integer n, find the n-th positive palindrome number that has an even number of digits.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216767,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9
+    }
+  }
+}

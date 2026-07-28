@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-902-a",
+  "title": "Visiting a Friend",
+  "slug": "902-a-visiting-a-friend",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/902/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a starting point 0 and a target point m on a line, determine if it is possible to reach m by using a set of teleports, each located at a point x and able to move to any point up to a limit y, or if a car is needed.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "interval"
+  ],
+  "patterns": [
+    "greedy",
+    "interval-coverage"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216921,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "interval-coverage": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1569-b",
+  "title": "Chess Tournament",
+  "slug": "1569-b-chess-tournament",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1569/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Given n chess players each with one of two expectations—either to avoid any losses or to win at least one game—determine if there exists a tournament outcome where every player’s expectation is satisfied, and if so, construct such a result.",
+  "tags": [
+    "constructive-algorithm",
+    "graph"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "tournament-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216710,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "tournament-graph": 0.7
+    }
+  }
+}

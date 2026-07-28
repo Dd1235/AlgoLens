@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1676-e",
+  "title": "Eating Queries",
+  "slug": "1676-e-eating-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1676/E",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a list of candy sugar quantities, answer queries asking for the minimum number of candies needed to reach at least a given sugar amount, or report -1 if impossible.",
+  "tags": [
+    "array",
+    "sorting",
+    "binary-search"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "binary-search",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216839,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "binary-search": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

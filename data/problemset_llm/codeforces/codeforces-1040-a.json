@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1040-a",
+  "title": "Palindrome Dance",
+  "slug": "1040-a-palindrome-dance",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1040/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a row of dancers with some suits fixed as black or white and others undecided, determine if it is possible to assign colors to form a palindrome and find the minimal cost to buy the required suits without changing fixed suits.",
+  "tags": [
+    "greedy",
+    "string"
+  ],
+  "patterns": [
+    "greedy",
+    "palindrome",
+    "cost-minimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216666,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "palindrome": 0.9,
+      "cost-minimization": 0.85
+    }
+  }
+}

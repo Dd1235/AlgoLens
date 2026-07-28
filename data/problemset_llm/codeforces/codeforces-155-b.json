@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-155-b",
+  "title": "Combination",
+  "slug": "155-b-combination",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/155/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given cards each with a top value (points) and a bottom value (additional plays), determine the maximum points achievable by optimally playing cards starting with one play opportunity and updating the play counter accordingly.",
+  "tags": [
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216814,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85
+    }
+  }
+}

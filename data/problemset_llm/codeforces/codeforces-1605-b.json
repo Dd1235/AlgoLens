@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1605-b",
+  "title": "Reverse Sort",
+  "slug": "1605-b-reverse-sort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1605/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a binary string, determine the minimum number of operations needed to sort it in non-decreasing order, where each operation reverses a chosen non-increasing subsequence in-place.",
+  "tags": [
+    "string",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "subsequence-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216715,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "subsequence-manipulation": 0.85
+    }
+  }
+}

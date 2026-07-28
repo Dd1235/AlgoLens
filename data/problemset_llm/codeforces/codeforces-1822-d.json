@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1822-d",
+  "title": "Super-Permutation",
+  "slug": "1822-d-super-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1822/D",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given an integer n, find a permutation of length n such that the sequence formed by the prefix sums modulo n, each incremented by 1, is also a permutation of length n, or determine that no such permutation exists.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217301,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.9,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-355-b",
+  "title": "Vasya and Public Transport",
+  "slug": "355-b-vasya-and-public-transport",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/355/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given counts of rides on buses and trolleys and ticket prices for various unlimited ride options, find the minimum total cost to cover all rides.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216892,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "case-analysis": 0.9
+    }
+  }
+}

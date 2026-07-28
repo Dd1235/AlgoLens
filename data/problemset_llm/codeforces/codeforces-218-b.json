@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-218-b",
+  "title": "Airport",
+  "slug": "218-b-airport",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/218/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a queue of passengers buying tickets for planes with decreasing empty seats, determine the maximum and minimum total revenue the airport can earn under the pricing rule that ticket cost equals the current number of empty seats on the chosen plane.",
+  "tags": [
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216887,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

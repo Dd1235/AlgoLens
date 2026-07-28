@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-883-m",
+  "title": "Quadcopter Competition",
+  "slug": "883-m-quadcopter-competition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/883/M",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given start and flag coordinates on a grid, find the minimal length of a closed cycle path starting and ending at the start point that strictly encloses the flag, moving only in unit steps parallel to the axes.",
+  "tags": [
+    "geometry",
+    "math",
+    "grid"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216917,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

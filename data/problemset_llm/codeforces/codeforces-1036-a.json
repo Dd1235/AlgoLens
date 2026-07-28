@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1036-a",
+  "title": "Function Height",
+  "slug": "1036-a-function-height",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1036/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given 2n+1 points on the x-axis forming a piecewise linear function, where only points with odd x-coordinates can have their y-values increased, determine the minimum maximum height of the plot such that the area under the function equals k.",
+  "tags": [
+    "math",
+    "geometry",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "area-calculation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216664,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "area-calculation": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

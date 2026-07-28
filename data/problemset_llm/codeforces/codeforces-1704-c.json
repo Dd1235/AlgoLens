@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1704-c",
+  "title": "Virus",
+  "slug": "1704-c-virus",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1704/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a circular arrangement of houses with some initially infected, each day one uninfected house can be permanently protected before the virus spreads to unprotected neighbors. Determine the minimum number of houses that will be infected after optimal protection choices.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "graph",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "interval-covering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217293,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9,
+      "interval-covering": 0.7
+    }
+  }
+}

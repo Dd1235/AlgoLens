@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1041-b",
+  "title": "Buying a TV Set",
+  "slug": "1041-b-buying-a-tv-set",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1041/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Count the number of positive integer screen dimensions (w, h) with w ≤ a, h ≤ b, and w/h equal to a given ratio x/y.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "integer-ratio-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216667,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "integer-ratio-check": 0.85
+    }
+  }
+}

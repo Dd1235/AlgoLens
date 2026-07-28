@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-802-m",
+  "title": "April Fools' Problem (easy)",
+  "slug": "802-m-april-fools-problem-easy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/802/M",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given integers n, k and a sequence of n positive integers, solve a problem involving these inputs without additional context or story.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217352,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

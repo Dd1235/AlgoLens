@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-645-b",
+  "title": "Mischievous Mess Makers",
+  "slug": "645-b-mischievous-mess-makers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/645/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an initial arrangement of cows labeled 1 to n in stalls, determine the maximum number of inversions (pairs out of order) achievable after performing at most k swaps between distinct stalls.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "inversion-count",
+    "greedy",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217343,
+    "pattern_confidence": {
+      "inversion-count": 0.95,
+      "greedy": 0.9,
+      "combinatorics": 0.85
+    }
+  }
+}

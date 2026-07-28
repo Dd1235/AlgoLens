@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1732-a",
+  "title": "Bestie",
+  "slug": "1732-a-bestie",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1732/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "combinatorics",
+    "constructive algorithms",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array, perform operations that replace an element with the gcd of itself and its index at a cost depending on the index, to make the gcd of the entire array equal to 1 with minimal total cost.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "gcd",
+    "greedy",
+    "cost-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216721,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "greedy": 0.85,
+      "cost-optimization": 0.8
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1237-a",
+  "title": "Balanced Rating Changes",
+  "slug": "1237-a-balanced-rating-changes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1237/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given integer rating changes summing to zero, find integer half-values for each that are as close as possible to half the original and still sum to zero.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "rounding",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216684,
+    "pattern_confidence": {
+      "rounding": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

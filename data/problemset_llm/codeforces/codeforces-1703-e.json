@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1703-e",
+  "title": "Mirror Grid",
+  "slug": "1703-e-mirror-grid",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1703/E",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an n×n binary grid, find the minimum number of cell flips required to make the grid invariant under rotations by 0°, 90°, 180°, and 270°.",
+  "tags": [
+    "array",
+    "implementation",
+    "geometry"
+  ],
+  "patterns": [
+    "symmetry-check",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217292,
+    "pattern_confidence": {
+      "symmetry-check": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

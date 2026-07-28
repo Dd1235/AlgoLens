@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-981-b",
+  "title": "Businessmen Problems",
+  "slug": "981-b-businessmen-problems",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/981/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "sortings"
+  ],
+  "statement": "Given two companies each with distinct sets of chemical elements and associated incomes, select subsets from each without overlap to maximize the total combined income.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "set"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "set-disjointness"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216786,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "greedy": 0.85,
+      "set-disjointness": 0.8
+    }
+  }
+}

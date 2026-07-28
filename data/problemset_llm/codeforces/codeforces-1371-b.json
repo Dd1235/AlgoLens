@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1371-b",
+  "title": "Magical Calendar",
+  "slug": "1371-b-magical-calendar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1371/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a magical calendar with a variable week length and a fixed number of consecutive painted days, count the number of distinct connected shapes formed by these painted days when placed starting at any day of the week.",
+  "tags": [
+    "math",
+    "geometry",
+    "combinatorics"
+  ],
+  "patterns": [
+    "simulation",
+    "connected-components",
+    "shape-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217268,
+    "pattern_confidence": {
+      "simulation": 0.85,
+      "connected-components": 0.9,
+      "shape-enumeration": 0.8
+    }
+  }
+}

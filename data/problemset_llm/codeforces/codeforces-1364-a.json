@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1364-a",
+  "title": "XXXXX",
+  "slug": "1364-a-xxxxx",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1364/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "number theory",
+    "two pointers"
+  ],
+  "statement": "Given an array and a number x, find the length of the longest contiguous subarray whose sum is not divisible by x, or determine if no such subarray exists.",
+  "tags": [
+    "array",
+    "number-theory",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "prefix-sum",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217267,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "prefix-sum": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

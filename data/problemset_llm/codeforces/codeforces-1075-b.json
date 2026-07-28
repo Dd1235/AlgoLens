@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1075-b",
+  "title": "Taxi drivers and Lyft",
+  "slug": "1075-b-taxi-drivers-and-lyft",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1075/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given positions of taxi drivers and riders on a line, determine for each driver how many riders would call them as the closest taxi if they ordered first, with ties broken by smaller coordinate.",
+  "tags": [
+    "implementation",
+    "sorting",
+    "geometry"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216932,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.85,
+      "line-sweep": 0.8
+    }
+  }
+}

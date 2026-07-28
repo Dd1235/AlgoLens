@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1244-b",
+  "title": "Rooms and Staircases",
+  "slug": "1244-b-rooms-and-staircases",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1244/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given two rows of n rooms with possible staircases connecting rooms of the same number on different floors, find the longest path visiting distinct rooms starting from any room, moving only to adjacent rooms on the same floor or via staircases.",
+  "tags": [
+    "graph",
+    "dfs",
+    "brute-force"
+  ],
+  "patterns": [
+    "dfs",
+    "backtracking",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216685,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "backtracking": 0.9,
+      "graph-traversal": 0.85
+    }
+  }
+}

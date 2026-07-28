@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1625-b",
+  "title": "Elementary Particles",
+  "slug": "1625-b-elementary-particles",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1625/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a sequence of particle types, find the maximum length k such that there exist two different subsegments of length k sharing at least one position with the same particle type.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "hash-map"
+  ],
+  "patterns": [
+    "two-pointers",
+    "hash-map",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216829,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "hash-map": 0.85,
+      "sliding-window": 0.8
+    }
+  }
+}

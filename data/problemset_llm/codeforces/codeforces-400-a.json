@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-400-a",
+  "title": "Inna and Choose Options",
+  "slug": "400-a-inna-and-choose-options",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/400/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of 12 cards each marked 'X' or 'O', find all pairs of positive integers (a, b) with a·b=12 such that when the cards are arranged in an a×b grid, there exists at least one column consisting entirely of 'X'.",
+  "tags": [
+    "implementation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216748,
+    "pattern_confidence": {
+      "brute-force": 0.95
+    }
+  }
+}

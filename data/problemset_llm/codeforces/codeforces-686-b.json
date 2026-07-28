@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-686-b",
+  "title": "Little Robber Girl's Zoo",
+  "slug": "686-b-little-robber-girl-s-zoo",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/686/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array of animal heights, rearrange them into non-decreasing order by repeatedly swapping adjacent pairs within chosen even-length segments, minimizing the number of such operations.",
+  "tags": [
+    "array",
+    "sorting",
+    "constructive-algorithm",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "segment-swapping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216906,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "simulation": 0.9,
+      "segment-swapping": 0.8
+    }
+  }
+}

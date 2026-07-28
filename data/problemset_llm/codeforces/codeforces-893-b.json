@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-893-b",
+  "title": "Beautiful Divisors",
+  "slug": "893-b-beautiful-divisors",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/893/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given an integer n, find the largest divisor of n that is a \"beautiful number,\" defined as (2^k - 1) * (2^k - 1) for some positive integer k.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force"
+  ],
+  "patterns": [
+    "brute-force",
+    "divisor-enumeration",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216784,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "divisor-enumeration": 0.85,
+      "bit-manipulation": 0.7
+    }
+  }
+}

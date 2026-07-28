@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1734-c",
+  "title": "Removing Smallest Multiples",
+  "slug": "1734-c-removing-smallest-multiples",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1734/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given the set of first n positive integers and a target subset T, find the minimum total cost to remove elements from the original set to obtain T, where removing the smallest multiple of k costs k.",
+  "tags": [
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "multiples",
+    "cost-minimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217295,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "multiples": 0.7,
+      "cost-minimization": 0.8
+    }
+  }
+}

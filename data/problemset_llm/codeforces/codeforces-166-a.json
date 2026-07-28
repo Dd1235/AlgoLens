@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-166-a",
+  "title": "Rank List",
+  "slug": "166-a-rank-list",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/166/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a list of teams with their solved problem counts and penalty times, determine how many teams share the k-th place according to contest ranking rules.",
+  "tags": [
+    "sorting",
+    "implementation",
+    "array"
+  ],
+  "patterns": [
+    "sorting",
+    "grouping",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216832,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "grouping": 0.85,
+      "binary-search": 0.6
+    }
+  }
+}

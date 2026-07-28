@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1672-c",
+  "title": "Unequal Array",
+  "slug": "1672-c-unequal-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1672/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given an array, perform operations that set two adjacent elements to the same value to minimize the number of operations needed so that at most one pair of adjacent equal elements remains.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216836,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1375-b",
+  "title": "Neighbor Grid",
+  "slug": "1375-b-neighbor-grid",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1375/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given a grid with non-negative integers, increment values to ensure each positive cell equals the count of its positive neighbors, or determine impossibility.",
+  "tags": [
+    "grid",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217270,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

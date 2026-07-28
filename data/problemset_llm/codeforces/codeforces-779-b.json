@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-779-b",
+  "title": "Weird Rounding",
+  "slug": "779-b-weird-rounding",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/779/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Given an integer and a parameter k, find the minimum number of digits to remove so that the resulting number is divisible by 10^k without leading zeros (except for zero itself).",
+  "tags": [
+    "string",
+    "greedy",
+    "brute-force"
+  ],
+  "patterns": [
+    "greedy",
+    "brute-force",
+    "digit-removal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216914,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "brute-force": 0.8,
+      "digit-removal": 0.7
+    }
+  }
+}

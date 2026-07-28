@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1100-c",
+  "title": "NN and the Optical Illusion",
+  "slug": "1100-c-nn-and-the-optical-illusion",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1100/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "geometry",
+    "math"
+  ],
+  "statement": "Given the number of outer circles and the radius of an inner circle, determine the radius of the outer circles so that the inner circle touches all outer circles externally and each pair of neighboring outer circles touch each other.",
+  "tags": [
+    "geometry",
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "geometry",
+    "binary-search",
+    "trigonometry"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216934,
+    "pattern_confidence": {
+      "geometry": 0.95,
+      "binary-search": 0.6,
+      "trigonometry": 0.9
+    }
+  }
+}

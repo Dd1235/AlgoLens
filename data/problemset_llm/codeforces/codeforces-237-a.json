@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-237-a",
+  "title": "Free Cash",
+  "slug": "237-a-free-cash",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/237/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given arrival times of customers throughout a day, determine the minimum number of cash registers needed so that no customer waits or leaves due to all cashes being busy.",
+  "tags": [
+    "implementation",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216737,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

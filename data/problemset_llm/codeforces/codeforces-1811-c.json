@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1811-c",
+  "title": "Restore the Array",
+  "slug": "1811-c-restore-the-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1811/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given an array b where each element is the maximum of two consecutive elements in an original array a, reconstruct any valid array a that could produce b.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216863,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

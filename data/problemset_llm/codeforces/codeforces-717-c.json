@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-717-c",
+  "title": "Potions Homework",
+  "slug": "717-c-potions-homework",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/717/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given equal-length sequences representing students' laziness levels and tasks' difficulty levels, assign each task to a student to minimize the sum of products of laziness and difficulty, outputting the result modulo 10007.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217346,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-849-a",
+  "title": "Odds and Ends",
+  "slug": "849-a-odds-and-ends",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/849/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of integers, determine if it can be partitioned into an odd number of contiguous subsegments, each having odd length and starting and ending with odd numbers.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216781,
+    "pattern_confidence": {
+      "greedy": 0.8,
+      "parity-check": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1166-b",
+  "title": "All the Vowels Please",
+  "slug": "1166-b-all-the-vowels-please",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1166/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an integer length k, construct a word of length k arranged in an n by m grid (n*m=k) such that every vowel appears at least once in every row and every column, or determine that no such word exists.",
+  "tags": [
+    "constructive-algorithm",
+    "math",
+    "number-theory",
+    "string"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "factorization",
+    "grid-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216800,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "factorization": 0.9,
+      "grid-construction": 0.85
+    }
+  }
+}

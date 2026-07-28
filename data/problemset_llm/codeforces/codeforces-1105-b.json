@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1105-b",
+  "title": "Zuhair and Strings",
+  "slug": "1105-b-zuhair-and-strings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1105/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a string and an integer k, find the maximum number of non-overlapping substrings of length k that each consist of the same character, and all these substrings share that character.",
+  "tags": [
+    "string",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216794,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "two-pointers": 0.7,
+      "sliding-window": 0.6
+    }
+  }
+}

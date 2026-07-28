@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-552-a",
+  "title": "Vanya and Table",
+  "slug": "552-a-vanya-and-table",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/552/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given n axis-aligned rectangles on a 100x100 grid, each cell counts how many rectangles cover it; compute the total sum of these counts over all cells.",
+  "tags": [
+    "array",
+    "geometry",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "difference-array",
+    "prefix-sum",
+    "2d-prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216759,
+    "pattern_confidence": {
+      "difference-array": 0.9,
+      "prefix-sum": 0.85,
+      "2d-prefix-sum": 0.9
+    }
+  }
+}

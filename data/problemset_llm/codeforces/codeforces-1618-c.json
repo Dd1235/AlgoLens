@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1618-c",
+  "title": "Paint the Array",
+  "slug": "1618-c-paint-the-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1618/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an array of positive integers, find a positive integer divisor d such that coloring elements divisible by d red and others blue results in no two adjacent elements sharing the same color, or determine that no such d exists.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "divisor-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216826,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "divisor-enumeration": 0.85
+    }
+  }
+}

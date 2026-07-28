@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1622-b",
+  "title": "Berland Music",
+  "slug": "1622-b-berland-music",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1622/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a permutation of song ratings and a binary like/dislike sequence, find a new permutation that respects the order constraint (liked songs rated higher than disliked) minimizing the sum of absolute differences from the original ratings.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "permutation-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216716,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "permutation-reconstruction": 0.85
+    }
+  }
+}

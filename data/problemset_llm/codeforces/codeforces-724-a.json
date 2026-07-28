@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-724-a",
+  "title": "Checking the Calendar",
+  "slug": "724-a-checking-the-calendar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/724/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given two day names, determine if there exists a pair of consecutive months in a non-leap year where the first day of the first month matches the first day and the first day of the next month matches the second day.",
+  "tags": [
+    "implementation",
+    "calendar",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "simulation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216771,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "brute-force": 0.85
+    }
+  }
+}

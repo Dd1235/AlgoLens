@@ -1,5 +1,6 @@
 const express = require("express");
 const { expandQuery } = require("../search/query_expand");
+const { buildDifficultyPayload } = require("../search/difficulty");
 
 function pickRanker(indexes, defaultRanker, req) {
   const requested = (req.query.ranker || "").toString().toLowerCase();
@@ -17,7 +18,15 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
   router.get("/rankers", (req, res) => {
     // corpusSize rides along so the page's "N dsa problems" line comes from the
     // corpus instead of a hardcoded number. It said 1808 for three ingests.
-    res.json({ available: Object.keys(indexes), default: defaultRanker, corpusSize: problems.length });
+    // difficultyBands rides along so the client renders exactly the bands this
+    // corpus can actually fill — including the counts, so an empty band can be
+    // shown as empty rather than looking broken when clicked.
+    res.json({
+      available: Object.keys(indexes),
+      default: defaultRanker,
+      corpusSize: problems.length,
+      difficultyBands: buildDifficultyPayload(problems),
+    });
   });
 
   router.get("/index", (req, res) => {

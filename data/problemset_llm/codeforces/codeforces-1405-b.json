@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1405-b",
+  "title": "Array Cancellation",
+  "slug": "1405-b-array-cancellation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1405/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Given an integer array summing to zero, perform operations to make all elements zero by transferring units between indices, minimizing the cost where transfers from higher to lower indices cost one coin and others are free.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216701,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "two-pointers": 0.6
+    }
+  }
+}

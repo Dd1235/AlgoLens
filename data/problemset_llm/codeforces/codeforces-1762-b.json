@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1762-b",
+  "title": "Make Array Good",
+  "slug": "1762-b-make-array-good",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1762/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation",
+    "number theory",
+    "sortings"
+  ],
+  "statement": "Given an array of positive integers, perform at most one increment operation per element to make the array \"good,\" where for every pair of elements, the maximum is divisible by the minimum.",
+  "tags": [
+    "array",
+    "number-theory",
+    "constructive-algorithm",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216851,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95,
+      "sorting": 0.8
+    }
+  }
+}

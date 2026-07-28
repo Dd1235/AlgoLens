@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1800-d",
+  "title": "Remove Two Letters",
+  "slug": "1800-d-remove-two-letters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1800/D",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given a lowercase string, determine how many distinct strings can be formed by removing exactly two consecutive characters.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "greedy",
+    "data-structures"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "greedy",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217300,
+    "pattern_confidence": {
+      "rolling-hash": 0.9,
+      "greedy": 0.8,
+      "sliding-window": 0.7
+    }
+  }
+}

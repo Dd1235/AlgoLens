@@ -107,6 +107,9 @@
         </span>
         <span id="latency-summary" class="latency-summary"></span>
       </div>
+      <!-- Difficulty is per-judge, so this row only appears once a judge is
+           selected — there is no cross-judge scale to offer before then. -->
+      <div class="difficulty-row hidden" id="difficulty-row" role="group" aria-label="filter by difficulty"></div>
       <p id="status" class="status"></p>
       <button
         id="pattern-pill"

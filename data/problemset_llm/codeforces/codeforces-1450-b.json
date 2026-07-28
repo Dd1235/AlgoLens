@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1450-b",
+  "title": "Balls of Steel",
+  "slug": "1450-b-balls-of-steel",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1450/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "geometry",
+    "greedy"
+  ],
+  "statement": "Given distinct points on a plane and a parameter k, repeatedly select a point to charge so that all points within Manhattan distance k move to that point's position. Find the minimum number of such operations to bring all points to a single location or determine if impossible.",
+  "tags": [
+    "geometry",
+    "graph",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "connected-components",
+    "manhattan-distance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216704,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "connected-components": 0.85,
+      "manhattan-distance": 0.8
+    }
+  }
+}

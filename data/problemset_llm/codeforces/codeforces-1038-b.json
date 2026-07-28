@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1038-b",
+  "title": "Non-Coprime Partition",
+  "slug": "1038-b-non-coprime-partition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1038/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Determine if the set of integers from 1 to n can be partitioned into two non-empty subsets whose sums have a greatest common divisor greater than 1.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216789,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

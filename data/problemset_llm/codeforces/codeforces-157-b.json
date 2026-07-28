@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-157-b",
+  "title": "Trace",
+  "slug": "157-b-trace",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/157/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "geometry",
+    "sortings"
+  ],
+  "statement": "Given several concentric circles dividing a plane into alternating red and blue rings, with the outermost area blue, compute the total area of the red rings.",
+  "tags": [
+    "geometry",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "area-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216712,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "area-computation": 0.85
+    }
+  }
+}

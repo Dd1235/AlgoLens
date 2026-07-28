@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-690-a1",
+  "title": "Collective Mindsets (easy)",
+  "slug": "690-a1-collective-mindsets-easy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/690/A1",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [],
+  "statement": "Given a hierarchy of zombies voting on brain distribution proposals with survival and greed priorities, determine the minimum number of brains needed so the highest-ranked zombie can propose a distribution that secures at least half the votes and guarantees herself at least one brain.",
+  "tags": [
+    "game-theory",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "backward-induction",
+    "game-theory",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216908,
+    "pattern_confidence": {
+      "backward-induction": 0.95,
+      "game-theory": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

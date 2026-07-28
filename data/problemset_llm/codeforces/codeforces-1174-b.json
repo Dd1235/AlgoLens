@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1174-b",
+  "title": "Ehab Is an Odd Person",
+  "slug": "1174-b-ehab-is-an-odd-person",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1174/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "sortings"
+  ],
+  "statement": "Given an array, you can swap elements whose sum is odd any number of times. Determine the lexicographically smallest array achievable under these operations.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "parity-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216948,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "parity-partitioning": 0.85
+    }
+  }
+}

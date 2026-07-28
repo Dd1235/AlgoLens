@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-188-d",
+  "title": "Asterisks",
+  "slug": "188-d-asterisks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/188/D",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "*special",
+    "implementation"
+  ],
+  "statement": "Given an integer n, print n lines where the i-th line contains i asterisks ('*').",
+  "tags": [
+    "implementation",
+    "string"
+  ],
+  "patterns": [
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216869,
+    "pattern_confidence": {
+      "simulation": 0.9
+    }
+  }
+}

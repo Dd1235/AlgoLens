@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1366-a",
+  "title": "Shovels and Swords",
+  "slug": "1366-a-shovels-and-swords",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1366/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given quantities of sticks and diamonds, determine the maximum number of tools (shovels or swords) that can be crafted and sold, each requiring specific combinations of sticks and diamonds.",
+  "tags": [
+    "math",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "mathematical-formula"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216809,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "binary-search": 0.7,
+      "mathematical-formula": 0.8
+    }
+  }
+}

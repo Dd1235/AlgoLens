@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-887-a",
+  "title": "Div. 64",
+  "slug": "887-a-div-64",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/887/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a binary string, determine if it is possible to remove some digits to form a positive binary number divisible by 64.",
+  "tags": [
+    "string",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216782,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "bit-manipulation": 0.9
+    }
+  }
+}

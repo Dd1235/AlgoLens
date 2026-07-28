@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1807-g1",
+  "title": "Subsequence Addition (Easy Version)",
+  "slug": "1807-g1-subsequence-addition-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1807/G1",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "dp",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Starting from an array containing only 1, determine if a given final array can be formed by repeatedly adding elements equal to the sum of some subsequence of the current array.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming",
+    "brute-force"
+  ],
+  "patterns": [
+    "subsequence-sum",
+    "greedy",
+    "dynamic-programming",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216862,
+    "pattern_confidence": {
+      "subsequence-sum": 0.9,
+      "greedy": 0.85,
+      "dynamic-programming": 0.7,
+      "simulation": 0.6
+    }
+  }
+}

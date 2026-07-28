@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1791-e",
+  "title": "Negatives and Positives",
+  "slug": "1791-e-negatives-and-positives",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1791/E",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array, maximize its sum by repeatedly flipping the signs of any two adjacent elements any number of times.",
+  "tags": [
+    "array",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming",
+    "sign-flipping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216857,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.7,
+      "sign-flipping": 0.8
+    }
+  }
+}

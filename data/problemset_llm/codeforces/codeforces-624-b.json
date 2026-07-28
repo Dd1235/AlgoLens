@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-624-b",
+  "title": "Making a String",
+  "slug": "624-b-making-a-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/624/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Construct the longest string from an alphabet with given maximum occurrences per letter, ensuring all used letters have distinct occurrence counts.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216903,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

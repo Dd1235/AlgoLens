@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1717-b",
+  "title": "Madoka and Underground Competitions",
+  "slug": "1717-b-madoka-and-underground-competitions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1717/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Construct an n×n grid with minimal 'X' characters such that every contiguous segment of length k in any row or column contains at least one 'X', and the cell at position (r, c) contains 'X'.",
+  "tags": [
+    "constructive-algorithm",
+    "implementation",
+    "grid"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216843,
+    "pattern_confidence": {
+      "greedy": 0.8,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

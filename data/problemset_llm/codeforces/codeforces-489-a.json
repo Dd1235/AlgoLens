@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-489-a",
+  "title": "SwapSort",
+  "slug": "489-a-swapsort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/489/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array of integers, produce a sequence of at most n swaps that sorts the array in non-descending order.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217333,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

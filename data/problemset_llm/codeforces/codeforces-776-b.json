@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-776-b",
+  "title": "Sherlock and his girlfriend",
+  "slug": "776-b-sherlock-and-his-girlfriend",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/776/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "number theory"
+  ],
+  "statement": "Given jewelry pieces with prices from 2 to n+1, color them so that no two pieces share a color if one price divides the other and is prime, minimizing the number of colors used.",
+  "tags": [
+    "number-theory",
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "greedy-coloring"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217349,
+    "pattern_confidence": {
+      "prime-factorization": 0.9,
+      "greedy-coloring": 0.85
+    }
+  }
+}

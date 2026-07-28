@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-583-b",
+  "title": "Robot's Task",
+  "slug": "583-b-robot-s-task",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/583/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "A robot must collect information from n computers arranged in a line, each requiring a minimum number of previously collected pieces to hack. Starting next to the first computer, determine the minimum number of direction changes needed to collect all information.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217338,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

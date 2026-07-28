@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1593-d1",
+  "title": "All are Same",
+  "slug": "1593-d1-all-are-same",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1593/D1",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an even-length integer array, find the maximum positive integer k such that by repeatedly subtracting k from elements, all elements can become equal, or determine if k can be arbitrarily large.",
+  "tags": [
+    "math",
+    "number-theory",
+    "array"
+  ],
+  "patterns": [
+    "gcd",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216822,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "modular-arithmetic": 0.7
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-242-b",
+  "title": "Big Segment",
+  "slug": "242-b-big-segment",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/242/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given n segments on a coordinate line, find a segment that covers all others or report none exists.",
+  "tags": [
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216888,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "linear-scan": 0.85
+    }
+  }
+}

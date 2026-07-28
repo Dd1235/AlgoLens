@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-322-a",
+  "title": "Ciel and Dancing",
+  "slug": "322-a-ciel-and-dancing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/322/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given n boys and m girls who have never danced before, schedule as many dance pairs as possible such that each pair includes at least one participant dancing for the first time.",
+  "tags": [
+    "greedy",
+    "combinatorics"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216740,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

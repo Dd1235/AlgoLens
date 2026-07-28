@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1207-b",
+  "title": "Square Filling",
+  "slug": "1207-b-square-filling",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1207/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given two binary matrices A and B of the same size, determine if B can be transformed into A by repeatedly setting all elements of chosen 2x2 submatrices in B to 1, and if possible, provide a sequence of such operations.",
+  "tags": [
+    "matrix",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216954,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-828-a",
+  "title": "Restaurant Tables",
+  "slug": "828-a-restaurant-tables",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/828/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given counts of one- and two-seater tables and a sequence of arriving groups of size one or two, determine how many people cannot be seated following specific seating rules.",
+  "tags": [
+    "implementation",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217355,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

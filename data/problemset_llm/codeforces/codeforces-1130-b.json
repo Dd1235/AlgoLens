@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1130-b",
+  "title": "Two Cakes",
+  "slug": "1130-b-two-cakes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1130/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given 2n houses in a row each selling a single cake tier size, two buyers must each collect tiers sized 1 to n in order, minimizing the total walking distance starting from the first house.",
+  "tags": [
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216941,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.7
+    }
+  }
+}

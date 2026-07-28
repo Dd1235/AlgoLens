@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1920-b",
+  "title": "Summation Game",
+  "slug": "1920-b-summation-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1920/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "games",
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given an array, two players alternately remove up to k elements and then flip the sign of up to x elements to respectively maximize and minimize the final sum. Determine the resulting sum assuming optimal play from both sides.",
+  "tags": [
+    "array",
+    "game-theory",
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "game-theory",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216879,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "game-theory": 0.85,
+      "sorting": 0.7
+    }
+  }
+}

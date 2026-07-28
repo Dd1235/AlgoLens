@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-545-b",
+  "title": "Equidistant String",
+  "slug": "545-b-equidistant-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/545/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given two binary strings of equal length, find a binary string such that its Hamming distance to both given strings is equal, or determine that no such string exists.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216897,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

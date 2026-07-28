@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-56-a",
+  "title": "Bar",
+  "slug": "56-a-bar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/56/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a list of people in a bar with partial information about their age or drink, determine the minimum number of additional checks needed to ensure no underage person is consuming alcohol.",
+  "tags": [
+    "implementation",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216761,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

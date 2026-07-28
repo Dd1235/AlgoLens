@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-255-b",
+  "title": "Code Parsing",
+  "slug": "255-b-code-parsing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/255/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a string of characters 'x' and 'y', repeatedly apply two operations: swap the first occurrence of 'y' followed by 'x', or remove the first occurrence of 'x' followed by 'y', until no operations can be applied. Output the resulting string.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217318,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

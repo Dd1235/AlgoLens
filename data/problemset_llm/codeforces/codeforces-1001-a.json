@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1001-a",
+  "title": "Generate plus state or minus state",
+  "slug": "1001-a-generate-plus-state-or-minus-state",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1001/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "*special"
+  ],
+  "statement": "Given a qubit initially in state |0⟩ and an integer sign, transform it into the |+⟩ state if sign=1 or the |−⟩ state if sign=−1.",
+  "tags": [
+    "quantum-computing",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "state-preparation",
+    "conditional-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216788,
+    "pattern_confidence": {
+      "state-preparation": 0.9,
+      "conditional-transformation": 0.7
+    }
+  }
+}

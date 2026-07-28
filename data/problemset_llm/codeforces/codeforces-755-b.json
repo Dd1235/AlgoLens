@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-755-b",
+  "title": "PolandBall and Game",
+  "slug": "755-b-polandball-and-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/755/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "games",
+    "greedy",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Two players alternately say unique words from their known lists; the player unable to say a new word loses. Determine the winner assuming both play optimally.",
+  "tags": [
+    "game-theory",
+    "string",
+    "greedy",
+    "set"
+  ],
+  "patterns": [
+    "game-theory",
+    "greedy",
+    "set-membership",
+    "optimal-play"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216910,
+    "pattern_confidence": {
+      "game-theory": 0.95,
+      "greedy": 0.85,
+      "set-membership": 0.8,
+      "optimal-play": 0.9
+    }
+  }
+}

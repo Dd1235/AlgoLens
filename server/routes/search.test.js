@@ -11,14 +11,26 @@ const { HybridIndex } = require("../search/hybrid");
 const PLATFORMS = ["leetcode", "cses", "codeforces", "atcoder"];
 
 // 300 problems, deliberately more than hybrid's 200-row fused ceiling.
-const problems = Array.from({ length: 300 }, (_, i) => ({
-  id: `${PLATFORMS[i % 4]}-${i}`,
-  title: `Problem ${i}`,
-  platform: PLATFORMS[i % 4],
-  statement: "graph problem",
-  tags: ["graph"],
-  patterns: i % 3 === 0 ? ["dfs"] : ["greedy"],
-}));
+const problems = Array.from({ length: 300 }, (_, i) => {
+  const platform = PLATFORMS[i % 4];
+  // Difficulties in each judge's own shape: LeetCode names tiers, Codeforces
+  // and AtCoder use ratings, CSES publishes none.
+  const difficulty =
+    platform === "leetcode" ? (i % 8 === 0 ? "Easy" : i % 3 === 0 ? "Medium" : "Hard")
+    : platform === "codeforces" ? 1000 + (i % 5) * 400
+    : platform === "atcoder" ? 800 + (i % 3) * 700
+    : undefined;
+  const p = {
+    id: `${platform}-${i}`,
+    title: `Problem ${i}`,
+    platform,
+    statement: "graph problem",
+    tags: ["graph"],
+    patterns: i % 3 === 0 ? ["dfs"] : ["greedy"],
+  };
+  if (difficulty !== undefined) p.difficulty = difficulty;
+  return p;
+});
 
 const hit = (p, score) => ({ problem: p, score, matchedTerms: ["graph"] });
 
@@ -178,6 +190,59 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
     const d = await get("q=&k=10");
     assert.equal(d.total, 0);
     assert.equal(d.hits.length, 0);
+  }
+
+  // Difficulty is per-judge. The rule that matters: selecting a Codeforces band
+  // must NOT delete LeetCode results — a judge with no band selected is
+  // unfiltered, not excluded. Getting this backwards silently empties the page.
+  {
+    const all = await get("q=graph&k=300");
+    const cfOnly = await get("q=graph&k=300&difficulty=cf-1800");
+    const lcInAll = all.hits.filter((h) => h.problem.platform === "leetcode").length;
+    const lcAfter = cfOnly.hits.filter((h) => h.problem.platform === "leetcode").length;
+    assert.equal(lcAfter, lcInAll, "a cf band must leave leetcode untouched");
+    const cfAfter = cfOnly.hits.filter((h) => h.problem.platform === "codeforces");
+    assert.ok(cfAfter.length > 0, "the cf band should still match some codeforces problems");
+    assert.ok(
+      cfAfter.every((h) => h.problem.difficulty >= 1800 && h.problem.difficulty <= 2199),
+      "every codeforces hit must fall inside the selected band"
+    );
+  }
+
+  // CSES has no difficulty at all; a band must never exclude it.
+  {
+    const d = await get("q=graph&k=300&difficulty=cf-1800,lc-hard");
+    assert.ok(d.hits.some((h) => h.problem.platform === "cses"), "cses must survive any band");
+  }
+
+  // Bands compose with judges, and the echo confirms what was applied.
+  {
+    const d = await get("q=graph&k=300&platform=codeforces&difficulty=cf-1000");
+    assert.deepEqual(d.platform, ["codeforces"]);
+    assert.deepEqual(d.difficulty, ["cf-1000"]);
+    assert.ok(d.hits.every((h) => h.problem.platform === "codeforces"));
+    assert.ok(d.hits.every((h) => h.problem.difficulty >= 1000 && h.problem.difficulty <= 1399));
+  }
+
+  // Several bands for one judge are a union, not an intersection.
+  {
+    const one = await get("q=graph&k=300&platform=codeforces&difficulty=cf-1000");
+    const two = await get("q=graph&k=300&platform=codeforces&difficulty=cf-1000,cf-1400");
+    assert.ok(two.total > one.total, "adding a band must widen, not narrow");
+  }
+
+  // Unknown band ids are ignored rather than 400ing, so a stale link still works.
+  {
+    const d = await get("q=graph&k=10&difficulty=cf-9999,not-a-band");
+    assert.equal(d.difficulty, undefined);
+    assert.equal(d.total, 300);
+  }
+
+  // Browse (empty query) honours bands the same way search does.
+  {
+    const d = await get("q=&k=300&platform=codeforces&difficulty=cf-2200");
+    assert.ok(d.total > 0);
+    assert.ok(d.hits.every((h) => h.problem.platform === "codeforces" && h.problem.difficulty >= 2200));
   }
 
   // Anonymous + done filter degrades to "all" instead of dereferencing a null

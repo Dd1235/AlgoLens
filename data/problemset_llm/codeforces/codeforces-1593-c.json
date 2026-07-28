@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1593-c",
+  "title": "Save More Mice",
+  "slug": "1593-c-save-more-mice",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1593/C",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "greedy"
+  ],
+  "statement": "Given positions of mice between a cat at 0 and a hole at n on a line, determine the maximum number of mice that can reach the hole by moving one step right per second before the cat catches them moving right one step after each mouse move.",
+  "tags": [
+    "greedy",
+    "binary-search",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216713,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-216-a",
+  "title": "Tiling with Hexagons",
+  "slug": "216-a-tiling-with-hexagons",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/216/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given the counts of tiles along each of the six sides of a hexagonal hall floor, compute the total number of hexagonal tiles covering the floor.",
+  "tags": [
+    "math",
+    "geometry",
+    "implementation"
+  ],
+  "patterns": [
+    "formula-based-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217312,
+    "pattern_confidence": {
+      "formula-based-calculation": 0.9
+    }
+  }
+}

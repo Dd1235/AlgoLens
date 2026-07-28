@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1994-b",
+  "title": "Fun Game",
+  "slug": "1994-b-fun-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1994/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given two binary sequences s and t of equal length, determine if it is possible to transform s into t using a series of operations that XOR a contiguous subsequence of s with the prefix of s of the same length.",
+  "tags": [
+    "bit-manipulation",
+    "greedy",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216886,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

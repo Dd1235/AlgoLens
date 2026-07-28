@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-774-c",
+  "title": "Maximum Number",
+  "slug": "774-c-maximum-number",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/774/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "*special",
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a maximum number of segments that can be lit on a seven-segment display, determine the largest integer (without leading zeros) that can be formed using at most that many segments.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217347,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}
