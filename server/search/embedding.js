@@ -101,10 +101,33 @@ module.exports = {
 // dir and runs one inference. Used at Docker build time to bake the model into
 // the image so prod boots need no network. Lives here (not scripts/) because
 // .dockerignore excludes scripts/.
+// Retried, because this step is a multi-hundred-MB download from huggingface.co
+// and a truncated response body fails the whole Docker build — undici surfaces
+// that as a bare `terminated`, which is exactly how one deploy died. The cache
+// dir is cleared between attempts: a half-written model would otherwise be
+// reused and every retry would fail the same way.
+const WARM_TRIES = 4;
+
+async function warmWithRetry() {
+  let last;
+  for (let attempt = 1; attempt <= WARM_TRIES; attempt++) {
+    try {
+      return await createEmbedder();
+    } catch (err) {
+      last = err;
+      if (attempt === WARM_TRIES) break;
+      console.error(`model warm attempt ${attempt}/${WARM_TRIES} failed: ${err.message || err}`);
+      fs.rmSync(modelCacheDir(), { recursive: true, force: true });
+      await new Promise((r) => setTimeout(r, 3000 * attempt));
+    }
+  }
+  throw last;
+}
+
 if (require.main === module && process.argv.includes("--warm")) {
   (async () => {
     const t0 = Date.now();
-    const embed = await createEmbedder();
+    const embed = await warmWithRetry();
     const v = await embed(["warmup"]);
     const norm = Math.hypot(...v);
     console.log(
