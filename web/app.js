@@ -76,6 +76,8 @@ let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
 let difficultyPayload = { named: [], rated: [] }; // controls, from /api/rankers
 const bootRanges = []; // ?difficulty= ranges parked until the payload names their judge
+let sortDir = null;    // null | "asc" | "desc" — difficulty order, one judge only
+let sortWindow = 20;   // how many relevance-ranked results get reordered
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let compareMode = false;  // entered with :compare, left by any other query
 let bootNeedsAuth = false; // restored state that only means something signed in
@@ -325,6 +327,10 @@ judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 // removal was done by slicing between two source markers, and this function sat
 // between them. runLibrary still called it, so :bookmarks / :done / :all threw
 // a ReferenceError and rendered nothing at all.
+function orderNote() {
+  return sortDir ? ` · ${sortDir === "desc" ? "hardest" : "easiest"} first` : "";
+}
+
 function activeFacets() {
   const bits = [];
   if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
@@ -374,6 +380,7 @@ function syncDifficultyControls() {
     // user can no longer see or clear.
     activeTiers.clear();
     activeRanges.clear();
+    sortDir = null; // no scale on screen, so no order to sort by
     difficultyRow.classList.add("hidden");
     difficultyRow.innerHTML = "";
     return;
@@ -416,6 +423,36 @@ function syncDifficultyControls() {
     );
   }
 
+  // Sorting shares the difficulty row's rule — one judge, because there is no
+  // order between "Medium" and 1600 — so it lives here rather than in the
+  // search bar where it would look available all the time.
+  const canSort = activePlatforms.size === 1 && (named.length > 0 || rated.length > 0);
+  if (canSort) {
+    const typed = (input.value.trim() || currentQuery || "").toLowerCase();
+    // A ranking only exists for a real query. `:bookmarks` is a command, and the
+    // library sorts the whole saved list — offering it a "top 20" would lie.
+    const searching = !!typed && !(currentUser && LIBRARY_COMMANDS[typed]);
+    groups.push(
+      '<span class="difficulty-group sort-group"><span class="difficulty-label">sort</span>' +
+        `<select class="filter-select" id="sort-select" aria-label="sort by difficulty">` +
+        `<option value=""${!sortDir ? " selected" : ""}>${searching ? "relevance" : "default"}</option>` +
+        `<option value="asc"${sortDir === "asc" ? " selected" : ""}>easiest first</option>` +
+        `<option value="desc"${sortDir === "desc" ? " selected" : ""}>hardest first</option>` +
+        "</select>" +
+        // The window only exists while searching: with a query there IS a
+        // relevance order worth protecting, so we reorder its top N rather
+        // than discarding it. Browsing has no such order to protect.
+        (sortDir && searching
+          ? `<select class="filter-select" id="sort-window" aria-label="how many results to sort">` +
+            [20, 50, 100].map((n) => `<option value="${n}"${n === sortWindow ? " selected" : ""}>top ${n}</option>`).join("") +
+            "</select>"
+          : "") +
+        "</span>"
+    );
+  } else if (sortDir) {
+    sortDir = null; // the judge that made it legal is gone
+  }
+
   if (activeTiers.size || activeRanges.size) {
     groups.push('<button type="button" class="judge-chip judge-clear" id="difficulty-clear" title="any difficulty">any ✕</button>');
   }
@@ -449,6 +486,18 @@ function syncDifficultyControls() {
       afterDifficultyChange();
     });
   });
+  const sortSel = difficultyRow.querySelector("#sort-select");
+  if (sortSel) sortSel.addEventListener("change", () => {
+    sortDir = sortSel.value || null;
+    track("sort_changed", { dir: sortDir || "relevance" });
+    afterDifficultyChange();
+  });
+  const windowSel = difficultyRow.querySelector("#sort-window");
+  if (windowSel) windowSel.addEventListener("change", () => {
+    sortWindow = Number(windowSel.value) || 20;
+    afterDifficultyChange();
+  });
+
   const clear = difficultyRow.querySelector("#difficulty-clear");
   if (clear) clear.addEventListener("click", () => {
     activeTiers.clear();
@@ -614,7 +663,11 @@ async function runSearch(rawQuery, { append = false } = {}) {
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
   const dp = difficultyParam();
   const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}${platformParam}${bandParam}`;
+  const sortParam = sortDir ? `&sort=difficulty-${sortDir}` : "";
+  // Sorting reorders a fixed window of the best matches, so the window size
+  // replaces the page size — and paging is withdrawn, not silently broken.
+  const pageSize = sortDir ? sortWindow : TOP_K;
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${pageSize}&offset=${sortDir ? 0 : currentOffset}${filterParam}${patternParam}${rankerParam}${platformParam}${bandParam}${sortParam}`;
 
   let data;
   try {
@@ -638,7 +691,10 @@ async function runSearch(rawQuery, { append = false } = {}) {
     currentRankerAnswered = data.ranker || "";
   }
   renderSingle(data, q, append);
-  updateLoadMore();
+  // A sorted search is one fixed window of the best matches, not page 1 of
+  // many — there is no coherent next page to offer.
+  if (data.sortWindow) hideLoadMore();
+  else updateLoadMore();
   if (!append) offerFeedback(data);
 }
 
@@ -673,7 +729,15 @@ function renderSingle(data, q, append) {
   // Dropped from this line: the query (it's in the box two rows up) and the
   // raw ranker id in parens (the picker already says "keyword · bm25"). What's
   // left is what nothing else on the page tells you.
-  setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}`);
+  if (data.sortWindow) {
+    // Deliberately not "1-20 of 142": this is the top N by relevance, then
+    // reordered. Saying "of 142" would imply a page 2 that cannot exist.
+    setStatus(
+      `top ${data.sortWindow} of ${total} by ${modeName}, ${sortDir === "desc" ? "hardest" : "easiest"} first${lat}${expanded}`
+    );
+  } else {
+    setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}`);
+  }
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
 
@@ -695,7 +759,8 @@ async function runBrowse({ append = false } = {}) {
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
   const dp = difficultyParam();
   const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
-  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}${bandParam}`;
+  const sortParam = sortDir ? `&sort=difficulty-${sortDir}` : "";
+  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}${bandParam}${sortParam}`;
 
   let data;
   try {
@@ -721,7 +786,7 @@ async function runBrowse({ append = false } = {}) {
   }
   renderHitsList(resultsEl, hits, { append, startIndex: currentOffset, unranked: true });
   const shown = currentOffset + hits.length;
-  setStatus(`browsing ${label} · ${shown} of ${currentTotal}`);
+  setStatus(`browsing ${label} · ${shown} of ${currentTotal}${orderNote()}`);
   updateLoadMore();
 }
 
@@ -743,8 +808,9 @@ async function runLibrary(type, q) {
     const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
     const doneParam = currentFilter !== "all" ? `&filter=${currentFilter}` : "";
     const dp = difficultyParam();
-  const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
-    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}`);
+    const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
+    const sortParam = sortDir ? `&sort=difficulty-${sortDir}` : "";
+    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}${sortParam}`);
     data = await res.json();
   } catch (err) {
     if (issuedAt !== lastQueryAt) return;
@@ -779,7 +845,7 @@ async function runLibrary(type, q) {
     return;
   }
 
-  setStatus(`${hits.length} ${type === "all" ? "saved" : type}${facets.length ? " · " + facets.join(" · ") : ""}`);
+  setStatus(`${hits.length} ${type === "all" ? "saved" : type}${facets.length ? " · " + facets.join(" · ") : ""}${orderNote()}`);
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
 }
 
@@ -926,6 +992,7 @@ function syncUrl() {
   if (activePlatforms.size) p.set("platform", [...activePlatforms].join(","));
   const dParam = difficultyParam();
   if (dParam) p.set("difficulty", dParam);
+  if (sortDir) p.set("sort", `difficulty-${sortDir}`);
   if (activeRanker) p.set("ranker", activeRanker);
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
   const qs = p.toString();
@@ -1033,6 +1100,18 @@ FILTERS — they stack, and they stack with the library too
   judges       the lc / cses / cf / atc chips above the results, or
                the [lc] tag on any card. Pick as many as you like;
                "all ✕" drops them. Not a picker — a set.
+  difficulty   appears under the judges, in each judge's own scale:
+               lc has three tiers, cf and atc have a rating range you
+               set both ends of — "cf 1500 to 1500" is exactly 1500.
+               A judge you haven't touched stays unfiltered, so a cf
+               range never deletes your LeetCode results.
+  sort         with ONE judge selected: easiest or hardest first.
+               Two judges have no shared order — nothing places a
+               Medium against a 1600 — so it's offered only when it
+               means something. Unrated problems sort last either way.
+               While searching it reorders the top N (20/50/100) by
+               relevance rather than discarding the ranking, so there
+               is no next page. Browsing sorts everything and pages.
   pattern      click a technique label inside a result
   all/notdone  the dropdown next to the ranker      (signed in)
   /done
@@ -1047,7 +1126,7 @@ SAVING                                             (signed in)
 
 LINKS
   the address bar follows what you're looking at — query, judges,
-  pattern, ranker and filter all land in the URL, so refresh keeps
+  difficulty, sort, pattern, ranker and filter all land in the URL, so refresh keeps
   your view and copying the URL shares exactly what you see:
   /?q=knapsack&platform=codeforces,atcoder&ranker=dense
 
@@ -1509,6 +1588,9 @@ if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
 populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+const bootSort = (bootParams.get("sort") || "").trim().toLowerCase();
+if (bootSort === "difficulty-asc" || bootSort === "difficulty") sortDir = "asc";
+else if (bootSort === "difficulty-desc") sortDir = "desc";
 const bootFilter = (bootParams.get("filter") || "").trim().toLowerCase();
 if (["done", "notdone"].includes(bootFilter)) {
   currentFilter = bootFilter;
