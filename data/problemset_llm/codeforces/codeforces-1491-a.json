@@ -22,7 +22,8 @@
     "fenwick-tree",
     "prefix-sum",
     "point-update",
-    "order-statistics"
+    "order-statistics",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "fenwick-tree": 0.9,
       "prefix-sum": 0.8,
       "point-update": 0.85,
-      "order-statistics": 0.8
+      "order-statistics": 0.8,
+      "sqrt-decomposition": 0.9
     }
   }
 }

@@ -15,7 +15,8 @@
   "patterns": [
     "segment-tree",
     "range-query",
-    "point-update"
+    "point-update",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "segment-tree": 0.98,
       "range-query": 0.9,
-      "point-update": 0.9
+      "point-update": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "difficulty": 1370

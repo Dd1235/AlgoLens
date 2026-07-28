@@ -25,7 +25,8 @@
     "tree-flattening",
     "lazy-propagation",
     "segment-tree",
-    "coordinate-compression"
+    "coordinate-compression",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "tree-flattening": 0.85,
       "lazy-propagation": 0.8,
       "segment-tree": 0.75,
-      "coordinate-compression": 0.9
+      "coordinate-compression": 0.9,
+      "tin-tout-ancestor-check": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

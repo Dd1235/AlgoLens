@@ -16,7 +16,8 @@
     "offline-queries",
     "coordinate-compression",
     "fenwick-tree",
-    "binary-search"
+    "binary-search",
+    "mo-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
       "offline-queries": 0.9,
       "coordinate-compression": 0.85,
       "fenwick-tree": 0.8,
-      "binary-search": 0.75
+      "binary-search": 0.75,
+      "mo-algorithm": 0.9
     }
   }
 }

@@ -21,7 +21,8 @@
   "patterns": [
     "tree-flattening",
     "segment-tree",
-    "lazy-propagation"
+    "lazy-propagation",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "tree-flattening": 0.95,
       "segment-tree": 0.9,
-      "lazy-propagation": 0.9
+      "lazy-propagation": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Trees"

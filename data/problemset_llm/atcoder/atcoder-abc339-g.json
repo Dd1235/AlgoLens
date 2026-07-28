@@ -16,7 +16,8 @@
   "patterns": [
     "binary-search-answer",
     "fenwick-tree",
-    "coordinate-compression"
+    "coordinate-compression",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "binary-search-answer": 0.9,
       "fenwick-tree": 0.85,
-      "coordinate-compression": 0.8
+      "coordinate-compression": 0.8,
+      "sqrt-decomposition": 0.9
     }
   },
   "difficulty": 1792

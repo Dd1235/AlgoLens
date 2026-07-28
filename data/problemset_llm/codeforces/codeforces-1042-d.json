@@ -22,7 +22,8 @@
     "prefix-sum",
     "two-pointers",
     "sliding-window",
-    "coordinate-compression"
+    "coordinate-compression",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "prefix-sum": 0.95,
       "two-pointers": 0.9,
       "sliding-window": 0.85,
-      "coordinate-compression": 0.9
+      "coordinate-compression": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

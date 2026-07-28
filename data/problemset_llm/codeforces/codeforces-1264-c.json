@@ -20,7 +20,8 @@
   "patterns": [
     "expected-value-dp",
     "segment-tree",
-    "modular-inverse"
+    "modular-inverse",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "expected-value-dp": 0.9,
       "segment-tree": 0.85,
-      "modular-inverse": 0.8
+      "modular-inverse": 0.8,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

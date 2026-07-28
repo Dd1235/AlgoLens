@@ -28,7 +28,8 @@
     "bitmask-dp",
     "prime-factorization",
     "counting",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "sos-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -38,7 +39,8 @@
       "bitmask-dp": 0.95,
       "prime-factorization": 0.9,
       "counting": 0.85,
-      "modular-arithmetic": 0.8
+      "modular-arithmetic": 0.8,
+      "sos-dp": 0.9
     }
   }
 }

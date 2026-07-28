@@ -19,7 +19,8 @@
   "patterns": [
     "divide-and-conquer",
     "segment-tree",
-    "offline-queries"
+    "offline-queries",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "divide-and-conquer": 0.9,
       "segment-tree": 0.85,
-      "offline-queries": 0.8
+      "offline-queries": 0.8,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

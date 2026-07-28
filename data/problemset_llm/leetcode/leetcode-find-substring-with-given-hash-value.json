@@ -22,7 +22,8 @@
   "patterns": [
     "rolling-hash",
     "sliding-window",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "rabin-karp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "rolling-hash": 0.98,
       "sliding-window": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.85,
+      "rabin-karp": 0.9
     }
   }
 }

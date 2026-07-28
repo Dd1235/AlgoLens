@@ -22,7 +22,8 @@
   "patterns": [
     "divide-and-conquer",
     "counting",
-    "prefix-suffix-frequencies"
+    "prefix-suffix-frequencies",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "divide-and-conquer": 0.9,
       "counting": 0.85,
-      "prefix-suffix-frequencies": 0.8
+      "prefix-suffix-frequencies": 0.8,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / STL"

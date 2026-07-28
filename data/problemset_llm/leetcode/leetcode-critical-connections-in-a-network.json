@@ -22,7 +22,8 @@
     "tarjan",
     "bridge-finding",
     "dfs",
-    "articulation-points"
+    "articulation-points",
+    "bridges"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "tarjan": 0.98,
       "bridge-finding": 0.97,
       "dfs": 0.95,
-      "articulation-points": 0.9
+      "articulation-points": 0.9,
+      "bridges": 0.95
     }
   }
 }

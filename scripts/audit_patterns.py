@@ -137,8 +137,29 @@ GENERIC_CRITERION = (
 )
 
 
-def technique_system(technique: str) -> str:
+# Two different questions, and the distinction is the whole reason sparse-table
+# and sqrt-decomposition stayed at zero problems through a full audit.
+#
+# CENTRALITY (default) asks "is this THE intended solution?" — right for a named
+# algorithm like Manacher or Dinic, where using it is the point of the problem.
+#
+# APPLICABILITY asks "is this a standard, correct way to solve it?" — right for
+# techniques that are alternative IMPLEMENTATIONS rather than distinct problem
+# types. Sqrt decomposition and sparse tables are never "the intended solution"
+# because a segment tree also works, so centrality answers no every single time
+# and the label can never be earned. That is a property of the question, not of
+# the corpus.
+def technique_system(technique: str, applicability: bool = False) -> str:
     criterion = CRITERIA.get(technique, GENERIC_CRITERION)
+    if applicability:
+        return (
+            f"You decide ONE question: is '{technique}' a standard and correct way to solve "
+            "this competitive programming problem, whether or not it is the most common "
+            f"choice? Answer yes only if {criterion} "
+            "Answer no if it would be the wrong tool or would not meet the constraints. "
+            'Return JSON only: {"applies": true|false, "confidence": 0.0-1.0, '
+            '"reasoning": "one line"}'
+        )
     return (
         f"You decide ONE question: is '{technique}' genuinely central to the "
         "intended solution of this competitive programming problem? "
@@ -160,7 +181,8 @@ def iter_problems(platforms: list[str]) -> list[dict[str, Any]]:
     return out
 
 
-def call_audit(problem: dict[str, Any], model: str, technique: str | None = None) -> list[dict[str, Any]]:
+def call_audit(problem: dict[str, Any], model: str, technique: str | None = None,
+               applicability: bool = False) -> list[dict[str, Any]]:
     key = annotate.os.environ.get("OPENAI_API_KEY") or annotate.os.environ.get("OPEN_AI_API")
     if not key:
         raise RuntimeError("OPENAI_API_KEY or OPEN_AI_API is required")
@@ -182,7 +204,7 @@ def call_audit(problem: dict[str, Any], model: str, technique: str | None = None
     payload = {
         "model": model,
         "messages": [
-            {"role": "system", "content": technique_system(technique) if technique else AUDIT_SYSTEM},
+            {"role": "system", "content": technique_system(technique, applicability) if technique else AUDIT_SYSTEM},
             {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
         ],
         "temperature": 0.1,
@@ -237,6 +259,8 @@ def main() -> int:
     ap.add_argument("--all", action="store_true", help="Audit the whole selection without --ids/--limit")
     ap.add_argument("--technique", help="Ask only whether this one label applies, instead of open discovery")
     ap.add_argument("--ids-file", type=Path, help="File of problem ids, one per line (composes with --ids)")
+    ap.add_argument("--applicability", action="store_true",
+                    help="Ask whether the technique WOULD work, not whether it is the intended solution")
     args = ap.parse_args()
 
     if not args.ids and not args.ids_file and args.limit is None and not args.all:
@@ -275,7 +299,7 @@ def main() -> int:
             skipped += 1
             continue
         try:
-            candidates = call_audit(problem, args.model, args.technique)
+            candidates = call_audit(problem, args.model, args.technique, args.applicability)
         except Exception as exc:  # keep the batch moving
             print(f"[{i}/{len(problems)}] failed {problem['id']}: {exc}", file=sys.stderr)
             continue

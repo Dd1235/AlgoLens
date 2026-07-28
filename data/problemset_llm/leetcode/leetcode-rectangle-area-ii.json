@@ -25,7 +25,8 @@
   "patterns": [
     "line-sweep",
     "segment-tree",
-    "coordinate-compression"
+    "coordinate-compression",
+    "rectangle-union-area"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
     "pattern_confidence": {
       "line-sweep": 0.98,
       "segment-tree": 0.95,
-      "coordinate-compression": 0.9
+      "coordinate-compression": 0.9,
+      "rectangle-union-area": 1
     }
   }
 }

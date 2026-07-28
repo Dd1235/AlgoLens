@@ -26,7 +26,8 @@
     "binary-search-answer",
     "rolling-hash",
     "hash-function",
-    "substring-search"
+    "substring-search",
+    "rabin-karp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "binary-search-answer": 0.95,
       "rolling-hash": 0.93,
       "hash-function": 0.9,
-      "substring-search": 0.88
+      "substring-search": 0.88,
+      "rabin-karp": 0.9
     }
   }
 }

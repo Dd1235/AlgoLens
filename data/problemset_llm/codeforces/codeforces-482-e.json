@@ -20,7 +20,8 @@
   "patterns": [
     "link-cut-tree",
     "lca",
-    "expected-value-computation"
+    "expected-value-computation",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "link-cut-tree": 0.95,
       "lca": 0.9,
-      "expected-value-computation": 0.85
+      "expected-value-computation": 0.85,
+      "tin-tout-ancestor-check": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

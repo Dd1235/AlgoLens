@@ -20,7 +20,8 @@
   "patterns": [
     "prefix-sum",
     "offline-queries",
-    "sorting"
+    "sorting",
+    "mo-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "prefix-sum": 0.85,
       "offline-queries": 0.8,
-      "sorting": 0.75
+      "sorting": 0.75,
+      "mo-algorithm": 0.9
     }
   }
 }

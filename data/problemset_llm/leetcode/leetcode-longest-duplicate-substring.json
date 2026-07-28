@@ -27,7 +27,8 @@
     "binary-search-answer",
     "rolling-hash",
     "suffix-array",
-    "suffix-automaton"
+    "suffix-automaton",
+    "rabin-karp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -37,7 +38,8 @@
       "binary-search-answer": 0.95,
       "rolling-hash": 0.9,
       "suffix-array": 0.88,
-      "suffix-automaton": 0.95
+      "suffix-automaton": 0.95,
+      "rabin-karp": 0.9
     }
   }
 }

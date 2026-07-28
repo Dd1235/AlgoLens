@@ -24,7 +24,8 @@
   "patterns": [
     "line-sweep",
     "hash-map",
-    "area-check"
+    "area-check",
+    "rectangle-union-area"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
     "pattern_confidence": {
       "line-sweep": 0.95,
       "hash-map": 0.9,
-      "area-check": 0.85
+      "area-check": 0.85,
+      "rectangle-union-area": 0.9
     }
   }
 }

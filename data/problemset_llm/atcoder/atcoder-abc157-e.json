@@ -17,7 +17,8 @@
     "segment-tree",
     "bit-manipulation",
     "range-query",
-    "point-update"
+    "point-update",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +28,8 @@
       "segment-tree": 0.95,
       "bit-manipulation": 0.9,
       "range-query": 0.9,
-      "point-update": 0.85
+      "point-update": 0.85,
+      "sqrt-decomposition": 0.9
     }
   },
   "difficulty": 1443

@@ -23,7 +23,8 @@
     "rolling-hash",
     "substring-hashing",
     "string-hashing",
-    "z-function"
+    "z-function",
+    "rabin-karp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "rolling-hash": 0.95,
       "substring-hashing": 0.9,
       "string-hashing": 0.85,
-      "z-function": 0.95
+      "z-function": 0.95,
+      "rabin-karp": 0.9
     }
   }
 }

@@ -26,7 +26,8 @@
     "dfs",
     "tree-dp",
     "greedy",
-    "centroid-decomposition"
+    "centroid-decomposition",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "dfs": 0.95,
       "tree-dp": 0.9,
       "greedy": 0.85,
-      "centroid-decomposition": 0.8
+      "centroid-decomposition": 0.8,
+      "tin-tout-ancestor-check": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

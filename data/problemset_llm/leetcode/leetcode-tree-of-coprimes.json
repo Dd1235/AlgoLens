@@ -24,7 +24,8 @@
   "patterns": [
     "dfs",
     "gcd",
-    "ancestor-query"
+    "ancestor-query",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
     "pattern_confidence": {
       "dfs": 0.98,
       "gcd": 0.95,
-      "ancestor-query": 0.9
+      "ancestor-query": 0.9,
+      "tin-tout-ancestor-check": 0.9
     }
   }
 }

@@ -15,7 +15,8 @@
     "bit-manipulation",
     "prefix-sum",
     "fast-zeta-transform",
-    "mobius-inversion"
+    "mobius-inversion",
+    "sos-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
       "bit-manipulation": 0.95,
       "prefix-sum": 0.85,
       "fast-zeta-transform": 0.9,
-      "mobius-inversion": 0.9
+      "mobius-inversion": 0.9,
+      "sos-dp": 0.9
     }
   }
 }
