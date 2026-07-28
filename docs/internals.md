@@ -17,7 +17,7 @@ Switch ranker per request with `?ranker=tfidf|bm25|bm25-grpc|dense|hybrid`. Set 
 
 | Method · path | Purpose |
 |---|---|
-| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=&platform=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug; `platform=` takes a comma-separated judge list (unknown names dropped; naming all four is the same as naming none). Alias queries are expanded server-side (`expandedQuery` echoed when it differs). |
+| `GET /api/search?q=&k=&offset=&ranker=&filter=&pattern=&platform=&difficulty=&sort=` | Paged hits. Each hit: `{ problem, score, matchedTerms[] }`, decorated with `done` and `bookmarked` for signed-in users. `pattern=` filters post-rank to problems carrying that label slug; `platform=` takes a comma-separated judge list (unknown names dropped; naming all four is the same as naming none). `difficulty=` is a comma-separated per-judge selection — named tiers (`lc-hard`) or inclusive rating ranges (`cf:1500-1700`); a judge with no selection is unfiltered, never excluded. `sort=difficulty-asc|desc` is honoured only when exactly one judge with a scale is selected, otherwise `sortRefused` explains why; with a query it reorders the top `k` and echoes `sortWindow` (paging is withdrawn), without one it orders the whole set and paging stands. Alias queries are expanded server-side (`expandedQuery` echoed when it differs). |
 | `GET /api/problems` | Whole corpus as loaded. |
 | `GET /api/rankers` | `{ available: [...], default: "..." }`. |
 | `GET /api/index?ranker=` | Inverted-index dump: every term with `df`, `idf`, postings. |
@@ -206,5 +206,6 @@ Fallback if Render asks for a card anyway: **Hugging Face Spaces** runs Dockerfi
 - Cross-encoder rerank over hybrid's top-50 (candidate floor measured in exp 06)
 - Recommendation layer over solved/bookmarked state
 - Real scraper for a standard sheet (Striver / NeetCode)
-- Cross-judge difficulty scale, then filter/sort by difficulty (blocked: CSES has no difficulty, LeetCode has buckets not a scale — see the README's Ideas section)
+- Per-judge difficulty filter and sort — **shipped** (`server/search/difficulty.js`)
+- Cross-judge difficulty scale, so difficulty works across judges at once (blocked: CSES has no difficulty, LeetCode has buckets not a scale — see the README's Ideas section)
 - Difficulty relative to the signed-in user's rating (the profile already caches CF/AtCoder ratings on the corpus's own scale)
