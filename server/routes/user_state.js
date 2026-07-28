@@ -2,7 +2,7 @@ const express = require("express");
 const { logEvent } = require("../telemetry");
 const db = require("../db");
 const { requireUser } = require("../auth/middleware");
-const { parseBands, passesDifficulty } = require("../search/difficulty");
+const { parseSelection, passesDifficulty } = require("../search/difficulty");
 
 // Sets one of {done, bookmarked} flags to `value` for (user, problem_id) and
 // keeps the row only if at least one flag is true. The CHECK constraint on
@@ -118,7 +118,7 @@ function createUserStateRouter({ problems } = {}) {
     const doneFilter = ["done", "notdone"].includes((req.query.filter || "").toString().toLowerCase())
       ? req.query.filter.toString().toLowerCase()
       : "all";
-    const bands = parseBands(req.query.difficulty);
+    const bands = parseSelection(req.query.difficulty);
     let where = "user_id = $1";
     if (type === "done") where += " AND done";
     if (type === "bookmarked") where += " AND bookmarked";
@@ -150,7 +150,7 @@ function createUserStateRouter({ problems } = {}) {
         type,
         total: items.length,
         platform: wanted.size ? [...wanted].sort() : undefined,
-        difficulty: bands.size ? [...bands].sort() : undefined,
+        difficulty: bands.size ? String(req.query.difficulty).toLowerCase() : undefined,
         filter: doneFilter,
         items,
       });

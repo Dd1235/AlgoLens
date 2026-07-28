@@ -5,7 +5,7 @@ const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
 const { tokenize } = require("../search/tokenize");
-const { parseBands, passesDifficulty, buildDifficultyPayload } = require("../search/difficulty");
+const { parseSelection, passesDifficulty } = require("../search/difficulty");
 const { logEvent } = require("../telemetry");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
@@ -131,7 +131,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const patternRaw = (req.query.pattern || "").toString().toLowerCase();
     const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
     const platforms = parsePlatforms(req.query.platform, KNOWN_PLATFORMS);
-    const bands = parseBands(req.query.difficulty);
+    const bands = parseSelection(req.query.difficulty);
     // Alias expansion ("aliens trick" → +wqs binary search) happens here at
     // the route, once, so every ranker — lexical, dense, gRPC — sees the
     // searchable form. The response echoes expandedQuery when it differs.
@@ -245,7 +245,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         filter: effectiveFilter,
         pattern: pattern || undefined,
         platform: platforms.size ? [...platforms].sort() : undefined,
-        difficulty: bands.size ? [...bands].sort() : undefined,
+        difficulty: bands.size ? String(req.query.difficulty).toLowerCase() : undefined,
         hits,
       });
     } catch (err) {
