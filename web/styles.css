@@ -464,7 +464,7 @@ html[data-theme="light"] .theme-toggle {
   cursor: help;
 }
 
-.lib-chips-always { margin-left: auto; }
+
 /* The count rides inside the command chip, dimmed so ":bookmarks" stays the
    thing you read first — the command is the point, the number is context. */
 .lib-count {

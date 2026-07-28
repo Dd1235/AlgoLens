@@ -627,7 +627,11 @@
     "rejection-sampling": "randomized-algorithm",
     "quick-select": "quickselect",
     "biconnected-component": "articulation-points",
-    "biconnected-components": "articulation-points"
+    "biconnected-components": "articulation-points",
+    "deque-dp": "monotonic-queue-optimization",
+    "deque-optimization": "monotonic-queue-optimization",
+    "deque-trick": "monotonic-queue-optimization",
+    "sliding-window-dp": "monotonic-queue-optimization"
   },
   "groups": {
     "range-queries": {
