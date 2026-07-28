@@ -16,6 +16,19 @@
 //                              ratings are all multiples of 100, so a step-100
 //                              range expresses "exactly 1500" as `cf:1500-1500`.
 //                              Fixed coarse bands could not.
+//   accept  `ac:20-35`       — LeetCode acceptance rate, which is what makes a
+//                              tier finer than three buckets. Composes WITH a
+//                              tier rather than replacing it, so "the hardest
+//                              Mediums" is `lc-medium,ac:13-30`.
+//
+// Acceptance rate is deliberately a filter and a within-tier tiebreak only,
+// never a scale of its own. On the full LeetCode problemset it does track the
+// tier boundary (median Medium 57.5%, Hard 47.3%, AUC 0.677), but on OUR slice
+// that inverts — 554 of 661 served Mediums were selected BECAUSE they had the
+// lowest acceptance rates, while every Hard came in unfiltered. So ordering a
+// 15% Medium above a 60% Hard would report how the corpus was built, not how
+// hard the problems are. Inside one tier that bias is gone and the number is
+// simply the number.
 //
 // Both forms live in one `difficulty=` parameter and are self-identifying, so a
 // URL needs no separate judge parameter to be interpreted against.
@@ -39,9 +52,17 @@ const SHORT_TO_JUDGE = new Map(Object.entries(RATED).map(([judge, m]) => [m.shor
 
 const RANGE_RE = /^([a-z]{2,4}):(-?\d+)-(-?\d+)$/;
 
+// Acceptance rate exists on exactly one judge, so its token names the quantity
+// rather than the judge. Checked before the judge lookup, which is why no judge
+// short may ever be "ac".
+const ACCEPTANCE_JUDGE = "leetcode";
+const ACCEPTANCE_SHORT = "ac";
+const ACCEPTANCE_STEP = 5;
+
 function parseSelection(raw) {
   const named = new Set();
   const ranges = new Map(); // judge -> { min, max }
+  let acceptance = null; // { min, max } — leetcode only
   for (const token of String(raw || "").toLowerCase().split(",")) {
     const t = token.trim();
     if (!t) continue;
@@ -51,14 +72,19 @@ function parseSelection(raw) {
     }
     const m = RANGE_RE.exec(t);
     if (!m) continue;
-    const judge = SHORT_TO_JUDGE.get(m[1]);
-    if (!judge) continue;
     const lo = Number(m[2]);
     const hi = Number(m[3]);
     if (!Number.isFinite(lo) || !Number.isFinite(hi)) continue;
-    ranges.set(judge, { min: Math.min(lo, hi), max: Math.max(lo, hi) });
+    const band = { min: Math.min(lo, hi), max: Math.max(lo, hi) };
+    if (m[1] === ACCEPTANCE_SHORT) {
+      acceptance = band;
+      continue;
+    }
+    const judge = SHORT_TO_JUDGE.get(m[1]);
+    if (!judge) continue;
+    ranges.set(judge, band);
   }
-  return { named, ranges, size: named.size + ranges.size };
+  return { named, ranges, acceptance, size: named.size + ranges.size + (acceptance ? 1 : 0) };
 }
 
 // A problem passes when its own judge's selection accepts it. A judge with no
@@ -66,6 +92,15 @@ function parseSelection(raw) {
 // Codeforces to 1500 would silently delete every LeetCode result on screen.
 function passesDifficulty(problem, selection) {
   if (!selection || !selection.size) return true;
+
+  // Acceptance rate narrows its own judge and leaves the others alone, the same
+  // way a rating range does — and it intersects with a tier rather than
+  // replacing it, so `lc-medium,ac:13-30` is "the hardest Mediums".
+  if (selection.acceptance && problem.platform === ACCEPTANCE_JUDGE) {
+    const rate = problem.acceptance_rate;
+    if (typeof rate !== "number") return false;
+    if (rate < selection.acceptance.min || rate > selection.acceptance.max) return false;
+  }
 
   const range = selection.ranges.get(problem.platform);
   if (range) {
@@ -118,7 +153,36 @@ function buildDifficultyPayload(problems) {
     rated.push({ judge, short: meta.short, step, min, max, stops, histogram, count: values.length });
   }
 
-  return { named, rated };
+  // Acceptance bounds are reported per tier, because that is the only scope in
+  // which they compare: the client narrows its control to whichever tiers are
+  // selected instead of offering one range across all three.
+  const tiers = {};
+  for (const p of problems || []) {
+    if (p.platform !== ACCEPTANCE_JUDGE || typeof p.acceptance_rate !== "number") continue;
+    const tier = String(p.difficulty || "").toLowerCase();
+    if (!tier) continue;
+    const t = (tiers[tier] = tiers[tier] || { min: Infinity, max: -Infinity, count: 0 });
+    t.min = Math.min(t.min, p.acceptance_rate);
+    t.max = Math.max(t.max, p.acceptance_rate);
+    t.count += 1;
+  }
+
+  let acceptance = null;
+  const present = Object.values(tiers);
+  if (present.length) {
+    const snap = (v, dir) => (dir < 0 ? Math.floor(v / ACCEPTANCE_STEP) : Math.ceil(v / ACCEPTANCE_STEP)) * ACCEPTANCE_STEP;
+    for (const t of present) {
+      t.min = snap(t.min, -1);
+      t.max = snap(t.max, 1);
+    }
+    const min = Math.min(...present.map((t) => t.min));
+    const max = Math.max(...present.map((t) => t.max));
+    const stops = [];
+    for (let v = min; v <= max; v += ACCEPTANCE_STEP) stops.push(v);
+    acceptance = { judge: ACCEPTANCE_JUDGE, short: ACCEPTANCE_SHORT, step: ACCEPTANCE_STEP, min, max, stops, tiers };
+  }
+
+  return { named, rated, acceptance };
 }
 
 // ── Sorting ──────────────────────────────────────────────────────────────────
@@ -147,17 +211,40 @@ function sortableJudge(platforms, payloadJudges) {
   return payloadJudges.has(judge) ? judge : null;
 }
 
-// Unrated problems sort last in both directions. They are not "easiest"; we
-// simply don't know, and putting an unknown at the top of an easiest-first list
-// would be a claim we can't support.
+// A two-part key, compared lexicographically, where bigger always means harder.
+//
+// Three named tiers are a coarse ordering: "easiest first" over LeetCode would
+// otherwise hand back 661 Mediums in relevance order, which is no order at all.
+// Acceptance rate breaks that tie — and only that tie, because it is comparable
+// within a tier and not across one (see the note at the top of this file).
+// Lower acceptance means harder, so it is negated to keep bigger = harder.
+//
+// Unknowns sort last in both directions, at whichever level they appear. They
+// are not "easiest"; we simply don't know, and putting an unknown at the top of
+// an easiest-first list would be a claim we can't support.
 function difficultyKey(problem) {
   const d = problem.difficulty;
-  if (typeof d === "number") return d;
+  if (typeof d === "number") return [d, 0]; // a rating is already fine-grained
   if (typeof d === "string") {
     const t = TIER_ORDER[d.toLowerCase()];
-    if (t !== undefined) return t;
+    if (t !== undefined) {
+      const rate = problem.acceptance_rate;
+      return [t, typeof rate === "number" ? -rate : null];
+    }
   }
   return null;
+}
+
+function compareKeys(a, b, sign) {
+  for (let i = 0; i < a.length; i++) {
+    const x = a[i];
+    const y = b[i];
+    if (x === null && y === null) continue;
+    if (x === null) return 1; // unknown last, whichever way we're sorting
+    if (y === null) return -1;
+    if (x !== y) return sign * (x - y);
+  }
+  return 0;
 }
 
 function sortByDifficulty(items, dir, get = (x) => x) {
@@ -168,8 +255,8 @@ function sortByDifficulty(items, dir, get = (x) => x) {
       if (a.key === null && b.key === null) return a.i - b.i;
       if (a.key === null) return 1;
       if (b.key === null) return -1;
-      if (a.key !== b.key) return sign * (a.key - b.key);
-      return a.i - b.i; // stable: equal difficulty keeps relevance order
+      const cmp = compareKeys(a.key, b.key, sign);
+      return cmp !== 0 ? cmp : a.i - b.i; // stable: a true tie keeps relevance order
     })
     .map((x) => x.item);
 }
@@ -185,4 +272,5 @@ function parseSort(raw) {
 const SORTABLE_JUDGES = new Set([...NAMED.map((b) => b.judge), ...Object.keys(RATED)]);
 
 module.exports = { NAMED, RATED, parseSelection, passesDifficulty, buildDifficultyPayload,
-  parseSort, sortByDifficulty, sortableJudge, SORTABLE_JUDGES, difficultyKey };
+  parseSort, sortByDifficulty, sortableJudge, SORTABLE_JUDGES, difficultyKey,
+  ACCEPTANCE_JUDGE, ACCEPTANCE_SHORT, ACCEPTANCE_STEP };
