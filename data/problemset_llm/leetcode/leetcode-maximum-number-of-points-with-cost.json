@@ -22,7 +22,8 @@
     "prefix-max",
     "row-by-row-optimization",
     "dp-optimization",
-    "convex-hull-trick"
+    "convex-hull-trick",
+    "monotonic-queue-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "prefix-max": 0.85,
       "row-by-row-optimization": 0.8,
       "dp-optimization": 0.9,
-      "convex-hull-trick": 0.9
+      "convex-hull-trick": 0.9,
+      "monotonic-queue-optimization": 0.9
     }
   }
 }

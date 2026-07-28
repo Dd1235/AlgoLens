@@ -22,7 +22,8 @@
   "patterns": [
     "sliding-window",
     "prefix-sum",
-    "dynamic-programming"
+    "dynamic-programming",
+    "monotonic-queue-optimization"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "sliding-window": 0.9,
       "prefix-sum": 0.85,
-      "dynamic-programming": 0.9
+      "dynamic-programming": 0.9,
+      "monotonic-queue-optimization": 0.9
     }
   }
 }
