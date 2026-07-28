@@ -462,6 +462,28 @@ function syncDifficultyControls() {
     : [];
   if (!accTiers.length) activeAcceptance = null;
 
+  // Acceptance rate belongs to LeetCode, so it is rendered as part of
+  // LeetCode's group rather than appended after every judge — it used to sit
+  // past the Codeforces rating range, which read as a third judge's control.
+  let acceptanceHtml = "";
+  if (accTiers.length) {
+    // Bounds are the union of the SELECTED tiers, not of all LeetCode: the
+    // Easies top out at 65% and the Mediums reach 90%, so a shared range would
+    // offer stops that can never match what's on screen.
+    const lo = Math.min(...accTiers.map((b) => (acc.tiers[b.label] || acc).min));
+    const hi = Math.max(...accTiers.map((b) => (acc.tiers[b.label] || acc).max));
+    const stops = acc.stops.filter((v) => v >= lo && v <= hi);
+    const cur = activeAcceptance || { min: lo, max: hi };
+    const opts = (selected) =>
+      stops.map((v) => `<option value="${v}"${v === selected ? " selected" : ""}>${v}%</option>`).join("");
+    acceptanceHtml =
+      '<span class="difficulty-group acceptance-group"><span class="difficulty-label" title="acceptance rate — lower is harder">ac</span>' +
+      '<select class="filter-select acceptance-select" data-edge="min" aria-label="minimum acceptance rate">' +
+      `${opts(cur.min)}</select><span class="range-dash">to</span>` +
+      '<select class="filter-select acceptance-select" data-edge="max" aria-label="maximum acceptance rate">' +
+      `${opts(cur.max)}</select></span>`;
+  }
+
   const groups = [];
   for (const judge of judges) {
     const short = (PLATFORM_LABELS[judge] || [judge])[0];
@@ -495,6 +517,7 @@ function syncDifficultyControls() {
     groups.push(
       `<span class="difficulty-group"><span class="difficulty-label">${escapeHtml(short)}</span>${body}</span>`
     );
+    if (acceptanceHtml && acc && judge === acc.judge) groups.push(acceptanceHtml);
   }
 
   // Sorting shares the difficulty row's rule — one judge, because there is no
@@ -525,25 +548,6 @@ function syncDifficultyControls() {
     );
   } else if (sortDir) {
     sortDir = null; // the judge that made it legal is gone
-  }
-
-  if (accTiers.length) {
-    // Bounds are the union of the SELECTED tiers, not of all LeetCode: the
-    // Easies top out at 65% and the Mediums reach 90%, so a shared range would
-    // offer stops that can never match what's on screen.
-    const lo = Math.min(...accTiers.map((b) => (acc.tiers[b.label] || acc).min));
-    const hi = Math.max(...accTiers.map((b) => (acc.tiers[b.label] || acc).max));
-    const stops = acc.stops.filter((v) => v >= lo && v <= hi);
-    const cur = activeAcceptance || { min: lo, max: hi };
-    const opts = (selected) =>
-      stops.map((v) => `<option value="${v}"${v === selected ? " selected" : ""}>${v}%</option>`).join("");
-    groups.push(
-      '<span class="difficulty-group"><span class="difficulty-label" title="acceptance rate — lower is harder">ac</span>' +
-        '<select class="filter-select acceptance-select" data-edge="min" aria-label="minimum acceptance rate">' +
-        `${opts(cur.min)}</select><span class="range-dash">to</span>` +
-        '<select class="filter-select acceptance-select" data-edge="max" aria-label="maximum acceptance rate">' +
-        `${opts(cur.max)}</select></span>`
-    );
   }
 
   // "my level" sets each selected judge's band from that judge's own stats. It
