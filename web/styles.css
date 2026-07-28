@@ -464,6 +464,9 @@ html[data-theme="light"] .theme-toggle {
   cursor: help;
 }
 
+.lib-chips-user[hidden] { display: none; }
+.lib-chips-always { margin-left: auto; }
+
 .sort-group .filter-select { font-size: 0.76rem; }
 .sort-group { margin-left: 0.2rem; }
 
