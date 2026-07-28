@@ -1260,6 +1260,15 @@ FILTERS — they stack, and they stack with the library too
                On LeetCode, acceptance rate breaks the tie inside each
                tier — otherwise "easiest first" is 661 Mediums in no
                particular order.
+  my level     appears when your profile has stats for a judge you've
+               selected, and sets that judge's band from its own scale:
+               Codeforces and AtCoder from your rating (your rating to
+               +200 — a problem rated at your rating is roughly a coin
+               flip, so that band is winnable but not free), LeetCode
+               from your solved counts, since it publishes no rating.
+               It only ever sets a judge from that judge's own numbers.
+               Hover it to see the reasoning and how many problems it
+               selects; press it again to drop it.
   pattern      click a technique label inside a result
   all/notdone  the dropdown next to the ranker      (signed in)
   /done
