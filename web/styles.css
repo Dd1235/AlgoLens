@@ -436,7 +436,8 @@ html[data-theme="light"] .theme-toggle {
 /* Rating range: two compact selects reading "1500 to 1700". Native selects on
    purpose — they get the platform picker on phones, which beats anything
    hand-rolled for a 26-option list. */
-.rating-select {
+.rating-select,
+.acceptance-select {
   font-size: 0.76rem;
   padding: 0.2rem 1.1rem 0.2rem 0.35rem;
   border: 1px solid var(--border);
@@ -445,7 +446,18 @@ html[data-theme="light"] .theme-toggle {
   font-variant-numeric: tabular-nums;
 }
 .rating-select:hover,
-.rating-select:focus { border-color: var(--accent); color: var(--accent); }
+.rating-select:focus,
+.acceptance-select:hover,
+.acceptance-select:focus { border-color: var(--accent); color: var(--accent); }
+
+/* "ac" needs a hint that lower means harder, which is the opposite of every
+   other number on this row. A tooltip is the desktop half of that; the option
+   values carry the % so the unit is never in doubt on a phone. */
+.difficulty-label[title] {
+  text-decoration: underline dotted var(--border);
+  text-underline-offset: 0.2em;
+  cursor: help;
+}
 
 .sort-group .filter-select { font-size: 0.76rem; }
 .sort-group { margin-left: 0.2rem; }

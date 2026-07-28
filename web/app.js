@@ -74,7 +74,7 @@ let currentUser = null;
 let currentFilter = filterSelect.value || "all";
 let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
-let difficultyPayload = { named: [], rated: [] }; // controls, from /api/rankers
+let difficultyPayload = { named: [], rated: [], acceptance: null }; // controls, from /api/rankers
 const bootRanges = []; // ?difficulty= ranges parked until the payload names their judge
 let sortDir = null;    // null | "asc" | "desc" — difficulty order, one judge only
 let sortWindow = 20;   // how many relevance-ranked results get reordered
@@ -173,7 +173,7 @@ async function populateRankerSelect() {
     opt.textContent = RANKER_LABELS[name] || name;
     rankerSelect.appendChild(opt);
   }
-  difficultyPayload = data.difficulty || { named: [], rated: [] };
+  difficultyPayload = data.difficulty || { named: [], rated: [], acceptance: null };
   // A range in the URL names a judge by its short form ("cf"), which only the
   // payload can resolve — so it is applied here rather than at boot.
   for (const [, short, lo, hi] of bootRanges.splice(0)) {
@@ -342,6 +342,7 @@ function activeFacets() {
     const short = (PLATFORM_LABELS[judge] || [judge])[0];
     bits.push(r.min === r.max ? `${short} ${r.min}` : `${short} ${r.min}-${r.max}`);
   }
+  if (activeAcceptance) bits.push(`ac ${activeAcceptance.min}-${activeAcceptance.max}%`);
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
   return bits;
 }
@@ -358,6 +359,7 @@ function activeFacets() {
 // thing to want.
 const activeTiers = new Set();     // named tiers, e.g. lc-hard
 const activeRanges = new Map();    // judge -> { min, max }
+let activeAcceptance = null;       // { min, max } — leetcode acceptance rate
 
 function difficultyParam() {
   const parts = [...activeTiers];
@@ -365,6 +367,7 @@ function difficultyParam() {
     const meta = (difficultyPayload.rated || []).find((x) => x.judge === judge);
     if (meta) parts.push(`${meta.short}:${r.min}-${r.max}`);
   }
+  if (activeAcceptance) parts.push(`ac:${activeAcceptance.min}-${activeAcceptance.max}`);
   return parts.join(",");
 }
 
@@ -380,6 +383,7 @@ function syncDifficultyControls() {
     // user can no longer see or clear.
     activeTiers.clear();
     activeRanges.clear();
+    activeAcceptance = null;
     sortDir = null; // no scale on screen, so no order to sort by
     difficultyRow.classList.add("hidden");
     difficultyRow.innerHTML = "";
@@ -387,6 +391,17 @@ function syncDifficultyControls() {
   }
   for (const id of [...activeTiers]) if (!named.some((b) => b.id === id)) activeTiers.delete(id);
   for (const j of [...activeRanges.keys()]) if (!rated.some((r) => r.judge === j)) activeRanges.delete(j);
+
+  // Acceptance rate is only offered once a tier is chosen, because across tiers
+  // it isn't comparable in this corpus — the Mediums here were selected FOR a
+  // low acceptance rate and the Hards weren't. Picking the tier first is what
+  // makes "the hardest Mediums" an honest question. So the control comes and
+  // goes with the tier selection, and its value goes with it.
+  const acc = difficultyPayload.acceptance;
+  const accTiers = acc
+    ? [...activeTiers].map((id) => named.find((b) => b.id === id)).filter((b) => b && b.judge === acc.judge)
+    : [];
+  if (!accTiers.length) activeAcceptance = null;
 
   const groups = [];
   for (const judge of judges) {
@@ -453,7 +468,26 @@ function syncDifficultyControls() {
     sortDir = null; // the judge that made it legal is gone
   }
 
-  if (activeTiers.size || activeRanges.size) {
+  if (accTiers.length) {
+    // Bounds are the union of the SELECTED tiers, not of all LeetCode: the
+    // Easies top out at 65% and the Mediums reach 90%, so a shared range would
+    // offer stops that can never match what's on screen.
+    const lo = Math.min(...accTiers.map((b) => (acc.tiers[b.label] || acc).min));
+    const hi = Math.max(...accTiers.map((b) => (acc.tiers[b.label] || acc).max));
+    const stops = acc.stops.filter((v) => v >= lo && v <= hi);
+    const cur = activeAcceptance || { min: lo, max: hi };
+    const opts = (selected) =>
+      stops.map((v) => `<option value="${v}"${v === selected ? " selected" : ""}>${v}%</option>`).join("");
+    groups.push(
+      '<span class="difficulty-group"><span class="difficulty-label" title="acceptance rate — lower is harder">ac</span>' +
+        '<select class="filter-select acceptance-select" data-edge="min" aria-label="minimum acceptance rate">' +
+        `${opts(cur.min)}</select><span class="range-dash">to</span>` +
+        '<select class="filter-select acceptance-select" data-edge="max" aria-label="maximum acceptance rate">' +
+        `${opts(cur.max)}</select></span>`
+    );
+  }
+
+  if (activeTiers.size || activeRanges.size || activeAcceptance) {
     groups.push('<button type="button" class="judge-chip judge-clear" id="difficulty-clear" title="any difficulty">any ✕</button>');
   }
   difficultyRow.innerHTML = groups.join("");
@@ -486,6 +520,23 @@ function syncDifficultyControls() {
       afterDifficultyChange();
     });
   });
+  difficultyRow.querySelectorAll(".acceptance-select").forEach((sel) => {
+    sel.addEventListener("change", () => {
+      const lo = Math.min(...accTiers.map((b) => (acc.tiers[b.label] || acc).min));
+      const hi = Math.max(...accTiers.map((b) => (acc.tiers[b.label] || acc).max));
+      const cur = activeAcceptance || { min: lo, max: hi };
+      const v = Number(sel.value);
+      const next = sel.dataset.edge === "min" ? { min: v, max: cur.max } : { min: cur.min, max: v };
+      if (next.min > next.max) {
+        if (sel.dataset.edge === "min") next.max = next.min;
+        else next.min = next.max;
+      }
+      activeAcceptance = next.min === lo && next.max === hi ? null : next;
+      track("difficulty_selected", { acceptance: `${next.min}-${next.max}` });
+      afterDifficultyChange();
+    });
+  });
+
   const sortSel = difficultyRow.querySelector("#sort-select");
   if (sortSel) sortSel.addEventListener("change", () => {
     sortDir = sortSel.value || null;
@@ -502,6 +553,7 @@ function syncDifficultyControls() {
   if (clear) clear.addEventListener("click", () => {
     activeTiers.clear();
     activeRanges.clear();
+    activeAcceptance = null;
     afterDifficultyChange();
   });
 }
@@ -1603,7 +1655,10 @@ for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
 for (const tok of (bootParams.get("difficulty") || "").toLowerCase().split(",")) {
   const t = tok.trim();
   const range = /^([a-z]{2,4}):(-?\d+)-(-?\d+)$/.exec(t);
-  if (range) bootRanges.push(range);
+  // "ac" names a quantity rather than a judge, so unlike "cf" it resolves
+  // without waiting for the payload.
+  if (range && range[1] === "ac") activeAcceptance = { min: Number(range[2]), max: Number(range[3]) };
+  else if (range) bootRanges.push(range);
   else if (/^[a-z]{2,3}-[a-z]+$/.test(t)) activeTiers.add(t);
 }
 syncJudgeControls();
