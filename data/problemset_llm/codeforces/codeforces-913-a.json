@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-913-a",
+  "title": "Modular Exponentiation",
+  "slug": "913-a-modular-exponentiation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/913/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given integers n and m, compute m modulo 2 to the power of n (m mod 2^n).",
+  "tags": [
+    "math",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224787,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.9,
+      "bit-manipulation": 0.85
+    }
+  }
+}

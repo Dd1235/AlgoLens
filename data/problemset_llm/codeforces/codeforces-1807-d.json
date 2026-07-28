@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1807-d",
+  "title": "Odd Queries",
+  "slug": "1807-d-odd-queries",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1807/D",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given an array, answer queries that ask whether setting all elements in a specified subrange to a given value results in the entire array's sum being odd.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "queries"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "range-update",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224655,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "range-update": 0.8,
+      "parity-check": 0.85
+    }
+  }
+}

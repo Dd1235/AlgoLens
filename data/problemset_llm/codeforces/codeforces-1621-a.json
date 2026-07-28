@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1621-a",
+  "title": "Stable Arrangement of Rooks",
+  "slug": "1621-a-stable-arrangement-of-rooks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1621/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Place k rooks on an n×n chessboard so that no rook attacks another, and the arrangement remains valid after any single rook move to an adjacent cell; find any such stable arrangement or determine none exists.",
+  "tags": [
+    "constructive-algorithm",
+    "combinatorics",
+    "geometry"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "combinatorial-configuration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224299,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "combinatorial-configuration": 0.85
+    }
+  }
+}

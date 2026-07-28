@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1768-b",
+  "title": "Quick Sort",
+  "slug": "1768-b-quick-sort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1768/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a permutation and an integer k, repeatedly remove k distinct elements and append them sorted at the end. Determine the minimum number of such operations to sort the permutation in ascending order.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "permutation-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224646,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "permutation-analysis": 0.85
+    }
+  }
+}

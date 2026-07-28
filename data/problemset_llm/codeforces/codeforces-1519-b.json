@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1519-b",
+  "title": "The Cake Is a Lie",
+  "slug": "1519-b-the-cake-is-a-lie",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1519/B",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "dp",
+    "math"
+  ],
+  "statement": "Given an n by m grid with movement costs depending on the current row or column, determine if there exists a path from the top-left to the bottom-right cell with total cost exactly k.",
+  "tags": [
+    "dynamic-programming",
+    "math",
+    "grid"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "path-counting",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224278,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "path-counting": 0.7,
+      "state-space-search": 0.6
+    }
+  }
+}

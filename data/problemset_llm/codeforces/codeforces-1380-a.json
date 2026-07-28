@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1380-a",
+  "title": "Three Indices",
+  "slug": "1380-a-three-indices",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1380/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "data structures"
+  ],
+  "statement": "Given a permutation, find three indices i, j, k with i<j<k such that p_i < p_j and p_j > p_k.",
+  "tags": [
+    "array",
+    "permutation"
+  ],
+  "patterns": [
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224407,
+    "pattern_confidence": {
+      "brute-force": 0.9
+    }
+  }
+}

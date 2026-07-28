@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-231-a",
+  "title": "Team",
+  "slug": "231-a-team",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/231/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Given n problems and three friends' confidence on each, count how many problems have at least two friends sure about the solution.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "brute-force",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224362,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "counting": 0.9
+    }
+  }
+}

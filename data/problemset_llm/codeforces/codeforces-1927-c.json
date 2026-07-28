@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1927-c",
+  "title": "Choose the Different Ones!",
+  "slug": "1927-c-choose-the-different-ones",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1927/C",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given two integer arrays and an even number k, determine if it is possible to select exactly k/2 elements from each array so that the combined chosen elements include every integer from 1 to k.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "set-coverage",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224866,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "set-coverage": 0.8,
+      "counting": 0.7
+    }
+  }
+}

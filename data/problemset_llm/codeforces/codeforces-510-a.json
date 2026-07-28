@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-510-a",
+  "title": "Fox And Snake",
+  "slug": "510-a-fox-and-snake",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/510/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given dimensions n and m, print a grid representing a snake pattern where rows alternate between full lines of '#' and lines with a single '#' at alternating ends, with all other cells as '.'.",
+  "tags": [
+    "implementation",
+    "string",
+    "matrix"
+  ],
+  "patterns": [
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224375,
+    "pattern_confidence": {
+      "simulation": 0.95
+    }
+  }
+}

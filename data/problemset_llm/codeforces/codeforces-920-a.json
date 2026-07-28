@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-920-a",
+  "title": "Water The Garden",
+  "slug": "920-a-water-the-garden",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/920/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a line of garden beds with some containing water taps that spread water outward by one bed per second, find the minimum time needed to water all beds when all taps are turned on simultaneously.",
+  "tags": [
+    "implementation",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224900,
+    "pattern_confidence": {
+      "binary-search": 0.8,
+      "greedy": 0.9
+    }
+  }
+}

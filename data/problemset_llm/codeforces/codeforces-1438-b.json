@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1438-b",
+  "title": "Valerii Against Everyone",
+  "slug": "1438-b-valerii-against-everyone",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1438/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array b, define array a where a_i = 2^{b_i}. Determine if there exist two non-overlapping subarrays of a with equal sums, disproving Valerii's claim that all such sums are distinct.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224829,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "sorting": 0.8,
+      "two-pointers": 0.6
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1294-a",
+  "title": "Collecting Coins",
+  "slug": "1294-a-collecting-coins",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1294/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given initial coin counts for three sisters and a number of coins to distribute, determine if it's possible to distribute all coins so that all sisters end up with the same total number of coins.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "equation-solving",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224263,
+    "pattern_confidence": {
+      "equation-solving": 0.9,
+      "modular-arithmetic": 0.7
+    }
+  }
+}

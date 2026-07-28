@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1497-a",
+  "title": "Meximization",
+  "slug": "1497-a-meximization",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1497/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array of integers, reorder its elements to maximize the sum of the MEX values of all its prefixes.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "mex"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224276,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "mex": 0.9
+    }
+  }
+}

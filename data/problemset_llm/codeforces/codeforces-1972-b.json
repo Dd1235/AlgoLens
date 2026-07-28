@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1972-b",
+  "title": "Coin Games",
+  "slug": "1972-b-coin-games",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1972/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "games"
+  ],
+  "statement": "Two players alternately remove facing-up coins from a circular arrangement, flipping adjacent coins after each removal, and the player unable to move loses; determine the winner assuming optimal play.",
+  "tags": [
+    "game-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "combinatorial-game-theory",
+    "game-state-analysis",
+    "optimal-strategy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224668,
+    "pattern_confidence": {
+      "combinatorial-game-theory": 0.95,
+      "game-state-analysis": 0.9,
+      "optimal-strategy": 0.85
+    }
+  }
+}

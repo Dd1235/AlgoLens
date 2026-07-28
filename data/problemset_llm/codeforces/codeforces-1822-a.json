@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1822-a",
+  "title": "TubeTube Feed",
+  "slug": "1822-a-tubetube-feed",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1822/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given a list of videos with durations and entertainment values, and a total time limit including skip times, select a video that can be watched within the time limit maximizing entertainment value.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224344,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "linear-scan": 0.9
+    }
+  }
+}

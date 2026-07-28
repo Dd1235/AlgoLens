@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-670-b",
+  "title": "Game of Robots",
+  "slug": "670-b-game-of-robots",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/670/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given n robots lined up, each robot sequentially recites all previous robots' identifiers followed by its own. Determine the k-th identifier spoken in this sequence.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "arithmetic-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224885,
+    "pattern_confidence": {
+      "prefix-sum": 0.85,
+      "arithmetic-sequence": 0.8
+    }
+  }
+}

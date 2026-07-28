@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1358-b",
+  "title": "Maria Breaks the Self-isolation",
+  "slug": "1358-b-maria-breaks-the-self-isolation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1358/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given n grannies each requiring at least a_i other grannies present upon arrival, determine the maximum number of grannies (including Maria) that can be gathered simultaneously under these constraints.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224826,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

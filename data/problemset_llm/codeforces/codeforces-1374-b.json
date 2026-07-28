@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1374-b",
+  "title": "Multiply by 2, divide by 6",
+  "slug": "1374-b-multiply-by-2-divide-by-6",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1374/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an integer n, find the minimum number of moves to transform n into 1 by either multiplying by 2 or dividing by 6 when divisible, or determine if it's impossible.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224405,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "number-theory": 0.85
+    }
+  }
+}

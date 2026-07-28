@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1882-a",
+  "title": "Increasing Sequence",
+  "slug": "1882-a-increasing-sequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1882/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a sequence of integers, construct a strictly increasing sequence of positive integers where each element differs from the corresponding original element.",
+  "tags": [
+    "greedy",
+    "sequence",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224353,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

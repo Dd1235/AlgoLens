@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-275-a",
+  "title": "Lights Out",
+  "slug": "275-a-lights-out",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/275/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a 3×3 grid of lights initially all on, and the number of times each light was pressed where pressing toggles that light and its adjacent lights, determine the final on/off state of each light.",
+  "tags": [
+    "implementation",
+    "simulation",
+    "grid"
+  ],
+  "patterns": [
+    "simulation",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224679,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "bit-manipulation": 0.7
+    }
+  }
+}

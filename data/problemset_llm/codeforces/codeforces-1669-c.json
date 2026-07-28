@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1669-c",
+  "title": "Odd/Even Increments",
+  "slug": "1669-c-odd-even-increments",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1669/C",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, determine if it is possible to make all elements have the same parity (all even or all odd) by repeatedly adding 1 to either all elements at odd indices or all elements at even indices any number of times.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "parity",
+    "greedy",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224316,
+    "pattern_confidence": {
+      "parity": 0.95,
+      "greedy": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1209-a",
+  "title": "Paint the Numbers",
+  "slug": "1209-a-paint-the-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1209/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a sequence of integers, assign colors to elements so that in each color group all elements are divisible by the minimal element of that group, minimizing the number of colors used.",
+  "tags": [
+    "greedy",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "divisibility-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224255,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85,
+      "divisibility-check": 0.8
+    }
+  }
+}

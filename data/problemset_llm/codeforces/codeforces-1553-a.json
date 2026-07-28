@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1553-a",
+  "title": "Digits Sum",
+  "slug": "1553-a-digits-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1553/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Count integers from 1 to n for which the sum of digits decreases when incremented by one.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "digit-dp",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224286,
+    "pattern_confidence": {
+      "digit-dp": 0.85,
+      "brute-force": 0.6
+    }
+  }
+}

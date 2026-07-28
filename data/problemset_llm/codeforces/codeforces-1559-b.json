@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1559-b",
+  "title": "Mocha and Red and Blue",
+  "slug": "1559-b-mocha-and-red-and-blue",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1559/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a row of squares where some are pre-colored red or blue and others are blank, assign colors to the blank squares to minimize the number of adjacent pairs with the same color.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224627,
+    "pattern_confidence": {
+      "dynamic-programming": 0.85,
+      "greedy": 0.75
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-916-a",
+  "title": "Jamie and Alarm Snooze",
+  "slug": "916-a-jamie-and-alarm-snooze",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/916/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a wake-up time and a snooze interval, find the minimum number of snooze presses so that the alarm time before waking contains the digit '7' in its 24-hour format.",
+  "tags": [
+    "math",
+    "implementation",
+    "simulation"
+  ],
+  "patterns": [
+    "brute-force",
+    "modular-arithmetic",
+    "digit-checking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224789,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "modular-arithmetic": 0.85,
+      "digit-checking": 0.9
+    }
+  }
+}

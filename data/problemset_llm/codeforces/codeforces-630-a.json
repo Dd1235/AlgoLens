@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-630-a",
+  "title": "Again Twenty Five!",
+  "slug": "630-a-again-twenty-five",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/630/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "number theory"
+  ],
+  "statement": "Compute the last two digits of 5 raised to a large power n efficiently.",
+  "tags": [
+    "number-theory",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "modular-exponentiation",
+    "pattern-recognition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224377,
+    "pattern_confidence": {
+      "modular-exponentiation": 0.95,
+      "pattern-recognition": 0.7
+    }
+  }
+}

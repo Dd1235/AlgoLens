@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1041-a",
+  "title": "Heist",
+  "slug": "1041-a-heist",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1041/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a set of remaining keyboard indices after a heist, determine the minimum number of stolen keyboards assuming the original keyboards were consecutively numbered starting from an unknown integer.",
+  "tags": [
+    "math",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224249,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

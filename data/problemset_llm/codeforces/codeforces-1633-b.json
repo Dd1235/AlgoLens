@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1633-b",
+  "title": "Minority",
+  "slug": "1633-b-minority",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1633/B",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a binary string, select a contiguous substring and remove all occurrences of the minority character within it exactly once. Determine the maximum number of characters that can be removed.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224305,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "prefix-sum": 0.7,
+      "two-pointers": 0.6
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1690-d",
+  "title": "Black and White Stripe",
+  "slug": "1690-d-black-and-white-stripe",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1690/D",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "two pointers"
+  ],
+  "statement": "Given a binary stripe of length n, find the minimum number of white cells to recolor black to obtain a segment of k consecutive black cells.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "implementation"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224843,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9
+    }
+  }
+}

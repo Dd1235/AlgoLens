@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1475-b",
+  "title": "New Year's Number",
+  "slug": "1475-b-new-year-s-number",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1475/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "math"
+  ],
+  "statement": "Determine if a given number can be expressed as a sum of some multiples of 2020 and 2021.",
+  "tags": [
+    "math",
+    "brute-force"
+  ],
+  "patterns": [
+    "linear-diophantine-equation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224622,
+    "pattern_confidence": {
+      "linear-diophantine-equation": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-205-a",
+  "title": "Little Elephant and Rozdil",
+  "slug": "205-a-little-elephant-and-rozdil",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/205/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given travel times to various towns, find the town with the minimum travel time or determine if there is a tie for the minimum time, in which case no town is chosen.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "minimum-finding",
+    "tie-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224675,
+    "pattern_confidence": {
+      "minimum-finding": 0.95,
+      "tie-detection": 0.9
+    }
+  }
+}

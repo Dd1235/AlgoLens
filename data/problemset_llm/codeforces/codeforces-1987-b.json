@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1987-b",
+  "title": "K-Sort",
+  "slug": "1987-b-k-sort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1987/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given an integer array, find the minimum total cost to make it non-decreasing by repeatedly incrementing chosen subsets of elements, where each operation's cost depends on the size of the subset incremented.",
+  "tags": [
+    "array",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "increment-operations",
+    "cost-minimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224875,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "increment-operations": 0.7,
+      "cost-minimization": 0.7
+    }
+  }
+}

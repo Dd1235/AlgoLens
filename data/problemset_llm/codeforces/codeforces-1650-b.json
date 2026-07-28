@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1650-b",
+  "title": "DIV + MOD",
+  "slug": "1650-b-div-mod",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1650/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given integers a, l, and r, find the maximum value of the function f_a(x) = floor(x/a) + (x mod a) for x in the range [l, r].",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "floor-division"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224637,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.9,
+      "floor-division": 0.85
+    }
+  }
+}

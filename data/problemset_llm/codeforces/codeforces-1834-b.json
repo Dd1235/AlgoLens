@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1834-b",
+  "title": "Maximum Strength",
+  "slug": "1834-b-maximum-strength",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1834/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a range of integers, find two numbers within the range whose digit-wise absolute difference sum is maximized, considering leading zeros for unequal lengths.",
+  "tags": [
+    "math",
+    "greedy",
+    "digit-dp"
+  ],
+  "patterns": [
+    "digit-dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224856,
+    "pattern_confidence": {
+      "digit-dp": 0.9,
+      "greedy": 0.8
+    }
+  }
+}

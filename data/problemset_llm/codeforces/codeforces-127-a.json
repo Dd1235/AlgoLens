@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-127-a",
+  "title": "Wasted Time",
+  "slug": "127-a-wasted-time",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/127/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "geometry"
+  ],
+  "statement": "Calculate the total time spent signing k identical polylines at a constant speed, given the coordinates of the signature points.",
+  "tags": [
+    "geometry"
+  ],
+  "patterns": [
+    "geometry",
+    "distance-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224397,
+    "pattern_confidence": {
+      "geometry": 0.95,
+      "distance-calculation": 0.9
+    }
+  }
+}

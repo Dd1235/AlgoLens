@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1257-a",
+  "title": "Two Rival Students",
+  "slug": "1257-a-two-rival-students",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1257/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given positions of two rival students in a row and a limit on adjacent swaps, determine the maximum possible distance between them after performing at most the allowed swaps.",
+  "tags": [
+    "greedy",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224262,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.7
+    }
+  }
+}

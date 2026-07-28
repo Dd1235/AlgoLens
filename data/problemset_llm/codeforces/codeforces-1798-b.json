@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1798-b",
+  "title": "Three Sevens",
+  "slug": "1798-b-three-sevens",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1798/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given participants for each day of a lottery and the rule that winners cannot participate on subsequent days, find any valid sequence of winners or determine that none exists.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "data-structures"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224851,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1862-a",
+  "title": "Gift Carpet",
+  "slug": "1862-a-gift-carpet",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1862/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given an n by m grid of lowercase letters, determine if there exist four distinct columns in increasing order containing the letters 'v', 'i', 'k', and 'a' respectively, each letter appearing in its column.",
+  "tags": [
+    "strings",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "string-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224351,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "two-pointers": 0.7,
+      "string-search": 0.6
+    }
+  }
+}

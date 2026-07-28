@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-432-a",
+  "title": "Choosing Teams",
+  "slug": "432-a-choosing-teams",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/432/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given the number of previous participations for each student and a minimum participation threshold k, determine the maximum number of disjoint teams of three students each that can participate at least k more times without exceeding the maximum allowed participations per student.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224370,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-948-a",
+  "title": "Protect Sheep",
+  "slug": "948-a-protect-sheep",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/948/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "implementation"
+  ],
+  "statement": "Given a grid representing a pasture with sheep, wolves, and empty cells, place dogs in empty cells to prevent wolves from reaching any sheep, or determine if it is impossible.",
+  "tags": [
+    "graph",
+    "grid",
+    "dfs",
+    "implementation"
+  ],
+  "patterns": [
+    "dfs",
+    "flood-fill",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224797,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "flood-fill": 0.9,
+      "brute-force": 0.7
+    }
+  }
+}

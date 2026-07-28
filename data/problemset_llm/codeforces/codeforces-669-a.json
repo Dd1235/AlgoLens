@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-669-a",
+  "title": "Little Artem and Presents",
+  "slug": "669-a-little-artem-and-presents",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/669/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given n stones, determine the maximum number of times stones can be given as presents so that the same number of stones is never given consecutively.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224378,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

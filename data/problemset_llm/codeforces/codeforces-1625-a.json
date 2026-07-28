@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1625-a",
+  "title": "Ancient Civilization",
+  "slug": "1625-a-ancient-civilization",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1625/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "bitmasks",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given multiple known forms of a fixed-length binary word, find a binary word minimizing the sum of Hamming distances to all given forms.",
+  "tags": [
+    "bit-manipulation",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "hamming-distance",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224302,
+    "pattern_confidence": {
+      "bit-manipulation": 0.9,
+      "hamming-distance": 0.95,
+      "greedy": 0.8
+    }
+  }
+}

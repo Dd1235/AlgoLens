@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1015-a",
+  "title": "Points in Segments",
+  "slug": "1015-a-points-in-segments",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1015/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given n integer segments on a line from 1 to m, find all integer points in [1, m] that are not covered by any segment.",
+  "tags": [
+    "array",
+    "implementation",
+    "intervals"
+  ],
+  "patterns": [
+    "line-sweep",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224247,
+    "pattern_confidence": {
+      "line-sweep": 0.9,
+      "sorting": 0.8
+    }
+  }
+}

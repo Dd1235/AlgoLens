@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1555-a",
+  "title": "PizzaForces",
+  "slug": "1555-a-pizzaforces",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1555/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "math"
+  ],
+  "statement": "Given three pizza sizes with fixed slice counts and baking times, find the minimum total baking time to provide at least n slices for n friends.",
+  "tags": [
+    "math",
+    "brute-force",
+    "combinatorics"
+  ],
+  "patterns": [
+    "brute-force",
+    "integer-linear-combination",
+    "optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224626,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "integer-linear-combination": 0.85,
+      "optimization": 0.7
+    }
+  }
+}

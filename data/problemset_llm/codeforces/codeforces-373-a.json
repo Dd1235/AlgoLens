@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-373-a",
+  "title": "Collecting Beats is Fun",
+  "slug": "373-a-collecting-beats-is-fun",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/373/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a set of panels each with a preferred press time and a limit on how many panels can be pressed simultaneously, determine if all panels can be pressed exactly at their preferred times using two hands.",
+  "tags": [
+    "implementation",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "time-scheduling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224685,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85,
+      "time-scheduling": 0.8
+    }
+  }
+}

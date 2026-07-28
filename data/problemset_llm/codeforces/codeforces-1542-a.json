@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1542-a",
+  "title": "Odd Set",
+  "slug": "1542-a-odd-set",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1542/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a multiset of 2n integers, determine if it can be partitioned into n pairs such that each pair sums to an odd number.",
+  "tags": [
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "parity-check",
+    "pairing",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224283,
+    "pattern_confidence": {
+      "parity-check": 0.95,
+      "pairing": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1187-a",
+  "title": "Stickers and Toys",
+  "slug": "1187-a-stickers-and-toys",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1187/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given total counts of stickers and toys distributed among identical eggs that may contain either a sticker, a toy, or both, determine the minimum number of eggs to buy to guarantee obtaining at least one sticker and one toy regardless of distribution.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "pigeonhole-principle",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224390,
+    "pattern_confidence": {
+      "pigeonhole-principle": 0.95,
+      "case-analysis": 0.85
+    }
+  }
+}

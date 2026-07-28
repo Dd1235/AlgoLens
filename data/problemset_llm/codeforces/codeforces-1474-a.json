@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1474-a",
+  "title": "Puzzle From the Future",
+  "slug": "1474-a-puzzle-from-the-future",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1474/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a binary integer b and a transformed integer d derived from the bitwise sum without carry of a binary integer a and b, find a binary integer a that maximizes d as an integer after compressing consecutive equal digits.",
+  "tags": [
+    "string",
+    "greedy",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "greedy",
+    "bit-manipulation",
+    "string-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224273,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "bit-manipulation": 0.9,
+      "string-manipulation": 0.85
+    }
+  }
+}

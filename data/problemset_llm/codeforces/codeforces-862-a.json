@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-862-a",
+  "title": "Mahmoud and Ehab and the MEX",
+  "slug": "862-a-mahmoud-and-ehab-and-the-mex",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/862/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a set of integers, determine the minimum number of insertions or deletions needed to make the set's MEX equal to a given value x.",
+  "tags": [
+    "set",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "mex",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224897,
+    "pattern_confidence": {
+      "mex": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

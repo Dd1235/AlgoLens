@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1837-b",
+  "title": "Comparison String",
+  "slug": "1837-b-comparison-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1837/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a string of comparison operators '<' and '>', find the minimum number of distinct elements in an array compatible with these comparisons between consecutive elements.",
+  "tags": [
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224659,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

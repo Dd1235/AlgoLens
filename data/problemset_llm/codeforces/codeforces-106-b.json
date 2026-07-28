@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-106-b",
+  "title": "Choosing Laptop",
+  "slug": "106-b-choosing-laptop",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/106/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given a list of laptops with three properties each, find the cheapest laptop that is not strictly dominated by another laptop in all three properties.",
+  "tags": [
+    "array",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "brute-force",
+    "dominance-check",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224802,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "dominance-check": 0.85,
+      "sorting": 0.7
+    }
+  }
+}

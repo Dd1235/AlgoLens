@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-246-a",
+  "title": "Buggy Sorting",
+  "slug": "246-a-buggy-sorting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/246/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given a sorting algorithm implementation and an integer n, determine if there exists an input array of size n that causes the algorithm to fail to sort correctly; if none exists, output -1.",
+  "tags": [
+    "array",
+    "sorting",
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy",
+    "counter-example-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224677,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.85,
+      "counter-example-construction": 0.9
+    }
+  }
+}

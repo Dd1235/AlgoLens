@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1220-a",
+  "title": "Cards",
+  "slug": "1220-a-cards",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1220/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given a string representing a binary number formed by letters on cards, rearrange the letters to form the maximum possible binary number.",
+  "tags": [
+    "string",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224257,
+    "pattern_confidence": {
+      "sorting": 0.95
+    }
+  }
+}

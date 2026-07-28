@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1473-a",
+  "title": "Replacing Elements",
+  "slug": "1473-a-replacing-elements",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1473/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given an array of positive integers and a threshold d, determine if it is possible to make all elements less than or equal to d by repeatedly replacing an element with the sum of two other distinct elements.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224271,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.8,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

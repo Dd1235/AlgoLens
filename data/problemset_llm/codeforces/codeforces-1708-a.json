@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1708-a",
+  "title": "Difference Operations",
+  "slug": "1708-a-difference-operations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1708/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, determine if it is possible to repeatedly replace an element (from the second to the last) by subtracting its previous element to make all elements except the first zero.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224325,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

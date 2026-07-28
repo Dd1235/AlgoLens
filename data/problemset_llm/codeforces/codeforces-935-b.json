@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-935-b",
+  "title": "Fafa and the Gates",
+  "slug": "935-b-fafa-and-the-gates",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/935/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of moves on a grid starting at (0,0) along the line x=y, count how many times the path crosses the boundary line between two kingdoms, where crossing a gate costs one silver coin.",
+  "tags": [
+    "implementation",
+    "geometry",
+    "string"
+  ],
+  "patterns": [
+    "simulation",
+    "boundary-crossing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224792,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "boundary-crossing": 0.9
+    }
+  }
+}

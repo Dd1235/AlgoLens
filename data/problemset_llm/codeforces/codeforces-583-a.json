@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-583-a",
+  "title": "Asphalting Roads",
+  "slug": "583-a-asphalting-roads",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/583/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a schedule of intersections to asphalt in a city grid, determine on which days at least one new road is asphalted, considering roads are asphalted only once when first encountered.",
+  "tags": [
+    "implementation",
+    "simulation",
+    "greedy"
+  ],
+  "patterns": [
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224882,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

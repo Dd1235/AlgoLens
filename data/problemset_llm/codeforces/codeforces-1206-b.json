@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1206-b",
+  "title": "Make Product Equal One",
+  "slug": "1206-b-make-product-equal-one",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1206/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "dp",
+    "implementation"
+  ],
+  "statement": "Given an array of integers, find the minimum total increments or decrements by 1 needed to make the product of all elements equal to 1.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "implementation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224393,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "implementation": 0.8
+    }
+  }
+}

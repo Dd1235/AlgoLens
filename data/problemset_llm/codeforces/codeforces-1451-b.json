@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1451-b",
+  "title": "Non-Substring Subsequence",
+  "slug": "1451-b-non-substring-subsequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1451/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a binary string and multiple queries each specifying a substring, determine if there exists a non-contiguous subsequence of the original string equal to that substring with length at least two.",
+  "tags": [
+    "strings",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "two-pointers",
+    "subsequence-check",
+    "prefix-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224618,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "subsequence-check": 0.9,
+      "prefix-scan": 0.7
+    }
+  }
+}

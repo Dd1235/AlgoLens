@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1197-b",
+  "title": "Pillars",
+  "slug": "1197-b-pillars",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1197/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given n pillars each initially holding one disk with a radius, determine if it is possible to move disks between adjacent pillars under specific stacking rules so that all disks end up on a single pillar.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "stack"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224813,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

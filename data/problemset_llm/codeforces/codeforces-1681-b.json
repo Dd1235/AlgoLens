@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1681-b",
+  "title": "Card Trick",
+  "slug": "1681-b-card-trick",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1681/B",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a deck of distinct cards and a sequence of shuffles where the top b_j cards are moved to the bottom without changing their order, determine the top card after all shuffles.",
+  "tags": [
+    "array",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "simulation",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224317,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "prefix-sum": 0.6
+    }
+  }
+}

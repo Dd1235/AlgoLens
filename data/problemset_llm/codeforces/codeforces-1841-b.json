@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1841-b",
+  "title": "Keep it Beautiful",
+  "slug": "1841-b-keep-it-beautiful",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1841/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Maintain a dynamic array that remains a rotated non-descending sorted sequence after each append operation, and determine if a new element can be appended without breaking this property.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "rotated-sorted-array-check",
+    "incremental-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224858,
+    "pattern_confidence": {
+      "rotated-sorted-array-check": 0.9,
+      "incremental-validation": 0.7
+    }
+  }
+}

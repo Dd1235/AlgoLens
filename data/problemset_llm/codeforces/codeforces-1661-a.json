@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1661-a",
+  "title": "Array Balancing",
+  "slug": "1661-a-array-balancing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1661/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given two arrays of equal length, you may swap elements at the same index any number of times to minimize the sum of absolute differences between consecutive elements in both arrays.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224311,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

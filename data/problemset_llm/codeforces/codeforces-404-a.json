@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-404-a",
+  "title": "Valera and X",
+  "slug": "404-a-valera-and-x",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/404/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an odd-sized square grid of letters, determine if it forms an 'X' pattern where both diagonals contain the same letter and all other cells contain a different uniform letter.",
+  "tags": [
+    "implementation",
+    "string",
+    "matrix"
+  ],
+  "patterns": [
+    "brute-force",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224880,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "grid-traversal": 0.9
+    }
+  }
+}

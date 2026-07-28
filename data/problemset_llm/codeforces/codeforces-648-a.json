@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-648-a",
+  "title": "Наибольший подъем",
+  "slug": "648-a",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/648/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Given a grid representing a mountain ridge profile with columns containing stars indicating mountain heights, determine the maximum daily ascent and descent as a tourist moves from the top of the first column to the top of the last column, moving right one column per day.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224691,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

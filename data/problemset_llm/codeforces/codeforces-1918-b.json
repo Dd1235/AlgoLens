@@ -1,0 +1,44 @@
+{
+  "id": "codeforces-1918-b",
+  "title": "Minimize Inversions",
+  "slug": "1918-b-minimize-inversions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1918/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given two permutations of equal length, you can simultaneously swap elements at two indices in both permutations any number of times to minimize the total number of inversions across both permutations.",
+  "tags": [
+    "array",
+    "permutation",
+    "greedy",
+    "sorting",
+    "data-structures"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy",
+    "inversion-count",
+    "sorting",
+    "two-pointer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224666,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85,
+      "inversion-count": 0.9,
+      "sorting": 0.8,
+      "two-pointer": 0.6
+    }
+  }
+}

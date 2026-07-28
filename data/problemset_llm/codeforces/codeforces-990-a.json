@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-990-a",
+  "title": "Commentary Boxes",
+  "slug": "990-a-commentary-boxes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/990/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given the current number of commentary boxes and delegations, find the minimal cost to adjust the number of boxes so it is divisible by the number of delegations by building or demolishing boxes at given costs.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224901,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.9,
+      "greedy": 0.8
+    }
+  }
+}

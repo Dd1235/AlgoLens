@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1114-a",
+  "title": "Got Any Grapes?",
+  "slug": "1114-a-got-any-grapes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1114/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Determine if it is possible to distribute three types of grapes among three people with specific preferences and minimum quantity requirements.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224252,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "case-analysis": 0.8
+    }
+  }
+}

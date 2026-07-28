@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1552-a",
+  "title": "Subsequence Permutation",
+  "slug": "1552-a-subsequence-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1552/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given a string, find the minimum number of characters to select and permute once so that the entire string becomes sorted alphabetically.",
+  "tags": [
+    "string",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "longest-increasing-subsequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224285,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "longest-increasing-subsequence": 0.85
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1491-a",
+  "title": "K-th Largest Value",
+  "slug": "1491-a-k-th-largest-value",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1491/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Maintain a binary array under flip operations on elements and answer queries for the k-th largest element in the current array.",
+  "tags": [
+    "array",
+    "fenwick-tree",
+    "data-structure"
+  ],
+  "patterns": [
+    "fenwick-tree",
+    "prefix-sum",
+    "point-update",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224275,
+    "pattern_confidence": {
+      "fenwick-tree": 0.9,
+      "prefix-sum": 0.8,
+      "point-update": 0.85,
+      "order-statistics": 0.8
+    }
+  }
+}

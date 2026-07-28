@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-641-a",
+  "title": "Little Artem and Grasshopper",
+  "slug": "641-a-little-artem-and-grasshopper",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/641/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a linear strip of cells each containing a jump direction and length, determine if a grasshopper starting at the first cell will eventually jump out of the strip following the instructions.",
+  "tags": [
+    "implementation",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224883,
+    "pattern_confidence": {
+      "simulation": 0.95
+    }
+  }
+}

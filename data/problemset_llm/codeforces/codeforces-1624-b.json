@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1624-b",
+  "title": "Make AP",
+  "slug": "1624-b-make-ap",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1624/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given three positive integers, determine if multiplying exactly one of them by a positive integer can make the sequence an arithmetic progression without changing the order.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224635,
+    "pattern_confidence": {
+      "case-analysis": 0.85
+    }
+  }
+}

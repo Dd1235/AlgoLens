@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1878-c",
+  "title": "Vasilije in Cacak",
+  "slug": "1878-c-vasilije-in-cacak",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1878/C",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given three positive integers n, k, and x, determine if it is possible to select k distinct integers from 1 to n whose sum equals x.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224661,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

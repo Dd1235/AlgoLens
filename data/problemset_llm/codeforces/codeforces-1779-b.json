@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1779-b",
+  "title": "MKnez's ConstructiveForces Task",
+  "slug": "1779-b-mknez-s-constructiveforces-task",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1779/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Construct an integer array with no zero elements such that the sum of the entire array equals the sum of every pair of adjacent elements, or determine that no such array exists.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "array"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "equation-solving"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224653,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "equation-solving": 0.85
+    }
+  }
+}

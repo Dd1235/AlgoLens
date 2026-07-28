@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1183-b",
+  "title": "Equalize Prices",
+  "slug": "1183-b-equalize-prices",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1183/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given multiple queries each with a list of product prices and a maximum allowed price change k, determine the maximum integer price to which all products can be equalized within the allowed change, or report impossibility.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "feasibility-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224388,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "feasibility-check": 0.85
+    }
+  }
+}

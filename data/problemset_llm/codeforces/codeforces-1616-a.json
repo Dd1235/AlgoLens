@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1616-a",
+  "title": "Integer Diversity",
+  "slug": "1616-a-integer-diversity",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1616/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an array of integers, select any subset to negate their values to maximize the count of distinct elements in the resulting array.",
+  "tags": [
+    "array",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224296,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "set": 0.9
+    }
+  }
+}

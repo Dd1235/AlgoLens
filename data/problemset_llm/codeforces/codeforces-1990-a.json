@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1990-a",
+  "title": "Submission Bait",
+  "slug": "1990-a-submission-bait",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1990/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "games",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Two players alternately select elements from an array that are at least as large as a current threshold, updating the threshold and zeroing the chosen element; determine if the first player has a winning strategy.",
+  "tags": [
+    "array",
+    "game-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "game-theory",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224674,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "game-theory": 0.95,
+      "simulation": 0.7
+    }
+  }
+}

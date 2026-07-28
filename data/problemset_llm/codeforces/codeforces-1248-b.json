@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1248-b",
+  "title": "Grow The Tree",
+  "slug": "1248-b-grow-the-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1248/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a set of sticks with integer lengths, arrange them in an alternating horizontal and vertical polyline starting at the origin to maximize the distance from the start point.",
+  "tags": [
+    "greedy",
+    "geometry",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224395,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

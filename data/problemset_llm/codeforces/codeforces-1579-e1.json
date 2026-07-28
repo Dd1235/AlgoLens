@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1579-e1",
+  "title": "Permutation Minimization by Deque",
+  "slug": "1579-e1-permutation-minimization-by-deque",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1579/E1",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a permutation, sequentially insert each element into a deque either at the front or back to produce the lexicographically smallest resulting sequence.",
+  "tags": [
+    "deque",
+    "greedy",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224836,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

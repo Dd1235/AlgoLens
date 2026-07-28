@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-386-a",
+  "title": "Second-Price Auction",
+  "slug": "386-a-second-price-auction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/386/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given distinct bids from multiple participants in a sealed second-price auction, determine the winner with the highest bid and the price they must pay, which is the second highest bid.",
+  "tags": [
+    "implementation",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "sorting",
+    "max-element-finding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224368,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "max-element-finding": 0.85
+    }
+  }
+}

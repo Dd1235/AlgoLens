@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1930-b",
+  "title": "Permutation Printing",
+  "slug": "1930-b-permutation-printing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1930/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given an integer n, construct a permutation of length n such that no two distinct adjacent pairs in the permutation satisfy a divisibility condition simultaneously on both elements of the pairs.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "number-theory",
+    "divisibility"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224867,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "number-theory": 0.85,
+      "divisibility": 0.8
+    }
+  }
+}

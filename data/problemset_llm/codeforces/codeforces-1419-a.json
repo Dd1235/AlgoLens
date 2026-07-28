@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1419-a",
+  "title": "Digit Game",
+  "slug": "1419-a-digit-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1419/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "games",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Two players alternately mark digits from a number, restricted by parity of digit positions, until one digit remains; determine the winner assuming optimal play.",
+  "tags": [
+    "game-theory",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "game-theory",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224614,
+    "pattern_confidence": {
+      "game-theory": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

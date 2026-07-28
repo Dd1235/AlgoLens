@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-764-b",
+  "title": "Timofey and cubes",
+  "slug": "764-b-timofey-and-cubes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/764/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Given the final order of cubes after a sequence of segment reversals from both ends, reconstruct the original order of the cubes.",
+  "tags": [
+    "array",
+    "implementation",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "simulation",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224697,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

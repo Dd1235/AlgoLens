@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-733-a",
+  "title": "Grasshopper And the String",
+  "slug": "733-a-grasshopper-and-the-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/733/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a string, determine the minimum jump length needed for a grasshopper to jump from before the first character to after the last character by landing only on vowels.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224890,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

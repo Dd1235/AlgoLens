@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1971-a",
+  "title": "My First Sorting Problem",
+  "slug": "1971-a-my-first-sorting-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1971/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given two integers, output their minimum and maximum values in order.",
+  "tags": [
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224357,
+    "pattern_confidence": {
+      "sorting": 0.9
+    }
+  }
+}

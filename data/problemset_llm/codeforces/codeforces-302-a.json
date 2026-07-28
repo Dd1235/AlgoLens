@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-302-a",
+  "title": "Eugeny and Array",
+  "slug": "302-a-eugeny-and-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/302/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an array of integers each equal to -1 or 1, answer queries asking whether it is possible to rearrange the array so that the sum of elements in a specified subarray is zero.",
+  "tags": [
+    "array",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224365,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "parity-check": 0.8
+    }
+  }
+}

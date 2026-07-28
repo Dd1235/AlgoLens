@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-474-a",
+  "title": "Keyboard",
+  "slug": "474-a-keyboard",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/474/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a typed message from a keyboard where all characters are shifted uniformly one position left or right, recover the original intended message by reversing the shift.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "string-transformation",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224688,
+    "pattern_confidence": {
+      "string-transformation": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

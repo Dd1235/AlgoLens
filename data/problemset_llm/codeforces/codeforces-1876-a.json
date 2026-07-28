@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1876-a",
+  "title": "Helmets in Night Light",
+  "slug": "1876-a-helmets-in-night-light",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1876/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given n residents, a fixed cost p to notify each directly, and for each resident i a limit a_i on how many others they can notify at cost b_i per share, determine the minimum total cost to notify all residents starting from Pak Chanek.",
+  "tags": [
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224864,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

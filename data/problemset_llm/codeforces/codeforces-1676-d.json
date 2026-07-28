@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1676-d",
+  "title": "X-Sum",
+  "slug": "1676-d-x-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1676/D",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a grid with non-negative integers, find the position to place a bishop so that the sum of all cells attacked diagonally (including the bishop's cell) is maximized.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation",
+    "geometry"
+  ],
+  "patterns": [
+    "brute-force",
+    "diagonal-sums",
+    "prefix-sums"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224841,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "diagonal-sums": 0.85,
+      "prefix-sums": 0.7
+    }
+  }
+}

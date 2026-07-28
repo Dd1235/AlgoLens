@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-378-a",
+  "title": "Playing with Dice",
+  "slug": "378-a-playing-with-dice",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/378/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force"
+  ],
+  "statement": "Given two chosen numbers from 1 to 6 and a dice roll, count the number of outcomes where the first player wins, the second player wins, or the result is a draw based on proximity to the dice roll.",
+  "tags": [
+    "math",
+    "brute-force",
+    "simulation"
+  ],
+  "patterns": [
+    "brute-force",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224367,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

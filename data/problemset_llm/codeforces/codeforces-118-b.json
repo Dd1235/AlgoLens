@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-118-b",
+  "title": "Present from Lena",
+  "slug": "118-b-present-from-lena",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/118/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Generate a rhombus-shaped pattern of digits from 0 to n, with the largest digit n at the center and digits decreasing towards the edges.",
+  "tags": [
+    "implementation",
+    "constructive-algorithm",
+    "string"
+  ],
+  "patterns": [
+    "simulation",
+    "pattern-generation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224810,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "pattern-generation": 0.85
+    }
+  }
+}

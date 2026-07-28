@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1373-b",
+  "title": "01 Game",
+  "slug": "1373-b-01-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1373/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "games"
+  ],
+  "statement": "Two players alternately remove adjacent pairs of differing bits from a binary string; determine if the first player has a winning strategy assuming optimal play.",
+  "tags": [
+    "string",
+    "game-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "game-theory",
+    "greedy",
+    "stack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224403,
+    "pattern_confidence": {
+      "game-theory": 0.95,
+      "greedy": 0.85,
+      "stack": 0.7
+    }
+  }
+}

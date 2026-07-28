@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-918-b",
+  "title": "Radio Station",
+  "slug": "918-b-radio-station",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/918/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a list of servers with unique IPs and their names, and a configuration file with commands referencing these IPs, append the corresponding server name as a comment to each command line.",
+  "tags": [
+    "string",
+    "hash-map",
+    "implementation"
+  ],
+  "patterns": [
+    "hash-map",
+    "string-parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224791,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "string-parsing": 0.9
+    }
+  }
+}

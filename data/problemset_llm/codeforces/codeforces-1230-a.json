@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1230-a",
+  "title": "Dawid and Bags of Candies",
+  "slug": "1230-a-dawid-and-bags-of-candies",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1230/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given four bags with specified candy counts, determine if it is possible to split them into two groups so that each group has an equal total number of candies.",
+  "tags": [
+    "brute-force",
+    "implementation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "subset-enumeration",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224258,
+    "pattern_confidence": {
+      "subset-enumeration": 0.9,
+      "bit-manipulation": 0.85
+    }
+  }
+}

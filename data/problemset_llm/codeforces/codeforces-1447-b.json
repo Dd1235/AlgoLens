@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1447-b",
+  "title": "Numbers Box",
+  "slug": "1447-b-numbers-box",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1447/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a grid of integers, you can flip the signs of values in any pair of adjacent cells any number of times. Determine the maximum possible sum of all values in the grid after these operations.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "grid"
+  ],
+  "patterns": [
+    "greedy",
+    "sign-flipping",
+    "parity-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224831,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sign-flipping": 0.9,
+      "parity-analysis": 0.85
+    }
+  }
+}

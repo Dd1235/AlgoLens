@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-371-a",
+  "title": "K-Periodic Array",
+  "slug": "371-a-k-periodic-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/371/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an array of 1s and 2s, determine the minimum number of element changes required to make it k-periodic, where the array length is divisible by k and repeats a pattern of length k.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "periodicity-check",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224878,
+    "pattern_confidence": {
+      "periodicity-check": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

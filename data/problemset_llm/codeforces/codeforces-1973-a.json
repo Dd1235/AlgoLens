@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1973-a",
+  "title": "Chess For Three",
+  "slug": "1973-a-chess-for-three",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1973/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given three non-decreasing scores of three players after multiple chess games where each game is played between two players with possible outcomes win, loss, or draw, determine the maximum number of draws that could have occurred or report -1 if the scores are impossible.",
+  "tags": [
+    "math",
+    "brute-force",
+    "dynamic-programming",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "dynamic-programming",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224670,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "dynamic-programming": 0.7,
+      "case-analysis": 0.8
+    }
+  }
+}

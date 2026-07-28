@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1312-a",
+  "title": "Two Regular Polygons",
+  "slug": "1312-a-two-regular-polygons",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1312/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "geometry",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given two integers n and m with m < n, determine if a convex regular polygon with m vertices can be formed by selecting vertices from a convex regular polygon with n vertices sharing the same center.",
+  "tags": [
+    "geometry",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "gcd"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224265,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "gcd": 0.85
+    }
+  }
+}
