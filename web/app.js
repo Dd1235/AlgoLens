@@ -14,6 +14,7 @@ const libPathEl = document.getElementById("lib-path");
 const libCountBookmarks = document.getElementById("lib-count-bookmarks");
 const libCountDone = document.getElementById("lib-count-done");
 const libChips = libBar.querySelectorAll(".lib-chip");
+const libChipsUser = document.getElementById("lib-chips-user");
 
 // :help works for everyone, signed in or not.
 const HELP_COMMANDS = new Set([":help", ":h"]);
@@ -276,6 +277,7 @@ function applyAuthState() {
     authEmailEl.title = currentUser.email;
     filterWrap.hidden = false;
     libBar.hidden = false;
+    libChipsUser.hidden = false;
     refreshLibraryCounts();
     setLibPath("~");
   } else {
@@ -284,7 +286,10 @@ function applyAuthState() {
     filterWrap.hidden = true;
     filterSelect.value = "all";
     currentFilter = "all";
-    libBar.hidden = true;
+    // The bar stays: signed out it is just the prompt and :help, which is the
+    // only remaining signpost to the manual now the tagline is gone.
+    libBar.hidden = false;
+    libChipsUser.hidden = true;
   }
 }
 
