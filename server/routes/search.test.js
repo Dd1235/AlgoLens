@@ -17,7 +17,9 @@ const problems = Array.from({ length: 300 }, (_, i) => {
   // and AtCoder use ratings, CSES publishes none.
   const difficulty =
     platform === "leetcode" ? (i % 8 === 0 ? "Easy" : i % 3 === 0 ? "Medium" : "Hard")
-    : platform === "codeforces" ? 1000 + (i % 5) * 400
+    // Some Codeforces problems genuinely carry no rating, which is what makes
+    // "where do unrated problems sort?" a real question rather than a hypothetical.
+    : platform === "codeforces" ? (i % 40 === 6 ? undefined : 1000 + (i % 5) * 400)
     : platform === "atcoder" ? 800 + (i % 3) * 700
     : undefined;
   const p = {
@@ -269,6 +271,123 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
     const d = await get("q=graph&k=10&filter=done");
     assert.equal(d.filter, "all");
     assert.equal(d.total, 300);
+  }
+
+  // ── Sorting by difficulty ─────────────────────────────────────────────────
+
+  // Sorting is refused unless exactly one judge with a scale is in play, for
+  // the same reason filtering is per-judge: nothing orders "Medium" against
+  // 1600. The refusal is explicit so the client can stop claiming it sorted.
+  {
+    for (const qs of [
+      "q=graph&k=20&sort=difficulty-asc",
+      "q=graph&k=20&platform=codeforces,leetcode&sort=difficulty-asc",
+      "q=graph&k=20&platform=cses&sort=difficulty-asc",
+    ]) {
+      const d = await get(qs);
+      assert.equal(d.sort, undefined, `sort must be refused for ${qs}`);
+      assert.ok(d.sortRefused, "a refused sort must say why, not fail silently");
+      assert.equal(d.sortWindow, undefined, "a refused sort must not withdraw paging");
+    }
+  }
+
+  // With one rated judge it applies, ascending, and says so.
+  {
+    const d = await get("q=graph&k=20&platform=codeforces&sort=difficulty-asc");
+    assert.equal(d.sort, "difficulty-asc");
+    assert.equal(d.sortRefused, undefined);
+    const rated = d.hits.map((h) => h.problem.difficulty).filter((x) => typeof x === "number");
+    assert.deepEqual(rated, [...rated].sort((a, b) => a - b), "ascending means ascending");
+  }
+
+  // The point of the design: sorting REORDERS the top N by relevance, it does
+  // not re-pick them. Same set, different order — otherwise a sort would
+  // quietly throw the ranking away and return the corpus's easiest problems.
+  {
+    const plain = await get("q=graph&k=20&platform=codeforces");
+    const sorted = await get("q=graph&k=20&platform=codeforces&sort=difficulty-asc");
+    assert.equal(sorted.sortWindow, 20, "a sorted search reports its window");
+    assert.deepEqual(
+      new Set(sorted.hits.map((h) => h.problem.id)),
+      new Set(plain.hits.map((h) => h.problem.id)),
+      "sorting must reorder the top k, not re-select it"
+    );
+  }
+
+  // A wider window sorts more of the ranking, and still only that much.
+  {
+    const d = await get("q=graph&k=50&platform=codeforces&sort=difficulty-desc");
+    assert.equal(d.sortWindow, 50);
+    assert.equal(d.hits.length, 50);
+    assert.ok(d.total > 50, "the match set is larger than the sorted window");
+    const rated = d.hits.map((h) => h.problem.difficulty).filter((x) => typeof x === "number");
+    assert.deepEqual(rated, [...rated].sort((a, b) => b - a), "descending means descending");
+  }
+
+  // Paging is withdrawn for a sorted search: page 2 of a re-sorted top-N is not
+  // a continuation of anything, so offset is ignored rather than half-honoured.
+  {
+    const a = await get("q=graph&k=20&platform=codeforces&sort=difficulty-asc");
+    const b = await get("q=graph&k=20&offset=20&platform=codeforces&sort=difficulty-asc");
+    assert.deepEqual(
+      b.hits.map((h) => h.problem.id),
+      a.hits.map((h) => h.problem.id),
+      "offset must not silently produce a second, incoherent page"
+    );
+  }
+
+  // Unrated problems sort last in BOTH directions. An unknown difficulty is not
+  // "easiest" — claiming it is would put the least-known problems first.
+  {
+    for (const dir of ["asc", "desc"]) {
+      const d = await get(`q=graph&k=300&platform=codeforces&sort=difficulty-${dir}`);
+      const keys = d.hits.map((h) => typeof h.problem.difficulty === "number");
+      const firstUnrated = keys.indexOf(false);
+      assert.ok(firstUnrated > 0, `${dir}: the fixture must contain unrated problems`);
+      assert.ok(
+        keys.slice(firstUnrated).every((rated) => !rated),
+        `${dir}: unrated problems must all sit at the end`
+      );
+    }
+  }
+
+  // Browse has no ranking to protect, so it sorts the whole set AND keeps
+  // paging: page 2 continues page 1 rather than restarting it.
+  {
+    const a = await get("q=&k=40&offset=0&platform=codeforces&sort=difficulty-asc");
+    const b = await get("q=&k=40&offset=40&platform=codeforces&sort=difficulty-asc");
+    assert.equal(a.sortWindow, undefined, "browse keeps paging, so it has no window");
+    assert.equal(a.total, b.total);
+    const ids = new Set([...a.hits, ...b.hits].map((h) => h.problem.id));
+    assert.equal(ids.size, a.hits.length + b.hits.length, "sorted browse pages must be disjoint");
+    const lastOfA = a.hits[a.hits.length - 1].problem.difficulty;
+    const firstOfB = b.hits[0].problem.difficulty;
+    assert.ok(firstOfB >= lastOfA, "page 2 must continue the order, not restart it");
+  }
+
+  // Sort composes with a band rather than fighting it.
+  {
+    const d = await get("q=&k=300&platform=codeforces&difficulty=cf:1400-2200&sort=difficulty-desc");
+    assert.ok(d.hits.length > 0);
+    assert.ok(d.hits.every((h) => h.problem.difficulty >= 1400 && h.problem.difficulty <= 2200));
+    const vals = d.hits.map((h) => h.problem.difficulty);
+    assert.deepEqual(vals, [...vals].sort((a, b) => b - a));
+  }
+
+  // Named tiers order too — easy, then medium, then hard.
+  {
+    const d = await get("q=&k=300&platform=leetcode&sort=difficulty-asc");
+    const rank = { easy: 0, medium: 1, hard: 2 };
+    const vals = d.hits.map((h) => rank[String(h.problem.difficulty).toLowerCase()]);
+    assert.deepEqual(vals, [...vals].sort((a, b) => a - b), "easy < medium < hard");
+  }
+
+  // Garbage in the sort parameter is ignored, like every other stale-link case.
+  {
+    const d = await get("q=graph&k=20&platform=codeforces&sort=popularity");
+    assert.equal(d.sort, undefined);
+    assert.equal(d.sortRefused, undefined, "an unparseable sort was never requested");
+    assert.equal(d.hits.length, 20);
   }
 
   console.log("search route tests passed");
