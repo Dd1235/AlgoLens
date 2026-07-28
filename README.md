@@ -1,6 +1,6 @@
 # Cosine
 
-Search 2,800+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
+Search 3,200+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
 **Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
@@ -8,6 +8,26 @@ Search 2,800+ competitive-programming problems the way you actually think about 
 
 ![Cosine walkthrough in dark mode](demo/deliverables/walkthrough-dark.gif#gh-dark-mode-only)
 ![Cosine walkthrough in light mode](demo/deliverables/walkthrough-light.gif#gh-light-mode-only)
+
+## What I'd like feedback on
+
+Four open problems. Each one I've already measured, and each is stuck on a judgement call rather than on code — so an opinion is worth more here than a patch.
+
+**1. Difficulty doesn't cross judges. Should it?**
+Filtering and sorting by difficulty work *inside one judge* and are refused across two, because I can't defend a shared scale. Codeforces ratings are calibrated so a problem rated R is roughly a coin flip for a contestant rated R; AtCoder's community estimates use the same definition but a different population; LeetCode has three buckets and no rating. I tried acceptance rate as the bridge and measured it: it separates LeetCode's tiers on the full problemset (AUC 0.677) but **inverts on this corpus** (0.426), because most Mediums here were selected *for* low acceptance while every Hard came in unfiltered. So the honest options look like (a) anchor on people who compete on several judges and fit a mapping from their ratings, (b) infer difficulty from solve counts and accept the population bias, or (c) stay per-judge forever and make that legible in the UI. **Which would you actually trust a recommendation from?**
+
+**2. CSES publishes no difficulty at all — 400 problems, 12.5% of the corpus.**
+They're invisible to every difficulty filter and every sort, which is bad because they're some of the best problems here. The CSES book is *roughly* ordered within each section, so a section-relative signal ("hard for a Range Queries problem") is derivable. **Is that useful, or is a relative-only number more misleading than none?** The alternative is inferring difficulty from done-marks once there's enough traffic, which needs users I don't have yet.
+
+**3. Are the "my level" heuristics right?** Details in [Tracking the grind](#how-my-level-picks-a-band) below. Specifically:
+- **Codeforces / AtCoder:** the band is `[your rating, +200]`. Is that the right window, or should it start below you (`R-100`) so there's warm-up in it? Standard practice advice says solve *above* your rating; the band takes that literally.
+- **AtCoder:** I compare your AtCoder rating against AtCoder problem difficulties, which is scale-consistent — but is it *true* in practice, or does the AtCoder rating distribution sit differently against its own difficulty estimates than Codeforces does?
+- **LeetCode:** there's no rating, so it reads solved counts and picks a tier plus an acceptance-rate half. The rungs are at 10 / 25 / 100 Hards. Those numbers are a guess. Worse, LeetCode's counts cover the whole problemset, most of which is far easier than anything here — so someone with 300 Mediums solved may have solved 300 easy Mediums. **Is there a better signal LeetCode actually exposes?**
+
+**4. Umbrella terms, and one label I can't fill.**
+Searching the technique directory for "range queries" used to return nothing — the vocabulary is all leaves (`segment-tree`, `sparse-table`, `mo-algorithm`) with no node above them. There are 11 umbrella groups now; **which ones are still missing?** Separately: `sparse-table` sits on exactly 1 problem. Two LLM audit passes over 89 candidates, including static-RMQ and LCA problems, produced zero more. Either this corpus genuinely has no problem where a sparse table is the right tool, or my bar is wrong. **If you know a problem here that's a real sparse-table problem, that's the most useful bug report I could get.**
+
+Open an issue, or mail me — see [Feedback → fix](#feedback--fix) for what previous rounds changed.
 
 ## Why this exists
 
@@ -47,10 +67,35 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 
 ## Tracking the grind
 
-- **Filters that know your level.** With handles saved, a `my level` chip sets each selected judge's band from *that judge's own* numbers — never a shared scale. Codeforces and AtCoder use your rating (your rating to +200: a problem rated at your rating is about a coin flip in contest, so the band is winnable but not free). LeetCode publishes no rating, so it reads your solved counts and picks a tier plus an acceptance-rate half within it — a coarser signal, and labelled as one. Hover to see the reasoning and the number of problems it selects; it never suggests a band that would select nothing.
+- **Filters that know your level.** With handles saved, a `my level` chip sets each selected judge's band from *that judge's own* numbers — never a shared scale. Hover it to see the reasoning and how many problems it selects; press it again to drop it. Exactly how it decides is below.
 - **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / AtCoder / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
 - **Your handles are encrypted, and the claim stops where the truth does.** Linked usernames and the stats fetched with them are AES-256-GCM ciphertext; the key lives in the app environment, never in the database, so a database copy is unreadable on its own. No other user can see them — there's no public profile and no leaderboard. The judges themselves necessarily receive the username when your stats are fetched, and I won't claim "not even the admin can see it", because I run the server and that would be false. It isn't stored readably, deleting is immediate, and the code is here to check.
 - **Bookmarks and done-marks** on every result, with a shell-style library (`:bookmarks`, `:done`, Tab cycles views). Done-marks feed the heatmap too.
+
+### How "my level" picks a band
+
+Three heuristics, one per judge, and **no judge is ever used to infer another** — that's the cross-judge normalization I don't have (see [feedback](#what-id-like-feedback-on) #1). A wrong guess about someone's level is a page of problems they can't attempt, so each judge is read only on its own scale.
+
+| judge | signal it reads | band it sets |
+|---|---|---|
+| Codeforces | your rating | `[R, R+200]`, snapped to the 100-grid |
+| AtCoder | your rating | `[R, R+200]`, snapped to the 200-grid |
+| LeetCode | solved counts per tier | one tier + an acceptance-rate half within it |
+
+**Why the rated judges are the easy case.** Both scales are calibrated the same way: a problem rated R is one a contestant rated R solves about half the time under contest conditions, and AtCoder's community difficulty estimates carry that same definition. So `[R, R+200]` means the same thing on both — winnable but not free — with no conversion between them. Both ends are clamped to what the corpus actually holds, so a 3500-rated user gets the top of the corpus instead of an empty window above it, and a beginner gets the bottom.
+
+**LeetCode is the real heuristic**, because LeetCode publishes no rating. What it does publish is solved counts per tier, so a four-rung ladder on the Hard count picks a tier, then which half of that tier's acceptance-rate range to use — split at the corpus's own median rather than an invented cut-off. Lower acceptance means harder, so the "gentler half" is the higher-acceptance one.
+
+| hards solved | tier | half of the tier | reading |
+|---|---|---|---|
+| under 10 | Medium | gentler | still building Medium fluency |
+| 10–24 | Medium | sharper | comfortable with Mediums |
+| 25–99 | Hard | gentler | Hards are working |
+| 100+ | Hard | sharper | Hards are routine |
+
+Volume of Mediums promotes off the gentlest rung: 100+ Mediums with no Hards is not a beginner, even though the Hard count alone can't tell. **Treat this one as coarse** — LeetCode's counts cover the whole problemset, most of which is easier than anything in this corpus, so 300 Mediums solved may be 300 easy Mediums.
+
+Two rules keep it safe rather than clever: every suggestion **carries the count it would produce and is dropped if that count is zero** (a button that silently empties the page is worse than no button), and the suggestion is a plain `difficulty=` token parsed by the same filter a human click produces — the tests round-trip it and assert the promised count is the real one. `GET /api/level` reads only the cached profile stats and never calls a judge, so the search page never waits on leetcode.com; if the numbers were never fetched, the chip just doesn't appear.
 
 ## Small things that make it nice to use
 
@@ -103,8 +148,8 @@ Every ranking decision traces to a 55-query labeled benchmark (P@k, MRR, nDCG@10
 
 Things worth building, and the honest reason they aren't built yet.
 
-- **One difficulty scale across all four judges.** Filtering and sorting shipped *per judge*, which sidesteps the hard part rather than solving it: CSES's 400 problems (15% of the corpus) carry no difficulty at all, LeetCode has three buckets rather than a scale, and AtCoder's community-estimated ratings aren't Codeforces ratings — they go negative. A shared scale would let you filter and sort across judges at once, and it's the missing piece under two other ideas below. Picking a normalization badly is worse than not having it, so it stays unbuilt until there's a defensible one.
-- **Difficulty relative to you, not absolute.** "Show me problems a bit above my level" is the version that's actually useful. Closer than it looks: your Codeforces and AtCoder ratings are already fetched and cached for the profile page, and they're already on the same scale as the problems' own ratings. It would work today for the 741 rated problems and needs a mapping for the rest.
+- **One difficulty scale across all four judges.** The biggest missing piece, and the first thing I'd like an opinion on — the constraints and the measurements are written out in [What I'd like feedback on](#what-id-like-feedback-on). Short version: filtering and sorting shipped *per judge*, which sidesteps the hard part rather than solving it, and CSES's 400 problems (12.5% of the corpus) carry no difficulty at all.
+- **Difficulty relative to you** — shipped as the `my level` chip, per judge ([how it works](#how-my-level-picks-a-band)). It covers the 1,350 rated Codeforces and AtCoder problems directly and LeetCode through a coarser proxy; CSES still has nothing to go on.
 - **Multi-technique queries, and the practice set they'd unlock.** `fenwick graph` doesn't return problems that need both — BM25 scores one bag of words, so the rarer term wins and you get mostly Fenwick problems. Running each technique as its own query and drawing a stratified sample across them would fix that, and it's also the shape a "give me N problems for OA prep" feature needs. Both want the same missing piece — a difficulty scale that works across four judges — which is why that scale is the highest-value next thing rather than another judge.
 - **Recommendations from what you've solved.** Done-marks plus ratings are enough for a rule-based "next problem" heuristic before anything fancier is warranted.
 
