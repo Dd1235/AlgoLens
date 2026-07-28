@@ -91,7 +91,20 @@ function buildPatternsPayload(problems) {
       category,
       patterns: patterns.sort((a, b) => b.count - a.count || a.pattern.localeCompare(b.pattern)),
     }));
-  return { version: 1, totalProblems: (problems || []).length, categories };
+  // Umbrella groups ride along so the page can answer "range queries" — a
+  // phrase that is not a label and never will be, but is what people type.
+  // Only members that some problem actually carries are shipped: an umbrella
+  // that expands to nothing is the same dead end it was meant to fix.
+  const groups = Object.entries(taxonomy.groups || {})
+    .map(([id, g]) => ({
+      id,
+      label: g.label,
+      aliases: g.aliases || [],
+      members: (g.members || []).filter((m) => counts.get(m) > 0),
+      total: (g.members || []).reduce((sum, m) => sum + (counts.get(m) || 0), 0),
+    }))
+    .filter((g) => g.members.length > 0);
+  return { version: 1, totalProblems: (problems || []).length, categories, groups };
 }
 
 function createSearchRouter({ indexes, defaultRanker, problems }) {

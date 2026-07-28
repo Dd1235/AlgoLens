@@ -3,6 +3,7 @@ const statusEl = document.getElementById("patterns-status");
 const filterEl = document.getElementById("pattern-filter");
 
 let sections = []; // [{ category, el, chips: [{ pattern, el }] }]
+let groups = [];   // umbrella terms from the taxonomy
 let baseStatus = "";
 
 async function loadPatterns() {
@@ -15,6 +16,7 @@ async function loadPatterns() {
     return;
   }
 
+  groups = data.groups || [];
   const labeled = data.categories.reduce(
     (sum, c) => sum + c.patterns.filter((p) => p.count > 0).length,
     0
@@ -65,26 +67,68 @@ async function loadPatterns() {
   applyFilter();
 }
 
+// Labels are slugs and people type prose, so both sides are flattened to
+// space-separated words before comparing. Without this, "segment tree" did not
+// match `segment-tree` — a plain substring test says false — and the same held
+// for "binary search", "sparse table" and every other multi-word technique.
+const normalize = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+// 165 chips is a wall. Typing narrows it in place — matching the category name
+// keeps that whole group, so "tree" shows the tree family rather than only the
+// labels with "tree" in the slug.
+// Umbrellas resolve in two places, and the order matters. An EXACT name or
+// alias ("range queries", "rmq", "dp optimization") always wins — that phrase
+// names a family and nothing else. Anything shorter is only tried once the
+// literal search has come up empty, so "tree" and "dp" keep listing every label
+// that contains them instead of being silently swapped for a curated family.
+function findGroup(q, exactOnly) {
+  let best = null;
+  for (const g of groups) {
+    for (const name of [g.label, ...(g.aliases || [])]) {
+      const n = normalize(name);
+      const hit = exactOnly ? n === q : n.startsWith(q) || n.includes(` ${q}`);
+      if (!hit) continue;
+      if (!best || n.length < best.len) best = { label: g.label, members: new Set(g.members), len: n.length };
+    }
+  }
+  return best;
+}
+
 // 165 chips is a wall. Typing narrows it in place — matching the category name
 // keeps that whole group, so "tree" shows the tree family rather than only the
 // labels with "tree" in the slug.
 function applyFilter() {
-  const q = (filterEl.value || "").trim().toLowerCase();
+  const q = normalize(filterEl.value);
+  let group = q ? findGroup(q, true) : null;
+  if (q && !group && !literalHits(q)) group = findGroup(q, false);
+
   let shown = 0;
   for (const { category, el, chips } of sections) {
-    const catMatch = !!q && category.includes(q);
+    const catMatch = !!q && !group && normalize(category).includes(q);
     let visible = 0;
     for (const { pattern, el: chip } of chips) {
-      const hit = !q || catMatch || pattern.includes(q);
+      const hit = !q || (group ? group.members.has(pattern) : catMatch || normalize(pattern).includes(q));
       chip.classList.toggle("hidden", !hit);
       if (hit) visible++;
     }
     el.classList.toggle("hidden", visible === 0);
     shown += visible;
   }
-  statusEl.textContent = q
-    ? `${shown} technique${shown === 1 ? "" : "s"} matching "${q}"`
-    : baseStatus;
+  statusEl.textContent = !q
+    ? baseStatus
+    : group
+    ? `${shown} technique${shown === 1 ? "" : "s"} under "${group.label}"`
+    : `${shown} technique${shown === 1 ? "" : "s"} matching "${q}"`;
+}
+
+// Would a plain label/category search find anything? Decides whether an
+// umbrella is filling a void or overriding a perfectly good answer.
+function literalHits(q) {
+  for (const { category, chips } of sections) {
+    if (normalize(category).includes(q)) return true;
+    for (const { pattern } of chips) if (normalize(pattern).includes(q)) return true;
+  }
+  return false;
 }
 
 filterEl.addEventListener("input", applyFilter);
