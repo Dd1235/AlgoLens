@@ -1,6 +1,7 @@
 const express = require("express");
 const db = require("../db");
 const { requireUser } = require("../auth/middleware");
+const { suggestLevel } = require("../search/level");
 
 const PLATFORMS = ["leetcode", "codeforces", "codechef", "github", "atcoder"];
 // Each activity source belongs to a category; the client composes the
@@ -36,8 +37,37 @@ async function loadHandles(userId) {
   return handles;
 }
 
-function createProfileRouter({ fetchStats = require("../profile").fetchPlatformStats } = {}) {
+function createProfileRouter({ fetchStats = require("../profile").fetchPlatformStats, problems = [] } = {}) {
   const router = express.Router();
+
+  // What the search page needs to offer "at my level", and nothing else.
+  //
+  // Deliberately cache-only: it reads whatever /profile already stored and
+  // never calls out to a judge. The search page loads on every visit, and a
+  // filter button is not worth five external round-trips — if the numbers are
+  // stale or absent, the button simply doesn't appear until the profile page
+  // has been opened once.
+  router.get("/level", requireUser, async (req, res) => {
+    try {
+      const cached = await db.query(
+        `SELECT platform, payload, fetched_at FROM user_platform_stats WHERE user_id = $1`,
+        [req.user.id]
+      );
+      const signals = {};
+      for (const row of cached.rows) {
+        const stats = secrets.decryptJson(row.payload);
+        if (!stats || stats.unavailable) continue;
+        const signal = { fetchedAt: row.fetched_at };
+        if (typeof stats.rating === "number") signal.rating = stats.rating;
+        if (stats.byDifficulty) signal.byDifficulty = stats.byDifficulty;
+        if (signal.rating !== undefined || signal.byDifficulty) signals[row.platform] = signal;
+      }
+      res.set("Cache-Control", "private, max-age=300");
+      res.json({ signals, suggest: suggestLevel(signals, problems) });
+    } catch (_err) {
+      res.status(500).json({ error: "db_error" });
+    }
+  });
 
   router.get("/handles", requireUser, async (req, res) => {
     try {
