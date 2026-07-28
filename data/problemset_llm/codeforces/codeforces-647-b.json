@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-647-b",
+  "title": "Звёздное небо",
+  "slug": "647-b",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/647/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [],
+  "statement": "Given a rectangular grid representing a star map with stars marked by '*', find the smallest side length of a square aligned with the grid that can contain all stars.",
+  "tags": [
+    "geometry",
+    "grid",
+    "array"
+  ],
+  "patterns": [
+    "bounding-box",
+    "minimum-enclosing-square"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217345,
+    "pattern_confidence": {
+      "bounding-box": 0.95,
+      "minimum-enclosing-square": 0.9
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-732-b",
+  "title": "Cormen — The Best Friend Of a Man",
+  "slug": "732-b-cormen-the-best-friend-of-a-man",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/732/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a sequence of planned dog walks over n days and a minimum required sum k for any two consecutive days, find the minimal additional walks needed and a schedule meeting the requirement for all consecutive day pairs.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216774,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "dynamic-programming": 0.7
+    }
+  }
+}

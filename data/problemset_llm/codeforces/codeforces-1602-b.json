@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1602-b",
+  "title": "Divine Array",
+  "slug": "1602-b-divine-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1602/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Given an initial integer array, repeatedly transform it by replacing each element with the frequency of its value in the previous step. Answer queries about the value at a given position after a specified number of transformations.",
+  "tags": [
+    "array",
+    "implementation",
+    "counting"
+  ],
+  "patterns": [
+    "simulation",
+    "precomputation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216823,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "precomputation": 0.8
+    }
+  }
+}

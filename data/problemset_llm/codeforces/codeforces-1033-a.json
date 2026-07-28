@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1033-a",
+  "title": "King Escape",
+  "slug": "1033-a-king-escape",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1033/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "implementation"
+  ],
+  "statement": "Determine if a king can move from a start to a target position on an n×n chessboard without ever being in check by a stationary queen that attacks along rows, columns, and diagonals.",
+  "tags": [
+    "graph",
+    "grid",
+    "dfs",
+    "bfs",
+    "implementation"
+  ],
+  "patterns": [
+    "bfs",
+    "dfs",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216662,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "dfs": 0.85,
+      "grid-traversal": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1108-b",
+  "title": "Divisors of Two Integers",
+  "slug": "1108-b-divisors-of-two-integers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1108/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a multiset containing all divisors of two positive integers x and y (with common divisors appearing twice), reconstruct any valid pair (x, y) that corresponds to the given divisors.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force"
+  ],
+  "patterns": [
+    "divisor-enumeration",
+    "gcd",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216796,
+    "pattern_confidence": {
+      "divisor-enumeration": 0.9,
+      "gcd": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

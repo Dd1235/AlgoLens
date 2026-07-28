@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1910-a",
+  "title": "Username",
+  "slug": "1910-a-username",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1910/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "*special",
+    "implementation"
+  ],
+  "statement": "Given a valid account ID formed by appending a positive integer without leading zeros to a username containing at least one lowercase letter, find any valid username that could generate the given ID.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "string-parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216875,
+    "pattern_confidence": {
+      "string-parsing": 0.9
+    }
+  }
+}

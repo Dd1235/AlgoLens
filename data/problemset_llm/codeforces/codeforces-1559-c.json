@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1559-c",
+  "title": "Mocha and Hiking",
+  "slug": "1559-c-mocha-and-hiking",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1559/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "graphs"
+  ],
+  "statement": "Given a directed graph with a linear chain of villages and additional edges connecting each village to a special village, determine if there exists a Hamiltonian path visiting every village exactly once, starting and ending anywhere.",
+  "tags": [
+    "graph",
+    "constructive-algorithm",
+    "hamiltonian-path"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "hamiltonian-path",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217281,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "hamiltonian-path": 0.95,
+      "graph-traversal": 0.7
+    }
+  }
+}

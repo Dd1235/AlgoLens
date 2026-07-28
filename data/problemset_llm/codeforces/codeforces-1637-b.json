@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1637-b",
+  "title": "MEX and Array",
+  "slug": "1637-b-mex-and-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1637/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array, compute the sum over all subsegments of the maximum cost of partitioning each subsegment into contiguous segments, where the cost is the number of segments plus the sum of the MEX (minimum excluded value) of each segment.",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "math"
+  ],
+  "patterns": [
+    "mex",
+    "dynamic-programming",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216831,
+    "pattern_confidence": {
+      "mex": 0.95,
+      "dynamic-programming": 0.9,
+      "brute-force": 0.6
+    }
+  }
+}

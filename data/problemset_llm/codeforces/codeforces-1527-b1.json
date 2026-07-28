@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1527-b1",
+  "title": "Palindrome Game (easy version)",
+  "slug": "1527-b1-palindrome-game-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1527/B1",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "games"
+  ],
+  "statement": "Two players alternately convert '0's to '1's in a binary palindrome string, optionally reversing the string under certain conditions, aiming to minimize their total cost; determine the game's outcome assuming optimal play.",
+  "tags": [
+    "string",
+    "game-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "game-dp",
+    "string-reversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217280,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "game-dp": 0.85,
+      "string-reversal": 0.7
+    }
+  }
+}

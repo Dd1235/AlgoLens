@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1060-b",
+  "title": "Maximum Sum of Digits",
+  "slug": "1060-b-maximum-sum-of-digits",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1060/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given a positive integer n, find two nonnegative integers a and b with a + b = n that maximize the sum of their digit sums in base 10.",
+  "tags": [
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "digit-sum",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216793,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "digit-sum": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

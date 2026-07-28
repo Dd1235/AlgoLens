@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-459-a",
+  "title": "Pashmak and Garden",
+  "slug": "459-a-pashmak-and-garden",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/459/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given coordinates of two opposite vertices of a square aligned with the coordinate axes, find the coordinates of the other two vertices.",
+  "tags": [
+    "geometry",
+    "implementation"
+  ],
+  "patterns": [
+    "coordinate-geometry",
+    "vector-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217330,
+    "pattern_confidence": {
+      "coordinate-geometry": 0.95,
+      "vector-operations": 0.8
+    }
+  }
+}

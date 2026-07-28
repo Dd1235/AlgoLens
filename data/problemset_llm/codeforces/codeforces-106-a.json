@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-106-a",
+  "title": "Card Game",
+  "slug": "106-a-card-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/106/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a trump suit and two distinct cards with suits and ranks, determine if the first card beats the second according to durak game rules.",
+  "tags": [
+    "implementation",
+    "card-game",
+    "string"
+  ],
+  "patterns": [
+    "conditional-checks",
+    "comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216670,
+    "pattern_confidence": {
+      "conditional-checks": 0.9,
+      "comparison": 0.85
+    }
+  }
+}

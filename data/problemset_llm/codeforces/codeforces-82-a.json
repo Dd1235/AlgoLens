@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-82-a",
+  "title": "Double Cola",
+  "slug": "82-a-double-cola",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/82/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a queue of five people who each double themselves after drinking a cola in order, determine who drinks the n-th can in the infinite sequence.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "simulation",
+    "pattern-recognition",
+    "arithmetic-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216916,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "pattern-recognition": 0.85,
+      "arithmetic-sequence": 0.8
+    }
+  }
+}

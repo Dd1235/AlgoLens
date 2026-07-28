@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1827-a",
+  "title": "Counting Orders",
+  "slug": "1827-a-counting-orders",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1827/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "combinatorics",
+    "math",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given two arrays a and b of equal length with distinct elements in a, count the number of permutations of a such that each element in the permuted a is strictly greater than the corresponding element in b, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "two-pointers",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216865,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "two-pointers": 0.85,
+      "counting": 0.9
+    }
+  }
+}

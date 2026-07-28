@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-116-b",
+  "title": "Little Pigs and Wolves",
+  "slug": "116-b-little-pigs-and-wolves",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/116/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a grid with pigs and wolves, where each pig is adjacent to at most one wolf, determine the maximum number of pigs that wolves can eat if each wolf can eat at most one adjacent pig.",
+  "tags": [
+    "graph",
+    "bipartite-matching",
+    "grid"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "dfs",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216799,
+    "pattern_confidence": {
+      "bipartite-matching": 0.95,
+      "dfs": 0.7,
+      "greedy": 0.6
+    }
+  }
+}

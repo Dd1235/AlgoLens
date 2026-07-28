@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1202-a",
+  "title": "You Are Given Two Binary Strings...",
+  "slug": "1202-a-you-are-given-two-binary-strings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1202/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "bitmasks",
+    "greedy"
+  ],
+  "statement": "Given two binary strings representing integers, find a non-negative integer k such that the reversed binary representation of f(x) + f(y)*2^k is lexicographically minimal.",
+  "tags": [
+    "bit-manipulation",
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "lexicographic-comparison",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216803,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "lexicographic-comparison": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

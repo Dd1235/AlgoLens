@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-766-b",
+  "title": "Mahmoud and a Triangle",
+  "slug": "766-b-mahmoud-and-a-triangle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/766/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "geometry",
+    "greedy",
+    "math",
+    "number theory",
+    "sortings"
+  ],
+  "statement": "Given lengths of line segments, determine if any three can form a non-degenerate triangle with positive area.",
+  "tags": [
+    "geometry",
+    "greedy",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy",
+    "triangle-inequality"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216778,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9,
+      "triangle-inequality": 0.98
+    }
+  }
+}

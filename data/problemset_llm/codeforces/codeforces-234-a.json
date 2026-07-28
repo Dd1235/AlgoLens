@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-234-a",
+  "title": "Lefthanders and Righthanders",
+  "slug": "234-a-lefthanders-and-righthanders",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/234/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Arrange an even number of students numbered 1 to n at desks seating two each, so that no two students with consecutive numbers sit together and no desk seats a right-handed student on the left and a left-handed student on the right.",
+  "tags": [
+    "implementation",
+    "greedy"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217316,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9
+    }
+  }
+}

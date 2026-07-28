@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-284-b",
+  "title": "Cows and Poker Game",
+  "slug": "284-b-cows-and-poker-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/284/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given the statuses of n cows in a poker game phase, determine how many cows can reveal their hands without influencing betting decisions, based on the condition that all other players are either ALLIN or FOLDED.",
+  "tags": [
+    "implementation",
+    "brute-force"
+  ],
+  "patterns": [
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216739,
+    "pattern_confidence": {
+      "brute-force": 0.95
+    }
+  }
+}

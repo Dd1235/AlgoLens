@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1020-b",
+  "title": "Badge",
+  "slug": "1020-b-badge",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1020/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs"
+  ],
+  "statement": "Given a permutation representing each student's accusation of another student, determine for every possible starting student who ends up with two holes in their badge after repeatedly following accusations until a student is visited twice.",
+  "tags": [
+    "graph",
+    "dfs",
+    "simulation"
+  ],
+  "patterns": [
+    "cycle-detection",
+    "dfs",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216660,
+    "pattern_confidence": {
+      "cycle-detection": 0.95,
+      "dfs": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

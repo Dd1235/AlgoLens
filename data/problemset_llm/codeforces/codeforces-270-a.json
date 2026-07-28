@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-270-a",
+  "title": "Fancy Fence",
+  "slug": "270-a-fancy-fence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/270/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "geometry",
+    "implementation",
+    "math"
+  ],
+  "statement": "Determine if there exists a regular polygon whose interior angle equals a given angle a.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "angle-formula"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216890,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.85,
+      "angle-formula": 0.9
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-334-a",
+  "title": "Candy Bags",
+  "slug": "334-a-candy-bags",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/334/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an even number n and n² candy bags each containing a distinct number of candies from 1 to n², distribute n bags to each of the n brothers so that every brother receives the same total number of candies.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216742,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9
+    }
+  }
+}

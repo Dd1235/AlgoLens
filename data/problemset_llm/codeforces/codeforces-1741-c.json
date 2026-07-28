@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1741-c",
+  "title": "Minimize the Thickness",
+  "slug": "1741-c-minimize-the-thickness",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1741/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "math",
+    "two pointers"
+  ],
+  "statement": "Given a sequence of positive integers, partition it into consecutive segments each having the same sum, and find the minimum possible maximum segment length (thickness) among all such partitions.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216845,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "greedy": 0.85,
+      "prefix-sum": 0.8
+    }
+  }
+}

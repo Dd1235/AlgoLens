@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1474-b",
+  "title": "Different Divisors",
+  "slug": "1474-b-different-divisors",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1474/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Find the smallest positive integer with at least four divisors such that the difference between any two divisors is at least a given integer d.",
+  "tags": [
+    "math",
+    "number-theory",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216706,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95,
+      "binary-search": 0.6
+    }
+  }
+}

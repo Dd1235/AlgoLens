@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-630-j",
+  "title": "Divisibility",
+  "slug": "630-j-divisibility",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/630/J",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a total number of game sales, determine how many sales counts are divisible by all integers from 2 to 10, representing the number of bonuses awarded.",
+  "tags": [
+    "math",
+    "number-theory",
+    "counting"
+  ],
+  "patterns": [
+    "divisibility",
+    "lcm-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216905,
+    "pattern_confidence": {
+      "divisibility": 0.95,
+      "lcm-computation": 0.9
+    }
+  }
+}

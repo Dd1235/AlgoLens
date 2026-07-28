@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1184-a1",
+  "title": "Heidi Learns Hashing (Easy)",
+  "slug": "1184-a1-heidi-learns-hashing-easy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1184/A1",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a positive integer r, determine if there exist positive integers x and y such that H(x,y) = x^2 + 2xy + x + 1 equals r, and if so, find the pair with the smallest x.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force"
+  ],
+  "patterns": [
+    "equation-solving",
+    "search",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216950,
+    "pattern_confidence": {
+      "equation-solving": 0.9,
+      "search": 0.8,
+      "brute-force": 0.7
+    }
+  }
+}

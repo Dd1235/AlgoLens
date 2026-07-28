@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1982-b",
+  "title": "Collatz Conjecture",
+  "slug": "1982-b-collatz-conjecture",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1982/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given initial values x, y, and k, repeatedly increment x by 1 and then divide x by y as many times as possible, performing this operation k times, and determine the final value of x.",
+  "tags": [
+    "math",
+    "number-theory",
+    "implementation"
+  ],
+  "patterns": [
+    "simulation",
+    "loop",
+    "division"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217307,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "loop": 0.8,
+      "division": 0.85
+    }
+  }
+}

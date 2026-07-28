@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-112-b",
+  "title": "Petya and Square",
+  "slug": "112-b-petya-and-square",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/112/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a 2n × 2n square grid with one marked cell, determine if there exists a grid-line broken line that divides the square into two equal parts without touching the marked cell, such that the two parts are rotationally symmetric.",
+  "tags": [
+    "geometry",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "symmetry-check",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216938,
+    "pattern_confidence": {
+      "symmetry-check": 0.9,
+      "grid-traversal": 0.7
+    }
+  }
+}

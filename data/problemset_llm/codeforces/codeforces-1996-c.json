@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1996-c",
+  "title": "Sort",
+  "slug": "1996-c-sort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1996/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "sortings",
+    "strings"
+  ],
+  "statement": "Given two strings of equal length and multiple queries specifying substring ranges, determine the minimum number of character replacements needed in the first string's substring so that its sorted form matches the sorted form of the corresponding substring in the second string. Each query is independent.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217311,
+    "pattern_confidence": {
+      "prefix-sum": 0.85,
+      "greedy": 0.8,
+      "dynamic-programming": 0.7
+    }
+  }
+}

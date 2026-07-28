@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1844-b",
+  "title": "Permutations & Primes",
+  "slug": "1844-b-permutations-primes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1844/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given an integer n, find a permutation of 1 to n that maximizes the count of subarrays whose MEX (minimum excluded positive integer) is a prime number.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "mex",
+    "prime-checking",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216732,
+    "pattern_confidence": {
+      "mex": 0.95,
+      "prime-checking": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

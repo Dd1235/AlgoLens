@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1054-b",
+  "title": "Appending Mex",
+  "slug": "1054-b-appending-mex",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1054/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an array constructed by repeatedly appending the mex of some subset of previously appended elements, determine the earliest step where the array could not have been formed correctly, or confirm it is valid.",
+  "tags": [
+    "array",
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "mex",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216669,
+    "pattern_confidence": {
+      "mex": 0.95,
+      "simulation": 0.85
+    }
+  }
+}

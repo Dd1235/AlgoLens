@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1635-c",
+  "title": "Differential Sorting",
+  "slug": "1635-c-differential-sorting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1635/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given an array, perform up to n operations where each operation replaces an element with the difference of two other elements to make the array non-decreasing, or determine if it is impossible.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217285,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

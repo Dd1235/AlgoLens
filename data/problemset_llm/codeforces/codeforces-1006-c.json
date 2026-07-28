@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1006-c",
+  "title": "Three Parts of the Array",
+  "slug": "1006-c-three-parts-of-the-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1006/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "two pointers"
+  ],
+  "statement": "Split an array into three contiguous parts so that the sums of the first and third parts are equal and as large as possible.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216923,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.9,
+      "binary-search": 0.7
+    }
+  }
+}

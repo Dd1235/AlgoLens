@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-659-a",
+  "title": "Round House",
+  "slug": "659-a-round-house",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/659/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a circular arrangement of entrances numbered 1 to n, determine the final entrance number after moving b steps forward or backward from a starting entrance a, wrapping around the circle.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216766,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95
+    }
+  }
+}

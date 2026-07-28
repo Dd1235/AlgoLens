@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-616-b",
+  "title": "Dinner with Emma",
+  "slug": "616-b-dinner-with-emma",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/616/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "games",
+    "greedy"
+  ],
+  "statement": "Given a matrix of dinner costs at street-avenue intersections, Emma picks a street to maximize the minimal cost Jack can choose from that street's avenues. Determine the resulting dinner cost under optimal choices by both.",
+  "tags": [
+    "matrix",
+    "game-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "minimax",
+    "game-theory",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216763,
+    "pattern_confidence": {
+      "minimax": 0.95,
+      "game-theory": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

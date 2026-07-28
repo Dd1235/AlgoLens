@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1901-b",
+  "title": "Chip and Ribbon",
+  "slug": "1901-b-chip-and-ribbon",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1901/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a ribbon of n cells initially zeroed, and a chip starting at cell 1, determine the minimum number of teleports needed to increment each cell i exactly c_i times by moving the chip forward or teleporting it.",
+  "tags": [
+    "greedy",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216872,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

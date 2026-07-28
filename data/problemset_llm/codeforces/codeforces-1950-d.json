@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1950-d",
+  "title": "Product of Binary Decimals",
+  "slug": "1950-d-product-of-binary-decimals",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1950/D",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "implementation",
+    "number theory"
+  ],
+  "statement": "Determine if a given positive integer can be expressed as a product of one or more binary decimals, where a binary decimal is a positive integer composed only of digits 0 and 1 in its decimal representation.",
+  "tags": [
+    "number-theory",
+    "brute-force",
+    "dynamic-programming",
+    "implementation"
+  ],
+  "patterns": [
+    "backtracking",
+    "memoization",
+    "digit-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216881,
+    "pattern_confidence": {
+      "backtracking": 0.8,
+      "memoization": 0.7,
+      "digit-dp": 0.6
+    }
+  }
+}

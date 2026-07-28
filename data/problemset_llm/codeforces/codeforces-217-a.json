@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-217-a",
+  "title": "Ice Skating",
+  "slug": "217-a-ice-skating",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/217/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Given a grid with snow drifts at integer coordinates, determine the minimum number of additional snow drifts needed so that all existing snow drifts become reachable from each other by sliding north, east, south, or west until hitting another drift.",
+  "tags": [
+    "graph",
+    "union-find",
+    "grid"
+  ],
+  "patterns": [
+    "dfs",
+    "union-find",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217314,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "union-find": 0.95,
+      "connected-components": 0.9
+    }
+  }
+}

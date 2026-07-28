@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1671-c",
+  "title": "Dolce Vita",
+  "slug": "1671-c-dolce-vita",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1671/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given shops selling sugar packs with daily increasing prices and a fixed daily budget, determine the total number of packs that can be bought before prices exceed the budget.",
+  "tags": [
+    "greedy",
+    "binary-search",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217286,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

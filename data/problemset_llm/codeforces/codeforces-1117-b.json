@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1117-b",
+  "title": "Emotes",
+  "slug": "1117-b-emotes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1117/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given n emotes each with a happiness value, use exactly m emotes to maximize total happiness with the constraint that no emote is used more than k times consecutively. Repetitions and order matter, and emotes with equal values are distinct.",
+  "tags": [
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "pattern-based-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216673,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "pattern-based-counting": 0.7
+    }
+  }
+}

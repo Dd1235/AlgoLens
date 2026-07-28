@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-122-b",
+  "title": "Lucky Substring",
+  "slug": "122-b-lucky-substring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/122/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given a digit string, find the lexicographically smallest lucky number substring (containing only digits 4 and 7) that appears most frequently in the string.",
+  "tags": [
+    "string",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "substring-enumeration",
+    "counting",
+    "lexicographic-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216680,
+    "pattern_confidence": {
+      "substring-enumeration": 0.9,
+      "counting": 0.85,
+      "lexicographic-comparison": 0.8
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1899-c",
+  "title": "Yarik and Array",
+  "slug": "1899-c-yarik-and-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1899/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Find the maximum sum of a non-empty contiguous subarray where adjacent elements have alternating parity (even-odd pattern).",
+  "tags": [
+    "array",
+    "dynamic-programming",
+    "two-pointers"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216870,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "two-pointers": 0.7,
+      "greedy": 0.6
+    }
+  }
+}

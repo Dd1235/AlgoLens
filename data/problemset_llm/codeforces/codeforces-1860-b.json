@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1860-b",
+  "title": "Fancy Coins",
+  "slug": "1860-b-fancy-coins",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1860/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a target amount and two coin denominations with limited regular coins and infinite fancy coins, find the minimum number of fancy coins needed to pay exactly the target without change.",
+  "tags": [
+    "math",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217303,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "binary-search": 0.7,
+      "brute-force": 0.6
+    }
+  }
+}

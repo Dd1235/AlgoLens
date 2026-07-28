@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1251-a",
+  "title": "Broken Keyboard",
+  "slug": "1251-a-broken-keyboard",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1251/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Given a string formed by pressing keyboard buttons where malfunctioning buttons produce double characters, identify which buttons must be working correctly based on the string pattern.",
+  "tags": [
+    "string",
+    "brute-force",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "string-matching",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216687,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "string-matching": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

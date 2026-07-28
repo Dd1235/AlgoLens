@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1259-a",
+  "title": "Happy Birthday, Polycarp!",
+  "slug": "1259-a-happy-birthday-polycarp",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1259/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Count how many integers from 1 to n consist of a single repeated digit in decimal representation.",
+  "tags": [
+    "math",
+    "implementation",
+    "number-theory"
+  ],
+  "patterns": [
+    "brute-force",
+    "digit-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216690,
+    "pattern_confidence": {
+      "brute-force": 0.8,
+      "digit-enumeration": 0.7
+    }
+  }
+}

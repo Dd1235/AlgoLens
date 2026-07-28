@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-637-b",
+  "title": "Chat Order",
+  "slug": "637-b-chat-order",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/637/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "*special",
+    "binary search",
+    "constructive algorithms",
+    "data structures",
+    "sortings"
+  ],
+  "statement": "Given a sequence of messages sent to friends, maintain a chat list where each messaged friend moves to the top, preserving the relative order of others, and output the final chat order.",
+  "tags": [
+    "data-structures",
+    "simulation",
+    "sorting"
+  ],
+  "patterns": [
+    "linked-list-simulation",
+    "order-maintenance",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217341,
+    "pattern_confidence": {
+      "linked-list-simulation": 0.9,
+      "order-maintenance": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

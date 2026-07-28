@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1783-b",
+  "title": "Matrix of Differences",
+  "slug": "1783-b-matrix-of-differences",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1783/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Construct an n×n matrix containing all integers from 1 to n² exactly once, maximizing the number of distinct absolute differences between all pairs of side-adjacent elements.",
+  "tags": [
+    "matrix",
+    "constructive-algorithm",
+    "math"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216853,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95
+    }
+  }
+}

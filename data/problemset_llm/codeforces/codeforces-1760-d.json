@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1760-d",
+  "title": "Challenging Valleys",
+  "slug": "1760-d-challenging-valleys",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1760/D",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "two pointers"
+  ],
+  "statement": "Determine if an array contains exactly one contiguous subarray of equal elements that forms a \"valley\" according to given boundary and inequality conditions.",
+  "tags": [
+    "array",
+    "implementation",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216722,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

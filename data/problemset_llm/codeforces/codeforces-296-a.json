@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-296-a",
+  "title": "Yaroslav and Permutations",
+  "slug": "296-a-yaroslav-and-permutations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/296/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array, determine if it is possible to rearrange the elements by swapping adjacent pairs any number of times so that no two neighboring elements are equal.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216891,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "counting": 0.9
+    }
+  }
+}

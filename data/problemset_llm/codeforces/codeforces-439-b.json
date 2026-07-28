@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-439-b",
+  "title": "Devu, the Dumb Guy",
+  "slug": "439-b-devu-the-dumb-guy",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/439/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given n subjects each with a number of chapters, and an initial per-chapter learning time x that decreases by 1 (to a minimum of 1) after teaching each subject, find the order to teach all subjects to minimize total learning time.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217327,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

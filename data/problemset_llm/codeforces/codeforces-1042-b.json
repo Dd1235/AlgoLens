@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1042-b",
+  "title": "Vitamins",
+  "slug": "1042-b-vitamins",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1042/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dp",
+    "implementation"
+  ],
+  "statement": "Given a list of juices each with a price and a subset of vitamins A, B, and C, find the minimum total cost to buy juices covering all three vitamins.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "subset-enumeration",
+    "dp-on-subsets",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216929,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "subset-enumeration": 0.9,
+      "dp-on-subsets": 0.85,
+      "brute-force": 0.8
+    }
+  }
+}

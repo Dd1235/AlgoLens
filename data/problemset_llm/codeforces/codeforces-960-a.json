@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-960-a",
+  "title": "Check the string",
+  "slug": "960-a-check-the-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/960/A",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a string composed of consecutive 'a's, followed by consecutive 'b's, and then consecutive 'c's, determine if the count of 'c's equals the count of 'a's or the count of 'b's, with at least one 'a' and one 'b' present.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217365,
+    "pattern_confidence": {
+      "counting": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

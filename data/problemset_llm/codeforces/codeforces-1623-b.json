@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1623-b",
+  "title": "Game on Ranges",
+  "slug": "1623-b-game-on-ranges",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1623/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a sequence of disjoint integer ranges representing moves in a game where each chosen number splits a range into two smaller ranges, determine the unique chosen number for each range based on the sequence of ranges picked.",
+  "tags": [
+    "intervals",
+    "game-theory",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "simulation",
+    "divide-and-conquer",
+    "interval-splitting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216827,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "divide-and-conquer": 0.85,
+      "interval-splitting": 0.9
+    }
+  }
+}

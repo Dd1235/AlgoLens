@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1675-c",
+  "title": "Detective Task",
+  "slug": "1675-c-detective-task",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1675/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of friends entering a room one by one where a painting disappears at some unknown moment, and each friend answers whether the painting was present upon their entry with yes, no, or unknown, determine how many friends could possibly be the thief who caused the disappearance.",
+  "tags": [
+    "implementation",
+    "logic",
+    "simulation"
+  ],
+  "patterns": [
+    "case-analysis",
+    "simulation",
+    "logical-deduction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216838,
+    "pattern_confidence": {
+      "case-analysis": 0.9,
+      "simulation": 0.85,
+      "logical-deduction": 0.8
+    }
+  }
+}

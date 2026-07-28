@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1704-b",
+  "title": "Luke is a Foodie",
+  "slug": "1704-b-luke-is-a-foodie",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1704/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a sequence of food piles and a tolerance value, determine the minimum number of times Luke must change his food affinity to eat all piles in order without backtracking, where each pile can be eaten only if the affinity is within a fixed range of the pile's food amount.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216720,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "brute-force": 0.7
+    }
+  }
+}

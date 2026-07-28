@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1669-f",
+  "title": "Eating Candies",
+  "slug": "1669-f-eating-candies",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1669/F",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Given a sequence of candies with weights, two players eat candies from opposite ends without skipping, aiming to maximize the total number eaten while having equal total weight consumed.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "greedy"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216834,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

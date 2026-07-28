@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1354-b",
+  "title": "Ternary String",
+  "slug": "1354-b-ternary-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1354/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "dp",
+    "implementation",
+    "two pointers"
+  ],
+  "statement": "Find the shortest contiguous substring of a given string containing all three characters '1', '2', and '3' at least once.",
+  "tags": [
+    "string",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217263,
+    "pattern_confidence": {
+      "sliding-window": 0.95,
+      "two-pointers": 0.9
+    }
+  }
+}

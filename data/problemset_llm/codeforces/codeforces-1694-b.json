@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1694-b",
+  "title": "Paranoid String",
+  "slug": "1694-b-paranoid-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1694/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given a binary string, count the number of substrings that can be reduced to a single character by repeatedly replacing \"01\" with \"1\" or \"10\" with \"0\" in any order.",
+  "tags": [
+    "string",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "string-reduction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217289,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "string-reduction": 0.85
+    }
+  }
+}

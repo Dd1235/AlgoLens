@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-431-b",
+  "title": "Shower Line",
+  "slug": "431-b-shower-line",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/431/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given five students and a matrix of happiness gains when pairs talk, determine the initial order in a shower line that maximizes total happiness accumulated during waiting and showering phases.",
+  "tags": [
+    "brute-force",
+    "implementation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "permutation-enumeration",
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217325,
+    "pattern_confidence": {
+      "permutation-enumeration": 0.95,
+      "simulation": 0.9,
+      "greedy": 0.4
+    }
+  }
+}

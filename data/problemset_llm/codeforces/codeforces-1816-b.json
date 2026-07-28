@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1816-b",
+  "title": "Grid Reconstruction",
+  "slug": "1816-b-grid-reconstruction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1816/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Place integers from 1 to 2n on a 2×n grid to maximize the minimum alternating sum cost over all paths from the top-left to bottom-right corner, moving only down or right.",
+  "tags": [
+    "constructive-algorithm",
+    "greedy",
+    "grid"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216728,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1102-c",
+  "title": "Doors Breaking and Repairing",
+  "slug": "1102-c-doors-breaking-and-repairing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1102/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "games"
+  ],
+  "statement": "Two players alternately break and repair doors with given durability values; determine the maximum number of doors that can be reduced to zero durability after infinitely many turns assuming optimal play from both sides.",
+  "tags": [
+    "game-theory",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "game-theory",
+    "greedy-strategy",
+    "optimal-play"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216936,
+    "pattern_confidence": {
+      "game-theory": 0.95,
+      "greedy-strategy": 0.85,
+      "optimal-play": 0.9
+    }
+  }
+}

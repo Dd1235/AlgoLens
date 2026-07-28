@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-109-a",
+  "title": "Lucky Sum of Digits",
+  "slug": "109-a-lucky-sum-of-digits",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/109/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given a target sum n, find the smallest lucky number (digits only 4 and 7) whose digits sum to n.",
+  "tags": [
+    "math",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "digit-enumeration",
+    "greedy",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216672,
+    "pattern_confidence": {
+      "digit-enumeration": 0.9,
+      "greedy": 0.7,
+      "brute-force": 0.8
+    }
+  }
+}

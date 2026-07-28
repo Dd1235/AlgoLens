@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1550-b",
+  "title": "Maximum Cost Deletion",
+  "slug": "1550-b-maximum-cost-deletion",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1550/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a binary string and scoring parameters, repeatedly delete consecutive equal-character substrings to maximize total points until the string is empty.",
+  "tags": [
+    "string",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216708,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

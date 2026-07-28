@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1608-b",
+  "title": "Build the Permutation",
+  "slug": "1608-b-build-the-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1608/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given integers n, a, and b, determine if there exists a permutation of 1 to n with exactly a local maxima and b local minima at positions 2 to n-1, and construct such a permutation if possible.",
+  "tags": [
+    "constructive-algorithm",
+    "permutation",
+    "greedy"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217283,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

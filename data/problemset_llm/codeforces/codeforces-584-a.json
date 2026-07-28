@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-584-a",
+  "title": "Olesya and Rodion",
+  "slug": "584-a-olesya-and-rodion",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/584/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given integers n and t, find an n-digit positive integer divisible by t, or output -1 if none exists.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216762,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9
+    }
+  }
+}

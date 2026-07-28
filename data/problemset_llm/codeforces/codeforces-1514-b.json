@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1514-b",
+  "title": "AND 0, Sum Big",
+  "slug": "1514-b-and-0-sum-big",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1514/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "bitmasks",
+    "combinatorics",
+    "math"
+  ],
+  "statement": "Count the number of length-n arrays with elements in [0, 2^k-1] whose bitwise AND is zero and whose sum is maximized, outputting the result modulo 10^9+7.",
+  "tags": [
+    "bit-manipulation",
+    "combinatorics",
+    "math",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "combinatorics",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217278,
+    "pattern_confidence": {
+      "bit-manipulation": 0.9,
+      "combinatorics": 0.85,
+      "modular-exponentiation": 0.8
+    }
+  }
+}

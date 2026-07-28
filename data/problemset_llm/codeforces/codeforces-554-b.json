@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-554-b",
+  "title": "Ohana Cleans Up",
+  "slug": "554-b-ohana-cleans-up",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/554/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given an n by n grid of clean or dirty squares, determine which columns to sweep (flipping all squares in that column) to maximize the number of rows that become completely clean.",
+  "tags": [
+    "array",
+    "greedy",
+    "strings",
+    "brute-force"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217336,
+    "pattern_confidence": {
+      "bit-manipulation": 0.85,
+      "greedy": 0.7,
+      "brute-force": 0.9
+    }
+  }
+}

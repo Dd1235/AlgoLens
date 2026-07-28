@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1177-a",
+  "title": "Digits Sequence (Easy Edition)",
+  "slug": "1177-a-digits-sequence-easy-edition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1177/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an infinite concatenation of positive integers starting from 1, find the k-th digit in this sequence.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "binary-search",
+    "digit-extraction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216676,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "digit-extraction": 0.85
+    }
+  }
+}

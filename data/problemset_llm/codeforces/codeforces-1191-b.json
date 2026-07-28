@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1191-b",
+  "title": "Tokitsukaze and Mahjong",
+  "slug": "1191-b-tokitsukaze-and-mahjong",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1191/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given three suited tiles, determine the minimum number of additional tiles needed to form at least one valid meld (triplet or sequence) according to Mahjong rules.",
+  "tags": [
+    "brute-force",
+    "implementation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "brute-force",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216951,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "case-analysis": 0.9
+    }
+  }
+}

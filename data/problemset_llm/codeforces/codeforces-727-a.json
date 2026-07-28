@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-727-a",
+  "title": "Transformation: from A to B",
+  "slug": "727-a-transformation-from-a-to-b",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/727/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "math"
+  ],
+  "statement": "Given two numbers a and b, determine if it is possible to transform a into b by repeatedly either multiplying by 2 or appending the digit 1 to the right, and find any valid sequence of operations if possible.",
+  "tags": [
+    "math",
+    "brute-force",
+    "dfs"
+  ],
+  "patterns": [
+    "dfs",
+    "backtracking",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216773,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "backtracking": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

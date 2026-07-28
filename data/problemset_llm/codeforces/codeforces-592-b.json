@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-592-b",
+  "title": "The Monster and the Squirrel",
+  "slug": "592-b-the-monster-and-the-squirrel",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/592/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a regular convex polygon with rays drawn from each vertex to others creating regions inside, find the minimum jumps needed to visit all regions starting from outside, where jumps occur only between adjacent regions sharing a side or corner.",
+  "tags": [
+    "geometry",
+    "graph",
+    "shortest-path"
+  ],
+  "patterns": [
+    "graph-construction",
+    "bfs",
+    "adjacency-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216900,
+    "pattern_confidence": {
+      "graph-construction": 0.9,
+      "bfs": 0.85,
+      "adjacency-graph": 0.8
+    }
+  }
+}

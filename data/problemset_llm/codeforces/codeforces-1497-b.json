@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1497-b",
+  "title": "M-arrays",
+  "slug": "1497-b-m-arrays",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1497/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Partition a given array of positive integers into the minimum number of arrays such that in each array, the sum of every pair of adjacent elements is divisible by a given integer m.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217274,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "modular-arithmetic": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

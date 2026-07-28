@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-447-b",
+  "title": "DZY Loves Strings",
+  "slug": "447-b-dzy-loves-strings",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/447/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a string and values for each lowercase letter, insert k lowercase letters anywhere to maximize the weighted sum of characters multiplied by their positions in the resulting string.",
+  "tags": [
+    "string",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216751,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85,
+      "prefix-sum": 0.7
+    }
+  }
+}

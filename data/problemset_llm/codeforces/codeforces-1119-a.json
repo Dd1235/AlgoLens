@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1119-a",
+  "title": "Ilya and a Colorful Walk",
+  "slug": "1119-a-ilya-and-a-colorful-walk",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1119/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a linear arrangement of houses each colored, find two houses with different colors that maximize the distance between them.",
+  "tags": [
+    "array",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216797,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

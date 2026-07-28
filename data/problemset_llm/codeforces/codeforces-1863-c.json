@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1863-c",
+  "title": "MEX Repetition",
+  "slug": "1863-c-mex-repetition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1863/C",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an array of distinct integers from 0 to n, repeatedly replace each element in order with the MEX (minimum excluded value) of the entire array, and output the array after k such operations.",
+  "tags": [
+    "array",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "mex",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216868,
+    "pattern_confidence": {
+      "mex": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

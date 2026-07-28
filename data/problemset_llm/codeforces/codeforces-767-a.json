@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-767-a",
+  "title": "Snacktower",
+  "slug": "767-a-snacktower",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/767/A",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Simulate the process of stacking snacks of distinct sizes in descending order as they arrive one per day, placing each snack on the tower immediately when all larger snacks have already appeared.",
+  "tags": [
+    "simulation",
+    "data-structures",
+    "implementation"
+  ],
+  "patterns": [
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216912,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

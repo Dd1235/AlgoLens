@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-581-b",
+  "title": "Luxurious Houses",
+  "slug": "581-b-luxurious-houses",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/581/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a row of buildings with floor counts, for each building determine how many floors must be added so that it is strictly taller than all buildings to its right.",
+  "tags": [
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "monotonic-stack",
+    "right-to-left-traversal",
+    "nearest-greater-element"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216898,
+    "pattern_confidence": {
+      "monotonic-stack": 0.9,
+      "right-to-left-traversal": 0.85,
+      "nearest-greater-element": 0.8
+    }
+  }
+}

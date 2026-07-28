@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1032-b",
+  "title": "Personalized Cup",
+  "slug": "1032-b-personalized-cup",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1032/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [],
+  "statement": "Given a string representing a winner's handle, arrange it into a rectangular table with at most 5 rows and 20 columns, filled with letters and asterisks, such that reading row-wise (top to bottom, left to right) skipping asterisks reproduces the handle. The number of asterisks per row must differ by at most one, and the table should minimize rows first, then columns.",
+  "tags": [
+    "string",
+    "implementation",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216926,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

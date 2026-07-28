@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-230-a",
+  "title": "Dragons",
+  "slug": "230-a-dragons",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/230/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given Kirito's initial strength and a list of dragons with their strengths and bonus strength rewards, determine if Kirito can defeat all dragons in some order without losing any duel.",
+  "tags": [
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216736,
+    "pattern_confidence": {
+      "greedy": 0.98,
+      "sorting": 0.9
+    }
+  }
+}

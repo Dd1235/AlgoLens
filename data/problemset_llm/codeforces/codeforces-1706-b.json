@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1706-b",
+  "title": "Making Towers",
+  "slug": "1706-b-making-towers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1706/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a sequence of colored blocks placed on a grid with restricted moves, determine for each color the maximum vertical tower size that can be formed following the placement rules.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216842,
+    "pattern_confidence": {
+      "dynamic-programming": 0.85,
+      "greedy": 0.8
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-452-a",
+  "title": "Eevee",
+  "slug": "452-a-eevee",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/452/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a word length and partial letter information, identify the unique Eevee evolution Pokémon name that matches the constraints.",
+  "tags": [
+    "strings",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "string-matching",
+    "filtering",
+    "string-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216752,
+    "pattern_confidence": {
+      "string-matching": 0.9,
+      "filtering": 0.85,
+      "string-comparison": 0.8
+    }
+  }
+}

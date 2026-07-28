@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1579-b",
+  "title": "Shifting Sort",
+  "slug": "1579-b-shifting-sort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1579/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array, sort it using at most n operations where each operation is a cyclic left shift of any chosen subsegment.",
+  "tags": [
+    "array",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "cyclic-shift",
+    "segment-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216820,
+    "pattern_confidence": {
+      "cyclic-shift": 0.9,
+      "segment-operations": 0.7
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-454-b",
+  "title": "Little Pony and Sort by Shift",
+  "slug": "454-b-little-pony-and-sort-by-shift",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/454/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of integers, determine the minimum number of times the last element must be moved to the front to make the sequence sorted in non-decreasing order.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "rotation-check",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217329,
+    "pattern_confidence": {
+      "rotation-check": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

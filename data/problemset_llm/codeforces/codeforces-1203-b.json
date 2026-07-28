@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1203-b",
+  "title": "Equal Rectangles",
+  "slug": "1203-b-equal-rectangles",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1203/B",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given 4n sticks, determine if they can be grouped into n rectangles with equal area, using each stick exactly once as a side without breaking.",
+  "tags": [
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "pairing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216953,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "pairing": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1632-b",
+  "title": "Roof Construction",
+  "slug": "1632-b-roof-construction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1632/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms"
+  ],
+  "statement": "Given an integer n, construct a permutation of [0, n-1] minimizing the maximum XOR of adjacent elements in the sequence.",
+  "tags": [
+    "bit-manipulation",
+    "constructive-algorithm",
+    "permutations"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216718,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

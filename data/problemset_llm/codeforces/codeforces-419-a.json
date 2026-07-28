@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-419-a",
+  "title": "Start Up",
+  "slug": "419-a-start-up",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/419/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [],
+  "statement": "Determine if a given uppercase English word reads the same as its mirror reflection, considering specific letter mappings.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "string-reversal",
+    "character-mapping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216749,
+    "pattern_confidence": {
+      "string-reversal": 0.9,
+      "character-mapping": 0.85
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-368-a",
+  "title": "Sereja and Coat Rack",
+  "slug": "368-a-sereja-and-coat-rack",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/368/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given n hooks each with a cost and m guests arriving sequentially, each guest chooses the cheapest available hook to hang clothes or causes a fixed fine if none are available. Compute the total profit or loss after all guests have arrived.",
+  "tags": [
+    "greedy",
+    "heap",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216745,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "heap": 0.9
+    }
+  }
+}

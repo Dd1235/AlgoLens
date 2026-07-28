@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1804-b",
+  "title": "Vaccination",
+  "slug": "1804-b-vaccination",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1804/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given patients arriving at specific times with a maximum waiting period, and vaccine packs that expire after opening, determine the minimum number of packs needed to vaccinate all patients under timing and usage constraints.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "intervals"
+  ],
+  "patterns": [
+    "greedy",
+    "interval-scheduling",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216727,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "interval-scheduling": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

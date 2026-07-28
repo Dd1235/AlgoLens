@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-13-a",
+  "title": "Numbers",
+  "slug": "13-a-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/13/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a number A, compute the average sum of its digits when represented in every base from 2 to A-1, and express the result as an irreducible fraction in base 10.",
+  "tags": [
+    "math",
+    "number-theory",
+    "implementation"
+  ],
+  "patterns": [
+    "base-conversion",
+    "fraction-reduction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216695,
+    "pattern_confidence": {
+      "base-conversion": 0.95,
+      "fraction-reduction": 0.9
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-798-a",
+  "title": "Mike and palindrome",
+  "slug": "798-a-mike-and-palindrome",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/798/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "strings"
+  ],
+  "statement": "Given a lowercase string, determine if changing exactly one character can make it a palindrome.",
+  "tags": [
+    "string",
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "two-pointers",
+    "palindrome",
+    "character-replacement"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216779,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "palindrome": 0.95,
+      "character-replacement": 0.85
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-12-b",
+  "title": "Correct Solution?",
+  "slug": "12-b-correct-solution",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/12/B",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a number, determine if a provided rearrangement of its digits is the smallest possible number without leading zeros.",
+  "tags": [
+    "implementation",
+    "sorting",
+    "string"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216801,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

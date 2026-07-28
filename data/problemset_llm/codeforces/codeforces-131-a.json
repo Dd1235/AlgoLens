@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-131-a",
+  "title": "cAPS lOCK",
+  "slug": "131-a-caps-lock",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/131/A",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a word, detect if it was typed with Caps Lock accidentally on by checking if all letters are uppercase or all except the first are uppercase, and if so, toggle the case of all letters; otherwise, leave it unchanged.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "case-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216696,
+    "pattern_confidence": {
+      "case-manipulation": 0.9
+    }
+  }
+}

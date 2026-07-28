@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-18-c",
+  "title": "Stripe",
+  "slug": "18-c-stripe",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/18/C",
+  "source_topic": "Codeforces / rating 1200-1299",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given a sequence of integers arranged in a one-dimensional stripe, count the number of ways to split it into two non-empty contiguous parts with equal sums.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "counting"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785217298,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.7,
+      "brute-force": 0.5
+    }
+  }
+}

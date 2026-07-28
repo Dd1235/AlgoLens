@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1312-b",
+  "title": "Bogosort",
+  "slug": "1312-b-bogosort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1312/B",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "sortings"
+  ],
+  "statement": "Given an array, reorder its elements so that for every pair of indices i<j, the condition j - a_j ≠ i - a_i holds. It is guaranteed that such a rearrangement exists.",
+  "tags": [
+    "array",
+    "constructive-algorithm",
+    "sorting"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216698,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1791-g1",
+  "title": "Teleporters (Easy Version)",
+  "slug": "1791-g1-teleporters-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1791/G1",
+  "source_topic": "Codeforces / rating 1100-1199",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Starting at position 0 on a number line with teleporters at positions 1 to n, each teleportation costs a specified amount and returns to 0. Moving left or right costs 1 coin per unit. Given a coin budget, determine the maximum number of teleporters that can be used.",
+  "tags": [
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216858,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

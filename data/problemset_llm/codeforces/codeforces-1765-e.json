@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1765-e",
+  "title": "Exchange",
+  "slug": "1765-e-exchange",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1765/E",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "math"
+  ],
+  "statement": "Given exchange rates between gold and silver coins and a target amount of silver coins, find the minimum number of quests (each granting one gold coin) needed to obtain at least the target silver coins through any sequence of exchanges.",
+  "tags": [
+    "math",
+    "brute-force"
+  ],
+  "patterns": [
+    "greedy",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216724,
+    "pattern_confidence": {
+      "greedy": 0.7,
+      "case-analysis": 0.6
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1144-c",
+  "title": "Two Shuffled Sequences",
+  "slug": "1144-c-two-shuffled-sequences",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1144/C",
+  "source_topic": "Codeforces / rating 1000-1099",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "sortings"
+  ],
+  "statement": "Given a shuffled sequence formed by merging one strictly increasing and one strictly decreasing sequence, reconstruct any such pair of sequences or determine that it is impossible.",
+  "tags": [
+    "array",
+    "constructive-algorithm",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785216675,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.85
+    }
+  }
+}
