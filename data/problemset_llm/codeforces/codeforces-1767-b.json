@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1767-b",
+  "title": "Block Towers",
+  "slug": "1767-b-block-towers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1767/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 800,
+  "contest_slot": "div2-b",
+  "rating": 800,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given towers with block counts, repeatedly move blocks from a taller tower to a shorter one to maximize the blocks in the first tower.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "data-structures"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229842,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85
+    }
+  }
+}

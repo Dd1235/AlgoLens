@@ -5,6 +5,7 @@
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/1805/D",
   "difficulty": 1800,
+  "contest_slot": "div2-d",
   "rating": 1800,
   "source_tags": [
     "dfs and similar",

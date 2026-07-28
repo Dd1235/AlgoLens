@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1758-b",
+  "title": "XOR = Average",
+  "slug": "1758-b-xor-average",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1758/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 900,
+  "contest_slot": "div2-b",
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Given an integer n, construct a sequence of n integers within a specified range such that the bitwise XOR of all elements equals the average of the elements.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "bitwise-xor",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229836,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "bitwise-xor": 0.9,
+      "number-theory": 0.7
+    }
+  }
+}

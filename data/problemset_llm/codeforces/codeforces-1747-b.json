@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1747-b",
+  "title": "BAN BAN",
+  "slug": "1747-b-ban-ban",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1747/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 900,
+  "contest_slot": "div2-b",
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Given a string formed by concatenating \"BAN\" n times, find the minimum number of swaps between characters to ensure \"BAN\" does not appear as a subsequence, and provide one such sequence of swaps.",
+  "tags": [
+    "string",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229832,
+    "pattern_confidence": {
+      "greedy": 0.7,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

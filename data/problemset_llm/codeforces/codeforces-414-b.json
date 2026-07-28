@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-414-b",
+  "title": "Mashmokh and ACM",
+  "slug": "414-b-mashmokh-and-acm",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/414/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1400,
+  "contest_slot": "div2-d",
+  "rating": 1400,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "number theory"
+  ],
+  "statement": "Count the number of length-k sequences of integers between 1 and n where each element divides the next one, modulo 10^9+7.",
+  "tags": [
+    "number-theory",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "divisor-sequence"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230048,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-arithmetic": 0.9,
+      "divisor-sequence": 0.85
+    }
+  }
+}

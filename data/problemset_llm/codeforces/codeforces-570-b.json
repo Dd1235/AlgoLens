@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-570-b",
+  "title": "Simple Game",
+  "slug": "570-b-simple-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/570/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1300,
+  "contest_slot": "div2-b",
+  "rating": 1300,
+  "source_tags": [
+    "constructive algorithms",
+    "games",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a range from 1 to n and a fixed integer chosen by one player, determine the integer choice for the other player that maximizes the probability of being closer to a uniformly random integer in the range.",
+  "tags": [
+    "math",
+    "probability",
+    "greedy"
+  ],
+  "patterns": [
+    "probability-calculation",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229864,
+    "pattern_confidence": {
+      "probability-calculation": 0.9,
+      "greedy": 0.85,
+      "simulation": 0.6
+    }
+  }
+}

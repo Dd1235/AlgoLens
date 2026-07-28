@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-295-b",
+  "title": "Greg and Graph",
+  "slug": "295-b-greg-and-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/295/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "dp",
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Given a complete weighted directed graph, vertices are removed one by one in a given order. Before each removal, compute the sum of shortest path distances between all pairs of remaining vertices.",
+  "tags": [
+    "graph",
+    "dynamic-programming",
+    "shortest-path"
+  ],
+  "patterns": [
+    "floyd-warshall",
+    "dp-on-subsets",
+    "reverse-deletion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230032,
+    "pattern_confidence": {
+      "floyd-warshall": 0.95,
+      "dp-on-subsets": 0.85,
+      "reverse-deletion": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1107-c",
+  "title": "Brutality",
+  "slug": "1107-c-brutality",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1107/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given a sequence of hits each associated with a button and damage, select a subsequence to maximize total damage without pressing any button more than k times consecutively.",
+  "tags": [
+    "greedy",
+    "string",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229901,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "sliding-window": 0.8
+    }
+  }
+}

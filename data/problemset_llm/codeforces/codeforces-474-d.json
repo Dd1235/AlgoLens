@@ -30,5 +30,6 @@
       "dynamic-programming": 0.95,
       "binary-search-answer": 0.7
     }
-  }
+  },
+  "contest_slot": "div2-d"
 }

@@ -21,7 +21,8 @@
   "patterns": [
     "segment-tree",
     "range-update",
-    "range-query"
+    "range-query",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "segment-tree": 0.9,
       "range-update": 0.85,
-      "range-query": 0.85
+      "range-query": 0.85,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Codeforces / rating 1300-1500"

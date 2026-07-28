@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-743-c",
+  "title": "Vladik and fractions",
+  "slug": "743-c-vladik-and-fractions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/743/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1500,
+  "contest_slot": "div2-c",
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a positive integer n, find three distinct positive integers x, y, z not exceeding 10^9 such that 2/n = 1/x + 1/y + 1/z, or determine that no such triple exists.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "brute-force",
+    "diophantine-equation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229971,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "brute-force": 0.7,
+      "diophantine-equation": 0.85
+    }
+  }
+}

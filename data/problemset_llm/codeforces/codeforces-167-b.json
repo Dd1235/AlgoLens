@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-167-b",
+  "title": "Wizards and Huge Prize",
+  "slug": "167-b-wizards-and-huge-prize",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/167/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1800,
+  "contest_slot": "div2-d",
+  "rating": 1800,
+  "source_tags": [
+    "dp",
+    "math",
+    "probabilities"
+  ],
+  "statement": "Given n tours each with a probability of winning and a capacity of prizes that can be carried, compute the probability of winning at least l tours while fitting all won huge prizes into bags with limited capacity.",
+  "tags": [
+    "dynamic-programming",
+    "probability",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "probability-dp",
+    "knapsack"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230009,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "probability-dp": 0.9,
+      "knapsack": 0.85
+    }
+  }
+}

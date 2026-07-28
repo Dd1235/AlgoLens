@@ -5,6 +5,7 @@
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/269/B",
   "difficulty": 1700,
+  "contest_slot": "div2-d",
   "rating": 1700,
   "source_tags": [
     "dp"

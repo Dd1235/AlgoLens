@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-441-c",
+  "title": "Valera and Tubes",
+  "slug": "441-c-valera-and-tubes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/441/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1500,
+  "contest_slot": "div2-c",
+  "rating": 1500,
+  "source_tags": [
+    "constructive algorithms",
+    "dfs and similar",
+    "implementation"
+  ],
+  "statement": "Given an n by m grid, partition all cells into exactly k disjoint simple paths (tubes) where each path consists of adjacent cells and covers the entire grid without overlap.",
+  "tags": [
+    "graph",
+    "grid",
+    "dfs",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "dfs",
+    "constructive-algorithm",
+    "path-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229959,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "constructive-algorithm": 0.85,
+      "path-decomposition": 0.7
+    }
+  }
+}

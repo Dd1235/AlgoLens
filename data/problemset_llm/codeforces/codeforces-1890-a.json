@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1890-a",
+  "title": "Doremy's Paint 3",
+  "slug": "1890-a-doremy-s-paint-3",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1890/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Given an array, determine if its elements can be permuted so that the sums of every pair of adjacent elements are equal.",
+  "tags": [
+    "array",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229799,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "permutation": 0.9
+    }
+  }
+}

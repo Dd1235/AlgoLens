@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1771-b",
+  "title": "Hossam and Friends",
+  "slug": "1771-b-hossam-and-friends",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1771/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1400,
+  "contest_slot": "div2-b",
+  "rating": 1400,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "dp",
+    "two pointers"
+  ],
+  "statement": "Given a queue of friends numbered 1 to n and a list of pairs who don't know each other, count the number of contiguous subsegments where every pair of friends knows each other.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "graph"
+  ],
+  "patterns": [
+    "two-pointers",
+    "complement-graph",
+    "interval-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229844,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "complement-graph": 0.85,
+      "interval-counting": 0.8
+    }
+  }
+}

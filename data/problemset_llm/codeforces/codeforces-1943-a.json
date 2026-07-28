@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1943-a",
+  "title": "MEX Game 1",
+  "slug": "1943-a-mex-game-1",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1943/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "games",
+    "greedy"
+  ],
+  "statement": "Two players alternately remove elements from an array; Alice collects elements to maximize the MEX of her collected array, while Bob removes elements to minimize it. Determine the final MEX score assuming optimal play.",
+  "tags": [
+    "game-theory",
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "mex",
+    "greedy",
+    "game-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229950,
+    "pattern_confidence": {
+      "mex": 0.98,
+      "greedy": 0.95,
+      "game-theory": 0.9
+    }
+  }
+}

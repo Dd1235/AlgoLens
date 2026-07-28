@@ -6,6 +6,7 @@
   "source_url": "https://codeforces.com/problemset/problem/552/A",
   "source_topic": "Codeforces / rating 1000-1099",
   "difficulty": 1000,
+  "contest_slot": "div2-a",
   "rating": 1000,
   "source_tags": [
     "implementation",

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1893-a",
+  "title": "Anonymous Informant",
+  "slug": "1893-a-anonymous-informant",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1893/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "graphs",
+    "implementation"
+  ],
+  "statement": "Given an array obtained by performing a sequence of cyclic left shifts determined by fixed points of an original array, determine if such an original array and sequence of operations could exist.",
+  "tags": [
+    "array",
+    "brute-force",
+    "dfs",
+    "graphs"
+  ],
+  "patterns": [
+    "brute-force",
+    "dfs",
+    "cycle-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229940,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "dfs": 0.7,
+      "cycle-detection": 0.6
+    }
+  }
+}

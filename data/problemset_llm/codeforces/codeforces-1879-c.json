@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1879-c",
+  "title": "Make it Alternating",
+  "slug": "1879-c-make-it-alternating",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1879/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a binary string, find the minimum number of character deletions needed to make it alternating and count the number of distinct shortest deletion sequences achieving this.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229934,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.8,
+      "counting": 0.85
+    }
+  }
+}

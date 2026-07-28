@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-182-d",
+  "title": "Common Divisors",
+  "slug": "182-d-common-divisors",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/182/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1400,
+  "contest_slot": "div2-d",
+  "rating": 1400,
+  "source_tags": [
+    "brute force",
+    "hashing",
+    "implementation",
+    "math",
+    "strings"
+  ],
+  "statement": "Given two strings, find the number of strings that are divisors of both, where a string divisor is one that can be repeated some positive number of times to form the original string.",
+  "tags": [
+    "string",
+    "math",
+    "brute-force"
+  ],
+  "patterns": [
+    "string-periodicity",
+    "gcd-string",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230013,
+    "pattern_confidence": {
+      "string-periodicity": 0.9,
+      "gcd-string": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

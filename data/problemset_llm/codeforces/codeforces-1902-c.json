@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1902-c",
+  "title": "Insert and Equalize",
+  "slug": "1902-c-insert-and-equalize",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1902/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a distinct integer array, insert one new distinct integer and choose a positive integer x so that by repeatedly adding x to single elements, all elements become equal with the minimum number of operations.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229946,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1843-d",
+  "title": "Apple Tree",
+  "slug": "1843-d-apple-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1843/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1200,
+  "contest_slot": "div2-d",
+  "rating": 1200,
+  "source_tags": [
+    "combinatorics",
+    "dfs and similar",
+    "dp",
+    "math",
+    "trees"
+  ],
+  "statement": "Given a rooted tree where apples start at two given vertices and move down to leaves by choosing any child at each step, determine for queries the number of pairs of leaf vertices where apples starting from the given vertices fall.",
+  "tags": [
+    "tree",
+    "dfs",
+    "combinatorics",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dfs",
+    "subtree-dp",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230020,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "subtree-dp": 0.9,
+      "combinatorics": 0.85
+    }
+  }
+}

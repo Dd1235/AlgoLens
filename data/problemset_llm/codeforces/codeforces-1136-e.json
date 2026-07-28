@@ -20,7 +20,8 @@
     "segment-tree",
     "lazy-propagation",
     "range-update",
-    "range-query"
+    "range-query",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
       "segment-tree": 0.95,
       "lazy-propagation": 0.9,
       "range-update": 0.9,
-      "range-query": 0.9
+      "range-query": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

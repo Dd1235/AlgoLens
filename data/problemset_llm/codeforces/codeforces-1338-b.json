@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1338-b",
+  "title": "Edge Weight Assignment",
+  "slug": "1338-b-edge-weight-assignment",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1338/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1800,
+  "contest_slot": "div2-d",
+  "rating": 1800,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "dfs and similar",
+    "greedy",
+    "math",
+    "trees"
+  ],
+  "statement": "Given an unweighted tree, assign positive weights to edges so that the XOR of edge weights on the path between any two distinct leaves is zero. Determine the minimum and maximum number of distinct weights possible in such an assignment.",
+  "tags": [
+    "tree",
+    "bit-manipulation",
+    "constructive-algorithm",
+    "dfs",
+    "math"
+  ],
+  "patterns": [
+    "dfs",
+    "bit-manipulation",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229994,
+    "pattern_confidence": {
+      "dfs": 0.9,
+      "bit-manipulation": 0.85,
+      "constructive-algorithm": 0.95
+    }
+  }
+}

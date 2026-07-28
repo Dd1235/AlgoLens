@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1797-b",
+  "title": "Li Hua and Pattern",
+  "slug": "1797-b-li-hua-and-pattern",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1797/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1100,
+  "contest_slot": "div2-b",
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given an n×n grid of cells colored red or blue, determine if it is possible to perform exactly k color-flip operations (each flipping a single cell's color) to make the pattern symmetric under a 180° rotation.",
+  "tags": [
+    "constructive-algorithm",
+    "greedy",
+    "matrix"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229857,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

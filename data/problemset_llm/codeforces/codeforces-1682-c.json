@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1682-c",
+  "title": "LIS or Reverse LIS?",
+  "slug": "1682-c-lis-or-reverse-lis",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1682/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, rearrange it to maximize the minimum of the longest increasing subsequence of the array and its reverse.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "longest-increasing-subsequence",
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229912,
+    "pattern_confidence": {
+      "longest-increasing-subsequence": 0.95,
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

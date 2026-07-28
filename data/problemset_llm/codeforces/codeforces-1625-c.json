@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1625-c",
+  "title": "Road Optimization",
+  "slug": "1625-c-road-optimization",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1625/C",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Given a road with speed limit signs at various points, remove up to k signs (except the first) to minimize total travel time from start to end.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "interval-merging",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230008,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "interval-merging": 0.8,
+      "prefix-sum": 0.7
+    }
+  }
+}

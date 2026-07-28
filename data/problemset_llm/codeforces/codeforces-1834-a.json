@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1834-a",
+  "title": "Unit Array",
+  "slug": "1834-a-unit-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1834/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array of elements equal to -1 or 1, find the minimum number of sign flips needed to make the sum nonnegative and the product equal to 1.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229790,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

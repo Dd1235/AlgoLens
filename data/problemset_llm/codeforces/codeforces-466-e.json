@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-466-e",
+  "title": "Information Graph",
+  "slug": "466-e-information-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/466/E",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 2100,
+  "contest_slot": "div2-d",
+  "rating": 2100,
+  "source_tags": [
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Maintain a dynamic hierarchy of employees with boss-subordinate relationships and answer queries about whether a given employee signs certain documents passed up the chain without cycles.",
+  "tags": [
+    "graph",
+    "tree",
+    "union-find",
+    "dfs"
+  ],
+  "patterns": [
+    "union-find",
+    "dfs",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230051,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "dfs": 0.85,
+      "offline-queries": 0.7
+    }
+  }
+}

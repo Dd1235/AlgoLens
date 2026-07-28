@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1946-a",
+  "title": "Median of an Array",
+  "slug": "1946-a-median-of-an-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1946/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an integer array, find the minimum number of increment operations on elements needed to increase the median value of the array.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229810,
+    "pattern_confidence": {
+      "binary-search": 0.85,
+      "greedy": 0.9
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1891-c",
+  "title": "Smilo and Monsters",
+  "slug": "1891-c-smilo-and-monsters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1891/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1500,
+  "contest_slot": "div2-c",
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given multiple hordes of monsters, each with a certain count, determine the minimum number of attacks needed to eliminate all monsters using two attack types: single kills that increase a combo counter, and ultimate attacks that kill monsters equal to the current combo count and reset it.",
+  "tags": [
+    "greedy",
+    "binary-search",
+    "two-pointers",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229938,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.7,
+      "two-pointers": 0.6,
+      "sorting": 0.8
+    }
+  }
+}

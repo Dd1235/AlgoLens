@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1852-a",
+  "title": "Ntarsis' Set",
+  "slug": "1852-a-ntarsis-set",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1852/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1800,
+  "contest_slot": "div2-c",
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an initially huge sorted set of integers, repeatedly remove specified order statistics each day and determine the smallest remaining element after a given number of days.",
+  "tags": [
+    "math",
+    "number-theory",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229929,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "order-statistics": 0.85
+    }
+  }
+}

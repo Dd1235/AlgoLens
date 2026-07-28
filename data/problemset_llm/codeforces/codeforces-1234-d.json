@@ -20,7 +20,8 @@
     "segment-tree",
     "fenwick-tree",
     "point-update",
-    "range-query"
+    "range-query",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
       "segment-tree": 0.9,
       "fenwick-tree": 0.85,
       "point-update": 0.95,
-      "range-query": 0.9
+      "range-query": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

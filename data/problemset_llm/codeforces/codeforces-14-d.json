@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-14-d",
+  "title": "Two Paths",
+  "slug": "14-d-two-paths",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/14/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1900,
+  "contest_slot": "div2-d",
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "graphs",
+    "shortest paths",
+    "trees",
+    "two pointers"
+  ],
+  "statement": "Given a tree with n cities connected by n-1 roads, find two vertex-disjoint simple paths that maximize the product of their lengths.",
+  "tags": [
+    "tree",
+    "graph",
+    "dynamic-programming",
+    "dfs"
+  ],
+  "patterns": [
+    "tree-dp",
+    "dfs",
+    "disjoint-paths",
+    "max-product"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229997,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "dfs": 0.9,
+      "disjoint-paths": 0.85,
+      "max-product": 0.8
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1840-a",
+  "title": "Cipher Shifer",
+  "slug": "1840-a-cipher-shifer",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1840/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "implementation",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Given an encrypted string formed by inserting arbitrary letters between repeated characters, reconstruct the original string by extracting the sequence of repeated characters.",
+  "tags": [
+    "string",
+    "implementation",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229793,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

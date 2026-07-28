@@ -5,6 +5,7 @@
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/1814/C",
   "difficulty": 1500,
+  "contest_slot": "div2-c",
   "rating": 1500,
   "source_tags": [
     "constructive algorithms",

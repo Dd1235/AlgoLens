@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1407-c",
+  "title": "Chocolate Bunny",
+  "slug": "1407-c-chocolate-bunny",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1407/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1600,
+  "contest_slot": "div2-c",
+  "rating": 1600,
+  "source_tags": [
+    "constructive algorithms",
+    "interactive",
+    "math",
+    "two pointers"
+  ],
+  "statement": "Given an unknown permutation of length n, determine the permutation by querying the remainder of division between pairs of elements, with at most 2n queries allowed.",
+  "tags": [
+    "interactive",
+    "constructive-algorithm",
+    "math",
+    "two-pointers"
+  ],
+  "patterns": [
+    "interactive",
+    "constructive-algorithm",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229909,
+    "pattern_confidence": {
+      "interactive": 0.98,
+      "constructive-algorithm": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

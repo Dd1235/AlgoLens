@@ -21,7 +21,8 @@
     "mo-algorithm",
     "counting",
     "divide-and-conquer",
-    "merge-sort-tree"
+    "merge-sort-tree",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
       "mo-algorithm": 0.9,
       "counting": 0.85,
       "divide-and-conquer": 0.7,
-      "merge-sort-tree": 0.9
+      "merge-sort-tree": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

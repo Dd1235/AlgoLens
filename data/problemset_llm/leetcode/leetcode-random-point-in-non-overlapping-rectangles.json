@@ -26,7 +26,8 @@
   "patterns": [
     "prefix-sum",
     "binary-search",
-    "random-sampling"
+    "random-sampling",
+    "rectangle-union-area"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
     "pattern_confidence": {
       "prefix-sum": 0.95,
       "binary-search": 0.9,
-      "random-sampling": 0.9
+      "random-sampling": 0.9,
+      "rectangle-union-area": 0.9
     }
   }
 }

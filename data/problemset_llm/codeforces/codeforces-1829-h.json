@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1829-h",
+  "title": "Don't Blame Me",
+  "slug": "1829-h-don-t-blame-me",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1829/H",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "bitmasks",
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, count the number of non-empty subsequences whose bitwise AND has exactly k set bits, modulo 10^9+7.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "counting",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230018,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-149-c",
+  "title": "Division into Teams",
+  "slug": "149-c-division-into-teams",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/149/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1500,
+  "contest_slot": "div2-c",
+  "rating": 1500,
+  "source_tags": [
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Divide n boys into two teams so that team sizes differ by at most one and the difference in total skill sums is at most the maximum individual skill, ensuring a fair division.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "math"
+  ],
+  "patterns": [
+    "sorting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229910,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

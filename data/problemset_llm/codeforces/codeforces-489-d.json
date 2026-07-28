@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-489-d",
+  "title": "Unbearable Controversy of Being",
+  "slug": "489-d-unbearable-controversy-of-being",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/489/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "combinatorics",
+    "dfs and similar",
+    "graphs"
+  ],
+  "statement": "Given a directed graph representing city intersections and roads, count the number of distinct four-node subgraphs forming a rhombus shape where two distinct paths connect the same start and end nodes through two different intermediate nodes.",
+  "tags": [
+    "graph",
+    "counting",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dfs",
+    "brute-force",
+    "adjacency-list"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230054,
+    "pattern_confidence": {
+      "dfs": 0.7,
+      "brute-force": 0.9,
+      "adjacency-list": 0.6
+    }
+  }
+}

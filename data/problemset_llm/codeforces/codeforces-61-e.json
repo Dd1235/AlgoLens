@@ -21,7 +21,8 @@
     "coordinate-compression",
     "counting-inversions",
     "contribution-technique",
-    "merge-sort-tree"
+    "merge-sort-tree",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "coordinate-compression": 0.85,
       "counting-inversions": 0.9,
       "contribution-technique": 0.8,
-      "merge-sort-tree": 0.9
+      "merge-sort-tree": 0.9,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

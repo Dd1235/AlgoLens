@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-810-b",
+  "title": "Summer sell-off",
+  "slug": "810-b-summer-sell-off",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/810/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1300,
+  "contest_slot": "div2-b",
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given daily product supply and customer counts over n days, select f days to double the supply to maximize total sales, considering leftover products perish daily.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229866,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85,
+      "prefix-sum": 0.6
+    }
+  }
+}

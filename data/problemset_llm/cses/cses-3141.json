@@ -15,7 +15,8 @@
   "patterns": [
     "bitmask-dp",
     "fast-zeta-transform",
-    "inclusion-exclusion"
+    "inclusion-exclusion",
+    "sos-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "bitmask-dp": 0.95,
       "fast-zeta-transform": 0.9,
-      "inclusion-exclusion": 0.85
+      "inclusion-exclusion": 0.85,
+      "sos-dp": 0.9
     }
   }
 }

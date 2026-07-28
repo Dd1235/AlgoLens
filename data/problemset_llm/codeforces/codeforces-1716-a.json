@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1716-a",
+  "title": "2-3 Moves",
+  "slug": "1716-a-2-3-moves",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1716/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Starting from 0 on a number line, find the minimum steps to reach a target coordinate n using moves of ±2 or ±3.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229781,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1180-a",
+  "title": "Alex and a Rhombus",
+  "slug": "1180-a-alex-and-a-rhombus",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1180/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "dp",
+    "implementation",
+    "math"
+  ],
+  "statement": "Calculate the number of cells in an n-th order rhombus defined on a grid, where each order is formed by adding all cells sharing a side with the previous order's rhombus.",
+  "tags": [
+    "math",
+    "geometry",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "formula-derivation",
+    "recurrence-relation",
+    "implementation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229755,
+    "pattern_confidence": {
+      "formula-derivation": 0.9,
+      "recurrence-relation": 0.85,
+      "implementation": 0.8
+    }
+  }
+}

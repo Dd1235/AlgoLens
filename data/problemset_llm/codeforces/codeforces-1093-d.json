@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1093-d",
+  "title": "Beautiful Graph",
+  "slug": "1093-d-beautiful-graph",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1093/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "dfs and similar",
+    "graphs"
+  ],
+  "statement": "Assign numbers 1, 2, or 3 to each vertex of an undirected graph so that every edge connects vertices whose assigned numbers sum to an odd value. Compute the count of such assignments modulo 998244353.",
+  "tags": [
+    "graph",
+    "dfs",
+    "bipartite-graph",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dfs",
+    "bipartite-check",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229985,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "bipartite-check": 0.98,
+      "modular-exponentiation": 0.9
+    }
+  }
+}

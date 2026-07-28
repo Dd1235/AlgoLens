@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-777-c",
+  "title": "Alyona and Spreadsheet",
+  "slug": "777-c-alyona-and-spreadsheet",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/777/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1600,
+  "contest_slot": "div2-c",
+  "rating": 1600,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "dp",
+    "greedy",
+    "implementation",
+    "two pointers"
+  ],
+  "statement": "Given a table of integers, answer queries asking whether there exists at least one column that is non-decreasing in a specified row interval.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "two-pointers",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-max",
+    "binary-search",
+    "interval-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229980,
+    "pattern_confidence": {
+      "prefix-max": 0.9,
+      "binary-search": 0.85,
+      "interval-query": 0.8
+    }
+  }
+}

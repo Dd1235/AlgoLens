@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1766-b",
+  "title": "Notepad#",
+  "slug": "1766-b-notepad",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1766/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1000,
+  "contest_slot": "div2-b",
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a string, determine if it can be constructed in fewer operations than its length by appending letters or copying and pasting substrings already typed.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "substring-copying"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229840,
+    "pattern_confidence": {
+      "greedy": 0.8,
+      "substring-copying": 0.7
+    }
+  }
+}

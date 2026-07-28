@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1285-a",
+  "title": "Mezo Playing Zoma",
+  "slug": "1285-a-mezo-playing-zoma",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1285/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given a sequence of left and right move commands that may be ignored, determine how many distinct final positions can be reached starting from zero.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229760,
+    "pattern_confidence": {
+      "combinatorics": 0.9
+    }
+  }
+}

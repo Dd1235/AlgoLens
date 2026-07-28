@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-715-a",
+  "title": "Plus and Square Root",
+  "slug": "715-a-plus-and-square-root",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/715/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1600,
+  "contest_slot": "div2-c",
+  "rating": 1600,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Starting from number 2 at level 1, repeatedly press '+' to add the current level to the number and then press '√' to take the square root and advance levels, ensuring after each move the number is divisible by the current level. Determine a valid sequence of '+' presses before each '√' to reach level n+1.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "divisibility",
+    "perfect-square-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229963,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "divisibility": 0.9,
+      "perfect-square-check": 0.85
+    }
+  }
+}

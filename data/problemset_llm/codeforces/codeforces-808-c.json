@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-808-c",
+  "title": "Tea Party",
+  "slug": "808-c-tea-party",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/808/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given n cups with specified volumes and a total amount of tea, distribute the tea in integer milliliters so that each cup has at least half its volume filled, all tea is used, and no friend with a larger cup volume receives less tea than a friend with a smaller cup volume. Output the distribution or -1 if impossible.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229983,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

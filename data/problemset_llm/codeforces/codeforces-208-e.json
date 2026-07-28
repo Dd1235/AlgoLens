@@ -5,6 +5,7 @@
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/208/E",
   "difficulty": 2100,
+  "contest_slot": "div2-d",
   "rating": 2100,
   "source_tags": [
     "binary search",
@@ -25,7 +26,8 @@
     "binary-lifting",
     "dfs",
     "ancestor-query",
-    "union-find"
+    "union-find",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +37,8 @@
       "binary-lifting": 0.95,
       "dfs": 0.9,
       "ancestor-query": 0.85,
-      "union-find": 0.9
+      "union-find": 0.9,
+      "tin-tout-ancestor-check": 0.9
     }
   },
   "source_topic": "Formwise / Trees"

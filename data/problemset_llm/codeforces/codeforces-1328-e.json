@@ -20,7 +20,8 @@
   "patterns": [
     "dfs",
     "distance-check",
-    "path-existence"
+    "path-existence",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "dfs": 0.9,
       "distance-check": 0.85,
-      "path-existence": 0.8
+      "path-existence": 0.8,
+      "tin-tout-ancestor-check": 0.9
     }
   },
   "source_topic": "Formwise / Trees"

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-842-b",
+  "title": "Gleb And Pizza",
+  "slug": "842-b-gleb-and-pizza",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/842/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1100,
+  "contest_slot": "div2-b",
+  "rating": 1100,
+  "source_tags": [
+    "geometry"
+  ],
+  "statement": "Given a circular pizza with an inner main part and an outer crust ring, and several circular sausage pieces placed on it, determine how many sausage pieces lie entirely within the crust area.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "geometry",
+    "circle-containment"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229875,
+    "pattern_confidence": {
+      "geometry": 0.95,
+      "circle-containment": 0.9
+    }
+  }
+}

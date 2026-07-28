@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-145-b",
+  "title": "Lucky Number 2",
+  "slug": "145-b-lucky-number-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/145/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1800,
+  "contest_slot": "div2-d",
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Find the smallest lucky number composed of digits 4 and 7 such that the counts of substrings \"4\", \"7\", \"47\", and \"74\" match given values.",
+  "tags": [
+    "string",
+    "constructive-algorithm",
+    "combinatorics"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "substring-counting",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229999,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "substring-counting": 0.85,
+      "backtracking": 0.6
+    }
+  }
+}

@@ -16,7 +16,8 @@
     "segment-tree",
     "dynamic-line-container",
     "offline-queries",
-    "line-sweep"
+    "line-sweep",
+    "convex-hull-trick"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
       "segment-tree": 0.95,
       "dynamic-line-container": 0.9,
       "offline-queries": 0.7,
-      "line-sweep": 0.9
+      "line-sweep": 0.9,
+      "convex-hull-trick": 0.9
     }
   }
 }

@@ -13,7 +13,8 @@
   ],
   "patterns": [
     "sorting",
-    "two-pointers"
+    "two-pointers",
+    "tin-tout-ancestor-check"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -21,7 +22,8 @@
     "generated_at_unix": 1777951351,
     "pattern_confidence": {
       "sorting": 0.98,
-      "two-pointers": 0.85
+      "two-pointers": 0.85,
+      "tin-tout-ancestor-check": 0.9
     }
   }
 }

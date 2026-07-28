@@ -23,7 +23,8 @@
   "patterns": [
     "binary-search",
     "segment-tree",
-    "greedy"
+    "greedy",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
     "pattern_confidence": {
       "binary-search": 0.9,
       "segment-tree": 0.85,
-      "greedy": 0.8
+      "greedy": 0.8,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

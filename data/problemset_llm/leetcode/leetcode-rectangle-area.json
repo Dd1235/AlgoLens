@@ -18,7 +18,8 @@
   ],
   "patterns": [
     "geometry",
-    "rectangle-overlap"
+    "rectangle-overlap",
+    "rectangle-union-area"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
     "generated_at_unix": 1784910218,
     "pattern_confidence": {
       "geometry": 0.98,
-      "rectangle-overlap": 0.9
+      "rectangle-overlap": 0.9,
+      "rectangle-union-area": 1
     }
   }
 }

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-231-c",
+  "title": "To Add or Not to Add",
+  "slug": "231-c-to-add-or-not-to-add",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/231/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1600,
+  "contest_slot": "div2-c",
+  "rating": 1600,
+  "source_tags": [
+    "binary search",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given an array and a limit k on increment operations, find the maximum frequency of any number achievable by incrementing elements up to k times, and among those, choose the smallest such number.",
+  "tags": [
+    "array",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "sorting",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229954,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "sorting": 0.9,
+      "binary-search": 0.85
+    }
+  }
+}

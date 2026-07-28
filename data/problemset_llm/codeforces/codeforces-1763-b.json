@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1763-b",
+  "title": "Incinerate",
+  "slug": "1763-b-incinerate",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1763/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1200,
+  "contest_slot": "div2-b",
+  "rating": 1200,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "data structures",
+    "implementation",
+    "math",
+    "sortings"
+  ],
+  "statement": "Genos repeatedly attacks all monsters simultaneously, dealing damage reduced by the minimum power among alive monsters after each attack, and the goal is to determine if all monsters can be killed.",
+  "tags": [
+    "array",
+    "binary-search",
+    "math",
+    "implementation",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "simulation",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229839,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "simulation": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

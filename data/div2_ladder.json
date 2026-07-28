@@ -1,0 +1,1777 @@
+{
+ "source": "curated div2 practice sets (40 sets of 5-6, grouped by contest slot)",
+ "note": "Slot is the problem's position in a Div 2 round, which is how competitive programmers actually talk about difficulty (\"I can solve Div2 C\"). It is not the same as the Codeforces index: a Div1+Div2 combined round stores its Div2 C as index A of the Div1 contest, which is why 15 of these resolved by slot and 5 more by picking the rating that fits the slot.",
+ "slots": {
+  "div2-a": "first problem, warm-up",
+  "div2-b": "second, one idea",
+  "div2-c": "third, where rounds start to bite",
+  "div2-d": "fourth, real difficulty"
+ },
+ "count": 196,
+ "problems": [
+  {
+   "id": "codeforces-1877-a",
+   "name": "Goals of Victory",
+   "slot": "div2-a",
+   "contestId": 1877,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-71-a",
+   "name": "Way Too Long Words",
+   "slot": "div2-a",
+   "contestId": 71,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1903-a",
+   "name": "Halloumi Boxes",
+   "slot": "div2-a",
+   "contestId": 1903,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-263-a",
+   "name": "Beautiful Matrix",
+   "slot": "div2-a",
+   "contestId": 263,
+   "index": "A",
+   "rating": 800,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1890-a",
+   "name": "Doremy's Paint 3",
+   "slot": "div2-a",
+   "contestId": 1890,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1853-a",
+   "name": "Desorting",
+   "slot": "div2-a",
+   "contestId": 1853,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1904-a",
+   "name": "Forked!",
+   "slot": "div2-a",
+   "contestId": 1904,
+   "index": "A",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1761-a",
+   "name": "Two Permutations",
+   "slot": "div2-a",
+   "contestId": 1761,
+   "index": "A",
+   "rating": 800,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1777-a",
+   "name": "Everybody Likes Good Arrays!",
+   "slot": "div2-a",
+   "contestId": 1777,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1380-a",
+   "name": "Three Indices",
+   "slot": "div2-a",
+   "contestId": 1380,
+   "index": "A",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1834-a",
+   "name": "Unit Array",
+   "slot": "div2-a",
+   "contestId": 1834,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1783-a",
+   "name": "Make it Beautiful",
+   "slot": "div2-a",
+   "contestId": 1783,
+   "index": "A",
+   "rating": 800,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1792-a",
+   "name": "GamingForces",
+   "slot": "div2-a",
+   "contestId": 1792,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1935-a",
+   "name": "Entertainment in MAC",
+   "slot": "div2-a",
+   "contestId": 1935,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1929-a",
+   "name": "Sasha and the Beautiful Array",
+   "slot": "div2-a",
+   "contestId": 1929,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1925-a",
+   "name": "We Got Everything Covered!",
+   "slot": "div2-a",
+   "contestId": 1925,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1879-a",
+   "name": "Rigged!",
+   "slot": "div2-a",
+   "contestId": 1879,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1837-a",
+   "name": "Grasshopper on a Line",
+   "slot": "div2-a",
+   "contestId": 1837,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1972-a",
+   "name": "Contest Proposal",
+   "slot": "div2-a",
+   "contestId": 1972,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1946-a",
+   "name": "Median of an Array",
+   "slot": "div2-a",
+   "contestId": 1946,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1840-a",
+   "name": "Cipher Shifer",
+   "slot": "div2-a",
+   "contestId": 1840,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1794-a",
+   "name": "Prefix and Suffix Array",
+   "slot": "div2-a",
+   "contestId": 1794,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1635-a",
+   "name": "Min Or Sum",
+   "slot": "div2-a",
+   "contestId": 1635,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1574-a",
+   "name": "Regular Bracket Sequences",
+   "slot": "div2-a",
+   "contestId": 1574,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1542-a",
+   "name": "Odd Set",
+   "slot": "div2-a",
+   "contestId": 1542,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1702-a",
+   "name": "Round Down the Price",
+   "slot": "div2-a",
+   "contestId": 1702,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1285-a",
+   "name": "Mezo Playing Zoma",
+   "slot": "div2-a",
+   "contestId": 1285,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1291-a",
+   "name": "Even But Not Even",
+   "slot": "div2-a",
+   "contestId": 1291,
+   "index": "A",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1236-a",
+   "name": "Stones",
+   "slot": "div2-a",
+   "contestId": 1236,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1199-a",
+   "name": "City Day",
+   "slot": "div2-a",
+   "contestId": 1199,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1180-a",
+   "name": "Alex and a Rhombus",
+   "slot": "div2-a",
+   "contestId": 1180,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-554-a",
+   "name": "Kyoya and Photobooks",
+   "slot": "div2-a",
+   "contestId": 554,
+   "index": "A",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-552-a",
+   "name": "Vanya and Table",
+   "slot": "div2-a",
+   "contestId": 552,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-621-a",
+   "name": "Wet Shark and Odd and Even",
+   "slot": "div2-a",
+   "contestId": 621,
+   "index": "A",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1716-a",
+   "name": "2-3 Moves",
+   "slot": "div2-a",
+   "contestId": 1716,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1059-a",
+   "name": "Cashier",
+   "slot": "div2-a",
+   "contestId": 1059,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-535-a",
+   "name": "Tavas and Nafas",
+   "slot": "div2-a",
+   "contestId": 535,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-527-a",
+   "name": "Playing with Paper",
+   "slot": "div2-a",
+   "contestId": 527,
+   "index": "A",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-519-a",
+   "name": "A and B and Chess",
+   "slot": "div2-a",
+   "contestId": 519,
+   "index": "A",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-165-a",
+   "name": "Supercentral Point",
+   "slot": "div2-a",
+   "contestId": 165,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-143-a",
+   "name": "Help Vasilisa the Wise 2",
+   "slot": "div2-a",
+   "contestId": 143,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-139-a",
+   "name": "Petr and Book",
+   "slot": "div2-a",
+   "contestId": 139,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1167-a",
+   "name": "Telephone Number",
+   "slot": "div2-a",
+   "contestId": 1167,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-620-a",
+   "name": "Professor GukiZ's Robot",
+   "slot": "div2-a",
+   "contestId": 620,
+   "index": "A",
+   "rating": 800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1334-a",
+   "name": "Level Statistics",
+   "slot": "div2-a",
+   "contestId": 1334,
+   "index": "A",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1354-a",
+   "name": "Alarm Clock",
+   "slot": "div2-a",
+   "contestId": 1354,
+   "index": "A",
+   "rating": 900,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1373-a",
+   "name": "Donut Shops",
+   "slot": "div2-a",
+   "contestId": 1373,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1418-a",
+   "name": "Buying Torches",
+   "slot": "div2-a",
+   "contestId": 1418,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1732-b",
+   "name": "Ugu",
+   "slot": "div2-b",
+   "contestId": 1732,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1747-b",
+   "name": "BAN BAN",
+   "slot": "div2-b",
+   "contestId": 1747,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1748-b",
+   "name": "Diverse Substrings",
+   "slot": "div2-b",
+   "contestId": 1748,
+   "index": "B",
+   "rating": 1400,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1758-b",
+   "name": "XOR = Average",
+   "slot": "div2-b",
+   "contestId": 1758,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1771-b",
+   "name": "Hossam and Friends",
+   "slot": "div2-b",
+   "contestId": 1771,
+   "index": "B",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1766-b",
+   "name": "Notepad#",
+   "slot": "div2-b",
+   "contestId": 1766,
+   "index": "B",
+   "rating": 1000,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1762-b",
+   "name": "Make Array Good",
+   "slot": "div2-b",
+   "contestId": 1762,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1767-b",
+   "name": "Block Towers",
+   "slot": "div2-b",
+   "contestId": 1767,
+   "index": "B",
+   "rating": 800,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1763-b",
+   "name": "Incinerate",
+   "slot": "div2-b",
+   "contestId": 1763,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1731-b",
+   "name": "Kill Demodogs",
+   "slot": "div2-b",
+   "contestId": 1731,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1768-b",
+   "name": "Quick Sort",
+   "slot": "div2-b",
+   "contestId": 1768,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1783-b",
+   "name": "Matrix of Differences",
+   "slot": "div2-b",
+   "contestId": 1783,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1775-b",
+   "name": "Gardener and the Array",
+   "slot": "div2-b",
+   "contestId": 1775,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1777-b",
+   "name": "Emordnilap",
+   "slot": "div2-b",
+   "contestId": 1777,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1792-b",
+   "name": "Stand-up Comedian",
+   "slot": "div2-b",
+   "contestId": 1792,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1780-b",
+   "name": "GCD Partition",
+   "slot": "div2-b",
+   "contestId": 1780,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1793-b",
+   "name": "Fedya and Array",
+   "slot": "div2-b",
+   "contestId": 1793,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1795-b",
+   "name": "Ideal Point",
+   "slot": "div2-b",
+   "contestId": 1795,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1794-b",
+   "name": "Not Dividing",
+   "slot": "div2-b",
+   "contestId": 1794,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1798-b",
+   "name": "Three Sevens",
+   "slot": "div2-b",
+   "contestId": 1798,
+   "index": "B",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1808-b",
+   "name": "Playing in a Casino",
+   "slot": "div2-b",
+   "contestId": 1808,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1797-b",
+   "name": "Li Hua and Pattern",
+   "slot": "div2-b",
+   "contestId": 1797,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1823-b",
+   "name": "Sort with Step",
+   "slot": "div2-b",
+   "contestId": 1823,
+   "index": "B",
+   "rating": 900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1818-b",
+   "name": "Indivisible",
+   "slot": "div2-b",
+   "contestId": 1818,
+   "index": "B",
+   "rating": 900,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-1874-a",
+   "name": "Jellyfish and Game",
+   "slot": "div2-b",
+   "contestId": 1874,
+   "index": "A",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-869-b",
+   "name": "The Eternal Immortality",
+   "slot": "div2-b",
+   "contestId": 869,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-873-b",
+   "name": "Balanced Substring",
+   "slot": "div2-b",
+   "contestId": 873,
+   "index": "B",
+   "rating": 1500,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-877-b",
+   "name": "Nikita and string",
+   "slot": "div2-b",
+   "contestId": 877,
+   "index": "B",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-879-b",
+   "name": "Table Tennis",
+   "slot": "div2-b",
+   "contestId": 879,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1096-b",
+   "name": "Substring Removal",
+   "slot": "div2-b",
+   "contestId": 1096,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1497-b",
+   "name": "M-arrays",
+   "slot": "div2-b",
+   "contestId": 1497,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1496-b",
+   "name": "Max and Mex",
+   "slot": "div2-b",
+   "contestId": 1496,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1493-b",
+   "name": "Planet Lapituletti",
+   "slot": "div2-b",
+   "contestId": 1493,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-864-b",
+   "name": "Polycarp and Letters",
+   "slot": "div2-b",
+   "contestId": 864,
+   "index": "B",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-863-b",
+   "name": "Kayaking",
+   "slot": "div2-b",
+   "contestId": 863,
+   "index": "B",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-849-b",
+   "name": "Tell Your World",
+   "slot": "div2-b",
+   "contestId": 849,
+   "index": "B",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-842-b",
+   "name": "Gleb And Pizza",
+   "slot": "div2-b",
+   "contestId": 842,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-834-b",
+   "name": "The Festive Evening",
+   "slot": "div2-b",
+   "contestId": 834,
+   "index": "B",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-821-b",
+   "name": "Okabe and Banana Trees",
+   "slot": "div2-b",
+   "contestId": 821,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-822-b",
+   "name": "Crossword solving",
+   "slot": "div2-b",
+   "contestId": 822,
+   "index": "B",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-912-b",
+   "name": "New Year's Eve",
+   "slot": "div2-b",
+   "contestId": 912,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1130-b",
+   "name": "Two Cakes",
+   "slot": "div2-b",
+   "contestId": 1130,
+   "index": "B",
+   "rating": 1200,
+   "how": "name + closest rating for the slot"
+  },
+  {
+   "id": "codeforces-909-b",
+   "name": "Segments",
+   "slot": "div2-b",
+   "contestId": 909,
+   "index": "B",
+   "rating": 1300,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-899-b",
+   "name": "Months and Years",
+   "slot": "div2-b",
+   "contestId": 899,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-900-b",
+   "name": "Position in Fraction",
+   "slot": "div2-b",
+   "contestId": 900,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-892-b",
+   "name": "Wrath",
+   "slot": "div2-b",
+   "contestId": 892,
+   "index": "B",
+   "rating": 1200,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-887-b",
+   "name": "Cubes for Masha",
+   "slot": "div2-b",
+   "contestId": 887,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-570-b",
+   "name": "Simple Game",
+   "slot": "div2-b",
+   "contestId": 570,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-820-b",
+   "name": "Mister B and Angle in Polygon",
+   "slot": "div2-b",
+   "contestId": 820,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-810-b",
+   "name": "Summer sell-off",
+   "slot": "div2-b",
+   "contestId": 810,
+   "index": "B",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-401-c",
+   "name": "Team",
+   "slot": "div2-c",
+   "contestId": 401,
+   "index": "C",
+   "rating": 1400,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-441-c",
+   "name": "Valera and Tubes",
+   "slot": "div2-c",
+   "contestId": 441,
+   "index": "C",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1967-a",
+   "name": "Permutation Counting",
+   "slot": "div2-c",
+   "contestId": 1967,
+   "index": "A",
+   "rating": 1400,
+   "how": "name + closest rating for the slot"
+  },
+  {
+   "id": "codeforces-1943-a",
+   "name": "MEX Game 1",
+   "slot": "div2-c",
+   "contestId": 1943,
+   "index": "A",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1903-c",
+   "name": "Theofanis' Nightmare",
+   "slot": "div2-c",
+   "contestId": 1903,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1893-a",
+   "name": "Anonymous Informant",
+   "slot": "div2-c",
+   "contestId": 1893,
+   "index": "A",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1891-c",
+   "name": "Smilo and Monsters",
+   "slot": "div2-c",
+   "contestId": 1891,
+   "index": "C",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1889-a",
+   "name": "Qingshan Loves Strings 2",
+   "slot": "div2-c",
+   "contestId": 1889,
+   "index": "A",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1868-a",
+   "name": "Fill in the Matrix",
+   "slot": "div2-c",
+   "contestId": 1868,
+   "index": "A",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1858-c",
+   "name": "Yet Another Permutation Problem",
+   "slot": "div2-c",
+   "contestId": 1858,
+   "index": "C",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1827-a",
+   "name": "Counting Orders",
+   "slot": "div2-c",
+   "contestId": 1827,
+   "index": "A",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1784-a",
+   "name": "Monsters (easy version)",
+   "slot": "div2-c",
+   "contestId": 1784,
+   "index": "A",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1794-c",
+   "name": "Scoring Subsequences",
+   "slot": "div2-c",
+   "contestId": 1794,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1768-c",
+   "name": "Elemental Decompress",
+   "slot": "div2-c",
+   "contestId": 1768,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1685-a",
+   "name": "Circular Local MiniMax",
+   "slot": "div2-c",
+   "contestId": 1685,
+   "index": "A",
+   "rating": 1100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-747-c",
+   "name": "Servers",
+   "slot": "div2-c",
+   "contestId": 747,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1879-c",
+   "name": "Make it Alternating",
+   "slot": "div2-c",
+   "contestId": 1879,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1922-c",
+   "name": "Closest Cities",
+   "slot": "div2-c",
+   "contestId": 1922,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1837-c",
+   "name": "Best Binary String",
+   "slot": "div2-c",
+   "contestId": 1837,
+   "index": "C",
+   "rating": 1000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-808-c",
+   "name": "Tea Party",
+   "slot": "div2-c",
+   "contestId": 808,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-748-c",
+   "name": "Santa Claus and Robot",
+   "slot": "div2-c",
+   "contestId": 748,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-371-c",
+   "name": "Hamburgers",
+   "slot": "div2-c",
+   "contestId": 371,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-149-c",
+   "name": "Division into Teams",
+   "slot": "div2-c",
+   "contestId": 149,
+   "index": "C",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1956-c",
+   "name": "Nene's Magical Matrix",
+   "slot": "div2-c",
+   "contestId": 1956,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-231-c",
+   "name": "To Add or Not to Add",
+   "slot": "div2-c",
+   "contestId": 231,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1838-c",
+   "name": "No Prime Differences",
+   "slot": "div2-c",
+   "contestId": 1838,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1815-a",
+   "name": "Ian and Array Sorting",
+   "slot": "div2-c",
+   "contestId": 1815,
+   "index": "A",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1682-c",
+   "name": "LIS or Reverse LIS?",
+   "slot": "div2-c",
+   "contestId": 1682,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-743-c",
+   "name": "Vladik and fractions",
+   "slot": "div2-c",
+   "contestId": 743,
+   "index": "C",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1062-c",
+   "name": "Banh-mi",
+   "slot": "div2-c",
+   "contestId": 1062,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1796-c",
+   "name": "Maximum Set",
+   "slot": "div2-c",
+   "contestId": 1796,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1279-c",
+   "name": "Stack of Presents",
+   "slot": "div2-c",
+   "contestId": 1279,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1407-c",
+   "name": "Chocolate Bunny",
+   "slot": "div2-c",
+   "contestId": 1407,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1187-c",
+   "name": "Vasya And Array",
+   "slot": "div2-c",
+   "contestId": 1187,
+   "index": "C",
+   "rating": 1800,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-777-c",
+   "name": "Alyona and Spreadsheet",
+   "slot": "div2-c",
+   "contestId": 777,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-715-a",
+   "name": "Plus and Square Root",
+   "slot": "div2-c",
+   "contestId": 715,
+   "index": "A",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-758-c",
+   "name": "Unfair Poll",
+   "slot": "div2-c",
+   "contestId": 758,
+   "index": "C",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-682-b",
+   "name": "Alyona and mex",
+   "slot": "div2-c",
+   "contestId": 682,
+   "index": "B",
+   "rating": 1200,
+   "how": "name + closest rating for the slot"
+  },
+  {
+   "id": "codeforces-735-c",
+   "name": "Tennis Championship",
+   "slot": "div2-c",
+   "contestId": 735,
+   "index": "C",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1798-c",
+   "name": "Candy Store",
+   "slot": "div2-c",
+   "contestId": 1798,
+   "index": "C",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1852-a",
+   "name": "Ntarsis' Set",
+   "slot": "div2-c",
+   "contestId": 1852,
+   "index": "A",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1898-c",
+   "name": "Colorful Grid",
+   "slot": "div2-c",
+   "contestId": 1898,
+   "index": "C",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1901-c",
+   "name": "Add, Divide and Floor",
+   "slot": "div2-c",
+   "contestId": 1901,
+   "index": "C",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1902-c",
+   "name": "Insert and Equalize",
+   "slot": "div2-c",
+   "contestId": 1902,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1809-c",
+   "name": "Sum on Subarrays",
+   "slot": "div2-c",
+   "contestId": 1809,
+   "index": "C",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1814-c",
+   "name": "Search in Parallel",
+   "slot": "div2-c",
+   "contestId": 1814,
+   "index": "C",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-414-a",
+   "name": "Mashmokh and Numbers",
+   "slot": "div2-c",
+   "contestId": 414,
+   "index": "A",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1117-c",
+   "name": "Magic Ship",
+   "slot": "div2-c",
+   "contestId": 1117,
+   "index": "C",
+   "rating": 1900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1107-c",
+   "name": "Brutality",
+   "slot": "div2-c",
+   "contestId": 1107,
+   "index": "C",
+   "rating": 1300,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-182-d",
+   "name": "Common Divisors",
+   "slot": "div2-d",
+   "contestId": 182,
+   "index": "D",
+   "rating": 1400,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-414-b",
+   "name": "Mashmokh and ACM",
+   "slot": "div2-d",
+   "contestId": 414,
+   "index": "B",
+   "rating": 1400,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-329-b",
+   "name": "Biridian Forest",
+   "slot": "div2-d",
+   "contestId": 329,
+   "index": "B",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1997-d",
+   "name": "Maximize the Root",
+   "slot": "div2-d",
+   "contestId": 1997,
+   "index": "D",
+   "rating": 1500,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-429-b",
+   "name": "Working out",
+   "slot": "div2-d",
+   "contestId": 429,
+   "index": "B",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-375-b",
+   "name": "Maximum Submatrix 2",
+   "slot": "div2-d",
+   "contestId": 375,
+   "index": "B",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-407-b",
+   "name": "Long Path",
+   "slot": "div2-d",
+   "contestId": 407,
+   "index": "B",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1528-a",
+   "name": "Parsa's Humongous Tree",
+   "slot": "div2-d",
+   "contestId": 1528,
+   "index": "A",
+   "rating": 1600,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-339-d",
+   "name": "Xenia and Bit Operations",
+   "slot": "div2-d",
+   "contestId": 339,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-118-d",
+   "name": "Caesar's Legions",
+   "slot": "div2-d",
+   "contestId": 118,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-489-d",
+   "name": "Unbearable Controversy of Being",
+   "slot": "div2-d",
+   "contestId": 489,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-283-b",
+   "name": "Cow Program",
+   "slot": "div2-d",
+   "contestId": 283,
+   "index": "B",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-269-b",
+   "name": "Greenhouse Effect",
+   "slot": "div2-d",
+   "contestId": 269,
+   "index": "B",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-229-b",
+   "name": "Planets",
+   "slot": "div2-d",
+   "contestId": 229,
+   "index": "B",
+   "rating": 1700,
+   "how": "name + closest rating for the slot"
+  },
+  {
+   "id": "codeforces-295-b",
+   "name": "Greg and Graph",
+   "slot": "div2-d",
+   "contestId": 295,
+   "index": "B",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-276-d",
+   "name": "Little Girl and Maximum XOR",
+   "slot": "div2-d",
+   "contestId": 276,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-2006-a",
+   "name": "Iris and Game on the Tree",
+   "slot": "div2-d",
+   "contestId": 2006,
+   "index": "A",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1093-d",
+   "name": "Beautiful Graph",
+   "slot": "div2-d",
+   "contestId": 1093,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-2041-d",
+   "name": "Drunken Maze",
+   "slot": "div2-d",
+   "contestId": 2041,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-2018-c",
+   "name": "Tree Pruning",
+   "slot": "div2-d",
+   "contestId": 2018,
+   "index": "C",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1829-h",
+   "name": "Don't Blame Me",
+   "slot": "div2-d",
+   "contestId": 1829,
+   "index": "H",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1695-c",
+   "name": "Zero Path",
+   "slot": "div2-d",
+   "contestId": 1695,
+   "index": "C",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1625-c",
+   "name": "Road Optimization",
+   "slot": "div2-d",
+   "contestId": 1625,
+   "index": "C",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1826-d",
+   "name": "Running Miles",
+   "slot": "div2-d",
+   "contestId": 1826,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1037-d",
+   "name": "Valid BFS?",
+   "slot": "div2-d",
+   "contestId": 1037,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-474-d",
+   "name": "Flowers",
+   "slot": "div2-d",
+   "contestId": 474,
+   "index": "D",
+   "rating": 1700,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-274-b",
+   "name": "Zero Tree",
+   "slot": "div2-d",
+   "contestId": 274,
+   "index": "B",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-145-b",
+   "name": "Lucky Number 2",
+   "slot": "div2-d",
+   "contestId": 145,
+   "index": "B",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-167-b",
+   "name": "Wizards and Huge Prize",
+   "slot": "div2-d",
+   "contestId": 167,
+   "index": "B",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-83-b",
+   "name": "Doctor",
+   "slot": "div2-d",
+   "contestId": 83,
+   "index": "B",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1338-b",
+   "name": "Edge Weight Assignment",
+   "slot": "div2-d",
+   "contestId": 1338,
+   "index": "B",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1286-b",
+   "name": "Numbers on Tree",
+   "slot": "div2-d",
+   "contestId": 1286,
+   "index": "B",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1805-d",
+   "name": "A Wide, Wide Graph",
+   "slot": "div2-d",
+   "contestId": 1805,
+   "index": "D",
+   "rating": 1800,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-14-d",
+   "name": "Two Paths",
+   "slot": "div2-d",
+   "contestId": 14,
+   "index": "D",
+   "rating": 1900,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-41-d",
+   "name": "Pawn",
+   "slot": "div2-d",
+   "contestId": 41,
+   "index": "D",
+   "rating": 1900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1991-d",
+   "name": "Prime XOR Coloring",
+   "slot": "div2-d",
+   "contestId": 1991,
+   "index": "D",
+   "rating": 1900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1242-b",
+   "name": "0-1 MST",
+   "slot": "div2-d",
+   "contestId": 1242,
+   "index": "B",
+   "rating": 1900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-2044-g2",
+   "name": "Medium Demon Problem (hard version)",
+   "slot": "div2-d",
+   "contestId": 2044,
+   "index": "G2",
+   "rating": 1900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1613-d",
+   "name": "MEX Sequences",
+   "slot": "div2-d",
+   "contestId": 1613,
+   "index": "D",
+   "rating": 1900,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-346-b",
+   "name": "Lucky Common Subsequence",
+   "slot": "div2-d",
+   "contestId": 346,
+   "index": "B",
+   "rating": 2000,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1843-d",
+   "name": "Apple Tree",
+   "slot": "div2-d",
+   "contestId": 1843,
+   "index": "D",
+   "rating": 1200,
+   "how": "name + slot index"
+  },
+  {
+   "id": "codeforces-301-b",
+   "name": "Yaroslav and Time",
+   "slot": "div2-d",
+   "contestId": 301,
+   "index": "B",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1998-d",
+   "name": "Determine Winning Islands in Race",
+   "slot": "div2-d",
+   "contestId": 1998,
+   "index": "D",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-609-e",
+   "name": "Minimum spanning tree for each edge",
+   "slot": "div2-d",
+   "contestId": 609,
+   "index": "E",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-208-e",
+   "name": "Blood Cousins",
+   "slot": "div2-d",
+   "contestId": 208,
+   "index": "E",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-519-e",
+   "name": "A and B and Lecture Rooms",
+   "slot": "div2-d",
+   "contestId": 519,
+   "index": "E",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-466-e",
+   "name": "Information Graph",
+   "slot": "div2-d",
+   "contestId": 466,
+   "index": "E",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-1187-e",
+   "name": "Tree Painting",
+   "slot": "div2-d",
+   "contestId": 1187,
+   "index": "E",
+   "rating": 2100,
+   "how": "unique name"
+  },
+  {
+   "id": "codeforces-932-d",
+   "name": "Tree",
+   "slot": "div2-d",
+   "contestId": 932,
+   "index": "D",
+   "rating": 2200,
+   "how": "name + closest rating for the slot"
+  }
+ ]
+}

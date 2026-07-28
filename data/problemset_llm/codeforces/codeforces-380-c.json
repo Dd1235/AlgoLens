@@ -19,7 +19,8 @@
   "patterns": [
     "segment-tree",
     "stack",
-    "prefix-sum"
+    "prefix-sum",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "segment-tree": 0.9,
       "stack": 0.7,
-      "prefix-sum": 0.6
+      "prefix-sum": 0.6,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

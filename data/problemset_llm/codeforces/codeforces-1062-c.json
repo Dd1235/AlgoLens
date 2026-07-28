@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1062-c",
+  "title": "Banh-mi",
+  "slug": "1062-c-banh-mi",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1062/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1600,
+  "contest_slot": "div2-c",
+  "rating": 1600,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a binary array representing deliciousness of parts, for each query on a subrange, find the maximum enjoyment achievable by eating all parts in that range in some order, where eating a part increases enjoyment and increments the deliciousness of remaining parts by that part's original value.",
+  "tags": [
+    "array",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229899,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

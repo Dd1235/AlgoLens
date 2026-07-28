@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1808-b",
+  "title": "Playing in a Casino",
+  "slug": "1808-b-playing-in-a-casino",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1808/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1200,
+  "contest_slot": "div2-b",
+  "rating": 1200,
+  "source_tags": [
+    "math",
+    "sortings"
+  ],
+  "statement": "Given n cards each with m numbers, and all pairs of players playing once, compute the sum over all pairs of the sum of absolute differences of their corresponding numbers.",
+  "tags": [
+    "math",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "sorting",
+    "prefix-sum",
+    "pairwise-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229859,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "prefix-sum": 0.7,
+      "pairwise-sum": 0.8
+    }
+  }
+}

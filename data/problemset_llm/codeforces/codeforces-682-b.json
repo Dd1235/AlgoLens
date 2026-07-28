@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-682-b",
+  "title": "Alyona and Mex",
+  "slug": "682-b-alyona-and-mex",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/682/B",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1200,
+  "contest_slot": "div2-c",
+  "rating": 1200,
+  "source_tags": [
+    "sortings"
+  ],
+  "statement": "Given an array of positive integers, determine the maximum possible minimum excluded positive integer (mex) achievable by decreasing elements any number of times without going below 1.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229961,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

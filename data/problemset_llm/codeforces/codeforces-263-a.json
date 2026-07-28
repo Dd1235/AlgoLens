@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-263-a",
+  "title": "Beautiful Matrix",
+  "slug": "263-a-beautiful-matrix",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/263/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a 5x5 matrix with a single '1' and the rest zeros, find the minimum number of adjacent row or column swaps needed to move the '1' to the center cell (3,3).",
+  "tags": [
+    "implementation",
+    "matrix"
+  ],
+  "patterns": [
+    "manhattan-distance",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229813,
+    "pattern_confidence": {
+      "manhattan-distance": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

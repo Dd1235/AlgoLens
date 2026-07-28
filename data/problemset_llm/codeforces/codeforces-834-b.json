@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-834-b",
+  "title": "The Festive Evening",
+  "slug": "834-b-the-festive-evening",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/834/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1100,
+  "contest_slot": "div2-b",
+  "rating": 1100,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given a sequence of guests entering through designated entrances labeled A to Z, determine if at any point more than k entrances are simultaneously open, where each entrance opens at the first guest's arrival and closes after the last guest assigned to it arrives.",
+  "tags": [
+    "string",
+    "simulation",
+    "data-structures"
+  ],
+  "patterns": [
+    "two-pointers",
+    "interval-tracking",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229873,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "interval-tracking": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

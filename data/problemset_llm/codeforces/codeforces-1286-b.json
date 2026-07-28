@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1286-b",
+  "title": "Numbers on Tree",
+  "slug": "1286-b-numbers-on-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1286/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1800,
+  "contest_slot": "div2-d",
+  "rating": 1800,
+  "source_tags": [
+    "constructive algorithms",
+    "data structures",
+    "dfs and similar",
+    "graphs",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with unknown node values and known counts of smaller values in each node's subtree, reconstruct the original values assigned to each node.",
+  "tags": [
+    "tree",
+    "dfs",
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "patterns": [
+    "dfs",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229992,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "greedy": 0.9,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

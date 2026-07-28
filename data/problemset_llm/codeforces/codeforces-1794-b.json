@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1794-b",
+  "title": "Not Dividing",
+  "slug": "1794-b-not-dividing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1794/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 900,
+  "contest_slot": "div2-b",
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array of positive integers, increment elements with at most 2n operations so that no element divides the next one in the sequence.",
+  "tags": [
+    "array",
+    "greedy",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229853,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-758-c",
+  "title": "Unfair Poll",
+  "slug": "758-c-unfair-poll",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/758/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1700,
+  "contest_slot": "div2-c",
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a classroom with n rows and m pupils per row, where a teacher asks k questions in a zigzag row order, determine the maximum and minimum number of questions any pupil is asked and how many times a specific pupil at position (x, y) is asked.",
+  "tags": [
+    "math",
+    "implementation",
+    "array"
+  ],
+  "patterns": [
+    "simulation",
+    "binary-search",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229979,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "binary-search": 0.7,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

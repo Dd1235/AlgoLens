@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1901-c",
+  "title": "Add, Divide and Floor",
+  "slug": "1901-c-add-divide-and-floor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1901/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an integer array, repeatedly apply an operation that replaces each element with the floor of (element + x) divided by 2 for a chosen integer x, and find the minimum number of operations to make all elements equal. If the number of operations is at most n, output the chosen x values for each operation.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229944,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.95,
+      "binary-search": 0.6
+    }
+  }
+}

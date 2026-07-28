@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1858-c",
+  "title": "Yet Another Permutation Problem",
+  "slug": "1858-c-yet-another-permutation-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1858/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1000,
+  "contest_slot": "div2-c",
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an integer n, construct a permutation of numbers from 1 to n that maximizes the number of distinct gcd values computed from each pair of adjacent elements in the permutation (considering the permutation circular).",
+  "tags": [
+    "math",
+    "number-theory",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "greedy",
+    "gcd"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229932,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "gcd": 0.95
+    }
+  }
+}

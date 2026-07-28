@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1889-a",
+  "title": "Qingshan Loves Strings 2",
+  "slug": "1889-a-qingshan-loves-strings-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1889/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a binary string, determine if it can be transformed into a string where each character differs from its symmetric counterpart by inserting \"01\" substrings up to 300 times, and if possible, provide the sequence of insertions.",
+  "tags": [
+    "string",
+    "greedy",
+    "constructive-algorithm",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "string-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229936,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "string-manipulation": 0.8
+    }
+  }
+}

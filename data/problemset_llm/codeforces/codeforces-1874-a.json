@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1874-a",
+  "title": "Jellyfish and Game",
+  "slug": "1874-a-jellyfish-and-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1874/A",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1200,
+  "contest_slot": "div2-b",
+  "rating": 1200,
+  "source_tags": [
+    "brute force",
+    "games",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Two players alternately perform up to k swaps of apples between their collections to maximize their own total apple values, with both playing optimally. Determine the final sum of values for the first player's apples after all rounds.",
+  "tags": [
+    "greedy",
+    "game-theory",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "game-theory",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229862,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "game-theory": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

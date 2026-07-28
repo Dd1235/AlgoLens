@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1972-a",
+  "title": "Contest Proposal",
+  "slug": "1972-a-contest-proposal",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1972/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Given two sorted arrays representing current and expected problem difficulties, determine the minimum number of new problems to insert so that after each insertion and removal of the hardest problem, all current difficulties do not exceed the expected ones.",
+  "tags": [
+    "array",
+    "sorting",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229811,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "sorting": 0.9
+    }
+  }
+}

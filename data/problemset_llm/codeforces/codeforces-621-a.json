@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-621-a",
+  "title": "Wet Shark and Odd and Even",
+  "slug": "621-a-wet-shark-and-odd-and-even",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/621/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 900,
+  "contest_slot": "div2-a",
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a list of integers, select any subset without repetition to maximize the sum that is even (divisible by 2).",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229822,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "parity-check": 0.9
+    }
+  }
+}

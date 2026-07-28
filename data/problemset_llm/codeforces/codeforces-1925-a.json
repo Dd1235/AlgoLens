@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1925-a",
+  "title": "We Got Everything Covered!",
+  "slug": "1925-a-we-got-everything-covered",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1925/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Construct a shortest string over the first k lowercase letters such that every possible length-n string from these letters appears as a subsequence.",
+  "tags": [
+    "strings",
+    "constructive-algorithm",
+    "combinatorics"
+  ],
+  "patterns": [
+    "greedy",
+    "subsequence-construction",
+    "de-bruijn-sequence-concept"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229805,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "subsequence-construction": 0.85,
+      "de-bruijn-sequence-concept": 0.7
+    }
+  }
+}

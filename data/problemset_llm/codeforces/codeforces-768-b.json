@@ -21,7 +21,8 @@
   "patterns": [
     "divide-and-conquer",
     "segment-tree",
-    "dfs"
+    "dfs",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "divide-and-conquer": 0.95,
       "segment-tree": 0.9,
-      "dfs": 0.85
+      "dfs": 0.85,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Recursion Backtracking"

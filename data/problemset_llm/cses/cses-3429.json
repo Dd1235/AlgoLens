@@ -15,7 +15,8 @@
   "patterns": [
     "convex-hull-trick",
     "dynamic-line-addition",
-    "query-max-at-point"
+    "query-max-at-point",
+    "li-chao-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -24,7 +25,8 @@
     "pattern_confidence": {
       "convex-hull-trick": 0.98,
       "dynamic-line-addition": 0.9,
-      "query-max-at-point": 0.85
+      "query-max-at-point": 0.85,
+      "li-chao-tree": 0.9
     }
   }
 }

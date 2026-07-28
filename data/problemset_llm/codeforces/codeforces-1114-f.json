@@ -22,7 +22,8 @@
   "patterns": [
     "segment-tree",
     "modular-exponentiation",
-    "prime-factorization"
+    "prime-factorization",
+    "sqrt-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "segment-tree": 0.95,
       "modular-exponentiation": 0.9,
-      "prime-factorization": 0.85
+      "prime-factorization": 0.85,
+      "sqrt-decomposition": 0.9
     }
   },
   "source_topic": "Formwise / Segment Trees"

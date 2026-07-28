@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-822-b",
+  "title": "Crossword solving",
+  "slug": "822-b-crossword-solving",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/822/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1000,
+  "contest_slot": "div2-b",
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given two strings s and t, replace as few characters as possible in s with '?' so that s (with '?' matching any character) appears as a substring in t.",
+  "tags": [
+    "string",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "brute-force",
+    "substring-search",
+    "wildcard-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229872,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "substring-search": 0.85,
+      "wildcard-matching": 0.8
+    }
+  }
+}

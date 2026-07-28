@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-912-b",
+  "title": "New Year's Eve",
+  "slug": "912-b-new-year-s-eve",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/912/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1300,
+  "contest_slot": "div2-b",
+  "rating": 1300,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "number theory"
+  ],
+  "statement": "Given n distinct candies labeled by tastiness from 1 to n, select up to k candies to maximize the XOR of their tastiness values.",
+  "tags": [
+    "bit-manipulation",
+    "number-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "xor-basis",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229897,
+    "pattern_confidence": {
+      "bit-manipulation": 0.9,
+      "xor-basis": 0.95,
+      "greedy": 0.8
+    }
+  }
+}
