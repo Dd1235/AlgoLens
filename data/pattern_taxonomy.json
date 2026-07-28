@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "notes": "Single source of truth for the pattern vocabulary. scripts/annotate_problem_urls.py feeds `canonical` keys to the LLM as allowed examples and maps aliases on output; scripts/validate_corpus.js warns on non-canonical patterns; scripts/normalize_patterns.js rewrites aliases to canonical across the corpus. Aliases must point at an existing canonical key.",
+  "notes": "Single source of truth for the pattern vocabulary. scripts/annotate_problem_urls.py feeds `canonical` keys to the LLM as allowed examples and maps aliases on output; scripts/validate_corpus.js warns on non-canonical patterns; scripts/normalize_patterns.js rewrites aliases to canonical across the corpus. Aliases must point at an existing canonical key.\n\n`groups` are umbrella terms: what people type when they don't want one technique but a family of them (\"range queries\", \"dp optimization\"). They are NOT canonical labels and are never applied to a problem — no problem is tagged `range-queries`. They exist because the taxonomy is all leaves: every member here is a real label, but nothing in the vocabulary said what they have in common, so looking up \"range queries\" found nothing at all.",
   "canonical": {
     "two-pointers": {
       "category": "array"
@@ -613,5 +613,206 @@
     "kth-smallest": "order-statistics",
     "order-statistic": "order-statistics",
     "kth-largest": "order-statistics"
+  },
+  "groups": {
+    "range-queries": {
+      "label": "range query",
+      "aliases": [
+        "range query",
+        "range queries",
+        "rmq",
+        "range minimum query",
+        "point update",
+        "range update",
+        "offline queries",
+        "interval query"
+      ],
+      "members": [
+        "segment-tree",
+        "fenwick-tree",
+        "sparse-table",
+        "sqrt-decomposition",
+        "mo-algorithm",
+        "persistent-segment-tree",
+        "lazy-propagation",
+        "prefix-sum",
+        "prefix-xor",
+        "difference-array",
+        "li-chao-tree",
+        "merge-sort-tree"
+      ]
+    },
+    "string-algorithms": {
+      "label": "string algorithms",
+      "aliases": [
+        "string algorithms",
+        "string matching",
+        "pattern matching",
+        "substring search"
+      ],
+      "members": [
+        "kmp",
+        "suffix-array",
+        "suffix-automaton",
+        "aho-corasick",
+        "manacher",
+        "trie",
+        "rabin-karp",
+        "lyndon-factorization",
+        "booth-algorithm"
+      ]
+    },
+    "shortest-path": {
+      "label": "shortest path",
+      "aliases": [
+        "shortest path",
+        "shortest paths",
+        "single source shortest path"
+      ],
+      "members": [
+        "dijkstra",
+        "bellman-ford",
+        "floyd-warshall",
+        "bfs",
+        "zero-one-bfs"
+      ]
+    },
+    "tree-algorithms": {
+      "label": "tree algorithms",
+      "aliases": [
+        "tree algorithms",
+        "tree queries",
+        "tree techniques"
+      ],
+      "members": [
+        "lca",
+        "heavy-light-decomposition",
+        "euler-tour",
+        "tree-dp",
+        "subtree-dp",
+        "centroid-decomposition",
+        "binary-lifting",
+        "small-to-large-merging",
+        "tin-tout-ancestor-check"
+      ]
+    },
+    "number-theory": {
+      "label": "number theory",
+      "aliases": [
+        "number theory",
+        "modular arithmetic",
+        "primes"
+      ],
+      "members": [
+        "gcd",
+        "modular-arithmetic",
+        "modular-inverse",
+        "chinese-remainder-theorem",
+        "mobius-inversion",
+        "lucas-theorem",
+        "sieve",
+        "prime-factorization"
+      ]
+    },
+    "dp-optimization": {
+      "label": "dp optimization",
+      "aliases": [
+        "dp optimization",
+        "dp optimizations",
+        "optimized dp"
+      ],
+      "members": [
+        "convex-hull-trick",
+        "knuth-optimization",
+        "slope-trick",
+        "wqs-binary-search",
+        "monotonic-queue-optimization",
+        "sos-dp",
+        "li-chao-tree",
+        "divide-and-conquer-dp",
+        "bitmask-dp",
+        "digit-dp"
+      ]
+    },
+    "flows-and-matching": {
+      "label": "flows",
+      "aliases": [
+        "flows",
+        "flow",
+        "network flow",
+        "matching",
+        "max flow min cut"
+      ],
+      "members": [
+        "max-flow",
+        "min-cut",
+        "bipartite-matching",
+        "dinic",
+        "edmonds-karp"
+      ]
+    },
+    "data-structures": {
+      "label": "data structures",
+      "aliases": [
+        "data structures",
+        "data structure"
+      ],
+      "members": [
+        "segment-tree",
+        "fenwick-tree",
+        "trie",
+        "ordered-set",
+        "multiset",
+        "heap",
+        "monotonic-stack",
+        "monotonic-queue",
+        "union-find",
+        "sparse-table",
+        "stack",
+        "queue",
+        "deque"
+      ]
+    },
+    "geometry": {
+      "label": "geometry",
+      "aliases": [
+        "geometry",
+        "computational geometry"
+      ],
+      "members": [
+        "convex-hull",
+        "rotating-calipers",
+        "line-sweep"
+      ]
+    },
+    "graph-traversal": {
+      "label": "graph traversal",
+      "aliases": [
+        "graph traversal",
+        "traversal",
+        "search on graphs"
+      ],
+      "members": [
+        "dfs",
+        "bfs",
+        "topological-sort",
+        "flood-fill",
+        "connected-components",
+        "bridges",
+        "articulation-points",
+        "strongly-connected-components"
+      ]
+    },
+    "hashing": {
+      "label": "hashing",
+      "aliases": [
+        "hashing",
+        "hash"
+      ],
+      "members": [
+        "rabin-karp",
+        "hash-map"
+      ]
+    }
   }
 }
