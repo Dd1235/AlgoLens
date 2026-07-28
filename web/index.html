@@ -80,22 +80,20 @@
           ><span class="lib-path" id="lib-path">~</span
           ><span class="lib-cursor">$</span></span
         >
-        <span class="lib-chips lib-chips-user" id="lib-chips-user" hidden>
+        <span class="lib-chips" id="lib-chips-user">
           <button type="button" class="lib-chip" data-cmd=":bookmarks" title="list your starred problems (:b)">
-            ★ <span id="lib-count-bookmarks">0</span> bookmarks
+            :bookmarks <span class="lib-count" id="lib-count-bookmarks">0</span>
           </button>
           <button type="button" class="lib-chip" data-cmd=":done" title="list problems you marked done (:d)">
-            ✓ <span id="lib-count-done">0</span> done
+            :done <span class="lib-count" id="lib-count-done">0</span>
           </button>
           <button type="button" class="lib-chip" data-cmd=":all" title="list everything saved">
             :all
           </button>
-          <button type="button" class="lib-chip lib-chip-back" data-cmd="" title="back to search">
+          <button type="button" class="lib-chip lib-chip-back" data-cmd="" title="back to search" hidden>
             ↺ search
           </button>
         </span>
-        <!-- Always present, signed in or not: with the tagline gone this is the
-             only thing telling a first-time visitor the manual exists. -->
         <span class="lib-chips lib-chips-always">
           <button type="button" class="lib-chip" data-cmd=":help" title="the manual">
             :help

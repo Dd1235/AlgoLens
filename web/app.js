@@ -14,7 +14,7 @@ const libPathEl = document.getElementById("lib-path");
 const libCountBookmarks = document.getElementById("lib-count-bookmarks");
 const libCountDone = document.getElementById("lib-count-done");
 const libChips = libBar.querySelectorAll(".lib-chip");
-const libChipsUser = document.getElementById("lib-chips-user");
+const libBackChip = libBar.querySelector(".lib-chip-back");
 
 // :help works for everyone, signed in or not.
 const HELP_COMMANDS = new Set([":help", ":h"]);
@@ -277,7 +277,8 @@ function applyAuthState() {
     authEmailEl.title = currentUser.email;
     filterWrap.hidden = false;
     libBar.hidden = false;
-    libChipsUser.hidden = false;
+    libCountBookmarks.hidden = false;
+    libCountDone.hidden = false;
     refreshLibraryCounts();
     setLibPath("~");
   } else {
@@ -286,10 +287,12 @@ function applyAuthState() {
     filterWrap.hidden = true;
     filterSelect.value = "all";
     currentFilter = "all";
-    // The bar stays: signed out it is just the prompt and :help, which is the
-    // only remaining signpost to the manual now the tagline is gone.
+    // The bar and its command chips stay visible signed out. They are the only
+    // place these commands are advertised now the tagline is gone, and a
+    // feature nobody can see is a feature nobody uses.
     libBar.hidden = false;
-    libChipsUser.hidden = true;
+    libCountBookmarks.hidden = true;
+    libCountDone.hidden = true;
   }
 }
 
@@ -305,6 +308,7 @@ async function refreshLibraryCounts() {
 
 function setLibPath(path) {
   libPathEl.textContent = path;
+  if (libBackChip) libBackChip.hidden = path === "~";
   // Highlight the matching chip so the bar reads like a state indicator.
   libChips.forEach((c) => {
     const active =
@@ -753,6 +757,18 @@ async function runSearch(rawQuery, { append = false } = {}) {
   // problems. Searching the corpus for ":bo" costs a round trip to say nothing.
   // Also stops the debounce firing a query per keystroke while someone types
   // ":bookmarks" one character at a time.
+  if (!currentUser && LIBRARY_COMMANDS[q.toLowerCase()]) {
+    // It IS a command — it just needs somewhere to save things to. Calling it
+    // "not a command" (as the branch below would) reads as a broken feature.
+    currentQuery = "";
+    currentOffset = 0;
+    currentTotal = 0;
+    hideLoadMore();
+    hideFeedback();
+    resultsEl.innerHTML = "";
+    setStatus(`${q} needs an account — sign in to bookmark and track what you have solved`);
+    return;
+  }
   if (!libraryType && q.startsWith(":")) {
     currentQuery = "";
     currentOffset = 0;
