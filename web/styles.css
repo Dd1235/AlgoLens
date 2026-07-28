@@ -447,6 +447,9 @@ html[data-theme="light"] .theme-toggle {
 .rating-select:hover,
 .rating-select:focus { border-color: var(--accent); color: var(--accent); }
 
+.sort-group .filter-select { font-size: 0.76rem; }
+.sort-group { margin-left: 0.2rem; }
+
 .range-dash {
   color: var(--text-dim);
   font-size: 0.72rem;
