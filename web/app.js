@@ -431,7 +431,7 @@ function syncDifficultyControls() {
     const typed = (input.value.trim() || currentQuery || "").toLowerCase();
     // A ranking only exists for a real query. `:bookmarks` is a command, and the
     // library sorts the whole saved list — offering it a "top 20" would lie.
-    const searching = !!typed && !LIBRARY_COMMANDS[typed];
+    const searching = !!typed && !(currentUser && LIBRARY_COMMANDS[typed]);
     groups.push(
       '<span class="difficulty-group sort-group"><span class="difficulty-label">sort</span>' +
         `<select class="filter-select" id="sort-select" aria-label="sort by difficulty">` +
