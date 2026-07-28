@@ -1,0 +1,48 @@
+{
+  "id": "codeforces-1403-a",
+  "title": "The Potion of Great Power",
+  "slug": "1403-a-the-potion-of-great-power",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1403/A",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "*special",
+    "2-sat",
+    "binary search",
+    "data structures",
+    "graphs",
+    "interactive",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given a dynamic trust graph among shamans with degree constraints and altitude values, answer queries about the minimum altitude difference between trusted friends of two given shamans on a specific day.",
+  "tags": [
+    "graph",
+    "data-structures",
+    "binary-search",
+    "two-pointers",
+    "interactive",
+    "two-sat"
+  ],
+  "patterns": [
+    "offline-queries",
+    "binary-search-answer",
+    "two-pointers",
+    "degree-constrained-graph",
+    "dynamic-graph"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236809,
+    "pattern_confidence": {
+      "offline-queries": 0.9,
+      "binary-search-answer": 0.85,
+      "two-pointers": 0.7,
+      "degree-constrained-graph": 0.8,
+      "dynamic-graph": 0.75
+    }
+  }
+}

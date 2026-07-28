@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-smallest-palindromic-rearrangement-i",
+  "title": "Smallest Palindromic Rearrangement I",
+  "slug": "smallest-palindromic-rearrangement-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/",
+  "source_topic": "LeetCode / Counting Sort (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "string",
+    "sorting",
+    "counting-sort"
+  ],
+  "statement": "Given a palindromic string, find its lexicographically smallest palindromic rearrangement.",
+  "tags": [
+    "string",
+    "sorting",
+    "counting"
+  ],
+  "patterns": [
+    "counting-sort",
+    "greedy",
+    "character-frequency"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234947,
+    "pattern_confidence": {
+      "counting-sort": 0.95,
+      "greedy": 0.9,
+      "character-frequency": 0.85
+    }
+  }
+}

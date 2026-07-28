@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1067-e",
+  "title": "Random Forest Rank",
+  "slug": "1067-e-random-forest-rank",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1067/E",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "dp",
+    "graph matchings",
+    "math",
+    "trees"
+  ],
+  "statement": "Given a tree where each edge is independently deleted with probability 1/2, compute the expected rank of the adjacency matrix of the resulting forest multiplied by 2^(n-1) modulo 998244353.",
+  "tags": [
+    "tree",
+    "graph",
+    "probability",
+    "linear-algebra",
+    "dynamic-programming",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "probability-dp",
+    "tree-dp",
+    "matrix-rank"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236967,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "probability-dp": 0.9,
+      "tree-dp": 0.9,
+      "matrix-rank": 0.85
+    }
+  }
+}

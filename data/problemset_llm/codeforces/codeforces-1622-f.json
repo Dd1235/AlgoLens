@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1622-f",
+  "title": "Quadratic Set",
+  "slug": "1622-f-quadratic-set",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1622/F",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "constructive algorithms",
+    "hashing",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an integer n, find the largest subset of {1, 2, ..., n} such that the product of the factorials of the subset elements is a perfect square.",
+  "tags": [
+    "math",
+    "number-theory",
+    "constructive-algorithm",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "factorization",
+    "parity-check",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237006,
+    "pattern_confidence": {
+      "factorization": 0.9,
+      "parity-check": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

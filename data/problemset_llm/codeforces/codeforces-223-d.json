@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-223-d",
+  "title": "Spider",
+  "slug": "223-d-spider",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/223/D",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "geometry",
+    "graphs"
+  ],
+  "statement": "Given a polygon and two vertices, find the shortest path along the polygon border and vertical downward segments inside the polygon between these vertices, where the spider can move along the border or descend vertically inside the polygon.",
+  "tags": [
+    "geometry",
+    "graph",
+    "shortest-path"
+  ],
+  "patterns": [
+    "graph-construction",
+    "dijkstra",
+    "geometry"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236949,
+    "pattern_confidence": {
+      "graph-construction": 0.9,
+      "dijkstra": 0.95,
+      "geometry": 0.9
+    }
+  }
+}

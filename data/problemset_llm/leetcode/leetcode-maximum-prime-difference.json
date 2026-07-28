@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-maximum-prime-difference",
+  "title": "Maximum Prime Difference",
+  "slug": "maximum-prime-difference",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-prime-difference/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, find the maximum index difference between any two prime numbers in the array.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-checking",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234652,
+    "pattern_confidence": {
+      "prime-checking": 0.95,
+      "linear-scan": 0.9
+    }
+  }
+}

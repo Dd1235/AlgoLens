@@ -1,0 +1,31 @@
+{
+  "id": "leetcode-the-kth-factor-of-n",
+  "title": "The kth Factor of n",
+  "slug": "the-kth-factor-of-n",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/the-kth-factor-of-n/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given a positive integer n and an integer k, find the k-th smallest factor of n or return -1 if fewer than k factors exist.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "factorization",
+    "divisor-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234853,
+    "pattern_confidence": {
+      "factorization": 0.9,
+      "divisor-enumeration": 0.85
+    }
+  }
+}

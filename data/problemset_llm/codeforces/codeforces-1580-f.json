@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1580-f",
+  "title": "Problems for Codeforces",
+  "slug": "1580-f-problems-for-codeforces",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1580/F",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "combinatorics",
+    "fft",
+    "math"
+  ],
+  "statement": "Count the number of sequences of length n with nonnegative integer difficulties where the sum of every pair of adjacent difficulties (including the first and last) is less than m, modulo 998244353.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "fft"
+  ],
+  "patterns": [
+    "fft",
+    "circular-constraints",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236894,
+    "pattern_confidence": {
+      "fft": 0.95,
+      "circular-constraints": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

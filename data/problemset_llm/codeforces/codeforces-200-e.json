@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-200-e",
+  "title": "Tractor College",
+  "slug": "200-e-tractor-college",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/200/E",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "implementation",
+    "math",
+    "number theory",
+    "ternary search"
+  ],
+  "statement": "Given counts of students with grades 3, 4, and 5 and a total scholarship budget, find integer scholarship amounts for each grade that minimize the sum of absolute differences between weighted scholarships while fully spending the budget under non-decreasing constraints.",
+  "tags": [
+    "math",
+    "number-theory",
+    "implementation"
+  ],
+  "patterns": [
+    "ternary-search",
+    "brute-force",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237107,
+    "pattern_confidence": {
+      "ternary-search": 0.9,
+      "brute-force": 0.7,
+      "greedy": 0.6
+    }
+  }
+}

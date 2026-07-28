@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1043-g",
+  "title": "Speckled Band",
+  "slug": "1043-g-speckled-band",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1043/G",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string and multiple queries specifying substrings, for each substring find the minimal number of distinct segments in a partition where at least one segment appears at least twice, or report -1 if impossible.",
+  "tags": [
+    "string",
+    "data-structures",
+    "divide-and-conquer",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "string-hashing",
+    "divide-and-conquer",
+    "binary-search",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236994,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "divide-and-conquer": 0.85,
+      "binary-search": 0.7,
+      "two-pointers": 0.6
+    }
+  }
+}

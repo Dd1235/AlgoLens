@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1257-f",
+  "title": "Make Them Similar",
+  "slug": "1257-f-make-them-similar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1257/F",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "hashing",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given an array, determine if there exists a non-negative integer x such that XORing each element with x results in all elements having the same number of set bits in their binary representation.",
+  "tags": [
+    "bit-manipulation",
+    "array",
+    "hash-map",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "xor",
+    "counting",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237045,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "xor": 0.9,
+      "counting": 0.85,
+      "rolling-hash": 0.8
+    }
+  }
+}

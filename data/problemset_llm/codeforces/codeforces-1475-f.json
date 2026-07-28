@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1475-f",
+  "title": "Unusual Matrix",
+  "slug": "1475-f-unusual-matrix",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1475/F",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "2-sat",
+    "brute force",
+    "constructive algorithms"
+  ],
+  "statement": "Given two binary n×n matrices a and b, determine if a can be transformed into b by applying any number of row-wise or column-wise XOR operations that flip all bits in the chosen row or column.",
+  "tags": [
+    "matrix",
+    "bit-manipulation",
+    "linear-algebra",
+    "two-sat"
+  ],
+  "patterns": [
+    "xor-operations",
+    "row-column-flips",
+    "binary-matrix-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236812,
+    "pattern_confidence": {
+      "xor-operations": 0.95,
+      "row-column-flips": 0.9,
+      "binary-matrix-transformation": 0.85
+    }
+  }
+}

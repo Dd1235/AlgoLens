@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1698-g",
+  "title": "Long Binary String",
+  "slug": "1698-g-long-binary-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1698/G",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "bitmasks",
+    "math",
+    "matrices",
+    "meet-in-the-middle",
+    "number theory"
+  ],
+  "statement": "Given an initially all-zero binary string of length 10^{100} and a binary string s, repeatedly XOR s onto substrings of the large string to produce the lexicographically largest possible resulting string or determine if none exists.",
+  "tags": [
+    "bit-manipulation",
+    "math",
+    "linear-algebra",
+    "matrix-exponentiation",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "gaussian-elimination",
+    "bitmask-manipulation",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237053,
+    "pattern_confidence": {
+      "gaussian-elimination": 0.95,
+      "bitmask-manipulation": 0.9,
+      "lexicographic-order": 0.85
+    }
+  }
+}

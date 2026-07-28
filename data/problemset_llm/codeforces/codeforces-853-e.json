@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-853-e",
+  "title": "Lada Malina",
+  "slug": "853-e-lada-malina",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/853/E",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "geometry"
+  ],
+  "statement": "Given multiple engines with velocity vectors and factories with cars at fixed coordinates, determine for each exposition location and time how many cars can reach the exposition point by adjusting engine power levels within allowed limits.",
+  "tags": [
+    "geometry",
+    "linear-algebra",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "vector-scaling",
+    "feasibility-check",
+    "binary-search",
+    "linear-combination"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236962,
+    "pattern_confidence": {
+      "vector-scaling": 0.9,
+      "feasibility-check": 0.85,
+      "binary-search": 0.7,
+      "linear-combination": 0.8
+    }
+  }
+}

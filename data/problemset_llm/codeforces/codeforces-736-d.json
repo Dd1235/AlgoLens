@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-736-d",
+  "title": "Permutations",
+  "slug": "736-d-permutations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/736/D",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "math",
+    "matrices"
+  ],
+  "statement": "Given a set of allowed position-value pairs defining valid permutations of length n, determine for each pair whether removing it changes the parity of the count of valid permutations, which is initially odd.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "permutations",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "parity-check",
+    "inclusion-exclusion",
+    "combinatorial-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237035,
+    "pattern_confidence": {
+      "parity-check": 0.9,
+      "inclusion-exclusion": 0.8,
+      "combinatorial-enumeration": 0.85
+    }
+  }
+}

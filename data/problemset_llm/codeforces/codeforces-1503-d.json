@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1503-d",
+  "title": "Flip the Cards",
+  "slug": "1503-d-flip-the-cards",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1503/D",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "2-sat",
+    "constructive algorithms",
+    "data structures",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given a deck of cards each with unique front and back numbers, determine the minimum number of flips (swapping front and back) needed so that after reordering, fronts are strictly increasing and backs are strictly decreasing.",
+  "tags": [
+    "greedy",
+    "two-pointers",
+    "sorting",
+    "two-sat",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "two-sat",
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236815,
+    "pattern_confidence": {
+      "two-sat": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "two-pointers": 0.7
+    }
+  }
+}

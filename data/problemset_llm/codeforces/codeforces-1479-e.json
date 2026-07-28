@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1479-e",
+  "title": "School Clubs",
+  "slug": "1479-e-school-clubs",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1479/E",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "dp",
+    "fft",
+    "math",
+    "number theory",
+    "probabilities"
+  ],
+  "statement": "Given an initial partition of students into clubs, compute the expected number of days until all students belong to the same club under a stochastic process involving random student moves and club formations.",
+  "tags": [
+    "probability",
+    "dynamic-programming",
+    "number-theory",
+    "math",
+    "fft"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "modular-arithmetic",
+    "probability-dp",
+    "fast-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236890,
+    "pattern_confidence": {
+      "expected-value-dp": 0.95,
+      "modular-arithmetic": 0.9,
+      "probability-dp": 0.9,
+      "fast-exponentiation": 0.7
+    }
+  }
+}

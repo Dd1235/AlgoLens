@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-865-g",
+  "title": "Flowers and Chocolate",
+  "slug": "865-g-flowers-and-chocolate",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/865/G",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "combinatorics",
+    "math",
+    "matrices"
+  ],
+  "statement": "Count the number of ordered pairs of bouquets and baskets where the bouquet has exactly N flowers chosen from F types with given petal counts, and the basket consists of boxes chosen from B types with given chocolate counts, such that the total petals equal total chocolates, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "dynamic-programming",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "counting",
+    "dp-on-sums"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237037,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.95,
+      "counting": 0.9,
+      "dp-on-sums": 0.85
+    }
+  }
+}

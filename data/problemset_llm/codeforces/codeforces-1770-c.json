@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1770-c",
+  "title": "Koxia and Number Theory",
+  "slug": "1770-c-koxia-and-number-theory",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1770/C",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "chinese remainder theorem",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array of positive integers, determine if there exists a positive integer x such that the gcd of (a_i + x) and (a_j + x) is 1 for every pair of distinct indices i, j.",
+  "tags": [
+    "math",
+    "number-theory",
+    "gcd"
+  ],
+  "patterns": [
+    "brute-force",
+    "chinese-remainder-theorem"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236867,
+    "pattern_confidence": {
+      "brute-force": 0.7,
+      "chinese-remainder-theorem": 0.9
+    }
+  }
+}

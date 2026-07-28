@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1928-d",
+  "title": "Lonely Mountain Dungeons",
+  "slug": "1928-d-lonely-mountain-dungeons",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1928/D",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "greedy",
+    "math",
+    "ternary search"
+  ],
+  "statement": "Given counts of creatures by race and parameters affecting army strength based on squad count and inter-squad pairs, determine the maximum possible army strength by optimally partitioning creatures into squads.",
+  "tags": [
+    "math",
+    "greedy",
+    "brute-force"
+  ],
+  "patterns": [
+    "ternary-search",
+    "greedy",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237105,
+    "pattern_confidence": {
+      "ternary-search": 0.9,
+      "greedy": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

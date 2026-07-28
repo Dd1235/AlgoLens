@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-simplified-fractions",
+  "title": "Simplified Fractions",
+  "slug": "simplified-fractions",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/simplified-fractions/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "string",
+    "number-theory"
+  ],
+  "statement": "Generate all simplified fractions between 0 and 1 with denominators up to a given integer n, excluding non-reduced fractions.",
+  "tags": [
+    "math",
+    "number-theory",
+    "string"
+  ],
+  "patterns": [
+    "gcd",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234802,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "brute-force": 0.85
+    }
+  }
+}

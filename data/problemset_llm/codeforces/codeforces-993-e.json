@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-993-e",
+  "title": "Nikita and Order Statistics",
+  "slug": "993-e-nikita-and-order-statistics",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/993/E",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2300,
+  "rating": 2300,
+  "source_tags": [
+    "chinese remainder theorem",
+    "fft",
+    "math"
+  ],
+  "statement": "Given an array and a number x, count for each k the number of subsegments where x is the k-th smallest element, i.e., exactly k elements in the subsegment are less than x.",
+  "tags": [
+    "array",
+    "order-statistics",
+    "prefix-sum",
+    "counting",
+    "chinese-remainder-theorem",
+    "fft"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers",
+    "order-statistics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236883,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "two-pointers": 0.8,
+      "order-statistics": 0.85
+    }
+  }
+}

@@ -17,7 +17,8 @@
   "tags": [
     "array",
     "hash-map",
-    "randomized"
+    "randomized",
+    "randomized-algorithm"
   ],
   "patterns": [
     "reservoir-sampling",

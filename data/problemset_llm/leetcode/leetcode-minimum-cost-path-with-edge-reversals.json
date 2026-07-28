@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-cost-path-with-edge-reversals",
+  "title": "Minimum Cost Path with Edge Reversals",
+  "slug": "minimum-cost-path-with-edge-reversals",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/",
+  "source_topic": "LeetCode / Shortest Path (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Find the minimum cost to travel from node 0 to node n-1 in a directed weighted graph where each node allows at most one edge reversal of an incoming edge at double cost during traversal.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "state-augmentation",
+    "graph-modification"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234930,
+    "pattern_confidence": {
+      "dijkstra": 0.95,
+      "state-augmentation": 0.9,
+      "graph-modification": 0.85
+    }
+  }
+}

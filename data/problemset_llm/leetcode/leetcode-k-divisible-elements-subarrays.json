@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-k-divisible-elements-subarrays",
+  "title": "K Divisible Elements Subarrays",
+  "slug": "k-divisible-elements-subarrays",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-divisible-elements-subarrays/",
+  "source_topic": "LeetCode / Rolling Hash (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "trie",
+    "rolling-hash",
+    "hash-function",
+    "enumeration"
+  ],
+  "statement": "Count the number of distinct contiguous subarrays of an integer array that contain at most k elements divisible by a given integer p.",
+  "tags": [
+    "array",
+    "hash-set",
+    "two-pointers",
+    "trie"
+  ],
+  "patterns": [
+    "two-pointers",
+    "rolling-hash",
+    "substring-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234620,
+    "pattern_confidence": {
+      "two-pointers": 0.9,
+      "rolling-hash": 0.85,
+      "substring-enumeration": 0.8
+    }
+  }
+}

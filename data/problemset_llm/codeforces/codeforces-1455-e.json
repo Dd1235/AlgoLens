@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1455-e",
+  "title": "Four Points",
+  "slug": "1455-e-four-points",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1455/E",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "flows",
+    "geometry",
+    "greedy",
+    "implementation",
+    "math",
+    "ternary search"
+  ],
+  "statement": "Given four distinct integer points on a 2D grid, find the minimum number of single-step moves (up, down, left, right) required to reposition them so that they form a square aligned with the coordinate axes.",
+  "tags": [
+    "geometry",
+    "brute-force",
+    "math",
+    "implementation",
+    "max-flow"
+  ],
+  "patterns": [
+    "brute-force",
+    "constructive-algorithm",
+    "ternary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237101,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "constructive-algorithm": 0.85,
+      "ternary-search": 0.7
+    }
+  }
+}

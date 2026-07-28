@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1746-e1",
+  "title": "Joking (Easy Version)",
+  "slug": "1746-e1-joking-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1746/E1",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "binary search",
+    "constructive algorithms",
+    "interactive",
+    "ternary search"
+  ],
+  "statement": "Find a hidden integer within a range by asking subset membership queries with unreliable answers, where at least one of every two consecutive answers is correct, and make at most two final guesses to identify the integer.",
+  "tags": [
+    "interactive",
+    "binary-search",
+    "constructive-algorithm",
+    "ternary-search"
+  ],
+  "patterns": [
+    "interactive",
+    "binary-search",
+    "error-tolerant-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237103,
+    "pattern_confidence": {
+      "interactive": 0.98,
+      "binary-search": 0.9,
+      "error-tolerant-search": 0.85
+    }
+  }
+}

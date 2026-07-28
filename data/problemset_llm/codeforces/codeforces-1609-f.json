@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1609-f",
+  "title": "Interesting Sections",
+  "slug": "1609-f-interesting-sections",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1609/F",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "meet-in-the-middle",
+    "two pointers"
+  ],
+  "statement": "Given an array of non-negative integers, count the number of subsegments where the minimum and maximum elements have the same number of set bits in their binary representation.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "two-pointers",
+    "data-structures",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "two-pointers",
+    "bit-counting",
+    "contribution-technique"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237051,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "bit-counting": 0.95,
+      "contribution-technique": 0.7
+    }
+  }
+}

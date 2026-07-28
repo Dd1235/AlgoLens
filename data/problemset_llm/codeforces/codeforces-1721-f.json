@@ -1,0 +1,47 @@
+{
+  "id": "codeforces-1721-f",
+  "title": "Matching Reduction",
+  "slug": "1721-f-matching-reduction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1721/F",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "dfs and similar",
+    "flows",
+    "graph matchings",
+    "graphs",
+    "interactive"
+  ],
+  "statement": "Given a bipartite graph, process online queries that either remove a minimal set of vertices to reduce the maximum matching size by one and output a maximum matching with edge index sum, or output the edges of the previously found maximum matching.",
+  "tags": [
+    "graph",
+    "bipartite-graph",
+    "bipartite-matching",
+    "dfs",
+    "max-flow",
+    "interactive"
+  ],
+  "patterns": [
+    "maximum-matching",
+    "max-flow",
+    "dfs",
+    "online-queries",
+    "flow-based-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236985,
+    "pattern_confidence": {
+      "maximum-matching": 0.98,
+      "max-flow": 0.9,
+      "dfs": 0.85,
+      "online-queries": 0.8,
+      "flow-based-matching": 0.9
+    }
+  }
+}

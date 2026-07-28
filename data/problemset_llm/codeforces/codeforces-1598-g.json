@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1598-g",
+  "title": "The Sum of Good Numbers",
+  "slug": "1598-g-the-sum-of-good-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1598/G",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "hashing",
+    "math",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a concatenated string of positive integers without zeros and a target good number x, identify the split positions between adjacent original numbers whose sum equals x.",
+  "tags": [
+    "string",
+    "math",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "string-splitting",
+    "brute-force",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237003,
+    "pattern_confidence": {
+      "string-splitting": 0.9,
+      "brute-force": 0.7,
+      "prefix-sum": 0.6
+    }
+  }
+}

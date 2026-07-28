@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-989-e",
+  "title": "A Trance of Nightfall",
+  "slug": "989-e-a-trance-of-nightfall",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/989/E",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dp",
+    "geometry",
+    "matrices",
+    "probabilities"
+  ],
+  "statement": "Given a set of points on a plane, starting from a chosen initial position, repeatedly move along lines passing through at least two points and the current position, selecting next points uniformly at random. For multiple queries, determine the maximum probability of ending at a specified point after a given number of moves by optimally choosing the start position.",
+  "tags": [
+    "geometry",
+    "probability",
+    "dynamic-programming",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "matrix-exponentiation",
+    "probability-dp",
+    "expected-value-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237039,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "matrix-exponentiation": 0.85,
+      "probability-dp": 0.9,
+      "expected-value-dp": 0.7
+    }
+  }
+}

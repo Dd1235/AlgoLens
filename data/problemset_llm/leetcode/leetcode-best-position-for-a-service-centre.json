@@ -17,7 +17,8 @@
   "tags": [
     "geometry",
     "math",
-    "array"
+    "array",
+    "randomized-algorithm"
   ],
   "patterns": [
     "gradient-descent",

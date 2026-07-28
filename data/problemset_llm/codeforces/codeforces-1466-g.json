@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1466-g",
+  "title": "Song of the Sirens",
+  "slug": "1466-g-song-of-the-sirens",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1466/G",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "combinatorics",
+    "divide and conquer",
+    "hashing",
+    "math",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given an initial string s_0 and a string t, construct songs s_i by s_{i+1} = s_i + t_i + s_i, and for multiple queries, count occurrences of a pattern w in s_i modulo 10^9+7.",
+  "tags": [
+    "string",
+    "combinatorics",
+    "divide-and-conquer",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "string-hashing",
+    "divide-and-conquer",
+    "combinatorics",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237074,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "divide-and-conquer": 0.9,
+      "combinatorics": 0.85,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

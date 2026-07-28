@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-min-cost-to-connect-all-points",
+  "title": "Min Cost to Connect All Points",
+  "slug": "min-cost-to-connect-all-points",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+  "source_topic": "LeetCode / Minimum Spanning Tree (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "union-find",
+    "graph",
+    "minimum-spanning-tree"
+  ],
+  "statement": "Given a set of points on a 2D plane, find the minimum total Manhattan distance required to connect all points such that there is exactly one simple path between any two points (i.e., form a minimum spanning tree).",
+  "tags": [
+    "graph",
+    "geometry",
+    "minimum-spanning-tree",
+    "union-find"
+  ],
+  "patterns": [
+    "kruskal",
+    "manhattan-distance",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234614,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "manhattan-distance": 0.9,
+      "union-find": 0.9
+    }
+  }
+}

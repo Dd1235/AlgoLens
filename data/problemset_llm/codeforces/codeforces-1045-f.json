@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1045-f",
+  "title": "Shady Lady",
+  "slug": "1045-f-shady-lady",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1045/F",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "geometry",
+    "math"
+  ],
+  "statement": "Two players alternately fill or remove monomials with positive coefficients in a two-variable polynomial; determine which player can ensure the polynomial is bounded below or unbounded under optimal play.",
+  "tags": [
+    "math",
+    "game-theory",
+    "polynomial"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "game-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236934,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.85,
+      "game-dp": 0.8
+    }
+  }
+}

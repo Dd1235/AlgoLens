@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1852-f",
+  "title": "Panda Meetups",
+  "slug": "1852-f-panda-meetups",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1852/F",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "flows"
+  ],
+  "statement": "Given a sequence of updates on a number line involving red pandas entering positions and blue pandas checking positions at specific times, determine after each update the maximum number of friendships formed assuming optimal movement of red pandas.",
+  "tags": [
+    "data-structures",
+    "dynamic-programming",
+    "max-flow",
+    "line-sweep"
+  ],
+  "patterns": [
+    "max-flow",
+    "dynamic-programming",
+    "line-sweep",
+    "interval-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236920,
+    "pattern_confidence": {
+      "max-flow": 0.95,
+      "dynamic-programming": 0.85,
+      "line-sweep": 0.8,
+      "interval-matching": 0.75
+    }
+  }
+}

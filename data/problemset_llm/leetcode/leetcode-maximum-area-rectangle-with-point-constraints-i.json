@@ -1,0 +1,45 @@
+{
+  "id": "leetcode-maximum-area-rectangle-with-point-constraints-i",
+  "title": "Maximum Area Rectangle With Point Constraints I",
+  "slug": "maximum-area-rectangle-with-point-constraints-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-area-rectangle-with-point-constraints-i/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-indexed-tree",
+    "segment-tree",
+    "geometry",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given a set of unique points on a plane, find the maximum area of an axis-aligned rectangle formed by four of these points such that no other point lies inside or on its border. Return -1 if no such rectangle exists.",
+  "tags": [
+    "geometry",
+    "array",
+    "sorting",
+    "segment-tree",
+    "fenwick-tree"
+  ],
+  "patterns": [
+    "line-sweep",
+    "coordinate-compression",
+    "segment-tree",
+    "fenwick-tree",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234875,
+    "pattern_confidence": {
+      "line-sweep": 0.9,
+      "coordinate-compression": 0.85,
+      "segment-tree": 0.8,
+      "fenwick-tree": 0.75,
+      "brute-force": 0.9
+    }
+  }
+}

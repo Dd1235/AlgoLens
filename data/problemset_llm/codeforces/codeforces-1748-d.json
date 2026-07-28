@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1748-d",
+  "title": "ConstructOR",
+  "slug": "1748-d-constructor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1748/D",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "bitmasks",
+    "chinese remainder theorem",
+    "combinatorics",
+    "constructive algorithms",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given integers a, b, and d, find an integer x in [0, 2^60) such that (a OR x) and (b OR x) are both divisible by d, or determine that no such x exists.",
+  "tags": [
+    "bit-manipulation",
+    "number-theory",
+    "constructive-algorithm",
+    "combinatorics"
+  ],
+  "patterns": [
+    "bitmask-manipulation",
+    "chinese-remainder-theorem",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236863,
+    "pattern_confidence": {
+      "bitmask-manipulation": 0.95,
+      "chinese-remainder-theorem": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

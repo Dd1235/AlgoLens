@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-triangular-sum-of-an-array",
+  "title": "Find Triangular Sum of an Array",
+  "slug": "find-triangular-sum-of-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-triangular-sum-of-an-array/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "simulation",
+    "combinatorics",
+    "number-theory"
+  ],
+  "statement": "Given an array of digits, repeatedly replace it by the array of pairwise sums modulo 10 until only one element remains, and return that final element.",
+  "tags": [
+    "array",
+    "math",
+    "simulation",
+    "combinatorics"
+  ],
+  "patterns": [
+    "simulation",
+    "modular-arithmetic",
+    "iterative-reduction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234648,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "modular-arithmetic": 0.9,
+      "iterative-reduction": 0.85
+    }
+  }
+}

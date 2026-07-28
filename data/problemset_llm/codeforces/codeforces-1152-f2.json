@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1152-f2",
+  "title": "Neko Rules the Catniverse (Large Version)",
+  "slug": "1152-f2-neko-rules-the-catniverse-large-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1152/F2",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "matrices"
+  ],
+  "statement": "Count the number of distinct sequences of length k visiting different planets, starting from any planet, where each next planet is unvisited and within m steps ahead of the current planet, modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "bit-manipulation",
+    "combinatorics",
+    "modular-arithmetic",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "state-compression",
+    "modular-exponentiation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237019,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "state-compression": 0.9,
+      "modular-exponentiation": 0.7
+    }
+  }
+}

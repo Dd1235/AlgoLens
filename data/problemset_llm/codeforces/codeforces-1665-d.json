@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1665-d",
+  "title": "GCD Guess",
+  "slug": "1665-d-gcd-guess",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1665/D",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "bitmasks",
+    "chinese remainder theorem",
+    "constructive algorithms",
+    "games",
+    "interactive",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an unknown positive integer x, determine x by querying the gcd of x plus two distinct chosen integers, with at most 30 queries allowed.",
+  "tags": [
+    "math",
+    "number-theory",
+    "interactive",
+    "constructive-algorithm",
+    "chinese-remainder-theorem"
+  ],
+  "patterns": [
+    "gcd",
+    "interactive",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236855,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "interactive": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

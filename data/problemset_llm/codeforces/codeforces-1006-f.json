@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1006-f",
+  "title": "Xor-Paths",
+  "slug": "1006-f-xor-paths",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1006/F",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dp",
+    "meet-in-the-middle"
+  ],
+  "statement": "Count the number of paths from the top-left to the bottom-right of a grid moving only right or down, such that the xor of all cell values on the path equals a given target.",
+  "tags": [
+    "grid",
+    "bit-manipulation",
+    "dynamic-programming",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "bitmask-dp",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237041,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "bitmask-dp": 0.9,
+      "dynamic-programming": 0.85
+    }
+  }
+}

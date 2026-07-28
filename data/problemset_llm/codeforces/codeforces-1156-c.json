@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1156-c",
+  "title": "Match Points",
+  "slug": "1156-c-match-points",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1156/C",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "sortings",
+    "ternary search",
+    "two pointers"
+  ],
+  "statement": "Given points on a number line and a minimum distance constraint, find the maximum number of disjoint pairs such that the distance between paired points is at least a given value.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "ternary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237096,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.9,
+      "binary-search": 0.7
+    }
+  }
+}

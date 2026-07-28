@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-525-e",
+  "title": "Anya and Cubes",
+  "slug": "525-e-anya-and-cubes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/525/E",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "binary search",
+    "bitmasks",
+    "brute force",
+    "dp",
+    "math",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given a sequence of cubes each with a natural number, and up to k stickers that can convert a cube's number to its factorial, count the number of ways to select cubes and apply stickers (at most one per cube) so that the sum equals a target S.",
+  "tags": [
+    "math",
+    "bit-manipulation",
+    "dynamic-programming",
+    "meet-in-the-middle",
+    "combinatorics"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "bit-manipulation",
+    "subset-sum",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237065,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "bit-manipulation": 0.9,
+      "subset-sum": 0.85,
+      "dynamic-programming": 0.8
+    }
+  }
+}

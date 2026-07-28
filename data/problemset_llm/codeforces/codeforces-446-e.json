@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-446-e",
+  "title": "DZY Loves Bridges",
+  "slug": "446-e-dzy-loves-bridges",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/446/E",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "math",
+    "matrices"
+  ],
+  "statement": "Given 2m islands and a home node with specified one-way bridges to each island, and bidirectional bridges between islands defined by the highest power of two dividing their index difference, compute the number of ways to reach each island after t days modulo 1051131.",
+  "tags": [
+    "math",
+    "matrix-exponentiation",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "matrix-exponentiation",
+    "modular-arithmetic",
+    "graph-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237029,
+    "pattern_confidence": {
+      "matrix-exponentiation": 0.95,
+      "modular-arithmetic": 0.9,
+      "graph-representation": 0.7
+    }
+  }
+}

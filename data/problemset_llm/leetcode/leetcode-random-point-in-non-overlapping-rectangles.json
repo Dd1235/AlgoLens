@@ -21,7 +21,8 @@
     "array",
     "math",
     "randomized",
-    "ordered-set"
+    "ordered-set",
+    "randomized-algorithm"
   ],
   "patterns": [
     "prefix-sum",

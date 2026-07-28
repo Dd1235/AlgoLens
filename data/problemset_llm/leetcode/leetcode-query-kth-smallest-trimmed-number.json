@@ -21,7 +21,8 @@
     "array",
     "string",
     "sorting",
-    "heap"
+    "heap",
+    "quickselect"
   ],
   "patterns": [
     "sorting",

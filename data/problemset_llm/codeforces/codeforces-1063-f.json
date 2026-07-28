@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1063-f",
+  "title": "String Journey",
+  "slug": "1063-f-string-journey",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1063/F",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "string suffix structures"
+  ],
+  "statement": "Given a string, find the maximum length of a sequence of nested substrings where each substring is strictly shorter and appears as a substring of the previous one, and all appear in order within the original string.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "suffix-automaton",
+    "data-structures",
+    "suffix-array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "suffix-automaton",
+    "string-nesting",
+    "substring-enumeration"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237068,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "suffix-automaton": 0.9,
+      "string-nesting": 0.85,
+      "substring-enumeration": 0.8
+    }
+  }
+}

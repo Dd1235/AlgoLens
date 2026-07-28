@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-angles-of-a-triangle",
+  "title": "Angles of a Triangle",
+  "slug": "angles-of-a-triangle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/angles-of-a-triangle/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given three positive side lengths, determine if they can form a triangle with positive area. If yes, compute and return the triangle's internal angles in degrees sorted in non-decreasing order; otherwise, return an empty array.",
+  "tags": [
+    "geometry",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "law-of-cosines",
+    "floating-point-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234856,
+    "pattern_confidence": {
+      "law-of-cosines": 0.95,
+      "floating-point-computation": 0.8
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1054-h",
+  "title": "Epic Convolution",
+  "slug": "1054-h-epic-convolution",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1054/H",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "chinese remainder theorem",
+    "fft",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given two integer arrays and an integer c, compute the sum of products a_i * b_j * c^{i^2 * j^3} modulo 490019.",
+  "tags": [
+    "math",
+    "number-theory",
+    "fft"
+  ],
+  "patterns": [
+    "chinese-remainder-theorem",
+    "fast-exponentiation",
+    "fft"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236829,
+    "pattern_confidence": {
+      "chinese-remainder-theorem": 0.9,
+      "fast-exponentiation": 0.95,
+      "fft": 0.85
+    }
+  }
+}

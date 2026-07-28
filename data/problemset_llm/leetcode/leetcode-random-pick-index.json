@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-random-pick-index",
+  "title": "Random Pick Index",
+  "slug": "random-pick-index",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/random-pick-index/",
+  "source_topic": "LeetCode / Randomized (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "math",
+    "reservoir-sampling",
+    "randomized"
+  ],
+  "statement": "Design a data structure that, given an array with duplicates, can randomly return an index of a specified target value with equal probability among all occurrences.",
+  "tags": [
+    "array",
+    "hash-map",
+    "randomized",
+    "randomized-algorithm"
+  ],
+  "patterns": [
+    "reservoir-sampling",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234635,
+    "pattern_confidence": {
+      "reservoir-sampling": 0.95,
+      "hash-map": 0.9
+    }
+  }
+}

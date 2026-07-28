@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1672-g",
+  "title": "Cross Xor",
+  "slug": "1672-g-cross-xor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1672/G",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "constructive algorithms",
+    "graphs",
+    "math",
+    "matrices"
+  ],
+  "statement": "Given a grid initially filled with zeros, you can toggle entire rows and columns by XORing with 1. Given a target grid with some cells unknown, count how many completions of the target grid can be obtained by applying a sequence of these toggle operations.",
+  "tags": [
+    "matrix",
+    "bit-manipulation",
+    "linear-algebra",
+    "graph",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "xor-basis",
+    "gaussian-elimination",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237026,
+    "pattern_confidence": {
+      "xor-basis": 0.95,
+      "gaussian-elimination": 0.9,
+      "bit-manipulation": 0.7
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1903-f",
+  "title": "Babysitting",
+  "slug": "1903-f-babysitting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1903/F",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "2-sat",
+    "binary search",
+    "data structures",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given an undirected graph, find a vertex cover that maximizes the minimum difference between indices of chosen vertices.",
+  "tags": [
+    "graph",
+    "two-sat",
+    "binary-search"
+  ],
+  "patterns": [
+    "two-sat",
+    "binary-search-answer",
+    "vertex-cover"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236821,
+    "pattern_confidence": {
+      "two-sat": 0.95,
+      "binary-search-answer": 0.9,
+      "vertex-cover": 0.85
+    }
+  }
+}

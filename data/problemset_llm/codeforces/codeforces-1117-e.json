@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1117-e",
+  "title": "Decypher the String",
+  "slug": "1117-e-decypher-the-string",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1117/E",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "bitmasks",
+    "chinese remainder theorem",
+    "constructive algorithms",
+    "interactive",
+    "math"
+  ],
+  "statement": "Given a hidden original string and a resulting string obtained by applying an unknown sequence of swaps, restore the original string by querying the effect of the swaps on chosen strings at most three times in an interactive setting.",
+  "tags": [
+    "string",
+    "interactive",
+    "math"
+  ],
+  "patterns": [
+    "interactive",
+    "constructive-algorithm",
+    "chinese-remainder-theorem"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236831,
+    "pattern_confidence": {
+      "interactive": 0.98,
+      "constructive-algorithm": 0.9,
+      "chinese-remainder-theorem": 0.85
+    }
+  }
+}

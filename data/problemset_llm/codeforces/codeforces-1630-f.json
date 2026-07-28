@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1630-f",
+  "title": "Making It Bipartite",
+  "slug": "1630-f-making-it-bipartite",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1630/F",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "flows",
+    "graph matchings",
+    "graphs",
+    "number theory"
+  ],
+  "statement": "Given a graph where edges connect vertices whose assigned values divide each other, find the minimum number of vertices to remove to make the graph bipartite.",
+  "tags": [
+    "graph",
+    "number-theory",
+    "bipartite-graph",
+    "greedy",
+    "max-flow",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "minimum-vertex-removal",
+    "bipartite-check",
+    "divisibility-graph",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236977,
+    "pattern_confidence": {
+      "minimum-vertex-removal": 0.9,
+      "bipartite-check": 0.95,
+      "divisibility-graph": 0.85,
+      "greedy": 0.7
+    }
+  }
+}

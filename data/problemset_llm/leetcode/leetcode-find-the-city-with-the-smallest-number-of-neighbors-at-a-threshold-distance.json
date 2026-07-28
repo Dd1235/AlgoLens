@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+  "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+  "slug": "find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
+  "source_topic": "LeetCode / Shortest Path (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "dynamic-programming",
+    "graph",
+    "shortest-path"
+  ],
+  "statement": "Given a weighted undirected graph and a distance threshold, find the city with the fewest reachable neighbors within that threshold, breaking ties by choosing the city with the greatest index.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "floyd-warshall",
+    "all-pairs-shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234927,
+    "pattern_confidence": {
+      "floyd-warshall": 0.95,
+      "all-pairs-shortest-path": 0.9
+    }
+  }
+}

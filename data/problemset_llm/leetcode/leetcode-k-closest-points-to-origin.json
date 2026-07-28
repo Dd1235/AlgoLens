@@ -1,0 +1,43 @@
+{
+  "id": "leetcode-k-closest-points-to-origin",
+  "title": "K Closest Points to Origin",
+  "slug": "k-closest-points-to-origin",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "divide-and-conquer",
+    "geometry",
+    "sorting",
+    "heap-priority-queue",
+    "quickselect"
+  ],
+  "statement": "Given a list of points on the 2D plane and an integer k, find the k points closest to the origin based on Euclidean distance.",
+  "tags": [
+    "array",
+    "geometry",
+    "sorting",
+    "heap",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "sorting",
+    "heap",
+    "quickselect",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234872,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "heap": 0.9,
+      "quickselect": 0.85,
+      "divide-and-conquer": 0.7
+    }
+  }
+}

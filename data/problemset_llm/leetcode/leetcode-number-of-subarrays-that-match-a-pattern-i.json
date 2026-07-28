@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-number-of-subarrays-that-match-a-pattern-i",
+  "title": "Number of Subarrays That Match a Pattern I",
+  "slug": "number-of-subarrays-that-match-a-pattern-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-i/",
+  "source_topic": "LeetCode / Rolling Hash (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "rolling-hash",
+    "string-matching",
+    "hash-function"
+  ],
+  "statement": "Count the number of subarrays in an integer array whose consecutive element comparisons match a given pattern of increasing, equal, or decreasing relations.",
+  "tags": [
+    "array",
+    "string-matching",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "sliding-window",
+    "string-matching",
+    "comparison-based-filtering"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234624,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "string-matching": 0.85,
+      "comparison-based-filtering": 0.8
+    }
+  }
+}

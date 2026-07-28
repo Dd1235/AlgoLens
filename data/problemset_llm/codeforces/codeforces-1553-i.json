@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1553-i",
+  "title": "Stairs",
+  "slug": "1553-i-stairs",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1553/I",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "combinatorics",
+    "divide and conquer",
+    "dp",
+    "fft",
+    "math"
+  ],
+  "statement": "Given an array representing the lengths of longest consecutive segments around each position in a permutation, count the number of permutations that produce this stair array modulo 998244353.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "math",
+    "fft",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "fft",
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236893,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "fft": 0.85,
+      "dynamic-programming": 0.8,
+      "combinatorics": 0.9
+    }
+  }
+}

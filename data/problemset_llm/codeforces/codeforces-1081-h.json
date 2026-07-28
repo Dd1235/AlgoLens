@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1081-h",
+  "title": "Palindromic Magic",
+  "slug": "1081-h-palindromic-magic",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1081/H",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "data structures",
+    "hashing",
+    "strings"
+  ],
+  "statement": "Given two strings, count the number of distinct strings formed by concatenating a non-empty palindromic substring from the first string with a non-empty palindromic substring from the second string.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "data-structures"
+  ],
+  "patterns": [
+    "palindromic-substrings",
+    "string-hashing",
+    "set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236996,
+    "pattern_confidence": {
+      "palindromic-substrings": 0.95,
+      "string-hashing": 0.9,
+      "set": 0.7
+    }
+  }
+}

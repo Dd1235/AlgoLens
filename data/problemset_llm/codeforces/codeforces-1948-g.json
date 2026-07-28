@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1948-g",
+  "title": "MST with Matching",
+  "slug": "1948-g-mst-with-matching",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1948/G",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dsu",
+    "graph matchings",
+    "trees"
+  ],
+  "statement": "Given a connected weighted undirected graph and a cost parameter c, find a spanning tree minimizing the sum of the tree's edge weights plus c times the size of a maximum matching in the tree.",
+  "tags": [
+    "graph",
+    "tree",
+    "minimum-spanning-tree",
+    "matching",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "minimum-spanning-tree",
+    "maximum-matching",
+    "graph-matching",
+    "union-find"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236987,
+    "pattern_confidence": {
+      "minimum-spanning-tree": 0.95,
+      "maximum-matching": 0.9,
+      "graph-matching": 0.85,
+      "union-find": 0.7
+    }
+  }
+}

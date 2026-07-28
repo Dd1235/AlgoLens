@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-722-f",
+  "title": "Cyclic Cipher",
+  "slug": "722-f-cyclic-cipher",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/722/F",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "chinese remainder theorem",
+    "data structures",
+    "implementation",
+    "number theory",
+    "two pointers"
+  ],
+  "statement": "Given multiple sequences of distinct integers, each rotated left every second, record the first elements over many rotations and find the longest consecutive segment for each integer in the resulting arrays over a large number of steps.",
+  "tags": [
+    "array",
+    "number-theory",
+    "two-pointers",
+    "implementation",
+    "chinese-remainder-theorem"
+  ],
+  "patterns": [
+    "two-pointers",
+    "modular-arithmetic",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236875,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "modular-arithmetic": 0.9,
+      "simulation": 0.8
+    }
+  }
+}

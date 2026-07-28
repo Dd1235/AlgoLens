@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-sum-of-gcd-of-formed-pairs",
+  "title": "Sum of GCD of Formed Pairs",
+  "slug": "sum-of-gcd-of-formed-pairs",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "two-pointers",
+    "sorting",
+    "simulation",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, construct a prefixGcd array where each element is the gcd of the current element and the maximum element up to that index. After sorting prefixGcd, form pairs from smallest and largest unpaired elements and sum their gcd values, ignoring the middle element if the length is odd.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "sorting",
+    "two-pointers"
+  ],
+  "patterns": [
+    "prefix-gcd",
+    "two-pointers",
+    "sorting",
+    "gcd-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234841,
+    "pattern_confidence": {
+      "prefix-gcd": 0.9,
+      "two-pointers": 0.85,
+      "sorting": 0.95,
+      "gcd-computation": 0.9
+    }
+  }
+}

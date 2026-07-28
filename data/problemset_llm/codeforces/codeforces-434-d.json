@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-434-d",
+  "title": "Nanami's Power Plant",
+  "slug": "434-d-nanami-s-power-plant",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/434/D",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "flows"
+  ],
+  "statement": "Given n generators each with a quadratic output function and generating level bounds, and m constraints of the form x_u ≤ x_v + d, find the maximum total output achievable by assigning levels to generators respecting all constraints.",
+  "tags": [
+    "math",
+    "max-flow",
+    "graph",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "max-flow",
+    "convex-quadratic-optimization",
+    "graph-constraints",
+    "dp-on-graphs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236922,
+    "pattern_confidence": {
+      "max-flow": 0.9,
+      "convex-quadratic-optimization": 0.85,
+      "graph-constraints": 0.8,
+      "dp-on-graphs": 0.7
+    }
+  }
+}

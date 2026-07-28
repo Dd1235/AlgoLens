@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1621-i",
+  "title": "Two Sequences",
+  "slug": "1621-i-two-sequences",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1621/I",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "data structures",
+    "hashing",
+    "string suffix structures"
+  ],
+  "statement": "Given an initial integer array, repeatedly transform it by replacing suffixes with lexicographically smallest subarrays of increasing length, and answer queries about elements in the resulting sequence of arrays.",
+  "tags": [
+    "array",
+    "string",
+    "sorting",
+    "data-structures",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "lexicographic-subarray",
+    "prefix-suffix-manipulation",
+    "offline-queries",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237076,
+    "pattern_confidence": {
+      "lexicographic-subarray": 0.9,
+      "prefix-suffix-manipulation": 0.85,
+      "offline-queries": 0.7,
+      "binary-search": 0.6
+    }
+  }
+}

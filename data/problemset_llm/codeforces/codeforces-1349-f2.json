@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1349-f2",
+  "title": "Slime and Sequences (Hard Version)",
+  "slug": "1349-f2-slime-and-sequences-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1349/F2",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "dp",
+    "fft",
+    "math"
+  ],
+  "statement": "Count the total occurrences of each integer k in all length-n sequences where every integer greater than 1 appears only if its predecessor also appears earlier in the sequence, modulo 998244353.",
+  "tags": [
+    "dynamic-programming",
+    "math",
+    "fft"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "fast-fourier-transform",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236888,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "fast-fourier-transform": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

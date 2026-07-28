@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-690-f2",
+  "title": "Tree of Life (medium)",
+  "slug": "690-f2-tree-of-life-medium",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/690/F2",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "constructive algorithms",
+    "hashing",
+    "trees"
+  ],
+  "statement": "Given n drawings of a tree each missing a distinct vertex and its edges, with vertices renumbered arbitrarily, reconstruct the original tree structure from these partial edge lists.",
+  "tags": [
+    "tree",
+    "graph",
+    "rolling-hash",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "graph-reconstruction",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237015,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "graph-reconstruction": 0.85,
+      "rolling-hash": 0.8
+    }
+  }
+}

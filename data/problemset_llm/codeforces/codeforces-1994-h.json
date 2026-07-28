@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1994-h",
+  "title": "Fortnite",
+  "slug": "1994-h-fortnite",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1994/H",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "combinatorics",
+    "constructive algorithms",
+    "games",
+    "greedy",
+    "hashing",
+    "interactive",
+    "math",
+    "number theory",
+    "strings"
+  ],
+  "statement": "Given an interactive system that returns polynomial hashes of input strings, determine the unknown hash parameters using at most three queries.",
+  "tags": [
+    "string",
+    "rolling-hash",
+    "interactive",
+    "number-theory",
+    "math"
+  ],
+  "patterns": [
+    "polynomial-hashing",
+    "interactive"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237009,
+    "pattern_confidence": {
+      "polynomial-hashing": 0.95,
+      "interactive": 0.9
+    }
+  }
+}

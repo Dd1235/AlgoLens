@@ -1,0 +1,46 @@
+{
+  "id": "codeforces-1536-f",
+  "title": "Omkar and Akmar",
+  "slug": "1536-f-omkar-and-akmar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1536/F",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "chinese remainder theorem",
+    "combinatorics",
+    "constructive algorithms",
+    "fft",
+    "games",
+    "geometry",
+    "math",
+    "meet-in-the-middle",
+    "string suffix structures"
+  ],
+  "statement": "Two players alternately place letters A or B on empty cells of a circular board with adjacency restrictions, and the task is to count the number of distinct games ending in a loss under optimal play modulo 10^9+7.",
+  "tags": [
+    "game-theory",
+    "combinatorics",
+    "math",
+    "chinese-remainder-theorem",
+    "fft",
+    "meet-in-the-middle",
+    "suffix-array"
+  ],
+  "patterns": [
+    "game-theory",
+    "combinatorial-game",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236852,
+    "pattern_confidence": {
+      "game-theory": 0.98,
+      "combinatorial-game": 0.95,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

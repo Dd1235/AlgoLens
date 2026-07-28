@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1023-g",
+  "title": "Pisces",
+  "slug": "1023-g-pisces",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1023/G",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "flows",
+    "trees"
+  ],
+  "statement": "Given a tree of lakes connected by rivers with travel times, and observations of minimum fish counts at certain lakes on specific days, determine the minimal total number of fish consistent with all observations.",
+  "tags": [
+    "tree",
+    "max-flow",
+    "data-structures",
+    "graph"
+  ],
+  "patterns": [
+    "max-flow",
+    "tree-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236909,
+    "pattern_confidence": {
+      "max-flow": 0.9,
+      "tree-dp": 0.6
+    }
+  }
+}

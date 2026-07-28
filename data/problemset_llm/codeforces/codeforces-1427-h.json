@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1427-h",
+  "title": "Prison Break",
+  "slug": "1427-h-prison-break",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1427/H",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "binary search",
+    "games",
+    "geometry",
+    "ternary search"
+  ],
+  "statement": "Given a convex polygonal prison with two guards patrolling its perimeter and a prisoner starting outside, determine the minimum guard speed needed to prevent the prisoner from escaping by reaching a climbable wall segment, assuming optimal movement from both sides.",
+  "tags": [
+    "geometry",
+    "game-theory",
+    "binary-search",
+    "ternary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "geometry",
+    "game-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236941,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "geometry": 0.95,
+      "game-theory": 0.85
+    }
+  }
+}

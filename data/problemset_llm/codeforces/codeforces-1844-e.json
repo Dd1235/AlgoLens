@@ -1,0 +1,44 @@
+{
+  "id": "codeforces-1844-e",
+  "title": "Great Grids",
+  "slug": "1844-e-great-grids",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1844/E",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "2-sat",
+    "constructive algorithms",
+    "dfs and similar",
+    "dsu",
+    "graphs"
+  ],
+  "statement": "Construct an n by m grid with letters A, B, or C such that every 2x2 subgrid contains all three letters, adjacent cells differ, and given corner-sharing cell pairs must have the same letter. Determine if such a grid exists.",
+  "tags": [
+    "graph",
+    "two-sat",
+    "dfs",
+    "union-find",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "two-sat",
+    "dfs",
+    "union-find",
+    "constraint-satisfaction",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236819,
+    "pattern_confidence": {
+      "two-sat": 0.95,
+      "dfs": 0.85,
+      "union-find": 0.8,
+      "constraint-satisfaction": 0.9,
+      "constructive-algorithm": 0.75
+    }
+  }
+}

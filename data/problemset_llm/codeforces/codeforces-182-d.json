@@ -19,7 +19,8 @@
   "tags": [
     "string",
     "math",
-    "brute-force"
+    "brute-force",
+    "rolling-hash"
   ],
   "patterns": [
     "string-periodicity",

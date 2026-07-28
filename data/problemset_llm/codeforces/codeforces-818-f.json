@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-818-f",
+  "title": "Level Generation",
+  "slug": "818-f-level-generation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/818/F",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "binary search",
+    "math",
+    "ternary search"
+  ],
+  "statement": "Given a number of vertices, determine the maximum number of edges in a simple undirected graph where at least half of the edges are bridges (edges whose removal increases the number of connected components).",
+  "tags": [
+    "graph",
+    "bridges",
+    "combinatorics",
+    "ternary-search"
+  ],
+  "patterns": [
+    "bridge-finding",
+    "graph-construction",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237110,
+    "pattern_confidence": {
+      "bridge-finding": 0.9,
+      "graph-construction": 0.85,
+      "binary-search": 0.7
+    }
+  }
+}

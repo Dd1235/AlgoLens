@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1958-i",
+  "title": "Equal Trees",
+  "slug": "1958-i-equal-trees",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1958/I",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "*special",
+    "graphs",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given two rooted trees with the same number of vertices, find the minimum number of vertex removal operations (except the root) needed to make the trees equal in structure and vertex sets, where removing a vertex reconnects its children to its parent.",
+  "tags": [
+    "tree",
+    "graph",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "tree-dp",
+    "dfs"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237059,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.9,
+      "tree-dp": 0.85,
+      "dfs": 0.8
+    }
+  }
+}

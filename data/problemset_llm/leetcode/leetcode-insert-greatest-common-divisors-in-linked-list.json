@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-insert-greatest-common-divisors-in-linked-list",
+  "title": "Insert Greatest Common Divisors in Linked List",
+  "slug": "insert-greatest-common-divisors-in-linked-list",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "linked-list",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given a singly linked list of integers, insert a new node between every pair of adjacent nodes containing the greatest common divisor (GCD) of their values, and return the modified list.",
+  "tags": [
+    "linked-list",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd-computation",
+    "linked-list-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234650,
+    "pattern_confidence": {
+      "gcd-computation": 0.95,
+      "linked-list-traversal": 0.9
+    }
+  }
+}

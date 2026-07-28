@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-704-d",
+  "title": "Captain America",
+  "slug": "704-d-captain-america",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/704/D",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "flows",
+    "greedy"
+  ],
+  "statement": "Given n shields at points on a plane, paint each shield red or blue with given costs, satisfying constraints on the maximum allowed difference between red and blue shields on specified vertical or horizontal lines, minimizing total painting cost.",
+  "tags": [
+    "geometry",
+    "max-flow",
+    "graph",
+    "greedy"
+  ],
+  "patterns": [
+    "min-cost-flow",
+    "bipartite-matching",
+    "max-flow",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236930,
+    "pattern_confidence": {
+      "min-cost-flow": 0.95,
+      "bipartite-matching": 0.7,
+      "max-flow": 0.9,
+      "greedy": 0.6
+    }
+  }
+}

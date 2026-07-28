@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-407-d",
+  "title": "Largest Submatrix 3",
+  "slug": "407-d-largest-submatrix-3",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/407/D",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dp",
+    "hashing"
+  ],
+  "statement": "Given an integer matrix, find the largest-area submatrix in which all elements are distinct.",
+  "tags": [
+    "matrix",
+    "rolling-hash",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "sliding-window",
+    "two-pointers",
+    "hash-set",
+    "dp-on-rows"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237011,
+    "pattern_confidence": {
+      "sliding-window": 0.9,
+      "two-pointers": 0.85,
+      "hash-set": 0.9,
+      "dp-on-rows": 0.7
+    }
+  }
+}

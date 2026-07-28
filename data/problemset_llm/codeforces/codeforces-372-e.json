@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-372-e",
+  "title": "Drawing Circles is Fun",
+  "slug": "372-e-drawing-circles-is-fun",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/372/E",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "combinatorics",
+    "geometry"
+  ],
+  "statement": "Given a set of points on the plane excluding the origin, where every triangle formed with the origin has positive area, count the number of good sets of pairs of points satisfying specific geometric circumcircle intersection properties.",
+  "tags": [
+    "geometry",
+    "combinatorics"
+  ],
+  "patterns": [
+    "geometry",
+    "combinatorics",
+    "circle-geometry",
+    "pair-counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236951,
+    "pattern_confidence": {
+      "geometry": 0.95,
+      "combinatorics": 0.9,
+      "circle-geometry": 0.85,
+      "pair-counting": 0.8
+    }
+  }
+}

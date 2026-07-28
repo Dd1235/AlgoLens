@@ -1,0 +1,45 @@
+{
+  "id": "codeforces-167-e",
+  "title": "Wizards and Bets",
+  "slug": "167-e-wizards-and-bets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/167/E",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "dfs and similar",
+    "graphs",
+    "math",
+    "matrices"
+  ],
+  "statement": "Given a DAG with equal numbers of sources and sinks, count modulo p the total winnings of the first player over all sets of vertex-disjoint source-to-sink path matchings, where winnings depend on the parity of inversions in the induced sink-to-source mapping.",
+  "tags": [
+    "graph",
+    "math",
+    "matrix",
+    "combinatorics",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dfs",
+    "matrix-determinant",
+    "inclusion-exclusion",
+    "counting",
+    "perfect-matching",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237024,
+    "pattern_confidence": {
+      "dfs": 0.8,
+      "matrix-determinant": 0.95,
+      "inclusion-exclusion": 0.85,
+      "counting": 0.9,
+      "perfect-matching": 0.9,
+      "parity-check": 0.85
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1045-e",
+  "title": "Ancient civilizations",
+  "slug": "1045-e-ancient-civilizations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1045/E",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "constructive algorithms",
+    "geometry"
+  ],
+  "statement": "Given two disjoint sets of points in the plane representing two civilizations, construct non-intersecting straight-line roads forming a tree within each civilization without connecting points from different civilizations, or determine that it is impossible.",
+  "tags": [
+    "geometry",
+    "graph",
+    "constructive-algorithm",
+    "planar-graph"
+  ],
+  "patterns": [
+    "planar-embedding",
+    "constructive-algorithm",
+    "graph-tree-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236932,
+    "pattern_confidence": {
+      "planar-embedding": 0.9,
+      "constructive-algorithm": 0.95,
+      "graph-tree-construction": 0.85
+    }
+  }
+}

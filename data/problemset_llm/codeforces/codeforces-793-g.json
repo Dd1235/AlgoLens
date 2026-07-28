@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-793-g",
+  "title": "Oleg and chess",
+  "slug": "793-g-oleg-and-chess",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/793/G",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "divide and conquer",
+    "flows",
+    "graph matchings"
+  ],
+  "statement": "Given an n×n chessboard with some rectangular regions of cells removed, find the maximum number of non-attacking rooks that can be placed on the remaining cells, where rooks attack along rows and columns ignoring removed cells.",
+  "tags": [
+    "graph",
+    "bipartite-matching",
+    "flow",
+    "data-structures",
+    "geometry"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "max-flow",
+    "coordinate-compression",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236989,
+    "pattern_confidence": {
+      "bipartite-matching": 0.95,
+      "max-flow": 0.9,
+      "coordinate-compression": 0.85,
+      "divide-and-conquer": 0.7
+    }
+  }
+}
