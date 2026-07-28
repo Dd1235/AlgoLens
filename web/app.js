@@ -1002,6 +1002,14 @@ COMMANDS START WITH ":"
   anything beginning with a colon is a command, never a search —
   a typo like ":bo" tells you so instead of querying the corpus
 
+DIFFICULTY
+  pick a judge and its own difficulty scale appears below —
+  easy/medium/hard for leetcode, rating bands for codeforces and
+  atcoder. There is no shared scale across judges, so a band only
+  ever filters its own judge: choosing "cf 1800+" leaves leetcode
+  results untouched rather than deleting them. Drop the judge and
+  its bands go with it; "any ✕" clears them.
+
 JUDGES
   all four are on until you narrow. Click one in the judges row
   (or its tag on any result) to see only that judge; click more
