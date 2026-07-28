@@ -1,6 +1,6 @@
 {
  "source": "data/formwise.xlsx",
- "count": 59,
+ "count": 65,
  "problems": [
   {
    "name": "Aggressive Cows",
@@ -355,6 +355,42 @@
    "url": "https://codeforces.com/problemset/problem/700/C",
    "topic": "formwise (codeforces, rated 2600)",
    "reason": "absent from the open-r1/codeforces dataset (contest 700 carries only A and B there)"
+  },
+  {
+   "name": "Beautiful Set of Points",
+   "url": "https://codeforces.com/problemset",
+   "topic": "curated div2 sets (div2-c)",
+   "reason": "no problem by this name in the codeforces problemset — renamed or removed"
+  },
+  {
+   "name": "Determine Winning Islands in Race",
+   "url": "https://codeforces.com/problemset/problem/1998/D",
+   "topic": "curated div2 sets (div2-d)",
+   "reason": "postdates the open-r1/codeforces statement dataset; codeforces.com is Cloudflare-blocked"
+  },
+  {
+   "name": "Iris and Game on the Tree",
+   "url": "https://codeforces.com/problemset/problem/2006/A",
+   "topic": "curated div2 sets (div2-d)",
+   "reason": "postdates the open-r1/codeforces statement dataset; codeforces.com is Cloudflare-blocked"
+  },
+  {
+   "name": "Tree Pruning",
+   "url": "https://codeforces.com/problemset/problem/2018/C",
+   "topic": "curated div2 sets (div2-d)",
+   "reason": "postdates the open-r1/codeforces statement dataset; codeforces.com is Cloudflare-blocked"
+  },
+  {
+   "name": "Drunken Maze",
+   "url": "https://codeforces.com/problemset/problem/2041/D",
+   "topic": "curated div2 sets (div2-d)",
+   "reason": "postdates the open-r1/codeforces statement dataset; codeforces.com is Cloudflare-blocked"
+  },
+  {
+   "name": "Medium Demon Problem (hard version)",
+   "url": "https://codeforces.com/problemset/problem/2044/G2",
+   "topic": "curated div2 sets (div2-d)",
+   "reason": "postdates the open-r1/codeforces statement dataset; codeforces.com is Cloudflare-blocked"
   }
  ]
 }
