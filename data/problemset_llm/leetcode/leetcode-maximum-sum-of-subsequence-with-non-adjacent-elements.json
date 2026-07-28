@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 15.7,
   "source_tags": [
     "array",
     "divide-and-conquer",

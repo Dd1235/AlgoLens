@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/",
   "source_topic": "LeetCode / DP Optimization",
   "difficulty": "Medium",
+  "acceptance_rate": 89.5,
   "source_tags": [
     "array",
     "backtracking",

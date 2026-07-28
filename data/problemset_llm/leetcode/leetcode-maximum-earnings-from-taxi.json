@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-earnings-from-taxi/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.7,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/process-tasks-using-servers/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 42.0,
   "source_tags": [
     "array",
     "heap-priority-queue"

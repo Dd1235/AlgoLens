@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sum-of-numbers-with-units-digit-k/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 28.4,
   "source_tags": [
     "math",
     "dynamic-programming",

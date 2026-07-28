@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 62.3,
   "source_tags": [],
   "statement": "Given an undirected graph with nodes labeled 0 to n-1 each having a binary value, count the number of non-empty connected induced subgraphs whose node values sum to an even number.",
   "tags": [

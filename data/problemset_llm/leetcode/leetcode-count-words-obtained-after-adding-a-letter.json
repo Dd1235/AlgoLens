@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 44.1,
   "source_tags": [
     "array",
     "hash-table",

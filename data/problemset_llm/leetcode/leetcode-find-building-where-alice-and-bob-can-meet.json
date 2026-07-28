@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 52.5,
   "source_tags": [
     "array",
     "binary-search",

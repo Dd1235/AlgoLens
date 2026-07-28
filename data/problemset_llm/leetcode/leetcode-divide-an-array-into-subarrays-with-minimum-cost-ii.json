@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 54.7,
   "source_tags": [
     "array",
     "hash-table",

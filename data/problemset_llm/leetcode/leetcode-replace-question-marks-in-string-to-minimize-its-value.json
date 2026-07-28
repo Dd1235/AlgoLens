@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 29.4,
   "source_tags": [
     "hash-table",
     "string",

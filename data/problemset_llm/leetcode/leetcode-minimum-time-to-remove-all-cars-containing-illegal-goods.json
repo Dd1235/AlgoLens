@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 42.0,
   "source_tags": [
     "string",
     "dynamic-programming"

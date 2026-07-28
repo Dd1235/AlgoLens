@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sudoku-solver/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 65.6,
   "source_tags": [
     "array",
     "hash-table",

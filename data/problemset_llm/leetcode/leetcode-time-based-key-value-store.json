@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/time-based-key-value-store/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.1,
   "source_tags": [
     "hash-table",
     "string",

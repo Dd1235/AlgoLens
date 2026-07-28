@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-subarrays-with-cost-less-than-or-equal-to-k/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.3,
   "source_tags": [
     "array",
     "queue",

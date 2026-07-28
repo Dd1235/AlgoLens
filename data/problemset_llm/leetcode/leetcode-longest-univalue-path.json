@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-univalue-path/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 44.2,
   "source_tags": [
     "tree",
     "depth-first-search",

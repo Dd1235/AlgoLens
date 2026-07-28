@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/earliest-second-to-mark-indices-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 22.2,
   "source_tags": [
     "array",
     "binary-search",

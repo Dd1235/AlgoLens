@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 42.0,
   "source_tags": [
     "string",
     "enumeration"

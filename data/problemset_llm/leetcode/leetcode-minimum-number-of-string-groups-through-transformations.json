@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-string-groups-through-transformations/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 47.9,
   "source_tags": [],
   "statement": "Given an array of strings, group them by equivalence where two strings are equivalent if their even and odd indexed characters can be independently cyclically shifted to form each other. Return the minimum number of such groups.",
   "tags": [

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-users-with-persistent-behavior-patterns/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.5,
   "source_tags": [],
   "statement": "Identify users who have at least one sequence of 5 or more consecutive days performing exactly one identical action per day, and return their longest such streaks ordered by streak length and user ID.",
   "tags": [

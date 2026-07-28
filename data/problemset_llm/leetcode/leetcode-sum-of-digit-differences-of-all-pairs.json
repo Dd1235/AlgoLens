@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 43.3,
   "source_tags": [
     "array",
     "hash-table",

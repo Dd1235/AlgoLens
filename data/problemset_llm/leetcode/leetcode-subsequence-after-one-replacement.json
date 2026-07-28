@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/subsequence-after-one-replacement/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 21.7,
   "source_tags": [],
   "statement": "Given two lowercase strings s and t, determine if by replacing at most one character in s with any lowercase letter, s can become a subsequence of t.",
   "tags": [

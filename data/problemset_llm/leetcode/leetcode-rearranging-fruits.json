@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/rearranging-fruits/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 57.3,
   "source_tags": [
     "array",
     "hash-table",

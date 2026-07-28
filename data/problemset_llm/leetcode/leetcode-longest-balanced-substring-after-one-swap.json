@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-balanced-substring-after-one-swap/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 14.0,
   "source_tags": [
     "hash-table",
     "string",

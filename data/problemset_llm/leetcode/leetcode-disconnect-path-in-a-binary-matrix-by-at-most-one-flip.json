@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 28.1,
   "source_tags": [
     "array",
     "dynamic-programming",

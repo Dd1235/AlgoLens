@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/my-calendar-iii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 72.0,
   "source_tags": [
     "binary-search",
     "design",

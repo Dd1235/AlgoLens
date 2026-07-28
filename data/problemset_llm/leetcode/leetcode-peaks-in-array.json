@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/peaks-in-array/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 27.9,
   "source_tags": [
     "array",
     "binary-indexed-tree",

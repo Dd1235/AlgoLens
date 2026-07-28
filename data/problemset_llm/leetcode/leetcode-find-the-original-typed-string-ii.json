@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-original-typed-string-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 45.5,
   "source_tags": [
     "string",
     "dynamic-programming",

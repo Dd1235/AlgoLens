@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-golden-hour-customers/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 34.3,
   "source_tags": [],
   "statement": "Identify customers who have made at least three orders, with at least 60% during specified peak hours, have rated at least half their orders, and have an average rating of at least 4.0, then return them ordered by average rating and customer ID.",
   "tags": [

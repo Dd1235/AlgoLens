@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-median-from-data-stream/",
   "source_topic": "LeetCode / Trees and Heaps",
   "difficulty": "Hard",
+  "acceptance_rate": 54.8,
   "source_tags": [
     "two-pointers",
     "design",

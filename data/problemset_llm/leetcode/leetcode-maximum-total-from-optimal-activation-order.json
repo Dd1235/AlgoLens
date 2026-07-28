@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-total-from-optimal-activation-order/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 33.5,
   "source_tags": [
     "array",
     "two-pointers",

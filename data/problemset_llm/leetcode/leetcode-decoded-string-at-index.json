@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/decoded-string-at-index/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 37.4,
   "source_tags": [
     "string",
     "stack"

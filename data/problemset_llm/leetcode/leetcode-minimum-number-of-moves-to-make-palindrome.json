@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 53.0,
   "source_tags": [
     "two-pointers",
     "string",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/build-array-where-you-can-find-the-maximum-exactly-k-comparisons/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 65.4,
   "source_tags": [
     "dynamic-programming",
     "prefix-sum"

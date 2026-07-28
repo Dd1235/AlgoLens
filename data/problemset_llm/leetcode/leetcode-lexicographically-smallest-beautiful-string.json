@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/lexicographically-smallest-beautiful-string/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 38.5,
   "source_tags": [
     "string",
     "greedy"

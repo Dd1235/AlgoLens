@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/two-sum/",
   "source_topic": "LeetCode / Array and Hashing",
   "difficulty": "Easy",
+  "acceptance_rate": 57.9,
   "source_tags": [
     "array",
     "hash-table"

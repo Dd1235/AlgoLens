@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-churn-risk-customers/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.9,
   "source_tags": [],
   "statement": "Identify users at risk of churn by analyzing their subscription event history to find those currently active, with downgrade events, current revenue less than half their historical maximum, and subscribed for at least 60 days.",
   "tags": [

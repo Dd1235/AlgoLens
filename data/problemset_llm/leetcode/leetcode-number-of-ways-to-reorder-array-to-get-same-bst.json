@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 54.1,
   "source_tags": [
     "array",
     "math",

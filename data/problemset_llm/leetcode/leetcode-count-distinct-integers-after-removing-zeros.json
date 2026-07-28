@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-distinct-integers-after-removing-zeros/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 23.1,
   "source_tags": [
     "math",
     "dynamic-programming"

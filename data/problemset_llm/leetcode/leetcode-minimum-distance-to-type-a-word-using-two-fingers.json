@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-distance-to-type-a-word-using-two-fingers/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 72.3,
   "source_tags": [
     "string",
     "dynamic-programming"

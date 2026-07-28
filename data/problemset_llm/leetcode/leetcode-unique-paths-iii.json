@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/unique-paths-iii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 82.9,
   "source_tags": [
     "array",
     "backtracking",

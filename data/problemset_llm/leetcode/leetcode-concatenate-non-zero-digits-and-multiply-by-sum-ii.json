@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 42.7,
   "source_tags": [
     "math",
     "string",

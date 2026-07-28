@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-exceed-threshold-value-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 45.9,
   "source_tags": [
     "array",
     "heap-priority-queue",

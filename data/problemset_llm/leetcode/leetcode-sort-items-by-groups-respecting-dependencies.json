@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 66.0,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-non-adjacent-subsets-in-a-rooted-tree/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 56.0,
   "source_tags": [
     "array",
     "dynamic-programming",

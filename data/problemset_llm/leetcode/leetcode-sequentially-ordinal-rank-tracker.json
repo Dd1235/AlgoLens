@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sequentially-ordinal-rank-tracker/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 61.3,
   "source_tags": [
     "design",
     "heap-priority-queue",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/knight-probability-in-chessboard/description/",
   "source_topic": "Formwise / DP Level 1",
   "difficulty": "Medium",
+  "acceptance_rate": 57.2,
   "source_tags": [
     "dynamic-programming"
   ],

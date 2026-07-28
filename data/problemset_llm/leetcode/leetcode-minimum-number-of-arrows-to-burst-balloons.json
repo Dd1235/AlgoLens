@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description/",
   "source_topic": "Formwise / Greedy And Sweepline",
   "difficulty": "Medium",
+  "acceptance_rate": 61.7,
   "source_tags": [
     "array",
     "greedy",

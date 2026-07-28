@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.0,
   "source_tags": [
     "array",
     "hash-table",

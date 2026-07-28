@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/final-element-after-subarray-deletions/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 41.1,
   "source_tags": [
     "array",
     "math",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 24.8,
   "source_tags": [],
   "statement": "Given an array of resource requirements and an initial resource amount k, process elements sequentially, performing incremental-cost operations to increase resources when needed, and find the minimum total cost modulo 10^9+7.",
   "tags": [

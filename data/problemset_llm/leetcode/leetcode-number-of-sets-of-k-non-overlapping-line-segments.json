@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-sets-of-k-non-overlapping-line-segments/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.1,
   "source_tags": [
     "math",
     "dynamic-programming",

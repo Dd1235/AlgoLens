@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-integers-with-popcount-depth-equal-to-k-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 59.5,
   "source_tags": [
     "array",
     "divide-and-conquer",

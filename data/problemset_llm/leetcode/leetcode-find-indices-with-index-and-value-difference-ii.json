@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-indices-with-index-and-value-difference-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 32.6,
   "source_tags": [
     "array",
     "two-pointers"

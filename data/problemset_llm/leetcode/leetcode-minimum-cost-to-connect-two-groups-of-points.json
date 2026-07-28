@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 50.3,
   "source_tags": [
     "array",
     "dynamic-programming",

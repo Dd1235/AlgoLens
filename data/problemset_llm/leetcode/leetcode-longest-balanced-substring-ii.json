@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-balanced-substring-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 41.9,
   "source_tags": [
     "hash-table",
     "string",

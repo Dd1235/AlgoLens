@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/koko-eating-bananas/",
   "source_topic": "LeetCode / Binary Search",
   "difficulty": "Medium",
+  "acceptance_rate": 50.3,
   "source_tags": [
     "array",
     "binary-search"

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-make-array-equal-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 33.3,
   "source_tags": [
     "array",
     "math",

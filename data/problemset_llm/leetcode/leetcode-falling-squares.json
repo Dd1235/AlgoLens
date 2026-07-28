@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/falling-squares/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.4,
   "source_tags": [
     "array",
     "segment-tree",

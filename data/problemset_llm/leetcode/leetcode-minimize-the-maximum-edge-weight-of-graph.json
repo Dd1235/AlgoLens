@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimize-the-maximum-edge-weight-of-graph/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 45.3,
   "source_tags": [
     "binary-search",
     "depth-first-search",

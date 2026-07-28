@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-atoms/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 65.2,
   "source_tags": [
     "hash-table",
     "string",

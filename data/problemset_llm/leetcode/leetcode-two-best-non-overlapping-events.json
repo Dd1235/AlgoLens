@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/two-best-non-overlapping-events/description/",
   "source_topic": "Formwise / DP Optimizations",
   "difficulty": "Medium",
+  "acceptance_rate": 64.0,
   "source_tags": [
     "array",
     "binary-search",

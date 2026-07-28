@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-height-by-stacking-cuboids/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 62.3,
   "source_tags": [
     "array",
     "dynamic-programming",

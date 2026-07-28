@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/shortest-string-that-contains-three-strings/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 32.1,
   "source_tags": [
     "string",
     "greedy",

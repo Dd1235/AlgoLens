@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 35.1,
   "source_tags": [
     "array",
     "dynamic-programming",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-the-profit-as-the-salesman/",
   "source_topic": "LeetCode / DP Optimization",
   "difficulty": "Medium",
+  "acceptance_rate": 38.4,
   "source_tags": [
     "array",
     "hash-table",

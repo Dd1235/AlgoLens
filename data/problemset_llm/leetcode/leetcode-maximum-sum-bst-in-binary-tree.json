@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.4,
   "source_tags": [
     "dynamic-programming",
     "tree",

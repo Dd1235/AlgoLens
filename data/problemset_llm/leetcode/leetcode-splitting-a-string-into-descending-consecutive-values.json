@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 37.7,
   "source_tags": [
     "string",
     "backtracking",

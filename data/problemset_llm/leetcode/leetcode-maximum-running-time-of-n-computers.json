@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-running-time-of-n-computers/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 56.4,
   "source_tags": [
     "array",
     "binary-search",

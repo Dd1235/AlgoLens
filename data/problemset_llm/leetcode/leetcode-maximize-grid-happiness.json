@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-grid-happiness/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 41.3,
   "source_tags": [
     "dynamic-programming",
     "bit-manipulation",

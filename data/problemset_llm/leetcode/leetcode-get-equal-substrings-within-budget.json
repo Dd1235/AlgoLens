@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/get-equal-substrings-within-budget/description/",
   "source_topic": "Formwise / Binary Search",
   "difficulty": "Medium",
+  "acceptance_rate": 59.9,
   "source_tags": [
     "string",
     "binary-search",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/data-stream-as-disjoint-intervals/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 60.4,
   "source_tags": [
     "hash-table",
     "binary-search",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-subarray-sum-after-removing-all-occurrences-of-one-element/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 23.5,
   "source_tags": [
     "array",
     "dynamic-programming",

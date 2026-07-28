@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 27.9,
   "source_tags": [
     "string",
     "dynamic-programming"

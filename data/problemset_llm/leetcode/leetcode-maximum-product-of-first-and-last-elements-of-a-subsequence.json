@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-product-of-first-and-last-elements-of-a-subsequence/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 31.8,
   "source_tags": [
     "array",
     "two-pointers"

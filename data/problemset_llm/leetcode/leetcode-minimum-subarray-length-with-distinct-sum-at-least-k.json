@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-subarray-length-with-distinct-sum-at-least-k/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 32.0,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-moves-to-pick-k-ones/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 21.8,
   "source_tags": [
     "array",
     "greedy",

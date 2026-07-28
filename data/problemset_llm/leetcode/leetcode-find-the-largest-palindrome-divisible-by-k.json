@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 17.3,
   "source_tags": [
     "math",
     "string",

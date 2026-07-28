@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/subarray-with-elements-greater-than-varying-threshold/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 45.8,
   "source_tags": [
     "array",
     "stack",

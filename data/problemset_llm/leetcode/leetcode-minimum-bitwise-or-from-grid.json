@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-bitwise-or-from-grid/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 27.4,
   "source_tags": [
     "array",
     "greedy",

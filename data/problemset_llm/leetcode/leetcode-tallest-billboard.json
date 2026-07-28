@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/tallest-billboard/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 51.9,
   "source_tags": [
     "array",
     "dynamic-programming"

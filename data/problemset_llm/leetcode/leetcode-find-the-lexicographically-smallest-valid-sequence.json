@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 22.3,
   "source_tags": [
     "two-pointers",
     "string",

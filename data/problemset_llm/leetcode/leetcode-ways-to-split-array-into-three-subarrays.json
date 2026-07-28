@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 34.5,
   "source_tags": [
     "array",
     "two-pointers",

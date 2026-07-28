@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-effective-subsequences/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 32.9,
   "source_tags": [
     "array",
     "math",

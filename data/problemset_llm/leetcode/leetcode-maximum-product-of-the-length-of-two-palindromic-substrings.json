@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 31.4,
   "source_tags": [
     "two-pointers",
     "string",

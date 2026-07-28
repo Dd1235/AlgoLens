@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimize-deviation-in-array/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 54.0,
   "source_tags": [
     "array",
     "greedy",

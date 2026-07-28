@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/design-cancellable-function/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 57.9,
   "source_tags": [],
   "statement": "Implement a function that takes a generator yielding promises and returns a cancel function and a promise that resolves or rejects based on the generator's execution, supporting cancellation by throwing a specific error into the generator.",
   "tags": [

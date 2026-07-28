@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/least-operators-to-express-number/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.4,
   "source_tags": [
     "math",
     "dynamic-programming",

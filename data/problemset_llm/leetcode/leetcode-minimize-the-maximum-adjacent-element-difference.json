@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimize-the-maximum-adjacent-element-difference/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 20.0,
   "source_tags": [
     "array",
     "binary-search",

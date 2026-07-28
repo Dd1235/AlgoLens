@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-zigzag-arrays-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 67.6,
   "source_tags": [
     "math",
     "dynamic-programming"

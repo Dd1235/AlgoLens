@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/best-team-with-no-conflicts/description/",
   "source_topic": "Formwise / DP Optimizations",
   "difficulty": "Medium",
+  "acceptance_rate": 50.8,
   "source_tags": [
     "array",
     "dynamic-programming",

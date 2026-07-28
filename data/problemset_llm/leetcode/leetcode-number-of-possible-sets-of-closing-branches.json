@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-possible-sets-of-closing-branches/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 50.8,
   "source_tags": [
     "bit-manipulation",
     "graph",

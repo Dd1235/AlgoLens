@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/grid-teleportation-traversal/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 23.9,
   "source_tags": [
     "array",
     "hash-table",

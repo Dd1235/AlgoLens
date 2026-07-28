@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 41.6,
   "source_tags": [
     "dynamic-programming",
     "graph",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 40.8,
   "source_tags": [
     "array",
     "hash-table",

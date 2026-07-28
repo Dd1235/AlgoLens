@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 62.4,
   "source_tags": [
     "array",
     "binary-search",

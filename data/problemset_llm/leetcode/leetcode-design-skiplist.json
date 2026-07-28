@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/design-skiplist/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 59.8,
   "source_tags": [
     "linked-list",
     "design"

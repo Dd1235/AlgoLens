@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-of-sub-multisets-with-bounded-sum/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 22.8,
   "source_tags": [
     "array",
     "hash-table",

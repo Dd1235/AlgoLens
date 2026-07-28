@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/steps-to-make-array-non-decreasing/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 25.1,
   "source_tags": [
     "array",
     "linked-list",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-cycle-in-a-graph/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 51.0,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

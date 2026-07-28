@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 49.7,
   "source_tags": [
     "array",
     "hash-table",

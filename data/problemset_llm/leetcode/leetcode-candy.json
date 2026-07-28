@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/candy/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.9,
   "source_tags": [
     "array",
     "greedy"

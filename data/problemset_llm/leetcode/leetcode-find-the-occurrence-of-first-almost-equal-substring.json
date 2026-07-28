@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 16.0,
   "source_tags": [
     "string",
     "string-matching"

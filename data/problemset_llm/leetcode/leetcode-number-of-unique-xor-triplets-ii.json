@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-unique-xor-triplets-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 52.8,
   "source_tags": [
     "array",
     "math",

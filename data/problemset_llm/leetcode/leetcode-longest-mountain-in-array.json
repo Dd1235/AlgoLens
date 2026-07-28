@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-mountain-in-array/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 42.4,
   "source_tags": [
     "array",
     "two-pointers",

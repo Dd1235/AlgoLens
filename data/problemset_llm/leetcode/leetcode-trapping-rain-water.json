@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/trapping-rain-water/",
   "source_topic": "LeetCode / Two Pointers and Sliding Window",
   "difficulty": "Hard",
+  "acceptance_rate": 67.9,
   "source_tags": [
     "array",
     "two-pointers",

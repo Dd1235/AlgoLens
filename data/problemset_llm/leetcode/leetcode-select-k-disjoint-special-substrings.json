@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/select-k-disjoint-special-substrings/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 19.5,
   "source_tags": [
     "hash-table",
     "string",

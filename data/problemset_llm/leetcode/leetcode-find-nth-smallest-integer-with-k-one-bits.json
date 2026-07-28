@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 35.4,
   "source_tags": [
     "math",
     "bit-manipulation",

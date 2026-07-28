@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/paint-house-iii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 61.2,
   "source_tags": [
     "array",
     "dynamic-programming"

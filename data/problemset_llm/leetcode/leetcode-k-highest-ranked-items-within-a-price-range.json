@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/k-highest-ranked-items-within-a-price-range/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 47.0,
   "source_tags": [
     "array",
     "breadth-first-search",

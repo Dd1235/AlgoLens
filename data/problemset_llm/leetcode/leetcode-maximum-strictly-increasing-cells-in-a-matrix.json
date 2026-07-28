@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 31.6,
   "source_tags": [
     "array",
     "hash-table",

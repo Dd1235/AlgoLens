@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 31.4,
   "source_tags": [
     "array",
     "dynamic-programming"

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/split-array-largest-sum/",
   "source_topic": "LeetCode / Binary Search",
   "difficulty": "Hard",
+  "acceptance_rate": 61.0,
   "source_tags": [
     "array",
     "binary-search",

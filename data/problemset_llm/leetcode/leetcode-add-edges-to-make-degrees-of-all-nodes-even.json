@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/add-edges-to-make-degrees-of-all-nodes-even/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 36.7,
   "source_tags": [
     "hash-table",
     "graph"

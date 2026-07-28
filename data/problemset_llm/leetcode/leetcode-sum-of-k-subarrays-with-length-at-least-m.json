@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sum-of-k-subarrays-with-length-at-least-m/",
   "source_topic": "LeetCode / DP Optimization",
   "difficulty": "Medium",
+  "acceptance_rate": 26.5,
   "source_tags": [
     "array",
     "dynamic-programming",

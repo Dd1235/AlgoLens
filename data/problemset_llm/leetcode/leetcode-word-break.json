@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/word-break/",
   "source_topic": "LeetCode / Dynamic Programming",
   "difficulty": "Medium",
+  "acceptance_rate": 49.7,
   "source_tags": [
     "array",
     "hash-table",

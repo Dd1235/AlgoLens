@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 30.5,
   "source_tags": [
     "hash-table",
     "math",

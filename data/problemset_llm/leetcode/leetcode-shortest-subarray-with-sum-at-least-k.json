@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 32.9,
   "source_tags": [
     "array",
     "binary-search",

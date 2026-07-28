@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 38.2,
   "source_tags": [
     "hash-table",
     "string",

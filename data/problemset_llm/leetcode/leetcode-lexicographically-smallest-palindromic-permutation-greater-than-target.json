@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 25.6,
   "source_tags": [
     "two-pointers",
     "string",

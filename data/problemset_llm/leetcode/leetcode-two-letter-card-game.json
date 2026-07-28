@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/two-letter-card-game/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 13.1,
   "source_tags": [
     "array",
     "hash-table",

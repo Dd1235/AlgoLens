@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/filter-occupied-intervals/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 45.9,
   "source_tags": [
     "array",
     "sorting"

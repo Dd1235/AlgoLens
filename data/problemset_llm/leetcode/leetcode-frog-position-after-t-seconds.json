@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/frog-position-after-t-seconds/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 38.7,
   "source_tags": [
     "tree",
     "depth-first-search",

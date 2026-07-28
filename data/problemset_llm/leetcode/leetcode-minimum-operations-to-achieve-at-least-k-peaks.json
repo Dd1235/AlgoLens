@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-achieve-at-least-k-peaks/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 30.7,
   "source_tags": [
     "array",
     "dynamic-programming"

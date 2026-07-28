@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-string-with-lcp/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 63.1,
   "source_tags": [
     "array",
     "string",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-first-player-to-win-k-games-in-a-row/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 40.4,
   "source_tags": [
     "array",
     "simulation"

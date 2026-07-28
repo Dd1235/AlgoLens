@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 58.8,
   "source_tags": [
     "dynamic-programming",
     "prefix-sum"

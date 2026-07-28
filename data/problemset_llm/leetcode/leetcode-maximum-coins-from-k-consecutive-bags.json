@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 26.3,
   "source_tags": [
     "array",
     "binary-search",

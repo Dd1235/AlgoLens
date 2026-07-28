@@ -31,6 +31,9 @@ const problems = Array.from({ length: 300 }, (_, i) => {
     patterns: i % 3 === 0 ? ["dfs"] : ["greedy"],
   };
   if (difficulty !== undefined) p.difficulty = difficulty;
+  // Acceptance rate exists on LeetCode only, and a few carry none — the case
+  // that decides where an unknown lands once it's used as a sort tiebreak.
+  if (platform === "leetcode" && i % 40 !== 4) p.acceptance_rate = 10 + ((i * 7) % 80);
   return p;
 });
 
@@ -273,6 +276,53 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
     assert.equal(d.total, 300);
   }
 
+  // ── Acceptance rate ───────────────────────────────────────────────────────
+
+  // It narrows LeetCode and nothing else, like every other per-judge control.
+  {
+    const plain = await get("q=graph&k=300");
+    const acc = await get("q=graph&k=300&difficulty=ac:10-30");
+    const others = (d) => d.hits.filter((h) => h.problem.platform !== "leetcode").length;
+    assert.equal(others(acc), others(plain), "an acceptance band must leave other judges alone");
+    const lc = acc.hits.filter((h) => h.problem.platform === "leetcode");
+    assert.ok(lc.length > 0);
+    assert.ok(
+      lc.every((h) => h.problem.acceptance_rate >= 10 && h.problem.acceptance_rate <= 30),
+      "every leetcode hit must fall inside the band"
+    );
+  }
+
+  // It INTERSECTS with a tier rather than replacing it — "the hardest Mediums"
+  // is the whole point, and it's the only scope where the number compares.
+  {
+    const d = await get("q=graph&k=300&platform=leetcode&difficulty=lc-medium,ac:10-40");
+    assert.ok(d.hits.length > 0);
+    assert.ok(
+      d.hits.every((h) => h.problem.difficulty === "Medium" && h.problem.acceptance_rate <= 40),
+      "both halves of the selection must apply"
+    );
+    const tierOnly = await get("q=graph&k=300&platform=leetcode&difficulty=lc-medium");
+    assert.ok(tierOnly.total > d.total, "adding an acceptance band must narrow the tier");
+  }
+
+  // A LeetCode problem with no rate can't satisfy a rate band, the same way an
+  // unrated Codeforces problem can't satisfy a rating band.
+  {
+    const d = await get("q=graph&k=300&platform=leetcode&difficulty=ac:10-90");
+    assert.ok(d.hits.every((h) => typeof h.problem.acceptance_rate === "number"));
+    const all = await get("q=graph&k=300&platform=leetcode");
+    assert.ok(all.total > d.total, "the rate-less problems must be the difference");
+  }
+
+  // Reversed and unparseable bands behave like every other stale link.
+  {
+    const a = await get("q=graph&k=300&platform=leetcode&difficulty=ac:40-20");
+    const b = await get("q=graph&k=300&platform=leetcode&difficulty=ac:20-40");
+    assert.equal(a.total, b.total, "min/max order must not matter");
+    const junk = await get("q=graph&k=10&platform=leetcode&difficulty=ac:x-y");
+    assert.equal(junk.difficulty, undefined);
+  }
+
   // ── Sorting by difficulty ─────────────────────────────────────────────────
 
   // Sorting is refused unless exactly one judge with a scale is in play, for
@@ -388,6 +438,50 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
     assert.equal(d.sort, undefined);
     assert.equal(d.sortRefused, undefined, "an unparseable sort was never requested");
     assert.equal(d.hits.length, 20);
+  }
+
+  // Acceptance rate breaks the tie WITHIN a tier — without it, "easiest first"
+  // over LeetCode returns one tier in relevance order, which is no order at all.
+  // Lower acceptance means harder, so easiest-first runs high-to-low inside a tier.
+  {
+    const d = await get("q=&k=300&platform=leetcode&sort=difficulty-asc");
+    const rank = { easy: 0, medium: 1, hard: 2 };
+    const rows = d.hits.map((h) => ({
+      tier: rank[String(h.problem.difficulty).toLowerCase()],
+      rate: h.problem.acceptance_rate,
+    }));
+    assert.deepEqual(rows.map((r) => r.tier), [...rows.map((r) => r.tier)].sort((a, b) => a - b), "tier leads");
+    for (const tier of [0, 1, 2]) {
+      const rates = rows.filter((r) => r.tier === tier && typeof r.rate === "number").map((r) => r.rate);
+      assert.deepEqual(rates, [...rates].sort((a, b) => b - a), `tier ${tier}: easiest (highest rate) first`);
+    }
+  }
+
+  // ...and reversing the sort reverses the tiebreak with it.
+  {
+    const d = await get("q=&k=300&platform=leetcode&sort=difficulty-desc");
+    const hard = d.hits.filter((h) => h.problem.difficulty === "Hard" && typeof h.problem.acceptance_rate === "number");
+    const rates = hard.map((h) => h.problem.acceptance_rate);
+    assert.deepEqual(rates, [...rates].sort((a, b) => a - b), "hardest first = lowest acceptance first");
+  }
+
+  // A problem with no acceptance rate sorts last inside its own tier, both
+  // ways — not first, which would claim it's the easiest thing we have.
+  {
+    for (const dir of ["asc", "desc"]) {
+      const d = await get(`q=&k=300&platform=leetcode&sort=difficulty-${dir}`);
+      const tiers = ["Easy", "Medium", "Hard"];
+      for (const tier of tiers) {
+        const inTier = d.hits.filter((h) => h.problem.difficulty === tier);
+        const known = inTier.map((h) => typeof h.problem.acceptance_rate === "number");
+        const firstUnknown = known.indexOf(false);
+        if (firstUnknown === -1) continue;
+        assert.ok(
+          known.slice(firstUnknown).every((k) => !k),
+          `${dir}/${tier}: rate-less problems must sit at the end of their tier`
+        );
+      }
+    }
   }
 
   console.log("search route tests passed");

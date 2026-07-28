@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 72.9,
   "source_tags": [
     "array",
     "hash-table",

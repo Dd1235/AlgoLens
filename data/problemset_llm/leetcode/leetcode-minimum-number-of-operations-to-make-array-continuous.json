@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 51.8,
   "source_tags": [
     "array",
     "hash-table",

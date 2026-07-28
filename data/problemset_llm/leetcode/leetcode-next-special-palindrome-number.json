@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/next-special-palindrome-number/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 28.3,
   "source_tags": [
     "backtracking",
     "bit-manipulation"

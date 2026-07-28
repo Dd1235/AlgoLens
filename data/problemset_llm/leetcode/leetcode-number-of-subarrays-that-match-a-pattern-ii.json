@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-subarrays-that-match-a-pattern-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 34.2,
   "source_tags": [
     "array",
     "rolling-hash",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/the-number-of-weak-characters-in-the-game/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 44.6,
   "source_tags": [
     "array",
     "stack",

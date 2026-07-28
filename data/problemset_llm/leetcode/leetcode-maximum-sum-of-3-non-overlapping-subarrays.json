@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 59.9,
   "source_tags": [
     "array",
     "dynamic-programming",

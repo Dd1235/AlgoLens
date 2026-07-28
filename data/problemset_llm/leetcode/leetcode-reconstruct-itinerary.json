@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/reconstruct-itinerary/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 44.8,
   "source_tags": [
     "array",
     "string",

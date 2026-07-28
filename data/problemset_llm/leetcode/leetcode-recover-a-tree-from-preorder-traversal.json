@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 83.2,
   "source_tags": [
     "string",
     "tree",

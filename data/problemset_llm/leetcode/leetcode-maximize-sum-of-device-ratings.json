@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-sum-of-device-ratings/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 39.4,
   "source_tags": [],
   "statement": "Given multiple devices each with units of capacity, you can transfer one unit from each device at most once to another device to maximize the sum of the minimum capacities (ratings) of all devices after transfers.",
   "tags": [

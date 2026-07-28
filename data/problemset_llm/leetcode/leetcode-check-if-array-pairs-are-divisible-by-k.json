@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.2,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-deletions-to-make-array-beautiful/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.2,
   "source_tags": [
     "array",
     "stack",

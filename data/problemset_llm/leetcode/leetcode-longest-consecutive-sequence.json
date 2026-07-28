@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-consecutive-sequence/",
   "source_topic": "LeetCode / Array and Hashing",
   "difficulty": "Medium",
+  "acceptance_rate": 47.2,
   "source_tags": [
     "array",
     "hash-table",

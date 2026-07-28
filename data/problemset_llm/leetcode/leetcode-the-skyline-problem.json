@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/the-skyline-problem/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 45.7,
   "source_tags": [
     "array",
     "divide-and-conquer",

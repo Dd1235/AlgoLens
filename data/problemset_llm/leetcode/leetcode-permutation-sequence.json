@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/permutation-sequence/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 53.8,
   "source_tags": [
     "math",
     "recursion"

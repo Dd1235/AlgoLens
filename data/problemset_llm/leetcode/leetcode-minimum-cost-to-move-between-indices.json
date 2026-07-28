@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-move-between-indices/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.7,
   "source_tags": [
     "array",
     "greedy",

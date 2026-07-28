@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 45.2,
   "source_tags": [
     "string",
     "stack",

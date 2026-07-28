@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-bitwise-and-after-increment-operations/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 32.3,
   "source_tags": [
     "array",
     "greedy",

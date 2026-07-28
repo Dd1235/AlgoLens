@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-increments-for-target-multiples-in-an-array/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 28.1,
   "source_tags": [
     "array",
     "math",

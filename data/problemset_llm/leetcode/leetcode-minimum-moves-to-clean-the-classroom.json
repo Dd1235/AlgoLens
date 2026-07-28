@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 27.0,
   "source_tags": [
     "array",
     "hash-table",

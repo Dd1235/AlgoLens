@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 40.6,
   "source_tags": [
     "hash-table",
     "string",

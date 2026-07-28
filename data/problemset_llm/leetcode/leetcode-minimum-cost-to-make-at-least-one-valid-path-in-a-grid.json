@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 71.1,
   "source_tags": [
     "array",
     "breadth-first-search",

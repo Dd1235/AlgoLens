@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 45.1,
   "source_tags": [
     "array",
     "binary-search",

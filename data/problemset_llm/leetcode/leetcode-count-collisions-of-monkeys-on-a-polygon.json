@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-collisions-of-monkeys-on-a-polygon/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 30.3,
   "source_tags": [
     "math",
     "recursion"

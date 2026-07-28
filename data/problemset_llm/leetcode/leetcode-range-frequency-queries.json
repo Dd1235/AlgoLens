@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/range-frequency-queries/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 43.8,
   "source_tags": [
     "array",
     "hash-table",

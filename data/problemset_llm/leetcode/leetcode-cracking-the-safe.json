@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/cracking-the-safe/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 58.6,
   "source_tags": [
     "string",
     "depth-first-search",

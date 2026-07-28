@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 36.8,
   "source_tags": [
     "array",
     "hash-table",

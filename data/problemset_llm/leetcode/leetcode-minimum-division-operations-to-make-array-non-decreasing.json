@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-division-operations-to-make-array-non-decreasing/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 29.4,
   "source_tags": [
     "array",
     "math",

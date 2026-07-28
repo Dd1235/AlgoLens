@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/incremental-even-weighted-cycle-queries/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 51.9,
   "source_tags": [
     "union-find",
     "graph"

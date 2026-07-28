@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/separate-squares-i/description/",
   "source_topic": "Formwise / Binary Search",
   "difficulty": "Medium",
+  "acceptance_rate": 58.0,
   "source_tags": [
     "array",
     "binary-search"

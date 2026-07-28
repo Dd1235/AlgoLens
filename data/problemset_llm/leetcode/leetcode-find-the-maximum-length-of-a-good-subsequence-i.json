@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-maximum-length-of-a-good-subsequence-i/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 33.1,
   "source_tags": [
     "array",
     "hash-table",

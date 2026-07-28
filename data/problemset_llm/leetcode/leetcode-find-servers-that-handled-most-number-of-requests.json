@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-servers-that-handled-most-number-of-requests/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 45.6,
   "source_tags": [
     "array",
     "heap-priority-queue",

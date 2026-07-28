@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-houses-at-a-certain-distance-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 23.9,
   "source_tags": [
     "graph",
     "prefix-sum"

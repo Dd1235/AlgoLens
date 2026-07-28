@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/coordinate-with-maximum-network-quality/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 39.8,
   "source_tags": [
     "array",
     "enumeration"
