@@ -496,6 +496,12 @@
     },
     "brute-force": {
       "category": "general"
+    },
+    "randomized-algorithm": {
+      "category": "general"
+    },
+    "quickselect": {
+      "category": "array"
     }
   },
   "aliases": {
@@ -612,7 +618,16 @@
     "kth-order-statistic": "order-statistics",
     "kth-smallest": "order-statistics",
     "order-statistic": "order-statistics",
-    "kth-largest": "order-statistics"
+    "kth-largest": "order-statistics",
+    "strongly-connected-component": "strongly-connected-components",
+    "eulerian-circuit": "eulerian-path",
+    "euler-circuit": "eulerian-path",
+    "randomized": "randomized-algorithm",
+    "reservoir-sampling": "randomized-algorithm",
+    "rejection-sampling": "randomized-algorithm",
+    "quick-select": "quickselect",
+    "biconnected-component": "articulation-points",
+    "biconnected-components": "articulation-points"
   },
   "groups": {
     "range-queries": {
