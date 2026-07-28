@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1245-a",
+  "title": "Good ol' Numbers Coloring",
+  "slug": "1245-a-good-ol-numbers-coloring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1245/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given two integers a and b, color nonnegative integers white or black based on whether they can be reached from 0 by repeatedly adding a or b to white numbers. Determine if infinitely many integers are colored black or not.",
+  "tags": [
+    "math",
+    "number-theory",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "reachability",
+    "infinite-set-detection"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224816,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "reachability": 0.85,
+      "infinite-set-detection": 0.8
+    }
+  }
+}

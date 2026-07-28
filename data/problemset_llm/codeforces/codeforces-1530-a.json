@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1530-a",
+  "title": "Binary Decimal",
+  "slug": "1530-a-binary-decimal",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1530/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a positive integer, represent it as a sum of the fewest binary decimals, where a binary decimal is a positive integer whose decimal digits are only 0 or 1.",
+  "tags": [
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "digit-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224281,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "digit-dp": 0.6
+    }
+  }
+}

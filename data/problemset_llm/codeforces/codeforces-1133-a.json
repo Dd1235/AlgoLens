@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1133-a",
+  "title": "Middle of the Contest",
+  "slug": "1133-a-middle-of-the-contest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1133/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given the start and end times of a contest within a single day, find the exact midpoint time of the contest.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "time-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224807,
+    "pattern_confidence": {
+      "time-calculation": 0.9
+    }
+  }
+}

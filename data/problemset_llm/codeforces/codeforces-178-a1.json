@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-178-a1",
+  "title": "Educational Game",
+  "slug": "178-a1-educational-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/178/A1",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [],
+  "statement": "Given a sequence of non-negative integers, determine for each prefix length k (1 ≤ k < n) the minimum moves required to reduce the first k elements to zero by repeatedly transferring units from position i to position i + 2t.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-processing",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224846,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "prefix-processing": 0.85,
+      "simulation": 0.7
+    }
+  }
+}

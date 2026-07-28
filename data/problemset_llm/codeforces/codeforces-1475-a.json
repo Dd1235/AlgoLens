@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1475-a",
+  "title": "Odd Divisor",
+  "slug": "1475-a-odd-divisor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1475/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Determine whether a given integer has an odd divisor greater than one.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "divisor-check",
+    "parity-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224620,
+    "pattern_confidence": {
+      "divisor-check": 0.9,
+      "parity-analysis": 0.85
+    }
+  }
+}

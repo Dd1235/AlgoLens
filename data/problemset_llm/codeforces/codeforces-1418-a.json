@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1418-a",
+  "title": "Buying Torches",
+  "slug": "1418-a-buying-torches",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1418/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given initial sticks and trade offers to multiply sticks or convert sticks to coal, determine the minimum number of trades needed to craft at least k torches, each requiring one stick and one coal.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224828,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "binary-search": 0.6
+    }
+  }
+}

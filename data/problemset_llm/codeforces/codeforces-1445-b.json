@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1445-b",
+  "title": "Elimination",
+  "slug": "1445-b-elimination",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1445/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given score thresholds and minimum scores for the top 100 participants in two separate contests, determine the smallest possible cutoff total score for qualifying to the final stage based on combined scores and tie-breaking rules.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224615,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.7,
+      "binary-search": 0.6
+    }
+  }
+}

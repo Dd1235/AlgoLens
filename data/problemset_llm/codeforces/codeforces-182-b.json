@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-182-b",
+  "title": "Vasya's Calendar",
+  "slug": "182-b-vasya-s-calendar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/182/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a year with n months where each month has a specified number of days, and a clock that cycles day numbers from 1 to d without month information, count how many times the day number must be manually incremented to match the actual day throughout the year.",
+  "tags": [
+    "implementation",
+    "simulation",
+    "math"
+  ],
+  "patterns": [
+    "simulation",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224855,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "modular-arithmetic": 0.7
+    }
+  }
+}

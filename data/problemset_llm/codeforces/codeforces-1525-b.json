@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1525-b",
+  "title": "Permutation Sort",
+  "slug": "1525-b-permutation-sort",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1525/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy"
+  ],
+  "statement": "Given a permutation, find the minimum number of operations needed to sort it in ascending order, where each operation rearranges any proper subarray (not the entire array) arbitrarily.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224624,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

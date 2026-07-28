@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-768-a",
+  "title": "Oath of the Night's Watch",
+  "slug": "768-a-oath-of-the-night-s-watch",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/768/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "sortings"
+  ],
+  "statement": "Given a list of stewards' strengths, count how many have at least one steward with strictly lower strength and at least one with strictly higher strength.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224698,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "counting": 0.8
+    }
+  }
+}

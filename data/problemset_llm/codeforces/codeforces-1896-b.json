@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1896-b",
+  "title": "AB Flipping",
+  "slug": "1896-b-ab-flipping",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1896/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Given a string of 'A' and 'B', you can swap adjacent 'A' and 'B' pairs at most once per position in any order. Determine the maximum number of such swaps possible.",
+  "tags": [
+    "string",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224664,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85
+    }
+  }
+}

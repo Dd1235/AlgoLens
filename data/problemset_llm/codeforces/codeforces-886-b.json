@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-886-b",
+  "title": "Vlad and Cafes",
+  "slug": "886-b-vlad-and-cafes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/886/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [],
+  "statement": "Given a sequence of cafe visits, find the cafe whose last visit occurred earliest among all cafes visited.",
+  "tags": [
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "last-occurrence-tracking",
+    "linear-scan"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224898,
+    "pattern_confidence": {
+      "last-occurrence-tracking": 0.95,
+      "linear-scan": 0.9
+    }
+  }
+}

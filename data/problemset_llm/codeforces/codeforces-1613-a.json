@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1613-a",
+  "title": "Long Comparison",
+  "slug": "1613-a-long-comparison",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1613/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given two numbers each represented as an integer followed by a number of trailing zeros, determine which number is greater or if they are equal.",
+  "tags": [
+    "implementation",
+    "math",
+    "string"
+  ],
+  "patterns": [
+    "string-comparison",
+    "number-normalization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224634,
+    "pattern_confidence": {
+      "string-comparison": 0.9,
+      "number-normalization": 0.85
+    }
+  }
+}

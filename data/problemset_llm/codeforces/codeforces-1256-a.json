@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1256-a",
+  "title": "Payment Without Change",
+  "slug": "1256-a-payment-without-change",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1256/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given quantities of coins with values n and 1, determine for multiple queries if a target sum S can be formed using at most a coins of value n and b coins of value 1.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224821,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

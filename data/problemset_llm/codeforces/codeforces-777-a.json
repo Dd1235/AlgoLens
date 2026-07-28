@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-777-a",
+  "title": "Shell Game",
+  "slug": "777-a-shell-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/777/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a sequence of swaps between three shells following a fixed pattern and the final position of a ball, determine the initial position of the ball before any swaps.",
+  "tags": [
+    "math",
+    "implementation",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "simulation",
+    "reverse-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224892,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "reverse-simulation": 0.85
+    }
+  }
+}

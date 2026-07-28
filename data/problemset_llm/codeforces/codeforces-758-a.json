@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-758-a",
+  "title": "Holiday Of Equality",
+  "slug": "758-a-holiday-of-equality",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/758/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given the wealth of n citizens, determine the minimum total amount of money the king must distribute to make all citizens equally wealthy by only giving money (no taking away).",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224380,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

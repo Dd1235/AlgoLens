@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1849-b",
+  "title": "Monsters",
+  "slug": "1849-b-monsters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1849/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given monsters with initial health values, repeatedly deal fixed damage to the currently healthiest monster (choosing the smallest index on ties) until all are dead, and determine the order in which monsters die.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224862,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "simulation": 0.9
+    }
+  }
+}

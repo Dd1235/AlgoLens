@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-181-a",
+  "title": "Series of Crimes",
+  "slug": "181-a-series-of-crimes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/181/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "geometry",
+    "implementation"
+  ],
+  "statement": "Given a grid with three marked cells representing past crimes, find the fourth cell that completes a rectangle aligned with the grid axes formed by these points.",
+  "tags": [
+    "geometry",
+    "implementation",
+    "grid"
+  ],
+  "patterns": [
+    "coordinate-geometry",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224341,
+    "pattern_confidence": {
+      "coordinate-geometry": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

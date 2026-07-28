@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1675-b",
+  "title": "Make It Increasing",
+  "slug": "1675-b-make-it-increasing",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1675/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a sequence of integers, determine the minimum number of halving operations (floor division by 2) needed to make the sequence strictly increasing without reordering elements, or decide if it is impossible.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224638,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "simulation": 0.9
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1592-a",
+  "title": "Gamer Hemose",
+  "slug": "1592-a-gamer-hemose",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1592/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a set of weapons each with a damage value and an enemy with health H, find the minimum number of attacks needed to reduce the enemy's health to zero or below, with the constraint that the same weapon cannot be used consecutively.",
+  "tags": [
+    "math",
+    "greedy",
+    "binary-search",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224291,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.7,
+      "sorting": 0.8
+    }
+  }
+}

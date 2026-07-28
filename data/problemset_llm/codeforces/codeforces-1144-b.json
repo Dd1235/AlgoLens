@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1144-b",
+  "title": "Parity Alternated Deletions",
+  "slug": "1144-b-parity-alternated-deletions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1144/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array, repeatedly delete elements alternating parity each move to minimize the sum of remaining elements after no more moves are possible.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224386,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.85
+    }
+  }
+}

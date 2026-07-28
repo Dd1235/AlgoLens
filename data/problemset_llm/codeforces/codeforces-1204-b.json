@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1204-b",
+  "title": "Mislove Has Lost an Array",
+  "slug": "1204-b-mislove-has-lost-an-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1204/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given constraints on the distinct elements and a doubling relationship in an array of positive integers, find the minimal and maximal possible sums of such arrays.",
+  "tags": [
+    "math",
+    "greedy",
+    "combinatorics"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224391,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

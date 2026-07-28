@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1624-a",
+  "title": "Plus One on the Subset",
+  "slug": "1624-a-plus-one-on-the-subset",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1624/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an integer array, find the minimum number of operations needed to make all elements equal, where each operation increments any chosen subset of elements by one.",
+  "tags": [
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224300,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

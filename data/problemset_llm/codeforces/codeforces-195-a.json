@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-195-a",
+  "title": "Let's Watch Football",
+  "slug": "195-a-let-s-watch-football",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/195/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "math"
+  ],
+  "statement": "Given the video length and download speed constraints, find the minimum integer wait time before starting playback so that the video can be watched continuously without pauses.",
+  "tags": [
+    "math",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224869,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "simulation": 0.7
+    }
+  }
+}

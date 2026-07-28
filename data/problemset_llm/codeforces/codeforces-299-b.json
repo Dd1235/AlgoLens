@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-299-b",
+  "title": "Ksusha the Squirrel",
+  "slug": "299-b-ksusha-the-squirrel",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/299/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Ksusha the Squirrel starts at sector 1 on a linear road divided into n sectors and wants to reach sector n by jumping up to k sectors ahead each time, avoiding sectors with rocks where she cannot stand. Determine if she can reach the last sector without landing on any rock.",
+  "tags": [
+    "array",
+    "graph",
+    "bfs"
+  ],
+  "patterns": [
+    "bfs",
+    "graph-reachability",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224682,
+    "pattern_confidence": {
+      "bfs": 0.9,
+      "graph-reachability": 0.85,
+      "simulation": 0.7
+    }
+  }
+}

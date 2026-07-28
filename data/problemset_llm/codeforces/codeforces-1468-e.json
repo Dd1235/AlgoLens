@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1468-e",
+  "title": "Four Segments",
+  "slug": "1468-e-four-segments",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1468/E",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given four line segments with specified lengths, determine the maximum rectangular area that can be enclosed by arranging these segments as horizontal and vertical sides.",
+  "tags": [
+    "geometry",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224268,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

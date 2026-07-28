@@ -262,9 +262,15 @@ function main() {
   reportDrift(driftCounts);
   if (process.argv.includes("--gaps")) printGaps(driftCounts);
 
-  const cfDir = path.join(CORPUS_ROOT, "codeforces");
-  if (fs.existsSync(cfDir)) {
-    console.log(`note: ${fs.readdirSync(cfDir).length} codeforces file(s) on disk are not served (DEFAULT_PLATFORMS)`);
+  // Staged-but-unserved platforms. This used to name codeforces unconditionally,
+  // from back when it wasn't in DEFAULT_PLATFORMS — so it kept reporting 1,083
+  // files as unreachable while the search page was happily serving them.
+  const unserved = fs
+    .readdirSync(CORPUS_ROOT, { withFileTypes: true })
+    .filter((e) => e.isDirectory() && !DEFAULT_PLATFORMS.includes(e.name));
+  for (const dir of unserved) {
+    const n = fs.readdirSync(path.join(CORPUS_ROOT, dir.name)).length;
+    console.log(`note: ${n} ${dir.name} file(s) on disk are not served (DEFAULT_PLATFORMS)`);
   }
 
   for (const w of warnings) console.log(`warn: ${w}`);

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1594-a",
+  "title": "Consecutive Sum Riddle",
+  "slug": "1594-a-consecutive-sum-riddle",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1594/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given an integer n, find two integers l and r with l < r such that the sum of all integers from l to r equals n.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "arithmetic-series",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224292,
+    "pattern_confidence": {
+      "arithmetic-series": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

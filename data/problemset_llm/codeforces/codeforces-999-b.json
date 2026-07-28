@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-999-b",
+  "title": "Reversing Encryption",
+  "slug": "999-b-reversing-encryption",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/999/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a string encrypted by repeatedly reversing its prefix substrings in order of decreasing divisors of its length, recover the original string before encryption.",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "simulation",
+    "reverse-operation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224800,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "reverse-operation": 0.85
+    }
+  }
+}

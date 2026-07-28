@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1551-a",
+  "title": "Polycarp and Coins",
+  "slug": "1551-a-polycarp-and-coins",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1551/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a target amount n, find non-negative counts of 1-burle and 2-burle coins summing to n that minimize the absolute difference between the counts of each coin type.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224284,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

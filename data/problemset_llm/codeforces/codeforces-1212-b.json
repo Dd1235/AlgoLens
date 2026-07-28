@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1212-b",
+  "title": "Two-gram",
+  "slug": "1212-b-two-gram",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1212/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "*special",
+    "implementation"
+  ],
+  "statement": "Given a string of capital letters, find the two-character substring (two-gram) that appears most frequently, including overlapping occurrences.",
+  "tags": [
+    "string",
+    "hash-map",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224394,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "sliding-window": 0.7
+    }
+  }
+}

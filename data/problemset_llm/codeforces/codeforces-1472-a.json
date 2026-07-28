@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1472-a",
+  "title": "Cards for Friends",
+  "slug": "1472-a-cards-for-friends",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1472/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a sheet of paper with dimensions w by h, determine if it can be cut into at least n pieces by repeatedly halving the sheet along even dimensions.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224270,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "bit-manipulation": 0.7
+    }
+  }
+}

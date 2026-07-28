@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-810-a",
+  "title": "Straight «A»",
+  "slug": "810-a-straight-a",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/810/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given Noora's current marks and the maximum mark k, find the minimal number of additional marks (each between 1 and k) to add so that the rounded average of all marks equals k.",
+  "tags": [
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "rounding",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224701,
+    "pattern_confidence": {
+      "rounding": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

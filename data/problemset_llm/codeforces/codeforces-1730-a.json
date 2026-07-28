@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1730-a",
+  "title": "Planets",
+  "slug": "1730-a-planets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1730/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given planets located on various orbits, determine the minimum cost to destroy all planets using two machines: one that destroys a single planet at cost 1, and another that destroys all planets on one orbit at cost c.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "grouping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224328,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "grouping": 0.85
+    }
+  }
+}

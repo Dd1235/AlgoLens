@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1607-b",
+  "title": "Odd Grasshopper",
+  "slug": "1607-b-odd-grasshopper",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1607/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "A grasshopper starts at coordinate x₀ on the integer number line and makes n jumps, where the i-th jump has length i and direction depends on the parity of the current position: left if even, right if odd. Determine the final position after n jumps.",
+  "tags": [
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224629,
+    "pattern_confidence": {
+      "simulation": 0.9
+    }
+  }
+}

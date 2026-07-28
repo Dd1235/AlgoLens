@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1326-a",
+  "title": "Bad Ugly Numbers",
+  "slug": "1326-a-bad-ugly-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1326/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "constructive algorithms",
+    "number theory"
+  ],
+  "statement": "Given a positive integer n, find an n-digit positive integer s with no zero digits such that s is not divisible by any of its digits, or determine that no such number exists.",
+  "tags": [
+    "number-theory",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "digit-constraints"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224822,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "digit-constraints": 0.7
+    }
+  }
+}

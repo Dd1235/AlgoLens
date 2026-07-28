@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-276-a",
+  "title": "Lunch Rush",
+  "slug": "276-a-lunch-rush",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/276/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a list of restaurants each with a joy value and required lunch time, and a fixed lunch break duration k, determine the maximum joy achievable by choosing exactly one restaurant, where joy is reduced if the restaurant's lunch time exceeds k.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224680,
+    "pattern_confidence": {
+      "greedy": 0.9
+    }
+  }
+}

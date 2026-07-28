@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1847-b",
+  "title": "Hamon Odyssey",
+  "slug": "1847-b-hamon-odyssey",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1847/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "bitmasks",
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Partition a sequence of integers into contiguous groups to minimize the sum of their bitwise AND values, and among such partitions, maximize the number of groups.",
+  "tags": [
+    "array",
+    "bit-manipulation",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "two-pointers",
+    "bitwise-and",
+    "interval-partitioning"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224860,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "two-pointers": 0.85,
+      "bitwise-and": 0.9,
+      "interval-partitioning": 0.8
+    }
+  }
+}

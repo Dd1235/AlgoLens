@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-199-a",
+  "title": "Hexadecimal's theorem",
+  "slug": "199-a-hexadecimal-s-theorem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/199/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "implementation",
+    "number theory"
+  ],
+  "statement": "Given a Fibonacci number n, determine three (not necessarily distinct) Fibonacci numbers whose sum equals n, or report that no such representation exists.",
+  "tags": [
+    "number-theory",
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224672,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1252-a",
+  "title": "Copying Homework",
+  "slug": "1252-a-copying-homework",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1252/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [],
+  "statement": "Given a permutation A of size N, find another permutation B such that the sum of absolute differences between corresponding elements of A and B is at least N.",
+  "tags": [
+    "permutation",
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224819,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

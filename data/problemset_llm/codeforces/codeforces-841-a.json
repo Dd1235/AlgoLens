@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-841-a",
+  "title": "Generous Kefa",
+  "slug": "841-a-generous-kefa",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/841/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given n balloons each with a color represented by a lowercase letter and k friends, determine if it is possible to distribute all balloons so that no friend receives two balloons of the same color.",
+  "tags": [
+    "string",
+    "greedy",
+    "counting"
+  ],
+  "patterns": [
+    "counting",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785226752,
+    "pattern_confidence": {
+      "counting": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

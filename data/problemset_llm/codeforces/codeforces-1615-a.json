@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1615-a",
+  "title": "Closing The Gap",
+  "slug": "1615-a-closing-the-gap",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1615/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given heights of towers, repeatedly move blocks between towers to minimize the difference between the tallest and shortest tower heights.",
+  "tags": [
+    "greedy",
+    "math",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "math"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224295,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "math": 0.8
+    }
+  }
+}

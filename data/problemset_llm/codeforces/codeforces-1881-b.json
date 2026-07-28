@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1881-b",
+  "title": "Three Threadlets",
+  "slug": "1881-b-three-threadlets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1881/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given three integer threadlets and up to three cuts that split any threadlet into two positive integer lengths, determine if it is possible to make all resulting threadlets equal in length.",
+  "tags": [
+    "math",
+    "greedy",
+    "brute-force"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "case-analysis",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224662,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "case-analysis": 0.85,
+      "simulation": 0.7
+    }
+  }
+}

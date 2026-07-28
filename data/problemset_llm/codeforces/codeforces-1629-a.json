@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1629-a",
+  "title": "Download More RAM",
+  "slug": "1629-a-download-more-ram",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1629/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given initial RAM and a list of software each requiring temporary RAM to run and providing permanent RAM increase, find the maximum achievable RAM by running software in some order without exceeding current RAM at any step.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224303,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

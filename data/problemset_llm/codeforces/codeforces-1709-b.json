@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1709-b",
+  "title": "Also Try Minecraft",
+  "slug": "1709-b-also-try-minecraft",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1709/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "implementation"
+  ],
+  "statement": "Given an array representing column heights and multiple queries asking for the minimal total fall damage when moving between two columns, where moving uphill causes no damage and moving downhill causes damage equal to the height difference, compute the minimal fall damage for each query.",
+  "tags": [
+    "array",
+    "prefix-sum",
+    "query"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224642,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "two-pointers": 0.6
+    }
+  }
+}

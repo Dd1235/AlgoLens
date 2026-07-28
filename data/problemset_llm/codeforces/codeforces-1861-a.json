@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1861-a",
+  "title": "Prime Deletion",
+  "slug": "1861-a-prime-deletion",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1861/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given a sequence containing digits 1 through 9 exactly once, repeatedly delete digits (without reordering) until the remaining sequence forms a prime number, or determine that it is impossible.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "string"
+  ],
+  "patterns": [
+    "prime-checking",
+    "greedy",
+    "backtracking"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224349,
+    "pattern_confidence": {
+      "prime-checking": 0.9,
+      "greedy": 0.7,
+      "backtracking": 0.6
+    }
+  }
+}

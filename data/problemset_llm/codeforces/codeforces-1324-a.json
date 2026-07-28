@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1324-a",
+  "title": "Yet Another Tetris Problem",
+  "slug": "1324-a-yet-another-tetris-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1324/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "number theory"
+  ],
+  "statement": "Given a Tetris field with columns of certain heights, determine if it is possible to clear the field by repeatedly placing vertical 2x1 blocks on columns and then reducing all positive heights by one until all columns are zero.",
+  "tags": [
+    "implementation",
+    "number-theory"
+  ],
+  "patterns": [
+    "simulation",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224400,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "parity-check": 0.8
+    }
+  }
+}

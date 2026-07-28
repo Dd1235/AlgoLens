@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-22-a",
+  "title": "Second Order Statistics",
+  "slug": "22-a-second-order-statistics",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/22/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force"
+  ],
+  "statement": "Given a sequence of integers, find the second smallest distinct element, i.e., the smallest element strictly greater than the minimum.",
+  "tags": [
+    "array",
+    "sorting"
+  ],
+  "patterns": [
+    "sorting",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224360,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

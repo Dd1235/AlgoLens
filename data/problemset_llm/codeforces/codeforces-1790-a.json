@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1790-a",
+  "title": "Polycarp and the Day of Pi",
+  "slug": "1790-a-polycarp-and-the-day-of-pi",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1790/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation",
+    "math",
+    "strings"
+  ],
+  "statement": "Given a string representing digits recalled by Polycarp and the known digits of π, determine how many initial digits match correctly.",
+  "tags": [
+    "string",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224338,
+    "pattern_confidence": {
+      "string-matching": 0.9
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-69-a",
+  "title": "Young Physicist",
+  "slug": "69-a-young-physicist",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/69/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given multiple force vectors acting on a point at the origin, determine if the resultant force vector is zero, indicating equilibrium.",
+  "tags": [
+    "math",
+    "implementation",
+    "vector"
+  ],
+  "patterns": [
+    "vector-summation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224886,
+    "pattern_confidence": {
+      "vector-summation": 0.95
+    }
+  }
+}

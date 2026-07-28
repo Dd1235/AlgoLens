@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1088-b",
+  "title": "Ehab and subtraction",
+  "slug": "1088-b-ehab-and-subtraction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1088/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array, repeatedly find the minimum non-zero element, print it, and subtract it from all non-zero elements for k iterations, printing 0 if all elements become zero.",
+  "tags": [
+    "array",
+    "sorting",
+    "implementation"
+  ],
+  "patterns": [
+    "sorting",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224804,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

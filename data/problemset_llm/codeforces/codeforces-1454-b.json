@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1454-b",
+  "title": "Unique Bid Auction",
+  "slug": "1454-b-unique-bid-auction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1454/B",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given multiple test cases each with a list of chosen numbers by participants, determine the index of the participant who chose the smallest unique number, or -1 if no such number exists.",
+  "tags": [
+    "array",
+    "hash-map",
+    "implementation"
+  ],
+  "patterns": [
+    "hash-map",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224267,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "counting": 0.9
+    }
+  }
+}

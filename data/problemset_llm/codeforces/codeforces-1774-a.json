@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1774-a",
+  "title": "Add Plus Minus Sign",
+  "slug": "1774-a-add-plus-minus-sign",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1774/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given a binary string, insert plus and minus signs between consecutive characters to minimize the absolute value of the resulting arithmetic expression.",
+  "tags": [
+    "string",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "expression-evaluation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224335,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "expression-evaluation": 0.7
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1968-b",
+  "title": "Prefiquence",
+  "slug": "1968-b-prefiquence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1968/B",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "two pointers"
+  ],
+  "statement": "Given two binary strings a and b, find the longest prefix length k of a that appears as a subsequence in b.",
+  "tags": [
+    "string",
+    "greedy",
+    "two-pointers"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224356,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "greedy": 0.9
+    }
+  }
+}

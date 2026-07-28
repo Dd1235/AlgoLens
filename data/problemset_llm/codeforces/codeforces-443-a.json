@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-443-a",
+  "title": "Anton and Letters",
+  "slug": "443-a-anton-and-letters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/443/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation"
+  ],
+  "statement": "Given a string representation of a set of lowercase English letters enclosed in parentheses and separated by commas, count the number of distinct letters present.",
+  "tags": [
+    "string",
+    "set",
+    "implementation"
+  ],
+  "patterns": [
+    "hash-set",
+    "parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224372,
+    "pattern_confidence": {
+      "hash-set": 0.95,
+      "parsing": 0.9
+    }
+  }
+}

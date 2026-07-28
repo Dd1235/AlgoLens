@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1339-a",
+  "title": "Filling Diamonds",
+  "slug": "1339-a-filling-diamonds",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1339/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "implementation",
+    "math"
+  ],
+  "statement": "Count the number of ways to cover a belt-shaped area of 4n-2 triangles completely with diamond shapes, each formed by two adjacent triangles, considering rotations and flips but no scaling.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "tiling",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224402,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "tiling": 0.85,
+      "state-compression": 0.7
+    }
+  }
+}

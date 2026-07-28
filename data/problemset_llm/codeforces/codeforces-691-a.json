@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-691-a",
+  "title": "Fashion in Berland",
+  "slug": "691-a-fashion-in-berland",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/691/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a jacket with n buttons, determine if it is fastened correctly according to Berland fashion rules: all buttons except exactly one must be fastened, except if there is only one button, which must be fastened.",
+  "tags": [
+    "implementation",
+    "logic"
+  ],
+  "patterns": [
+    "conditional-checks"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224888,
+    "pattern_confidence": {
+      "conditional-checks": 0.9
+    }
+  }
+}

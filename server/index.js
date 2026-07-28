@@ -120,7 +120,7 @@ async function main() {
   app.use(express.static(webDir));
   app.use("/api", createAuthRouter());
   app.use("/api", createUserStateRouter({ problems }));
-  app.use("/api", createProfileRouter());
+  app.use("/api", createProfileRouter({ problems }));
   app.use("/api", createStatsRouter());
   app.use("/api", createTrackRouter());
   app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault, problems }));

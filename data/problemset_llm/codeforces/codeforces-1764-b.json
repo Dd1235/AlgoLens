@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1764-b",
+  "title": "Doremy's Perfect Math Class",
+  "slug": "1764-b-doremy-s-perfect-math-class",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1764/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a set of positive integers, repeatedly add differences of pairs not already in the set until no new integers can be added, and determine the maximum size of the resulting set.",
+  "tags": [
+    "math",
+    "number-theory",
+    "set"
+  ],
+  "patterns": [
+    "closure-under-subtraction",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224644,
+    "pattern_confidence": {
+      "closure-under-subtraction": 0.95,
+      "greedy": 0.7
+    }
+  }
+}

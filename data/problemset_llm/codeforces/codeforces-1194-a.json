@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1194-a",
+  "title": "Remove a Progression",
+  "slug": "1194-a-remove-a-progression",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1194/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Starting with numbers 1 to n, repeatedly remove the i-th remaining number at step i until fewer than i numbers remain. Determine the value of the x-th remaining number after the process ends.",
+  "tags": [
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224254,
+    "pattern_confidence": {
+      "simulation": 0.9
+    }
+  }
+}

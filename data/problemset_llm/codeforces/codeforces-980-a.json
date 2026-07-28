@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-980-a",
+  "title": "Links and Pearls",
+  "slug": "980-a-links-and-pearls",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/980/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a circular necklace composed of links and pearls, determine if it is possible to rearrange the elements by moving them around (without removing any) so that the number of links between every pair of adjacent pearls is equal.",
+  "tags": [
+    "string",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224799,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

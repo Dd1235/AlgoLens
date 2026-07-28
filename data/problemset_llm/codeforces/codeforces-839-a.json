@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-839-a",
+  "title": "Arya and Bran",
+  "slug": "839-a-arya-and-bran",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/839/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given daily candy arrivals and a maximum daily giving limit, determine the earliest day by which a target number of candies have been given out, or report impossibility.",
+  "tags": [
+    "implementation",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224703,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

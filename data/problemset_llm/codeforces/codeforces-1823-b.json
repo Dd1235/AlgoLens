@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1823-b",
+  "title": "Sort with Step",
+  "slug": "1823-b-sort-with-step",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1823/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a permutation and an integer k, determine if it can be sorted by swapping only elements at indices differing by k, possibly after one preliminary swap of any two elements.",
+  "tags": [
+    "array",
+    "permutation",
+    "math"
+  ],
+  "patterns": [
+    "brute-force",
+    "graph-components",
+    "connected-components"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224656,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "graph-components": 0.85,
+      "connected-components": 0.85
+    }
+  }
+}

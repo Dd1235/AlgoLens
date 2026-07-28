@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1182-a",
+  "title": "Filling Shapes",
+  "slug": "1182-a-filling-shapes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1182/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "dp",
+    "math"
+  ],
+  "statement": "Count the number of ways to tile a 3 by n board completely with a given shape without overlaps or gaps.",
+  "tags": [
+    "dynamic-programming",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "tiling",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224811,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "tiling": 0.9,
+      "state-compression": 0.7
+    }
+  }
+}

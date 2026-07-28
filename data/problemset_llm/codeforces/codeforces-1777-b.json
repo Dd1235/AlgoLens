@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1777-b",
+  "title": "Emordnilap",
+  "slug": "1777-b-emordnilap",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1777/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "combinatorics",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given all permutations of size n, compute the sum of inversion counts of arrays formed by concatenating each permutation with its reverse, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "permutation",
+    "counting"
+  ],
+  "patterns": [
+    "inversion-count",
+    "modular-arithmetic",
+    "combinatorial-formula"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224650,
+    "pattern_confidence": {
+      "inversion-count": 0.95,
+      "modular-arithmetic": 0.9,
+      "combinatorial-formula": 0.85
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1346-a",
+  "title": "Color Revolution",
+  "slug": "1346-a-color-revolution",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1346/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "*special",
+    "math"
+  ],
+  "statement": "Given total participants n and a ratio k, find four division sizes n1, n2, n3, n4 such that n2 = k*n1, n3 = k*n2, n4 = k*n3, and their sum equals n.",
+  "tags": [
+    "math",
+    "algebra"
+  ],
+  "patterns": [
+    "equation-solving"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224824,
+    "pattern_confidence": {
+      "equation-solving": 0.9
+    }
+  }
+}

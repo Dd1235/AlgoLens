@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1080-a",
+  "title": "Petya and Origami",
+  "slug": "1080-a-petya-and-origami",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1080/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given the number of friends and sheet requirements per invitation, determine the minimum number of single-color notebooks needed to supply all required sheets.",
+  "tags": [
+    "math",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "ceil-division"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224251,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "ceil-division": 0.85
+    }
+  }
+}

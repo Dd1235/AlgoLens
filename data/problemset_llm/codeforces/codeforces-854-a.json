@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-854-a",
+  "title": "Fraction",
+  "slug": "854-a-fraction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/854/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given an integer n, find the proper irreducible fraction a/b with a+b=n that has the maximum value, where a<b and gcd(a,b)=1.",
+  "tags": [
+    "math",
+    "number-theory",
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "gcd",
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224382,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "brute-force": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-745-a",
+  "title": "Hongcow Learns the Cyclic Shift",
+  "slug": "745-a-hongcow-learns-the-cyclic-shift",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/745/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a string, determine the number of distinct strings obtainable by repeatedly moving the last character to the front (cyclic shifts).",
+  "tags": [
+    "string",
+    "implementation"
+  ],
+  "patterns": [
+    "string-rotation",
+    "rolling-hash",
+    "set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224694,
+    "pattern_confidence": {
+      "string-rotation": 0.9,
+      "rolling-hash": 0.7,
+      "set": 0.6
+    }
+  }
+}

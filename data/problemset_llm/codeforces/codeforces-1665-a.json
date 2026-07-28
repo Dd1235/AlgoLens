@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1665-a",
+  "title": "GCD vs LCM",
+  "slug": "1665-a-gcd-vs-lcm",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1665/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given a positive integer n, find four positive integers a, b, c, d such that their sum is n and the gcd of a and b equals the lcm of c and d. Any valid solution can be output, and it is guaranteed that a solution exists.",
+  "tags": [
+    "math",
+    "number-theory",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "gcd-lcm-properties",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224313,
+    "pattern_confidence": {
+      "gcd-lcm-properties": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

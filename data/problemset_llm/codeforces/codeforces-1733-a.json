@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1733-a",
+  "title": "Consecutive Sum",
+  "slug": "1733-a-consecutive-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1733/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array and an integer k, you can swap elements only within positions sharing the same remainder modulo k up to k times. After swaps, select k consecutive elements to maximize their sum.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "modular-indexing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224330,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "sorting": 0.85,
+      "modular-indexing": 0.7
+    }
+  }
+}

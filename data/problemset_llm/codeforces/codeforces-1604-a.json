@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1604-a",
+  "title": "Era",
+  "slug": "1604-a-era",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1604/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy"
+  ],
+  "statement": "Given an integer sequence, find the minimum number of insertions of positive integers at any positions so that after all insertions, each element is at most its 1-based index.",
+  "tags": [
+    "greedy",
+    "array"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224294,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

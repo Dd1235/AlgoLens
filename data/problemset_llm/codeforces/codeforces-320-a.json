@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-320-a",
+  "title": "Magic Numbers",
+  "slug": "320-a-magic-numbers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/320/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "brute force",
+    "greedy"
+  ],
+  "statement": "Determine whether a given number can be formed by concatenating the strings \"1\", \"14\", and \"144\" any number of times without other digits.",
+  "tags": [
+    "string",
+    "greedy"
+  ],
+  "patterns": [
+    "greedy",
+    "string-parsing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224683,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "string-parsing": 0.85
+    }
+  }
+}

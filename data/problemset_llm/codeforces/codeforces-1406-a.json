@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1406-a",
+  "title": "Subset Mex",
+  "slug": "1406-a-subset-mex",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1406/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a multiset of integers, split it into two subsets to maximize the sum of their mex values, where mex is the smallest non-negative integer not present in the subset.",
+  "tags": [
+    "greedy",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "counting",
+    "mex"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224408,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "counting": 0.9,
+      "mex": 0.9
+    }
+  }
+}

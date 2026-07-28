@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1684-b",
+  "title": "Z mod X = C",
+  "slug": "1684-b-z-mod-x-c",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1684/B",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given three positive integers a, b, c with a < b < c, find positive integers x, y, z satisfying x mod y = a, y mod z = b, and z mod x = c.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-arithmetic",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224320,
+    "pattern_confidence": {
+      "modular-arithmetic": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

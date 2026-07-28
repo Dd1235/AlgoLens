@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1598-b",
+  "title": "Groups",
+  "slug": "1598-b-groups",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1598/B",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given an even number of students each with a set of convenient weekdays, determine if they can be split into two equal groups assigned to two different weekdays such that every student attends on a convenient day.",
+  "tags": [
+    "implementation",
+    "brute-force",
+    "combinatorics"
+  ],
+  "patterns": [
+    "brute-force",
+    "bit-manipulation",
+    "combinatorial-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224838,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "bit-manipulation": 0.7,
+      "combinatorial-check": 0.6
+    }
+  }
+}

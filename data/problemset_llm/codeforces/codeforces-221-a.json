@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-221-a",
+  "title": "Little Elephant and Function",
+  "slug": "221-a-little-elephant-and-function",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/221/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given an integer n, find a permutation of numbers from 1 to n such that applying a specific recursive swapping function results in the sorted sequence.",
+  "tags": [
+    "math",
+    "implementation",
+    "permutation"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224876,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95
+    }
+  }
+}

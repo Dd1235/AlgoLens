@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1791-d",
+  "title": "Distinct Split",
+  "slug": "1791-d-distinct-split",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1791/D",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "strings"
+  ],
+  "statement": "Given a string, split it into two non-empty parts to maximize the sum of the counts of distinct characters in each part.",
+  "tags": [
+    "string",
+    "greedy",
+    "brute-force"
+  ],
+  "patterns": [
+    "prefix-distinct-count",
+    "suffix-distinct-count",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224850,
+    "pattern_confidence": {
+      "prefix-distinct-count": 0.9,
+      "suffix-distinct-count": 0.9,
+      "greedy": 0.8
+    }
+  }
+}

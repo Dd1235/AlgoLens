@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-831-a",
+  "title": "Unimodal Array",
+  "slug": "831-a-unimodal-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/831/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Determine whether a given integer array is unimodal, meaning it consists of an optional strictly increasing segment, followed by an optional constant segment, followed by an optional strictly decreasing segment.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "linear-scan",
+    "state-machine"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224895,
+    "pattern_confidence": {
+      "linear-scan": 0.95,
+      "state-machine": 0.9
+    }
+  }
+}

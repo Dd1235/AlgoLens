@@ -1,6 +1,6 @@
 {
  "source": "data/formwise.xlsx",
- "count": 55,
+ "count": 59,
  "problems": [
   {
    "name": "Aggressive Cows",
@@ -331,6 +331,30 @@
    "url": "https://www.spoj.com/problems/SUBMERGE/",
    "topic": "Graph Level 2",
    "reason": "unsupported judge (no fetchable statement)"
+  },
+  {
+   "name": "Codeforces 2132E",
+   "url": "https://codeforces.com/problemset/problem/2132/E",
+   "topic": "formwise (codeforces, rated 1700)",
+   "reason": "statement source (open-r1/codeforces dataset) predates this contest; codeforces.com itself is Cloudflare-blocked"
+  },
+  {
+   "name": "Codeforces 2042D",
+   "url": "https://codeforces.com/problemset/problem/2042/D",
+   "topic": "formwise (codeforces, rated 1900)",
+   "reason": "statement source (open-r1/codeforces dataset) predates this contest; codeforces.com itself is Cloudflare-blocked"
+  },
+  {
+   "name": "Codeforces 2093G",
+   "url": "https://codeforces.com/problemset/problem/2093/G",
+   "topic": "formwise (codeforces, rated 1900)",
+   "reason": "statement source (open-r1/codeforces dataset) predates this contest; codeforces.com itself is Cloudflare-blocked"
+  },
+  {
+   "name": "Codeforces 700C",
+   "url": "https://codeforces.com/problemset/problem/700/C",
+   "topic": "formwise (codeforces, rated 2600)",
+   "reason": "absent from the open-r1/codeforces dataset (contest 700 carries only A and B there)"
   }
  ]
 }

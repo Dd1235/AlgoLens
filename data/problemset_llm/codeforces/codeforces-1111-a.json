@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-1111-a",
+  "title": "Superhero Transformation",
+  "slug": "1111-a-superhero-transformation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1111/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "strings"
+  ],
+  "statement": "Determine if one superhero name can be transformed into another by replacing vowels with vowels and consonants with consonants at corresponding positions.",
+  "tags": [
+    "strings",
+    "implementation"
+  ],
+  "patterns": [
+    "character-class-mapping"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224805,
+    "pattern_confidence": {
+      "character-class-mapping": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1749-a",
+  "title": "Cowardly Rooks",
+  "slug": "1749-a-cowardly-rooks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1749/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given a chessboard with non-attacking rooks placed, determine if moving exactly one rook along its row or column to an empty cell can maintain the non-attacking condition.",
+  "tags": [
+    "greedy",
+    "implementation",
+    "geometry"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224333,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85,
+      "line-sweep": 0.6
+    }
+  }
+}

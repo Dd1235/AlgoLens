@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1467-a",
+  "title": "Wizard of Orz",
+  "slug": "1467-a-wizard-of-orz",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1467/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given n panels initially showing 0 and incrementing digits every second modulo 10, pause exactly one panel at any time, causing adjacent panels to pause one second later per distance. Determine the maximum n-digit number formed by the digits displayed when all panels are paused.",
+  "tags": [
+    "math",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224619,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

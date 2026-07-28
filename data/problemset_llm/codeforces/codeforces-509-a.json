@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-509-a",
+  "title": "Maximum in Table",
+  "slug": "509-a-maximum-in-table",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/509/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given an integer n, construct an n×n table where the first row and column are all ones, and each other cell is the sum of the cell above and the cell to the left. Determine the maximum value in this table.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "prefix-sum"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224374,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "prefix-sum": 0.6
+    }
+  }
+}

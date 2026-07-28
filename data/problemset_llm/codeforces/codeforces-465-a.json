@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-465-a",
+  "title": "inc ARG",
+  "slug": "465-a-inc-arg",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/465/A",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given an n-bit memory cell representing an integer, determine how many bits change when incrementing the stored value by one with overflow discarded.",
+  "tags": [
+    "bit-manipulation",
+    "implementation"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224686,
+    "pattern_confidence": {
+      "bit-manipulation": 0.95,
+      "simulation": 0.8
+    }
+  }
+}

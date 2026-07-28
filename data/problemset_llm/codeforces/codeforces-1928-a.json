@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1928-a",
+  "title": "Rectangle Cutting",
+  "slug": "1928-a-rectangle-cutting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1928/A",
+  "source_topic": "Codeforces / rating 800-866",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "geometry",
+    "math"
+  ],
+  "statement": "Given a rectangle with integer sides, determine if it can be cut into two smaller rectangles and then rearranged (with rotation allowed) to form a different rectangle shape than the original.",
+  "tags": [
+    "geometry",
+    "math"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224354,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "case-analysis": 0.8
+    }
+  }
+}

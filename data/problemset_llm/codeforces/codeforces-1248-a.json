@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1248-a",
+  "title": "Integer Points",
+  "slug": "1248-a-integer-points",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1248/A",
+  "source_topic": "Codeforces / rating 934-1000",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "geometry",
+    "math"
+  ],
+  "statement": "Given two sets of distinct lines of the form y = x + p_i and y = -x + q_i, count the number of pairs of lines whose intersection point has integer coordinates.",
+  "tags": [
+    "geometry",
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "integer-coordinate-check",
+    "line-intersection",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224817,
+    "pattern_confidence": {
+      "integer-coordinate-check": 0.9,
+      "line-intersection": 0.85,
+      "counting": 0.8
+    }
+  }
+}

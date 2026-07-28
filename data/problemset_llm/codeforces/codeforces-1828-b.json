@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1828-b",
+  "title": "Permutation Swap",
+  "slug": "1828-b-permutation-swap",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1828/B",
+  "source_topic": "Codeforces / rating 867-933",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a permutation, determine the maximum fixed distance k such that swapping elements exactly k apart can sort the permutation.",
+  "tags": [
+    "math",
+    "number-theory",
+    "permutation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "gcd",
+    "cycle-decomposition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785224658,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "gcd": 0.85,
+      "cycle-decomposition": 0.8
+    }
+  }
+}
