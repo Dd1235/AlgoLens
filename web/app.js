@@ -1157,6 +1157,14 @@ FILTERS — they stack, and they stack with the library too
                set both ends of — "cf 1500 to 1500" is exactly 1500.
                A judge you haven't touched stays unfiltered, so a cf
                range never deletes your LeetCode results.
+  ac           pick a LeetCode tier and an acceptance-rate range appears
+               under it: "hard" + "ac: 10% to 30%" is the hardest Hards.
+               Lower acceptance means harder. It shows up only after a
+               tier is chosen, because across tiers it doesn't compare —
+               most Mediums here were picked FOR a low acceptance rate
+               and every Hard came in regardless, so a 15% Medium
+               outranking a 60% Hard would say more about how this
+               corpus was built than about the problems.
   sort         with ONE judge selected: easiest or hardest first.
                Two judges have no shared order — nothing places a
                Medium against a 1600 — so it's offered only when it
@@ -1164,6 +1172,9 @@ FILTERS — they stack, and they stack with the library too
                While searching it reorders the top N (20/50/100) by
                relevance rather than discarding the ranking, so there
                is no next page. Browsing sorts everything and pages.
+               On LeetCode, acceptance rate breaks the tie inside each
+               tier — otherwise "easiest first" is 661 Mediums in no
+               particular order.
   pattern      click a technique label inside a result
   all/notdone  the dropdown next to the ranker      (signed in)
   /done
