@@ -121,4 +121,68 @@ function buildDifficultyPayload(problems) {
   return { named, rated };
 }
 
-module.exports = { NAMED, RATED, parseSelection, passesDifficulty, buildDifficultyPayload };
+// ── Sorting ──────────────────────────────────────────────────────────────────
+//
+// Sorting by difficulty is only coherent inside ONE judge, for the same reason
+// filtering is: there is no ordering between "Medium" and 1600. So the server
+// refuses to sort unless exactly one judge is in play and that judge has a
+// scale — the caller is told why rather than silently getting relevance order
+// back.
+//
+// The harder question is what sorting does to paging, and the answer differs by
+// view because it depends on whether there is any relevance to protect:
+//
+//   search (a query)  ranking IS the answer, so sorting the whole match set
+//                     would throw it away. Sort the top N by relevance instead
+//                     — "the easiest of the best matches" — and drop paging,
+//                     because page 2 of a re-sorted top-N is meaningless.
+//   browse / library  no query, so nothing is ranked and corpus order carries
+//                     no meaning. Sort everything; paging stays coherent.
+
+const TIER_ORDER = { easy: 0, medium: 1, hard: 2 };
+
+function sortableJudge(platforms, payloadJudges) {
+  if (platforms.size !== 1) return null;
+  const [judge] = platforms;
+  return payloadJudges.has(judge) ? judge : null;
+}
+
+// Unrated problems sort last in both directions. They are not "easiest"; we
+// simply don't know, and putting an unknown at the top of an easiest-first list
+// would be a claim we can't support.
+function difficultyKey(problem) {
+  const d = problem.difficulty;
+  if (typeof d === "number") return d;
+  if (typeof d === "string") {
+    const t = TIER_ORDER[d.toLowerCase()];
+    if (t !== undefined) return t;
+  }
+  return null;
+}
+
+function sortByDifficulty(items, dir, get = (x) => x) {
+  const sign = dir === "desc" ? -1 : 1;
+  return items
+    .map((item, i) => ({ item, i, key: difficultyKey(get(item)) }))
+    .sort((a, b) => {
+      if (a.key === null && b.key === null) return a.i - b.i;
+      if (a.key === null) return 1;
+      if (b.key === null) return -1;
+      if (a.key !== b.key) return sign * (a.key - b.key);
+      return a.i - b.i; // stable: equal difficulty keeps relevance order
+    })
+    .map((x) => x.item);
+}
+
+function parseSort(raw) {
+  const v = String(raw || "").toLowerCase().trim();
+  if (v === "difficulty" || v === "difficulty-asc") return "asc";
+  if (v === "difficulty-desc" || v === "-difficulty") return "desc";
+  return null;
+}
+
+// Which judges can be sorted at all — named tiers or a rating scale.
+const SORTABLE_JUDGES = new Set([...NAMED.map((b) => b.judge), ...Object.keys(RATED)]);
+
+module.exports = { NAMED, RATED, parseSelection, passesDifficulty, buildDifficultyPayload,
+  parseSort, sortByDifficulty, sortableJudge, SORTABLE_JUDGES, difficultyKey };
