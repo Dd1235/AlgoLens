@@ -126,6 +126,10 @@ CRITERIA = {
     "sos-dp":
         "a strong solution aggregates over all subsets or supersets of each mask, dimension by "
         "dimension (sum over subsets / zeta transform).",
+    "monotonic-queue-optimization":
+        "a strong solution speeds up a dp recurrence whose transition is a min or max over a "
+        "SLIDING WINDOW of previous states, by maintaining a monotonic deque. Using a deque as "
+        "a plain data structure is not this; the deque must be optimising a dp transition.",
     "mo-algorithm":
         "a strong solution answers range queries OFFLINE by sorting them into blocks and moving "
         "two pointers between consecutive queries.",
