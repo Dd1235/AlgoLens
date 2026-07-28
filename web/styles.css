@@ -450,6 +450,11 @@ html[data-theme="light"] .theme-toggle {
 .acceptance-select:hover,
 .acceptance-select:focus { border-color: var(--accent); color: var(--accent); }
 
+/* "my level" is a suggestion, not a filter you set — dashed until applied, so
+   it reads as an offer rather than an active narrowing. */
+.level-chip { border-style: dashed; }
+.level-chip.active { border-style: solid; }
+
 /* "ac" needs a hint that lower means harder, which is the opposite of every
    other number on this row. A tooltip is the desktop half of that; the option
    values carry the % so the unit is never in doubt on a phone. */

@@ -261,6 +261,7 @@ async function bootstrapAuth() {
   const wasPending = bootNeedsAuth;
   bootNeedsAuth = false;
   if (wasPending && currentUser && currentQuery) reissueSearch();
+  loadLevelSignals();
 }
 
 function applyAuthState() {
@@ -331,6 +332,23 @@ function orderNote() {
   return sortDir ? ` · ${sortDir === "desc" ? "hardest" : "easiest"} first` : "";
 }
 
+// Cache-only on the server, so this costs one indexed read and never makes the
+// search page wait on leetcode.com. A signed-out user, or one who has never
+// opened the profile page, simply doesn't get the button.
+async function loadLevelSignals() {
+  if (!currentUser || levelSuggest) return;
+  try {
+    const res = await fetch("/api/level");
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data.suggest || !Object.keys(data.suggest).length) return;
+    levelSuggest = data.suggest;
+    syncDifficultyControls();
+  } catch (_err) {
+    // A missing button is the right failure here — never block the page.
+  }
+}
+
 function activeFacets() {
   const bits = [];
   if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
@@ -360,6 +378,7 @@ function activeFacets() {
 const activeTiers = new Set();     // named tiers, e.g. lc-hard
 const activeRanges = new Map();    // judge -> { min, max }
 let activeAcceptance = null;       // { min, max } — leetcode acceptance rate
+let levelSuggest = null;           // judge -> { difficulty, why, count }, from /api/level
 
 function difficultyParam() {
   const parts = [...activeTiers];
@@ -369,6 +388,37 @@ function difficultyParam() {
   }
   if (activeAcceptance) parts.push(`ac:${activeAcceptance.min}-${activeAcceptance.max}`);
   return parts.join(",");
+}
+
+// Applies one `difficulty=` token to the live controls. The URL restore and
+// the "my level" button both produce these tokens, so they parse in one place.
+function applyDifficultyToken(token) {
+  const t = String(token || "").trim().toLowerCase();
+  if (!t) return;
+  const range = /^([a-z]{2,4}):(-?\d+)-(-?\d+)$/.exec(t);
+  if (range && range[1] === "ac") {
+    activeAcceptance = { min: Number(range[2]), max: Number(range[3]) };
+  } else if (range) {
+    const meta = (difficultyPayload.rated || []).find((r) => r.short === range[1]);
+    if (meta) activeRanges.set(meta.judge, { min: Number(range[2]), max: Number(range[3]) });
+  } else if (/^[a-z]{2,3}-[a-z]+$/.test(t)) {
+    activeTiers.add(t);
+  }
+}
+
+// The suggestions that apply to what's on screen: a judge you haven't selected
+// shouldn't have its band silently set behind a control you can't see.
+function levelForSelection() {
+  if (!levelSuggest) return [];
+  return [...activePlatforms].map((j) => levelSuggest[j]).filter(Boolean);
+}
+
+function levelIsApplied() {
+  const suggested = levelForSelection();
+  if (!suggested.length) return false;
+  const want = suggested.flatMap((s) => s.difficulty.split(",")).sort().join(",");
+  const have = (difficultyParam() || "").split(",").filter(Boolean).sort().join(",");
+  return want === have;
 }
 
 function syncDifficultyControls() {
@@ -487,6 +537,19 @@ function syncDifficultyControls() {
     );
   }
 
+  // "my level" sets each selected judge's band from that judge's own stats. It
+  // only shows when there IS a suggestion for something on screen, so it can
+  // never be a button that does nothing.
+  const suggested = levelForSelection();
+  if (suggested.length) {
+    const applied = levelIsApplied();
+    const why = suggested.map((x) => `${x.why} → ${x.count} problems`).join("; ");
+    groups.push(
+      `<button type="button" class="judge-chip level-chip${applied ? " active" : ""}" id="level-apply"` +
+        ` title="${escapeHtml(why)}">${applied ? "my level ✓" : "my level"}</button>`
+    );
+  }
+
   if (activeTiers.size || activeRanges.size || activeAcceptance) {
     groups.push('<button type="button" class="judge-chip judge-clear" id="difficulty-clear" title="any difficulty">any ✕</button>');
   }
@@ -546,6 +609,28 @@ function syncDifficultyControls() {
   const windowSel = difficultyRow.querySelector("#sort-window");
   if (windowSel) windowSel.addEventListener("change", () => {
     sortWindow = Number(windowSel.value) || 20;
+    afterDifficultyChange();
+  });
+
+  const level = difficultyRow.querySelector("#level-apply");
+  if (level) level.addEventListener("click", () => {
+    const suggestions = levelForSelection();
+    if (levelIsApplied()) {
+      activeTiers.clear();
+      activeRanges.clear();
+      activeAcceptance = null;
+      track("level_cleared", {});
+    } else {
+      activeTiers.clear();
+      activeRanges.clear();
+      activeAcceptance = null;
+      for (const s of suggestions) for (const tok of s.difficulty.split(",")) applyDifficultyToken(tok);
+      // Say what it did and why. A filter that changes the page without
+      // explaining itself reads as a bug, and the reasoning is a guess worth
+      // showing: these are proxies for your level, not measurements of it.
+      setStatus(`my level · ${suggestions.map((x) => `${x.why} → ${x.count} problems`).join(" · ")}`);
+      track("level_applied", { judges: suggestions.length });
+    }
     afterDifficultyChange();
   });
 
@@ -1666,11 +1751,10 @@ for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
 for (const tok of (bootParams.get("difficulty") || "").toLowerCase().split(",")) {
   const t = tok.trim();
   const range = /^([a-z]{2,4}):(-?\d+)-(-?\d+)$/.exec(t);
-  // "ac" names a quantity rather than a judge, so unlike "cf" it resolves
-  // without waiting for the payload.
-  if (range && range[1] === "ac") activeAcceptance = { min: Number(range[2]), max: Number(range[3]) };
-  else if (range) bootRanges.push(range);
-  else if (/^[a-z]{2,3}-[a-z]+$/.test(t)) activeTiers.add(t);
+  // A judge range names its judge by a short form only the payload can resolve,
+  // so it waits. "ac" names a quantity, and tiers are already canonical.
+  if (range && range[1] !== "ac") bootRanges.push(range);
+  else applyDifficultyToken(t);
 }
 syncJudgeControls();
 if (bootQ) input.value = bootQ;
