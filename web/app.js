@@ -46,6 +46,7 @@ const LIBRARY_COMMANDS = {
 
 const compareEl = document.getElementById("compare-results");
 const judgeRow = document.getElementById("judge-row");
+const difficultyRow = document.getElementById("difficulty-row");
 const judgeClearBtn = document.getElementById("judge-clear");
 const latencySummaryEl = document.getElementById("latency-summary");
 // The compare view is a fixed pair — renderCompare's delta badges are pairwise.
@@ -73,6 +74,8 @@ let currentUser = null;
 let currentFilter = filterSelect.value || "all";
 let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
+const activeBands = new Set();     // per-judge difficulty; empty = every difficulty
+let difficultyBands = [];          // [{id, judge, label, count}] from /api/rankers
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let compareMode = false;  // entered with :compare, left by any other query
 let bootNeedsAuth = false; // restored state that only means something signed in
@@ -168,6 +171,8 @@ async function populateRankerSelect() {
     opt.textContent = RANKER_LABELS[name] || name;
     rankerSelect.appendChild(opt);
   }
+  difficultyBands = data.difficultyBands || [];
+  syncDifficultyControls();
   if (data.corpusSize) {
     const el = document.getElementById("corpus-size");
     if (el) el.textContent = data.corpusSize.toLocaleString();
@@ -317,8 +322,104 @@ judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 function activeFacets() {
   const bits = [];
   if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
+  if (activeBands.size) {
+    const labels = difficultyBands.filter((b) => activeBands.has(b.id)).map((b) => b.label);
+    if (labels.length) bits.push(labels.join("/"));
+  }
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
   return bits;
+}
+
+// Difficulty only means something inside one judge, so the row is built from
+// whichever judges are currently selected. No judge selected means "all
+// judges", and there is no scale that spans all four — so the row stays hidden
+// rather than offering a choice that can't be honoured.
+function syncDifficultyControls() {
+  if (!difficultyRow) return;
+  const judges = [...activePlatforms];
+  if (!judges.length || !difficultyBands.length) {
+    // Dropping the judges drops their bands with them; leaving a stale
+    // "cf 1800+" pill active with Codeforces switched off would filter results
+    // by something the user can no longer see.
+    if (activeBands.size) activeBands.clear();
+    difficultyRow.classList.add("hidden");
+    difficultyRow.innerHTML = "";
+    return;
+  }
+  const usable = difficultyBands.filter((b) => activePlatforms.has(b.judge));
+  if (!usable.length) {
+    // CSES publishes no difficulty at all, so selecting only CSES correctly
+    // yields nothing to offer.
+    if (activeBands.size) activeBands.clear();
+    difficultyRow.classList.add("hidden");
+    difficultyRow.innerHTML = "";
+    return;
+  }
+  // A band whose judge just got deselected must not keep filtering.
+  for (const id of [...activeBands]) {
+    if (!usable.some((b) => b.id === id)) activeBands.delete(id);
+  }
+
+  const byJudge = new Map();
+  for (const b of usable) {
+    if (!byJudge.has(b.judge)) byJudge.set(b.judge, []);
+    byJudge.get(b.judge).push(b);
+  }
+  const parts = [];
+  for (const [judge, list] of byJudge) {
+    const short = (PLATFORM_LABELS[judge] || [judge])[0];
+    parts.push(
+      `<span class="difficulty-group"><span class="difficulty-label">${escapeHtml(short)}</span>` +
+        list
+          .map(
+            (b) =>
+              `<button type="button" class="judge-chip difficulty-chip${activeBands.has(b.id) ? " active" : ""}"` +
+              ` data-band="${escapeHtml(b.id)}"${b.count ? "" : " disabled"}` +
+              ` title="${b.count} problem${b.count === 1 ? "" : "s"}">${escapeHtml(b.label)}` +
+              `<span class="technique-count">${b.count}</span></button>`
+          )
+          .join("") +
+        "</span>"
+    );
+  }
+  if (activeBands.size) {
+    parts.push('<button type="button" class="judge-chip judge-clear" id="difficulty-clear" title="any difficulty">any ✕</button>');
+  }
+  difficultyRow.innerHTML = parts.join("");
+  difficultyRow.classList.remove("hidden");
+  difficultyRow.querySelectorAll(".difficulty-chip").forEach((btn) => {
+    btn.addEventListener("click", () => toggleBand(btn.dataset.band));
+  });
+  const clear = difficultyRow.querySelector("#difficulty-clear");
+  if (clear) clear.addEventListener("click", () => {
+    activeBands.clear();
+    syncDifficultyControls();
+    syncUrl();
+    currentOffset = 0;
+    reissueCurrentView();
+  });
+}
+
+function toggleBand(id) {
+  if (!id) return;
+  if (activeBands.has(id)) activeBands.delete(id);
+  else activeBands.add(id);
+  track("difficulty_selected", { band: id, active: [...activeBands].join(",") });
+  syncDifficultyControls();
+  currentOffset = 0;
+  reissueCurrentView();
+}
+
+// Re-runs whatever the user is looking at — a search, a browse, or a library
+// listing — so a filter change behaves the same in all three. Judges used to
+// hardcode runSearch here, which meant changing a filter inside :bookmarks
+// bounced you back to search results.
+function reissueCurrentView() {
+  const typed = input.value.trim();
+  if (currentUser && LIBRARY_COMMANDS[typed.toLowerCase()]) return runSearch(typed, { append: false });
+  if (typed || currentQuery) return runSearch(typed || currentQuery, { append: false });
+  if (activePattern || activePlatforms.size) return runBrowse({ append: false });
+  return undefined;
 }
 
 function syncJudgeControls() {
@@ -336,6 +437,7 @@ function syncJudgeControls() {
   // four filters someone applied.
   judgeRow.classList.toggle("all-on", unfiltered);
   judgeClearBtn.classList.toggle("hidden", unfiltered);
+  syncDifficultyControls();
 }
 
 function applyMode() {
@@ -456,7 +558,8 @@ async function runSearch(rawQuery, { append = false } = {}) {
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const rankerParam = activeRanker ? `&ranker=${encodeURIComponent(activeRanker)}` : "";
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
-  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}${platformParam}`;
+  const bandParam = activeBands.size ? `&difficulty=${encodeURIComponent([...activeBands].join(","))}` : "";
+  const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}${platformParam}${bandParam}`;
 
   let data;
   try {
@@ -535,7 +638,8 @@ async function runBrowse({ append = false } = {}) {
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}`;
+  const bandParam = activeBands.size ? `&difficulty=${encodeURIComponent([...activeBands].join(","))}` : "";
+  const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}${bandParam}`;
 
   let data;
   try {
@@ -582,7 +686,8 @@ async function runLibrary(type, q) {
     // problems I haven't finished" is one of the reasons to save things at all.
     const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
     const doneParam = currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}`);
+    const bandParam = activeBands.size ? `&difficulty=${encodeURIComponent([...activeBands].join(","))}` : "";
+    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}`);
     data = await res.json();
   } catch (err) {
     if (issuedAt !== lastQueryAt) return;
@@ -762,6 +867,7 @@ function syncUrl() {
   if (currentQuery) p.set("q", currentQuery);
   if (activePattern) p.set("pattern", activePattern);
   if (activePlatforms.size) p.set("platform", [...activePlatforms].join(","));
+  if (activeBands.size) p.set("difficulty", [...activeBands].join(","));
   if (activeRanker) p.set("ranker", activeRanker);
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
   const qs = p.toString();
@@ -798,7 +904,7 @@ function togglePlatformFilter(platform) {
   track("platform_selected", { platform, active: [...activePlatforms].join(",") });
   syncJudgeControls();
   currentOffset = 0;
-  if (currentQuery || input.value.trim()) runSearch(input.value || currentQuery, { append: false });
+  reissueCurrentView();
 }
 
 function clearPlatformFilter({ reissue = true } = {}) {
@@ -1341,6 +1447,9 @@ if (["done", "notdone"].includes(bootFilter)) {
 }
 for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
   if (PLATFORM_LABELS[p.trim()]) activePlatforms.add(p.trim());
+}
+for (const b of (bootParams.get("difficulty") || "").toLowerCase().split(",")) {
+  if (/^[a-z]{2,3}-[a-z0-9]+$/.test(b.trim())) activeBands.add(b.trim());
 }
 syncJudgeControls();
 if (bootQ) input.value = bootQ;

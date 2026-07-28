@@ -5,6 +5,7 @@ const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
 const { tokenize } = require("../search/tokenize");
+const { parseBands, passesDifficulty, buildDifficultyPayload } = require("../search/difficulty");
 const { logEvent } = require("../telemetry");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
@@ -130,6 +131,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const patternRaw = (req.query.pattern || "").toString().toLowerCase();
     const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
     const platforms = parsePlatforms(req.query.platform, KNOWN_PLATFORMS);
+    const bands = parseBands(req.query.difficulty);
     // Alias expansion ("aliens trick" → +wqs binary search) happens here at
     // the route, once, so every ranker — lexical, dense, gRPC — sees the
     // searchable form. The response echoes expandedQuery when it differs.
@@ -161,7 +163,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
       const userState = req.user ? await loadUserState(req.user.id) : null;
       const effectiveFilter = userState ? filter : "all";
 
-      const hasFilter = effectiveFilter !== "all" || !!pattern || platforms.size > 0;
+      const hasFilter = effectiveFilter !== "all" || !!pattern || platforms.size > 0 || bands.size > 0;
 
       let hits, total, latencyMs;
       if (!q.trim() && hasFilter) {
@@ -174,6 +176,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         const browsed = problems.filter((p) => {
           if (pattern && !(p.patterns || []).includes(pattern)) return false;
           if (platforms.size && !platforms.has(p.platform)) return false;
+          if (!passesDifficulty(p, bands)) return false;
           if (effectiveFilter === "all") return true;
           const isDone = userState.done.has(p.id);
           return effectiveFilter === "done" ? isDone : !isDone;
@@ -194,6 +197,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         const filtered = full.hits.filter((h) => {
           if (pattern && !(h.problem.patterns || []).includes(pattern)) return false;
           if (platforms.size && !platforms.has(h.problem.platform)) return false;
+          if (!passesDifficulty(h.problem, bands)) return false;
           if (effectiveFilter === "all") return true;
           const isDone = userState.done.has(h.problem.id);
           return effectiveFilter === "done" ? isDone : !isDone;
@@ -241,6 +245,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         filter: effectiveFilter,
         pattern: pattern || undefined,
         platform: platforms.size ? [...platforms].sort() : undefined,
+        difficulty: bands.size ? [...bands].sort() : undefined,
         hits,
       });
     } catch (err) {

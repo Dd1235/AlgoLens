@@ -399,6 +399,40 @@ html[data-theme="light"] .theme-toggle {
   font-weight: 400;
 }
 
+/* Per-judge difficulty. Sits under the judges row and only exists while a
+   judge is selected, because none of these scales is comparable to another. */
+.difficulty-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.45rem 0 0;
+  font-size: 0.78rem;
+}
+.difficulty-row.hidden { display: none !important; }
+
+.difficulty-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.difficulty-label {
+  color: var(--text-dim);
+  font-family: var(--mono);
+}
+.difficulty-label::after { content: ":"; }
+
+.difficulty-chip[disabled] {
+  opacity: 0.35;
+  cursor: default;
+}
+.difficulty-chip[disabled]:hover {
+  color: var(--text-muted);
+  border-color: var(--border);
+  background: none;
+}
+
 .judge-chip.judge-clear {
   color: var(--text-dim);
   border-style: dashed;
@@ -1453,7 +1487,8 @@ html[data-theme="light"] footer::after { content: ""; }
   .judge-chip,
   .pattern-chip,
   .lib-chip,
-  .technique-chip {
+  .technique-chip,
+  .difficulty-chip {
     min-height: 34px;
     display: inline-flex;
     align-items: center;
