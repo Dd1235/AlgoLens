@@ -1,6 +1,6 @@
 # Cosine
 
-Search 3,200+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
+Search 3,300+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
 **Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
 
@@ -24,8 +24,8 @@ They're invisible to every difficulty filter and every sort, which is bad becaus
 - **AtCoder:** I compare your AtCoder rating against AtCoder problem difficulties, which is scale-consistent — but is it *true* in practice, or does the AtCoder rating distribution sit differently against its own difficulty estimates than Codeforces does?
 - **LeetCode:** there's no rating, so it reads solved counts and picks a tier plus an acceptance-rate half. The rungs are at 10 / 25 / 100 Hards. Those numbers are a guess. Worse, LeetCode's counts cover the whole problemset, most of which is far easier than anything here — so someone with 300 Mediums solved may have solved 300 easy Mediums. **Is there a better signal LeetCode actually exposes?**
 
-**4. Umbrella terms, and one label I can't fill.**
-Searching the technique directory for "range queries" used to return nothing — the vocabulary is all leaves (`segment-tree`, `sparse-table`, `mo-algorithm`) with no node above them. There are 11 umbrella groups now; **which ones are still missing?** Separately: `sparse-table` sits on exactly 1 problem. Two LLM audit passes over 89 candidates, including static-RMQ and LCA problems, produced zero more. Either this corpus genuinely has no problem where a sparse table is the right tool, or my bar is wrong. **If you know a problem here that's a real sparse-table problem, that's the most useful bug report I could get.**
+**4. Umbrella terms, and the one label I still can't fill.**
+Searching the technique directory for "range queries" used to return nothing — the vocabulary is all leaves (`segment-tree`, `sparse-table`, `mo-algorithm`) with no node above them. There are 11 umbrella groups now; **which ones are still missing?** Separately: `sparse-table` sits on exactly 1 problem (CSES's *Static Range Minimum Queries*) and `prim` on none. Three LLM audit passes over ~180 candidates — static-RMQ problems, LCA problems, every segment-tree problem — produced zero more, and neither judge tags "sparse table" so I can't go fetch them either. The likely truth is that both are *implementations* rather than problem types: a sparse table is a subroutine inside an LCA solution, and MST problems get solved with Kruskal. **If you know a problem here where a sparse table is genuinely the point, that's the most useful bug report I could get.**
 
 Open an issue, or mail me — see [Feedback → fix](#feedback--fix) for what previous rounds changed.
 
@@ -63,7 +63,7 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
 - **Compare rankers.** `:compare thief robbing houses` runs the query on bm25 and dense side by side with rank deltas — watch keyword search find nothing for "cheese" while semantic nails it. A command rather than permanent chrome, since it's an engine-tuning tool.
 - **Where a proxy metric stops being honest.** Acceptance rate looks like a free difficulty scale, and on the full LeetCode problemset it is one — median Medium 57.5%, Hard 47.3%, AUC 0.677. Measured on *my* slice it inverts to 0.426: served Hards look easier than served Mediums. Not a data bug — 554 of 661 Mediums were selected *because* they had the lowest acceptance rates, while every Hard came in unfiltered. So it ships as a within-tier filter and a within-tier sort tiebreak, never a scale. Inside one tier the selection bias is gone and the number is just the number.
-- **A deliberately hard corpus.** 3,202 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces sampled across rating bands from 800 up and AtCoder from its own scale. The 800–1000 band exists so a filter set to a beginner's rating has something to return; it was added and benchmarked, and moved nothing — bm25 flat on every metric, Recall@100 unchanged, 2.5% of top-5 slots displaced ([experiments/10](experiments/10-easy-band-and-level-filters.md)). No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
+- **A deliberately hard corpus.** 3,384 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces sampled across rating bands from 800 up and AtCoder from its own scale. The 800–1000 band exists so a filter set to a beginner's rating has something to return; it was added and benchmarked, and moved nothing — bm25 flat on every metric, Recall@100 unchanged, 2.5% of top-5 slots displaced ([experiments/10](experiments/10-easy-band-and-level-filters.md)). No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
 
 ## Tracking the grind
 
