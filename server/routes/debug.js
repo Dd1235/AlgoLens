@@ -25,7 +25,7 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
       available: Object.keys(indexes),
       default: defaultRanker,
       corpusSize: problems.length,
-      difficultyBands: buildDifficultyPayload(problems),
+      difficulty: buildDifficultyPayload(problems),
     });
   });
 

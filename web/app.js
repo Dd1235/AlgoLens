@@ -74,8 +74,8 @@ let currentUser = null;
 let currentFilter = filterSelect.value || "all";
 let activePattern = "";
 const activePlatforms = new Set(); // empty = every judge
-const activeBands = new Set();     // per-judge difficulty; empty = every difficulty
-let difficultyBands = [];          // [{id, judge, label, count}] from /api/rankers
+let difficultyPayload = { named: [], rated: [] }; // controls, from /api/rankers
+const bootRanges = []; // ?difficulty= ranges parked until the payload names their judge
 let activeRanker = ""; // "" = server default (bm25); set by the picker or ?ranker=
 let compareMode = false;  // entered with :compare, left by any other query
 let bootNeedsAuth = false; // restored state that only means something signed in
@@ -171,7 +171,13 @@ async function populateRankerSelect() {
     opt.textContent = RANKER_LABELS[name] || name;
     rankerSelect.appendChild(opt);
   }
-  difficultyBands = data.difficultyBands || [];
+  difficultyPayload = data.difficulty || { named: [], rated: [] };
+  // A range in the URL names a judge by its short form ("cf"), which only the
+  // payload can resolve — so it is applied here rather than at boot.
+  for (const [, short, lo, hi] of bootRanges.splice(0)) {
+    const meta = (difficultyPayload.rated || []).find((r) => r.short === short);
+    if (meta) activeRanges.set(meta.judge, { min: Number(lo), max: Number(hi) });
+  }
   syncDifficultyControls();
   if (data.corpusSize) {
     const el = document.getElementById("corpus-size");
@@ -322,9 +328,13 @@ judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 function activeFacets() {
   const bits = [];
   if (activePlatforms.size) bits.push([...activePlatforms].map((p) => (PLATFORM_LABELS[p] || [p])[0]).join("+"));
-  if (activeBands.size) {
-    const labels = difficultyBands.filter((b) => activeBands.has(b.id)).map((b) => b.label);
-    if (labels.length) bits.push(labels.join("/"));
+  for (const id of activeTiers) {
+    const b = (difficultyPayload.named || []).find((x) => x.id === id);
+    if (b) bits.push(b.label);
+  }
+  for (const [judge, r] of activeRanges) {
+    const short = (PLATFORM_LABELS[judge] || [judge])[0];
+    bits.push(r.min === r.max ? `${short} ${r.min}` : `${short} ${r.min}-${r.max}`);
   }
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
   return bits;
@@ -334,86 +344,130 @@ function activeFacets() {
 // whichever judges are currently selected. No judge selected means "all
 // judges", and there is no scale that spans all four — so the row stays hidden
 // rather than offering a choice that can't be honoured.
+//
+// Two control shapes, because the two kinds of scale differ in kind: LeetCode's
+// three named tiers are chips, while Codeforces and AtCoder ratings get a
+// from/to range. Fixed coarse bands could not express "only 1500-rated", and on
+// Codeforces — where every rating is a multiple of 100 — that is a reasonable
+// thing to want.
+const activeTiers = new Set();     // named tiers, e.g. lc-hard
+const activeRanges = new Map();    // judge -> { min, max }
+
+function difficultyParam() {
+  const parts = [...activeTiers];
+  for (const [judge, r] of activeRanges) {
+    const meta = (difficultyPayload.rated || []).find((x) => x.judge === judge);
+    if (meta) parts.push(`${meta.short}:${r.min}-${r.max}`);
+  }
+  return parts.join(",");
+}
+
 function syncDifficultyControls() {
   if (!difficultyRow) return;
   const judges = [...activePlatforms];
-  if (!judges.length || !difficultyBands.length) {
-    // Dropping the judges drops their bands with them; leaving a stale
-    // "cf 1800+" pill active with Codeforces switched off would filter results
-    // by something the user can no longer see.
-    if (activeBands.size) activeBands.clear();
-    difficultyRow.classList.add("hidden");
-    difficultyRow.innerHTML = "";
-    return;
-  }
-  const usable = difficultyBands.filter((b) => activePlatforms.has(b.judge));
-  if (!usable.length) {
-    // CSES publishes no difficulty at all, so selecting only CSES correctly
-    // yields nothing to offer.
-    if (activeBands.size) activeBands.clear();
-    difficultyRow.classList.add("hidden");
-    difficultyRow.innerHTML = "";
-    return;
-  }
-  // A band whose judge just got deselected must not keep filtering.
-  for (const id of [...activeBands]) {
-    if (!usable.some((b) => b.id === id)) activeBands.delete(id);
-  }
+  const named = (difficultyPayload.named || []).filter((b) => activePlatforms.has(b.judge));
+  const rated = (difficultyPayload.rated || []).filter((r) => activePlatforms.has(r.judge));
 
-  const byJudge = new Map();
-  for (const b of usable) {
-    if (!byJudge.has(b.judge)) byJudge.set(b.judge, []);
-    byJudge.get(b.judge).push(b);
+  if (!judges.length || (!named.length && !rated.length)) {
+    // Dropping a judge drops its difficulty with it. Leaving a live "cf 1500"
+    // filter active with Codeforces switched off would filter by something the
+    // user can no longer see or clear.
+    activeTiers.clear();
+    activeRanges.clear();
+    difficultyRow.classList.add("hidden");
+    difficultyRow.innerHTML = "";
+    return;
   }
-  const parts = [];
-  for (const [judge, list] of byJudge) {
+  for (const id of [...activeTiers]) if (!named.some((b) => b.id === id)) activeTiers.delete(id);
+  for (const j of [...activeRanges.keys()]) if (!rated.some((r) => r.judge === j)) activeRanges.delete(j);
+
+  const groups = [];
+  for (const judge of judges) {
     const short = (PLATFORM_LABELS[judge] || [judge])[0];
-    parts.push(
-      `<span class="difficulty-group"><span class="difficulty-label">${escapeHtml(short)}</span>` +
-        list
-          .map(
-            (b) =>
-              `<button type="button" class="judge-chip difficulty-chip${activeBands.has(b.id) ? " active" : ""}"` +
-              ` data-band="${escapeHtml(b.id)}"${b.count ? "" : " disabled"}` +
-              ` title="${b.count} problem${b.count === 1 ? "" : "s"}">${escapeHtml(b.label)}` +
-              `<span class="technique-count">${b.count}</span></button>`
-          )
-          .join("") +
-        "</span>"
+    const tiers = named.filter((b) => b.judge === judge);
+    const range = rated.find((r) => r.judge === judge);
+    if (!tiers.length && !range) continue;
+
+    let body = "";
+    if (tiers.length) {
+      body = tiers
+        .map(
+          (b) =>
+            `<button type="button" class="judge-chip difficulty-chip${activeTiers.has(b.id) ? " active" : ""}"` +
+            ` data-tier="${escapeHtml(b.id)}"${b.count ? "" : " disabled"}>` +
+            `${escapeHtml(b.label)}<span class="chip-count">${b.count}</span></button>`
+        )
+        .join("");
+    } else {
+      const cur = activeRanges.get(judge) || { min: range.min, max: range.max };
+      const opts = (selected) =>
+        range.stops
+          .map((v) => `<option value="${v}"${v === selected ? " selected" : ""}>${v}</option>`)
+          .join("");
+      body =
+        `<select class="filter-select rating-select" data-judge="${escapeHtml(judge)}" data-edge="min"` +
+        ` aria-label="${escapeHtml(judge)} minimum rating">${opts(cur.min)}</select>` +
+        `<span class="range-dash">to</span>` +
+        `<select class="filter-select rating-select" data-judge="${escapeHtml(judge)}" data-edge="max"` +
+        ` aria-label="${escapeHtml(judge)} maximum rating">${opts(cur.max)}</select>`;
+    }
+    groups.push(
+      `<span class="difficulty-group"><span class="difficulty-label">${escapeHtml(short)}</span>${body}</span>`
     );
   }
-  if (activeBands.size) {
-    parts.push('<button type="button" class="judge-chip judge-clear" id="difficulty-clear" title="any difficulty">any ✕</button>');
+
+  if (activeTiers.size || activeRanges.size) {
+    groups.push('<button type="button" class="judge-chip judge-clear" id="difficulty-clear" title="any difficulty">any ✕</button>');
   }
-  difficultyRow.innerHTML = parts.join("");
-  difficultyRow.classList.remove("hidden");
+  difficultyRow.innerHTML = groups.join("");
+  difficultyRow.classList.toggle("hidden", groups.length === 0);
+
   difficultyRow.querySelectorAll(".difficulty-chip").forEach((btn) => {
-    btn.addEventListener("click", () => toggleBand(btn.dataset.band));
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.tier;
+      if (activeTiers.has(id)) activeTiers.delete(id);
+      else activeTiers.add(id);
+      track("difficulty_selected", { tier: id });
+      afterDifficultyChange();
+    });
+  });
+  difficultyRow.querySelectorAll(".rating-select").forEach((sel) => {
+    sel.addEventListener("change", () => {
+      const judge = sel.dataset.judge;
+      const meta = rated.find((r) => r.judge === judge);
+      const cur = activeRanges.get(judge) || { min: meta.min, max: meta.max };
+      const v = Number(sel.value);
+      const next = sel.dataset.edge === "min" ? { min: v, max: cur.max } : { min: cur.min, max: v };
+      // Dragging one edge past the other is a slip, not an empty-set request.
+      if (next.min > next.max) {
+        if (sel.dataset.edge === "min") next.max = next.min;
+        else next.min = next.max;
+      }
+      if (next.min === meta.min && next.max === meta.max) activeRanges.delete(judge);
+      else activeRanges.set(judge, next);
+      track("difficulty_selected", { judge, min: next.min, max: next.max });
+      afterDifficultyChange();
+    });
   });
   const clear = difficultyRow.querySelector("#difficulty-clear");
   if (clear) clear.addEventListener("click", () => {
-    activeBands.clear();
-    syncDifficultyControls();
-    syncUrl();
-    currentOffset = 0;
-    reissueCurrentView();
+    activeTiers.clear();
+    activeRanges.clear();
+    afterDifficultyChange();
   });
 }
 
-function toggleBand(id) {
-  if (!id) return;
-  if (activeBands.has(id)) activeBands.delete(id);
-  else activeBands.add(id);
-  track("difficulty_selected", { band: id, active: [...activeBands].join(",") });
+function afterDifficultyChange() {
   syncDifficultyControls();
+  syncUrl();
   currentOffset = 0;
   reissueCurrentView();
 }
 
 // Re-runs whatever the user is looking at — a search, a browse, or a library
-// listing — so a filter change behaves the same in all three. Judges used to
-// hardcode runSearch here, which meant changing a filter inside :bookmarks
-// bounced you back to search results.
+// listing — so a filter change behaves the same in all three. This used to
+// hardcode runSearch, which meant changing a filter inside :bookmarks bounced
+// you back to search results.
 function reissueCurrentView() {
   const typed = input.value.trim();
   if (currentUser && LIBRARY_COMMANDS[typed.toLowerCase()]) return runSearch(typed, { append: false });
@@ -558,7 +612,8 @@ async function runSearch(rawQuery, { append = false } = {}) {
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const rankerParam = activeRanker ? `&ranker=${encodeURIComponent(activeRanker)}` : "";
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
-  const bandParam = activeBands.size ? `&difficulty=${encodeURIComponent([...activeBands].join(","))}` : "";
+  const dp = difficultyParam();
+  const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
   const url = `/api/search?q=${encodeURIComponent(q)}&k=${TOP_K}&offset=${currentOffset}${filterParam}${patternParam}${rankerParam}${platformParam}${bandParam}`;
 
   let data;
@@ -638,7 +693,8 @@ async function runBrowse({ append = false } = {}) {
   const patternParam = activePattern ? `&pattern=${encodeURIComponent(activePattern)}` : "";
   const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
   const filterParam = currentUser && currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-  const bandParam = activeBands.size ? `&difficulty=${encodeURIComponent([...activeBands].join(","))}` : "";
+  const dp = difficultyParam();
+  const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
   const url = `/api/search?q=&k=${TOP_K}&offset=${currentOffset}${patternParam}${platformParam}${filterParam}${bandParam}`;
 
   let data;
@@ -686,7 +742,8 @@ async function runLibrary(type, q) {
     // problems I haven't finished" is one of the reasons to save things at all.
     const platformParam = activePlatforms.size ? `&platform=${encodeURIComponent([...activePlatforms].join(","))}` : "";
     const doneParam = currentFilter !== "all" ? `&filter=${currentFilter}` : "";
-    const bandParam = activeBands.size ? `&difficulty=${encodeURIComponent([...activeBands].join(","))}` : "";
+    const dp = difficultyParam();
+  const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
     const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}`);
     data = await res.json();
   } catch (err) {
@@ -867,7 +924,8 @@ function syncUrl() {
   if (currentQuery) p.set("q", currentQuery);
   if (activePattern) p.set("pattern", activePattern);
   if (activePlatforms.size) p.set("platform", [...activePlatforms].join(","));
-  if (activeBands.size) p.set("difficulty", [...activeBands].join(","));
+  const dParam = difficultyParam();
+  if (dParam) p.set("difficulty", dParam);
   if (activeRanker) p.set("ranker", activeRanker);
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
   const qs = p.toString();
@@ -1003,12 +1061,16 @@ COMMANDS START WITH ":"
   a typo like ":bo" tells you so instead of querying the corpus
 
 DIFFICULTY
-  pick a judge and its own difficulty scale appears below —
-  easy/medium/hard for leetcode, rating bands for codeforces and
-  atcoder. There is no shared scale across judges, so a band only
-  ever filters its own judge: choosing "cf 1800+" leaves leetcode
-  results untouched rather than deleting them. Drop the judge and
-  its bands go with it; "any ✕" clears them.
+  pick a judge and its own scale appears below. leetcode gets
+  easy/medium/hard; codeforces and atcoder get a from/to rating
+  range — set both ends the same for exactly one rating, e.g.
+  cf 1500 to 1500.
+
+  there is no shared scale across judges, so a difficulty only
+  ever filters its own judge: narrowing codeforces to 1500 leaves
+  leetcode results untouched rather than deleting them. Drop the
+  judge and its difficulty goes with it; "any ✕" clears it.
+  shareable as ?difficulty=cf:1500-1700,lc-hard
 
 JUDGES
   all four are on until you narrow. Click one in the judges row
@@ -1456,8 +1518,11 @@ if (["done", "notdone"].includes(bootFilter)) {
 for (const p of (bootParams.get("platform") || "").toLowerCase().split(",")) {
   if (PLATFORM_LABELS[p.trim()]) activePlatforms.add(p.trim());
 }
-for (const b of (bootParams.get("difficulty") || "").toLowerCase().split(",")) {
-  if (/^[a-z]{2,3}-[a-z0-9]+$/.test(b.trim())) activeBands.add(b.trim());
+for (const tok of (bootParams.get("difficulty") || "").toLowerCase().split(",")) {
+  const t = tok.trim();
+  const range = /^([a-z]{2,4}):(-?\d+)-(-?\d+)$/.exec(t);
+  if (range) bootRanges.push(range);
+  else if (/^[a-z]{2,3}-[a-z]+$/.test(t)) activeTiers.add(t);
 }
 syncJudgeControls();
 if (bootQ) input.value = bootQ;

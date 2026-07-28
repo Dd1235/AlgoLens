@@ -197,7 +197,7 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
   // unfiltered, not excluded. Getting this backwards silently empties the page.
   {
     const all = await get("q=graph&k=300");
-    const cfOnly = await get("q=graph&k=300&difficulty=cf-1800");
+    const cfOnly = await get("q=graph&k=300&difficulty=cf:1800-2199");
     const lcInAll = all.hits.filter((h) => h.problem.platform === "leetcode").length;
     const lcAfter = cfOnly.hits.filter((h) => h.problem.platform === "leetcode").length;
     assert.equal(lcAfter, lcInAll, "a cf band must leave leetcode untouched");
@@ -211,38 +211,56 @@ const platformsOf = (d) => [...new Set(d.hits.map((h) => h.problem.platform))].s
 
   // CSES has no difficulty at all; a band must never exclude it.
   {
-    const d = await get("q=graph&k=300&difficulty=cf-1800,lc-hard");
+    const d = await get("q=graph&k=300&difficulty=cf:1800-2199,lc-hard");
     assert.ok(d.hits.some((h) => h.problem.platform === "cses"), "cses must survive any band");
   }
 
   // Bands compose with judges, and the echo confirms what was applied.
   {
-    const d = await get("q=graph&k=300&platform=codeforces&difficulty=cf-1000");
+    const d = await get("q=graph&k=300&platform=codeforces&difficulty=cf:1000-1399");
     assert.deepEqual(d.platform, ["codeforces"]);
-    assert.deepEqual(d.difficulty, ["cf-1000"]);
+    assert.equal(d.difficulty, "cf:1000-1399");
     assert.ok(d.hits.every((h) => h.problem.platform === "codeforces"));
     assert.ok(d.hits.every((h) => h.problem.difficulty >= 1000 && h.problem.difficulty <= 1399));
   }
 
   // Several bands for one judge are a union, not an intersection.
   {
-    const one = await get("q=graph&k=300&platform=codeforces&difficulty=cf-1000");
-    const two = await get("q=graph&k=300&platform=codeforces&difficulty=cf-1000,cf-1400");
+    const one = await get("q=graph&k=300&platform=codeforces&difficulty=cf:1000-1399");
+    const two = await get("q=graph&k=300&platform=codeforces&difficulty=cf:1000-1799");
     assert.ok(two.total > one.total, "adding a band must widen, not narrow");
   }
 
   // Unknown band ids are ignored rather than 400ing, so a stale link still works.
   {
-    const d = await get("q=graph&k=10&difficulty=cf-9999,not-a-band");
+    const d = await get("q=graph&k=10&difficulty=cf:abc-def,not-a-band");
     assert.equal(d.difficulty, undefined);
     assert.equal(d.total, 300);
   }
 
   // Browse (empty query) honours bands the same way search does.
   {
-    const d = await get("q=&k=300&platform=codeforces&difficulty=cf-2200");
+    const d = await get("q=&k=300&platform=codeforces&difficulty=cf:2200-3500");
     assert.ok(d.total > 0);
     assert.ok(d.hits.every((h) => h.problem.platform === "codeforces" && h.problem.difficulty >= 2200));
+  }
+
+  // An exact rating — the reason ranges replaced fixed bands. Codeforces
+  // ratings are multiples of 100, so "only 1500" is a coherent ask that no
+  // coarse band could express.
+  {
+    const d = await get("q=graph&k=300&platform=codeforces&difficulty=cf:1800-1800");
+    assert.ok(d.total > 0, "an exact rating should still match something");
+    assert.ok(d.hits.every((h) => h.problem.difficulty === 1800), "only that exact rating");
+    const wider = await get("q=graph&k=300&platform=codeforces&difficulty=cf:1800-2200");
+    assert.ok(wider.total > d.total, "widening the range must add problems");
+  }
+
+  // A reversed range is a slip, not an empty-set request.
+  {
+    const a = await get("q=graph&k=300&platform=codeforces&difficulty=cf:2200-1800");
+    const b = await get("q=graph&k=300&platform=codeforces&difficulty=cf:1800-2200");
+    assert.equal(a.total, b.total, "min/max order must not matter");
   }
 
   // Anonymous + done filter degrades to "all" instead of dereferencing a null

@@ -423,6 +423,36 @@ html[data-theme="light"] .theme-toggle {
 }
 .difficulty-label::after { content: ":"; }
 
+/* The count inside a chip. This used to reuse .technique-count, which was
+   deleted along with the techniques strip — so the number rendered flush
+   against the label ("1000-1399283"). Its own class now, so it can't vanish
+   with an unrelated feature again. */
+.chip-count {
+  margin-left: 0.4rem;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rating range: two compact selects reading "1500 to 1700". Native selects on
+   purpose — they get the platform picker on phones, which beats anything
+   hand-rolled for a 26-option list. */
+.rating-select {
+  font-size: 0.76rem;
+  padding: 0.2rem 1.1rem 0.2rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-chip);
+  background-color: transparent;
+  font-variant-numeric: tabular-nums;
+}
+.rating-select:hover,
+.rating-select:focus { border-color: var(--accent); color: var(--accent); }
+
+.range-dash {
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  margin: 0 0.1rem;
+}
+
 .difficulty-chip[disabled] {
   opacity: 0.35;
   cursor: default;
