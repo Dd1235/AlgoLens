@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-islands/",
   "source_topic": "LeetCode / Graphs",
   "difficulty": "Medium",
+  "acceptance_rate": 64.8,
   "source_tags": [
     "array",
     "depth-first-search",

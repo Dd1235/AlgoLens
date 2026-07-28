@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/smallest-value-after-replacing-with-sum-of-prime-factors/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.2,
   "source_tags": [
     "math",
     "simulation",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.7,
   "source_tags": [
     "array",
     "hash-table",

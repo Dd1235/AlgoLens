@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/smallest-unique-subarray/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 40.9,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-product-subarray/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 36.8,
   "source_tags": [
     "array",
     "dynamic-programming"

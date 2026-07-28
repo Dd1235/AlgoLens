@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/removing-minimum-number-of-magic-beans/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 44.8,
   "source_tags": [
     "array",
     "greedy",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/insert-interval/",
   "source_topic": "LeetCode / Intervals and Geometry",
   "difficulty": "Medium",
+  "acceptance_rate": 45.7,
   "source_tags": [
     "array"
   ],

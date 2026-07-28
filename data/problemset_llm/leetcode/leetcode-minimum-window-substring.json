@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-window-substring/",
   "source_topic": "LeetCode / Two Pointers and Sliding Window",
   "difficulty": "Hard",
+  "acceptance_rate": 48.1,
   "source_tags": [
     "hash-table",
     "string",

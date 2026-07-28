@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/ugly-number-iii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 31.7,
   "source_tags": [
     "math",
     "binary-search",

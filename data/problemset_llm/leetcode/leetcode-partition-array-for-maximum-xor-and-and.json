@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/partition-array-for-maximum-xor-and-and/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 17.9,
   "source_tags": [
     "array",
     "math",

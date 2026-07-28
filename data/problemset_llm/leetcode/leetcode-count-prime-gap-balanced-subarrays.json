@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-prime-gap-balanced-subarrays/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 23.9,
   "source_tags": [
     "array",
     "math",

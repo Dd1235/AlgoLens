@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
   "source_topic": "LeetCode / Trees and Heaps",
   "difficulty": "Medium",
+  "acceptance_rate": 73.2,
   "source_tags": [
     "tree",
     "breadth-first-search",

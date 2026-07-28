@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-edges-in-shortest-paths/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 46.8,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

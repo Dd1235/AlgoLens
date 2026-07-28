@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 37.6,
   "source_tags": [
     "dynamic-programming",
     "graph",

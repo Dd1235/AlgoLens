@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/word-break-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 55.9,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/n-queens/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 76.1,
   "source_tags": [
     "array",
     "backtracking"

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-dominant-nodes-in-a-binary-tree/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 72.2,
   "source_tags": [],
   "statement": "Given a complete binary tree, count the number of nodes whose value is the maximum within their respective subtrees.",
   "tags": [

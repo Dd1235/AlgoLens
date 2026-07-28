@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.6,
   "source_tags": [
     "string",
     "sliding-window",

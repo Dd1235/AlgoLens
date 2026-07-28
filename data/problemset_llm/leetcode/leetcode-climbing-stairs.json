@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/climbing-stairs/",
   "source_topic": "LeetCode / Dynamic Programming",
   "difficulty": "Easy",
+  "acceptance_rate": 54.2,
   "source_tags": [
     "math",
     "dynamic-programming",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-path-intersection-sum-in-a-grid/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 25.9,
   "source_tags": [
     "array",
     "dynamic-programming",

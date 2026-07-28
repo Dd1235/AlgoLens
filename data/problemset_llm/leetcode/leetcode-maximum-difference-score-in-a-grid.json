@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-difference-score-in-a-grid/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 48.4,
   "source_tags": [
     "array",
     "dynamic-programming",

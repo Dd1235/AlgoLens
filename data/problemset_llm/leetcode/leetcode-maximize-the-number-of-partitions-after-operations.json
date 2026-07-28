@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 53.3,
   "source_tags": [
     "string",
     "dynamic-programming",

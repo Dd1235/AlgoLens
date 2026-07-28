@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
   "source_topic": "LeetCode / Graphs",
   "difficulty": "Medium",
+  "acceptance_rate": 61.3,
   "source_tags": [
     "array",
     "depth-first-search",

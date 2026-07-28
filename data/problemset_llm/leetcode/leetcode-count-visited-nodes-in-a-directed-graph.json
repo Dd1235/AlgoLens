@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-visited-nodes-in-a-directed-graph/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 31.3,
   "source_tags": [
     "dynamic-programming",
     "depth-first-search",

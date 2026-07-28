@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 37.9,
   "source_tags": [
     "array",
     "binary-search",

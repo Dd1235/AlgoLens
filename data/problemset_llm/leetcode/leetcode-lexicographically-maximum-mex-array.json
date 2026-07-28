@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/lexicographically-maximum-mex-array/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 57.2,
   "source_tags": [
     "array",
     "hash-table",

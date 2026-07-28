@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-generations-to-target-point/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 44.2,
   "source_tags": [
     "array",
     "hash-table",

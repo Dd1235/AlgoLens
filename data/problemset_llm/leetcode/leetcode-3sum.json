@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/3sum/",
   "source_topic": "LeetCode / Two Pointers and Sliding Window",
   "difficulty": "Medium",
+  "acceptance_rate": 39.5,
   "source_tags": [
     "array",
     "two-pointers",

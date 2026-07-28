@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-good-integers-in-a-range/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 52.2,
   "source_tags": [],
   "statement": "Count the integers within a given range whose adjacent digits differ by at most a given value k.",
   "tags": [

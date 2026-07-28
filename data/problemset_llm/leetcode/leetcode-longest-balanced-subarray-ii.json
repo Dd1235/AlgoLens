@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-balanced-subarray-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 33.8,
   "source_tags": [
     "array",
     "hash-table",

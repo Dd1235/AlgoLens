@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/description/",
   "source_topic": "Formwise / Contribution Technique & Prefix",
   "difficulty": "Medium",
+  "acceptance_rate": 54.5,
   "source_tags": [
     "array",
     "hash-table",

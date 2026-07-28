@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/binary-search/",
   "source_topic": "LeetCode / Binary Search",
   "difficulty": "Easy",
+  "acceptance_rate": 61.2,
   "source_tags": [
     "array",
     "binary-search"

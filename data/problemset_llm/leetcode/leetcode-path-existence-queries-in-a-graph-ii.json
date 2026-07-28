@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 64.2,
   "source_tags": [
     "array",
     "two-pointers",

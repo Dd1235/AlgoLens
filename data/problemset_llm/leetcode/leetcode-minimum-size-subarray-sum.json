@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-size-subarray-sum/description/",
   "source_topic": "Formwise / Binary Search",
   "difficulty": "Medium",
+  "acceptance_rate": 52.4,
   "source_tags": [
     "array",
     "binary-search",

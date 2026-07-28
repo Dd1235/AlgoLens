@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/frequency-balance-subarray/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 29.4,
   "source_tags": [],
   "statement": "Find the length of the longest subarray where all distinct values appear either once or in a frequency pattern of f and 2*f for some positive integer f.",
   "tags": [

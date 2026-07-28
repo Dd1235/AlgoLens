@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 57.3,
   "source_tags": [
     "array",
     "dynamic-programming",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/rectangle-area-ii/",
   "source_topic": "LeetCode / Intervals and Geometry",
   "difficulty": "Hard",
+  "acceptance_rate": 56.4,
   "source_tags": [
     "array",
     "segment-tree",

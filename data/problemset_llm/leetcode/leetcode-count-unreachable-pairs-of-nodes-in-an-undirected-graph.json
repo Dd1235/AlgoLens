@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.1,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

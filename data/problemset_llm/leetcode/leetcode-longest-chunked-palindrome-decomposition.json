@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 58.9,
   "source_tags": [
     "two-pointers",
     "string",

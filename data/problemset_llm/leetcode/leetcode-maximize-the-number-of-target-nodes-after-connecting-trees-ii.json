@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 73.1,
   "source_tags": [
     "tree",
     "depth-first-search",

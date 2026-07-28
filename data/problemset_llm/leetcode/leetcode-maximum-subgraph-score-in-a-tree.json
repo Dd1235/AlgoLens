@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-subgraph-score-in-a-tree/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 70.9,
   "source_tags": [
     "array",
     "dynamic-programming",

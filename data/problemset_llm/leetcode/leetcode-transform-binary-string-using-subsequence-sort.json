@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/transform-binary-string-using-subsequence-sort/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 37.7,
   "source_tags": [],
   "statement": "Given a binary string s and multiple pattern strings with '?' wildcards, determine for each pattern if it can be formed by replacing '?' with '0' or '1' and transforming s via sorting any chosen subsequence any number of times.",
   "tags": [

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 55.6,
   "source_tags": [
     "array",
     "greedy"

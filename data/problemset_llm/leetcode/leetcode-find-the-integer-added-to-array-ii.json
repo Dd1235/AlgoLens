@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-integer-added-to-array-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 33.2,
   "source_tags": [
     "array",
     "two-pointers",

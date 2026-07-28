@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-increments-on-subarrays-to-form-a-target-array/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 78.2,
   "source_tags": [
     "array",
     "dynamic-programming",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 56.6,
   "source_tags": [
     "math",
     "dynamic-programming"

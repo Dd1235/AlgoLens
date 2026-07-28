@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/water-and-jug-problem/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.1,
   "source_tags": [
     "math",
     "depth-first-search",

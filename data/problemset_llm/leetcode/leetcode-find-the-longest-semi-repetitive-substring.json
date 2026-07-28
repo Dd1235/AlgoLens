@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 39.2,
   "source_tags": [
     "string",
     "sliding-window"

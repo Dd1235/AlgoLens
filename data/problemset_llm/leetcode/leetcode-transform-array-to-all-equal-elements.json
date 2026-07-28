@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/transform-array-to-all-equal-elements/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 33.5,
   "source_tags": [
     "array",
     "greedy"

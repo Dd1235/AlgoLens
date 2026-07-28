@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-valid-pair-sum/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 49.2,
   "source_tags": [],
   "statement": "Given an integer array and a minimum index gap k, find the maximum sum of nums[i] + nums[j] for pairs (i, j) where j - i >= k.",
   "tags": [

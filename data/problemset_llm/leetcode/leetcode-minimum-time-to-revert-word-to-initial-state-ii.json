@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 35.7,
   "source_tags": [
     "string",
     "rolling-hash",

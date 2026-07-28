@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 41.6,
   "source_tags": [
     "string",
     "greedy",

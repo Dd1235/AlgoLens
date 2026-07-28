@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-lights-to-illuminate-a-road/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 38.0,
   "source_tags": [],
   "statement": "Given a road represented by an array where some positions have bulbs illuminating ranges around them, determine the minimum number of additional bulbs (each illuminating a fixed range) needed to ensure every position is illuminated.",
   "tags": [

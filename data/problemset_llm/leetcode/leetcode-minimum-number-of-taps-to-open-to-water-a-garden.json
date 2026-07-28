@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 51.0,
   "source_tags": [
     "array",
     "dynamic-programming",

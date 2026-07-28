@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-zombie-sessions/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 49.3,
   "source_tags": [],
   "statement": "Identify user sessions with duration over 30 minutes, at least 5 scroll events, a click-to-scroll ratio below 0.20, and no purchases, then return these 'zombie' sessions ordered by scroll count descending and session ID ascending.",
   "tags": [

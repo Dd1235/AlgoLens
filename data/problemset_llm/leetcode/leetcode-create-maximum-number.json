@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/create-maximum-number/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 36.1,
   "source_tags": [
     "array",
     "two-pointers",

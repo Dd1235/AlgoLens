@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/total-characters-in-string-after-transformations-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 57.9,
   "source_tags": [
     "hash-table",
     "math",

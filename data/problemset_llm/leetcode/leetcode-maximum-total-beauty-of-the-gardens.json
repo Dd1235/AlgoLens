@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-total-beauty-of-the-gardens/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 30.2,
   "source_tags": [
     "array",
     "two-pointers",

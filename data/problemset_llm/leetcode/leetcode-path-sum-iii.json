@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/path-sum-iii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 46.5,
   "source_tags": [
     "tree",
     "depth-first-search",

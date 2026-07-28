@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/finish-time-of-tasks-i/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 61.8,
   "source_tags": [],
   "statement": "Given a rooted tree of tasks with base completion times, compute the finish time of the root task where each non-leaf task's finish time depends on the earliest and latest finish times of its children plus its own base time.",
   "tags": [

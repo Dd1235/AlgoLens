@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/finding-mk-average/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 38.9,
   "source_tags": [
     "design",
     "queue",

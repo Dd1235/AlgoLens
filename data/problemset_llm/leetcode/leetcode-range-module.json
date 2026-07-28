@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/range-module/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 45.3,
   "source_tags": [
     "design",
     "segment-tree",

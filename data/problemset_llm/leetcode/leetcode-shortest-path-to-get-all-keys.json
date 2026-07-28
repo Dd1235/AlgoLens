@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/shortest-path-to-get-all-keys/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 54.8,
   "source_tags": [
     "array",
     "bit-manipulation",

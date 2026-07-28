@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/delete-columns-to-make-sorted-iii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 72.6,
   "source_tags": [
     "array",
     "string",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/merge-k-sorted-lists/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 60.1,
   "source_tags": [
     "linked-list",
     "divide-and-conquer",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-days-to-eat-n-oranges/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 36.3,
   "source_tags": [
     "dynamic-programming",
     "memoization"

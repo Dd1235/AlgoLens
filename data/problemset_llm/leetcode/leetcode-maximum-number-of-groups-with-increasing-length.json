@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-number-of-groups-with-increasing-length/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 23.3,
   "source_tags": [
     "array",
     "math",

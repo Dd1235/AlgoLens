@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-subtrees-with-max-distance-between-cities/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 67.4,
   "source_tags": [
     "dynamic-programming",
     "bit-manipulation",

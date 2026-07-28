@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 61.0,
   "source_tags": [
     "array",
     "binary-search",

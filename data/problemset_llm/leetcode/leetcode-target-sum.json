@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/target-sum/description/",
   "source_topic": "Formwise / Recursion Backtracking",
   "difficulty": "Medium",
+  "acceptance_rate": 52.6,
   "source_tags": [
     "array",
     "dynamic-programming",

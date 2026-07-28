@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-grid-of-region-average/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 43.9,
   "source_tags": [
     "array",
     "matrix"

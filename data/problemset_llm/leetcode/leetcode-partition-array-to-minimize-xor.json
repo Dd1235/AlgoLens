@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/partition-array-to-minimize-xor/",
   "source_topic": "LeetCode / DP Optimization",
   "difficulty": "Medium",
+  "acceptance_rate": 41.7,
   "source_tags": [
     "array",
     "dynamic-programming",

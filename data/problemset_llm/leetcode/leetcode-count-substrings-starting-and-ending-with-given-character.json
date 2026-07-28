@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-substrings-starting-and-ending-with-given-character/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.4,
   "source_tags": [
     "math",
     "string",

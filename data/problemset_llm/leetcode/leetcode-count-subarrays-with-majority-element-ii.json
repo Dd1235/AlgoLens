@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-subarrays-with-majority-element-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 64.8,
   "source_tags": [
     "array",
     "hash-table",

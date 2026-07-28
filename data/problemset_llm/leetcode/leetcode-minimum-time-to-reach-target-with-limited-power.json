@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-time-to-reach-target-with-limited-power/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 41.4,
   "source_tags": [
     "array",
     "dynamic-programming",

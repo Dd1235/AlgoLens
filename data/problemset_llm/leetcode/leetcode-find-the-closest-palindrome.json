@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-closest-palindrome/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 32.0,
   "source_tags": [
     "math",
     "string"

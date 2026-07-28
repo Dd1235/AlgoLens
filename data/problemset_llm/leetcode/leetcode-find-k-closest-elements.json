@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-k-closest-elements/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 49.9,
   "source_tags": [
     "array",
     "two-pointers",

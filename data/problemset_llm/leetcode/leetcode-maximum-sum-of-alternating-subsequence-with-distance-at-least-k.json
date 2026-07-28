@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-sum-of-alternating-subsequence-with-distance-at-least-k/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 32.2,
   "source_tags": [],
   "statement": "Given an integer array and a minimum index gap k, find the maximum sum of a subsequence whose elements strictly alternate in value and whose indices differ by at least k.",
   "tags": [

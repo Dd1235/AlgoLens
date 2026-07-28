@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/freedom-trail/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 59.4,
   "source_tags": [
     "string",
     "dynamic-programming",

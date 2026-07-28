@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/course-schedule-ii/",
   "source_topic": "LeetCode / Graphs",
   "difficulty": "Medium",
+  "acceptance_rate": 56.0,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

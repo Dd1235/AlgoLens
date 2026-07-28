@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 39.0,
   "source_tags": [
     "math",
     "string",

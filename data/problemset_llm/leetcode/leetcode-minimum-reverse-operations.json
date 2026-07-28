@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-reverse-operations/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 17.3,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 44.6,
   "source_tags": [
     "graph",
     "enumeration"

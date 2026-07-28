@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-valid-word-occurrences/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 48.4,
   "source_tags": [
     "array",
     "hash-table",

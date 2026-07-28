@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-books-with-polarized-opinions/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 43.9,
   "source_tags": [],
   "statement": "Identify books with polarized opinions by analyzing reading session ratings, filtering for books with at least 5 sessions, and computing a polarization score based on the proportion of extreme ratings (≤2 or ≥4). Return books meeting a minimum polarization threshold, ordered by score and title.",
   "tags": [

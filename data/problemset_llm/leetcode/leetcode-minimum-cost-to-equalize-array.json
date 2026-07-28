@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-equalize-array/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 19.1,
   "source_tags": [
     "array",
     "greedy",

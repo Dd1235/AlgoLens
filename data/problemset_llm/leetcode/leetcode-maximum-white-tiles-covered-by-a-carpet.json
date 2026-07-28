@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-white-tiles-covered-by-a-carpet/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 36.2,
   "source_tags": [
     "array",
     "binary-search",

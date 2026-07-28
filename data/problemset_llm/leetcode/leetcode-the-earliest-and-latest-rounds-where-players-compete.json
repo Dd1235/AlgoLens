@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/the-earliest-and-latest-rounds-where-players-compete/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 72.1,
   "source_tags": [
     "dynamic-programming",
     "memoization"

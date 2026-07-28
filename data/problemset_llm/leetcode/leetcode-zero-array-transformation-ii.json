@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/zero-array-transformation-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 43.6,
   "source_tags": [
     "array",
     "two-pointers",

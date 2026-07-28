@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-score-by-changing-two-elements/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.1,
   "source_tags": [
     "array",
     "greedy",

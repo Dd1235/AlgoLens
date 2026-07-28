@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 62.1,
   "source_tags": [
     "math",
     "dynamic-programming",

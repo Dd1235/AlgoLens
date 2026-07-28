@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-halve-array-sum/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.3,
   "source_tags": [
     "array",
     "greedy",

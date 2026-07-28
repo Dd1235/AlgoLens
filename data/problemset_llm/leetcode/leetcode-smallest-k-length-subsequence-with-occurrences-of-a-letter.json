@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 39.8,
   "source_tags": [
     "string",
     "stack",

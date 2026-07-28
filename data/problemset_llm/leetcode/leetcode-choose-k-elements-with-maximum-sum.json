@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/choose-k-elements-with-maximum-sum/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 34.3,
   "source_tags": [
     "array",
     "sorting",

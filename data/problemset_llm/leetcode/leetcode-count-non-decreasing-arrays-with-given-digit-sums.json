@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-non-decreasing-arrays-with-given-digit-sums/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 41.7,
   "source_tags": [
     "array",
     "dynamic-programming",

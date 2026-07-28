@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-increasing-subsequence/",
   "source_topic": "LeetCode / Dynamic Programming",
   "difficulty": "Medium",
+  "acceptance_rate": 59.7,
   "source_tags": [
     "array",
     "binary-search",

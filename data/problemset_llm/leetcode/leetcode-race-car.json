@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/race-car/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 45.0,
   "source_tags": [
     "dynamic-programming"
   ],

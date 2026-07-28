@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 39.0,
   "source_tags": [
     "array",
     "greedy",

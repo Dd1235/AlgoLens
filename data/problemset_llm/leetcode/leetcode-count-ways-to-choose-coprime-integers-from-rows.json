@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-ways-to-choose-coprime-integers-from-rows/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 48.6,
   "source_tags": [
     "array",
     "math",

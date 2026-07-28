@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/distinct-echo-substrings/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 53.4,
   "source_tags": [
     "string",
     "trie",

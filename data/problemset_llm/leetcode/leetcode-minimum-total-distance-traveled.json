@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-total-distance-traveled/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 63.1,
   "source_tags": [
     "array",
     "dynamic-programming",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-pairs-after-increment/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 21.1,
   "source_tags": [
     "array",
     "hash-table",

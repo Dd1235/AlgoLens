@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-two-non-overlapping-sub-arrays-each-with-target-sum/",
   "source_topic": "LeetCode / DP Optimization",
   "difficulty": "Medium",
+  "acceptance_rate": 36.9,
   "source_tags": [
     "array",
     "hash-table",

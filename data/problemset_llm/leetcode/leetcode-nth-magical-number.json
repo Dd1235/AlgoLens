@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/nth-magical-number/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 36.9,
   "source_tags": [
     "math",
     "binary-search"

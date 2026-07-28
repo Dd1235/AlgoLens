@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/process-string-with-special-operations-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 39.8,
   "source_tags": [
     "string",
     "simulation"

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/partition-equal-subset-sum/",
   "source_topic": "LeetCode / Dynamic Programming",
   "difficulty": "Medium",
+  "acceptance_rate": 49.8,
   "source_tags": [
     "array",
     "dynamic-programming"

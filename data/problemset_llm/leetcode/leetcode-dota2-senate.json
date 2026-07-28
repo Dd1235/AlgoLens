@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/dota2-senate/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.3,
   "source_tags": [
     "string",
     "greedy",

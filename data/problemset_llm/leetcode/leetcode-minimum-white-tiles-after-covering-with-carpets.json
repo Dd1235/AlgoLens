@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 39.1,
   "source_tags": [
     "string",
     "dynamic-programming",

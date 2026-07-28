@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 44.8,
   "source_tags": [
     "array",
     "binary-search",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/largest-component-size-by-common-factor/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 43.5,
   "source_tags": [
     "array",
     "hash-table",

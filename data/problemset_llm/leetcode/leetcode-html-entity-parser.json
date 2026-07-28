@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/html-entity-parser/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 50.0,
   "source_tags": [
     "hash-table",
     "string"

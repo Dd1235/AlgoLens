@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-xor-product/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 30.4,
   "source_tags": [
     "math",
     "greedy",

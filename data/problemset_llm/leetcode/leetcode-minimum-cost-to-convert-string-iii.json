@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-convert-string-iii/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 55.4,
   "source_tags": [],
   "statement": "Given two strings of equal length and a set of pattern-replacement rules with associated costs, find the minimum total cost to transform the source string into the target string by applying non-overlapping rules that match patterns with wildcards. Return -1 if the transformation is impossible.",
   "tags": [

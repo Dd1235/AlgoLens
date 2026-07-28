@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/stone-game-iv/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 59.6,
   "source_tags": [
     "math",
     "dynamic-programming",

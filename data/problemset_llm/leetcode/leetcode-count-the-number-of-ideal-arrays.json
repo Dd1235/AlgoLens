@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-ideal-arrays/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 56.9,
   "source_tags": [
     "math",
     "dynamic-programming",

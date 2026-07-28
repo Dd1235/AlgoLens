@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/jump-game-vii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 35.6,
   "source_tags": [
     "string",
     "dynamic-programming",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/divide-nodes-into-the-maximum-number-of-groups/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 66.9,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

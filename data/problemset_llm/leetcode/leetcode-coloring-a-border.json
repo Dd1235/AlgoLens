@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/coloring-a-border/description/",
   "source_topic": "Formwise / Graph Level-1",
   "difficulty": "Medium",
+  "acceptance_rate": 51.5,
   "source_tags": [
     "array",
     "depth-first-search",

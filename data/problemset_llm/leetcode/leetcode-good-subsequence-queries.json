@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/good-subsequence-queries/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 20.5,
   "source_tags": [],
   "statement": "Given an integer array and a value p, after each update to the array, determine if there exists a non-empty subsequence with length less than the array length whose GCD equals p. Return the count of queries for which such a subsequence exists.",
   "tags": [

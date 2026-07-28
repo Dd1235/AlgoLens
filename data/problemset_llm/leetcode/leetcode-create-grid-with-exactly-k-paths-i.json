@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/create-grid-with-exactly-k-paths-i/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 32.7,
   "source_tags": [],
   "statement": "Construct an m by n grid of free and obstacle cells such that the number of valid paths from the top-left to bottom-right corner, moving only right or down, equals exactly k, or return empty if impossible.",
   "tags": [

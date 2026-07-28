@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/valid-parentheses/",
   "source_topic": "LeetCode / Stack and Monotonic Structures",
   "difficulty": "Easy",
+  "acceptance_rate": 44.6,
   "source_tags": [
     "string",
     "stack"

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/increment-submatrices-by-one/description/",
   "source_topic": "Formwise / Contribution Technique & Prefix",
   "difficulty": "Medium",
+  "acceptance_rate": 73.8,
   "source_tags": [
     "array",
     "matrix",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-repetitions/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 35.3,
   "source_tags": [
     "two-pointers",
     "string",

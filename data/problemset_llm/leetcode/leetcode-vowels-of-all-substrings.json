@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/vowels-of-all-substrings/description/",
   "source_topic": "Formwise / Contribution Technique & Prefix",
   "difficulty": "Medium",
+  "acceptance_rate": 55.6,
   "source_tags": [
     "math",
     "string",

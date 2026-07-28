@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 76.3,
   "source_tags": [
     "math",
     "number-theory"

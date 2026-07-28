@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sort-vowels-by-frequency/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 62.9,
   "source_tags": [
     "string",
     "sorting",

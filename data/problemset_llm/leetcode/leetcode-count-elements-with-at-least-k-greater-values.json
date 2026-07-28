@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-elements-with-at-least-k-greater-values/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 31.9,
   "source_tags": [
     "array",
     "binary-search",

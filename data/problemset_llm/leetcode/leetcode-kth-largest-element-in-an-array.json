@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
   "source_topic": "LeetCode / Trees and Heaps",
   "difficulty": "Medium",
+  "acceptance_rate": 69.2,
   "source_tags": [
     "array",
     "divide-and-conquer",

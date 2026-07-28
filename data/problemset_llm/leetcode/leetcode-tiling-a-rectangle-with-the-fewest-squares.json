@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 55.2,
   "source_tags": [
     "backtracking"
   ],

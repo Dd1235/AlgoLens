@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 54.9,
   "source_tags": [
     "array",
     "tree",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/ambiguous-coordinates/description/",
   "source_topic": "Formwise / Recursion Backtracking",
   "difficulty": "Medium",
+  "acceptance_rate": 56.4,
   "source_tags": [
     "string",
     "backtracking",

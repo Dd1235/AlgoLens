@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/valid-binary-strings-with-cost-limit/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 79.0,
   "source_tags": [
     "string",
     "backtracking",

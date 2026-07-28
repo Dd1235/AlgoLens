@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/stock-price-fluctuation/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 49.2,
   "source_tags": [
     "hash-table",
     "design",

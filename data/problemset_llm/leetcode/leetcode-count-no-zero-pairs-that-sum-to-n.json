@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-no-zero-pairs-that-sum-to-n/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 15.2,
   "source_tags": [
     "math",
     "dynamic-programming"

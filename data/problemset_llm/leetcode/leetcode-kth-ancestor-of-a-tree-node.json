@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/kth-ancestor-of-a-tree-node/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 39.2,
   "source_tags": [
     "binary-search",
     "dynamic-programming",

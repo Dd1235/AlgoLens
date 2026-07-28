@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-maximum-non-decreasing-array-length/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 19.2,
   "source_tags": [
     "array",
     "binary-search",

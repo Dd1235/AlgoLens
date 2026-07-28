@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-sum-of-three-numbers-divisible-by-three/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 47.6,
   "source_tags": [
     "array",
     "greedy",

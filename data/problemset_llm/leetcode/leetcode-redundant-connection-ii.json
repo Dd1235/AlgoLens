@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/redundant-connection-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 36.4,
   "source_tags": [
     "depth-first-search",
     "breadth-first-search",

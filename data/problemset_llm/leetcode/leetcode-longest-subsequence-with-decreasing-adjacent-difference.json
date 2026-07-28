@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-subsequence-with-decreasing-adjacent-difference/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 17.1,
   "source_tags": [
     "array",
     "dynamic-programming"

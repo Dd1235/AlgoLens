@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/cat-and-mouse/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 35.7,
   "source_tags": [
     "math",
     "dynamic-programming",

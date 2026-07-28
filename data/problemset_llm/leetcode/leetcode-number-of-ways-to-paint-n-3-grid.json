@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 80.5,
   "source_tags": [
     "dynamic-programming"
   ],

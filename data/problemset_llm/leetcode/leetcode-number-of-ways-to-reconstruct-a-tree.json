@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-ways-to-reconstruct-a-tree/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 46.1,
   "source_tags": [
     "array",
     "hash-table",

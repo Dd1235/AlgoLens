@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 26.9,
   "source_tags": [
     "hash-table",
     "string",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-sum-of-values-by-dividing-array/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 28.0,
   "source_tags": [
     "array",
     "binary-search",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 25.2,
   "source_tags": [
     "array",
     "math",

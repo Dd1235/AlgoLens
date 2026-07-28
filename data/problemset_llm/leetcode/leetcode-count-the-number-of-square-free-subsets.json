@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-square-free-subsets/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 26.8,
   "source_tags": [
     "array",
     "math",

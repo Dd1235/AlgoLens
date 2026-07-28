@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 47.7,
   "source_tags": [
     "array",
     "divide-and-conquer"

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/merge-intervals/",
   "source_topic": "LeetCode / Intervals and Geometry",
   "difficulty": "Medium",
+  "acceptance_rate": 52.4,
   "source_tags": [
     "array",
     "sorting"

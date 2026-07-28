@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/description/",
   "source_topic": "Formwise / Recursion Backtracking",
   "difficulty": "Medium",
+  "acceptance_rate": 87.1,
   "source_tags": [
     "string",
     "backtracking"

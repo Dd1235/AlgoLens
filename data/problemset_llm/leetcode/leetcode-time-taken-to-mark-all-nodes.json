@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/time-taken-to-mark-all-nodes/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 28.8,
   "source_tags": [
     "dynamic-programming",
     "tree",

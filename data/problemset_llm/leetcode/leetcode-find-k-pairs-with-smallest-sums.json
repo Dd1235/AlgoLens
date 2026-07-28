@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 42.2,
   "source_tags": [
     "array",
     "heap-priority-queue"

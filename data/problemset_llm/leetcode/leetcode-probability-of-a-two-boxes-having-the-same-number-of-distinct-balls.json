@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/probability-of-a-two-boxes-having-the-same-number-of-distinct-balls/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 61.5,
   "source_tags": [
     "array",
     "math",

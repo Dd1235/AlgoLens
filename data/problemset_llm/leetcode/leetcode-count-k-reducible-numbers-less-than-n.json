@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-k-reducible-numbers-less-than-n/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 28.6,
   "source_tags": [
     "math",
     "string",

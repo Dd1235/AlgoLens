@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/can-i-win/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 31.6,
   "source_tags": [
     "math",
     "dynamic-programming",

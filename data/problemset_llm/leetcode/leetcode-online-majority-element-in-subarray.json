@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/online-majority-element-in-subarray/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 40.6,
   "source_tags": [
     "array",
     "binary-search",

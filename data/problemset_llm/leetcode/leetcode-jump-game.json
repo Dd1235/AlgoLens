@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/jump-game/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 41.3,
   "source_tags": [
     "array",
     "dynamic-programming",

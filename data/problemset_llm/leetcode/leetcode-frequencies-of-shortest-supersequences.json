@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/frequencies-of-shortest-supersequences/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 22.9,
   "source_tags": [
     "array",
     "string",

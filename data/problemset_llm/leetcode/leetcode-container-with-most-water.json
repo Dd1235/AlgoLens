@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/container-with-most-water/",
   "source_topic": "LeetCode / Two Pointers and Sliding Window",
   "difficulty": "Medium",
+  "acceptance_rate": 60.5,
   "source_tags": [
     "array",
     "two-pointers",

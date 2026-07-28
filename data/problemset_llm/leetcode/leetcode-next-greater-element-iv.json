@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/next-greater-element-iv/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 42.4,
   "source_tags": [
     "array",
     "binary-search",

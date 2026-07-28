@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-capacity-within-budget/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 20.6,
   "source_tags": [
     "array",
     "two-pointers",

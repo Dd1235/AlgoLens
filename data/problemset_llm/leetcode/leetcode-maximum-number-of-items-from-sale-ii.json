@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 30.7,
   "source_tags": [
     "array",
     "greedy",

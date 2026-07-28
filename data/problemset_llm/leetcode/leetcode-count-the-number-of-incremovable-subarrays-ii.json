@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-incremovable-subarrays-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
+  "acceptance_rate": 40.6,
   "source_tags": [
     "array",
     "two-pointers",

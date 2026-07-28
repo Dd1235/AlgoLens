@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-the-topmost-element-after-k-moves/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
+  "acceptance_rate": 24.1,
   "source_tags": [
     "array",
     "greedy"
