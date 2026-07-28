@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1826-d",
+  "title": "Running Miles",
+  "slug": "1826-d-running-miles",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1826/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "greedy"
+  ],
+  "statement": "Given a line of sights each with a beauty value at positions 1 to n, select a segment [l, r] containing at least three sights to maximize the sum of the top three beauties in that segment minus the segment length.",
+  "tags": [
+    "array",
+    "sliding-window",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "sliding-window",
+    "prefix-sum",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230016,
+    "pattern_confidence": {
+      "sliding-window": 0.85,
+      "prefix-sum": 0.8,
+      "greedy": 0.7
+    }
+  }
+}

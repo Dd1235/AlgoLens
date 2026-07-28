@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1199-a",
+  "title": "City Day",
+  "slug": "1199-a-city-day",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1199/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1000,
+  "contest_slot": "div2-a",
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of distinct daily rainfall amounts, find the earliest day such that its rainfall is less than all rainfall amounts in the preceding x days and the following y days within the summer period.",
+  "tags": [
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "sliding-window",
+    "minimum-query"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229757,
+    "pattern_confidence": {
+      "sliding-window": 0.85,
+      "minimum-query": 0.7
+    }
+  }
+}

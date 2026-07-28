@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-346-b",
+  "title": "Lucky Common Subsequence",
+  "slug": "346-b-lucky-common-subsequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/346/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 2000,
+  "contest_slot": "div2-d",
+  "rating": 2000,
+  "source_tags": [
+    "dp",
+    "strings"
+  ],
+  "statement": "Given two strings and a forbidden substring (virus), find the longest common subsequence of the two strings that does not contain the forbidden substring as a contiguous segment.",
+  "tags": [
+    "string",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "dp-with-substring-avoidance",
+    "longest-common-subsequence",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230040,
+    "pattern_confidence": {
+      "dp-with-substring-avoidance": 0.95,
+      "longest-common-subsequence": 0.98,
+      "string-matching": 0.85
+    }
+  }
+}

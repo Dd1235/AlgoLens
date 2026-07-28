@@ -5,6 +5,7 @@
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/208/E",
   "difficulty": 2100,
+  "contest_slot": "div2-d",
   "rating": 2100,
   "source_tags": [
     "binary search",

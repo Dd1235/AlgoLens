@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1117-c",
+  "title": "Magic Ship",
+  "slug": "1117-c-magic-ship",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1117/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1900,
+  "contest_slot": "div2-c",
+  "rating": 1900,
+  "source_tags": [
+    "binary search"
+  ],
+  "statement": "Given a starting and target point on a Cartesian plane and a periodic wind direction pattern, determine the minimum number of days needed for a ship to reach the target by combining daily wind movement and optional ship movement in one of four directions or staying still.",
+  "tags": [
+    "geometry",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229903,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

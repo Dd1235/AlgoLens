@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-748-c",
+  "title": "Santa Claus and Robot",
+  "slug": "748-c-santa-claus-and-robot",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/748/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given a sequence of unit moves of a robot on an infinite grid moving along shortest paths between consecutive points, determine the minimum possible length of the original sequence of points visited in order.",
+  "tags": [
+    "geometry",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "geometry"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229976,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "geometry": 0.85
+    }
+  }
+}

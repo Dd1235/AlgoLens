@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-820-b",
+  "title": "Mister B and Angle in Polygon",
+  "slug": "820-b-mister-b-and-angle-in-polygon",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/820/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1300,
+  "contest_slot": "div2-b",
+  "rating": 1300,
+  "source_tags": [
+    "constructive algorithms",
+    "geometry",
+    "math"
+  ],
+  "statement": "Given a regular convex polygon with n vertices and a target angle a, find three distinct vertices forming an angle at the second vertex closest to a.",
+  "tags": [
+    "geometry",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "angle-computation",
+    "brute-force",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229868,
+    "pattern_confidence": {
+      "angle-computation": 0.9,
+      "brute-force": 0.8,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

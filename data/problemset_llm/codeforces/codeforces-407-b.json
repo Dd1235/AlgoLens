@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-407-b",
+  "title": "Long Path",
+  "slug": "407-b-long-path",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/407/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1600,
+  "contest_slot": "div2-d",
+  "rating": 1600,
+  "source_tags": [
+    "dp",
+    "implementation"
+  ],
+  "statement": "Vasya navigates a maze of (n+1) rooms using two portals per room, switching portals based on the parity of crosses painted on the ceiling each visit, and the task is to find how many portal uses are needed to reach the last room.",
+  "tags": [
+    "dynamic-programming",
+    "simulation"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230043,
+    "pattern_confidence": {
+      "dynamic-programming": 0.8,
+      "simulation": 0.9
+    }
+  }
+}

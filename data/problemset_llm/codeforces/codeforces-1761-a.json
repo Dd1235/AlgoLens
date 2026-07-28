@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1761-a",
+  "title": "Two Permutations",
+  "slug": "1761-a-two-permutations",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1761/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms"
+  ],
+  "statement": "Given integers n, a, and b, determine if there exist two permutations of length n whose longest common prefix has length a and longest common suffix has length b.",
+  "tags": [
+    "permutation",
+    "constructive-algorithm",
+    "brute-force"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229783,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "case-analysis": 0.8
+    }
+  }
+}

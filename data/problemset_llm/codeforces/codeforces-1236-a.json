@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1236-a",
+  "title": "Stones",
+  "slug": "1236-a-stones",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1236/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given three heaps of stones with counts a, b, and c, determine the maximum number of stones that can be taken by performing two types of operations involving removing stones from these heaps under given constraints.",
+  "tags": [
+    "greedy",
+    "math",
+    "brute-force"
+  ],
+  "patterns": [
+    "greedy",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229759,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "case-analysis": 0.85
+    }
+  }
+}

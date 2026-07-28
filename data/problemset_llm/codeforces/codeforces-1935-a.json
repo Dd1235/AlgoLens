@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1935-a",
+  "title": "Entertainment in MAC",
+  "slug": "1935-a-entertainment-in-mac",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1935/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "strings"
+  ],
+  "statement": "Given a string and an even number of operations, find the lexicographically smallest string achievable by applying exactly that many operations, where each operation is either appending the reversed string to itself or reversing the entire string.",
+  "tags": [
+    "string",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "string-reversal",
+    "constructive-algorithm",
+    "lexicographic-comparison"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229808,
+    "pattern_confidence": {
+      "string-reversal": 0.95,
+      "constructive-algorithm": 0.9,
+      "lexicographic-comparison": 0.85
+    }
+  }
+}

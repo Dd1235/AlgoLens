@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-747-c",
+  "title": "Servers",
+  "slug": "747-c-servers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/747/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given n uniquely identified servers and q tasks arriving at distinct times, assign the smallest available servers to each task if enough are free at the task's start time; otherwise, ignore the task. Servers become busy for the task duration once assigned.",
+  "tags": [
+    "implementation",
+    "greedy",
+    "data-structure"
+  ],
+  "patterns": [
+    "greedy",
+    "event-simulation",
+    "ordered-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229973,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "event-simulation": 0.85,
+      "ordered-set": 0.7
+    }
+  }
+}

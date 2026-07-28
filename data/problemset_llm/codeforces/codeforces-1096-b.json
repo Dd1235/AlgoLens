@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1096-b",
+  "title": "Substring Removal",
+  "slug": "1096-b-substring-removal",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1096/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1300,
+  "contest_slot": "div2-b",
+  "rating": 1300,
+  "source_tags": [
+    "combinatorics",
+    "math",
+    "strings"
+  ],
+  "statement": "Given a string, count the number of ways to remove exactly one contiguous substring so that all remaining characters are identical or the string becomes empty, modulo 998244353.",
+  "tags": [
+    "string",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "counting",
+    "prefix-suffix-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229825,
+    "pattern_confidence": {
+      "counting": 0.9,
+      "prefix-suffix-analysis": 0.7
+    }
+  }
+}

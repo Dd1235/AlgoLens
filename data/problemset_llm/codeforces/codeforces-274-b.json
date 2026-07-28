@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-274-b",
+  "title": "Zero Tree",
+  "slug": "274-b-zero-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/274/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1800,
+  "contest_slot": "div2-d",
+  "rating": 1800,
+  "source_tags": [
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree with integers assigned to each vertex, find the minimum number of subtree increment/decrement operations (each operation applies to a subtree containing vertex 1) required to make all vertex values zero.",
+  "tags": [
+    "tree",
+    "dfs",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230029,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-dp": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

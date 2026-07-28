@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1780-b",
+  "title": "GCD Partition",
+  "slug": "1780-b-gcd-partition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1780/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1100,
+  "contest_slot": "div2-b",
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array, partition it into multiple contiguous subsegments to maximize the greatest common divisor (GCD) of the sums of these subsegments.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "greedy"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "gcd",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229847,
+    "pattern_confidence": {
+      "prefix-sum": 0.9,
+      "gcd": 0.95,
+      "greedy": 0.8
+    }
+  }
+}

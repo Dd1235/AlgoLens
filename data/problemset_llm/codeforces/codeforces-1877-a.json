@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1877-a",
+  "title": "Goals of Victory",
+  "slug": "1877-a-goals-of-victory",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1877/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Given the efficiencies of n-1 teams in a round-robin football tournament where each pair of teams plays once, find the efficiency of the missing team based on the sum of all efficiencies.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "sum-formula",
+    "unique-determination"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229796,
+    "pattern_confidence": {
+      "sum-formula": 0.9,
+      "unique-determination": 0.8
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "codeforces-1794-a",
+  "title": "Prefix and Suffix Array",
+  "slug": "1794-a-prefix-and-suffix-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1794/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "strings"
+  ],
+  "statement": "Given all non-empty prefixes and suffixes (except the full string) of a string in arbitrary order, determine if the original string is a palindrome.",
+  "tags": [
+    "string"
+  ],
+  "patterns": [
+    "palindrome"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229788,
+    "pattern_confidence": {
+      "palindrome": 0.9
+    }
+  }
+}

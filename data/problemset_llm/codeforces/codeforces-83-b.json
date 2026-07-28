@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-83-b",
+  "title": "Doctor",
+  "slug": "83-b-doctor",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/83/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1800,
+  "contest_slot": "div2-d",
+  "rating": 1800,
+  "source_tags": [
+    "binary search",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a queue of animals where each animal must visit the doctor a specified number of times, simulate the queue as animals are examined and re-queued until the doctor has seen k animals, then determine the queue state at that moment.",
+  "tags": [
+    "queue",
+    "simulation",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "simulation",
+    "binary-search",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230059,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "binary-search": 0.6,
+      "sorting": 0.7
+    }
+  }
+}

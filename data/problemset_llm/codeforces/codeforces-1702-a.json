@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1702-a",
+  "title": "Round Down the Price",
+  "slug": "1702-a-round-down-the-price",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1702/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Given a price value, find the largest power of 10 not exceeding it and compute the difference to reduce the price to that round number.",
+  "tags": [
+    "math",
+    "greedy",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "power-of-ten",
+    "rounding"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229780,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "power-of-ten": 0.85,
+      "rounding": 0.8
+    }
+  }
+}

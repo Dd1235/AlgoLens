@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1815-a",
+  "title": "Ian and Array Sorting",
+  "slug": "1815-a-ian-and-array-sorting",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1815/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Determine if an array can be transformed into a non-decreasing sequence by repeatedly incrementing or decrementing adjacent pairs simultaneously.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "parity-check",
+    "adjacent-pair-operations"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229924,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "parity-check": 0.85,
+      "adjacent-pair-operations": 0.8
+    }
+  }
+}

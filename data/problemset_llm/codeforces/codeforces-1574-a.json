@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1574-a",
+  "title": "Regular Bracket Sequences",
+  "slug": "1574-a-regular-bracket-sequences",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1574/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Construct exactly n distinct regular bracket sequences each of length 2n, where a regular bracket sequence is a balanced parentheses string representing a valid arithmetic expression structure.",
+  "tags": [
+    "string",
+    "combinatorics",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "catalan-number",
+    "balanced-parentheses",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229774,
+    "pattern_confidence": {
+      "catalan-number": 0.95,
+      "balanced-parentheses": 0.9,
+      "constructive-algorithm": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-401-c",
+  "title": "Team",
+  "slug": "401-c-team",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/401/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Given counts of zero and one cards, arrange all cards in a sequence without two adjacent zeros and without three consecutive ones, or determine that no such arrangement exists.",
+  "tags": [
+    "greedy",
+    "constructive-algorithm",
+    "string"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229955,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

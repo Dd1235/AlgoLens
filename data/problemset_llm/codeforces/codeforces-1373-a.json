@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1373-a",
+  "title": "Donut Shops",
+  "slug": "1373-a-donut-shops",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1373/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1000,
+  "contest_slot": "div2-a",
+  "rating": 1000,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given two donut shops with different pricing schemes—one selling donuts individually and the other selling in bulk boxes—determine positive quantities of donuts for which one shop is strictly cheaper than the other, or report -1 if no such quantity exists.",
+  "tags": [
+    "math",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "case-analysis",
+    "inequality-solving"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229769,
+    "pattern_confidence": {
+      "case-analysis": 0.9,
+      "inequality-solving": 0.85
+    }
+  }
+}

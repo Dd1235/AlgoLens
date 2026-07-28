@@ -5,6 +5,7 @@
   "platform": "codeforces",
   "source_url": "https://codeforces.com/problemset/problem/371/C",
   "difficulty": 1600,
+  "contest_slot": "div2-c",
   "rating": 1600,
   "source_tags": [
     "binary search",

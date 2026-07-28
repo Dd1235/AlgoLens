@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1777-a",
+  "title": "Everybody Likes Good Arrays!",
+  "slug": "1777-a-everybody-likes-good-arrays",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1777/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given an array, repeatedly merge adjacent elements of the same parity by replacing them with their product, and find the minimum number of such operations needed to make the array alternate in parity between adjacent elements.",
+  "tags": [
+    "array",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229784,
+    "pattern_confidence": {
+      "greedy": 0.95
+    }
+  }
+}

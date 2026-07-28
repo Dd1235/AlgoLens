@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-301-b",
+  "title": "Yaroslav and Time",
+  "slug": "301-b-yaroslav-and-time",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/301/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 2100,
+  "contest_slot": "div2-d",
+  "rating": 2100,
+  "source_tags": [
+    "binary search",
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Starting from station 1 with less than one unit of time, determine the minimum money needed to buy extra time to reach station n by traveling between stations on a plane, where travel time depends on Manhattan distance and each station can increase the timer once.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "geometry"
+  ],
+  "patterns": [
+    "binary-search",
+    "shortest-path",
+    "manhattan-distance"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230034,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "shortest-path": 0.95,
+      "manhattan-distance": 0.85
+    }
+  }
+}

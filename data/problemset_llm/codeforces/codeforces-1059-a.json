@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1059-a",
+  "title": "Cashier",
+  "slug": "1059-a-cashier",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1059/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1000,
+  "contest_slot": "div2-a",
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a workday length and scheduled customer service intervals, determine the maximum number of fixed-length smoke breaks that fit into the free time without overlapping customer service times.",
+  "tags": [
+    "implementation",
+    "greedy",
+    "intervals"
+  ],
+  "patterns": [
+    "greedy",
+    "interval-scheduling",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229751,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "interval-scheduling": 0.9,
+      "line-sweep": 0.7
+    }
+  }
+}

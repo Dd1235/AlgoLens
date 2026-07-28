@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-143-a",
+  "title": "Help Vasilisa the Wise 2",
+  "slug": "143-a-help-vasilisa-the-wise-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/143/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1000,
+  "contest_slot": "div2-a",
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "math"
+  ],
+  "statement": "Given sums for each row, column, and diagonal of a 2×2 grid, determine which distinct numbers from 1 to 9 can fill the grid cells to satisfy all sum constraints.",
+  "tags": [
+    "math",
+    "brute-force",
+    "combinatorics"
+  ],
+  "patterns": [
+    "brute-force",
+    "backtracking",
+    "constraint-satisfaction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229772,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "backtracking": 0.85,
+      "constraint-satisfaction": 0.8
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1354-a",
+  "title": "Alarm Clock",
+  "slug": "1354-a-alarm-clock",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1354/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 900,
+  "contest_slot": "div2-a",
+  "rating": 900,
+  "source_tags": [
+    "math"
+  ],
+  "statement": "Polycarp needs to sleep at least a minutes and wakes up first after b minutes. If total sleep is less than a, he resets the alarm to c minutes later and spends d minutes falling asleep again, possibly indefinitely if the alarm interrupts falling asleep. Determine when Polycarp finally gets out of bed or if it never happens.",
+  "tags": [
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation",
+    "case-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229767,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "case-analysis": 0.7
+    }
+  }
+}

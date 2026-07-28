@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1991-d",
+  "title": "Prime XOR Coloring",
+  "slug": "1991-d-prime-xor-coloring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1991/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1900,
+  "contest_slot": "div2-d",
+  "rating": 1900,
+  "source_tags": [
+    "bitmasks",
+    "constructive algorithms",
+    "graphs",
+    "greedy",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a graph where edges connect vertices whose indices' XOR is prime, find the minimum number of colors needed to color the vertices so that no adjacent vertices share the same color.",
+  "tags": [
+    "graph",
+    "number-theory",
+    "bit-manipulation",
+    "greedy",
+    "coloring"
+  ],
+  "patterns": [
+    "prime-checking",
+    "graph-coloring",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230022,
+    "pattern_confidence": {
+      "prime-checking": 0.9,
+      "graph-coloring": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1903-a",
+  "title": "Halloumi Boxes",
+  "slug": "1903-a-halloumi-boxes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1903/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given an array and a maximum subarray reversal length k, determine if the array can be sorted into non-decreasing order by reversing any number of subarrays of length at most k.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229801,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-329-b",
+  "title": "Biridian Forest",
+  "slug": "329-b-biridian-forest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/329/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1500,
+  "contest_slot": "div2-d",
+  "rating": 1500,
+  "source_tags": [
+    "dfs and similar",
+    "shortest paths"
+  ],
+  "statement": "Given a grid with obstacles, multiple moving adversaries, and an exit cell, find a path for the player to exit minimizing the number of battles with adversaries who move optimally to intercept the player.",
+  "tags": [
+    "grid",
+    "shortest-path",
+    "game-theory",
+    "bfs"
+  ],
+  "patterns": [
+    "multi-source-bfs",
+    "game-theory",
+    "shortest-path",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230038,
+    "pattern_confidence": {
+      "multi-source-bfs": 0.9,
+      "game-theory": 0.85,
+      "shortest-path": 0.8,
+      "simulation": 0.7
+    }
+  }
+}

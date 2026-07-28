@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-1793-b",
+  "title": "Fedya and Array",
+  "slug": "1793-b-fedya-and-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1793/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1100,
+  "contest_slot": "div2-b",
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given sums of local maxima and local minima of a circular integer array where adjacent elements differ by 1, construct any array of minimal length matching these sums.",
+  "tags": [
+    "array",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229851,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95
+    }
+  }
+}

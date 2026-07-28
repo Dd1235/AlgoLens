@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-863-b",
+  "title": "Kayaking",
+  "slug": "863-b-kayaking",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/863/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1500,
+  "contest_slot": "div2-b",
+  "rating": 1500,
+  "source_tags": [
+    "brute force",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given 2n people with weights, assign exactly two single kayaks and n-1 tandem kayaks (each holding two people) to minimize the sum of weight differences in tandem kayaks.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "array"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229878,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9
+    }
+  }
+}

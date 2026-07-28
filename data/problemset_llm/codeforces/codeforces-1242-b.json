@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1242-b",
+  "title": "0-1 MST",
+  "slug": "1242-b-0-1-mst",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1242/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1900,
+  "contest_slot": "div2-d",
+  "rating": 1900,
+  "source_tags": [
+    "dfs and similar",
+    "dsu",
+    "graphs",
+    "sortings"
+  ],
+  "statement": "Given a complete undirected graph with edges weighted either 0 or 1, find the weight of its minimum spanning tree.",
+  "tags": [
+    "graph",
+    "minimum-spanning-tree",
+    "union-find"
+  ],
+  "patterns": [
+    "kruskal",
+    "union-find",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229989,
+    "pattern_confidence": {
+      "kruskal": 0.95,
+      "union-find": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

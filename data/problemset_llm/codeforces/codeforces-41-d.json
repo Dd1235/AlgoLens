@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-41-d",
+  "title": "Pawn",
+  "slug": "41-d-pawn",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/41/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1900,
+  "contest_slot": "div2-d",
+  "rating": 1900,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "A pawn starts on any square in the bottom row of a grid with peas on each cell and moves upward diagonally left or right to the top row, collecting peas on each visited cell. The goal is to maximize the total peas collected such that the total is divisible by k+1, and to find the path achieving this maximum.",
+  "tags": [
+    "dynamic-programming",
+    "grid",
+    "path-finding",
+    "modular-arithmetic"
+  ],
+  "patterns": [
+    "dp-on-grid",
+    "modular-dp",
+    "path-reconstruction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230046,
+    "pattern_confidence": {
+      "dp-on-grid": 0.95,
+      "modular-dp": 0.9,
+      "path-reconstruction": 0.85
+    }
+  }
+}

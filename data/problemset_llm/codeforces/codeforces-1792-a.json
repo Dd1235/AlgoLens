@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1792-a",
+  "title": "GamingForces",
+  "slug": "1792-a-gamingforces",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1792/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Given n monsters with health values, find the minimum number of spell casts needed to kill all monsters using two spells: one that reduces health of two monsters by 1 each, and another that kills a single monster instantly.",
+  "tags": [
+    "greedy",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229787,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.7
+    }
+  }
+}

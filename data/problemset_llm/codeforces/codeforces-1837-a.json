@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1837-a",
+  "title": "Grasshopper on a Line",
+  "slug": "1837-a-grasshopper-on-a-line",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1837/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given integers x and k, find the minimum number of integer jumps (each jump length not divisible by k) needed for a grasshopper starting at 0 on the number line to reach x, and output one valid sequence of such jumps.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229792,
+    "pattern_confidence": {
+      "greedy": 0.85,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-229-b",
+  "title": "Planets",
+  "slug": "229-b-planets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/229/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "graphs",
+    "shortest paths"
+  ],
+  "statement": "Given a weighted undirected graph with waiting constraints at nodes, find the minimum time to travel from node 1 to node n considering mandatory 1-second waits if other travelers arrive simultaneously.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap",
+    "simulation"
+  ],
+  "patterns": [
+    "dijkstra",
+    "waiting-time-simulation",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230028,
+    "pattern_confidence": {
+      "dijkstra": 0.95,
+      "waiting-time-simulation": 0.85,
+      "heap": 0.9
+    }
+  }
+}

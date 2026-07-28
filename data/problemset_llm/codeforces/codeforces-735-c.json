@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-735-c",
+  "title": "Tennis Championship",
+  "slug": "735-c-tennis-championship",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/735/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1600,
+  "contest_slot": "div2-c",
+  "rating": 1600,
+  "source_tags": [
+    "combinatorics",
+    "constructive algorithms",
+    "greedy",
+    "math"
+  ],
+  "statement": "Given a knockout tennis tournament with n players and a constraint on match pairings based on the difference in games played, determine the maximum number of games the eventual winner can participate in.",
+  "tags": [
+    "combinatorics",
+    "greedy",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "constructive-algorithm",
+    "combinatorial-analysis"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229967,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "constructive-algorithm": 0.85,
+      "combinatorial-analysis": 0.8
+    }
+  }
+}

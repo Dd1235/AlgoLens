@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1783-a",
+  "title": "Make it Beautiful",
+  "slug": "1783-a-make-it-beautiful",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1783/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 800,
+  "contest_slot": "div2-a",
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given a non-decreasing array, reorder its elements to ensure no element equals the sum of all preceding elements, making the array \"beautiful.\"",
+  "tags": [
+    "array",
+    "sorting",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229786,
+    "pattern_confidence": {
+      "sorting": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

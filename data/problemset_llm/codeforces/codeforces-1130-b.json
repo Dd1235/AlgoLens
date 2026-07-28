@@ -6,6 +6,7 @@
   "source_url": "https://codeforces.com/problemset/problem/1130/B",
   "source_topic": "Codeforces / rating 1200-1299",
   "difficulty": 1200,
+  "contest_slot": "div2-b",
   "rating": 1200,
   "source_tags": [
     "greedy"

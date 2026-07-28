@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1922-c",
+  "title": "Closest Cities",
+  "slug": "1922-c-closest-cities",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1922/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "greedy",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given cities on a number line with unique closest neighbors, compute the minimum travel cost between pairs of cities where traveling to any city costs the distance in coins, but traveling to the closest city costs 1 coin.",
+  "tags": [
+    "graph",
+    "greedy",
+    "math",
+    "shortest-path"
+  ],
+  "patterns": [
+    "dijkstra",
+    "greedy",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229948,
+    "pattern_confidence": {
+      "dijkstra": 0.95,
+      "greedy": 0.8,
+      "shortest-path": 0.9
+    }
+  }
+}

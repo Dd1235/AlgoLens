@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-535-a",
+  "title": "Tavas and Nafas",
+  "slug": "535-a-tavas-and-nafas",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/535/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1000,
+  "contest_slot": "div2-a",
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Convert an integer score into its English word representation to help a user send the score via text without digits.",
+  "tags": [
+    "implementation",
+    "string"
+  ],
+  "patterns": [
+    "brute-force",
+    "string-conversion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229817,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "string-conversion": 0.85
+    }
+  }
+}

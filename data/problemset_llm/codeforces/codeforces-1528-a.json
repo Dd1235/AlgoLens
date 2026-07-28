@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1528-a",
+  "title": "Parsa's Humongous Tree",
+  "slug": "1528-a-parsa-s-humongous-tree",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1528/A",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1600,
+  "contest_slot": "div2-d",
+  "rating": 1600,
+  "source_tags": [
+    "dfs and similar",
+    "divide and conquer",
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a tree with each vertex having a range [l_v, r_v], assign a value a_v within the range to each vertex to maximize the sum of absolute differences |a_u - a_v| over all edges.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "tree-dp",
+    "bottom-up-dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230003,
+    "pattern_confidence": {
+      "tree-dp": 0.95,
+      "bottom-up-dp": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-519-a",
+  "title": "A and B and Chess",
+  "slug": "519-a-a-and-b-and-chess",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/519/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 900,
+  "contest_slot": "div2-a",
+  "rating": 900,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given the counts of chess pieces for two players, compute the total weighted sum of their pieces and determine which player has the higher total weight.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229814,
+    "pattern_confidence": {
+      "arithmetic": 0.9
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1997-d",
+  "title": "Maximize the Root",
+  "slug": "1997-d-maximize-the-root",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1997/D",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1500,
+  "contest_slot": "div2-d",
+  "rating": 1500,
+  "source_tags": [
+    "binary search",
+    "dfs and similar",
+    "dp",
+    "greedy",
+    "trees"
+  ],
+  "statement": "Given a rooted tree with values on each vertex, repeatedly perform operations that increase the root's value by redistributing values from its subtree without making any vertex negative, and find the maximum achievable root value.",
+  "tags": [
+    "tree",
+    "dynamic-programming",
+    "dfs",
+    "greedy"
+  ],
+  "patterns": [
+    "dfs",
+    "tree-dp",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230025,
+    "pattern_confidence": {
+      "dfs": 0.95,
+      "tree-dp": 0.9,
+      "greedy": 0.85
+    }
+  }
+}

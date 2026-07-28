@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1334-a",
+  "title": "Level Statistics",
+  "slug": "1334-a-level-statistics",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1334/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1200,
+  "contest_slot": "div2-a",
+  "rating": 1200,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a chronological sequence of pairs representing the number of plays and clears of a game level, determine if the sequence is consistent with the rules that plays and clears never decrease, clears never exceed plays, and increments between consecutive records are valid.",
+  "tags": [
+    "implementation",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229765,
+    "pattern_confidence": {
+      "greedy": 0.7,
+      "validation": 0.9
+    }
+  }
+}

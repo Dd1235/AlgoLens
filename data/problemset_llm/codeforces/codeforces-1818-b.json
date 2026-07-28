@@ -1,0 +1,31 @@
+{
+  "id": "codeforces-1818-b",
+  "title": "Indivisible",
+  "slug": "1818-b-indivisible",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1818/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 900,
+  "contest_slot": "div2-b",
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms"
+  ],
+  "statement": "Construct a permutation of integers from 1 to n such that no subarray sum is divisible by the length of that subarray.",
+  "tags": [
+    "constructive-algorithm",
+    "permutation",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229861,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95
+    }
+  }
+}

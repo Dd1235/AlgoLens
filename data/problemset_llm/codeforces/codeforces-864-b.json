@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-864-b",
+  "title": "Polycarp and Letters",
+  "slug": "864-b-polycarp-and-letters",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/864/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1000,
+  "contest_slot": "div2-b",
+  "rating": 1000,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "strings"
+  ],
+  "statement": "Given a string of lowercase and uppercase letters, find the largest set of distinct lowercase letter positions such that no uppercase letter lies between any two positions in the set.",
+  "tags": [
+    "string",
+    "brute-force",
+    "implementation"
+  ],
+  "patterns": [
+    "two-pointers",
+    "greedy",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229880,
+    "pattern_confidence": {
+      "two-pointers": 0.85,
+      "greedy": 0.8,
+      "sliding-window": 0.75
+    }
+  }
+}

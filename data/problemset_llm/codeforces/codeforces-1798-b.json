@@ -6,6 +6,7 @@
   "source_url": "https://codeforces.com/problemset/problem/1798/B",
   "source_topic": "Codeforces / rating 934-1000",
   "difficulty": 1000,
+  "contest_slot": "div2-b",
   "rating": 1000,
   "source_tags": [
     "brute force",

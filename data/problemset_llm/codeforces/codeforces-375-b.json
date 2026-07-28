@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-375-b",
+  "title": "Maximum Submatrix 2",
+  "slug": "375-b-maximum-submatrix-2",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/375/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1600,
+  "contest_slot": "div2-d",
+  "rating": 1600,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given a binary matrix, rearrange its rows to maximize the area of a submatrix consisting entirely of ones.",
+  "tags": [
+    "matrix",
+    "sorting",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "sorting",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230041,
+    "pattern_confidence": {
+      "sorting": 0.9,
+      "dynamic-programming": 0.8,
+      "greedy": 0.7
+    }
+  }
+}

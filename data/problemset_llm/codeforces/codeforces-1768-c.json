@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1768-c",
+  "title": "Elemental Decompress",
+  "slug": "1768-c-elemental-decompress",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1768/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "implementation",
+    "sortings"
+  ],
+  "statement": "Given an array, determine if there exist two permutations such that for each position, the maximum of the two permutation values equals the given array value, or report impossibility.",
+  "tags": [
+    "array",
+    "greedy",
+    "constructive-algorithm",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229916,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

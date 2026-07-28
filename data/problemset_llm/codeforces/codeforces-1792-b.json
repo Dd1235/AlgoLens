@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1792-b",
+  "title": "Stand-up Comedian",
+  "slug": "1792-b-stand-up-comedian",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1792/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1200,
+  "contest_slot": "div2-b",
+  "rating": 1200,
+  "source_tags": [
+    "greedy",
+    "math"
+  ],
+  "statement": "Given counts of jokes liked by Alice and/or Bob, arrange them to maximize the number of jokes told before either spectator's mood drops below zero, where mood increases by 1 if a joke is liked and decreases by 1 if disliked.",
+  "tags": [
+    "greedy",
+    "math",
+    "simulation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229849,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

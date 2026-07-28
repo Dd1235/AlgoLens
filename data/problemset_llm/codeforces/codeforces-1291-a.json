@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1291-a",
+  "title": "Even But Not Even",
+  "slug": "1291-a-even-but-not-even",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1291/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 900,
+  "contest_slot": "div2-a",
+  "rating": 900,
+  "source_tags": [
+    "greedy",
+    "math",
+    "strings"
+  ],
+  "statement": "Given a number as a digit string, delete some digits to form a number whose digit sum is even but the number itself is odd, without leading zeros. Output any such number or report impossibility.",
+  "tags": [
+    "string",
+    "greedy",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "digit-sum",
+    "parity-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229762,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "digit-sum": 0.9,
+      "parity-check": 0.85
+    }
+  }
+}

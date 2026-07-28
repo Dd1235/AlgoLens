@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-873-b",
+  "title": "Balanced Substring",
+  "slug": "873-b-balanced-substring",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/873/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1500,
+  "contest_slot": "div2-b",
+  "rating": 1500,
+  "source_tags": [
+    "dp",
+    "implementation"
+  ],
+  "statement": "Given a binary string, find the length of the longest substring containing an equal number of zeros and ones.",
+  "tags": [
+    "string",
+    "array",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-sum",
+    "hash-map",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229883,
+    "pattern_confidence": {
+      "prefix-sum": 0.95,
+      "hash-map": 0.9,
+      "sliding-window": 0.7
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1493-b",
+  "title": "Planet Lapituletti",
+  "slug": "1493-b-planet-lapituletti",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1493/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1300,
+  "contest_slot": "div2-b",
+  "rating": 1300,
+  "source_tags": [
+    "brute force",
+    "implementation"
+  ],
+  "statement": "Given a custom clock format with h hours and m minutes per hour, find the earliest time at or after a given start time whose mirrored reflection forms a valid time on the same clock.",
+  "tags": [
+    "implementation",
+    "simulation",
+    "math"
+  ],
+  "patterns": [
+    "brute-force",
+    "digit-mapping",
+    "time-format-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229827,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "digit-mapping": 0.85,
+      "time-format-validation": 0.8
+    }
+  }
+}

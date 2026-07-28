@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1685-a",
+  "title": "Circular Local MiniMax",
+  "slug": "1685-a-circular-local-minimax",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1685/A",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1100,
+  "contest_slot": "div2-c",
+  "rating": 1100,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "sortings"
+  ],
+  "statement": "Determine if the given integers can be arranged in a circle so that each element is either strictly greater than both neighbors or strictly smaller than both neighbors.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229914,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1279-c",
+  "title": "Stack of Presents",
+  "slug": "1279-c-stack-of-presents",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1279/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1400,
+  "contest_slot": "div2-c",
+  "rating": 1400,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given a stack of distinct presents and a list of presents to send in order, determine the minimum total time to send all presents by optimally reordering only the removed presents above each requested present.",
+  "tags": [
+    "data-structures",
+    "greedy",
+    "implementation"
+  ],
+  "patterns": [
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229907,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "simulation": 0.85
+    }
+  }
+}

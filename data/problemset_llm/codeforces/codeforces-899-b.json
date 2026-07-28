@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-899-b",
+  "title": "Months and Years",
+  "slug": "899-b-months-and-years",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/899/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1200,
+  "contest_slot": "div2-b",
+  "rating": 1200,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given a sequence of integers representing month lengths, determine if they can correspond to durations of consecutive months in the Gregorian calendar, considering leap year rules.",
+  "tags": [
+    "implementation",
+    "math",
+    "calendar"
+  ],
+  "patterns": [
+    "simulation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229892,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "codeforces-139-a",
+  "title": "Petr and Book",
+  "slug": "139-a-petr-and-book",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/139/A",
+  "source_topic": "Codeforces / DIV 2 A",
+  "difficulty": 1000,
+  "contest_slot": "div2-a",
+  "rating": 1000,
+  "source_tags": [
+    "implementation"
+  ],
+  "statement": "Given the number of pages in a book and a weekly schedule of pages Petr can read each day, determine the day of the week on which he finishes reading the book without skipping any days.",
+  "tags": [
+    "implementation",
+    "simulation"
+  ],
+  "patterns": [
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229770,
+    "pattern_confidence": {
+      "simulation": 0.95
+    }
+  }
+}

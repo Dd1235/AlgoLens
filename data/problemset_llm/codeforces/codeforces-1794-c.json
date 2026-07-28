@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1794-c",
+  "title": "Scoring Subsequences",
+  "slug": "1794-c-scoring-subsequences",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1794/C",
+  "source_topic": "Codeforces / DIV 2 C",
+  "difficulty": 1300,
+  "contest_slot": "div2-c",
+  "rating": 1300,
+  "source_tags": [
+    "binary search",
+    "greedy",
+    "math",
+    "two pointers"
+  ],
+  "statement": "Given a non-decreasing integer sequence, for each prefix find the maximum length of a subsequence that achieves the maximum score defined as the product of its elements divided by the factorial of its length.",
+  "tags": [
+    "array",
+    "math",
+    "greedy",
+    "binary-search",
+    "two-pointers"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229919,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.85,
+      "two-pointers": 0.8
+    }
+  }
+}

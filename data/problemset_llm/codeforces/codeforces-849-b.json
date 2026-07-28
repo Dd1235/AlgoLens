@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-849-b",
+  "title": "Tell Your World",
+  "slug": "849-b-tell-your-world",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/849/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1600,
+  "contest_slot": "div2-b",
+  "rating": 1600,
+  "source_tags": [
+    "brute force",
+    "geometry"
+  ],
+  "statement": "Given n points with coordinates (i, y_i), determine if it is possible to draw two distinct parallel lines such that every point lies on exactly one of these lines and each line passes through at least one point.",
+  "tags": [
+    "geometry",
+    "brute-force"
+  ],
+  "patterns": [
+    "line-parameterization",
+    "case-analysis",
+    "parallel-lines-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229877,
+    "pattern_confidence": {
+      "line-parameterization": 0.85,
+      "case-analysis": 0.8,
+      "parallel-lines-check": 0.9
+    }
+  }
+}

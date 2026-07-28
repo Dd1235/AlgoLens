@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-429-b",
+  "title": "Working out",
+  "slug": "429-b-working-out",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/429/B",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1600,
+  "contest_slot": "div2-d",
+  "rating": 1600,
+  "source_tags": [
+    "dp"
+  ],
+  "statement": "Two people start at opposite corners of a grid and move towards opposite corners with restricted moves, meeting exactly once at a cell where they pause. Maximize the sum of calories burned on all workout cells visited by either person, excluding the meeting cell.",
+  "tags": [
+    "dynamic-programming",
+    "grid",
+    "path-finding"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "grid-dp",
+    "meet-in-the-middle"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230050,
+    "pattern_confidence": {
+      "dynamic-programming": 0.98,
+      "grid-dp": 0.95,
+      "meet-in-the-middle": 0.85
+    }
+  }
+}

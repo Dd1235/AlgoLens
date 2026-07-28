@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1695-c",
+  "title": "Zero Path",
+  "slug": "1695-c-zero-path",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1695/C",
+  "source_topic": "Codeforces / DIV 2 D",
+  "difficulty": 1700,
+  "contest_slot": "div2-d",
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "data structures",
+    "dp",
+    "graphs",
+    "greedy",
+    "shortest paths"
+  ],
+  "statement": "Given an n by m grid with each cell valued either 1 or -1, determine if there exists a path from the top-left to the bottom-right corner moving only down or right such that the sum of the visited cells' values is zero.",
+  "tags": [
+    "grid",
+    "dynamic-programming",
+    "greedy"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "path-sum",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785230012,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "path-sum": 0.9,
+      "grid-traversal": 0.85
+    }
+  }
+}

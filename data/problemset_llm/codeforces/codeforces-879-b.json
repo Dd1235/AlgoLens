@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-879-b",
+  "title": "Table Tennis",
+  "slug": "879-b-table-tennis",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/879/B",
+  "source_topic": "Codeforces / DIV 2 B",
+  "difficulty": 1200,
+  "contest_slot": "div2-b",
+  "rating": 1200,
+  "source_tags": [
+    "data structures",
+    "implementation"
+  ],
+  "statement": "Given a queue of players with distinct power levels, simulate matches where the winner stays and the loser moves to the end until a player wins k consecutive games, then identify the winner.",
+  "tags": [
+    "queue",
+    "simulation",
+    "greedy"
+  ],
+  "patterns": [
+    "simulation",
+    "queue",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785229887,
+    "pattern_confidence": {
+      "simulation": 0.95,
+      "queue": 0.9,
+      "greedy": 0.85
+    }
+  }
+}
