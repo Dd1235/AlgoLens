@@ -2,7 +2,9 @@ const express = require("express");
 const { logEvent } = require("../telemetry");
 const db = require("../db");
 const { requireUser } = require("../auth/middleware");
-const { parseSelection, passesDifficulty } = require("../search/difficulty");
+const {
+  parseSelection, passesDifficulty, parseSort, sortByDifficulty, sortableJudge, SORTABLE_JUDGES,
+} = require("../search/difficulty");
 
 // Sets one of {done, bookmarked} flags to `value` for (user, problem_id) and
 // keeps the row only if at least one flag is true. The CHECK constraint on
@@ -119,6 +121,8 @@ function createUserStateRouter({ problems } = {}) {
       ? req.query.filter.toString().toLowerCase()
       : "all";
     const bands = parseSelection(req.query.difficulty);
+    const wantSort = parseSort(req.query.sort);
+    const sortDir = wantSort ? (sortableJudge(wanted, SORTABLE_JUDGES) ? wantSort : null) : null;
     let where = "user_id = $1";
     if (type === "done") where += " AND done";
     if (type === "bookmarked") where += " AND bookmarked";
@@ -146,13 +150,16 @@ function createUserStateRouter({ problems } = {}) {
           markedAt: (row.bookmarked_at || row.done_at || row.updated_at || new Date()).toISOString(),
         });
       }
+      // A saved list has no ranking either, so sorting it is free.
+      const ordered = sortDir ? sortByDifficulty(items, sortDir, (it) => it.problem) : items;
       res.json({
         type,
-        total: items.length,
+        total: ordered.length,
+        sort: sortDir ? `difficulty-${sortDir}` : undefined,
         platform: wanted.size ? [...wanted].sort() : undefined,
         difficulty: bands.size ? String(req.query.difficulty).toLowerCase() : undefined,
         filter: doneFilter,
-        items,
+        items: ordered,
       });
     } catch (_e) {
       res.status(500).json({ error: "db_error" });

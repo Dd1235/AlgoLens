@@ -5,7 +5,9 @@ const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
 const { tokenize } = require("../search/tokenize");
-const { parseSelection, passesDifficulty } = require("../search/difficulty");
+const {
+  parseSelection, passesDifficulty, parseSort, sortByDifficulty, sortableJudge, SORTABLE_JUDGES,
+} = require("../search/difficulty");
 const { logEvent } = require("../telemetry");
 
 const VALID_FILTERS = new Set(["all", "done", "notdone"]);
@@ -132,6 +134,11 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
     const pattern = SLUG_RE.test(patternRaw) ? patternRaw : "";
     const platforms = parsePlatforms(req.query.platform, KNOWN_PLATFORMS);
     const bands = parseSelection(req.query.difficulty);
+    // Sorting is only offered inside one judge — see difficulty.js. When it is
+    // refused, say why rather than quietly returning relevance order.
+    const wantSort = parseSort(req.query.sort);
+    const sortJudge = wantSort ? sortableJudge(platforms, SORTABLE_JUDGES) : null;
+    const sortDir = sortJudge ? wantSort : null;
     // Alias expansion ("aliens trick" → +wqs binary search) happens here at
     // the route, once, so every ranker — lexical, dense, gRPC — sees the
     // searchable form. The response echoes expandedQuery when it differs.
@@ -181,9 +188,12 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
           const isDone = userState.done.has(p.id);
           return effectiveFilter === "done" ? isDone : !isDone;
         });
+        // No query means nothing is ranked, so ordering the whole set costs no
+        // relevance and paging stays coherent.
+        const ordered = sortDir ? sortByDifficulty(browsed, sortDir) : browsed;
         latencyMs = +(Number(process.hrtime.bigint() - t) / 1e6).toFixed(3);
-        total = browsed.length;
-        hits = browsed.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
+        total = ordered.length;
+        hits = ordered.slice(offset, offset + k).map((problem) => ({ problem, score: 0, matchedTerms: [] }));
       } else if (!hasFilter) {
         ({ hits, total, latencyMs } = await timedSearch(index, exp.query, k, offset, { raw: q }));
       } else {
@@ -203,7 +213,15 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
           return effectiveFilter === "done" ? isDone : !isDone;
         });
         total = filtered.length;
-        hits = filtered.slice(offset, offset + k);
+        if (sortDir) {
+          // "The easiest of the best matches": keep the top k by relevance,
+          // reorder those. Paging is deliberately not offered — page 2 of a
+          // re-sorted top-k would be a different window, re-sorted, which is
+          // not a continuation of anything.
+          hits = sortByDifficulty(filtered.slice(0, k), sortDir, (h) => h.problem);
+        } else {
+          hits = filtered.slice(offset, offset + k);
+        }
       }
 
       // Decorate hits for signed-in users so the UI can badge done/bookmarked.
@@ -246,6 +264,10 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         pattern: pattern || undefined,
         platform: platforms.size ? [...platforms].sort() : undefined,
         difficulty: bands.size ? String(req.query.difficulty).toLowerCase() : undefined,
+        sort: sortDir ? `difficulty-${sortDir}` : undefined,
+        // The client hides "load more" on this shape: the window is fixed.
+        sortWindow: sortDir && q.trim() ? k : undefined,
+        sortRefused: wantSort && !sortDir ? "pick exactly one judge with a difficulty scale" : undefined,
         hits,
       });
     } catch (err) {
