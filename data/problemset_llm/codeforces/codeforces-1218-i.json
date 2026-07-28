@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1218-i",
+  "title": "The Light Square",
+  "slug": "1218-i-the-light-square",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1218/I",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "2-sat",
+    "dfs and similar",
+    "greedy"
+  ],
+  "statement": "Given an N×N board of lights and a magical N×1 lightbar that toggles lights when placed on any row or column, determine if it is possible to transform the board from a starting pattern to a target pattern using the bar any number of times, and output one valid sequence if it exists.",
+  "tags": [
+    "two-sat",
+    "graph",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "two-sat",
+    "dfs",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236778,
+    "pattern_confidence": {
+      "two-sat": 0.95,
+      "dfs": 0.8,
+      "bit-manipulation": 0.7
+    }
+  }
+}

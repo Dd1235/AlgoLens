@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-evaluate-division",
+  "title": "Evaluate Division",
+  "slug": "evaluate-division",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/evaluate-division/",
+  "source_topic": "LeetCode / Shortest Path (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "string",
+    "depth-first-search",
+    "breadth-first-search",
+    "union-find",
+    "graph",
+    "shortest-path"
+  ],
+  "statement": "Given equations representing division relationships between variables and their values, answer queries asking for the division result between two variables or return -1 if undefined.",
+  "tags": [
+    "graph",
+    "union-find",
+    "dfs"
+  ],
+  "patterns": [
+    "union-find",
+    "dfs",
+    "graph-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234915,
+    "pattern_confidence": {
+      "union-find": 0.95,
+      "dfs": 0.9,
+      "graph-traversal": 0.85
+    }
+  }
+}

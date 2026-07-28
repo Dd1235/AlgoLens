@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1071-e",
+  "title": "Rain Protection",
+  "slug": "1071-e-rain-protection",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1071/E",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "binary search",
+    "geometry"
+  ],
+  "statement": "Given two parallel line segments and a rope connecting points on them, determine the minimal sliding speed of the rope endpoints along the segments so that the rope can cover all raindrop points at their respective times, or decide if it is impossible.",
+  "tags": [
+    "geometry",
+    "binary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "geometry",
+    "parametric-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236938,
+    "pattern_confidence": {
+      "binary-search": 0.95,
+      "geometry": 0.9,
+      "parametric-search": 0.85
+    }
+  }
+}

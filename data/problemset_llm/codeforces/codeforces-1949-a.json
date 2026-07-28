@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1949-a",
+  "title": "Grove",
+  "slug": "1949-a-grove",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1949/A",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "brute force",
+    "dfs and similar",
+    "dp",
+    "geometry",
+    "probabilities"
+  ],
+  "statement": "Place the maximum number of trees with root disks of radius r inside an n×n integer-coordinate lawn so that disks are fully inside the lawn and only touch at boundaries without overlapping.",
+  "tags": [
+    "geometry",
+    "combinatorics",
+    "brute-force",
+    "probability-dp"
+  ],
+  "patterns": [
+    "geometry",
+    "brute-force",
+    "circle-packing"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236947,
+    "pattern_confidence": {
+      "geometry": 0.95,
+      "brute-force": 0.7,
+      "circle-packing": 0.85
+    }
+  }
+}

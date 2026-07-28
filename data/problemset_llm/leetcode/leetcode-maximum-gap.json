@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-maximum-gap",
+  "title": "Maximum Gap",
+  "slug": "maximum-gap",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-gap/",
+  "source_topic": "LeetCode / Radix Sort (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "sorting",
+    "bucket-sort",
+    "radix-sort"
+  ],
+  "statement": "Given an integer array, find the maximum difference between any two successive elements in its sorted order. The solution must run in linear time and use linear extra space.",
+  "tags": [
+    "array",
+    "sorting",
+    "bucket-sort"
+  ],
+  "patterns": [
+    "bucket-sort",
+    "radix-sort",
+    "linear-time-sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234956,
+    "pattern_confidence": {
+      "bucket-sort": 0.95,
+      "radix-sort": 0.9,
+      "linear-time-sorting": 0.85
+    }
+  }
+}

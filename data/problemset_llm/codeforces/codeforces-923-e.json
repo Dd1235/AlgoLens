@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-923-e",
+  "title": "Perpetual Subtraction",
+  "slug": "923-e-perpetual-subtraction",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/923/E",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "fft",
+    "math",
+    "matrices"
+  ],
+  "statement": "Given an initial integer on a blackboard, repeatedly replace it by a uniformly random integer from 0 to the current number for a fixed number of steps, and determine the final number's distribution.",
+  "tags": [
+    "math",
+    "probability",
+    "dynamic-programming",
+    "fft",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "fft",
+    "matrix-exponentiation",
+    "probability-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236907,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "fft": 0.85,
+      "matrix-exponentiation": 0.8,
+      "probability-dp": 0.9
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1641-e",
+  "title": "Special Positions",
+  "slug": "1641-e-special-positions",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1641/E",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "combinatorics",
+    "divide and conquer",
+    "fft",
+    "math"
+  ],
+  "statement": "Given an array and a set of distinct positions, compute the expected sum over all non-empty subsets of these positions of the array elements multiplied by their distance to the nearest chosen position, modulo a prime.",
+  "tags": [
+    "array",
+    "combinatorics",
+    "modular-arithmetic",
+    "math",
+    "fft"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "modular-inverse",
+    "combinatorial-probability"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236897,
+    "pattern_confidence": {
+      "expected-value-dp": 0.9,
+      "modular-inverse": 0.85,
+      "combinatorial-probability": 0.8
+    }
+  }
+}

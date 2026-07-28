@@ -17,7 +17,8 @@
   "tags": [
     "math",
     "probability",
-    "randomized-algorithms"
+    "randomized-algorithms",
+    "randomized-algorithm"
   ],
   "patterns": [
     "rejection-sampling",

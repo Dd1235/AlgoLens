@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1569-e",
+  "title": "Playoff Restoration",
+  "slug": "1569-e-playoff-restoration",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1569/E",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "hashing",
+    "implementation",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given the number of teams as a power of two, a hash value, and a parameter A, reconstruct the final placement of teams in a knockout playoff tournament consistent with the hash or determine if impossible.",
+  "tags": [
+    "bit-manipulation",
+    "meet-in-the-middle",
+    "brute-force",
+    "rolling-hash",
+    "implementation"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "bit-manipulation",
+    "rolling-hash",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237049,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "bit-manipulation": 0.9,
+      "rolling-hash": 0.85,
+      "brute-force": 0.8
+    }
+  }
+}

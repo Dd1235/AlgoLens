@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1726-h",
+  "title": "Mainak and the Bleeding Polygon",
+  "slug": "1726-h-mainak-and-the-bleeding-polygon",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1726/H",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "binary search",
+    "geometry",
+    "implementation",
+    "math"
+  ],
+  "statement": "Given a convex polygon with interior angles between 90° and 180°, find the area of the region inside the polygon where every point lies on a chord of length at most 1.",
+  "tags": [
+    "geometry",
+    "binary-search",
+    "math",
+    "implementation"
+  ],
+  "patterns": [
+    "binary-search",
+    "geometry",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236946,
+    "pattern_confidence": {
+      "binary-search": 0.85,
+      "geometry": 0.95,
+      "line-sweep": 0.7
+    }
+  }
+}

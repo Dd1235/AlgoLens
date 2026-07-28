@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-468-e",
+  "title": "Permanent",
+  "slug": "468-e-permanent",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/468/E",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "dp",
+    "graph matchings",
+    "math",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given an n×n matrix mostly filled with ones except for k specified elements, compute the permanent of the matrix modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "bipartite-matching",
+    "math",
+    "meet-in-the-middle"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "dynamic-programming",
+    "inclusion-exclusion"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237063,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "dynamic-programming": 0.9,
+      "inclusion-exclusion": 0.85
+    }
+  }
+}

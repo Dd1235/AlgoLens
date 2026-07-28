@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-number-of-pairs-of-interchangeable-rectangles",
+  "title": "Number of Pairs of Interchangeable Rectangles",
+  "slug": "number-of-pairs-of-interchangeable-rectangles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "counting",
+    "number-theory"
+  ],
+  "statement": "Given a list of rectangles defined by width and height, count the number of pairs that have the same width-to-height ratio.",
+  "tags": [
+    "array",
+    "hash-map",
+    "math",
+    "counting"
+  ],
+  "patterns": [
+    "hash-map",
+    "ratio-normalization",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234784,
+    "pattern_confidence": {
+      "hash-map": 0.95,
+      "ratio-normalization": 0.9,
+      "counting": 0.85
+    }
+  }
+}

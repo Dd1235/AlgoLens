@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-queries-on-number-of-points-inside-a-circle",
+  "title": "Queries on Number of Points Inside a Circle",
+  "slug": "queries-on-number-of-points-inside-a-circle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/queries-on-number-of-points-inside-a-circle/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given a set of points on a 2D plane and multiple queries each defining a circle, determine how many points lie inside or on the boundary of each circle.",
+  "tags": [
+    "geometry",
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "distance-check",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234892,
+    "pattern_confidence": {
+      "distance-check": 0.9,
+      "brute-force": 0.8
+    }
+  }
+}

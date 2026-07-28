@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1070-m",
+  "title": "Algoland and Berland",
+  "slug": "1070-m-algoland-and-berland",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1070/M",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "constructive algorithms",
+    "divide and conquer",
+    "geometry"
+  ],
+  "statement": "Given two sets of cities on a plane representing two countries, connect all cities with non-intersecting bidirectional freeways starting only from specified Berland cities with given degrees, forming a spanning tree between the two sets.",
+  "tags": [
+    "geometry",
+    "graph",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "planar-graph",
+    "spanning-tree",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236936,
+    "pattern_confidence": {
+      "planar-graph": 0.9,
+      "spanning-tree": 0.95,
+      "constructive-algorithm": 0.9
+    }
+  }
+}

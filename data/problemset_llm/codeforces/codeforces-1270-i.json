@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1270-i",
+  "title": "Xor on Figures",
+  "slug": "1270-i-xor-on-figures",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1270/I",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "constructive algorithms",
+    "fft",
+    "math"
+  ],
+  "statement": "Given a 2^k by 2^k toroidal grid with integers and an odd-sized lattice figure F, determine the minimum number of operations to make all grid values zero by XORing subsets of cells covered by translated copies of F with chosen integers.",
+  "tags": [
+    "bit-manipulation",
+    "grid",
+    "math",
+    "constructive-algorithm",
+    "fft"
+  ],
+  "patterns": [
+    "xor-manipulation",
+    "torus-grid",
+    "constructive-algorithm",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236886,
+    "pattern_confidence": {
+      "xor-manipulation": 0.95,
+      "torus-grid": 0.9,
+      "constructive-algorithm": 0.85,
+      "bit-manipulation": 0.7
+    }
+  }
+}

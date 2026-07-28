@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-check-if-a-string-contains-all-binary-codes-of-size-k",
+  "title": "Check If a String Contains All Binary Codes of Size K",
+  "slug": "check-if-a-string-contains-all-binary-codes-of-size-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/",
+  "source_topic": "LeetCode / Rolling Hash (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "bit-manipulation",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Given a binary string and an integer k, determine if every possible binary code of length k appears as a substring in the string.",
+  "tags": [
+    "string",
+    "hash-map",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "bit-manipulation",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234617,
+    "pattern_confidence": {
+      "rolling-hash": 0.9,
+      "bit-manipulation": 0.85,
+      "sliding-window": 0.8
+    }
+  }
+}

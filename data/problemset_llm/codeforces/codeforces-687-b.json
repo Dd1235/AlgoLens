@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-687-b",
+  "title": "Remainders Game",
+  "slug": "687-b-remainders-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/687/B",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "chinese remainder theorem",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a modulus k and a set of ancient moduli, determine if the remainder of any integer x modulo k can be uniquely determined from the remainders modulo the given ancient numbers, regardless of x.",
+  "tags": [
+    "math",
+    "number-theory",
+    "chinese-remainder-theorem"
+  ],
+  "patterns": [
+    "chinese-remainder-theorem",
+    "modular-arithmetic",
+    "gcd"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236873,
+    "pattern_confidence": {
+      "chinese-remainder-theorem": 0.95,
+      "modular-arithmetic": 0.9,
+      "gcd": 0.85
+    }
+  }
+}

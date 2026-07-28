@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1840-g1",
+  "title": "In Search of Truth (Easy Version)",
+  "slug": "1840-g1-in-search-of-truth-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1840/G1",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "constructive algorithms",
+    "interactive",
+    "math",
+    "meet-in-the-middle",
+    "probabilities"
+  ],
+  "statement": "Given an unknown number of sectors arranged in a circle and an arrow initially pointing to a known sector, determine the total number of sectors by querying the arrow's position after moving it clockwise or counterclockwise up to 2023 times.",
+  "tags": [
+    "interactive",
+    "math",
+    "binary-search",
+    "meet-in-the-middle",
+    "probability-dp"
+  ],
+  "patterns": [
+    "interactive",
+    "binary-search",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237057,
+    "pattern_confidence": {
+      "interactive": 0.99,
+      "binary-search": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

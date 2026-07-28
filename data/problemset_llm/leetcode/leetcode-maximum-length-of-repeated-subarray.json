@@ -1,0 +1,42 @@
+{
+  "id": "leetcode-maximum-length-of-repeated-subarray",
+  "title": "Maximum Length of Repeated Subarray",
+  "slug": "maximum-length-of-repeated-subarray",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
+  "source_topic": "LeetCode / Rolling Hash (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "binary-search",
+    "dynamic-programming",
+    "sliding-window",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Given two integer arrays, find the length of the longest contiguous subarray that appears in both arrays.",
+  "tags": [
+    "array",
+    "string",
+    "dynamic-programming",
+    "binary-search",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "rolling-hash",
+    "binary-search",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234622,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "rolling-hash": 0.9,
+      "binary-search": 0.85,
+      "sliding-window": 0.7
+    }
+  }
+}

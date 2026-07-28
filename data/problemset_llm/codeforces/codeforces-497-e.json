@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-497-e",
+  "title": "Subsequences Return",
+  "slug": "497-e-subsequences-return",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/497/E",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "dp",
+    "matrices"
+  ],
+  "statement": "Given a sequence defined by the sum of digits modulo k of indices in base k, compute the number of distinct subsequences modulo 10^9+7.",
+  "tags": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "number-theory",
+    "sequence",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-exponentiation",
+    "digit-dp"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237031,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "modular-exponentiation": 0.7,
+      "digit-dp": 0.85
+    }
+  }
+}

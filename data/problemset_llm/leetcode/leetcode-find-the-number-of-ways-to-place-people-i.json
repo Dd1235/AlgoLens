@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-the-number-of-ways-to-place-people-i",
+  "title": "Find the Number of Ways to Place People I",
+  "slug": "find-the-number-of-ways-to-place-people-i",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry",
+    "sorting",
+    "enumeration"
+  ],
+  "statement": "Given a set of distinct points on a 2D grid, count pairs (A, B) where A lies strictly upper-left of B and the axis-aligned rectangle defined by A and B contains no other points besides A and B.",
+  "tags": [
+    "geometry",
+    "array",
+    "sorting",
+    "brute-force"
+  ],
+  "patterns": [
+    "line-sweep",
+    "coordinate-compression",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234868,
+    "pattern_confidence": {
+      "line-sweep": 0.85,
+      "coordinate-compression": 0.75,
+      "sorting": 0.8
+    }
+  }
+}

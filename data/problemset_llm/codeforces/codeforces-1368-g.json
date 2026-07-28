@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1368-g",
+  "title": "Shifting Dominoes",
+  "slug": "1368-g-shifting-dominoes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1368/G",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "data structures",
+    "geometry",
+    "graphs",
+    "trees"
+  ],
+  "statement": "Given an n by m board fully covered by dominoes, each covering two adjacent cells, remove one domino and slide other dominoes along their orientation without losing overlap with original positions to create distinct pairs of free cells. Count the number of distinct such pairs possible.",
+  "tags": [
+    "geometry",
+    "grid",
+    "data-structures",
+    "graphs"
+  ],
+  "patterns": [
+    "simulation",
+    "state-space-exploration",
+    "graph-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236940,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "state-space-exploration": 0.85,
+      "graph-representation": 0.8
+    }
+  }
+}

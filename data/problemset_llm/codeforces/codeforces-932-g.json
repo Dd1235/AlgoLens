@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-932-g",
+  "title": "Palindrome Partition",
+  "slug": "932-g-palindrome-partition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/932/G",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "dp",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string, count the number of ways to partition it into an even number of substrings such that each substring equals the reverse of its corresponding substring from the end, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "string-matching",
+    "suffix-array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "palindrome",
+    "string-reversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237092,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "palindrome": 0.9,
+      "string-reversal": 0.85
+    }
+  }
+}

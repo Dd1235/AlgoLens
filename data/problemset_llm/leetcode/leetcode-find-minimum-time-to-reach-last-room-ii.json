@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-find-minimum-time-to-reach-last-room-ii",
+  "title": "Find Minimum Time to Reach Last Room II",
+  "slug": "find-minimum-time-to-reach-last-room-ii",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/",
+  "source_topic": "LeetCode / Shortest Path (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "graph",
+    "heap-priority-queue",
+    "matrix",
+    "shortest-path"
+  ],
+  "statement": "Given a grid with earliest allowed arrival times for each cell and alternating move durations of 1 and 2 seconds, find the minimum time to reach the bottom-right cell from the top-left cell by moving to adjacent cells.",
+  "tags": [
+    "graph",
+    "grid",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "heap",
+    "grid-traversal"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234923,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "heap": 0.95,
+      "grid-traversal": 0.9
+    }
+  }
+}

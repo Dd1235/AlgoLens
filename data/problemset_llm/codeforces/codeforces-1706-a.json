@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1706-a",
+  "title": "Another String Minimization Problem",
+  "slug": "1706-a-another-string-minimization-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1706/A",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "2-sat",
+    "constructive algorithms",
+    "greedy",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a sequence of integers and a string of characters 'B', replace characters at positions corresponding to each integer or its mirrored position to obtain the lexicographically smallest possible string.",
+  "tags": [
+    "string",
+    "greedy",
+    "two-sat",
+    "suffix-array"
+  ],
+  "patterns": [
+    "two-sat",
+    "greedy",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236817,
+    "pattern_confidence": {
+      "two-sat": 0.9,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

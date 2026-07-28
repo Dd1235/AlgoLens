@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-73-f",
+  "title": "Plane of Tanks",
+  "slug": "73-f-plane-of-tanks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/73/F",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "brute force",
+    "geometry"
+  ],
+  "statement": "Given a start and end point on a plane with enemy tanks positioned as points, each having an initial turret angle and maximum rotation speed, determine the minimum speed needed to travel from start to end while enduring at most k shots fired when turrets align exactly with the moving tank.",
+  "tags": [
+    "geometry",
+    "binary-search",
+    "simulation"
+  ],
+  "patterns": [
+    "binary-search",
+    "simulation",
+    "angle-calculation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236958,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "simulation": 0.85,
+      "angle-calculation": 0.8
+    }
+  }
+}

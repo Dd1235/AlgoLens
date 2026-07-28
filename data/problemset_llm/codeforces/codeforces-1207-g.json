@@ -1,0 +1,44 @@
+{
+  "id": "codeforces-1207-g",
+  "title": "Indie Album",
+  "slug": "1207-g-indie-album",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1207/G",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "data structures",
+    "dfs and similar",
+    "hashing",
+    "string suffix structures",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given a sequence of song names defined either as a single letter or by appending a letter to a previous song's name, answer queries counting occurrences of a substring within a specified song name.",
+  "tags": [
+    "string",
+    "tree",
+    "dfs",
+    "rolling-hash",
+    "suffix-automaton",
+    "suffix-array"
+  ],
+  "patterns": [
+    "suffix-automaton",
+    "dfs",
+    "rolling-hash",
+    "string-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236998,
+    "pattern_confidence": {
+      "suffix-automaton": 0.95,
+      "dfs": 0.85,
+      "rolling-hash": 0.9,
+      "string-matching": 0.9
+    }
+  }
+}

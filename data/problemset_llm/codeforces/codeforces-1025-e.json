@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1025-e",
+  "title": "Colored Cubes",
+  "slug": "1025-e-colored-cubes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1025/E",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "constructive algorithms",
+    "implementation",
+    "matrices"
+  ],
+  "statement": "Given an n by n chessboard with m distinct colored cubes placed on it and designated target cells for each cube, find a sequence of moves to place every cube onto its target cell by moving one cube at a time to an adjacent empty cell within a time limit of 10800 seconds.",
+  "tags": [
+    "implementation",
+    "matrix-exponentiation",
+    "simulation",
+    "graph"
+  ],
+  "patterns": [
+    "bfs",
+    "shortest-path",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237017,
+    "pattern_confidence": {
+      "bfs": 0.85,
+      "shortest-path": 0.8,
+      "simulation": 0.9
+    }
+  }
+}

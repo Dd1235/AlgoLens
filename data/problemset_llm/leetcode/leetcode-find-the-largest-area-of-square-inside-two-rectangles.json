@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-find-the-largest-area-of-square-inside-two-rectangles",
+  "title": "Find the Largest Area of Square Inside Two Rectangles",
+  "slug": "find-the-largest-area-of-square-inside-two-rectangles",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "geometry"
+  ],
+  "statement": "Given multiple axis-aligned rectangles, find the largest square area that fits inside the intersection of at least two rectangles, or return 0 if none exists.",
+  "tags": [
+    "geometry",
+    "array",
+    "math"
+  ],
+  "patterns": [
+    "line-sweep",
+    "interval-intersection",
+    "binary-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234865,
+    "pattern_confidence": {
+      "line-sweep": 0.85,
+      "interval-intersection": 0.9,
+      "binary-search": 0.7
+    }
+  }
+}

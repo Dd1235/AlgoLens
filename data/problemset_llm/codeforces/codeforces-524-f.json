@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-524-f",
+  "title": "And Yet Another Bracket Sequence",
+  "slug": "524-f-and-yet-another-bracket-sequence",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/524/F",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "hashing",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a bracket sequence, perform any number of insertions and cyclic shifts to obtain the shortest correct bracket sequence that is lexicographically smallest among all such sequences.",
+  "tags": [
+    "string",
+    "greedy",
+    "data-structures",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "greedy",
+    "string-rotation",
+    "lexicographic-minimum",
+    "bracket-sequence-validation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237085,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "string-rotation": 0.9,
+      "lexicographic-minimum": 0.85,
+      "bracket-sequence-validation": 0.9
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-587-d",
+  "title": "Duff in Mafia",
+  "slug": "587-d-duff-in-mafia",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/587/D",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "2-sat",
+    "binary search"
+  ],
+  "statement": "Given a graph with colored edges and destruction times, find a matching of edges to remove minimizing the maximum destruction time so that the remaining edges of each color form a matching (no two edges of the same color share an endpoint).",
+  "tags": [
+    "graph",
+    "matching",
+    "binary-search",
+    "two-sat"
+  ],
+  "patterns": [
+    "two-sat",
+    "binary-search",
+    "maximum-matching",
+    "graph-construction"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236826,
+    "pattern_confidence": {
+      "two-sat": 0.95,
+      "binary-search": 0.9,
+      "maximum-matching": 0.85,
+      "graph-construction": 0.8
+    }
+  }
+}

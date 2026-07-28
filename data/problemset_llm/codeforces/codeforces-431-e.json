@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-431-e",
+  "title": "Chemistry Experiment",
+  "slug": "431-e-chemistry-experiment",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/431/E",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "binary search",
+    "data structures",
+    "ternary search"
+  ],
+  "statement": "Maintain volumes of mercury in test tubes with updates and answer queries about distributing water to minimize the maximum total volume in any tube without actual pouring.",
+  "tags": [
+    "data-structures",
+    "binary-search",
+    "simulation",
+    "ternary-search"
+  ],
+  "patterns": [
+    "binary-search",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237109,
+    "pattern_confidence": {
+      "binary-search": 0.85,
+      "simulation": 0.7
+    }
+  }
+}

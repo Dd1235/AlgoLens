@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1105-e",
+  "title": "Helping Hiasat",
+  "slug": "1105-e-helping-hiasat",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1105/E",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "bitmasks",
+    "brute force",
+    "dp",
+    "meet-in-the-middle"
+  ],
+  "statement": "Given a sequence of events where Hiasat can change his handle or friends visit his profile expecting a specific handle, determine the maximum number of friends who can be satisfied by assigning handles optimally over time.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "meet-in-the-middle",
+    "brute-force"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "bitmask-dp",
+    "brute-force",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237043,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.95,
+      "bitmask-dp": 0.9,
+      "brute-force": 0.85,
+      "dynamic-programming": 0.9
+    }
+  }
+}

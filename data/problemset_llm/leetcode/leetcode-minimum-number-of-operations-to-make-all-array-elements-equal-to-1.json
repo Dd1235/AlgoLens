@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-minimum-number-of-operations-to-make-all-array-elements-equal-to-1",
+  "title": "Minimum Number of Operations to Make All Array Elements Equal to 1",
+  "slug": "minimum-number-of-operations-to-make-all-array-elements-equal-to-1",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers, find the minimum number of operations to make all elements equal to 1 by repeatedly replacing an element or its neighbor with their gcd. Return -1 if impossible.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "greedy",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234717,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "greedy": 0.85,
+      "two-pointers": 0.6
+    }
+  }
+}

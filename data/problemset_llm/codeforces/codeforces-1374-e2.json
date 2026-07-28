@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1374-e2",
+  "title": "Reading Books (hard version)",
+  "slug": "1374-e2-reading-books-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1374/E2",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "data structures",
+    "greedy",
+    "implementation",
+    "sortings",
+    "ternary search",
+    "two pointers"
+  ],
+  "statement": "Select exactly m books from n given books so that at least k are liked by Alice and at least k are liked by Bob, minimizing total reading time.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "implementation",
+    "ternary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237099,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.85
+    }
+  }
+}

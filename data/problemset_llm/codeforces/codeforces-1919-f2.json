@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1919-f2",
+  "title": "Wine Factory (Hard Version)",
+  "slug": "1919-f2-wine-factory-hard-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1919/F2",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "data structures",
+    "dp",
+    "flows",
+    "greedy",
+    "matrices"
+  ],
+  "statement": "Given arrays representing initial water amounts, wizard powers, and valve capacities between towers, process updates to these arrays and after each update compute the total wine produced by sequentially removing water and transferring remaining water through valves.",
+  "tags": [
+    "data-structures",
+    "dynamic-programming",
+    "greedy",
+    "segment-tree",
+    "max-flow",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "segment-tree",
+    "prefix-sum",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237028,
+    "pattern_confidence": {
+      "segment-tree": 0.9,
+      "prefix-sum": 0.7,
+      "greedy": 0.85,
+      "dynamic-programming": 0.75
+    }
+  }
+}

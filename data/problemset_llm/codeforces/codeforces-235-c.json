@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-235-c",
+  "title": "Cyclical Quest",
+  "slug": "235-c-cyclical-quest",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/235/C",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "data structures",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string s and multiple query strings x_i, determine for each x_i how many consecutive substrings of s are cyclic rotations of x_i.",
+  "tags": [
+    "string",
+    "string-matching",
+    "data-structures",
+    "suffix-array"
+  ],
+  "patterns": [
+    "suffix-automaton",
+    "string-rotation",
+    "rolling-hash"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237081,
+    "pattern_confidence": {
+      "suffix-automaton": 0.9,
+      "string-rotation": 0.85,
+      "rolling-hash": 0.8
+    }
+  }
+}

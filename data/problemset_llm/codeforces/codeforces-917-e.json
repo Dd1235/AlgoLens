@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-917-e",
+  "title": "Upside Down",
+  "slug": "917-e-upside-down",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/917/E",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "data structures",
+    "string suffix structures",
+    "strings",
+    "trees"
+  ],
+  "statement": "Given a tree with letters on edges and multiple queries asking for the number of occurrences of given patterns along shortest paths between nodes, compute the count of each pattern's occurrences on the path.",
+  "tags": [
+    "tree",
+    "string",
+    "string-matching",
+    "data-structure",
+    "suffix-array"
+  ],
+  "patterns": [
+    "suffix-automaton",
+    "aho-corasick",
+    "tree-path-query",
+    "lca"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237090,
+    "pattern_confidence": {
+      "suffix-automaton": 0.9,
+      "aho-corasick": 0.85,
+      "tree-path-query": 0.8,
+      "lca": 0.75
+    }
+  }
+}

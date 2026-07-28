@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1500-b",
+  "title": "Two chandeliers",
+  "slug": "1500-b-two-chandeliers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1500/B",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2200,
+  "rating": 2200,
+  "source_tags": [
+    "binary search",
+    "brute force",
+    "chinese remainder theorem",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given two chandeliers with different cyclic color sequences, determine the day when the k-th occurrence of them showing different colors happens.",
+  "tags": [
+    "math",
+    "number-theory",
+    "binary-search"
+  ],
+  "patterns": [
+    "chinese-remainder-theorem",
+    "binary-search",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236845,
+    "pattern_confidence": {
+      "chinese-remainder-theorem": 0.95,
+      "binary-search": 0.85,
+      "brute-force": 0.6
+    }
+  }
+}

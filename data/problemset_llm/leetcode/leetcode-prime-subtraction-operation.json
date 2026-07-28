@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-prime-subtraction-operation",
+  "title": "Prime Subtraction Operation",
+  "slug": "prime-subtraction-operation",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/prime-subtraction-operation/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "binary-search",
+    "greedy",
+    "number-theory"
+  ],
+  "statement": "Given an integer array, determine if it is possible to make the array strictly increasing by subtracting a prime number less than the element from each element at most once.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "greedy",
+    "binary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "binary-search",
+    "prime-sieve"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234796,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "binary-search": 0.7,
+      "prime-sieve": 0.8
+    }
+  }
+}

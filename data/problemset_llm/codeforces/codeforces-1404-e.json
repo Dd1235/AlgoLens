@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1404-e",
+  "title": "Bricks",
+  "slug": "1404-e-bricks",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1404/E",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "flows",
+    "graph matchings",
+    "graphs"
+  ],
+  "statement": "Given a grid with black and white cells, cover all black cells exactly once with non-overlapping bricks of size 1xk or kx1, minimizing the number of bricks used.",
+  "tags": [
+    "graph",
+    "bipartite-matching",
+    "grid",
+    "max-flow"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "hungarian-algorithm",
+    "flow-network"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236973,
+    "pattern_confidence": {
+      "bipartite-matching": 0.95,
+      "hungarian-algorithm": 0.85,
+      "flow-network": 0.8
+    }
+  }
+}

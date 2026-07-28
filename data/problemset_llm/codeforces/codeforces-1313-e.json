@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1313-e",
+  "title": "Concatenation with intersection",
+  "slug": "1313-e-concatenation-with-intersection",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1313/E",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "data structures",
+    "hashing",
+    "strings",
+    "two pointers"
+  ],
+  "statement": "Given two equal-length strings and a target string, count the number of pairs of substrings—one from each string—whose concatenation equals the target and whose substring indices overlap.",
+  "tags": [
+    "strings",
+    "rolling-hash",
+    "two-pointers",
+    "data-structures"
+  ],
+  "patterns": [
+    "string-hashing",
+    "two-pointers",
+    "substring-enumeration",
+    "prefix-function"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237001,
+    "pattern_confidence": {
+      "string-hashing": 0.95,
+      "two-pointers": 0.7,
+      "substring-enumeration": 0.85,
+      "prefix-function": 0.6
+    }
+  }
+}

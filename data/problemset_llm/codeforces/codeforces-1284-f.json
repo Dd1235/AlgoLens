@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1284-f",
+  "title": "New Year and Social Network",
+  "slug": "1284-f-new-year-and-social-network",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1284/F",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 3200,
+  "rating": 3200,
+  "source_tags": [
+    "data structures",
+    "graph matchings",
+    "graphs",
+    "math",
+    "trees"
+  ],
+  "statement": "Given two trees on the same set of nodes, find a maximum matching between edges of the first tree and edges of the second tree such that replacing a removed edge from the first tree with a matched edge from the second tree keeps the graph connected.",
+  "tags": [
+    "graph",
+    "tree",
+    "matching",
+    "bipartite-graph"
+  ],
+  "patterns": [
+    "bipartite-matching",
+    "tree-connectivity",
+    "graph-transformation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236971,
+    "pattern_confidence": {
+      "bipartite-matching": 0.95,
+      "tree-connectivity": 0.9,
+      "graph-transformation": 0.85
+    }
+  }
+}

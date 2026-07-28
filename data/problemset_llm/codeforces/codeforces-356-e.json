@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-356-e",
+  "title": "Xenia and String Problem",
+  "slug": "356-e-xenia-and-string-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/356/E",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "dp",
+    "hashing",
+    "implementation",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a string, determine the maximum sum of squares of lengths of all Gray string substrings after changing at most one character. A Gray string is defined recursively with specific symmetry and uniqueness conditions on its middle character.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "string-dp",
+    "string-hashing",
+    "divide-and-conquer"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237084,
+    "pattern_confidence": {
+      "string-dp": 0.9,
+      "string-hashing": 0.85,
+      "divide-and-conquer": 0.7
+    }
+  }
+}

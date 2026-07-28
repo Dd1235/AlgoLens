@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1393-e1",
+  "title": "Twilight and Ancient Scroll (easier version)",
+  "slug": "1393-e1-twilight-and-ancient-scroll-easier-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1393/E1",
+  "source_topic": "Codeforces / String Suffix Structures",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "dp",
+    "hashing",
+    "implementation",
+    "string suffix structures",
+    "strings"
+  ],
+  "statement": "Given a sequence of words each formed by adding exactly one letter to an original lexicographically non-decreasing sequence, count the number of ways to remove one letter from each word to restore some valid original sequence, modulo 10^9+7.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "combinatorics",
+    "rolling-hash",
+    "suffix-array"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "lexicographic-order",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237071,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "lexicographic-order": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

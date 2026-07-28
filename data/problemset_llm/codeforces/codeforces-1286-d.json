@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1286-d",
+  "title": "LCC",
+  "slug": "1286-d-lcc",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1286/D",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "data structures",
+    "math",
+    "matrices",
+    "probabilities"
+  ],
+  "statement": "Given n protons starting at distinct positions on a line, each moving left or right with given probabilities and speeds, compute the expected time until the first collision occurs or zero if no collision happens.",
+  "tags": [
+    "probability",
+    "math",
+    "simulation",
+    "data-structures",
+    "matrix-exponentiation",
+    "probability-dp"
+  ],
+  "patterns": [
+    "expected-value-dp",
+    "event-simulation",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237021,
+    "pattern_confidence": {
+      "expected-value-dp": 0.85,
+      "event-simulation": 0.8,
+      "line-sweep": 0.7
+    }
+  }
+}

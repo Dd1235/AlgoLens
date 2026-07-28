@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1266-a",
+  "title": "Competitive Programmer",
+  "slug": "1266-a-competitive-programmer",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1266/A",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "chinese remainder theorem",
+    "math"
+  ],
+  "statement": "Given numbers possibly formed by rearranging digits or random digits, determine if each can be a permutation of a number divisible by 60, allowing leading zeros.",
+  "tags": [
+    "math",
+    "number-theory",
+    "string",
+    "chinese-remainder-theorem"
+  ],
+  "patterns": [
+    "digit-manipulation",
+    "divisibility-rules",
+    "permutation-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236834,
+    "pattern_confidence": {
+      "digit-manipulation": 0.9,
+      "divisibility-rules": 0.95,
+      "permutation-check": 0.85
+    }
+  }
+}

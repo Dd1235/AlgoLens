@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-number-of-subarrays-with-gcd-equal-to-k",
+  "title": "Number of Subarrays With GCD Equal to K",
+  "slug": "number-of-subarrays-with-gcd-equal-to-k",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/number-of-subarrays-with-gcd-equal-to-k/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an integer array and a target integer k, count the number of contiguous subarrays whose greatest common divisor equals k.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "two-pointers",
+    "sliding-window"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234788,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "two-pointers": 0.7,
+      "sliding-window": 0.6
+    }
+  }
+}

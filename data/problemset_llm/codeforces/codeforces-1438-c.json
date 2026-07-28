@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1438-c",
+  "title": "Engineer Artem",
+  "slug": "1438-c-engineer-artem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1438/C",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "2-sat",
+    "chinese remainder theorem",
+    "constructive algorithms",
+    "fft",
+    "flows"
+  ],
+  "statement": "Given a matrix, increment some cells by one so that no two adjacent cells share the same value, with each cell either unchanged or incremented by one.",
+  "tags": [
+    "matrix",
+    "greedy",
+    "constructive-algorithm",
+    "two-sat",
+    "chinese-remainder-theorem",
+    "fft",
+    "max-flow"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236836,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "greedy": 0.85
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1525-f",
+  "title": "Goblins And Gnomes",
+  "slug": "1525-f-goblins-and-gnomes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1525/F",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2800,
+  "rating": 2800,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "flows",
+    "graph matchings"
+  ],
+  "statement": "Given a directed acyclic graph representing halls and tunnels, determine how to block tunnels over multiple waves of goblin attacks to prevent full pillaging and maximize points earned from preparation time penalties.",
+  "tags": [
+    "graph",
+    "max-flow",
+    "dynamic-programming",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "max-flow",
+    "minimum-cut",
+    "binary-search",
+    "dp-on-dag"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236975,
+    "pattern_confidence": {
+      "max-flow": 0.98,
+      "minimum-cut": 0.95,
+      "binary-search": 0.7,
+      "dp-on-dag": 0.6
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "codeforces-1936-e",
+  "title": "Yet Yet Another Permutation Problem",
+  "slug": "1936-e-yet-yet-another-permutation-problem",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1936/E",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3400,
+  "rating": 3400,
+  "source_tags": [
+    "divide and conquer",
+    "fft",
+    "math"
+  ],
+  "statement": "Given a permutation p of length n, count the number of permutations q of length n such that for every prefix i (1 ≤ i < n), the maximum element in q's prefix differs from the maximum element in p's prefix, modulo 998244353.",
+  "tags": [
+    "math",
+    "permutation",
+    "combinatorics",
+    "fft",
+    "divide-and-conquer"
+  ],
+  "patterns": [
+    "divide-and-conquer",
+    "fft",
+    "modular-arithmetic",
+    "prefix-max",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236905,
+    "pattern_confidence": {
+      "divide-and-conquer": 0.9,
+      "fft": 0.85,
+      "modular-arithmetic": 0.8,
+      "prefix-max": 0.7,
+      "counting": 0.75
+    }
+  }
+}

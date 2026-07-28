@@ -18,7 +18,8 @@
   "tags": [
     "array",
     "math",
-    "randomized"
+    "randomized",
+    "randomized-algorithm"
   ],
   "patterns": [
     "prefix-sum",

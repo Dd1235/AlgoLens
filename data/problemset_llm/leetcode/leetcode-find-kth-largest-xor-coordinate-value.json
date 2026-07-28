@@ -1,0 +1,44 @@
+{
+  "id": "leetcode-find-kth-largest-xor-coordinate-value",
+  "title": "Find Kth Largest XOR Coordinate Value",
+  "slug": "find-kth-largest-xor-coordinate-value",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/find-kth-largest-xor-coordinate-value/",
+  "source_topic": "LeetCode / Quickselect (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "divide-and-conquer",
+    "bit-manipulation",
+    "sorting",
+    "heap-priority-queue",
+    "matrix",
+    "prefix-sum",
+    "quickselect"
+  ],
+  "statement": "Given a 2D matrix of non-negative integers, compute the XOR prefix values for all coordinates and find the k-th largest among them.",
+  "tags": [
+    "array",
+    "matrix",
+    "prefix-xor",
+    "heap",
+    "prefix-sum"
+  ],
+  "patterns": [
+    "prefix-xor",
+    "sorting",
+    "heap",
+    "quickselect"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234941,
+    "pattern_confidence": {
+      "prefix-xor": 0.98,
+      "sorting": 0.85,
+      "heap": 0.8,
+      "quickselect": 0.75
+    }
+  }
+}

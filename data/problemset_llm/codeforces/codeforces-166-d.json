@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-166-d",
+  "title": "Shoe Store",
+  "slug": "166-d-shoe-store",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/166/D",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2500,
+  "rating": 2500,
+  "source_tags": [
+    "dp",
+    "graph matchings",
+    "greedy",
+    "sortings",
+    "two pointers"
+  ],
+  "statement": "Given pairs of shoes with unique sizes and prices, and customers with budgets and foot sizes, assign shoes to customers to maximize total sales revenue, respecting size and budget constraints.",
+  "tags": [
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "graph",
+    "matching",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting",
+    "two-pointers",
+    "maximum-weight-bipartite-matching"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236979,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.9,
+      "two-pointers": 0.85,
+      "maximum-weight-bipartite-matching": 0.7
+    }
+  }
+}

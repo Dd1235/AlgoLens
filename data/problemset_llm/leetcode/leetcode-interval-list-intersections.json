@@ -1,0 +1,33 @@
+{
+  "id": "leetcode-interval-list-intersections",
+  "title": "Interval List Intersections",
+  "slug": "interval-list-intersections",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/interval-list-intersections/",
+  "source_topic": "LeetCode / Sweep Line (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "two-pointers",
+    "sweep-line"
+  ],
+  "statement": "Given two sorted lists of disjoint closed intervals, find their intersection intervals.",
+  "tags": [
+    "array",
+    "two-pointers",
+    "intervals"
+  ],
+  "patterns": [
+    "two-pointers",
+    "line-sweep"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234628,
+    "pattern_confidence": {
+      "two-pointers": 0.95,
+      "line-sweep": 0.9
+    }
+  }
+}

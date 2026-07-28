@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-852-h",
+  "title": "Bob and stages",
+  "slug": "852-h-bob-and-stages",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/852/H",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "dp",
+    "geometry"
+  ],
+  "statement": "Given N stages and K available singers, select exactly K stages forming a convex polygon that contains no other stages inside, maximizing the polygon's area. Return 0 if no such polygon exists.",
+  "tags": [
+    "geometry",
+    "convex-hull",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "convex-hull",
+    "convex-polygon-selection",
+    "dp-on-subsets"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236960,
+    "pattern_confidence": {
+      "convex-hull": 0.95,
+      "convex-polygon-selection": 0.9,
+      "dp-on-subsets": 0.85
+    }
+  }
+}

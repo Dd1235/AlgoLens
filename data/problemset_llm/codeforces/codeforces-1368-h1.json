@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1368-h1",
+  "title": "Breadboard Capacity (easy version)",
+  "slug": "1368-h1-breadboard-capacity-easy-version",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1368/H1",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "dp",
+    "flows",
+    "greedy"
+  ],
+  "statement": "Given a grid-like breadboard with colored ports on each side, find the maximum number of non-overlapping red-blue wire connections that can be routed inside the grid following specific wiring rules.",
+  "tags": [
+    "graph",
+    "max-flow",
+    "grid"
+  ],
+  "patterns": [
+    "max-flow",
+    "bipartite-matching",
+    "grid-graph",
+    "flow-network"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236912,
+    "pattern_confidence": {
+      "max-flow": 0.98,
+      "bipartite-matching": 0.95,
+      "grid-graph": 0.9,
+      "flow-network": 0.9
+    }
+  }
+}

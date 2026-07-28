@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-576-d",
+  "title": "Flights for Regular Customers",
+  "slug": "576-d-flights-for-regular-customers",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/576/D",
+  "source_topic": "Codeforces / Matrices",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dp",
+    "matrices"
+  ],
+  "statement": "Given a set of directed flights between cities with usage constraints based on the number of flights already taken, find the minimum number of flights needed to travel from city 1 to city n starting with zero flights taken.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "dynamic-programming",
+    "matrix-exponentiation"
+  ],
+  "patterns": [
+    "dp-on-dag",
+    "shortest-path",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237033,
+    "pattern_confidence": {
+      "dp-on-dag": 0.85,
+      "shortest-path": 0.9,
+      "state-compression": 0.6
+    }
+  }
+}

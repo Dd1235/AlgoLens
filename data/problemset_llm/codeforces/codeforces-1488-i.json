@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1488-i",
+  "title": "Demonic Invasion",
+  "slug": "1488-i-demonic-invasion",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1488/I",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 3100,
+  "rating": 3100,
+  "source_tags": [
+    "*special",
+    "flows"
+  ],
+  "statement": "Given a connected undirected graph with magic stones on edges and mages starting at node 1, demons spread daily capturing islands reachable from captured ones. Mages can move along edges to collect stones or use two stones to teleport to safety before demons arrive. Stones decay after two days. Determine the maximum number of mages that can escape safely.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "greedy",
+    "simulation",
+    "max-flow"
+  ],
+  "patterns": [
+    "bfs",
+    "greedy",
+    "simulation",
+    "shortest-path"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236919,
+    "pattern_confidence": {
+      "bfs": 0.95,
+      "greedy": 0.9,
+      "simulation": 0.85,
+      "shortest-path": 0.9
+    }
+  }
+}

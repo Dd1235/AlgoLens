@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-607-e",
+  "title": "Cross Sum",
+  "slug": "607-e-cross-sum",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/607/E",
+  "source_topic": "Codeforces / Geometry",
+  "difficulty": 3300,
+  "rating": 3300,
+  "source_tags": [
+    "binary search",
+    "geometry"
+  ],
+  "statement": "Given n distinct lines on a plane, find the sum of the m smallest Euclidean distances from a query point to all intersection points of these lines, counting duplicates separately.",
+  "tags": [
+    "geometry",
+    "binary-search",
+    "sorting"
+  ],
+  "patterns": [
+    "binary-search",
+    "sorting",
+    "distance-computation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236956,
+    "pattern_confidence": {
+      "binary-search": 0.9,
+      "sorting": 0.85,
+      "distance-computation": 0.8
+    }
+  }
+}

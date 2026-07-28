@@ -17,7 +17,8 @@
   "tags": [
     "math",
     "geometry",
-    "randomized"
+    "randomized",
+    "randomized-algorithm"
   ],
   "patterns": [
     "rejection-sampling",

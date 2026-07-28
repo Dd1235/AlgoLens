@@ -19,7 +19,8 @@
     "array",
     "graph",
     "dfs",
-    "bfs"
+    "bfs",
+    "strongly-connected-components"
   ],
   "patterns": [
     "connected-components",

@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1743-g",
+  "title": "Antifibonacci Cut",
+  "slug": "1743-g-antifibonacci-cut",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1743/G",
+  "source_topic": "Codeforces / Hashing",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "bitmasks",
+    "combinatorics",
+    "constructive algorithms",
+    "data structures",
+    "dp",
+    "hashing",
+    "math"
+  ],
+  "statement": "Given a sequence of binary strings, compute for each prefix concatenation the number of ways to partition it into substrings none of which are Fibonacci strings defined by a specific concatenation rule, modulo 998244353.",
+  "tags": [
+    "string",
+    "dynamic-programming",
+    "rolling-hash",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "string-partition",
+    "rolling-hash",
+    "modular-arithmetic"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237008,
+    "pattern_confidence": {
+      "dynamic-programming": 0.95,
+      "string-partition": 0.9,
+      "rolling-hash": 0.85,
+      "modular-arithmetic": 0.8
+    }
+  }
+}

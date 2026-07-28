@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1654-h",
+  "title": "Three Minimums",
+  "slug": "1654-h-three-minimums",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1654/H",
+  "source_topic": "Codeforces / Fft",
+  "difficulty": 3500,
+  "rating": 3500,
+  "source_tags": [
+    "combinatorics",
+    "constructive algorithms",
+    "divide and conquer",
+    "dp",
+    "fft",
+    "math"
+  ],
+  "statement": "Count permutations of distinct integers satisfying given inequality constraints and a special condition on the three smallest values in every subinterval.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "divide-and-conquer",
+    "constructive-algorithm",
+    "fft"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "divide-and-conquer",
+    "constructive-algorithm"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236899,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "divide-and-conquer": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

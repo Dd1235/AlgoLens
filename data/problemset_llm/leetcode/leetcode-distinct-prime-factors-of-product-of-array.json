@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-distinct-prime-factors-of-product-of-array",
+  "title": "Distinct Prime Factors of Product of Array",
+  "slug": "distinct-prime-factors-of-product-of-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "number-theory"
+  ],
+  "statement": "Given an array of positive integers, determine the number of distinct prime factors in the product of all elements.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory",
+    "hash-map"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "hash-map"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234645,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "hash-map": 0.85
+    }
+  }
+}

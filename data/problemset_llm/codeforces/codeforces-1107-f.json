@@ -1,0 +1,43 @@
+{
+  "id": "codeforces-1107-f",
+  "title": "Vasya and Endless Credits",
+  "slug": "1107-f-vasya-and-endless-credits",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1107/F",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "dp",
+    "flows",
+    "graph matchings",
+    "graphs",
+    "sortings"
+  ],
+  "statement": "Given multiple credit offers each providing an upfront amount and requiring monthly payments for a fixed duration, determine the maximum amount of money Vasya can accumulate at any point by choosing the order and timing of taking these offers, with the constraint of taking at most one offer per month.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "sorting",
+    "graph",
+    "max-flow",
+    "bipartite-matching"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "sorting",
+    "max-flow",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236969,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "sorting": 0.85,
+      "max-flow": 0.7,
+      "greedy": 0.75
+    }
+  }
+}

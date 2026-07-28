@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-457-e",
+  "title": "Flow Optimality",
+  "slug": "457-e-flow-optimality",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/457/E",
+  "source_topic": "Codeforces / Flows",
+  "difficulty": 3000,
+  "rating": 3000,
+  "source_tags": [
+    "constructive algorithms",
+    "flows",
+    "math"
+  ],
+  "statement": "Given a connected network resilient to any single node failure, determine if a partially known bandwidth assignment for sending data from node 1 to node n can be optimal under a quadratic cost model, and if so, compute its efficiency defined as total cost divided by total bandwidth.",
+  "tags": [
+    "graph",
+    "max-flow",
+    "math",
+    "optimization"
+  ],
+  "patterns": [
+    "quadratic-cost-flow",
+    "convex-optimization",
+    "feasibility-check",
+    "max-flow"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236925,
+    "pattern_confidence": {
+      "quadratic-cost-flow": 0.95,
+      "convex-optimization": 0.9,
+      "feasibility-check": 0.85,
+      "max-flow": 0.7
+    }
+  }
+}

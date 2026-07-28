@@ -1,0 +1,36 @@
+{
+  "id": "leetcode-path-with-maximum-probability",
+  "title": "Path with Maximum Probability",
+  "slug": "path-with-maximum-probability",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/path-with-maximum-probability/",
+  "source_topic": "LeetCode / Shortest Path (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "graph",
+    "heap-priority-queue",
+    "shortest-path"
+  ],
+  "statement": "Given an undirected graph with edges weighted by success probabilities, find the path from a start node to an end node that maximizes the product of edge probabilities and return that maximum probability.",
+  "tags": [
+    "graph",
+    "shortest-path",
+    "heap"
+  ],
+  "patterns": [
+    "dijkstra",
+    "max-product-path",
+    "heap"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234938,
+    "pattern_confidence": {
+      "dijkstra": 0.98,
+      "max-product-path": 0.95,
+      "heap": 0.9
+    }
+  }
+}

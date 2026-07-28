@@ -1,0 +1,37 @@
+{
+  "id": "leetcode-maximum-ice-cream-bars",
+  "title": "Maximum Ice Cream Bars",
+  "slug": "maximum-ice-cream-bars",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/maximum-ice-cream-bars/",
+  "source_topic": "LeetCode / Counting Sort (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "counting-sort"
+  ],
+  "statement": "Given an array of ice cream bar costs and a total number of coins, determine the maximum number of bars that can be purchased without exceeding the coin budget. The bars can be bought in any order, and the solution should use counting sort for efficiency.",
+  "tags": [
+    "array",
+    "greedy",
+    "sorting",
+    "counting-sort"
+  ],
+  "patterns": [
+    "counting-sort",
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234944,
+    "pattern_confidence": {
+      "counting-sort": 0.95,
+      "greedy": 0.9,
+      "sorting": 0.85
+    }
+  }
+}

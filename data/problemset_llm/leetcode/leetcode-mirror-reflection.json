@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-mirror-reflection",
+  "title": "Mirror Reflection",
+  "slug": "mirror-reflection",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/mirror-reflection/",
+  "source_topic": "LeetCode / Number Theory (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "math",
+    "geometry",
+    "number-theory"
+  ],
+  "statement": "Given a square room with mirrors on all walls and receptors at three corners, determine which receptor a laser ray from the southwest corner will hit first based on the room size and initial laser distance.",
+  "tags": [
+    "math",
+    "geometry",
+    "number-theory"
+  ],
+  "patterns": [
+    "reflection-simulation",
+    "least-common-multiple",
+    "gcd"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234782,
+    "pattern_confidence": {
+      "reflection-simulation": 0.9,
+      "least-common-multiple": 0.85,
+      "gcd": 0.85
+    }
+  }
+}

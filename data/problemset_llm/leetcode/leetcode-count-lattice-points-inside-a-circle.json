@@ -1,0 +1,39 @@
+{
+  "id": "leetcode-count-lattice-points-inside-a-circle",
+  "title": "Count Lattice Points Inside a Circle",
+  "slug": "count-lattice-points-inside-a-circle",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/count-lattice-points-inside-a-circle/",
+  "source_topic": "LeetCode / Geometry (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "hash-table",
+    "math",
+    "geometry",
+    "enumeration"
+  ],
+  "statement": "Given multiple circles defined by integer centers and radii on a grid, count the number of integer-coordinate points (lattice points) that lie inside or on at least one circle.",
+  "tags": [
+    "geometry",
+    "math",
+    "brute-force",
+    "array",
+    "hash-map"
+  ],
+  "patterns": [
+    "brute-force",
+    "coordinate-enumeration",
+    "hash-set"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234859,
+    "pattern_confidence": {
+      "brute-force": 0.9,
+      "coordinate-enumeration": 0.85,
+      "hash-set": 0.8
+    }
+  }
+}

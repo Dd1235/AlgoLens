@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1119-e",
+  "title": "Pavel and Triangles",
+  "slug": "1119-e-pavel-and-triangles",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1119/E",
+  "source_topic": "Codeforces / Ternary Search",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "fft",
+    "greedy",
+    "ternary search"
+  ],
+  "statement": "Given counts of sticks with lengths as powers of two, determine the maximum number of triangles with positive area that can be formed using exactly three sticks each, without breaking sticks or reusing them.",
+  "tags": [
+    "greedy",
+    "math",
+    "combinatorics",
+    "fft",
+    "ternary-search"
+  ],
+  "patterns": [
+    "greedy",
+    "counting",
+    "power-of-two"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237094,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "counting": 0.85,
+      "power-of-two": 0.7
+    }
+  }
+}

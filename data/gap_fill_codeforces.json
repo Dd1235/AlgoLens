@@ -1,0 +1,1618 @@
+{
+ "source": "codeforces official tags that name a technique this corpus could not answer",
+ "note": "Targeted gap-filling. Every entry is here because a judge's OWN tag says it uses a technique our vocabulary has but almost no problem carries — so these are chosen by Codeforces, not guessed by us.",
+ "count": 179,
+ "problems": [
+  {
+   "id": "codeforces-1117-e",
+   "name": "Decypher the String",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1117,
+   "index": "E",
+   "rating": 2200
+  },
+  {
+   "id": "codeforces-687-b",
+   "name": "Remainders Game",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 687,
+   "index": "B",
+   "rating": 1800
+  },
+  {
+   "id": "codeforces-1770-c",
+   "name": "Koxia and Number Theory",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1770,
+   "index": "C",
+   "rating": 1700
+  },
+  {
+   "id": "codeforces-2174-e1",
+   "name": "Game of Scientists (Version 1)",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 2174,
+   "index": "E1",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1266-a",
+   "name": "Competitive Programmer",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1266,
+   "index": "A",
+   "rating": 1000
+  },
+  {
+   "id": "codeforces-906-d",
+   "name": "Power Tower",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 906,
+   "index": "D",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-1054-h",
+   "name": "Epic Convolution",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1054,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2097-c",
+   "name": "Bermuda Triangle",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 2097,
+   "index": "C",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-338-d",
+   "name": "GCD Table",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 338,
+   "index": "D",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-1993-f2",
+   "name": "Dyn-scripted Robot (Hard Version)",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1993,
+   "index": "F2",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-2077-g",
+   "name": "RGB Walking",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 2077,
+   "index": "G",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2174-e2",
+   "name": "Game of Scientists (Version 2)",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 2174,
+   "index": "E2",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-993-e",
+   "name": "Nikita and Order Statistics",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 993,
+   "index": "E",
+   "rating": 2300
+  },
+  {
+   "id": "codeforces-1536-f",
+   "name": "Omkar and Akmar",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1536,
+   "index": "F",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-1993-f1",
+   "name": "Dyn-scripted Robot (Easy Version)",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1993,
+   "index": "F1",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-919-e",
+   "name": "Congruence Equation",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 919,
+   "index": "E",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-896-d",
+   "name": "Nephren Runs a Cinema",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 896,
+   "index": "D",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-722-f",
+   "name": "Cyclic Cipher",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 722,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1665-d",
+   "name": "GCD Guess",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1665,
+   "index": "D",
+   "rating": 2000
+  },
+  {
+   "id": "codeforces-1748-d",
+   "name": "ConstructOR ",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1748,
+   "index": "D",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-2217-c",
+   "name": "Grid Covering",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 2217,
+   "index": "C",
+   "rating": 1300
+  },
+  {
+   "id": "codeforces-2034-a",
+   "name": "King Keykhosrow's Mystery",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 2034,
+   "index": "A",
+   "rating": 800
+  },
+  {
+   "id": "codeforces-1438-c",
+   "name": "Engineer Artem",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1438,
+   "index": "C",
+   "rating": 2000
+  },
+  {
+   "id": "codeforces-1500-b",
+   "name": "Two chandeliers",
+   "slot": null,
+   "gap_tag": "chinese remainder theorem",
+   "contestId": 1500,
+   "index": "B",
+   "rating": 2200
+  },
+  {
+   "id": "codeforces-1773-d",
+   "name": "Dominoes",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1773,
+   "index": "D",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-103-e",
+   "name": "Buying Sets",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 103,
+   "index": "E",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-167-d",
+   "name": "Wizards and Roads",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 167,
+   "index": "D",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1721-f",
+   "name": "Matching Reduction",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1721,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-793-g",
+   "name": "Oleg and chess",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 793,
+   "index": "G",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1948-g",
+   "name": "MST with Matching",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1948,
+   "index": "G",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1067-e",
+   "name": "Random Forest Rank",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1067,
+   "index": "E",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-2207-f",
+   "name": "Hanabi",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 2207,
+   "index": "F",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-166-d",
+   "name": "Shoe Store",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 166,
+   "index": "D",
+   "rating": 2500
+  },
+  {
+   "id": "codeforces-1284-f",
+   "name": "New Year and Social Network",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1284,
+   "index": "F",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1630-f",
+   "name": "Making It Bipartite",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1630,
+   "index": "F",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1404-e",
+   "name": "Bricks",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1404,
+   "index": "E",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-981-f",
+   "name": "Round Marriage",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 981,
+   "index": "F",
+   "rating": 2500
+  },
+  {
+   "id": "codeforces-1107-f",
+   "name": "Vasya and Endless Credits",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1107,
+   "index": "F",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-1525-f",
+   "name": "Goblins And Gnomes",
+   "slot": null,
+   "gap_tag": "graph matchings",
+   "contestId": 1525,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1488-i",
+   "name": "Demonic Invasion",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 1488,
+   "index": "I",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-457-e",
+   "name": "Flow Optimality",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 457,
+   "index": "E",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-2127-h",
+   "name": "23 Rises Again",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 2127,
+   "index": "H",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1427-g",
+   "name": "One Billion Shades of Grey",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 1427,
+   "index": "G",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-704-d",
+   "name": "Captain America",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 704,
+   "index": "D",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-2147-h",
+   "name": "Maxflow GCD Coloring",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 2147,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-434-d",
+   "name": "Nanami's Power Plant",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 434,
+   "index": "D",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-1023-g",
+   "name": "Pisces",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 1023,
+   "index": "G",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-126-e",
+   "name": "Pills",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 126,
+   "index": "E",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-611-h",
+   "name": "New Year  and Forgotten Tree",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 611,
+   "index": "H",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-2029-i",
+   "name": "Variance Challenge",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 2029,
+   "index": "I",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1666-k",
+   "name": "Kingdom Partition",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 1666,
+   "index": "K",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1852-f",
+   "name": "Panda Meetups",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 1852,
+   "index": "F",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2025-g",
+   "name": "Variable Damage",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 2025,
+   "index": "G",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1368-h1",
+   "name": "Breadboard Capacity (easy version)",
+   "slot": null,
+   "gap_tag": "flows",
+   "contestId": 1368,
+   "index": "H1",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-1621-i",
+   "name": "Two Sequences",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 1621,
+   "index": "I",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-700-e",
+   "name": "Cool Slogans",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 700,
+   "index": "E",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-932-g",
+   "name": "Palindrome Partition",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 932,
+   "index": "G",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-917-e",
+   "name": "Upside Down",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 917,
+   "index": "E",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1063-f",
+   "name": "String Journey",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 1063,
+   "index": "F",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-524-f",
+   "name": "And Yet Another Bracket Sequence",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 524,
+   "index": "F",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-1466-g",
+   "name": "Song of the Sirens",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 1466,
+   "index": "G",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-594-e",
+   "name": "Cutting the Line",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 594,
+   "index": "E",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-235-c",
+   "name": "Cyclical Quest",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 235,
+   "index": "C",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-356-e",
+   "name": "Xenia and String Problem",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 356,
+   "index": "E",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-2196-e1",
+   "name": "Fuzzy Concatenation (Easy Version)",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 2196,
+   "index": "E1",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-2144-f",
+   "name": "Bracket Groups",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 2144,
+   "index": "F",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-2181-l",
+   "name": "LLM Training",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 2181,
+   "index": "L",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1913-f",
+   "name": "Palindromic Problem",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 1913,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1393-e1",
+   "name": "Twilight and Ancient Scroll (easier version)",
+   "slot": null,
+   "gap_tag": "string suffix structures",
+   "contestId": 1393,
+   "index": "E1",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1385-g",
+   "name": "Columns Swaps",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1385,
+   "index": "G",
+   "rating": 2300
+  },
+  {
+   "id": "codeforces-1903-f",
+   "name": "Babysitting",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1903,
+   "index": "F",
+   "rating": 2500
+  },
+  {
+   "id": "codeforces-1239-d",
+   "name": "Catowice City",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1239,
+   "index": "D",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-1218-i",
+   "name": "The Light Square",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1218,
+   "index": "I",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-2181-k",
+   "name": "Knit the Grid",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 2181,
+   "index": "K",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2072-f",
+   "name": "Goodbye, Banker Life",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 2072,
+   "index": "F",
+   "rating": 1700
+  },
+  {
+   "id": "codeforces-1503-d",
+   "name": "Flip the Cards",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1503,
+   "index": "D",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-587-d",
+   "name": "Duff in Mafia",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 587,
+   "index": "D",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1475-f",
+   "name": "Unusual Matrix",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1475,
+   "index": "F",
+   "rating": 1900
+  },
+  {
+   "id": "codeforces-1403-a",
+   "name": "The Potion of Great Power",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1403,
+   "index": "A",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-568-c",
+   "name": "New Language",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 568,
+   "index": "C",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-1706-a",
+   "name": "Another String Minimization Problem",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1706,
+   "index": "A",
+   "rating": 800
+  },
+  {
+   "id": "codeforces-2061-c",
+   "name": "Kevin and Puzzle",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 2061,
+   "index": "C",
+   "rating": 1600
+  },
+  {
+   "id": "codeforces-2097-a",
+   "name": "Sports Betting",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 2097,
+   "index": "A",
+   "rating": 1400
+  },
+  {
+   "id": "codeforces-1844-e",
+   "name": "Great Grids",
+   "slot": null,
+   "gap_tag": "2-sat",
+   "contestId": 1844,
+   "index": "E",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-2155-f",
+   "name": "Juan's Colorful Tree",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 2155,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-468-e",
+   "name": "Permanent",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 468,
+   "index": "E",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1105-e",
+   "name": "Helping Hiasat ",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1105,
+   "index": "E",
+   "rating": 2200
+  },
+  {
+   "id": "codeforces-1257-f",
+   "name": "Make Them Similar",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1257,
+   "index": "F",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-1840-g1",
+   "name": "In Search of Truth (Easy Version)",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1840,
+   "index": "G1",
+   "rating": 2200
+  },
+  {
+   "id": "codeforces-1698-g",
+   "name": "Long Binary String",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1698,
+   "index": "G",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-457-a",
+   "name": "Golden System",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 457,
+   "index": "A",
+   "rating": 1700
+  },
+  {
+   "id": "codeforces-525-e",
+   "name": "Anya and Cubes",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 525,
+   "index": "E",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-1609-f",
+   "name": "Interesting Sections",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1609,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1569-e",
+   "name": "Playoff Restoration",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1569,
+   "index": "E",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-1006-f",
+   "name": "Xor-Paths",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1006,
+   "index": "F",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-534-f",
+   "name": "Simplified Nonogram",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 534,
+   "index": "F",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-1423-l",
+   "name": "Light switches",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1423,
+   "index": "L",
+   "rating": 2600
+  },
+  {
+   "id": "codeforces-1801-f",
+   "name": "Another n-dimensional chocolate bar",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1801,
+   "index": "F",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-1958-i",
+   "name": "Equal Trees",
+   "slot": null,
+   "gap_tag": "meet-in-the-middle",
+   "contestId": 1958,
+   "index": "I",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1119-e",
+   "name": "Pavel and Triangles",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1119,
+   "index": "E",
+   "rating": 1900
+  },
+  {
+   "id": "codeforces-250-d",
+   "name": "Building Bridge",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 250,
+   "index": "D",
+   "rating": 1900
+  },
+  {
+   "id": "codeforces-1156-c",
+   "name": "Match Points",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1156,
+   "index": "C",
+   "rating": 2000
+  },
+  {
+   "id": "codeforces-431-e",
+   "name": "Chemistry Experiment",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 431,
+   "index": "E",
+   "rating": 2200
+  },
+  {
+   "id": "codeforces-818-f",
+   "name": "Level Generation",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 818,
+   "index": "F",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-2149-f",
+   "name": "Nezuko in the Clearing",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 2149,
+   "index": "F",
+   "rating": 1900
+  },
+  {
+   "id": "codeforces-1374-e2",
+   "name": "Reading Books (hard version)",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1374,
+   "index": "E2",
+   "rating": 2500
+  },
+  {
+   "id": "codeforces-1455-e",
+   "name": "Four Points",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1455,
+   "index": "E",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-1928-d",
+   "name": "Lonely Mountain Dungeons",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1928,
+   "index": "D",
+   "rating": 1900
+  },
+  {
+   "id": "codeforces-1355-e",
+   "name": "Restorer Distance",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1355,
+   "index": "E",
+   "rating": 2100
+  },
+  {
+   "id": "codeforces-2120-e",
+   "name": "Lanes of Cars",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 2120,
+   "index": "E",
+   "rating": 2300
+  },
+  {
+   "id": "codeforces-1746-e1",
+   "name": "Joking (Easy Version)",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 1746,
+   "index": "E1",
+   "rating": 2500
+  },
+  {
+   "id": "codeforces-2063-d",
+   "name": "Game With Triangles",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 2063,
+   "index": "D",
+   "rating": 2000
+  },
+  {
+   "id": "codeforces-200-e",
+   "name": "Tractor College",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 200,
+   "index": "E",
+   "rating": 2400
+  },
+  {
+   "id": "codeforces-2028-d",
+   "name": "Alice's Adventures in Cards",
+   "slot": null,
+   "gap_tag": "ternary search",
+   "contestId": 2028,
+   "index": "D",
+   "rating": 2000
+  },
+  {
+   "id": "codeforces-1641-e",
+   "name": "Special Positions",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1641,
+   "index": "E",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-2194-f2",
+   "name": "Again Trees... (hard version)",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 2194,
+   "index": "F2",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1704-h2",
+   "name": "Game of AI (hard version)",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1704,
+   "index": "H2",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-1580-f",
+   "name": "Problems for Codeforces",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1580,
+   "index": "F",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-2048-i2",
+   "name": "Kevin and Puzzle (Hard Version)",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 2048,
+   "index": "I2",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-960-g",
+   "name": "Bandit Blues",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 960,
+   "index": "G",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-1654-h",
+   "name": "Three Minimums",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1654,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2096-h",
+   "name": "Wonderful XOR Problem",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 2096,
+   "index": "H",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1479-e",
+   "name": "School Clubs",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1479,
+   "index": "E",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-1936-e",
+   "name": "Yet Yet Another Permutation Problem",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1936,
+   "index": "E",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1349-f2",
+   "name": "Slime and Sequences (Hard Version)",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1349,
+   "index": "F2",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-923-e",
+   "name": "Perpetual Subtraction",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 923,
+   "index": "E",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1270-i",
+   "name": "Xor on Figures",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1270,
+   "index": "I",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-1553-i",
+   "name": "Stairs",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1553,
+   "index": "I",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1704-h1",
+   "name": "Game of AI (easy version)",
+   "slot": null,
+   "gap_tag": "fft",
+   "contestId": 1704,
+   "index": "H1",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1672-g",
+   "name": "Cross Xor",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 1672,
+   "index": "G",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1152-f2",
+   "name": "Neko Rules the Catniverse (Large Version)",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 1152,
+   "index": "F2",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1025-e",
+   "name": "Colored Cubes",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 1025,
+   "index": "E",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-736-d",
+   "name": "Permutations",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 736,
+   "index": "D",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1919-f2",
+   "name": "Wine Factory (Hard Version)",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 1919,
+   "index": "F2",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-576-d",
+   "name": "Flights for Regular Customers",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 576,
+   "index": "D",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-167-e",
+   "name": "Wizards and Bets",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 167,
+   "index": "E",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-2138-e2",
+   "name": "Determinant Construction (Hard Version)",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 2138,
+   "index": "E2",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1286-d",
+   "name": "LCC",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 1286,
+   "index": "D",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-865-g",
+   "name": "Flowers and Chocolate",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 865,
+   "index": "G",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-2004-g",
+   "name": "Substring Compression",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 2004,
+   "index": "G",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-446-e",
+   "name": "DZY Loves Bridges",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 446,
+   "index": "E",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-497-e",
+   "name": "Subsequences Return",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 497,
+   "index": "E",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-1864-h",
+   "name": "Asterism Stream",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 1864,
+   "index": "H",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-989-e",
+   "name": "A Trance of Nightfall",
+   "slot": null,
+   "gap_tag": "matrices",
+   "contestId": 989,
+   "index": "E",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-2138-f",
+   "name": "Ode to the Bridge Builder",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 2138,
+   "index": "F",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-1045-f",
+   "name": "Shady Lady",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1045,
+   "index": "F",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-372-e",
+   "name": "Drawing Circles is Fun",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 372,
+   "index": "E",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1949-a",
+   "name": "Grove",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1949,
+   "index": "A",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-528-e",
+   "name": "Triangles 3000",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 528,
+   "index": "E",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-1427-h",
+   "name": "Prison Break",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1427,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2122-f",
+   "name": "Colorful Polygon",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 2122,
+   "index": "F",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-1666-g",
+   "name": "Global Warming",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1666,
+   "index": "G",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-607-e",
+   "name": "Cross Sum",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 607,
+   "index": "E",
+   "rating": 3300
+  },
+  {
+   "id": "codeforces-1071-e",
+   "name": "Rain Protection",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1071,
+   "index": "E",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-853-e",
+   "name": "Lada Malina",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 853,
+   "index": "E",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-388-e",
+   "name": "Fox and Meteor Shower",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 388,
+   "index": "E",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-223-d",
+   "name": "Spider",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 223,
+   "index": "D",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-852-h",
+   "name": "Bob and stages",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 852,
+   "index": "H",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-73-f",
+   "name": "Plane of Tanks",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 73,
+   "index": "F",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-1584-g",
+   "name": "Eligible Segments",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1584,
+   "index": "G",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1368-g",
+   "name": "Shifting Dominoes",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1368,
+   "index": "G",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1726-h",
+   "name": "Mainak and the Bleeding Polygon",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1726,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-1070-m",
+   "name": "Algoland and Berland",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1070,
+   "index": "M",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1045-e",
+   "name": "Ancient civilizations",
+   "slot": null,
+   "gap_tag": "geometry",
+   "contestId": 1045,
+   "index": "E",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1313-e",
+   "name": "Concatenation with intersection",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1313,
+   "index": "E",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-1043-g",
+   "name": "Speckled Band",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1043,
+   "index": "G",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-1598-g",
+   "name": "The Sum of Good Numbers",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1598,
+   "index": "G",
+   "rating": 3200
+  },
+  {
+   "id": "codeforces-1743-g",
+   "name": "Antifibonacci Cut",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1743,
+   "index": "G",
+   "rating": 3000
+  },
+  {
+   "id": "codeforces-1081-h",
+   "name": "Palindromic Magic",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1081,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-690-f2",
+   "name": "Tree of Life (medium)",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 690,
+   "index": "F2",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-2059-e2",
+   "name": "Stop Gaming (Hard Version)",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 2059,
+   "index": "E2",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-1622-f",
+   "name": "Quadratic Set",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1622,
+   "index": "F",
+   "rating": 2900
+  },
+  {
+   "id": "codeforces-407-d",
+   "name": "Largest Submatrix 3",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 407,
+   "index": "D",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-1654-f",
+   "name": "Minimal String Xoration",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1654,
+   "index": "F",
+   "rating": 2800
+  },
+  {
+   "id": "codeforces-1207-g",
+   "name": "Indie Album",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1207,
+   "index": "G",
+   "rating": 2700
+  },
+  {
+   "id": "codeforces-1994-h",
+   "name": "Fortnite",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 1994,
+   "index": "H",
+   "rating": 3500
+  },
+  {
+   "id": "codeforces-2118-f",
+   "name": "Shifts and Swaps",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 2118,
+   "index": "F",
+   "rating": 3100
+  },
+  {
+   "id": "codeforces-2002-g",
+   "name": "Lattice Optimizing",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 2002,
+   "index": "G",
+   "rating": 3400
+  },
+  {
+   "id": "codeforces-613-e",
+   "name": "Puzzle Lover",
+   "slot": null,
+   "gap_tag": "hashing",
+   "contestId": 613,
+   "index": "E",
+   "rating": 3200
+  }
+ ]
+}

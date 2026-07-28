@@ -1,0 +1,38 @@
+{
+  "id": "leetcode-repeated-dna-sequences",
+  "title": "Repeated DNA Sequences",
+  "slug": "repeated-dna-sequences",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/repeated-dna-sequences/",
+  "source_topic": "LeetCode / Rolling Hash (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "hash-table",
+    "string",
+    "bit-manipulation",
+    "sliding-window",
+    "rolling-hash",
+    "hash-function"
+  ],
+  "statement": "Given a DNA string, find all 10-letter-long substrings that appear more than once.",
+  "tags": [
+    "string",
+    "hash-map",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "rolling-hash",
+    "sliding-window",
+    "bit-manipulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234626,
+    "pattern_confidence": {
+      "rolling-hash": 0.95,
+      "sliding-window": 0.9,
+      "bit-manipulation": 0.85
+    }
+  }
+}

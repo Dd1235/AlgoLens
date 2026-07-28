@@ -19,7 +19,8 @@
     "graph",
     "union-find",
     "minimum-spanning-tree",
-    "sorting"
+    "sorting",
+    "strongly-connected-components"
   ],
   "patterns": [
     "kruskal",

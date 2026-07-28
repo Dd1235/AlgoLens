@@ -1,0 +1,35 @@
+{
+  "id": "leetcode-shuffle-an-array",
+  "title": "Shuffle an Array",
+  "slug": "shuffle-an-array",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/shuffle-an-array/",
+  "source_topic": "LeetCode / Randomized (gap fill)",
+  "difficulty": "Medium",
+  "source_tags": [
+    "array",
+    "math",
+    "design",
+    "randomized"
+  ],
+  "statement": "Design a class to shuffle an array randomly such that all permutations are equally likely, with the ability to reset to the original array configuration.",
+  "tags": [
+    "array",
+    "randomized",
+    "design",
+    "randomized-algorithm"
+  ],
+  "patterns": [
+    "fisher-yates-shuffle",
+    "randomization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785234637,
+    "pattern_confidence": {
+      "fisher-yates-shuffle": 0.95,
+      "randomization": 0.9
+    }
+  }
+}

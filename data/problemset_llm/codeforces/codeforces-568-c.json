@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-568-c",
+  "title": "New Language",
+  "slug": "568-c-new-language",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/568/C",
+  "source_topic": "Codeforces / 2 Sat",
+  "difficulty": 2600,
+  "rating": 2600,
+  "source_tags": [
+    "2-sat",
+    "greedy"
+  ],
+  "statement": "Given a string and rules defining dependencies between letter types at certain positions, find the lexicographically minimal word not smaller than the given string that satisfies all positional type constraints.",
+  "tags": [
+    "string",
+    "two-sat",
+    "greedy"
+  ],
+  "patterns": [
+    "two-sat",
+    "greedy",
+    "lexicographic-order"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236823,
+    "pattern_confidence": {
+      "two-sat": 0.98,
+      "greedy": 0.85,
+      "lexicographic-order": 0.8
+    }
+  }
+}

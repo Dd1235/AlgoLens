@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-896-d",
+  "title": "Nephren Runs a Cinema",
+  "slug": "896-d-nephren-runs-a-cinema",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/896/D",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "chinese remainder theorem",
+    "combinatorics",
+    "math",
+    "number theory"
+  ],
+  "statement": "Count the number of valid customer queues with three customer types under change-giving constraints, ensuring the final count of 50-yuan notes lies within a given range, modulo p.",
+  "tags": [
+    "math",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "modular-arithmetic",
+    "chinese-remainder-theorem"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236878,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "modular-arithmetic": 0.85,
+      "chinese-remainder-theorem": 0.8
+    }
+  }
+}

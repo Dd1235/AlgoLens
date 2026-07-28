@@ -1,0 +1,40 @@
+{
+  "id": "codeforces-1801-f",
+  "title": "Another n-dimensional chocolate bar",
+  "slug": "1801-f-another-n-dimensional-chocolate-bar",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1801/F",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2700,
+  "rating": 2700,
+  "source_tags": [
+    "dp",
+    "math",
+    "meet-in-the-middle",
+    "number theory"
+  ],
+  "statement": "Given an n-dimensional chocolate bar with dimensions a_i, determine how to cut it into at least k pieces by choosing the number of cuts along each dimension to maximize the volume of the smallest piece multiplied by k.",
+  "tags": [
+    "math",
+    "dynamic-programming",
+    "meet-in-the-middle",
+    "number-theory"
+  ],
+  "patterns": [
+    "meet-in-the-middle",
+    "binary-search",
+    "dynamic-programming",
+    "integer-partition"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237055,
+    "pattern_confidence": {
+      "meet-in-the-middle": 0.9,
+      "binary-search": 0.7,
+      "dynamic-programming": 0.8,
+      "integer-partition": 0.6
+    }
+  }
+}

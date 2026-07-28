@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-919-e",
+  "title": "Congruence Equation",
+  "slug": "919-e-congruence-equation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/919/E",
+  "source_topic": "Codeforces / Chinese Remainder Theorem",
+  "difficulty": 2100,
+  "rating": 2100,
+  "source_tags": [
+    "chinese remainder theorem",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given integers a, b, p, and x, count how many positive integers n (1 ≤ n ≤ x) satisfy the congruence n * a^n ≡ b (mod p).",
+  "tags": [
+    "math",
+    "number-theory",
+    "modular-arithmetic",
+    "chinese-remainder-theorem"
+  ],
+  "patterns": [
+    "modular-exponentiation",
+    "congruence-equation",
+    "counting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236881,
+    "pattern_confidence": {
+      "modular-exponentiation": 0.95,
+      "congruence-equation": 0.9,
+      "counting": 0.85
+    }
+  }
+}

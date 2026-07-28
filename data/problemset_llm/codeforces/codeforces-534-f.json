@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-534-f",
+  "title": "Simplified Nonogram",
+  "slug": "534-f-simplified-nonogram",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/534/F",
+  "source_topic": "Codeforces / Meet In The Middle",
+  "difficulty": 2400,
+  "rating": 2400,
+  "source_tags": [
+    "bitmasks",
+    "dp",
+    "hashing",
+    "meet-in-the-middle"
+  ],
+  "statement": "Construct a binary grid of size up to 5×20 where each row and column matches a given count of contiguous black segments.",
+  "tags": [
+    "bit-manipulation",
+    "dynamic-programming",
+    "meet-in-the-middle",
+    "combinatorics",
+    "rolling-hash"
+  ],
+  "patterns": [
+    "bitmask-dp",
+    "meet-in-the-middle",
+    "state-compression"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785237067,
+    "pattern_confidence": {
+      "bitmask-dp": 0.95,
+      "meet-in-the-middle": 0.9,
+      "state-compression": 0.85
+    }
+  }
+}

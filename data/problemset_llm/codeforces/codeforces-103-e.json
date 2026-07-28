@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-103-e",
+  "title": "Buying Sets",
+  "slug": "103-e-buying-sets",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/103/E",
+  "source_topic": "Codeforces / Graph Matchings",
+  "difficulty": 2900,
+  "rating": 2900,
+  "source_tags": [
+    "flows",
+    "graph matchings"
+  ],
+  "statement": "Given n sets with costs and a property that the union of any k sets contains at least k distinct elements, find a collection of sets whose size equals the size of their union and whose total cost is minimized.",
+  "tags": [
+    "graph",
+    "max-flow",
+    "bipartite-matching",
+    "combinatorics"
+  ],
+  "patterns": [
+    "minimum-cost-flow",
+    "bipartite-matching",
+    "greedy"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785236964,
+    "pattern_confidence": {
+      "minimum-cost-flow": 0.95,
+      "bipartite-matching": 0.9,
+      "greedy": 0.7
+    }
+  }
+}
