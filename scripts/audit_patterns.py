@@ -64,21 +64,86 @@ AUDIT_SYSTEM = (
 # never line-sweep. So --technique swaps in a single yes/no question about one
 # label. That is the only way to close a gap like sweep-line, where the term
 # appears in 0 of 2,575 statements and the label is the sole carrier.
+# The yes-criterion has to describe the technique being ASKED about. This was a
+# single hardcoded sweep-line sentence, which meant `--technique sparse-table`
+# asked the model whether the problem "sorts events or endpoints" — so every
+# gap other than sweep-line was unclosable with this tool. Criteria are per
+# technique now; anything not listed falls back to a generic phrasing.
+#
+# The line-sweep wording is unchanged and should stay that way: it was tuned
+# against a hand-labeled probe (6/8, all 3 true sweeps caught, 2 false
+# positives) and a stricter earlier version scored 0 false positives but missed
+# a genuine sweep. Since every candidate lands in a queue a human reads, a false
+# positive costs one deletion and a false negative is invisible forever.
+# Measure changes against that probe before shipping them.
+CRITERIA = {
+    "line-sweep":
+        "a strong solution actually sorts events or endpoints and processes them in order "
+        "while maintaining running state. A greedy that merely sorts is not.",
+    "sqrt-decomposition":
+        "a strong solution splits the data into roughly sqrt(n) blocks and answers each query "
+        "by combining whole blocks plus a partial remainder. Offline query reordering is "
+        "Mo's algorithm, not this; a segment tree or Fenwick solution is not this.",
+    "sparse-table":
+        "a strong solution precomputes power-of-two ranges over a STATIC array to answer "
+        "idempotent range queries (min, max, gcd) in constant time. If the array is updated "
+        "between queries, the answer is no.",
+    "bridges":
+        "a strong solution must find edges whose removal disconnects the graph, typically via "
+        "DFS low-link times. Merely being a connectivity problem is not enough.",
+    "prim":
+        "a strong solution builds a minimum spanning tree by repeatedly attaching the cheapest "
+        "edge leaving the built set. Kruskal via sorting and DSU is a different label.",
+    "rabin-karp":
+        "a strong solution uses a rolling polynomial hash to locate or compare substrings. "
+        "KMP or Z-function solutions are different labels.",
+    "chinese-remainder-theorem":
+        "a strong solution combines congruences with different moduli into one. Plain modular "
+        "arithmetic is not enough.",
+    "li-chao-tree":
+        "a strong solution maintains a set of lines or segments and queries the min/max at a "
+        "point, using a Li Chao tree specifically rather than a monotonic convex hull trick.",
+    "rotating-calipers":
+        "a strong solution walks antipodal pairs around a convex hull, for example to find the "
+        "diameter or widest gap.",
+    "profile-dp":
+        "a strong solution does dp over a broken profile or column mask, cell by cell, typically "
+        "for tiling or grid packing.",
+    "branch-and-bound":
+        "a strong solution searches exhaustively but prunes whole subtrees using a bound on the "
+        "best achievable answer. Plain backtracking without a bound is not this.",
+    "rectangle-union-area":
+        "a strong solution computes the area or perimeter of a union of axis-aligned rectangles.",
+    "tin-tout-ancestor-check":
+        "a strong solution uses DFS entry and exit times to answer 'is u an ancestor of v' in "
+        "constant time.",
+    "persistent-segment-tree":
+        "a strong solution keeps earlier VERSIONS of a segment tree queryable, for example to "
+        "answer k-th order statistics on a range.",
+    "convex-hull-trick":
+        "a strong solution speeds up a dp recurrence by maintaining a lower or upper hull of "
+        "lines and querying the optimum at a point.",
+    "sos-dp":
+        "a strong solution aggregates over all subsets or supersets of each mask, dimension by "
+        "dimension (sum over subsets / zeta transform).",
+    "mo-algorithm":
+        "a strong solution answers range queries OFFLINE by sorting them into blocks and moving "
+        "two pointers between consecutive queries.",
+}
+
+GENERIC_CRITERION = (
+    "a strong solution genuinely relies on this technique as the central idea, not merely that "
+    "the statement mentions related words."
+)
+
+
 def technique_system(technique: str) -> str:
-    # Tuned for recall, not precision, and that is deliberate. An earlier
-    # wording added "not merely that the problem mentions intervals, segments,
-    # or events" and scored 0 false positives — but it also answered no for
-    # Iron Man (CF 704E), a genuine sweep, and found 1 candidate in 219. This
-    # wording scored 6/8 on a hand-labeled probe: all 3 true sweeps caught, 2
-    # false positives. Since every candidate lands in a queue a human reads,
-    # a false positive costs one deletion and a false negative is invisible
-    # forever. Measure changes here against that probe before shipping them.
+    criterion = CRITERIA.get(technique, GENERIC_CRITERION)
     return (
         f"You decide ONE question: is '{technique}' genuinely central to the "
         "intended solution of this competitive programming problem? "
-        "Answer yes only if a strong solution actually sorts events or "
-        "endpoints and processes them in order while maintaining running "
-        "state. A greedy that merely sorts is not. Prefer NO when uncertain. "
+        f"Answer yes only if {criterion} "
+        "Prefer NO when uncertain. "
         'Return JSON only: {"applies": true|false, "confidence": 0.0-1.0, '
         '"reasoning": "one line"}'
     )
