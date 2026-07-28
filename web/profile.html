@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>cosine · profile</title>
-    <meta name="description" content="Your LeetCode, Codeforces, CodeChef and GitHub activity in one combined heatmap." />
+    <meta
+      name="description"
+      content="Your LeetCode, Codeforces, CodeChef and GitHub activity in one combined heatmap."
+    />
     <script src="/theme.js"></script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="/styles.css" />
@@ -13,7 +16,25 @@
     <main>
       <header class="page-header">
         <h1>
-          <a href="/" class="home-link"><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><polyline points="24,24 50,50 24,76" fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"></polyline><rect x="60" y="32" width="17" height="36" fill="var(--accent)"></rect></svg> cosine</a>
+          <a href="/" class="home-link"
+            ><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+              <polyline
+                points="24,24 50,50 24,76"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="13"
+                stroke-linejoin="miter"
+              ></polyline>
+              <rect
+                x="60"
+                y="32"
+                width="17"
+                height="36"
+                fill="var(--accent)"
+              ></rect>
+            </svg>
+            cosine</a
+          >
           <span class="signature" title="dedeepya avancha">[da]</span>
         </h1>
         <nav class="header-actions" aria-label="Page actions">
@@ -32,23 +53,48 @@
       <form id="handles-form" class="handles-form" autocomplete="off">
         <label class="handle-field">
           <span>leetcode</span>
-          <input id="handle-leetcode" type="text" spellcheck="false" placeholder="username" />
+          <input
+            id="handle-leetcode"
+            type="text"
+            spellcheck="false"
+            placeholder="username"
+          />
         </label>
         <label class="handle-field">
           <span>codeforces</span>
-          <input id="handle-codeforces" type="text" spellcheck="false" placeholder="handle" />
+          <input
+            id="handle-codeforces"
+            type="text"
+            spellcheck="false"
+            placeholder="handle"
+          />
         </label>
         <label class="handle-field">
           <span>codechef</span>
-          <input id="handle-codechef" type="text" spellcheck="false" placeholder="username" />
+          <input
+            id="handle-codechef"
+            type="text"
+            spellcheck="false"
+            placeholder="username"
+          />
         </label>
         <label class="handle-field">
           <span>github</span>
-          <input id="handle-github" type="text" spellcheck="false" placeholder="username" />
+          <input
+            id="handle-github"
+            type="text"
+            spellcheck="false"
+            placeholder="username"
+          />
         </label>
         <label class="handle-field">
           <span>atcoder</span>
-          <input id="handle-atcoder" type="text" spellcheck="false" placeholder="username" />
+          <input
+            id="handle-atcoder"
+            type="text"
+            spellcheck="false"
+            placeholder="username"
+          />
         </label>
         <button type="submit">save handles</button>
         <span id="handles-msg" class="handles-msg"></span>
@@ -71,24 +117,8 @@
             breach at the database host — is unreadable on its own.
           </li>
           <li>
-            <strong>The judges see it, unavoidably.</strong> To show your solved
-            counts and heatmap, the server asks LeetCode, Codeforces, CodeChef,
-            GitHub or AtCoder about that username. Those requests go to them
-            directly. Nothing can change that and it would be dishonest to imply
-            otherwise.
-          </li>
-          <li>
             <strong>Deleting is immediate.</strong> Clear a field and save: the
             handle row and its cached stats are deleted, not flagged.
-          </li>
-          <li>
-            <strong>What I can't promise.</strong> I run the server, and any
-            operator can in principle read what their own server processes — so
-            "even the admin can't see it" would be a lie, and you should
-            distrust any site that claims it. What's true is that it isn't
-            stored readably, it's one click from deletion, and
-            <a href="https://github.com/Dd1235/Cosine" target="_blank" rel="noopener">the code is public</a>
-            if you'd rather check than take my word.
           </li>
         </ul>
       </details>
@@ -96,10 +126,45 @@
       <div id="platform-cards" class="platform-cards"></div>
 
       <section id="heatmap-section" class="heatmap-section hidden">
-        <div id="heatmap-tabs" class="heatmap-tabs" role="tablist" aria-label="Activity view; use left and right arrow keys to switch">
-          <button type="button" class="lib-chip is-active" role="tab" aria-selected="true" tabindex="0" data-tab="overall" title="everything: dsa + dev">overall</button>
-          <button type="button" class="lib-chip" role="tab" aria-selected="false" tabindex="-1" data-tab="dsa" title="leetcode + codeforces + cosine done marks">dsa</button>
-          <button type="button" class="lib-chip" role="tab" aria-selected="false" tabindex="-1" data-tab="dev" title="github contributions">dev</button>
+        <div
+          id="heatmap-tabs"
+          class="heatmap-tabs"
+          role="tablist"
+          aria-label="Activity view; use left and right arrow keys to switch"
+        >
+          <button
+            type="button"
+            class="lib-chip is-active"
+            role="tab"
+            aria-selected="true"
+            tabindex="0"
+            data-tab="overall"
+            title="everything: dsa + dev"
+          >
+            overall
+          </button>
+          <button
+            type="button"
+            class="lib-chip"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            data-tab="dsa"
+            title="leetcode + codeforces + cosine done marks"
+          >
+            dsa
+          </button>
+          <button
+            type="button"
+            class="lib-chip"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            data-tab="dev"
+            title="github contributions"
+          >
+            dev
+          </button>
         </div>
         <p id="heatmap-total" class="heatmap-total"></p>
         <!-- One scroller around both. The months grid had no overflow-x of its
@@ -111,11 +176,18 @@
         </div>
         <p class="heatmap-foot">
           <a href="#" id="refresh-link">refresh stats</a>
-          <span class="heatmap-legend">less <span class="hm hm-l0"></span><span class="hm hm-l1"></span><span class="hm hm-l2"></span><span class="hm hm-l3"></span><span class="hm hm-l4"></span> more</span>
+          <span class="heatmap-legend"
+            >less <span class="hm hm-l0"></span><span class="hm hm-l1"></span
+            ><span class="hm hm-l2"></span><span class="hm hm-l3"></span
+            ><span class="hm hm-l4"></span> more</span
+          >
         </p>
       </section>
     </main>
-    <footer>cosine · platform stats cached ~12h · codechef is best-effort · <a href="/stats.html">stats</a> · <a href="/debug.html">debug</a></footer>
+    <footer>
+      cosine · platform stats cached ~12h · codechef is best-effort ·
+      <a href="/stats.html">stats</a> · <a href="/debug.html">debug</a>
+    </footer>
     <script src="/profile.js"></script>
   </body>
 </html>
