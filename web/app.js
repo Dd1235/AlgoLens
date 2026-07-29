@@ -155,9 +155,32 @@ const RANKER_LABELS = {
   tfidf: "keyword · tfidf",
   "bm25-grpc": "keyword · go",
 };
+// On a phone the algorithm name is what breaks the layout: at the 16px the
+// iOS zoom fix mandates, plus the caret padding, "meaning · dense" pushes the
+// submit button onto a third row. The mode is the part that matters to the
+// person choosing; the algorithm is still in :help and the status line.
+const RANKER_LABELS_SHORT = {
+  bm25: "keyword",
+  dense: "meaning",
+  hybrid: "both",
+  tfidf: "keyword",
+  "bm25-grpc": "keyword",
+};
+const NARROW = typeof matchMedia === "function" ? matchMedia("(max-width: 720px)") : null;
+const rankerLabel = (name) =>
+  (NARROW && NARROW.matches ? RANKER_LABELS_SHORT[name] : RANKER_LABELS[name]) || name;
+
 // hybrid is no longer registered server-side; the label stays in RANKER_LABELS
 // so an old ?ranker=hybrid link still renders a sensible status line.
 const PICKER_RANKERS = ["bm25", "dense"];
+
+if (NARROW) {
+  const relabel = () => {
+    for (const opt of rankerSelect.options) opt.textContent = rankerLabel(opt.value);
+  };
+  if (NARROW.addEventListener) NARROW.addEventListener("change", relabel);
+  else if (NARROW.addListener) NARROW.addListener(relabel); // older WebKit
+}
 
 async function populateRankerSelect() {
   let data;
@@ -171,7 +194,7 @@ async function populateRankerSelect() {
   for (const name of (data.available || []).filter((r) => PICKER_RANKERS.includes(r))) {
     const opt = document.createElement("option");
     opt.value = name;
-    opt.textContent = RANKER_LABELS[name] || name;
+    opt.textContent = rankerLabel(name);
     rankerSelect.appendChild(opt);
   }
   difficultyPayload = data.difficulty || { named: [], rated: [], acceptance: null };
@@ -860,6 +883,24 @@ async function runSearch(rawQuery, { append = false } = {}) {
   if (!append) offerFeedback(data);
 }
 
+// "+extra words" when the expansion only added, "-> rewritten" when a phrase
+// alias replaced what was typed. Showing the rewrite matters: the results for
+// "square root decomposition" are really the results for "sqrt decomposition",
+// and the user should be able to see that.
+function describeExpansion(q, expandedQuery) {
+  if (!expandedQuery || expandedQuery === q) return "";
+  const lower = String(q).toLowerCase();
+  if (expandedQuery.startsWith(lower)) {
+    const extra = expandedQuery.slice(lower.length).trim();
+    return extra ? ` · +${extra}` : "";
+  }
+  if (expandedQuery.startsWith(q)) {
+    const extra = expandedQuery.slice(q.length).trim();
+    return extra ? ` · +${extra}` : "";
+  }
+  return ` · → ${expandedQuery}`;
+}
+
 function renderSingle(data, q, append) {
   if (!data.hits || data.hits.length === 0) {
     if (!append) {
@@ -884,21 +925,30 @@ function renderSingle(data, q, append) {
   const lat = typeof data.latencyMs === "number" ? ` · ranked in ${data.latencyMs.toFixed(3)}ms` : "";
   // Alias expansion is server-side; show what was added so the vocabulary is
   // learnable ("aliens trick" → +wqs binary search).
-  const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
+  // Expansion used to only ever append, so slicing the original off the front
+  // was enough. A phrase alias now REPLACES its span ("square root
+  // decomposition" -> "sqrt decomposition"), which is shorter than the input
+  // and shares no prefix with it — that slice produced a bare " · +".
+  const expanded = describeExpansion(q, data.expandedQuery);
+  // Say when a word was corrected. Silently searching for something the user
+  // didn't type is the kind of helpfulness that reads as a bug.
+  const fixed = (data.corrected || []).length
+    ? ` · read ${data.corrected.map((c) => `${c.from} as ${c.to}`).join(", ")}`
+    : "";
   const shown = currentOffset + data.hits.length;
   const total = currentTotal;
   const modeName = { bm25: "keyword", dense: "meaning", hybrid: "both" }[data.ranker] || data.ranker;
   // Dropped from this line: the query (it's in the box two rows up) and the
-  // raw ranker id in parens (the picker already says "keyword · bm25"). What's
-  // left is what nothing else on the page tells you.
+  // raw ranker id in parens. On a phone the picker shortens to just "keyword",
+  // so this is the only place the mode is spelled out — keep it.
   if (data.sortWindow) {
     // Deliberately not "1-20 of 142": this is the top N by relevance, then
     // reordered. Saying "of 142" would imply a page 2 that cannot exist.
     setStatus(
-      `top ${data.sortWindow} of ${total} by ${modeName}, ${sortDir === "desc" ? "hardest" : "easiest"} first${lat}${expanded}`
+      `top ${data.sortWindow} of ${total} by ${modeName}, ${sortDir === "desc" ? "hardest" : "easiest"} first${lat}${expanded}${fixed}`
     );
   } else {
-    setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}`);
+    setStatus(`showing 1–${shown} of ${total} · ${modeName}${lat}${expanded}${fixed}`);
   }
   renderHitsList(resultsEl, data.hits, { append, startIndex: currentOffset });
 }
@@ -1436,7 +1486,7 @@ function renderCompare(data, q) {
   });
   const totalHits = results.reduce((s, r) => s + r.hits.length, 0);
   if (totalHits === 0) { setStatus(`0 hits for "${q}"`); compareEl.innerHTML = ""; latencySummaryEl.textContent = ""; return; }
-  const expanded = data.expandedQuery ? ` · +${data.expandedQuery.slice(q.length).trim()}` : "";
+  const expanded = describeExpansion(q, data.expandedQuery);
   setStatus(`compare: "${q}"${expanded}`);
   latencySummaryEl.textContent = results.map((r) => `${r.ranker} ${r.latencyMs.toFixed(3)}ms`).join("  ·  ");
   compareEl.innerHTML = "";

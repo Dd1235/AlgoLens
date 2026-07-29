@@ -561,6 +561,9 @@ html[data-theme="light"] .theme-toggle {
   flex-basis: 100%;
 }
 .compare-col .result-meta { margin-left: 0; }
+/* Same defect as the mobile block above: zeroing the meta margin removes the
+   only thing holding the buttons to the right edge. */
+.compare-col .result-actions { margin-left: auto; }
 .compare-col .result {
   padding: 0.6rem 0.7rem 0.7rem;
 }
@@ -1578,6 +1581,11 @@ html[data-theme="light"] footer::after { content: ""; }
   .result-header { flex-wrap: wrap; row-gap: 0.3rem; }
   .result-title { flex: 1 1 100%; white-space: normal; overflow: visible; }
   .result-meta { margin-left: 0; }
+  /* ...which leaves nothing anchoring the buttons, so they started wherever the
+     meta text ended — a different x on every card, since [cses] is wider than
+     [lc], CSES has no difficulty chip, and "1h ago" only exists in the library.
+     Anchor them to the right edge instead. */
+  .result-actions { margin-left: auto; }
 
   /* Fixed 11rem inputs forced five stacked half-width rows. */
   .handle-field { flex: 1 1 100%; }
