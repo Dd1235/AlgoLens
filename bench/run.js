@@ -7,6 +7,8 @@ const { GrpcSearchIndex, probe } = require("../server/search/grpc_index");
 const { tryCreateDenseIndex } = require("../server/search/dense");
 const { HybridIndex } = require("../server/search/hybrid");
 const { expandQuery } = require("../server/search/query_expand");
+const { correctTerms } = require("../server/search/spellfix");
+const { tokenize } = require("../server/search/tokenize");
 
 // The serving path expands alias queries at the route ("aliens trick" →
 // +wqs binary search), so the bench does too by default — it measures the
@@ -75,6 +77,18 @@ function summarize(latencies) {
   };
 }
 
+// Built once from the corpus, same shape as the router's VOCABULARY (term ->
+// document frequency) so correctTerms can break ties on frequency.
+let vocabulary = null;
+function buildVocabulary(problems) {
+  const v = new Map();
+  for (const p of problems) {
+    const text = [p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" ");
+    for (const term of new Set(tokenize(text))) v.set(term, (v.get(term) || 0) + 1);
+  }
+  return v;
+}
+
 async function evalRanker(name, index, queries) {
   const perQuery = [];
   const allLatencies = [];
@@ -85,7 +99,14 @@ async function evalRanker(name, index, queries) {
   const bySlice = new Map();
 
   for (const { query, relevant, slice = "keyword" } of queries) {
-    const searchQuery = BENCH_EXPAND ? expandQuery(query).query : query;
+    // Mirror the serving path exactly: routes/search.js expands, then corrects
+    // unknown terms. Without the correction step the bench scores `djikstra` as
+    // a zero it never actually is in production.
+    let searchQuery = BENCH_EXPAND ? expandQuery(query).query : query;
+    if (BENCH_EXPAND && vocabulary) {
+      const fixes = correctTerms(tokenize(searchQuery), vocabulary);
+      if (fixes.length) searchQuery = `${searchQuery} ${fixes.map((c) => c.to).join(" ")}`;
+    }
     // first run for correctness (k=100 so Recall@100 is measurable);
     // then re-run at serving size for latency
     const result = await Promise.resolve(index.search(searchQuery, K_FOR_RECALL));
@@ -203,6 +224,7 @@ async function main() {
 
   const t0 = Date.now();
   const problems = loadProblems();
+  vocabulary = buildVocabulary(problems);
   const loadMs = Date.now() - t0;
 
   const tBuildTf = Date.now();
