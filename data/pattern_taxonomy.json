@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "notes": "Single source of truth for the pattern vocabulary. scripts/annotate_problem_urls.py feeds `canonical` keys to the LLM as allowed examples and maps aliases on output; scripts/validate_corpus.js warns on non-canonical patterns; scripts/normalize_patterns.js rewrites aliases to canonical across the corpus. Aliases must point at an existing canonical key.\n\n`groups` are umbrella terms: what people type when they don't want one technique but a family of them (\"range queries\", \"dp optimization\"). They are NOT canonical labels and are never applied to a problem — no problem is tagged `range-queries`. They exist because the taxonomy is all leaves: every member here is a real label, but nothing in the vocabulary said what they have in common, so looking up \"range queries\" found nothing at all.",
+  "notes": "Single source of truth for the pattern vocabulary. scripts/annotate_problem_urls.py feeds `canonical` keys to the LLM as allowed examples and maps aliases on output; scripts/validate_corpus.js warns on non-canonical patterns; scripts/normalize_patterns.js rewrites aliases to canonical across the corpus. Aliases must point at an existing canonical key.\n\n`groups` are umbrella terms: what people type when they don't want one technique but a family of them (\"range queries\", \"dp optimization\"). They are NOT canonical labels and are never applied to a problem — no problem is tagged `range-queries`. They exist because the taxonomy is all leaves: every member here is a real label, but nothing in the vocabulary said what they have in common, so looking up \"range queries\" found nothing at all.\n\n`consumingAliases` name a technique whose own words point somewhere else — \"square root decomposition\" is not about square roots, \"small to large merging\" is not about large things. For those the matched span is REPLACED by the canonical words instead of having them appended, so the misleading terms stop being scored. Everything else stays append-only: dropping the words of \"sum over subsets\" cost recall, because `subsets` is a term the relevant problems genuinely contain.",
   "canonical": {
     "two-pointers": {
       "category": "array"
@@ -846,5 +846,16 @@
         "hash-map"
       ]
     }
-  }
+  },
+  "consumingAliases": [
+    "block-decomposition",
+    "dsu-on-trees",
+    "small-to-large",
+    "small-to-large-merge",
+    "small-to-large-merging",
+    "square-root-decomp",
+    "square-root-decomposition",
+    "z-algo",
+    "z-algorithm"
+  ]
 }
