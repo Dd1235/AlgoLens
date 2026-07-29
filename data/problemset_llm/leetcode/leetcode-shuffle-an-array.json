@@ -15,9 +15,8 @@
   "statement": "Design a class to shuffle an array randomly such that all permutations are equally likely, with the ability to reset to the original array configuration.",
   "tags": [
     "array",
-    "randomized",
-    "design",
-    "randomized-algorithm"
+    "randomized-algorithm",
+    "design"
   ],
   "patterns": [
     "fisher-yates-shuffle",

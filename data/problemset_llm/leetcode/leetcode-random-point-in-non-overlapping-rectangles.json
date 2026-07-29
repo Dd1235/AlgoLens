@@ -20,9 +20,8 @@
   "tags": [
     "array",
     "math",
-    "randomized",
-    "ordered-set",
-    "randomized-algorithm"
+    "randomized-algorithm",
+    "ordered-set"
   ],
   "patterns": [
     "prefix-sum",

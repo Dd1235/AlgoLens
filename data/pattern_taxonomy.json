@@ -92,9 +92,6 @@
     "dsu-rollback": {
       "category": "graph"
     },
-    "small-to-large-merging": {
-      "category": "graph"
-    },
     "topological-sort": {
       "category": "graph"
     },
@@ -502,6 +499,9 @@
     },
     "quickselect": {
       "category": "array"
+    },
+    "dsu-on-tree": {
+      "category": "tree"
     }
   },
   "aliases": {
@@ -631,7 +631,20 @@
     "deque-dp": "monotonic-queue-optimization",
     "deque-optimization": "monotonic-queue-optimization",
     "deque-trick": "monotonic-queue-optimization",
-    "sliding-window-dp": "monotonic-queue-optimization"
+    "sliding-window-dp": "monotonic-queue-optimization",
+    "small-to-large-merging": "dsu-on-tree",
+    "small-to-large": "dsu-on-tree",
+    "small-to-large-merge": "dsu-on-tree",
+    "dsu-on-trees": "dsu-on-tree",
+    "sack-on-tree": "dsu-on-tree",
+    "z-algorithm": "z-function",
+    "z-algo": "z-function",
+    "z-array": "z-function",
+    "square-root-decomposition": "sqrt-decomposition",
+    "sqrt-decomp": "sqrt-decomposition",
+    "block-decomposition": "sqrt-decomposition",
+    "square-root-decomp": "sqrt-decomposition",
+    "mos-algorithm": "mo-algorithm"
   },
   "groups": {
     "range-queries": {

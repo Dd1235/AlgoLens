@@ -16,7 +16,7 @@
   "tags": [
     "graph",
     "dfs",
-    "biconnected-component"
+    "articulation-points"
   ],
   "patterns": [
     "tarjan",

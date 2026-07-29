@@ -18,7 +18,6 @@
     "array",
     "hash-map",
     "design",
-    "randomized",
     "randomized-algorithm"
   ],
   "patterns": [

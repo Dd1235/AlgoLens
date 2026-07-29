@@ -14,7 +14,7 @@
   ],
   "patterns": [
     "dfs",
-    "small-to-large-merging",
+    "dsu-on-tree",
     "subtree-query"
   ],
   "annotation": {
@@ -23,7 +23,7 @@
     "generated_at_unix": 1777951641,
     "pattern_confidence": {
       "dfs": 0.98,
-      "small-to-large-merging": 0.95,
+      "dsu-on-tree": 0.95,
       "subtree-query": 0.9
     }
   }

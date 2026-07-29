@@ -24,7 +24,7 @@
     "binary-search",
     "string-hashing",
     "prefix-function",
-    "z-algorithm",
+    "z-function",
     "kmp"
   ],
   "annotation": {
@@ -35,7 +35,7 @@
       "binary-search": 0.9,
       "string-hashing": 0.85,
       "prefix-function": 0.95,
-      "z-algorithm": 0.9,
+      "z-function": 0.9,
       "kmp": 0.9
     }
   },
