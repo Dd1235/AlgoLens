@@ -24,6 +24,7 @@ const GLOBALS = new Set([
   "String", "Number", "Boolean", "Array", "Object", "Set", "Map", "Date", "Math", "JSON",
   "Promise", "Error", "RegExp", "URL", "URLSearchParams", "Blob", "AbortController", "Intl",
   "console", "alert", "confirm", "structuredClone", "queueMicrotask", "btoa", "atob",
+  "matchMedia", "getComputedStyle", "scrollTo",
   // control flow and operators that look like calls to a naive regex
   "if", "for", "while", "switch", "catch", "return", "typeof", "function", "await", "new",
   "of", "in", "do", "else", "try", "throw", "case", "delete", "void", "yield", "async",

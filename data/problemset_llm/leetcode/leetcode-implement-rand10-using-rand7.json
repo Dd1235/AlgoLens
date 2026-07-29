@@ -21,7 +21,7 @@
     "randomized-algorithm"
   ],
   "patterns": [
-    "rejection-sampling",
+    "randomized-algorithm",
     "expected-value",
     "probability-analysis"
   ],
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909889,
     "pattern_confidence": {
-      "rejection-sampling": 0.98,
+      "randomized-algorithm": 0.98,
       "expected-value": 0.85,
       "probability-analysis": 0.8
     }

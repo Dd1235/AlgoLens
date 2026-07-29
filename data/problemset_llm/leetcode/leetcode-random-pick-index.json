@@ -16,11 +16,10 @@
   "tags": [
     "array",
     "hash-map",
-    "randomized",
     "randomized-algorithm"
   ],
   "patterns": [
-    "reservoir-sampling",
+    "randomized-algorithm",
     "hash-map"
   ],
   "annotation": {
@@ -28,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785234635,
     "pattern_confidence": {
-      "reservoir-sampling": 0.95,
+      "randomized-algorithm": 0.95,
       "hash-map": 0.9
     }
   }

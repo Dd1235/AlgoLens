@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../db");
 const { expandQuery } = require("../search/query_expand");
+const { correctTerms } = require("../search/spellfix");
 const { tokenize } = require("../search/tokenize");
 const {
   parseSelection, passesDifficulty, parseSort, sortByDifficulty, sortableJudge, SORTABLE_JUDGES,
@@ -126,10 +127,13 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
   // ("qqqqq", 0.452), so any cutoff that blocks junk also blocks cheese.
   // Vocabulary separates them cleanly instead: real queries have at least one
   // known word, nonsense has none.
-  const VOCABULARY = new Set();
+  // A Map rather than a Set: the document frequency costs nothing to collect
+  // here and is what lets the spelling corrector prefer "tree" over "pre" when
+  // both sit one edit from "tre". `.has()` reads the same either way.
+  const VOCABULARY = new Map();
   for (const p of problems) {
-    for (const term of tokenize([p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" "))) {
-      VOCABULARY.add(term);
+    for (const term of new Set(tokenize([p.title, p.statement, ...(p.tags || []), ...(p.patterns || [])].join(" ")))) {
+      VOCABULARY.set(term, (VOCABULARY.get(term) || 0) + 1);
     }
   }
 
@@ -161,7 +165,16 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
 
     // Checked against the expanded query, so an alias that resolves to real
     // vocabulary ("aliens trick" -> wqs binary search) still counts as known.
-    const queryTerms = q.trim() ? tokenize(exp.query) : [];
+    let queryTerms = q.trim() ? tokenize(exp.query) : [];
+    // Correct before the guard, not after. A term the corpus has never seen
+    // contributes nothing to any ranker, so appending its nearest real
+    // neighbour cannot displace a match — and `djikstra`, which used to be
+    // rejected outright, resolves instead.
+    const corrections = correctTerms(queryTerms, VOCABULARY);
+    if (corrections.length) {
+      exp.query = `${exp.query} ${corrections.map((c) => c.to).join(" ")}`;
+      queryTerms = tokenize(exp.query);
+    }
     const unknownTerms = queryTerms.filter((t) => !VOCABULARY.has(t));
     if (queryTerms.length && unknownTerms.length === queryTerms.length) {
       return res.json({
@@ -268,6 +281,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
         searchId,
         query: q,
         expandedQuery: exp.expanded ? exp.query : undefined,
+        corrected: corrections.length ? corrections.map((c) => ({ from: c.from, to: c.to })) : undefined,
         ranker,
         latencyMs,
         offset,

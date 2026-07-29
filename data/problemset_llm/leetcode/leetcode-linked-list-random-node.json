@@ -15,12 +15,11 @@
   "statement": "Given a singly linked list, implement a method to return a random node's value such that each node is equally likely to be chosen, even when the list length is unknown or very large.",
   "tags": [
     "linked-list",
-    "randomized",
-    "math",
-    "randomized-algorithm"
+    "randomized-algorithm",
+    "math"
   ],
   "patterns": [
-    "reservoir-sampling",
+    "randomized-algorithm",
     "random-sampling"
   ],
   "annotation": {
@@ -28,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785234633,
     "pattern_confidence": {
-      "reservoir-sampling": 0.98,
+      "randomized-algorithm": 0.98,
       "random-sampling": 0.9
     }
   }

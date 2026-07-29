@@ -13,7 +13,7 @@
     "z-function"
   ],
   "patterns": [
-    "z-algorithm",
+    "z-function",
     "kmp",
     "prefix-function",
     "string-processing"
@@ -23,7 +23,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951777,
     "pattern_confidence": {
-      "z-algorithm": 0.98,
+      "z-function": 0.98,
       "kmp": 0.97,
       "prefix-function": 0.95,
       "string-processing": 0.9

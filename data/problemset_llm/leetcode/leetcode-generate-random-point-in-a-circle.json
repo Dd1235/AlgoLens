@@ -17,11 +17,10 @@
   "tags": [
     "math",
     "geometry",
-    "randomized",
     "randomized-algorithm"
   ],
   "patterns": [
-    "rejection-sampling",
+    "randomized-algorithm",
     "polar-coordinates",
     "uniform-sampling"
   ],
@@ -30,7 +29,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1784909566,
     "pattern_confidence": {
-      "rejection-sampling": 0.95,
+      "randomized-algorithm": 0.95,
       "polar-coordinates": 0.9,
       "uniform-sampling": 0.9
     }
