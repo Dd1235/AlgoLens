@@ -125,9 +125,6 @@
     "kruskal": {
       "category": "graph"
     },
-    "prim": {
-      "category": "graph"
-    },
     "strongly-connected-components": {
       "category": "graph"
     },
@@ -422,9 +419,6 @@
     "backtracking": {
       "category": "general"
     },
-    "branch-and-bound": {
-      "category": "general"
-    },
     "constructive-algorithm": {
       "category": "general"
     },
@@ -502,6 +496,48 @@
     },
     "dsu-on-tree": {
       "category": "tree"
+    },
+    "string-hashing": {
+      "category": "string"
+    },
+    "gaussian-elimination": {
+      "category": "math"
+    },
+    "xor-basis": {
+      "category": "math"
+    },
+    "hungarian-algorithm": {
+      "category": "graph"
+    },
+    "tree-isomorphism": {
+      "category": "tree"
+    },
+    "burnside-lemma": {
+      "category": "math"
+    },
+    "link-cut-tree": {
+      "category": "data-structure"
+    },
+    "dominator-tree": {
+      "category": "graph"
+    },
+    "lagrange-interpolation": {
+      "category": "math"
+    },
+    "cartesian-tree": {
+      "category": "data-structure"
+    },
+    "matroid-intersection": {
+      "category": "graph"
+    },
+    "hall-theorem": {
+      "category": "graph"
+    },
+    "gray-code": {
+      "category": "math"
+    },
+    "derangement": {
+      "category": "math"
     }
   },
   "aliases": {
@@ -644,7 +680,40 @@
     "sqrt-decomp": "sqrt-decomposition",
     "block-decomposition": "sqrt-decomposition",
     "square-root-decomp": "sqrt-decomposition",
-    "mos-algorithm": "mo-algorithm"
+    "mos-algorithm": "mo-algorithm",
+    "linear-basis": "xor-basis",
+    "linear-algebra-basis": "xor-basis",
+    "xor-linear-basis": "xor-basis",
+    "basis-of-xor": "xor-basis",
+    "polynomial-hashing": "string-hashing",
+    "rolling-hash-string": "string-hashing",
+    "hashing-strings": "string-hashing",
+    "gauss-elimination": "gaussian-elimination",
+    "gaussian-jordan": "gaussian-elimination",
+    "linear-system-solving": "gaussian-elimination",
+    "burnside": "burnside-lemma",
+    "polya-enumeration": "burnside-lemma",
+    "polya-counting": "burnside-lemma",
+    "lct": "link-cut-tree",
+    "link-cut-trees": "link-cut-tree",
+    "kuhn-munkres": "hungarian-algorithm",
+    "assignment-problem": "hungarian-algorithm",
+    "fast-fourier-transform": "fft",
+    "number-theoretic-transform": "fft",
+    "matrix-tree-theorem": "kirchhoff-theorem",
+    "spanning-tree-counting": "kirchhoff-theorem",
+    "bridge-finding": "bridges",
+    "finding-bridges": "bridges",
+    "gaussian-elimination-over-f2": "xor-basis",
+    "xor-gaussian-elimination": "xor-basis",
+    "sprague-grundy": "grundy-numbers",
+    "sprague-grundy-theorem": "grundy-numbers",
+    "shortest-path-faster-algorithm": "bellman-ford",
+    "prime-factorization-sieve": "prime-factorization",
+    "polynomial-interpolation": "lagrange-interpolation",
+    "prim": "minimum-spanning-tree",
+    "catalan-numbers": "combinatorics",
+    "branch-and-bound": "backtracking"
   },
   "groups": {
     "range-queries": {
