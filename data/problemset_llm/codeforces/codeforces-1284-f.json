@@ -24,7 +24,8 @@
   "patterns": [
     "bipartite-matching",
     "tree-connectivity",
-    "graph-transformation"
+    "graph-transformation",
+    "hungarian-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
     "pattern_confidence": {
       "bipartite-matching": 0.95,
       "tree-connectivity": 0.9,
-      "graph-transformation": 0.85
+      "graph-transformation": 0.85,
+      "hungarian-algorithm": 0.9
     }
   }
 }

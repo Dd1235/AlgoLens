@@ -12,7 +12,7 @@
     "bitwise"
   ],
   "patterns": [
-    "linear-basis",
+    "xor-basis",
     "bit-manipulation"
   ],
   "annotation": {
@@ -20,7 +20,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777951933,
     "pattern_confidence": {
-      "linear-basis": 0.98,
+      "xor-basis": 0.98,
       "bit-manipulation": 0.85
     }
   }

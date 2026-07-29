@@ -22,7 +22,8 @@
     "max-flow",
     "interval-scheduling",
     "greedy",
-    "bipartite-matching"
+    "bipartite-matching",
+    "weighted-interval-scheduling"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "max-flow": 0.9,
       "interval-scheduling": 0.95,
       "greedy": 0.85,
-      "bipartite-matching": 0.7
+      "bipartite-matching": 0.7,
+      "weighted-interval-scheduling": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

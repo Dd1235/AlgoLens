@@ -21,7 +21,8 @@
   "patterns": [
     "parity-check",
     "inclusion-exclusion",
-    "combinatorial-enumeration"
+    "combinatorial-enumeration",
+    "kirchhoff-theorem"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "parity-check": 0.9,
       "inclusion-exclusion": 0.8,
-      "combinatorial-enumeration": 0.85
+      "combinatorial-enumeration": 0.85,
+      "kirchhoff-theorem": 0.8
     }
   }
 }

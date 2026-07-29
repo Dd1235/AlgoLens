@@ -23,7 +23,8 @@
     "dfs",
     "dsu-on-tree",
     "modular-arithmetic",
-    "divide-and-conquer"
+    "divide-and-conquer",
+    "centroid-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "dfs": 0.95,
       "dsu-on-tree": 0.9,
       "modular-arithmetic": 0.9,
-      "divide-and-conquer": 0.85
+      "divide-and-conquer": 0.85,
+      "centroid-decomposition": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

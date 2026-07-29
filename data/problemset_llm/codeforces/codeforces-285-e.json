@@ -20,7 +20,8 @@
   "patterns": [
     "dynamic-programming",
     "counting",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "derangement"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "dynamic-programming": 0.95,
       "counting": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.85,
+      "derangement": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

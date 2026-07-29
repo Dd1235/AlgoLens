@@ -21,7 +21,8 @@
   ],
   "patterns": [
     "max-flow",
-    "tree-dp"
+    "tree-dp",
+    "dsu-on-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "generated_at_unix": 1785236909,
     "pattern_confidence": {
       "max-flow": 0.9,
-      "tree-dp": 0.6
+      "tree-dp": 0.6,
+      "dsu-on-tree": 0.9
     }
   }
 }

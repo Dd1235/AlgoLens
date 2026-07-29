@@ -20,7 +20,8 @@
     "geometry",
     "combinatorics",
     "circle-geometry",
-    "pair-counting"
+    "pair-counting",
+    "rotating-calipers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
       "geometry": 0.95,
       "combinatorics": 0.9,
       "circle-geometry": 0.85,
-      "pair-counting": 0.8
+      "pair-counting": 0.8,
+      "rotating-calipers": 0.9
     }
   }
 }

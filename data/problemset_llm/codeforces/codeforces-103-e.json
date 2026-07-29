@@ -21,7 +21,8 @@
   "patterns": [
     "minimum-cost-flow",
     "bipartite-matching",
-    "greedy"
+    "greedy",
+    "hall-theorem"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "minimum-cost-flow": 0.95,
       "bipartite-matching": 0.9,
-      "greedy": 0.7
+      "greedy": 0.7,
+      "hall-theorem": 0.95
     }
   }
 }

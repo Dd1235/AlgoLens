@@ -23,7 +23,8 @@
   "patterns": [
     "binary-search",
     "geometry",
-    "line-sweep"
+    "line-sweep",
+    "rotating-calipers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
     "pattern_confidence": {
       "binary-search": 0.85,
       "geometry": 0.95,
-      "line-sweep": 0.7
+      "line-sweep": 0.7,
+      "rotating-calipers": 0.95
     }
   }
 }

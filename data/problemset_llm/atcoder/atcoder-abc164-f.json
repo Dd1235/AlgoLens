@@ -16,7 +16,8 @@
     "bit-manipulation",
     "constructive-algorithm",
     "constraint-satisfaction",
-    "contribution-technique"
+    "contribution-technique",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
       "bit-manipulation": 0.98,
       "constructive-algorithm": 0.95,
       "constraint-satisfaction": 0.9,
-      "contribution-technique": 0.9
+      "contribution-technique": 0.9,
+      "xor-basis": 0.8
     }
   },
   "difficulty": 2683

@@ -24,7 +24,8 @@
     "binary-search-on-tree",
     "ancestor-check",
     "distance-query",
-    "tin-tout-ancestor-check"
+    "tin-tout-ancestor-check",
+    "interactive"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
       "binary-search-on-tree": 0.9,
       "ancestor-check": 0.85,
       "distance-query": 0.8,
-      "tin-tout-ancestor-check": 0.9
+      "tin-tout-ancestor-check": 0.9,
+      "interactive": 1
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

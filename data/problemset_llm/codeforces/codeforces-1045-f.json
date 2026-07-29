@@ -19,7 +19,8 @@
   ],
   "patterns": [
     "constructive-algorithm",
-    "game-dp"
+    "game-dp",
+    "grundy-numbers"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -27,7 +28,8 @@
     "generated_at_unix": 1785236934,
     "pattern_confidence": {
       "constructive-algorithm": 0.85,
-      "game-dp": 0.8
+      "game-dp": 0.8,
+      "grundy-numbers": 0.95
     }
   }
 }

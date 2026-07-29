@@ -24,7 +24,8 @@
     "xor-manipulation",
     "torus-grid",
     "constructive-algorithm",
-    "bit-manipulation"
+    "bit-manipulation",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
       "xor-manipulation": 0.95,
       "torus-grid": 0.9,
       "constructive-algorithm": 0.85,
-      "bit-manipulation": 0.7
+      "bit-manipulation": 0.7,
+      "xor-basis": 0.95
     }
   }
 }

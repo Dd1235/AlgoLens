@@ -22,7 +22,8 @@
     "bitmask-dp",
     "permutation-enumeration",
     "inclusion-exclusion",
-    "state-compression"
+    "state-compression",
+    "burnside-lemma"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "bitmask-dp": 0.95,
       "permutation-enumeration": 0.9,
       "inclusion-exclusion": 0.85,
-      "state-compression": 0.9
+      "state-compression": 0.9,
+      "burnside-lemma": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

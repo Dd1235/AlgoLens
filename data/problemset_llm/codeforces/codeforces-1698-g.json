@@ -25,7 +25,8 @@
   "patterns": [
     "gaussian-elimination",
     "bitmask-manipulation",
-    "lexicographic-order"
+    "lexicographic-order",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
     "pattern_confidence": {
       "gaussian-elimination": 0.95,
       "bitmask-manipulation": 0.9,
-      "lexicographic-order": 0.85
+      "lexicographic-order": 0.85,
+      "xor-basis": 1
     }
   }
 }

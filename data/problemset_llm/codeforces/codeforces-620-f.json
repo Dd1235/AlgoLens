@@ -20,7 +20,8 @@
   "patterns": [
     "segment-tree",
     "offline-queries",
-    "binary-lifting"
+    "binary-lifting",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "segment-tree": 0.9,
       "offline-queries": 0.7,
-      "binary-lifting": 0.5
+      "binary-lifting": 0.5,
+      "xor-basis": 1
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

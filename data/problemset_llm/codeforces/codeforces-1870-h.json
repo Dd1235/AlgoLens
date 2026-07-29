@@ -23,7 +23,8 @@
     "dynamic-shortest-path",
     "incremental-updates",
     "decremental-updates",
-    "minimum-reachable-subgraph"
+    "minimum-reachable-subgraph",
+    "edmonds-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "dynamic-shortest-path": 0.9,
       "incremental-updates": 0.85,
       "decremental-updates": 0.85,
-      "minimum-reachable-subgraph": 0.8
+      "minimum-reachable-subgraph": 0.8,
+      "edmonds-algorithm": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

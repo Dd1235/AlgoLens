@@ -21,7 +21,8 @@
     "bfs",
     "greedy",
     "manhattan-distance",
-    "tie-breaking"
+    "tie-breaking",
+    "hungarian-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
       "bfs": 0.95,
       "greedy": 0.9,
       "manhattan-distance": 0.85,
-      "tie-breaking": 0.8
+      "tie-breaking": 0.8,
+      "hungarian-algorithm": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

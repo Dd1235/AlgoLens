@@ -20,7 +20,8 @@
   "patterns": [
     "dfs",
     "cycle-detection",
-    "simple-cycle-identification"
+    "simple-cycle-identification",
+    "bridges"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "cycle-detection": 0.9,
-      "simple-cycle-identification": 0.85
+      "simple-cycle-identification": 0.85,
+      "bridges": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

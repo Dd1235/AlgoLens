@@ -21,7 +21,8 @@
   "patterns": [
     "dfs",
     "directed-graph-feasibility",
-    "edge-orientation"
+    "edge-orientation",
+    "two-sat"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "dfs": 0.9,
       "directed-graph-feasibility": 0.85,
-      "edge-orientation": 0.8
+      "edge-orientation": 0.8,
+      "two-sat": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

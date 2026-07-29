@@ -23,7 +23,8 @@
     "dfs",
     "union-find",
     "tree-diameter",
-    "contribution-technique"
+    "contribution-technique",
+    "kirchhoff-theorem"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "dfs": 0.95,
       "union-find": 0.9,
       "tree-diameter": 0.85,
-      "contribution-technique": 0.8
+      "contribution-technique": 0.8,
+      "kirchhoff-theorem": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

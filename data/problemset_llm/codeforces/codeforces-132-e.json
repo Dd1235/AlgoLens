@@ -21,7 +21,8 @@
   "patterns": [
     "bit-counting",
     "dp-optimization",
-    "greedy"
+    "greedy",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "bit-counting": 0.95,
       "dp-optimization": 0.85,
-      "greedy": 0.8
+      "greedy": 0.8,
+      "xor-basis": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

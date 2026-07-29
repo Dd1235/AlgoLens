@@ -25,7 +25,8 @@
     "lexicographic-subarray",
     "prefix-suffix-manipulation",
     "offline-queries",
-    "binary-search"
+    "binary-search",
+    "suffix-array"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
       "lexicographic-subarray": 0.9,
       "prefix-suffix-manipulation": 0.85,
       "offline-queries": 0.7,
-      "binary-search": 0.6
+      "binary-search": 0.6,
+      "suffix-array": 0.9
     }
   }
 }

@@ -22,7 +22,8 @@
     "suffix-automaton",
     "modular-arithmetic",
     "offline-queries",
-    "lexicographic-comparison"
+    "lexicographic-comparison",
+    "kmp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "suffix-automaton": 0.9,
       "modular-arithmetic": 0.8,
       "offline-queries": 0.7,
-      "lexicographic-comparison": 0.85
+      "lexicographic-comparison": 0.85,
+      "kmp": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

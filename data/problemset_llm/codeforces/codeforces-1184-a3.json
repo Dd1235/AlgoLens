@@ -19,7 +19,7 @@
     "fft"
   ],
   "patterns": [
-    "polynomial-hashing",
+    "string-hashing",
     "collision-finding",
     "modular-arithmetic"
   ],
@@ -28,7 +28,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785050654,
     "pattern_confidence": {
-      "polynomial-hashing": 0.95,
+      "string-hashing": 0.95,
       "collision-finding": 0.9,
       "modular-arithmetic": 0.85
     }

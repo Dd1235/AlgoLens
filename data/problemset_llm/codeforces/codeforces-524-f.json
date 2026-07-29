@@ -26,7 +26,8 @@
     "greedy",
     "string-rotation",
     "lexicographic-minimum",
-    "bracket-sequence-validation"
+    "bracket-sequence-validation",
+    "booth-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "greedy": 0.95,
       "string-rotation": 0.9,
       "lexicographic-minimum": 0.85,
-      "bracket-sequence-validation": 0.9
+      "bracket-sequence-validation": 0.9,
+      "booth-algorithm": 0.95
     }
   }
 }

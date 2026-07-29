@@ -22,7 +22,8 @@
   "patterns": [
     "constructive-algorithm",
     "graph-reconstruction",
-    "rolling-hash"
+    "rolling-hash",
+    "tree-isomorphism"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "constructive-algorithm": 0.9,
       "graph-reconstruction": 0.85,
-      "rolling-hash": 0.8
+      "rolling-hash": 0.8,
+      "tree-isomorphism": 0.95
     }
   }
 }

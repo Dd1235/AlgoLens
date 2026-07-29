@@ -19,7 +19,8 @@
   "patterns": [
     "range-update",
     "lca",
-    "binary-lifting"
+    "binary-lifting",
+    "link-cut-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "range-update": 0.9,
       "lca": 0.95,
-      "binary-lifting": 0.85
+      "binary-lifting": 0.85,
+      "link-cut-tree": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

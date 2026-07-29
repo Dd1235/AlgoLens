@@ -18,7 +18,7 @@
     "fft"
   ],
   "patterns": [
-    "fast-fourier-transform",
+    "fft",
     "periodicity",
     "string-period"
   ],
@@ -27,7 +27,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785050734,
     "pattern_confidence": {
-      "fast-fourier-transform": 0.95,
+      "fft": 0.95,
       "periodicity": 0.9,
       "string-period": 0.85
     }

@@ -26,7 +26,8 @@
     "expected-value-dp",
     "probability-dp",
     "tree-dp",
-    "matrix-rank"
+    "matrix-rank",
+    "kirchhoff-theorem"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "expected-value-dp": 0.95,
       "probability-dp": 0.9,
       "tree-dp": 0.9,
-      "matrix-rank": 0.85
+      "matrix-rank": 0.85,
+      "kirchhoff-theorem": 0.95
     }
   }
 }

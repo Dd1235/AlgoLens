@@ -14,7 +14,7 @@
   "patterns": [
     "frequency-array",
     "convolution",
-    "fast-fourier-transform"
+    "fft"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -23,7 +23,7 @@
     "pattern_confidence": {
       "frequency-array": 0.95,
       "convolution": 0.9,
-      "fast-fourier-transform": 0.85
+      "fft": 0.85
     }
   }
 }

@@ -20,7 +20,8 @@
     "dfs",
     "dynamic-graph",
     "spanning-tree",
-    "graph-updates"
+    "graph-updates",
+    "link-cut-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
       "dfs": 0.95,
       "dynamic-graph": 0.85,
       "spanning-tree": 0.9,
-      "graph-updates": 0.8
+      "graph-updates": 0.8,
+      "link-cut-tree": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

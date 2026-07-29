@@ -12,9 +12,8 @@
   ],
   "patterns": [
     "dfs",
-    "bridge-finding",
-    "tarjan",
-    "bridges"
+    "bridges",
+    "tarjan"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,9 +21,8 @@
     "generated_at_unix": 1777951848,
     "pattern_confidence": {
       "dfs": 0.95,
-      "bridge-finding": 0.98,
-      "tarjan": 0.9,
-      "bridges": 1
+      "bridges": 1,
+      "tarjan": 0.9
     }
   }
 }

@@ -19,24 +19,22 @@
     "connectivity"
   ],
   "patterns": [
-    "bridge-finding",
+    "bridges",
     "dfs",
     "cut-edge",
     "critical-edge",
-    "articulation-points",
-    "bridges"
+    "articulation-points"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785051048,
     "pattern_confidence": {
-      "bridge-finding": 0.95,
+      "bridges": 0.95,
       "dfs": 0.9,
       "cut-edge": 0.85,
       "critical-edge": 0.8,
-      "articulation-points": 0.9,
-      "bridges": 0.9
+      "articulation-points": 0.9
     }
   },
   "source_topic": "Formwise / Graph Level 2"

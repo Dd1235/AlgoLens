@@ -27,16 +27,18 @@
     "math"
   ],
   "patterns": [
-    "polynomial-hashing",
-    "interactive"
+    "string-hashing",
+    "interactive",
+    "lagrange-interpolation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1785237009,
     "pattern_confidence": {
-      "polynomial-hashing": 0.95,
-      "interactive": 0.9
+      "string-hashing": 0.95,
+      "interactive": 0.9,
+      "lagrange-interpolation": 0.95
     }
   }
 }

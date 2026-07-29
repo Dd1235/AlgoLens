@@ -20,7 +20,8 @@
   "patterns": [
     "brute-force",
     "string-concatenation",
-    "ratio-check"
+    "ratio-check",
+    "digit-dp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "brute-force": 0.9,
       "string-concatenation": 0.7,
-      "ratio-check": 0.8
+      "ratio-check": 0.8,
+      "digit-dp": 0.9
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

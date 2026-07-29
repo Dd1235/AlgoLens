@@ -25,7 +25,8 @@
   ],
   "patterns": [
     "union-find",
-    "greedy"
+    "greedy",
+    "matroid-intersection"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
     "generated_at_unix": 1785051020,
     "pattern_confidence": {
       "union-find": 0.95,
-      "greedy": 0.9
+      "greedy": 0.9,
+      "matroid-intersection": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

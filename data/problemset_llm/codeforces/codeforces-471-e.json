@@ -20,7 +20,8 @@
   "patterns": [
     "union-find",
     "maximum-spanning-tree",
-    "graph-construction"
+    "graph-construction",
+    "steiner-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "union-find": 0.95,
       "maximum-spanning-tree": 0.9,
-      "graph-construction": 0.85
+      "graph-construction": 0.85,
+      "steiner-tree": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"
