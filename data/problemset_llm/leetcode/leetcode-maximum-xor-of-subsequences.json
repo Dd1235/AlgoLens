@@ -21,7 +21,7 @@
     "math"
   ],
   "patterns": [
-    "linear-basis",
+    "xor-basis",
     "bit-manipulation",
     "greedy"
   ],
@@ -30,7 +30,7 @@
     "model": "gpt-4.1-mini",
     "generated_at_unix": 1777923464,
     "pattern_confidence": {
-      "linear-basis": 0.98,
+      "xor-basis": 0.98,
       "bit-manipulation": 0.85,
       "greedy": 0.9
     }

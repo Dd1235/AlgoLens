@@ -22,7 +22,8 @@
   "patterns": [
     "modular-arithmetic",
     "counting",
-    "dp-on-sums"
+    "dp-on-sums",
+    "fft"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "modular-arithmetic": 0.95,
       "counting": 0.9,
-      "dp-on-sums": 0.85
+      "dp-on-sums": 0.85,
+      "fft": 0.95
     }
   }
 }

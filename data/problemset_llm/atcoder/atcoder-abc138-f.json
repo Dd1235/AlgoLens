@@ -16,7 +16,8 @@
   "patterns": [
     "digit-dp",
     "modular-arithmetic",
-    "bitmask-dp"
+    "bitmask-dp",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "digit-dp": 0.9,
       "modular-arithmetic": 0.85,
-      "bitmask-dp": 0.8
+      "bitmask-dp": 0.8,
+      "xor-basis": 0.8
     }
   },
   "difficulty": 2431

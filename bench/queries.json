@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical. v4 adds 10 technique queries (slice: technique) over the dp-optimization batch: half name the niche technique outright (do curated pattern labels function as retrieval vocabulary?), half describe it without naming it (does dense bridge to technique phrasing?). Corpus at v4: 1198 problems. v5 adds 3 technique queries phrased through taxonomy ALIASES (aliens trick / sum over subsets / scanline) to measure query-side alias expansion end to end. Corpus at v5: 1808 problems (hard-focus: 13 junk easies purged, +561 lowest-acceptance mediums).",
+  "notes": "Labeled query set used by bench/run.js. Each entry has a query string and a list of ground-truth relevant problem ids (binary relevance). Labels are author-judgment over the 1185-problem corpus, not crowd-sourced. Expanded from 10 to 30 queries in v2 to tighten confidence intervals on aggregate metrics. v3 tags every query with a slice: 'keyword' (term-style queries, the original 30) or 'paraphrase' (12 new natural-language descriptions with deliberately low lexical overlap with their targets) so the bench can report where dense retrieval wins vs lexical. v4 adds 10 technique queries (slice: technique) over the dp-optimization batch: half name the niche technique outright (do curated pattern labels function as retrieval vocabulary?), half describe it without naming it (does dense bridge to technique phrasing?). Corpus at v4: 1198 problems. v5 adds 3 technique queries phrased through taxonomy ALIASES (aliens trick / sum over subsets / scanline) to measure query-side alias expansion end to end. Corpus at v5: 1808 problems (hard-focus: 13 junk easies purged, +561 lowest-acceptance mediums). Technique-slice relevance for label-named queries is regenerated from the labels themselves, so improving annotation does not register as a ranking regression.",
   "queries": [
     {
       "query": "two sum",
@@ -393,9 +393,11 @@
     {
       "query": "wqs binary search exactly k segments",
       "relevant": [
+        "codeforces-1374-e2",
+        "codeforces-1903-f",
         "leetcode-best-time-to-buy-and-sell-stock-iv",
-        "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
-        "leetcode-best-time-to-buy-and-sell-stock-v"
+        "leetcode-best-time-to-buy-and-sell-stock-v",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations"
       ],
       "intent": "niche technique by name: wqs / aliens trick family",
       "slice": "technique"
@@ -403,9 +405,10 @@
     {
       "query": "penalty per segment instead of enforcing the segment count",
       "relevant": [
+        "codeforces-1374-e2",
         "leetcode-best-time-to-buy-and-sell-stock-iv",
-        "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
-        "leetcode-best-time-to-buy-and-sell-stock-v"
+        "leetcode-best-time-to-buy-and-sell-stock-v",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations"
       ],
       "intent": "wqs described, not named (lagrangian relaxation idea)",
       "slice": "technique"
@@ -489,9 +492,11 @@
     {
       "query": "aliens trick minimize cost with exactly k groups",
       "relevant": [
+        "codeforces-1374-e2",
+        "codeforces-1903-f",
         "leetcode-best-time-to-buy-and-sell-stock-iv",
-        "leetcode-minimum-total-space-wasted-with-k-resizing-operations",
-        "leetcode-best-time-to-buy-and-sell-stock-v"
+        "leetcode-best-time-to-buy-and-sell-stock-v",
+        "leetcode-minimum-total-space-wasted-with-k-resizing-operations"
       ],
       "intent": "alias phrasing: aliens trick -> wqs-binary-search via expansion",
       "slice": "technique"
@@ -662,9 +667,13 @@
     {
       "query": "dsu on trees",
       "relevant": [
+        "codeforces-1023-g",
+        "codeforces-375-d",
         "codeforces-600-e",
         "codeforces-715-c",
+        "codeforces-741-d",
         "codeforces-915-f",
+        "codeforces-917-e",
         "cses-1139"
       ],
       "intent": "same technique as small-to-large merging; must not be dragged onto generic union-find by the `dsu` alias",
@@ -673,9 +682,13 @@
     {
       "query": "small to large merging",
       "relevant": [
+        "codeforces-1023-g",
+        "codeforces-375-d",
         "codeforces-600-e",
         "codeforces-715-c",
+        "codeforces-741-d",
         "codeforces-915-f",
+        "codeforces-917-e",
         "cses-1139"
       ],
       "intent": "the other name for dsu on trees — deliberately the SAME relevant set",

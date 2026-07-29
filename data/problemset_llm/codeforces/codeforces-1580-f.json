@@ -21,7 +21,8 @@
   "patterns": [
     "fft",
     "circular-constraints",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "matrix-exponentiation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "fft": 0.95,
       "circular-constraints": 0.85,
-      "modular-arithmetic": 0.9
+      "modular-arithmetic": 0.9,
+      "matrix-exponentiation": 0.95
     }
   }
 }

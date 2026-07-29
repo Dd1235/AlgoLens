@@ -17,7 +17,8 @@
   "patterns": [
     "triangle-congruence",
     "geometric-transformations",
-    "set-cover"
+    "set-cover",
+    "steiner-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -26,7 +27,8 @@
     "pattern_confidence": {
       "triangle-congruence": 0.95,
       "geometric-transformations": 0.9,
-      "set-cover": 0.7
+      "set-cover": 0.7,
+      "steiner-tree": 0.8
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

@@ -21,7 +21,8 @@
   "patterns": [
     "greedy",
     "string-splitting",
-    "substring-reversal"
+    "substring-reversal",
+    "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "string-splitting": 0.9,
-      "substring-reversal": 0.85
+      "substring-reversal": 0.85,
+      "dynamic-programming": 0.95
     }
   }
 }

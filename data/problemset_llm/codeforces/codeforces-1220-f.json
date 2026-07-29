@@ -21,7 +21,8 @@
     "binary-search",
     "segment-tree",
     "divide-and-conquer",
-    "sliding-window"
+    "sliding-window",
+    "cartesian-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
       "binary-search": 0.9,
       "segment-tree": 0.85,
       "divide-and-conquer": 0.8,
-      "sliding-window": 0.6
+      "sliding-window": 0.6,
+      "cartesian-tree": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

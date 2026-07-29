@@ -22,7 +22,8 @@
   "patterns": [
     "suffix-automaton",
     "string-rotation",
-    "rolling-hash"
+    "rolling-hash",
+    "booth-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "suffix-automaton": 0.9,
       "string-rotation": 0.85,
-      "rolling-hash": 0.8
+      "rolling-hash": 0.8,
+      "booth-algorithm": 0.95
     }
   }
 }

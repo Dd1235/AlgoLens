@@ -22,7 +22,7 @@
   "patterns": [
     "dfs",
     "union-find",
-    "bridge-finding",
+    "bridges",
     "path-existence"
   ],
   "annotation": {
@@ -32,7 +32,7 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "union-find": 0.9,
-      "bridge-finding": 0.7,
+      "bridges": 0.7,
       "path-existence": 0.9
     }
   },

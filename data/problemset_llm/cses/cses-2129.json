@@ -10,7 +10,7 @@
   "tags": [
     "graph",
     "dynamic-programming",
-    "assignment-problem"
+    "hungarian-algorithm"
   ],
   "patterns": [
     "hungarian-algorithm",

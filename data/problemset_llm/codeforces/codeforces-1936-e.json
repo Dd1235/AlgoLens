@@ -25,7 +25,8 @@
     "fft",
     "modular-arithmetic",
     "prefix-max",
-    "counting"
+    "counting",
+    "burnside-lemma"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "fft": 0.85,
       "modular-arithmetic": 0.8,
       "prefix-max": 0.7,
-      "counting": 0.75
+      "counting": 0.75,
+      "burnside-lemma": 0.9
     }
   }
 }

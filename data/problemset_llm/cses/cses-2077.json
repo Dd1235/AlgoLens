@@ -13,7 +13,7 @@
   "patterns": [
     "dfs",
     "articulation-points",
-    "bridge-finding"
+    "bridges"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -22,7 +22,7 @@
     "pattern_confidence": {
       "dfs": 0.95,
       "articulation-points": 0.98,
-      "bridge-finding": 0.85
+      "bridges": 0.85
     }
   }
 }

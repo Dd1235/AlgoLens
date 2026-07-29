@@ -22,7 +22,8 @@
     "two-sat",
     "binary-search",
     "maximum-matching",
-    "graph-construction"
+    "graph-construction",
+    "wqs-binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
       "two-sat": 0.95,
       "binary-search": 0.9,
       "maximum-matching": 0.85,
-      "graph-construction": 0.8
+      "graph-construction": 0.8,
+      "wqs-binary-search": 0.95
     }
   }
 }

@@ -25,7 +25,8 @@
     "suffix-automaton",
     "aho-corasick",
     "tree-path-query",
-    "lca"
+    "lca",
+    "dsu-on-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
       "suffix-automaton": 0.9,
       "aho-corasick": 0.85,
       "tree-path-query": 0.8,
-      "lca": 0.75
+      "lca": 0.75,
+      "dsu-on-tree": 0.95
     }
   }
 }

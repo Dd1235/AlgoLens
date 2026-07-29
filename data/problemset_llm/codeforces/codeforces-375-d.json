@@ -24,7 +24,8 @@
     "tree-flattening",
     "offline-queries",
     "counting",
-    "union-find"
+    "union-find",
+    "dsu-on-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
       "tree-flattening": 0.9,
       "offline-queries": 0.85,
       "counting": 0.8,
-      "union-find": 0.9
+      "union-find": 0.9,
+      "dsu-on-tree": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

@@ -24,7 +24,8 @@
     "dfs",
     "bit-manipulation",
     "backtracking",
-    "cycle-detection"
+    "cycle-detection",
+    "functional-graph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
       "dfs": 0.95,
       "bit-manipulation": 0.85,
       "backtracking": 0.9,
-      "cycle-detection": 0.9
+      "cycle-detection": 0.9,
+      "functional-graph": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2000-2400"

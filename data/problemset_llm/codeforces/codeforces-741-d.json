@@ -24,7 +24,8 @@
     "bit-manipulation",
     "palindrome",
     "subtree-query",
-    "union-find"
+    "union-find",
+    "dsu-on-tree"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
       "bit-manipulation": 0.9,
       "palindrome": 0.85,
       "subtree-query": 0.9,
-      "union-find": 0.9
+      "union-find": 0.9,
+      "dsu-on-tree": 0.95
     }
   },
   "source_topic": "Formwise / Graph Level 2"

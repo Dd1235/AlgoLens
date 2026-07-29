@@ -16,7 +16,8 @@
   "patterns": [
     "bit-manipulation",
     "greedy",
-    "prefix-sum"
+    "prefix-sum",
+    "maximum-rectangle-in-binary-matrix"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "bit-manipulation": 0.85,
       "greedy": 0.8,
-      "prefix-sum": 0.7
+      "prefix-sum": 0.7,
+      "maximum-rectangle-in-binary-matrix": 0.95
     }
   },
   "difficulty": 2608

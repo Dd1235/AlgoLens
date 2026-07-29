@@ -14,7 +14,6 @@
   ],
   "patterns": [
     "grundy-numbers",
-    "sprague-grundy-theorem",
     "game-dp"
   ],
   "annotation": {
@@ -23,7 +22,6 @@
     "generated_at_unix": 1777951736,
     "pattern_confidence": {
       "grundy-numbers": 0.98,
-      "sprague-grundy-theorem": 0.95,
       "game-dp": 0.9
     }
   }

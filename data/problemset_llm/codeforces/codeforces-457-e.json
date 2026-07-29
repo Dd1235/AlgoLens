@@ -23,7 +23,8 @@
     "quadratic-cost-flow",
     "convex-optimization",
     "feasibility-check",
-    "max-flow"
+    "max-flow",
+    "karush-kuhn-tucker-conditions"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "quadratic-cost-flow": 0.95,
       "convex-optimization": 0.9,
       "feasibility-check": 0.85,
-      "max-flow": 0.7
+      "max-flow": 0.7,
+      "karush-kuhn-tucker-conditions": 0.9
     }
   }
 }

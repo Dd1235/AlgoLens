@@ -24,7 +24,8 @@
     "bit-manipulation",
     "xor",
     "counting",
-    "rolling-hash"
+    "rolling-hash",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -34,7 +35,8 @@
       "bit-manipulation": 0.95,
       "xor": 0.9,
       "counting": 0.85,
-      "rolling-hash": 0.8
+      "rolling-hash": 0.8,
+      "xor-basis": 0.95
     }
   }
 }

@@ -19,7 +19,8 @@
   "patterns": [
     "bit-manipulation",
     "graph-construction",
-    "xor-properties"
+    "xor-properties",
+    "gray-code"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "bit-manipulation": 0.9,
       "graph-construction": 0.85,
-      "xor-properties": 0.8
+      "xor-properties": 0.8,
+      "gray-code": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

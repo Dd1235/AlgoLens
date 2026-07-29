@@ -19,7 +19,8 @@
   "patterns": [
     "meet-in-the-middle",
     "bit-manipulation",
-    "minimum-set-cover"
+    "minimum-set-cover",
+    "xor-basis"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -28,7 +29,8 @@
     "pattern_confidence": {
       "meet-in-the-middle": 0.95,
       "bit-manipulation": 0.9,
-      "minimum-set-cover": 0.85
+      "minimum-set-cover": 0.85,
+      "xor-basis": 0.95
     }
   }
 }

@@ -21,7 +21,8 @@
     "max-flow",
     "convex-quadratic-optimization",
     "graph-constraints",
-    "dp-on-graphs"
+    "dp-on-graphs",
+    "bellman-ford"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
       "max-flow": 0.9,
       "convex-quadratic-optimization": 0.85,
       "graph-constraints": 0.8,
-      "dp-on-graphs": 0.7
+      "dp-on-graphs": 0.7,
+      "bellman-ford": 0.9
     }
   }
 }

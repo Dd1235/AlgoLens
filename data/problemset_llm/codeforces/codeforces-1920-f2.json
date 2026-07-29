@@ -27,7 +27,8 @@
     "manhattan-distance",
     "binary-search",
     "union-find",
-    "tree-dp"
+    "tree-dp",
+    "wqs-binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -38,7 +39,8 @@
       "manhattan-distance": 0.9,
       "binary-search": 0.85,
       "union-find": 0.9,
-      "tree-dp": 0.7
+      "tree-dp": 0.7,
+      "wqs-binary-search": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

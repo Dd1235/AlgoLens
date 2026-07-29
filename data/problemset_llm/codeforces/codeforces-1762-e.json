@@ -20,7 +20,8 @@
   "patterns": [
     "cayleys-formula",
     "tree-enumeration",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "kirchhoff-theorem"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -29,7 +30,8 @@
     "pattern_confidence": {
       "cayleys-formula": 0.9,
       "tree-enumeration": 0.85,
-      "modular-arithmetic": 0.8
+      "modular-arithmetic": 0.8,
+      "kirchhoff-theorem": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

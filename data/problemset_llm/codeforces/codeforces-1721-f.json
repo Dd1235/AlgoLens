@@ -30,7 +30,8 @@
     "max-flow",
     "dfs",
     "online-queries",
-    "flow-based-matching"
+    "flow-based-matching",
+    "hungarian-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -41,7 +42,8 @@
       "max-flow": 0.9,
       "dfs": 0.85,
       "online-queries": 0.8,
-      "flow-based-matching": 0.9
+      "flow-based-matching": 0.9,
+      "hungarian-algorithm": 0.95
     }
   }
 }

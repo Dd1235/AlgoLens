@@ -23,7 +23,8 @@
   "patterns": [
     "two-sat",
     "binary-search-answer",
-    "vertex-cover"
+    "vertex-cover",
+    "wqs-binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
     "pattern_confidence": {
       "two-sat": 0.95,
       "binary-search-answer": 0.9,
-      "vertex-cover": 0.85
+      "vertex-cover": 0.85,
+      "wqs-binary-search": 0.95
     }
   }
 }

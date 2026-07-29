@@ -19,7 +19,7 @@
   ],
   "patterns": [
     "bitmask-dp",
-    "spanning-tree-counting",
+    "kirchhoff-theorem",
     "combinatorial-dp"
   ],
   "annotation": {
@@ -28,7 +28,7 @@
     "generated_at_unix": 1785050638,
     "pattern_confidence": {
       "bitmask-dp": 0.9,
-      "spanning-tree-counting": 0.85,
+      "kirchhoff-theorem": 0.85,
       "combinatorial-dp": 0.8
     }
   },

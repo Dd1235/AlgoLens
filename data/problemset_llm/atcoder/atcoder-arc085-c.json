@@ -16,7 +16,8 @@
   "patterns": [
     "inclusion-exclusion",
     "dynamic-programming",
-    "multiples-enumeration"
+    "multiples-enumeration",
+    "mobius-inversion"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -25,7 +26,8 @@
     "pattern_confidence": {
       "inclusion-exclusion": 0.95,
       "dynamic-programming": 0.9,
-      "multiples-enumeration": 0.85
+      "multiples-enumeration": 0.85,
+      "mobius-inversion": 0.95
     }
   },
   "difficulty": 2571

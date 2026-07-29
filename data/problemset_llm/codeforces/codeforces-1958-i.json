@@ -21,7 +21,8 @@
   "patterns": [
     "meet-in-the-middle",
     "tree-dp",
-    "dfs"
+    "dfs",
+    "tree-isomorphism"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "meet-in-the-middle": 0.9,
       "tree-dp": 0.85,
-      "dfs": 0.8
+      "dfs": 0.8,
+      "tree-isomorphism": 0.95
     }
   }
 }

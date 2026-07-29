@@ -27,7 +27,8 @@
     "string-hashing",
     "divide-and-conquer",
     "combinatorics",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "kmp"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -37,7 +38,8 @@
       "string-hashing": 0.95,
       "divide-and-conquer": 0.9,
       "combinatorics": 0.85,
-      "modular-arithmetic": 0.9
+      "modular-arithmetic": 0.9,
+      "kmp": 0.95
     }
   }
 }

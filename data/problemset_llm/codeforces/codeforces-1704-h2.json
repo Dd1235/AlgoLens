@@ -22,7 +22,8 @@
   "patterns": [
     "counting",
     "combinatorial-enumeration",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "burnside-lemma"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
     "pattern_confidence": {
       "counting": 0.95,
       "combinatorial-enumeration": 0.9,
-      "modular-arithmetic": 0.85
+      "modular-arithmetic": 0.85,
+      "burnside-lemma": 0.9
     }
   }
 }

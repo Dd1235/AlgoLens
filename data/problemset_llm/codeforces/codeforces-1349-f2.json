@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "dynamic-programming",
-    "fast-fourier-transform",
+    "fft",
     "modular-arithmetic"
   ],
   "annotation": {
@@ -29,7 +29,7 @@
     "generated_at_unix": 1785236888,
     "pattern_confidence": {
       "dynamic-programming": 0.95,
-      "fast-fourier-transform": 0.9,
+      "fft": 0.9,
       "modular-arithmetic": 0.85
     }
   }

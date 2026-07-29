@@ -26,7 +26,8 @@
     "minimum-spanning-tree",
     "maximum-matching",
     "graph-matching",
-    "union-find"
+    "union-find",
+    "wqs-binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -36,7 +37,8 @@
       "minimum-spanning-tree": 0.95,
       "maximum-matching": 0.9,
       "graph-matching": 0.85,
-      "union-find": 0.7
+      "union-find": 0.7,
+      "wqs-binary-search": 0.9
     }
   }
 }

@@ -20,7 +20,7 @@
   ],
   "patterns": [
     "dfs",
-    "bridge-finding",
+    "bridges",
     "bipartite-check",
     "union-find"
   ],
@@ -30,7 +30,7 @@
     "generated_at_unix": 1785051085,
     "pattern_confidence": {
       "dfs": 0.9,
-      "bridge-finding": 0.85,
+      "bridges": 0.85,
       "bipartite-check": 0.95,
       "union-find": 0.7
     }

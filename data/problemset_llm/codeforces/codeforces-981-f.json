@@ -23,7 +23,8 @@
     "binary-search-answer",
     "greedy",
     "circular-distance",
-    "minimum-maximum-matching"
+    "minimum-maximum-matching",
+    "hungarian-algorithm"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -33,7 +34,8 @@
       "binary-search-answer": 0.95,
       "greedy": 0.9,
       "circular-distance": 0.85,
-      "minimum-maximum-matching": 0.8
+      "minimum-maximum-matching": 0.8,
+      "hungarian-algorithm": 0.9
     }
   }
 }

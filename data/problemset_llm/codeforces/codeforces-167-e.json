@@ -27,7 +27,8 @@
     "inclusion-exclusion",
     "counting",
     "perfect-matching",
-    "parity-check"
+    "parity-check",
+    "hafnian"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -39,7 +40,8 @@
       "inclusion-exclusion": 0.85,
       "counting": 0.9,
       "perfect-matching": 0.9,
-      "parity-check": 0.85
+      "parity-check": 0.85,
+      "hafnian": 0.95
     }
   }
 }

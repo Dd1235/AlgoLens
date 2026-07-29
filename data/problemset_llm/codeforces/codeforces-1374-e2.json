@@ -26,7 +26,8 @@
   "patterns": [
     "greedy",
     "sorting",
-    "two-pointers"
+    "two-pointers",
+    "wqs-binary-search"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -35,7 +36,8 @@
     "pattern_confidence": {
       "greedy": 0.95,
       "sorting": 0.9,
-      "two-pointers": 0.85
+      "two-pointers": 0.85,
+      "wqs-binary-search": 0.9
     }
   }
 }

@@ -23,7 +23,8 @@
   "patterns": [
     "binary-search",
     "dfs",
-    "distance-query"
+    "distance-query",
+    "centroid-decomposition"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -32,7 +33,8 @@
     "pattern_confidence": {
       "binary-search": 0.85,
       "dfs": 0.7,
-      "distance-query": 0.9
+      "distance-query": 0.9,
+      "centroid-decomposition": 0.95
     }
   },
   "source_topic": "Codeforces / rating 2500-3500"

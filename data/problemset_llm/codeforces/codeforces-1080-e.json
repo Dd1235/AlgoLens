@@ -21,7 +21,8 @@
     "palindrome",
     "row-wise-rearrangement",
     "submatrix-enumeration",
-    "counting"
+    "counting",
+    "manacher"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -31,7 +32,8 @@
       "palindrome": 0.95,
       "row-wise-rearrangement": 0.9,
       "submatrix-enumeration": 0.85,
-      "counting": 0.8
+      "counting": 0.8,
+      "manacher": 0.8
     }
   },
   "source_topic": "Formwise / String"

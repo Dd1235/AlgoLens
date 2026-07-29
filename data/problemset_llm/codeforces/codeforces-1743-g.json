@@ -27,7 +27,8 @@
     "dynamic-programming",
     "string-partition",
     "rolling-hash",
-    "modular-arithmetic"
+    "modular-arithmetic",
+    "aho-corasick"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -37,7 +38,8 @@
       "dynamic-programming": 0.95,
       "string-partition": 0.9,
       "rolling-hash": 0.85,
-      "modular-arithmetic": 0.8
+      "modular-arithmetic": 0.8,
+      "aho-corasick": 0.9
     }
   }
 }

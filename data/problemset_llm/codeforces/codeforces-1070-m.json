@@ -21,7 +21,8 @@
   "patterns": [
     "planar-graph",
     "spanning-tree",
-    "constructive-algorithm"
+    "constructive-algorithm",
+    "planar-embedding"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
@@ -30,7 +31,8 @@
     "pattern_confidence": {
       "planar-graph": 0.9,
       "spanning-tree": 0.95,
-      "constructive-algorithm": 0.9
+      "constructive-algorithm": 0.9,
+      "planar-embedding": 0.9
     }
   }
 }
