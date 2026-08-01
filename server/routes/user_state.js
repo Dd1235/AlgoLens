@@ -123,6 +123,12 @@ function createUserStateRouter({ problems } = {}) {
     const bands = parseSelection(req.query.difficulty);
     const wantSort = parseSort(req.query.sort);
     const sortDir = wantSort ? (sortableJudge(wanted, SORTABLE_JUDGES) ? wantSort : null) : null;
+    // "marked more than N days ago" — the revision filter. Whitelist-parsed
+    // like everything else here: garbage is ignored, not a 400.
+    const agedDays = Number.parseInt(req.query.aged, 10);
+    const aged = Number.isInteger(agedDays) && agedDays > 0 && agedDays <= 3650 ? agedDays : null;
+    const agedCutoff = aged ? Date.now() - aged * 86400000 : null;
+    const oldestFirst = (req.query.order || "").toString().toLowerCase() === "oldest";
     let where = "user_id = $1";
     if (type === "done") where += " AND done";
     if (type === "bookmarked") where += " AND bookmarked";
@@ -132,7 +138,7 @@ function createUserStateRouter({ problems } = {}) {
         `SELECT problem_id, done, bookmarked, done_at, bookmarked_at, updated_at
            FROM user_problem_state
           WHERE ${where}
-       ORDER BY COALESCE(${orderBy}, updated_at) DESC NULLS LAST`,
+       ORDER BY COALESCE(${orderBy}, updated_at) ${oldestFirst ? "ASC" : "DESC"} NULLS LAST`,
         [req.user.id]
       );
       const items = [];
@@ -143,11 +149,29 @@ function createUserStateRouter({ problems } = {}) {
         if (!passesDifficulty(problem, bands)) continue;
         if (doneFilter === "done" && !row.done) continue;
         if (doneFilter === "notdone" && row.done) continue;
+        // The timestamp this VIEW is about. :done shows when you finished it,
+        // :bookmarks when you saved it. The old shape (bookmarked_at first,
+        // always) meant a problem that was both showed its bookmark age in
+        // :done while the list was ordered by done_at — the visible "3mo ago"
+        // and the actual order could disagree, and an age filter would have
+        // contradicted the label on the card.
+        const viewAt =
+          type === "done" ? row.done_at
+          : type === "bookmarked" ? row.bookmarked_at
+          : row.done_at || row.bookmarked_at;
+        // An age filter needs a date to compare; a row without one can't claim
+        // to be "3 months old", so it is excluded rather than assumed ancient.
+        if (agedCutoff) {
+          if (!viewAt) continue;
+          if (new Date(viewAt).getTime() > agedCutoff) continue;
+        }
         items.push({
           problem,
           done: row.done,
           bookmarked: row.bookmarked,
-          markedAt: (row.bookmarked_at || row.done_at || row.updated_at || new Date()).toISOString(),
+          markedAt: (viewAt || row.updated_at || new Date()).toISOString(),
+          doneAt: row.done_at ? row.done_at.toISOString() : undefined,
+          bookmarkedAt: row.bookmarked_at ? row.bookmarked_at.toISOString() : undefined,
         });
       }
       // A saved list has no ranking either, so sorting it is free.
@@ -156,6 +180,8 @@ function createUserStateRouter({ problems } = {}) {
         type,
         total: ordered.length,
         sort: sortDir ? `difficulty-${sortDir}` : undefined,
+        aged: aged || undefined,
+        order: oldestFirst ? "oldest" : undefined,
         platform: wanted.size ? [...wanted].sort() : undefined,
         difficulty: bands.size ? String(req.query.difficulty).toLowerCase() : undefined,
         filter: doneFilter,

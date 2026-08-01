@@ -99,6 +99,17 @@
             :help
           </button>
         </span>
+        <!-- The revision row: only meaningful inside a library view, so it
+             renders only when the path leaves ~. "marked 3mo+ ago" is how you
+             find the problems worth re-solving. -->
+        <span class="lib-age-row" id="lib-age-row" hidden>
+          <span class="lib-age-label">marked:</span>
+          <button type="button" class="lib-chip lib-age" data-aged="" title="any age">any</button>
+          <button type="button" class="lib-chip lib-age" data-aged="30" title="marked at least a month ago">1mo+</button>
+          <button type="button" class="lib-chip lib-age" data-aged="90" title="marked at least three months ago">3mo+</button>
+          <button type="button" class="lib-chip lib-age" data-aged="180" title="marked at least six months ago">6mo+</button>
+          <button type="button" class="lib-chip lib-age-order" id="lib-oldest" title="start from what you solved longest ago">oldest first</button>
+        </span>
       </div>
       <div class="mode-row">
         <span class="judge-row" id="judge-row" role="group" aria-label="filter results by judge">
