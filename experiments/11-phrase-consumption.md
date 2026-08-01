@@ -1,4 +1,4 @@
-# 10 — a technique name is one phrase, not three words
+# 11 — a technique name is one phrase, not three words
 
 A tester reported three technique names that don't resolve, and correctly
 diagnosed the shape of it: *"some sort of grouping like square root
