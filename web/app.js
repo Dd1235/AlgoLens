@@ -13,7 +13,7 @@ const libBar = document.getElementById("lib-bar");
 const libPathEl = document.getElementById("lib-path");
 const libCountBookmarks = document.getElementById("lib-count-bookmarks");
 const libCountDone = document.getElementById("lib-count-done");
-const libChips = libBar.querySelectorAll(".lib-chip");
+const libChips = libBar.querySelectorAll(".lib-chips .lib-chip");
 const libBackChip = libBar.querySelector(".lib-chip-back");
 const libAgeRow = document.getElementById("lib-age-row");
 // Revision filters: "marked N+ days ago" and oldest-first. Library-only state,
@@ -550,6 +550,19 @@ function levelIsApplied() {
 
 function syncDifficultyControls() {
   if (!difficultyRow) return;
+  const payloadLoaded =
+    (difficultyPayload.named || []).length ||
+    (difficultyPayload.rated || []).length ||
+    difficultyPayload.acceptance;
+  if (!payloadLoaded) {
+    // Boot order: this runs once before /api/rankers responds. Hide the row
+    // but touch NO state — sortDir and boot-restored tiers must survive until
+    // the payload can actually render them. Clearing here is how
+    // ?platform=atcoder&sort=difficulty-asc used to boot unsorted.
+    difficultyRow.classList.add("hidden");
+    difficultyRow.innerHTML = "";
+    return;
+  }
   const judges = [...activePlatforms];
   const named = (difficultyPayload.named || []).filter((b) => activePlatforms.has(b.judge));
   const rated = (difficultyPayload.rated || []).filter((r) => activePlatforms.has(r.judge));
@@ -874,6 +887,10 @@ async function runSearch(rawQuery, { append = false } = {}) {
 
   // Shell-style library commands.
   const libraryType = currentUser ? LIBRARY_COMMANDS[q.toLowerCase()] : null;
+  if (!libraryType && (libAged || libOldest)) {
+    libAged = null;
+    libOldest = false;
+  }
   // A leading colon means "command", and every real one has been matched by
   // now — so this is a typo or a half-typed command, not a question about
   // problems. Searching the corpus for ":bo" costs a round trip to say nothing.
