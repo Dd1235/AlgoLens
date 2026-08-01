@@ -109,6 +109,12 @@
           <button type="button" class="lib-chip lib-age" data-aged="90" title="marked at least three months ago">3mo+</button>
           <button type="button" class="lib-chip lib-age" data-aged="180" title="marked at least six months ago">6mo+</button>
           <button type="button" class="lib-chip lib-age-order" id="lib-oldest" title="start from what you solved longest ago">oldest first</button>
+          <!-- Sheet sync lives with the library because that's what it mirrors.
+               Hidden until /api/rankers supplies a google client id. -->
+          <span class="lib-sheet" id="lib-sheet" hidden>
+            <button type="button" class="lib-chip" id="sheet-btn" title="notes live in your own Google Sheet — nothing is stored on this server">connect sheet</button>
+            <a class="lib-chip lib-sheet-open" id="sheet-open" target="_blank" rel="noopener" hidden>open ↗</a>
+          </span>
         </span>
       </div>
       <div class="mode-row">
@@ -152,6 +158,7 @@
       <div id="compare-results" class="compare-grid hidden"></div>
     </main>
     <footer>cosine v0.5 · deepya · leetcode · cses · codeforces · atcoder · <a href="/stats.html">stats</a> · <a href="/debug.html">debug</a></footer>
+    <script src="/sheets.js"></script>
     <script src="/app.js"></script>
   </body>
 </html>
