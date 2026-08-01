@@ -416,9 +416,13 @@ async function refreshLibraryCounts() {
 function setLibPath(path) {
   libPathEl.textContent = path;
   if (libBackChip) libBackChip.hidden = path === "~";
-  // The age row exists only where timestamps do.
+  // The age row exists only where timestamps do — the three library views.
+  // `path === "~"` was the wrong test: a search sets the path to `~/search
+  // "..."`, so the chips showed there too, where clicking one is a no-op
+  // (the filter resets the moment a non-library view re-issues).
   if (libAgeRow) {
-    libAgeRow.hidden = path === "~" || !currentUser;
+    const inLibrary = /^~\/(bookmarked|done|all)\b/.test(path);
+    libAgeRow.hidden = !inLibrary || !currentUser;
     libAgeRow.querySelectorAll(".lib-age").forEach((c) => {
       c.classList.toggle("is-active", String(libAged ?? "") === c.dataset.aged);
     });
