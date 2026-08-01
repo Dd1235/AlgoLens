@@ -26,6 +26,9 @@ function createDebugRouter({ problems, indexes, defaultRanker }) {
       default: defaultRanker,
       corpusSize: problems.length,
       difficulty: buildDifficultyPayload(problems),
+      // A web OAuth client ID is public by design — it names the app, it
+      // grants nothing. The sheet feature self-hides when this is unset.
+      googleClientId: process.env.GOOGLE_CLIENT_ID || undefined,
     });
   });
 

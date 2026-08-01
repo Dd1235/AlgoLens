@@ -15,7 +15,7 @@ const fs = require("fs");
 const path = require("path");
 
 const WEB = __dirname;
-const FILES = ["app.js", "profile.js", "patterns.js", "stats.js", "debug.js", "theme.js"];
+const FILES = ["app.js", "sheets.js", "profile.js", "patterns.js", "stats.js", "debug.js", "theme.js"];
 
 // Things that exist without being declared in the file itself.
 const GLOBALS = new Set([

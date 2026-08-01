@@ -20,6 +20,8 @@ const libAgeRow = document.getElementById("lib-age-row");
 // deliberately separate from the search filters — they mean nothing there.
 let libAged = null;
 let libOldest = false;
+let googleClientId = null;       // from /api/rankers; sheet feature hidden while null
+let sheetSyncedThisSession = false;
 
 // :help works for everyone, signed in or not.
 const HELP_COMMANDS = new Set([":help", ":h"]);
@@ -203,6 +205,8 @@ async function populateRankerSelect() {
     rankerSelect.appendChild(opt);
   }
   difficultyPayload = data.difficulty || { named: [], rated: [], acceptance: null };
+  googleClientId = data.googleClientId || null;
+  maybeInitSheets();
   // A range in the URL names a judge by its short form ("cf"), which only the
   // payload can resolve — so it is applied here rather than at boot.
   for (const [, short, lo, hi] of bootRanges.splice(0)) {
@@ -236,6 +240,9 @@ libChips.forEach((chip) => {
     else runSearch("", { append: false });
   });
 });
+
+const sheetBtnEl = document.getElementById("sheet-btn");
+if (sheetBtnEl) sheetBtnEl.addEventListener("click", () => { doSheetSync(); });
 
 // The age chips and oldest-first re-issue whatever library view is open.
 if (libAgeRow) {
@@ -280,6 +287,10 @@ logoutBtn.addEventListener("click", async () => {
   // someone's linked usernames sitting in localStorage on a shared machine.
   // Duplicated rather than imported: these two pages share no module.
   try { localStorage.removeItem("algolens_profile_v1"); } catch (_e) {}
+  // Same shared-machine reasoning for the sheet pointer; the token itself was
+  // never persisted, so dropping the in-memory state is the whole cleanup.
+  if (typeof cosineSheets !== "undefined") cosineSheets.clearLocal();
+  sheetSyncedThisSession = false;
   currentUser = null;
   applyAuthState();
   clearPatternFilter({ reissue: false });
@@ -291,6 +302,54 @@ logoutBtn.addEventListener("click", async () => {
   hideLoadMore();
   setStatus("logged out");
 });
+
+// Sheets needs the client id (from /api/rankers) AND the signed-in user id
+// (from /auth/me); whichever resolves second completes the init.
+function maybeInitSheets() {
+  if (typeof cosineSheets === "undefined") return;
+  cosineSheets.init({
+    clientId: googleClientId,
+    userId: currentUser && currentUser.id,
+    onChange: syncSheetChip,
+  });
+  syncSheetChip();
+}
+
+function syncSheetChip() {
+  const wrap = document.getElementById("lib-sheet");
+  if (!wrap) return;
+  const usable = typeof cosineSheets !== "undefined" && cosineSheets.available();
+  wrap.hidden = !usable;
+  if (!usable) return;
+  const btn = document.getElementById("sheet-btn");
+  const open = document.getElementById("sheet-open");
+  const connected = cosineSheets.connected();
+  btn.textContent = connected ? "sync sheet" : "connect sheet";
+  open.hidden = !connected;
+  if (connected) open.href = cosineSheets.url();
+}
+
+// Connect on first use, then sync; either way the status line says what
+// happened — a background write to someone's Drive should never be silent.
+async function doSheetSync() {
+  const btn = document.getElementById("sheet-btn");
+  if (btn) btn.disabled = true;
+  try {
+    if (!cosineSheets.connected()) await cosineSheets.connect();
+    const res = await fetch("/api/library?type=all");
+    const data = await res.json();
+    const out = await cosineSheets.sync(data.items || []);
+    sheetSyncedThisSession = true;
+    setStatus(`sheet: ${out.total} rows · ${out.added} added · ${out.updated} updated`);
+    // Notes may have arrived from the sheet; a library view should show them.
+    if (currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) reissueCurrentView();
+  } catch (err) {
+    setStatus(`sheet: ${err.message || "sync failed"}`);
+  } finally {
+    if (btn) btn.disabled = false;
+    syncSheetChip();
+  }
+}
 
 async function bootstrapAuth() {
   try {
@@ -310,6 +369,7 @@ async function bootstrapAuth() {
   bootNeedsAuth = false;
   if (wasPending && currentUser && currentQuery) reissueSearch();
   loadLevelSignals();
+  maybeInitSheets();
 }
 
 function applyAuthState() {
@@ -1096,6 +1156,12 @@ async function runLibrary(type, q) {
 
   setStatus(`${hits.length} ${type === "all" ? "saved" : type}${facets.length ? " · " + facets.join(" · ") : ""}${orderNote()}`);
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
+  // One background sync per session, on the first library view: cheap, and it
+  // is the moment the sheet's mirror is actually being looked at.
+  if (!sheetSyncedThisSession && typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
+    sheetSyncedThisSession = true;
+    doSheetSync();
+  }
 }
 
 // "Find similar" view: doc-to-doc cosine over the precomputed embeddings.
@@ -1406,6 +1472,23 @@ SAVING                                             (signed in)
   ☆ / ★              bookmark a problem, on any result card
   ○ / ✓              mark it done — done marks feed your heatmap
 
+SHEET                                              (signed in)
+  "connect sheet" in the library bar links a Google Sheet named
+  "cosine notes" in YOUR Drive — created by this app, and the only
+  file it can touch (drive.file scope). Nothing is stored here:
+  the Google token lives in your browser tab and notes live in
+  your sheet. This server never sees either.
+
+  sync mirrors your saved problems into columns A-H (id, title,
+  link, judge, difficulty, bookmarked, done, done date). Those
+  columns belong to the site — edits to them in the sheet are
+  overwritten next sync. Columns I-N (status, time taken, concept,
+  tactics, solution summary, notes) belong to YOU — the site reads
+  them, shows them on the expanded card (✎ marks a problem that
+  has notes), and never writes them except when you press save.
+  Rows are never deleted: un-saving a problem blanks its status
+  cells and keeps your notes.
+
 LINKS
   the address bar follows what you're looking at — query, judges,
   difficulty, sort, pattern, ranker and filter all land in the URL, so refresh keeps
@@ -1657,6 +1740,11 @@ function renderHitsList(container, hits, opts = {}) {
     // visible furniture standing in for nothing.
     const diffHtml = diff === "" ? "" : `<span class="difficulty ${diffClass(diff)}">${escapeHtml(String(diff))}</span>`;
     let metaHtml = platformBadge(hit.problem.platform) + diffHtml + escapeHtml(trailing);
+    if (typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
+      const note = cosineSheets.noteFor(hit.problem.id);
+      const hasNotes = note && cosineSheets.USER_FIELDS.some((fld) => (note[fld.key] || "").trim());
+      if (hasNotes) metaHtml += '<span class="note-mark" title="has notes in your sheet">✎</span>';
+    }
     if (opts.otherRankMap) {
       const other = opts.otherRankMap.get(hit.problem.id);
       metaHtml = rankDeltaBadge(i + 1, other, opts.otherName) + metaHtml;
@@ -1721,6 +1809,9 @@ function renderHitsList(container, hits, opts = {}) {
         applyPatternFilter(btn.dataset.pattern);
       });
     });
+    if (typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
+      detail.appendChild(buildNoteForm(hit.problem.id));
+    }
 
     header.addEventListener("click", () => {
       const opening = detail.classList.contains("hidden");
@@ -1836,6 +1927,80 @@ function reissueSearch() {
   if (!currentQuery) return;
   currentOffset = 0;
   runSearch(currentQuery, { append: false });
+}
+
+// The per-problem note editor. Values render from the in-memory sheet cache
+// (renderHitsList rebuilds DOM per query, so nothing lives on nodes), and a
+// save writes columns I–N of that row in the USER'S sheet — never our server.
+function buildNoteForm(problemId) {
+  const wrap = document.createElement("div");
+  wrap.className = "note-form";
+  const note = cosineSheets.noteFor(problemId);
+
+  if (!note) {
+    const hint = document.createElement("p");
+    hint.className = "note-hint";
+    hint.textContent = "no sheet row yet — press `sync sheet` in the library bar to add your saved problems";
+    wrap.appendChild(hint);
+    return wrap;
+  }
+
+  const inputs = new Map();
+  for (const fld of cosineSheets.USER_FIELDS) {
+    const row = document.createElement("label");
+    row.className = "note-row";
+    const cap = document.createElement("span");
+    cap.className = "note-label";
+    cap.textContent = fld.label;
+    row.appendChild(cap);
+    let el;
+    if (fld.kind === "select") {
+      el = document.createElement("select");
+      for (const opt of fld.options) {
+        const o = document.createElement("option");
+        o.value = opt;
+        o.textContent = opt || "—";
+        el.appendChild(o);
+      }
+    } else if (fld.kind === "text") {
+      el = document.createElement("textarea");
+      el.rows = 2;
+    } else {
+      el = document.createElement("input");
+      el.type = "text";
+    }
+    el.className = "note-input";
+    el.value = note[fld.key] || "";
+    el.addEventListener("click", (e) => e.stopPropagation());
+    inputs.set(fld.key, el);
+    row.appendChild(el);
+    wrap.appendChild(row);
+  }
+
+  const save = document.createElement("button");
+  save.type = "button";
+  save.className = "note-save";
+  save.textContent = "save to sheet";
+  save.addEventListener("click", async (e) => {
+    e.stopPropagation();
+    save.disabled = true;
+    save.textContent = "saving…";
+    try {
+      const fields = {};
+      for (const [k, el] of inputs) fields[k] = el.value;
+      await cosineSheets.saveNote(problemId, fields);
+      save.textContent = "saved ✓";
+      track("note_saved", { problemId });
+    } catch (err) {
+      save.textContent = "save to sheet";
+      setStatus(`sheet: ${err.message || "save failed"}`);
+    } finally {
+      save.disabled = false;
+      setTimeout(() => { save.textContent = "save to sheet"; }, 1500);
+    }
+  });
+  wrap.appendChild(save);
+  return wrap;
 }
 
 function formatRelative(iso) {
