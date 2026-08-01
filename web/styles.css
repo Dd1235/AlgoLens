@@ -1359,37 +1359,25 @@ html[data-theme="light"] footer::after { content: ""; }
 .lib-sheet { display: inline-flex; align-items: center; gap: 0.3rem; margin-left: auto; }
 .lib-sheet-open { text-decoration: none; }
 
-/* The note editor inside an expanded card. Labeled rows, monospace, quiet —
-   it's a margin note, not a form wizard. */
-.note-form {
+/* A problem's sheet row, rendered read-only inside the expanded card. The
+   sheet is where editing happens; this is a margin note, not a form. */
+.note-view {
   margin-top: 0.7rem;
   padding-top: 0.6rem;
   border-top: 1px dashed var(--border);
   display: grid;
-  gap: 0.4rem;
+  gap: 0.3rem;
 }
-.note-row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.5rem; align-items: start; }
-.note-label { color: var(--text-dim); font-size: 0.74rem; padding-top: 0.3rem; }
+.note-row { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.5rem; }
+.note-label { color: var(--text-dim); font-size: 0.74rem; }
 .note-label::after { content: ":"; }
-.note-input {
-  font-family: var(--mono);
-  font-size: 0.8rem;
-  color: var(--text);
-  background: var(--surface-code);
-  border: 1px solid var(--border);
-  border-radius: var(--r-chip);
-  padding: 0.25rem 0.4rem;
-  width: 100%;
-}
-.note-input:focus { outline: none; border-color: var(--accent); }
-.note-save { justify-self: start; margin: 0.1rem 0 0; padding: 0.3rem 0.7rem; font-size: 0.76rem; }
-.note-hint { color: var(--text-dim); font-size: 0.76rem; margin: 0; }
+.note-value { font-size: 0.8rem; white-space: pre-wrap; overflow-wrap: anywhere; }
+.note-edit-link { font-size: 0.74rem; color: var(--text-muted); justify-self: start; }
+.note-edit-link:hover { color: var(--accent); }
 .note-mark { margin-left: 0.35rem; color: var(--accent-2); }
 
 @media (max-width: 720px) {
-  .note-row { grid-template-columns: 1fr; gap: 0.15rem; }
-  .note-label { padding-top: 0; }
-  .note-input { font-size: 16px; } /* the iOS zoom rule applies here too */
+  .note-row { grid-template-columns: 1fr; gap: 0.1rem; }
   .lib-sheet { margin-left: 0; flex-basis: 100%; }
 }
 
