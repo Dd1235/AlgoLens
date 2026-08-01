@@ -15,6 +15,11 @@ const libCountBookmarks = document.getElementById("lib-count-bookmarks");
 const libCountDone = document.getElementById("lib-count-done");
 const libChips = libBar.querySelectorAll(".lib-chip");
 const libBackChip = libBar.querySelector(".lib-chip-back");
+const libAgeRow = document.getElementById("lib-age-row");
+// Revision filters: "marked N+ days ago" and oldest-first. Library-only state,
+// deliberately separate from the search filters — they mean nothing there.
+let libAged = null;
+let libOldest = false;
 
 // :help works for everyone, signed in or not.
 const HELP_COMMANDS = new Set([":help", ":h"]);
@@ -232,6 +237,25 @@ libChips.forEach((chip) => {
   });
 });
 
+// The age chips and oldest-first re-issue whatever library view is open.
+if (libAgeRow) {
+  libAgeRow.querySelectorAll(".lib-age").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      libAged = chip.dataset.aged ? Number(chip.dataset.aged) : null;
+      track("library_aged", { days: libAged || 0 });
+      syncUrl();
+      reissueCurrentView();
+    });
+  });
+  const oldest = document.getElementById("lib-oldest");
+  if (oldest) oldest.addEventListener("click", () => {
+    libOldest = !libOldest;
+    track("library_order", { oldest: libOldest });
+    syncUrl();
+    reissueCurrentView();
+  });
+}
+
 // Tab inside the search input cycles through library commands when the user is
 // signed in — picks up where they are in the LIBRARY_COMMANDS list.
 const TAB_CYCLE = [":bookmarks", ":done", ":all"];
@@ -332,6 +356,15 @@ async function refreshLibraryCounts() {
 function setLibPath(path) {
   libPathEl.textContent = path;
   if (libBackChip) libBackChip.hidden = path === "~";
+  // The age row exists only where timestamps do.
+  if (libAgeRow) {
+    libAgeRow.hidden = path === "~" || !currentUser;
+    libAgeRow.querySelectorAll(".lib-age").forEach((c) => {
+      c.classList.toggle("is-active", String(libAged ?? "") === c.dataset.aged);
+    });
+    const oldest = document.getElementById("lib-oldest");
+    if (oldest) oldest.classList.toggle("is-active", libOldest);
+  }
   // Highlight the matching chip so the bar reads like a state indicator.
   libChips.forEach((c) => {
     const active =
@@ -361,7 +394,8 @@ judgeClearBtn.addEventListener("click", () => clearPlatformFilter());
 // between them. runLibrary still called it, so :bookmarks / :done / :all threw
 // a ReferenceError and rendered nothing at all.
 function orderNote() {
-  return sortDir ? ` · ${sortDir === "desc" ? "hardest" : "easiest"} first` : "";
+  if (sortDir) return ` · ${sortDir === "desc" ? "hardest" : "easiest"} first`;
+  return libOldest ? " · oldest first" : "";
 }
 
 // Cache-only on the server, so this costs one indexed read and never makes the
@@ -394,6 +428,7 @@ function activeFacets() {
   }
   if (activeAcceptance) bits.push(`ac ${activeAcceptance.min}-${activeAcceptance.max}%`);
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
+  if (libAged) bits.push(`marked ${libAged >= 180 ? "6mo" : libAged >= 90 ? "3mo" : "1mo"}+ ago`);
   return bits;
 }
 
@@ -1022,7 +1057,9 @@ async function runLibrary(type, q) {
     const dp = difficultyParam();
     const bandParam = dp ? `&difficulty=${encodeURIComponent(dp)}` : "";
     const sortParam = sortDir ? `&sort=difficulty-${sortDir}` : "";
-    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}${sortParam}`);
+    const agedParam = libAged ? `&aged=${libAged}` : "";
+    const orderParam = libOldest ? "&order=oldest" : "";
+    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}${sortParam}${agedParam}${orderParam}`);
     data = await res.json();
   } catch (err) {
     if (issuedAt !== lastQueryAt) return;
@@ -1205,6 +1242,12 @@ function syncUrl() {
   const dParam = difficultyParam();
   if (dParam) p.set("difficulty", dParam);
   if (sortDir) p.set("sort", `difficulty-${sortDir}`);
+  // Library-only state, written only when a library view is open so a plain
+  // search URL never carries stale revision filters.
+  if (currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
+    if (libAged) p.set("aged", String(libAged));
+    if (libOldest) p.set("order", "oldest");
+  }
   if (activeRanker) p.set("ranker", activeRanker);
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
   const qs = p.toString();
@@ -1351,6 +1394,13 @@ FILTERS — they stack, and they stack with the library too
   These compose. ":bookmarks" with cf+atc selected and "not done"
   is your unfinished Codeforces and AtCoder saves — the path and the
   status line always spell out what's narrowing the view.
+
+  marked        inside a library view: 1mo+ / 3mo+ / 6mo+ keep only
+                problems you marked at least that long ago — built for
+                revision, where "what did I solve months back?" is the
+                question. "oldest first" starts from what you solved
+                longest ago. Ages follow the view: :done filters by
+                when you finished, :bookmarks by when you saved.
 
 SAVING                                             (signed in)
   ☆ / ★              bookmark a problem, on any result card
@@ -1820,6 +1870,9 @@ if (/^[a-z0-9-]{1,24}$/.test(urlRanker)) activeRanker = urlRanker;
 populateRankerSelect();
 const bootQ = (bootParams.get("q") || "").trim();
 const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
+const bootAged = Number.parseInt(bootParams.get("aged") || "", 10);
+if ([30, 90, 180].includes(bootAged)) libAged = bootAged;
+if ((bootParams.get("order") || "").toLowerCase() === "oldest") libOldest = true;
 const bootSort = (bootParams.get("sort") || "").trim().toLowerCase();
 if (bootSort === "difficulty-asc" || bootSort === "difficulty") sortDir = "asc";
 else if (bootSort === "difficulty-desc") sortDir = "desc";

@@ -1343,6 +1343,19 @@ html[data-theme="light"] footer::after { content: ""; }
   flex-wrap: wrap;
 }
 
+/* The revision row sits under the command chips, full width, and reads like a
+   second prompt line rather than a toolbar. .lib-bar wraps, so flex-basis:100%
+   forces the break. */
+.lib-age-row {
+  flex-basis: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.lib-age-row[hidden] { display: none; }
+.lib-age-label { color: var(--text-dim); font-size: 0.74rem; }
+.lib-age-order { margin-left: 0.4rem; }
+
 .lib-chip {
   margin: 0;
   padding: 0.2rem 0.55rem;
