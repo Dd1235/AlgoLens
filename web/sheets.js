@@ -11,10 +11,13 @@
 //   - Notes never transit our server and are never stored in our database.
 //     The server's entire involvement is serving a public client id.
 //
-// Column ownership is the conflict-resolution story. The app owns A–H and
-// upserts them on sync; the user owns I–N and the app NEVER writes them
-// except as blank cells on a brand-new row. No cell has two writers, so
-// there is nothing to merge.
+// The sheet is the EDITING surface; the site only displays. The app writes
+// exactly one thing: columns A–H of rows whose problem is in your library
+// (plus appending new such rows). Everything else in the spreadsheet is
+// yours — the suggested note columns I–N, any columns you add after them,
+// any rows you add — and the app never writes, blanks, or deletes any of it.
+// No cell has two writers, so there is nothing to merge, and no in-site
+// editor means the token is only ever needed when YOU press sync.
 
 // Exposed as ONE namespace (bottom of file) rather than bare globals: app.js
 // calls these as cosineSheets.foo(), which also keeps the bundle lint honest —
@@ -24,13 +27,16 @@ const SHEET_NAME = "cosine notes";
 const SHEET_TAB = "problems";
 const SHEET_ID_KEY = "algolens_sheet_v1"; // localStorage: { userId, spreadsheetId }
 const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at"];
+// Suggested columns, created once in the header. Free-form on purpose —
+// "todo", "revise friday", whatever fits your system; the site renders what
+// it finds and enforces nothing. Add your own columns after these.
 const SHEET_USER_FIELDS = [
-  { key: "solve_status", label: "status", kind: "select", options: ["", "solved", "solved with hints", "needs redo", "gave up"] },
-  { key: "time_taken", label: "time taken", kind: "input" },
-  { key: "concept", label: "concept", kind: "input" },
-  { key: "tactics", label: "tactics", kind: "text" },
-  { key: "solution_summary", label: "solution summary", kind: "text" },
-  { key: "notes", label: "notes", kind: "text" },
+  { key: "solve_status", label: "status" },
+  { key: "time_taken", label: "time taken" },
+  { key: "concept", label: "concept" },
+  { key: "tactics", label: "tactics" },
+  { key: "solution_summary", label: "solution summary" },
+  { key: "notes", label: "notes" },
 ];
 const FULL_HEADER = APP_HEADER.concat(SHEET_USER_FIELDS.map((f) => f.key));
 
@@ -60,6 +66,13 @@ function sheetsInit({ clientId, userId, onChange }) {
 
 function sheetsConnected() {
   return Boolean(spreadsheetId);
+}
+
+// Whether a usable token is already in memory. The auto-sync gate: a token
+// request needs a user gesture to be popup-blocker-safe and to never nag, so
+// background syncs run only when this is true.
+function sheetsHasToken() {
+  return Boolean(accessToken && Date.now() < tokenExpiresAt - 60000);
 }
 
 function sheetsAvailable() {
@@ -220,24 +233,17 @@ async function sheetsSync(items) {
         values: [appRow(item)],
       });
     } else {
-      // A new row gets blank user cells — written once, at birth, and never
-      // again. That is the only time the app touches columns I–N.
-      appends.push(appRow(item).concat(SHEET_USER_FIELDS.map(() => "")));
+      // A new row is A–H only. The append range is pinned to A:H so Sheets
+      // can't shift the row into whatever columns the user added later.
+      appends.push(appRow(item));
     }
   }
 
-  // A row whose problem is no longer saved anywhere keeps its notes — rows
-  // are never deleted — but its status cells stop claiming otherwise. Still
-  // app-owned columns only (F:H).
-  const live = new Set(items.map((it) => it.problem.id));
-  for (const [pid, entry] of rowByProblem) {
-    if (live.has(pid)) continue;
-    if (entry.rowIndex == null) continue;
-    updates.push({
-      range: `${SHEET_TAB}!F${entry.rowIndex}:H${entry.rowIndex}`,
-      values: [["", "", ""]],
-    });
-  }
+  // Rows absent from the library are left COMPLETELY alone. An earlier cut
+  // blanked their status cells, but the app can't tell its own old rows from
+  // rows the user appended by hand — and "the app never touches your rows"
+  // is worth more than a fresher mirror. An un-saved problem's row simply
+  // keeps its last-synced status.
 
   if (updates.length) {
     await gapi(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchUpdate`, {
@@ -247,7 +253,7 @@ async function sheetsSync(items) {
   }
   if (appends.length) {
     await gapi(
-      `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${SHEET_TAB}!A1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`,
+      `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${SHEET_TAB}!A1:H1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`,
       { method: "POST", body: JSON.stringify({ values: appends }) }
     );
   }
@@ -262,35 +268,6 @@ function sheetsNoteFor(problemId) {
   return rowByProblem.get(problemId) || null;
 }
 
-async function sheetsSaveNote(problemId, fields) {
-  const entry = rowByProblem.get(problemId);
-  if (!entry) throw new Error("sync the sheet first — this problem has no row yet");
-  const from = colLetter(APP_HEADER.length + 1);
-  const to = colLetter(FULL_HEADER.length);
-
-  // Field-level last-write. The row is re-read right before writing, and a
-  // field is taken from the UI only where the UI actually CHANGED it (differs
-  // from the cache the form was rendered from). An untouched field keeps
-  // whatever is in the sheet now — so editing `notes` on the site can't
-  // clobber a `concept` typed into the sheet a minute ago.
-  const fresh = await gapi(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(`${SHEET_TAB}!${from}${entry.rowIndex}:${to}${entry.rowIndex}`)}`
-  );
-  const sheetNow = (fresh.values && fresh.values[0]) || [];
-  const values = [SHEET_USER_FIELDS.map((f, j) => {
-    const uiValue = fields[f.key] != null ? fields[f.key] : entry[f.key] || "";
-    const changedInUi = uiValue !== (entry[f.key] || "");
-    return changedInUi ? uiValue : (sheetNow[j] != null ? sheetNow[j] : entry[f.key] || "");
-  })];
-
-  await gapi(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${SHEET_TAB}!${from}${entry.rowIndex}:${to}${entry.rowIndex}?valueInputOption=RAW`,
-    { method: "PUT", body: JSON.stringify({ values }) }
-  );
-  SHEET_USER_FIELDS.forEach((f, j) => { entry[f.key] = values[0][j]; });
-  onStateChange();
-}
-
 function sheetsUrl() {
   return spreadsheetId ? `https://docs.google.com/spreadsheets/d/${spreadsheetId}` : null;
 }
@@ -300,10 +277,10 @@ const cosineSheets = {
   init: sheetsInit,
   available: sheetsAvailable,
   connected: sheetsConnected,
+  hasToken: sheetsHasToken,
   connect: sheetsConnect,
   sync: sheetsSync,
   noteFor: sheetsNoteFor,
-  saveNote: sheetsSaveNote,
   clearLocal: sheetsClearLocal,
   url: sheetsUrl,
   USER_FIELDS: SHEET_USER_FIELDS,

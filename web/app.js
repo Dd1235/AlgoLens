@@ -1179,7 +1179,13 @@ async function runLibrary(type, q) {
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
   // One background sync per session, on the first library view: cheap, and it
   // is the moment the sheet's mirror is actually being looked at.
-  if (!sheetSyncedThisSession && typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
+  // Auto-sync only when a token is ALREADY in memory. Requesting one from a
+  // background path is what nagged people with sign-in popups on every visit
+  // (and popup blockers eat non-gesture requests anyway). A fresh session
+  // syncs on the first explicit press of `sync sheet`, which is also the only
+  // moment Google may show its popup — at most once per session, on a click.
+  if (!sheetSyncedThisSession && typeof cosineSheets !== "undefined"
+      && cosineSheets.connected() && cosineSheets.hasToken()) {
     sheetSyncedThisSession = true;
     doSheetSync();
   }
@@ -1503,12 +1509,16 @@ SHEET                                              (signed in)
   sync mirrors your saved problems into columns A-H (id, title,
   link, judge, difficulty, bookmarked, done, done date). Those
   columns belong to the site — edits to them in the sheet are
-  overwritten next sync. Columns I-N (status, time taken, concept,
-  tactics, solution summary, notes) belong to YOU — the site reads
-  them, shows them on the expanded card (✎ marks a problem that
-  has notes), and never writes them except when you press save.
-  Rows are never deleted: un-saving a problem blanks its status
-  cells and keeps your notes.
+  overwritten next sync. EVERYTHING ELSE IS YOURS, edited in the
+  sheet itself: the suggested columns (status, time taken,
+  concept, tactics, solution summary, notes — free-form, "todo"
+  is a status if you say it is), any columns you add after them,
+  any rows you add. The app never writes, blanks or deletes any
+  of it. The site reads your columns and shows them on the
+  expanded card (✎ marks an annotated problem).
+
+  Google may ask for access at most once per session, and only
+  when YOU press sync — never on page load.
 
 LINKS
   the address bar follows what you're looking at — query, judges,
@@ -1831,7 +1841,8 @@ function renderHitsList(container, hits, opts = {}) {
       });
     });
     if (typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
-      detail.appendChild(buildNoteForm(hit.problem.id));
+      const noteView = buildNoteView(hit.problem.id);
+      if (noteView) detail.appendChild(noteView);
     }
 
     header.addEventListener("click", () => {
@@ -1950,77 +1961,43 @@ function reissueSearch() {
   runSearch(currentQuery, { append: false });
 }
 
-// The per-problem note editor. Values render from the in-memory sheet cache
-// (renderHitsList rebuilds DOM per query, so nothing lives on nodes), and a
-// save writes columns I–N of that row in the USER'S sheet — never our server.
-function buildNoteForm(problemId) {
-  const wrap = document.createElement("div");
-  wrap.className = "note-form";
+// Read-only view of a problem's sheet row. The sheet is the editing surface —
+// status, time taken, whatever columns the user invents live there, and the
+// site just shows what it finds. No form means no save path, which means the
+// Google token is only ever requested when the user presses sync.
+//
+// A problem with no notes gets NOTHING — not an empty form. Status and
+// time-taken make no sense on a problem you just searched for and never
+// attempted; the fields appear exactly where the user chose to write them.
+function buildNoteView(problemId) {
   const note = cosineSheets.noteFor(problemId);
+  if (!note) return null;
+  const filled = cosineSheets.USER_FIELDS.filter((fld) => (note[fld.key] || "").trim());
+  if (!filled.length) return null;
 
-  if (!note) {
-    const hint = document.createElement("p");
-    hint.className = "note-hint";
-    hint.textContent = "no sheet row yet — press `sync sheet` in the library bar to add your saved problems";
-    wrap.appendChild(hint);
-    return wrap;
-  }
-
-  const inputs = new Map();
-  for (const fld of cosineSheets.USER_FIELDS) {
-    const row = document.createElement("label");
+  const wrap = document.createElement("div");
+  wrap.className = "note-view";
+  for (const fld of filled) {
+    const row = document.createElement("div");
     row.className = "note-row";
     const cap = document.createElement("span");
     cap.className = "note-label";
     cap.textContent = fld.label;
+    const val = document.createElement("span");
+    val.className = "note-value";
+    val.textContent = note[fld.key];
     row.appendChild(cap);
-    let el;
-    if (fld.kind === "select") {
-      el = document.createElement("select");
-      for (const opt of fld.options) {
-        const o = document.createElement("option");
-        o.value = opt;
-        o.textContent = opt || "—";
-        el.appendChild(o);
-      }
-    } else if (fld.kind === "text") {
-      el = document.createElement("textarea");
-      el.rows = 2;
-    } else {
-      el = document.createElement("input");
-      el.type = "text";
-    }
-    el.className = "note-input";
-    el.value = note[fld.key] || "";
-    el.addEventListener("click", (e) => e.stopPropagation());
-    inputs.set(fld.key, el);
-    row.appendChild(el);
+    row.appendChild(val);
     wrap.appendChild(row);
   }
-
-  const save = document.createElement("button");
-  save.type = "button";
-  save.className = "note-save";
-  save.textContent = "save to sheet";
-  save.addEventListener("click", async (e) => {
-    e.stopPropagation();
-    save.disabled = true;
-    save.textContent = "saving…";
-    try {
-      const fields = {};
-      for (const [k, el] of inputs) fields[k] = el.value;
-      await cosineSheets.saveNote(problemId, fields);
-      save.textContent = "saved ✓";
-      track("note_saved", { problemId });
-    } catch (err) {
-      save.textContent = "save to sheet";
-      setStatus(`sheet: ${err.message || "save failed"}`);
-    } finally {
-      save.disabled = false;
-      setTimeout(() => { save.textContent = "save to sheet"; }, 1500);
-    }
-  });
-  wrap.appendChild(save);
+  const edit = document.createElement("a");
+  edit.className = "note-edit-link";
+  edit.href = cosineSheets.url() || "#";
+  edit.target = "_blank";
+  edit.rel = "noopener";
+  edit.textContent = "edit in your sheet ↗";
+  edit.addEventListener("click", (e) => e.stopPropagation());
+  wrap.appendChild(edit);
   return wrap;
 }
 
