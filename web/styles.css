@@ -1636,6 +1636,15 @@ html[data-theme="light"] footer::after { content: ""; }
     min-height: 34px;
   }
   .result-action { min-width: 38px; min-height: 34px; justify-content: center; }
+  /* The rating chip carries its own min-width, which is narrower than a thumb
+     — and being the third of three adjacent buttons, it is the one that gets
+     mis-hit. It matches the others here. */
+  .result-action.recall { min-width: 38px; font-size: 0.9rem; }
+
+  /* 16px or Safari zooms the viewport on focus and never zooms back. The
+     desktop size is set on a two-class selector, so it has to be beaten by
+     one — this is the same trap the search box already documents. */
+  .lib-bar .lib-recall-select { font-size: 16px; }
 
   /* Result titles were truncating to ~14 characters, because the meta cluster
      and the action buttons are both flex:0 0 auto with nowrap and ate over half
