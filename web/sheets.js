@@ -46,11 +46,6 @@ let tokenClient = null;      // GIS token client, created after the script loads
 let accessToken = null;      // memory only, ~1h lifetime
 let tokenExpiresAt = 0;
 let spreadsheetId = null;
-// Which Google account owns the sheet. The app login and the Google account
-// are independent — you can sign in here as one address and hold the sheet in
-// another — so this is remembered and passed to Google as a `hint`, which is
-// what stops the account chooser appearing on every token request.
-let googleEmail = null;
 let rowByProblem = new Map(); // problem_id -> { rowIndex (1-based), note fields }
 let onStateChange = () => {};
 
@@ -65,17 +60,13 @@ function sheetsInit({ clientId, userId, onChange }) {
   sheetsClientId = clientId || null;
   sheetsUserId = userId || null;
   spreadsheetId = null;
-  googleEmail = null;
   rowByProblem = new Map();
   if (!sheetsClientId || !sheetsUserId) return;
   try {
     const parsed = JSON.parse(localStorage.getItem(SHEET_ID_KEY) || "null");
     // The userId guard keeps two accounts on one machine out of each other's
     // sheets — same envelope pattern as the profile snapshot.
-    if (parsed && parsed.userId === sheetsUserId) {
-      spreadsheetId = parsed.spreadsheetId || null;
-      googleEmail = parsed.googleEmail || null;
-    }
+    if (parsed && parsed.userId === sheetsUserId) spreadsheetId = parsed.spreadsheetId || null;
   } catch (_e) {}
 }
 
@@ -98,7 +89,6 @@ function sheetsClearLocal() {
   forget();
   accessToken = null;
   spreadsheetId = null;
-  googleEmail = null;
   rowByProblem = new Map();
 }
 
@@ -136,33 +126,46 @@ async function getToken(interactive) {
     };
     // prompt:"" re-uses an existing grant silently; the consent popup only
     // appears the very first time (or after the user revokes access).
-    // `hint` names the account to use, so someone signed into several Google
-    // accounts isn't asked to pick one every time. Consent is forced only on a
-    // first connect — never on a routine sync.
-    const req = { prompt: interactive && !googleEmail ? "consent" : "" };
-    if (googleEmail) req.hint = googleEmail;
-    tokenClient.requestAccessToken(req);
+    // Consent is forced only when connecting a sheet for the first time.
+    // Every routine sync uses prompt:"" so an existing grant is re-used
+    // silently. (A `hint` would also pre-select the account for people signed
+    // into several, but that needs the account's email, which reading costs a
+    // permission drive.file doesn't reliably grant.)
+    tokenClient.requestAccessToken({ prompt: interactive && !spreadsheetId ? "consent" : "" });
   });
+}
+
+async function googleError(res) {
+  // Google puts the useful part in the body: "Google Drive API has not been
+  // used in project N before or it is disabled", "insufficient authentication
+  // scopes", "File not found". Surfacing the status alone hides all of it.
+  let detail = "";
+  try {
+    const body = await res.json();
+    detail = ((body.error || {}).message) || "";
+  } catch (_e) {}
+  if (/has not been used in project|is disabled/i.test(detail)) {
+    const which = /drive/i.test(detail) ? "Drive" : "Sheets";
+    detail = `the Google ${which} API is not enabled for this project — enable it in the Google Cloud console`;
+  }
+  const err = new Error(detail ? `${detail} (${res.status})` : `google api ${res.status}`);
+  err.status = res.status;
+  return err;
 }
 
 async function gapi(url, options = {}) {
   const token = await getToken(false);
-  const res = await fetch(url, {
+  const send = (t) => fetch(url, {
     ...options,
-    headers: { authorization: `Bearer ${token}`, "content-type": "application/json", ...(options.headers || {}) },
+    headers: { authorization: `Bearer ${t}`, "content-type": "application/json", ...(options.headers || {}) },
   });
+  let res = await send(token);
   if (res.status === 401) {
     // token expired mid-session — one silent retry, then give up loudly
     accessToken = null;
-    const fresh = await getToken(false);
-    const retry = await fetch(url, {
-      ...options,
-      headers: { authorization: `Bearer ${fresh}`, "content-type": "application/json", ...(options.headers || {}) },
-    });
-    if (!retry.ok) throw new Error(`google api ${retry.status}`);
-    return retry.json();
+    res = await send(await getToken(false));
   }
-  if (!res.ok) throw new Error(`google api ${res.status}`);
+  if (!res.ok) throw await googleError(res);
   return res.json();
 }
 
@@ -180,19 +183,20 @@ async function sheetsConnect() {
   // a second sheet in the new account is how notes get stranded. Check first,
   // and say which account owns it.
   if (spreadsheetId) {
-    const owner = await sheetOwner(spreadsheetId);
-    if (!owner) {
-      const held = googleEmail;
+    const reach = await sheetReachable(spreadsheetId);
+    if (reach === "no") {
+      // Definitely a different Google account: drive.file only exposes files
+      // this app created for THIS account. Silently making a second sheet is
+      // how notes get stranded, so stop and say so.
       spreadsheetId = null;
-      googleEmail = null;
       forget();
       throw new Error(
-        held
-          ? `your sheet belongs to ${held} — sign in with that Google account, or press connect again to start a new sheet here`
-          : "that sheet is not reachable from this Google account — press connect again to start a new one"
+        "your sheet lives in a different Google account — sign in with that one, " +
+        "or press connect again to start a fresh sheet here"
       );
     }
-    googleEmail = owner;
+    // "unknown" keeps the pointer: a disabled API or a flaky request must
+    // never be mistaken for the wrong account.
   }
 
   // drive.file scope means files.list returns ONLY files this app created —
@@ -219,29 +223,33 @@ async function sheetsConnect() {
     );
   }
 
-  if (!googleEmail) googleEmail = await sheetOwner(spreadsheetId);
   remember();
   onStateChange();
   return spreadsheetId;
 }
 
-// Owner email of a sheet, or null when this account can't see it. Doubles as
-// the "is the remembered sheet still reachable?" probe.
-async function sheetOwner(id) {
+// Is the remembered sheet reachable from the account that just authorised?
+// Returns "yes" | "no" | "unknown". `unknown` matters: a transient failure or
+// a disabled API must NOT be read as "wrong account", because that path
+// deletes the stored pointer. Only a definite 404 means "not this account".
+//
+// Deliberately asks for `id` alone. An earlier cut requested
+// owners(emailAddress) to label the account, and reading an email address is a
+// narrower permission than drive.file reliably grants — that call is what
+// started returning 403.
+async function sheetReachable(id) {
   try {
-    const meta = await gapi(
-      `https://www.googleapis.com/drive/v3/files/${id}?fields=owners(emailAddress)`
-    );
-    return ((meta.owners || [])[0] || {}).emailAddress || null;
-  } catch (_e) {
-    return null;
+    await gapi(`https://www.googleapis.com/drive/v3/files/${id}?fields=id`);
+    return "yes";
+  } catch (err) {
+    return err.status === 404 ? "no" : "unknown";
   }
 }
 
 function remember() {
   try {
     localStorage.setItem(SHEET_ID_KEY,
-      JSON.stringify({ userId: sheetsUserId, spreadsheetId, googleEmail }));
+      JSON.stringify({ userId: sheetsUserId, spreadsheetId }));
   } catch (_e) {}
 }
 
@@ -348,6 +356,5 @@ const cosineSheets = {
   noteFor: sheetsNoteFor,
   clearLocal: sheetsClearLocal,
   url: sheetsUrl,
-  account: () => googleEmail,
   USER_FIELDS: SHEET_USER_FIELDS,
 };
