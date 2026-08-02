@@ -28,6 +28,7 @@ const SHEET_NAME = "cosine notes";
 const SHEET_TAB = "problems";
 const SHEET_ID_KEY = "algolens_sheet_v1";   // { userId, spreadsheetId }
 const SHEET_ROWS_KEY = "algolens_sheet_rows_v1"; // { userId, rows } — notes, not credentials
+const SHEET_SILENT_KEY = "algolens_sheet_silent_v1"; // { userId, blocked } — no UI without a click
 // App-owned columns, in the order a NEW sheet gets them — and deliberately
 // few. Everything here is rewritten by the site on every sync, so a column
 // earns its place only if it makes the sheet READABLE (which problem is this,
@@ -130,12 +131,42 @@ function sheetsHasToken() {
 async function sheetsResume() {
   if (!sheetsAvailable() || !sheetsConnected()) return false;
   if (sheetsHasToken()) return true;
+  if (silentBlocked()) return false;
   try {
-    await getToken(false, 10000);
+    await loadGsi();          // untimed: a slow script fetch is not a dialog
+    const started = Date.now();
+    await getToken(false, 8000, "none");
+    // Belt and braces. "none" is documented never to show UI, but this runs
+    // on somebody's page load and the cost of being wrong is a sign-in box
+    // nobody asked for — so a request that took long enough to have involved
+    // a human is treated as one, and this browser is never asked again.
+    if (Date.now() - started > 2500) blockSilent();
     return sheetsHasToken();
   } catch (_e) {
+    // This browser can't hand one over without asking a question. Remember
+    // that and stop trying: a background path getting it wrong is what put a
+    // sign-in dialog in front of someone who only refreshed the page, and one
+    // failed attempt is enough evidence to never repeat it here.
+    blockSilent();
     return false;
   }
+}
+
+// Remembered per user, because it is a fact about this browser's Google
+// session, not about the app: whether a token can be had without asking.
+function silentBlocked() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(SHEET_SILENT_KEY) || "null");
+    return Boolean(parsed && parsed.userId === sheetsUserId && parsed.blocked);
+  } catch (_e) { return false; }
+}
+function blockSilent() {
+  try {
+    localStorage.setItem(SHEET_SILENT_KEY, JSON.stringify({ userId: sheetsUserId, blocked: true }));
+  } catch (_e) {}
+}
+function unblockSilent() {
+  try { localStorage.removeItem(SHEET_SILENT_KEY); } catch (_e) {}
 }
 
 function sheetsAvailable() {
@@ -167,7 +198,18 @@ function loadGsi() {
   });
 }
 
-async function getToken(interactive, timeoutMs) {
+// `prompt` is the whole difference between a silent refresh and a dialog:
+//
+//   "consent"  the full screen. Only the first grant needs it.
+//   ""         skips consent — but STILL shows the account chooser. This is
+//              what shipped as "silent" and it was not: anyone signed into
+//              more than one Google account got a picker on every refresh.
+//   "none"     shows NOTHING, ever. If it cannot be satisfied without asking
+//              the user something, it fails and we simply don't sync.
+//
+// So background paths use "none" and take the failure; only a click ever
+// passes anything else.
+async function getToken(interactive, timeoutMs, promptMode) {
   if (accessToken && Date.now() < tokenExpiresAt - 60000) return accessToken;
   await loadGsi();
   if (!tokenClient) {
@@ -205,7 +247,10 @@ async function getToken(interactive, timeoutMs) {
     // silently. (A `hint` would also pre-select the account for people signed
     // into several, but that needs the account's email, which reading costs a
     // permission drive.file doesn't reliably grant.)
-    tokenClient.requestAccessToken({ prompt: interactive && !spreadsheetId ? "consent" : "" });
+    const prompt = promptMode != null
+      ? promptMode
+      : (interactive && !spreadsheetId ? "consent" : "");
+    tokenClient.requestAccessToken({ prompt });
   });
 }
 
@@ -261,6 +306,7 @@ function colLetter(n) {
 async function sheetsConnect() {
   if (!sheetsAvailable()) throw new Error("sheet sync is not configured");
   await getToken(true); // first grant is interactive by definition
+  unblockSilent();      // a click just proved this browser can produce a token
 
   // A remembered sheet lives in ONE Google account. If the grant just came
   // from a different one, that sheet is invisible here (drive.file scope only
@@ -358,6 +404,7 @@ function forget() {
   try {
     localStorage.removeItem(SHEET_ID_KEY);
     localStorage.removeItem(SHEET_ROWS_KEY);
+    localStorage.removeItem(SHEET_SILENT_KEY);
   } catch (_e) {}
 }
 
