@@ -1633,26 +1633,44 @@ CORPUS
   server never sees either.
 
   You never add a row by hand. Bookmark or tick done on the
-  site and sync writes the row for you — id, title, link,
-  judge, difficulty, bookmarked, done, done date, recall.
-  Those columns belong to the site and are rewritten each
-  sync, so there is no second place to record that you solved
-  something.
+  site and sync writes the row for you. It writes six columns
+  and no more:
 
-  EVERYTHING ELSE IS YOURS, and is edited in the sheet itself.
-  Sync starts you with solution summary, concept, tactics,
-  time taken and notes — free-form, all of them — and any
-  column you add is read too: call one "revision date" and it
-  shows up on the card with that name. The app never writes,
-  blanks or deletes a cell of yours.
+    problem_id  title  link  judge  difficulty  recall
 
-  Sync keeps one layout: the site's columns first, the
-  suggested ones next, then yours in the order you have them.
-  A sheet made before a column existed gains it; a duplicate
-  column that has nothing in it is removed. Columns are MOVED,
-  not rewritten, so formulas and formatting travel with them,
-  and a column with anything in it is never dropped — if two
-  columns share a name and both have content, both stay.
+  — enough to know which problem a row is and to open it. It
+  does NOT write "bookmarked" or "done": the site owns those,
+  the site shows them, and a column reading "yes" is a second
+  place to look for something you already know.
+
+  EVERYTHING ELSE IS YOURS. A new sheet starts with one more
+  column, "solution summary", because it is the one people
+  reread. Add whatever else you want — concept, time taken,
+  revision date, a column of your own name for anything — and
+  the site reads it and shows it on the card under the header
+  you gave it. It never writes, blanks or deletes a cell of
+  yours.
+
+  Only one thing flows from the sheet back to the site:
+  DISPLAY. What you write shows up on the expanded card (✎
+  marks an annotated problem). Nothing you type in the sheet
+  bookmarks a problem, marks it done or rates it — one writer
+  per cell, in one direction, which is why there is nothing to
+  merge and no conflict to resolve.
+
+  Rows are never removed. Un-bookmark a problem and its row
+  stays exactly as you left it, with everything you wrote —
+  the app simply stops updating it. Delete the row yourself if
+  you want it gone; save the problem again and the app finds
+  the row by its problem_id and picks up where it left off.
+
+  Sync keeps one layout: the site's columns first, then yours
+  in the order you have them. Columns are MOVED, not rewritten,
+  so formulas and formatting travel with them. It removes only
+  two kinds of column: a duplicate with nothing in it, and one
+  of its OWN columns it no longer writes (older sheets have
+  "done", "done_at" and "bookmarked" — a frozen "yes" is worse
+  than no column at all).
 
   Google is asked for access once per browser session, and only
   when YOU press sync — never on page load. After that press,
