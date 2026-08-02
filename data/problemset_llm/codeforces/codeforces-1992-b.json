@@ -12,23 +12,25 @@
     "math",
     "sortings"
   ],
-  "statement": "Given an initial partition of a length-n casserole into k pieces, find the minimum number of operations to merge all pieces into one by splitting pieces of length at least 2 into 1 and the remainder, or merging a piece with a piece of length 1.",
+  "statement": "Given a list of piece lengths summing to n, perform allowed split and merge operations to combine all pieces into one of length n using the minimum number of steps.",
   "tags": [
     "greedy",
-    "math",
-    "sorting"
+    "array",
+    "math"
   ],
   "patterns": [
     "greedy",
-    "sorting"
+    "merge-split-operations",
+    "min-operations"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653082,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654058,
     "pattern_confidence": {
-      "greedy": 0.95,
-      "sorting": 0.7
+      "greedy": 0.97,
+      "merge-split-operations": 0.93,
+      "min-operations": 0.9
     }
   }
 }

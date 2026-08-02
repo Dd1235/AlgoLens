@@ -12,26 +12,29 @@
     "dp",
     "math"
   ],
-  "statement": "Given a permutation array, compute the sum over all distinct subsets of the array of the k-th missing positive integer where k is the subset size plus one.",
+  "statement": "Given a permutation of 1 to n, compute the sum over all distinct subsets of the array of the (|b|+1)-th missing positive integer from each subset b. The missing element is defined as the k-th smallest positive integer not present in the subset.",
   "tags": [
+    "array",
     "combinatorics",
-    "dynamic-programming",
     "math",
-    "bit-manipulation"
+    "dynamic-programming"
   ],
   "patterns": [
-    "bit-manipulation",
-    "subset-sum",
+    "subset-enumeration",
+    "mex",
+    "contribution-technique",
+    "dp-over-subsets",
     "dynamic-programming"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653090,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654066,
     "pattern_confidence": {
-      "bit-manipulation": 0.9,
-      "subset-sum": 0.7,
-      "dynamic-programming": 0.85
+      "subset-enumeration": 0.97,
+      "mex": 0.98,
+      "contribution-technique": 0.93,
+      "dp-over-subsets": 0.9
     }
   }
 }

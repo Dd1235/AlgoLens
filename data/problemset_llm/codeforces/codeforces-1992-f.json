@@ -14,28 +14,27 @@
     "number theory",
     "two pointers"
   ],
-  "statement": "Given an array of integers with no positive integer x present, partition the array into the minimum number of segments such that each segment does not contain any subset of elements whose product equals x.",
+  "statement": "Given an array of integers, partition it into the minimum number of contiguous segments such that in each segment, there is no subset whose product equals a fixed positive integer x (which does not appear among the array values).",
   "tags": [
     "array",
     "number-theory",
-    "greedy",
     "dynamic-programming"
   ],
   "patterns": [
-    "greedy",
-    "subset-product",
+    "dynamic-programming",
     "two-pointers",
-    "dynamic-programming"
+    "subset-product-check",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653089,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654065,
     "pattern_confidence": {
-      "greedy": 0.9,
-      "subset-product": 0.85,
+      "dynamic-programming": 0.85,
       "two-pointers": 0.7,
-      "dynamic-programming": 0.6
+      "subset-product-check": 0.8,
+      "greedy": 0.6
     }
   }
 }

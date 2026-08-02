@@ -11,23 +11,28 @@
     "constructive algorithms",
     "math"
   ],
-  "statement": "Given integers n, m, and k (with m < k), construct a permutation of length n to maximize the difference between the sum over all prefixes of sums of elements ≥ k and the sum over all prefixes of sums of elements ≤ m.",
+  "statement": "Given n, m, k (with m < k), construct a permutation of 1 to n that maximizes the difference between the sum over all prefixes of numbers at least k and the sum over all prefixes of numbers at most m.",
   "tags": [
+    "array",
+    "permutation",
     "math",
-    "constructive-algorithm",
-    "permutation"
+    "constructive-algorithm"
   ],
   "patterns": [
     "greedy",
-    "prefix-sums"
+    "prefix-sum",
+    "constructive-algorithm",
+    "permutation-arrangement"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653084,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654060,
     "pattern_confidence": {
-      "greedy": 0.9,
-      "prefix-sums": 0.85
+      "greedy": 0.92,
+      "prefix-sum": 0.85,
+      "constructive-algorithm": 0.95,
+      "permutation-arrangement": 0.9
     }
   }
 }
