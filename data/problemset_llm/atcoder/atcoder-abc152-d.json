@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc152-d",
+  "title": "Handstand 2",
+  "slug": "abc152-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc152/tasks/abc152_d",
+  "source_topic": "Math / Combinatorics",
+  "source_tags": [],
+  "statement": "Given N, count pairs of positive integers (A, B) ≤ N such that the last digit of A equals the first digit of B and the first digit of A equals the last digit of B.",
+  "tags": [
+    "math",
+    "combinatorics",
+    "number-theory"
+  ],
+  "patterns": [
+    "digit-counting",
+    "first-last-digit-matching",
+    "brute-force-optimization"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673623,
+    "pattern_confidence": {
+      "digit-counting": 0.97,
+      "first-last-digit-matching": 0.95,
+      "brute-force-optimization": 0.8
+    }
+  },
+  "difficulty": 1045
+}

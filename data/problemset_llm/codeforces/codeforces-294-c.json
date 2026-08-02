@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-294-c",
+  "title": "Shaass and Lights",
+  "slug": "294-c-shaass-and-lights",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/294/C",
+  "source_topic": "Graph / Disjoint Set Union",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "combinatorics",
+    "number theory"
+  ],
+  "statement": "Given a row of n lights with some initially on, count the number of ways to turn all lights on by repeatedly switching on an off light if it has an adjacent on light, modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "number-theory",
+    "array"
+  ],
+  "patterns": [
+    "stars-and-bars",
+    "gap-counting",
+    "modular-arithmetic",
+    "combinatorics",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673912,
+    "pattern_confidence": {
+      "stars-and-bars": 0.93,
+      "gap-counting": 0.9,
+      "modular-arithmetic": 0.85
+    }
+  }
+}

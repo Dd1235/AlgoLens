@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-arc058-b",
+  "title": "Iroha and a Grid",
+  "slug": "arc058-b",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/arc058/tasks/arc058_b",
+  "source_topic": "Math / Combinatorics",
+  "source_tags": [],
+  "statement": "Count the number of paths from the top-left to the bottom-right of an H×W grid, moving only right or down, while avoiding a forbidden A×B block in the bottom-left corner, and output the answer modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math",
+    "grid"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "binomial-coefficient",
+    "modular-arithmetic",
+    "combinatorics",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673622,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.97,
+      "binomial-coefficient": 0.98,
+      "modular-arithmetic": 0.95
+    }
+  },
+  "difficulty": 1905
+}

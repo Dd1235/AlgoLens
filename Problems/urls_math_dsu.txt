@@ -1,0 +1,51 @@
+# AlgoLens URL seed list — number theory, combinatorics and DSU.
+#
+# Hand-picked list, resolved from problem names against the Codeforces
+# problemset API cache and the AtCoder task index, then deduped against the
+# corpus and the other url files. Four entries were dropped as unsupported
+# judges (HackerRank x3, CodeChef x1) and two names resolved to nothing:
+# "Crushed Slimes" (AtCoder) and "Choose and Calculate" (Codeforces).
+#
+# The five Codeforces problems at the end are already listed in urls.txt but
+# never produced a record — re-listing them here retries the fetch.
+
+# Math / Number Theory
+https://codeforces.com/problemset/problem/230/B
+https://codeforces.com/problemset/problem/472/A
+https://codeforces.com/problemset/problem/797/A
+https://codeforces.com/problemset/problem/576/A
+https://codeforces.com/problemset/problem/742/A
+https://codeforces.com/problemset/problem/1325/A
+https://codeforces.com/problemset/problem/793/A
+https://codeforces.com/problemset/problem/284/A
+https://codeforces.com/problemset/problem/898/B
+https://codeforces.com/problemset/problem/361/B
+https://atcoder.jp/contests/abc114/tasks/abc114_d
+https://atcoder.jp/contests/abc215/tasks/abc215_d
+https://atcoder.jp/contests/abc052/tasks/arc067_a
+https://atcoder.jp/contests/abc084/tasks/abc084_c
+https://atcoder.jp/contests/abc103/tasks/abc103_c
+https://atcoder.jp/contests/abc193/tasks/abc193_c
+https://atcoder.jp/contests/abc172/tasks/abc172_d
+https://atcoder.jp/contests/abc131/tasks/abc131_c
+https://atcoder.jp/contests/abc190/tasks/abc190_d
+
+# Math / Combinatorics
+https://codeforces.com/problemset/problem/844/B
+https://codeforces.com/problemset/problem/617/B
+https://atcoder.jp/contests/abc156/tasks/abc156_d
+https://atcoder.jp/contests/abc185/tasks/abc185_c
+https://atcoder.jp/contests/arc058/tasks/arc058_b
+https://atcoder.jp/contests/abc152/tasks/abc152_d
+https://atcoder.jp/contests/abc094/tasks/arc095_b
+https://atcoder.jp/contests/abc178/tasks/abc178_c
+
+# Graph / Disjoint Set Union
+https://atcoder.jp/contests/abc120/tasks/abc120_d
+https://codeforces.com/problemset/problem/722/C
+https://codeforces.com/problemset/problem/371/D
+
+# Retries: listed in urls.txt, never fetched
+https://codeforces.com/problemset/problem/632/C
+https://codeforces.com/problemset/problem/294/C
+https://codeforces.com/problemset/problem/57/C

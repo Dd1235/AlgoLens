@@ -2223,5 +2223,235 @@
   ],
   "statement": "K1o0n gave you an array $$$a$$$ of length $$$n$$$, consisting of numbers $$$1, 2, \\ldots, n$$$. Accept it? Of course! But what to do with it? Of course, calculate $$$\\text{MEOW}(a)$$$.\n\nLet $$$\\text{MEX}(S, k)$$$ be the $$$k$$$-th positive (strictly greater than zero) integer in ascending order that is not present in the set $$$S$$$. Denote $$$\\text{MEOW}(a)$$$ as the sum of $$$\\text{MEX}(b, |b| + 1)$$$, over all distinct subsets $$$b$$$ of the array $$$a$$$.\n\nExamples of $$$\\text{MEX}(S, k)$$$ values for sets:\n\n- $$$\\text{MEX}(\\{3,2\\}, 1) = 1$$$, because $$$1$$$ is the first positive integer not present in the set;\n- $$$\\text{MEX}(\\{4,2,1\\}, 2) = 5$$$, because the first two positive integers not present in the set are $$$3$$$ and $$$5$$$;\n- $$$\\text{MEX}(\\{\\}, 4) = 4$$$, because there are no numbers in the empty set, so the first $$$4$$$ positive integers not present in it are $$$1, 2, 3, 4$$$.",
   "url": "https://codeforces.com/problemset/problem/1992/G"
+ },
+ "codeforces-617-b": {
+  "id": "codeforces-617-b",
+  "contest_id": "617",
+  "index": "B",
+  "title": "Chocolate",
+  "rating": 1300,
+  "tags": [
+   "combinatorics"
+  ],
+  "statement": "Bob loves everything sweet. His favorite chocolate bar consists of pieces, each piece may contain a nut. Bob wants to break the bar of chocolate into multiple pieces so that each part would contain exactly one nut and any break line goes between two adjacent pieces.\n\nYou are asked to calculate the number of ways he can do it. Two ways to break chocolate are considered distinct if one of them contains a break between some two adjacent pieces and the other one doesn't.\n\nPlease note, that if Bob doesn't make any breaks, all the bar will form one piece and it still has to have exactly one nut.",
+  "url": "https://codeforces.com/problemset/problem/617/B"
+ },
+ "codeforces-1325-a": {
+  "id": "codeforces-1325-a",
+  "contest_id": "1325",
+  "index": "A",
+  "title": "EhAb AnD gCd",
+  "rating": 800,
+  "tags": [
+   "constructive algorithms",
+   "greedy",
+   "number theory"
+  ],
+  "statement": "You are given a positive integer $$$x$$$. Find any such $$$2$$$ positive integers $$$a$$$ and $$$b$$$ such that $$$GCD(a,b)+LCM(a,b)=x$$$.\n\nAs a reminder, $$$GCD(a,b)$$$ is the greatest integer that divides both $$$a$$$ and $$$b$$$. Similarly, $$$LCM(a,b)$$$ is the smallest integer such that both $$$a$$$ and $$$b$$$ divide it.\n\nIt's guaranteed that the solution always exists. If there are several such pairs $$$(a, b)$$$, you can output any of them.",
+  "url": "https://codeforces.com/problemset/problem/1325/A"
+ },
+ "codeforces-742-a": {
+  "id": "codeforces-742-a",
+  "contest_id": "742",
+  "index": "A",
+  "title": "Arpa’s hard exam and Mehrdad’s naive cheat",
+  "rating": 1000,
+  "tags": [
+   "implementation",
+   "math",
+   "number theory"
+  ],
+  "statement": "There exists an island called Arpa’s land, some beautiful girls live there, as ugly ones do.\n\nMehrdad wants to become minister of Arpa’s land. Arpa has prepared an exam. Exam has only one question, given n, print the last digit of 1378n.\n\nMehrdad has become quite confused and wants you to help him. Please help, although it's a naive cheat.",
+  "url": "https://codeforces.com/problemset/problem/742/A"
+ },
+ "codeforces-632-c": {
+  "id": "codeforces-632-c",
+  "contest_id": "632",
+  "index": "C",
+  "title": "The Smallest String Concatenation",
+  "rating": 1700,
+  "tags": [
+   "sortings",
+   "strings"
+  ],
+  "statement": "You're given a list of n strings a1, a2, ..., an. You'd like to concatenate them together in some order such that the resulting string would be lexicographically smallest.\n\nGiven the list of strings, output the lexicographically smallest concatenation.",
+  "url": "https://codeforces.com/problemset/problem/632/C"
+ },
+ "codeforces-284-a": {
+  "id": "codeforces-284-a",
+  "contest_id": "284",
+  "index": "A",
+  "title": "Cows and Primitive Roots",
+  "rating": 1400,
+  "tags": [
+   "implementation",
+   "math",
+   "number theory"
+  ],
+  "statement": "The cows have just learned what a primitive root is! Given a prime p, a primitive root $$\\bmod p$$ is an integer x (1 ≤ x < p) such that none of integers x - 1, x2 - 1, ..., xp - 2 - 1 are divisible by p, but xp - 1 - 1 is.\n\nUnfortunately, computing primitive roots can be time consuming, so the cows need your help. Given a prime p, help the cows find the number of primitive roots $$\\bmod p$$.",
+  "url": "https://codeforces.com/problemset/problem/284/A"
+ },
+ "codeforces-793-a": {
+  "id": "codeforces-793-a",
+  "contest_id": "793",
+  "index": "A",
+  "title": "Oleg and shares",
+  "rating": 900,
+  "tags": [
+   "implementation",
+   "math"
+  ],
+  "statement": "Oleg the bank client checks share prices every day. There are n share prices he is interested in. Today he observed that each second exactly one of these prices decreases by k rubles (note that each second exactly one price changes, but at different seconds different prices can change). Prices can become negative. Oleg found this process interesting, and he asked Igor the financial analyst, what is the minimum time needed for all n prices to become equal, or it is impossible at all? Igor is busy right now, so he asked you to help Oleg. Can you answer this question?",
+  "url": "https://codeforces.com/problemset/problem/793/A"
+ },
+ "codeforces-797-a": {
+  "id": "codeforces-797-a",
+  "contest_id": "797",
+  "index": "A",
+  "title": "k-Factorization",
+  "rating": 1100,
+  "tags": [
+   "implementation",
+   "math",
+   "number theory"
+  ],
+  "statement": "Given a positive integer n, find k integers (not necessary distinct) such that all these integers are strictly greater than 1, and their product is equal to n.",
+  "url": "https://codeforces.com/problemset/problem/797/A"
+ },
+ "codeforces-576-a": {
+  "id": "codeforces-576-a",
+  "contest_id": "576",
+  "index": "A",
+  "title": "Vasya and Petya's Game",
+  "rating": 1500,
+  "tags": [
+   "math",
+   "number theory"
+  ],
+  "statement": "Vasya and Petya are playing a simple game. Vasya thought of number x between 1 and n, and Petya tries to guess the number.\n\nPetya can ask questions like: \"Is the unknown number divisible by number y?\".\n\nThe game is played by the following rules: first Petya asks all the questions that interest him (also, he can ask no questions), and then Vasya responds to each question with a 'yes' or a 'no'. After receiving all the answers Petya should determine the number that Vasya thought of.\n\nUnfortunately, Petya is not familiar with the number theory. Help him find the minimum number of questions he should ask to make a guaranteed guess of Vasya's number, and the numbers yi, he should ask the questions about.",
+  "url": "https://codeforces.com/problemset/problem/576/A"
+ },
+ "codeforces-294-c": {
+  "id": "codeforces-294-c",
+  "contest_id": "294",
+  "index": "C",
+  "title": "Shaass and Lights",
+  "rating": 1900,
+  "tags": [
+   "combinatorics",
+   "number theory"
+  ],
+  "statement": "There are n lights aligned in a row. These lights are numbered 1 to n from left to right. Initially some of the lights are switched on. Shaass wants to switch all the lights on. At each step he can switch a light on (this light should be switched off at that moment) if there's at least one adjacent light which is already switched on.\n\nHe knows the initial state of lights and he's wondering how many different ways there exist to switch all the lights on. Please find the required number of ways modulo 1000000007 (109 + 7).",
+  "url": "https://codeforces.com/problemset/problem/294/C"
+ },
+ "codeforces-371-d": {
+  "id": "codeforces-371-d",
+  "contest_id": "371",
+  "index": "D",
+  "title": "Vessels",
+  "rating": 1800,
+  "tags": [
+   "data structures",
+   "dsu",
+   "implementation",
+   "trees"
+  ],
+  "statement": "There is a system of n vessels arranged one above the other as shown in the figure below. Assume that the vessels are numbered from 1 to n, in the order from the highest to the lowest, the volume of the i-th vessel is ai liters.\n\nInitially, all the vessels are empty. In some vessels water is poured. All the water that overflows from the i-th vessel goes to the (i + 1)-th one. The liquid that overflows from the n-th vessel spills on the floor.\n\nYour task is to simulate pouring water into the vessels. To do this, you will need to handle two types of queries:\n\n1. Add xi liters of water to the pi-th vessel;\n2. Print the number of liters of water in the ki-th vessel.\n\nWhen you reply to the second request you can assume that all the water poured up to this point, has already overflown between the vessels.",
+  "url": "https://codeforces.com/problemset/problem/371/D"
+ },
+ "codeforces-472-a": {
+  "id": "codeforces-472-a",
+  "contest_id": "472",
+  "index": "A",
+  "title": "Design Tutorial: Learn from Math",
+  "rating": 800,
+  "tags": [
+   "math",
+   "number theory"
+  ],
+  "statement": "One way to create a task is to learn from math. You can generate some random math statement or modify some theorems to get something new and build a new task from that.\n\nFor example, there is a statement called the \"Goldbach's conjecture\". It says: \"each even number no less than four can be expressed as the sum of two primes\". Let's modify it. How about a statement like that: \"each integer no less than 12 can be expressed as the sum of two composite numbers.\" Not like the Goldbach's conjecture, I can prove this theorem.\n\nYou are given an integer n no less than 12, express it as a sum of two composite numbers.",
+  "url": "https://codeforces.com/problemset/problem/472/A"
+ },
+ "codeforces-57-c": {
+  "id": "codeforces-57-c",
+  "contest_id": "57",
+  "index": "C",
+  "title": "Array",
+  "rating": 1900,
+  "tags": [
+   "combinatorics",
+   "math"
+  ],
+  "statement": "Chris the Rabbit has been interested in arrays ever since he was a child. At the moment he is researching arrays with the length of n, containing only integers from 1 to n. He is not good at math, that's why some simple things drive him crazy. For example, yesterday he grew keen on counting how many different beautiful arrays there are. Chris thinks that an array is beautiful if it meets one of the two conditions:\n\n- each elements, starting from the second one, is no more than the preceding one\n- each element, starting from the second one, is no less than the preceding one\n\nHaving got absolutely mad at himself and at math, Chris came to Stewie and Brian to ask them for help. However, they only laughed at him and said that the answer is too simple and not interesting. Help Chris the Rabbit to find the answer at last.",
+  "url": "https://codeforces.com/problemset/problem/57/C"
+ },
+ "codeforces-361-b": {
+  "id": "codeforces-361-b",
+  "contest_id": "361",
+  "index": "B",
+  "title": "Levko and Permutation",
+  "rating": 1200,
+  "tags": [
+   "constructive algorithms",
+   "math",
+   "number theory"
+  ],
+  "statement": "Levko loves permutations very much. A permutation of length n is a sequence of distinct positive integers, each is at most n.\n\nLet’s assume that value gcd(a, b) shows the greatest common divisor of numbers a and b. Levko assumes that element pi of permutation p1, p2, ... , pn is good if gcd(i, pi) > 1. Levko considers a permutation beautiful, if it has exactly k good elements. Unfortunately, he doesn’t know any beautiful permutation. Your task is to help him to find at least one of them.",
+  "url": "https://codeforces.com/problemset/problem/361/B"
+ },
+ "codeforces-230-b": {
+  "id": "codeforces-230-b",
+  "contest_id": "230",
+  "index": "B",
+  "title": "T-primes",
+  "rating": 1300,
+  "tags": [
+   "binary search",
+   "implementation",
+   "math",
+   "number theory"
+  ],
+  "statement": "We know that prime numbers are positive integers that have exactly two distinct positive divisors. Similarly, we'll call a positive integer t Т-prime, if t has exactly three distinct positive divisors.\n\nYou are given an array of n positive integers. For each of them determine whether it is Т-prime or not.",
+  "url": "https://codeforces.com/problemset/problem/230/B"
+ },
+ "codeforces-722-c": {
+  "id": "codeforces-722-c",
+  "contest_id": "722",
+  "index": "C",
+  "title": "Destroying Array",
+  "rating": 1600,
+  "tags": [
+   "data structures",
+   "dsu"
+  ],
+  "statement": "You are given an array consisting of n non-negative integers a1, a2, ..., an.\n\nYou are going to destroy integers in the array one by one. Thus, you are given the permutation of integers from 1 to n defining the order elements of the array are destroyed.\n\nAfter each element is destroyed you have to find out the segment of the array, such that it contains no destroyed elements and the sum of its elements is maximum possible. The sum of elements in the empty segment is considered to be 0.",
+  "url": "https://codeforces.com/problemset/problem/722/C"
+ },
+ "codeforces-898-b": {
+  "id": "codeforces-898-b",
+  "contest_id": "898",
+  "index": "B",
+  "title": "Proper Nutrition",
+  "rating": 1100,
+  "tags": [
+   "brute force",
+   "implementation",
+   "number theory"
+  ],
+  "statement": "Vasya has n burles. One bottle of Ber-Cola costs a burles and one Bars bar costs b burles. He can buy any non-negative integer number of bottles of Ber-Cola and any non-negative integer number of Bars bars.\n\nFind out if it's possible to buy some amount of bottles of Ber-Cola and Bars bars and spend exactly n burles.\n\nIn other words, you should find two non-negative integers x and y such that Vasya can buy x bottles of Ber-Cola and y Bars bars and x·a + y·b = n or tell that it's impossible.",
+  "url": "https://codeforces.com/problemset/problem/898/B"
+ },
+ "codeforces-844-b": {
+  "id": "codeforces-844-b",
+  "contest_id": "844",
+  "index": "B",
+  "title": "Rectangles",
+  "rating": 1300,
+  "tags": [
+   "combinatorics",
+   "math"
+  ],
+  "statement": "You are given n × m table. Each cell of the table is colored white or black. Find the number of non-empty sets of cells such that:\n\n1. All cells in a set have the same color.\n2. Every two cells in a set share row or column.",
+  "url": "https://codeforces.com/problemset/problem/844/B"
  }
 }

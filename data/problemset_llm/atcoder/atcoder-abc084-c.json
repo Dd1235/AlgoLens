@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc084-c",
+  "title": "Special Trains",
+  "slug": "abc084-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc084/tasks/abc084_c",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given N stations in a line with periodic trains between each consecutive pair, compute for each starting station the earliest time to reach the last station, considering train schedules and travel times.",
+  "tags": [
+    "array",
+    "simulation",
+    "math"
+  ],
+  "patterns": [
+    "greedy",
+    "waiting-time-calculation",
+    "forward-simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673609,
+    "pattern_confidence": {
+      "greedy": 0.92,
+      "waiting-time-calculation": 0.95,
+      "forward-simulation": 0.93
+    }
+  },
+  "difficulty": 908
+}

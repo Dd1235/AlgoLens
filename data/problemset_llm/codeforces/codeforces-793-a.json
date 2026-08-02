@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-793-a",
+  "title": "Oleg and shares",
+  "slug": "793-a-oleg-and-shares",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/793/A",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "implementation",
+    "math"
+  ],
+  "statement": "Given n share prices and a fixed decrement k, determine the minimum number of seconds needed to make all prices equal by repeatedly decreasing any one price by k each second, or report if it's impossible.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "gcd",
+    "modular-arithmetic",
+    "greedy",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673799,
+    "pattern_confidence": {
+      "gcd": 0.95,
+      "modular-arithmetic": 0.9,
+      "greedy": 0.7
+    }
+  }
+}

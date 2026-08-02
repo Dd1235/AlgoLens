@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-576-a",
+  "title": "Vasya and Petya's Game",
+  "slug": "576-a-vasya-and-petya-s-game",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/576/A",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 1500,
+  "rating": 1500,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a hidden integer between 1 and n, determine the minimum set of divisibility queries needed to uniquely identify the number, and specify which divisors to ask about.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "divisor-query-strategy",
+    "information-theory",
+    "prime-factorization",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673795,
+    "pattern_confidence": {
+      "divisor-query-strategy": 0.95,
+      "information-theory": 0.85,
+      "prime-factorization": 0.8
+    }
+  }
+}

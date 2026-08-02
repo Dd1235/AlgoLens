@@ -1,0 +1,34 @@
+{
+  "id": "atcoder-abc114-d",
+  "title": "756",
+  "slug": "abc114-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc114/tasks/abc114_d",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given N, count how many divisors of N! have exactly 75 positive divisors (so-called Shichi-Go numbers).",
+  "tags": [
+    "math",
+    "number-theory",
+    "combinatorics"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "divisor-counting",
+    "factorial-divisors",
+    "brute-force",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673603,
+    "pattern_confidence": {
+      "prime-factorization": 0.98,
+      "divisor-counting": 0.97,
+      "factorial-divisors": 0.93,
+      "brute-force": 0.85
+    }
+  },
+  "difficulty": 1337
+}

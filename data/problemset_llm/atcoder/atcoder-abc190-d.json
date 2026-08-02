@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc190-d",
+  "title": "Staircase Sequences",
+  "slug": "abc190-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc190/tasks/abc190_d",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given an integer N, count the number of integer arithmetic progressions with common difference 1 whose sum is N.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "divisor-enumeration",
+    "arithmetic-progression-formula",
+    "integer-equation",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673617,
+    "pattern_confidence": {
+      "divisor-enumeration": 0.97,
+      "arithmetic-progression-formula": 0.95,
+      "integer-equation": 0.9
+    }
+  },
+  "difficulty": 722
+}

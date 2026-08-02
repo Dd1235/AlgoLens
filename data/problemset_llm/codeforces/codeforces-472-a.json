@@ -1,0 +1,32 @@
+{
+  "id": "codeforces-472-a",
+  "title": "Design Tutorial: Learn from Math",
+  "slug": "472-a-design-tutorial-learn-from-math",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/472/A",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an integer n ≥ 12, represent it as the sum of two composite numbers.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "composite-number-check"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673793,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "composite-number-check": 0.9
+    }
+  }
+}

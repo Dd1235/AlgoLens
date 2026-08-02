@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-abc131-c",
+  "title": "Anti-Division",
+  "slug": "abc131-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc131/tasks/abc131_c",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given a range [A, B] and two divisors C and D, count how many integers in the range are not divisible by either C or D.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "counting",
+    "floor-division",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673615,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.98,
+      "counting": 0.92,
+      "floor-division": 0.9
+    }
+  },
+  "difficulty": 518
+}

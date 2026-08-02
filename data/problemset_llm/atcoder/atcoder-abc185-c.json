@@ -1,0 +1,29 @@
+{
+  "id": "atcoder-abc185-c",
+  "title": "Duodecim Ferra",
+  "slug": "abc185-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc185/tasks/abc185_c",
+  "source_topic": "Math / Combinatorics",
+  "source_tags": [],
+  "statement": "Given a bar of integer length L, count the number of ways to cut it at 11 positions into 12 pieces of positive integer lengths, where the order of cuts matters.",
+  "tags": [
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "stars-and-bars",
+    "permutation-counting",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673620,
+    "pattern_confidence": {
+      "stars-and-bars": 0.99,
+      "permutation-counting": 0.85
+    }
+  },
+  "difficulty": 373
+}

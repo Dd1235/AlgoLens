@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-617-b",
+  "title": "Chocolate",
+  "slug": "617-b-chocolate",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/617/B",
+  "source_topic": "Math / Combinatorics",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "combinatorics"
+  ],
+  "statement": "Given a chocolate bar divided into pieces, each possibly containing a nut, count the number of ways to break the bar into segments so that each segment contains exactly one nut.",
+  "tags": [
+    "array",
+    "combinatorics"
+  ],
+  "patterns": [
+    "stars-and-bars",
+    "grouping-by-marker",
+    "product-of-choices",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673805,
+    "pattern_confidence": {
+      "stars-and-bars": 0.95,
+      "grouping-by-marker": 0.92,
+      "product-of-choices": 0.9
+    }
+  }
+}

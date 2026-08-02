@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-722-c",
+  "title": "Destroying Array",
+  "slug": "722-c-destroying-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/722/C",
+  "source_topic": "Graph / Disjoint Set Union",
+  "difficulty": 1600,
+  "rating": 1600,
+  "source_tags": [
+    "data structures",
+    "dsu"
+  ],
+  "statement": "Given an array and a destruction order, after each removal, find the maximum sum of any contiguous segment of remaining elements.",
+  "tags": [
+    "array",
+    "data-structure",
+    "union-find"
+  ],
+  "patterns": [
+    "reverse-processing",
+    "union-find",
+    "segment-merge",
+    "offline-queries"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673809,
+    "pattern_confidence": {
+      "reverse-processing": 0.97,
+      "union-find": 0.95,
+      "segment-merge": 0.93,
+      "offline-queries": 0.9
+    }
+  }
+}

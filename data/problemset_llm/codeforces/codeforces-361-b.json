@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-361-b",
+  "title": "Levko and Permutation",
+  "slug": "361-b-levko-and-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/361/B",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "constructive algorithms",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given n and k, construct a permutation of 1 to n such that exactly k positions i have gcd(i, pi) > 1.",
+  "tags": [
+    "math",
+    "number-theory",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "gcd-properties",
+    "permutation-construction",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673803,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.97,
+      "gcd-properties": 0.92,
+      "permutation-construction": 0.9
+    }
+  }
+}

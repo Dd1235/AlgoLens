@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-742-a",
+  "title": "Arpa’s hard exam and Mehrdad’s naive cheat",
+  "slug": "742-a-arpa-s-hard-exam-and-mehrdad-s-naive-cheat",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/742/A",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 1000,
+  "rating": 1000,
+  "source_tags": [
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an integer n, compute the last digit of 1378 raised to the power n.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "modular-exponentiation",
+    "last-digit-cycle",
+    "modular-arithmetic",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673797,
+    "pattern_confidence": {
+      "modular-exponentiation": 0.95,
+      "last-digit-cycle": 0.93,
+      "modular-arithmetic": 0.9
+    }
+  }
+}

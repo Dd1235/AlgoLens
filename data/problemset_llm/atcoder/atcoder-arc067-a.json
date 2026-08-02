@@ -1,0 +1,31 @@
+{
+  "id": "atcoder-arc067-a",
+  "title": "Factors of Factorial",
+  "slug": "arc067-a",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc052/tasks/arc067_a",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given an integer N, compute the number of positive divisors of N! modulo 10^9+7.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "divisor-counting",
+    "sieve",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673606,
+    "pattern_confidence": {
+      "prime-factorization": 0.98,
+      "divisor-counting": 0.97,
+      "sieve": 0.9
+    }
+  },
+  "difficulty": 967
+}
