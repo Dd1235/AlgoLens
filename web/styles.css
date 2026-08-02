@@ -1351,6 +1351,10 @@ html[data-theme="light"] footer::after { content: ""; }
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  /* Two filter groups on one line overflow a phone, and this row is inside a
+     bar that doesn't scroll — so it wraps rather than pushing the page wide. */
+  flex-wrap: wrap;
+  row-gap: 0.35rem;
 }
 .lib-age-row[hidden] { display: none; }
 .lib-age-label { color: var(--text-dim); font-size: 0.74rem; }
