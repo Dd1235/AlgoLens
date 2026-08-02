@@ -318,7 +318,8 @@ function forget() {
 // overwrite a user's note in a sheet created before it existed.
 let sheetLayout = null; // { app: Map(name -> 0-based col), user: Map(key -> col), width }
 
-function readLayout(headerRow) {
+function readLayout(values) {
+  const headerRow = (values || [])[0] || [];
   const app = new Map();
   const user = new Map();
   const seen = new Map();
@@ -335,12 +336,37 @@ function readLayout(headerRow) {
   // A sheet with no recognisable header (row 1 deleted, or a tab the app did
   // not create) falls back to the original fixed layout rather than writing
   // nothing — which is what every sheet in the wild looked like anyway.
-  if (!app.size) {
+  const derived = !app.size;
+  if (derived) {
     APP_HEADER.slice(0, 8).forEach((name, i) => app.set(name, i));
     SHEET_USER_FIELDS.forEach((f, j) => user.set(f.key, 8 + j));
   }
-  const cols = [...app.values(), ...user.values(), (headerRow || []).length - 1];
-  return { app, user, width: Math.max(...cols) + 1 };
+  // Width is the widest ROW, not the header — a column with a blank header
+  // still holds someone's data, and this number is where a new app column is
+  // allowed to start.
+  const widest = (values || []).reduce((m, row) => Math.max(m, (row || []).length), 0);
+  const cols = [...app.values(), ...user.values(), widest - 1];
+  return { app, user, derived, width: Math.max(...cols) + 1 };
+}
+
+// A sheet created before a column existed doesn't have it — the very case
+// header-name mapping was built to survive. Rather than leave those sheets
+// permanently missing the rating, claim the column PAST EVERY CELL THAT
+// EXISTS and write its header there. Nothing is shifted and nothing of the
+// user's is overwritten: the new column starts beyond the widest row in the
+// sheet. Only ever runs on a real sync, which is a button the user pressed.
+async function ensureAppColumns() {
+  if (sheetLayout.derived) return; // row 1 isn't a header; don't invent one
+  const missing = APP_HEADER.filter((name) => sheetLayout.app.get(name) == null);
+  if (!missing.length) return;
+  const start = sheetLayout.width;
+  const range = `${SHEET_TAB}!${colLetter(start + 1)}1:${colLetter(start + missing.length)}1`;
+  await gapi(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}?valueInputOption=RAW`,
+    { method: "PUT", body: JSON.stringify({ values: [missing] }) }
+  );
+  missing.forEach((name, i) => sheetLayout.app.set(name, start + i));
+  sheetLayout.width = start + missing.length;
 }
 
 // App-owned columns grouped into contiguous runs, so the usual sheet costs one
@@ -371,7 +397,7 @@ async function readSheet() {
     `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(SHEET_TAB)}`
   );
   const values = data.values || [];
-  sheetLayout = readLayout(values[0]);
+  sheetLayout = readLayout(values);
   const idCol = sheetLayout.app.get("problem_id");
   rowByProblem = new Map();
   values.slice(1).forEach((row, i) => {
@@ -432,6 +458,7 @@ async function sheetsSync(items) {
     throw err;
   }
 
+  await ensureAppColumns();
   const runs = appRuns();
   const updates = [];
   const appends = [];
