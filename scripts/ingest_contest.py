@@ -28,6 +28,16 @@ benchmark. So Codeforces problems that aren't in the dataset yet are QUEUED in
 data/pending_contests.json and retried with --retry-pending, ingesting the week
 their statement lands. Nothing is lost; nothing half-formed enters the corpus.
 
+WHY --model gpt-4.1 FOR CONTESTS
+
+The bulk pipeline runs gpt-4.1-mini, which is right for thousands of problems.
+A contest is a dozen, and the intended technique is often invisible in the
+statement: for "Minimum Possible Maximum Waiting Time" mini answered
+binary-search-answer + greedy + simulation, where the real solution binary
+searches the answer and checks feasibility with a memoised dp. gpt-4.1 found
+the dp. Rewriting the prompt did not help — the model was the bottleneck — and
+at contest volume the cost difference is noise.
+
 WHY Q1 IS SKIPPED ON LEETCODE
 
 A weekly/biweekly contest is four problems worth 3/4/5/6 points. Q1 (credit 3)
@@ -418,7 +428,7 @@ def main() -> int:
     if totals["new"]:
         print(f"""
 next:
-  python3 scripts/annotate_problem_urls.py --urls {SEED_FILE.relative_to(ROOT)} --platform leetcode --platform codeforces
+  python3 scripts/annotate_problem_urls.py --urls {SEED_FILE.relative_to(ROOT)} --platform leetcode --platform codeforces --model gpt-4.1
   python3 scripts/apply_source_tags.py --write        # judge tags -> taxonomy (LeetCode tags land days later)
   python3 scripts/backfill_acceptance_rate.py --write  # metadata only, no re-embed needed
   npm run embed && npm run validate                   # embed FIRST: validate checks corpusHash
