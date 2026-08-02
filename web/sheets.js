@@ -108,11 +108,34 @@ function sheetsConnected() {
   return Boolean(spreadsheetId);
 }
 
-// Whether a usable token is already in memory. The auto-sync gate: a token
-// request needs a user gesture to be popup-blocker-safe and to never nag, so
-// background syncs run only when this is true.
+// Whether a usable token is already in memory. The auto-sync gate.
 function sheetsHasToken() {
   return Boolean(accessToken && Date.now() < tokenExpiresAt - 60000);
+}
+
+// Get a token back after a page load WITHOUT asking anyone anything.
+//
+// The token is deliberately never stored (it would be XSS-stealable in
+// localStorage), so every reload starts with none — and the old rule "only
+// ask on a click" therefore meant pressing `sync sheet` on every single
+// visit. But an already-granted `prompt: ""` request is silent: Google hands
+// the token straight back, no popup, no account chooser. The click was only
+// ever needed for the FIRST grant, which is the one that shows consent.
+//
+// Only tried when a sheet is already connected — which can only be true if a
+// grant already succeeded on this machine. If anything at all goes wrong
+// (signed out of Google, grant revoked, a popup Google decided it wanted and
+// the browser blocked), this resolves false and nothing happens: the sync
+// button is still there, and no dialog was ever put in front of anybody.
+async function sheetsResume() {
+  if (!sheetsAvailable() || !sheetsConnected()) return false;
+  if (sheetsHasToken()) return true;
+  try {
+    await getToken(false, 10000);
+    return sheetsHasToken();
+  } catch (_e) {
+    return false;
+  }
 }
 
 function sheetsAvailable() {
@@ -144,7 +167,7 @@ function loadGsi() {
   });
 }
 
-async function getToken(interactive) {
+async function getToken(interactive, timeoutMs) {
   if (accessToken && Date.now() < tokenExpiresAt - 60000) return accessToken;
   await loadGsi();
   if (!tokenClient) {
@@ -158,9 +181,11 @@ async function getToken(interactive) {
     let settled = false;
     const finish = (fn, arg) => { if (!settled) { settled = true; fn(arg); } };
     // A closed or blocked popup otherwise leaves this pending forever.
+    // A silent attempt gets a short fuse: nobody is watching it, and a hung
+    // one must not still be pending when the user presses sync themselves.
     const timer = setTimeout(
       () => finish(reject, new Error("no response from Google — the popup may have been closed or blocked")),
-      120000
+      timeoutMs || 120000
     );
     tokenClient.error_callback = (err) => {
       clearTimeout(timer);
@@ -690,6 +715,7 @@ const cosineSheets = {
   connected: sheetsConnected,
   hasToken: sheetsHasToken,
   connect: sheetsConnect,
+  resume: sheetsResume,
   sync: sheetsSync,
   noteFor: sheetsNoteFor,
   clearLocal: sheetsClearLocal,

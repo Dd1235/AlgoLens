@@ -23,6 +23,10 @@ let libOldest = false;
 let libRecall = null;   // "again" | "hard" | "none" (unrated) | null (any)
 let googleClientId = null;       // from /api/rankers; sheet feature hidden while null
 let sheetSyncedThisSession = false;
+let sheetSyncing = false;    // one write at a time; the sync sends everything
+let sheetDirty = false;      // something changed that the sheet hasn't got
+let sheetSyncTimer = null;
+let sheetErrorShown = false; // a background failure is said once, not forever
 
 // :help works for everyone, signed in or not. Parsed by helpQuery() below,
 // which also takes a section name — this set is only the "is it a command"
@@ -323,6 +327,7 @@ function maybeInitSheets() {
     onChange: syncSheetChip,
   });
   syncSheetChip();
+  if (currentUser && cosineSheets.connected()) resumeSheet();
 }
 
 function syncSheetChip() {
@@ -340,26 +345,81 @@ function syncSheetChip() {
   if (connected) open.href = cosineSheets.url();
 }
 
-// Connect on first use, then sync; either way the status line says what
-// happened — a background write to someone's Drive should never be silent.
-async function doSheetSync() {
+// Connect on first use, then sync. A sync you PRESSED says what it did; one
+// that ran on its own stays out of the way, because a status line announcing
+// a background write every few seconds is just noise about something that
+// worked.
+async function doSheetSync({ quiet = false } = {}) {
+  if (sheetSyncing) return;
   const btn = document.getElementById("sheet-btn");
+  sheetSyncing = true;
   if (btn) btn.disabled = true;
   try {
     if (!cosineSheets.connected()) await cosineSheets.connect();
+    sheetResumeFailed = false;   // a press is a fresh start for the silent path
+    sheetErrorShown = false;
     const res = await fetch("/api/library?type=all");
     const data = await res.json();
     const out = await cosineSheets.sync(data.items || []);
     sheetSyncedThisSession = true;
-    setStatus(`sheet: ${out.total} rows · ${out.added} added · ${out.updated} updated`);
+    sheetDirty = false;
+    if (!quiet) setStatus(`sheet: ${out.total} rows · ${out.added} added · ${out.updated} updated`);
     // Notes may have arrived from the sheet; a library view should show them.
     if (currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) reissueCurrentView();
   } catch (err) {
-    setStatus(`sheet: ${err.message || "sync failed"}`);
+    // A failure is worth saying once. Repeating it on every background sync
+    // would turn one broken grant into a status line that never stops
+    // complaining about something the user isn't doing.
+    if (!quiet || !sheetErrorShown) setStatus(`sheet: ${err.message || "sync failed"}`);
+    if (quiet) sheetErrorShown = true;
   } finally {
+    sheetSyncing = false;
     if (btn) btn.disabled = false;
     syncSheetChip();
   }
+}
+
+// Every change is a change the sheet should have. Debounced, because ticking
+// four problems done in ten seconds is one write, not four — and coalescing
+// them costs nothing since the sync always sends the whole library anyway.
+const SHEET_SYNC_DELAY = 4000;
+function markSheetDirty() {
+  sheetDirty = true;
+  if (typeof cosineSheets === "undefined" || !cosineSheets.connected()) return;
+  clearTimeout(sheetSyncTimer);
+  sheetSyncTimer = setTimeout(async () => {
+    if (!sheetDirty) return;
+    // A token lasts about an hour, so a long session runs out of one — ask
+    // for another the same silent way rather than going quiet until the next
+    // reload. Silent only: a background path must never be the thing that
+    // puts a Google dialog on screen.
+    if (!cosineSheets.hasToken() && !(await tryResume())) return;
+    doSheetSync({ quiet: true });
+  }, SHEET_SYNC_DELAY);
+}
+
+// One silent attempt at a time, and none at all once one has failed — a
+// revoked grant would otherwise be retried on every click for the rest of the
+// session. Pressing `sync sheet` is the way back, and it clears this.
+let sheetResumeTried = false;
+let sheetResumeFailed = false;
+async function tryResume() {
+  if (sheetResumeFailed || sheetResumeTried) return cosineSheets.hasToken();
+  sheetResumeTried = true;
+  const ok = await cosineSheets.resume();
+  sheetResumeTried = false;
+  sheetResumeFailed = !ok;
+  return ok;
+}
+
+// After a reload there is no token — it is never stored — so ask Google for
+// one silently. If that works the sheet just keeps up on its own for the rest
+// of the session; if it doesn't, nothing happened and the button still works.
+async function resumeSheet() {
+  if (typeof cosineSheets === "undefined" || !cosineSheets.connected()) return;
+  if (!(await tryResume())) return;
+  syncSheetChip();
+  if (!sheetSyncedThisSession) doSheetSync({ quiet: true });
 }
 
 async function bootstrapAuth() {
@@ -1205,17 +1265,15 @@ async function runLibrary(type, q) {
 
   setStatus(`${hits.length} ${type === "all" ? "saved" : type}${facets.length ? " · " + facets.join(" · ") : ""}${orderNote()}`);
   renderHitsList(resultsEl, hits, { append: false, startIndex: 0, libraryMode: true });
-  // One background sync per session, on the first library view: cheap, and it
-  // is the moment the sheet's mirror is actually being looked at.
-  // Auto-sync only when a token is ALREADY in memory. Requesting one from a
-  // background path is what nagged people with sign-in popups on every visit
-  // (and popup blockers eat non-gesture requests anyway). A fresh session
-  // syncs on the first explicit press of `sync sheet`, which is also the only
-  // moment Google may show its popup — at most once per session, on a click.
+  // A backstop sync on the first library view, for the case where the silent
+  // token resume landed after this page had already loaded. The normal path
+  // is now: resume a token on load, then sync a few seconds after any change.
+  // Still gated on a token ALREADY in memory — no background path may be the
+  // thing that puts a Google dialog on screen.
   if (!sheetSyncedThisSession && typeof cosineSheets !== "undefined"
       && cosineSheets.connected() && cosineSheets.hasToken()) {
     sheetSyncedThisSession = true;
-    doSheetSync();
+    doSheetSync({ quiet: true });
   }
 }
 
@@ -2145,6 +2203,7 @@ function buildRecall(hit) {
     fetch(`/api/recall/${encodeURIComponent(hit.problem.id)}/${next || "none"}`, { method: "PUT" })
       .then((res) => {
         if (res.ok) {
+          markSheetDirty();
           // A recall filter may mean this row no longer belongs in the view.
           // Re-issue on the way out, never mid-cycle.
           if (libRecall && currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
@@ -2198,6 +2257,7 @@ async function toggleFlag(hit, flag, btn) {
   }
 
   if (currentUser) refreshLibraryCounts();
+  markSheetDirty();
 
   // If the active filter or library view would no longer include this row,
   // re-run so the listing and the total stay honest.
