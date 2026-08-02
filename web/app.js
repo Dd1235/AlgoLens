@@ -904,7 +904,13 @@ async function runSearch(rawQuery, { append = false } = {}) {
   if (!currentUser && LIBRARY_COMMANDS[q.toLowerCase()]) {
     // It IS a command — it just needs somewhere to save things to. Calling it
     // "not a command" (as the branch below would) reads as a broken feature.
-    currentQuery = "";
+    //
+    // Keep currentQuery: on a refresh of `?q=:bookmarks` this runs BEFORE
+    // /auth/me resolves, and bootstrapAuth re-issues only `if (wasPending &&
+    // currentUser && currentQuery)`. Blanking it here made that condition
+    // false, so the page sat on "needs an account" until you pressed enter
+    // yourself — while signed in the whole time.
+    currentQuery = q;
     currentOffset = 0;
     currentTotal = 0;
     hideLoadMore();
@@ -1519,10 +1525,14 @@ SHEET                                              (signed in)
   expanded card (✎ marks an annotated problem).
 
   Google is asked for access once per browser session, only when
-  YOU press sync, never on page load. Your cosine login and the
-  Google account holding the sheet are independent — and if you
-  connect from a different Google account later, the site says so
-  rather than quietly starting a second sheet.
+  YOU press sync, never on page load. Notes you have already
+  synced survive a page refresh — they are cached in this browser
+  — so a reload shows them without contacting Google at all.
+
+  Your cosine login and the Google account holding the sheet are
+  independent. Sign in with a DIFFERENT Google account and the
+  site says so plainly: that account cannot see the sheet, which
+  is sitting safely in the first one.
 
 LINKS
   the address bar follows what you're looking at — query, judges,

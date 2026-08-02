@@ -25,7 +25,8 @@
 
 const SHEET_NAME = "cosine notes";
 const SHEET_TAB = "problems";
-const SHEET_ID_KEY = "algolens_sheet_v1"; // localStorage: { userId, spreadsheetId }
+const SHEET_ID_KEY = "algolens_sheet_v1";   // { userId, spreadsheetId }
+const SHEET_ROWS_KEY = "algolens_sheet_rows_v1"; // { userId, rows } — notes, not credentials
 const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at"];
 // Suggested columns, created once in the header. Free-form on purpose —
 // "todo", "revise friday", whatever fits your system; the site renders what
@@ -68,6 +69,8 @@ function sheetsInit({ clientId, userId, onChange }) {
     // sheets — same envelope pattern as the profile snapshot.
     if (parsed && parsed.userId === sheetsUserId) spreadsheetId = parsed.spreadsheetId || null;
   } catch (_e) {}
+  // Notes survive a reload; only the token doesn't.
+  if (spreadsheetId) restoreRows();
 }
 
 function sheetsConnected() {
@@ -86,7 +89,7 @@ function sheetsAvailable() {
 }
 
 function sheetsClearLocal() {
-  forget();
+  forget();  // clears the sheet pointer AND the cached notes
   accessToken = null;
   spreadsheetId = null;
   rowByProblem = new Map();
@@ -118,11 +121,23 @@ async function getToken(interactive) {
     });
   }
   return new Promise((resolve, reject) => {
+    let settled = false;
+    const finish = (fn, arg) => { if (!settled) { settled = true; fn(arg); } };
+    // A closed or blocked popup otherwise leaves this pending forever.
+    const timer = setTimeout(
+      () => finish(reject, new Error("no response from Google — the popup may have been closed or blocked")),
+      120000
+    );
+    tokenClient.error_callback = (err) => {
+      clearTimeout(timer);
+      finish(reject, new Error((err && (err.message || err.type)) || "Google sign-in was cancelled"));
+    };
     tokenClient.callback = (resp) => {
-      if (resp.error) return reject(new Error(resp.error));
+      clearTimeout(timer);
+      if (resp.error) return finish(reject, new Error(resp.error_description || resp.error));
       accessToken = resp.access_token;
       tokenExpiresAt = Date.now() + (Number(resp.expires_in) || 3600) * 1000;
-      resolve(accessToken);
+      finish(resolve, accessToken);
     };
     // prompt:"" re-uses an existing grant silently; the consent popup only
     // appears the very first time (or after the user revokes access).
@@ -253,8 +268,27 @@ function remember() {
   } catch (_e) {}
 }
 
+function rememberRows() {
+  try {
+    localStorage.setItem(SHEET_ROWS_KEY,
+      JSON.stringify({ userId: sheetsUserId, rows: Object.fromEntries(rowByProblem) }));
+  } catch (_e) {}  // quota or private mode: the cache is an optimisation, not state
+}
+
+function restoreRows() {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(SHEET_ROWS_KEY) || "null");
+    if (parsed && parsed.userId === sheetsUserId && parsed.rows) {
+      rowByProblem = new Map(Object.entries(parsed.rows));
+    }
+  } catch (_e) {}
+}
+
 function forget() {
-  try { localStorage.removeItem(SHEET_ID_KEY); } catch (_e) {}
+  try {
+    localStorage.removeItem(SHEET_ID_KEY);
+    localStorage.removeItem(SHEET_ROWS_KEY);
+  } catch (_e) {}
 }
 
 // ── Sync: app writes A–H, reads I–N, and never crosses the line ─────────────
@@ -294,7 +328,22 @@ function appRow(item) {
 // items: the /api/library?type=all payload. Returns {added, updated, total}.
 async function sheetsSync(items) {
   if (!sheetsConnected()) throw new Error("no sheet connected");
-  await readSheet();
+  try {
+    await readSheet();
+  } catch (err) {
+    // The account that just authorised cannot see this sheet. drive.file only
+    // exposes files the app created FOR THAT ACCOUNT, so this is what a second
+    // Google account looks like — and saying "File not found" would send
+    // someone hunting for a deleted spreadsheet that is sitting safely in
+    // their other account.
+    if (err.status === 404 || err.status === 403) {
+      throw new Error(
+        "this Google account can't see your sheet — it belongs to the account you " +
+        "connected with first. Sign in with that one, or press connect to start a fresh sheet here"
+      );
+    }
+    throw err;
+  }
 
   const updates = [];
   const appends = [];
@@ -331,6 +380,7 @@ async function sheetsSync(items) {
     );
   }
   await readSheet(); // pick up appended row indexes + any hand edits
+  rememberRows();
   onStateChange();
   return { added: appends.length, updated: updates.length, total: rowByProblem.size };
 }
