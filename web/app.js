@@ -264,13 +264,12 @@ if (libAgeRow) {
     syncUrl();
     reissueCurrentView();
   });
-  libAgeRow.querySelectorAll(".lib-recall").forEach((chip) => {
-    chip.addEventListener("click", () => {
-      libRecall = chip.dataset.recall || null;
-      track("library_recall", { value: libRecall || "any" });
-      syncUrl();
-      reissueCurrentView();
-    });
+  const recallSel = document.getElementById("lib-recall");
+  if (recallSel) recallSel.addEventListener("change", () => {
+    libRecall = recallSel.value || null;
+    track("library_recall", { value: libRecall || "any" });
+    syncUrl();
+    reissueCurrentView();
   });
 }
 
@@ -440,9 +439,8 @@ function setLibPath(path) {
     });
     const oldest = document.getElementById("lib-oldest");
     if (oldest) oldest.classList.toggle("is-active", libOldest);
-    libAgeRow.querySelectorAll(".lib-recall").forEach((c) => {
-      c.classList.toggle("is-active", String(libRecall ?? "") === c.dataset.recall);
-    });
+    const recallSelect = document.getElementById("lib-recall");
+    if (recallSelect) recallSelect.value = libRecall || "";
   }
   // Highlight the matching chip so the bar reads like a state indicator.
   libChips.forEach((c) => {
@@ -1939,7 +1937,7 @@ function renderHitsList(container, hits, opts = {}) {
     header.appendChild(meta);
 
     if (currentUser) {
-      header.appendChild(buildActions(hit));
+      header.appendChild(buildActions(hit, libraryMode));
     }
 
     const bar = document.createElement("div");
@@ -2034,7 +2032,7 @@ function renderHitsList(container, hits, opts = {}) {
   });
 }
 
-function buildActions(hit) {
+function buildActions(hit, libraryMode) {
   const actions = document.createElement("span");
   actions.className = "result-actions";
 
@@ -2062,10 +2060,11 @@ function buildActions(hit) {
 
   actions.appendChild(bookmark);
   actions.appendChild(done);
-  // The rating only exists once there IS something to rate. A plain search
-  // result keeps its two buttons; a saved one gains a third chip, and nothing
-  // pops up or has to be dismissed.
-  if (hit.done || hit.bookmarked) actions.appendChild(buildRecall(hit));
+  // The rating shows up in the LIBRARY only, and only on a row that is
+  // actually saved. Searching is the busy surface — a third chip on every
+  // result there is chrome you have to look past to read a title — while the
+  // library is exactly where "how did that go?" is the question being asked.
+  if (libraryMode && (hit.done || hit.bookmarked)) actions.appendChild(buildRecall(hit));
   return actions;
 }
 
@@ -2073,8 +2072,15 @@ function buildActions(hit) {
 // element, and "how did it go" is a one-tap answer at the moment you tick
 // something done, which was the whole point (a separate sheet is friction
 // nobody pays twice).
+//
+// It shows ONE character, always the same width as ☆ and ✓. The first cut
+// wrote the word ("again", "med"), which made the chip a different size in
+// every row and shoved the whole action group left and right as you rated
+// things. The letter is explained by its tooltip, by the colour, and by
+// `:help saving`.
 const RECALL_CYCLE = [null, "again", "hard", "medium", "easy"];
-const RECALL_LABEL = { again: "again", hard: "hard", medium: "med", easy: "easy" };
+const RECALL_LETTER = { again: "A", hard: "H", medium: "M", easy: "E" };
+const RECALL_WORD = { again: "again", hard: "hard", medium: "medium", easy: "easy" };
 
 function buildRecall(hit) {
   const btn = document.createElement("button");
@@ -2082,29 +2088,43 @@ function buildRecall(hit) {
   const paint = () => {
     const v = hit.recall || null;
     btn.className = `result-action recall${v ? ` recall-${v}` : ""}`;
-    btn.textContent = v ? RECALL_LABEL[v] : "·";
-    btn.title = v ? `you found this ${v} — click to change` : "rate how it went";
-    btn.setAttribute("aria-pressed", String(!!v));
+    btn.textContent = v ? RECALL_LETTER[v] : "·";
+    btn.title = v
+      ? `how it went: ${RECALL_WORD[v]} — tap to change`
+      : "rate how it went: again / hard / medium / easy";
+    btn.setAttribute("aria-label", btn.title);
   };
   paint();
-  btn.addEventListener("click", async (e) => {
+  btn.addEventListener("click", (e) => {
     e.stopPropagation(); // the header click toggles the card open
-    const next = RECALL_CYCLE[(RECALL_CYCLE.indexOf(hit.recall || null) + 1) % RECALL_CYCLE.length];
-    btn.disabled = true;
-    try {
-      const res = await fetch(`/api/recall/${encodeURIComponent(hit.problem.id)}/${next || "none"}`,
-        { method: "PUT" });
-      if (!res.ok) return;
-      hit.recall = next || undefined;
-      paint();
-      track("recall_set", { problemId: hit.problem.id, value: next || "none" });
-      // If a recall filter is on, this row may no longer belong in the view.
-      if (libRecall && currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
-        reissueCurrentView();
-      }
-    } finally {
-      btn.disabled = false;
-    }
+    const before = hit.recall || null;
+    const next = RECALL_CYCLE[(RECALL_CYCLE.indexOf(before) + 1) % RECALL_CYCLE.length];
+    // Optimistic: paint first, ask after. Four taps to get from unrated to
+    // "easy" behind a disabled button and a spinner is unusable — and there
+    // is nothing to lose by being wrong, since the only recovery a failure
+    // needs is putting the old letter back.
+    hit.recall = next || undefined;
+    paint();
+    track("recall_set", { problemId: hit.problem.id, value: next || "none" });
+    fetch(`/api/recall/${encodeURIComponent(hit.problem.id)}/${next || "none"}`, { method: "PUT" })
+      .then((res) => {
+        if (res.ok) {
+          // A recall filter may mean this row no longer belongs in the view.
+          // Re-issue on the way out, never mid-cycle.
+          if (libRecall && currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
+            reissueCurrentView();
+          }
+          return;
+        }
+        hit.recall = before || undefined;
+        paint();
+        setStatus(res.status === 409 ? "rating needs a saved problem" : "could not save that rating");
+      })
+      .catch(() => {
+        hit.recall = before || undefined;
+        paint();
+        setStatus("offline — rating not saved");
+      });
   });
   return btn;
 }
