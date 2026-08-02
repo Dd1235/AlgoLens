@@ -12,10 +12,11 @@
 //     The server's entire involvement is serving a public client id.
 //
 // The sheet is the EDITING surface; the site only displays. The app writes
-// exactly one thing: columns A–H of rows whose problem is in your library
-// (plus appending new such rows). Everything else in the spreadsheet is
-// yours — the suggested note columns I–N, any columns you add after them,
-// any rows you add — and the app never writes, blanks, or deletes any of it.
+// exactly one thing: its OWN columns (APP_HEADER, found by name in row 1) on
+// rows whose problem is in your library, plus appending new such rows.
+// Everything else in the spreadsheet is yours — the suggested note columns,
+// any columns you add after them, any rows you add — and the app never
+// writes, blanks, or deletes any of it.
 // No cell has two writers, so there is nothing to merge, and no in-site
 // editor means the token is only ever needed when YOU press sync.
 
@@ -27,7 +28,13 @@ const SHEET_NAME = "cosine notes";
 const SHEET_TAB = "problems";
 const SHEET_ID_KEY = "algolens_sheet_v1";   // { userId, spreadsheetId }
 const SHEET_ROWS_KEY = "algolens_sheet_rows_v1"; // { userId, rows } — notes, not credentials
-const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at"];
+// App-owned columns, in the order a NEW sheet gets them. Order and position
+// are not load-bearing: every read and write below locates a column by this
+// NAME in row 1, so a sheet made before `recall` existed (eight columns, user
+// notes starting at I) keeps working untouched, and reordering the columns by
+// hand keeps working too. Appending a name here is safe; renaming one orphans
+// that column in sheets already out there.
+const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at", "recall"];
 // Suggested columns, created once in the header. Free-form on purpose —
 // "todo", "revise friday", whatever fits your system; the site renders what
 // it finds and enforces nothing. Add your own columns after these.
@@ -62,6 +69,7 @@ function sheetsInit({ clientId, userId, onChange }) {
   sheetsUserId = userId || null;
   spreadsheetId = null;
   rowByProblem = new Map();
+  sheetLayout = null;
   if (!sheetsClientId || !sheetsUserId) return;
   try {
     const parsed = JSON.parse(localStorage.getItem(SHEET_ID_KEY) || "null");
@@ -93,6 +101,7 @@ function sheetsClearLocal() {
   accessToken = null;
   spreadsheetId = null;
   rowByProblem = new Map();
+  sheetLayout = null;
 }
 
 // ── Google plumbing ──────────────────────────────────────────────────────────
@@ -184,7 +193,18 @@ async function gapi(url, options = {}) {
   return res.json();
 }
 
-const colLetter = (n) => String.fromCharCode(64 + n); // 1 -> A .. 14 -> N
+// 1 -> A, 26 -> Z, 27 -> AA. The sheet is the user's, so it can be as wide as
+// they like; a single-letter version would silently address the wrong column
+// the moment somebody added a 27th.
+function colLetter(n) {
+  let s = "";
+  while (n > 0) {
+    const r = (n - 1) % 26;
+    s = String.fromCharCode(65 + r) + s;
+    n = (n - r - 1) / 26;
+  }
+  return s;
+}
 
 // ── Connect: find our sheet or create it ────────────────────────────────────
 
@@ -291,38 +311,105 @@ function forget() {
   } catch (_e) {}
 }
 
-// ── Sync: app writes A–H, reads I–N, and never crosses the line ─────────────
+// ── Sync: the app writes its own columns, reads yours, never crosses over ────
+
+// Where each column actually is in THIS sheet, read from row 1. Nothing below
+// assumes a position — that assumption is what would let a new app column
+// overwrite a user's note in a sheet created before it existed.
+let sheetLayout = null; // { app: Map(name -> 0-based col), user: Map(key -> col), width }
+
+function readLayout(headerRow) {
+  const app = new Map();
+  const user = new Map();
+  const seen = new Map();
+  (headerRow || []).forEach((cell, i) => {
+    const name = String(cell == null ? "" : cell).trim().toLowerCase();
+    if (name && !seen.has(name)) seen.set(name, i); // first wins if duplicated
+  });
+  APP_HEADER.forEach((name) => {
+    if (seen.has(name)) app.set(name, seen.get(name));
+  });
+  SHEET_USER_FIELDS.forEach((f) => {
+    if (seen.has(f.key)) user.set(f.key, seen.get(f.key));
+  });
+  // A sheet with no recognisable header (row 1 deleted, or a tab the app did
+  // not create) falls back to the original fixed layout rather than writing
+  // nothing — which is what every sheet in the wild looked like anyway.
+  if (!app.size) {
+    APP_HEADER.slice(0, 8).forEach((name, i) => app.set(name, i));
+    SHEET_USER_FIELDS.forEach((f, j) => user.set(f.key, 8 + j));
+  }
+  const cols = [...app.values(), ...user.values(), (headerRow || []).length - 1];
+  return { app, user, width: Math.max(...cols) + 1 };
+}
+
+// App-owned columns grouped into contiguous runs, so the usual sheet costs one
+// range per row instead of one per cell — but a reordered sheet still writes
+// to the right places, just in more pieces.
+function appRuns() {
+  const cols = APP_HEADER
+    .map((name) => ({ name, i: sheetLayout.app.get(name) }))
+    .filter((c) => c.i != null)
+    .sort((a, b) => a.i - b.i);
+  const runs = [];
+  for (const c of cols) {
+    const last = runs[runs.length - 1];
+    if (last && c.i === last.end + 1) {
+      last.end = c.i;
+      last.names.push(c.name);
+    } else {
+      runs.push({ start: c.i, end: c.i, names: [c.name] });
+    }
+  }
+  return runs;
+}
 
 async function readSheet() {
-  const range = `${SHEET_TAB}!A2:${colLetter(FULL_HEADER.length)}`;
+  // The whole tab, not a pinned A2:N — the width is the user's business, and
+  // row 1 is how we learn the layout in the first place.
   const data = await gapi(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}`
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(SHEET_TAB)}`
   );
+  const values = data.values || [];
+  sheetLayout = readLayout(values[0]);
+  const idCol = sheetLayout.app.get("problem_id");
   rowByProblem = new Map();
-  (data.values || []).forEach((row, i) => {
-    const id = row[0];
+  values.slice(1).forEach((row, i) => {
+    const id = row[idCol];
     if (!id) return;
     const entry = { rowIndex: i + 2 };
-    SHEET_USER_FIELDS.forEach((f, j) => {
-      entry[f.key] = row[APP_HEADER.length + j] || "";
+    SHEET_USER_FIELDS.forEach((f) => {
+      const col = sheetLayout.user.get(f.key);
+      entry[f.key] = (col == null ? "" : row[col]) || "";
     });
     rowByProblem.set(id, entry);
   });
   return rowByProblem;
 }
 
-function appRow(item) {
+function appCells(item) {
   const p = item.problem;
-  return [
-    p.id,
-    p.title || "",
-    p.source_url || "",
-    p.platform || "",
-    p.difficulty == null ? "" : String(p.difficulty),
-    item.bookmarked ? "yes" : "",
-    item.done ? "yes" : "",
-    item.doneAt ? item.doneAt.slice(0, 10) : "",
-  ];
+  return {
+    problem_id: p.id,
+    title: p.title || "",
+    link: p.source_url || "",
+    judge: p.platform || "",
+    difficulty: p.difficulty == null ? "" : String(p.difficulty),
+    bookmarked: item.bookmarked ? "yes" : "",
+    done: item.done ? "yes" : "",
+    done_at: item.doneAt ? item.doneAt.slice(0, 10) : "",
+    recall: item.recall || "",
+  };
+}
+
+// A brand-new row, laid out for THIS sheet. User columns are sent as empty
+// strings, which is only ever true here: the row did not exist a moment ago,
+// so there is nothing of the user's to overwrite.
+function appendRow(item) {
+  const cells = appCells(item);
+  const row = new Array(sheetLayout.width).fill("");
+  sheetLayout.app.forEach((col, name) => { row[col] = cells[name]; });
+  return row;
 }
 
 // items: the /api/library?type=all payload. Returns {added, updated, total}.
@@ -345,19 +432,22 @@ async function sheetsSync(items) {
     throw err;
   }
 
+  const runs = appRuns();
   const updates = [];
   const appends = [];
   for (const item of items) {
     const existing = rowByProblem.get(item.problem.id);
     if (existing) {
-      updates.push({
-        range: `${SHEET_TAB}!A${existing.rowIndex}:${colLetter(APP_HEADER.length)}${existing.rowIndex}`,
-        values: [appRow(item)],
-      });
+      const cells = appCells(item);
+      const r = existing.rowIndex;
+      for (const run of runs) {
+        updates.push({
+          range: `${SHEET_TAB}!${colLetter(run.start + 1)}${r}:${colLetter(run.end + 1)}${r}`,
+          values: [run.names.map((n) => cells[n])],
+        });
+      }
     } else {
-      // A new row is A–H only. The append range is pinned to A:H so Sheets
-      // can't shift the row into whatever columns the user added later.
-      appends.push(appRow(item));
+      appends.push(appendRow(item));
     }
   }
 
@@ -374,8 +464,13 @@ async function sheetsSync(items) {
     });
   }
   if (appends.length) {
+    // The append range names the header row, so Sheets appends beneath the
+    // table it belongs to. Derived from the sheet's real width — a stale
+    // literal here misfiles every appended row by however many columns it is
+    // out of date, which is exactly what a hardcoded A1:H1 would now do.
+    const range = `${SHEET_TAB}!A1:${colLetter(sheetLayout.width)}1`;
     await gapi(
-      `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${SHEET_TAB}!A1:H1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`,
+      `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`,
       { method: "POST", body: JSON.stringify({ values: appends }) }
     );
   }
