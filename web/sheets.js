@@ -35,18 +35,34 @@ const SHEET_ROWS_KEY = "algolens_sheet_rows_v1"; // { userId, rows } — notes, 
 // hand keeps working too. Appending a name here is safe; renaming one orphans
 // that column in sheets already out there.
 const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at", "recall"];
-// Suggested columns, created once in the header. Free-form on purpose —
-// "todo", "revise friday", whatever fits your system; the site renders what
-// it finds and enforces nothing. Add your own columns after these.
+// Suggested columns, created once in the header of a new sheet and then left
+// entirely alone. Free-form on purpose — "todo", "revise friday", whatever
+// fits your system; the site renders what it finds and enforces nothing.
+//
+// `solution_summary` leads because it is the one you actually reread. There
+// is deliberately no `status` column any more: the site owns `done` and
+// `recall`, and a third status column next to them was one place too many to
+// write the same thing (an existing one is kept and still shown — it just
+// isn't suggested).
 const SHEET_USER_FIELDS = [
-  { key: "solve_status", label: "status" },
-  { key: "time_taken", label: "time taken" },
+  { key: "solution_summary", label: "solution summary" },
   { key: "concept", label: "concept" },
   { key: "tactics", label: "tactics" },
-  { key: "solution_summary", label: "solution summary" },
+  { key: "time_taken", label: "time taken" },
   { key: "notes", label: "notes" },
 ];
 const FULL_HEADER = APP_HEADER.concat(SHEET_USER_FIELDS.map((f) => f.key));
+// The shape the app keeps the sheet in: its own columns first, in a fixed
+// order, then the suggested ones. Anything you add keeps its order after
+// those. Normalising to this is what stops the layout drifting into two
+// columns that mean the same thing.
+const CANONICAL = FULL_HEADER;
+// What a sheet looked like before any of this: eight app columns, then the
+// six suggested ones. Only used when row 1 isn't a header at all.
+const LEGACY_HEADER = [
+  "problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at",
+  "solve_status", "time_taken", "concept", "tactics", "solution_summary", "notes",
+];
 
 let sheetsClientId = null;   // from /api/rankers; feature hidden while null
 let sheetsUserId = null;     // guards the localStorage envelope per account
@@ -70,6 +86,8 @@ function sheetsInit({ clientId, userId, onChange }) {
   spreadsheetId = null;
   rowByProblem = new Map();
   sheetLayout = null;
+  sheetValues = [];
+  sheetTabId = null;
   if (!sheetsClientId || !sheetsUserId) return;
   try {
     const parsed = JSON.parse(localStorage.getItem(SHEET_ID_KEY) || "null");
@@ -102,6 +120,8 @@ function sheetsClearLocal() {
   spreadsheetId = null;
   rowByProblem = new Map();
   sheetLayout = null;
+  sheetValues = [];
+  sheetTabId = null;
 }
 
 // ── Google plumbing ──────────────────────────────────────────────────────────
@@ -317,56 +337,192 @@ function forget() {
 // assumes a position — that assumption is what would let a new app column
 // overwrite a user's note in a sheet created before it existed.
 let sheetLayout = null; // { app: Map(name -> 0-based col), user: Map(key -> col), width }
+let sheetValues = [];   // the last raw grid read, header row included
 
 function readLayout(values) {
   const headerRow = (values || [])[0] || [];
   const app = new Map();
-  const user = new Map();
+  const user = new Map();   // key -> column, for every column that isn't ours
+  const labels = new Map(); // key -> the header text as the user wrote it
   const seen = new Map();
-  (headerRow || []).forEach((cell, i) => {
-    const name = String(cell == null ? "" : cell).trim().toLowerCase();
+  headerRow.forEach((cell, i) => {
+    const text = String(cell == null ? "" : cell).trim();
+    const name = text.toLowerCase();
     if (name && !seen.has(name)) seen.set(name, i); // first wins if duplicated
   });
   APP_HEADER.forEach((name) => {
     if (seen.has(name)) app.set(name, seen.get(name));
   });
-  SHEET_USER_FIELDS.forEach((f) => {
-    if (seen.has(f.key)) user.set(f.key, seen.get(f.key));
+  // Any column that isn't one of ours is one of yours — including columns you
+  // invented and columns we stopped suggesting. The site shows what it finds
+  // rather than a fixed list of six, which is the whole "the rest is up to
+  // you" half of the deal.
+  seen.forEach((i, name) => {
+    if (app.has(name)) return;
+    user.set(name, i);
+    const suggested = SHEET_USER_FIELDS.find((f) => f.key === name);
+    labels.set(name, suggested ? suggested.label : String(headerRow[i]).trim());
   });
   // A sheet with no recognisable header (row 1 deleted, or a tab the app did
   // not create) falls back to the original fixed layout rather than writing
   // nothing — which is what every sheet in the wild looked like anyway.
   const derived = !app.size;
   if (derived) {
-    APP_HEADER.slice(0, 8).forEach((name, i) => app.set(name, i));
-    SHEET_USER_FIELDS.forEach((f, j) => user.set(f.key, 8 + j));
+    LEGACY_HEADER.forEach((name, i) => {
+      if (APP_HEADER.includes(name)) app.set(name, i);
+      else { user.set(name, i); labels.set(name, name); }
+    });
   }
   // Width is the widest ROW, not the header — a column with a blank header
   // still holds someone's data, and this number is where a new app column is
   // allowed to start.
   const widest = (values || []).reduce((m, row) => Math.max(m, (row || []).length), 0);
   const cols = [...app.values(), ...user.values(), widest - 1];
-  return { app, user, derived, width: Math.max(...cols) + 1 };
+  return { app, user, labels, derived, width: Math.max(...cols) + 1 };
 }
 
-// A sheet created before a column existed doesn't have it — the very case
-// header-name mapping was built to survive. Rather than leave those sheets
-// permanently missing the rating, claim the column PAST EVERY CELL THAT
-// EXISTS and write its header there. Nothing is shifted and nothing of the
-// user's is overwritten: the new column starts beyond the widest row in the
-// sheet. Only ever runs on a real sync, which is a button the user pressed.
-async function ensureAppColumns() {
-  if (sheetLayout.derived) return; // row 1 isn't a header; don't invent one
-  const missing = APP_HEADER.filter((name) => sheetLayout.app.get(name) == null);
-  if (!missing.length) return;
-  const start = sheetLayout.width;
-  const range = `${SHEET_TAB}!${colLetter(start + 1)}1:${colLetter(start + missing.length)}1`;
+// The columns you own, in the order they appear in your sheet — what the
+// expanded card renders.
+function sheetsUserColumns() {
+  if (!sheetLayout) return SHEET_USER_FIELDS.slice();
+  return [...sheetLayout.user.entries()]
+    .sort((a, b) => a[1] - b[1])
+    .map(([key]) => ({ key, label: sheetLayout.labels.get(key) || key }));
+}
+
+// Keeping the sheet in one shape.
+//
+// Layouts drift. A sheet made before `recall` existed doesn't have it; a sheet
+// made before this version has a `status` column sitting next to the `done`
+// column that now means the same thing; a re-sync could leave two columns with
+// the same header. So on sync the app puts ITS columns first in a fixed order,
+// the suggested ones next, and leaves everything else in the order you had it.
+//
+// This is done with insert/move/delete DIMENSION requests, never by rewriting
+// the grid. That distinction is the whole point: moving a column carries its
+// formulas, formats, notes and validation with it, while re-writing the values
+// would flatten a formula into the number it happened to evaluate to. Nothing
+// is dropped except a column that is both a duplicate name AND empty in every
+// row — which is the one case where there is provably nothing to lose.
+function planLayout(values) {
+  const header = ((values || [])[0] || []).map((c) => String(c == null ? "" : c).trim());
+  const width = (values || []).reduce((m, row) => Math.max(m, (row || []).length), 0);
+  const columnEmpty = (i) =>
+    (values || []).slice(1).every((row) => !String((row || [])[i] == null ? "" : row[i]).trim());
+
+  // Pass 1: what survives, left to right.
+  const namesSeen = new Set();
+  const drop = [];
+  const kept = [];
+  for (let i = 0; i < Math.max(header.length, width); i++) {
+    const name = (header[i] || "").toLowerCase();
+    const duplicate = name && namesSeen.has(name);
+    if ((duplicate || !name) && columnEmpty(i)) { drop.push(i); continue; }
+    if (name) namesSeen.add(name);
+    kept.push({ name: name || `col${i}`, index: i });
+  }
+
+  // Pass 2: the order they should be in.
+  const byName = new Map(kept.map((c) => [c.name, c]));
+  // Deduped: a name appears in the target once, however many columns carry it.
+  // Extra columns sharing a name are simply never moved, so they end up after
+  // everything that was placed — with their contents untouched.
+  const target = [];
+  const placed = new Set();
+  const want = (name) => { if (!placed.has(name)) { placed.add(name); target.push(name); } };
+  CANONICAL.forEach(want);
+  kept.forEach((c) => { if (!CANONICAL.includes(c.name)) want(c.name); });
+
+  // Pass 3: the moves that get from here to there, in current coordinates.
+  const cur = kept.filter((c) => !drop.includes(c.index)).map((c) => c.name);
+  const requests = [];
+  const inserted = [];
+  target.forEach((name, i) => {
+    // Search from i, never before it: everything left of i is already in its
+    // final place, and finding a name there would emit a move to the RIGHT —
+    // where destinationIndex means something different (it is read in
+    // pre-move coordinates) and would land one column off.
+    const j = cur.indexOf(name, i);
+    if (j === -1) {
+      requests.push({ insertDimension: {
+        range: { dimension: "COLUMNS", startIndex: i, endIndex: i + 1 },
+        inheritFromBefore: false,
+      } });
+      cur.splice(i, 0, name);
+      inserted.push(name);
+      return;
+    }
+    if (j === i) return;
+    // Always a move LEFT (j > i), so destinationIndex needs no adjustment for
+    // the source being removed first.
+    requests.push({ moveDimension: {
+      source: { dimension: "COLUMNS", startIndex: j, endIndex: j + 1 },
+      destinationIndex: i,
+    } });
+    cur.splice(i, 0, cur.splice(j, 1)[0]);
+  });
+
+  // Deletions last, by original index, right to left — after the moves the
+  // dropped columns have been pushed to the end in unknown order, so instead
+  // they go FIRST, before any move, and the move plan is computed on what is
+  // left. (drop is already excluded from `cur` above.)
+  const deletes = drop.slice().sort((a, b) => b - a).map((i) => ({
+    deleteDimension: { range: { dimension: "COLUMNS", startIndex: i, endIndex: i + 1 } },
+  }));
+
+  return {
+    requests: deletes.concat(requests),
+    header: cur.map((name) => {
+      if (CANONICAL.includes(name)) return name;
+      // Yours: put back exactly the text you wrote. A column with DATA but no
+      // header keeps its blank header rather than being given an invented one
+      // — it is not ours to name.
+      const existing = byName.get(name);
+      return (existing && header[existing.index]) || "";
+    }),
+    changed: deletes.length > 0 || requests.length > 0,
+    inserted,
+  };
+}
+
+async function normalizeLayout(values) {
+  if (sheetLayout.derived) return false; // row 1 isn't a header; don't reshape
+  const plan = planLayout(values);
+  if (!plan.changed) return false;
+  const id = await tabId();
+  const withSheet = plan.requests.map((r) => {
+    const req = JSON.parse(JSON.stringify(r));
+    if (req.insertDimension) req.insertDimension.range.sheetId = id;
+    if (req.deleteDimension) req.deleteDimension.range.sheetId = id;
+    if (req.moveDimension) { req.moveDimension.source.sheetId = id; }
+    return req;
+  });
+  await gapi(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}:batchUpdate`, {
+    method: "POST",
+    body: JSON.stringify({ requests: withSheet }),
+  });
+  // One header write for the whole row: names an inserted column, and tidies
+  // any of ours whose header was mistyped or renamed.
   await gapi(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}?valueInputOption=RAW`,
-    { method: "PUT", body: JSON.stringify({ values: [missing] }) }
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/` +
+      `${encodeURIComponent(`${SHEET_TAB}!A1:${colLetter(plan.header.length)}1`)}?valueInputOption=RAW`,
+    { method: "PUT", body: JSON.stringify({ values: [plan.header] }) }
   );
-  missing.forEach((name, i) => sheetLayout.app.set(name, start + i));
-  sheetLayout.width = start + missing.length;
+  return true;
+}
+
+// The tab's numeric id, which dimension requests address it by (the name is
+// only good for A1 ranges).
+let sheetTabId = null;
+async function tabId() {
+  if (sheetTabId != null) return sheetTabId;
+  const meta = await gapi(
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?fields=sheets(properties(sheetId,title))`
+  );
+  const tabs = meta.sheets || [];
+  const tab = tabs.find((t) => t.properties && t.properties.title === SHEET_TAB) || tabs[0];
+  sheetTabId = tab ? tab.properties.sheetId : 0;
+  return sheetTabId;
 }
 
 // App-owned columns grouped into contiguous runs, so the usual sheet costs one
@@ -397,6 +553,7 @@ async function readSheet() {
     `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(SHEET_TAB)}`
   );
   const values = data.values || [];
+  sheetValues = values;   // kept so a sync can plan a reshape without re-reading
   sheetLayout = readLayout(values);
   const idCol = sheetLayout.app.get("problem_id");
   rowByProblem = new Map();
@@ -404,10 +561,7 @@ async function readSheet() {
     const id = row[idCol];
     if (!id) return;
     const entry = { rowIndex: i + 2 };
-    SHEET_USER_FIELDS.forEach((f) => {
-      const col = sheetLayout.user.get(f.key);
-      entry[f.key] = (col == null ? "" : row[col]) || "";
-    });
+    sheetLayout.user.forEach((col, key) => { entry[key] = row[col] || ""; });
     rowByProblem.set(id, entry);
   });
   return rowByProblem;
@@ -458,7 +612,10 @@ async function sheetsSync(items) {
     throw err;
   }
 
-  await ensureAppColumns();
+  // Put the columns back in one known order before writing anything, so the
+  // ranges below can't be aimed at a layout that has since drifted.
+  if (await normalizeLayout(sheetValues)) await readSheet();
+
   const runs = appRuns();
   const updates = [];
   const appends = [];
@@ -529,4 +686,5 @@ const cosineSheets = {
   clearLocal: sheetsClearLocal,
   url: sheetsUrl,
   USER_FIELDS: SHEET_USER_FIELDS,
+  userColumns: sheetsUserColumns,
 };

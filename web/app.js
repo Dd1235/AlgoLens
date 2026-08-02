@@ -1634,21 +1634,25 @@ CORPUS
 
   You never add a row by hand. Bookmark or tick done on the
   site and sync writes the row for you — id, title, link,
-  judge, difficulty, bookmarked, done, done date, recall. Those
-  columns belong to the site and are rewritten each sync. A
-  sheet you made before one of them existed gains it on the
-  next sync, added to the RIGHT of everything in the sheet;
-  nothing of yours is moved or overwritten.
+  judge, difficulty, bookmarked, done, done date, recall.
+  Those columns belong to the site and are rewritten each
+  sync, so there is no second place to record that you solved
+  something.
 
-  EVERYTHING ELSE IS YOURS, and is edited in the sheet itself:
-  the suggested columns (status, time taken, concept, tactics,
-  solution summary, notes — free-form, so "todo" is a status if
-  you say it is), any columns you add after them, any rows you
-  add. The app never writes, blanks or deletes any of it. It
-  finds its own columns by their names in row 1, so reordering
-  is safe, and a sheet made before a column existed simply
-  doesn't get it. The site reads your columns and shows them on
-  the expanded card (✎ marks an annotated problem).
+  EVERYTHING ELSE IS YOURS, and is edited in the sheet itself.
+  Sync starts you with solution summary, concept, tactics,
+  time taken and notes — free-form, all of them — and any
+  column you add is read too: call one "revision date" and it
+  shows up on the card with that name. The app never writes,
+  blanks or deletes a cell of yours.
+
+  Sync keeps one layout: the site's columns first, the
+  suggested ones next, then yours in the order you have them.
+  A sheet made before a column existed gains it; a duplicate
+  column that has nothing in it is removed. Columns are MOVED,
+  not rewritten, so formulas and formatting travel with them,
+  and a column with anything in it is never dropped — if two
+  columns share a name and both have content, both stay.
 
   Google is asked for access once per browser session, and only
   when YOU press sync — never on page load. After that press,
@@ -1930,7 +1934,7 @@ function renderHitsList(container, hits, opts = {}) {
     let metaHtml = platformBadge(hit.problem.platform) + diffHtml + escapeHtml(trailing);
     if (typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
       const note = cosineSheets.noteFor(hit.problem.id);
-      const hasNotes = note && cosineSheets.USER_FIELDS.some((fld) => (note[fld.key] || "").trim());
+      const hasNotes = note && cosineSheets.userColumns().some((fld) => (note[fld.key] || "").trim());
       if (hasNotes) metaHtml += '<span class="note-mark" title="has notes in your sheet">✎</span>';
     }
     if (opts.otherRankMap) {
@@ -2201,7 +2205,9 @@ function reissueSearch() {
 function buildNoteView(problemId) {
   const note = cosineSheets.noteFor(problemId);
   if (!note) return null;
-  const filled = cosineSheets.USER_FIELDS.filter((fld) => (note[fld.key] || "").trim());
+  // Whatever columns YOUR sheet has, in your order — not a fixed list of six.
+  // Add a column called "revision date" and it shows up here.
+  const filled = cosineSheets.userColumns().filter((fld) => (note[fld.key] || "").trim());
   if (!filled.length) return null;
 
   const wrap = document.createElement("div");
