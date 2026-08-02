@@ -2155,6 +2155,12 @@ async function toggleFlag(hit, flag, btn) {
   }
   btn.setAttribute("aria-pressed", String(next));
 
+  // Un-saving something you had rated: the row leaves your library but the
+  // rating is kept, and saying so beats letting someone discover it later.
+  if (!next && !hit.done && !hit.bookmarked && hit.recall) {
+    setStatus(`unsaved — your "${RECALL_WORD[hit.recall] || hit.recall}" rating is kept if you save it again`);
+  }
+
   if (currentUser) refreshLibraryCounts();
 
   // If the active filter or library view would no longer include this row,

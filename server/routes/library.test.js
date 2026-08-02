@@ -136,6 +136,16 @@ const ids = (d) => d.items.map((it) => it.problem.id);
     assert.equal(negative.aged, undefined);
   }
 
+  // "In your library" is (done OR bookmarked), not "every row we hold" — a
+  // row can now outlive both flags to hold a rating (0008), and `type=all`
+  // must not start listing those.
+  {
+    calls.length = 0;
+    await get("type=all");
+    const sql = calls.find((c) => /FROM user_problem_state/.test(c.sql)).sql;
+    assert.match(sql, /\(done OR bookmarked\)/, "type=all still means saved");
+  }
+
   // The rating rides along on the item, and absent means unrated rather than
   // an empty string the client would have to special-case.
   {
