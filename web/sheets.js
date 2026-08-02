@@ -28,28 +28,33 @@ const SHEET_NAME = "cosine notes";
 const SHEET_TAB = "problems";
 const SHEET_ID_KEY = "algolens_sheet_v1";   // { userId, spreadsheetId }
 const SHEET_ROWS_KEY = "algolens_sheet_rows_v1"; // { userId, rows } — notes, not credentials
-// App-owned columns, in the order a NEW sheet gets them. Order and position
-// are not load-bearing: every read and write below locates a column by this
-// NAME in row 1, so a sheet made before `recall` existed (eight columns, user
-// notes starting at I) keeps working untouched, and reordering the columns by
-// hand keeps working too. Appending a name here is safe; renaming one orphans
-// that column in sheets already out there.
-const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "bookmarked", "done", "done_at", "recall"];
-// Suggested columns, created once in the header of a new sheet and then left
-// entirely alone. Free-form on purpose — "todo", "revise friday", whatever
-// fits your system; the site renders what it finds and enforces nothing.
+// App-owned columns, in the order a NEW sheet gets them — and deliberately
+// few. Everything here is rewritten by the site on every sync, so a column
+// earns its place only if it makes the sheet READABLE (which problem is this,
+// where do I open it) or is state the sheet has no other way to know.
 //
-// `solution_summary` leads because it is the one you actually reread. There
-// is deliberately no `status` column any more: the site owns `done` and
-// `recall`, and a third status column next to them was one place too many to
-// write the same thing (an existing one is kept and still shown — it just
-// isn't suggested).
+// `bookmarked` / `done` are NOT here. They are site state, the site already
+// shows them, and a column that says "yes" is a second place to look for
+// something you know. `recall` stays because it is the one bit of state you
+// would plausibly sort your own sheet by.
+//
+// Position is not load-bearing: every read and write below locates a column
+// by this NAME in row 1. Appending a name is safe; renaming one orphans that
+// column in sheets already out there.
+const APP_HEADER = ["problem_id", "title", "link", "judge", "difficulty", "recall"];
+
+// Columns the app used to own and no longer writes. Sync removes them — which
+// it is entitled to do precisely because nothing but the app ever wrote them,
+// and leaving one behind would leave a `done` column frozen at whatever it
+// said the day this shipped. A stale answer is worse than no column.
+const RETIRED_APP_COLUMNS = ["bookmarked", "done", "done_at"];
+
+// The one column a new sheet is created with, because it is the one people
+// actually reread. Everything else is up to you: add "concept", "time taken",
+// "revision date", anything at all — the site reads every column it finds and
+// shows it on the card, and never writes one it did not create.
 const SHEET_USER_FIELDS = [
   { key: "solution_summary", label: "solution summary" },
-  { key: "concept", label: "concept" },
-  { key: "tactics", label: "tactics" },
-  { key: "time_taken", label: "time taken" },
-  { key: "notes", label: "notes" },
 ];
 const FULL_HEADER = APP_HEADER.concat(SHEET_USER_FIELDS.map((f) => f.key));
 // The shape the app keeps the sheet in: its own columns first, in a fixed
@@ -358,7 +363,10 @@ function readLayout(values) {
   // rather than a fixed list of six, which is the whole "the rest is up to
   // you" half of the deal.
   seen.forEach((i, name) => {
-    if (app.has(name)) return;
+    // A retired column isn't one of yours either — it is ours, on its way
+    // out, and showing "done: yes" as if it were a note you wrote would be a
+    // lie in the one place the app promises not to tell any.
+    if (app.has(name) || RETIRED_APP_COLUMNS.includes(name)) return;
     user.set(name, i);
     const suggested = SHEET_USER_FIELDS.find((f) => f.key === name);
     labels.set(name, suggested ? suggested.label : String(headerRow[i]).trim());
@@ -370,7 +378,7 @@ function readLayout(values) {
   if (derived) {
     LEGACY_HEADER.forEach((name, i) => {
       if (APP_HEADER.includes(name)) app.set(name, i);
-      else { user.set(name, i); labels.set(name, name); }
+      else if (!RETIRED_APP_COLUMNS.includes(name)) { user.set(name, i); labels.set(name, name); }
     });
   }
   // Width is the widest ROW, not the header — a column with a blank header
@@ -417,6 +425,10 @@ function planLayout(values) {
   for (let i = 0; i < Math.max(header.length, width); i++) {
     const name = (header[i] || "").toLowerCase();
     const duplicate = name && namesSeen.has(name);
+    // A column the app has retired goes even though it has content — that
+    // content is the app's own, written by an older version, and now wrong.
+    // Nothing the USER wrote is ever dropped for having content.
+    if (RETIRED_APP_COLUMNS.includes(name)) { drop.push(i); continue; }
     if ((duplicate || !name) && columnEmpty(i)) { drop.push(i); continue; }
     if (name) namesSeen.add(name);
     kept.push({ name: name || `col${i}`, index: i });
@@ -575,9 +587,6 @@ function appCells(item) {
     link: p.source_url || "",
     judge: p.platform || "",
     difficulty: p.difficulty == null ? "" : String(p.difficulty),
-    bookmarked: item.bookmarked ? "yes" : "",
-    done: item.done ? "yes" : "",
-    done_at: item.doneAt ? item.doneAt.slice(0, 10) : "",
     recall: item.recall || "",
   };
 }

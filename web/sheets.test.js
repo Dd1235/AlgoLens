@@ -21,7 +21,7 @@ const ctx = vm.createContext({
 });
 vm.runInContext(
   src + "\n;this.t = { readLayout, appRuns, colLetter, appendRow, planLayout, sheetsUserColumns," +
-  " APP_HEADER, SHEET_USER_FIELDS, CANONICAL, LEGACY_HEADER," +
+  " APP_HEADER, SHEET_USER_FIELDS, CANONICAL, LEGACY_HEADER, RETIRED_APP_COLUMNS," +
   " setLayout: (l) => { sheetLayout = l; } };",
   ctx
 );
@@ -67,25 +67,32 @@ assert.equal(t.colLetter(27), "AA");
 assert.equal(t.colLetter(53), "BA");
 
 // ── the shape itself ─────────────────────────────────────────────────────────
-// The app's columns come first, then the suggested ones, and the one you
-// actually reread leads them.
-assert.deepEqual(CANONICAL.slice(0, t.APP_HEADER.length), plain(t.APP_HEADER));
-assert.equal(CANONICAL[t.APP_HEADER.length], "solution_summary");
-assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a status column duplicates them");
+// The default sheet is small on purpose: enough to know which problem a row
+// is and to open it, plus the one thing you write.
+assert.deepEqual(CANONICAL, [
+  "problem_id", "title", "link", "judge", "difficulty", "recall", "solution_summary",
+]);
+for (const gone of ["bookmarked", "done", "done_at", "solve_status", "concept", "tactics", "time_taken", "notes"]) {
+  assert.ok(!CANONICAL.includes(gone), `${gone} is not a default column`);
+}
 
 // ── reading a sheet made before any of this ──────────────────────────────────
 {
   const legacy = t.readLayout([LEGACY]);
   assert.equal(legacy.app.has("recall"), false, "legacy sheet has no recall column");
-  assert.equal(legacy.user.get("solve_status"), 8, "a column we stopped suggesting is still yours");
+  assert.equal(legacy.user.get("solve_status"), 8, "a column we stopped SUGGESTING is still yours");
+  for (const retired of plain(t.RETIRED_APP_COLUMNS)) {
+    assert.equal(legacy.user.has(retired), false, `${retired} is ours on the way out, not a note you wrote`);
+  }
   assert.equal(legacy.derived, false);
-  assert.deepEqual(runs(legacy), [[0, 7]], "the app writes A–H and stops");
+  assert.deepEqual(runs(legacy), [[0, 4]], "the app writes only the columns it still owns");
 }
 
 // ── your columns are whatever your sheet has ─────────────────────────────────
 // Not a fixed list of six: a column you invented is read and shown too.
 {
   const mine = t.readLayout([CANONICAL.concat(["Revision date"])]);
+  assert.equal(mine.user.get("solution_summary"), CANONICAL.length - 1);
   assert.equal(mine.user.get("revision date"), CANONICAL.length);
   assert.equal(mine.labels.get("revision date"), "Revision date", "your header text, as you wrote it");
   assert.deepEqual(cols(mine), CANONICAL.slice(t.APP_HEADER.length).concat(["revision date"]));
@@ -94,14 +101,14 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
 // ── a sheet this version created ─────────────────────────────────────────────
 {
   const fresh = t.readLayout([CANONICAL]);
-  assert.equal(fresh.app.get("recall"), 8);
-  assert.deepEqual(runs(fresh), [[0, 8]]);
+  assert.equal(fresh.app.get("recall"), 5);
+  assert.deepEqual(runs(fresh), [[0, 5]]);
   assert.deepEqual(
     plain(t.appendRow({
       problem: { id: "p1", title: "T", source_url: "u", platform: "leetcode", difficulty: 3 },
       done: true, bookmarked: false, doneAt: "2026-08-01T00:00:00Z", recall: "hard",
     })),
-    ["p1", "T", "u", "leetcode", "3", "", "yes", "2026-08-01", "hard"].concat(Array(5).fill("")),
+    ["p1", "T", "u", "leetcode", "3", "hard", ""],
     "a new row fills the app columns and leaves yours empty"
   );
 }
@@ -116,9 +123,14 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
   assert.equal(plan.changed, true, "a legacy sheet needs reshaping");
   const after = apply(grid, plan);
 
-  // Every value that was in the sheet is still in the sheet, under the same
-  // header as before. This is the assertion the whole feature rests on.
+  // Every value that WAS YOURS is still in the sheet, under the same header.
+  // This is the assertion the whole feature rests on.
+  const retired = plain(t.RETIRED_APP_COLUMNS);
   LEGACY.forEach((name, i) => {
+    if (retired.includes(name)) {
+      assert.equal(after[0].indexOf(name), -1, `${name} was ours, and is retired`);
+      return;
+    }
     const value = grid[1][i];
     const moved = after[0].indexOf(name);
     assert.notEqual(moved, -1, `column "${name}" survived`);
@@ -127,7 +139,11 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
   assert.equal(after[0].indexOf("recall") !== -1, true, "and the missing column was added");
   assert.equal(after[1][after[0].indexOf("recall")], "", "the added column starts empty");
   assert.deepEqual(after[0].slice(0, CANONICAL.length), CANONICAL, "the canonical columns lead");
-  assert.deepEqual(after[0].slice(CANONICAL.length), ["solve_status"], "yours keep their order after");
+  assert.deepEqual(
+    after[0].slice(CANONICAL.length),
+    ["solve_status", "time_taken", "concept", "tactics", "notes"],
+    "everything you write keeps its order after ours"
+  );
 }
 
 // ── data past the end of the header ──────────────────────────────────────────
@@ -156,7 +172,7 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
 // a duplicate with data in it is somebody's work and is kept.
 {
   const grid = [
-    CANONICAL.concat(["done"]),
+    CANONICAL.concat(["title"]),
     pad(["p1"], CANONICAL.length).concat([""]),
   ];
   const plan = plain(t.planLayout(grid));
@@ -166,11 +182,24 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
 }
 {
   const grid = [
-    CANONICAL.concat(["done"]),
+    CANONICAL.concat(["title"]),
     pad(["p1"], CANONICAL.length).concat(["yes, really"]),
   ];
   const after = apply(grid, plain(t.planLayout(grid)));
   assert.equal(after[1][after[0].length - 1], "yes, really", "a duplicate with data is kept");
+}
+
+// ── a row you un-saved ───────────────────────────────────────────────────────
+// Rows are never removed by the app, and no column says "done" any more — so
+// an un-saved problem's row simply sits there with what you wrote in it,
+// until YOU delete the row.
+{
+  const grid = [
+    CANONICAL,
+    ["p1", "Two Sum", "u", "lc", "Easy", "hard", "hashmap of complements"],
+  ];
+  const plan = plain(t.planLayout(grid));
+  assert.equal(plan.changed, false, "a synced sheet is not rewritten just because a problem left your library");
 }
 
 // ── two columns you named the same thing, both written in ────────────────────
@@ -203,6 +232,7 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
   assert.equal(none.derived, true);
   assert.equal(none.app.has("recall"), false, "a derived layout never claims a new column");
   assert.equal(none.user.get("notes"), 13);
+  assert.equal(none.user.has("done"), false, "even derived, ours is never shown as yours");
 }
 
 console.log("sheet layout tests passed");
