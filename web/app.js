@@ -1930,7 +1930,7 @@ function renderHitsList(container, hits, opts = {}) {
     let metaHtml = platformBadge(hit.problem.platform) + diffHtml + escapeHtml(trailing);
     if (typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
       const note = cosineSheets.noteFor(hit.problem.id);
-      const hasNotes = note && cosineSheets.USER_FIELDS.some((fld) => (note[fld.key] || "").trim());
+      const hasNotes = note && cosineSheets.userColumns().some((fld) => (note[fld.key] || "").trim());
       if (hasNotes) metaHtml += '<span class="note-mark" title="has notes in your sheet">✎</span>';
     }
     if (opts.otherRankMap) {
@@ -2201,7 +2201,9 @@ function reissueSearch() {
 function buildNoteView(problemId) {
   const note = cosineSheets.noteFor(problemId);
   if (!note) return null;
-  const filled = cosineSheets.USER_FIELDS.filter((fld) => (note[fld.key] || "").trim());
+  // Whatever columns YOUR sheet has, in your order — not a fixed list of six.
+  // Add a column called "revision date" and it shows up here.
+  const filled = cosineSheets.userColumns().filter((fld) => (note[fld.key] || "").trim());
   if (!filled.length) return null;
 
   const wrap = document.createElement("div");
