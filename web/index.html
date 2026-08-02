@@ -109,6 +109,13 @@
           <button type="button" class="lib-chip lib-age" data-aged="90" title="marked at least three months ago">3mo+</button>
           <button type="button" class="lib-chip lib-age" data-aged="180" title="marked at least six months ago">6mo+</button>
           <button type="button" class="lib-chip lib-age-order" id="lib-oldest" title="start from what you solved longest ago">oldest first</button>
+          <span class="lib-age-label lib-recall-label">recall:</span>
+          <button type="button" class="lib-chip lib-recall" data-recall="" title="any rating">any</button>
+          <button type="button" class="lib-chip lib-recall" data-recall="again" title="you marked these 'again'">again</button>
+          <button type="button" class="lib-chip lib-recall" data-recall="hard" title="you found these hard">hard</button>
+          <button type="button" class="lib-chip lib-recall" data-recall="medium" title="you found these middling">med</button>
+          <button type="button" class="lib-chip lib-recall" data-recall="easy" title="you found these easy">easy</button>
+          <button type="button" class="lib-chip lib-recall" data-recall="none" title="saved but never rated">unrated</button>
           <!-- Sheet sync lives with the library because that's what it mirrors.
                Hidden until /api/rankers supplies a google client id. -->
           <span class="lib-sheet" id="lib-sheet" hidden>

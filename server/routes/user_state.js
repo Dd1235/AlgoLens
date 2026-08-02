@@ -49,6 +49,28 @@ async function setFlag(userId, problemId, flag, value) {
 }
 
 const PROBLEM_ID_RE = /^[a-z0-9-]{3,128}$/;
+// How a solve went. `none` clears it. Whitelisted rather than passed through,
+// for the same reason setFlag whitelists its column name.
+const RECALL_VALUES = new Set(["again", "hard", "medium", "easy"]);
+
+// Deliberately UPDATE-only, and deliberately not routed through setFlag.
+//
+// setFlag's upsert sets `done_at = NOW()` on every write, so rating a problem
+// through it would move when you solved it — silently resetting the library's
+// "marked 3mo+ ago" filter, which is the exact feature the rating exists to
+// feed. Rating something you have not saved is a no-op: no row, nothing to
+// rate. That keeps "a rating belongs to a saved problem" true in the schema
+// instead of only in a comment.
+async function setRecall(userId, problemId, value) {
+  const result = await db.query(
+    `UPDATE user_problem_state
+        SET recall = $3, recall_at = CASE WHEN $3::text IS NULL THEN NULL ELSE NOW() END,
+            updated_at = NOW()
+      WHERE user_id = $1 AND problem_id = $2`,
+    [userId, problemId, value]
+  );
+  return result.rowCount > 0;
+}
 
 function validProblemId(id) {
   return typeof id === "string" && PROBLEM_ID_RE.test(id);
@@ -102,6 +124,22 @@ function createUserStateRouter({ problems } = {}) {
     }
   });
 
+  // PUT /api/recall/:problemId/:value — value is one of the four, or "none".
+  router.put("/recall/:problemId/:value", requireUser, async (req, res) => {
+    if (!validProblemId(req.params.problemId)) return res.status(400).json({ error: "bad_problem_id" });
+    const raw = (req.params.value || "").toLowerCase();
+    if (raw !== "none" && !RECALL_VALUES.has(raw)) return res.status(400).json({ error: "bad_recall" });
+    const value = raw === "none" ? null : raw;
+    try {
+      const applied = await setRecall(req.user.id, req.params.problemId, value);
+      if (!applied) return res.status(409).json({ error: "not_saved" });
+      logEvent("recall_set", { visitor: req.visitor, userId: req.user.id, props: { problemId: req.params.problemId, value } });
+      res.json({ ok: true, recall: value || undefined });
+    } catch (_e) {
+      res.status(500).json({ error: "db_error" });
+    }
+  });
+
   // GET /api/library?type=bookmarked|done|all — returns the user's saved
   // problems with their full metadata, hydrated from the in-memory corpus.
   // Sorted by most-recent-mark first so the listing reads chronologically.
@@ -129,13 +167,19 @@ function createUserStateRouter({ problems } = {}) {
     const aged = Number.isInteger(agedDays) && agedDays > 0 && agedDays <= 3650 ? agedDays : null;
     const agedCutoff = aged ? Date.now() - aged * 86400000 : null;
     const oldestFirst = (req.query.order || "").toString().toLowerCase() === "oldest";
+    // "how did it go" — same whitelist discipline as every other facet here:
+    // an unknown value is ignored, not a 400, so a stale link still works.
+    const recallRaw = (req.query.recall || "").toString().toLowerCase();
+    const recallWanted = RECALL_VALUES.has(recallRaw) ? recallRaw
+      : recallRaw === "none" ? "none"
+      : null;
     let where = "user_id = $1";
     if (type === "done") where += " AND done";
     if (type === "bookmarked") where += " AND bookmarked";
     const orderBy = type === "bookmarked" ? "bookmarked_at" : "done_at";
     try {
       const result = await db.query(
-        `SELECT problem_id, done, bookmarked, done_at, bookmarked_at, updated_at
+        `SELECT problem_id, done, bookmarked, done_at, bookmarked_at, updated_at, recall
            FROM user_problem_state
           WHERE ${where}
        ORDER BY COALESCE(${orderBy}, updated_at) ${oldestFirst ? "ASC" : "DESC"} NULLS LAST`,
@@ -161,6 +205,10 @@ function createUserStateRouter({ problems } = {}) {
           : row.done_at || row.bookmarked_at;
         // An age filter needs a date to compare; a row without one can't claim
         // to be "3 months old", so it is excluded rather than assumed ancient.
+        // "none" means explicitly unrated — a real thing to want, since those
+        // are the problems you saved and never judged.
+        if (recallWanted === "none" && row.recall) continue;
+        if (recallWanted && recallWanted !== "none" && row.recall !== recallWanted) continue;
         if (agedCutoff) {
           if (!viewAt) continue;
           if (new Date(viewAt).getTime() > agedCutoff) continue;
@@ -170,6 +218,7 @@ function createUserStateRouter({ problems } = {}) {
           done: row.done,
           bookmarked: row.bookmarked,
           markedAt: (viewAt || row.updated_at || new Date()).toISOString(),
+          recall: row.recall || undefined,
           doneAt: row.done_at ? row.done_at.toISOString() : undefined,
           bookmarkedAt: row.bookmarked_at ? row.bookmarked_at.toISOString() : undefined,
         });
@@ -181,6 +230,7 @@ function createUserStateRouter({ problems } = {}) {
         total: ordered.length,
         sort: sortDir ? `difficulty-${sortDir}` : undefined,
         aged: aged || undefined,
+        recall: recallWanted || undefined,
         order: oldestFirst ? "oldest" : undefined,
         platform: wanted.size ? [...wanted].sort() : undefined,
         difficulty: bands.size ? String(req.query.difficulty).toLowerCase() : undefined,

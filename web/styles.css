@@ -1351,10 +1351,23 @@ html[data-theme="light"] footer::after { content: ""; }
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  /* Two filter groups on one line overflow a phone, and this row is inside a
+     bar that doesn't scroll — so it wraps rather than pushing the page wide. */
+  flex-wrap: wrap;
+  row-gap: 0.35rem;
 }
 .lib-age-row[hidden] { display: none; }
 .lib-age-label { color: var(--text-dim); font-size: 0.74rem; }
 .lib-age-order { margin-left: 0.4rem; }
+.lib-recall-label { margin-left: 0.6rem; }
+
+/* The rating chip on a card. Colour carries the meaning at a glance, so a
+   library page reads as a heat map of what needs revisiting. */
+.result-action.recall { min-width: 2.4rem; font-size: 0.72rem; letter-spacing: 0.02em; }
+.result-action.recall-again { color: var(--danger); border-color: var(--danger); }
+.result-action.recall-hard  { color: var(--warn); border-color: var(--warn); }
+.result-action.recall-medium { color: var(--accent); border-color: var(--accent); }
+.result-action.recall-easy  { color: var(--text-dim); }
 
 .lib-sheet { display: inline-flex; align-items: center; gap: 0.3rem; margin-left: auto; }
 .lib-sheet-open { text-decoration: none; }
