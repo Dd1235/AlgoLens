@@ -424,16 +424,25 @@ function planLayout(values) {
 
   // Pass 2: the order they should be in.
   const byName = new Map(kept.map((c) => [c.name, c]));
+  // Deduped: a name appears in the target once, however many columns carry it.
+  // Extra columns sharing a name are simply never moved, so they end up after
+  // everything that was placed — with their contents untouched.
   const target = [];
-  for (const name of CANONICAL) target.push(name);
-  for (const c of kept) if (!CANONICAL.includes(c.name)) target.push(c.name);
+  const placed = new Set();
+  const want = (name) => { if (!placed.has(name)) { placed.add(name); target.push(name); } };
+  CANONICAL.forEach(want);
+  kept.forEach((c) => { if (!CANONICAL.includes(c.name)) want(c.name); });
 
   // Pass 3: the moves that get from here to there, in current coordinates.
   const cur = kept.filter((c) => !drop.includes(c.index)).map((c) => c.name);
   const requests = [];
   const inserted = [];
   target.forEach((name, i) => {
-    const j = cur.indexOf(name);
+    // Search from i, never before it: everything left of i is already in its
+    // final place, and finding a name there would emit a move to the RIGHT —
+    // where destinationIndex means something different (it is read in
+    // pre-move coordinates) and would land one column off.
+    const j = cur.indexOf(name, i);
     if (j === -1) {
       requests.push({ insertDimension: {
         range: { dimension: "COLUMNS", startIndex: i, endIndex: i + 1 },

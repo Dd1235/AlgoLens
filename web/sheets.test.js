@@ -173,6 +173,27 @@ assert.ok(!CANONICAL.includes("solve_status"), "the site owns done + recall; a s
   assert.equal(after[1][after[0].length - 1], "yes, really", "a duplicate with data is kept");
 }
 
+// ── two columns you named the same thing, both written in ────────────────────
+// Every move must go leftwards; a duplicate that is already placed must not
+// produce a second move, which would be a rightward one and land off by one.
+{
+  const grid = [
+    ["notes", ...CANONICAL.filter((c) => c !== "notes"), "revision date", "revision date"],
+    ["first note", ...CANONICAL.filter((c) => c !== "notes").map(() => "x"), "mon", "tue"],
+  ];
+  const plan = plain(t.planLayout(grid));
+  for (const req of plan.requests) {
+    if (!req.moveDimension) continue;
+    assert.ok(
+      req.moveDimension.source.startIndex > req.moveDimension.destinationIndex,
+      "every move goes left"
+    );
+  }
+  const after = apply(grid, plan);
+  assert.equal(after[1][after[0].indexOf("notes")], "first note", "your note followed its header");
+  assert.deepEqual(after[1].slice(-2), ["mon", "tue"], "both same-named columns kept their values");
+}
+
 // ── row 1 isn't a header at all ──────────────────────────────────────────────
 // Deleting the header row must not make the app reshape someone else's
 // spreadsheet; it falls back to the legacy layout and is marked derived, and
