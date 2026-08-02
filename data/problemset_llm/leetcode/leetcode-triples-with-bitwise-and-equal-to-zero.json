@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 60.2,
+  "acceptance_rate": 60.3,
   "source_tags": [
     "array",
     "hash-table",

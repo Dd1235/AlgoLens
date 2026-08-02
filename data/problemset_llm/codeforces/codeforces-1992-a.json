@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-1992-a",
+  "title": "Only Pluses",
+  "slug": "1992-a-only-pluses",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/A",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given three integers and up to five increments distributed among them, maximize the product of the three integers after the increments.",
+  "tags": [
+    "math",
+    "greedy",
+    "brute-force"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "greedy",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653080,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.9,
+      "greedy": 0.85,
+      "brute-force": 0.7
+    }
+  }
+}

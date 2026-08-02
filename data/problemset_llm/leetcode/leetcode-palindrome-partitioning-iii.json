@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/palindrome-partitioning-iii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 62.2,
+  "acceptance_rate": 62.3,
   "source_tags": [
     "string",
     "dynamic-programming"

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 26.7,
+  "acceptance_rate": 26.8,
   "source_tags": [
     "hash-table",
     "string",

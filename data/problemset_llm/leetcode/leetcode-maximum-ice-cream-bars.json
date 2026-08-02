@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-ice-cream-bars/",
   "source_topic": "LeetCode / Counting Sort (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 77.2,
   "source_tags": [
     "array",
     "greedy",

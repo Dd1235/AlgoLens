@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 38.0,
+  "acceptance_rate": 37.5,
   "source_tags": [
     "string",
     "dynamic-programming"

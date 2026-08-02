@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
   "source_topic": "LeetCode / Rolling Hash (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 51.5,
   "source_tags": [
     "array",
     "binary-search",

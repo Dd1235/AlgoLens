@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximize-sum-of-weights-after-edge-removals/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 31.9,
+  "acceptance_rate": 32.1,
   "source_tags": [
     "dynamic-programming",
     "tree",

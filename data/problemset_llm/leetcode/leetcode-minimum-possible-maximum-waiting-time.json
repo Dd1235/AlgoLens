@@ -1,0 +1,32 @@
+{
+  "id": "leetcode-minimum-possible-maximum-waiting-time",
+  "title": "Minimum Possible Maximum Waiting Time",
+  "slug": "minimum-possible-maximum-waiting-time",
+  "platform": "leetcode",
+  "source_url": "https://leetcode.com/problems/minimum-possible-maximum-waiting-time/",
+  "source_topic": "LeetCode / Biweekly Contest 188",
+  "difficulty": "Hard",
+  "acceptance_rate": 24.5,
+  "source_tags": [],
+  "statement": "Given two fuel dispensers and a sequence of cars with fuel demands arriving in order, assign cars to dispensers to maximize the number served and minimize the maximum waiting time before refueling starts. Return the minimal possible maximum waiting time or -1 if no car can be served.",
+  "tags": [
+    "greedy",
+    "binary-search",
+    "simulation"
+  ],
+  "patterns": [
+    "binary-search-answer",
+    "greedy",
+    "simulation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785650405,
+    "pattern_confidence": {
+      "binary-search-answer": 0.9,
+      "greedy": 0.85,
+      "simulation": 0.8
+    }
+  }
+}

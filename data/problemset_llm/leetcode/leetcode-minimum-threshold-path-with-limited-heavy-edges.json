@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 39.9,
+  "acceptance_rate": 39.3,
   "source_tags": [
     "binary-search",
     "breadth-first-search",

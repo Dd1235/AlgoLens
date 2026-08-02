@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/clone-graph/",
   "source_topic": "LeetCode / Graphs",
   "difficulty": "Medium",
-  "acceptance_rate": 65.8,
+  "acceptance_rate": 65.9,
   "source_tags": [
     "hash-table",
     "depth-first-search",

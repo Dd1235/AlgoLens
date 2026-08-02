@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-good-subarray-sum/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 22.2,
+  "acceptance_rate": 22.3,
   "source_tags": [
     "array",
     "hash-table",

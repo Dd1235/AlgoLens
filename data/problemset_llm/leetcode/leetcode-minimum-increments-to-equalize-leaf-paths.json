@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-increments-to-equalize-leaf-paths/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 41.4,
+  "acceptance_rate": 40.9,
   "source_tags": [
     "array",
     "dynamic-programming",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-operations-to-transform-binary-string/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 36.4,
+  "acceptance_rate": 36.5,
   "source_tags": [],
   "statement": "Given two binary strings of equal length, transform the first into the second using operations that flip '0' to '1' or simultaneously flip adjacent '11' to '00'. Determine the minimum number of operations or return -1 if impossible.",
   "tags": [

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/process-restricted-friend-requests/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 61.2,
+  "acceptance_rate": 61.3,
   "source_tags": [
     "union-find",
     "graph"

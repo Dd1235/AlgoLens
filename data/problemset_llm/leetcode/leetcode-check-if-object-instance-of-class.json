@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/check-if-object-instance-of-class/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 30.0,
+  "acceptance_rate": 30.1,
   "source_tags": [],
   "statement": "Determine whether a given value is an instance of a specified class or any of its superclasses based on method accessibility, including handling primitives and unusual cases.",
   "tags": [

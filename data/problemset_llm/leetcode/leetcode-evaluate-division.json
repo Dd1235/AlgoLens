@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/evaluate-division/",
   "source_topic": "LeetCode / Shortest Path (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 64.5,
   "source_tags": [
     "array",
     "string",

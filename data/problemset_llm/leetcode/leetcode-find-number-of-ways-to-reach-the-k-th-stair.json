@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-number-of-ways-to-reach-the-k-th-stair/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 38.1,
+  "acceptance_rate": 38.2,
   "source_tags": [
     "math",
     "dynamic-programming",

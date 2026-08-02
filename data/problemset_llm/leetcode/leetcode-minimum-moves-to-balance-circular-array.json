@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-moves-to-balance-circular-array/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 40.5,
+  "acceptance_rate": 40.6,
   "source_tags": [
     "array",
     "greedy",

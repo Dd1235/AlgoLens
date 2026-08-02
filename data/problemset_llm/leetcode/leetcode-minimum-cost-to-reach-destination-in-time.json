@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 42.0,
+  "acceptance_rate": 42.1,
   "source_tags": [
     "array",
     "dynamic-programming",

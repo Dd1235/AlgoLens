@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/",
   "source_topic": "LeetCode / Number Theory (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 91.3,
   "source_tags": [
     "linked-list",
     "math",

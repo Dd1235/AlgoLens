@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/kth-smallest-amount-with-single-denomination-combination/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 20.5,
+  "acceptance_rate": 20.3,
   "source_tags": [
     "array",
     "math",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-coins-for-fruits/",
   "source_topic": "LeetCode / DP Optimization",
   "difficulty": "Medium",
-  "acceptance_rate": 49.6,
+  "acceptance_rate": 49.1,
   "source_tags": [
     "array",
     "dynamic-programming",

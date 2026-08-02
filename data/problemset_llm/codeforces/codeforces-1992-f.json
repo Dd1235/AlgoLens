@@ -1,0 +1,41 @@
+{
+  "id": "codeforces-1992-f",
+  "title": "Valuable Cards",
+  "slug": "1992-f-valuable-cards",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/F",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "brute force",
+    "dp",
+    "greedy",
+    "number theory",
+    "two pointers"
+  ],
+  "statement": "Given an array of integers with no positive integer x present, partition the array into the minimum number of segments such that each segment does not contain any subset of elements whose product equals x.",
+  "tags": [
+    "array",
+    "number-theory",
+    "greedy",
+    "dynamic-programming"
+  ],
+  "patterns": [
+    "greedy",
+    "subset-product",
+    "two-pointers",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653089,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "subset-product": 0.85,
+      "two-pointers": 0.7,
+      "dynamic-programming": 0.6
+    }
+  }
+}

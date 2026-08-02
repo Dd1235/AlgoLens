@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/k-closest-points-to-origin/",
   "source_topic": "LeetCode / Geometry (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 69.2,
   "source_tags": [
     "array",
     "math",

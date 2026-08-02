@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/merge-operations-for-minimum-travel-time/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 31.6,
+  "acceptance_rate": 31.7,
   "source_tags": [
     "array",
     "dynamic-programming",

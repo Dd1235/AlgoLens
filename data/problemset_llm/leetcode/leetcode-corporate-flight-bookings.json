@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/corporate-flight-bookings/description/",
   "source_topic": "Formwise / Contribution Technique & Prefix",
   "difficulty": "Medium",
-  "acceptance_rate": 68.1,
+  "acceptance_rate": 68.3,
   "source_tags": [
     "array",
     "prefix-sum"

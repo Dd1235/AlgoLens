@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/unique-paths-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 44.8,
+  "acceptance_rate": 44.9,
   "source_tags": [
     "array",
     "dynamic-programming",

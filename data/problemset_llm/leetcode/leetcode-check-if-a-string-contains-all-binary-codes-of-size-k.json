@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/",
   "source_topic": "LeetCode / Rolling Hash (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 61.6,
   "source_tags": [
     "hash-table",
     "string",

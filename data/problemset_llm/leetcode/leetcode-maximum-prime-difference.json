@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-prime-difference/",
   "source_topic": "LeetCode / Number Theory (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 59.4,
   "source_tags": [
     "array",
     "math",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-points-inside-the-square/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 39.9,
+  "acceptance_rate": 39.5,
   "source_tags": [
     "array",
     "hash-table",

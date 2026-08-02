@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-skips-to-arrive-at-meeting-on-time/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 38.8,
+  "acceptance_rate": 38.9,
   "source_tags": [
     "array",
     "dynamic-programming"

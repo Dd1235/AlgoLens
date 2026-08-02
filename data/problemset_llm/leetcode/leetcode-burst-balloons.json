@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/burst-balloons/",
   "source_topic": "LeetCode / Dynamic Programming",
   "difficulty": "Hard",
-  "acceptance_rate": 64.0,
+  "acceptance_rate": 64.1,
   "source_tags": [
     "array",
     "dynamic-programming"

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 45.2,
+  "acceptance_rate": 45.3,
   "source_tags": [
     "array",
     "dynamic-programming",

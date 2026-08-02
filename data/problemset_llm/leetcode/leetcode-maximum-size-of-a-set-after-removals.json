@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-size-of-a-set-after-removals/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 46.8,
+  "acceptance_rate": 46.9,
   "source_tags": [
     "array",
     "hash-table",

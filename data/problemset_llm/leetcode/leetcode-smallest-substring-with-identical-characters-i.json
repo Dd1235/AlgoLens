@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/smallest-substring-with-identical-characters-i/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 20.9,
+  "acceptance_rate": 21.0,
   "source_tags": [
     "array",
     "binary-search",

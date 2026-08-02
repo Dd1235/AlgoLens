@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-subarray-sum-after-at-most-k-swaps/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 14.1,
+  "acceptance_rate": 14.2,
   "source_tags": [],
   "statement": "Given an integer array and a limit k on the number of swaps between any two elements, find the maximum subarray sum achievable after performing at most k swaps.",
   "tags": [

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-consistent-columns-in-a-grid/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 68.7,
+  "acceptance_rate": 68.6,
   "source_tags": [],
   "statement": "Given a 2D grid and a limit, find the maximum number of columns that can remain in order such that for every row, the absolute difference between values in any two adjacent remaining columns does not exceed the limit.",
   "tags": [

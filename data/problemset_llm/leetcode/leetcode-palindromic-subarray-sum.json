@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/palindromic-subarray-sum/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 34.2,
+  "acceptance_rate": 34.3,
   "source_tags": [],
   "statement": "Given an integer array, find the maximum sum of any contiguous subarray that forms a palindrome.",
   "tags": [

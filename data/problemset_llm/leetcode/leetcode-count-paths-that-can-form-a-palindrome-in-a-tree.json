@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 53.1,
+  "acceptance_rate": 53.2,
   "source_tags": [
     "hash-table",
     "bit-manipulation",

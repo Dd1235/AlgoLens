@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 43.8,
+  "acceptance_rate": 43.9,
   "source_tags": [
     "array",
     "binary-search",

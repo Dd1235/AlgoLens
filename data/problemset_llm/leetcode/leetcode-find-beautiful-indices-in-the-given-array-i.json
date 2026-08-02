@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 41.1,
+  "acceptance_rate": 41.0,
   "source_tags": [
     "two-pointers",
     "string",

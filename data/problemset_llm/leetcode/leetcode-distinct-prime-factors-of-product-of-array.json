@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/distinct-prime-factors-of-product-of-array/",
   "source_topic": "LeetCode / Number Theory (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 55.0,
   "source_tags": [
     "array",
     "hash-table",

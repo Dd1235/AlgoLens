@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-palindromic-substring/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 38.3,
+  "acceptance_rate": 38.4,
   "source_tags": [
     "two-pointers",
     "string",

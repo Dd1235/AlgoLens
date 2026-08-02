@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/house-robber/",
   "source_topic": "LeetCode / Dynamic Programming",
   "difficulty": "Medium",
-  "acceptance_rate": 53.4,
+  "acceptance_rate": 53.5,
   "source_tags": [
     "array",
     "dynamic-programming"

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/most-common-course-pairs/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 50.5,
+  "acceptance_rate": 50.7,
   "source_tags": [],
   "statement": "Identify frequent consecutive course pairs completed by top-performing students who have completed at least five courses with an average rating of 4 or higher, based on chronological course completion sequences.",
   "tags": [

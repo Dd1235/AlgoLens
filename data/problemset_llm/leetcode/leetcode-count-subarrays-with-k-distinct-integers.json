@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-subarrays-with-k-distinct-integers/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 20.6,
+  "acceptance_rate": 20.7,
   "source_tags": [
     "array",
     "hash-table",

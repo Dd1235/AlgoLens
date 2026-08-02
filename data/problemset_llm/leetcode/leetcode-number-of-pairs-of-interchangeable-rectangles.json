@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/",
   "source_topic": "LeetCode / Number Theory (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 52.9,
   "source_tags": [
     "array",
     "hash-table",

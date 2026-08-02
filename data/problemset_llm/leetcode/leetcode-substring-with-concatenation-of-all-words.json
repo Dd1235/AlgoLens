@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 34.8,
+  "acceptance_rate": 34.9,
   "source_tags": [
     "hash-table",
     "string",

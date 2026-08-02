@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
   "source_topic": "LeetCode / Randomized (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 55.5,
   "source_tags": [
     "array",
     "hash-table",

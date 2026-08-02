@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/random-pick-index/",
   "source_topic": "LeetCode / Randomized (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 65.1,
   "source_tags": [
     "hash-table",
     "math",

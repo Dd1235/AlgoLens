@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 59.6,
+  "acceptance_rate": 59.7,
   "source_tags": [
     "dynamic-programming",
     "depth-first-search",

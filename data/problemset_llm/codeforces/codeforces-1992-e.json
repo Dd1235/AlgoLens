@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-1992-e",
+  "title": "Novice's Mistake",
+  "slug": "1992-e-novice-s-mistake",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/E",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 1700,
+  "rating": 1700,
+  "source_tags": [
+    "brute force",
+    "constructive algorithms",
+    "implementation",
+    "math",
+    "strings"
+  ],
+  "statement": "Given an integer n, count the number of pairs (a, b) where a and b satisfy given constraints such that a string-based calculation of n*a - b matches the correct integer result and is non-empty.",
+  "tags": [
+    "math",
+    "strings",
+    "implementation",
+    "brute-force"
+  ],
+  "patterns": [
+    "simulation",
+    "string-manipulation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653087,
+    "pattern_confidence": {
+      "simulation": 0.9,
+      "string-manipulation": 0.95,
+      "brute-force": 0.85
+    }
+  }
+}
