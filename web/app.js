@@ -1738,11 +1738,17 @@ CORPUS
   again.
 
   How that works, since the token is never stored anywhere:
-  each page load asks Google for a new one SILENTLY, which an
-  already-granted app is allowed to do. If that quietly fails
-  — signed out of Google, permission revoked — nothing pops
-  up and nothing syncs; the sync button is there for exactly
-  that case, and pressing it puts things back.
+  each page load asks Google for a new one in the mode that is
+  not allowed to display anything. If it can be answered
+  without a question, the sheet syncs; if it can't — signed
+  out, permission revoked, several Google accounts and no way
+  to know which — it fails, nothing appears, and nothing
+  syncs. The sync button is there for exactly that case, and
+  pressing it puts things back.
+
+  A refresh must never put a Google dialog in front of you. If
+  one ever does, the app stops asking on this browser from
+  then on.
 
   Notes you have already synced are cached in this browser, so
   a refresh shows them without contacting Google at all.
