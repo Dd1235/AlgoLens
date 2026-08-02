@@ -98,6 +98,8 @@ Labels are load-bearing (search text, `pattern=` filter, patterns page), so LLM-
 
 **GeeksforGeeks is deliberately absent** from the profile: its user pages are client-rendered with no usable JSON endpoint, so any integration would be a scrape even more fragile than CodeChef's, breaking silently. Revisit if they ship an API.
 
+**Adding a contest.** `scripts/ingest_contest.py <contest-url>` stages into `Problems/urls_contests.txt` (its own seed file — hand-added blocks in `Problems/urls.txt` sit inside `BEGIN/END GENERATED` regions that `update_problem_urls.py` rewrites wholesale). LeetCode resolves end to end immediately via the GraphQL `contest(titleSlug)` query — the REST `/contest/api/info/` endpoint is Cloudflare-403 — and skips Q1 on `credit == 3`. Codeforces can't: `contest.standings?contestId=N` (bare URL only; any extra parameter 400s for non-admins) gives the problem list, but statements come from open-r1 which lags live contests, so absentees queue in `data/pending_contests.json` for `--retry-pending`. The script **merges** into `data/cache/codeforces_statements.json`; note that `fetch_codeforces.py` and `fetch_codeforces_named.py` both *truncate* it, which is why contest ingest doesn't reuse them.
+
 **Three statement sources, one annotator.** Every problem — whatever the judge — ends up as the same record shape through `scripts/annotate_problem_urls.py`; only *where the statement comes from* differs, and each staging script writes a cache the annotator reads instead of fetching:
 
 | Judge | Statement from | Staged by | Why not the obvious way |

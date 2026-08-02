@@ -70,6 +70,7 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 ## Tracking the grind
 
 - **Filters that know your level.** With handles saved, a `my level` chip sets each selected judge's band from _that judge's own_ numbers — never a shared scale. Hover it to see the reasoning and how many problems it selects; press it again to drop it. Exactly how it decides is below.
+  *In practice:* press **connect sheet** in the library bar → grant access once → a spreadsheet called **cosine notes** appears in your Drive with a row per saved problem. Study from the sheet, write whatever you like in it, press **sync sheet** when you want new problems pulled in, and your notes show up on the expanded card back on the site.
 - **One profile, every judge.** Save LeetCode / Codeforces / CodeChef / AtCoder / GitHub handles: solved counts and ratings per platform, plus one combined activity heatmap with `dsa` / `dev` / `overall` tabs — because grinding contests and shipping code are both progress.
 - **Your handles are encrypted, and the claim stops where the truth does.** Linked usernames and the stats fetched with them are AES-256-GCM ciphertext; the key lives in the app environment, never in the database, so a database copy is unreadable on its own. No other user can see them — there's no public profile and no leaderboard. The judges themselves necessarily receive the username when your stats are fetched, and I won't claim "not even the admin can see it", because I run the server and that would be false. It isn't stored readably, deleting is immediate, and the code is here to check.
 - **Bookmarks and done-marks** on every result, with a shell-style library (`:bookmarks`, `:done`, Tab cycles views). Done-marks feed the heatmap too. Inside the library, age chips (`1mo+ / 3mo+ / 6mo+`) and oldest-first turn `:done` into a revision queue — start from what you solved longest ago.
@@ -185,6 +186,24 @@ Two things learned the hard way and now fixed in code:
 ### Sheet sync, if you self-host
 
 The notes feature needs a (free) Google OAuth client: create a Google Cloud project → OAuth consent screen (External, scope `drive.file`) → Web application client ID with your origins (e.g. `http://localhost:3000`) under *Authorized JavaScript origins* → set `GOOGLE_CLIENT_ID` in the environment. The feature hides itself when the variable is unset. No client secret is involved anywhere — the token flow is entirely in-browser. While the OAuth app is in *Testing* status only listed test users can connect; **publish it** to lift that — with only the non-sensitive `drive.file` scope there is no verification review, no user cap, and no cost. The "100 user cap" shown in the console applies to unapproved *sensitive* scopes, which this app never requests.
+
+## Keeping the corpus fresh
+
+New problems come from contest links:
+
+```bash
+python3 scripts/ingest_contest.py https://leetcode.com/contest/weekly-contest-513/
+python3 scripts/ingest_contest.py --retry-pending     # drain the Codeforces backlog
+```
+
+It stages, prints the next commands (annotate → embed → validate), and never commits — you read the diff, then `git push`, and the deploy rebuilds.
+
+Two things worth knowing:
+
+- **LeetCode Q1 is skipped.** A contest is four problems worth 3/4/5/6 points; Q1 is the warm-up and is nearly always Easy, and this corpus has no Easy filler. The rule keys on `credit` rather than the difficulty label, because credit is structural and available the moment the contest ends while the label can still move.
+- **Codeforces problems wait in a queue.** codeforces.com is Cloudflare-blocked to scripts, so statements come from the [open-r1/codeforces](https://huggingface.co/datasets/open-r1/codeforces) dataset — which lags live contests, and fresh contests report `rating: null` for weeks besides. Rather than admit a problem with no statement (nearly unsearchable, and it would dilute the benchmark), the ingest records it in `data/pending_contests.json` and `--retry-pending` picks it up the week its statement lands.
+
+**Ingest is a build-time activity, deliberately.** There's no admin page and no OpenAI key on the server: the corpus is baked into the Docker image and loaded once at boot, Render's filesystem is ephemeral (anything written at runtime dies on the next restart), and the container ships without the ingest scripts or a Python runtime at all. That constraint is what makes `corpusHash` a real guarantee rather than a hope — the embeddings can never drift from the text they were built from, because both are fixed at build time.
 
 ## Run it
 
