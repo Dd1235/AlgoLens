@@ -1730,9 +1730,20 @@ CORPUS
   "done", "done_at" and "bookmarked" — a frozen "yes" is worse
   than no column at all).
 
-  Google is asked for access once per browser session, and only
-  when YOU press sync — never on page load. After that press,
-  opening your library keeps the sheet current on its own.
+  Google asks for your permission exactly ONCE, the first time
+  you connect, on a click. After that the sheet keeps itself
+  up to date: a few seconds after you bookmark, tick done or
+  rate something, the row is written. You should not have to
+  press sync again, and you should never see a Google dialog
+  again.
+
+  How that works, since the token is never stored anywhere:
+  each page load asks Google for a new one SILENTLY, which an
+  already-granted app is allowed to do. If that quietly fails
+  — signed out of Google, permission revoked — nothing pops
+  up and nothing syncs; the sync button is there for exactly
+  that case, and pressing it puts things back.
+
   Notes you have already synced are cached in this browser, so
   a refresh shows them without contacting Google at all.
 
