@@ -6,27 +6,28 @@
   "source_url": "https://leetcode.com/problems/widest-possible-fence/",
   "source_topic": "LeetCode / Biweekly Contest 188",
   "difficulty": "Medium",
-  "acceptance_rate": 13.7,
   "source_tags": [],
-  "statement": "Given an array of plank heights, determine the maximum number of planks of equal height that can be formed by using each plank once either as is or by combining exactly two distinct planks.",
+  "statement": "Given an array of plank heights, each usable once, and the option to combine two distinct planks into one of summed height, find the largest number of planks of equal height that can be formed.",
   "tags": [
     "array",
     "hash-map",
-    "two-pointers"
+    "combinatorics"
   ],
   "patterns": [
-    "hash-map",
-    "two-pointers",
-    "pair-sum"
+    "counting",
+    "pair-sum-enumeration",
+    "frequency-analysis",
+    "greedy"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785650399,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654051,
     "pattern_confidence": {
-      "hash-map": 0.95,
-      "two-pointers": 0.9,
-      "pair-sum": 0.9
+      "counting": 0.95,
+      "pair-sum-enumeration": 0.93,
+      "frequency-analysis": 0.9,
+      "greedy": 0.85
     }
   }
 }

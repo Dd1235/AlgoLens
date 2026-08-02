@@ -14,26 +14,28 @@
     "math",
     "strings"
   ],
-  "statement": "Given an integer n, count the number of pairs (a, b) where a and b satisfy given constraints such that a string-based calculation of n*a - b matches the correct integer result and is non-empty.",
+  "statement": "Given an integer n as a string, and integers a and b, count the number of (a, b) pairs such that a string-based calculation (concatenating n a times, then removing b characters from the end) matches the integer calculation n * a - b.",
   "tags": [
+    "string",
     "math",
-    "strings",
     "implementation",
     "brute-force"
   ],
   "patterns": [
-    "simulation",
-    "string-manipulation",
-    "brute-force"
+    "string-concatenation",
+    "string-to-integer-conversion",
+    "brute-force-enumeration",
+    "simulation"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653087,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654063,
     "pattern_confidence": {
-      "simulation": 0.9,
-      "string-manipulation": 0.95,
-      "brute-force": 0.85
+      "string-concatenation": 0.97,
+      "string-to-integer-conversion": 0.95,
+      "brute-force-enumeration": 0.9,
+      "simulation": 0.88
     }
   }
 }

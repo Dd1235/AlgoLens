@@ -6,27 +6,26 @@
   "source_url": "https://leetcode.com/problems/count-of-unfinished-tasks-after-each-shift/",
   "source_topic": "LeetCode / Weekly Contest 513",
   "difficulty": "Medium",
-  "acceptance_rate": 38.4,
   "source_tags": [],
-  "statement": "Given a sequence of tasks with required completion times and a sequence of shifts with available times, simulate processing tasks in order with carry-over of unfinished tasks between shifts and restart after all tasks complete, then report the number of unfinished tasks after each shift.",
+  "statement": "Given arrays of task durations and shift times, simulate sequential task processing with carry-over and restart rules, and report the number of unfinished tasks after each shift.",
   "tags": [
     "array",
     "simulation",
     "prefix-sum"
   ],
   "patterns": [
-    "prefix-sum",
     "simulation",
-    "two-pointers"
+    "prefix-sum",
+    "carry-over-processing"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785650394,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654045,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "simulation": 0.95,
-      "two-pointers": 0.85
+      "simulation": 0.98,
+      "prefix-sum": 0.85,
+      "carry-over-processing": 0.9
     }
   }
 }

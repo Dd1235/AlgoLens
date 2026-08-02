@@ -14,25 +14,25 @@
     "math",
     "sortings"
   ],
-  "statement": "Given three integers and up to five increments distributed among them, maximize the product of the three integers after the increments.",
+  "statement": "Given three integers, you can increment any of them by 1 up to five times in total. Maximize their product after these operations.",
   "tags": [
     "math",
-    "greedy",
-    "brute-force"
+    "brute-force",
+    "greedy"
   ],
   "patterns": [
-    "constructive-algorithm",
-    "greedy",
-    "brute-force"
+    "brute-force",
+    "greedy-distribution",
+    "maximize-product"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653080,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654056,
     "pattern_confidence": {
-      "constructive-algorithm": 0.9,
-      "greedy": 0.85,
-      "brute-force": 0.7
+      "brute-force": 0.98,
+      "greedy-distribution": 0.92,
+      "maximize-product": 0.9
     }
   }
 }

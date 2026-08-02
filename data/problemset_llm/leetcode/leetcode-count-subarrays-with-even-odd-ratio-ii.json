@@ -6,27 +6,28 @@
   "source_url": "https://leetcode.com/problems/count-subarrays-with-even-odd-ratio-ii/",
   "source_topic": "LeetCode / Weekly Contest 513",
   "difficulty": "Hard",
-  "acceptance_rate": 32.1,
   "source_tags": [],
-  "statement": "Count the number of contiguous subarrays where the ratio of even to odd elements is at most a given fraction a/b, with at least one odd element present.",
+  "statement": "Given an array and two integers a and b, count the number of contiguous subarrays where the ratio of even to odd elements is at most a/b and there is at least one odd element.",
   "tags": [
     "array",
     "prefix-sum",
-    "two-pointers"
+    "counting"
   ],
   "patterns": [
     "prefix-sum",
-    "two-pointers",
-    "ratio-comparison"
+    "rational-ratio-counting",
+    "hash-map",
+    "subarray-counting"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785650396,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654049,
     "pattern_confidence": {
-      "prefix-sum": 0.9,
-      "two-pointers": 0.85,
-      "ratio-comparison": 0.8
+      "prefix-sum": 0.93,
+      "rational-ratio-counting": 0.92,
+      "hash-map": 0.88,
+      "subarray-counting": 0.9
     }
   }
 }

@@ -12,25 +12,25 @@
     "greedy",
     "implementation"
   ],
-  "statement": "Determine if ErnKor can reach the right bank by jumping or swimming across a river divided into segments containing logs, crocodiles, or water, with constraints on jump length and total swimming distance.",
+  "statement": "Given a river divided into segments containing logs, crocodiles, or water, determine if one can reach the far bank from the start, jumping up to m meters from logs or banks, swimming at most k meters in water, and never landing on crocodiles.",
   "tags": [
+    "array",
     "dynamic-programming",
-    "greedy",
     "simulation"
   ],
   "patterns": [
-    "dynamic-programming",
-    "greedy",
-    "state-space-search"
+    "bfs",
+    "state-space-search",
+    "shortest-path-on-implicit-graph"
   ],
   "annotation": {
     "version": "problem-patterns-v1",
-    "model": "gpt-4.1-mini",
-    "generated_at_unix": 1785653085,
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785654062,
     "pattern_confidence": {
-      "dynamic-programming": 0.9,
-      "greedy": 0.8,
-      "state-space-search": 0.7
+      "bfs": 0.93,
+      "state-space-search": 0.92,
+      "shortest-path-on-implicit-graph": 0.88
     }
   }
 }

@@ -595,7 +595,7 @@ def call_openai(base: dict[str, Any], model: str) -> dict[str, Any]:
     return {
         "statement": str(parsed.get("statement", "")).strip(),
         "tags": clean_list(parsed.get("tags", []), 12),
-        "patterns": clean_list(parsed.get("patterns", []), 12),
+        "patterns": with_families(clean_list(parsed.get("patterns", []), 12), 12),
         "pattern_confidence": clean_confidence(parsed.get("pattern_confidence", {})),
     }
 
@@ -603,6 +603,39 @@ def call_openai(base: dict[str, Any], model: str) -> dict[str, Any]:
 def canonical_label(raw: str) -> str:
     slug = slugify(raw)
     return PATTERN_ALIASES.get(slug, slug)
+
+
+# A specific label implies its family. The model is encouraged to invent precise
+# searchable phrases ("dp-with-multiple-resources", "bitmask-dp"), and those are
+# more useful than a bare "dynamic-programming" — but a search for "dynamic
+# programming" has to still find the problem. Without this, a correctly
+# annotated DP problem was invisible to the most obvious query for it.
+#
+# Same lesson as the umbrella groups in the taxonomy: the specific name and the
+# family name are both real queries, and only one of them was being indexed.
+FAMILY_PATTERNS: list[tuple[Any, str]] = [
+    (re.compile(r"(^|-)dp($|-)|dynamic-programming|memoi[sz]ation"), "dynamic-programming"),
+    (re.compile(r"(^|-)bfs($|-)|breadth-first"), "bfs"),
+    (re.compile(r"(^|-)dfs($|-)|depth-first"), "dfs"),
+    (re.compile(r"binary-search"), "binary-search"),
+    (re.compile(r"(^|-)(segment-tree|fenwick-tree)($|-)"), "segment-tree"),
+    (re.compile(r"two-pointer"), "two-pointers"),
+]
+
+
+def with_families(labels: list[str], limit: int) -> list[str]:
+    """Append the canonical family for any specific label that implies one."""
+    out = list(labels)
+    have = set(out)
+    for label in labels:
+        for pattern, family in FAMILY_PATTERNS:
+            if family in have or not pattern.search(label):
+                continue
+            if len(out) >= limit:
+                return out
+            out.append(family)
+            have.add(family)
+    return out
 
 
 def clean_list(value: Any, limit: int) -> list[str]:
