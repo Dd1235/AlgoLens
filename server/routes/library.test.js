@@ -13,6 +13,7 @@ const path = require("node:path");
 const dbPath = require.resolve(path.join(__dirname, "..", "db"));
 const calls = [];
 let ROWS = [];
+let UPDATE_ROWS = 1;   // rows an UPDATE would touch; 0 = the problem isn't saved
 require.cache[dbPath] = {
   id: dbPath,
   filename: dbPath,
@@ -20,6 +21,7 @@ require.cache[dbPath] = {
   exports: {
     query: async (sql, params) => {
       calls.push({ sql, params });
+      if (/^\s*UPDATE user_problem_state/.test(sql)) return { rowCount: UPDATE_ROWS, rows: [] };
       if (/FROM user_problem_state/.test(sql) && /SELECT problem_id/.test(sql)) {
         let rows = ROWS;
         if (/AND done\b/.test(sql)) rows = rows.filter((r) => r.done);
@@ -52,13 +54,14 @@ const problems = [
 
 ROWS = [
   // done four months ago — the revision case
-  { problem_id: "p-old", done: true, bookmarked: false, done_at: daysAgo(120), bookmarked_at: null, updated_at: daysAgo(120) },
+  { problem_id: "p-old", done: true, bookmarked: false, done_at: daysAgo(120), bookmarked_at: null, updated_at: daysAgo(120), recall: "again" },
   // done yesterday
-  { problem_id: "p-new", done: true, bookmarked: false, done_at: daysAgo(1), bookmarked_at: null, updated_at: daysAgo(1) },
+  { problem_id: "p-new", done: true, bookmarked: false, done_at: daysAgo(1), bookmarked_at: null, updated_at: daysAgo(1), recall: "easy" },
   // bookmarked long ago, done recently — the row that exposed the markedAt bug
-  { problem_id: "p-both", done: true, bookmarked: true, done_at: daysAgo(2), bookmarked_at: daysAgo(200), updated_at: daysAgo(2) },
+  // and, here, the unrated one: null is a value the filter has to handle.
+  { problem_id: "p-both", done: true, bookmarked: true, done_at: daysAgo(2), bookmarked_at: daysAgo(200), updated_at: daysAgo(2), recall: null },
   // bookmark only, no done_at at all
-  { problem_id: "p-book", done: false, bookmarked: true, done_at: null, bookmarked_at: daysAgo(150), updated_at: daysAgo(150) },
+  { problem_id: "p-book", done: false, bookmarked: true, done_at: null, bookmarked_at: daysAgo(150), updated_at: daysAgo(150), recall: "hard" },
 ];
 
 const app = express();
@@ -66,6 +69,7 @@ app.use((req, _res, next) => { req.user = { id: "u1", email: "t@example.com" }; 
 app.use("/api", createUserStateRouter({ problems }));
 const server = app.listen(0);
 const get = async (qs) => (await fetch(`http://127.0.0.1:${server.address().port}/api/library?${qs}`)).json();
+const put = (p) => fetch(`http://127.0.0.1:${server.address().port}${p}`, { method: "PUT" });
 const ids = (d) => d.items.map((it) => it.problem.id);
 
 (async () => {
@@ -130,6 +134,90 @@ const ids = (d) => d.items.map((it) => it.problem.id);
     assert.equal(junk.total, 3, "and the list is unfiltered");
     const negative = await get("type=done&aged=-5");
     assert.equal(negative.aged, undefined);
+  }
+
+  // The rating rides along on the item, and absent means unrated rather than
+  // an empty string the client would have to special-case.
+  {
+    const d = await get("type=all");
+    assert.equal(d.items.find((it) => it.problem.id === "p-old").recall, "again");
+    assert.equal(d.items.find((it) => it.problem.id === "p-both").recall, undefined);
+  }
+
+  // recall= narrows, and "none" is the unrated pile — the two halves of
+  // "what haven't I looked at again?".
+  {
+    const d = await get("type=all&recall=again");
+    assert.deepEqual(ids(d), ["p-old"]);
+    assert.equal(d.recall, "again", "the filter is echoed");
+    assert.equal(d.total, 1, "total counts the filtered set");
+
+    const unrated = await get("type=all&recall=none");
+    assert.deepEqual(ids(unrated), ["p-both"], "none means explicitly unrated");
+    assert.equal(unrated.recall, "none");
+  }
+
+  // Garbage is dropped, not a 400 — same contract as aged, because these
+  // arrive from a URL anyone can hand-edit.
+  {
+    const junk = await get("type=all&recall=bogus");
+    assert.equal(junk.recall, undefined);
+    assert.equal(junk.total, 4, "and the list is unfiltered");
+    const empty = await get("type=all&recall=");
+    assert.equal(empty.total, 4);
+  }
+
+  // Stacks with everything else.
+  {
+    const d = await get("type=done&recall=again&aged=90&platform=codeforces&difficulty=cf:1400-1600");
+    assert.deepEqual(ids(d), ["p-old"]);
+    assert.equal(d.recall, "again");
+    assert.equal(d.aged, 90);
+
+    // A rating that contradicts the other facets finds nothing rather than
+    // quietly ignoring one of them.
+    const none = await get("type=done&recall=easy&aged=90");
+    assert.deepEqual(ids(none), []);
+  }
+
+  // PUT /api/recall — the regression that matters is what it does NOT write.
+  {
+    calls.length = 0;
+    const res = await put("/api/recall/p-old/hard");
+    assert.equal(res.status, 200);
+    assert.deepEqual(await res.json(), { ok: true, recall: "hard" });
+
+    const write = calls.find((c) => /UPDATE user_problem_state/.test(c.sql));
+    assert.ok(write, "the rating is written");
+    assert.ok(
+      !/done_at/.test(write.sql),
+      "rating must never touch done_at — that would reset the age filter it feeds"
+    );
+    assert.ok(!/INSERT/i.test(write.sql), "rating never creates a row");
+    assert.deepEqual(write.params, ["u1", "p-old", "hard"]);
+  }
+
+  // "none" clears it, and clears recall_at with it.
+  {
+    calls.length = 0;
+    const res = await put("/api/recall/p-old/none");
+    assert.equal(res.status, 200);
+    assert.deepEqual(await res.json(), { ok: true });
+    const write = calls.find((c) => /UPDATE user_problem_state/.test(c.sql));
+    assert.equal(write.params[2], null);
+  }
+
+  // Only the four, and only for a problem you actually saved.
+  {
+    for (const bad of ["sortof", "0", "again%20again"]) {
+      const res = await put(`/api/recall/p-old/${bad}`);
+      assert.equal(res.status, 400, `${bad} is not a rating`);
+    }
+    UPDATE_ROWS = 0;
+    const res = await put("/api/recall/p-nowhere/hard");
+    assert.equal(res.status, 409, "rating an unsaved problem is a no-op, and says so");
+    assert.deepEqual(await res.json(), { error: "not_saved" });
+    UPDATE_ROWS = 1;
   }
 
   console.log("library route tests passed");
