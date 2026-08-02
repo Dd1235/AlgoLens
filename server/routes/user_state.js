@@ -7,9 +7,9 @@ const {
 } = require("../search/difficulty");
 
 // Sets one of {done, bookmarked} flags to `value` for (user, problem_id) and
-// keeps the row only if at least one flag is true. The CHECK constraint on
-// user_problem_state forbids all-false rows, so unsetting the last true flag
-// triggers a DELETE.
+// keeps the row while it still means something. Since 0008 that is "saved OR
+// rated": unsetting the last flag deletes the row only if there is no rating
+// on it, so un-ticking done never destroys how the solve went.
 async function setFlag(userId, problemId, flag, value) {
   if (flag !== "done" && flag !== "bookmarked") {
     throw new Error(`bad flag: ${flag}`);
@@ -28,13 +28,15 @@ async function setFlag(userId, problemId, flag, value) {
       [userId, problemId]
     );
   } else {
-    // Two-step to dodge the CHECK constraint (done OR bookmarked):
-    //   1. If the OTHER flag is also false, delete the row outright.
-    //   2. Otherwise update this flag to false; the row stays valid because
-    //      the other flag is still true.
+    // Two-step to satisfy the CHECK (done OR bookmarked OR recall IS NOT NULL):
+    //   1. If the OTHER flag is also false AND nothing was rated, delete.
+    //   2. Otherwise update this flag to false; the row is still valid,
+    //      because either the other flag or the rating is holding it up.
+    // `recall IS NULL` is the whole point of 0008: a rating survives being
+    // un-saved, and comes back with the problem if it is saved again.
     await db.query(
       `DELETE FROM user_problem_state
-        WHERE user_id = $1 AND problem_id = $2 AND NOT ${otherFlag}`,
+        WHERE user_id = $1 AND problem_id = $2 AND NOT ${otherFlag} AND recall IS NULL`,
       [userId, problemId]
     );
     await db.query(
@@ -62,6 +64,18 @@ const RECALL_VALUES = new Set(["again", "hard", "medium", "easy"]);
 // rate. That keeps "a rating belongs to a saved problem" true in the schema
 // instead of only in a comment.
 async function setRecall(userId, problemId, value) {
+  // Clearing the rating on a row that no flag is holding up would leave a row
+  // that means nothing — and violate the CHECK. Removing the last reason the
+  // row exists removes the row, which is the same rule as unsetting the last
+  // flag.
+  if (value === null) {
+    const emptied = await db.query(
+      `DELETE FROM user_problem_state
+        WHERE user_id = $1 AND problem_id = $2 AND NOT done AND NOT bookmarked`,
+      [userId, problemId]
+    );
+    if (emptied.rowCount > 0) return true;
+  }
   const result = await db.query(
     `UPDATE user_problem_state
         SET recall = $3, recall_at = CASE WHEN $3::text IS NULL THEN NULL ELSE NOW() END,
@@ -173,7 +187,10 @@ function createUserStateRouter({ problems } = {}) {
     const recallWanted = RECALL_VALUES.has(recallRaw) ? recallRaw
       : recallRaw === "none" ? "none"
       : null;
-    let where = "user_id = $1";
+    // (done OR bookmarked) is what "in your library" means, and since 0008 a
+    // row can outlive both flags to hold a rating — so `type=all` has to say
+    // so rather than meaning "every row we have for you".
+    let where = "user_id = $1 AND (done OR bookmarked)";
     if (type === "done") where += " AND done";
     if (type === "bookmarked") where += " AND bookmarked";
     const orderBy = type === "bookmarked" ? "bookmarked_at" : "done_at";

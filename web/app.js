@@ -264,13 +264,12 @@ if (libAgeRow) {
     syncUrl();
     reissueCurrentView();
   });
-  libAgeRow.querySelectorAll(".lib-recall").forEach((chip) => {
-    chip.addEventListener("click", () => {
-      libRecall = chip.dataset.recall || null;
-      track("library_recall", { value: libRecall || "any" });
-      syncUrl();
-      reissueCurrentView();
-    });
+  const recallSel = document.getElementById("lib-recall");
+  if (recallSel) recallSel.addEventListener("change", () => {
+    libRecall = recallSel.value || null;
+    track("library_recall", { value: libRecall || "any" });
+    syncUrl();
+    reissueCurrentView();
   });
 }
 
@@ -440,9 +439,8 @@ function setLibPath(path) {
     });
     const oldest = document.getElementById("lib-oldest");
     if (oldest) oldest.classList.toggle("is-active", libOldest);
-    libAgeRow.querySelectorAll(".lib-recall").forEach((c) => {
-      c.classList.toggle("is-active", String(libRecall ?? "") === c.dataset.recall);
-    });
+    const recallSelect = document.getElementById("lib-recall");
+    if (recallSelect) recallSelect.value = libRecall || "";
   }
   // Highlight the matching chip so the bar reads like a state indicator.
   libChips.forEach((c) => {
@@ -1570,9 +1568,9 @@ CORPUS
                view: :done by when you finished, :bookmarks by
                when you saved.
 
-  recall       again / hard / med / easy — how the solve went.
-               "unrated" is everything you never rated. See
-               ":help saving".
+  recall       a dropdown beside the age chips: again / hard /
+               medium / easy, or "unrated" for everything you
+               never rated. See ":help saving".
 
   These compose. ":bookmarks" with cf+atc selected and "not
   done" is your unfinished Codeforces and AtCoder saves.
@@ -1590,17 +1588,28 @@ CORPUS
   ☆ / ★   bookmark a problem, on any result card
   ○ / ✓   mark it done — done marks feed your heatmap
 
-  A saved problem grows a third chip: how it went. Tap to
-  cycle · → again → hard → med → easy → · . It is optional and
-  nothing is scheduled off it — it exists so that ":done" plus
-  "again" is a list worth reopening.
+  In your library, a saved problem grows a third chip: how it
+  went. Tap it to cycle
 
-  Rating a problem does NOT change when you solved it, so
-  re-rating an old solve never moves it out of "marked 3mo+".
+    ·  →  A again  →  H hard  →  M medium  →  E easy  →  ·
 
-  The rating belongs to a saved problem. Un-bookmark AND un-do
-  the same problem and the row is gone, rating included —
-  there is nothing left to hang it on.
+  One letter, so the buttons don't change size under your
+  thumb as you rate a page; the colour is the part you read.
+  It only appears in :bookmarks / :done / :all — an ordinary
+  search result keeps its two buttons.
+
+  It saves as you tap, without waiting. If the save fails the
+  letter goes back to what it was and the status line says so.
+
+  It is optional and nothing is scheduled off it — it exists
+  so that ":done" plus "again" is a list worth reopening.
+
+  Rating does NOT change when you solved it, so re-rating an
+  old solve never moves it out of "marked 3mo+".
+
+  Un-bookmark AND un-mark the same problem and it leaves your
+  library — but the rating is KEPT. Save it again months later
+  and your "again" is still on it.
 
   Two things people ask for that already exist:
 
@@ -1626,7 +1635,10 @@ CORPUS
   You never add a row by hand. Bookmark or tick done on the
   site and sync writes the row for you — id, title, link,
   judge, difficulty, bookmarked, done, done date, recall. Those
-  columns belong to the site and are rewritten each sync.
+  columns belong to the site and are rewritten each sync. A
+  sheet you made before one of them existed gains it on the
+  next sync, added to the RIGHT of everything in the sheet;
+  nothing of yours is moved or overwritten.
 
   EVERYTHING ELSE IS YOURS, and is edited in the sheet itself:
   the suggested columns (status, time taken, concept, tactics,
@@ -1939,7 +1951,7 @@ function renderHitsList(container, hits, opts = {}) {
     header.appendChild(meta);
 
     if (currentUser) {
-      header.appendChild(buildActions(hit));
+      header.appendChild(buildActions(hit, libraryMode));
     }
 
     const bar = document.createElement("div");
@@ -2034,7 +2046,7 @@ function renderHitsList(container, hits, opts = {}) {
   });
 }
 
-function buildActions(hit) {
+function buildActions(hit, libraryMode) {
   const actions = document.createElement("span");
   actions.className = "result-actions";
 
@@ -2062,10 +2074,11 @@ function buildActions(hit) {
 
   actions.appendChild(bookmark);
   actions.appendChild(done);
-  // The rating only exists once there IS something to rate. A plain search
-  // result keeps its two buttons; a saved one gains a third chip, and nothing
-  // pops up or has to be dismissed.
-  if (hit.done || hit.bookmarked) actions.appendChild(buildRecall(hit));
+  // The rating shows up in the LIBRARY only, and only on a row that is
+  // actually saved. Searching is the busy surface — a third chip on every
+  // result there is chrome you have to look past to read a title — while the
+  // library is exactly where "how did that go?" is the question being asked.
+  if (libraryMode && (hit.done || hit.bookmarked)) actions.appendChild(buildRecall(hit));
   return actions;
 }
 
@@ -2073,8 +2086,15 @@ function buildActions(hit) {
 // element, and "how did it go" is a one-tap answer at the moment you tick
 // something done, which was the whole point (a separate sheet is friction
 // nobody pays twice).
+//
+// It shows ONE character, always the same width as ☆ and ✓. The first cut
+// wrote the word ("again", "med"), which made the chip a different size in
+// every row and shoved the whole action group left and right as you rated
+// things. The letter is explained by its tooltip, by the colour, and by
+// `:help saving`.
 const RECALL_CYCLE = [null, "again", "hard", "medium", "easy"];
-const RECALL_LABEL = { again: "again", hard: "hard", medium: "med", easy: "easy" };
+const RECALL_LETTER = { again: "A", hard: "H", medium: "M", easy: "E" };
+const RECALL_WORD = { again: "again", hard: "hard", medium: "medium", easy: "easy" };
 
 function buildRecall(hit) {
   const btn = document.createElement("button");
@@ -2082,29 +2102,43 @@ function buildRecall(hit) {
   const paint = () => {
     const v = hit.recall || null;
     btn.className = `result-action recall${v ? ` recall-${v}` : ""}`;
-    btn.textContent = v ? RECALL_LABEL[v] : "·";
-    btn.title = v ? `you found this ${v} — click to change` : "rate how it went";
-    btn.setAttribute("aria-pressed", String(!!v));
+    btn.textContent = v ? RECALL_LETTER[v] : "·";
+    btn.title = v
+      ? `how it went: ${RECALL_WORD[v]} — tap to change`
+      : "rate how it went: again / hard / medium / easy";
+    btn.setAttribute("aria-label", btn.title);
   };
   paint();
-  btn.addEventListener("click", async (e) => {
+  btn.addEventListener("click", (e) => {
     e.stopPropagation(); // the header click toggles the card open
-    const next = RECALL_CYCLE[(RECALL_CYCLE.indexOf(hit.recall || null) + 1) % RECALL_CYCLE.length];
-    btn.disabled = true;
-    try {
-      const res = await fetch(`/api/recall/${encodeURIComponent(hit.problem.id)}/${next || "none"}`,
-        { method: "PUT" });
-      if (!res.ok) return;
-      hit.recall = next || undefined;
-      paint();
-      track("recall_set", { problemId: hit.problem.id, value: next || "none" });
-      // If a recall filter is on, this row may no longer belong in the view.
-      if (libRecall && currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
-        reissueCurrentView();
-      }
-    } finally {
-      btn.disabled = false;
-    }
+    const before = hit.recall || null;
+    const next = RECALL_CYCLE[(RECALL_CYCLE.indexOf(before) + 1) % RECALL_CYCLE.length];
+    // Optimistic: paint first, ask after. Four taps to get from unrated to
+    // "easy" behind a disabled button and a spinner is unusable — and there
+    // is nothing to lose by being wrong, since the only recovery a failure
+    // needs is putting the old letter back.
+    hit.recall = next || undefined;
+    paint();
+    track("recall_set", { problemId: hit.problem.id, value: next || "none" });
+    fetch(`/api/recall/${encodeURIComponent(hit.problem.id)}/${next || "none"}`, { method: "PUT" })
+      .then((res) => {
+        if (res.ok) {
+          // A recall filter may mean this row no longer belongs in the view.
+          // Re-issue on the way out, never mid-cycle.
+          if (libRecall && currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
+            reissueCurrentView();
+          }
+          return;
+        }
+        hit.recall = before || undefined;
+        paint();
+        setStatus(res.status === 409 ? "rating needs a saved problem" : "could not save that rating");
+      })
+      .catch(() => {
+        hit.recall = before || undefined;
+        paint();
+        setStatus("offline — rating not saved");
+      });
   });
   return btn;
 }
@@ -2134,6 +2168,12 @@ async function toggleFlag(hit, flag, btn) {
     btn.title = next ? "unmark as done" : "mark as done";
   }
   btn.setAttribute("aria-pressed", String(next));
+
+  // Un-saving something you had rated: the row leaves your library but the
+  // rating is kept, and saying so beats letting someone discover it later.
+  if (!next && !hit.done && !hit.bookmarked && hit.recall) {
+    setStatus(`unsaved — your "${RECALL_WORD[hit.recall] || hit.recall}" rating is kept if you save it again`);
+  }
 
   if (currentUser) refreshLibraryCounts();
 

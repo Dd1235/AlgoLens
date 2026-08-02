@@ -86,6 +86,30 @@ async function req(port, method, path, { body, cookie } = {}) {
   const left = await db.query("SELECT COUNT(*)::int AS n FROM user_problem_state");
   assert.equal(left.rows[0].n, 0, "row deleted when both flags false");
 
+  // A rating outlives the flags that introduced it. This is the 0008 rule:
+  // un-ticking done is not a request to erase how the solve went.
+  await req(port, "POST", "/api/bookmark/leetcode-two-sum", { cookie });
+  const r1 = await req(port, "PUT", "/api/recall/leetcode-two-sum/again", { cookie });
+  assert.equal(r1.status, 200);
+  await req(port, "DELETE", "/api/bookmark/leetcode-two-sum", { cookie });
+  const kept = await db.query("SELECT done, bookmarked, recall FROM user_problem_state");
+  assert.equal(kept.rows.length, 1, "un-saving a RATED problem keeps the row");
+  assert.equal(kept.rows[0].recall, "again", "and keeps the rating");
+  assert.equal(kept.rows[0].done, false);
+  assert.equal(kept.rows[0].bookmarked, false);
+
+  // Saving it again brings the rating back with it.
+  await req(port, "POST", "/api/bookmark/leetcode-two-sum", { cookie });
+  const back = await db.query("SELECT recall FROM user_problem_state");
+  assert.equal(back.rows[0].recall, "again", "the rating comes back with the problem");
+
+  // Clearing the rating on an un-saved row removes the last reason it exists.
+  await req(port, "DELETE", "/api/bookmark/leetcode-two-sum", { cookie });
+  const r2 = await req(port, "PUT", "/api/recall/leetcode-two-sum/none", { cookie });
+  assert.equal(r2.status, 200);
+  const gone = await db.query("SELECT COUNT(*)::int AS n FROM user_problem_state");
+  assert.equal(gone.rows[0].n, 0, "no flags and no rating means no row");
+
   // Bad problem id rejected.
   const g = await req(port, "POST", "/api/done/not%20a%20valid%20id", { cookie });
   assert.equal(g.status, 400);
