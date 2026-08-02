@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc103-c",
+  "title": "Modulo Summation",
+  "slug": "abc103-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc103/tasks/abc103_c",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given N positive integers, define f(m) as the sum of m mod a_i for all i. Find the maximum possible value of f(m) over all non-negative integers m.",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "brute-force",
+    "modular-arithmetic",
+    "optimization-over-modulo",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673610,
+    "pattern_confidence": {
+      "brute-force": 0.7,
+      "modular-arithmetic": 0.95,
+      "optimization-over-modulo": 0.85
+    }
+  },
+  "difficulty": 451
+}

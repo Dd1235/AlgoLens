@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-abc215-d",
+  "title": "Coprime 2",
+  "slug": "abc215-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc215/tasks/abc215_d",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given a list of positive integers and an upper bound M, find all integers between 1 and M that are coprime to every element in the list.",
+  "tags": [
+    "array",
+    "number-theory",
+    "math"
+  ],
+  "patterns": [
+    "gcd",
+    "sieve",
+    "inclusion-exclusion",
+    "number-theory",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673605,
+    "pattern_confidence": {
+      "gcd": 0.98,
+      "sieve": 0.93,
+      "inclusion-exclusion": 0.85
+    }
+  },
+  "difficulty": 736
+}

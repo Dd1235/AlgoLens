@@ -1,0 +1,38 @@
+{
+  "id": "codeforces-230-b",
+  "title": "T-primes",
+  "slug": "230-b-t-primes",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/230/B",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 1300,
+  "rating": 1300,
+  "source_tags": [
+    "binary search",
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given an array of positive integers, determine for each whether it is a T-prime (a number with exactly three distinct positive divisors).",
+  "tags": [
+    "array",
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-check",
+    "square-check",
+    "sieve",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673792,
+    "pattern_confidence": {
+      "prime-check": 0.95,
+      "square-check": 0.93,
+      "sieve": 0.9
+    }
+  }
+}

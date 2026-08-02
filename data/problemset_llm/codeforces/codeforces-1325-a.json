@@ -1,0 +1,35 @@
+{
+  "id": "codeforces-1325-a",
+  "title": "EhAb AnD gCd",
+  "slug": "1325-a-ehab-and-gcd",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1325/A",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "constructive algorithms",
+    "greedy",
+    "number theory"
+  ],
+  "statement": "Given a positive integer x, find any two positive integers a and b such that GCD(a, b) plus LCM(a, b) equals x.",
+  "tags": [
+    "number-theory",
+    "math",
+    "constructive-algorithm"
+  ],
+  "patterns": [
+    "constructive-algorithm",
+    "gcd-lcm-properties",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673798,
+    "pattern_confidence": {
+      "constructive-algorithm": 0.95,
+      "gcd-lcm-properties": 0.9
+    }
+  }
+}

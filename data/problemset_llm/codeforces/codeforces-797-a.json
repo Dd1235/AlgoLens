@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-797-a",
+  "title": "k-Factorization",
+  "slug": "797-a-k-factorization",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/797/A",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "implementation",
+    "math",
+    "number theory"
+  ],
+  "statement": "Given a positive integer n and an integer k, find k integers greater than 1 whose product is n, or report if impossible.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "prime-factorization",
+    "greedy",
+    "constructive-algorithm",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673794,
+    "pattern_confidence": {
+      "prime-factorization": 0.95,
+      "greedy": 0.85,
+      "constructive-algorithm": 0.8
+    }
+  }
+}

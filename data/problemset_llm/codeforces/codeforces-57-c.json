@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-57-c",
+  "title": "Array",
+  "slug": "57-c-array",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/57/C",
+  "source_topic": "Graph / Disjoint Set Union",
+  "difficulty": 1900,
+  "rating": 1900,
+  "source_tags": [
+    "combinatorics",
+    "math"
+  ],
+  "statement": "Count the number of arrays of length n with elements from 1 to n that are either non-increasing or non-decreasing.",
+  "tags": [
+    "array",
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "permutation-counting",
+    "inclusion-exclusion",
+    "monotonic-sequences",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673913,
+    "pattern_confidence": {
+      "permutation-counting": 0.92,
+      "inclusion-exclusion": 0.88,
+      "monotonic-sequences": 0.9
+    }
+  }
+}

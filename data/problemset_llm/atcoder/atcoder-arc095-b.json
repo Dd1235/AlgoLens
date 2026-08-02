@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-arc095-b",
+  "title": "Binomial Coefficients",
+  "slug": "arc095-b",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc094/tasks/arc095_b",
+  "source_topic": "Math / Combinatorics",
+  "source_tags": [],
+  "statement": "Given n distinct non-negative integers, select two numbers a_i > a_j such that the binomial coefficient C(a_i, a_j) is maximized. Output any such pair.",
+  "tags": [
+    "array",
+    "math",
+    "combinatorics"
+  ],
+  "patterns": [
+    "binomial-coefficient-maximization",
+    "sorting",
+    "greedy",
+    "combinatorics"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673624,
+    "pattern_confidence": {
+      "binomial-coefficient-maximization": 0.97,
+      "sorting": 0.85,
+      "greedy": 0.8
+    }
+  },
+  "difficulty": 867
+}

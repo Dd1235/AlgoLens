@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc178-c",
+  "title": "Ubiquity",
+  "slug": "abc178-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc178/tasks/abc178_c",
+  "source_topic": "Math / Combinatorics",
+  "source_tags": [],
+  "statement": "Count the number of integer sequences of length N using digits 0 to 9, such that at least one digit is 0 and at least one digit is 9, outputting the result modulo 10^9+7.",
+  "tags": [
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "modular-arithmetic",
+    "counting",
+    "combinatorics",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673626,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.98,
+      "modular-arithmetic": 0.95,
+      "counting": 0.9
+    }
+  },
+  "difficulty": 653
+}

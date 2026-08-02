@@ -1,0 +1,30 @@
+{
+  "id": "atcoder-abc193-c",
+  "title": "Unexpressed",
+  "slug": "abc193-c",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc193/tasks/abc193_c",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given N, count how many integers from 1 to N cannot be written as a^b for integers a ≥ 2 and b ≥ 2.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "brute-force",
+    "set-marking",
+    "power-representation"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673612,
+    "pattern_confidence": {
+      "brute-force": 0.95,
+      "set-marking": 0.92,
+      "power-representation": 0.93
+    }
+  },
+  "difficulty": 378
+}

@@ -914,6 +914,27 @@
         "rabin-karp",
         "hash-map"
       ]
+    },
+    "combinatorics": {
+      "label": "combinatorics",
+      "aliases": [
+        "combinatorics",
+        "counting",
+        "counting problems",
+        "combinatorial"
+      ],
+      "members": [
+        "combinatorics",
+        "inclusion-exclusion",
+        "stars-and-bars",
+        "binomial-coefficient",
+        "permutation-counting",
+        "pigeonhole-principle",
+        "catalan-numbers",
+        "modular-inverse",
+        "lucas-theorem",
+        "counting"
+      ]
     }
   },
   "consumingAliases": [

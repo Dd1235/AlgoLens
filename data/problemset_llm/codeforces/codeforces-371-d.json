@@ -1,0 +1,39 @@
+{
+  "id": "codeforces-371-d",
+  "title": "Vessels",
+  "slug": "371-d-vessels",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/371/D",
+  "source_topic": "Graph / Disjoint Set Union",
+  "difficulty": 1800,
+  "rating": 1800,
+  "source_tags": [
+    "data structures",
+    "dsu",
+    "implementation",
+    "trees"
+  ],
+  "statement": "Simulate pouring water into a vertical stack of vessels with given capacities, where overflow from one vessel moves to the next, and answer queries about adding water and reporting the amount in a specific vessel.",
+  "tags": [
+    "data-structure",
+    "array",
+    "implementation"
+  ],
+  "patterns": [
+    "union-find",
+    "path-compression",
+    "simulation",
+    "overflow-handling"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673810,
+    "pattern_confidence": {
+      "union-find": 0.92,
+      "path-compression": 0.9,
+      "simulation": 0.88,
+      "overflow-handling": 0.85
+    }
+  }
+}

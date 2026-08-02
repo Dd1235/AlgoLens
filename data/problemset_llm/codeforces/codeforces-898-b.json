@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-898-b",
+  "title": "Proper Nutrition",
+  "slug": "898-b-proper-nutrition",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/898/B",
+  "source_topic": "Math / Number Theory",
+  "difficulty": 1100,
+  "rating": 1100,
+  "source_tags": [
+    "brute force",
+    "implementation",
+    "number theory"
+  ],
+  "statement": "Given two item prices and a total amount, determine if non-negative quantities of each can sum exactly to the total.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "linear-diophantine-equation",
+    "brute-force"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673802,
+    "pattern_confidence": {
+      "linear-diophantine-equation": 0.97,
+      "brute-force": 0.7
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "atcoder-abc172-d",
+  "title": "Sum of Divisors",
+  "slug": "abc172-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc172/tasks/abc172_d",
+  "source_topic": "Math / Number Theory",
+  "source_tags": [],
+  "statement": "Given N, compute the sum over K from 1 to N of K multiplied by the number of positive divisors of K.",
+  "tags": [
+    "math",
+    "number-theory"
+  ],
+  "patterns": [
+    "divisor-summation",
+    "multiplicative-functions",
+    "divisor-counting",
+    "efficient-enumeration",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673614,
+    "pattern_confidence": {
+      "divisor-summation": 0.98,
+      "multiplicative-functions": 0.92,
+      "divisor-counting": 0.9,
+      "efficient-enumeration": 0.85
+    }
+  },
+  "difficulty": 963
+}

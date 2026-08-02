@@ -1,0 +1,32 @@
+{
+  "id": "atcoder-abc156-d",
+  "title": "Bouquet",
+  "slug": "abc156-d",
+  "platform": "atcoder",
+  "source_url": "https://atcoder.jp/contests/abc156/tasks/abc156_d",
+  "source_topic": "Math / Combinatorics",
+  "source_tags": [],
+  "statement": "Given n distinct flowers, count the number of non-empty subsets whose size is not equal to a or b, modulo 10^9+7. Two bouquets are different if they differ by at least one flower.",
+  "tags": [
+    "combinatorics",
+    "math"
+  ],
+  "patterns": [
+    "inclusion-exclusion",
+    "modular-arithmetic",
+    "binomial-coefficient",
+    "combinatorics",
+    "number-theory"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1",
+    "generated_at_unix": 1785673618,
+    "pattern_confidence": {
+      "inclusion-exclusion": 0.97,
+      "modular-arithmetic": 0.95,
+      "binomial-coefficient": 0.93
+    }
+  },
+  "difficulty": 1014
+}

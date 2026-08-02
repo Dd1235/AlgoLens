@@ -620,6 +620,14 @@ FAMILY_PATTERNS: list[tuple[Any, str]] = [
     (re.compile(r"binary-search"), "binary-search"),
     (re.compile(r"(^|-)(segment-tree|fenwick-tree)($|-)"), "segment-tree"),
     (re.compile(r"two-pointer"), "two-pointers"),
+    # The model names the specific trick — "stars-and-bars", "euler-totient" —
+    # and nobody searches for those until they already know the answer. The
+    # family name is the query a person types while still looking for it.
+    (re.compile(r"stars-and-bars|binomial|permutation-counting|combination-counting"
+                r"|catalan|pigeonhole|inclusion-exclusion|counting-ways"), "combinatorics"),
+    (re.compile(r"(^|-)(gcd|lcm)($|-)|divisor|(^|-)primes?($|-)|prime-|sieve|modular|modulo"
+                r"|totient|coprime|factorization|euclid"), "number-theory"),
+    (re.compile(r"disjoint-set|(^|-)dsu($|-)"), "union-find"),
 ]
 
 
