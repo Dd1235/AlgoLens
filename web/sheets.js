@@ -46,21 +46,36 @@ let tokenClient = null;      // GIS token client, created after the script loads
 let accessToken = null;      // memory only, ~1h lifetime
 let tokenExpiresAt = 0;
 let spreadsheetId = null;
+// Which Google account owns the sheet. The app login and the Google account
+// are independent — you can sign in here as one address and hold the sheet in
+// another — so this is remembered and passed to Google as a `hint`, which is
+// what stops the account chooser appearing on every token request.
+let googleEmail = null;
 let rowByProblem = new Map(); // problem_id -> { rowIndex (1-based), note fields }
 let onStateChange = () => {};
 
 function sheetsInit({ clientId, userId, onChange }) {
+  onStateChange = onChange || (() => {});
+  // Idempotent. This is called from BOTH the /api/rankers handler and the auth
+  // bootstrap, which race — and the old version reset spreadsheetId and the
+  // row cache every time, so whichever landed second wiped a live session's
+  // notes and could leave `connected()` false, which sent the next sync
+  // through connect() and its forced consent screen.
+  if (clientId === sheetsClientId && (userId || null) === sheetsUserId) return;
   sheetsClientId = clientId || null;
   sheetsUserId = userId || null;
-  onStateChange = onChange || (() => {});
   spreadsheetId = null;
+  googleEmail = null;
   rowByProblem = new Map();
   if (!sheetsClientId || !sheetsUserId) return;
   try {
     const parsed = JSON.parse(localStorage.getItem(SHEET_ID_KEY) || "null");
     // The userId guard keeps two accounts on one machine out of each other's
     // sheets — same envelope pattern as the profile snapshot.
-    if (parsed && parsed.userId === sheetsUserId) spreadsheetId = parsed.spreadsheetId || null;
+    if (parsed && parsed.userId === sheetsUserId) {
+      spreadsheetId = parsed.spreadsheetId || null;
+      googleEmail = parsed.googleEmail || null;
+    }
   } catch (_e) {}
 }
 
@@ -80,9 +95,10 @@ function sheetsAvailable() {
 }
 
 function sheetsClearLocal() {
-  try { localStorage.removeItem(SHEET_ID_KEY); } catch (_e) {}
+  forget();
   accessToken = null;
   spreadsheetId = null;
+  googleEmail = null;
   rowByProblem = new Map();
 }
 
@@ -120,7 +136,12 @@ async function getToken(interactive) {
     };
     // prompt:"" re-uses an existing grant silently; the consent popup only
     // appears the very first time (or after the user revokes access).
-    tokenClient.requestAccessToken({ prompt: interactive ? "consent" : "" });
+    // `hint` names the account to use, so someone signed into several Google
+    // accounts isn't asked to pick one every time. Consent is forced only on a
+    // first connect — never on a routine sync.
+    const req = { prompt: interactive && !googleEmail ? "consent" : "" };
+    if (googleEmail) req.hint = googleEmail;
+    tokenClient.requestAccessToken(req);
   });
 }
 
@@ -153,6 +174,27 @@ async function sheetsConnect() {
   if (!sheetsAvailable()) throw new Error("sheet sync is not configured");
   await getToken(true); // first grant is interactive by definition
 
+  // A remembered sheet lives in ONE Google account. If the grant just came
+  // from a different one, that sheet is invisible here (drive.file scope only
+  // exposes files this app created for THIS account) — and silently creating
+  // a second sheet in the new account is how notes get stranded. Check first,
+  // and say which account owns it.
+  if (spreadsheetId) {
+    const owner = await sheetOwner(spreadsheetId);
+    if (!owner) {
+      const held = googleEmail;
+      spreadsheetId = null;
+      googleEmail = null;
+      forget();
+      throw new Error(
+        held
+          ? `your sheet belongs to ${held} — sign in with that Google account, or press connect again to start a new sheet here`
+          : "that sheet is not reachable from this Google account — press connect again to start a new one"
+      );
+    }
+    googleEmail = owner;
+  }
+
   // drive.file scope means files.list returns ONLY files this app created —
   // so this both recovers a lost localStorage pointer and can't see anything
   // else in the user's Drive.
@@ -177,11 +219,34 @@ async function sheetsConnect() {
     );
   }
 
-  try {
-    localStorage.setItem(SHEET_ID_KEY, JSON.stringify({ userId: sheetsUserId, spreadsheetId }));
-  } catch (_e) {}
+  if (!googleEmail) googleEmail = await sheetOwner(spreadsheetId);
+  remember();
   onStateChange();
   return spreadsheetId;
+}
+
+// Owner email of a sheet, or null when this account can't see it. Doubles as
+// the "is the remembered sheet still reachable?" probe.
+async function sheetOwner(id) {
+  try {
+    const meta = await gapi(
+      `https://www.googleapis.com/drive/v3/files/${id}?fields=owners(emailAddress)`
+    );
+    return ((meta.owners || [])[0] || {}).emailAddress || null;
+  } catch (_e) {
+    return null;
+  }
+}
+
+function remember() {
+  try {
+    localStorage.setItem(SHEET_ID_KEY,
+      JSON.stringify({ userId: sheetsUserId, spreadsheetId, googleEmail }));
+  } catch (_e) {}
+}
+
+function forget() {
+  try { localStorage.removeItem(SHEET_ID_KEY); } catch (_e) {}
 }
 
 // ── Sync: app writes A–H, reads I–N, and never crosses the line ─────────────
@@ -283,5 +348,6 @@ const cosineSheets = {
   noteFor: sheetsNoteFor,
   clearLocal: sheetsClearLocal,
   url: sheetsUrl,
+  account: () => googleEmail,
   USER_FIELDS: SHEET_USER_FIELDS,
 };

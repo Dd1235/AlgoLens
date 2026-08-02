@@ -325,6 +325,10 @@ function syncSheetChip() {
   const open = document.getElementById("sheet-open");
   const connected = cosineSheets.connected();
   btn.textContent = connected ? "sync sheet" : "connect sheet";
+  const who = cosineSheets.account();
+  btn.title = connected && who
+    ? `sheet in ${who} — nothing is stored on this server`
+    : "notes live in your own Google Sheet — nothing is stored on this server";
   open.hidden = !connected;
   if (connected) open.href = cosineSheets.url();
 }
@@ -1517,8 +1521,11 @@ SHEET                                              (signed in)
   of it. The site reads your columns and shows them on the
   expanded card (✎ marks an annotated problem).
 
-  Google may ask for access at most once per session, and only
-  when YOU press sync — never on page load.
+  Google is asked for access once per browser session, only when
+  YOU press sync, never on page load — and the account that owns
+  the sheet is remembered, so being signed into several Google
+  accounts doesn't mean picking one every time. Your cosine login
+  and that Google account are independent.
 
 LINKS
   the address bar follows what you're looking at — query, judges,
