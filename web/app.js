@@ -1568,9 +1568,9 @@ CORPUS
                view: :done by when you finished, :bookmarks by
                when you saved.
 
-  recall       again / hard / med / easy — how the solve went.
-               "unrated" is everything you never rated. See
-               ":help saving".
+  recall       a dropdown beside the age chips: again / hard /
+               medium / easy, or "unrated" for everything you
+               never rated. See ":help saving".
 
   These compose. ":bookmarks" with cf+atc selected and "not
   done" is your unfinished Codeforces and AtCoder saves.
@@ -1588,17 +1588,28 @@ CORPUS
   ☆ / ★   bookmark a problem, on any result card
   ○ / ✓   mark it done — done marks feed your heatmap
 
-  A saved problem grows a third chip: how it went. Tap to
-  cycle · → again → hard → med → easy → · . It is optional and
-  nothing is scheduled off it — it exists so that ":done" plus
-  "again" is a list worth reopening.
+  In your library, a saved problem grows a third chip: how it
+  went. Tap it to cycle
 
-  Rating a problem does NOT change when you solved it, so
-  re-rating an old solve never moves it out of "marked 3mo+".
+    ·  →  A again  →  H hard  →  M medium  →  E easy  →  ·
 
-  The rating belongs to a saved problem. Un-bookmark AND un-do
-  the same problem and the row is gone, rating included —
-  there is nothing left to hang it on.
+  One letter, so the buttons don't change size under your
+  thumb as you rate a page; the colour is the part you read.
+  It only appears in :bookmarks / :done / :all — an ordinary
+  search result keeps its two buttons.
+
+  It saves as you tap, without waiting. If the save fails the
+  letter goes back to what it was and the status line says so.
+
+  It is optional and nothing is scheduled off it — it exists
+  so that ":done" plus "again" is a list worth reopening.
+
+  Rating does NOT change when you solved it, so re-rating an
+  old solve never moves it out of "marked 3mo+".
+
+  Un-bookmark AND un-mark the same problem and it leaves your
+  library — but the rating is KEPT. Save it again months later
+  and your "again" is still on it.
 
   Two things people ask for that already exist:
 
@@ -1624,7 +1635,10 @@ CORPUS
   You never add a row by hand. Bookmark or tick done on the
   site and sync writes the row for you — id, title, link,
   judge, difficulty, bookmarked, done, done date, recall. Those
-  columns belong to the site and are rewritten each sync.
+  columns belong to the site and are rewritten each sync. A
+  sheet you made before one of them existed gains it on the
+  next sync, added to the RIGHT of everything in the sheet;
+  nothing of yours is moved or overwritten.
 
   EVERYTHING ELSE IS YOURS, and is edited in the sheet itself:
   the suggested columns (status, time taken, concept, tactics,
