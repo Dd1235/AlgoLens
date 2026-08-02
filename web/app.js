@@ -20,10 +20,13 @@ const libAgeRow = document.getElementById("lib-age-row");
 // deliberately separate from the search filters — they mean nothing there.
 let libAged = null;
 let libOldest = false;
+let libRecall = null;   // "again" | "hard" | "none" (unrated) | null (any)
 let googleClientId = null;       // from /api/rankers; sheet feature hidden while null
 let sheetSyncedThisSession = false;
 
-// :help works for everyone, signed in or not.
+// :help works for everyone, signed in or not. Parsed by helpQuery() below,
+// which also takes a section name — this set is only the "is it a command"
+// check for the unknown-command hint.
 const HELP_COMMANDS = new Set([":help", ":h"]);
 
 // Comparing rankers is a thing you do while tuning the engine, not while
@@ -261,6 +264,14 @@ if (libAgeRow) {
     syncUrl();
     reissueCurrentView();
   });
+  libAgeRow.querySelectorAll(".lib-recall").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      libRecall = chip.dataset.recall || null;
+      track("library_recall", { value: libRecall || "any" });
+      syncUrl();
+      reissueCurrentView();
+    });
+  });
 }
 
 // Tab inside the search input cycles through library commands when the user is
@@ -429,6 +440,9 @@ function setLibPath(path) {
     });
     const oldest = document.getElementById("lib-oldest");
     if (oldest) oldest.classList.toggle("is-active", libOldest);
+    libAgeRow.querySelectorAll(".lib-recall").forEach((c) => {
+      c.classList.toggle("is-active", String(libRecall ?? "") === c.dataset.recall);
+    });
   }
   // Highlight the matching chip so the bar reads like a state indicator.
   libChips.forEach((c) => {
@@ -494,6 +508,7 @@ function activeFacets() {
   if (activeAcceptance) bits.push(`ac ${activeAcceptance.min}-${activeAcceptance.max}%`);
   if (currentUser && currentFilter !== "all") bits.push(currentFilter === "done" ? "done" : "not done");
   if (libAged) bits.push(`marked ${libAged >= 180 ? "6mo" : libAged >= 90 ? "3mo" : "1mo"}+ ago`);
+  if (libRecall) bits.push(libRecall === "none" ? "unrated" : `recall ${libRecall}`);
   return bits;
 }
 
@@ -883,18 +898,24 @@ async function runSearch(rawQuery, { append = false } = {}) {
     applyMode();
   }
 
-  if (HELP_COMMANDS.has(q.toLowerCase())) {
-    currentQuery = "";
+  const helpArg = helpQuery(q);
+  if (helpArg !== null) {
+    // Keep the query rather than blanking it, so syncUrl writes ?q=:help sheet
+    // and a shared or refreshed link lands on the section it names.
+    currentQuery = q;
     currentOffset = 0;
     currentTotal = 0;
-    return renderHelp();
+    renderHelp(helpArg);
+    syncUrl();
+    return;
   }
 
   // Shell-style library commands.
   const libraryType = currentUser ? LIBRARY_COMMANDS[q.toLowerCase()] : null;
-  if (!libraryType && (libAged || libOldest)) {
+  if (!libraryType && (libAged || libOldest || libRecall)) {
     libAged = null;
     libOldest = false;
+    libRecall = null;
   }
   // A leading colon means "command", and every real one has been matched by
   // now — so this is a typo or a half-typed command, not a question about
@@ -1147,7 +1168,8 @@ async function runLibrary(type, q) {
     const sortParam = sortDir ? `&sort=difficulty-${sortDir}` : "";
     const agedParam = libAged ? `&aged=${libAged}` : "";
     const orderParam = libOldest ? "&order=oldest" : "";
-    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}${sortParam}${agedParam}${orderParam}`);
+    const recallParam = libRecall ? `&recall=${encodeURIComponent(libRecall)}` : "";
+    const res = await fetch(`/api/library?type=${encodeURIComponent(type)}${platformParam}${doneParam}${bandParam}${sortParam}${agedParam}${orderParam}${recallParam}`);
     data = await res.json();
   } catch (err) {
     if (issuedAt !== lastQueryAt) return;
@@ -1161,6 +1183,7 @@ async function runLibrary(type, q) {
     problem: it.problem,
     done: it.done,
     bookmarked: it.bookmarked,
+    recall: it.recall,
     matchedTerms: [],
     markedAt: it.markedAt,
   }));
@@ -1347,6 +1370,7 @@ function syncUrl() {
   if (currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
     if (libAged) p.set("aged", String(libAged));
     if (libOldest) p.set("order", "oldest");
+    if (libRecall) p.set("recall", libRecall);
   }
   if (activeRanker) p.set("ranker", activeRanker);
   if (currentUser && currentFilter !== "all") p.set("filter", currentFilter);
@@ -1398,191 +1422,295 @@ function clearPlatformFilter({ reissue = true } = {}) {
   }
 }
 
-const HELP_TEXT = `COSINE(1)                                          the manual
+// The manual, as sections rather than one scroll. `:help` is an index plus
+// the three lines that get someone searching; `:help filters` is one section.
+// Addressable on purpose: the previous 180-line wall meant the answer to
+// "can I see what I bookmarked but never solved?" was in there and nobody
+// read far enough to find it.
+//
+// Kept as plain text in a <pre> (no HTML, so nothing here can inject) and
+// wrapped to 64 columns, because `white-space: pre` scrolls sideways on a
+// phone at any width the wrapper doesn't control.
+const HELP_SECTIONS = [
+  {
+    name: "search",
+    blurb: "the three modes, and which to use",
+    body: `SEARCH — pick a mode next to the box
 
-SEARCH — pick a mode next to the box
+  keyword   matches words in the title, the statement AND our
+            technique labels. A problem that opens "Alice and
+            Bob play a game..." never says "dp" — but its label
+            does, so "game theory dp" still finds it. Best when
+            you know the terms.
 
-  typing a problem's exact name puts that problem first: "two sum"
-  and "2 sum" both land on Two Sum. Words that appear nowhere in
-  the corpus say so rather than guessing.
+  meaning   describe it in plain english. "thief robbing
+            houses" finds House Robber; "check if brackets
+            close in order" finds Valid Parentheses. Best when
+            you remember the story, not the words.
 
-  keyword    matches words in the title, the statement AND our technique
-             labels. A problem that opens "Alice and Bob play a game..."
-             never says "dp" — but its label does, so "game theory dp"
-             still finds it. Best when you know the terms.
+  both      runs the two and blends the rankings. Use it when
+            you are not sure.
 
-  meaning    describe it in plain english. "thief robbing houses" finds
-             House Robber; "check if brackets close in order" finds Valid
-             Parentheses. Best when you remember the story, not the words.
+  A problem's exact name goes to the top: "two sum" and "2 sum"
+  both land on Two Sum. A word that appears nowhere in the
+  corpus says so rather than guessing.
 
-  both       runs the two and blends the rankings. Use it when unsure.
+  Community names expand on their own: type "aliens trick" and
+  the status line shows "+wqs binary search" — you get the
+  results and the real name.
 
-  Community names expand on their own: type "aliens trick" and the status
-  line shows "+wqs binary search" — you get the results and the real name.
-
-TECHNIQUES
-  /patterns.html is the vocabulary — all 165 technique labels
-  with counts, filterable. Type "dp" there and you get the whole
-  family: digit-dp, tree-dp, slope-trick, state-compression.
-  Click any one to browse the problems that carry it. Useful if
-  your exposure stops at one sheet and you don't know what to
-  even search for.
+FIND SIMILAR
+  inside an expanded result, "find similar problems" lists the
+  ten problems closest in meaning to that one — neighbours of
+  the problem itself, not of your query. Built for upsolving:
+  open the one that beat you, see its family.
 
 BROWSE
-  a filter with no query lists everything it selects — clear the
-  box while a label or judge is on and you get the whole set.
+  a filter with no query lists everything it selects. Clear the
+  box while a label or a judge is on and you get the whole set,
+  paged.
 
-PATTERNS
-  every expanded result lists technique labels — click one to
-  narrow your search to that label; the pill clears it
+CORPUS
+  four judges, tagged [lc] [cf] [atc] [cses] on every card.
+  Deliberately hard: no LeetCode Easy, Codeforces and AtCoder
+  stratified from 1300 up — the number on the card is the
+  rating.`,
+  },
+  {
+    name: "patterns",
+    blurb: "the technique vocabulary",
+    body: `PATTERNS — what a problem IS, not what it says
 
-  clear the query and the label stays: you're browsing every
+  Statements hide their technique on purpose. The labels don't,
+  which is why searching for one works at all.
+
+  /patterns.html lists every label with counts, filterable.
+  Type "dp" there and you get the whole family: digit-dp,
+  tree-dp, slope-trick, state-compression. Click one to browse
+  the problems carrying it. Useful when your exposure stops at
+  one sheet and you don't yet know what to search for.
+
+  Every expanded result lists its labels — click one to narrow
+  to it; the pill clears it.
+
+  Clear the query and the label stays: you are browsing every
   problem carrying it. Type a new query and the label drops —
   it was a drill-down into what you were reading, and most
   labels are narrow enough that keeping it would find nothing.
-  Judges are not like this: they stay until you drop them.
+  Judges are not like this: they stay until you drop them.`,
+  },
+  {
+    name: "filters",
+    blurb: "judges, difficulty, sort, level, age, recall",
+    body: `FILTERS — they stack
 
-  browse the whole taxonomy with counts: /patterns.html
+  A filter is a set, not a radio button: pick as many as you
+  like. The status line spells out what is narrowing the view,
+  and all of it lands in the URL, so a refresh keeps it and the
+  link shares exactly what you see.
 
-FIND SIMILAR
-  inside an expanded result: "find similar problems" lists the ten
-  problems closest in meaning to that one — neighbours of the problem
-  itself, not of your query. Built for upsolving: open the one that
-  beat you, see its family.
+  judges       the lc / cses / cf / atc chips above the
+               results, or the [lc] tag on any card. All four
+               are on until you narrow. Turning the last one
+               off returns to all four, so this filter can
+               never find nothing. "all ✕" resets.
 
-FILTERS — they stack, and they stack with the library too
+  difficulty   appears under the judges, in each judge's own
+               scale: lc has three tiers, cf and atc a rating
+               range you set both ends of — "cf 1500 to 1500"
+               is exactly 1500. There is no shared scale across
+               judges, so a difficulty only ever filters its
+               own judge: narrowing cf to 1500 leaves your
+               LeetCode results untouched rather than deleting
+               them. Drop the judge and its difficulty goes
+               with it.
 
-  judges       the lc / cses / cf / atc chips above the results, or
-               the [lc] tag on any card. Pick as many as you like;
-               "all ✕" drops them. Not a picker — a set.
-  difficulty   appears under the judges, in each judge's own scale:
-               lc has three tiers, cf and atc have a rating range you
-               set both ends of — "cf 1500 to 1500" is exactly 1500.
-               A judge you haven't touched stays unfiltered, so a cf
-               range never deletes your LeetCode results.
-  ac           pick a LeetCode tier and an acceptance-rate range appears
-               under it: "hard" + "ac: 10% to 30%" is the hardest Hards.
-               Lower acceptance means harder. It shows up only after a
-               tier is chosen, because across tiers it doesn't compare —
-               most Mediums here were picked FOR a low acceptance rate
-               and every Hard came in regardless, so a 15% Medium
-               outranking a 60% Hard would say more about how this
-               corpus was built than about the problems.
-  sort         with ONE judge selected: easiest or hardest first.
-               Two judges have no shared order — nothing places a
-               Medium against a 1600 — so it's offered only when it
-               means something. Unrated problems sort last either way.
-               While searching it reorders the top N (20/50/100) by
-               relevance rather than discarding the ranking, so there
-               is no next page. Browsing sorts everything and pages.
-               On LeetCode, acceptance rate breaks the tie inside each
-               tier — otherwise "easiest first" is 661 Mediums in no
-               particular order.
-  my level     appears when your profile has stats for a judge you've
-               selected, and sets that judge's band from its own scale:
-               Codeforces and AtCoder from your rating (your rating to
-               +200 — a problem rated at your rating is roughly a coin
-               flip, so that band is winnable but not free), LeetCode
-               from your solved counts, since it publishes no rating.
-               It only ever sets a judge from that judge's own numbers.
-               Hover it to see the reasoning and how many problems it
-               selects; press it again to drop it.
+  ac           pick a LeetCode tier and an acceptance-rate
+               range appears under it: "hard" + "ac 10% to 30%"
+               is the hardest Hards. Lower acceptance means
+               harder. It appears only after a tier is chosen,
+               because across tiers it doesn't compare — most
+               Mediums here were picked FOR a low acceptance
+               rate and every Hard came in regardless, so a 15%
+               Medium outranking a 60% Hard would say more
+               about how this corpus was built than about the
+               problems.
+
+  sort         with ONE judge selected: easiest or hardest
+               first. Two judges have no shared order — nothing
+               places a Medium against a 1600 — so it is
+               offered only when it means something. Unrated
+               problems sort last either way. While searching
+               it reorders the top N (20/50/100) rather than
+               discarding the ranking, so there is no next
+               page; browsing sorts everything and pages. On
+               LeetCode, acceptance rate breaks the tie inside
+               a tier — otherwise "easiest first" is 661
+               Mediums in no particular order.
+
+  my level     appears when your profile has stats for a judge
+               you have selected, and sets that judge's band
+               from its own scale: Codeforces and AtCoder from
+               your rating (your rating to +200 — a problem at
+               your rating is roughly a coin flip, so the band
+               is winnable but not free), LeetCode from your
+               solved counts, since it publishes no rating.
+               Hover it for the reasoning and the count; press
+               it again to drop it.
+
   pattern      click a technique label inside a result
-  all/notdone  the dropdown next to the ranker      (signed in)
-  /done
 
-  These compose. ":bookmarks" with cf+atc selected and "not done"
-  is your unfinished Codeforces and AtCoder saves — the path and the
-  status line always spell out what's narrowing the view.
+  IN THE LIBRARY                                   (signed in)
 
-  marked        inside a library view: 1mo+ / 3mo+ / 6mo+ keep only
-                problems you marked at least that long ago — built for
-                revision, where "what did I solve months back?" is the
-                question. "oldest first" starts from what you solved
-                longest ago. Ages follow the view: :done filters by
-                when you finished, :bookmarks by when you saved.
+  all / not done / done   the dropdown next to the ranker
 
-SAVING                                             (signed in)
-  ☆ / ★              bookmark a problem, on any result card
-  ○ / ✓              mark it done — done marks feed your heatmap
+  marked       1mo+ / 3mo+ / 6mo+ keep only problems you marked
+               at least that long ago, and "oldest first"
+               starts from the longest ago. The age follows the
+               view: :done by when you finished, :bookmarks by
+               when you saved.
 
-SHEET                                              (signed in)
-  "connect sheet" in the library bar links a Google Sheet named
-  "cosine notes" in YOUR Drive — created by this app, and the only
-  file it can touch (drive.file scope). Nothing is stored here:
-  the Google token lives in your browser tab and notes live in
-  your sheet. This server never sees either.
+  recall       again / hard / med / easy — how the solve went.
+               "unrated" is everything you never rated. See
+               ":help saving".
 
-  sync mirrors your saved problems into columns A-H (id, title,
-  link, judge, difficulty, bookmarked, done, done date). Those
-  columns belong to the site — edits to them in the sheet are
-  overwritten next sync. EVERYTHING ELSE IS YOURS, edited in the
-  sheet itself: the suggested columns (status, time taken,
-  concept, tactics, solution summary, notes — free-form, "todo"
-  is a status if you say it is), any columns you add after them,
-  any rows you add. The app never writes, blanks or deletes any
-  of it. The site reads your columns and shows them on the
-  expanded card (✎ marks an annotated problem).
+  These compose. ":bookmarks" with cf+atc selected and "not
+  done" is your unfinished Codeforces and AtCoder saves.
+  ":done" with "again" and "3mo+" is a revision queue.
 
-  Google is asked for access once per browser session, only when
-  YOU press sync, never on page load. Notes you have already
-  synced survive a page refresh — they are cached in this browser
-  — so a reload shows them without contacting Google at all.
+  Library filters are library-only: type an ordinary query and
+  they drop, so a rating or an age can never quietly follow you
+  into a search and delete results you meant to see.`,
+  },
+  {
+    name: "saving",
+    blurb: "bookmarks, done, and how the solve went",
+    body: `SAVING                                             (signed in)
 
-  Your cosine login and the Google account holding the sheet are
-  independent. Sign in with a DIFFERENT Google account and the
-  site says so plainly: that account cannot see the sheet, which
-  is sitting safely in the first one.
+  ☆ / ★   bookmark a problem, on any result card
+  ○ / ✓   mark it done — done marks feed your heatmap
+
+  A saved problem grows a third chip: how it went. Tap to
+  cycle · → again → hard → med → easy → · . It is optional and
+  nothing is scheduled off it — it exists so that ":done" plus
+  "again" is a list worth reopening.
+
+  Rating a problem does NOT change when you solved it, so
+  re-rating an old solve never moves it out of "marked 3mo+".
+
+  The rating belongs to a saved problem. Un-bookmark AND un-do
+  the same problem and the row is gone, rating included —
+  there is nothing left to hang it on.
+
+  Two things people ask for that already exist:
+
+    ":bookmarks" with "not done" is everything you saved and
+    never solved.
+
+    Your sheet already has columns for status, time taken,
+    concept, tactics, solution summary and notes — and you
+    never type a row into it by hand. See ":help sheet".`,
+  },
+  {
+    name: "sheet",
+    blurb: "your notes, in your own Google Sheet",
+    body: `SHEET — the sheet is the notebook, the site is the index
+
+  "connect sheet" in the library bar makes a Google Sheet named
+  "cosine notes" in YOUR Drive. This app created it, and it is
+  the only file this app can see (drive.file scope — not your
+  Drive). Nothing is stored here: the Google token lives in
+  your browser tab and the notes live in your sheet. This
+  server never sees either.
+
+  You never add a row by hand. Bookmark or tick done on the
+  site and sync writes the row for you — id, title, link,
+  judge, difficulty, bookmarked, done, done date, recall. Those
+  columns belong to the site and are rewritten each sync.
+
+  EVERYTHING ELSE IS YOURS, and is edited in the sheet itself:
+  the suggested columns (status, time taken, concept, tactics,
+  solution summary, notes — free-form, so "todo" is a status if
+  you say it is), any columns you add after them, any rows you
+  add. The app never writes, blanks or deletes any of it. It
+  finds its own columns by their names in row 1, so reordering
+  is safe, and a sheet made before a column existed simply
+  doesn't get it. The site reads your columns and shows them on
+  the expanded card (✎ marks an annotated problem).
+
+  Google is asked for access once per browser session, and only
+  when YOU press sync — never on page load. After that press,
+  opening your library keeps the sheet current on its own.
+  Notes you have already synced are cached in this browser, so
+  a refresh shows them without contacting Google at all.
+
+  Your cosine login and the Google account holding the sheet
+  are independent. Connect a DIFFERENT Google account and the
+  site says so plainly: that account cannot see the sheet,
+  which is sitting safely in the first one.`,
+  },
+  {
+    name: "commands",
+    blurb: "everything that starts with a colon",
+    body: `COMMANDS — a leading ":" means command, never a search
+
+  So a typo like ":bo" tells you it isn't a command instead of
+  spending a round trip searching the corpus for it.
+
+  :help :h          this manual
+  :help <section>   one section: search, patterns, filters,
+                    saving, sheet, commands
+  :compare :cmp     ":compare knapsack" runs the query in
+                    keyword and meaning mode side by side, with
+                    rank deltas. Any ordinary search leaves
+                    compare mode.
+  :bookmarks :b     starred problems              (signed in)
+  :done :d          problems marked done          (signed in)
+  :all :lib         everything saved              (signed in)
+  Tab               cycle library views           (signed in)
 
 LINKS
-  the address bar follows what you're looking at — query, judges,
-  difficulty, sort, pattern, ranker and filter all land in the URL, so refresh keeps
-  your view and copying the URL shares exactly what you see:
-  /?q=knapsack&platform=codeforces,atcoder&ranker=dense
+  the address bar follows what you are looking at — query,
+  judges, difficulty, sort, pattern, ranker and library filters
+  all land in it, so a refresh keeps your view and copying the
+  URL shares exactly what you see:
 
-CORPUS
-  four judges, tagged [lc] [cf] [atc] [cses] on every result
-  deliberately hard: no LeetCode Easy, Codeforces and AtCoder
-  stratified from 1300 up — the number on the card is the rating
-
-COMMANDS START WITH ":"
-  anything beginning with a colon is a command, never a search —
-  a typo like ":bo" tells you so instead of querying the corpus
-
-DIFFICULTY
-  pick a judge and its own scale appears below. leetcode gets
-  easy/medium/hard; codeforces and atcoder get a from/to rating
-  range — set both ends the same for exactly one rating, e.g.
-  cf 1500 to 1500.
-
-  there is no shared scale across judges, so a difficulty only
-  ever filters its own judge: narrowing codeforces to 1500 leaves
-  leetcode results untouched rather than deleting them. Drop the
-  judge and its difficulty goes with it; "any ✕" clears it.
-  shareable as ?difficulty=cf:1500-1700,lc-hard
-
-JUDGES
-  all four are on until you narrow. Click one in the judges row
-  (or its tag on any result) to see only that judge; click more
-  to add them back; "all ✕" resets. Turning the last one off
-  returns to all four, so this filter can never find nothing.
-  Judges stay put as you search — a technique label doesn't.
-
-COMMANDS
-  :help :h          this manual
-  :compare :cmp     ":compare knapsack" runs the query in keyword
-                    and meaning mode side by side, with rank deltas.
-                    Any ordinary search leaves compare mode.
-  :bookmarks :b     starred problems           (signed in)
-  :done :d          problems marked done       (signed in)
-  :all :lib         everything saved           (signed in)
-  Tab               cycle library views        (signed in)
+    /?q=knapsack&platform=codeforces,atcoder&ranker=dense
 
 MORE
   handles + combined heatmap: /profile.html
-  live usage + latency: /stats.html · scoring math: /debug.html`;
+  live usage + latency:       /stats.html
+  scoring math:               /debug.html`,
+  },
+];
 
-function renderHelp() {
+const HELP_INDEX = `COSINE(1)                                          the manual
+
+  A search engine for practice problems. Ask for a technique,
+  describe the problem in plain english, or type the name you
+  half-remember — it handles all three, and says so when a word
+  appears nowhere in the corpus.
+
+SECTIONS
+${HELP_SECTIONS.map((s) => `  :help ${s.name.padEnd(11)}${s.blurb}`).join("\n")}
+
+TRY
+  two sum                exact names go to the top
+  thief robbing houses   describe it, in "meaning" mode
+  monotonic stack        a technique, not a word in the
+                         statement
+  :bookmarks             what you saved            (signed in)`;
+
+// ":help", ":h", or either with one section name after it. Returns null when
+// this isn't a help command at all, "" for the index, or the argument as
+// typed — an unknown one falls back to the index rather than an error, since
+// the index is the answer to "what can I ask for?" anyway.
+function helpQuery(q) {
+  const m = /^:(?:help|h)(?:\s+(.*))?$/i.exec(q.trim());
+  return m ? (m[1] || "").trim().toLowerCase() : null;
+}
+
+function renderHelp(sectionName) {
   if (compareMode) {
     compareMode = false;
     applyMode();
@@ -1592,15 +1720,18 @@ function renderHelp() {
   hideFeedback();
   currentSearchId = null;
   currentRankerAnswered = "";
-  if (currentUser) setLibPath("~/help");
-  setStatus("man cosine");
+  const section = HELP_SECTIONS.find((sec) => sec.name === sectionName);
+  if (currentUser) setLibPath(section ? `~/help/${section.name}` : "~/help");
+  setStatus(section ? `man cosine ${section.name}` : "man cosine");
   resultsEl.innerHTML = "";
   const li = document.createElement("li");
   li.className = "result help-block";
   li.setAttribute("data-rank", "[man]");
   const pre = document.createElement("pre");
   pre.className = "help-man";
-  pre.textContent = HELP_TEXT;
+  pre.textContent = section
+    ? `${section.body}\n\n  ← :help for the index`
+    : HELP_INDEX;
   li.appendChild(pre);
   resultsEl.appendChild(li);
 }
@@ -1931,7 +2062,51 @@ function buildActions(hit) {
 
   actions.appendChild(bookmark);
   actions.appendChild(done);
+  // The rating only exists once there IS something to rate. A plain search
+  // result keeps its two buttons; a saved one gains a third chip, and nothing
+  // pops up or has to be dismissed.
+  if (hit.done || hit.bookmarked) actions.appendChild(buildRecall(hit));
   return actions;
+}
+
+// One cycling chip rather than four buttons — the card grows by a single
+// element, and "how did it go" is a one-tap answer at the moment you tick
+// something done, which was the whole point (a separate sheet is friction
+// nobody pays twice).
+const RECALL_CYCLE = [null, "again", "hard", "medium", "easy"];
+const RECALL_LABEL = { again: "again", hard: "hard", medium: "med", easy: "easy" };
+
+function buildRecall(hit) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  const paint = () => {
+    const v = hit.recall || null;
+    btn.className = `result-action recall${v ? ` recall-${v}` : ""}`;
+    btn.textContent = v ? RECALL_LABEL[v] : "·";
+    btn.title = v ? `you found this ${v} — click to change` : "rate how it went";
+    btn.setAttribute("aria-pressed", String(!!v));
+  };
+  paint();
+  btn.addEventListener("click", async (e) => {
+    e.stopPropagation(); // the header click toggles the card open
+    const next = RECALL_CYCLE[(RECALL_CYCLE.indexOf(hit.recall || null) + 1) % RECALL_CYCLE.length];
+    btn.disabled = true;
+    try {
+      const res = await fetch(`/api/recall/${encodeURIComponent(hit.problem.id)}/${next || "none"}`,
+        { method: "PUT" });
+      if (!res.ok) return;
+      hit.recall = next || undefined;
+      paint();
+      track("recall_set", { problemId: hit.problem.id, value: next || "none" });
+      // If a recall filter is on, this row may no longer belong in the view.
+      if (libRecall && currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) {
+        reissueCurrentView();
+      }
+    } finally {
+      btn.disabled = false;
+    }
+  });
+  return btn;
 }
 
 async function toggleFlag(hit, flag, btn) {
@@ -2050,6 +2225,8 @@ const bootPattern = (bootParams.get("pattern") || "").trim().toLowerCase();
 const bootAged = Number.parseInt(bootParams.get("aged") || "", 10);
 if ([30, 90, 180].includes(bootAged)) libAged = bootAged;
 if ((bootParams.get("order") || "").toLowerCase() === "oldest") libOldest = true;
+const bootRecall = (bootParams.get("recall") || "").trim().toLowerCase();
+if (["again", "hard", "medium", "easy", "none"].includes(bootRecall)) libRecall = bootRecall;
 const bootSort = (bootParams.get("sort") || "").trim().toLowerCase();
 if (bootSort === "difficulty-asc" || bootSort === "difficulty") sortDir = "asc";
 else if (bootSort === "difficulty-desc") sortDir = "desc";
