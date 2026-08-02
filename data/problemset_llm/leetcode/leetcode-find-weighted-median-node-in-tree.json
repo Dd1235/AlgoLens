@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-weighted-median-node-in-tree/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 26.3,
+  "acceptance_rate": 26.4,
   "source_tags": [
     "array",
     "binary-search",

@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/repeated-dna-sequences/",
   "source_topic": "LeetCode / Rolling Hash (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 53.7,
   "source_tags": [
     "hash-table",
     "string",

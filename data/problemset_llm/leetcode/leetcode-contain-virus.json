@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/contain-virus/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 55.4,
+  "acceptance_rate": 55.5,
   "source_tags": [
     "array",
     "depth-first-search",

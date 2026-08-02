@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/the-number-of-good-subsets/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 37.5,
+  "acceptance_rate": 37.6,
   "source_tags": [
     "array",
     "hash-table",

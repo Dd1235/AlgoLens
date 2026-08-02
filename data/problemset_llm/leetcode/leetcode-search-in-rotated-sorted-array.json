@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
   "source_topic": "LeetCode / Binary Search",
   "difficulty": "Medium",
-  "acceptance_rate": 45.3,
+  "acceptance_rate": 45.4,
   "source_tags": [
     "array",
     "binary-search"

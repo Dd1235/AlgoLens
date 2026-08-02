@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-convert-string-i/",
   "source_topic": "LeetCode / Shortest Path (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 63.0,
   "source_tags": [
     "array",
     "string",

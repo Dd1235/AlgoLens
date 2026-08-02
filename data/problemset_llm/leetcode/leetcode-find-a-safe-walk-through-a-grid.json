@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-a-safe-walk-through-a-grid/",
   "source_topic": "LeetCode / Shortest Path (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 55.4,
   "source_tags": [
     "array",
     "breadth-first-search",

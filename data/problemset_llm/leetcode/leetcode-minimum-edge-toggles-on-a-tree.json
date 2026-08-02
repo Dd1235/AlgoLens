@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 69.2,
+  "acceptance_rate": 65.6,
   "source_tags": [
     "tree",
     "depth-first-search",

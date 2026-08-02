@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/",
   "source_topic": "LeetCode / Geometry (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 64.0,
   "source_tags": [
     "array",
     "math",

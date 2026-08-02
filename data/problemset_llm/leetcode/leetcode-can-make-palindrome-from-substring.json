@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/can-make-palindrome-from-substring/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 41.9,
+  "acceptance_rate": 42.0,
   "source_tags": [
     "array",
     "hash-table",

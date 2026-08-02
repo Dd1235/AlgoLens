@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 45.2,
+  "acceptance_rate": 45.1,
   "source_tags": [
     "string",
     "graph",

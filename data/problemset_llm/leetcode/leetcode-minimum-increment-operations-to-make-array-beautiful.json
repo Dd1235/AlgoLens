@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 35.0,
+  "acceptance_rate": 34.6,
   "source_tags": [
     "array",
     "dynamic-programming"

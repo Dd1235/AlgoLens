@@ -1,0 +1,33 @@
+{
+  "id": "codeforces-1992-c",
+  "title": "Gorilla and Permutation",
+  "slug": "1992-c-gorilla-and-permutation",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/C",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 900,
+  "rating": 900,
+  "source_tags": [
+    "constructive algorithms",
+    "math"
+  ],
+  "statement": "Given integers n, m, and k (with m < k), construct a permutation of length n to maximize the difference between the sum over all prefixes of sums of elements ≥ k and the sum over all prefixes of sums of elements ≤ m.",
+  "tags": [
+    "math",
+    "constructive-algorithm",
+    "permutation"
+  ],
+  "patterns": [
+    "greedy",
+    "prefix-sums"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653084,
+    "pattern_confidence": {
+      "greedy": 0.9,
+      "prefix-sums": 0.85
+    }
+  }
+}

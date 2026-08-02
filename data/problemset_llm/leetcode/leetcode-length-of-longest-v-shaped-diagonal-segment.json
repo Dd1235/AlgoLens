@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/length-of-longest-v-shaped-diagonal-segment/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 56.2,
+  "acceptance_rate": 55.9,
   "source_tags": [
     "array",
     "dynamic-programming",

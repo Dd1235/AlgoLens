@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/interleaving-string/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 44.4,
+  "acceptance_rate": 44.5,
   "source_tags": [
     "string",
     "dynamic-programming"

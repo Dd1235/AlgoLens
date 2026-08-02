@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-number-of-operations-with-the-same-score-ii/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 34.4,
+  "acceptance_rate": 34.2,
   "source_tags": [
     "array",
     "dynamic-programming",

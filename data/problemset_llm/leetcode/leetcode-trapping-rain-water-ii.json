@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/trapping-rain-water-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 64.1,
+  "acceptance_rate": 64.2,
   "source_tags": [
     "array",
     "breadth-first-search",

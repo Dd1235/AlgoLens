@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/sort-an-array/",
   "source_topic": "LeetCode / Counting Sort (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 55.9,
   "source_tags": [
     "array",
     "divide-and-conquer",

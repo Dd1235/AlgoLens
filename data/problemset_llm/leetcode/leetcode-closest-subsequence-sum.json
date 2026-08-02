@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/closest-subsequence-sum/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 44.3,
+  "acceptance_rate": 44.4,
   "source_tags": [
     "array",
     "two-pointers",

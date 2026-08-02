@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/closest-prime-numbers-in-range/",
   "source_topic": "LeetCode / Number Theory (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 51.9,
   "source_tags": [
     "math",
     "number-theory"

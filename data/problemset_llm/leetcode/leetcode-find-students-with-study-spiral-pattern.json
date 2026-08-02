@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-students-with-study-spiral-pattern/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 24.1,
+  "acceptance_rate": 24.0,
   "source_tags": [],
   "statement": "Identify students who study at least three different subjects in a repeating cycle over consecutive study sessions with no gaps longer than two days, and compute their cycle length and total study hours.",
   "tags": [

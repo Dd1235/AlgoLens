@@ -1,0 +1,37 @@
+{
+  "id": "codeforces-1992-g",
+  "title": "Ultra-Meow",
+  "slug": "1992-g-ultra-meow",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/G",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 2000,
+  "rating": 2000,
+  "source_tags": [
+    "combinatorics",
+    "dp",
+    "math"
+  ],
+  "statement": "Given a permutation array, compute the sum over all distinct subsets of the array of the k-th missing positive integer where k is the subset size plus one.",
+  "tags": [
+    "combinatorics",
+    "dynamic-programming",
+    "math",
+    "bit-manipulation"
+  ],
+  "patterns": [
+    "bit-manipulation",
+    "subset-sum",
+    "dynamic-programming"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653090,
+    "pattern_confidence": {
+      "bit-manipulation": 0.9,
+      "subset-sum": 0.7,
+      "dynamic-programming": 0.85
+    }
+  }
+}

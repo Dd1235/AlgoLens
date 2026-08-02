@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/k-divisible-elements-subarrays/",
   "source_topic": "LeetCode / Rolling Hash (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 55.1,
   "source_tags": [
     "array",
     "hash-table",

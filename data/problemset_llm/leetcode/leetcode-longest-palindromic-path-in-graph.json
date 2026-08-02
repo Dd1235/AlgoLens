@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-palindromic-path-in-graph/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 22.6,
+  "acceptance_rate": 22.3,
   "source_tags": [
     "string",
     "dynamic-programming",

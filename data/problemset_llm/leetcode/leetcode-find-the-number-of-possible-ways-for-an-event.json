@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-number-of-possible-ways-for-an-event/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 35.4,
+  "acceptance_rate": 34.2,
   "source_tags": [
     "math",
     "dynamic-programming",

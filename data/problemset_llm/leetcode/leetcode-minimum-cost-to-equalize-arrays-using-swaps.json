@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 48.9,
+  "acceptance_rate": 49.0,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-the-minimum-possible-sum-of-a-beautiful-array/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 34.9,
+  "acceptance_rate": 34.7,
   "source_tags": [
     "math",
     "greedy"

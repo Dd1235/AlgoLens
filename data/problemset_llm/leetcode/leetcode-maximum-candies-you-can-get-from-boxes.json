@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 67.2,
+  "acceptance_rate": 67.1,
   "source_tags": [
     "array",
     "breadth-first-search",

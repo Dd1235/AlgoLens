@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/interval-list-intersections/",
   "source_topic": "LeetCode / Sweep Line (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 73.1,
   "source_tags": [
     "array",
     "two-pointers",

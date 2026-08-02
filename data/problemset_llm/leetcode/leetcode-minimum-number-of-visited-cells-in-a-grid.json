@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-visited-cells-in-a-grid/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 24.0,
+  "acceptance_rate": 24.1,
   "source_tags": [
     "array",
     "dynamic-programming",

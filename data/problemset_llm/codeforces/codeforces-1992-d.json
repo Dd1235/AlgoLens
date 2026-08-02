@@ -1,0 +1,36 @@
+{
+  "id": "codeforces-1992-d",
+  "title": "Test of Love",
+  "slug": "1992-d-test-of-love",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/D",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 1200,
+  "rating": 1200,
+  "source_tags": [
+    "dp",
+    "greedy",
+    "implementation"
+  ],
+  "statement": "Determine if ErnKor can reach the right bank by jumping or swimming across a river divided into segments containing logs, crocodiles, or water, with constraints on jump length and total swimming distance.",
+  "tags": [
+    "dynamic-programming",
+    "greedy",
+    "simulation"
+  ],
+  "patterns": [
+    "dynamic-programming",
+    "greedy",
+    "state-space-search"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653085,
+    "pattern_confidence": {
+      "dynamic-programming": 0.9,
+      "greedy": 0.8,
+      "state-space-search": 0.7
+    }
+  }
+}

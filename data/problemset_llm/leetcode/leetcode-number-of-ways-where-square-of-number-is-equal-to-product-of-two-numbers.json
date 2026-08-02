@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 43.7,
+  "acceptance_rate": 43.8,
   "source_tags": [
     "array",
     "hash-table",

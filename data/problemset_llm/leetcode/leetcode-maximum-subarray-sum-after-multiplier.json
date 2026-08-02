@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 26.1,
+  "acceptance_rate": 26.2,
   "source_tags": [
     "array",
     "dynamic-programming"

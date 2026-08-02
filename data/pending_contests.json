@@ -1,0 +1,84 @@
+{
+ "note": "Codeforces problems awaiting a statement in open-r1/codeforces. Retry: ingest_contest.py --retry-pending",
+ "problems": [
+  {
+   "contest_id": 2248,
+   "index": "A",
+   "name": "You Delete, I Delete",
+   "tags": [
+    "greedy"
+   ],
+   "id": "codeforces-2248-a",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "contest_id": 2248,
+   "index": "B",
+   "name": "Merge to Match",
+   "tags": [
+    "greedy",
+    "sortings"
+   ],
+   "id": "codeforces-2248-b",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "contest_id": 2248,
+   "index": "C",
+   "name": "Maximize the Score",
+   "tags": [
+    "dp",
+    "greedy"
+   ],
+   "id": "codeforces-2248-c",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "contest_id": 2248,
+   "index": "D",
+   "name": "Good Pair Queries",
+   "tags": [
+    "constructive algorithms",
+    "greedy",
+    "math"
+   ],
+   "id": "codeforces-2248-d",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "contest_id": 2248,
+   "index": "E",
+   "name": "Excuse for Breaks",
+   "tags": [
+    "binary search",
+    "greedy",
+    "math"
+   ],
+   "id": "codeforces-2248-e",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "contest_id": 2248,
+   "index": "F",
+   "name": "Matrix Elimination",
+   "tags": [
+    "binary search",
+    "math"
+   ],
+   "id": "codeforces-2248-f",
+   "first_seen": "2026-08-02"
+  },
+  {
+   "contest_id": 2248,
+   "index": "G",
+   "name": "No Balance Left",
+   "tags": [
+    "dp",
+    "math"
+   ],
+   "id": "codeforces-2248-g",
+   "first_seen": "2026-08-02"
+  }
+ ],
+ "count": 7
+}

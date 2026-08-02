@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/apply-operations-on-array-to-maximize-sum-of-squares/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 45.0,
+  "acceptance_rate": 45.1,
   "source_tags": [
     "array",
     "hash-table",

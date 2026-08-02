@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-triangular-sum-of-an-array/",
   "source_topic": "LeetCode / Number Theory (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 81.9,
   "source_tags": [
     "array",
     "math",

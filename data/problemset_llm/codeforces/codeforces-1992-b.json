@@ -1,0 +1,34 @@
+{
+  "id": "codeforces-1992-b",
+  "title": "Angry Monk",
+  "slug": "1992-b-angry-monk",
+  "platform": "codeforces",
+  "source_url": "https://codeforces.com/problemset/problem/1992/B",
+  "source_topic": "Codeforces / Contest 1992",
+  "difficulty": 800,
+  "rating": 800,
+  "source_tags": [
+    "greedy",
+    "math",
+    "sortings"
+  ],
+  "statement": "Given an initial partition of a length-n casserole into k pieces, find the minimum number of operations to merge all pieces into one by splitting pieces of length at least 2 into 1 and the remainder, or merging a piece with a piece of length 1.",
+  "tags": [
+    "greedy",
+    "math",
+    "sorting"
+  ],
+  "patterns": [
+    "greedy",
+    "sorting"
+  ],
+  "annotation": {
+    "version": "problem-patterns-v1",
+    "model": "gpt-4.1-mini",
+    "generated_at_unix": 1785653082,
+    "pattern_confidence": {
+      "greedy": 0.95,
+      "sorting": 0.7
+    }
+  }
+}

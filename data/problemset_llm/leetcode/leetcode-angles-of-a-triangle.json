@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/angles-of-a-triangle/",
   "source_topic": "LeetCode / Geometry (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 62.3,
   "source_tags": [
     "array",
     "math",

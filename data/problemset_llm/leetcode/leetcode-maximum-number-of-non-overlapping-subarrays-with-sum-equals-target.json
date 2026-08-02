@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 49.1,
+  "acceptance_rate": 49.2,
   "source_tags": [
     "array",
     "hash-table",

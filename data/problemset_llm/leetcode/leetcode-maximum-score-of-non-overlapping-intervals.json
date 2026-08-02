@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 32.0,
+  "acceptance_rate": 30.8,
   "source_tags": [
     "array",
     "binary-search",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-the-number-of-inversions/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 31.9,
+  "acceptance_rate": 32.0,
   "source_tags": [
     "array",
     "dynamic-programming"

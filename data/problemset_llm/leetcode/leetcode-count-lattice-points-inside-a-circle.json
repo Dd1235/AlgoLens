@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/count-lattice-points-inside-a-circle/",
   "source_topic": "LeetCode / Geometry (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 57.0,
   "source_tags": [
     "array",
     "hash-table",

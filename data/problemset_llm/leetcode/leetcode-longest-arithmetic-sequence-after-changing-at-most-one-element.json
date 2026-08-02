@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/longest-arithmetic-sequence-after-changing-at-most-one-element/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 21.6,
+  "acceptance_rate": 21.7,
   "source_tags": [
     "array",
     "enumeration"

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/memoize-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 39.3,
+  "acceptance_rate": 39.4,
   "source_tags": [],
   "statement": "Implement a memoization wrapper for a function that caches results based on input identity (strict equality) to avoid repeated calls with the same arguments.",
   "tags": [

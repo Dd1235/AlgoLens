@@ -2120,5 +2120,108 @@
   "statement": "Note that the only differences between easy and hard versions are the constraints on $$$n$$$ and the time limit. You can make hacks only if all versions are solved.\n\nSlime is interested in sequences. He defined good positive integer sequences $$$p$$$ of length $$$n$$$ as follows:\n\n- For each $$$k>1$$$ that presents in $$$p$$$, there should be at least one pair of indices $$$i,j$$$, such that $$$1 \\leq i < j \\leq n$$$, $$$p_i = k - 1$$$ and $$$p_j = k$$$.\n\nFor the given integer $$$n$$$, the set of all good sequences of length $$$n$$$ is $$$s_n$$$. For the fixed integer $$$k$$$ and the sequence $$$p$$$, let $$$f_p(k)$$$ be the number of times that $$$k$$$ appears in $$$p$$$. For each $$$k$$$ from $$$1$$$ to $$$n$$$, Slime wants to know the following value:\n\n$$$$$$\\left(\\sum_{p\\in s_n} f_p(k)\\right)\\ \\textrm{mod}\\ 998\\,244\\,353$$$$$$",
   "url": "https://codeforces.com/problemset/problem/1349/F2",
   "slot": null
+ },
+ "codeforces-1992-a": {
+  "id": "codeforces-1992-a",
+  "contest_id": "1992",
+  "index": "A",
+  "title": "Only Pluses",
+  "rating": 800,
+  "tags": [
+   "brute force",
+   "constructive algorithms",
+   "greedy",
+   "math",
+   "sortings"
+  ],
+  "statement": "Kmes has written three integers $$$a$$$, $$$b$$$ and $$$c$$$ in order to remember that he has to give Noobish_Monk $$$a \\times b \\times c$$$ bananas.\n\nNoobish_Monk has found these integers and decided to do the following at most $$$5$$$ times:\n\n- pick one of these integers;\n- increase it by $$$1$$$.\n\nFor example, if $$$a = 2$$$, $$$b = 3$$$ and $$$c = 4$$$, then one can increase $$$a$$$ three times by one and increase $$$b$$$ two times. After that $$$a = 5$$$, $$$b = 5$$$, $$$c = 4$$$. Then the total number of bananas will be $$$5 \\times 5 \\times 4 = 100$$$.\n\nWhat is the maximum value of $$$a \\times b \\times c$$$ Noobish_Monk can achieve with these operations?",
+  "url": "https://codeforces.com/problemset/problem/1992/A"
+ },
+ "codeforces-1992-b": {
+  "id": "codeforces-1992-b",
+  "contest_id": "1992",
+  "index": "B",
+  "title": "Angry Monk",
+  "rating": 800,
+  "tags": [
+   "greedy",
+   "math",
+   "sortings"
+  ],
+  "statement": "To celebrate his recovery, k1o0n has baked an enormous $$$n$$$ metres long potato casserole.\n\nTurns out, Noobish_Monk just can't stand potatoes, so he decided to ruin k1o0n's meal. He has cut it into $$$k$$$ pieces, of lengths $$$a_1, a_2, \\dots, a_k$$$ meters.\n\nk1o0n wasn't keen on that. Luckily, everything can be fixed. In order to do that, k1o0n can do one of the following operations:\n\n- Pick a piece with length $$$a_i \\ge 2$$$ and divide it into two pieces with lengths $$$1$$$ and $$$a_i - 1$$$. As a result, the number of pieces will increase by $$$1$$$;\n- Pick a slice $$$a_i$$$ and another slice with length $$$a_j=1$$$ ($$$i \\ne j$$$) and merge them into one piece with length $$$a_i+1$$$. As a result, the number of pieces will decrease by $$$1$$$.\n\nHelp k1o0n to find the minimum number of operations he needs to do in order to merge the casserole into one piece with length $$$n$$$.\n\nFor example, if $$$n=5$$$, $$$k=2$$$ and $$$a = [3, 2]$$$, it is optimal to do the following:\n\n1. Divide the piece with length $$$2$$$ into two pieces with lengths $$$2-1=1$$$ and $$$1$$$, as a result $$$a = [3, 1, 1]$$$.\n2. Merge the piece with length $$$3$$$ and the piece with length $$$1$$$, as a result $$$a = [4, 1]$$$.\n3. Merge the piece with length $$$4$$$ and the piece with length $$$1$$$, as a result $$$a = [5]$$$.",
+  "url": "https://codeforces.com/problemset/problem/1992/B"
+ },
+ "codeforces-1992-c": {
+  "id": "codeforces-1992-c",
+  "contest_id": "1992",
+  "index": "C",
+  "title": "Gorilla and Permutation",
+  "rating": 900,
+  "tags": [
+   "constructive algorithms",
+   "math"
+  ],
+  "statement": "Gorilla and Noobish_Monk found three numbers $$$n$$$, $$$m$$$, and $$$k$$$ ($$$m < k$$$). They decided to construct a permutation$$$^{\\dagger}$$$ of length $$$n$$$.\n\nFor the permutation, Noobish_Monk came up with the following function: $$$g(i)$$$ is the sum of all the numbers in the permutation on a prefix of length $$$i$$$ that are not greater than $$$m$$$. Similarly, Gorilla came up with the function $$$f$$$, where $$$f(i)$$$ is the sum of all the numbers in the permutation on a prefix of length $$$i$$$ that are not less than $$$k$$$. A prefix of length $$$i$$$ is a subarray consisting of the first $$$i$$$ elements of the original array.\n\nFor example, if $$$n = 5$$$, $$$m = 2$$$, $$$k = 5$$$, and the permutation is $$$[5, 3, 4, 1, 2]$$$, then:\n\n- $$$f(1) = 5$$$, because $$$5 \\ge 5$$$; $$$g(1) = 0$$$, because $$$5 > 2$$$;\n- $$$f(2) = 5$$$, because $$$3 < 5$$$; $$$g(2) = 0$$$, because $$$3 > 2$$$;\n- $$$f(3) = 5$$$, because $$$4 < 5$$$; $$$g(3) = 0$$$, because $$$4 > 2$$$;\n- $$$f(4) = 5$$$, because $$$1 < 5$$$; $$$g(4) = 1$$$, because $$$1 \\le 2$$$;\n- $$$f(5) = 5$$$, because $$$2 < 5$$$; $$$g(5) = 1 + 2 = 3$$$, because $$$2 \\le 2$$$.\n\nHelp them find a permutation for which the value of $$$\\left(\\sum_{i=1}^n f(i) - \\sum_{i=1}^n g(i)\\right)$$$ is maximized.\n\n$$$^{\\dagger}$$$A permutation of length $$$n$$$ is an array consisting of $$$n$$$ distinct integers from $$$1$$$ to $$$n$$$ in any order. For example, $$$[2,3,1,5,4]$$$ is a permutation, but $$$[1,2,2]$$$ is not a permutation (as $$$2$$$ appears twice in the array) and $$$[1,3,4]$$$ is also not a permutation (as $$$n=3$$$, but $$$4$$$ appears in the array).",
+  "url": "https://codeforces.com/problemset/problem/1992/C"
+ },
+ "codeforces-1992-d": {
+  "id": "codeforces-1992-d",
+  "contest_id": "1992",
+  "index": "D",
+  "title": "Test of Love",
+  "rating": 1200,
+  "tags": [
+   "dp",
+   "greedy",
+   "implementation"
+  ],
+  "statement": "ErnKor is ready to do anything for Julen, even to swim through crocodile-infested swamps. We decided to test this love. ErnKor will have to swim across a river with a width of $$$1$$$ meter and a length of $$$n$$$ meters.\n\nThe river is very cold. Therefore, in total (that is, throughout the entire swim from $$$0$$$ to $$$n+1$$$) ErnKor can swim in the water for no more than $$$k$$$ meters. For the sake of humanity, we have added not only crocodiles to the river, but also logs on which he can jump. Our test is as follows:\n\nInitially, ErnKor is on the left bank and needs to reach the right bank. They are located at the $$$0$$$ and $$$n+1$$$ meters respectively. The river can be represented as $$$n$$$ segments, each with a length of $$$1$$$ meter. Each segment contains either a log 'L', a crocodile 'C', or just water 'W'. ErnKor can move as follows:\n\n- If he is on the surface (i.e., on the bank or on a log), he can jump forward for no more than $$$m$$$ ($$$1 \\le m \\le 10$$$) meters (he can jump on the bank, on a log, or in the water).\n- If he is in the water, he can only swim to the next river segment (or to the bank if he is at the $$$n$$$-th meter).\n- ErnKor cannot land in a segment with a crocodile in any way.\n\nDetermine if ErnKor can reach the right bank.",
+  "url": "https://codeforces.com/problemset/problem/1992/D"
+ },
+ "codeforces-1992-e": {
+  "id": "codeforces-1992-e",
+  "contest_id": "1992",
+  "index": "E",
+  "title": "Novice's Mistake",
+  "rating": 1700,
+  "tags": [
+   "brute force",
+   "constructive algorithms",
+   "implementation",
+   "math",
+   "strings"
+  ],
+  "statement": "One of the first programming problems by K1o0n looked like this: \"Noobish_Monk has $$$n$$$ $$$(1 \\le n \\le 100)$$$ friends. Each of them gave him $$$a$$$ $$$(1 \\le a \\le 10000)$$$ apples for his birthday. Delighted with such a gift, Noobish_Monk returned $$$b$$$ $$$(1 \\le b \\le \\min(10000, a \\cdot n))$$$ apples to his friends. How many apples are left with Noobish_Monk?\"\n\nK1o0n wrote a solution, but accidentally considered the value of $$$n$$$ as a string, so the value of $$$n \\cdot a - b$$$ was calculated differently. Specifically:\n\n- when multiplying the string $$$n$$$ by the integer $$$a$$$, he will get the string $$$s=\\underbrace{n + n + \\dots + n + n}_{a\\ \\text{times}}$$$\n- when subtracting the integer $$$b$$$ from the string $$$s$$$, the last $$$b$$$ characters will be removed from it. If $$$b$$$ is greater than or equal to the length of the string $$$s$$$, it will become empty.\n\nLearning about this, ErnKor became interested in how many pairs $$$(a, b)$$$ exist for a given $$$n$$$, satisfying the constraints of the problem, on which K1o0n's solution gives the correct answer.\n\n\"The solution gives the correct answer\" means that it outputs a non-empty string, and this string, when converted to an integer, equals the correct answer, i.e., the value of $$$n \\cdot a - b$$$.",
+  "url": "https://codeforces.com/problemset/problem/1992/E"
+ },
+ "codeforces-1992-f": {
+  "id": "codeforces-1992-f",
+  "contest_id": "1992",
+  "index": "F",
+  "title": "Valuable Cards",
+  "rating": 1900,
+  "tags": [
+   "brute force",
+   "dp",
+   "greedy",
+   "number theory",
+   "two pointers"
+  ],
+  "statement": "In his favorite cafe Kmes once again wanted to try the herring under a fur coat. Previously, it would not have been difficult for him to do this, but the cafe recently introduced a new purchasing policy.\n\nNow, in order to make a purchase, Kmes needs to solve the following problem: $$$n$$$ cards with prices for different positions are laid out in front of him, on the $$$i$$$-th card there is an integer $$$a_i$$$, among these prices there is no whole positive integer $$$x$$$.\n\nKmes is asked to divide these cards into the minimum number of bad segments (so that each card belongs to exactly one segment). A segment is considered bad if it is impossible to select a subset of cards with a product equal to $$$x$$$. All segments, in which Kmes will divide the cards, must be bad.\n\nFormally, the segment $$$(l, r)$$$ is bad if there are no indices $$$i_1 < i_2 < \\ldots < i_k$$$ such that $$$l \\le i_1, i_k \\le r$$$, and $$$a_{i_1} \\cdot a_{i_2} \\ldots \\cdot a_{i_k} = x$$$.\n\nHelp Kmes determine the minimum number of bad segments in order to enjoy his favorite dish.",
+  "url": "https://codeforces.com/problemset/problem/1992/F"
+ },
+ "codeforces-1992-g": {
+  "id": "codeforces-1992-g",
+  "contest_id": "1992",
+  "index": "G",
+  "title": "Ultra-Meow",
+  "rating": 2000,
+  "tags": [
+   "combinatorics",
+   "dp",
+   "math"
+  ],
+  "statement": "K1o0n gave you an array $$$a$$$ of length $$$n$$$, consisting of numbers $$$1, 2, \\ldots, n$$$. Accept it? Of course! But what to do with it? Of course, calculate $$$\\text{MEOW}(a)$$$.\n\nLet $$$\\text{MEX}(S, k)$$$ be the $$$k$$$-th positive (strictly greater than zero) integer in ascending order that is not present in the set $$$S$$$. Denote $$$\\text{MEOW}(a)$$$ as the sum of $$$\\text{MEX}(b, |b| + 1)$$$, over all distinct subsets $$$b$$$ of the array $$$a$$$.\n\nExamples of $$$\\text{MEX}(S, k)$$$ values for sets:\n\n- $$$\\text{MEX}(\\{3,2\\}, 1) = 1$$$, because $$$1$$$ is the first positive integer not present in the set;\n- $$$\\text{MEX}(\\{4,2,1\\}, 2) = 5$$$, because the first two positive integers not present in the set are $$$3$$$ and $$$5$$$;\n- $$$\\text{MEX}(\\{\\}, 4) = 4$$$, because there are no numbers in the empty set, so the first $$$4$$$ positive integers not present in it are $$$1, 2, 3, 4$$$.",
+  "url": "https://codeforces.com/problemset/problem/1992/G"
  }
 }

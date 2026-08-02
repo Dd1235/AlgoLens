@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/",
   "source_topic": "LeetCode / Shortest Path (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 67.6,
   "source_tags": [
     "array",
     "graph",

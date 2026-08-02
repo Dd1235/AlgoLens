@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 50.3,
+  "acceptance_rate": 50.4,
   "source_tags": [
     "hash-table",
     "math",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimize-or-of-remaining-elements-using-operations/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 30.9,
+  "acceptance_rate": 31.0,
   "source_tags": [
     "array",
     "greedy",

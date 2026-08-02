@@ -6,6 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/",
   "source_topic": "LeetCode / Shortest Path (gap fill)",
   "difficulty": "Medium",
+  "acceptance_rate": 61.8,
   "source_tags": [
     "graph",
     "heap-priority-queue",

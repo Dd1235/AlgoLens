@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/subarrays-distinct-element-sum-of-squares-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 23.7,
+  "acceptance_rate": 23.2,
   "source_tags": [
     "array",
     "dynamic-programming",

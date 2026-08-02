@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths-ii/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 50.7,
+  "acceptance_rate": 50.8,
   "source_tags": [
     "array",
     "dynamic-programming",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-elegance-of-a-k-length-subsequence/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 29.2,
+  "acceptance_rate": 29.3,
   "source_tags": [
     "array",
     "hash-table",

@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/minimum-seconds-to-equalize-a-circular-array/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 28.9,
+  "acceptance_rate": 28.7,
   "source_tags": [
     "array",
     "hash-table"

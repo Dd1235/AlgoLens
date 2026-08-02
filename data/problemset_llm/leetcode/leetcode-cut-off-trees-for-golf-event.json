@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/cut-off-trees-for-golf-event/",
   "source_topic": "LeetCode / Hard (generated)",
   "difficulty": "Hard",
-  "acceptance_rate": 36.6,
+  "acceptance_rate": 36.7,
   "source_tags": [
     "array",
     "breadth-first-search",

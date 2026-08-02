@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/",
   "source_topic": "LeetCode / Recent (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 31.5,
+  "acceptance_rate": 31.4,
   "source_tags": [],
   "statement": "Given the length, starting value, and maximum allowed difference, find the maximum element possible in an alternating sequence where adjacent differences do not exceed the given limit.",
   "tags": [

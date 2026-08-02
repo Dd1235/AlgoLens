@@ -6,7 +6,7 @@
   "source_url": "https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/",
   "source_topic": "LeetCode / Medium Hardest (generated)",
   "difficulty": "Medium",
-  "acceptance_rate": 49.3,
+  "acceptance_rate": 49.4,
   "source_tags": [
     "array",
     "greedy"
