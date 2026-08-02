@@ -65,7 +65,7 @@ The pattern: **keyword wins when you know the vocabulary** — a technique name,
 - **Find similar.** One click on any result lists its nearest neighbors by meaning (cosine over precomputed vectors, ~1 ms). Built for post-contest upsolving: open the problem that beat you, see its family.
 - **Compare rankers.** `:compare thief robbing houses` runs the query on bm25 and dense side by side with rank deltas — watch keyword search find nothing for "cheese" while semantic nails it. A command rather than permanent chrome, since it's an engine-tuning tool.
 - **Where a proxy metric stops being honest.** Acceptance rate looks like a free difficulty scale, and on the full LeetCode problemset it is one — median Medium 57.5%, Hard 47.3%, AUC 0.677. Measured on _my_ slice it inverts to 0.426: served Hards look easier than served Mediums. Not a data bug — 554 of 661 Mediums were selected _because_ they had the lowest acceptance rates, while every Hard came in unfiltered. So it ships as a within-tier filter and a within-tier sort tiebreak, never a scale. Inside one tier the selection bias is gone and the number is just the number.
-- **A deliberately hard corpus.** 3,384 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces sampled across rating bands from 800 up and AtCoder from its own scale. The 800–1000 band exists so a filter set to a beginner's rating has something to return; it was added and benchmarked, and moved nothing — bm25 flat on every metric, Recall@100 unchanged, 2.5% of top-5 slots displaced ([experiments/10](experiments/10-easy-band-and-level-filters.md)). No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
+- **A deliberately hard corpus.** 3,430 problems across four judges: every LeetCode Hard and the lowest-acceptance-rate Mediums (contest Q3/Q4 grade), all of CSES, and Codeforces sampled across rating bands from 800 up and AtCoder from its own scale. The 800–1000 band exists so a filter set to a beginner's rating has something to return; it was added and benchmarked, and moved nothing — bm25 flat on every metric, Recall@100 unchanged, 2.5% of top-5 slots displaced ([experiments/10](experiments/10-easy-band-and-level-filters.md)). No Easy filler — the best hard problems beat 4,000 padded ones. Fresh problems flow in through one refresh command, with niche labels human-reviewed before they ship.
 
 ## Tracking the grind
 
@@ -211,6 +211,8 @@ python3 scripts/ingest_contest.py --retry-pending     # drain the Codeforces bac
 ```
 
 It stages, prints the next commands (annotate → embed → validate), and never commits — you read the diff, then `git push`, and the deploy rebuilds.
+
+A list of problem *names* works too — write the URLs into a `Problems/urls_*.txt` file and run `annotate_problem_urls.py --urls <file>`. Names resolve against the cached Codeforces problemset and kenkoooo's AtCoder task list; dedupe runs on the **URL**, never the title, because `Chocolate` is three different Codeforces problems. Most recent batch: [experiments/12](experiments/12-math-and-dsu-growth.md), 33 number-theory / combinatorics / DSU problems, no benchmark regression.
 
 Two things worth knowing:
 
