@@ -51,18 +51,22 @@ async function timedSearch(index, q, k, offset = 0, opts = {}) {
 
 async function loadUserState(userId) {
   const result = await db.query(
-    `SELECT problem_id, done, bookmarked
+    `SELECT problem_id, done, bookmarked, recall
        FROM user_problem_state
       WHERE user_id = $1 AND (done OR bookmarked)`,
     [userId]
   );
   const done = new Set();
   const bookmarked = new Set();
+  // Carried so a rated problem shows its rating in ordinary search results,
+  // not only inside the library.
+  const recall = new Map();
   for (const row of result.rows) {
     if (row.done) done.add(row.problem_id);
     if (row.bookmarked) bookmarked.add(row.problem_id);
+    if (row.recall) recall.set(row.problem_id, row.recall);
   }
-  return { done, bookmarked };
+  return { done, bookmarked, recall };
 }
 
 // Canonical taxonomy labels with per-label problem counts, grouped by
@@ -256,6 +260,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
           ...h,
           done: userState.done.has(h.problem.id),
           bookmarked: userState.bookmarked.has(h.problem.id),
+          recall: userState.recall.get(h.problem.id),
         }));
       }
 
@@ -325,6 +330,7 @@ function createSearchRouter({ indexes, defaultRanker, problems }) {
           ...h,
           done: userState.done.has(h.problem.id),
           bookmarked: userState.bookmarked.has(h.problem.id),
+          recall: userState.recall.get(h.problem.id),
         }));
       }
       logEvent("similar", { visitor: req.visitor, userId: req.user?.id, props: { problemId: req.params.problemId, latencyMs } });
