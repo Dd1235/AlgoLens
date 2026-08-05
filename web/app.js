@@ -1688,7 +1688,7 @@ CORPUS
   The editor is a plain box with markers that survive being
   put in a spreadsheet cell:
 
-    **bold**   `code`   ``` fenced blocks ```   - bullets
+    **bold**   \`code\`   \`\`\` fenced blocks   - bullets
 
   ctrl+b, ctrl+e and the buttons above the box insert them;
   Tab indents, ctrl+enter saves. What you type is exactly
@@ -1736,8 +1736,10 @@ CORPUS
   column, "solution summary", because it is the one people
   reread — and it is the ONE column the app will write into,
   only ever with a note you typed here, only in the cell for
-  that problem (see ":help saving"). Add whatever else you want — concept, time taken,
-  revision date, a column of your own name for anything — and
+  that problem (see ":help saving").
+
+  Add whatever else you want — concept, time taken, revision
+  date, a column of your own name for anything — and
   the site reads it and shows it on the card under the header
   you gave it. It never writes, blanks or deletes a cell of
   yours.
