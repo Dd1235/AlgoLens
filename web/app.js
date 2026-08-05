@@ -339,8 +339,15 @@ function syncSheetChip() {
   const btn = document.getElementById("sheet-btn");
   const open = document.getElementById("sheet-open");
   const connected = cosineSheets.connected();
-  btn.textContent = connected ? "sync sheet" : "connect sheet";
-  btn.title = "notes live in your own Google Sheet — nothing is stored on this server";
+  // The count is the nudge: unwritten notes are the one thing here that lives
+  // in a single browser, and the button that fixes that should say so.
+  const pending = cosineSheets.pendingCount();
+  btn.textContent = connected
+    ? (pending ? `sync sheet (${pending})` : "sync sheet")
+    : "connect sheet";
+  btn.title = pending
+    ? `${pending} note${pending > 1 ? "s" : ""} written here and not yet in your sheet`
+    : "notes live in your own Google Sheet — nothing is stored on this server";
   open.hidden = !connected;
   if (connected) open.href = cosineSheets.url();
 }
@@ -1675,6 +1682,24 @@ CORPUS
   library — but the rating is KEPT. Save it again months later
   and your "again" is still on it.
 
+  ✎       write a note. It appears on the card you just
+          marked, and on every card in your library.
+
+  The editor is a plain box with markers that survive being
+  put in a spreadsheet cell:
+
+    **bold**   `code`   ``` fenced blocks ```   - bullets
+
+  ctrl+b, ctrl+e and the buttons above the box insert them;
+  Tab indents, ctrl+enter saves. What you type is exactly
+  what lands in the cell — no formatting to lose.
+
+  Saving is instant and local. The note is in this browser
+  the moment you press save, shows on the card straight away,
+  and the next sync carries it into your sheet. You never
+  press sync to save a note; the button only exists for the
+  case where the sheet cannot be reached.
+
   Two things people ask for that already exist:
 
     ":bookmarks" with "not done" is everything you saved and
@@ -1709,7 +1734,9 @@ CORPUS
 
   EVERYTHING ELSE IS YOURS. A new sheet starts with one more
   column, "solution summary", because it is the one people
-  reread. Add whatever else you want — concept, time taken,
+  reread — and it is the ONE column the app will write into,
+  only ever with a note you typed here, only in the cell for
+  that problem (see ":help saving"). Add whatever else you want — concept, time taken,
   revision date, a column of your own name for anything — and
   the site reads it and shows it on the card under the header
   you gave it. It never writes, blanks or deletes a cell of
@@ -2428,9 +2455,14 @@ function saveNoteEditor() {
   const id = noteTarget.problemId;
   closeNoteEditor();
   refreshNoteOnCard(id);
-  setStatus(cosineSheets.connected()
-    ? "note saved · syncing to your sheet"
-    : "note saved in this browser");
+  // Say what actually happens next. "syncing to your sheet" is a lie on a
+  // browser where the silent token never lands, and the fix for that case is
+  // one button press — so name it.
+  setStatus(
+    !cosineSheets.connected() ? "note saved in this browser"
+      : cosineSheets.hasToken() ? "note saved · syncing to your sheet"
+        : "note saved here · press sync sheet to put it in your sheet"
+  );
 }
 
 // Wrap the selection in a marker, or drop a block at the caret. Everything
