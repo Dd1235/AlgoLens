@@ -13,7 +13,7 @@
     "bench": "node bench/run.js",
     "bench:fast": "LATENCY_REPEATS=5 node bench/run.js",
     "bench:diff": "node bench/diff.js",
-    "test:search": "node server/search/tfidf.test.js && node server/search/bm25.test.js && node server/search/dense.test.js && node server/search/hybrid.test.js && node server/search/query_expand.test.js && node server/search/level.test.js && node server/search/spellfix.test.js && node server/routes/search.test.js && node server/routes/library.test.js && node web/app.smoke.test.js && node web/help.test.js && node web/sheets.test.js",
+    "test:search": "node server/search/tfidf.test.js && node server/search/bm25.test.js && node server/search/dense.test.js && node server/search/hybrid.test.js && node server/search/query_expand.test.js && node server/search/level.test.js && node server/search/spellfix.test.js && node server/routes/search.test.js && node server/routes/library.test.js && node web/app.smoke.test.js && node web/help.test.js && node web/sheets.test.js && node web/notes.test.js",
     "test:profile": "node server/profile/profile.test.js && node server/crypto/secrets.test.js",
     "db:migrate": "bash db/run-migrations.sh",
     "services:start": "docker compose up -d",

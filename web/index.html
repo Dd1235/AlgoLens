@@ -81,14 +81,14 @@
           ><span class="lib-cursor">$</span></span
         >
         <span class="lib-chips" id="lib-chips-user">
+          <button type="button" class="lib-chip" data-cmd=":all" title="list everything saved — bookmarks and done together">
+            :all
+          </button>
           <button type="button" class="lib-chip" data-cmd=":bookmarks" title="list your starred problems (:b)">
             :bookmarks <span class="lib-count" id="lib-count-bookmarks">0</span>
           </button>
           <button type="button" class="lib-chip" data-cmd=":done" title="list problems you marked done (:d)">
             :done <span class="lib-count" id="lib-count-done">0</span>
-          </button>
-          <button type="button" class="lib-chip" data-cmd=":all" title="list everything saved">
-            :all
           </button>
           <button type="button" class="lib-chip lib-chip-back" data-cmd="" title="back to search" hidden>
             ↺ search
@@ -166,6 +166,36 @@
       </div>
       <div id="compare-results" class="compare-grid hidden"></div>
     </main>
+
+    <!-- The note editor. A <dialog> rather than a hand-rolled overlay: the
+         browser gives focus trapping, Esc-to-close and the backdrop for free,
+         and all three are things a hand-rolled one gets wrong. Plain text in,
+         plain text out — the note lives in a spreadsheet cell, so anything
+         richer than markers would arrive as mojibake in Sheets. -->
+    <dialog id="note-dialog" class="note-dialog" aria-label="notes on this problem">
+      <form method="dialog" class="note-form" id="note-form">
+        <div class="note-head">
+          <span class="note-problem" id="note-problem"></span>
+          <a class="note-open" id="note-sheet-link" target="_blank" rel="noopener" hidden>open in sheet ↗</a>
+        </div>
+        <div class="note-tools" id="note-tools">
+          <button type="button" class="note-tool" data-wrap="**" title="bold (ctrl+b)"><b>B</b></button>
+          <button type="button" class="note-tool" data-wrap="`" title="inline code (ctrl+e)">&lt;/&gt;</button>
+          <button type="button" class="note-tool" data-block="```" title="code block (ctrl+shift+c)">code block</button>
+          <button type="button" class="note-tool" data-prefix="- " title="bullet">list</button>
+          <button type="button" class="note-tool" data-prefix="## " title="heading">h</button>
+        </div>
+        <textarea id="note-text" class="note-text" spellcheck="false"
+          placeholder="what was the idea? &#10;&#10;- key insight&#10;- complexity&#10;&#10;```cpp&#10;// the bit worth remembering&#10;```"></textarea>
+        <div class="note-foot">
+          <span class="note-state" id="note-state"></span>
+          <span class="note-actions">
+            <button type="button" class="note-cancel" id="note-cancel">cancel</button>
+            <button type="button" class="note-save" id="note-save">save</button>
+          </span>
+        </div>
+      </form>
+    </dialog>
     <footer>cosine v0.5 · deepya · leetcode · cses · codeforces · atcoder · <a href="/stats.html">stats</a> · <a href="/debug.html">debug</a></footer>
     <script src="/sheets.js"></script>
     <script src="/app.js"></script>

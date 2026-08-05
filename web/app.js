@@ -279,7 +279,7 @@ if (libAgeRow) {
 
 // Tab inside the search input cycles through library commands when the user is
 // signed in — picks up where they are in the LIBRARY_COMMANDS list.
-const TAB_CYCLE = [":bookmarks", ":done", ":all"];
+const TAB_CYCLE = [":all", ":bookmarks", ":done"];
 input.addEventListener("keydown", (e) => {
   if (e.key !== "Tab" || e.shiftKey || !currentUser) return;
   const cur = input.value.trim().toLowerCase();
@@ -2008,6 +2008,7 @@ function renderHitsList(container, hits, opts = {}) {
   hits.forEach((hit, i) => {
     const li = document.createElement("li");
     li.className = "result";
+    li.dataset.problemId = hit.problem.id;   // so a saved note can repaint one card
     const rank = String(startIndex + i + 1).padStart(2, "0");
     li.setAttribute("data-rank", `[${rank}]`);
     li.style.animationDelay = `${Math.min(i, 8) * 35}ms`;
@@ -2100,9 +2101,13 @@ function renderHitsList(container, hits, opts = {}) {
         applyPatternFilter(btn.dataset.pattern);
       });
     });
-    if (typeof cosineSheets !== "undefined" && cosineSheets.connected()) {
+    // Not gated on a connected sheet any more: a note typed here exists
+    // whether or not Google has heard about it yet, and hiding it until it
+    // syncs would make saving look like it did nothing.
+    if (typeof cosineSheets !== "undefined") {
       const noteView = buildNoteView(hit.problem.id);
       if (noteView) detail.appendChild(noteView);
+      detail.classList.add("has-note-slot");
     }
 
     header.addEventListener("click", () => {
@@ -2182,7 +2187,50 @@ function buildActions(hit, libraryMode) {
   // result there is chrome you have to look past to read a title — while the
   // library is exactly where "how did that go?" is the question being asked.
   if (libraryMode && (hit.done || hit.bookmarked)) actions.appendChild(buildRecall(hit));
+  // The note button follows the same rule as the rating — the library, where
+  // you are looking at your own problems — plus the card you JUST marked,
+  // wherever you marked it. That second case is the whole point: the moment
+  // you tick something done is the moment you have something to write, and
+  // making you go find it in the library afterwards is how notes don't get
+  // written.
+  if ((libraryMode || hit.justMarked) && (hit.done || hit.bookmarked)) {
+    actions.appendChild(buildNoteButton(hit));
+  }
   return actions;
+}
+
+function buildNoteButton(hit) {
+  const btn = document.createElement("button");
+  btn.type = "button";
+  const has = typeof cosineSheets !== "undefined" && cosineSheets.noteText(hit.problem.id).trim();
+  btn.className = `result-action note-btn${has ? " has-note" : ""}`;
+  btn.textContent = "✎";
+  btn.title = has ? "edit your note" : "add a note";
+  btn.setAttribute("aria-label", btn.title);
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();   // the header click toggles the card open
+    openNoteEditor(hit);
+  });
+  return btn;
+}
+
+// After a save, repaint the card for that problem so the note and the ✎ state
+// show without re-running the search.
+function refreshNoteOnCard(problemId) {
+  const li = resultsEl.querySelector(`[data-problem-id="${CSS.escape(problemId)}"]`);
+  if (!li) return;
+  const btn = li.querySelector(".note-btn");
+  if (btn) {
+    const has = cosineSheets.noteText(problemId).trim();
+    btn.classList.toggle("has-note", !!has);
+    btn.title = has ? "edit your note" : "add a note";
+  }
+  const existing = li.querySelector(".note-view");
+  const fresh = buildNoteView(problemId);
+  const slot = li.querySelector(".has-note-slot");
+  if (existing && fresh) existing.replaceWith(fresh);
+  else if (existing) existing.remove();
+  else if (fresh && slot) slot.appendChild(fresh);
 }
 
 // One cycling chip rather than four buttons — the card grows by a single
@@ -2264,6 +2312,7 @@ async function toggleFlag(hit, flag, btn) {
   if (!res.ok) return;
 
   hit[flag] = next;
+  hit.justMarked = next || hit.done || hit.bookmarked;
   if (flag === "bookmarked") {
     btn.textContent = next ? "★" : "☆";
     btn.title = next ? "remove bookmark" : "bookmark this problem";
@@ -2303,6 +2352,147 @@ function reissueSearch() {
 // A problem with no notes gets NOTHING — not an empty form. Status and
 // time-taken make no sense on a problem you just searched for and never
 // attempted; the fields appear exactly where the user chose to write them.
+// ── The note editor ──────────────────────────────────────────────────────────
+//
+// The site used to be read-only about notes, on the reasoning that writing
+// needs a Google token and asking for one needs a click. Local-first removes
+// that: pressing save writes to this browser immediately and the sync — which
+// already runs on its own a few seconds after any change — carries it to the
+// sheet. So a note costs one click here and zero anywhere else, and the sheet
+// is still the place it lives.
+//
+// The format is markdown-flavoured PLAIN TEXT, because the destination is a
+// spreadsheet cell. Bold, inline code, fenced blocks and bullets are markers
+// you can read in Sheets as easily as here — no HTML, no rich-text runs, and
+// nothing that arrives in the cell as a tag soup.
+let noteTarget = null;   // { problemId, title }
+
+function noteDialog() {
+  return document.getElementById("note-dialog");
+}
+
+function openNoteEditor(hit) {
+  const dlg = noteDialog();
+  if (!dlg || typeof cosineSheets === "undefined") return;
+  noteTarget = { problemId: hit.problem.id, title: hit.problem.title || hit.problem.id };
+  document.getElementById("note-problem").textContent = noteTarget.title;
+  const text = document.getElementById("note-text");
+  text.value = cosineSheets.noteText(noteTarget.problemId);
+  const link = document.getElementById("note-sheet-link");
+  const url = cosineSheets.url();
+  link.hidden = !url;
+  if (url) link.href = url;
+  paintNoteState();
+  if (typeof dlg.showModal === "function") dlg.showModal();
+  else dlg.setAttribute("open", "");
+  text.focus();
+  // Caret at the end, not selecting everything — this is usually an edit.
+  text.setSelectionRange(text.value.length, text.value.length);
+}
+
+function paintNoteState(saved) {
+  const el = document.getElementById("note-state");
+  if (!el) return;
+  if (!cosineSheets.available()) {
+    el.textContent = "saved in this browser · sheet sync isn't configured here";
+    return;
+  }
+  if (!cosineSheets.connected()) {
+    el.textContent = "saved in this browser · connect a sheet to keep it in your Drive";
+    return;
+  }
+  const pending = cosineSheets.pendingCount();
+  el.textContent = saved
+    ? "saved · goes to your sheet on the next sync"
+    : pending
+      ? `${pending} note${pending > 1 ? "s" : ""} waiting for the next sync`
+      : "markdown: **bold**, `code`, ``` blocks, - bullets";
+}
+
+function closeNoteEditor() {
+  const dlg = noteDialog();
+  noteTarget = null;
+  if (!dlg) return;
+  if (typeof dlg.close === "function") dlg.close();
+  else dlg.removeAttribute("open");
+}
+
+function saveNoteEditor() {
+  if (!noteTarget) return;
+  const text = document.getElementById("note-text").value;
+  cosineSheets.saveNote(noteTarget.problemId, text);
+  track("note_saved", { problemId: noteTarget.problemId, chars: text.length });
+  markSheetDirty();
+  paintNoteState(true);
+  // Repaint whatever is on screen so the note shows without a round trip.
+  const id = noteTarget.problemId;
+  closeNoteEditor();
+  refreshNoteOnCard(id);
+  setStatus(cosineSheets.connected()
+    ? "note saved · syncing to your sheet"
+    : "note saved in this browser");
+}
+
+// Wrap the selection in a marker, or drop a block at the caret. Everything
+// here is a text edit on a textarea: no editor library, no contenteditable,
+// and what you see is exactly what lands in the cell.
+function applyNoteTool(btn) {
+  const ta = document.getElementById("note-text");
+  const { selectionStart: a, selectionEnd: b, value } = ta;
+  const picked = value.slice(a, b);
+  let out, caret;
+  if (btn.dataset.wrap) {
+    const m = btn.dataset.wrap;
+    out = value.slice(0, a) + m + picked + m + value.slice(b);
+    caret = picked ? a + m.length * 2 + picked.length : a + m.length;
+  } else if (btn.dataset.block) {
+    const fence = btn.dataset.block;
+    const before = a && value[a - 1] !== "\n" ? "\n" : "";
+    const body = picked || "";
+    out = `${value.slice(0, a)}${before}${fence}\n${body}\n${fence}\n${value.slice(b)}`;
+    caret = a + before.length + fence.length + 1 + body.length;
+  } else {
+    const p = btn.dataset.prefix || "";
+    // Prefix every selected line, so bulleting three lines is one press.
+    const start = value.lastIndexOf("\n", a - 1) + 1;
+    const chunk = value.slice(start, b) || "";
+    const prefixed = chunk.split("\n").map((l) => (l.startsWith(p) ? l : p + l)).join("\n");
+    out = value.slice(0, start) + prefixed + value.slice(b);
+    caret = start + prefixed.length;
+  }
+  ta.value = out;
+  ta.focus();
+  ta.setSelectionRange(caret, caret);
+}
+
+(function wireNoteEditor() {
+  const dlg = noteDialog();
+  if (!dlg) return;
+  document.getElementById("note-save").addEventListener("click", saveNoteEditor);
+  document.getElementById("note-cancel").addEventListener("click", closeNoteEditor);
+  document.getElementById("note-tools").addEventListener("click", (e) => {
+    const btn = e.target.closest(".note-tool");
+    if (btn) applyNoteTool(btn);
+  });
+  const ta = document.getElementById("note-text");
+  ta.addEventListener("keydown", (e) => {
+    // Tab indents instead of leaving the box: this is where code goes.
+    if (e.key === "Tab") {
+      e.preventDefault();
+      const { selectionStart: a, selectionEnd: b } = ta;
+      ta.value = ta.value.slice(0, a) + "  " + ta.value.slice(b);
+      ta.setSelectionRange(a + 2, a + 2);
+      return;
+    }
+    const mod = e.metaKey || e.ctrlKey;
+    if (mod && e.key === "Enter") { e.preventDefault(); saveNoteEditor(); return; }
+    if (mod && e.key.toLowerCase() === "b") { e.preventDefault(); applyNoteTool({ dataset: { wrap: "**" } }); return; }
+    if (mod && e.key.toLowerCase() === "e") { e.preventDefault(); applyNoteTool({ dataset: { wrap: "`" } }); }
+  });
+  // Esc fires `cancel` on a <dialog>; keep our state in step with the browser's.
+  dlg.addEventListener("close", () => { noteTarget = null; });
+})();
+
 function buildNoteView(problemId) {
   const note = cosineSheets.noteFor(problemId);
   if (!note) return null;
@@ -2319,22 +2509,105 @@ function buildNoteView(problemId) {
     const cap = document.createElement("span");
     cap.className = "note-label";
     cap.textContent = fld.label;
-    const val = document.createElement("span");
+    const val = fld.key === cosineSheets.NOTE_FIELD
+      ? renderNoteMarkdown(note[fld.key])
+      : document.createElement("span");
     val.className = "note-value";
-    val.textContent = note[fld.key];
+    if (!val.childNodes.length) val.textContent = note[fld.key];
     row.appendChild(cap);
     row.appendChild(val);
     wrap.appendChild(row);
+  }
+  if (note.pending) {
+    const flag = document.createElement("span");
+    flag.className = "note-pending";
+    flag.textContent = "not in your sheet yet";
+    wrap.appendChild(flag);
   }
   const edit = document.createElement("a");
   edit.className = "note-edit-link";
   edit.href = cosineSheets.url() || "#";
   edit.target = "_blank";
   edit.rel = "noopener";
-  edit.textContent = "edit in your sheet ↗";
+  edit.textContent = "open your sheet ↗";
   edit.addEventListener("click", (e) => e.stopPropagation());
   wrap.appendChild(edit);
   return wrap;
+}
+
+// The smallest markdown that a note actually needs, rendered with DOM nodes
+// rather than innerHTML — the text came from a spreadsheet cell anyone could
+// have typed anything into, and building elements means there is no string
+// for a `<script>` to arrive in.
+function renderNoteMarkdown(text) {
+  const wrap = document.createElement("span");
+  const lines = String(text || "").split("\n");
+  let i = 0;
+  let list = null;
+  const endList = () => { list = null; };
+  while (i < lines.length) {
+    const line = lines[i];
+    if (line.trim().startsWith("```")) {
+      endList();
+      const lang = line.trim().slice(3).trim();
+      const body = [];
+      i++;
+      while (i < lines.length && !lines[i].trim().startsWith("```")) body.push(lines[i++]);
+      i++; // the closing fence
+      const pre = document.createElement("pre");
+      pre.className = "note-code";
+      if (lang) pre.dataset.lang = lang;
+      pre.textContent = body.join("\n");
+      wrap.appendChild(pre);
+      continue;
+    }
+    if (/^\s*[-*]\s+/.test(line)) {
+      if (!list) {
+        list = document.createElement("ul");
+        list.className = "note-list";
+        wrap.appendChild(list);
+      }
+      const li = document.createElement("li");
+      inlineNoteMarkdown(line.replace(/^\s*[-*]\s+/, ""), li);
+      list.appendChild(li);
+      i++;
+      continue;
+    }
+    endList();
+    if (/^\s*#{1,6}\s+/.test(line)) {
+      const h = document.createElement("strong");
+      h.className = "note-heading";
+      inlineNoteMarkdown(line.replace(/^\s*#{1,6}\s+/, ""), h);
+      wrap.appendChild(h);
+      i++;
+      continue;
+    }
+    if (line.trim()) {
+      const p = document.createElement("span");
+      p.className = "note-para";
+      inlineNoteMarkdown(line, p);
+      wrap.appendChild(p);
+    }
+    i++;
+  }
+  return wrap;
+}
+
+// `code` and **bold**, one pass, longest marker first so ** never matches as
+// two single asterisks.
+function inlineNoteMarkdown(text, into) {
+  const re = /`([^`]+)`|\*\*([^*]+)\*\*/g;
+  let last = 0;
+  let m;
+  while ((m = re.exec(text))) {
+    if (m.index > last) into.appendChild(document.createTextNode(text.slice(last, m.index)));
+    const el = document.createElement(m[1] ? "code" : "strong");
+    el.textContent = m[1] || m[2];
+    into.appendChild(el);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) into.appendChild(document.createTextNode(text.slice(last)));
+  return into;
 }
 
 function formatRelative(iso) {
