@@ -254,7 +254,7 @@ async function getToken(interactive, timeoutMs, promptMode) {
   });
 }
 
-async function googleError(res) {
+async function googleError(res, label) {
   // Google puts the useful part in the body: "Google Drive API has not been
   // used in project N before or it is disabled", "insufficient authentication
   // scopes", "File not found". Surfacing the status alone hides all of it.
@@ -267,13 +267,23 @@ async function googleError(res) {
     const which = /drive/i.test(detail) ? "Drive" : "Sheets";
     detail = `the Google ${which} API is not enabled for this project — enable it in the Google Cloud console`;
   }
-  const err = new Error(detail ? `${detail} (${res.status})` : `google api ${res.status}`);
+  const where = label ? `${label}: ` : "";
+  const err = new Error(detail ? `${where}${detail} (${res.status})` : `${where}google api ${res.status}`);
   err.status = res.status;
   return err;
 }
 
-async function gapi(url, options = {}) {
-  const token = await getToken(false);
+// `label` names the operation in any error. Google's 400s are specific
+// ("Unable to parse range", "Invalid field selection") but the browser console
+// only shows the status, and "sheet: google api 400" tells nobody which of six
+// calls broke — including me, reading a bug report.
+async function gapi(url, options = {}, label = "") {
+  // Never `prompt: ""` from here. This runs inside background syncs too, and
+  // "" shows the account chooser to anyone signed into more than one Google
+  // account — a page refresh opening a sign-in box is exactly the bug v65
+  // fixed, and this was the other door into it. A user-pressed sync sets
+  // interactiveWindow, which is the only time UI is allowed.
+  const token = await getToken(false, undefined, interactiveWindow ? "" : "none");
   const send = (t) => fetch(url, {
     ...options,
     headers: { authorization: `Bearer ${t}`, "content-type": "application/json", ...(options.headers || {}) },
@@ -282,11 +292,14 @@ async function gapi(url, options = {}) {
   if (res.status === 401) {
     // token expired mid-session — one silent retry, then give up loudly
     accessToken = null;
-    res = await send(await getToken(false));
+    res = await send(await getToken(false, undefined, interactiveWindow ? "" : "none"));
   }
-  if (!res.ok) throw await googleError(res);
+  if (!res.ok) throw await googleError(res, label);
   return res.json();
 }
+
+// True only while a sync the user pressed is running.
+let interactiveWindow = false;
 
 // 1 -> A, 26 -> Z, 27 -> AA. The sheet is the user's, so it can be as wide as
 // they like; a single-letter version would silently address the wrong column
@@ -335,7 +348,7 @@ async function sheetsConnect() {
   // else in the user's Drive.
   if (!spreadsheetId) {
     const q = encodeURIComponent(`name = '${SHEET_NAME}' and mimeType = 'application/vnd.google-apps.spreadsheet' and trashed = false`);
-    const found = await gapi(`https://www.googleapis.com/drive/v3/files?q=${q}&fields=files(id,name)`);
+    const found = await gapi(`https://www.googleapis.com/drive/v3/files?q=${q}&fields=files(id,name)`, {}, "find sheet");
     if (found.files && found.files.length) spreadsheetId = found.files[0].id;
   }
 
@@ -346,7 +359,7 @@ async function sheetsConnect() {
         properties: { title: SHEET_NAME },
         sheets: [{ properties: { title: SHEET_TAB, gridProperties: { frozenRowCount: 1 } } }],
       }),
-    });
+    }, "create sheet");
     spreadsheetId = created.spreadsheetId;
     await gapi(
       `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${SHEET_TAB}!A1:${colLetter(FULL_HEADER.length)}1?valueInputOption=RAW`,
@@ -370,7 +383,7 @@ async function sheetsConnect() {
 // started returning 403.
 async function sheetReachable(id) {
   try {
-    await gapi(`https://www.googleapis.com/drive/v3/files/${id}?fields=id`);
+    await gapi(`https://www.googleapis.com/drive/v3/files/${id}?fields=id`, {}, "reach sheet");
     return "yes";
   } catch (err) {
     return err.status === 404 ? "no" : "unknown";
@@ -415,6 +428,7 @@ function forget() {
 // overwrite a user's note in a sheet created before it existed.
 let sheetLayout = null; // { app: Map(name -> 0-based col), user: Map(key -> col), width }
 let sheetValues = [];   // the last raw grid read, header row included
+let lastLayoutError = null; // why the last tidy-up failed, reported once
 
 function readLayout(values) {
   const headerRow = (values || [])[0] || [];
@@ -584,13 +598,14 @@ async function normalizeLayout(values) {
   await gapi(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}:batchUpdate`, {
     method: "POST",
     body: JSON.stringify({ requests: withSheet }),
-  });
+  }, "reshape columns");
   // One header write for the whole row: names an inserted column, and tidies
   // any of ours whose header was mistyped or renamed.
   await gapi(
     `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/` +
       `${encodeURIComponent(`${SHEET_TAB}!A1:${colLetter(plan.header.length)}1`)}?valueInputOption=RAW`,
-    { method: "PUT", body: JSON.stringify({ values: [plan.header] }) }
+    { method: "PUT", body: JSON.stringify({ values: [plan.header] }) },
+    "write header"
   );
   return true;
 }
@@ -600,8 +615,14 @@ async function normalizeLayout(values) {
 let sheetTabId = null;
 async function tabId() {
   if (sheetTabId != null) return sheetTabId;
+  // `sheets.properties` rather than a nested `sheets(properties(...))` mask:
+  // both are valid FieldMask syntax, but the flat form has no parentheses to
+  // encode and no way to get subtly wrong, and the response is small either
+  // way. Without a mask at all this would return every cell in the sheet.
   const meta = await gapi(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?fields=sheets(properties(sheetId,title))`
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}?fields=sheets.properties`,
+    {},
+    "read tab id"
   );
   const tabs = meta.sheets || [];
   const tab = tabs.find((t) => t.properties && t.properties.title === SHEET_TAB) || tabs[0];
@@ -634,7 +655,9 @@ async function readSheet() {
   // The whole tab, not a pinned A2:N — the width is the user's business, and
   // row 1 is how we learn the layout in the first place.
   const data = await gapi(
-    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(SHEET_TAB)}`
+    `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(SHEET_TAB)}`,
+    {},
+    "read sheet"
   );
   const values = data.values || [];
   sheetValues = values;   // kept so a sync can plan a reshape without re-reading
@@ -674,7 +697,20 @@ function appendRow(item) {
 }
 
 // items: the /api/library?type=all payload. Returns {added, updated, total}.
-async function sheetsSync(items) {
+// Only a sync the user PRESSED may show a Google dialog; a background one
+// fails silently instead (see gapi). The flag is scoped to this call so a
+// later automatic sync can't inherit permission from an earlier click.
+async function sheetsSync(items, { interactive = false } = {}) {
+  interactiveWindow = interactive;
+  lastLayoutError = null;
+  try {
+    return await runSync(items);
+  } finally {
+    interactiveWindow = false;
+  }
+}
+
+async function runSync(items) {
   if (!sheetsConnected()) throw new Error("no sheet connected");
   try {
     await readSheet();
@@ -695,7 +731,18 @@ async function sheetsSync(items) {
 
   // Put the columns back in one known order before writing anything, so the
   // ranges below can't be aimed at a layout that has since drifted.
-  if (await normalizeLayout(sheetValues)) await readSheet();
+  //
+  // Tidying is NOT the job. If it fails — an API that rejects the reshape, a
+  // sheet in a shape the planner didn't expect — the sync still has to write
+  // your rows, because a cosmetic reorder taking the whole feature down with
+  // it is a far worse bug than a column being in the wrong place. Every write
+  // below locates its columns by name, so an untidied sheet works fine.
+  try {
+    if (await normalizeLayout(sheetValues)) await readSheet();
+  } catch (err) {
+    lastLayoutError = err && err.message ? err.message : String(err);
+    console.warn("sheet: could not tidy the columns, syncing anyway —", lastLayoutError);
+  }
 
   const runs = appRuns();
   const updates = [];
@@ -726,7 +773,7 @@ async function sheetsSync(items) {
     await gapi(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchUpdate`, {
       method: "POST",
       body: JSON.stringify({ valueInputOption: "RAW", data: updates }),
-    });
+    }, "update rows");
   }
   if (appends.length) {
     // The append range names the header row, so Sheets appends beneath the
@@ -736,13 +783,19 @@ async function sheetsSync(items) {
     const range = `${SHEET_TAB}!A1:${colLetter(sheetLayout.width)}1`;
     await gapi(
       `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${encodeURIComponent(range)}:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`,
-      { method: "POST", body: JSON.stringify({ values: appends }) }
+      { method: "POST", body: JSON.stringify({ values: appends }) },
+      "append rows"
     );
   }
   await readSheet(); // pick up appended row indexes + any hand edits
   rememberRows();
   onStateChange();
-  return { added: appends.length, updated: updates.length, total: rowByProblem.size };
+  return {
+    added: appends.length,
+    updated: updates.length,
+    total: rowByProblem.size,
+    layoutError: lastLayoutError,
+  };
 }
 
 // ── Notes on a single problem ────────────────────────────────────────────────
