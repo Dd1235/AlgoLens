@@ -143,4 +143,28 @@ for (const file of FILES) {
 }
 
 assert.ok(checked >= 4, `expected to check several bundles, only saw ${checked}`);
+
+// Every beacon the client fires must be a type the server allows.
+//
+// Nine weren't, for weeks: /api/track 400s an unknown type, and track() uses
+// sendBeacon with no way to observe the response — so every filter chip, the
+// difficulty controls and the recall rating were being dropped on arrival
+// with nothing but a console error to show for it. The two lists are edited
+// in different files by different reflexes; this is the thing that notices.
+{
+  const app = fs.readFileSync(path.join(WEB, "app.js"), "utf8");
+  const sent = new Set([...app.matchAll(/\btrack\(\s*"([a-z_]+)"/g)].map((m) => m[1]));
+  const routerSrc = fs.readFileSync(
+    path.join(WEB, "..", "server", "routes", "track.js"), "utf8");
+  const block = routerSrc.match(/const TYPES = new Set\(\[([\s\S]*?)\]\)/);
+  assert.ok(block, "could not find the TYPES allowlist in server/routes/track.js");
+  const allowed = new Set([...block[1].matchAll(/"([a-z_]+)"/g)].map((m) => m[1]));
+  const missing = [...sent].filter((t) => !allowed.has(t)).sort();
+  assert.deepEqual(missing, [], `app.js sends event types /api/track would reject: ${missing.join(", ")}`);
+  assert.ok(sent.size >= 10, `expected the client to send many event types, saw ${sent.size}`);
+  const unused = [...allowed].filter((t) => !sent.has(t));
+  console.log(`track allowlist covers ${sent.size} client event types` +
+    (unused.length ? ` (${unused.length} allowed but unused: ${unused.join(", ")})` : ""));
+}
+
 console.log(`web bundle smoke test passed (${checked} files)`);
