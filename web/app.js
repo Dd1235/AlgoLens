@@ -360,10 +360,16 @@ async function doSheetSync({ quiet = false } = {}) {
     sheetErrorShown = false;
     const res = await fetch("/api/library?type=all");
     const data = await res.json();
-    const out = await cosineSheets.sync(data.items || []);
+    const out = await cosineSheets.sync(data.items || [], { interactive: !quiet });
     sheetSyncedThisSession = true;
     sheetDirty = false;
-    if (!quiet) setStatus(`sheet: ${out.total} rows · ${out.added} added · ${out.updated} updated`);
+    if (!quiet) {
+      // A tidy-up that failed is worth saying even though the sync worked —
+      // otherwise the columns silently stay wrong and nobody knows why.
+      setStatus(out.layoutError
+        ? `sheet: ${out.total} rows synced · columns not tidied (${out.layoutError})`
+        : `sheet: ${out.total} rows · ${out.added} added · ${out.updated} updated`);
+    }
     // Notes may have arrived from the sheet; a library view should show them.
     if (currentUser && LIBRARY_COMMANDS[(currentQuery || "").toLowerCase()]) reissueCurrentView();
   } catch (err) {
