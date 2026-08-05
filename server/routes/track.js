@@ -27,6 +27,7 @@ const TYPES = new Set([
   "library_order",
   "library_recall",
   "recall_set",
+  "note_saved",
 ]);
 
 const clip = (v, n) => (typeof v === "string" && v ? v.slice(0, n) : undefined);
@@ -79,6 +80,13 @@ function cleanProps(type, raw = {}) {
   } else if (type === "recall_set") {
     p.problemId = clip(raw.problemId, 120);
     p.value = clip(raw.value, 20);
+  } else if (type === "note_saved") {
+    // Length only. The note itself is the user's writing and belongs in their
+    // sheet — logging it here would put it in a database this design exists
+    // to keep it out of.
+    p.problemId = clip(raw.problemId, 120);
+    const n = Number(raw.chars);
+    if (Number.isInteger(n) && n >= 0 && n <= 100000) p.chars = n;
   } else if (type === "search_feedback") {
     p.useful = raw.useful === true;
     p.reason = clip(raw.reason, 200);

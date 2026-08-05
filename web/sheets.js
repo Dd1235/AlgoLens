@@ -29,6 +29,10 @@ const SHEET_TAB = "problems";
 const SHEET_ID_KEY = "algolens_sheet_v1";   // { userId, spreadsheetId }
 const SHEET_ROWS_KEY = "algolens_sheet_rows_v1"; // { userId, rows } — notes, not credentials
 const SHEET_SILENT_KEY = "algolens_sheet_silent_v1"; // { userId, blocked } — no UI without a click
+const SHEET_PENDING_KEY = "algolens_sheet_pending_v1"; // { userId, notes } — written here, not yet in the sheet
+// The column a note written on the site goes into. It is a column YOU own —
+// the app writes it only when you typed it here, never on its own.
+const NOTE_FIELD = "solution_summary";
 // App-owned columns, in the order a NEW sheet gets them — and deliberately
 // few. Everything here is rewritten by the site on every sync, so a column
 // earns its place only if it makes the sheet READABLE (which problem is this,
@@ -102,6 +106,7 @@ function sheetsInit({ clientId, userId, onChange }) {
     if (parsed && parsed.userId === sheetsUserId) spreadsheetId = parsed.spreadsheetId || null;
   } catch (_e) {}
   // Notes survive a reload; only the token doesn't.
+  restorePending();
   if (spreadsheetId) restoreRows();
 }
 
@@ -413,11 +418,63 @@ function restoreRows() {
   } catch (_e) {}
 }
 
+// Notes are LOCAL-FIRST. Typing one must never wait on Google: the token can
+// be absent (a fresh page load), the sheet can be unreachable, you can be on a
+// train. So a note is saved here the instant you press save, shown from here,
+// and written into the sheet by the next sync — which is already debounced and
+// already runs on its own. The alternative, "press sync to save your note", is
+// the friction this whole feature exists to remove.
+function rememberPending() {
+  try {
+    localStorage.setItem(SHEET_PENDING_KEY, JSON.stringify({
+      userId: sheetsUserId, notes: Object.fromEntries(pendingNotes),
+    }));
+  } catch (_e) {}
+}
+
+function restorePending() {
+  pendingNotes = new Map();
+  try {
+    const parsed = JSON.parse(localStorage.getItem(SHEET_PENDING_KEY) || "null");
+    if (parsed && parsed.userId === sheetsUserId && parsed.notes) {
+      pendingNotes = new Map(Object.entries(parsed.notes));
+    }
+  } catch (_e) {}
+}
+
+// What the site should show for a problem: what you typed here if there is
+// anything, otherwise what the sheet says.
+function sheetsNoteText(problemId) {
+  if (pendingNotes.has(problemId)) return pendingNotes.get(problemId);
+  const row = rowByProblem.get(problemId);
+  return (row && row[NOTE_FIELD]) || "";
+}
+
+function sheetsSaveNote(problemId, text) {
+  const value = String(text == null ? "" : text);
+  const row = rowByProblem.get(problemId);
+  if (row && (row[NOTE_FIELD] || "") === value) {
+    pendingNotes.delete(problemId);   // identical to the sheet: nothing to write
+  } else {
+    pendingNotes.set(problemId, value);
+  }
+  rememberPending();
+  onStateChange();
+  return { pending: pendingNotes.size };
+}
+
+function sheetsPendingCount() {
+  return pendingNotes.size;
+}
+
 function forget() {
   try {
     localStorage.removeItem(SHEET_ID_KEY);
     localStorage.removeItem(SHEET_ROWS_KEY);
     localStorage.removeItem(SHEET_SILENT_KEY);
+    // Deliberately NOT SHEET_PENDING_KEY: unwritten notes are the one thing
+    // here that exists nowhere else. Disconnecting a sheet is not a request to
+    // throw away what you typed.
   } catch (_e) {}
 }
 
@@ -429,6 +486,7 @@ function forget() {
 let sheetLayout = null; // { app: Map(name -> 0-based col), user: Map(key -> col), width }
 let sheetValues = [];   // the last raw grid read, header row included
 let lastLayoutError = null; // why the last tidy-up failed, reported once
+let pendingNotes = new Map(); // problemId -> text typed here and not yet written
 
 function readLayout(values) {
   const headerRow = (values || [])[0] || [];
@@ -479,9 +537,15 @@ function readLayout(values) {
 // expanded card renders.
 function sheetsUserColumns() {
   if (!sheetLayout) return SHEET_USER_FIELDS.slice();
-  return [...sheetLayout.user.entries()]
+  const cols = [...sheetLayout.user.entries()]
     .sort((a, b) => a[1] - b[1])
     .map(([key]) => ({ key, label: sheetLayout.labels.get(key) || key }));
+  // A sheet that predates the note column still has to be able to SHOW a note
+  // typed here — it just can't store it yet.
+  if (!cols.some((c) => c.key === NOTE_FIELD)) {
+    cols.unshift(SHEET_USER_FIELDS.find((f) => f.key === NOTE_FIELD));
+  }
+  return cols;
 }
 
 // Keeping the sheet in one shape.
@@ -788,20 +852,67 @@ async function runSync(items) {
     );
   }
   await readSheet(); // pick up appended row indexes + any hand edits
+  // Notes go LAST, after the read that gave every row an index — including the
+  // rows appended a moment ago, which is how a note survives being written
+  // before its problem was ever synced.
+  const notesWritten = await flushNotes();
+  if (notesWritten) await readSheet();
   rememberRows();
   onStateChange();
   return {
     added: appends.length,
     updated: updates.length,
     total: rowByProblem.size,
+    notes: notesWritten,
     layoutError: lastLayoutError,
   };
+}
+
+// Write the notes typed on the site into the column they belong to.
+//
+// One cell per note, addressed by name — the app touches YOUR column here,
+// which is the single exception to "the app writes only its own columns", and
+// it is confined to exactly the cells you typed into. A note whose row isn't
+// in the sheet yet stays pending rather than being written somewhere wrong.
+//
+// Last write wins, and the read immediately above is what makes that fair:
+// the value being replaced is one that existed a second ago, not one from
+// whenever the page happened to load.
+async function flushNotes() {
+  if (!pendingNotes.size) return 0;
+  const col = sheetLayout && sheetLayout.user.get(NOTE_FIELD);
+  if (col == null) return 0;   // no such column yet; the next tidy-up adds it
+  const data = [];
+  const written = [];
+  for (const [problemId, text] of pendingNotes) {
+    const row = rowByProblem.get(problemId);
+    if (!row) continue;        // not in the sheet yet — keep it pending
+    data.push({
+      range: `${SHEET_TAB}!${colLetter(col + 1)}${row.rowIndex}`,
+      values: [[text]],
+    });
+    written.push(problemId);
+  }
+  if (!data.length) return 0;
+  await gapi(`https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values:batchUpdate`, {
+    method: "POST",
+    // USER_ENTERED would turn a note starting with "=" into a formula and one
+    // starting with "-" into a number. RAW keeps what you typed.
+    body: JSON.stringify({ valueInputOption: "RAW", data }),
+  }, "write notes");
+  written.forEach((id) => pendingNotes.delete(id));
+  rememberPending();
+  return written.length;
 }
 
 // ── Notes on a single problem ────────────────────────────────────────────────
 
 function sheetsNoteFor(problemId) {
-  return rowByProblem.get(problemId) || null;
+  const row = rowByProblem.get(problemId) || null;
+  if (!pendingNotes.has(problemId)) return row;
+  // A note you just wrote shows immediately, before it has been anywhere near
+  // Google — otherwise saving looks like it did nothing until the next sync.
+  return { ...(row || {}), [NOTE_FIELD]: pendingNotes.get(problemId), pending: true };
 }
 
 function sheetsUrl() {
@@ -818,6 +929,10 @@ const cosineSheets = {
   resume: sheetsResume,
   sync: sheetsSync,
   noteFor: sheetsNoteFor,
+  noteText: sheetsNoteText,
+  saveNote: sheetsSaveNote,
+  pendingCount: sheetsPendingCount,
+  NOTE_FIELD,
   clearLocal: sheetsClearLocal,
   url: sheetsUrl,
   USER_FIELDS: SHEET_USER_FIELDS,
