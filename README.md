@@ -1,5 +1,7 @@
 # Cosine
 
+Built by **Dedeepya Avancha** ([@Dd1235](https://github.com/Dd1235)) · [Dd1235/Cosine](https://github.com/Dd1235/Cosine)
+
 Search 3,400+ competitive-programming problems the way you actually think about them — by keyword, by describing the idea, or by technique.
 
 **Live at [onebysec.com](https://onebysec.com/)** · [live stats](https://onebysec.com/stats.html) — first load after idle takes ~a minute (free tier waking up); it's fast after that.
@@ -243,3 +245,11 @@ npm run bench          # the 71-query benchmark, per slice
 Eighteen test files. Fourteen run in `test:search` with no database at all; `npm run test:profile` adds the fetchers and the handle cipher, and the last two (auth, user-state) are round-trips that truncate tables and want a dev database pointed at them. The ones worth knowing about are the odd ones: `web/app.smoke.test.js` is a static lint that catches a browser bundle calling a function it no longer declares (that shipped twice) and now also checks every `track()` beacon against the server's allowlist; `web/sheets.test.js` replays the column-reshape plan through a simulator to prove no cell of yours is ever lost; `web/help.test.js` fails any manual line over 64 columns.
 
 Corpus embeddings ship in the repo; the first boot downloads the ~25 MB embedding model once into `.model-cache/`. No database? The app still boots and searches — only accounts/bookmarks need Postgres (`npm run services:start` brings up a local one on :5433).
+
+## Author
+
+Written and maintained by **Dedeepya Avancha** — [github.com/Dd1235](https://github.com/Dd1235) · [onebysec.com](https://onebysec.com). The design decisions, the benchmark and the write-ups in [experiments/](experiments/) are all mine; each one is traceable through the commit history of [Dd1235/Cosine](https://github.com/Dd1235/Cosine).
+
+No licence is granted: the source is public to read and to check my claims against, not to relabel. If you'd like to use a piece of it, or write about it, ask — the answer is usually yes.
+
+© 2026 Dedeepya Avancha.

@@ -1,5 +1,10 @@
 {
   "name": "algolens",
+  "author": "Dedeepya Avancha (https://github.com/Dd1235)",
+  "repository": { "type": "git", "url": "https://github.com/Dd1235/Cosine" },
+  "homepage": "https://onebysec.com",
+  "license": "UNLICENSED",
+  "private": true,
   "version": "0.1.0",
   "private": true,
   "description": "DSA problem search engine \u2014 learning project",

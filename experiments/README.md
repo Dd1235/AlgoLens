@@ -1,5 +1,7 @@
 # Experiments
 
+Benchmarks and write-ups for [Cosine](https://onebysec.com) by Dedeepya Avancha ([@Dd1235](https://github.com/Dd1235)).
+
 This directory holds **all numerical results** from AlgoLens benchmarks. Code lives in [bench/](../bench/); only outputs and write-ups belong here.
 
 ## Layout
