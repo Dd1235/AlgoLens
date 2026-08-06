@@ -126,6 +126,25 @@ async function main() {
   app.use("/api", createSearchRouter({ indexes, defaultRanker: activeDefault, problems }));
   app.use("/api", createDebugRouter({ problems, indexes, defaultRanker: activeDefault }));
 
+  // Nothing matched. Until now that fell off the end of the stack and Express
+  // answered "Cannot GET /prfoile.html" in Times New Roman — no way back to the
+  // site, and no way to tell whether anyone was hitting it.
+  //
+  // AFTER express.static and every router, deliberately: a catch-all mounted
+  // any earlier would swallow real pages. The status stays 404 in all three
+  // branches, because a soft 200 tells a crawler the page exists.
+  app.use((req, res) => {
+    logEvent("not_found", { visitor: req.visitor, userId: req.user?.id, props: { path: req.path } });
+    if (req.path.startsWith("/api/")) return res.status(404).json({ error: "not_found" });
+    // `req.accepts` rather than a method check: a fetch() for JSON that 404s
+    // should not be handed a page, and a browser navigation should not be
+    // handed "not found" as plain text.
+    if (req.method === "GET" && req.accepts("html")) {
+      return res.status(404).sendFile(path.join(webDir, "404.html"));
+    }
+    res.status(404).type("text").send("not found\n");
+  });
+
   app.listen(PORT, () => {
     console.log(`AlgoLens listening on http://localhost:${PORT}`);
     // On the free tier every idle spin-down means a fresh boot — counting

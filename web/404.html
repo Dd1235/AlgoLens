@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>cosine · 404</title>
+    <meta name="description" content="Nothing lives at that path. Search the corpus from here — or play unbalanced, a stack that overflows." />
+    <meta name="robots" content="noindex" />
+    <script src="/theme.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="page-header">
+        <h1>
+          <a href="/" class="home-link"><svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><polyline points="24,24 50,50 24,76" fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"></polyline><rect x="60" y="32" width="17" height="36" fill="var(--accent)"></rect></svg> cosine</a>
+          <span class="signature" title="dedeepya avancha">[da]</span>
+        </h1>
+        <nav class="header-actions" aria-label="Page actions">
+          <button type="button" class="theme-toggle" data-theme-toggle>
+            light mode
+          </button>
+          <a href="/" class="nav-link">search</a>
+          <a href="/patterns.html" class="nav-link">patterns</a>
+          <a href="/profile.html" class="nav-link">profile</a>
+        </nav>
+      </header>
+
+      <!-- The way out comes first. A wrong URL is usually somebody looking for
+           something, and the answer this site has to that is a search. -->
+      <p class="tagline">404 · nothing lives at that path</p>
+      <form id="lost-form" class="lost-form" action="/" method="get">
+        <input
+          id="lost-input"
+          name="q"
+          class="lost-input"
+          type="search"
+          autocomplete="off"
+          placeholder="search the corpus instead — try monotonic stack"
+          aria-label="search the corpus"
+        />
+        <button type="submit">search</button>
+      </form>
+
+      <!-- …and the game is under it, for anyone who isn't in a hurry. -->
+      <section class="game" aria-labelledby="game-title">
+        <h2 id="game-title" class="game-title">
+          unbalanced <span class="game-sub">— a stack that overflows</span>
+        </h2>
+        <p class="game-rules">
+          Openers land on the stack. Press <kbd>)</kbd> <kbd>]</kbd> <kbd>}</kbd>
+          to pop the top before it fills — and keep the expression valid.
+        </p>
+
+        <div class="game-board">
+          <div class="game-stack" id="game-stack" aria-label="the stack"></div>
+          <div class="game-side">
+            <div class="game-next" id="game-next"></div>
+            <div class="game-fuse-track"><div class="game-fuse" id="game-fuse"></div></div>
+            <div class="game-score-row">
+              <span class="game-score" id="game-score">0</span>
+              <span class="game-score-label">pairs</span>
+              <span class="game-best" id="game-best"></span>
+            </div>
+            <div class="game-keys">
+              <button type="button" class="game-key" data-key=")">)</button>
+              <button type="button" class="game-key" data-key="]">]</button>
+              <button type="button" class="game-key" data-key="}">}</button>
+            </div>
+            <button type="button" class="game-start" id="game-start">start</button>
+          </div>
+        </div>
+
+        <p class="game-status" id="game-status">press ) ] } to pop the top of the stack</p>
+        <div class="game-verdict" id="game-verdict" hidden></div>
+      </section>
+    </main>
+    <footer>cosine · <a href="/">search</a> · <a href="/stats.html">stats</a> · <a href="/debug.html">debug</a></footer>
+    <script src="/notfound.js"></script>
+  </body>
+</html>

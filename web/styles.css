@@ -1196,6 +1196,125 @@ html[data-theme="light"] footer::after { content: ""; }
   100% { opacity: 1; transform: translateY(0); }
 }
 
+/* ── 404: the way out, then the game ─────────────────────────────────────────
+   `unbalanced` is rendered in text rather than canvas: monospace and the same
+   CSS variables as everything else means it themes itself, needs no canvas
+   redraw on a theme flip, and the reduced-motion block below already covers
+   its only two transitions. */
+.lost-form {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  background: var(--surface-code);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-card);
+  padding: 0.1rem 0.1rem 0.1rem 0.85rem;
+  margin-bottom: 2rem;
+}
+.lost-form:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.lost-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem 0;
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  color: var(--text);
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.lost-input::placeholder { color: var(--text-dim); opacity: 1; }
+
+.game { border-top: 1px dashed var(--border); padding-top: 1.2rem; }
+.game-title { margin: 0 0 0.2rem; font-size: 0.95rem; font-weight: 600; }
+.game-sub { color: var(--text-dim); font-weight: 400; }
+.game-rules { margin: 0 0 1rem; font-size: 0.78rem; color: var(--text-muted); }
+.game-rules kbd {
+  font-family: var(--mono);
+  font-size: 0.95em;
+  padding: 0.02rem 0.3rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-cell);
+  color: var(--accent);
+}
+
+.game-board { display: flex; gap: 1.2rem; align-items: flex-start; }
+
+/* Bottom of the stack at the bottom, which is the only way a stack should
+   ever be drawn. The top slot is marked: that is the one that ends the run. */
+.game-stack {
+  display: grid;
+  grid-template-rows: repeat(8, 1.85rem);
+  gap: 3px;
+  width: 3.2rem;
+  flex: 0 0 auto;
+}
+.game-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 1rem;
+  color: var(--text-dim);
+  border: 1px dashed var(--border);
+  border-radius: var(--r-cell);
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+.game-cell.filled {
+  color: var(--accent);
+  border-style: solid;
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.game-cell.danger { border-color: var(--danger); }
+.game-cell.danger.filled { color: var(--danger); border-color: var(--danger); background: transparent; }
+
+.game-side { display: grid; gap: 0.6rem; flex: 1; min-width: 0; }
+.game-next { font-family: var(--mono); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.12em; }
+
+/* The only clock on the board: it drains for exactly as long as you have
+   before the next opener lands. */
+.game-fuse-track { height: 3px; background: var(--score-track); border-radius: var(--r-cell); overflow: hidden; }
+.game-fuse { height: 100%; width: 0; background: var(--accent); }
+
+.game-score-row { display: flex; align-items: baseline; gap: 0.4rem; }
+.game-score { font-size: 1.4rem; font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums; }
+.game-score-label, .game-best { font-size: 0.72rem; color: var(--text-dim); }
+.game-best { margin-left: auto; }
+
+.game-keys { display: flex; gap: 0.35rem; }
+.game-key {
+  margin: 0;
+  min-width: 2.6rem;
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  border-color: var(--border-strong);
+  color: var(--text-muted);
+}
+.game-key:hover, .game-key:active { border-color: var(--accent); color: var(--accent); }
+.game-start { margin: 0; justify-self: start; }
+
+.game-status { margin: 0.9rem 0 0; font-size: 0.75rem; color: var(--text-dim); }
+
+/* The payoff: the expression you built, and the character it died on. */
+.game-verdict {
+  margin-top: 0.7rem;
+  padding: 0.7rem 0.8rem;
+  background: var(--surface-code);
+  border: 1px solid var(--border);
+  border-radius: var(--r-control);
+  overflow-x: auto;
+}
+.game-expr, .game-caret {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  white-space: pre;
+  line-height: 1.35;
+}
+.game-expr { color: var(--text); }
+.game-caret { color: var(--danger); }
+.game-tally { margin-top: 0.35rem; font-size: 0.72rem; color: var(--text-muted); }
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1773,6 +1892,13 @@ html[data-theme="light"] .note-dialog::backdrop { background: rgba(20, 30, 25, 0
   .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
   .lib-bar { row-gap: 0.4rem; }
+
+  /* No keyboard on a phone, and the three keys ARE the game — same 34px
+     minimum every other tap target here uses. */
+  .lost-input { font-size: 16px; }
+  .game-key { flex: 1; min-height: 42px; font-size: 1.05rem; }
+  .game-board { gap: 0.9rem; }
+  .game-stack { grid-template-rows: repeat(8, 1.6rem); width: 2.8rem; }
 
   /* The editor is the page on a phone, and 16px keeps Safari from zooming. */
   .note-dialog { width: 100vw; max-width: 100vw; margin: 0; border-radius: 0; }

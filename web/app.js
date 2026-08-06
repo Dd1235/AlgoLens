@@ -1824,7 +1824,8 @@ LINKS
 MORE
   handles + combined heatmap: /profile.html
   live usage + latency:       /stats.html
-  scoring math:               /debug.html`,
+  scoring math:               /debug.html
+  a stack that overflows:     /404.html`,
   },
 ];
 
